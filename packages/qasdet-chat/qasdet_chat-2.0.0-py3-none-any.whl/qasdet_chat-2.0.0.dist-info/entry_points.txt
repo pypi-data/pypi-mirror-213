@@ -1,0 +1,4 @@
+[console_scripts]
+gb_chat = client_run:main
+gb_chat_server = server_run:main
+
