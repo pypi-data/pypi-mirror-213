@@ -1,0 +1,10 @@
+LICENCE
+README.md
+pyproject.toml
+setup.cfg
+src/mgasa.egg-info/PKG-INFO
+src/mgasa.egg-info/SOURCES.txt
+src/mgasa.egg-info/dependency_links.txt
+src/mgasa.egg-info/top_level.txt
+src/mypackages/__init__.py
+src/mypackages/mgasa.py
