@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/tcCalc3/__init__.py
+src/tcCalc3/calculator.py
+src/tcCalc3.egg-info/PKG-INFO
+src/tcCalc3.egg-info/SOURCES.txt
+src/tcCalc3.egg-info/dependency_links.txt
+src/tcCalc3.egg-info/top_level.txt
+tests/test_calculator.py
