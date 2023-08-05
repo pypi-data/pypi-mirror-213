@@ -1,0 +1,6 @@
+pelican/plugins/email_cloak/__init__.py,sha256=sv5P1WrzoZZPR54Kun4JfNvgpH00JMadEkmBsUMFJ-Y,35
+pelican/plugins/email_cloak/email_cloak.py,sha256=E5xPBWS9Wt8Zti0nf3grqCM6EM1zc6fbP__YK7KpvIE,2075
+pelican_email_cloak-0.1.0.dist-info/LICENSE,sha256=gJ93GkYNcwNrQlRlazufhZ-x-wMt6n3N94kzB2wAZLo,1075
+pelican_email_cloak-0.1.0.dist-info/METADATA,sha256=_JchQyvfcnFTRKniB_jiXVbFHlEK5kHJjS5-F9KWzOk,2200
+pelican_email_cloak-0.1.0.dist-info/WHEEL,sha256=Zb28QaM1gQi8f4VCBhsUklF61CTlNYfs9YAZn-TOGFk,88
+pelican_email_cloak-0.1.0.dist-info/RECORD,,
