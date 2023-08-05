@@ -1,0 +1,15 @@
+aflabs_test/README.rst,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+aflabs_test/afuser/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+aflabs_test/afuser/admin.py,sha256=MGuOEvPMAw_r398-mw09SYN7oe3yD4hX_EGbns3f8to,89
+aflabs_test/afuser/apps.py,sha256=dJq4P-GwF_LkB8-TPGiGPZG-PcifaD5w65AdehcVHqk,153
+aflabs_test/afuser/forms.py,sha256=LOa-nlLbAvH9BtmuTPB1WDT3I2XMTxDbr-kJuSkXGG4,164
+aflabs_test/afuser/migrations/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+aflabs_test/afuser/models.py,sha256=jzeJj3OKWrMxnITKYvQsNq3HkU3A3VwTgeAhafyFTEI,559
+aflabs_test/afuser/tests.py,sha256=mrbGGRNg5jwbTJtWWa7zSKdDyeB4vmgZCRc2nk6VY-g,60
+aflabs_test/afuser/urls.py,sha256=kieABYxjq3jVfR6UbszCCCKrfToMWYsqug33sw9_QIY,488
+aflabs_test/afuser/views.py,sha256=vUCevF76nivcikb9hhtsFYarQRFLjZPjnHa70K6sIwQ,1890
+aflabs_test/setup.cfg,sha256=GQgENdlu8svaD9wsBT8_Nn_nk11IQkSIiYNT6qdwlaQ,960
+aflabs_test/setup.py,sha256=Ww4UbZc_gJERA1Hz9Gut1akF2strsIJ5AUoA29jJkh8,37
+aflabs_test-0.1.3.dist-info/METADATA,sha256=6uEYZKx0jliTP98D4oUFaIntdEpfwvV0VR3dl8O6tq8,390
+aflabs_test-0.1.3.dist-info/WHEEL,sha256=Zb28QaM1gQi8f4VCBhsUklF61CTlNYfs9YAZn-TOGFk,88
+aflabs_test-0.1.3.dist-info/RECORD,,
