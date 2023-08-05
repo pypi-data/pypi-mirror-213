@@ -1,0 +1,61 @@
+[build-system]
+requires = ["setuptools", "setuptools-scm"]
+build-backend = "setuptools.build_meta"
+
+
+
+[project]
+name = "game-vision-targeting-model"
+version = "0.0.6"
+
+authors = [
+  { name="Kent vejrup Madsen", email="kent.vejrup.madsen@outlook.com" },
+]
+
+description = "A small example package"
+readme = "Readme.md"
+
+requires-python = ">=3.7"
+
+dependencies = [
+    "wheel",
+    "keras",
+    "tensorflow",
+    "numpy"
+]
+
+license = { file='License.md' }
+
+classifiers = [
+    "Programming Language :: Python :: 3"
+]
+
+keywords = [
+    "game", "vision", "machine", "learning"
+]
+
+
+
+[project.optional-dependencies]
+dev = [
+    'pytest'
+]
+
+[project.urls]
+"Changelog"     = "https://github.com/KentVejrupMadsen/gv-targeting-model/blob/main/Changelog.md"
+"Homepage"      = "https://github.com/KentVejrupMadsen/gv-targeting-model"
+"Issues"        = "https://github.com/KentVejrupMadsen/gv-targeting-model/issues"
+"License"       = "https://github.com/KentVejrupMadsen/gv-targeting-model/blob/main/License.md"
+"Requirements"  = "https://raw.githubusercontent.com/KentVejrupMadsen/gv-targeting-model/main/requirements.txt"
+
+
+[tool.pytest.ini_options]
+markers = [
+    "slow: marks tests as slow (deselect with '-m \"not slow\"')",
+    "serial",
+    "debug"
+]
+
+[tool.setuptools.packages.find]
+where = ['GameVisionTargetingModel']
+namespaces = true
