@@ -1,0 +1,14 @@
+LICENSE.md
+MANIFEST.in
+README.md
+setup.py
+pyspk/__init__.py
+pyspk/fit_vals.py
+pyspk/model.py
+pyspk/stat_errors_200.csv
+pyspk/stat_errors_500.csv
+pyspk.egg-info/PKG-INFO
+pyspk.egg-info/SOURCES.txt
+pyspk.egg-info/dependency_links.txt
+pyspk.egg-info/requires.txt
+pyspk.egg-info/top_level.txt
