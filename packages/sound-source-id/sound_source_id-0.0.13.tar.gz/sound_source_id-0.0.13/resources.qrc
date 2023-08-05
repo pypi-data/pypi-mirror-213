@@ -1,0 +1,18 @@
+<!DOCTYPE RCC><RCC version="1.0">
+<qresource>
+<file>translations/sound_source_id_it.qm</file>
+<file>translations/sound_source_id_fr.qm</file>
+<file>translations/sound_source_id_es.qm</file>
+<file>translations/sound_source_id_el.qm</file>
+<file>translations/sound_source_id_en_US.qm</file>
+<file>translations/sound_source_id_en_GB.qm</file>
+<file alias="exit">icons/exit.svg</file>
+<file alias="audio-headphones">icons/audio-headphones.svgz</file>
+<file alias="help-about">icons/help-about.svgz</file>
+<file alias="help-contents">icons/help-contents.svgz</file>
+<file alias="help-contextual">icons/help-contextual.svgz</file>
+<file alias="preferences-other">icons/preferences-other.svgz</file>
+<file alias="point-left">icons/point-left.svg</file>
+<file alias="point-right">icons/point-right.svg</file>
+</qresource>
+</RCC>

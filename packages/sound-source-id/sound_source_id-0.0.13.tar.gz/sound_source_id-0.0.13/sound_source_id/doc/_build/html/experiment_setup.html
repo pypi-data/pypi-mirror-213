@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Parameters file &mdash; sound_source_id 0.0.13 documentation</title>
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/sphinx_highlight.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="Installation" href="installation.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            sound_source_id
+          </a>
+              <div class="version">
+                0.0.13
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="intro.html"><code class="docutils literal notranslate"><span class="pre">sound_source_id</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="installation.html">Installation</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Parameters file</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#stimulation-file">Stimulation file</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">sound_source_id</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Parameters file</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/experiment_setup.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="parameters-file">
+<span id="sec-experiment-setup"></span><h1>Parameters file<a class="headerlink" href="#parameters-file" title="Permalink to this heading"></a></h1>
+<p>The settings for a test are stored in a parameters file (which is a simple text file). An example parameters file is shown below:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">angles</span> <span class="p">:</span> <span class="o">-</span><span class="mi">70</span><span class="p">,</span> <span class="o">-</span><span class="mi">60</span><span class="p">,</span> <span class="o">-</span><span class="mi">50</span><span class="p">,</span> <span class="o">-</span><span class="mi">40</span><span class="p">,</span> <span class="o">-</span><span class="mi">30</span><span class="p">,</span> <span class="o">-</span><span class="mi">20</span><span class="p">,</span> <span class="o">-</span><span class="mi">10</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">20</span><span class="p">,</span> <span class="mi">30</span><span class="p">,</span> <span class="mi">40</span><span class="p">,</span> <span class="mi">50</span><span class="p">,</span> <span class="mi">60</span><span class="p">,</span> <span class="mi">70</span>
+<span class="n">labels</span> <span class="p">:</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">9</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">11</span><span class="p">,</span> <span class="mi">12</span><span class="p">,</span> <span class="mi">13</span><span class="p">,</span> <span class="mi">14</span><span class="p">,</span> <span class="mi">15</span>
+<span class="n">channels</span> <span class="p">:</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">9</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">11</span><span class="p">,</span> <span class="mi">12</span><span class="p">,</span> <span class="mi">13</span><span class="p">,</span> <span class="mi">14</span><span class="p">,</span> <span class="mi">15</span>
+<span class="n">n_chan</span> <span class="p">:</span> <span class="mi">15</span>
+<span class="n">n_blocks</span> <span class="p">:</span> <span class="mi">1</span>
+<span class="n">stim_list_file</span> <span class="p">:</span> <span class="n">stim_list</span><span class="o">.</span><span class="n">csv</span>
+<span class="n">randomize</span> <span class="p">:</span> <span class="n">true</span>
+<span class="n">demo_stim</span> <span class="p">:</span> <span class="n">pink_noises</span><span class="o">/</span><span class="n">noise1</span><span class="o">.</span><span class="n">wav</span>
+<span class="n">demo_stim_lev</span> <span class="p">:</span> <span class="mi">65</span>
+</pre></div>
+</div>
+<p>The following fields need to be specified in a parameters file:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p><cite>angles</cite>: the azimuth angles (in degrees) at which the sounds are presented. Note that a 0° angle indicates straight ahead, a 90° angle is to the right, and a -90° angle to the left.</p></li>
+<li><p><cite>labels</cite>: a label for each of the angles, this can be a number or a letter (e.g., a, b, c, ecc.)</p></li>
+<li><p><cite>channels</cite>: the channel of the soundcard that will be used to present a sound at the corresponding angle</p></li>
+<li><p><cite>n_chan</cite>: the total number of channels for the setup</p></li>
+<li><p><cite>n_blocks</cite>: the number of blocks, that is how many times the test will be repeated</p></li>
+<li><p><cite>stim_list_file</cite>: the path (absolute or relative) to the file containing the stimulation list (see below)</p></li>
+<li><p><cite>randomize</cite>: if <cite>true</cite> the stim_list_file will be shuffled before each block repetition</p></li>
+<li><p><cite>demo_stim</cite>: the path to the WAV file to be used for the demo</p></li>
+<li><p><cite>demo_stim_lev</cite>: the sound level (in dB SPL) to be used for the demo</p></li>
+</ul>
+</div></blockquote>
+</section>
+<section id="stimulation-file">
+<h1>Stimulation file<a class="headerlink" href="#stimulation-file" title="Permalink to this heading"></a></h1>
+<p>Stimulation files specify the stimuli that will be played on each trial of the test. Figure <a class="reference internal" href="#fig-stim-file"><span class="std std-ref">Example stimulation file.</span></a> shows an example stimulation file.</p>
+<figure class="align-default" id="id1">
+<span id="fig-stim-file"></span><a class="reference internal image-reference" href="_images/stim_file.png"><img alt="Example stimulation file" src="_images/stim_file.png" style="width: 248.0px; height: 67.5px;" /></a>
+<figcaption>
+<p><span class="caption-text">Example stimulation file.</span><a class="headerlink" href="#id1" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+<p>Each row of the file represents a trial. Stimulation files contain the following columns:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p><cite>angle</cite>: the angle at which the sound will be presented (stimuli will be sent to the corresponding soundcard channel as specified in the parameters file)</p></li>
+<li><p><cite>sound_file</cite>: the path (relative or absolute) to the WAV file to be played</p></li>
+<li><p><cite>condition</cite>: an optional label specifying the experimental condition</p></li>
+<li><p><cite>level</cite>: the <cite>base</cite> sound level (in dB SPL) at which the sound will be presented (this assumes that <cite>sound_source_id</cite> has been correctly calibrated)</p></li>
+<li><p><cite>roving</cite>: a level rove, actual sound level will be euqual to the base level plus a value drawn from a random uniform distribution between +/- the roving level</p></li>
+<li><p><cite>feedback</cite>: if <cite>true</cite>, feedback will be given to the listener at the end of each trial</p></li>
+</ul>
+</div></blockquote>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="installation.html" class="btn btn-neutral float-left" title="Installation" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2022-2023, Samuele Carcagno.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
