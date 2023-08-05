@@ -1,0 +1,42 @@
+Metadata-Version: 2.1
+Name: openlrc
+Version: 0.0.1
+Summary: Transcribe and translate voice into LRC file.
+Project-URL: Homepage, https://github.com/zh-plus/Open-Lyrics
+Project-URL: Bug Tracker, https://github.com/zh-plus/Open-Lyrics/issues
+Author-email: Hao Zheng <zhenghaosustc@gmail.com>
+License-File: LICENSE
+Keywords: lrc,openai-gpt3,voice transcribe,whisper
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Topic :: Scientific/Engineering
+Requires-Python: >=3.8
+Requires-Dist: faster-whisper
+Requires-Dist: langcodes
+Requires-Dist: language-data
+Requires-Dist: openai
+Requires-Dist: rich
+Requires-Dist: tiktoken
+Description-Content-Type: text/markdown
+
+# Open-Lyrics
+
+Open-Lyrics is a open-source project to transcribe voice file and use large language model to translate/polish the text.
+
+## Installation
+
+```shell
+pip install openlyc
+```
+
+## Usage
+
+```python
+from openlrc import LRCer
+
+lrcer = LRCer()
+lrcer('./data/test.mp3')
+```
