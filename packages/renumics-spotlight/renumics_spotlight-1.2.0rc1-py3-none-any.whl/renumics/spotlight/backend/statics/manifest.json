@@ -1,0 +1,50 @@
+{
+  "_index-1e51b9f6.js": {
+    "file": "index-1e51b9f6.js"
+  },
+  "_index-a73aa2f1.cjs": {
+    "file": "index-a73aa2f1.cjs"
+  },
+  "_lib-5ccc948b.cjs": {
+    "file": "lib-5ccc948b.cjs",
+    "imports": [
+      "_index-a73aa2f1.cjs"
+    ]
+  },
+  "_lib-a523bf68.js": {
+    "file": "lib-a523bf68.js",
+    "imports": [
+      "_index-1e51b9f6.js"
+    ]
+  },
+  "src/icons/index.ts": {
+    "file": "icons/index.cjs",
+    "imports": [
+      "_index-a73aa2f1.cjs"
+    ],
+    "isEntry": true,
+    "src": "src/icons/index.ts"
+  },
+  "src/lib.ts": {
+    "file": "index.cjs",
+    "imports": [
+      "_lib-5ccc948b.cjs",
+      "_index-a73aa2f1.cjs"
+    ],
+    "isEntry": true,
+    "src": "src/lib.ts"
+  },
+  "src/main.tsx": {
+    "file": "main.cjs",
+    "imports": [
+      "_index-a73aa2f1.cjs",
+      "_lib-5ccc948b.cjs"
+    ],
+    "isEntry": true,
+    "src": "src/main.tsx"
+  },
+  "style.css": {
+    "file": "style.css",
+    "src": "style.css"
+  }
+}

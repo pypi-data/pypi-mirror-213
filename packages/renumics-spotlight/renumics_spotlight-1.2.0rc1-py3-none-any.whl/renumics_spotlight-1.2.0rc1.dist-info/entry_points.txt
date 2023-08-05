@@ -1,0 +1,4 @@
+[console_scripts]
+spotlight=renumics.spotlight.cli:main
+spotlight-notebook=renumics.spotlight.notebook.cli:main
+
