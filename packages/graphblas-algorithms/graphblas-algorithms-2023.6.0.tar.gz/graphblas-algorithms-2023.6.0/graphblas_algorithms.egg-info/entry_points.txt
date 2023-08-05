@@ -1,0 +1,2 @@
+[networkx.plugins]
+graphblas = graphblas_algorithms.interface:Dispatcher
