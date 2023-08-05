@@ -1,0 +1,11 @@
+llmspec
+falcon>=3
+uvicorn>=0.22
+mosec>0.6
+
+[gpu]
+torch
+transformers
+sentencepiece
+accelerate
+cpm_kernels
