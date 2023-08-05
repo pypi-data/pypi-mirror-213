@@ -1,0 +1,16 @@
+appdirs
+sqlalchemy>=1.0
+
+[optional]
+colorlog
+
+[testing]
+pytest
+pytz
+patchy
+pylint
+mypy
+lxml
+bandit
+more-itertools
+enlighten

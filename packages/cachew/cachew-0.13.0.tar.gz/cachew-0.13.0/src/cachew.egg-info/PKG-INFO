@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: cachew
+Version: 0.13.0
+Summary: Easy sqlite-backed persistent cache for dataclasses
+Home-page: https://github.com/karlicoss/cachew
+Author: Dima Gerasimov
+Author-email: karlicoss@gmail.com
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.8
+Provides-Extra: testing
+Provides-Extra: optional
