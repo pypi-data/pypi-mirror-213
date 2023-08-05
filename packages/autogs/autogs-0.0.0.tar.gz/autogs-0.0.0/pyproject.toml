@@ -1,0 +1,24 @@
+[project]
+name = "autogs"
+description = "Part of the Autonomous Empirical Research Initiative."
+authors = [{ name = "Sebastian Musslick", email = "sebastian@musslick.de" }]
+dynamic = ["version"]
+
+readme = "README.md"
+license = { text = "MIT license" }
+
+dependencies = []
+
+[project.optional-dependencies]
+dev = []
+
+[project.urls]
+homepage = "http://www.empiricalresearch.ai"
+repository = "https://github.com/AutoResearch/autogs"
+documentation = "https://autoresearch.github.io/autogs/"
+
+[build-system]
+requires = ["setuptools", "setuptools_scm"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools_scm]

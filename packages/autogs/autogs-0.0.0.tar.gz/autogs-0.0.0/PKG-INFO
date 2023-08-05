@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: autogs
+Version: 0.0.0
+Summary: Part of the Autonomous Empirical Research Initiative.
+Author-email: Sebastian Musslick <sebastian@musslick.de>
+License: MIT license
+Project-URL: homepage, http://www.empiricalresearch.ai
+Project-URL: repository, https://github.com/AutoResearch/autogs
+Project-URL: documentation, https://autoresearch.github.io/autogs/
+Description-Content-Type: text/markdown
+Provides-Extra: dev
+
+# AutoGS
+
+Part of the Autonomous Empirical Research Initiative.

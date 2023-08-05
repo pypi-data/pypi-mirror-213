@@ -1,0 +1,28 @@
+.gitignore
+.pre-commit-config.yaml
+CONTRIBUTING.md
+README.md
+mkdocs.yml
+pyproject.toml
+.github/workflows/pypi-publish.yml
+.idea/.gitignore
+.idea/autogs.iml
+.idea/misc.xml
+.idea/modules.xml
+.idea/vcs.xml
+.idea/inspectionProfiles/Project_Default.xml
+.idea/inspectionProfiles/profiles_settings.xml
+docs/Additional Example.ipynb
+docs/Basic Usage.ipynb
+docs/index.md
+docs/quickstart.md
+docs/javascripts/mathjax.js
+mkdocs/base.yml
+src/autogs/__init__.py
+src/autogs.egg-info/PKG-INFO
+src/autogs.egg-info/SOURCES.txt
+src/autogs.egg-info/dependency_links.txt
+src/autogs.egg-info/requires.txt
+src/autogs.egg-info/top_level.txt
+tests/__init__.py
+tests/test_autogs.py
