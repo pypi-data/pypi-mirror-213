@@ -1,0 +1,173 @@
+#--- PLEASE EDIT THE LINES BELOW CORRECTLY ---
+#SOME DESCRIPTIVE TITLE.
+#FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2023-06-09 15:59+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+"Preferred-Encodings: utf-8 latin1\n"
+
+#: ./ftw/referencewidget/configure.zcml:105
+msgid "Adds the ability to a data grid rows"
+msgstr ""
+
+#: ./ftw/referencewidget/configure.zcml:92
+msgid "Adds the ability to assign one related item"
+msgstr ""
+
+#: ./ftw/referencewidget/configure.zcml:85
+msgid "Adds the ability to assign related items via ftw.referencewidget"
+msgstr ""
+
+#: ./ftw/referencewidget/configure.zcml:105
+msgid "Data grid field demo behavior"
+msgstr ""
+
+#: ./ftw/referencewidget/configure.zcml:46
+msgid "Register ftw.referencewidget generally"
+msgstr ""
+
+#: ./ftw/referencewidget/behaviors.py:43
+msgid "Related Choice"
+msgstr ""
+
+#: ./ftw/referencewidget/behaviors.py:64
+msgid "Related Choice Restricted"
+msgstr ""
+
+#: ./ftw/referencewidget/behaviors.py:73
+msgid "Related Choice Restricted Title"
+msgstr ""
+
+#: ./ftw/referencewidget/configure.zcml:85
+msgid "Related items"
+msgstr ""
+
+#: ./ftw/referencewidget/configure.zcml:92
+msgid "Relation choice demo behavior"
+msgstr ""
+
+#: ./ftw/referencewidget/configure.zcml:98
+msgid "Relation choice demo behavior with restricted source"
+msgstr ""
+
+#: ./ftw/referencewidget/configure.zcml:54
+msgid "Uninstall ftw.referencewidget"
+msgstr ""
+
+#. Default: "Search"
+#: ./ftw/referencewidget/widget.py:90
+msgid "button_seach"
+msgstr ""
+
+#: ./ftw/referencewidget/configure.zcml:46
+msgid "ftw.referencewidget"
+msgstr ""
+
+#. Default: "Browse"
+#: ./ftw/referencewidget/widget.py:105
+msgid "label_browse"
+msgstr ""
+
+#. Default: "Choose content"
+#: ./ftw/referencewidget/widget.py:89
+msgid "label_choose_content"
+msgstr ""
+
+#. Default: "Close"
+#: ./ftw/referencewidget/widget.py:104
+msgid "label_close"
+msgstr ""
+
+#. Default: "Next"
+#: ./ftw/referencewidget/widget.py:102
+msgid "label_next"
+msgstr ""
+
+#. Default: "of"
+#: ./ftw/referencewidget/widget.py:108
+msgid "label_of"
+msgstr ""
+
+#. Default: "Page"
+#: ./ftw/referencewidget/widget.py:107
+msgid "label_page"
+msgstr ""
+
+#. Default: "Previous"
+#: ./ftw/referencewidget/widget.py:101
+msgid "label_previous"
+msgstr ""
+
+#. Default: "Related Items"
+#: ./ftw/referencewidget/behaviors.py:28
+msgid "label_related_items"
+msgstr ""
+
+#. Default: "Reset"
+#: ./ftw/referencewidget/widget.py:99
+msgid "label_reset"
+msgstr ""
+
+#. Default: "Search text"
+#: ./ftw/referencewidget/widget.py:103
+msgid "label_searchtext"
+msgstr ""
+
+#. Default: "Ascending"
+#: ./ftw/referencewidget/widget.py:97
+msgid "label_sort_ascending"
+msgstr ""
+
+#. Default: "Sort by"
+#: ./ftw/referencewidget/widget.py:91
+msgid "label_sort_by"
+msgstr ""
+
+#. Default: "Created"
+#: ./ftw/referencewidget/widget.py:95
+msgid "label_sort_by_created"
+msgstr ""
+
+#. Default: "Modified"
+#: ./ftw/referencewidget/widget.py:96
+msgid "label_sort_by_modified"
+msgstr ""
+
+#. Default: "Position"
+#: ./ftw/referencewidget/widget.py:93
+msgid "label_sort_by_pos"
+msgstr ""
+
+#. Default: "Title"
+#: ./ftw/referencewidget/widget.py:94
+msgid "label_sort_by_title"
+msgstr ""
+
+#. Default: "Descending"
+#: ./ftw/referencewidget/widget.py:98
+msgid "label_sort_descending"
+msgstr ""
+
+#. Default: "Sort order"
+#: ./ftw/referencewidget/widget.py:92
+msgid "label_sort_order"
+msgstr ""
+
+#. Default: "Startpage"
+#: ./ftw/referencewidget/widget.py:100
+msgid "label_startpage"
+msgstr ""
+
+#. Default: "Total"
+#: ./ftw/referencewidget/widget.py:106
+msgid "label_total"
+msgstr ""
+

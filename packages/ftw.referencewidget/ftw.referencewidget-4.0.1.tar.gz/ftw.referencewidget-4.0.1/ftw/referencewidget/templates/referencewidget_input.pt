@@ -1,0 +1,45 @@
+<tal:html xmlns:tal="http://xml.zope.org/namespaces/tal"
+      xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+      i18n:domain="ftw.referencewidget">
+
+    <div class="referencewidget referencewidgetField">
+        <div class="selected_items">
+            <tal:items repeat="item view/get_items">
+                <input type="hidden" tal:attributes="name view/name;
+                                                     value item/path;
+                                                     data-title item/title" />
+            </tal:items>
+        </div>
+        <div class="reference-widget-app"
+             tal:attributes="name view/name;
+                             data-starturl view/get_start_url;
+                             data-portalpath view/portal_path;
+                             data-fieldname view/name;
+                             data-inputtype view/input_type;
+                             data-selectabletypes view/selectable_types;
+                             data-traversabletypes view/traversable_types;
+                             data-icon-mapping view/icon_mapping;
+                             data-translations view/translations;
+                             data-script-source view/script_resource_url"/>
+
+        <script>
+                var body = document.getElementsByTagName('body')[0];
+                var head = document.getElementsByTagName('head')[0];
+                var url = document.querySelector('.reference-widget-app').getAttribute('data-script-source');
+                var loadScript = function(url) {    
+                    var script = document.createElement('script');
+                    script.type = 'module';
+                    script.id = 'referencewidget-js';
+                    script.src = url;
+                    head.appendChild(script);
+                };
+                if (!document.getElementById('referencewidget-js')) {
+                    loadScript(url);
+                }
+        </script>
+
+        <!-- non js hidden field for testing -->
+        <input type="hidden" tal:attributes="name view/name" />
+    </div>
+
+</tal:html>
