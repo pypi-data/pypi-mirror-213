@@ -1,0 +1,7 @@
+LICENSE
+README.md
+setup.py
+lean_cli.egg-info/PKG-INFO
+lean_cli.egg-info/SOURCES.txt
+lean_cli.egg-info/dependency_links.txt
+lean_cli.egg-info/top_level.txt
