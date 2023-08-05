@@ -1,0 +1,2 @@
+[console_scripts]
+odoo_filter_addons = odoo_filter_addons.main:cli_main

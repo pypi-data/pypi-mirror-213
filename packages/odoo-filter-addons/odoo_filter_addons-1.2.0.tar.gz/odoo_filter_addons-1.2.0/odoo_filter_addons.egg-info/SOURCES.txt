@@ -1,0 +1,12 @@
+README.md
+pyproject.toml
+setup.py
+odoo_filter_addons/__init__.py
+odoo_filter_addons/main.py
+odoo_filter_addons/version.py
+odoo_filter_addons.egg-info/PKG-INFO
+odoo_filter_addons.egg-info/SOURCES.txt
+odoo_filter_addons.egg-info/dependency_links.txt
+odoo_filter_addons.egg-info/entry_points.txt
+odoo_filter_addons.egg-info/requires.txt
+odoo_filter_addons.egg-info/top_level.txt
