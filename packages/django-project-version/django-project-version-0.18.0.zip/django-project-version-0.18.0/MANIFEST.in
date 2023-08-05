@@ -1,0 +1,3 @@
+prune tests*
+recursive-include djversion *.po
+recursive-include djversion *.mo
