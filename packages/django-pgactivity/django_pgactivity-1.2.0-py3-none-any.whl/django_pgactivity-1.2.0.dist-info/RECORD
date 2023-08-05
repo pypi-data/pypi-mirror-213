@@ -1,0 +1,16 @@
+pgactivity/__init__.py,sha256=x6i84NLEw1pfja4L4K3dYRJA0jZWGs_IfOQ_jFuBfPY,266
+pgactivity/config.py,sha256=PiejUgoskANWZGSDQBvRMcG1_9JaRxUec0q_kon9kNg,1641
+pgactivity/contrib.py,sha256=tJv8LZ26GzR-Hvik0twZicK5CbdqMN9eKHPirVZ-Bjc,1171
+pgactivity/core.py,sha256=ILQBN3a7ivT8m03XU1r8CvYKDbXy0KVEVEha0g4WyGc,5072
+pgactivity/management/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pgactivity/management/commands/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pgactivity/management/commands/pgactivity.py,sha256=0_AbUIkhMg0xVW1I9qrwnZ1j4uqnOcnAkiL7K3JHjRA,4305
+pgactivity/middleware.py,sha256=PonQySZUogoagf7B1Or6-aN12xcO-uWH19i08Q4MJRI,308
+pgactivity/models.py,sha256=WFzYGKBZqZPJdtBpjI5s2vya6EOYZwQc-fn2br1lNZw,8577
+pgactivity/runtime.py,sha256=79T11shQwIgIzSFMP5Zfkkz9YS3_sCwbBY-NbiNDUyw,2344
+pgactivity/utils.py,sha256=XgQ4zGGQeApNp7qEXhJaLAdcf2Q6pYihmUwFu3BR3d4,1085
+pgactivity/version.py,sha256=q2SaWHizeeG_-Gk1Ig-e0JEOcfm6mhapF0nMkGUUaGg,155
+django_pgactivity-1.2.0.dist-info/LICENSE,sha256=bOsMPbrECIWYOAqsPawE7zdJ0aT9DbtpSCQQ8mRv0tA,1456
+django_pgactivity-1.2.0.dist-info/METADATA,sha256=5NA4IC3wGEHxceeHKFKQQTLRNI2dW70LOZXQpQ929kM,5477
+django_pgactivity-1.2.0.dist-info/WHEEL,sha256=Zb28QaM1gQi8f4VCBhsUklF61CTlNYfs9YAZn-TOGFk,88
+django_pgactivity-1.2.0.dist-info/RECORD,,
