@@ -1,0 +1,6 @@
+[console_scripts]
+extract_excel = extract_office_content.extract_excel:main
+extract_office_content = extract_office_content.main:main
+extract_ppt = extract_office_content.extract_ppt:main
+extract_word = extract_office_content.extract_word:main
+
