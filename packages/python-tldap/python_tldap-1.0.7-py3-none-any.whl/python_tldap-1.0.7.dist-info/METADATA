@@ -1,0 +1,41 @@
+Metadata-Version: 2.1
+Name: python-tldap
+Version: 1.0.7
+Summary: High level python LDAP Library
+Home-page: https://github.com/Karaage-Cluster/python-tldap/
+License: GPL3+
+Author: Brian May
+Author-email: brian@linuxpenguins.xyz
+Requires-Python: >=3.10,<4.0
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: License :: Other/Proprietary License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Provides-Extra: docs
+Requires-Dist: django ; extra == "docs"
+Requires-Dist: ldap3
+Requires-Dist: passlib
+Requires-Dist: pip
+Requires-Dist: pyasn1
+Requires-Dist: six
+Requires-Dist: sphinx ; extra == "docs"
+Description-Content-Type: text/x-rst
+
+python-tldap
+============
+TLDAP is a high level LDAP library for Python that uses Ecto like models
+to define LDAP schemas that can then be used in an easy way from Python code.
+It also supports fake LDAP transactions, to try and ensure LDAP database
+remains in a consistent state, even if there are errors that cause the
+transaction to fail.
+
+Documentation can be found at http://python-tldap.readthedocs.org/
+
