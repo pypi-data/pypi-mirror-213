@@ -1,0 +1,5 @@
+fastcore
+pydantic
+pyyaml
+
+[dev]
