@@ -1,0 +1,2 @@
+[console_scripts]
+immp = immp.__main__:entrypoint
