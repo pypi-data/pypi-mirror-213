@@ -1,0 +1,13 @@
+recognize/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+recognize/commands/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+recognize/commands/lib/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+recognize/commands/lib/client.py,sha256=b5y7WR_VjFNodsmyHbYzFUWvMkuj9vUGQOMkiYh67nQ,4639
+recognize/commands/lib/entries.py,sha256=g9r207_7NLFUrAveIutHxDQj-tLa9az0vTV4neLznj8,175
+recognize/commands/lib/helpers.py,sha256=R_EoMm1eE-_76sDCeNIEekQIwrFWRWldQKmT8Pdi6WY,2905
+recognize/commands/search.py,sha256=ghbp1FcIE4Nm3S_UEtWl0vFp5vFDZp_V6769DE_nFHM,5225
+recognize/commands/upload.py,sha256=j8v13O9l5AYipszrpJ9cax-fwWWMJZB7pe97pSQGmAY,2784
+recognize/main.py,sha256=3V3JQJG1w8VUE0O2pivtrttXuF2ZtAnWTJWpdjQ_8eQ,713
+recognize-0.1.13.dist-info/METADATA,sha256=0HQ5lejII9Jaku5ZIDoHT8trB4SiDF-sy9Kajm0R33E,2299
+recognize-0.1.13.dist-info/WHEEL,sha256=Zb28QaM1gQi8f4VCBhsUklF61CTlNYfs9YAZn-TOGFk,88
+recognize-0.1.13.dist-info/entry_points.txt,sha256=V449gkvhA_T85zHXxVfFIaop_Oh_9F6ZsBClNPAzsls,48
+recognize-0.1.13.dist-info/RECORD,,
