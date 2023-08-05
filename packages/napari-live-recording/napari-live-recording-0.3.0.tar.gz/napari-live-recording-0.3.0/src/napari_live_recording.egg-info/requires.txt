@@ -1,0 +1,10 @@
+superqt
+numpy
+np_image_buffer
+opencv-python
+opencv-contrib-python
+tifffile
+h5py
+napari
+qtpy
+pymmcore-plus>=0.6.7
