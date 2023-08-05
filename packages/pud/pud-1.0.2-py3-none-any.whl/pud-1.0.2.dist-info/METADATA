@@ -1,0 +1,48 @@
+Metadata-Version: 2.1
+Name: pud
+Version: 1.0.2
+Summary: A command-line tool for navigating directories.
+Home-page: https://github.com/Jedddy/pud
+Author: Jedddy
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: windows-curses (==2.3.1) ; sys_platform == "win32"
+
+
+Pud
+===
+Pud is a mini command-line tool to navigate directories.
+
+Installation
+===
+```
+git clone https://github.com/Jedddy/pud.git
+
+python setup.py install
+```
+
+Usage
+===
+```
+pud [arguments]
+```
+
+Options
+===
+Currently there are 2 options:
+- cursor: The cursor you want to use.
+    ```
+    pud --cursor=">>>"
+    ```
+- no-keep-state: Whether not to keep the state of your cursor after entering/leaving a directory
+    ```
+    pud --no-keep-state
+    ```
+
+
