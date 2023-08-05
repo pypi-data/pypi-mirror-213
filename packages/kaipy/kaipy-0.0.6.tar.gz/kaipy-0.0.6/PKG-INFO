@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: kaipy
+Version: 0.0.6
+Summary: Python software for CGS MAGE
+Author-email: Eric Winter <eric.winter@jhuapl.edu>
+License: MIT
+Keywords: CGS,MAGE,KAIJU
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+
+# Project Kaiju
+Simulation tools for space plasmas using fluid and particle models.
+
+To build:
+Create a build folder.
+From inside the build folder, call cmake on the base kaiju directory.
+From inside the build folder, call "make" to build the application.
+
+To use Python tools:
+Assuming $KAIJUDIR is base installation directory, add $KAIJUDIR/scripts to $PATH and $KAIJUDIR to $PYTHONPATH.  
+
+For help, see the wiki at
+https://bitbucket.org/aplkaiju/kaiju/wiki/Home
