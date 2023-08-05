@@ -1,0 +1,16 @@
+UzEduCorpus/UzEduCorpus.py,sha256=tRaJcC5Rtnx4iVGn_IaZr8ZjzVgZPyuMMzuN9ceGpbE,2729
+UzEduCorpus/__init__.py,sha256=6hPCQBhG2Xrai6tsgqFq1RbLwpKyzZBcZrmw6lYBiHo,28
+UzEduCorpus/grade_1.csv,sha256=fhExQTGKbgGOIe7iRbp9T6PnbpgmkqdS8l4BbU0zpxg,84507
+UzEduCorpus/grade_2.csv,sha256=EpyCsu3TQGqIi7HuuEs_6z0upxMB9miPJW-lgkEwwgQ,163146
+UzEduCorpus/grade_3.csv,sha256=MXPZblh6EOgmpPnnxMEEfO1V3Be0m7S6wrKV-gbbRt0,236007
+UzEduCorpus/grade_4.csv,sha256=A8RcvUuf2jsH764CeT4YqkhrO88V0IEtKJfR775lkHo,279490
+UzEduCorpus/grade_5.csv,sha256=zQgDjBGu7f1dC4naus16ZJFaxR-Z8ADpHBYwVjI3EmQ,486521
+UzEduCorpus/grade_6.csv,sha256=wN35DO8PLRGwfHkgLB7CyQeuS00oFclRWB_50F3Px5g,440184
+UzEduCorpus/grade_7.csv,sha256=oUTyTh15yg8cSkeun4fZ9JcApBh7QHrza6zXSg3d7EE,396530
+UzEduCorpus/grade_8.csv,sha256=-g9NYZI76NKolz4LgIKSPT6pd_jiXblSbbKUJ0f5EZM,315275
+UzEduCorpus/grade_9.csv,sha256=pqMOMLPw7KcH92sJvkdfRp5h1ekIPIVvGUGFyMEvLxs,146614
+UzEduCorpus-0.0.4.dist-info/LICENSE,sha256=6kbiFSfobTZ7beWiKnHpN902HgBx-Jzgcme0SvKqhKY,1091
+UzEduCorpus-0.0.4.dist-info/METADATA,sha256=OiyK_EROLuV2QBCTxjniRLG1-ciNe14oUugAzkJwIuI,1257
+UzEduCorpus-0.0.4.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+UzEduCorpus-0.0.4.dist-info/top_level.txt,sha256=wrfKf18igcZWtj5khvzXPDA4KP8IFwBCClkwgp5SQHA,12
+UzEduCorpus-0.0.4.dist-info/RECORD,,
