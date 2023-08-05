@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+src/ClosedAPI/__init__.py
+src/ClosedAPI.egg-info/PKG-INFO
+src/ClosedAPI.egg-info/SOURCES.txt
+src/ClosedAPI.egg-info/dependency_links.txt
+src/ClosedAPI.egg-info/requires.txt
+src/ClosedAPI.egg-info/top_level.txt
