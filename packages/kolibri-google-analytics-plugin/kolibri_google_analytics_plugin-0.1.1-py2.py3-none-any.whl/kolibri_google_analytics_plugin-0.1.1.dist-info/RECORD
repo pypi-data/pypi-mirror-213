@@ -1,0 +1,10 @@
+kolibri_google_analytics_plugin/__init__.py,sha256=ls1camlIoMxEZz9gSkZ1OJo-MXqHWwKPtdPbZJmwp7E,22
+kolibri_google_analytics_plugin/kolibri_plugin.py,sha256=wMlN0wedodWF8OGnpMIqUC4BP9TFveeiuRqxhbbzJ6M,1343
+kolibri_google_analytics_plugin/options.py,sha256=tBXbapmaiB5X6SESYvxRX9lgyXtOzq1MFfiutSoJwRE,352
+kolibri_google_analytics_plugin/templates/head_snippet.html,sha256=-zxeimCUJ6bNEmsKW6QsbONwlTlY4xKurVgLPiGz_4s,379
+kolibri_google_analytics_plugin-0.1.1.dist-info/LICENSE,sha256=_5rlQk2xCHr-vyTU6Q-hO7P8Lr1g6cYtvTtVIEgZuXg,1092
+kolibri_google_analytics_plugin-0.1.1.dist-info/METADATA,sha256=D3kxVgyFcsnuZKP2ZIc_GqvNV4x2N7GYCa0wDn4VsQ0,979
+kolibri_google_analytics_plugin-0.1.1.dist-info/WHEEL,sha256=bb2Ot9scclHKMOLDEHY6B2sicWOgugjFKaJsT7vwMQo,110
+kolibri_google_analytics_plugin-0.1.1.dist-info/entry_points.txt,sha256=1_xSFzt4NiDNd9wONk3qzITV27BEBXBamrP4C0MqX7c,84
+kolibri_google_analytics_plugin-0.1.1.dist-info/top_level.txt,sha256=Hdg1rjeljmsVc-dYn9Si3xvhsGeX96WnU4d3tmpup-Y,32
+kolibri_google_analytics_plugin-0.1.1.dist-info/RECORD,,
