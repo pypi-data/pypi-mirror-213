@@ -1,0 +1,7 @@
+include ionicons_python/icons/*.svg
+include ionicons_python/extra_icons/*.svg
+include LICENSE
+include README.md
+include RELEASE.md
+include CONTACT.md
+include AUTHORS.md
