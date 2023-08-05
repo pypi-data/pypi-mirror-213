@@ -1,0 +1,2 @@
+[console_scripts]
+MINARI_airflow_utils_pip-ping = MINARI_airflow_utils_pip:ping
