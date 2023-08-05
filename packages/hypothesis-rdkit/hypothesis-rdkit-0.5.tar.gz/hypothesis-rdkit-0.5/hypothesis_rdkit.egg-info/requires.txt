@@ -1,0 +1,8 @@
+hypothesis
+
+[dev]
+black
+isort
+
+[test]
+pytest
