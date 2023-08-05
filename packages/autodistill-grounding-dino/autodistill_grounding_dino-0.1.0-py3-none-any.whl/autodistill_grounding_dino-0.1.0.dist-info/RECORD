@@ -1,0 +1,8 @@
+autodistill_grounding_dino/__init__.py,sha256=b6jFoOb3rbn7wKKO2SL9CFlsahM_ON-EjH97OpikAHk,97
+autodistill_grounding_dino/grounding_dino_model.py,sha256=NnR5XNKiP3jYmWoM-dZWs7m0e638QWPmtEUiae5DwPE,1840
+autodistill_grounding_dino/helpers.py,sha256=-d1FKgWcS_pYZukF7wOZERs0DK3qYHEfSpFabheJZLg,3531
+autodistill_grounding_dino-0.1.0.dist-info/LICENSE,sha256=QwcOLU5TJoTeUhuIXzhdCEEDDvorGiC6-3YTOl4TecE,11356
+autodistill_grounding_dino-0.1.0.dist-info/METADATA,sha256=Yk0ER-81MxlG2O1S4Qnzkfy12nFX6RxDKIZopuBtYGA,2792
+autodistill_grounding_dino-0.1.0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+autodistill_grounding_dino-0.1.0.dist-info/top_level.txt,sha256=P28QnVwFy4fzWdejQDvyFjcAYbVLVvdCgtgRW4gJ1Kc,27
+autodistill_grounding_dino-0.1.0.dist-info/RECORD,,
