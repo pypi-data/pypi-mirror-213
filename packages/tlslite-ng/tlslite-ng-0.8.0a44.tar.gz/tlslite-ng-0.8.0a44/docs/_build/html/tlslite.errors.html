@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>tlslite.errors module &mdash; tlslite-ng 0.8.0-alpha44 documentation</title>
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="_static/doctools.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="tlslite.extensions module" href="tlslite.extensions.html" />
+    <link rel="prev" title="tlslite.dh module" href="tlslite.dh.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="index.html" class="icon icon-home"> tlslite-ng
+          </a>
+              <div class="version">
+                0.8
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="modules.html">tlslite</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="tlslite.html">tlslite package</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="tlslite.html#subpackages">Subpackages</a></li>
+<li class="toctree-l3 current"><a class="reference internal" href="tlslite.html#submodules">Submodules</a><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="tlslite.api.html">tlslite.api module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tlslite.basedb.html">tlslite.basedb module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tlslite.bufferedsocket.html">tlslite.bufferedsocket module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tlslite.checker.html">tlslite.checker module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tlslite.constants.html">tlslite.constants module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tlslite.defragmenter.html">tlslite.defragmenter module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tlslite.dh.html">tlslite.dh module</a></li>
+<li class="toctree-l4 current"><a class="current reference internal" href="#">tlslite.errors module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tlslite.extensions.html">tlslite.extensions module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tlslite.handshakehashes.html">tlslite.handshakehashes module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tlslite.handshakehelpers.html">tlslite.handshakehelpers module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tlslite.handshakesettings.html">tlslite.handshakesettings module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tlslite.keyexchange.html">tlslite.keyexchange module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tlslite.mathtls.html">tlslite.mathtls module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tlslite.messages.html">tlslite.messages module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tlslite.messagesocket.html">tlslite.messagesocket module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tlslite.recordlayer.html">tlslite.recordlayer module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tlslite.session.html">tlslite.session module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tlslite.sessioncache.html">tlslite.sessioncache module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tlslite.tlsconnection.html">tlslite.tlsconnection module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tlslite.tlsrecordlayer.html">tlslite.tlsrecordlayer module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tlslite.verifierdb.html">tlslite.verifierdb module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tlslite.x509.html">tlslite.x509 module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tlslite.x509certchain.html">tlslite.x509certchain module</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">tlslite-ng</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+          <li><a href="modules.html">tlslite</a> &raquo;</li>
+          <li><a href="tlslite.html">tlslite package</a> &raquo;</li>
+      <li>tlslite.errors module</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/tlslite.errors.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="module-tlslite.errors">
+<span id="tlslite-errors-module"></span><h1>tlslite.errors module<a class="headerlink" href="#module-tlslite.errors" title="Permalink to this heading"></a></h1>
+<p>Exception classes.</p>
+<dl class="py exception">
+<dt class="sig sig-object py" id="tlslite.errors.BaseTLSException">
+<em class="property"><span class="pre">exception</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">tlslite.errors.</span></span><span class="sig-name descname"><span class="pre">BaseTLSException</span></span><a class="headerlink" href="#tlslite.errors.BaseTLSException" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/exceptions.html#Exception" title="(in Python v3.11)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Exception</span></code></a></p>
+<p>Metaclass for TLS Lite exceptions.</p>
+<p>Look to <a class="reference internal" href="#tlslite.errors.TLSError" title="tlslite.errors.TLSError"><code class="xref py py-class docutils literal notranslate"><span class="pre">tlslite.errors.TLSError</span></code></a> for exceptions that should be
+caught by tlslite
+consumers</p>
+</dd></dl>
+
+<dl class="py exception">
+<dt class="sig sig-object py" id="tlslite.errors.EncodingError">
+<em class="property"><span class="pre">exception</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">tlslite.errors.</span></span><span class="sig-name descname"><span class="pre">EncodingError</span></span><a class="headerlink" href="#tlslite.errors.EncodingError" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <a class="reference internal" href="#tlslite.errors.EncryptionError" title="tlslite.errors.EncryptionError"><code class="xref py py-class docutils literal notranslate"><span class="pre">EncryptionError</span></code></a></p>
+<p>An error appeared while encoding</p>
+</dd></dl>
+
+<dl class="py exception">
+<dt class="sig sig-object py" id="tlslite.errors.EncryptionError">
+<em class="property"><span class="pre">exception</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">tlslite.errors.</span></span><span class="sig-name descname"><span class="pre">EncryptionError</span></span><a class="headerlink" href="#tlslite.errors.EncryptionError" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <a class="reference internal" href="#tlslite.errors.BaseTLSException" title="tlslite.errors.BaseTLSException"><code class="xref py py-class docutils literal notranslate"><span class="pre">BaseTLSException</span></code></a></p>
+<p>Base class for exceptions thrown while encrypting.</p>
+</dd></dl>
+
+<dl class="py exception">
+<dt class="sig sig-object py" id="tlslite.errors.InvalidSignature">
+<em class="property"><span class="pre">exception</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">tlslite.errors.</span></span><span class="sig-name descname"><span class="pre">InvalidSignature</span></span><a class="headerlink" href="#tlslite.errors.InvalidSignature" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <a class="reference internal" href="#tlslite.errors.EncryptionError" title="tlslite.errors.EncryptionError"><code class="xref py py-class docutils literal notranslate"><span class="pre">EncryptionError</span></code></a></p>
+<p>Verification function found invalid signature</p>
+</dd></dl>
+
+<dl class="py exception">
+<dt class="sig sig-object py" id="tlslite.errors.MaskTooLongError">
+<em class="property"><span class="pre">exception</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">tlslite.errors.</span></span><span class="sig-name descname"><span class="pre">MaskTooLongError</span></span><a class="headerlink" href="#tlslite.errors.MaskTooLongError" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <a class="reference internal" href="#tlslite.errors.EncryptionError" title="tlslite.errors.EncryptionError"><code class="xref py py-class docutils literal notranslate"><span class="pre">EncryptionError</span></code></a></p>
+<p>The maskLen passed into function is too high</p>
+</dd></dl>
+
+<dl class="py exception">
+<dt class="sig sig-object py" id="tlslite.errors.MessageTooLongError">
+<em class="property"><span class="pre">exception</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">tlslite.errors.</span></span><span class="sig-name descname"><span class="pre">MessageTooLongError</span></span><a class="headerlink" href="#tlslite.errors.MessageTooLongError" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <a class="reference internal" href="#tlslite.errors.EncryptionError" title="tlslite.errors.EncryptionError"><code class="xref py py-class docutils literal notranslate"><span class="pre">EncryptionError</span></code></a></p>
+<p>The message passed into function is too long</p>
+</dd></dl>
+
+<dl class="py exception">
+<dt class="sig sig-object py" id="tlslite.errors.TLSAbruptCloseError">
+<em class="property"><span class="pre">exception</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">tlslite.errors.</span></span><span class="sig-name descname"><span class="pre">TLSAbruptCloseError</span></span><a class="headerlink" href="#tlslite.errors.TLSAbruptCloseError" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <a class="reference internal" href="#tlslite.errors.TLSError" title="tlslite.errors.TLSError"><code class="xref py py-class docutils literal notranslate"><span class="pre">TLSError</span></code></a></p>
+<p>The socket was closed without a proper TLS shutdown.</p>
+<p>The TLS specification mandates that an alert of some sort
+must be sent before the underlying socket is closed.  If the socket
+is closed without this, it could signify that an attacker is trying
+to truncate the connection.  It could also signify a misbehaving
+TLS implementation, or a random network failure.</p>
+</dd></dl>
+
+<dl class="py exception">
+<dt class="sig sig-object py" id="tlslite.errors.TLSAlert">
+<em class="property"><span class="pre">exception</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">tlslite.errors.</span></span><span class="sig-name descname"><span class="pre">TLSAlert</span></span><a class="headerlink" href="#tlslite.errors.TLSAlert" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <a class="reference internal" href="#tlslite.errors.TLSError" title="tlslite.errors.TLSError"><code class="xref py py-class docutils literal notranslate"><span class="pre">TLSError</span></code></a></p>
+<p>A TLS alert has been signalled.</p>
+</dd></dl>
+
+<dl class="py exception">
+<dt class="sig sig-object py" id="tlslite.errors.TLSAuthenticationError">
+<em class="property"><span class="pre">exception</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">tlslite.errors.</span></span><span class="sig-name descname"><span class="pre">TLSAuthenticationError</span></span><a class="headerlink" href="#tlslite.errors.TLSAuthenticationError" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <a class="reference internal" href="#tlslite.errors.TLSError" title="tlslite.errors.TLSError"><code class="xref py py-class docutils literal notranslate"><span class="pre">TLSError</span></code></a></p>
+<p>The handshake succeeded, but the other party’s authentication
+was inadequate.</p>
+<p>This exception will only be raised when a
+<code class="xref py py-class docutils literal notranslate"><span class="pre">tlslite.Checker.Checker</span></code> has been passed to a handshake
+function.
+The Checker will be invoked once the handshake completes, and if
+the Checker objects to how the other party authenticated, a
+subclass of this exception will be raised.</p>
+</dd></dl>
+
+<dl class="py exception">
+<dt class="sig sig-object py" id="tlslite.errors.TLSAuthenticationTypeError">
+<em class="property"><span class="pre">exception</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">tlslite.errors.</span></span><span class="sig-name descname"><span class="pre">TLSAuthenticationTypeError</span></span><a class="headerlink" href="#tlslite.errors.TLSAuthenticationTypeError" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <a class="reference internal" href="#tlslite.errors.TLSAuthenticationError" title="tlslite.errors.TLSAuthenticationError"><code class="xref py py-class docutils literal notranslate"><span class="pre">TLSAuthenticationError</span></code></a></p>
+<p>The Checker was expecting the other party to authenticate with a
+different type of certificate chain.</p>
+</dd></dl>
+
+<dl class="py exception">
+<dt class="sig sig-object py" id="tlslite.errors.TLSAuthorizationError">
+<em class="property"><span class="pre">exception</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">tlslite.errors.</span></span><span class="sig-name descname"><span class="pre">TLSAuthorizationError</span></span><a class="headerlink" href="#tlslite.errors.TLSAuthorizationError" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <a class="reference internal" href="#tlslite.errors.TLSAuthenticationError" title="tlslite.errors.TLSAuthenticationError"><code class="xref py py-class docutils literal notranslate"><span class="pre">TLSAuthenticationError</span></code></a></p>
+<p>The Checker was expecting the other party to authenticate with a
+certificate chain that has a different authorization.</p>
+</dd></dl>
+
+<dl class="py exception">
+<dt class="sig sig-object py" id="tlslite.errors.TLSBadRecordMAC">
+<em class="property"><span class="pre">exception</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">tlslite.errors.</span></span><span class="sig-name descname"><span class="pre">TLSBadRecordMAC</span></span><a class="headerlink" href="#tlslite.errors.TLSBadRecordMAC" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <a class="reference internal" href="#tlslite.errors.TLSProtocolException" title="tlslite.errors.TLSProtocolException"><code class="xref py py-class docutils literal notranslate"><span class="pre">TLSProtocolException</span></code></a></p>
+<p>Bad MAC (or padding in case of mac-then-encrypt)</p>
+</dd></dl>
+
+<dl class="py exception">
+<dt class="sig sig-object py" id="tlslite.errors.TLSClosedConnectionError">
+<em class="property"><span class="pre">exception</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">tlslite.errors.</span></span><span class="sig-name descname"><span class="pre">TLSClosedConnectionError</span></span><a class="headerlink" href="#tlslite.errors.TLSClosedConnectionError" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <a class="reference internal" href="#tlslite.errors.TLSError" title="tlslite.errors.TLSError"><code class="xref py py-class docutils literal notranslate"><span class="pre">TLSError</span></code></a>, <a class="reference external" href="https://docs.python.org/3/library/exceptions.html#OSError" title="(in Python v3.11)"><code class="xref py py-class docutils literal notranslate"><span class="pre">OSError</span></code></a></p>
+<p>An attempt was made to use the connection after it was closed.</p>
+</dd></dl>
+
+<dl class="py exception">
+<dt class="sig sig-object py" id="tlslite.errors.TLSDecodeError">
+<em class="property"><span class="pre">exception</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">tlslite.errors.</span></span><span class="sig-name descname"><span class="pre">TLSDecodeError</span></span><a class="headerlink" href="#tlslite.errors.TLSDecodeError" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <a class="reference internal" href="#tlslite.errors.TLSProtocolException" title="tlslite.errors.TLSProtocolException"><code class="xref py py-class docutils literal notranslate"><span class="pre">TLSProtocolException</span></code></a></p>
+<p>The received message encoding does not match specification.</p>
+</dd></dl>
+
+<dl class="py exception">
+<dt class="sig sig-object py" id="tlslite.errors.TLSDecryptionFailed">
+<em class="property"><span class="pre">exception</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">tlslite.errors.</span></span><span class="sig-name descname"><span class="pre">TLSDecryptionFailed</span></span><a class="headerlink" href="#tlslite.errors.TLSDecryptionFailed" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <a class="reference internal" href="#tlslite.errors.TLSProtocolException" title="tlslite.errors.TLSProtocolException"><code class="xref py py-class docutils literal notranslate"><span class="pre">TLSProtocolException</span></code></a></p>
+<p>Decryption of data was unsuccessful</p>
+</dd></dl>
+
+<dl class="py exception">
+<dt class="sig sig-object py" id="tlslite.errors.TLSError">
+<em class="property"><span class="pre">exception</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">tlslite.errors.</span></span><span class="sig-name descname"><span class="pre">TLSError</span></span><a class="headerlink" href="#tlslite.errors.TLSError" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <a class="reference internal" href="#tlslite.errors.BaseTLSException" title="tlslite.errors.BaseTLSException"><code class="xref py py-class docutils literal notranslate"><span class="pre">BaseTLSException</span></code></a></p>
+<p>Base class for all TLS Lite exceptions.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="tlslite.errors.TLSError.__str__">
+<span class="sig-name descname"><span class="pre">__str__</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tlslite.errors.TLSError.__str__" title="Permalink to this definition"></a></dt>
+<dd><p>At least print out the Exception time for str(…).</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py exception">
+<dt class="sig sig-object py" id="tlslite.errors.TLSFaultError">
+<em class="property"><span class="pre">exception</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">tlslite.errors.</span></span><span class="sig-name descname"><span class="pre">TLSFaultError</span></span><a class="headerlink" href="#tlslite.errors.TLSFaultError" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <a class="reference internal" href="#tlslite.errors.TLSError" title="tlslite.errors.TLSError"><code class="xref py py-class docutils literal notranslate"><span class="pre">TLSError</span></code></a></p>
+<p>The other party responded incorrectly to an induced fault.</p>
+<p>This exception will only occur during fault testing, when a
+<a class="reference internal" href="tlslite.tlsconnection.html#tlslite.tlsconnection.TLSConnection" title="tlslite.tlsconnection.TLSConnection"><code class="xref py py-class docutils literal notranslate"><span class="pre">tlslite.tlsconnection.TLSConnection</span></code></a>’s fault variable is
+set to induce some sort of
+faulty behavior, and the other party doesn’t respond appropriately.</p>
+</dd></dl>
+
+<dl class="py exception">
+<dt class="sig sig-object py" id="tlslite.errors.TLSFingerprintError">
+<em class="property"><span class="pre">exception</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">tlslite.errors.</span></span><span class="sig-name descname"><span class="pre">TLSFingerprintError</span></span><a class="headerlink" href="#tlslite.errors.TLSFingerprintError" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <a class="reference internal" href="#tlslite.errors.TLSAuthenticationError" title="tlslite.errors.TLSAuthenticationError"><code class="xref py py-class docutils literal notranslate"><span class="pre">TLSAuthenticationError</span></code></a></p>
+<p>The Checker was expecting the other party to authenticate with a
+certificate chain that matches a different fingerprint.</p>
+</dd></dl>
+
+<dl class="py exception">
+<dt class="sig sig-object py" id="tlslite.errors.TLSHandshakeFailure">
+<em class="property"><span class="pre">exception</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">tlslite.errors.</span></span><span class="sig-name descname"><span class="pre">TLSHandshakeFailure</span></span><a class="headerlink" href="#tlslite.errors.TLSHandshakeFailure" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <a class="reference internal" href="#tlslite.errors.TLSProtocolException" title="tlslite.errors.TLSProtocolException"><code class="xref py py-class docutils literal notranslate"><span class="pre">TLSProtocolException</span></code></a></p>
+<p>Could not find acceptable set of handshake parameters</p>
+</dd></dl>
+
+<dl class="py exception">
+<dt class="sig sig-object py" id="tlslite.errors.TLSIllegalParameterException">
+<em class="property"><span class="pre">exception</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">tlslite.errors.</span></span><span class="sig-name descname"><span class="pre">TLSIllegalParameterException</span></span><a class="headerlink" href="#tlslite.errors.TLSIllegalParameterException" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <a class="reference internal" href="#tlslite.errors.TLSProtocolException" title="tlslite.errors.TLSProtocolException"><code class="xref py py-class docutils literal notranslate"><span class="pre">TLSProtocolException</span></code></a></p>
+<p>Parameters specified in message were incorrect or invalid</p>
+</dd></dl>
+
+<dl class="py exception">
+<dt class="sig sig-object py" id="tlslite.errors.TLSInsufficientSecurity">
+<em class="property"><span class="pre">exception</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">tlslite.errors.</span></span><span class="sig-name descname"><span class="pre">TLSInsufficientSecurity</span></span><a class="headerlink" href="#tlslite.errors.TLSInsufficientSecurity" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <a class="reference internal" href="#tlslite.errors.TLSProtocolException" title="tlslite.errors.TLSProtocolException"><code class="xref py py-class docutils literal notranslate"><span class="pre">TLSProtocolException</span></code></a></p>
+<p>Parameters selected by user are too weak</p>
+</dd></dl>
+
+<dl class="py exception">
+<dt class="sig sig-object py" id="tlslite.errors.TLSInternalError">
+<em class="property"><span class="pre">exception</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">tlslite.errors.</span></span><span class="sig-name descname"><span class="pre">TLSInternalError</span></span><a class="headerlink" href="#tlslite.errors.TLSInternalError" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <a class="reference internal" href="#tlslite.errors.TLSError" title="tlslite.errors.TLSError"><code class="xref py py-class docutils literal notranslate"><span class="pre">TLSError</span></code></a></p>
+<p>The internal state of object is unexpected or invalid.</p>
+<p>Caused by incorrect use of API.</p>
+</dd></dl>
+
+<dl class="py exception">
+<dt class="sig sig-object py" id="tlslite.errors.TLSLocalAlert">
+<em class="property"><span class="pre">exception</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">tlslite.errors.</span></span><span class="sig-name descname"><span class="pre">TLSLocalAlert</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">alert</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">message</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tlslite.errors.TLSLocalAlert" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <a class="reference internal" href="#tlslite.errors.TLSAlert" title="tlslite.errors.TLSAlert"><code class="xref py py-class docutils literal notranslate"><span class="pre">TLSAlert</span></code></a></p>
+<p>A TLS alert has been signalled by the local implementation.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Variables<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>description</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.11)"><em>int</em></a>) – Set to one of the constants in
+<a class="reference internal" href="tlslite.constants.html#tlslite.constants.AlertDescription" title="tlslite.constants.AlertDescription"><code class="xref py py-class docutils literal notranslate"><span class="pre">tlslite.constants.AlertDescription</span></code></a></p></li>
+<li><p><strong>level</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.11)"><em>int</em></a>) – Set to one of the constants in
+<a class="reference internal" href="tlslite.constants.html#tlslite.constants.AlertLevel" title="tlslite.constants.AlertLevel"><code class="xref py py-class docutils literal notranslate"><span class="pre">tlslite.constants.AlertLevel</span></code></a></p></li>
+<li><p><strong>message</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.11)"><em>str</em></a>) – Description of what went wrong.</p></li>
+</ul>
+</dd>
+</dl>
+<dl class="py method">
+<dt class="sig sig-object py" id="tlslite.errors.TLSLocalAlert.__init__">
+<span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">alert</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">message</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tlslite.errors.TLSLocalAlert.__init__" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tlslite.errors.TLSLocalAlert.__str__">
+<span class="sig-name descname"><span class="pre">__str__</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tlslite.errors.TLSLocalAlert.__str__" title="Permalink to this definition"></a></dt>
+<dd><p>At least print out the Exception time for str(…).</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py exception">
+<dt class="sig sig-object py" id="tlslite.errors.TLSNoAuthenticationError">
+<em class="property"><span class="pre">exception</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">tlslite.errors.</span></span><span class="sig-name descname"><span class="pre">TLSNoAuthenticationError</span></span><a class="headerlink" href="#tlslite.errors.TLSNoAuthenticationError" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <a class="reference internal" href="#tlslite.errors.TLSAuthenticationError" title="tlslite.errors.TLSAuthenticationError"><code class="xref py py-class docutils literal notranslate"><span class="pre">TLSAuthenticationError</span></code></a></p>
+<p>The Checker was expecting the other party to authenticate with a
+certificate chain, but this did not occur.</p>
+</dd></dl>
+
+<dl class="py exception">
+<dt class="sig sig-object py" id="tlslite.errors.TLSProtocolException">
+<em class="property"><span class="pre">exception</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">tlslite.errors.</span></span><span class="sig-name descname"><span class="pre">TLSProtocolException</span></span><a class="headerlink" href="#tlslite.errors.TLSProtocolException" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <a class="reference internal" href="#tlslite.errors.BaseTLSException" title="tlslite.errors.BaseTLSException"><code class="xref py py-class docutils literal notranslate"><span class="pre">BaseTLSException</span></code></a></p>
+<p>Exceptions used internally for handling errors in received messages</p>
+</dd></dl>
+
+<dl class="py exception">
+<dt class="sig sig-object py" id="tlslite.errors.TLSRecordOverflow">
+<em class="property"><span class="pre">exception</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">tlslite.errors.</span></span><span class="sig-name descname"><span class="pre">TLSRecordOverflow</span></span><a class="headerlink" href="#tlslite.errors.TLSRecordOverflow" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <a class="reference internal" href="#tlslite.errors.TLSProtocolException" title="tlslite.errors.TLSProtocolException"><code class="xref py py-class docutils literal notranslate"><span class="pre">TLSProtocolException</span></code></a></p>
+<p>The received record size was too big</p>
+</dd></dl>
+
+<dl class="py exception">
+<dt class="sig sig-object py" id="tlslite.errors.TLSRemoteAlert">
+<em class="property"><span class="pre">exception</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">tlslite.errors.</span></span><span class="sig-name descname"><span class="pre">TLSRemoteAlert</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">alert</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tlslite.errors.TLSRemoteAlert" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <a class="reference internal" href="#tlslite.errors.TLSAlert" title="tlslite.errors.TLSAlert"><code class="xref py py-class docutils literal notranslate"><span class="pre">TLSAlert</span></code></a></p>
+<p>A TLS alert has been signalled by the remote implementation.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Variables<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>description</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.11)"><em>int</em></a>) – Set to one of the constants in
+<a class="reference internal" href="tlslite.constants.html#tlslite.constants.AlertDescription" title="tlslite.constants.AlertDescription"><code class="xref py py-class docutils literal notranslate"><span class="pre">tlslite.constants.AlertDescription</span></code></a></p></li>
+<li><p><strong>level</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.11)"><em>int</em></a>) – Set to one of the constants in
+<a class="reference internal" href="tlslite.constants.html#tlslite.constants.AlertLevel" title="tlslite.constants.AlertLevel"><code class="xref py py-class docutils literal notranslate"><span class="pre">tlslite.constants.AlertLevel</span></code></a></p></li>
+</ul>
+</dd>
+</dl>
+<dl class="py method">
+<dt class="sig sig-object py" id="tlslite.errors.TLSRemoteAlert.__init__">
+<span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">alert</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tlslite.errors.TLSRemoteAlert.__init__" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tlslite.errors.TLSRemoteAlert.__str__">
+<span class="sig-name descname"><span class="pre">__str__</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tlslite.errors.TLSRemoteAlert.__str__" title="Permalink to this definition"></a></dt>
+<dd><p>At least print out the Exception time for str(…).</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py exception">
+<dt class="sig sig-object py" id="tlslite.errors.TLSUnexpectedMessage">
+<em class="property"><span class="pre">exception</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">tlslite.errors.</span></span><span class="sig-name descname"><span class="pre">TLSUnexpectedMessage</span></span><a class="headerlink" href="#tlslite.errors.TLSUnexpectedMessage" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <a class="reference internal" href="#tlslite.errors.TLSProtocolException" title="tlslite.errors.TLSProtocolException"><code class="xref py py-class docutils literal notranslate"><span class="pre">TLSProtocolException</span></code></a></p>
+<p>The received message was unexpected or parsing of Inner Plaintext
+failed</p>
+</dd></dl>
+
+<dl class="py exception">
+<dt class="sig sig-object py" id="tlslite.errors.TLSUnknownPSKIdentity">
+<em class="property"><span class="pre">exception</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">tlslite.errors.</span></span><span class="sig-name descname"><span class="pre">TLSUnknownPSKIdentity</span></span><a class="headerlink" href="#tlslite.errors.TLSUnknownPSKIdentity" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <a class="reference internal" href="#tlslite.errors.TLSProtocolException" title="tlslite.errors.TLSProtocolException"><code class="xref py py-class docutils literal notranslate"><span class="pre">TLSProtocolException</span></code></a></p>
+<p>The PSK or SRP identity is unknown</p>
+</dd></dl>
+
+<dl class="py exception">
+<dt class="sig sig-object py" id="tlslite.errors.TLSUnsupportedError">
+<em class="property"><span class="pre">exception</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">tlslite.errors.</span></span><span class="sig-name descname"><span class="pre">TLSUnsupportedError</span></span><a class="headerlink" href="#tlslite.errors.TLSUnsupportedError" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <a class="reference internal" href="#tlslite.errors.TLSError" title="tlslite.errors.TLSError"><code class="xref py py-class docutils literal notranslate"><span class="pre">TLSError</span></code></a></p>
+<p>The implementation doesn’t support the requested (or required)
+capabilities.</p>
+</dd></dl>
+
+<dl class="py exception">
+<dt class="sig sig-object py" id="tlslite.errors.TLSValidationError">
+<em class="property"><span class="pre">exception</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">tlslite.errors.</span></span><span class="sig-name descname"><span class="pre">TLSValidationError</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">msg</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">info</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tlslite.errors.TLSValidationError" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <a class="reference internal" href="#tlslite.errors.TLSAuthenticationError" title="tlslite.errors.TLSAuthenticationError"><code class="xref py py-class docutils literal notranslate"><span class="pre">TLSAuthenticationError</span></code></a></p>
+<p>The Checker has determined that the other party’s certificate
+chain is invalid.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="tlslite.errors.TLSValidationError.__init__">
+<span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">msg</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">info</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tlslite.errors.TLSValidationError.__init__" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py exception">
+<dt class="sig sig-object py" id="tlslite.errors.UnknownRSAType">
+<em class="property"><span class="pre">exception</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">tlslite.errors.</span></span><span class="sig-name descname"><span class="pre">UnknownRSAType</span></span><a class="headerlink" href="#tlslite.errors.UnknownRSAType" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <a class="reference internal" href="#tlslite.errors.EncryptionError" title="tlslite.errors.EncryptionError"><code class="xref py py-class docutils literal notranslate"><span class="pre">EncryptionError</span></code></a></p>
+<p>Unknown RSA algorithm type passed</p>
+</dd></dl>
+
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="tlslite.dh.html" class="btn btn-neutral float-left" title="tlslite.dh module" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="tlslite.extensions.html" class="btn btn-neutral float-right" title="tlslite.extensions module" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2023, Hubert Kario.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

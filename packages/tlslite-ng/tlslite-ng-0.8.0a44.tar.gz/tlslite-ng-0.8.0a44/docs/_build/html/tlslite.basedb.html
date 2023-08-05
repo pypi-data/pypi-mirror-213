@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>tlslite.basedb module &mdash; tlslite-ng 0.8.0-alpha44 documentation</title>
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="_static/doctools.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="tlslite.bufferedsocket module" href="tlslite.bufferedsocket.html" />
+    <link rel="prev" title="tlslite.api module" href="tlslite.api.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="index.html" class="icon icon-home"> tlslite-ng
+          </a>
+              <div class="version">
+                0.8
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="modules.html">tlslite</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="tlslite.html">tlslite package</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="tlslite.html#subpackages">Subpackages</a></li>
+<li class="toctree-l3 current"><a class="reference internal" href="tlslite.html#submodules">Submodules</a><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="tlslite.api.html">tlslite.api module</a></li>
+<li class="toctree-l4 current"><a class="current reference internal" href="#">tlslite.basedb module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tlslite.bufferedsocket.html">tlslite.bufferedsocket module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tlslite.checker.html">tlslite.checker module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tlslite.constants.html">tlslite.constants module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tlslite.defragmenter.html">tlslite.defragmenter module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tlslite.dh.html">tlslite.dh module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tlslite.errors.html">tlslite.errors module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tlslite.extensions.html">tlslite.extensions module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tlslite.handshakehashes.html">tlslite.handshakehashes module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tlslite.handshakehelpers.html">tlslite.handshakehelpers module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tlslite.handshakesettings.html">tlslite.handshakesettings module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tlslite.keyexchange.html">tlslite.keyexchange module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tlslite.mathtls.html">tlslite.mathtls module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tlslite.messages.html">tlslite.messages module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tlslite.messagesocket.html">tlslite.messagesocket module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tlslite.recordlayer.html">tlslite.recordlayer module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tlslite.session.html">tlslite.session module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tlslite.sessioncache.html">tlslite.sessioncache module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tlslite.tlsconnection.html">tlslite.tlsconnection module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tlslite.tlsrecordlayer.html">tlslite.tlsrecordlayer module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tlslite.verifierdb.html">tlslite.verifierdb module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tlslite.x509.html">tlslite.x509 module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tlslite.x509certchain.html">tlslite.x509certchain module</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">tlslite-ng</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+          <li><a href="modules.html">tlslite</a> &raquo;</li>
+          <li><a href="tlslite.html">tlslite package</a> &raquo;</li>
+      <li>tlslite.basedb module</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/tlslite.basedb.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="module-tlslite.basedb">
+<span id="tlslite-basedb-module"></span><h1>tlslite.basedb module<a class="headerlink" href="#module-tlslite.basedb" title="Permalink to this heading"></a></h1>
+<p>Base class for SharedKeyDB and VerifierDB.</p>
+<dl class="py class">
+<dt class="sig sig-object py" id="tlslite.basedb.BaseDB">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">tlslite.basedb.</span></span><span class="sig-name descname"><span class="pre">BaseDB</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">filename</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">type</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tlslite.basedb.BaseDB" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.11)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="tlslite.basedb.BaseDB.__contains__">
+<span class="sig-name descname"><span class="pre">__contains__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">username</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tlslite.basedb.BaseDB.__contains__" title="Permalink to this definition"></a></dt>
+<dd><p>Check if the database contains the specified username.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>username</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.11)"><em>str</em></a>) – The username to check for.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.11)">bool</a></p>
+</dd>
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>True if the database contains the username, False
+otherwise.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tlslite.basedb.BaseDB.__delitem__">
+<span class="sig-name descname"><span class="pre">__delitem__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">username</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tlslite.basedb.BaseDB.__delitem__" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tlslite.basedb.BaseDB.__getitem__">
+<span class="sig-name descname"><span class="pre">__getitem__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">username</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tlslite.basedb.BaseDB.__getitem__" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tlslite.basedb.BaseDB.__init__">
+<span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">filename</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">type</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tlslite.basedb.BaseDB.__init__" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tlslite.basedb.BaseDB.__setitem__">
+<span class="sig-name descname"><span class="pre">__setitem__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">username</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">value</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tlslite.basedb.BaseDB.__setitem__" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tlslite.basedb.BaseDB.check">
+<span class="sig-name descname"><span class="pre">check</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">username</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">param</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tlslite.basedb.BaseDB.check" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tlslite.basedb.BaseDB.create">
+<span class="sig-name descname"><span class="pre">create</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tlslite.basedb.BaseDB.create" title="Permalink to this definition"></a></dt>
+<dd><p>Create a new on-disk database.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Raises<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>anydbm.error</strong> – If there’s a problem creating the database.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tlslite.basedb.BaseDB.keys">
+<span class="sig-name descname"><span class="pre">keys</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tlslite.basedb.BaseDB.keys" title="Permalink to this definition"></a></dt>
+<dd><p>Return a list of usernames in the database.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.11)">list</a></p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>The usernames in the database.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tlslite.basedb.BaseDB.open">
+<span class="sig-name descname"><span class="pre">open</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tlslite.basedb.BaseDB.open" title="Permalink to this definition"></a></dt>
+<dd><p>Open a pre-existing on-disk database.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Raises<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>anydbm.error</strong> – If there’s a problem opening the database.</p></li>
+<li><p><a class="reference external" href="https://docs.python.org/3/library/exceptions.html#ValueError" title="(in Python v3.11)"><strong>ValueError</strong></a> – If the database is not of the right type.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="tlslite.api.html" class="btn btn-neutral float-left" title="tlslite.api module" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="tlslite.bufferedsocket.html" class="btn btn-neutral float-right" title="tlslite.bufferedsocket module" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2023, Hubert Kario.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>tlslite.handshakesettings module &mdash; tlslite-ng 0.8.0-alpha44 documentation</title>
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="_static/doctools.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="tlslite.keyexchange module" href="tlslite.keyexchange.html" />
+    <link rel="prev" title="tlslite.handshakehelpers module" href="tlslite.handshakehelpers.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="index.html" class="icon icon-home"> tlslite-ng
+          </a>
+              <div class="version">
+                0.8
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="modules.html">tlslite</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="tlslite.html">tlslite package</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="tlslite.html#subpackages">Subpackages</a></li>
+<li class="toctree-l3 current"><a class="reference internal" href="tlslite.html#submodules">Submodules</a><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="tlslite.api.html">tlslite.api module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tlslite.basedb.html">tlslite.basedb module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tlslite.bufferedsocket.html">tlslite.bufferedsocket module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tlslite.checker.html">tlslite.checker module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tlslite.constants.html">tlslite.constants module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tlslite.defragmenter.html">tlslite.defragmenter module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tlslite.dh.html">tlslite.dh module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tlslite.errors.html">tlslite.errors module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tlslite.extensions.html">tlslite.extensions module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tlslite.handshakehashes.html">tlslite.handshakehashes module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tlslite.handshakehelpers.html">tlslite.handshakehelpers module</a></li>
+<li class="toctree-l4 current"><a class="current reference internal" href="#">tlslite.handshakesettings module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tlslite.keyexchange.html">tlslite.keyexchange module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tlslite.mathtls.html">tlslite.mathtls module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tlslite.messages.html">tlslite.messages module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tlslite.messagesocket.html">tlslite.messagesocket module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tlslite.recordlayer.html">tlslite.recordlayer module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tlslite.session.html">tlslite.session module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tlslite.sessioncache.html">tlslite.sessioncache module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tlslite.tlsconnection.html">tlslite.tlsconnection module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tlslite.tlsrecordlayer.html">tlslite.tlsrecordlayer module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tlslite.verifierdb.html">tlslite.verifierdb module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tlslite.x509.html">tlslite.x509 module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tlslite.x509certchain.html">tlslite.x509certchain module</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">tlslite-ng</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+          <li><a href="modules.html">tlslite</a> &raquo;</li>
+          <li><a href="tlslite.html">tlslite package</a> &raquo;</li>
+      <li>tlslite.handshakesettings module</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/tlslite.handshakesettings.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="module-tlslite.handshakesettings">
+<span id="tlslite-handshakesettings-module"></span><h1>tlslite.handshakesettings module<a class="headerlink" href="#module-tlslite.handshakesettings" title="Permalink to this heading"></a></h1>
+<p>Class for setting handshake parameters.</p>
+<dl class="py class">
+<dt class="sig sig-object py" id="tlslite.handshakesettings.HandshakeSettings">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">tlslite.handshakesettings.</span></span><span class="sig-name descname"><span class="pre">HandshakeSettings</span></span><a class="headerlink" href="#tlslite.handshakesettings.HandshakeSettings" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.11)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<p>This class encapsulates various parameters that can be used with
+a TLS handshake.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Variables<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>minKeySize</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.11)"><em>int</em></a>) – <p>The minimum bit length for asymmetric keys.</p>
+<p>If the other party tries to use SRP, RSA, DSA, or Diffie-Hellman
+parameters smaller than this length, an alert will be
+signalled.  The default is 1023.</p>
+</p></li>
+<li><p><strong>maxKeySize</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.11)"><em>int</em></a>) – <p>The maximum bit length for asymmetric keys.</p>
+<p>If the other party tries to use SRP, RSA, DSA, or Diffie-Hellman
+parameters larger than this length, an alert will be signalled.
+The default is 8193.</p>
+</p></li>
+<li><p><strong>cipherNames</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.11)"><em>list</em></a><em>(</em><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.11)"><em>str</em></a><em>)</em>) – <p>The allowed ciphers.</p>
+<p>The allowed values in this list are ‘chacha20-poly1305’, ‘aes256gcm’,
+‘aes128gcm’, ‘aes256’, ‘aes128’, ‘3des’, ‘chacha20-poly1305_draft00’,
+‘null’ and
+‘rc4’.  If these settings are used with a client handshake, they
+determine the order of the ciphersuites offered in the ClientHello
+message.</p>
+<p>If these settings are used with a server handshake, the server will
+choose whichever ciphersuite matches the earliest entry in this
+list.</p>
+<p>The default value is list that excludes ‘rc4’, ‘null’ and
+‘chacha20-poly1305_draft00’.</p>
+</p></li>
+<li><p><strong>macNames</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.11)"><em>list</em></a><em>(</em><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.11)"><em>str</em></a><em>)</em>) – <p>The allowed MAC algorithms.</p>
+<p>The allowed values in this list are ‘sha384’, ‘sha256’, ‘aead’, ‘sha’
+and ‘md5’.</p>
+<p>The default value is list that excludes ‘md5’.</p>
+</p></li>
+<li><p><strong>certificateTypes</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.11)"><em>list</em></a><em>(</em><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.11)"><em>str</em></a><em>)</em>) – <p>The allowed certificate types.</p>
+<p>The only allowed certificate type is ‘x509’.  This list is only used
+with a
+client handshake.  The client will advertise to the server which
+certificate
+types are supported, and will check that the server uses one of the
+appropriate types.</p>
+</p></li>
+<li><p><strong>minVersion</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#tuple" title="(in Python v3.11)"><em>tuple</em></a>) – <p>The minimum allowed SSL/TLS version.</p>
+<p>This variable can be set to (3, 0) for SSL 3.0, (3, 1) for TLS 1.0,
+(3, 2) for
+TLS 1.1, or (3, 3) for TLS 1.2.  If the other party wishes to use a
+lower
+version, a protocol_version alert will be signalled.  The default is
+(3, 1).</p>
+</p></li>
+<li><p><strong>maxVersion</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#tuple" title="(in Python v3.11)"><em>tuple</em></a>) – <p>The maximum allowed SSL/TLS version.</p>
+<p>This variable can be set to (3, 0) for SSL 3.0, (3, 1) for TLS 1.0,
+(3, 2) for TLS 1.1, or (3, 3) for TLS 1.2.  If the other party wishes
+to use a
+higher version, a protocol_version alert will be signalled.  The
+default is (3, 3).</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Some servers may (improperly) reject clients which offer
+support
+for TLS 1.1 or higher.  In this case, try lowering maxVersion to
+(3, 1).</p>
+</div>
+</p></li>
+<li><p><strong>useExperimentalTackExtension</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.11)"><em>bool</em></a>) – <p>Whether to enabled TACK support.</p>
+<p>Note that TACK support is not standardized by IETF and uses a temporary
+TLS Extension number, so should NOT be used in production software.</p>
+</p></li>
+<li><p><strong>sendFallbackSCSV</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.11)"><em>bool</em></a>) – Whether to, as a client, send FALLBACK_SCSV.</p></li>
+<li><p><strong>rsaSigHashes</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.11)"><em>list</em></a><em>(</em><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.11)"><em>str</em></a><em>)</em>) – <p>List of hashes supported (and advertised as such) for
+TLS 1.2 signatures over Server Key Exchange or Certificate Verify with
+RSA signature algorithm.</p>
+<p>The list is sorted from most wanted to least wanted algorithm.</p>
+<p>The allowed hashes are: “md5”, “sha1”, “sha224”, “sha256”,
+“sha384” and “sha512”. The default list does not include md5.</p>
+</p></li>
+<li><p><strong>dsaSigHashes</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.11)"><em>list</em></a><em>(</em><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.11)"><em>str</em></a><em>)</em>) – <p>List of hashes supported (and advertised as such) for
+TLS 1.2 signatures over Server Key Exchange or Certificate Verify with
+DSA signature algorithm.</p>
+<p>The list is sorted from most wanted to least wanted algorithm.</p>
+<p>The allowed hashes are: “sha1”, “sha224”, “sha256”,
+“sha384” and “sha512”.</p>
+</p></li>
+<li><p><strong>ecdsaSigHashes</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.11)"><em>list</em></a><em>(</em><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.11)"><em>str</em></a><em>)</em>) – <p>List of hashes supported (and advertised as such) for
+TLS 1.2 signatures over Server Key Exchange or Certificate Verify with
+ECDSA signature algorithm.</p>
+<p>The list is sorted from most wanted to least wanted algorithm.</p>
+<p>The allowed hashes are: “sha1”, “sha224”, “sha256”,
+“sha384” and “sha512”.</p>
+</p></li>
+</ul>
+</dd>
+</dl>
+<p>“vartype more_sig_schemes: list(str)
+:ivar more_sig_schemes: List of additional signatures schemes (ones</p>
+<blockquote>
+<div><p>that don’t use RSA-PKCS#1 v1.5, RSA-PSS, DSA, or ECDSA) to advertise
+as supported.
+Currently supported are: “Ed25519”, and “Ed448”.</p>
+</div></blockquote>
+<dl class="field-list simple">
+<dt class="field-odd">Variables<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>eccCurves</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.11)"><em>list</em></a><em>(</em><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.11)"><em>str</em></a><em>)</em>) – List of named curves that are to be advertised as
+supported in supported_groups extension.</p></li>
+<li><p><strong>useEncryptThenMAC</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.11)"><em>bool</em></a>) – whether to support the encrypt then MAC extension
+from RFC 7366. True by default.</p></li>
+<li><p><strong>useExtendedMasterSecret</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.11)"><em>bool</em></a>) – whether to support the extended master
+secret calculation from RFC 7627. True by default.</p></li>
+<li><p><strong>requireExtendedMasterSecret</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.11)"><em>bool</em></a>) – whether to require negotiation of
+extended master secret calculation for successful connection. Requires
+useExtendedMasterSecret to be set to true. False by default.</p></li>
+<li><p><strong>defaultCurve</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.11)"><em>str</em></a>) – curve that will be used by server in case the client
+did not advertise support for any curves. It does not have to be the
+first curve for eccCurves and may be distinct from curves from that
+list.</p></li>
+<li><p><strong>keyShares</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.11)"><em>list</em></a><em>(</em><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.11)"><em>str</em></a><em>)</em>) – list of TLS 1.3 key shares to include in Client Hello</p></li>
+<li><p><strong>padding_cb</strong> (<em>func</em>) – Callback to function computing number of padding bytes
+for TLS 1.3. Signature is cb_func(msg_size, content_type, max_size).</p></li>
+<li><p><strong>pskConfigs</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.11)"><em>list</em></a><em>(</em><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#tuple" title="(in Python v3.11)"><em>tuple</em></a><em>(</em><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#bytearray" title="(in Python v3.11)"><em>bytearray</em></a><em>, </em><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#bytearray" title="(in Python v3.11)"><em>bytearray</em></a><em>, </em><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#bytearray" title="(in Python v3.11)"><em>bytearray</em></a><em>)</em><em>)</em>) – list of tuples, first element of the tuple is the
+human readable, UTF-8 encoded, “identity” of the associated secret
+(bytearray, can be empty for TLS 1.2 and earlier), second element is
+the binary secret (bytearray), third is an optional parameter
+specifying the PRF hash to be used in TLS 1.3 (<code class="docutils literal notranslate"><span class="pre">sha256</span></code> or
+<code class="docutils literal notranslate"><span class="pre">sha384</span></code>)</p></li>
+<li><p><strong>ticketKeys</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.11)"><em>list</em></a><em>(</em><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#bytearray" title="(in Python v3.11)"><em>bytearray</em></a><em>)</em>) – keys to be used for encrypting and decrypting session
+tickets. First entry is the encryption key for new tickets and the
+default decryption key, subsequent entries are the fallback keys
+allowing for key rollover. The keys need to be of size appropriate
+for a selected cipher in ticketCipher, 32 bytes for ‘aes256gcm’ and
+‘chacha20-poly1305’, 16 bytes for ‘aes128-gcm’.
+New keys should be generated regularly and replace old ones. Key use
+time should generally not be longer than 24h and key life-time should
+not be longer than 48h.
+Leave empty to disable session ticket support on server side.</p></li>
+<li><p><strong>ticketCipher</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.11)"><em>str</em></a>) – name of the cipher used for encrypting the session
+tickets. ‘aes256gcm’ by default, ‘aes128gcm’ or ‘chacha20-poly1305’
+alternatively.</p></li>
+<li><p><strong>ticketLifetime</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.11)"><em>int</em></a>) – maximum allowed lifetime of ticket encryption key,
+in seconds. 1 day by default</p></li>
+<li><p><strong>psk_modes</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.11)"><em>list</em></a><em>(</em><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.11)"><em>str</em></a><em>)</em>) – acceptable modes for the PSK key exchange in TLS 1.3</p></li>
+<li><p><strong>max_early_data</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.11)"><em>int</em></a>) – maximum number of bytes acceptable for 0-RTT
+early_data processing. In other words, how many bytes will the server
+try to process, but ignore, in case the Client Hello includes
+early_data extension.</p></li>
+<li><p><strong>use_heartbeat_extension</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.11)"><em>bool</em></a>) – whether to support heartbeat extension from
+RFC 6520. True by default.</p></li>
+<li><p><strong>heartbeat_response_callback</strong> (<em>func</em>) – Callback to function when Heartbeat
+response is received.</p></li>
+<li><p><strong>~.record_size_limit</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.11)"><em>int</em></a>) – maximum size of records we are willing to process
+(value advertised to the other side). It must not be larger than
+2**14+1 (the maximum for TLS 1.3) and will be reduced to 2**14 if TLS
+1.2 or lower is the highest enabled version. Must not be set to values
+smaller than 64. Set to None to disable support for the extension.
+See also: RFC 8449.</p></li>
+<li><p><strong>keyExchangeNames</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.11)"><em>list</em></a>) – Enabled key exchange types for the connection,
+influences selected cipher suites.</p></li>
+</ul>
+</dd>
+</dl>
+<dl class="py method">
+<dt class="sig sig-object py" id="tlslite.handshakesettings.HandshakeSettings.__init__">
+<span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tlslite.handshakesettings.HandshakeSettings.__init__" title="Permalink to this definition"></a></dt>
+<dd><p>Initialise default values for settings.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tlslite.handshakesettings.HandshakeSettings.getCertificateTypes">
+<span class="sig-name descname"><span class="pre">getCertificateTypes</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tlslite.handshakesettings.HandshakeSettings.getCertificateTypes" title="Permalink to this definition"></a></dt>
+<dd><p>Get list of certificate types as IDs</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tlslite.handshakesettings.HandshakeSettings.validate">
+<span class="sig-name descname"><span class="pre">validate</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tlslite.handshakesettings.HandshakeSettings.validate" title="Permalink to this definition"></a></dt>
+<dd><p>Validate the settings, filter out unsupported ciphersuites and return
+a copy of object. Does not modify the original object.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><a class="reference internal" href="#tlslite.handshakesettings.HandshakeSettings" title="tlslite.handshakesettings.HandshakeSettings">HandshakeSettings</a></p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>a self-consistent copy of settings</p>
+</dd>
+<dt class="field-odd">Raises<span class="colon">:</span></dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3/library/exceptions.html#ValueError" title="(in Python v3.11)"><strong>ValueError</strong></a> – when settings are invalid, insecure or unsupported.</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="tlslite.handshakesettings.Keypair">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">tlslite.handshakesettings.</span></span><span class="sig-name descname"><span class="pre">Keypair</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">key</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">certificates</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">()</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tlslite.handshakesettings.Keypair" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.11)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<p>Key, certificate and related data.</p>
+<p>Stores also certificate associate data like OCSPs and transparency info.
+TODO: add the above</p>
+<p>First certificate in certificates needs to match key, remaining should
+build a trust path to a root CA.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Variables<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>key</strong> (<a class="reference internal" href="tlslite.utils.rsakey.html#tlslite.utils.rsakey.RSAKey" title="tlslite.utils.rsakey.RSAKey"><em>RSAKey</em></a><em> or </em><a class="reference internal" href="tlslite.utils.ecdsakey.html#tlslite.utils.ecdsakey.ECDSAKey" title="tlslite.utils.ecdsakey.ECDSAKey"><em>ECDSAKey</em></a>) – private key</p></li>
+<li><p><strong>certificates</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.11)"><em>list</em></a><em>(</em><a class="reference internal" href="tlslite.x509.html#tlslite.x509.X509" title="tlslite.x509.X509"><em>X509</em></a><em>)</em>) – the certificates to send to peer if the key is selected
+for use. The first one MUST include the public key of the <code class="docutils literal notranslate"><span class="pre">key</span></code></p></li>
+</ul>
+</dd>
+</dl>
+<dl class="py method">
+<dt class="sig sig-object py" id="tlslite.handshakesettings.Keypair.__init__">
+<span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">key</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">certificates</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">()</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tlslite.handshakesettings.Keypair.__init__" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tlslite.handshakesettings.Keypair.validate">
+<span class="sig-name descname"><span class="pre">validate</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tlslite.handshakesettings.Keypair.validate" title="Permalink to this definition"></a></dt>
+<dd><p>Sanity check the keypair.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="tlslite.handshakesettings.VirtualHost">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">tlslite.handshakesettings.</span></span><span class="sig-name descname"><span class="pre">VirtualHost</span></span><a class="headerlink" href="#tlslite.handshakesettings.VirtualHost" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.11)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<p>Configuration of keys and certs for a single virual server.</p>
+<p>This class encapsulates keys and certificates for hosts specified by
+server_name (SNI) and ALPN extensions.</p>
+<p>TODO: support SRP as alternative to certificates
+TODO: support PSK as alternative to certificates</p>
+<dl class="field-list simple">
+<dt class="field-odd">Variables<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>keys</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.11)"><em>list</em></a><em>(</em><a class="reference internal" href="#tlslite.handshakesettings.Keypair" title="tlslite.handshakesettings.Keypair"><em>Keypair</em></a><em>)</em>) – List of certificates and keys to be used in this
+virtual host. First keypair able to server ClientHello will be used.</p></li>
+<li><p><strong>hostnames</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#set" title="(in Python v3.11)"><em>set</em></a><em>(</em><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#bytes" title="(in Python v3.11)"><em>bytes</em></a><em>)</em>) – all the hostnames that server supports
+please use <a class="reference internal" href="#tlslite.handshakesettings.VirtualHost.matches_hostname" title="tlslite.handshakesettings.VirtualHost.matches_hostname"><code class="xref py py-meth docutils literal notranslate"><span class="pre">matches_hostname()</span></code></a> to verify if the VirtualHost
+can serve a request to a given hostname as that allows wildcard hosts
+that always reply True.</p></li>
+<li><p><strong>trust_anchors</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.11)"><em>list</em></a><em>(</em><a class="reference internal" href="tlslite.x509.html#tlslite.x509.X509" title="tlslite.x509.X509"><em>X509</em></a><em>)</em>) – list of CA certificates supported for client
+certificate authentication, sent in CertificateRequest</p></li>
+<li><p><strong>app_protocols</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.11)"><em>list</em></a><em>(</em><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#bytes" title="(in Python v3.11)"><em>bytes</em></a><em>)</em>) – all the application protocols that the
+server supports (for ALPN)</p></li>
+</ul>
+</dd>
+</dl>
+<dl class="py method">
+<dt class="sig sig-object py" id="tlslite.handshakesettings.VirtualHost.__init__">
+<span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tlslite.handshakesettings.VirtualHost.__init__" title="Permalink to this definition"></a></dt>
+<dd><p>Set up default configuration.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tlslite.handshakesettings.VirtualHost.matches_hostname">
+<span class="sig-name descname"><span class="pre">matches_hostname</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">hostname</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tlslite.handshakesettings.VirtualHost.matches_hostname" title="Permalink to this definition"></a></dt>
+<dd><p>Checks if the virtual host can serve hostname</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tlslite.handshakesettings.VirtualHost.validate">
+<span class="sig-name descname"><span class="pre">validate</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tlslite.handshakesettings.VirtualHost.validate" title="Permalink to this definition"></a></dt>
+<dd><p>Sanity check the settings</p>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="tlslite.handshakehelpers.html" class="btn btn-neutral float-left" title="tlslite.handshakehelpers module" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="tlslite.keyexchange.html" class="btn btn-neutral float-right" title="tlslite.keyexchange module" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2023, Hubert Kario.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

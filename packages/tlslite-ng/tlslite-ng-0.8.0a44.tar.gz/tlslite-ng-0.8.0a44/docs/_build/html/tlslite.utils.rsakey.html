@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>tlslite.utils.rsakey module &mdash; tlslite-ng 0.8.0-alpha44 documentation</title>
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="_static/doctools.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="tlslite.utils.tackwrapper module" href="tlslite.utils.tackwrapper.html" />
+    <link rel="prev" title="tlslite.utils.rijndael module" href="tlslite.utils.rijndael.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="index.html" class="icon icon-home"> tlslite-ng
+          </a>
+              <div class="version">
+                0.8
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="modules.html">tlslite</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="tlslite.html">tlslite package</a><ul class="current">
+<li class="toctree-l3 current"><a class="reference internal" href="tlslite.html#subpackages">Subpackages</a><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="tlslite.integration.html">tlslite.integration package</a></li>
+<li class="toctree-l4 current"><a class="reference internal" href="tlslite.utils.html">tlslite.utils package</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="tlslite.html#submodules">Submodules</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">tlslite-ng</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+          <li><a href="modules.html">tlslite</a> &raquo;</li>
+          <li><a href="tlslite.html">tlslite package</a> &raquo;</li>
+          <li><a href="tlslite.utils.html">tlslite.utils package</a> &raquo;</li>
+      <li>tlslite.utils.rsakey module</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/tlslite.utils.rsakey.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="module-tlslite.utils.rsakey">
+<span id="tlslite-utils-rsakey-module"></span><h1>tlslite.utils.rsakey module<a class="headerlink" href="#module-tlslite.utils.rsakey" title="Permalink to this heading"></a></h1>
+<p>Abstract class for RSA.</p>
+<dl class="py class">
+<dt class="sig sig-object py" id="tlslite.utils.rsakey.RSAKey">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">tlslite.utils.rsakey.</span></span><span class="sig-name descname"><span class="pre">RSAKey</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">n</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">e</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">key_type</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'rsa'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tlslite.utils.rsakey.RSAKey" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.11)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<p>This is an abstract base class for RSA keys.</p>
+<p>Particular implementations of RSA keys, such as
+<a class="reference internal" href="tlslite.utils.openssl_rsakey.html#tlslite.utils.openssl_rsakey.OpenSSL_RSAKey" title="tlslite.utils.openssl_rsakey.OpenSSL_RSAKey"><code class="xref py py-class docutils literal notranslate"><span class="pre">OpenSSL_RSAKey</span></code></a>,
+<a class="reference internal" href="tlslite.utils.python_rsakey.html#tlslite.utils.python_rsakey.Python_RSAKey" title="tlslite.utils.python_rsakey.Python_RSAKey"><code class="xref py py-class docutils literal notranslate"><span class="pre">Python_RSAKey</span></code></a>, and
+<a class="reference internal" href="tlslite.utils.pycrypto_rsakey.html#tlslite.utils.pycrypto_rsakey.PyCrypto_RSAKey" title="tlslite.utils.pycrypto_rsakey.PyCrypto_RSAKey"><code class="xref py py-class docutils literal notranslate"><span class="pre">PyCrypto_RSAKey</span></code></a>,
+inherit from this.</p>
+<p>To create or parse an RSA key, don’t use one of these classes
+directly.  Instead, use the factory functions in
+<a class="reference internal" href="tlslite.utils.keyfactory.html#module-tlslite.utils.keyfactory" title="tlslite.utils.keyfactory"><code class="xref py py-class docutils literal notranslate"><span class="pre">keyfactory</span></code></a>.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="tlslite.utils.rsakey.RSAKey.EMSA_PSS_encode">
+<span class="sig-name descname"><span class="pre">EMSA_PSS_encode</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">mHash</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">emBits</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">hAlg</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sLen</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tlslite.utils.rsakey.RSAKey.EMSA_PSS_encode" title="Permalink to this definition"></a></dt>
+<dd><p>Encode the passed in message</p>
+<p>This encodes the message using selected hash algorithm</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>mHash</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#bytearray" title="(in Python v3.11)"><em>bytearray</em></a>) – Hash of message to be encoded</p></li>
+<li><p><strong>emBits</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.11)"><em>int</em></a>) – maximal length of returned EM</p></li>
+<li><p><strong>hAlg</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.11)"><em>str</em></a>) – hash algorithm to be used</p></li>
+<li><p><strong>sLen</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.11)"><em>int</em></a>) – length of salt</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tlslite.utils.rsakey.RSAKey.EMSA_PSS_verify">
+<span class="sig-name descname"><span class="pre">EMSA_PSS_verify</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">mHash</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">EM</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">emBits</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">hAlg</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sLen</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tlslite.utils.rsakey.RSAKey.EMSA_PSS_verify" title="Permalink to this definition"></a></dt>
+<dd><p>Verify signature in passed in encoded message</p>
+<p>This verifies the signature in encoded message</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>mHash</strong> (<em>bytes-like object</em>) – Hash of the original not signed message</p></li>
+<li><p><strong>EM</strong> (<em>bytes-like object</em>) – Encoded message</p></li>
+<li><p><strong>emBits</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.11)"><em>int</em></a>) – Length of the encoded message in bits</p></li>
+<li><p><strong>hAlg</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.11)"><em>str</em></a>) – hash algorithm to be used</p></li>
+<li><p><strong>sLen</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.11)"><em>int</em></a>) – Length of salt</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tlslite.utils.rsakey.RSAKey.MGF1">
+<span class="sig-name descname"><span class="pre">MGF1</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">mgfSeed</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">maskLen</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">hAlg</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tlslite.utils.rsakey.RSAKey.MGF1" title="Permalink to this definition"></a></dt>
+<dd><p>Generate mask from passed-in seed.</p>
+<p>This generates mask based on passed-in seed and output maskLen.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>mgfSeed</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#bytearray" title="(in Python v3.11)"><em>bytearray</em></a>) – Seed from which mask will be generated.</p></li>
+<li><p><strong>maskLen</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.11)"><em>int</em></a>) – Wished length of the mask, in octets</p></li>
+</ul>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#bytearray" title="(in Python v3.11)">bytearray</a></p>
+</dd>
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Mask</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tlslite.utils.rsakey.RSAKey.RSASSA_PSS_sign">
+<span class="sig-name descname"><span class="pre">RSASSA_PSS_sign</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">mHash</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">hAlg</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sLen</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tlslite.utils.rsakey.RSAKey.RSASSA_PSS_sign" title="Permalink to this definition"></a></dt>
+<dd><p>“Sign the passed in message</p>
+<p>This signs the message using selected hash algorithm</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>mHash</strong> (<em>bytes-like object</em>) – Hash of message to be signed</p></li>
+<li><p><strong>hAlg</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.11)"><em>str</em></a>) – hash algorithm to be used</p></li>
+<li><p><strong>sLen</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.11)"><em>int</em></a>) – length of salt</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tlslite.utils.rsakey.RSAKey.RSASSA_PSS_verify">
+<span class="sig-name descname"><span class="pre">RSASSA_PSS_verify</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">mHash</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">S</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">hAlg</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sLen</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tlslite.utils.rsakey.RSAKey.RSASSA_PSS_verify" title="Permalink to this definition"></a></dt>
+<dd><p>Verify the signature in passed in message</p>
+<p>This verifies the signature in the signed message</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>mHash</strong> (<em>bytes-like object</em>) – Hash of original message</p></li>
+<li><p><strong>S</strong> (<em>bytes-like object</em>) – Signed message</p></li>
+<li><p><strong>hAlg</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.11)"><em>str</em></a>) – Hash algorithm to be used</p></li>
+<li><p><strong>sLen</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.11)"><em>int</em></a>) – Length of salt</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tlslite.utils.rsakey.RSAKey.__init__">
+<span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">n</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">e</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">key_type</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'rsa'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tlslite.utils.rsakey.RSAKey.__init__" title="Permalink to this definition"></a></dt>
+<dd><p>Create a new RSA key.</p>
+<p>If n and e are passed in, the new key will be initialized.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>n</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.11)"><em>int</em></a>) – RSA modulus.</p></li>
+<li><p><strong>e</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.11)"><em>int</em></a>) – RSA public exponent.</p></li>
+<li><p><strong>key_type</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.11)"><em>str</em></a>) – type of the RSA key, “rsa” for rsaEncryption
+(universal, able to perform all operations) or “rsa-pss” for a
+RSASSA-PSS key (able to perform only RSA-PSS signature verification
+and creation)</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tlslite.utils.rsakey.RSAKey.acceptsPassword">
+<span class="sig-name descname"><span class="pre">acceptsPassword</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tlslite.utils.rsakey.RSAKey.acceptsPassword" title="Permalink to this definition"></a></dt>
+<dd><p>Return True if the write() method accepts a password for use
+in encrypting the private key.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.11)">bool</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tlslite.utils.rsakey.RSAKey.addPKCS1Prefix">
+<em class="property"><span class="pre">classmethod</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">addPKCS1Prefix</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">data</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">hashName</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tlslite.utils.rsakey.RSAKey.addPKCS1Prefix" title="Permalink to this definition"></a></dt>
+<dd><p>Add the PKCS#1 v1.5 algorithm identifier prefix to hash bytes</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tlslite.utils.rsakey.RSAKey.addPKCS1SHA1Prefix">
+<em class="property"><span class="pre">classmethod</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">addPKCS1SHA1Prefix</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">hashBytes</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">withNULL</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tlslite.utils.rsakey.RSAKey.addPKCS1SHA1Prefix" title="Permalink to this definition"></a></dt>
+<dd><p>Add PKCS#1 v1.5 algorithm identifier prefix to SHA1 hash bytes</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tlslite.utils.rsakey.RSAKey.decrypt">
+<span class="sig-name descname"><span class="pre">decrypt</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">encBytes</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tlslite.utils.rsakey.RSAKey.decrypt" title="Permalink to this definition"></a></dt>
+<dd><p>Decrypt the passed-in bytes.</p>
+<p>This requires the key to have a private component.  It performs
+PKCS#1 v1.5 decryption operation of the passed-in data.</p>
+<p>Note: as a workaround against Bleichenbacher-like attacks, it will
+return a deterministically selected random message in case the padding
+checks failed. It returns an error (None) only in case the ciphertext
+is of incorrect length or encodes an integer bigger than the modulus
+of the key (i.e. it’s publically invalid).</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>encBytes</strong> (<em>bytes-like object</em>) – The value which will be decrypted.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#bytearray" title="(in Python v3.11)">bytearray</a> or None</p>
+</dd>
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>A PKCS#1 v1.5 decryption of the passed-in data or None if
+the provided data is not properly formatted. Note: encrypting
+an empty string is correct, so it may return an empty bytearray
+for some ciphertexts.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tlslite.utils.rsakey.RSAKey.encrypt">
+<span class="sig-name descname"><span class="pre">encrypt</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">bytes</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tlslite.utils.rsakey.RSAKey.encrypt" title="Permalink to this definition"></a></dt>
+<dd><p>Encrypt the passed-in bytes.</p>
+<p>This performs PKCS1 encryption of the passed-in data.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>bytes</strong> (<em>bytes-like object</em>) – The value which will be encrypted.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#bytearray" title="(in Python v3.11)">bytearray</a></p>
+</dd>
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>A PKCS1 encryption of the passed-in data.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tlslite.utils.rsakey.RSAKey.generate">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">generate</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">bits</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">key_type</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'rsa'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tlslite.utils.rsakey.RSAKey.generate" title="Permalink to this definition"></a></dt>
+<dd><p>Generate a new key with the specified bit length.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><em>RSAKey</em></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tlslite.utils.rsakey.RSAKey.hasPrivateKey">
+<span class="sig-name descname"><span class="pre">hasPrivateKey</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tlslite.utils.rsakey.RSAKey.hasPrivateKey" title="Permalink to this definition"></a></dt>
+<dd><p>Return whether or not this key has a private component.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.11)">bool</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tlslite.utils.rsakey.RSAKey.hashAndSign">
+<span class="sig-name descname"><span class="pre">hashAndSign</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">bytes</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">rsaScheme</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'PKCS1'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">hAlg</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'sha1'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sLen</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tlslite.utils.rsakey.RSAKey.hashAndSign" title="Permalink to this definition"></a></dt>
+<dd><p>Hash and sign the passed-in bytes.</p>
+<p>This requires the key to have a private component.  It performs
+a PKCS1 or PSS signature on the passed-in data with selected hash
+algorithm.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>bytes</strong> (<em>bytes-like object</em>) – The value which will be hashed and signed.</p></li>
+<li><p><strong>rsaScheme</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.11)"><em>str</em></a>) – The type of RSA scheme that will be applied,
+“PKCS1” for RSASSA-PKCS#1 v1.5 signature and “PSS”
+for RSASSA-PSS with MGF1 signature method</p></li>
+<li><p><strong>hAlg</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.11)"><em>str</em></a>) – The hash algorithm that will be used</p></li>
+<li><p><strong>sLen</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.11)"><em>int</em></a>) – The length of intended salt value, applicable only
+for RSASSA-PSS signatures</p></li>
+</ul>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#bytearray" title="(in Python v3.11)">bytearray</a></p>
+</dd>
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>A PKCS1 or PSS signature on the passed-in data.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tlslite.utils.rsakey.RSAKey.hashAndVerify">
+<span class="sig-name descname"><span class="pre">hashAndVerify</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">sigBytes</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">bytes</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">rsaScheme</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'PKCS1'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">hAlg</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'sha1'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sLen</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tlslite.utils.rsakey.RSAKey.hashAndVerify" title="Permalink to this definition"></a></dt>
+<dd><p>Hash and verify the passed-in bytes with the signature.</p>
+<p>This verifies a PKCS1 or PSS signature on the passed-in data
+with selected hash algorithm.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>sigBytes</strong> (<em>bytes-like object</em>) – A PKCS1 or PSS signature.</p></li>
+<li><p><strong>bytes</strong> (<em>bytes-like object</em>) – The value which will be hashed and verified.</p></li>
+<li><p><strong>rsaScheme</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.11)"><em>str</em></a>) – The type of RSA scheme that will be applied,
+“PKCS1” for RSASSA-PKCS#1 v1.5 signature and “PSS”
+for RSASSA-PSS with MGF1 signature method</p></li>
+<li><p><strong>hAlg</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.11)"><em>str</em></a>) – The hash algorithm that will be used</p></li>
+<li><p><strong>sLen</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.11)"><em>int</em></a>) – The length of intended salt value, applicable only
+for RSASSA-PSS signatures</p></li>
+</ul>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.11)">bool</a></p>
+</dd>
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Whether the signature matches the passed-in data.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tlslite.utils.rsakey.RSAKey.sign">
+<span class="sig-name descname"><span class="pre">sign</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">bytes</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">padding</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'pkcs1'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">hashAlg</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">saltLen</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tlslite.utils.rsakey.RSAKey.sign" title="Permalink to this definition"></a></dt>
+<dd><p>Sign the passed-in bytes.</p>
+<p>This requires the key to have a private component.  It performs
+a PKCS1 signature on the passed-in data.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>bytes</strong> (<em>bytes-like object</em>) – The value which will be signed.</p></li>
+<li><p><strong>padding</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.11)"><em>str</em></a>) – name of the rsa padding mode to use, supported:
+“pkcs1” for RSASSA-PKCS1_1_5 and “pss” for RSASSA-PSS.</p></li>
+<li><p><strong>hashAlg</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.11)"><em>str</em></a>) – name of hash to be encoded using the PKCS#1 prefix
+for “pkcs1” padding or the hash used for MGF1 in “pss”. Parameter
+is mandatory for “pss” padding.</p></li>
+<li><p><strong>saltLen</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.11)"><em>int</em></a>) – length of salt used for the PSS padding. Default
+is the length of the hash output used.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#bytearray" title="(in Python v3.11)">bytearray</a></p>
+</dd>
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>A PKCS1 signature on the passed-in data.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tlslite.utils.rsakey.RSAKey.verify">
+<span class="sig-name descname"><span class="pre">verify</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">sigBytes</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">bytes</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">padding</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'pkcs1'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">hashAlg</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">saltLen</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tlslite.utils.rsakey.RSAKey.verify" title="Permalink to this definition"></a></dt>
+<dd><p>Verify the passed-in bytes with the signature.</p>
+<p>This verifies a PKCS1 signature on the passed-in data.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>sigBytes</strong> (<em>bytes-like object</em>) – A PKCS1 signature.</p></li>
+<li><p><strong>bytes</strong> (<em>bytes-like object</em>) – The value which will be verified.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.11)">bool</a></p>
+</dd>
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Whether the signature matches the passed-in data.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tlslite.utils.rsakey.RSAKey.write">
+<span class="sig-name descname"><span class="pre">write</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">password</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tlslite.utils.rsakey.RSAKey.write" title="Permalink to this definition"></a></dt>
+<dd><p>Return a string containing the key.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.11)">str</a></p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>A string describing the key, in whichever format (PEM)
+is native to the implementation.</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="tlslite.utils.rsakey.bytes_to_int">
+<span class="sig-prename descclassname"><span class="pre">tlslite.utils.rsakey.</span></span><span class="sig-name descname"><span class="pre">bytes_to_int</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">bytes</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">byteorder</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'big'</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">*</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">signed</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tlslite.utils.rsakey.bytes_to_int" title="Permalink to this definition"></a></dt>
+<dd><p>Return the integer represented by the given array of bytes.</p>
+<dl class="simple">
+<dt>bytes</dt><dd><p>Holds the array of bytes to convert.  The argument must either
+support the buffer protocol or be an iterable object producing bytes.
+Bytes and bytearray are examples of built-in objects that support the
+buffer protocol.</p>
+</dd>
+<dt>byteorder</dt><dd><p>The byte order used to represent the integer.  If byteorder is ‘big’,
+the most significant byte is at the beginning of the byte array.  If
+byteorder is ‘little’, the most significant byte is at the end of the
+byte array.  To request the native byte order of the host system, use
+<a href="#id1"><span class="problematic" id="id2">`</span></a>sys.byteorder’ as the byte order value.  Default is to use ‘big’.</p>
+</dd>
+<dt>signed</dt><dd><p>Indicates whether two’s complement is used to represent the integer.</p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="tlslite.utils.rijndael.html" class="btn btn-neutral float-left" title="tlslite.utils.rijndael module" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="tlslite.utils.tackwrapper.html" class="btn btn-neutral float-right" title="tlslite.utils.tackwrapper module" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2023, Hubert Kario.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

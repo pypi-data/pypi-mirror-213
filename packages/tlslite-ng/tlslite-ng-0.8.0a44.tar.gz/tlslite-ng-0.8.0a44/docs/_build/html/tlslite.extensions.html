@@ -1,0 +1,1943 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>tlslite.extensions module &mdash; tlslite-ng 0.8.0-alpha44 documentation</title>
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="_static/doctools.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="tlslite.handshakehashes module" href="tlslite.handshakehashes.html" />
+    <link rel="prev" title="tlslite.errors module" href="tlslite.errors.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="index.html" class="icon icon-home"> tlslite-ng
+          </a>
+              <div class="version">
+                0.8
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="modules.html">tlslite</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="tlslite.html">tlslite package</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="tlslite.html#subpackages">Subpackages</a></li>
+<li class="toctree-l3 current"><a class="reference internal" href="tlslite.html#submodules">Submodules</a><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="tlslite.api.html">tlslite.api module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tlslite.basedb.html">tlslite.basedb module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tlslite.bufferedsocket.html">tlslite.bufferedsocket module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tlslite.checker.html">tlslite.checker module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tlslite.constants.html">tlslite.constants module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tlslite.defragmenter.html">tlslite.defragmenter module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tlslite.dh.html">tlslite.dh module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tlslite.errors.html">tlslite.errors module</a></li>
+<li class="toctree-l4 current"><a class="current reference internal" href="#">tlslite.extensions module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tlslite.handshakehashes.html">tlslite.handshakehashes module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tlslite.handshakehelpers.html">tlslite.handshakehelpers module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tlslite.handshakesettings.html">tlslite.handshakesettings module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tlslite.keyexchange.html">tlslite.keyexchange module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tlslite.mathtls.html">tlslite.mathtls module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tlslite.messages.html">tlslite.messages module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tlslite.messagesocket.html">tlslite.messagesocket module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tlslite.recordlayer.html">tlslite.recordlayer module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tlslite.session.html">tlslite.session module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tlslite.sessioncache.html">tlslite.sessioncache module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tlslite.tlsconnection.html">tlslite.tlsconnection module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tlslite.tlsrecordlayer.html">tlslite.tlsrecordlayer module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tlslite.verifierdb.html">tlslite.verifierdb module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tlslite.x509.html">tlslite.x509 module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tlslite.x509certchain.html">tlslite.x509certchain module</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">tlslite-ng</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+          <li><a href="modules.html">tlslite</a> &raquo;</li>
+          <li><a href="tlslite.html">tlslite package</a> &raquo;</li>
+      <li>tlslite.extensions module</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/tlslite.extensions.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="module-tlslite.extensions">
+<span id="tlslite-extensions-module"></span><h1>tlslite.extensions module<a class="headerlink" href="#module-tlslite.extensions" title="Permalink to this heading"></a></h1>
+<p>Helper package for handling TLS extensions encountered in ClientHello
+and ServerHello messages.</p>
+<dl class="py class">
+<dt class="sig sig-object py" id="tlslite.extensions.ALPNExtension">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">tlslite.extensions.</span></span><span class="sig-name descname"><span class="pre">ALPNExtension</span></span><a class="headerlink" href="#tlslite.extensions.ALPNExtension" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <a class="reference internal" href="#tlslite.extensions.TLSExtension" title="tlslite.extensions.TLSExtension"><code class="xref py py-class docutils literal notranslate"><span class="pre">TLSExtension</span></code></a></p>
+<p>Handling of Application Layer Protocol Negotiation extension from RFC 7301.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Variables<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>protocol_names</strong> (<em>list of bytearrays</em>) – list of protocol names acceptable or selected by peer</p></li>
+<li><p><strong>extType</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.11)"><em>int</em></a>) – numberic type of ALPNExtension, i.e. 16</p></li>
+<li><p><strong>~.extData</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#bytearray" title="(in Python v3.11)"><em>bytearray</em></a>) – raw encoding of the extension data</p></li>
+</ul>
+</dd>
+</dl>
+<dl class="py method">
+<dt class="sig sig-object py" id="tlslite.extensions.ALPNExtension.__init__">
+<span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tlslite.extensions.ALPNExtension.__init__" title="Permalink to this definition"></a></dt>
+<dd><p>Create instance of ALPNExtension</p>
+<p>See also: <a class="reference internal" href="#tlslite.extensions.ALPNExtension.create" title="tlslite.extensions.ALPNExtension.create"><code class="xref py py-meth docutils literal notranslate"><span class="pre">create()</span></code></a> and <a class="reference internal" href="#tlslite.extensions.ALPNExtension.parse" title="tlslite.extensions.ALPNExtension.parse"><code class="xref py py-meth docutils literal notranslate"><span class="pre">parse()</span></code></a></p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tlslite.extensions.ALPNExtension.__repr__">
+<span class="sig-name descname"><span class="pre">__repr__</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tlslite.extensions.ALPNExtension.__repr__" title="Permalink to this definition"></a></dt>
+<dd><p>Create programmer-readable representation of object</p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.11)">str</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tlslite.extensions.ALPNExtension.create">
+<span class="sig-name descname"><span class="pre">create</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">protocol_names</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tlslite.extensions.ALPNExtension.create" title="Permalink to this definition"></a></dt>
+<dd><p>Create an instance of ALPNExtension with specified protocols</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>protocols</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.11)"><em>list</em></a>) – list of protocol names that are to be sent</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="tlslite.extensions.ALPNExtension.extData">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">extData</span></span><a class="headerlink" href="#tlslite.extensions.ALPNExtension.extData" title="Permalink to this definition"></a></dt>
+<dd><p>Return encoded payload of the extension</p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#bytearray" title="(in Python v3.11)">bytearray</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tlslite.extensions.ALPNExtension.parse">
+<span class="sig-name descname"><span class="pre">parse</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">parser</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tlslite.extensions.ALPNExtension.parse" title="Permalink to this definition"></a></dt>
+<dd><p>Parse the extension from on the wire format</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>parser</strong> (<a class="reference internal" href="tlslite.utils.codec.html#tlslite.utils.codec.Parser" title="tlslite.utils.codec.Parser"><em>Parser</em></a>) – data to be parsed as extension</p>
+</dd>
+<dt class="field-even">Raises<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference internal" href="tlslite.utils.codec.html#tlslite.utils.codec.DecodeError" title="tlslite.utils.codec.DecodeError"><strong>DecodeError</strong></a> – when the encoding of the extension is self
+inconsistent</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><a class="reference internal" href="#tlslite.extensions.ALPNExtension" title="tlslite.extensions.ALPNExtension">ALPNExtension</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="tlslite.extensions.CertificateStatusExtension">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">tlslite.extensions.</span></span><span class="sig-name descname"><span class="pre">CertificateStatusExtension</span></span><a class="headerlink" href="#tlslite.extensions.CertificateStatusExtension" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <a class="reference internal" href="#tlslite.extensions.TLSExtension" title="tlslite.extensions.TLSExtension"><code class="xref py py-class docutils literal notranslate"><span class="pre">TLSExtension</span></code></a></p>
+<p>Handling of Certificate Status response as redefined in TLS1.3</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="tlslite.extensions.CertificateStatusExtension.__init__">
+<span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tlslite.extensions.CertificateStatusExtension.__init__" title="Permalink to this definition"></a></dt>
+<dd><p>Create instance of CertificateStatusExtension.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tlslite.extensions.CertificateStatusExtension.create">
+<span class="sig-name descname"><span class="pre">create</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">status_type</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">response</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tlslite.extensions.CertificateStatusExtension.create" title="Permalink to this definition"></a></dt>
+<dd><p>Set values of the extension.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="tlslite.extensions.CertificateStatusExtension.extData">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">extData</span></span><a class="headerlink" href="#tlslite.extensions.CertificateStatusExtension.extData" title="Permalink to this definition"></a></dt>
+<dd><p>Serialise the object.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tlslite.extensions.CertificateStatusExtension.parse">
+<span class="sig-name descname"><span class="pre">parse</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">parser</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tlslite.extensions.CertificateStatusExtension.parse" title="Permalink to this definition"></a></dt>
+<dd><p>Deserialise the data from on the wire representation.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="tlslite.extensions.ClientCertTypeExtension">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">tlslite.extensions.</span></span><span class="sig-name descname"><span class="pre">ClientCertTypeExtension</span></span><a class="headerlink" href="#tlslite.extensions.ClientCertTypeExtension" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <a class="reference internal" href="#tlslite.extensions.VarListExtension" title="tlslite.extensions.VarListExtension"><code class="xref py py-class docutils literal notranslate"><span class="pre">VarListExtension</span></code></a></p>
+<p>This class handles the (client variant of) Certificate Type extension</p>
+<p>See RFC 6091.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Variables<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>extType</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.11)"><em>int</em></a>) – numeric type of Certificate Type extension, i.e. 9</p></li>
+<li><p><strong>~.extData</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#bytearray" title="(in Python v3.11)"><em>bytearray</em></a>) – raw representation of the extension data</p></li>
+<li><p><strong>certTypes</strong> (<em>list of int</em>) – list of certificate type identifiers (each one byte long)</p></li>
+</ul>
+</dd>
+</dl>
+<dl class="py method">
+<dt class="sig sig-object py" id="tlslite.extensions.ClientCertTypeExtension.__init__">
+<span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tlslite.extensions.ClientCertTypeExtension.__init__" title="Permalink to this definition"></a></dt>
+<dd><p>Create an instance of ClientCertTypeExtension</p>
+<p>See also: <code class="xref py py-meth docutils literal notranslate"><span class="pre">create()</span></code> and <code class="xref py py-meth docutils literal notranslate"><span class="pre">parse()</span></code></p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="tlslite.extensions.ClientKeyShareExtension">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">tlslite.extensions.</span></span><span class="sig-name descname"><span class="pre">ClientKeyShareExtension</span></span><a class="headerlink" href="#tlslite.extensions.ClientKeyShareExtension" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <a class="reference internal" href="#tlslite.extensions.TLSExtension" title="tlslite.extensions.TLSExtension"><code class="xref py py-class docutils literal notranslate"><span class="pre">TLSExtension</span></code></a></p>
+<p>Class for handling the Client Hello version of the Key Share extension.</p>
+<p>Extension for sending the key shares to server</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="tlslite.extensions.ClientKeyShareExtension.__init__">
+<span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tlslite.extensions.ClientKeyShareExtension.__init__" title="Permalink to this definition"></a></dt>
+<dd><p>Create instance of the object.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tlslite.extensions.ClientKeyShareExtension.create">
+<span class="sig-name descname"><span class="pre">create</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">client_shares</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tlslite.extensions.ClientKeyShareExtension.create" title="Permalink to this definition"></a></dt>
+<dd><p>Set the advertised client shares in the extension.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="tlslite.extensions.ClientKeyShareExtension.extData">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">extData</span></span><a class="headerlink" href="#tlslite.extensions.ClientKeyShareExtension.extData" title="Permalink to this definition"></a></dt>
+<dd><p>Return the on the wire raw encoding of the extension</p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#bytearray" title="(in Python v3.11)">bytearray</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tlslite.extensions.ClientKeyShareExtension.parse">
+<span class="sig-name descname"><span class="pre">parse</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">parser</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tlslite.extensions.ClientKeyShareExtension.parse" title="Permalink to this definition"></a></dt>
+<dd><p>Parse the extension from on the wire format</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>parser</strong> (<a class="reference internal" href="tlslite.utils.codec.html#tlslite.utils.codec.Parser" title="tlslite.utils.codec.Parser"><em>Parser</em></a>) – data to be parsed</p>
+</dd>
+<dt class="field-even">Raises<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference internal" href="tlslite.utils.codec.html#tlslite.utils.codec.DecodeError" title="tlslite.utils.codec.DecodeError"><strong>DecodeError</strong></a> – when the data does not match the definition</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><a class="reference internal" href="#tlslite.extensions.ClientKeyShareExtension" title="tlslite.extensions.ClientKeyShareExtension">ClientKeyShareExtension</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="tlslite.extensions.CookieExtension">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">tlslite.extensions.</span></span><span class="sig-name descname"><span class="pre">CookieExtension</span></span><a class="headerlink" href="#tlslite.extensions.CookieExtension" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <a class="reference internal" href="#tlslite.extensions.VarBytesExtension" title="tlslite.extensions.VarBytesExtension"><code class="xref py py-class docutils literal notranslate"><span class="pre">VarBytesExtension</span></code></a></p>
+<p>Handling of the TLS 1.3 cookie extension.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="tlslite.extensions.CookieExtension.__init__">
+<span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tlslite.extensions.CookieExtension.__init__" title="Permalink to this definition"></a></dt>
+<dd><p>Create instance.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="tlslite.extensions.CustomNameExtension">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">tlslite.extensions.</span></span><span class="sig-name descname"><span class="pre">CustomNameExtension</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">field_name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">extType</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tlslite.extensions.CustomNameExtension" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <a class="reference internal" href="#tlslite.extensions.TLSExtension" title="tlslite.extensions.TLSExtension"><code class="xref py py-class docutils literal notranslate"><span class="pre">TLSExtension</span></code></a></p>
+<p>Abstract class for handling custom name for payload variable.</p>
+<p>Used for handling arbitrary extensions that deal with a single value
+in payload (either an opaque data, single value or single array).</p>
+<p>Must be subclassed.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="tlslite.extensions.CustomNameExtension.__init__">
+<span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">field_name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">extType</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tlslite.extensions.CustomNameExtension.__init__" title="Permalink to this definition"></a></dt>
+<dd><p>Create instance of the class.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>field_name</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.11)"><em>str</em></a>) – name of the field to store the extension payload</p></li>
+<li><p><strong>ext_type</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.11)"><em>int</em></a>) – numerical ID of the extension</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tlslite.extensions.CustomNameExtension.create">
+<span class="sig-name descname"><span class="pre">create</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">values</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tlslite.extensions.CustomNameExtension.create" title="Permalink to this definition"></a></dt>
+<dd><p>Set the list to specified values.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>values</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.11)"><em>list</em></a>) – list of values to save</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="tlslite.extensions.CustomNameExtension.extData">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">extData</span></span><a class="headerlink" href="#tlslite.extensions.CustomNameExtension.extData" title="Permalink to this definition"></a></dt>
+<dd><p>Return raw data encoding of the extension.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#bytearray" title="(in Python v3.11)">bytearray</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tlslite.extensions.CustomNameExtension.parse">
+<span class="sig-name descname"><span class="pre">parse</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">parser</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tlslite.extensions.CustomNameExtension.parse" title="Permalink to this definition"></a></dt>
+<dd><p>Deserialise extension from on-the-wire data.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>parser</strong> (<a class="reference internal" href="tlslite.utils.codec.html#tlslite.utils.codec.Parser" title="tlslite.utils.codec.Parser"><em>tlslite.utils.codec.Parser</em></a>) – data</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>Extension</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="tlslite.extensions.ECPointFormatsExtension">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">tlslite.extensions.</span></span><span class="sig-name descname"><span class="pre">ECPointFormatsExtension</span></span><a class="headerlink" href="#tlslite.extensions.ECPointFormatsExtension" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <a class="reference internal" href="#tlslite.extensions.VarListExtension" title="tlslite.extensions.VarListExtension"><code class="xref py py-class docutils literal notranslate"><span class="pre">VarListExtension</span></code></a></p>
+<p>Client side list of supported ECC point formats.</p>
+<p>See RFC4492.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Variables<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>formats</strong> (<em>list of int</em>) – list of point formats supported by peer</p>
+</dd>
+</dl>
+<dl class="py method">
+<dt class="sig sig-object py" id="tlslite.extensions.ECPointFormatsExtension.__init__">
+<span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tlslite.extensions.ECPointFormatsExtension.__init__" title="Permalink to this definition"></a></dt>
+<dd><p>Create instance of class</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="tlslite.extensions.HRRKeyShareExtension">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">tlslite.extensions.</span></span><span class="sig-name descname"><span class="pre">HRRKeyShareExtension</span></span><a class="headerlink" href="#tlslite.extensions.HRRKeyShareExtension" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <a class="reference internal" href="#tlslite.extensions.TLSExtension" title="tlslite.extensions.TLSExtension"><code class="xref py py-class docutils literal notranslate"><span class="pre">TLSExtension</span></code></a></p>
+<p>Class for handling the Hello Retry Request variant of the Key Share ext.</p>
+<p>Extension for notifying the client of the server selected group for
+key exchange.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="tlslite.extensions.HRRKeyShareExtension.__init__">
+<span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tlslite.extensions.HRRKeyShareExtension.__init__" title="Permalink to this definition"></a></dt>
+<dd><p>Create instance of the object.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tlslite.extensions.HRRKeyShareExtension.create">
+<span class="sig-name descname"><span class="pre">create</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">selected_group</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tlslite.extensions.HRRKeyShareExtension.create" title="Permalink to this definition"></a></dt>
+<dd><p>Set the selected group in the extension.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="tlslite.extensions.HRRKeyShareExtension.extData">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">extData</span></span><a class="headerlink" href="#tlslite.extensions.HRRKeyShareExtension.extData" title="Permalink to this definition"></a></dt>
+<dd><p>Serialise the payload of the extension.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tlslite.extensions.HRRKeyShareExtension.parse">
+<span class="sig-name descname"><span class="pre">parse</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">parser</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tlslite.extensions.HRRKeyShareExtension.parse" title="Permalink to this definition"></a></dt>
+<dd><p>Parse the extension from on the wire format.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>parser</strong> (<a class="reference internal" href="tlslite.utils.codec.html#tlslite.utils.codec.Parser" title="tlslite.utils.codec.Parser"><em>Parser</em></a>) – data to be parsed</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference internal" href="#tlslite.extensions.HRRKeyShareExtension" title="tlslite.extensions.HRRKeyShareExtension">HRRKeyShareExtension</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="tlslite.extensions.HeartbeatExtension">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">tlslite.extensions.</span></span><span class="sig-name descname"><span class="pre">HeartbeatExtension</span></span><a class="headerlink" href="#tlslite.extensions.HeartbeatExtension" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <a class="reference internal" href="#tlslite.extensions.IntExtension" title="tlslite.extensions.IntExtension"><code class="xref py py-class docutils literal notranslate"><span class="pre">IntExtension</span></code></a></p>
+<p>Heartbeat extension from RFC 6520</p>
+<dl class="field-list simple">
+<dt class="field-odd">Variables<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>mode</strong> – mode if peer is allowed or nor allowed to send responses</p>
+</dd>
+</dl>
+<dl class="py method">
+<dt class="sig sig-object py" id="tlslite.extensions.HeartbeatExtension.__init__">
+<span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tlslite.extensions.HeartbeatExtension.__init__" title="Permalink to this definition"></a></dt>
+<dd><p>Create handler for extension that has a single integer as payload.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>field_name</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.11)"><em>str</em></a>) – name of the field that will store the value</p></li>
+<li><p><strong>elem_length</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.11)"><em>int</em></a>) – size (in bytes) of the value in the extension</p></li>
+<li><p><strong>ext_tyoe</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.11)"><em>int</em></a>) – numerical ID of the extension encoded</p></li>
+<li><p><strong>item_enum</strong> (<em>class</em>) – TLSEnum class that defines entries in the
+extension</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tlslite.extensions.HeartbeatExtension.parse">
+<span class="sig-name descname"><span class="pre">parse</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">parser</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tlslite.extensions.HeartbeatExtension.parse" title="Permalink to this definition"></a></dt>
+<dd><p>Deserialise the extension from on the wire data.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="tlslite.extensions.IntExtension">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">tlslite.extensions.</span></span><span class="sig-name descname"><span class="pre">IntExtension</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">elem_length</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">field_name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ext_type</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">item_enum</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tlslite.extensions.IntExtension" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <a class="reference internal" href="#tlslite.extensions.CustomNameExtension" title="tlslite.extensions.CustomNameExtension"><code class="xref py py-class docutils literal notranslate"><span class="pre">CustomNameExtension</span></code></a></p>
+<p>Abstract class for extensions that deal with single integer in payload.</p>
+<p>Extension for handling arbitrary extensions that have a payload that is
+a single integer of a given size (1, 2, … bytes)</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="tlslite.extensions.IntExtension.__init__">
+<span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">elem_length</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">field_name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ext_type</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">item_enum</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tlslite.extensions.IntExtension.__init__" title="Permalink to this definition"></a></dt>
+<dd><p>Create handler for extension that has a single integer as payload.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>field_name</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.11)"><em>str</em></a>) – name of the field that will store the value</p></li>
+<li><p><strong>elem_length</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.11)"><em>int</em></a>) – size (in bytes) of the value in the extension</p></li>
+<li><p><strong>ext_tyoe</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.11)"><em>int</em></a>) – numerical ID of the extension encoded</p></li>
+<li><p><strong>item_enum</strong> (<em>class</em>) – TLSEnum class that defines entries in the
+extension</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tlslite.extensions.IntExtension.__repr__">
+<span class="sig-name descname"><span class="pre">__repr__</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tlslite.extensions.IntExtension.__repr__" title="Permalink to this definition"></a></dt>
+<dd><p>Return human readable representation of the extension.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="tlslite.extensions.IntExtension.extData">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">extData</span></span><a class="headerlink" href="#tlslite.extensions.IntExtension.extData" title="Permalink to this definition"></a></dt>
+<dd><p>Return raw data encoding of the extension.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#bytearray" title="(in Python v3.11)">bytearray</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tlslite.extensions.IntExtension.parse">
+<span class="sig-name descname"><span class="pre">parse</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">parser</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tlslite.extensions.IntExtension.parse" title="Permalink to this definition"></a></dt>
+<dd><p>Deserialise extension from on-the-wire data.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>parser</strong> (<a class="reference internal" href="tlslite.utils.codec.html#tlslite.utils.codec.Parser" title="tlslite.utils.codec.Parser"><em>tlslite.utils.codec.Parser</em></a>) – data</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>Extension</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="tlslite.extensions.KeyShareEntry">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">tlslite.extensions.</span></span><span class="sig-name descname"><span class="pre">KeyShareEntry</span></span><a class="headerlink" href="#tlslite.extensions.KeyShareEntry" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.11)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<p>Handler for of the item of the Key Share extension.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="tlslite.extensions.KeyShareEntry.__init__">
+<span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tlslite.extensions.KeyShareEntry.__init__" title="Permalink to this definition"></a></dt>
+<dd><p>Initialise the object.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tlslite.extensions.KeyShareEntry.create">
+<span class="sig-name descname"><span class="pre">create</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">group</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">key_exchange</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">private</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tlslite.extensions.KeyShareEntry.create" title="Permalink to this definition"></a></dt>
+<dd><p>Initialise the Key Share Entry from Key Share extension.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>group</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.11)"><em>int</em></a>) – ID of the key share</p></li>
+<li><p><strong>key_exchange</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#bytearray" title="(in Python v3.11)"><em>bytearray</em></a>) – value of the key share</p></li>
+<li><p><strong>private</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.11)"><em>object</em></a>) – private value for the given share (won’t be
+encoded during serialisation)</p></li>
+</ul>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference internal" href="#tlslite.extensions.KeyShareEntry" title="tlslite.extensions.KeyShareEntry">KeyShareEntry</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tlslite.extensions.KeyShareEntry.parse">
+<span class="sig-name descname"><span class="pre">parse</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">parser</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tlslite.extensions.KeyShareEntry.parse" title="Permalink to this definition"></a></dt>
+<dd><p>Parse the value from on the wire format.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>parser</strong> (<a class="reference internal" href="tlslite.utils.codec.html#tlslite.utils.codec.Parser" title="tlslite.utils.codec.Parser"><em>Parser</em></a>) – data to be parsed as extension</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference internal" href="#tlslite.extensions.KeyShareEntry" title="tlslite.extensions.KeyShareEntry">KeyShareEntry</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tlslite.extensions.KeyShareEntry.write">
+<span class="sig-name descname"><span class="pre">write</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">writer</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tlslite.extensions.KeyShareEntry.write" title="Permalink to this definition"></a></dt>
+<dd><p>Write the on the wire representation of the item to writer.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>writer</strong> (<a class="reference internal" href="tlslite.utils.codec.html#tlslite.utils.codec.Writer" title="tlslite.utils.codec.Writer"><em>Writer</em></a>) – buffer to write the data to</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="tlslite.extensions.ListExtension">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">tlslite.extensions.</span></span><span class="sig-name descname"><span class="pre">ListExtension</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">fieldName</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">extType</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">item_enum</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tlslite.extensions.ListExtension" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <a class="reference internal" href="#tlslite.extensions.CustomNameExtension" title="tlslite.extensions.CustomNameExtension"><code class="xref py py-class docutils literal notranslate"><span class="pre">CustomNameExtension</span></code></a></p>
+<p>Abstract class for extensions that deal with single list in payload.</p>
+<p>Extension for handling arbitrary extensions comprising of just a list
+of same-sized elementes inside an array</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="tlslite.extensions.ListExtension.__init__">
+<span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">fieldName</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">extType</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">item_enum</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tlslite.extensions.ListExtension.__init__" title="Permalink to this definition"></a></dt>
+<dd><p>Create instance of the class.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>fieldName</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.11)"><em>str</em></a>) – name of the field to store the list that is
+the payload</p></li>
+<li><p><strong>extType</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.11)"><em>int</em></a>) – numerical ID of the extension</p></li>
+<li><p><strong>item_enum</strong> (<em>class</em>) – TLSEnum class that defines the enum of the
+items in the list</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tlslite.extensions.ListExtension.__repr__">
+<span class="sig-name descname"><span class="pre">__repr__</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tlslite.extensions.ListExtension.__repr__" title="Permalink to this definition"></a></dt>
+<dd><p>Return human readable representation of the extension.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="tlslite.extensions.NPNExtension">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">tlslite.extensions.</span></span><span class="sig-name descname"><span class="pre">NPNExtension</span></span><a class="headerlink" href="#tlslite.extensions.NPNExtension" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <a class="reference internal" href="#tlslite.extensions.TLSExtension" title="tlslite.extensions.TLSExtension"><code class="xref py py-class docutils literal notranslate"><span class="pre">TLSExtension</span></code></a></p>
+<p>This class handles the unofficial Next Protocol Negotiation TLS extension.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Variables<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>protocols</strong> (<em>list of bytearrays</em>) – list of protocol names supported by the server</p></li>
+<li><p><strong>extType</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.11)"><em>int</em></a>) – numeric type of NPNExtension, i.e. 13172</p></li>
+<li><p><strong>~.extData</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#bytearray" title="(in Python v3.11)"><em>bytearray</em></a>) – raw representation of extension data</p></li>
+</ul>
+</dd>
+</dl>
+<dl class="py method">
+<dt class="sig sig-object py" id="tlslite.extensions.NPNExtension.__init__">
+<span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tlslite.extensions.NPNExtension.__init__" title="Permalink to this definition"></a></dt>
+<dd><p>Create an instance of NPNExtension</p>
+<p>See also: <a class="reference internal" href="#tlslite.extensions.NPNExtension.create" title="tlslite.extensions.NPNExtension.create"><code class="xref py py-meth docutils literal notranslate"><span class="pre">create()</span></code></a> and <a class="reference internal" href="#tlslite.extensions.NPNExtension.parse" title="tlslite.extensions.NPNExtension.parse"><code class="xref py py-meth docutils literal notranslate"><span class="pre">parse()</span></code></a></p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tlslite.extensions.NPNExtension.__repr__">
+<span class="sig-name descname"><span class="pre">__repr__</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tlslite.extensions.NPNExtension.__repr__" title="Permalink to this definition"></a></dt>
+<dd><p>Create programmer-readable version of representation</p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.11)">str</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tlslite.extensions.NPNExtension.create">
+<span class="sig-name descname"><span class="pre">create</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">protocols</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tlslite.extensions.NPNExtension.create" title="Permalink to this definition"></a></dt>
+<dd><p>Create an instance of NPNExtension with specified protocols</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>protocols</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.11)"><em>list</em></a>) – list of protocol names that are supported</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="tlslite.extensions.NPNExtension.extData">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">extData</span></span><a class="headerlink" href="#tlslite.extensions.NPNExtension.extData" title="Permalink to this definition"></a></dt>
+<dd><p>Return the raw data encoding of the extension</p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#bytearray" title="(in Python v3.11)">bytearray</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tlslite.extensions.NPNExtension.parse">
+<span class="sig-name descname"><span class="pre">parse</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">p</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tlslite.extensions.NPNExtension.parse" title="Permalink to this definition"></a></dt>
+<dd><p>Parse the extension from on the wire format</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>p</strong> (<a class="reference internal" href="tlslite.utils.codec.html#tlslite.utils.codec.Parser" title="tlslite.utils.codec.Parser"><em>Parser</em></a>) – data to be parsed</p>
+</dd>
+<dt class="field-even">Raises<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference internal" href="tlslite.utils.codec.html#tlslite.utils.codec.DecodeError" title="tlslite.utils.codec.DecodeError"><strong>DecodeError</strong></a> – when the size of the passed element doesn’t match
+the internal representation</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><a class="reference internal" href="#tlslite.extensions.NPNExtension" title="tlslite.extensions.NPNExtension">NPNExtension</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="tlslite.extensions.PaddingExtension">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">tlslite.extensions.</span></span><span class="sig-name descname"><span class="pre">PaddingExtension</span></span><a class="headerlink" href="#tlslite.extensions.PaddingExtension" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <a class="reference internal" href="#tlslite.extensions.TLSExtension" title="tlslite.extensions.TLSExtension"><code class="xref py py-class docutils literal notranslate"><span class="pre">TLSExtension</span></code></a></p>
+<p>ClientHello message padding with a desired size.</p>
+<p>Can be used to pad ClientHello messages to a desired size
+in order to avoid implementation bugs caused by certain
+ClientHello sizes.</p>
+<p>See RFC7685.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="tlslite.extensions.PaddingExtension.__init__">
+<span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tlslite.extensions.PaddingExtension.__init__" title="Permalink to this definition"></a></dt>
+<dd><p>Create instance of class.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tlslite.extensions.PaddingExtension.create">
+<span class="sig-name descname"><span class="pre">create</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">size</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tlslite.extensions.PaddingExtension.create" title="Permalink to this definition"></a></dt>
+<dd><p>Set the padding size and create null byte padding of defined size.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>size</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.11)"><em>int</em></a>) – required padding size in bytes</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="tlslite.extensions.PaddingExtension.extData">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">extData</span></span><a class="headerlink" href="#tlslite.extensions.PaddingExtension.extData" title="Permalink to this definition"></a></dt>
+<dd><p>Return raw encoding of the extension.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#bytearray" title="(in Python v3.11)">bytearray</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tlslite.extensions.PaddingExtension.parse">
+<span class="sig-name descname"><span class="pre">parse</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">p</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tlslite.extensions.PaddingExtension.parse" title="Permalink to this definition"></a></dt>
+<dd><p>Deserialise extension from on the wire data.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>p</strong> (<a class="reference internal" href="tlslite.utils.codec.html#tlslite.utils.codec.Parser" title="tlslite.utils.codec.Parser"><em>Parser</em></a>) – data to be parsed</p>
+</dd>
+<dt class="field-even">Raises<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference internal" href="tlslite.utils.codec.html#tlslite.utils.codec.DecodeError" title="tlslite.utils.codec.DecodeError"><strong>DecodeError</strong></a> – when the size of the passed element doesn’t match
+the internal representation</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><a class="reference internal" href="#tlslite.extensions.TLSExtension" title="tlslite.extensions.TLSExtension">TLSExtension</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="tlslite.extensions.PreSharedKeyExtension">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">tlslite.extensions.</span></span><span class="sig-name descname"><span class="pre">PreSharedKeyExtension</span></span><a class="headerlink" href="#tlslite.extensions.PreSharedKeyExtension" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <a class="reference internal" href="#tlslite.extensions.TLSExtension" title="tlslite.extensions.TLSExtension"><code class="xref py py-class docutils literal notranslate"><span class="pre">TLSExtension</span></code></a></p>
+<p>Class for handling Pre Shared Key negotiation.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="tlslite.extensions.PreSharedKeyExtension.__init__">
+<span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tlslite.extensions.PreSharedKeyExtension.__init__" title="Permalink to this definition"></a></dt>
+<dd><p>Create instance of class.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tlslite.extensions.PreSharedKeyExtension.create">
+<span class="sig-name descname"><span class="pre">create</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">identities</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">binders</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tlslite.extensions.PreSharedKeyExtension.create" title="Permalink to this definition"></a></dt>
+<dd><p>Set list of offered PSKs.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="tlslite.extensions.PreSharedKeyExtension.extData">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">extData</span></span><a class="headerlink" href="#tlslite.extensions.PreSharedKeyExtension.extData" title="Permalink to this definition"></a></dt>
+<dd><p>Serialise the payload of the extension.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tlslite.extensions.PreSharedKeyExtension.parse">
+<span class="sig-name descname"><span class="pre">parse</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">parser</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tlslite.extensions.PreSharedKeyExtension.parse" title="Permalink to this definition"></a></dt>
+<dd><p>Parse the extension from on the wire format.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="tlslite.extensions.PskIdentity">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">tlslite.extensions.</span></span><span class="sig-name descname"><span class="pre">PskIdentity</span></span><a class="headerlink" href="#tlslite.extensions.PskIdentity" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.11)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<p>Handling of PskIdentity from PreSharedKey Extension.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="tlslite.extensions.PskIdentity.__init__">
+<span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tlslite.extensions.PskIdentity.__init__" title="Permalink to this definition"></a></dt>
+<dd><p>Create instance of class.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tlslite.extensions.PskIdentity.create">
+<span class="sig-name descname"><span class="pre">create</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">identity</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">obf_ticket_age</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tlslite.extensions.PskIdentity.create" title="Permalink to this definition"></a></dt>
+<dd><p>Initialise instance.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tlslite.extensions.PskIdentity.parse">
+<span class="sig-name descname"><span class="pre">parse</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">parser</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tlslite.extensions.PskIdentity.parse" title="Permalink to this definition"></a></dt>
+<dd><p>Deserialize the object from bytearray.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tlslite.extensions.PskIdentity.write">
+<span class="sig-name descname"><span class="pre">write</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tlslite.extensions.PskIdentity.write" title="Permalink to this definition"></a></dt>
+<dd><p>Serialise the object.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="tlslite.extensions.PskKeyExchangeModesExtension">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">tlslite.extensions.</span></span><span class="sig-name descname"><span class="pre">PskKeyExchangeModesExtension</span></span><a class="headerlink" href="#tlslite.extensions.PskKeyExchangeModesExtension" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <a class="reference internal" href="#tlslite.extensions.VarListExtension" title="tlslite.extensions.VarListExtension"><code class="xref py py-class docutils literal notranslate"><span class="pre">VarListExtension</span></code></a></p>
+<p>Handling of the PSK Key Exchange Modes extension.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="tlslite.extensions.PskKeyExchangeModesExtension.__init__">
+<span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tlslite.extensions.PskKeyExchangeModesExtension.__init__" title="Permalink to this definition"></a></dt>
+<dd><p>Create instance of class.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="tlslite.extensions.RecordSizeLimitExtension">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">tlslite.extensions.</span></span><span class="sig-name descname"><span class="pre">RecordSizeLimitExtension</span></span><a class="headerlink" href="#tlslite.extensions.RecordSizeLimitExtension" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <a class="reference internal" href="#tlslite.extensions.IntExtension" title="tlslite.extensions.IntExtension"><code class="xref py py-class docutils literal notranslate"><span class="pre">IntExtension</span></code></a></p>
+<p>Class for handling the record_size_limit extension from RFC 8449.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="tlslite.extensions.RecordSizeLimitExtension.__init__">
+<span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tlslite.extensions.RecordSizeLimitExtension.__init__" title="Permalink to this definition"></a></dt>
+<dd><p>Create instance.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="tlslite.extensions.RenegotiationInfoExtension">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">tlslite.extensions.</span></span><span class="sig-name descname"><span class="pre">RenegotiationInfoExtension</span></span><a class="headerlink" href="#tlslite.extensions.RenegotiationInfoExtension" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <a class="reference internal" href="#tlslite.extensions.VarBytesExtension" title="tlslite.extensions.VarBytesExtension"><code class="xref py py-class docutils literal notranslate"><span class="pre">VarBytesExtension</span></code></a></p>
+<p>Client and Server Hello secure renegotiation extension from RFC 5746</p>
+<p>Should have an empty renegotiated_connection field in case of initial
+connection</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="tlslite.extensions.RenegotiationInfoExtension.__init__">
+<span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tlslite.extensions.RenegotiationInfoExtension.__init__" title="Permalink to this definition"></a></dt>
+<dd><p>Create instance</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="tlslite.extensions.SNIExtension">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">tlslite.extensions.</span></span><span class="sig-name descname"><span class="pre">SNIExtension</span></span><a class="headerlink" href="#tlslite.extensions.SNIExtension" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <a class="reference internal" href="#tlslite.extensions.TLSExtension" title="tlslite.extensions.TLSExtension"><code class="xref py py-class docutils literal notranslate"><span class="pre">TLSExtension</span></code></a></p>
+<p>Class for handling Server Name Indication (server_name) extension from
+RFC 4366.</p>
+<p>Note that while usually the client does advertise just one name, it is
+possible to provide a list of names, each of different type.
+The type is a single byte value (represented by ints), the names are
+opaque byte strings, in case of DNS host names (records of type 0) they
+are UTF-8 encoded domain names (without the ending dot).</p>
+<dl class="field-list simple">
+<dt class="field-odd">Variables<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>hostNames</strong> (<em>tuple of bytearrays</em>) – <p>tuple of hostnames (server name records of type 0)
+advertised in the extension. Note that it may not include all names
+from client hello as the client can advertise other types. Also note
+that while it’s not possible to change the returned array in place, it
+is possible to assign a new set of names. IOW, this won’t work:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">sni_extension</span><span class="o">.</span><span class="n">hostNames</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="nb">bytearray</span><span class="p">(</span><span class="sa">b</span><span class="s1">&#39;example.com&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>while this will work:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">names</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">sni_extension</span><span class="o">.</span><span class="n">hostNames</span><span class="p">)</span>
+<span class="n">names</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="nb">bytearray</span><span class="p">(</span><span class="sa">b</span><span class="s1">&#39;example.com&#39;</span><span class="p">)</span>
+<span class="n">sni_extension</span><span class="o">.</span><span class="n">hostNames</span> <span class="o">=</span> <span class="n">names</span>
+</pre></div>
+</div>
+</p></li>
+<li><p><strong>serverNames</strong> (list of <a class="reference internal" href="#tlslite.extensions.SNIExtension.ServerName" title="tlslite.extensions.ServerName"><code class="xref py py-class docutils literal notranslate"><span class="pre">ServerName</span></code></a>) – list of all names advertised in extension.
+<a class="reference internal" href="#tlslite.extensions.SNIExtension.ServerName" title="tlslite.extensions.ServerName"><code class="xref py py-class docutils literal notranslate"><span class="pre">ServerName</span></code></a> is a namedtuple with two elements, the first
+element (type) defines the type of the name (encoded as int)
+while the other (name) is a bytearray that carries the value.
+Known types are defined in <a class="reference internal" href="tlslite.constants.html#tlslite.constants.NameType" title="tlslite.constants.NameType"><code class="xref py py-class docutils literal notranslate"><span class="pre">tlslite.constants.NameType</span></code></a>.
+The list will be empty if the on the wire extension had and empty
+list while it will be None if the extension was empty.</p></li>
+<li><p><strong>extType</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.11)"><em>int</em></a>) – numeric type of SNIExtension, i.e. 0</p></li>
+<li><p><strong>~.extData</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#bytearray" title="(in Python v3.11)"><em>bytearray</em></a>) – raw representation of the extension</p></li>
+</ul>
+</dd>
+</dl>
+<dl class="py class">
+<dt class="sig sig-object py" id="tlslite.extensions.SNIExtension.ServerName">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">ServerName</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name_type</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">name</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tlslite.extensions.SNIExtension.ServerName" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#tuple" title="(in Python v3.11)"><code class="xref py py-class docutils literal notranslate"><span class="pre">tuple</span></code></a></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="tlslite.extensions.SNIExtension.ServerName.__repr__">
+<span class="sig-name descname"><span class="pre">__repr__</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tlslite.extensions.SNIExtension.ServerName.__repr__" title="Permalink to this definition"></a></dt>
+<dd><p>Return a nicely formatted representation string</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="tlslite.extensions.SNIExtension.ServerName.name">
+<span class="sig-name descname"><span class="pre">name</span></span><a class="headerlink" href="#tlslite.extensions.SNIExtension.ServerName.name" title="Permalink to this definition"></a></dt>
+<dd><p>Alias for field number 1</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="tlslite.extensions.SNIExtension.ServerName.name_type">
+<span class="sig-name descname"><span class="pre">name_type</span></span><a class="headerlink" href="#tlslite.extensions.SNIExtension.ServerName.name_type" title="Permalink to this definition"></a></dt>
+<dd><p>Alias for field number 0</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tlslite.extensions.SNIExtension.__init__">
+<span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tlslite.extensions.SNIExtension.__init__" title="Permalink to this definition"></a></dt>
+<dd><p>Create an instance of SNIExtension.</p>
+<p>See also: <a class="reference internal" href="#tlslite.extensions.SNIExtension.create" title="tlslite.extensions.SNIExtension.create"><code class="xref py py-meth docutils literal notranslate"><span class="pre">create()</span></code></a> and <a class="reference internal" href="#tlslite.extensions.SNIExtension.parse" title="tlslite.extensions.SNIExtension.parse"><code class="xref py py-meth docutils literal notranslate"><span class="pre">parse()</span></code></a>.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tlslite.extensions.SNIExtension.__repr__">
+<span class="sig-name descname"><span class="pre">__repr__</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tlslite.extensions.SNIExtension.__repr__" title="Permalink to this definition"></a></dt>
+<dd><p>Return programmer-readable representation of extension</p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.11)">str</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tlslite.extensions.SNIExtension.create">
+<span class="sig-name descname"><span class="pre">create</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">hostname</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">hostNames</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">serverNames</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tlslite.extensions.SNIExtension.create" title="Permalink to this definition"></a></dt>
+<dd><p>Initializes an instance with provided hostname, host names or
+raw server names.</p>
+<p>Any of the parameters may be <cite>None</cite>, in that case the list inside the
+extension won’t be defined, if either <cite>hostNames</cite> or <cite>serverNames</cite> is
+an empty list, then the extension will define a list of length 0.</p>
+<p>If multiple parameters are specified at the same time, then the
+resulting list of names will be concatenated in order of hostname,
+hostNames and serverNames last.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>hostname</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#bytearray" title="(in Python v3.11)"><em>bytearray</em></a>) – raw UTF-8 encoding of the host name</p></li>
+<li><p><strong>hostNames</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.11)"><em>list</em></a>) – list of raw UTF-8 encoded host names</p></li>
+<li><p><strong>serverNames</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.11)"><em>list</em></a>) – pairs of name_type and name encoded as a
+namedtuple</p></li>
+</ul>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference internal" href="#tlslite.extensions.SNIExtension" title="tlslite.extensions.SNIExtension">SNIExtension</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="tlslite.extensions.SNIExtension.extData">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">extData</span></span><a class="headerlink" href="#tlslite.extensions.SNIExtension.extData" title="Permalink to this definition"></a></dt>
+<dd><p>Raw encoding of extension data, without type and length header.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#bytearray" title="(in Python v3.11)">bytearray</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="tlslite.extensions.SNIExtension.hostNames">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">hostNames</span></span><a class="headerlink" href="#tlslite.extensions.SNIExtension.hostNames" title="Permalink to this definition"></a></dt>
+<dd><p>Returns a simulated list of hostNames from the extension.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>tuple of bytearrays</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tlslite.extensions.SNIExtension.parse">
+<span class="sig-name descname"><span class="pre">parse</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">p</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tlslite.extensions.SNIExtension.parse" title="Permalink to this definition"></a></dt>
+<dd><p>Deserialise the extension from on-the-wire data</p>
+<p>The parser should not include the type or length of extension!</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>p</strong> (<em>tlslite.util.codec.Parser</em>) – data to be parsed</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference internal" href="#tlslite.extensions.SNIExtension" title="tlslite.extensions.SNIExtension">SNIExtension</a></p>
+</dd>
+<dt class="field-odd">Raises<span class="colon">:</span></dt>
+<dd class="field-odd"><p><a class="reference internal" href="tlslite.utils.codec.html#tlslite.utils.codec.DecodeError" title="tlslite.utils.codec.DecodeError"><strong>DecodeError</strong></a> – when the internal sizes don’t match the attached
+data</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tlslite.extensions.SNIExtension.write">
+<span class="sig-name descname"><span class="pre">write</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tlslite.extensions.SNIExtension.write" title="Permalink to this definition"></a></dt>
+<dd><p>Returns encoded extension, as encoded on the wire</p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#bytearray" title="(in Python v3.11)">bytearray</a></p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>an array of bytes formatted as they are supposed to be
+written
+on the wire, including the type, length and extension data</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="tlslite.extensions.SRPExtension">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">tlslite.extensions.</span></span><span class="sig-name descname"><span class="pre">SRPExtension</span></span><a class="headerlink" href="#tlslite.extensions.SRPExtension" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <a class="reference internal" href="#tlslite.extensions.TLSExtension" title="tlslite.extensions.TLSExtension"><code class="xref py py-class docutils literal notranslate"><span class="pre">TLSExtension</span></code></a></p>
+<p>This class handles the Secure Remote Password protocol TLS extension
+defined in RFC 5054.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Variables<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>extType</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.11)"><em>int</em></a>) – numeric type of SRPExtension, i.e. 12</p></li>
+<li><p><strong>~.extData</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#bytearray" title="(in Python v3.11)"><em>bytearray</em></a>) – raw representation of extension data</p></li>
+<li><p><strong>identity</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#bytearray" title="(in Python v3.11)"><em>bytearray</em></a>) – UTF-8 encoding of user name</p></li>
+</ul>
+</dd>
+</dl>
+<dl class="py method">
+<dt class="sig sig-object py" id="tlslite.extensions.SRPExtension.__init__">
+<span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tlslite.extensions.SRPExtension.__init__" title="Permalink to this definition"></a></dt>
+<dd><p>Create an instance of SRPExtension</p>
+<p>See also: <a class="reference internal" href="#tlslite.extensions.SRPExtension.create" title="tlslite.extensions.SRPExtension.create"><code class="xref py py-meth docutils literal notranslate"><span class="pre">create()</span></code></a> and <a class="reference internal" href="#tlslite.extensions.SRPExtension.parse" title="tlslite.extensions.SRPExtension.parse"><code class="xref py py-meth docutils literal notranslate"><span class="pre">parse()</span></code></a></p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tlslite.extensions.SRPExtension.__repr__">
+<span class="sig-name descname"><span class="pre">__repr__</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tlslite.extensions.SRPExtension.__repr__" title="Permalink to this definition"></a></dt>
+<dd><p>Return programmer-centric description of extension</p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.11)">str</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tlslite.extensions.SRPExtension.create">
+<span class="sig-name descname"><span class="pre">create</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">identity</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tlslite.extensions.SRPExtension.create" title="Permalink to this definition"></a></dt>
+<dd><p>Create and instance of SRPExtension with specified protocols</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>identity</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#bytearray" title="(in Python v3.11)"><em>bytearray</em></a>) – UTF-8 encoded identity (user name) to be
+provided
+to user. MUST be shorter than 2^8-1.</p>
+</dd>
+<dt class="field-even">Raises<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3/library/exceptions.html#ValueError" title="(in Python v3.11)"><strong>ValueError</strong></a> – when the identity lenght is longer than 2^8-1</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="tlslite.extensions.SRPExtension.extData">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">extData</span></span><a class="headerlink" href="#tlslite.extensions.SRPExtension.extData" title="Permalink to this definition"></a></dt>
+<dd><p>Return raw data encoding of the extension</p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#bytearray" title="(in Python v3.11)">bytearray</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tlslite.extensions.SRPExtension.parse">
+<span class="sig-name descname"><span class="pre">parse</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">p</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tlslite.extensions.SRPExtension.parse" title="Permalink to this definition"></a></dt>
+<dd><p>Parse the extension from on the wire format</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>p</strong> (<a class="reference internal" href="tlslite.utils.codec.html#tlslite.utils.codec.Parser" title="tlslite.utils.codec.Parser"><em>Parser</em></a>) – data to be parsed</p>
+</dd>
+<dt class="field-even">Raises<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference internal" href="tlslite.utils.codec.html#tlslite.utils.codec.DecodeError" title="tlslite.utils.codec.DecodeError"><strong>DecodeError</strong></a> – when the data is internally inconsistent</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><a class="reference internal" href="#tlslite.extensions.SRPExtension" title="tlslite.extensions.SRPExtension">SRPExtension</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="tlslite.extensions.ServerCertTypeExtension">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">tlslite.extensions.</span></span><span class="sig-name descname"><span class="pre">ServerCertTypeExtension</span></span><a class="headerlink" href="#tlslite.extensions.ServerCertTypeExtension" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <a class="reference internal" href="#tlslite.extensions.IntExtension" title="tlslite.extensions.IntExtension"><code class="xref py py-class docutils literal notranslate"><span class="pre">IntExtension</span></code></a></p>
+<p>This class handles the Certificate Type extension (variant sent by server)
+defined in RFC 6091.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Variables<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>extType</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.11)"><em>int</em></a>) – binary type of Certificate Type extension, i.e. 9</p></li>
+<li><p><strong>~.extData</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#bytearray" title="(in Python v3.11)"><em>bytearray</em></a>) – raw representation of the extension data</p></li>
+<li><p><strong>cert_type</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.11)"><em>int</em></a>) – the certificate type selected by server</p></li>
+</ul>
+</dd>
+</dl>
+<dl class="py method">
+<dt class="sig sig-object py" id="tlslite.extensions.ServerCertTypeExtension.__init__">
+<span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tlslite.extensions.ServerCertTypeExtension.__init__" title="Permalink to this definition"></a></dt>
+<dd><p>Create an instance of ServerCertTypeExtension</p>
+<p>See also: <code class="xref py py-meth docutils literal notranslate"><span class="pre">create()</span></code> and <a class="reference internal" href="#tlslite.extensions.ServerCertTypeExtension.parse" title="tlslite.extensions.ServerCertTypeExtension.parse"><code class="xref py py-meth docutils literal notranslate"><span class="pre">parse()</span></code></a></p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tlslite.extensions.ServerCertTypeExtension.parse">
+<span class="sig-name descname"><span class="pre">parse</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">parser</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tlslite.extensions.ServerCertTypeExtension.parse" title="Permalink to this definition"></a></dt>
+<dd><p>Parse the extension from on the wire format</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>p</strong> (<a class="reference internal" href="tlslite.utils.codec.html#tlslite.utils.codec.Parser" title="tlslite.utils.codec.Parser"><em>Parser</em></a>) – parser with data</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="tlslite.extensions.ServerKeyShareExtension">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">tlslite.extensions.</span></span><span class="sig-name descname"><span class="pre">ServerKeyShareExtension</span></span><a class="headerlink" href="#tlslite.extensions.ServerKeyShareExtension" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <a class="reference internal" href="#tlslite.extensions.TLSExtension" title="tlslite.extensions.TLSExtension"><code class="xref py py-class docutils literal notranslate"><span class="pre">TLSExtension</span></code></a></p>
+<p>Class for handling the Server Hello variant of the Key Share extension.</p>
+<p>Extension for sending the key shares to client</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="tlslite.extensions.ServerKeyShareExtension.__init__">
+<span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tlslite.extensions.ServerKeyShareExtension.__init__" title="Permalink to this definition"></a></dt>
+<dd><p>Create instance of the object.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tlslite.extensions.ServerKeyShareExtension.create">
+<span class="sig-name descname"><span class="pre">create</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">server_share</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tlslite.extensions.ServerKeyShareExtension.create" title="Permalink to this definition"></a></dt>
+<dd><p>Set the advertised server share in the extension.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="tlslite.extensions.ServerKeyShareExtension.extData">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">extData</span></span><a class="headerlink" href="#tlslite.extensions.ServerKeyShareExtension.extData" title="Permalink to this definition"></a></dt>
+<dd><p>Serialise the payload of the extension</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tlslite.extensions.ServerKeyShareExtension.parse">
+<span class="sig-name descname"><span class="pre">parse</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">parser</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tlslite.extensions.ServerKeyShareExtension.parse" title="Permalink to this definition"></a></dt>
+<dd><p>Parse the extension from on the wire format.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>parser</strong> (<a class="reference internal" href="tlslite.utils.codec.html#tlslite.utils.codec.Parser" title="tlslite.utils.codec.Parser"><em>Parser</em></a>) – data to be parsed</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference internal" href="#tlslite.extensions.ServerKeyShareExtension" title="tlslite.extensions.ServerKeyShareExtension">ServerKeyShareExtension</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="tlslite.extensions.SignatureAlgorithmsCertExtension">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">tlslite.extensions.</span></span><span class="sig-name descname"><span class="pre">SignatureAlgorithmsCertExtension</span></span><a class="headerlink" href="#tlslite.extensions.SignatureAlgorithmsCertExtension" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">_SigListExt</span></code></p>
+<p>Client side list of supported signatures in certificates.</p>
+<p>Should be used when the signatures supported in certificates and in TLS
+messages differ.</p>
+<p>See TLS1.3 RFC</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="tlslite.extensions.SignatureAlgorithmsCertExtension.__init__">
+<span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tlslite.extensions.SignatureAlgorithmsCertExtension.__init__" title="Permalink to this definition"></a></dt>
+<dd><p>Create instance of class.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="tlslite.extensions.SignatureAlgorithmsExtension">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">tlslite.extensions.</span></span><span class="sig-name descname"><span class="pre">SignatureAlgorithmsExtension</span></span><a class="headerlink" href="#tlslite.extensions.SignatureAlgorithmsExtension" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">_SigListExt</span></code></p>
+<p>Client side list of supported signature algorithms.</p>
+<p>Should be used by server to select certificate and signing method for
+Server Key Exchange messages. In practice used only for the latter.</p>
+<p>See RFC5246.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="tlslite.extensions.SignatureAlgorithmsExtension.__init__">
+<span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tlslite.extensions.SignatureAlgorithmsExtension.__init__" title="Permalink to this definition"></a></dt>
+<dd><p>Create instance of class</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="tlslite.extensions.SrvPreSharedKeyExtension">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">tlslite.extensions.</span></span><span class="sig-name descname"><span class="pre">SrvPreSharedKeyExtension</span></span><a class="headerlink" href="#tlslite.extensions.SrvPreSharedKeyExtension" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <a class="reference internal" href="#tlslite.extensions.IntExtension" title="tlslite.extensions.IntExtension"><code class="xref py py-class docutils literal notranslate"><span class="pre">IntExtension</span></code></a></p>
+<p>Handling of the Pre Shared Key extension from server.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="tlslite.extensions.SrvPreSharedKeyExtension.__init__">
+<span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tlslite.extensions.SrvPreSharedKeyExtension.__init__" title="Permalink to this definition"></a></dt>
+<dd><p>Create instance of class.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="tlslite.extensions.SrvSupportedVersionsExtension">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">tlslite.extensions.</span></span><span class="sig-name descname"><span class="pre">SrvSupportedVersionsExtension</span></span><a class="headerlink" href="#tlslite.extensions.SrvSupportedVersionsExtension" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <a class="reference internal" href="#tlslite.extensions.TLSExtension" title="tlslite.extensions.TLSExtension"><code class="xref py py-class docutils literal notranslate"><span class="pre">TLSExtension</span></code></a></p>
+<p>Handling of SupportedVersion extension in SH and HRR in TLS 1.3.</p>
+<p>See draft-ietf-tls-tls13.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Variables<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>extType</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.11)"><em>int</em></a>) – numeric type of the Supported Versions extension, i.e. 43</p></li>
+<li><p><strong>~.extData</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#bytearray" title="(in Python v3.11)"><em>bytearray</em></a>) – raw representation of the extension payload</p></li>
+<li><p><strong>~.version</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#tuple" title="(in Python v3.11)"><em>tuple</em></a>) – version selected by the server</p></li>
+</ul>
+</dd>
+</dl>
+<dl class="py method">
+<dt class="sig sig-object py" id="tlslite.extensions.SrvSupportedVersionsExtension.__init__">
+<span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tlslite.extensions.SrvSupportedVersionsExtension.__init__" title="Permalink to this definition"></a></dt>
+<dd><p>Creates a generic TLS extension.</p>
+<p>You’ll need to use <a class="reference internal" href="#tlslite.extensions.SrvSupportedVersionsExtension.create" title="tlslite.extensions.SrvSupportedVersionsExtension.create"><code class="xref py py-meth docutils literal notranslate"><span class="pre">create()</span></code></a> or <a class="reference internal" href="#tlslite.extensions.SrvSupportedVersionsExtension.parse" title="tlslite.extensions.SrvSupportedVersionsExtension.parse"><code class="xref py py-meth docutils literal notranslate"><span class="pre">parse()</span></code></a> methods to
+create an extension
+that is actually usable.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>server</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.11)"><em>bool</em></a>) – whether to select ClientHello or ServerHello
+version
+for parsing</p></li>
+<li><p><strong>extType</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.11)"><em>int</em></a>) – type of extension encoded as an integer, to be used
+by subclasses</p></li>
+<li><p><strong>encExt</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.11)"><em>bool</em></a>) – whether to select the EncryptedExtensions type
+for parsing</p></li>
+<li><p><strong>cert</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.11)"><em>bool</em></a>) – whether to select the Certificate type
+of extension for parsing</p></li>
+<li><p><strong>hrr</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.11)"><em>bool</em></a>) – whether to select the Hello Retry Request type
+of extension for parsing</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tlslite.extensions.SrvSupportedVersionsExtension.__repr__">
+<span class="sig-name descname"><span class="pre">__repr__</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tlslite.extensions.SrvSupportedVersionsExtension.__repr__" title="Permalink to this definition"></a></dt>
+<dd><p>Return programmer-readable representation of the extension.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.11)">str</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tlslite.extensions.SrvSupportedVersionsExtension.create">
+<span class="sig-name descname"><span class="pre">create</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">version</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tlslite.extensions.SrvSupportedVersionsExtension.create" title="Permalink to this definition"></a></dt>
+<dd><p>Set the version supported by the server.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>version</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#tuple" title="(in Python v3.11)"><em>tuple</em></a>) – Version selected by server.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference internal" href="#tlslite.extensions.SrvSupportedVersionsExtension" title="tlslite.extensions.SrvSupportedVersionsExtension">SrvSupportedVersionsExtension</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="tlslite.extensions.SrvSupportedVersionsExtension.extData">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">extData</span></span><a class="headerlink" href="#tlslite.extensions.SrvSupportedVersionsExtension.extData" title="Permalink to this definition"></a></dt>
+<dd><p>Raw encoding of extension data, without type and length header.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#bytearray" title="(in Python v3.11)">bytearray</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tlslite.extensions.SrvSupportedVersionsExtension.parse">
+<span class="sig-name descname"><span class="pre">parse</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">parser</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tlslite.extensions.SrvSupportedVersionsExtension.parse" title="Permalink to this definition"></a></dt>
+<dd><p>Deserialise the extension from on-the-wire data.</p>
+<p>The parser should not include the type or length of extension.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>parser</strong> (<em>tlslite.util.codec.Parser</em>) – data to be parsed</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference internal" href="#tlslite.extensions.SrvSupportedVersionsExtension" title="tlslite.extensions.SrvSupportedVersionsExtension">SrvSupportedVersionsExtension</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="tlslite.extensions.StatusRequestExtension">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">tlslite.extensions.</span></span><span class="sig-name descname"><span class="pre">StatusRequestExtension</span></span><a class="headerlink" href="#tlslite.extensions.StatusRequestExtension" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <a class="reference internal" href="#tlslite.extensions.TLSExtension" title="tlslite.extensions.TLSExtension"><code class="xref py py-class docutils literal notranslate"><span class="pre">TLSExtension</span></code></a></p>
+<p>Handling of the Certificate Status Request extension from RFC 6066.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Variables<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>status_type</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.11)"><em>int</em></a>) – type of the status request</p></li>
+<li><p><strong>responder_id_list</strong> (<em>list of bytearray</em>) – list of DER encoded OCSP responder identifiers
+that the client trusts</p></li>
+<li><p><strong>request_extensions</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#bytearray" title="(in Python v3.11)"><em>bytearray</em></a>) – DER encoded list of OCSP extensions, as defined
+in RFC 2560</p></li>
+</ul>
+</dd>
+</dl>
+<dl class="py method">
+<dt class="sig sig-object py" id="tlslite.extensions.StatusRequestExtension.__init__">
+<span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tlslite.extensions.StatusRequestExtension.__init__" title="Permalink to this definition"></a></dt>
+<dd><p>Create instance of StatusRequestExtension.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tlslite.extensions.StatusRequestExtension.__repr__">
+<span class="sig-name descname"><span class="pre">__repr__</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tlslite.extensions.StatusRequestExtension.__repr__" title="Permalink to this definition"></a></dt>
+<dd><p>Create programmer-readable representation of object</p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.11)">str</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tlslite.extensions.StatusRequestExtension.create">
+<span class="sig-name descname"><span class="pre">create</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">status_type</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">responder_id_list</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">()</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">request_extensions</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">b''</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tlslite.extensions.StatusRequestExtension.create" title="Permalink to this definition"></a></dt>
+<dd><p>Create an instance of StatusRequestExtension with specified options.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>status_type</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.11)"><em>int</em></a>) – type of status returned</p></li>
+<li><p><strong>responder_id_list</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.11)"><em>list</em></a>) – list of encoded OCSP responder
+identifiers
+that the client trusts</p></li>
+<li><p><strong>request_extensions</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#bytearray" title="(in Python v3.11)"><em>bytearray</em></a>) – DER encoding of requested OCSP
+extensions</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="tlslite.extensions.StatusRequestExtension.extData">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">extData</span></span><a class="headerlink" href="#tlslite.extensions.StatusRequestExtension.extData" title="Permalink to this definition"></a></dt>
+<dd><p>Return encoded payload of the extension.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#bytearray" title="(in Python v3.11)">bytearray</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tlslite.extensions.StatusRequestExtension.parse">
+<span class="sig-name descname"><span class="pre">parse</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">parser</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tlslite.extensions.StatusRequestExtension.parse" title="Permalink to this definition"></a></dt>
+<dd><p>Parse the extension from on the wire format.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>parser</strong> (<a class="reference internal" href="tlslite.utils.codec.html#tlslite.utils.codec.Parser" title="tlslite.utils.codec.Parser"><em>Parser</em></a>) – data to be parsed as extension</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference internal" href="#tlslite.extensions.StatusRequestExtension" title="tlslite.extensions.StatusRequestExtension">StatusRequestExtension</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="tlslite.extensions.SupportedGroupsExtension">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">tlslite.extensions.</span></span><span class="sig-name descname"><span class="pre">SupportedGroupsExtension</span></span><a class="headerlink" href="#tlslite.extensions.SupportedGroupsExtension" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <a class="reference internal" href="#tlslite.extensions.VarListExtension" title="tlslite.extensions.VarListExtension"><code class="xref py py-class docutils literal notranslate"><span class="pre">VarListExtension</span></code></a></p>
+<p>Client side list of supported groups of (EC)DHE key exchage.</p>
+<p>See RFC4492, RFC7027 and RFC-ietf-tls-negotiated-ff-dhe-10</p>
+<dl class="field-list simple">
+<dt class="field-odd">Variables<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>groups</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.11)"><em>int</em></a>) – list of groups that the client supports</p>
+</dd>
+</dl>
+<dl class="py method">
+<dt class="sig sig-object py" id="tlslite.extensions.SupportedGroupsExtension.__init__">
+<span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tlslite.extensions.SupportedGroupsExtension.__init__" title="Permalink to this definition"></a></dt>
+<dd><p>Create instance of class</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="tlslite.extensions.SupportedVersionsExtension">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">tlslite.extensions.</span></span><span class="sig-name descname"><span class="pre">SupportedVersionsExtension</span></span><a class="headerlink" href="#tlslite.extensions.SupportedVersionsExtension" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <a class="reference internal" href="#tlslite.extensions.VarSeqListExtension" title="tlslite.extensions.VarSeqListExtension"><code class="xref py py-class docutils literal notranslate"><span class="pre">VarSeqListExtension</span></code></a></p>
+<p>This class handles the SupportedVersion extensions used in TLS 1.3.</p>
+<p>See draft-ietf-tls-tls13.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Variables<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>extType</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.11)"><em>int</em></a>) – numeric type of the Supported Versions extension, i.e. 43</p></li>
+<li><p><strong>~.extData</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#bytearray" title="(in Python v3.11)"><em>bytearray</em></a>) – raw representation of the extension data</p></li>
+<li><p><strong>versions</strong> (<em>list of tuples</em>) – list of supported protocol versions; each tuple has two
+one byte long integers</p></li>
+</ul>
+</dd>
+</dl>
+<dl class="py method">
+<dt class="sig sig-object py" id="tlslite.extensions.SupportedVersionsExtension.__init__">
+<span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tlslite.extensions.SupportedVersionsExtension.__init__" title="Permalink to this definition"></a></dt>
+<dd><p>Create an instance of SupportedVersionsExtension.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="tlslite.extensions.TACKExtension">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">tlslite.extensions.</span></span><span class="sig-name descname"><span class="pre">TACKExtension</span></span><a class="headerlink" href="#tlslite.extensions.TACKExtension" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <a class="reference internal" href="#tlslite.extensions.TLSExtension" title="tlslite.extensions.TLSExtension"><code class="xref py py-class docutils literal notranslate"><span class="pre">TLSExtension</span></code></a></p>
+<p>This class handles the server side TACK extension (see
+draft-perrin-tls-tack-02).</p>
+<dl class="field-list simple">
+<dt class="field-odd">Variables<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>tacks</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.11)"><em>list</em></a>) – list of TACK’s supported by server</p></li>
+<li><p><strong>activation_flags</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.11)"><em>int</em></a>) – activation flags for the tacks</p></li>
+</ul>
+</dd>
+</dl>
+<dl class="py class">
+<dt class="sig sig-object py" id="tlslite.extensions.TACKExtension.TACK">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">TACK</span></span><a class="headerlink" href="#tlslite.extensions.TACKExtension.TACK" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.11)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<p>Implementation of the single TACK</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="tlslite.extensions.TACKExtension.TACK.__eq__">
+<span class="sig-name descname"><span class="pre">__eq__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">other</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tlslite.extensions.TACKExtension.TACK.__eq__" title="Permalink to this definition"></a></dt>
+<dd><p>Tests if the other object is equivalent to this TACK</p>
+<p>Returns False for every object that’s not a TACK</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tlslite.extensions.TACKExtension.TACK.__init__">
+<span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tlslite.extensions.TACKExtension.TACK.__init__" title="Permalink to this definition"></a></dt>
+<dd><p>Create a single TACK object</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tlslite.extensions.TACKExtension.TACK.__repr__">
+<span class="sig-name descname"><span class="pre">__repr__</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tlslite.extensions.TACKExtension.TACK.__repr__" title="Permalink to this definition"></a></dt>
+<dd><p>Return programmmer readable representation of TACK object</p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.11)">str</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tlslite.extensions.TACKExtension.TACK.create">
+<span class="sig-name descname"><span class="pre">create</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">public_key</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">min_generation</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">generation</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">expiration</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">target_hash</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">signature</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tlslite.extensions.TACKExtension.TACK.create" title="Permalink to this definition"></a></dt>
+<dd><p>Initialise the TACK with data</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tlslite.extensions.TACKExtension.TACK.parse">
+<span class="sig-name descname"><span class="pre">parse</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">p</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tlslite.extensions.TACKExtension.TACK.parse" title="Permalink to this definition"></a></dt>
+<dd><p>Parse the TACK from on the wire format</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>p</strong> (<a class="reference internal" href="tlslite.utils.codec.html#tlslite.utils.codec.Parser" title="tlslite.utils.codec.Parser"><em>Parser</em></a>) – data to be parsed</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference internal" href="#tlslite.extensions.TACKExtension.TACK" title="tlslite.extensions.TACKExtension.TACK">TACK</a></p>
+</dd>
+<dt class="field-odd">Raises<span class="colon">:</span></dt>
+<dd class="field-odd"><p><a class="reference internal" href="tlslite.utils.codec.html#tlslite.utils.codec.DecodeError" title="tlslite.utils.codec.DecodeError"><strong>DecodeError</strong></a> – when the internal sizes don’t match the
+provided data</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tlslite.extensions.TACKExtension.TACK.write">
+<span class="sig-name descname"><span class="pre">write</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tlslite.extensions.TACKExtension.TACK.write" title="Permalink to this definition"></a></dt>
+<dd><p>Convert the TACK into on the wire format</p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#bytearray" title="(in Python v3.11)">bytearray</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tlslite.extensions.TACKExtension.__init__">
+<span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tlslite.extensions.TACKExtension.__init__" title="Permalink to this definition"></a></dt>
+<dd><p>Create an instance of TACKExtension</p>
+<p>See also: <a class="reference internal" href="#tlslite.extensions.TACKExtension.create" title="tlslite.extensions.TACKExtension.create"><code class="xref py py-meth docutils literal notranslate"><span class="pre">create()</span></code></a> and :py:meth`parse`</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tlslite.extensions.TACKExtension.__repr__">
+<span class="sig-name descname"><span class="pre">__repr__</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tlslite.extensions.TACKExtension.__repr__" title="Permalink to this definition"></a></dt>
+<dd><p>Create a programmer readable representation of TACK extension</p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.11)">str</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tlslite.extensions.TACKExtension.create">
+<span class="sig-name descname"><span class="pre">create</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">tacks</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">activation_flags</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tlslite.extensions.TACKExtension.create" title="Permalink to this definition"></a></dt>
+<dd><p>Initialize the instance of TACKExtension</p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><a class="reference internal" href="#tlslite.extensions.TACKExtension" title="tlslite.extensions.TACKExtension">TACKExtension</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="tlslite.extensions.TACKExtension.extData">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">extData</span></span><a class="headerlink" href="#tlslite.extensions.TACKExtension.extData" title="Permalink to this definition"></a></dt>
+<dd><p>Return the raw data encoding of the extension</p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#bytearray" title="(in Python v3.11)">bytearray</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tlslite.extensions.TACKExtension.parse">
+<span class="sig-name descname"><span class="pre">parse</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">p</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tlslite.extensions.TACKExtension.parse" title="Permalink to this definition"></a></dt>
+<dd><p>Parse the extension from on the wire format</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>p</strong> (<a class="reference internal" href="tlslite.utils.codec.html#tlslite.utils.codec.Parser" title="tlslite.utils.codec.Parser"><em>Parser</em></a>) – data to be parsed</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference internal" href="#tlslite.extensions.TACKExtension" title="tlslite.extensions.TACKExtension">TACKExtension</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="tlslite.extensions.TLSExtension">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">tlslite.extensions.</span></span><span class="sig-name descname"><span class="pre">TLSExtension</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">server</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">extType</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">encExt</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cert</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">hrr</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tlslite.extensions.TLSExtension" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.11)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<p>Base class for handling handshake protocol hello messages extensions.</p>
+<p>This class handles the generic information about TLS extensions used by
+both sides of connection in Client Hello and Server Hello messages.
+See <a class="reference external" href="https://tools.ietf.org/html/rfc4366">https://tools.ietf.org/html/rfc4366</a> for more info.</p>
+<p>It is used as a base class for specific users and as a way to store
+extensions that are not implemented in library.</p>
+<p>To implement a new extension you will need to create a new class which
+calls this class contructor (__init__), usually specifying just the
+extType parameter. The other methods which need to be implemented are:
+<cite>extData</cite>, <cite>create</cite>, <cite>parse</cite> and <cite>__repr__</cite>. If the parser can be used
+for client and optionally server extensions, the extension constructor
+should be added to <cite>_universalExtensions</cite>. Otherwise, when the client and
+server extensions have completely different forms, you should add client
+form to the <cite>_universalExtensions</cite> and the server form to
+<cite>_serverExtensions</cite>. Since the server MUST NOT send extensions not
+advertised by client, there are no purely server-side extensions. But
+if the client side extension is just marked by presence and has no payload,
+the client side (thus the <cite>_universalExtensions</cite> may be skipped, then
+the <cite>TLSExtension</cite> class will be used for implementing it. See
+end of the file for type-to-constructor bindings.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Subclassing for the purpose of parsing extensions
+is not an officially supported part of API (just as underscores in
+their
+names would indicate).</p>
+</div>
+<dl class="field-list simple">
+<dt class="field-odd">Variables<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>extType</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.11)"><em>int</em></a>) – a 2^16-1 limited integer specifying the type of the
+extension that it contains, e.g. 0 indicates server name extension</p></li>
+<li><p><strong>~.extData</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#bytearray" title="(in Python v3.11)"><em>bytearray</em></a>) – a byte array containing the value of the extension as
+to be written on the wire</p></li>
+<li><p><strong>serverType</strong> (<em>boolean</em>) – indicates that the extension was parsed with ServerHello
+specific parser, otherwise it used universal or ClientHello specific
+parser</p></li>
+<li><p><strong>encExtType</strong> (<em>boolean</em>) – indicates that the extension should be the type from
+Encrypted Extensions</p></li>
+<li><p><strong>_universalExtensions</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#dict" title="(in Python v3.11)"><em>dict</em></a>) – dictionary with concrete implementations of
+specific TLS extensions where key is the numeric value of the extension
+ID. Contains ClientHello version of extensions or universal
+implementations</p></li>
+<li><p><strong>_serverExtensions</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#dict" title="(in Python v3.11)"><em>dict</em></a>) – dictionary with concrete implementations of
+specific TLS extensions where key is the numeric value of the extension
+ID. Includes only those extensions that require special handlers for
+ServerHello versions.</p></li>
+<li><p><strong>_certificateExtensions</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#dict" title="(in Python v3.11)"><em>dict</em></a>) – dictionary with concrete implementations of
+specific TLS extensions where the key is the numeric value of the
+type of the extension and the value is the class. Includes only
+those extensions that require special handlers for Certificate
+message.</p></li>
+<li><p><strong>_hrrExtensions</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#dict" title="(in Python v3.11)"><em>dict</em></a>) – dictionary with concrete implementation of specific
+TLS extensions where the key is the numeric type of the extension
+and the value is the class. Includes only those extensions that require
+special handlers for the Hello Retry Request message.</p></li>
+</ul>
+</dd>
+</dl>
+<dl class="py method">
+<dt class="sig sig-object py" id="tlslite.extensions.TLSExtension.__eq__">
+<span class="sig-name descname"><span class="pre">__eq__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">that</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tlslite.extensions.TLSExtension.__eq__" title="Permalink to this definition"></a></dt>
+<dd><p>Test if two TLS extensions are effectively the same</p>
+<p>Will check if encoding them will result in the same on the wire
+representation.</p>
+<p>Will return False for every object that’s not an extension.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tlslite.extensions.TLSExtension.__init__">
+<span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">server</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">extType</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">encExt</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cert</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">hrr</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tlslite.extensions.TLSExtension.__init__" title="Permalink to this definition"></a></dt>
+<dd><p>Creates a generic TLS extension.</p>
+<p>You’ll need to use <a class="reference internal" href="#tlslite.extensions.TLSExtension.create" title="tlslite.extensions.TLSExtension.create"><code class="xref py py-meth docutils literal notranslate"><span class="pre">create()</span></code></a> or <a class="reference internal" href="#tlslite.extensions.TLSExtension.parse" title="tlslite.extensions.TLSExtension.parse"><code class="xref py py-meth docutils literal notranslate"><span class="pre">parse()</span></code></a> methods to
+create an extension
+that is actually usable.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>server</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.11)"><em>bool</em></a>) – whether to select ClientHello or ServerHello
+version
+for parsing</p></li>
+<li><p><strong>extType</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.11)"><em>int</em></a>) – type of extension encoded as an integer, to be used
+by subclasses</p></li>
+<li><p><strong>encExt</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.11)"><em>bool</em></a>) – whether to select the EncryptedExtensions type
+for parsing</p></li>
+<li><p><strong>cert</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.11)"><em>bool</em></a>) – whether to select the Certificate type
+of extension for parsing</p></li>
+<li><p><strong>hrr</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.11)"><em>bool</em></a>) – whether to select the Hello Retry Request type
+of extension for parsing</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tlslite.extensions.TLSExtension.__repr__">
+<span class="sig-name descname"><span class="pre">__repr__</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tlslite.extensions.TLSExtension.__repr__" title="Permalink to this definition"></a></dt>
+<dd><p>Output human readable representation of object</p>
+<p>Child classes should override this method to support more appropriate
+string rendering of the extension.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.11)">str</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tlslite.extensions.TLSExtension.create">
+<span class="sig-name descname"><span class="pre">create</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tlslite.extensions.TLSExtension.create" title="Permalink to this definition"></a></dt>
+<dd><p>Initializes a generic TLS extension.</p>
+<p>The extension can carry arbitrary data and have arbitrary payload, can
+be used in client hello or server hello messages.</p>
+<p>The legacy calling method uses two arguments - the <cite>extType</cite> and
+<cite>data</cite>.
+If the new calling method is used, only one argument is passed in -
+<cite>data</cite>.</p>
+<p>Child classes need to override this method so that it is possible
+to set values for all fields used by the extension.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>extType</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.11)"><em>int</em></a>) – if int: type of the extension encoded as an integer
+between <cite>0</cite> and <cite>2^16-1</cite></p></li>
+<li><p><strong>data</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#bytearray" title="(in Python v3.11)"><em>bytearray</em></a>) – raw data representing extension on the wire</p></li>
+</ul>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference internal" href="#tlslite.extensions.TLSExtension" title="tlslite.extensions.TLSExtension">TLSExtension</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="tlslite.extensions.TLSExtension.extData">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">extData</span></span><a class="headerlink" href="#tlslite.extensions.TLSExtension.extData" title="Permalink to this definition"></a></dt>
+<dd><p>Return the on the wire encoding of extension</p>
+<p>Child classes need to override this property so that it returns just
+the payload of an extension, that is, without the 4 byte generic header
+common to all extension. In other words, without the extension ID and
+overall extension length.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#bytearray" title="(in Python v3.11)">bytearray</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tlslite.extensions.TLSExtension.parse">
+<span class="sig-name descname"><span class="pre">parse</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">p</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tlslite.extensions.TLSExtension.parse" title="Permalink to this definition"></a></dt>
+<dd><p>Parses extension from on the wire format</p>
+<p>Child classes should override this method so that it parses the
+extension from on the wire data. Note that child class parsers will
+not receive the generic header of the extension, but just a parser
+with the payload. In other words, the method should be the exact
+reverse of the <cite>extData</cite> property.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>p</strong> (<em>tlslite.util.codec.Parser</em>) – data to be parsed</p>
+</dd>
+<dt class="field-even">Raises<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference internal" href="tlslite.utils.codec.html#tlslite.utils.codec.DecodeError" title="tlslite.utils.codec.DecodeError"><strong>DecodeError</strong></a> – when the size of the passed element doesn’t match
+the internal representation</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><a class="reference internal" href="#tlslite.extensions.TLSExtension" title="tlslite.extensions.TLSExtension">TLSExtension</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tlslite.extensions.TLSExtension.write">
+<span class="sig-name descname"><span class="pre">write</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tlslite.extensions.TLSExtension.write" title="Permalink to this definition"></a></dt>
+<dd><p>Returns encoded extension, as encoded on the wire</p>
+<p>Note that child classes in general don’t need to override this method.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#bytearray" title="(in Python v3.11)">bytearray</a></p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>An array of bytes formatted as is supposed to be written on
+the wire, including the extension_type, length and the extension
+data</p>
+</dd>
+<dt class="field-odd">Raises<span class="colon">:</span></dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3/library/exceptions.html#AssertionError" title="(in Python v3.11)"><strong>AssertionError</strong></a> – when the object was not initialized</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="tlslite.extensions.VarBytesExtension">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">tlslite.extensions.</span></span><span class="sig-name descname"><span class="pre">VarBytesExtension</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">field_name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">length_length</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ext_type</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tlslite.extensions.VarBytesExtension" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <a class="reference internal" href="#tlslite.extensions.CustomNameExtension" title="tlslite.extensions.CustomNameExtension"><code class="xref py py-class docutils literal notranslate"><span class="pre">CustomNameExtension</span></code></a></p>
+<p>Abstract class for extension that deal with single byte array payload.</p>
+<p>Extension for handling arbitrary extensions that comprise of just
+a single bytearray of variable size.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="tlslite.extensions.VarBytesExtension.__init__">
+<span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">field_name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">length_length</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ext_type</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tlslite.extensions.VarBytesExtension.__init__" title="Permalink to this definition"></a></dt>
+<dd><p>Crate instance of the class.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>field_name</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.11)"><em>str</em></a>) – name of the field to store the bytearray
+that is the payload</p></li>
+<li><p><strong>length_length</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.11)"><em>int</em></a>) – number of bytes needed to encode the length
+field of the string</p></li>
+<li><p><strong>ext_type</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.11)"><em>int</em></a>) – numerical ID of the extension</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tlslite.extensions.VarBytesExtension.__repr__">
+<span class="sig-name descname"><span class="pre">__repr__</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tlslite.extensions.VarBytesExtension.__repr__" title="Permalink to this definition"></a></dt>
+<dd><p>Return human readable representation of the extension.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="tlslite.extensions.VarBytesExtension.extData">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">extData</span></span><a class="headerlink" href="#tlslite.extensions.VarBytesExtension.extData" title="Permalink to this definition"></a></dt>
+<dd><p>Return raw data encoding of the extension.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#bytearray" title="(in Python v3.11)">bytearray</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tlslite.extensions.VarBytesExtension.parse">
+<span class="sig-name descname"><span class="pre">parse</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">parser</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tlslite.extensions.VarBytesExtension.parse" title="Permalink to this definition"></a></dt>
+<dd><p>Deserialise extension from on-the-wire data.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>parser</strong> (<a class="reference internal" href="tlslite.utils.codec.html#tlslite.utils.codec.Parser" title="tlslite.utils.codec.Parser"><em>tlslite.utils.codec.Parser</em></a>) – data</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference internal" href="#tlslite.extensions.TLSExtension" title="tlslite.extensions.TLSExtension">TLSExtension</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="tlslite.extensions.VarListExtension">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">tlslite.extensions.</span></span><span class="sig-name descname"><span class="pre">VarListExtension</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">elemLength</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">lengthLength</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">fieldName</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">extType</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">item_enum</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tlslite.extensions.VarListExtension" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <a class="reference internal" href="#tlslite.extensions.ListExtension" title="tlslite.extensions.ListExtension"><code class="xref py py-class docutils literal notranslate"><span class="pre">ListExtension</span></code></a></p>
+<p>Abstract extension for handling extensions comprised of uniform value list.</p>
+<p>Extension for handling arbitrary extensions comprising of just a list
+of same-sized elementes inside an array</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="tlslite.extensions.VarListExtension.__init__">
+<span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">elemLength</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">lengthLength</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">fieldName</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">extType</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">item_enum</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tlslite.extensions.VarListExtension.__init__" title="Permalink to this definition"></a></dt>
+<dd><p>Create handler for extension that has a list of items as payload.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>elemLength</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.11)"><em>int</em></a>) – number of bytes needed to encode single element</p></li>
+<li><p><strong>lengthLength</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.11)"><em>int</em></a>) – number of bytes needed to encode length field</p></li>
+<li><p><strong>fieldName</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.11)"><em>str</em></a>) – name of the field storing the list of elements</p></li>
+<li><p><strong>extType</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.11)"><em>int</em></a>) – numerical ID of the extension encoded</p></li>
+<li><p><strong>item_enum</strong> (<em>class</em>) – TLSEnum class that defines entries in the list</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="tlslite.extensions.VarListExtension.extData">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">extData</span></span><a class="headerlink" href="#tlslite.extensions.VarListExtension.extData" title="Permalink to this definition"></a></dt>
+<dd><p>Return raw data encoding of the extension.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#bytearray" title="(in Python v3.11)">bytearray</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tlslite.extensions.VarListExtension.parse">
+<span class="sig-name descname"><span class="pre">parse</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">parser</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tlslite.extensions.VarListExtension.parse" title="Permalink to this definition"></a></dt>
+<dd><p>Deserialise extension from on-the-wire data.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>parser</strong> (<a class="reference internal" href="tlslite.utils.codec.html#tlslite.utils.codec.Parser" title="tlslite.utils.codec.Parser"><em>tlslite.utils.codec.Parser</em></a>) – data</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>Extension</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="tlslite.extensions.VarSeqListExtension">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">tlslite.extensions.</span></span><span class="sig-name descname"><span class="pre">VarSeqListExtension</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">elemLength</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">elemNum</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">lengthLength</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">fieldName</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">extType</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">item_enum</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tlslite.extensions.VarSeqListExtension" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <a class="reference internal" href="#tlslite.extensions.ListExtension" title="tlslite.extensions.ListExtension"><code class="xref py py-class docutils literal notranslate"><span class="pre">ListExtension</span></code></a></p>
+<p>Abstract extension for handling extensions comprised of tuple list.</p>
+<p>Extension for handling arbitrary extensions comprising of a single list
+of same-sized elements in same-sized tuples</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="tlslite.extensions.VarSeqListExtension.__init__">
+<span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">elemLength</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">elemNum</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">lengthLength</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">fieldName</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">extType</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">item_enum</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tlslite.extensions.VarSeqListExtension.__init__" title="Permalink to this definition"></a></dt>
+<dd><p>Create a handler for extension that has a list of tuples as payload.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>elemLength</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.11)"><em>int</em></a>) – number of bytes needed to encode single element
+of a tuple</p></li>
+<li><p><strong>elemNum</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.11)"><em>int</em></a>) – number of elements in a tuple</p></li>
+<li><p><strong>lengthLength</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.11)"><em>int</em></a>) – number of bytes needed to encode overall
+length of the list</p></li>
+<li><p><strong>fieldName</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.11)"><em>str</em></a>) – name of the field storing the list of elements</p></li>
+<li><p><strong>extType</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.11)"><em>int</em></a>) – numerical ID of the extension encoded</p></li>
+<li><p><strong>item_enum</strong> (<em>class</em>) – TLSEnum class that defines entries in the list</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="tlslite.extensions.VarSeqListExtension.extData">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">extData</span></span><a class="headerlink" href="#tlslite.extensions.VarSeqListExtension.extData" title="Permalink to this definition"></a></dt>
+<dd><p>Return raw data encoding of the extension.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#bytearray" title="(in Python v3.11)">bytearray</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tlslite.extensions.VarSeqListExtension.parse">
+<span class="sig-name descname"><span class="pre">parse</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">parser</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tlslite.extensions.VarSeqListExtension.parse" title="Permalink to this definition"></a></dt>
+<dd><p>Deserialise extension from on-the-wire data.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>parser</strong> (<a class="reference internal" href="tlslite.utils.codec.html#tlslite.utils.codec.Parser" title="tlslite.utils.codec.Parser"><em>tlslite.utils.codec.Parser</em></a>) – data</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>Extension</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="tlslite.errors.html" class="btn btn-neutral float-left" title="tlslite.errors module" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="tlslite.handshakehashes.html" class="btn btn-neutral float-right" title="tlslite.handshakehashes module" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2023, Hubert Kario.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>tlslite.tlsrecordlayer module &mdash; tlslite-ng 0.8.0-alpha44 documentation</title>
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="_static/doctools.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="tlslite.verifierdb module" href="tlslite.verifierdb.html" />
+    <link rel="prev" title="tlslite.tlsconnection module" href="tlslite.tlsconnection.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="index.html" class="icon icon-home"> tlslite-ng
+          </a>
+              <div class="version">
+                0.8
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="modules.html">tlslite</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="tlslite.html">tlslite package</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="tlslite.html#subpackages">Subpackages</a></li>
+<li class="toctree-l3 current"><a class="reference internal" href="tlslite.html#submodules">Submodules</a><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="tlslite.api.html">tlslite.api module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tlslite.basedb.html">tlslite.basedb module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tlslite.bufferedsocket.html">tlslite.bufferedsocket module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tlslite.checker.html">tlslite.checker module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tlslite.constants.html">tlslite.constants module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tlslite.defragmenter.html">tlslite.defragmenter module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tlslite.dh.html">tlslite.dh module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tlslite.errors.html">tlslite.errors module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tlslite.extensions.html">tlslite.extensions module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tlslite.handshakehashes.html">tlslite.handshakehashes module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tlslite.handshakehelpers.html">tlslite.handshakehelpers module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tlslite.handshakesettings.html">tlslite.handshakesettings module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tlslite.keyexchange.html">tlslite.keyexchange module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tlslite.mathtls.html">tlslite.mathtls module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tlslite.messages.html">tlslite.messages module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tlslite.messagesocket.html">tlslite.messagesocket module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tlslite.recordlayer.html">tlslite.recordlayer module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tlslite.session.html">tlslite.session module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tlslite.sessioncache.html">tlslite.sessioncache module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tlslite.tlsconnection.html">tlslite.tlsconnection module</a></li>
+<li class="toctree-l4 current"><a class="current reference internal" href="#">tlslite.tlsrecordlayer module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tlslite.verifierdb.html">tlslite.verifierdb module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tlslite.x509.html">tlslite.x509 module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tlslite.x509certchain.html">tlslite.x509certchain module</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">tlslite-ng</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+          <li><a href="modules.html">tlslite</a> &raquo;</li>
+          <li><a href="tlslite.html">tlslite package</a> &raquo;</li>
+      <li>tlslite.tlsrecordlayer module</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/tlslite.tlsrecordlayer.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="module-tlslite.tlsrecordlayer">
+<span id="tlslite-tlsrecordlayer-module"></span><h1>tlslite.tlsrecordlayer module<a class="headerlink" href="#module-tlslite.tlsrecordlayer" title="Permalink to this heading"></a></h1>
+<p>Helper class for TLSConnection.</p>
+<dl class="py class">
+<dt class="sig sig-object py" id="tlslite.tlsrecordlayer.TLSRecordLayer">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">tlslite.tlsrecordlayer.</span></span><span class="sig-name descname"><span class="pre">TLSRecordLayer</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">sock</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tlslite.tlsrecordlayer.TLSRecordLayer" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.11)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<p>This class handles data transmission for a TLS connection.</p>
+<p>Its only subclass is <a class="reference internal" href="tlslite.tlsconnection.html#tlslite.tlsconnection.TLSConnection" title="tlslite.tlsconnection.TLSConnection"><code class="xref py py-class docutils literal notranslate"><span class="pre">TLSConnection</span></code></a>.
+We’ve
+separated the code in this class from TLSConnection to make things
+more readable.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Variables<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>sock</strong> (<a class="reference external" href="https://docs.python.org/3/library/socket.html#socket.socket" title="(in Python v3.11)"><em>socket.socket</em></a>) – The underlying socket object.</p></li>
+<li><p><strong>session</strong> (<em>Session</em>) – The session corresponding to this connection.
+Due to TLS session resumption, multiple connections can correspond
+to the same underlying session.</p></li>
+<li><p><strong>~.version</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#tuple" title="(in Python v3.11)"><em>tuple</em></a>) – The TLS version being used for this connection.
+(3,0) means SSL 3.0, and (3,1) means TLS 1.0.</p></li>
+<li><p><strong>closed</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.11)"><em>bool</em></a>) – If this connection is closed.</p></li>
+<li><p><strong>resumed</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.11)"><em>bool</em></a>) – If this connection is based on a resumed session.</p></li>
+<li><p><strong>allegedSrpUsername</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.11)"><em>str</em></a><em> or </em><em>None</em>) – This is set to the SRP username
+asserted by the client, whether the handshake succeeded or not.
+If the handshake fails, this can be inspected to determine
+if a guessing attack is in progress against a particular user
+account.</p></li>
+<li><p><strong>closeSocket</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.11)"><em>bool</em></a>) – <p>If the socket should be closed when the
+connection is closed, defaults to True (writable).</p>
+<p>If you set this to True, TLS Lite will assume the responsibility of
+closing the socket when the TLS Connection is shutdown (either
+through an error or through the user calling close()).  The default
+is False.</p>
+</p></li>
+<li><p><strong>ignoreAbruptClose</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.11)"><em>bool</em></a>) – <p>If an abrupt close of the socket should
+raise an error (writable).</p>
+<p>If you set this to True, TLS Lite will not raise a
+<a class="reference internal" href="tlslite.errors.html#tlslite.errors.TLSAbruptCloseError" title="tlslite.errors.TLSAbruptCloseError"><code class="xref py py-class docutils literal notranslate"><span class="pre">TLSAbruptCloseError</span></code></a> exception if the
+underlying
+socket is unexpectedly closed.  Such an unexpected closure could be
+caused by an attacker.  However, it also occurs with some incorrect
+TLS implementations.</p>
+<p>You should set this to True only if you’re not worried about an
+attacker truncating the connection, and only if necessary to avoid
+spurious errors.  The default is False.</p>
+</p></li>
+<li><p><strong>~.encryptThenMAC</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.11)"><em>bool</em></a>) – Whether the connection uses the encrypt-then-MAC
+construct for CBC cipher suites, will be False also if connection uses
+RC4 or AEAD.</p></li>
+<li><p><strong>recordSize</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.11)"><em>int</em></a>) – maximum size of data to be sent in a single record layer
+message. Note that after encryption is established (generally after
+handshake protocol has finished) the actual amount of data written to
+network socket will be larger because of the record layer header,
+padding
+or encryption overhead. It can be set to low value (so that there is no
+fragmentation on Ethernet, IP and TCP level) at the beginning of
+connection to reduce latency and set to protocol max (2**14) to
+maximise
+throughput after sending the first few kiB of data. If negotiated,
+record_size_limit extension may limit it though, causing reading of the
+variable to return lower value that was initially set.
+See also: HandshakeSettings.record_size_limit.</p></li>
+<li><p><strong>tickets</strong> (<em>list of bytearray</em>) – list of session tickets received from server, oldest first.</p></li>
+<li><p><strong>client_cert_required</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.11)"><em>bool</em></a>) – Set to True to make the post-handshake
+authentication fail when client doesn’t provide a certificate in
+response</p></li>
+</ul>
+</dd>
+</dl>
+<dl class="py method">
+<dt class="sig sig-object py" id="tlslite.tlsrecordlayer.TLSRecordLayer.__init__">
+<span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">sock</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tlslite.tlsrecordlayer.TLSRecordLayer.__init__" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tlslite.tlsrecordlayer.TLSRecordLayer.clearReadBuffer">
+<span class="sig-name descname"><span class="pre">clearReadBuffer</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tlslite.tlsrecordlayer.TLSRecordLayer.clearReadBuffer" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tlslite.tlsrecordlayer.TLSRecordLayer.clearWriteBuffer">
+<span class="sig-name descname"><span class="pre">clearWriteBuffer</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tlslite.tlsrecordlayer.TLSRecordLayer.clearWriteBuffer" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tlslite.tlsrecordlayer.TLSRecordLayer.close">
+<span class="sig-name descname"><span class="pre">close</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tlslite.tlsrecordlayer.TLSRecordLayer.close" title="Permalink to this definition"></a></dt>
+<dd><p>Close the TLS connection.</p>
+<p>This function will block until it has exchanged close_notify
+alerts with the other party.  After doing so, it will shut down the
+TLS connection.  Further attempts to read through this connection
+will return “”.  Further attempts to write through this connection
+will raise ValueError.</p>
+<p>If makefile() has been called on this connection, the connection
+will be not be closed until the connection object and all file
+objects have been closed.</p>
+<p>Even if an exception is raised, the connection will have been
+closed.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Raises<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><a class="reference external" href="https://docs.python.org/3/library/socket.html#socket.error" title="(in Python v3.11)"><strong>socket.error</strong></a> – If a socket error occurs.</p></li>
+<li><p><a class="reference internal" href="tlslite.errors.html#tlslite.errors.TLSAbruptCloseError" title="tlslite.errors.TLSAbruptCloseError"><strong>tlslite.errors.TLSAbruptCloseError</strong></a> – If the socket is closed
+without a preceding alert.</p></li>
+<li><p><a class="reference internal" href="tlslite.errors.html#tlslite.errors.TLSAlert" title="tlslite.errors.TLSAlert"><strong>tlslite.errors.TLSAlert</strong></a> – If a TLS alert is signalled.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tlslite.tlsrecordlayer.TLSRecordLayer.closeAsync">
+<span class="sig-name descname"><span class="pre">closeAsync</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tlslite.tlsrecordlayer.TLSRecordLayer.closeAsync" title="Permalink to this definition"></a></dt>
+<dd><p>Start a close operation on the TLS connection.</p>
+<p>This function returns a generator which behaves similarly to
+close().  Successive invocations of the generator will return 0
+if it is waiting to read from the socket, 1 if it is waiting
+to write to the socket, or will raise StopIteration if the
+close operation has completed.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>iterable</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>A generator; see above for details.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="tlslite.tlsrecordlayer.TLSRecordLayer.encryptThenMAC">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">encryptThenMAC</span></span><a class="headerlink" href="#tlslite.tlsrecordlayer.TLSRecordLayer.encryptThenMAC" title="Permalink to this definition"></a></dt>
+<dd><p>Whether the connection uses Encrypt Then MAC (RFC 7366)</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tlslite.tlsrecordlayer.TLSRecordLayer.fileno">
+<span class="sig-name descname"><span class="pre">fileno</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tlslite.tlsrecordlayer.TLSRecordLayer.fileno" title="Permalink to this definition"></a></dt>
+<dd><p>Not implement in TLS Lite.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tlslite.tlsrecordlayer.TLSRecordLayer.getCipherImplementation">
+<span class="sig-name descname"><span class="pre">getCipherImplementation</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tlslite.tlsrecordlayer.TLSRecordLayer.getCipherImplementation" title="Permalink to this definition"></a></dt>
+<dd><p>Get the name of the cipher implementation used with
+this connection.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.11)">str</a></p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>The name of the cipher implementation used with
+this connection.  Either ‘python’, ‘openssl’, or ‘pycrypto’.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tlslite.tlsrecordlayer.TLSRecordLayer.getCipherName">
+<span class="sig-name descname"><span class="pre">getCipherName</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tlslite.tlsrecordlayer.TLSRecordLayer.getCipherName" title="Permalink to this definition"></a></dt>
+<dd><p>Get the name of the cipher used with this connection.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.11)">str</a></p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>The name of the cipher used with this connection.
+Either ‘aes128’, ‘aes256’, ‘rc4’, or ‘3des’.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tlslite.tlsrecordlayer.TLSRecordLayer.getVersionName">
+<span class="sig-name descname"><span class="pre">getVersionName</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tlslite.tlsrecordlayer.TLSRecordLayer.getVersionName" title="Permalink to this definition"></a></dt>
+<dd><p>Get the name of this TLS version.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.11)">str</a></p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>The name of the TLS version used with this connection.
+Either None, ‘SSL 3.0’, ‘TLS 1.0’, ‘TLS 1.1’, ‘TLS 1.2’ or
+‘TLS 1.3’.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tlslite.tlsrecordlayer.TLSRecordLayer.getpeername">
+<span class="sig-name descname"><span class="pre">getpeername</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tlslite.tlsrecordlayer.TLSRecordLayer.getpeername" title="Permalink to this definition"></a></dt>
+<dd><p>Return the remote address to which the socket is connected
+(socket emulation).</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tlslite.tlsrecordlayer.TLSRecordLayer.getsockname">
+<span class="sig-name descname"><span class="pre">getsockname</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tlslite.tlsrecordlayer.TLSRecordLayer.getsockname" title="Permalink to this definition"></a></dt>
+<dd><p>Return the socket’s own address (socket emulation).</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tlslite.tlsrecordlayer.TLSRecordLayer.gettimeout">
+<span class="sig-name descname"><span class="pre">gettimeout</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tlslite.tlsrecordlayer.TLSRecordLayer.gettimeout" title="Permalink to this definition"></a></dt>
+<dd><p>Return the timeout associated with socket operations (socket
+emulation).</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tlslite.tlsrecordlayer.TLSRecordLayer.makefile">
+<span class="sig-name descname"><span class="pre">makefile</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">mode</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'r'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">bufsize</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">-</span> <span class="pre">1</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tlslite.tlsrecordlayer.TLSRecordLayer.makefile" title="Permalink to this definition"></a></dt>
+<dd><p>Create a file object for the TLS connection (socket emulation).</p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>socket._fileobject</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tlslite.tlsrecordlayer.TLSRecordLayer.read">
+<span class="sig-name descname"><span class="pre">read</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">max</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">min</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tlslite.tlsrecordlayer.TLSRecordLayer.read" title="Permalink to this definition"></a></dt>
+<dd><p>Read some data from the TLS connection.</p>
+<p>This function will block until at least ‘min’ bytes are
+available (or the connection is closed).</p>
+<p>If an exception is raised, the connection will have been
+automatically closed.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>max</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.11)"><em>int</em></a>) – The maximum number of bytes to return.</p></li>
+<li><p><strong>min</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.11)"><em>int</em></a>) – The minimum number of bytes to return</p></li>
+</ul>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.11)">str</a></p>
+</dd>
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>A string of no more than ‘max’ bytes, and no fewer
+than ‘min’ (unless the connection has been closed, in which
+case fewer than ‘min’ bytes may be returned).</p>
+</dd>
+<dt class="field-even">Raises<span class="colon">:</span></dt>
+<dd class="field-even"><ul class="simple">
+<li><p><a class="reference external" href="https://docs.python.org/3/library/socket.html#socket.error" title="(in Python v3.11)"><strong>socket.error</strong></a> – If a socket error occurs.</p></li>
+<li><p><a class="reference internal" href="tlslite.errors.html#tlslite.errors.TLSAbruptCloseError" title="tlslite.errors.TLSAbruptCloseError"><strong>tlslite.errors.TLSAbruptCloseError</strong></a> – If the socket is closed
+without a preceding alert.</p></li>
+<li><p><a class="reference internal" href="tlslite.errors.html#tlslite.errors.TLSAlert" title="tlslite.errors.TLSAlert"><strong>tlslite.errors.TLSAlert</strong></a> – If a TLS alert is signalled.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tlslite.tlsrecordlayer.TLSRecordLayer.readAsync">
+<span class="sig-name descname"><span class="pre">readAsync</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">max</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">min</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tlslite.tlsrecordlayer.TLSRecordLayer.readAsync" title="Permalink to this definition"></a></dt>
+<dd><p>Start a read operation on the TLS connection.</p>
+<p>This function returns a generator which behaves similarly to
+read().  Successive invocations of the generator will return 0
+if it is waiting to read from the socket, 1 if it is waiting
+to write to the socket, or a string if the read operation has
+completed.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>iterable</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>A generator; see above for details.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="tlslite.tlsrecordlayer.TLSRecordLayer.recordSize">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">recordSize</span></span><a class="headerlink" href="#tlslite.tlsrecordlayer.TLSRecordLayer.recordSize" title="Permalink to this definition"></a></dt>
+<dd><p>Maximum size of the records that will be sent out.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tlslite.tlsrecordlayer.TLSRecordLayer.recv">
+<span class="sig-name descname"><span class="pre">recv</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">bufsize</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tlslite.tlsrecordlayer.TLSRecordLayer.recv" title="Permalink to this definition"></a></dt>
+<dd><p>Get some data from the TLS connection (socket emulation).</p>
+<dl class="field-list simple">
+<dt class="field-odd">Raises<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><a class="reference external" href="https://docs.python.org/3/library/socket.html#socket.error" title="(in Python v3.11)"><strong>socket.error</strong></a> – If a socket error occurs.</p></li>
+<li><p><a class="reference internal" href="tlslite.errors.html#tlslite.errors.TLSAbruptCloseError" title="tlslite.errors.TLSAbruptCloseError"><strong>tlslite.errors.TLSAbruptCloseError</strong></a> – If the socket is closed
+without a preceding alert.</p></li>
+<li><p><a class="reference internal" href="tlslite.errors.html#tlslite.errors.TLSAlert" title="tlslite.errors.TLSAlert"><strong>tlslite.errors.TLSAlert</strong></a> – If a TLS alert is signalled.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tlslite.tlsrecordlayer.TLSRecordLayer.recv_into">
+<span class="sig-name descname"><span class="pre">recv_into</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">b</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tlslite.tlsrecordlayer.TLSRecordLayer.recv_into" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tlslite.tlsrecordlayer.TLSRecordLayer.send">
+<span class="sig-name descname"><span class="pre">send</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">s</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tlslite.tlsrecordlayer.TLSRecordLayer.send" title="Permalink to this definition"></a></dt>
+<dd><p>Send data to the TLS connection (socket emulation).</p>
+<dl class="field-list simple">
+<dt class="field-odd">Raises<span class="colon">:</span></dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3/library/socket.html#socket.error" title="(in Python v3.11)"><strong>socket.error</strong></a> – If a socket error occurs.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tlslite.tlsrecordlayer.TLSRecordLayer.send_heartbeat_request">
+<span class="sig-name descname"><span class="pre">send_heartbeat_request</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">payload</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">padding_length</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tlslite.tlsrecordlayer.TLSRecordLayer.send_heartbeat_request" title="Permalink to this definition"></a></dt>
+<dd><p>Synchronous version of write_heartbeat function.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>payload</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#bytes" title="(in Python v3.11)"><em>bytes</em></a>) – Payload, that we want send in request and
+get at response.</p></li>
+<li><p><strong>padding_length</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.11)"><em>int</em></a>) – Length of padding.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Raises<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3/library/socket.html#socket.error" title="(in Python v3.11)"><strong>socket.error</strong></a> – If a socket error occurs.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tlslite.tlsrecordlayer.TLSRecordLayer.send_keyupdate_request">
+<span class="sig-name descname"><span class="pre">send_keyupdate_request</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">message_type</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tlslite.tlsrecordlayer.TLSRecordLayer.send_keyupdate_request" title="Permalink to this definition"></a></dt>
+<dd><p>Send a KeyUpdate message.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>payload</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.11)"><em>int</em></a>) – Type of KeyUpdate message.</p>
+</dd>
+<dt class="field-even">Raises<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3/library/socket.html#socket.error" title="(in Python v3.11)"><strong>socket.error</strong></a> – If a socket error occurs.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tlslite.tlsrecordlayer.TLSRecordLayer.sendall">
+<span class="sig-name descname"><span class="pre">sendall</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">s</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tlslite.tlsrecordlayer.TLSRecordLayer.sendall" title="Permalink to this definition"></a></dt>
+<dd><p>Send data to the TLS connection (socket emulation).</p>
+<dl class="field-list simple">
+<dt class="field-odd">Raises<span class="colon">:</span></dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3/library/socket.html#socket.error" title="(in Python v3.11)"><strong>socket.error</strong></a> – If a socket error occurs.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tlslite.tlsrecordlayer.TLSRecordLayer.setsockopt">
+<span class="sig-name descname"><span class="pre">setsockopt</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">level</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">optname</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">value</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tlslite.tlsrecordlayer.TLSRecordLayer.setsockopt" title="Permalink to this definition"></a></dt>
+<dd><p>Set the value of the given socket option (socket emulation).</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tlslite.tlsrecordlayer.TLSRecordLayer.settimeout">
+<span class="sig-name descname"><span class="pre">settimeout</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tlslite.tlsrecordlayer.TLSRecordLayer.settimeout" title="Permalink to this definition"></a></dt>
+<dd><p>Set a timeout on blocking socket operations (socket emulation).</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tlslite.tlsrecordlayer.TLSRecordLayer.shutdown">
+<span class="sig-name descname"><span class="pre">shutdown</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">how</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tlslite.tlsrecordlayer.TLSRecordLayer.shutdown" title="Permalink to this definition"></a></dt>
+<dd><p>Shutdown the underlying socket.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tlslite.tlsrecordlayer.TLSRecordLayer.unread">
+<span class="sig-name descname"><span class="pre">unread</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">b</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tlslite.tlsrecordlayer.TLSRecordLayer.unread" title="Permalink to this definition"></a></dt>
+<dd><p>Add bytes to the front of the socket read buffer for future
+reading. Be careful using this in the context of select(…): if you
+unread the last data from a socket, that won’t wake up selected waiters,
+and those waiters may hang forever.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="tlslite.tlsrecordlayer.TLSRecordLayer.version">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">version</span></span><a class="headerlink" href="#tlslite.tlsrecordlayer.TLSRecordLayer.version" title="Permalink to this definition"></a></dt>
+<dd><p>Get the SSL protocol version of connection</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tlslite.tlsrecordlayer.TLSRecordLayer.write">
+<span class="sig-name descname"><span class="pre">write</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">s</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tlslite.tlsrecordlayer.TLSRecordLayer.write" title="Permalink to this definition"></a></dt>
+<dd><p>Write some data to the TLS connection.</p>
+<p>This function will block until all the data has been sent.</p>
+<p>If an exception is raised, the connection will have been
+automatically closed.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>s</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.11)"><em>str</em></a>) – The data to transmit to the other party.</p>
+</dd>
+<dt class="field-even">Raises<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3/library/socket.html#socket.error" title="(in Python v3.11)"><strong>socket.error</strong></a> – If a socket error occurs.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tlslite.tlsrecordlayer.TLSRecordLayer.writeAsync">
+<span class="sig-name descname"><span class="pre">writeAsync</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">s</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tlslite.tlsrecordlayer.TLSRecordLayer.writeAsync" title="Permalink to this definition"></a></dt>
+<dd><p>Start a write operation on the TLS connection.</p>
+<p>This function returns a generator which behaves similarly to
+write().  Successive invocations of the generator will return
+1 if it is waiting to write to the socket, or will raise
+StopIteration if the write operation has completed.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>iterable</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>A generator; see above for details.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tlslite.tlsrecordlayer.TLSRecordLayer.write_heartbeat">
+<span class="sig-name descname"><span class="pre">write_heartbeat</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">payload</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">padding_length</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tlslite.tlsrecordlayer.TLSRecordLayer.write_heartbeat" title="Permalink to this definition"></a></dt>
+<dd><p>Start a write operation of heartbeat_request.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>payload</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#bytes" title="(in Python v3.11)"><em>bytes</em></a>) – Payload, that we want send in request and
+get at response.</p></li>
+<li><p><strong>padding_length</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.11)"><em>int</em></a>) – Length of padding.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Raises<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3/library/socket.html#socket.error" title="(in Python v3.11)"><strong>socket.error</strong></a> – If a socket error occurs.</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="tlslite.tlsrecordlayer.bytes_to_int">
+<span class="sig-prename descclassname"><span class="pre">tlslite.tlsrecordlayer.</span></span><span class="sig-name descname"><span class="pre">bytes_to_int</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">bytes</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">byteorder</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'big'</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">*</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">signed</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tlslite.tlsrecordlayer.bytes_to_int" title="Permalink to this definition"></a></dt>
+<dd><p>Return the integer represented by the given array of bytes.</p>
+<dl class="simple">
+<dt>bytes</dt><dd><p>Holds the array of bytes to convert.  The argument must either
+support the buffer protocol or be an iterable object producing bytes.
+Bytes and bytearray are examples of built-in objects that support the
+buffer protocol.</p>
+</dd>
+<dt>byteorder</dt><dd><p>The byte order used to represent the integer.  If byteorder is ‘big’,
+the most significant byte is at the beginning of the byte array.  If
+byteorder is ‘little’, the most significant byte is at the end of the
+byte array.  To request the native byte order of the host system, use
+<a href="#id1"><span class="problematic" id="id2">`</span></a>sys.byteorder’ as the byte order value.  Default is to use ‘big’.</p>
+</dd>
+<dt>signed</dt><dd><p>Indicates whether two’s complement is used to represent the integer.</p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="tlslite.tlsconnection.html" class="btn btn-neutral float-left" title="tlslite.tlsconnection module" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="tlslite.verifierdb.html" class="btn btn-neutral float-right" title="tlslite.verifierdb module" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2023, Hubert Kario.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

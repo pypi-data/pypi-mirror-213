@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>tlslite.keyexchange module &mdash; tlslite-ng 0.8.0-alpha44 documentation</title>
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="_static/doctools.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="tlslite.mathtls module" href="tlslite.mathtls.html" />
+    <link rel="prev" title="tlslite.handshakesettings module" href="tlslite.handshakesettings.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="index.html" class="icon icon-home"> tlslite-ng
+          </a>
+              <div class="version">
+                0.8
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="modules.html">tlslite</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="tlslite.html">tlslite package</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="tlslite.html#subpackages">Subpackages</a></li>
+<li class="toctree-l3 current"><a class="reference internal" href="tlslite.html#submodules">Submodules</a><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="tlslite.api.html">tlslite.api module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tlslite.basedb.html">tlslite.basedb module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tlslite.bufferedsocket.html">tlslite.bufferedsocket module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tlslite.checker.html">tlslite.checker module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tlslite.constants.html">tlslite.constants module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tlslite.defragmenter.html">tlslite.defragmenter module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tlslite.dh.html">tlslite.dh module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tlslite.errors.html">tlslite.errors module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tlslite.extensions.html">tlslite.extensions module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tlslite.handshakehashes.html">tlslite.handshakehashes module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tlslite.handshakehelpers.html">tlslite.handshakehelpers module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tlslite.handshakesettings.html">tlslite.handshakesettings module</a></li>
+<li class="toctree-l4 current"><a class="current reference internal" href="#">tlslite.keyexchange module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tlslite.mathtls.html">tlslite.mathtls module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tlslite.messages.html">tlslite.messages module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tlslite.messagesocket.html">tlslite.messagesocket module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tlslite.recordlayer.html">tlslite.recordlayer module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tlslite.session.html">tlslite.session module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tlslite.sessioncache.html">tlslite.sessioncache module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tlslite.tlsconnection.html">tlslite.tlsconnection module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tlslite.tlsrecordlayer.html">tlslite.tlsrecordlayer module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tlslite.verifierdb.html">tlslite.verifierdb module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tlslite.x509.html">tlslite.x509 module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tlslite.x509certchain.html">tlslite.x509certchain module</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">tlslite-ng</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+          <li><a href="modules.html">tlslite</a> &raquo;</li>
+          <li><a href="tlslite.html">tlslite package</a> &raquo;</li>
+      <li>tlslite.keyexchange module</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/tlslite.keyexchange.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="module-tlslite.keyexchange">
+<span id="tlslite-keyexchange-module"></span><h1>tlslite.keyexchange module<a class="headerlink" href="#module-tlslite.keyexchange" title="Permalink to this heading"></a></h1>
+<p>Handling of cryptographic operations for key exchange</p>
+<dl class="py class">
+<dt class="sig sig-object py" id="tlslite.keyexchange.ADHKeyExchange">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">tlslite.keyexchange.</span></span><span class="sig-name descname"><span class="pre">ADHKeyExchange</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">cipherSuite</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">clientHello</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">serverHello</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dhParams</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dhGroups</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tlslite.keyexchange.ADHKeyExchange" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <a class="reference internal" href="#tlslite.keyexchange.KeyExchange" title="tlslite.keyexchange.KeyExchange"><code class="xref py py-class docutils literal notranslate"><span class="pre">KeyExchange</span></code></a></p>
+<p>Handling of anonymous Diffie-Hellman Key exchange</p>
+<p>FFDHE without signing serverKeyExchange useful for anonymous DH</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="tlslite.keyexchange.ADHKeyExchange.__init__">
+<span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">cipherSuite</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">clientHello</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">serverHello</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dhParams</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dhGroups</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tlslite.keyexchange.ADHKeyExchange.__init__" title="Permalink to this definition"></a></dt>
+<dd><p>Initialize KeyExchange. privateKey is the signing private key</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tlslite.keyexchange.ADHKeyExchange.makeClientKeyExchange">
+<span class="sig-name descname"><span class="pre">makeClientKeyExchange</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tlslite.keyexchange.ADHKeyExchange.makeClientKeyExchange" title="Permalink to this definition"></a></dt>
+<dd><p>Create client key share for the key exchange</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tlslite.keyexchange.ADHKeyExchange.makeServerKeyExchange">
+<span class="sig-name descname"><span class="pre">makeServerKeyExchange</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tlslite.keyexchange.ADHKeyExchange.makeServerKeyExchange" title="Permalink to this definition"></a></dt>
+<dd><p>Prepare server side of anonymous key exchange with selected parameters</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tlslite.keyexchange.ADHKeyExchange.processClientKeyExchange">
+<span class="sig-name descname"><span class="pre">processClientKeyExchange</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">clientKeyExchange</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tlslite.keyexchange.ADHKeyExchange.processClientKeyExchange" title="Permalink to this definition"></a></dt>
+<dd><p>Use client provided parameters to establish premaster secret</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tlslite.keyexchange.ADHKeyExchange.processServerKeyExchange">
+<span class="sig-name descname"><span class="pre">processServerKeyExchange</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">srvPublicKey</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">serverKeyExchange</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tlslite.keyexchange.ADHKeyExchange.processServerKeyExchange" title="Permalink to this definition"></a></dt>
+<dd><p>Process the server key exchange, return premaster secret.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="tlslite.keyexchange.AECDHKeyExchange">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">tlslite.keyexchange.</span></span><span class="sig-name descname"><span class="pre">AECDHKeyExchange</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">cipherSuite</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">clientHello</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">serverHello</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">acceptedCurves</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">defaultCurve</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">23</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tlslite.keyexchange.AECDHKeyExchange" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <a class="reference internal" href="#tlslite.keyexchange.KeyExchange" title="tlslite.keyexchange.KeyExchange"><code class="xref py py-class docutils literal notranslate"><span class="pre">KeyExchange</span></code></a></p>
+<p>Handling of anonymous Eliptic curve Diffie-Hellman Key exchange</p>
+<p>ECDHE without signing serverKeyExchange useful for anonymous ECDH</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="tlslite.keyexchange.AECDHKeyExchange.__init__">
+<span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">cipherSuite</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">clientHello</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">serverHello</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">acceptedCurves</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">defaultCurve</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">23</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tlslite.keyexchange.AECDHKeyExchange.__init__" title="Permalink to this definition"></a></dt>
+<dd><p>Initialize KeyExchange. privateKey is the signing private key</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tlslite.keyexchange.AECDHKeyExchange.makeClientKeyExchange">
+<span class="sig-name descname"><span class="pre">makeClientKeyExchange</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tlslite.keyexchange.AECDHKeyExchange.makeClientKeyExchange" title="Permalink to this definition"></a></dt>
+<dd><p>Make client key exchange for ECDHE</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tlslite.keyexchange.AECDHKeyExchange.makeServerKeyExchange">
+<span class="sig-name descname"><span class="pre">makeServerKeyExchange</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">sigHash</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tlslite.keyexchange.AECDHKeyExchange.makeServerKeyExchange" title="Permalink to this definition"></a></dt>
+<dd><p>Create AECDHE version of Server Key Exchange</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tlslite.keyexchange.AECDHKeyExchange.processClientKeyExchange">
+<span class="sig-name descname"><span class="pre">processClientKeyExchange</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">clientKeyExchange</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tlslite.keyexchange.AECDHKeyExchange.processClientKeyExchange" title="Permalink to this definition"></a></dt>
+<dd><p>Calculate premaster secret from previously generated SKE and CKE</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tlslite.keyexchange.AECDHKeyExchange.processServerKeyExchange">
+<span class="sig-name descname"><span class="pre">processServerKeyExchange</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">srvPublicKey</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">serverKeyExchange</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tlslite.keyexchange.AECDHKeyExchange.processServerKeyExchange" title="Permalink to this definition"></a></dt>
+<dd><p>Process the server key exchange, return premaster secret</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="tlslite.keyexchange.AuthenticatedKeyExchange">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">tlslite.keyexchange.</span></span><span class="sig-name descname"><span class="pre">AuthenticatedKeyExchange</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">cipherSuite</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">clientHello</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">serverHello</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">privateKey</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tlslite.keyexchange.AuthenticatedKeyExchange" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <a class="reference internal" href="#tlslite.keyexchange.KeyExchange" title="tlslite.keyexchange.KeyExchange"><code class="xref py py-class docutils literal notranslate"><span class="pre">KeyExchange</span></code></a></p>
+<p>Common methods for key exchanges that authenticate Server Key Exchange</p>
+<p>Methods for signing Server Key Exchange message</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="tlslite.keyexchange.AuthenticatedKeyExchange.makeServerKeyExchange">
+<span class="sig-name descname"><span class="pre">makeServerKeyExchange</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">sigHash</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tlslite.keyexchange.AuthenticatedKeyExchange.makeServerKeyExchange" title="Permalink to this definition"></a></dt>
+<dd><p>Prepare server side of key exchange with selected parameters</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="tlslite.keyexchange.DHE_RSAKeyExchange">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">tlslite.keyexchange.</span></span><span class="sig-name descname"><span class="pre">DHE_RSAKeyExchange</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">cipherSuite</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">clientHello</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">serverHello</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">privateKey</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dhParams</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dhGroups</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tlslite.keyexchange.DHE_RSAKeyExchange" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <a class="reference internal" href="#tlslite.keyexchange.AuthenticatedKeyExchange" title="tlslite.keyexchange.AuthenticatedKeyExchange"><code class="xref py py-class docutils literal notranslate"><span class="pre">AuthenticatedKeyExchange</span></code></a>, <a class="reference internal" href="#tlslite.keyexchange.ADHKeyExchange" title="tlslite.keyexchange.ADHKeyExchange"><code class="xref py py-class docutils literal notranslate"><span class="pre">ADHKeyExchange</span></code></a></p>
+<p>Handling of authenticated ephemeral Diffe-Hellman Key exchange.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="tlslite.keyexchange.DHE_RSAKeyExchange.__init__">
+<span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">cipherSuite</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">clientHello</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">serverHello</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">privateKey</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dhParams</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dhGroups</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tlslite.keyexchange.DHE_RSAKeyExchange.__init__" title="Permalink to this definition"></a></dt>
+<dd><p>Create helper object for Diffie-Hellamn key exchange.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>dhParams</strong> (<em>2-element tuple of int</em>) – Diffie-Hellman parameters that will be used by
+server. First element of the tuple is the generator, the second
+is the prime. If not specified it will use a secure set (currently
+a 2048-bit safe prime).</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="tlslite.keyexchange.ECDHE_RSAKeyExchange">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">tlslite.keyexchange.</span></span><span class="sig-name descname"><span class="pre">ECDHE_RSAKeyExchange</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">cipherSuite</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">clientHello</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">serverHello</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">privateKey</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">acceptedCurves</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">defaultCurve</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">23</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tlslite.keyexchange.ECDHE_RSAKeyExchange" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <a class="reference internal" href="#tlslite.keyexchange.AuthenticatedKeyExchange" title="tlslite.keyexchange.AuthenticatedKeyExchange"><code class="xref py py-class docutils literal notranslate"><span class="pre">AuthenticatedKeyExchange</span></code></a>, <a class="reference internal" href="#tlslite.keyexchange.AECDHKeyExchange" title="tlslite.keyexchange.AECDHKeyExchange"><code class="xref py py-class docutils literal notranslate"><span class="pre">AECDHKeyExchange</span></code></a></p>
+<p>Helper class for conducting ECDHE key exchange</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="tlslite.keyexchange.ECDHE_RSAKeyExchange.__init__">
+<span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">cipherSuite</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">clientHello</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">serverHello</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">privateKey</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">acceptedCurves</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">defaultCurve</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">23</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tlslite.keyexchange.ECDHE_RSAKeyExchange.__init__" title="Permalink to this definition"></a></dt>
+<dd><p>Initialize KeyExchange. privateKey is the signing private key</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="tlslite.keyexchange.ECDHKeyExchange">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">tlslite.keyexchange.</span></span><span class="sig-name descname"><span class="pre">ECDHKeyExchange</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">group</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">version</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tlslite.keyexchange.ECDHKeyExchange" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <a class="reference internal" href="#tlslite.keyexchange.RawDHKeyExchange" title="tlslite.keyexchange.RawDHKeyExchange"><code class="xref py py-class docutils literal notranslate"><span class="pre">RawDHKeyExchange</span></code></a></p>
+<p>Implementation of the Elliptic Curve Diffie-Hellman key exchange.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="tlslite.keyexchange.ECDHKeyExchange.__init__">
+<span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">group</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">version</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tlslite.keyexchange.ECDHKeyExchange.__init__" title="Permalink to this definition"></a></dt>
+<dd><p>Set the parameters of the key exchange</p>
+<p>Sets group on which the KEX will take part and protocol version used.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tlslite.keyexchange.ECDHKeyExchange.calc_public_value">
+<span class="sig-name descname"><span class="pre">calc_public_value</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">private</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tlslite.keyexchange.ECDHKeyExchange.calc_public_value" title="Permalink to this definition"></a></dt>
+<dd><p>Calculate public value for given private key.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tlslite.keyexchange.ECDHKeyExchange.calc_shared_key">
+<span class="sig-name descname"><span class="pre">calc_shared_key</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">private</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">peer_share</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tlslite.keyexchange.ECDHKeyExchange.calc_shared_key" title="Permalink to this definition"></a></dt>
+<dd><p>Calculate the shared key,</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tlslite.keyexchange.ECDHKeyExchange.get_random_private_key">
+<span class="sig-name descname"><span class="pre">get_random_private_key</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tlslite.keyexchange.ECDHKeyExchange.get_random_private_key" title="Permalink to this definition"></a></dt>
+<dd><p>Return random private key value for the selected curve.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="tlslite.keyexchange.FFDHKeyExchange">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">tlslite.keyexchange.</span></span><span class="sig-name descname"><span class="pre">FFDHKeyExchange</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">group</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">version</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">generator</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">prime</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tlslite.keyexchange.FFDHKeyExchange" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <a class="reference internal" href="#tlslite.keyexchange.RawDHKeyExchange" title="tlslite.keyexchange.RawDHKeyExchange"><code class="xref py py-class docutils literal notranslate"><span class="pre">RawDHKeyExchange</span></code></a></p>
+<p>Implemenation of the Finite Field Diffie-Hellman key exchange.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="tlslite.keyexchange.FFDHKeyExchange.__init__">
+<span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">group</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">version</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">generator</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">prime</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tlslite.keyexchange.FFDHKeyExchange.__init__" title="Permalink to this definition"></a></dt>
+<dd><p>Set the parameters of the key exchange</p>
+<p>Sets group on which the KEX will take part and protocol version used.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tlslite.keyexchange.FFDHKeyExchange.calc_public_value">
+<span class="sig-name descname"><span class="pre">calc_public_value</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">private</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tlslite.keyexchange.FFDHKeyExchange.calc_public_value" title="Permalink to this definition"></a></dt>
+<dd><p>Calculate the public value for given private value.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.11)">int</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tlslite.keyexchange.FFDHKeyExchange.calc_shared_key">
+<span class="sig-name descname"><span class="pre">calc_shared_key</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">private</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">peer_share</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tlslite.keyexchange.FFDHKeyExchange.calc_shared_key" title="Permalink to this definition"></a></dt>
+<dd><p>Calculate the shared key.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tlslite.keyexchange.FFDHKeyExchange.get_random_private_key">
+<span class="sig-name descname"><span class="pre">get_random_private_key</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tlslite.keyexchange.FFDHKeyExchange.get_random_private_key" title="Permalink to this definition"></a></dt>
+<dd><p>Return a random private value for the prime used.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.11)">int</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="tlslite.keyexchange.KeyExchange">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">tlslite.keyexchange.</span></span><span class="sig-name descname"><span class="pre">KeyExchange</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">cipherSuite</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">clientHello</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">serverHello</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">privateKey</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tlslite.keyexchange.KeyExchange" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.11)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<p>Common API for calculating Premaster secret</p>
+<p>NOT stable, will get moved from this file</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="tlslite.keyexchange.KeyExchange.__init__">
+<span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">cipherSuite</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">clientHello</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">serverHello</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">privateKey</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tlslite.keyexchange.KeyExchange.__init__" title="Permalink to this definition"></a></dt>
+<dd><p>Initialize KeyExchange. privateKey is the signing private key</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tlslite.keyexchange.KeyExchange.calcVerifyBytes">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">calcVerifyBytes</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">version</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">handshakeHashes</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">signatureAlg</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">premasterSecret</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">clientRandom</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">serverRandom</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">prf_name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">peer_tag</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">b'client'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">key_type</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'rsa'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tlslite.keyexchange.KeyExchange.calcVerifyBytes" title="Permalink to this definition"></a></dt>
+<dd><p>Calculate signed bytes for Certificate Verify</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tlslite.keyexchange.KeyExchange.makeCertificateVerify">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">makeCertificateVerify</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">version</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">handshakeHashes</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">validSigAlgs</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">privateKey</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">certificateRequest</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">premasterSecret</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">clientRandom</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">serverRandom</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tlslite.keyexchange.KeyExchange.makeCertificateVerify" title="Permalink to this definition"></a></dt>
+<dd><p>Create a Certificate Verify message</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>version</strong> – protocol version in use</p></li>
+<li><p><strong>handshakeHashes</strong> – the running hash of all handshake messages</p></li>
+<li><p><strong>validSigAlgs</strong> – acceptable signature algorithms for client side,
+applicable only to TLSv1.2 (or later)</p></li>
+<li><p><strong>certificateRequest</strong> – the server provided Certificate Request
+message</p></li>
+<li><p><strong>premasterSecret</strong> – the premaster secret, needed only for SSLv3</p></li>
+<li><p><strong>clientRandom</strong> – client provided random value, needed only for
+SSLv3</p></li>
+<li><p><strong>serverRandom</strong> – server provided random value, needed only for
+SSLv3</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tlslite.keyexchange.KeyExchange.makeClientKeyExchange">
+<span class="sig-name descname"><span class="pre">makeClientKeyExchange</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tlslite.keyexchange.KeyExchange.makeClientKeyExchange" title="Permalink to this definition"></a></dt>
+<dd><p>Create a ClientKeyExchange object</p>
+<p>Returns a ClientKeyExchange for the second flight from client in the
+handshake.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tlslite.keyexchange.KeyExchange.makeServerKeyExchange">
+<span class="sig-name descname"><span class="pre">makeServerKeyExchange</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">sigHash</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tlslite.keyexchange.KeyExchange.makeServerKeyExchange" title="Permalink to this definition"></a></dt>
+<dd><p>Create a ServerKeyExchange object</p>
+<p>Returns a ServerKeyExchange object for the server’s initial leg in the
+handshake. If the key exchange method does not send ServerKeyExchange
+(e.g. RSA), it returns None.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tlslite.keyexchange.KeyExchange.processClientKeyExchange">
+<span class="sig-name descname"><span class="pre">processClientKeyExchange</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">clientKeyExchange</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tlslite.keyexchange.KeyExchange.processClientKeyExchange" title="Permalink to this definition"></a></dt>
+<dd><p>Process ClientKeyExchange and return premaster secret</p>
+<p>Processes the client’s ClientKeyExchange message and returns the
+premaster secret. Raises TLSLocalAlert on error.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tlslite.keyexchange.KeyExchange.processServerKeyExchange">
+<span class="sig-name descname"><span class="pre">processServerKeyExchange</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">srvPublicKey</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">serverKeyExchange</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tlslite.keyexchange.KeyExchange.processServerKeyExchange" title="Permalink to this definition"></a></dt>
+<dd><p>Process the server KEX and return premaster secret</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tlslite.keyexchange.KeyExchange.signServerKeyExchange">
+<span class="sig-name descname"><span class="pre">signServerKeyExchange</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">serverKeyExchange</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sigHash</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tlslite.keyexchange.KeyExchange.signServerKeyExchange" title="Permalink to this definition"></a></dt>
+<dd><p>Sign a server key exchange using default or specified algorithm</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>sigHash</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.11)"><em>str</em></a>) – name of the signature hash to be used for signing</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tlslite.keyexchange.KeyExchange.verifyServerKeyExchange">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">verifyServerKeyExchange</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">serverKeyExchange</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">publicKey</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">clientRandom</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">serverRandom</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">validSigAlgs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tlslite.keyexchange.KeyExchange.verifyServerKeyExchange" title="Permalink to this definition"></a></dt>
+<dd><p>Verify signature on the Server Key Exchange message</p>
+<p>the only acceptable signature algorithms are specified by validSigAlgs</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="tlslite.keyexchange.RSAKeyExchange">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">tlslite.keyexchange.</span></span><span class="sig-name descname"><span class="pre">RSAKeyExchange</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">cipherSuite</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">clientHello</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">serverHello</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">privateKey</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tlslite.keyexchange.RSAKeyExchange" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <a class="reference internal" href="#tlslite.keyexchange.KeyExchange" title="tlslite.keyexchange.KeyExchange"><code class="xref py py-class docutils literal notranslate"><span class="pre">KeyExchange</span></code></a></p>
+<p>Handling of RSA key exchange</p>
+<p>NOT stable API, do NOT use</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="tlslite.keyexchange.RSAKeyExchange.__init__">
+<span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">cipherSuite</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">clientHello</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">serverHello</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">privateKey</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tlslite.keyexchange.RSAKeyExchange.__init__" title="Permalink to this definition"></a></dt>
+<dd><p>Initialize KeyExchange. privateKey is the signing private key</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tlslite.keyexchange.RSAKeyExchange.makeClientKeyExchange">
+<span class="sig-name descname"><span class="pre">makeClientKeyExchange</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tlslite.keyexchange.RSAKeyExchange.makeClientKeyExchange" title="Permalink to this definition"></a></dt>
+<dd><p>Return a client key exchange with clients key share</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tlslite.keyexchange.RSAKeyExchange.makeServerKeyExchange">
+<span class="sig-name descname"><span class="pre">makeServerKeyExchange</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">sigHash</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tlslite.keyexchange.RSAKeyExchange.makeServerKeyExchange" title="Permalink to this definition"></a></dt>
+<dd><p>Don’t create a server key exchange for RSA key exchange</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tlslite.keyexchange.RSAKeyExchange.processClientKeyExchange">
+<span class="sig-name descname"><span class="pre">processClientKeyExchange</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">clientKeyExchange</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tlslite.keyexchange.RSAKeyExchange.processClientKeyExchange" title="Permalink to this definition"></a></dt>
+<dd><p>Decrypt client key exchange, return premaster secret</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tlslite.keyexchange.RSAKeyExchange.processServerKeyExchange">
+<span class="sig-name descname"><span class="pre">processServerKeyExchange</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">srvPublicKey</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">serverKeyExchange</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tlslite.keyexchange.RSAKeyExchange.processServerKeyExchange" title="Permalink to this definition"></a></dt>
+<dd><p>Generate premaster secret for server</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="tlslite.keyexchange.RawDHKeyExchange">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">tlslite.keyexchange.</span></span><span class="sig-name descname"><span class="pre">RawDHKeyExchange</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">group</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">version</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tlslite.keyexchange.RawDHKeyExchange" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.11)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<p>Abstract class for performing Diffe-Hellman key exchange.</p>
+<p>Provides a shared API for X25519, ECDHE and FFDHE key exchange.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="tlslite.keyexchange.RawDHKeyExchange.__init__">
+<span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">group</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">version</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tlslite.keyexchange.RawDHKeyExchange.__init__" title="Permalink to this definition"></a></dt>
+<dd><p>Set the parameters of the key exchange</p>
+<p>Sets group on which the KEX will take part and protocol version used.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tlslite.keyexchange.RawDHKeyExchange.calc_public_value">
+<span class="sig-name descname"><span class="pre">calc_public_value</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">private</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tlslite.keyexchange.RawDHKeyExchange.calc_public_value" title="Permalink to this definition"></a></dt>
+<dd><p>Calculate the public value from the provided private value.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tlslite.keyexchange.RawDHKeyExchange.calc_shared_key">
+<span class="sig-name descname"><span class="pre">calc_shared_key</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">private</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">peer_share</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tlslite.keyexchange.RawDHKeyExchange.calc_shared_key" title="Permalink to this definition"></a></dt>
+<dd><p>Calcualte the shared key given our private and remote share value</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tlslite.keyexchange.RawDHKeyExchange.get_random_private_key">
+<span class="sig-name descname"><span class="pre">get_random_private_key</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tlslite.keyexchange.RawDHKeyExchange.get_random_private_key" title="Permalink to this definition"></a></dt>
+<dd><p>Generate a random value suitable for use as the private value of KEX.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="tlslite.keyexchange.SRPKeyExchange">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">tlslite.keyexchange.</span></span><span class="sig-name descname"><span class="pre">SRPKeyExchange</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">cipherSuite</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">clientHello</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">serverHello</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">privateKey</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">verifierDB</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">srpUsername</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">password</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">settings</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tlslite.keyexchange.SRPKeyExchange" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <a class="reference internal" href="#tlslite.keyexchange.KeyExchange" title="tlslite.keyexchange.KeyExchange"><code class="xref py py-class docutils literal notranslate"><span class="pre">KeyExchange</span></code></a></p>
+<p>Helper class for conducting SRP key exchange</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="tlslite.keyexchange.SRPKeyExchange.__init__">
+<span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">cipherSuite</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">clientHello</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">serverHello</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">privateKey</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">verifierDB</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">srpUsername</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">password</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">settings</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tlslite.keyexchange.SRPKeyExchange.__init__" title="Permalink to this definition"></a></dt>
+<dd><p>Link Key Exchange options with verifierDB for SRP</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tlslite.keyexchange.SRPKeyExchange.makeClientKeyExchange">
+<span class="sig-name descname"><span class="pre">makeClientKeyExchange</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tlslite.keyexchange.SRPKeyExchange.makeClientKeyExchange" title="Permalink to this definition"></a></dt>
+<dd><p>Create ClientKeyExchange</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tlslite.keyexchange.SRPKeyExchange.makeServerKeyExchange">
+<span class="sig-name descname"><span class="pre">makeServerKeyExchange</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">sigHash</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tlslite.keyexchange.SRPKeyExchange.makeServerKeyExchange" title="Permalink to this definition"></a></dt>
+<dd><p>Create SRP version of Server Key Exchange</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tlslite.keyexchange.SRPKeyExchange.processClientKeyExchange">
+<span class="sig-name descname"><span class="pre">processClientKeyExchange</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">clientKeyExchange</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tlslite.keyexchange.SRPKeyExchange.processClientKeyExchange" title="Permalink to this definition"></a></dt>
+<dd><p>Calculate premaster secret from Client Key Exchange and sent SKE</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tlslite.keyexchange.SRPKeyExchange.processServerKeyExchange">
+<span class="sig-name descname"><span class="pre">processServerKeyExchange</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">srvPublicKey</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">serverKeyExchange</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tlslite.keyexchange.SRPKeyExchange.processServerKeyExchange" title="Permalink to this definition"></a></dt>
+<dd><p>Calculate premaster secret from ServerKeyExchange</p>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="tlslite.handshakesettings.html" class="btn btn-neutral float-left" title="tlslite.handshakesettings module" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="tlslite.mathtls.html" class="btn btn-neutral float-right" title="tlslite.mathtls module" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2023, Hubert Kario.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>tlslite.tlsconnection module &mdash; tlslite-ng 0.8.0-alpha44 documentation</title>
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="_static/doctools.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="tlslite.tlsrecordlayer module" href="tlslite.tlsrecordlayer.html" />
+    <link rel="prev" title="tlslite.sessioncache module" href="tlslite.sessioncache.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="index.html" class="icon icon-home"> tlslite-ng
+          </a>
+              <div class="version">
+                0.8
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="modules.html">tlslite</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="tlslite.html">tlslite package</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="tlslite.html#subpackages">Subpackages</a></li>
+<li class="toctree-l3 current"><a class="reference internal" href="tlslite.html#submodules">Submodules</a><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="tlslite.api.html">tlslite.api module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tlslite.basedb.html">tlslite.basedb module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tlslite.bufferedsocket.html">tlslite.bufferedsocket module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tlslite.checker.html">tlslite.checker module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tlslite.constants.html">tlslite.constants module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tlslite.defragmenter.html">tlslite.defragmenter module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tlslite.dh.html">tlslite.dh module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tlslite.errors.html">tlslite.errors module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tlslite.extensions.html">tlslite.extensions module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tlslite.handshakehashes.html">tlslite.handshakehashes module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tlslite.handshakehelpers.html">tlslite.handshakehelpers module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tlslite.handshakesettings.html">tlslite.handshakesettings module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tlslite.keyexchange.html">tlslite.keyexchange module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tlslite.mathtls.html">tlslite.mathtls module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tlslite.messages.html">tlslite.messages module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tlslite.messagesocket.html">tlslite.messagesocket module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tlslite.recordlayer.html">tlslite.recordlayer module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tlslite.session.html">tlslite.session module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tlslite.sessioncache.html">tlslite.sessioncache module</a></li>
+<li class="toctree-l4 current"><a class="current reference internal" href="#">tlslite.tlsconnection module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tlslite.tlsrecordlayer.html">tlslite.tlsrecordlayer module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tlslite.verifierdb.html">tlslite.verifierdb module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tlslite.x509.html">tlslite.x509 module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tlslite.x509certchain.html">tlslite.x509certchain module</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">tlslite-ng</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+          <li><a href="modules.html">tlslite</a> &raquo;</li>
+          <li><a href="tlslite.html">tlslite package</a> &raquo;</li>
+      <li>tlslite.tlsconnection module</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/tlslite.tlsconnection.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="module-tlslite.tlsconnection">
+<span id="tlslite-tlsconnection-module"></span><h1>tlslite.tlsconnection module<a class="headerlink" href="#module-tlslite.tlsconnection" title="Permalink to this heading"></a></h1>
+<p>MAIN CLASS FOR TLS LITE (START HERE!).</p>
+<dl class="py class">
+<dt class="sig sig-object py" id="tlslite.tlsconnection.TLSConnection">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">tlslite.tlsconnection.</span></span><span class="sig-name descname"><span class="pre">TLSConnection</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">sock</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tlslite.tlsconnection.TLSConnection" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <a class="reference internal" href="tlslite.tlsrecordlayer.html#tlslite.tlsrecordlayer.TLSRecordLayer" title="tlslite.tlsrecordlayer.TLSRecordLayer"><code class="xref py py-class docutils literal notranslate"><span class="pre">TLSRecordLayer</span></code></a></p>
+<p>This class wraps a socket and provides TLS handshaking and data transfer.</p>
+<p>To use this class, create a new instance, passing a connected
+socket into the constructor.  Then call some handshake function.
+If the handshake completes without raising an exception, then a TLS
+connection has been negotiated.  You can transfer data over this
+connection as if it were a socket.</p>
+<p>This class provides both synchronous and asynchronous versions of
+its key functions.  The synchronous versions should be used when
+writing single-or multi-threaded code using blocking sockets.  The
+asynchronous versions should be used when performing asynchronous,
+event-based I/O with non-blocking sockets.</p>
+<p>Asynchronous I/O is a complicated subject; typically, you should
+not use the asynchronous functions directly, but should use some
+framework like asyncore or Twisted which TLS Lite integrates with
+(see
+<a class="reference internal" href="tlslite.integration.tlsasyncdispatchermixin.html#tlslite.integration.tlsasyncdispatchermixin.TLSAsyncDispatcherMixIn" title="tlslite.integration.tlsasyncdispatchermixin.TLSAsyncDispatcherMixIn"><code class="xref py py-class docutils literal notranslate"><span class="pre">TLSAsyncDispatcherMixIn</span></code></a>).</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="tlslite.tlsconnection.TLSConnection.__init__">
+<span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">sock</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tlslite.tlsconnection.TLSConnection.__init__" title="Permalink to this definition"></a></dt>
+<dd><p>Create a new TLSConnection instance.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>sock</strong> (<a class="reference external" href="https://docs.python.org/3/library/socket.html#socket.socket" title="(in Python v3.11)"><em>socket.socket</em></a>) – The socket data will be transmitted on.  The
+socket should already be connected.  It may be in blocking or
+non-blocking mode.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tlslite.tlsconnection.TLSConnection.handshakeClientAnonymous">
+<span class="sig-name descname"><span class="pre">handshakeClientAnonymous</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">session</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">settings</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">checker</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">serverName</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">async_</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tlslite.tlsconnection.TLSConnection.handshakeClientAnonymous" title="Permalink to this definition"></a></dt>
+<dd><p>Perform an anonymous handshake in the role of client.</p>
+<p>This function performs an SSL or TLS handshake using an
+anonymous Diffie Hellman ciphersuite.</p>
+<p>Like any handshake function, this can be called on a closed
+TLS connection, or on a TLS connection that is already open.
+If called on an open connection it performs a re-handshake.</p>
+<p>If the function completes without raising an exception, the
+TLS connection will be open and available for data transfer.</p>
+<p>If an exception is raised, the connection will have been
+automatically closed (if it was ever open).</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>session</strong> (<a class="reference internal" href="tlslite.session.html#tlslite.session.Session" title="tlslite.session.Session"><em>Session</em></a>) – A TLS session to attempt to resume.  If the
+resumption does not succeed, a full handshake will be
+performed.</p></li>
+<li><p><strong>settings</strong> (<a class="reference internal" href="tlslite.handshakesettings.html#tlslite.handshakesettings.HandshakeSettings" title="tlslite.handshakesettings.HandshakeSettings"><em>HandshakeSettings</em></a>) – Various settings which can be used to control
+the ciphersuites, certificate types, and SSL/TLS versions
+offered by the client.</p></li>
+<li><p><strong>checker</strong> (<a class="reference internal" href="tlslite.checker.html#tlslite.checker.Checker" title="tlslite.checker.Checker"><em>Checker</em></a>) – A Checker instance.  This instance will be
+invoked to examine the other party’s authentication
+credentials, if the handshake completes succesfully.</p></li>
+<li><p><strong>serverName</strong> (<em>string</em>) – The ServerNameIndication TLS Extension.</p></li>
+<li><p><strong>async</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.11)"><em>bool</em></a>) – If False, this function will block until the
+handshake is completed.  If True, this function will return a
+generator.  Successive invocations of the generator will
+return 0 if it is waiting to read from the socket, 1 if it is
+waiting to write to the socket, or will raise StopIteration if
+the handshake operation is completed.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>None or an iterable</p>
+</dd>
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>If ‘<a href="#id3"><span class="problematic" id="id4">async_</span></a>’ is True, a generator object will be
+returned.</p>
+</dd>
+<dt class="field-even">Raises<span class="colon">:</span></dt>
+<dd class="field-even"><ul class="simple">
+<li><p><a class="reference external" href="https://docs.python.org/3/library/socket.html#socket.error" title="(in Python v3.11)"><strong>socket.error</strong></a> – If a socket error occurs.</p></li>
+<li><p><a class="reference internal" href="tlslite.errors.html#tlslite.errors.TLSAbruptCloseError" title="tlslite.errors.TLSAbruptCloseError"><strong>tlslite.errors.TLSAbruptCloseError</strong></a> – If the socket is closed
+without a preceding alert.</p></li>
+<li><p><a class="reference internal" href="tlslite.errors.html#tlslite.errors.TLSAlert" title="tlslite.errors.TLSAlert"><strong>tlslite.errors.TLSAlert</strong></a> – If a TLS alert is signalled.</p></li>
+<li><p><a class="reference internal" href="tlslite.errors.html#tlslite.errors.TLSAuthenticationError" title="tlslite.errors.TLSAuthenticationError"><strong>tlslite.errors.TLSAuthenticationError</strong></a> – If the checker
+doesn’t like the other party’s authentication credentials.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tlslite.tlsconnection.TLSConnection.handshakeClientCert">
+<span class="sig-name descname"><span class="pre">handshakeClientCert</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">certChain</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">privateKey</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">session</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">settings</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">checker</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">nextProtos</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">reqTack</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">serverName</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">async_</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">alpn</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tlslite.tlsconnection.TLSConnection.handshakeClientCert" title="Permalink to this definition"></a></dt>
+<dd><p>Perform a certificate-based handshake in the role of client.</p>
+<p>This function performs an SSL or TLS handshake.  The server
+will authenticate itself using an X.509 certificate
+chain.  If the handshake succeeds, the server’s certificate
+chain will be stored in the session’s serverCertChain attribute.
+Unless a checker object is passed in, this function does no
+validation or checking of the server’s certificate chain.</p>
+<p>If the server requests client authentication, the
+client will send the passed-in certificate chain, and use the
+passed-in private key to authenticate itself.  If no
+certificate chain and private key were passed in, the client
+will attempt to proceed without client authentication.  The
+server may or may not allow this.</p>
+<p>If the function completes without raising an exception, the
+TLS connection will be open and available for data transfer.</p>
+<p>If an exception is raised, the connection will have been
+automatically closed (if it was ever open).</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>certChain</strong> (<a class="reference internal" href="tlslite.x509certchain.html#tlslite.x509certchain.X509CertChain" title="tlslite.x509certchain.X509CertChain"><em>X509CertChain</em></a>) – The certificate chain to be used if the
+server requests client authentication.</p></li>
+<li><p><strong>privateKey</strong> (<a class="reference internal" href="tlslite.utils.rsakey.html#tlslite.utils.rsakey.RSAKey" title="tlslite.utils.rsakey.RSAKey"><em>RSAKey</em></a>) – The private key to be used if the server
+requests client authentication.</p></li>
+<li><p><strong>session</strong> (<a class="reference internal" href="tlslite.session.html#tlslite.session.Session" title="tlslite.session.Session"><em>Session</em></a>) – A TLS session to attempt to resume.  If the
+resumption does not succeed, a full handshake will be
+performed.</p></li>
+<li><p><strong>settings</strong> (<a class="reference internal" href="tlslite.handshakesettings.html#tlslite.handshakesettings.HandshakeSettings" title="tlslite.handshakesettings.HandshakeSettings"><em>HandshakeSettings</em></a>) – Various settings which can be used to control
+the ciphersuites, certificate types, and SSL/TLS versions
+offered by the client.</p></li>
+<li><p><strong>checker</strong> (<a class="reference internal" href="tlslite.checker.html#tlslite.checker.Checker" title="tlslite.checker.Checker"><em>Checker</em></a>) – A Checker instance.  This instance will be
+invoked to examine the other party’s authentication
+credentials, if the handshake completes succesfully.</p></li>
+<li><p><strong>nextProtos</strong> (<em>list of str</em>) – A list of upper layer protocols ordered by
+preference, to use in the Next-Protocol Negotiation Extension.</p></li>
+<li><p><strong>reqTack</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.11)"><em>bool</em></a>) – Whether or not to send a “tack” TLS Extension,
+requesting the server return a TackExtension if it has one.</p></li>
+<li><p><strong>serverName</strong> (<em>string</em>) – The ServerNameIndication TLS Extension.</p></li>
+<li><p><strong>async</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.11)"><em>bool</em></a>) – If False, this function will block until the
+handshake is completed.  If True, this function will return a
+generator.  Successive invocations of the generator will
+return 0 if it is waiting to read from the socket, 1 if it is
+waiting to write to the socket, or will raise StopIteration if
+the handshake operation is completed.</p></li>
+<li><p><strong>alpn</strong> (<em>list of bytearrays</em>) – protocol names to advertise to server as supported by
+client in the Application Layer Protocol Negotiation extension.
+Example items in the array include b’http/1.1’ or b’h2’.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>None or an iterable</p>
+</dd>
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>If ‘<a href="#id5"><span class="problematic" id="id6">async_</span></a>’ is True, a generator object will be
+returned.</p>
+</dd>
+<dt class="field-even">Raises<span class="colon">:</span></dt>
+<dd class="field-even"><ul class="simple">
+<li><p><a class="reference external" href="https://docs.python.org/3/library/socket.html#socket.error" title="(in Python v3.11)"><strong>socket.error</strong></a> – If a socket error occurs.</p></li>
+<li><p><a class="reference internal" href="tlslite.errors.html#tlslite.errors.TLSAbruptCloseError" title="tlslite.errors.TLSAbruptCloseError"><strong>tlslite.errors.TLSAbruptCloseError</strong></a> – If the socket is closed
+without a preceding alert.</p></li>
+<li><p><a class="reference internal" href="tlslite.errors.html#tlslite.errors.TLSAlert" title="tlslite.errors.TLSAlert"><strong>tlslite.errors.TLSAlert</strong></a> – If a TLS alert is signalled.</p></li>
+<li><p><a class="reference internal" href="tlslite.errors.html#tlslite.errors.TLSAuthenticationError" title="tlslite.errors.TLSAuthenticationError"><strong>tlslite.errors.TLSAuthenticationError</strong></a> – If the checker
+doesn’t like the other party’s authentication credentials.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tlslite.tlsconnection.TLSConnection.handshakeClientSRP">
+<span class="sig-name descname"><span class="pre">handshakeClientSRP</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">username</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">password</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">session</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">settings</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">checker</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">reqTack</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">serverName</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">async_</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tlslite.tlsconnection.TLSConnection.handshakeClientSRP" title="Permalink to this definition"></a></dt>
+<dd><p>Perform an SRP handshake in the role of client.</p>
+<p>This function performs a TLS/SRP handshake.  SRP mutually
+authenticates both parties to each other using only a
+username and password.  This function may also perform a
+combined SRP and server-certificate handshake, if the server
+chooses to authenticate itself with a certificate chain in
+addition to doing SRP.</p>
+<p>If the function completes without raising an exception, the
+TLS connection will be open and available for data transfer.</p>
+<p>If an exception is raised, the connection will have been
+automatically closed (if it was ever open).</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>username</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#bytearray" title="(in Python v3.11)"><em>bytearray</em></a>) – The SRP username.</p></li>
+<li><p><strong>password</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#bytearray" title="(in Python v3.11)"><em>bytearray</em></a>) – The SRP password.</p></li>
+<li><p><strong>session</strong> (<a class="reference internal" href="tlslite.session.html#tlslite.session.Session" title="tlslite.session.Session"><em>Session</em></a>) – A TLS session to attempt to resume.  This
+session must be an SRP session performed with the same username
+and password as were passed in.  If the resumption does not
+succeed, a full SRP handshake will be performed.</p></li>
+<li><p><strong>settings</strong> (<a class="reference internal" href="tlslite.handshakesettings.html#tlslite.handshakesettings.HandshakeSettings" title="tlslite.handshakesettings.HandshakeSettings"><em>HandshakeSettings</em></a>) – Various settings which can be used to control
+the ciphersuites, certificate types, and SSL/TLS versions
+offered by the client.</p></li>
+<li><p><strong>checker</strong> (<a class="reference internal" href="tlslite.checker.html#tlslite.checker.Checker" title="tlslite.checker.Checker"><em>Checker</em></a>) – A Checker instance.  This instance will be
+invoked to examine the other party’s authentication
+credentials, if the handshake completes succesfully.</p></li>
+<li><p><strong>reqTack</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.11)"><em>bool</em></a>) – Whether or not to send a “tack” TLS Extension,
+requesting the server return a TackExtension if it has one.</p></li>
+<li><p><strong>serverName</strong> (<em>string</em>) – The ServerNameIndication TLS Extension.</p></li>
+<li><p><strong>async</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.11)"><em>bool</em></a>) – If False, this function will block until the
+handshake is completed.  If True, this function will return a
+generator.  Successive invocations of the generator will
+return 0 if it is waiting to read from the socket, 1 if it is
+waiting to write to the socket, or will raise StopIteration if
+the handshake operation is completed.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>None or an iterable</p>
+</dd>
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>If ‘<a href="#id7"><span class="problematic" id="id8">async_</span></a>’ is True, a generator object will be
+returned.</p>
+</dd>
+<dt class="field-even">Raises<span class="colon">:</span></dt>
+<dd class="field-even"><ul class="simple">
+<li><p><a class="reference external" href="https://docs.python.org/3/library/socket.html#socket.error" title="(in Python v3.11)"><strong>socket.error</strong></a> – If a socket error occurs.</p></li>
+<li><p><a class="reference internal" href="tlslite.errors.html#tlslite.errors.TLSAbruptCloseError" title="tlslite.errors.TLSAbruptCloseError"><strong>tlslite.errors.TLSAbruptCloseError</strong></a> – If the socket is closed
+without a preceding alert.</p></li>
+<li><p><a class="reference internal" href="tlslite.errors.html#tlslite.errors.TLSAlert" title="tlslite.errors.TLSAlert"><strong>tlslite.errors.TLSAlert</strong></a> – If a TLS alert is signalled.</p></li>
+<li><p><a class="reference internal" href="tlslite.errors.html#tlslite.errors.TLSAuthenticationError" title="tlslite.errors.TLSAuthenticationError"><strong>tlslite.errors.TLSAuthenticationError</strong></a> – If the checker
+doesn’t like the other party’s authentication credentials.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tlslite.tlsconnection.TLSConnection.handshakeServer">
+<span class="sig-name descname"><span class="pre">handshakeServer</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">verifierDB</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">certChain</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">privateKey</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">reqCert</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sessionCache</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">settings</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">checker</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">reqCAs</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tacks</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">activationFlags</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">nextProtos</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">anon</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">alpn</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sni</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tlslite.tlsconnection.TLSConnection.handshakeServer" title="Permalink to this definition"></a></dt>
+<dd><p>Perform a handshake in the role of server.</p>
+<p>This function performs an SSL or TLS handshake.  Depending on
+the arguments and the behavior of the client, this function can
+perform an SRP, or certificate-based handshake.  It
+can also perform a combined SRP and server-certificate
+handshake.</p>
+<p>Like any handshake function, this can be called on a closed
+TLS connection, or on a TLS connection that is already open.
+If called on an open connection it performs a re-handshake.
+This function does not send a Hello Request message before
+performing the handshake, so if re-handshaking is required,
+the server must signal the client to begin the re-handshake
+through some other means.</p>
+<p>If the function completes without raising an exception, the
+TLS connection will be open and available for data transfer.</p>
+<p>If an exception is raised, the connection will have been
+automatically closed (if it was ever open).</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>verifierDB</strong> (<a class="reference internal" href="tlslite.verifierdb.html#tlslite.verifierdb.VerifierDB" title="tlslite.verifierdb.VerifierDB"><em>VerifierDB</em></a>) – A database of SRP password verifiers
+associated with usernames.  If the client performs an SRP
+handshake, the session’s srpUsername attribute will be set.</p></li>
+<li><p><strong>certChain</strong> (<a class="reference internal" href="tlslite.x509certchain.html#tlslite.x509certchain.X509CertChain" title="tlslite.x509certchain.X509CertChain"><em>X509CertChain</em></a>) – The certificate chain to be used if the
+client requests server certificate authentication and no virtual
+host defined in HandshakeSettings matches ClientHello.</p></li>
+<li><p><strong>privateKey</strong> (<a class="reference internal" href="tlslite.utils.rsakey.html#tlslite.utils.rsakey.RSAKey" title="tlslite.utils.rsakey.RSAKey"><em>RSAKey</em></a>) – The private key to be used if the client
+requests server certificate authentication and no virtual host
+defined in HandshakeSettings matches ClientHello.</p></li>
+<li><p><strong>reqCert</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.11)"><em>bool</em></a>) – Whether to request client certificate
+authentication.  This only applies if the client chooses server
+certificate authentication; if the client chooses SRP
+authentication, this will be ignored.  If the client
+performs a client certificate authentication, the sessions’s
+clientCertChain attribute will be set.</p></li>
+<li><p><strong>sessionCache</strong> (<a class="reference internal" href="tlslite.sessioncache.html#tlslite.sessioncache.SessionCache" title="tlslite.sessioncache.SessionCache"><em>SessionCache</em></a>) – An in-memory cache of resumable sessions.
+The client can resume sessions from this cache.  Alternatively,
+if the client performs a full handshake, a new session will be
+added to the cache.</p></li>
+<li><p><strong>settings</strong> (<a class="reference internal" href="tlslite.handshakesettings.html#tlslite.handshakesettings.HandshakeSettings" title="tlslite.handshakesettings.HandshakeSettings"><em>HandshakeSettings</em></a>) – Various settings which can be used to control
+the ciphersuites and SSL/TLS version chosen by the server.</p></li>
+<li><p><strong>checker</strong> (<a class="reference internal" href="tlslite.checker.html#tlslite.checker.Checker" title="tlslite.checker.Checker"><em>Checker</em></a>) – A Checker instance.  This instance will be
+invoked to examine the other party’s authentication
+credentials, if the handshake completes succesfully.</p></li>
+<li><p><strong>reqCAs</strong> (<em>list of bytearray</em>) – A collection of DER-encoded DistinguishedNames that
+will be sent along with a certificate request to help client pick
+a certificates. This does not affect verification.</p></li>
+<li><p><strong>nextProtos</strong> (<em>list of str</em>) – A list of upper layer protocols to expose to the
+clients through the Next-Protocol Negotiation Extension,
+if they support it. Deprecated, use the <cite>virtual_hosts</cite> in
+HandshakeSettings.</p></li>
+<li><p><strong>alpn</strong> (<em>list of bytearray</em>) – names of application layer protocols supported.
+Note that it will be used instead of NPN if both were advertised by
+client. Deprecated, use the <cite>virtual_hosts</cite> in HandshakeSettings.</p></li>
+<li><p><strong>sni</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#bytearray" title="(in Python v3.11)"><em>bytearray</em></a>) – expected virtual name hostname. Deprecated, use the
+<cite>virtual_hosts</cite> in HandshakeSettings.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Raises<span class="colon">:</span></dt>
+<dd class="field-even"><ul class="simple">
+<li><p><a class="reference external" href="https://docs.python.org/3/library/socket.html#socket.error" title="(in Python v3.11)"><strong>socket.error</strong></a> – If a socket error occurs.</p></li>
+<li><p><a class="reference internal" href="tlslite.errors.html#tlslite.errors.TLSAbruptCloseError" title="tlslite.errors.TLSAbruptCloseError"><strong>tlslite.errors.TLSAbruptCloseError</strong></a> – If the socket is closed
+without a preceding alert.</p></li>
+<li><p><a class="reference internal" href="tlslite.errors.html#tlslite.errors.TLSAlert" title="tlslite.errors.TLSAlert"><strong>tlslite.errors.TLSAlert</strong></a> – If a TLS alert is signalled.</p></li>
+<li><p><a class="reference internal" href="tlslite.errors.html#tlslite.errors.TLSAuthenticationError" title="tlslite.errors.TLSAuthenticationError"><strong>tlslite.errors.TLSAuthenticationError</strong></a> – If the checker
+doesn’t like the other party’s authentication credentials.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tlslite.tlsconnection.TLSConnection.handshakeServerAsync">
+<span class="sig-name descname"><span class="pre">handshakeServerAsync</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">verifierDB</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">certChain</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">privateKey</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">reqCert</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sessionCache</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">settings</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">checker</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">reqCAs</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tacks</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">activationFlags</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">nextProtos</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">anon</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">alpn</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sni</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tlslite.tlsconnection.TLSConnection.handshakeServerAsync" title="Permalink to this definition"></a></dt>
+<dd><p>Start a server handshake operation on the TLS connection.</p>
+<p>This function returns a generator which behaves similarly to
+handshakeServer().  Successive invocations of the generator
+will return 0 if it is waiting to read from the socket, 1 if it is
+waiting to write to the socket, or it will raise StopIteration
+if the handshake operation is complete.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>iterable</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>A generator; see above for details.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tlslite.tlsconnection.TLSConnection.keyingMaterialExporter">
+<span class="sig-name descname"><span class="pre">keyingMaterialExporter</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">label</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">length</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">20</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tlslite.tlsconnection.TLSConnection.keyingMaterialExporter" title="Permalink to this definition"></a></dt>
+<dd><p>Return keying material as described in RFC 5705</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>label</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#bytearray" title="(in Python v3.11)"><em>bytearray</em></a>) – label to be provided for the exporter</p></li>
+<li><p><strong>length</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.11)"><em>int</em></a>) – number of bytes of the keying material to export</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tlslite.tlsconnection.TLSConnection.request_post_handshake_auth">
+<span class="sig-name descname"><span class="pre">request_post_handshake_auth</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">settings</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tlslite.tlsconnection.TLSConnection.request_post_handshake_auth" title="Permalink to this definition"></a></dt>
+<dd><p>Request Post-handshake Authentication from client.</p>
+<p>The PHA process is asynchronous, and client may send some data before
+its certificates are added to Session object. Calling this generator
+will only request for the new identity of client, it will not wait for
+it.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="tlslite.tlsconnection.bytes_to_int">
+<span class="sig-prename descclassname"><span class="pre">tlslite.tlsconnection.</span></span><span class="sig-name descname"><span class="pre">bytes_to_int</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">bytes</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">byteorder</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'big'</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">*</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">signed</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tlslite.tlsconnection.bytes_to_int" title="Permalink to this definition"></a></dt>
+<dd><p>Return the integer represented by the given array of bytes.</p>
+<dl class="simple">
+<dt>bytes</dt><dd><p>Holds the array of bytes to convert.  The argument must either
+support the buffer protocol or be an iterable object producing bytes.
+Bytes and bytearray are examples of built-in objects that support the
+buffer protocol.</p>
+</dd>
+<dt>byteorder</dt><dd><p>The byte order used to represent the integer.  If byteorder is ‘big’,
+the most significant byte is at the beginning of the byte array.  If
+byteorder is ‘little’, the most significant byte is at the end of the
+byte array.  To request the native byte order of the host system, use
+<a href="#id1"><span class="problematic" id="id2">`</span></a>sys.byteorder’ as the byte order value.  Default is to use ‘big’.</p>
+</dd>
+<dt>signed</dt><dd><p>Indicates whether two’s complement is used to represent the integer.</p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="tlslite.sessioncache.html" class="btn btn-neutral float-left" title="tlslite.sessioncache module" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="tlslite.tlsrecordlayer.html" class="btn btn-neutral float-right" title="tlslite.tlsrecordlayer module" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2023, Hubert Kario.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>tlslite.messagesocket module &mdash; tlslite-ng 0.8.0-alpha44 documentation</title>
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="_static/doctools.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="tlslite.recordlayer module" href="tlslite.recordlayer.html" />
+    <link rel="prev" title="tlslite.messages module" href="tlslite.messages.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="index.html" class="icon icon-home"> tlslite-ng
+          </a>
+              <div class="version">
+                0.8
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="modules.html">tlslite</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="tlslite.html">tlslite package</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="tlslite.html#subpackages">Subpackages</a></li>
+<li class="toctree-l3 current"><a class="reference internal" href="tlslite.html#submodules">Submodules</a><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="tlslite.api.html">tlslite.api module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tlslite.basedb.html">tlslite.basedb module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tlslite.bufferedsocket.html">tlslite.bufferedsocket module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tlslite.checker.html">tlslite.checker module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tlslite.constants.html">tlslite.constants module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tlslite.defragmenter.html">tlslite.defragmenter module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tlslite.dh.html">tlslite.dh module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tlslite.errors.html">tlslite.errors module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tlslite.extensions.html">tlslite.extensions module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tlslite.handshakehashes.html">tlslite.handshakehashes module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tlslite.handshakehelpers.html">tlslite.handshakehelpers module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tlslite.handshakesettings.html">tlslite.handshakesettings module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tlslite.keyexchange.html">tlslite.keyexchange module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tlslite.mathtls.html">tlslite.mathtls module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tlslite.messages.html">tlslite.messages module</a></li>
+<li class="toctree-l4 current"><a class="current reference internal" href="#">tlslite.messagesocket module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tlslite.recordlayer.html">tlslite.recordlayer module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tlslite.session.html">tlslite.session module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tlslite.sessioncache.html">tlslite.sessioncache module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tlslite.tlsconnection.html">tlslite.tlsconnection module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tlslite.tlsrecordlayer.html">tlslite.tlsrecordlayer module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tlslite.verifierdb.html">tlslite.verifierdb module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tlslite.x509.html">tlslite.x509 module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tlslite.x509certchain.html">tlslite.x509certchain module</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">tlslite-ng</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+          <li><a href="modules.html">tlslite</a> &raquo;</li>
+          <li><a href="tlslite.html">tlslite package</a> &raquo;</li>
+      <li>tlslite.messagesocket module</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/tlslite.messagesocket.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="module-tlslite.messagesocket">
+<span id="tlslite-messagesocket-module"></span><h1>tlslite.messagesocket module<a class="headerlink" href="#module-tlslite.messagesocket" title="Permalink to this heading"></a></h1>
+<p>Wrapper of TLS RecordLayer providing message-level abstraction</p>
+<dl class="py class">
+<dt class="sig sig-object py" id="tlslite.messagesocket.MessageSocket">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">tlslite.messagesocket.</span></span><span class="sig-name descname"><span class="pre">MessageSocket</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">sock</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">defragmenter</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tlslite.messagesocket.MessageSocket" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <a class="reference internal" href="tlslite.recordlayer.html#tlslite.recordlayer.RecordLayer" title="tlslite.recordlayer.RecordLayer"><code class="xref py py-class docutils literal notranslate"><span class="pre">RecordLayer</span></code></a></p>
+<p>TLS Record Layer socket that provides Message level abstraction</p>
+<p>Because the record layer has a hard size limit on sent messages, they need
+to be fragmented before sending. Similarly, a single record layer record
+can include multiple handshake protocol messages (very common with
+ServerHello, Certificate and ServerHelloDone), as such, the user of
+RecordLayer needs to fragment those records into multiple messages.
+Unfortunately, fragmentation of messages requires some degree of
+knowledge about the messages passed and as such is outside scope of pure
+record layer implementation.</p>
+<p>This class tries to provide a useful abstraction for handling Handshake
+protocol messages.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Variables<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>recordSize</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.11)"><em>int</em></a>) – maximum size of records sent through socket. Messages
+bigger than this size will be fragmented to smaller chunks. Setting it
+to higher value than the default 2^14 will make the implementation
+non RFC compliant and likely not interoperable with other peers.</p></li>
+<li><p><strong>defragmenter</strong> (<a class="reference internal" href="tlslite.defragmenter.html#tlslite.defragmenter.Defragmenter" title="tlslite.defragmenter.Defragmenter"><em>Defragmenter</em></a>) – defragmenter used for read records</p></li>
+<li><p><strong>unfragmentedDataTypes</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#tuple" title="(in Python v3.11)"><em>tuple</em></a>) – data types which will be passed as-read,
+TLS application_data and heartbeat by default</p></li>
+</ul>
+</dd>
+</dl>
+<dl class="py method">
+<dt class="sig sig-object py" id="tlslite.messagesocket.MessageSocket.__init__">
+<span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">sock</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">defragmenter</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tlslite.messagesocket.MessageSocket.__init__" title="Permalink to this definition"></a></dt>
+<dd><p>Apply TLS Record Layer abstraction to raw network socket.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>sock</strong> (<a class="reference external" href="https://docs.python.org/3/library/socket.html#socket.socket" title="(in Python v3.11)"><em>socket.socket</em></a>) – network socket to wrap</p></li>
+<li><p><strong>defragmenter</strong> (<a class="reference internal" href="tlslite.defragmenter.html#tlslite.defragmenter.Defragmenter" title="tlslite.defragmenter.Defragmenter"><em>Defragmenter</em></a>) – defragmenter to apply on the records read</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tlslite.messagesocket.MessageSocket.flush">
+<span class="sig-name descname"><span class="pre">flush</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tlslite.messagesocket.MessageSocket.flush" title="Permalink to this definition"></a></dt>
+<dd><p>Empty the queue of messages to write</p>
+<p>Will fragment the messages and write them in as little records as
+possible.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>generator</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tlslite.messagesocket.MessageSocket.flushBlocking">
+<span class="sig-name descname"><span class="pre">flushBlocking</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tlslite.messagesocket.MessageSocket.flushBlocking" title="Permalink to this definition"></a></dt>
+<dd><p>Blocking variant of <a class="reference internal" href="#tlslite.messagesocket.MessageSocket.flush" title="tlslite.messagesocket.MessageSocket.flush"><code class="xref py py-meth docutils literal notranslate"><span class="pre">flush()</span></code></a>.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tlslite.messagesocket.MessageSocket.queueMessage">
+<span class="sig-name descname"><span class="pre">queueMessage</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">msg</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tlslite.messagesocket.MessageSocket.queueMessage" title="Permalink to this definition"></a></dt>
+<dd><p>Queue message for sending</p>
+<p>If the message is of same type as messages in queue, the message is
+just added to queue.</p>
+<p>If the message is of different type as messages in queue, the queue is
+flushed and then the message is queued.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>generator</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tlslite.messagesocket.MessageSocket.queueMessageBlocking">
+<span class="sig-name descname"><span class="pre">queueMessageBlocking</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">msg</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tlslite.messagesocket.MessageSocket.queueMessageBlocking" title="Permalink to this definition"></a></dt>
+<dd><p>Blocking variant of <a class="reference internal" href="#tlslite.messagesocket.MessageSocket.queueMessage" title="tlslite.messagesocket.MessageSocket.queueMessage"><code class="xref py py-meth docutils literal notranslate"><span class="pre">queueMessage()</span></code></a>.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tlslite.messagesocket.MessageSocket.recvMessage">
+<span class="sig-name descname"><span class="pre">recvMessage</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tlslite.messagesocket.MessageSocket.recvMessage" title="Permalink to this definition"></a></dt>
+<dd><p>Read next message in queue</p>
+<p>will return a 0 or 1 if the read is blocking, a tuple of
+<code class="xref py py-class docutils literal notranslate"><span class="pre">RecordHeader3</span></code> and <code class="xref py py-class docutils literal notranslate"><span class="pre">Parser</span></code> in case a message was
+received.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>generator</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tlslite.messagesocket.MessageSocket.recvMessageBlocking">
+<span class="sig-name descname"><span class="pre">recvMessageBlocking</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tlslite.messagesocket.MessageSocket.recvMessageBlocking" title="Permalink to this definition"></a></dt>
+<dd><p>Blocking variant of <a class="reference internal" href="#tlslite.messagesocket.MessageSocket.recvMessage" title="tlslite.messagesocket.MessageSocket.recvMessage"><code class="xref py py-meth docutils literal notranslate"><span class="pre">recvMessage()</span></code></a>.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tlslite.messagesocket.MessageSocket.sendMessage">
+<span class="sig-name descname"><span class="pre">sendMessage</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">msg</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tlslite.messagesocket.MessageSocket.sendMessage" title="Permalink to this definition"></a></dt>
+<dd><p>Fragment and send a message.</p>
+<p>If a messages already of same type reside in queue, the message if
+first added to it and then the queue is flushed.</p>
+<p>If the message is of different type than the queue, the queue is
+flushed, the message is added to queue and the queue is flushed again.</p>
+<p>Use the sendRecord() message if you want to send a message outside
+the queue, or a message of zero size.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>generator</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tlslite.messagesocket.MessageSocket.sendMessageBlocking">
+<span class="sig-name descname"><span class="pre">sendMessageBlocking</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">msg</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tlslite.messagesocket.MessageSocket.sendMessageBlocking" title="Permalink to this definition"></a></dt>
+<dd><p>Blocking variant of <a class="reference internal" href="#tlslite.messagesocket.MessageSocket.sendMessage" title="tlslite.messagesocket.MessageSocket.sendMessage"><code class="xref py py-meth docutils literal notranslate"><span class="pre">sendMessage()</span></code></a>.</p>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="tlslite.messages.html" class="btn btn-neutral float-left" title="tlslite.messages module" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="tlslite.recordlayer.html" class="btn btn-neutral float-right" title="tlslite.recordlayer module" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2023, Hubert Kario.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
