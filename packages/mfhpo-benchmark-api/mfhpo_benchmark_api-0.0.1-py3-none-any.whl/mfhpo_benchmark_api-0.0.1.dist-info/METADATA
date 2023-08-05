@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: mfhpo-benchmark-api
+Version: 0.0.1
+Home-page: https://github.com/nabenabe0928/mfhpo-benchmark-api
+Author: nabenabe0928
+Author-email: shuhei.watanabe.utokyo@gmail.com
+Platform: Linux
+Platform: Darwin
+Requires-Python: >=3.8
+License-File: LICENSE
+Requires-Dist: ConfigSpace
+Requires-Dist: numpy
+Requires-Dist: jahs-bench
+Requires-Dist: yahpo-gym
+
