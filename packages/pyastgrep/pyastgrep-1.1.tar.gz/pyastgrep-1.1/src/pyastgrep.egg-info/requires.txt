@@ -1,0 +1,5 @@
+lxml>=3.3.5
+elementpath
+astpretty
+pathspec
+cssselect>=1.2
