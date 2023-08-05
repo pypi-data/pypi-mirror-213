@@ -1,0 +1,37 @@
+Metadata-Version: 2.1
+Name: GeneralSQL
+Version: 1.0.6
+Summary: Sql generator tool.
+Author-email: joker-zzp <joker_zzp@qq.com>
+Project-URL: Homepage, https://github.com/joker-zzp/GeneralSQL
+Project-URL: Bug Tracker, https://github.com/joker-zzp/GeneralSQL/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# pypi-GeneralSQL
+
+
+## 仓库拉取
+
+```
+git clone git@github.com:joker-zzp/GeneralSQL.git
+```
+
+## 安装包
+
+```
+pip install build twine
+
+```
+
+打包
+
+python -m build
+
+提交 pypi
+
+python -m twine upload --repository pypi dist/*
