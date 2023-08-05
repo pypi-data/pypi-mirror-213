@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: reprisal
+Version: 0.0.1
+Summary: 
+Home-page: https://github.com/JoshKarpel/reprisal
+License: MIT
+Keywords: tui,terminal
+Author: JoshKarpel
+Author-email: josh.karpel@gmail.com
+Requires-Python: >=3.10,<4
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Education
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: MacOS
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: Unix
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Topic :: Artistic Software
+Classifier: Topic :: Multimedia :: Graphics :: Presentation
+Classifier: Typing :: Typed
+Requires-Dist: typer (>=0.9)
+Project-URL: Repository, https://github.com/JoshKarpel/reprisal
+Description-Content-Type: text/markdown
+
+# Reprisal
+
