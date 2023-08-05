@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: ytilities
+Version: 0.1.0
+Summary: 
+Author: Anthony Mugendi
+Author-email: ngurumugz@gmail.com
+Requires-Python: >=3.9,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: numpy (>=1.24.3,<2.0.0)
+Description-Content-Type: text/markdown
+
+<!--
+ Copyright (c) 2023 Anthony Mugendi
+ 
+ This software is released under the MIT License.
+ https://opensource.org/licenses/MIT
+-->
+
+# YTilities
+A collection of python utilities i get to use often.
+
+## Docs?
+See [Read the docs](https://ytilities.readthedocs.io/en/latest/)
