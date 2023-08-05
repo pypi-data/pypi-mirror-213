@@ -1,0 +1,2 @@
+[console_scripts]
+loreme = loreme.loreme:main
