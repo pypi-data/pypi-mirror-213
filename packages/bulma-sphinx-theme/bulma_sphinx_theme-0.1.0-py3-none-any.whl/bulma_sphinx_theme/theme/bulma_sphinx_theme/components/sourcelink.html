@@ -1,0 +1,10 @@
+{% if show_source and has_source and sourcename %}
+<a class="sourcelink level-item" href="{{ pathto('_sources/' + sourcename, true)|e }}" title="{{ _(" Show Source") }}">
+    <span class="icon">
+        <svg class="svg-file-description">
+            <use href="#svg-file-description"></use>
+        </svg>
+    </span> {% if not theme_use_edit_page_button %} <span>{{ _("Show Source") }}</span> {%
+    endif %}
+</a>
+{% endif %}

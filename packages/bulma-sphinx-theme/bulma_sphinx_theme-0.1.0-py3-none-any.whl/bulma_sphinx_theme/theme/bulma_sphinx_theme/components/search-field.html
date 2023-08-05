@@ -1,0 +1,10 @@
+<form class="search-wrapper control is-expanded" method="get" action="{{ pathto('search') }}" role="search">
+    <span class="icon">
+        <svg class="svg-search">
+            <use href="#svg-search"></use>
+        </svg>
+    </span>
+    <input class="input" placeholder="{{ theme_search_bar_text }}" name="q" aria-label="{{ theme_search_bar_text }}"
+        autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" />
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__esc">ESC</kbd></span>
+</form>

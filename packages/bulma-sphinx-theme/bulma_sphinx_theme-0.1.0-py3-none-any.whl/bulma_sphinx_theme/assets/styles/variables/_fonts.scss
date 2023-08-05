@@ -1,0 +1,26 @@
+html {
+  --font-stack: BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, Helvetica, Arial,
+    sans-serif;
+  --font-stack--monospace: monospace;
+
+  --font-size--normal: 100%;
+  --font-size--small: 90%;
+  --font-size--small--2: 83.75%;
+  --font-size--small--3: 77.5%;
+  --font-size--small--4: 65%;
+
+  // Table of Contents
+  --toc-font-size: var(--font-size--small);
+  --toc-font-size--mobile: var(--font-size--normal);
+  --toc-title-font-size: var(--font-size--small);
+
+  // Code
+  --code-font-size: var(--font-size--small);
+
+  // API
+  --api-font-size: var(--font-size--small);
+
+  // Admonition styles
+  --bst-admonition-font-weight-heading: 600;
+}
