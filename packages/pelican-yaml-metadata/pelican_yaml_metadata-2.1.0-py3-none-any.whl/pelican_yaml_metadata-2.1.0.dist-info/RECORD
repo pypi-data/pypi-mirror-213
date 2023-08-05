@@ -1,0 +1,6 @@
+tasks.py,sha256=toYrbPMdcKo-Eq5vNLIyIE5jAdN71GzunOkitewjdn8,3130
+pelican/plugins/yaml_metadata/__init__.py,sha256=BeKL6CUaYUqGV6r9vJ4k44W8eQuIUaMNtYgTMVJBv3w,45
+pelican/plugins/yaml_metadata/yaml_metadata.py,sha256=kLNa4_Et070G-HI4K2dRYE-4I3NCaxVnk7hvnaAyiWc,5576
+pelican_yaml_metadata-2.1.0.dist-info/METADATA,sha256=sDCTi657jFhyoQVkxk7ps-x9YosZ5a3D4SJv3tLzyOU,3845
+pelican_yaml_metadata-2.1.0.dist-info/WHEEL,sha256=KGYbc1zXlYddvwxnNty23BeaKzh7YuoSIvIMO4jEhvw,87
+pelican_yaml_metadata-2.1.0.dist-info/RECORD,,
