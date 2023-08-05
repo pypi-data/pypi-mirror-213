@@ -1,0 +1,10 @@
+cognitolowlevel/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+cognitolowlevel/apps.py,sha256=yn4jxkwui1qTNQMJQwyECEnILh5BNw8s_kHWZPe6kPw,162
+cognitolowlevel/models.py,sha256=Vjc0p2XbAPgE6HyTF6vll98A4eDhA5AvaQqsc4kQ9AQ,57
+cognitolowlevel/urls.py,sha256=tE4SZpIMBomKzNs0rbn0JJSpYSiQ8ppQqT9LATXTXQ0,209
+cognitolowlevel/views.py,sha256=9MWLz1HXy8X-7pCozLYZbaIwebW_kG0MMWyhm-27cTk,1839
+cognitolowlevel/handlers/backend.py,sha256=9AiTLuMQR3bk5HySQcP3E2AE7iOpHRQ3iohjckrrQKo,7623
+django_cognito_lowlevel-0.1.11.dist-info/METADATA,sha256=nndPxv--0BAj9kCNS5JJRsBFPg8cAIVs91KZMUvavx0,4976
+django_cognito_lowlevel-0.1.11.dist-info/WHEEL,sha256=KGYbc1zXlYddvwxnNty23BeaKzh7YuoSIvIMO4jEhvw,87
+django_cognito_lowlevel-0.1.11.dist-info/licenses/LICENSE,sha256=RFhQPdSOiMTguUX7JSoIuTxA7HVzCbj_p8WU36HjUQQ,10947
+django_cognito_lowlevel-0.1.11.dist-info/RECORD,,
