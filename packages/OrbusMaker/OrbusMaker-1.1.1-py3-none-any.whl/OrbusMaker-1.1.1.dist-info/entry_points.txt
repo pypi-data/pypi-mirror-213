@@ -1,0 +1,2 @@
+[console_scripts]
+create-flet-app = orbusmaker.__main__:FLET
