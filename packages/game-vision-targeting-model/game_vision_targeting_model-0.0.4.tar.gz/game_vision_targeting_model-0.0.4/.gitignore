@@ -1,0 +1,13 @@
+# directories to ignore
+.venv/*
+
+.idea/*
+dist/*
+
+.ipynb_checkpoints/*
+.pytest_cache/*
+
+
+# files to ignore
+*.zip
+*.pyc

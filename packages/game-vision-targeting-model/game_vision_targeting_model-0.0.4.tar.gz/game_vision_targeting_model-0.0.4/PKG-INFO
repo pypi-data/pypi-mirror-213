@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: game-vision-targeting-model
+Version: 0.0.4
+Summary: A small example package
+Project-URL: Homepage, https://github.com/KentVejrupMadsen/gv-targeting-model
+Project-URL: Bug Tracker, https://github.com/KentVejrupMadsen/gv-targeting-model/issues
+Project-URL: License, https://github.com/KentVejrupMadsen/gv-targeting-model/blob/main/License.md
+Project-URL: Change logs, https://github.com/KentVejrupMadsen/gv-targeting-model/blob/main/Changelog.md
+Project-URL: requirements, https://raw.githubusercontent.com/KentVejrupMadsen/gv-targeting-model/main/requirements.txt
+Author-email: Kent vejrup Madsen <kent.vejrup.madsen@outlook.com>
+Keywords: game,learning,machine,vision
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.7
+Requires-Dist: keras
+Requires-Dist: numpy
+Requires-Dist: tensorflow
+Requires-Dist: wheel
+Provides-Extra: test
+Requires-Dist: pytest; extra == 'test'
+Description-Content-Type: text/markdown
+
+# Game targeting model
+## Status
+### Test & Publishing 
+[![Python package](https://github.com/KentVejrupMadsen/gv-targeting-model/actions/workflows/testing.yml/badge.svg)](https://github.com/KentVejrupMadsen/gv-targeting-model/actions/workflows/testing.yml)
+[![Upload Python Package](https://github.com/KentVejrupMadsen/gv-targeting-model/actions/workflows/publish.yml/badge.svg)](https://github.com/KentVejrupMadsen/gv-targeting-model/actions/workflows/publish.yml)
+
+### Code State
+[![CodeScene Code Health](https://codescene.io/projects/40297/status-badges/code-health)](https://codescene.io/projects/40297)
+[![CodeScene System Mastery](https://codescene.io/projects/40297/status-badges/system-mastery)](https://codescene.io/projects/40297)
