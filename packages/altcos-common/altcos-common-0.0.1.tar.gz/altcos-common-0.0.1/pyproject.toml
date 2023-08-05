@@ -1,0 +1,28 @@
+[project]
+name = "altcos-common"
+version = "0.0.1"
+authors = [
+    { name = "Ivan Pepelyaev", email = "fl0pp5@altlinux.org" },
+]
+description = "Components for working with altcos"
+readme = "README.md"
+requires-python = ">=3.10"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: POSIX :: Linux",
+    "License :: OSI Approved :: MIT License",
+]
+
+dependencies = [
+    "pygobject"
+]
+
+[project.urls]
+"Homepage" = "https://github.com/fl0pp5/altcos-common"
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+package-data = { "altcos" = ["*.py"] }
