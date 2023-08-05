@@ -1,0 +1,15 @@
+LICENCE.md
+README.md
+pyproject.toml
+src/jxl_decode/__init__.py
+src/jxl_decode/__main__.py
+src/jxl_decode/common.py
+src/jxl_decode/decode_jpg.py
+src/jxl_decode/decode_jxl.py
+src/jxl_decode/decode_ppm.py
+src/jxl_decode/encode_png.py
+src/jxl_decode/main.py
+src/jxl_decode.egg-info/PKG-INFO
+src/jxl_decode.egg-info/SOURCES.txt
+src/jxl_decode.egg-info/dependency_links.txt
+src/jxl_decode.egg-info/top_level.txt
