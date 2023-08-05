@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+OrbusMaker.egg-info/PKG-INFO
+OrbusMaker.egg-info/SOURCES.txt
+OrbusMaker.egg-info/dependency_links.txt
+OrbusMaker.egg-info/entry_points.txt
+OrbusMaker.egg-info/top_level.txt
