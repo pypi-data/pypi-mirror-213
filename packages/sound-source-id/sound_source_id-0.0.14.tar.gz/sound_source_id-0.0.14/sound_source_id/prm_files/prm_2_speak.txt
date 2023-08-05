@@ -1,0 +1,9 @@
+angles : -70, 70
+labels : 1, 2
+channels : 1, 2
+n_chan : 2
+n_blocks : 2
+stim_list_file : stim_list_2_speak.csv
+randomize : true
+demo_stim : pink_noises/noise1.wav
+demo_stim_lev : 65

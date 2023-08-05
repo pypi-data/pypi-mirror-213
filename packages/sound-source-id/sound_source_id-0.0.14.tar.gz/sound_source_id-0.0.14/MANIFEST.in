@@ -1,0 +1,9 @@
+include sound_source_id/prm_files/*.txt
+include sound_source_id/prm_files/*.csv
+include sound_source_id/prm_files/pink_noises/*.wav
+include sound_source_id/doc/_build/html/*
+include sound_source_id/doc/_build/html/_images/*
+include sound_source_id/doc/_build/html/_sources/*
+include sound_source_id/doc/_build/html/_static/*
+include sound_source_id/doc/_build/latex/*.pdf
+include sound_source_id/icons/*.ico
