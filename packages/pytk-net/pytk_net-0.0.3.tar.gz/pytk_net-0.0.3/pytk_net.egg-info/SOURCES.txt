@@ -1,0 +1,6 @@
+README.md
+setup.py
+pytk_net.egg-info/PKG-INFO
+pytk_net.egg-info/SOURCES.txt
+pytk_net.egg-info/dependency_links.txt
+pytk_net.egg-info/top_level.txt

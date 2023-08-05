@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: pytk-net
+Version: 0.0.3
+Summary: TkinterHelper布局助手官方拓展和工具库
+Home-page: https://www.pytk.net
+Author: iamxcd
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+
+
+TkinterHelper布局助手官方拓展和工具库
