@@ -1,0 +1,27 @@
+name: str(required=True)
+author: str(required=True)
+organisation: str(required=True)
+authorization:
+  eula_asset: str()
+  requires_complete_profile: any(bool(), enum("yes", "no"))
+doi_code: str()
+specialties: list(str())
+phases: list(str())
+distribution_groups: list(str())
+channel: str(required=True)
+is_vbs: bool(required=False)
+assets: list(include('icon_template'), include('card_template'), min=2)
+overview: list(include('information_card_template'), required=True)
+devices: list(include('information_card_template'), required=True)
+locales: list(str(), required=False)
+labels: list(str(), required=False)
+---
+
+icon_template:
+  icon:
+    name: any(str(min=1), int(), required=True)
+    code: any(str(min=1), int(), required=True)
+card_template:
+  card:
+    name: any(str(min=1), int(), required=True)
+    code: any(str(min=1), int(), required=True)

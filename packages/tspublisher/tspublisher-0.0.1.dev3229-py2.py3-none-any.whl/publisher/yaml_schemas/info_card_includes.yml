@@ -1,0 +1,53 @@
+title: str()
+gallery: list(include('video_template'), include('image_template'), required=False)
+video_template:
+  video:
+    name: str()
+    width: int(required=False)
+    height: int(required=False)
+    code: any(str(min=1), int(), required=True)
+image_template:
+  image:
+    name: str()
+    width: int(required=False)
+    height: int(required=False)
+    code: any(str(min=1), int(), required=True)
+image_template_flat:
+  name: str()
+  width: int(required=False)
+  height: int(required=False)
+  code: any(str(min=1), int(), required=True)
+button_template:
+  text: str(min=1)
+  link: str()
+information_card_template:
+  information_card:
+    code: any(str(min=1), int(), required=True)
+    cta_text: any(str(), int())
+    title: any(str(max=100), null())
+    subTitle: str(max=200, required=False)  # TODO: Should be sub_title?
+    assets: list(include('icon_template', required=False), include('card_template', required=False))
+    sections: list(include('sections_template'),required=False)
+sections_template:
+  title: str(required=True)
+  body: list(include('body_template'))
+body_template:
+  text: str(required=False)
+  table: list(include('table_row_template'),required=False)
+  button: include('button_template',required=False)
+  gallery: list(include('video_template'), include('image_template'), required=False)
+  author: include('author_template',required=False)
+  numbered_list: list(include('list_template', required=False, strict=True), str(required=False), required=False)
+  list: list(include('list_template', required=False, strict=True), str(required=False), required=False)
+list_template:
+  list: list(include('list_template', required=False, strict=True), str(required=False), required=False)
+  numbered_list: list(include('list_template', required=False, strict=True), str(required=False), required=False)
+table_row_template:
+  table_row: list(include('table_data_template'))
+table_data_template:
+  table_data:
+    text: str(required=True)
+author_template:
+  name: str(required=True)
+  desc: str(required=False)
+  image: include('image_template_flat', required=False)
