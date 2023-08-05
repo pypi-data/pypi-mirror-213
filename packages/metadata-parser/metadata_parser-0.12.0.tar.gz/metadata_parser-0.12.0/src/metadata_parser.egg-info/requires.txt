@@ -1,0 +1,13 @@
+BeautifulSoup4
+requests>=2.19.1
+requests-toolbelt>=0.8.0
+
+[testing]
+httpbin
+pytest
+pytest-httpbin
+responses
+tldextract
+types-beautifulsoup4
+types-requests
+werkzeug<2.1.0
