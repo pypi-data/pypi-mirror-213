@@ -1,0 +1,17 @@
+LICENSE
+README.md
+setup.py
+src/pyved/__init__.py
+src/pyved/__main__.py
+src/pyved/_ecs_pattern.py
+src/pyved/editor.py
+src/pyved/menu_bar_ev_handler.py
+src/pyved/menu_bar_gui.py
+src/pyved/test.py
+src/pyved/utils.py
+src/pyved.egg-info/PKG-INFO
+src/pyved.egg-info/SOURCES.txt
+src/pyved.egg-info/dependency_links.txt
+src/pyved.egg-info/entry_points.txt
+src/pyved.egg-info/requires.txt
+src/pyved.egg-info/top_level.txt

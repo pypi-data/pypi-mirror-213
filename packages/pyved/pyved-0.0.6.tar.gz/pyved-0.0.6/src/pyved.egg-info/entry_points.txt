@@ -1,0 +1,2 @@
+[console_scripts]
+pyved = pyved.__main__:main
