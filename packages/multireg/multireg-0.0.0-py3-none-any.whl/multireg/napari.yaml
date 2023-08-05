@@ -1,0 +1,11 @@
+name: multireg
+display_name: Multiplex Registration
+contributions:
+  commands:
+    - id: multireg.registration
+      python_name: multireg.MultiReg:start
+      title: Multiplex Registration
+  widgets:
+    - command: multireg.registration
+      autogenerate: false
+      display_name: Do multiplex registration
