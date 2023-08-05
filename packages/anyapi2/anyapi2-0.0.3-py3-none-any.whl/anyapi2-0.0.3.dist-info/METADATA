@@ -1,0 +1,50 @@
+Metadata-Version: 2.1
+Name: anyapi2
+Version: 0.0.3
+Summary: Boilerplate code for api integrations
+Home-page: https://github.com/c0ntribut0r/anyapi
+License: MIT
+Keywords: requests api
+Classifier: Environment :: Web Environment
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Topic :: Internet :: WWW/HTTP
+Classifier: Topic :: Internet :: WWW/HTTP :: Dynamic Content
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: requests (==2.28.1)
+Requires-Dist: tenacity (==8.1.0)
+
+# AnyAPI
+
+AnyAPI is a small library to get rid of boilerplate code reused in many projects where interaction with APIs is needed.
+
+AnyAPI:
+* uses `requests.Session`
+* has default timeout
+* has configurable pool size
+* has retry policy in case of 429 error
+* has `get` and `post` methods defined
+
+## How to use
+
+```sh
+pip install anyapi2
+```
+
+```python
+from anyapi import API
+
+
+class SomeServiceAPI(API):
+    BASE_URL = 'https://some-api-service.com'
+
+
+some_service = SomeServiceAPI()
+response = some_service.get('/v1/items')
+response.raise_for_status()
+result = response.json()
+```
