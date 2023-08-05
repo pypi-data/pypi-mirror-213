@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+aws_ecs_task_render/__init__.py
+aws_ecs_task_render/__main__.py
+aws_ecs_task_render/profile_checker.py
+aws_ecs_task_render.egg-info/PKG-INFO
+aws_ecs_task_render.egg-info/SOURCES.txt
+aws_ecs_task_render.egg-info/dependency_links.txt
+aws_ecs_task_render.egg-info/entry_points.txt
+aws_ecs_task_render.egg-info/requires.txt
+aws_ecs_task_render.egg-info/top_level.txt
