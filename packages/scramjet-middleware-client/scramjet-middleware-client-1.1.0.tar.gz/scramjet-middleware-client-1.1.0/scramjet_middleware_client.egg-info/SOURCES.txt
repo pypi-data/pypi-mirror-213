@@ -1,0 +1,9 @@
+README.md
+setup.py
+middleware_client/__init__.py
+middleware_client/middleware_client.py
+scramjet_middleware_client.egg-info/PKG-INFO
+scramjet_middleware_client.egg-info/SOURCES.txt
+scramjet_middleware_client.egg-info/dependency_links.txt
+scramjet_middleware_client.egg-info/requires.txt
+scramjet_middleware_client.egg-info/top_level.txt
