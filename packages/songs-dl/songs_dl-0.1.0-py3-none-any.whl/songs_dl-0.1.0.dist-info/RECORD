@@ -1,0 +1,15 @@
+songs_dl/__init__.py,sha256=M_B4_hj-AOzbGDk5sixqmT9HwJ3GjoQ-upWUkibrHsI,8053
+songs_dl/__main__.py,sha256=9itGGkvjpFa-JBBGMPzkpZM-gKELqFhj3NM4c1mJQYs,332
+songs_dl/deezer.py,sha256=JJ8EhffDck1lDjJUugnh1rAHffUmvOjTRcEQRWQcHNg,7024
+songs_dl/itunes.py,sha256=UvmBqo4rrQOnmgo9YEHPhg7ELtYMXQd-NOFw7DB8-Hw,2537
+songs_dl/monkeypatch_requests.py,sha256=I1lYrrW3dp1lEanMtbwqNzR6QYy37H93u26Ao2vlzAY,556
+songs_dl/spotify.py,sha256=8KUFXJyIgR5xDPUjMlfSPokY2tP7bZJ5D5d3mJP49ZM,4383
+songs_dl/utils.py,sha256=Pf-a3Gifxxxg6YP6jcAIFapHtP7oVR2aq9oColN5RGE,18081
+songs_dl/youtube.py,sha256=w3AxD43XxjOJQH6eaA8LDn-pt8qzBPAoXhOM69l2yL4,6008
+songs_dl/youtube_dl.py,sha256=2v7lBR7o5pDzFFJ4GdJpk4F41YhsMzUFQv76jfRa4yw,1584
+songs_dl-0.1.0.dist-info/LICENSE,sha256=Q2ptU2E48gOsMzhYz_kqVovmJ5d1KzrblLyqD2_-fvY,1235
+songs_dl-0.1.0.dist-info/METADATA,sha256=H4dG6wfs5BJ5MVQtSedw-yTN71yFY5aQ_U9qTdQpS6k,2776
+songs_dl-0.1.0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+songs_dl-0.1.0.dist-info/entry_points.txt,sha256=UDIUlqnRYOkePaD_E_u9fmWiQHKFlp-x3kxqKvnfZXI,52
+songs_dl-0.1.0.dist-info/top_level.txt,sha256=h3cQo8jEEh0QpWK4-4hze4BxIWKpw73OCGkDzGmA54g,9
+songs_dl-0.1.0.dist-info/RECORD,,
