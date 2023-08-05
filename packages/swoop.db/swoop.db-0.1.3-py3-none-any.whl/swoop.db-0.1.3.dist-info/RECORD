@@ -1,0 +1,13 @@
+swoop/db/__init__.py,sha256=ILNpXH0ODzV3wVoZpSmLHSNnuX2B4oimojQ6M_ujd30,231
+swoop/db/__main__.py,sha256=HK2e3ST-pKxNTMNIbhFxPCniSSpSqeLndvwWMSIZooI,213
+swoop/db/cli.py,sha256=pxj28NIaP4-gxSbHqqa53u51o3bHJ71OWvFKNhlugRw,1364
+swoop/db/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+swoop/db/schema.sql,sha256=AWTTvBqMVNP5q1twAuRahCOVbECZmpr7GQr6i3YjXdM,15814
+swoop/db/fixtures/base_01.sql,sha256=wQ3DG0r9K69hr5FYmu957ascR4Lz42NRMzy2-jsoVUs,2572
+swoop/db/migrations/00000_base_schema.up.sql,sha256=8Iepy8tQ2ObzskaDgLqUeASifaob_V7DKnhjRFkwZ5o,15659
+swoop.db-0.1.3.dist-info/LICENSE,sha256=UNQvBWGbSunnQNMgFfwa9UnMOjTMLWwdbsw9sC-51Tk,11341
+swoop.db-0.1.3.dist-info/METADATA,sha256=Rou9nc_CkMtRKJBjtycisndOCiSouNeRdm30nrt_yiw,3949
+swoop.db-0.1.3.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+swoop.db-0.1.3.dist-info/entry_points.txt,sha256=k98h9ZI-DQzVVXNd9MVOvxAquJSkw5HPPJ8oaRayly8,52
+swoop.db-0.1.3.dist-info/top_level.txt,sha256=s_VTt3MW3g_RMMxunv-ifGNtRh4oMFNYPgVYlDBxZio,6
+swoop.db-0.1.3.dist-info/RECORD,,
