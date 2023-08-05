@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: vocex
+Version: 0.1.6
+Summary: Voice Frame-Level and Utterance-Level Attribute Extraction
+Author: Christoph Minixhofer
+Author-email: christoph.minixhofer@gmail.com
+License: MIT
+Requires-Python: >=3.6

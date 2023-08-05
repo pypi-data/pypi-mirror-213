@@ -1,0 +1,17 @@
+README.md
+setup.py
+test/__init__.py
+test/test.py
+test/wada_snr.py
+vocex/__init__.py
+vocex/conformer_layer.py
+vocex/conformer_model.py
+vocex/scaler.py
+vocex/softdtw.py
+vocex/transformer.py
+vocex/utils.py
+vocex.egg-info/PKG-INFO
+vocex.egg-info/SOURCES.txt
+vocex.egg-info/dependency_links.txt
+vocex.egg-info/requires.txt
+vocex.egg-info/top_level.txt
