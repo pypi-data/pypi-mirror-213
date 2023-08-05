@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+fake12.egg-info/PKG-INFO
+fake12.egg-info/SOURCES.txt
+fake12.egg-info/dependency_links.txt
+fake12.egg-info/not-zip-safe
+fake12.egg-info/top_level.txt
