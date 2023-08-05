@@ -1,0 +1,31 @@
+[tool.poetry]
+name = "DeepBench"
+version = "0.1.1"
+description = "Physics Benchmark Dataset Generator"
+license = "Apache 2.0"
+authors = ["Ashia Lewis <pantagruelspendulum@protonmail.com>", "Maggie Voetberg <maggiev@fnal.gov>"]
+maintainers = ["Ashia Lewis <pantagruelspendulum@protonmail.com>", "Maggie Voetberg <maggiev@fnal.gov>"]
+readme = "README.md"
+homepage = "https://github.com/deepskies/DeepBenchmark"
+repository = "https://github.com/deepskies/DeepBenchmark"
+documentation = "https://github.com/deepskies/DeepBenchmark/tree/main/docs"
+
+[tool.poetry.dependencies]
+python = ">=3.8,<3.11,"
+numpy = "^1.24.3"
+matplotlib = "^3.7.1"
+scikit-image = "^0.20.0"
+astropy = "^5.2.2"
+autograd = "^1.5"
+pyyaml = "^6.0"
+
+
+[tool.poetry.dev-dependencies]
+pytest-cov = "^4.0.0"
+pytest = "^7.3.1"
+pre-commit = "^3.2.2"
+
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
