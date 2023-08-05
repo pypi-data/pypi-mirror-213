@@ -1,0 +1,6 @@
+[console_scripts]
+inabox=kalm.inabox:main
+jenkins=kalm.jenkins:main
+kalm=kalm:main
+kalm_dns=kalm.dns:main
+
