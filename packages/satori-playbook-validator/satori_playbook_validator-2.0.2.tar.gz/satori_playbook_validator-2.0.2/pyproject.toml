@@ -1,0 +1,31 @@
+[project]
+name = "satori-playbook-validator"
+version = "2.0.2"
+description = ""
+authors = [
+    { name = "Satori CI", email = "info@satori-ci.com" },
+]
+dependencies = [
+    "fastjsonschema>=2.17.1",
+]
+requires-python = ">=3.9"
+readme = "README.md"
+
+[project.license]
+text = "MIT"
+
+[build-system]
+requires = [
+    "pdm-backend",
+]
+build-backend = "pdm.backend"
+
+[tool.pdm.build]
+includes = [
+    "src/satorici/",
+]
+
+[tool.pdm.dev-dependencies]
+dev = [
+    "pytest>=7.3.1",
+]
