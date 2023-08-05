@@ -1,0 +1,7 @@
+wheel
+keras
+tensorflow
+numpy
+
+[dev]
+pytest
