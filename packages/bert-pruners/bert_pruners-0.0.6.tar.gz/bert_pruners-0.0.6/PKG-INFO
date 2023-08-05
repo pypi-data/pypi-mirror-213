@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: bert_pruners
+Version: 0.0.6
+Summary: Pruning BERT models + magnitude pruning + onnx export
+Home-page: https://github.com/xihajun/bert_pruners
+Author: xihajun
+Author-email: junfan@krai.ai
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
