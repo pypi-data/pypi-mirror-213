@@ -1,0 +1,3 @@
+[console_scripts]
+mario_airflow_utils-hello = mario.airflow.utils:hello
+mario_airflow_utils-ping = mario_airflow_utils:ping
