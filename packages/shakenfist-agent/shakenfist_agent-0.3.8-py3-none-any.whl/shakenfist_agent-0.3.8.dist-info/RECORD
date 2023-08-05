@@ -1,0 +1,15 @@
+shakenfist_agent/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+shakenfist_agent/main.py,sha256=PrLlGItEdFv0DU2C_rYIzlwWlbIrvrdUOIKsjQ1V-GQ,613
+shakenfist_agent/protocol.py,sha256=KM43R2lLcp9BcTkWm4kUtuFbCs3TMyP4rumndF4ez5k,8598
+shakenfist_agent/commandline/daemon.py,sha256=pG96LYlzRR-DKSRmCSNQyh6HzqbMFXQ8sS47Vr42T3w,8562
+shakenfist_agent/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+shakenfist_agent/tests/test_daemon.py,sha256=NxJh_HTlBvO4xbuQZ6q9-4qjM7oyAZHLbSNVYA2nMlY,4848
+shakenfist_agent/tests/test_protocol.py,sha256=qWW-meZ5jAYQRY20AGUhun2oav2OFBllcQc-1slzCGc,3815
+shakenfist_agent-0.3.8.dist-info/AUTHORS,sha256=4_jnca0_6jMm29085a-7ygHu6VTTos6FxLfnHTHEXvA,60
+shakenfist_agent-0.3.8.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+shakenfist_agent-0.3.8.dist-info/METADATA,sha256=q8oxzhf95JpuUggwNkBnCI-s7eZ4Ybj1pjXPQrIiZvQ,1071
+shakenfist_agent-0.3.8.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+shakenfist_agent-0.3.8.dist-info/entry_points.txt,sha256=UgeJu8kTY2skedNDqQ8kWLafylt9BpeK5CTLm57BbKQ,56
+shakenfist_agent-0.3.8.dist-info/pbr.json,sha256=RtTGpR3x7dX3vKGzJIC-60knpnKhL6Ru6Wv0Hiap0Y8,46
+shakenfist_agent-0.3.8.dist-info/top_level.txt,sha256=QYG5Ra4x_qUqIaTNZpggrL3lU5Cj0ffj8-K-bQkXe00,17
+shakenfist_agent-0.3.8.dist-info/RECORD,,
