@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+src/example.py
+src/formal_sdk/__init__.py
+src/formal_sdk/datastore.py
+src/formal_sdk/sidecar.py
+src/formal_sdk.egg-info/PKG-INFO
+src/formal_sdk.egg-info/SOURCES.txt
+src/formal_sdk.egg-info/dependency_links.txt
+src/formal_sdk.egg-info/requires.txt
+src/formal_sdk.egg-info/top_level.txt
