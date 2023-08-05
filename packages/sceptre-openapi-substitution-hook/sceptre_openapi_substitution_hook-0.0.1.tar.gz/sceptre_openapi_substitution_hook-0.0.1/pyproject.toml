@@ -1,0 +1,43 @@
+[tool.poetry]
+name = "sceptre-openapi-substitution-hook"
+version = "0.0.1"
+packages = [{ include = "hook" }]
+readme = "README.md"
+homepage = "https://github.com/nicholasphair/sceptre-openapi-substitution-hook"
+repository = "https://github.com/nicholasphair/sceptre-openapi-substitution-hook"
+authors = ["Nicholas Phair <np4ay@viginia.edu>"]
+description = "A Sceptre hook for resolving variables in openapi definitions."
+keywords = ["sceptre", "sceptre-hook", "openapi"]
+license = "Apache-2.0"
+classifiers = [
+  "Intended Audience :: Developers",
+  "Natural Language :: English",
+  "Environment :: Console",
+  "Programming Language :: Python :: 3.8",
+  "Programming Language :: Python :: 3.9",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11"
+]
+include = [
+  "LICENSE",
+]
+
+[tool.poetry.plugins."sceptre.hooks"]
+"openapi_substituter" = "hook.openapi_substituter:OpenApiSubstituter"
+
+[tool.poetry.dependencies]
+python = ">=3.8,<3.12"
+
+[tool.poetry.group.dev.dependencies]
+pre-commit = "^3.2.1"
+tox = "^4.0.0"
+pytest = "^7.2.2"
+pytest-cov = "^4.0.0"
+sceptre = ">3.2"
+# botocore never resolves without this.
+# https://github.com/python-poetry/poetry/issues/1116
+urllib3 = ">=1.20,<1.26"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
