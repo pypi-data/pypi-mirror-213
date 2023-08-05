@@ -1,0 +1,10 @@
+{%- if last_updated -%}
+<p class="last-updated level-item">
+    <span class="icon">
+        <svg class="svg-clock-edit">
+            <use href="#svg-clock-edit"></use>
+        </svg>
+    </span> {% trans last_updated=last_updated|e %}Last updated on {{ last_updated
+    }}.{% endtrans %}
+</p>
+{%- endif -%}
