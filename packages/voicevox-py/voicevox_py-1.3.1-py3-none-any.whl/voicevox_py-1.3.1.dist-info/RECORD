@@ -1,0 +1,9 @@
+src/coeiroink/__init__.py,sha256=lqcnxE3FI_VPbiaX32nErLTaWiLGhmKQQE-LZ3fZmw8,97
+src/coeiroink/Synthesizer.py,sha256=YFFJ5RZLT1H2J-YSfQqnGsGin5EvqMoChu1c2SaU7pI,1608
+src/sharevox/__init__.py,sha256=lqcnxE3FI_VPbiaX32nErLTaWiLGhmKQQE-LZ3fZmw8,97
+src/sharevox/Synthesizer.py,sha256=1Q4-JGC2NPAaOt5caCNC83nGCZ6aSurlXFmpI1uGwA0,1608
+src/voicevox/__init__.py,sha256=lqcnxE3FI_VPbiaX32nErLTaWiLGhmKQQE-LZ3fZmw8,97
+src/voicevox/Synthesizer.py,sha256=eqivcC5PEv2bZ6SoaMOcTUqkopgcMnT0oftTTeTFyuo,1608
+voicevox_py-1.3.1.dist-info/METADATA,sha256=8phAcBKhnrWwakWUTgYqXueab2CzZEeKRog20XfxNY0,441
+voicevox_py-1.3.1.dist-info/WHEEL,sha256=Zb28QaM1gQi8f4VCBhsUklF61CTlNYfs9YAZn-TOGFk,88
+voicevox_py-1.3.1.dist-info/RECORD,,
