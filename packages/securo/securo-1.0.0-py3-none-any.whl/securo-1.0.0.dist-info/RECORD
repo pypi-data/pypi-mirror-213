@@ -1,0 +1,13 @@
+securo/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+securo/cli.py,sha256=983cgZzXq_Gk34kV4uKikIz4Vo0nVe0MveNKiwv5woY,1480
+securo/file_manager.py,sha256=qzosu3B3ULiNMNXCfuz7WC2z3HlZKH6gp9weUfN73Fs,1283
+securo/securo.py,sha256=r3B9qW1dp0YiytcwufvrRuByLHKh7a1PRJHkPl1ET7I,2079
+securo/utils.py,sha256=c-fUFv-ZM0MACFCo0dHOFezQbUikFajjF6OZcEya3fw,558
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_securo.py,sha256=a6EU_nzeCtVVUNKl3MC3Me3dqaajfa8t_E4A5535l4U,1362
+securo-1.0.0.dist-info/LICENSE,sha256=JTn8WRaWY5zmCDFnH_gFfIvt8U5Vs4F0ZDG0J_awqZg,1064
+securo-1.0.0.dist-info/METADATA,sha256=r5Ff36dpP1EBZ06bPCHaVVi0NdzovwglpMiETiAkW6M,1218
+securo-1.0.0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+securo-1.0.0.dist-info/entry_points.txt,sha256=82fqzjy2N18T3Hfs7SGRBzCNR2aetBKL5OGHm_CcEqw,44
+securo-1.0.0.dist-info/top_level.txt,sha256=HCxECu-YMYyoXZBAvQokY_UDa4_46JQy4qTYNg1hpF0,13
+securo-1.0.0.dist-info/RECORD,,
