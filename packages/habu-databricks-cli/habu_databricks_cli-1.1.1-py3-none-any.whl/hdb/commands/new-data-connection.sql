@@ -1,0 +1,40 @@
+-- Databricks notebook source
+-- MAGIC %python
+-- MAGIC # db_nm = getArgument("db_nm", "crm_data_owner")
+-- MAGIC # schema_nm = getArgument("schema_nm", "sample_schema")
+-- MAGIC # table_nm = getArgument("table_nm", "crm_1000")
+-- MAGIC # data_connection_id = getArgument("data_connection_id", "a08bcbbc-09c8-4f9c-ae3b-37deb940e48b")
+-- MAGIC # dataset_type = getArgument("dataset_type", "CRM")
+-- MAGIC # org_id = getArgument("org_id", "39cea2e1-b43e-46ac-8639-2119e8631767")
+
+-- COMMAND ----------
+
+select 1 from ${db_nm}.${schema_nm}.${table_nm} limit 1
+
+-- COMMAND ----------
+
+DELETE FROM HABU_CLEAN_ROOM_COMMON.DATA_CONNECTIONS.DATA_CONNECTION_COLUMNS WHERE DATA_CONNECTION_ID = '${data_connection_id}'
+
+-- COMMAND ----------
+
+DELETE FROM HABU_CLEAN_ROOM_COMMON.DATA_CONNECTIONS.DATA_CONNECTIONS WHERE ID = '${data_connection_id}'
+
+-- COMMAND ----------
+
+INSERT INTO HABU_CLEAN_ROOM_COMMON.DATA_CONNECTIONS.DATA_CONNECTIONS (ID, ORGANIZATION_ID, DATABASE_NAME, DB_SCHEMA_NAME, DB_TABLE_NAME, DATASET_TYPE)
+                          (
+                            SELECT '${data_connection_id}', '${org_id}', TABLE_CATALOG, TABLE_SCHEMA, TABLE_NAME, '${dataset_type}' FROM ${db_nm}.INFORMATION_SCHEMA.TABLES
+                            WHERE TABLE_CATALOG = '${db_nm}' AND TABLE_SCHEMA = '${schema_nm}' AND TABLE_NAME = '${table_nm}'
+                          )
+
+-- COMMAND ----------
+
+INSERT INTO HABU_CLEAN_ROOM_COMMON.DATA_CONNECTIONS.DATA_CONNECTION_COLUMNS (ID, ORGANIZATION_ID, DATA_CONNECTION_ID, COLUMN_NAME, COLUMN_POSITION, DATA_TYPE, NUMERIC_PRECISION, NUMERIC_SCALE)
+(
+  SELECT uuid(), '${org_id}', '${data_connection_id}', COLUMN_NAME, ORDINAL_POSITION, DATA_TYPE, NUMERIC_PRECISION, NUMERIC_SCALE
+  FROM ${db_nm}.INFORMATION_SCHEMA.COLUMNS
+  WHERE TABLE_CATALOG = '${db_nm}' AND TABLE_SCHEMA = '${schema_nm}' AND TABLE_NAME = '${table_nm}'
+)
+
+-- COMMAND ----------
+

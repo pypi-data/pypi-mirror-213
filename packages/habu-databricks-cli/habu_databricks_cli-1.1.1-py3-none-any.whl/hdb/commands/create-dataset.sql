@@ -1,0 +1,21 @@
+-- Databricks notebook source
+-- MAGIC %python
+-- MAGIC 
+-- MAGIC clean_room_id = dbutils.widgets.get("clean_room_id")
+-- MAGIC catalog_name = dbutils.widgets.get("catalog_name")
+-- MAGIC schema_name = dbutils.widgets.get("schema_name")
+-- MAGIC table_name = dbutils.widgets.get("table_name")
+-- MAGIC 
+-- MAGIC already_shared = False
+-- MAGIC results = sqlContext.sql(f"show all in share HABU_CR_{clean_room_id}_SHARE").collect()
+-- MAGIC for result in results:
+-- MAGIC     shared_obj = result["shared_object"]
+-- MAGIC     if shared_obj.lower() == f"{catalog_name}.{schema_name}.{table_name}".lower():
+-- MAGIC         already_shared = True
+-- MAGIC 
+-- MAGIC if already_shared:
+-- MAGIC     print("already shared so not sharing again")
+-- MAGIC else:
+-- MAGIC     sqlContext.sql(
+-- MAGIC         f"alter share HABU_CR_{clean_room_id}_SHARE add table {catalog_name}.{schema_name}.{table_name}"
+-- MAGIC     )
