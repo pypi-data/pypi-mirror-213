@@ -1,0 +1,6 @@
+include *.lock
+include *.py
+include *.txt
+include *.md
+include Pipfile
+exclude *.gme
