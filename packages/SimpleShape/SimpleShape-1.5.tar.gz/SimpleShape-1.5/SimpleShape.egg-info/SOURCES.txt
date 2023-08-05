@@ -1,0 +1,11 @@
+License.txt
+README.md
+setup.cfg
+setup.py
+SimpleShape/Example.py
+SimpleShape/SimpleShape.py
+SimpleShape/__init__.py
+SimpleShape.egg-info/PKG-INFO
+SimpleShape.egg-info/SOURCES.txt
+SimpleShape.egg-info/dependency_links.txt
+SimpleShape.egg-info/top_level.txt
