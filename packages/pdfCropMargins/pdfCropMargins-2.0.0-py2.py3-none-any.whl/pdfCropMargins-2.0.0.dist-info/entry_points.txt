@@ -1,0 +1,4 @@
+[console_scripts]
+pdf-crop-margins = pdfCropMargins.pdfCropMargins:main
+pdfcropmargins = pdfCropMargins.pdfCropMargins:main
+
