@@ -1,0 +1,16 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+pyclpu/__init__.py
+pyclpu/constants.py
+pyclpu/formats.py
+pyclpu/image.py
+pyclpu/main.py
+pyclpu/manager.py
+pyclpu/s33293804.py
+pyclpu.egg-info/PKG-INFO
+pyclpu.egg-info/SOURCES.txt
+pyclpu.egg-info/dependency_links.txt
+pyclpu.egg-info/requires.txt
+pyclpu.egg-info/top_level.txt
