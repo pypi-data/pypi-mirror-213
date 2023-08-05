@@ -1,0 +1,7 @@
+rdkit
+numpy
+numba
+rich
+typer
+networkx
+pandas
