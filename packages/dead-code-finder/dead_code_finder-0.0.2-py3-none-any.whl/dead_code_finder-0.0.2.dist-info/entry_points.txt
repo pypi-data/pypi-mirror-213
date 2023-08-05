@@ -1,0 +1,2 @@
+[console_scripts]
+dead-code-finder = dead_code_finder.cli:main
