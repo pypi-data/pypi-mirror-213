@@ -1,0 +1,12 @@
+HISTORY.rst
+LICENSE
+MANIFEST.in
+README.rst
+pytest_beeprint.py
+setup.py
+pytest_beeprint.egg-info/PKG-INFO
+pytest_beeprint.egg-info/SOURCES.txt
+pytest_beeprint.egg-info/dependency_links.txt
+pytest_beeprint.egg-info/entry_points.txt
+pytest_beeprint.egg-info/requires.txt
+pytest_beeprint.egg-info/top_level.txt
