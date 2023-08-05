@@ -1,0 +1,31 @@
+[project]
+name = "odoo_filter_addons"
+description = "Simple utlity to filter odoo addons into a single directory"
+readme = "README.md"
+authors = [
+    { name="Pablo Esteban", email="pablo.esteban@forgeflow.com" },
+]
+classifiers = [
+    "Intended Audience :: Developers",
+    "Topic :: Utilities",
+    "Operating System :: POSIX",
+    "Framework :: Odoo",
+    "Programming Language :: Python :: 3"
+]
+requires-python = ">=3"
+# Pin git-aggregator to 2.1.0 to prevent weird bug when using 'target' in repos.yml
+# TODO: pin other packages as well to prevent future issues
+dependencies= ["pyyaml", "click", "python-dotenv", "plumbum", "git-aggregator==2.1.0"]
+dynamic = ["version"]
+
+[project.scripts]
+odoo_filter_addons = "odoo_filter_addons.main:cli_main"
+
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+packages = ["odoo_filter_addons"]
+[tool.setuptools.dynamic]
+version = {attr = "odoo_filter_addons.version.__version__"}
