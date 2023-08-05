@@ -1,0 +1,13 @@
+__init__.py,sha256=073ws_oupjKmadEb9EMrgIdYznhNvCGI3C7drwPKbPQ,21
+error.py,sha256=W9BVI9WM0BvlEKVhgQiLa-_Rs7XIzngqXJtGZAmqxUA,1353
+latch.py,sha256=NT80UPBJ3OL94D6af26qbmFspV3xMbCgV3m-mnEgbAo,1175
+latchapp.py,sha256=75h-MURJuOhhpj9_IGe4NTEO20Pc2xtBpZAkeho2YFA,12218
+latchauth.py,sha256=5bfDzPN4OaKgDc_d8WvOx0as3AjHuWtgP6JnkteU_Qk,10780
+latchresponse.py,sha256=edZ30FIXNSNcQadabo_jCHBMF5BTvctry5zRsFSu7ho,2703
+latchuser.py,sha256=DNSZBYDADZ7dlAU2YqNfNikfRN-SsKz2pylfWh6B2Is,2334
+test_sdk_latch_web3.py,sha256=zzEi74eCXBYNOkYB_Tqe9CX__5y0wQ8hpze-WpvT3rQ,2352
+latch_sdk_telefonica-2.0.2.dist-info/LICENSE.txt,sha256=3GJlINzVOiL3J68-5Cx3DlbJemT-OtsGN5nYqwMv5VE,26530
+latch_sdk_telefonica-2.0.2.dist-info/METADATA,sha256=FbPWxhghTIbDtk1nUN0tIF1VtJ8y0HlmQEJzUe-y0hs,3233
+latch_sdk_telefonica-2.0.2.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+latch_sdk_telefonica-2.0.2.dist-info/top_level.txt,sha256=MP5jRh8yKy_t7nFe46VsnH_57ogqZIPVxeF_wf6DTK8,84
+latch_sdk_telefonica-2.0.2.dist-info/RECORD,,
