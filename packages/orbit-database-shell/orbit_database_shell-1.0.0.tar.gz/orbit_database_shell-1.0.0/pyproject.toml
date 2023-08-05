@@ -1,0 +1,44 @@
+[tool.poetry]
+name = "orbit-database-shell"
+version = "1.0.0"
+description = "Orbit-DB Shell"
+authors = ["Gareth Bult <gareth@madpenguin.uk>"]
+readme = "README.md"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Development Status :: 4 - Beta",
+    "Environment :: Console :: Curses",
+    "Intended Audience :: Developers",
+    "Topic :: Database :: Front-Ends",
+    "Topic :: File Formats :: JSON",
+]
+keywords = ['database', 'shell']
+include = ['README.md', 'LICENSE.md']
+homepage = "https://gitlab.com/madpenguin/orbit-database-shell"
+repository = "https://gitlab.com/madpenguin/orbit-database-shell"
+documentation = "https://gitlab.com/madpenguin/orbit-database-shell"
+
+[tool.poetry.urls]
+"Bug Tracker" = "https://gitlab.com/madpenguin/orbit-database-shell/-/issues"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+prompt-toolkit = "*"
+Pygments = "^2.12.0"
+ujson = "^5.4.0"
+termcolor = "^1.1.0"
+python-snappy = "^0.6.1"
+loguru = "^0.6.0"
+rich = "^13.3.4"
+mysql-connector-python = "^8.0.33"
+tqdm = "^4.65.0"
+orbit-database = "^1.0"
+
+[tool.poetry.scripts]
+orbit_database_shell = 'orbit_database_shell.__main__:main'
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
