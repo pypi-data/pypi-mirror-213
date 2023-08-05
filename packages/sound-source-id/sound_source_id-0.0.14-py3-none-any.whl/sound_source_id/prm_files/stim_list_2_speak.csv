@@ -1,0 +1,11 @@
+angle;sound_file;condition;level;roving;feedback
+-70;pink_noises/noise1.wav;;65;6;true
+70;pink_noises/noise2.wav;;65;6;true
+-70;pink_noises/noise3.wav;;65;6;true
+70;pink_noises/noise4.wav;;65;6;true
+-70;pink_noises/noise5.wav;;65;6;true
+70;pink_noises/noise6.wav;;65;6;true
+-70;pink_noises/noise7.wav;;65;6;true
+70;pink_noises/noise8.wav;;65;6;true
+-70;pink_noises/noise9.wav;;65;6;true
+70;pink_noises/noise10.wav;;65;6;true
