@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: orbit-component-base
+Version: 1.0.10
+Summary: Orbit Framework - base component
+Home-page: https://gitlab.com/madpenguin/orbit-component-base
+License: MIT
+Keywords: orbit-framework,orbit-component,orbit-database
+Author: Gareth Bult
+Author-email: gareth@madpenguin.uk
+Requires-Python: >=3.10,<4.0
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Topic :: Database :: Database Engines/Servers
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Dist: aiohttp (>=3.8.4,<4.0.0)
+Requires-Dist: loguru (>=0.7.0,<0.8.0)
+Requires-Dist: orbit-database (>=1.0.0,<2.0.0)
+Requires-Dist: pycryptodome (>=3.18.0,<4.0.0)
+Requires-Dist: python-socketio (>=5.8.0,<6.0.0)
+Requires-Dist: tqdm (>=4.65.0,<5.0.0)
+Requires-Dist: ujson (>=5.7.0,<6.0.0)
+Project-URL: Documentation, https://gitlab.com/madpenguin/orbit-component-base
+Project-URL: Repository, https://gitlab.com/madpenguin/orbit-component-base
+Description-Content-Type: text/markdown
+
+# Orbit Component :: Base : Server
+
+#### This is the base compoent for the orbit framework back-end. It's required for all other components and for the framework itself, assuming you want the framework to do something useful.
+
+##### <b>Note</b>: Please see the project source repository for more information
