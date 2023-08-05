@@ -1,0 +1,43 @@
+[tool.poetry]
+name = "orbit-component-base"
+version = "1.0.11"
+description = "Orbit Framework - base component"
+authors = ["Gareth Bult <gareth@madpenguin.uk>"]
+license = "MIT"
+readme = "README.md"
+packages = [{include = "orbit_component_base"}]
+include = ['README.md', 'LICENSE.md']
+keywords = ['orbit-framework', 'orbit-component', 'orbit-database']
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Development Status :: 4 - Beta",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Topic :: Database :: Database Engines/Servers",
+    "Intended Audience :: Developers",
+]
+homepage = "https://gitlab.com/madpenguin/orbit-component-base"
+repository = "https://gitlab.com/madpenguin/orbit-component-base"
+documentation = "https://gitlab.com/madpenguin/orbit-component-base"
+
+[project.urls]
+"Homepage" = "https://gitlab.com/madpenguin/orbit-component-base"
+"Bug Tracker" = "https://gitlab.com/madpenguin/orbit-component-base/-/issues"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+python-socketio = "^5.8.0"
+orbit-database = "^1.0"
+loguru = "^0.7.0"
+ujson = "^5.7.0"
+pycryptodome = "^3.18.0"
+tqdm = "^4.65.0"
+aiohttp = "^3.8.4"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.3.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
