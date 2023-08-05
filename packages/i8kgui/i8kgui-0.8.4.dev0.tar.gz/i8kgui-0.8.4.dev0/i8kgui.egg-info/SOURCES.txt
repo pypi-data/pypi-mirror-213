@@ -1,0 +1,16 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+i8kgui/__init__.py
+i8kgui/i8kgui
+i8kgui/i8kgui_thermal_control
+i8kgui.egg-info/PKG-INFO
+i8kgui.egg-info/SOURCES.txt
+i8kgui.egg-info/dependency_links.txt
+i8kgui.egg-info/requires.txt
+i8kgui.egg-info/top_level.txt
+i8kgui/desktop/i8kgui.desktop
+i8kgui/icons/i8kgui_icon.png
+i8kgui/polkit_actions/ubuntu/com.ubuntu.pkexec.i8kgui_thermal_control.policy
+i8kgui/polkit_actions/ubuntu/com.ubuntu.pkexec.smbios-thermal-ctl.policy
