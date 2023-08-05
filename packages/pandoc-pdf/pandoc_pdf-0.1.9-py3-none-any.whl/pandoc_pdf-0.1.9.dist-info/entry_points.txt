@@ -1,0 +1,3 @@
+[console_scripts]
+pandoc_pdf=pandoc_pdf.main:pandoc_pdf
+
