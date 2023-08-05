@@ -1,0 +1,15 @@
+test/__init__.py,sha256=dAgTCxkWzgpFNJfomyiEPq36qJ7nPHw8aXFiX-V9G4Q,30
+test/test.py,sha256=eROP0NFACFt9WttoduM8GX3QctCvAyDLSsSplrwv-Cs,9582
+test/wada_snr.py,sha256=STESP3bVEatbpyAVpsgzNS-jC3n_AfBMfjv4LE04wiM,3033
+vocex/__init__.py,sha256=xNIkoz7P3fpBghfvkuWofxW8ly6eK0-BdAmSPhulwQI,12086
+vocex/conformer_layer.py,sha256=vg09tkF8I3-ctNud88jzE5QCklTwfdxseCYvHoQx5Zo,3250
+vocex/conformer_model.py,sha256=hqGG-VykLS1HJ4Uldy548sJlbCa8ruSCMcwkgBQplrU,10299
+vocex/scaler.py,sha256=I1JyfakeVSXPTdwpdHrL7FQZkCzkPdCJgeOxYJokiD4,4208
+vocex/softdtw.py,sha256=HZ7r4NwtWbY6AoParztIxbfh74SX40XSBurfUdm92Uc,3830
+vocex/transformer.py,sha256=fArzFf2_Eo52znJSvibsWJK1UgFOqTDGzHZa5-ieYY0,3377
+vocex/utils.py,sha256=ryTXCpXmVzBp3Nz4FopbszaiKJ6GHXEUExCpfZRYKpc,1756
+vocex-0.1.6.dist-info/METADATA,sha256=rlIdi-iShyrVyFoK0vkUP8xlD7gb7OZzzyffLxDuBA8,360
+vocex-0.1.6.dist-info/RECORD,,
+vocex-0.1.6.dist-info/WHEEL,sha256=8Lm45v9gcYRm70DrgFGVe4WsUtUMi1_0Tso1hqPGMjA,92
+vocex-0.1.6.dist-info/metadata.json,sha256=_SLSklJ3j0Kmws6FiLiAskz2-hTZ009u1QcMcLsHjmg,497
+vocex-0.1.6.dist-info/top_level.txt,sha256=H_6tTcOQf7oAuHWbh8m1aZTdteyIhiOr9eQMg9IhoAo,11
