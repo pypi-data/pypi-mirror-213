@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+basic_math_operations.egg-info/PKG-INFO
+basic_math_operations.egg-info/SOURCES.txt
+basic_math_operations.egg-info/dependency_links.txt
+basic_math_operations.egg-info/top_level.txt
+src/python-module/libbasic_math_operations.a
+src/python-module/module.c
+src/python-module/version.txt
