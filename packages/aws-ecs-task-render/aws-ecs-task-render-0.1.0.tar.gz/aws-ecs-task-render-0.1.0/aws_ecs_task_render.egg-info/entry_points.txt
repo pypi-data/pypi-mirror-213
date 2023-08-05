@@ -1,0 +1,3 @@
+[console_scripts]
+aws-ecs-task-render = aws_ecs_task_render.main:main
+
