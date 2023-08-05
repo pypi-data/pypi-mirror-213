@@ -1,0 +1,8 @@
+gravitas-0.1.20.dist-info/RECORD,,
+gravitas-0.1.20.dist-info/WHEEL,sha256=d8sjrkKo8h1ZY8Oxdq-K-58JEo6nLEfNKzkM0CYZtr0,108
+gravitas-0.1.20.dist-info/top_level.txt,sha256=yduVelm1TLnF6ibBxy1Eoj5LCUezAvME_xF1jWClngY,9
+gravitas-0.1.20.dist-info/METADATA,sha256=IhZ3OKtR37bSjOTF5HeeBdcQlzwj7HGxXcRhj1OEfHw,661
+gravitas/lib.py,sha256=q55jaqR9I-HLy4RX7sDE3pnlxL1y-eDoOQlYWluL7uM,931
+gravitas/__init__.py,sha256=x2fkGB_m7-2wAMbSLlfF_-KTgKC63_erVIk7bU7I0kI,233
+gravitas/libgrav.h,sha256=1BWeAH5j-pkjMrR5IGLgP7xZEHqgus5O0d572143nOk,520
+gravitas/_grav.cpython-39-darwin.so,sha256=zdGcGEkxEr1yJItkiFXIQdm6AAJ7qAoqDFEZw54qmEk,3390039
