@@ -1,0 +1,8 @@
+xpystac/__init__.py,sha256=kUR5RAFc7HCeiqdlX36dZOHkUI5wI6V_43RpEcD8b-0,22
+xpystac/core.py,sha256=9GoGkrlIvHX92i5vveDYLGH3pXx99vFEDdwkdBRXv-0,2355
+xpystac/utils.py,sha256=0hw2i9LCE89VjnibIlAxJB52A7PoHFgN_cx4edu7znA,235
+xpystac/xarray_plugin.py,sha256=2W3fC2400PbcXqFkXTmeun9JkTf00YnwjqitL0N6ZNk,656
+xpystac-0.1.0.dist-info/entry_points.txt,sha256=vB2ZwArtNwJkmH5lDVGPeOoAnGB33hwNRK7fWU2G4yI,58
+xpystac-0.1.0.dist-info/WHEEL,sha256=EZbGkh7Ie4PoZfRQ8I0ZuP9VklN_TvcZ6DSE5Uar4z4,81
+xpystac-0.1.0.dist-info/METADATA,sha256=d3Jop4XSt-J_EC8cTHXt5UyhyXx4wn8It4DOBcGVFHs,2477
+xpystac-0.1.0.dist-info/RECORD,,

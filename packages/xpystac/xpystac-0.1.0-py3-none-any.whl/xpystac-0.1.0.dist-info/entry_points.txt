@@ -1,0 +1,3 @@
+[xarray.backends]
+stac=xpystac.xarray_plugin:STACBackend
+
