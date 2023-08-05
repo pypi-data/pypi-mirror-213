@@ -1,0 +1,12 @@
+footballAPIClient/__init__.py,sha256=EnNj3DOSb9ZzCO5VcOcwbGTcikJQ73LahE0IvjU1rbU,211
+footballAPIClient/__main__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+footballAPIClient/_constants.py,sha256=989AcJ-XnVAIsXw6jfWaG9DTJ6pLY6qgzzKtCIO5fTI,185
+footballAPIClient/Exceptions/ApiKeyMissingError.py,sha256=grdfHji_g1As37s9jeIY_W1GUTQPjNX6WtpY79Fl1go,105
+footballAPIClient/Exceptions/APILimitExceededError.py,sha256=QcrzbVwusQbtYOaYZj4YYHLbIWXAo_kNuBxhSaNt-4U,110
+footballAPIClient/Exceptions/MissingParametersError.py,sha256=Oq4MUOKnE-koTaOoxW89BWa7v7qEMc1Hzmc4rpu68gw,405
+footballAPIClient/footballAPI.py,sha256=XvieP0ENH-TBihYq0qGLTTdLmTtIvQCiONr6vR7J9yQ,42260
+footballAPIClient/helpers/ParameterValidator.py,sha256=cH226uv7UkNxUNnZZfEwmoswuxYB33gHNtPHMr_FziY,6870
+footballapiclient-0.0.2.dist-info/LICENSE,sha256=IVlKetQlbySbcXkcLNgI0hZ5BCOLyXkjCmQYUFoPKKQ,1092
+footballapiclient-0.0.2.dist-info/METADATA,sha256=qAZITZpoFiVAKZNR_35eXOyLUjsLZ5v8IAdMY_yHFh0,2313
+footballapiclient-0.0.2.dist-info/WHEEL,sha256=Zb28QaM1gQi8f4VCBhsUklF61CTlNYfs9YAZn-TOGFk,88
+footballapiclient-0.0.2.dist-info/RECORD,,
