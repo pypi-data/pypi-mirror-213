@@ -1,0 +1,10 @@
+pyatp_buildkit/__init__.py,sha256=elde6UQFIx8ZnrmCqBf4OGnWI9eKwqqMQnYZi7_2LgI,1148
+pyatp_buildkit/build.py,sha256=dy0dYLaPYGfvSRv7tnyZYFdTJ78P1vL-S397F9oysM0,12972
+pyatp_buildkit/config.py,sha256=7FQFPqLTDgwe7AE2-GxAc1Wtj3wLaHiOYFdU7rzJuSY,542
+pyatp_buildkit/dotdict.py,sha256=bdXHg0JCuCfdW4b-TvE57oNaUqZ-i2FYhS94_3khjx8,529
+pyatp_buildkit/error.py,sha256=LwYi2-aKcIyqyqvgYakXuhS1UktFRaBK075Ra_4MuO0,610
+pyatp_buildkit/get-pip.py,sha256=ujq4Jn2R_UHFjbzgj3bbmfdH9xbYXOGGWBOEK7A1Uk0,2680354
+pyatp_buildkit/templates/Dockerfile.j2,sha256=UYIByT0FDQMZnbG2blYX5Ofjd8qR_QNEPPccw6YaPO4,1356
+pyatp_buildkit-1.1.8.dist-info/METADATA,sha256=QB-aWkXryP8jwau-3v2xiG8ppBZfDfw2inopZYCbVUA,512
+pyatp_buildkit-1.1.8.dist-info/WHEEL,sha256=7Z8_27uaHI_UZAc4Uox4PpBhQ9Y5_modZXWMxtUi4NU,88
+pyatp_buildkit-1.1.8.dist-info/RECORD,,
