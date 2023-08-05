@@ -1,0 +1,12 @@
+matplotlib>=3.5.1
+numpy>=1.22.3
+pandas>=1.4.2
+PIMS>=0.5
+scikit-image>=0.19.2
+slicerator>=1.1.0
+scenedetect>=0.6.0.3
+opencv-python>=4.6.0.66
+xgboost==0.90
+scikit-learn==1.0.2
+av>=8.0.3
+ffmpeg-python>=0.2.0
