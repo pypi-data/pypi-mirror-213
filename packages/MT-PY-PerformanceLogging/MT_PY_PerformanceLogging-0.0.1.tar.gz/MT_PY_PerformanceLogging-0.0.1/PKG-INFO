@@ -1,0 +1,105 @@
+Metadata-Version: 2.1
+Name: MT_PY_PerformanceLogging
+Version: 0.0.1
+Summary: A Mouritech package
+Author-email: Sirisha <siriteju343@gmail.com>
+Project-URL: Homepage, https://github.com/pypa/sampleproject
+Project-URL: Bug Tracker, https://github.com/pypa/sampleproject/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
+## Package Name 
+MT_PY_PerformanceLogging
+
+''' Performance in python.
+This is the project ,Whenever you need to check the performance of the code like time taken by the code to perform some task we will use this package in our module'''
+a
+
+## Requirements 
+'''For running this, you need to have python3 installed on your system'''
+
+
+## Debugging tools 
+
+'''supported tools pycharm ,Anakonda ,Visual Studio etc...
+
+
+## Installation 
+
+Install my-project with Python
+Install MT_PY_PerformanceLogging
+
+
+  pip install  MT_PY_PerformanceLogging
+  cd  MT_PY_PerformanceLogging
+
+  (globally )
+
+pip install -i https://test.pypi.org/simple/ MT_PY_PerformanceLogging
+
+
+## Steps 
+
+pip install -i https://test.pypi.org/simple/ MT_PY_PerformanceLogging
+
+pip install Mouritech_LoggingPerformance
+
+
+from MT_PY_Performancelogging.MT_Performance import MT_PerformanceLogger
+from MT_Performance import MT_PerformanceLogger
+
+MT_PerformanceLogger(
+
+)
+
+
+
+### Receiver Example  
+
+# import time module 
+import time
+
+'''Importing our custom package from module Logperformance'''
+from MT_PY_Performancelogging.MT_Performance import MT_PerformanceLogger
+
+# Create an instance of PerformanceLogger with a log file
+logger = MT_PerformanceLogger(__name__, log_file='performance.log')
+
+# Use the logger to measure function performance
+@logger.log_performance
+def Disarum():
+    '''Code which checks the Provided Number is Disarum number or Not'''
+    num=int(input('Enter Num value:'))
+    result=0
+    power=1
+    for x in str(num):
+        y=int(x)
+
+        '''Logic to check the disarum Number '''
+        result= result + y**power
+        power=power+1
+
+        '''If the provided number is same as resultant number then it will be disarum number '''
+    if num==result:
+        print(f'The provide {num} is Disarum')
+    else:
+        print(f'The Provided {num} is Not a Disarum Number')
+    
+
+    '''Time taken by the funtion to excute the output '''
+    time.sleep(1)
+
+# Call the function
+Disarum()
+
+
+
+## Output :
+'''The Provided Number is Disarum Number or Not Disarum number '''
+
+
+2023-06-01 11:48:05,439 - __main__ - INFO - Function 'Disarum' executed in = started at 1685600283.4058442   ended at 1685600285.4397306 = 2.0339 seconds
