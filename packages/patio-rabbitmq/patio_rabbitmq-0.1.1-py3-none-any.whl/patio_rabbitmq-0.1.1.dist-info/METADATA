@@ -1,0 +1,109 @@
+Metadata-Version: 2.1
+Name: patio-rabbitmq
+Version: 0.1.1
+Summary: RabbitMQ broker implementation for PATIO
+License: MIT
+Author: Dmitry Orlov
+Author-email: me@mosquito.su
+Requires-Python: >=3.8,<4.0
+Classifier: Development Status :: 4 - Beta
+Classifier: Framework :: AsyncIO
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Information Technology
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Natural Language :: Russian
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Topic :: Internet
+Classifier: Topic :: Software Development
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Typing :: Typed
+Requires-Dist: aio-pika (>=9.0.7,<10.0.0)
+Requires-Dist: patio
+Description-Content-Type: text/markdown
+
+[![PyPI - License](https://img.shields.io/pypi/l/patio-rabbitmq)](https://pypi.org/project/patio-rabbitmq) [![Wheel](https://img.shields.io/pypi/wheel/patio-rabbitmq)](https://pypi.org/project/patio-rabbitmq) [![Mypy](http://www.mypy-lang.org/static/mypy_badge.svg)]() [![PyPI](https://img.shields.io/pypi/v/patio-rabbitmq)](https://pypi.org/project/patio-rabbitmq) [![PyPI](https://img.shields.io/pypi/pyversions/patio-rabbitmq)](https://pypi.org/project/patio-rabbitmq) [![Coverage Status](https://coveralls.io/repos/github/patio-python/patio-rabbitmq/badge.svg?branch=master)](https://coveralls.io/github/patio-python/patio-rabbitmq?branch=master) ![tox](https://github.com/patio-python/patio-rabbitmq/workflows/tests/badge.svg?branch=master)
+
+PATIO Rabbitmq
+==============
+
+PATIO is an acronym for **P**ython **A**synchronous **T**ask for Async**IO**.
+
+This package provides RabbitMQ broker implementation.
+
+Example
+-------
+
+### Task executor
+
+```python
+import asyncio
+import operator
+from functools import reduce
+
+from patio import Registry, ThreadPoolExecutor
+
+from patio_rabbitmq import RabbitMQBroker
+
+
+rpc = Registry(project="patio-rabbitmq", auto_naming=False)
+
+
+@rpc("mul")
+def mul(*args):
+    return reduce(operator.mul, args)
+
+
+async def main():
+    async with ThreadPoolExecutor(rpc, max_workers=16) as executor:
+        async with RabbitMQBroker(
+            executor, amqp_url="amqp://guest:guest@localhost/",
+        ) as broker:
+            await broker.join()
+
+
+if __name__ == "__main__":
+    asyncio.run(main())
+```
+
+### Task producer
+
+```python
+import asyncio
+
+from patio import NullExecutor, Registry
+
+from patio_rabbitmq import RabbitMQBroker
+
+
+async def main():
+    async with NullExecutor(Registry(project="patio-rabbitmq")) as executor:
+        async with RabbitMQBroker(
+            executor, amqp_url="amqp://guest:guest@localhost/",
+        ) as broker:
+            print(
+                await asyncio.gather(
+                    *[
+                        broker.call("mul", i, i, timeout=1) for i in range(10)
+                    ]
+                ),
+            )
+
+
+if __name__ == "__main__":
+    asyncio.run(main())
+
+```
+
