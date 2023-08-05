@@ -1,0 +1,15 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+easydags/__init__.py
+easydags/config.py
+easydags/dag.py
+easydags/errors.py
+easydags/node.py
+easydags/ops.py
+easydags.egg-info/PKG-INFO
+easydags.egg-info/SOURCES.txt
+easydags.egg-info/dependency_links.txt
+easydags.egg-info/requires.txt
+easydags.egg-info/top_level.txt
