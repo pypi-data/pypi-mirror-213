@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: common-tool
+Version: 0.0.7
+Summary: Basic toolkit packaging
+Home-page: https://github.com/RelaxedDong/dh_common
+Author: donghao
+Author-email: is_simple@163.com
+License: MIT
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# common-tool
+Basic toolkit packaging
+
+common-tool is a project encapsulated by the general package, including the encapsulation of tools such as time processing and enumeration definitions.
+
+Install common-tool with pip:
+
+```bash
+python3 -m pip install --upgrade pip
+python3 -m pip install --upgrade common-tool
+```
+
+
