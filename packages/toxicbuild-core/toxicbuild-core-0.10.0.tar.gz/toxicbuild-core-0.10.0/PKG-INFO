@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: toxicbuild-core
+Version: 0.10.0
+Summary: toxiccore: Shared functionalities for toxicbuild
+Author: juca@poraodojuca.dev
+Project-URL: Homepage, https://docs.poraodjuca.dev/toxiccore/index.html
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: License :: OSI Approved :: GNU Affero General Public License v3
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+Toxiccore is part of toxicbuild.
+
+Check toxiccore documentation [here](https://docs.poraodojuca.dev/toxiccore/index.html).
+
+Check toxicbuild full documentation [here](https://toxicbuild.poraodojuca.dev)
