@@ -1,0 +1,3 @@
+[console_scripts]
+lsb_audio = lsb:_script_audio
+lsb_image = lsb:_script_image
