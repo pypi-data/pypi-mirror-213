@@ -1,0 +1,53 @@
+Metadata-Version: 2.1
+Name: catenp
+Version: 0.0.2
+Summary: Python client for extracting data from CATE archives to numpy arrays
+Author-email: Motion Signal Technologies <info@motionsignaltechnologies.com>
+Project-URL: Homepage, https://github.com/motionsignaltechnologies/cate-numpy
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.10
+Description-Content-Type: text/x-rst
+Requires-Dist: numpy (>=1.24.3)
+Requires-Dist: requests (>=2.31.0)
+
+-----------
+DESCRIPTION
+-----------
+
+Python client for extracting data from CATE archives to numpy arrays
+
+------------
+INSTALLATION
+------------
+
+::
+
+   pip install catenp
+
+
+-----
+USAGE
+-----
+
+See also `catenp.catenumpy.Example`
+
+::
+
+   from catenp import Authenticate,DatabaseInfo,GetData
+   
+   # Authenticate to the server
+   tk = Authenticate(serverAddress,serverPort,cateUserName,catePassword)
+   
+   # (Optional) get server/ data info
+   info = DatabaseInfo(serverAddress,serverPort,cateUserName)
+   print("Info: ")
+   for kk in info: print("  ",kk,":",info[kk])
+
+
+   # Extract some data    
+   arr=GetData(serverAddress,serverPort,cateUserName,tstart,tstop,cstart,cstop)
+
+
+
