@@ -1,0 +1,77 @@
+[tool.isort]
+profile = "black"
+multi_line_output = 3
+order_by_type = false
+
+[tool.mypy]
+files = "."
+exclude = "build/.*"
+strict = true
+
+# Overrides for currently untyped modules
+[[tool.mypy.overrides]]
+module = [
+    "docs.*",
+    "docs.ext.*",
+    "tests.unit.*",
+]
+ignore_errors = true
+
+[[tool.mypy.overrides]]
+module = [
+    "tests.functional.*",
+    "tests.functional.api.*",
+    "tests.smoke.*",
+]
+disable_error_code = ["no-untyped-def"]
+
+[tool.semantic_release]
+branch = "main"
+version_variable = "gitlab/_version.py:__version__"
+commit_subject = "chore: release v{version}"
+commit_message = ""
+
+[tool.pylint.messages_control]
+max-line-length = 88
+jobs = 0  # Use auto-detected number of multiple processes to speed up Pylint.
+# TODO(jlvilla): Work on removing these disables over time.
+disable = [
+    "arguments-differ",
+    "arguments-renamed",
+    "broad-except",
+    "cyclic-import",
+    "duplicate-code",
+    "import-outside-toplevel",
+    "invalid-name",
+    "missing-class-docstring",
+    "missing-function-docstring",
+    "missing-module-docstring",
+    "not-callable",
+    "protected-access",
+    "redefined-builtin",
+    "signature-differs",
+    "too-few-public-methods",
+    "too-many-ancestors",
+    "too-many-arguments",
+    "too-many-branches",
+    "too-many-instance-attributes",
+    "too-many-lines",
+    "too-many-locals",
+    "too-many-public-methods",
+    "too-many-statements",
+    "unsubscriptable-object",
+]
+
+[tool.pytest.ini_options]
+xfail_strict = true
+markers = [
+    "gitlab_premium: marks tests that require GitLab Premium",
+    "gitlab_ultimate: marks tests that require GitLab Ultimate",
+]
+
+# If 'log_cli=True' the following apply
+# NOTE: If set 'log_cli_level' to 'DEBUG' will show a log of all of the HTTP requests
+# made in functional tests.
+log_cli_level = "INFO"
+log_cli_format = "%(asctime)s.%(msecs)03d [%(levelname)8s] (%(filename)s:%(funcName)s:L%(lineno)s) %(message)s"
+log_cli_date_format = "%Y-%m-%d %H:%M:%S"
