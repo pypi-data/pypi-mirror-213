@@ -1,0 +1,6 @@
+click
+aiosmtpd
+typing_extensions
+
+[flask-sqlalchemy]
+flask-sqlalchemy~=2.5
