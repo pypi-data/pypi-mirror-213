@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: templateMF
+Version: 0.1
+Summary: An amazing flit templates package!
+Author-email: yakari144 <pg50477@uminho.pt>
+Description-Content-Type: text/markdown
+Classifier: License :: OSI Approved :: MIT License
+Requires-Dist: argparse
+Requires-Dist: re
+
+
