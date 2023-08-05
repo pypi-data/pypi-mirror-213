@@ -1,0 +1,10 @@
+pyproject.toml
+setup.py
+fsrs4anki_optimizer/__init__.py
+fsrs4anki_optimizer/__main__.py
+fsrs4anki_optimizer/fsrs4anki_optimizer.py
+fsrs4anki_optimizer.egg-info/PKG-INFO
+fsrs4anki_optimizer.egg-info/SOURCES.txt
+fsrs4anki_optimizer.egg-info/dependency_links.txt
+fsrs4anki_optimizer.egg-info/requires.txt
+fsrs4anki_optimizer.egg-info/top_level.txt
