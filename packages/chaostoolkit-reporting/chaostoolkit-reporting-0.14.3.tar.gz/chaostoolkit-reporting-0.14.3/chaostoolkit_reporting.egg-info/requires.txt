@@ -1,0 +1,13 @@
+cairosvg
+chaostoolkit-lib
+click
+dateparser
+logzero
+jinja2
+matplotlib
+maya
+natural
+pygal
+pypandoc
+semver
+importlib-metadata>=6.0
