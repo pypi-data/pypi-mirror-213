@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+python_strategies/__init__.py
+python_strategies/python_strategies.py
+python_strategies_breezeconnect.egg-info/PKG-INFO
+python_strategies_breezeconnect.egg-info/SOURCES.txt
+python_strategies_breezeconnect.egg-info/dependency_links.txt
+python_strategies_breezeconnect.egg-info/requires.txt
+python_strategies_breezeconnect.egg-info/top_level.txt
