@@ -1,0 +1,2 @@
+[console_scripts]
+swoop-db = swoop.db.__main__:main
