@@ -1,0 +1,24 @@
+[obsln.plugin.waveform]
+PICKLE = obsln.core.stream
+SEG2 = obsln.io.seg2.seg2
+SEGY = obsln.io.segy.core
+SU = obsln.io.segy.core
+
+[obsln.plugin.waveform.PICKLE]
+isFormat = obsln.core.stream:_is_pickle
+readFormat = obsln.core.stream:_read_pickle
+writeFormat = obsln.core.stream:_write_pickle
+
+[obsln.plugin.waveform.SEG2]
+isFormat = obsln.io.seg2.seg2:_is_seg2
+readFormat = obsln.io.seg2.seg2:_read_seg2
+
+[obsln.plugin.waveform.SEGY]
+isFormat = obsln.io.segy.core:_is_segy
+readFormat = obsln.io.segy.core:_read_segy
+writeFormat = obsln.io.segy.core:_write_segy
+
+[obsln.plugin.waveform.SU]
+isFormat = obsln.io.segy.core:_is_su
+readFormat = obsln.io.segy.core:_read_su
+writeFormat = obsln.io.segy.core:_write_su
