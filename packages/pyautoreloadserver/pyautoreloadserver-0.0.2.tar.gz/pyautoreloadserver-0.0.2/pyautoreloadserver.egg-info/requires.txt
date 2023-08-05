@@ -1,0 +1,8 @@
+
+[dev]
+black
+build
+coverage
+flake8
+pytest
+twine

@@ -1,0 +1,16 @@
+LICENSE
+README.md
+setup.py
+pyautoreloadserver/__init__.py
+pyautoreloadserver/__main__.py
+pyautoreloadserver/cli.py
+pyautoreloadserver/pyautoreloadserver.py
+pyautoreloadserver.egg-info/PKG-INFO
+pyautoreloadserver.egg-info/SOURCES.txt
+pyautoreloadserver.egg-info/dependency_links.txt
+pyautoreloadserver.egg-info/entry_points.txt
+pyautoreloadserver.egg-info/requires.txt
+pyautoreloadserver.egg-info/top_level.txt
+tests/__init__.py
+tests/client.py
+tests/test_auto_reload_http_server.py
