@@ -1,0 +1,7 @@
+README.md
+pyproject.toml
+setup.cfg
+dotenvreader.egg-info/PKG-INFO
+dotenvreader.egg-info/SOURCES.txt
+dotenvreader.egg-info/dependency_links.txt
+dotenvreader.egg-info/top_level.txt

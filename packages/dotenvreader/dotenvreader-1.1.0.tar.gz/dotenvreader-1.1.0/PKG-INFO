@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: dotenvreader
+Version: 1.1.0
+Summary: A Package for PiP that will read dotenv files.
+Home-page: https://github.com/ContentGamer/DotENV-Reader
+Author: ContentGamer
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+
+# DotENV-Reader
+A Package for PiP that will read dotenv files.
+
+# How to use
+Create a new .env file use the example one for testing and a new python file or use the test.py file
+Add this code to the new python file to get and config dotenv
+
+```python
+
+import dotenvreader as dotenv
+dotenv.config()
+print(dotenv.get_value("test"))
+
+```
