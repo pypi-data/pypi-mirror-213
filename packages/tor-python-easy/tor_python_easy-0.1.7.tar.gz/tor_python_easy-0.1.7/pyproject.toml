@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "tor-python-easy"
+version = "0.1.7"
+description = "Simple library to manage tor proxy and IP changes"
+homepage = "https://github.com/markowanga/tor-python-easy"
+authors = ["Marcin Wątroba <markowanga@gmail.com>"]
+readme = "README.md"
+packages = [{ include = "tor_python_easy" }]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+requests = "^2.31.0"
+PySocks = "^1.7.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
