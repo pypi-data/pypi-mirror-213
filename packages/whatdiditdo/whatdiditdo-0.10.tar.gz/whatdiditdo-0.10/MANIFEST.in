@@ -1,0 +1,3 @@
+include whatdiditdo/requirements.txt
+include whatdiditdo/thirdparty.json
+include whatdiditdo/README.MD

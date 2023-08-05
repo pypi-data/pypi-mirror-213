@@ -1,0 +1,14 @@
+LICENSE.rst
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+whatdiditdo/README.MD
+whatdiditdo/__init__.py
+whatdiditdo/requirements.txt
+whatdiditdo/thirdparty.json
+whatdiditdo.egg-info/PKG-INFO
+whatdiditdo.egg-info/SOURCES.txt
+whatdiditdo.egg-info/dependency_links.txt
+whatdiditdo.egg-info/requires.txt
+whatdiditdo.egg-info/top_level.txt
