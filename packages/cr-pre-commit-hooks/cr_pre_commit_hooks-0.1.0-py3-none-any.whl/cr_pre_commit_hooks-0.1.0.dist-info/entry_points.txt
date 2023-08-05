@@ -1,0 +1,3 @@
+[console_scripts]
+check-docstrings=cr_pre_commit_hooks.docstrings:main
+

@@ -1,0 +1,7 @@
+cr_pre_commit_hooks/__init__.py,sha256=A17fnuOpV_7ZQFhdHWyZgHPL8QT_XsgABRW556EqJNo,268
+cr_pre_commit_hooks/docstrings.py,sha256=Y5yptWzElAgsoFoXU7XG25JVItx4U1V7Cz7oEeY0BwM,3123
+cr_pre_commit_hooks/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+cr_pre_commit_hooks-0.1.0.dist-info/METADATA,sha256=u5B_UREDqzGAnCzAd78ZOyxsmN4JDRPiNMvAfjgo7sE,2093
+cr_pre_commit_hooks-0.1.0.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+cr_pre_commit_hooks-0.1.0.dist-info/entry_points.txt,sha256=ovvzC2YrVW_cTwtOnJjMgsQoFi7lP7trRhoh3IhZEoE,72
+cr_pre_commit_hooks-0.1.0.dist-info/RECORD,,
