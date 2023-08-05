@@ -1,0 +1,17 @@
+brainways==0.1.5
+importlib-resources
+napari
+qtpy
+stardist==0.8.3
+tensorflow
+
+[all]
+brainways-reg-model
+
+[testing]
+py
+pyqt5
+pytest
+pytest-cov
+pytest-qt<4.1.0
+tox
