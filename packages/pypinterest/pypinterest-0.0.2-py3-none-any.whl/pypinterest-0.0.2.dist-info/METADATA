@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: pypinterest
+Version: 0.0.2
+Summary: Pinterest API
+Home-page: https://github.com/piriyaraj/pypinterest
+Author: Techfarm
+Author-email: tamilcomway@gmail.com
+License: Apache License 2.0
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: urllib3 (==1.26.12)
+Requires-Dist: python-dateutil
+Requires-Dist: python-dotenv (==0.20.0)
+Requires-Dist: six (==1.16.0)
+Requires-Dist: Pinterest-Generated-Client (==0.1.7)
+
