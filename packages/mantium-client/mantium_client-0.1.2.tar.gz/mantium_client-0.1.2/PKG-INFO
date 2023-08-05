@@ -1,0 +1,71 @@
+Metadata-Version: 2.1
+Name: mantium-client
+Version: 0.1.2
+Summary: Python client for the Mantium API
+Home-page: https://github.com/mantiumai/mantium-client-py
+License: Apache-2.0
+Keywords: mantium,ChatGPT,AI
+Author: Mantium
+Author-email: support@mantiumai.com
+Requires-Python: >=3.10,<4.0
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Software Development :: Pre-processors
+Requires-Dist: pre-commit (==2.20.0)
+Requires-Dist: pydantic (>=1.10.2,<2.0.0)
+Project-URL: Repository, https://github.com/mantiumai/mantium-client-py
+Description-Content-Type: text/markdown
+
+# Mantium Client
+
+[![CI status](https://github.com/mantiumai/mantium-client-py/actions/workflows/test.yml/badge.svg)](https://github.com/mantiumai/mantium-client-py/actions)
+[![License](https://img.shields.io/github/license/mantiumai/mantium-client-py)](https://github.com/mantiumai/mantium-client-py/blob/main/LICENSE.txt)
+
+A Python client library for [Mantium services](https://mantiumai.com/).
+
+## Installation
+
+Use the package manager [pip](https://pip.pypa.io/en/stable/) to install this client.
+
+```bash
+pip install mantium-client
+```
+
+## Usage
+
+```python
+from mantium import ApiClient
+from mantium.openapi_client.api.applications_api import ApplicationsApi
+
+
+client = ApiClient(client_id=CLIENT_ID, client_secret=CLIENT_SECRET)
+apps_api = ApplicationsApi(api_client=client)
+
+# returns a list of applications
+apps_api.list_applications()
+```
+
+## License
+
+[Apache-2.0](https://choosealicense.com/licenses/apache-2.0/)
+
+## Development
+
+We use `poetry` for dependency management.
+```shell
+pip install poetry
+poetry install
+```
+
