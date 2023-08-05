@@ -1,0 +1,5 @@
+numpy
+napari
+magicgui
+qtpy
+tifffile

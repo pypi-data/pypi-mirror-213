@@ -1,0 +1,16 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+src/multireg/MultiReg.py
+src/multireg/Utils.py
+src/multireg/__init__.py
+src/multireg/napari.yaml
+src/multireg.egg-info/PKG-INFO
+src/multireg.egg-info/SOURCES.txt
+src/multireg.egg-info/dependency_links.txt
+src/multireg.egg-info/entry_points.txt
+src/multireg.egg-info/requires.txt
+src/multireg.egg-info/top_level.txt
