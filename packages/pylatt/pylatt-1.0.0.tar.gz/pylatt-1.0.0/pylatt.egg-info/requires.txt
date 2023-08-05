@@ -1,0 +1,21 @@
+matplotlib
+numpy
+scipy
+tqdm
+
+[:python_version < "3.8"]
+importlib_metadata
+
+[diff]
+numdiff>=0.0.1
+
+[full]
+pylatt[diff]
+pylatt[opt]
+pylatt[isocontour]
+
+[isocontour]
+scikit-image
+
+[opt]
+nlopt
