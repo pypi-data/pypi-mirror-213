@@ -1,0 +1,34 @@
+Metadata-Version: 2.1
+Name: UzEduCorpus
+Version: 0.0.2
+Summary: UzTransliterator | Transliteration tool for Uzbek language - Cyrillic<>Latin<>NewLatin
+Home-page: https://github.com/UlugbekSalaev/UzTransliterator
+Author: Muhayyo Narimonova
+Author-email: muhayyonarimonova1797@gmail.com
+Project-URL: Bug Tracker, https://github.com/UlugbekSalaev/UzTransliterator/issues
+Keywords: python,transliteration,uzbek-language,cyrillic,latin
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+<div id="top"></div>
+
+<!-- PROJECT SHIELDS -->
+
+<!-- PROJECT LOGO -->
+<br />
+<div align="center">
+  <h3 align="center">UzEduCorpus</h3>
+  
+</div>
+
+```
+from UzEduCorpus import UzEduCorpus
+print(UzEduCorpus.load_1());
+print(UzEduCorpus.load_2());
+# ...
+print(UzEduCorpus.load_9());
+```
