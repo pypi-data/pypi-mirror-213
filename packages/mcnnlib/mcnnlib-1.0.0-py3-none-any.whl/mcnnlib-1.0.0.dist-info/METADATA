@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: mcnnlib
+Version: 1.0.0
+Summary: Constrained Optimization and Manifold Optimization in Pytorch
+Author: huang chiang
+License: MIT
+Keywords: Constrained Optimization,Optimization on Manifolds,Pytorch
+Platform: UNKNOWN
+Requires-Python: >=3.5
+License-File: LICENSE
+Requires-Dist: torch (>=1.9)
+
+UNKNOWN
+
