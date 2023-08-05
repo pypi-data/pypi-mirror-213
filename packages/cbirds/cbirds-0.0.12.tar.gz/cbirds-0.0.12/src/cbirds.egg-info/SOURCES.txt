@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+src/cbirds/birds.py
+src/cbirds.egg-info/PKG-INFO
+src/cbirds.egg-info/SOURCES.txt
+src/cbirds.egg-info/dependency_links.txt
+src/cbirds.egg-info/requires.txt
+src/cbirds.egg-info/top_level.txt
