@@ -1,0 +1,10 @@
+README.md
+setup.py
+git2vec/__init__.py
+git2vec/loader.py
+git2vec/vectordb.py
+git2vec.egg-info/PKG-INFO
+git2vec.egg-info/SOURCES.txt
+git2vec.egg-info/dependency_links.txt
+git2vec.egg-info/requires.txt
+git2vec.egg-info/top_level.txt
