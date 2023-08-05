@@ -1,0 +1,11 @@
+LICENSE
+README.rst
+setup.py
+Flask_captcha2.egg-info/PKG-INFO
+Flask_captcha2.egg-info/SOURCES.txt
+Flask_captcha2.egg-info/dependency_links.txt
+Flask_captcha2.egg-info/requires.txt
+Flask_captcha2.egg-info/top_level.txt
+flask_captcha2/CaptchaClass.py
+flask_captcha2/__init__.py
+flask_captcha2/auther.py
