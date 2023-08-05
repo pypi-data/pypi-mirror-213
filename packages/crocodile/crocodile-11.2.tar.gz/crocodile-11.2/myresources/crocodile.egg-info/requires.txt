@@ -1,0 +1,10 @@
+numpy
+pandas
+matplotlib
+joblib
+ipython
+fire
+tqdm
+dill
+cryptography
+requests
