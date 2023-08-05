@@ -1,0 +1,2 @@
+[console_scripts]
+watchserver = watchserver.__main__:serve
