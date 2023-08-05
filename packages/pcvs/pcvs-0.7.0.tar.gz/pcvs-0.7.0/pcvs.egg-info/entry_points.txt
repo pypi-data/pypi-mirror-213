@@ -1,0 +1,4 @@
+[console_scripts]
+pcvs = pcvs.main:cli
+pcvs_convert = pcvs.converter.yaml_converter:main
+pcvs_result_convert = pcvs.converter.result_converter:main
