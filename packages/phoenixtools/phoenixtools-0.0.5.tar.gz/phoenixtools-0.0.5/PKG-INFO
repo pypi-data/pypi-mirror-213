@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: phoenixtools
+Version: 0.0.5
+Summary: Easy hacking tools
+Author: Jack B.
+Author-email: <BurrJ22@outlook.com>
+Keywords: python,first package
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Education
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Microsoft :: Windows
+
+Easy hacking tools used for educational purposes
