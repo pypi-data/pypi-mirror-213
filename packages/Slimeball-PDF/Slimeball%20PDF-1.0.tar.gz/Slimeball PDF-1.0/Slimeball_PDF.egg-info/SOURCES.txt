@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+Slimeball_PDF.egg-info/PKG-INFO
+Slimeball_PDF.egg-info/SOURCES.txt
+Slimeball_PDF.egg-info/dependency_links.txt
+Slimeball_PDF.egg-info/top_level.txt
+kpdf/__init__.py
+kpdf/pdf2image.py
+kpdf/pdf2text.py
