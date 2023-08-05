@@ -1,0 +1,3 @@
+[console_scripts]
+securo = securo.cli:main
+

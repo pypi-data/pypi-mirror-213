@@ -1,0 +1,16 @@
+LICENSE
+README.md
+setup.py
+securo/__init__.py
+securo/cli.py
+securo/file_manager.py
+securo/securo.py
+securo/utils.py
+securo.egg-info/PKG-INFO
+securo.egg-info/SOURCES.txt
+securo.egg-info/dependency_links.txt
+securo.egg-info/entry_points.txt
+securo.egg-info/requires.txt
+securo.egg-info/top_level.txt
+tests/__init__.py
+tests/test_securo.py
