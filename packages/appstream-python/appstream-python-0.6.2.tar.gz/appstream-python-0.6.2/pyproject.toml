@@ -1,0 +1,44 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "appstream-python"
+description = "A library for dealing with Freedesktop Appstream data"
+readme = "README.md"
+requires-python = ">=3.10"
+keywords = ["JakobDev", "AppStream", "Freedesktop", "Linux"]
+license = { text = "BSD-2-Clause" }
+authors = [
+    { name = "JakobDev", email = "jakobdev@gmx.de" }
+]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "Environment :: Other Environment",
+    "License :: OSI Approved :: BSD License",
+    "Operating System :: POSIX",
+    "Operating System :: POSIX :: BSD",
+    "Operating System :: POSIX :: Linux",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3 :: Only",
+    "Programming Language :: Python :: Implementation :: CPython"
+]
+dependencies = [
+    "lxml"
+]
+dynamic = ["version"]
+
+[project.urls]
+Documentation = "https://appstream-python.readthedocs.io"
+Issues = "https://codeberg.org/JakobDev/appstream-python/issues"
+Source = "https://codeberg.org/JakobDev/appstream-python"
+Donation = "https://ko-fi.com/jakobdev"
+
+[tool.setuptools.dynamic]
+version = { file = "appstream_python/version.txt" }
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
