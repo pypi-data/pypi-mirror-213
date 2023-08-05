@@ -1,0 +1,9 @@
+odoo13-addon-auth_api_key
+odoo13-addon-auth_jwt
+odoo13-addon-base_rest
+odoo13-addon-base_rest_pydantic
+odoo13-addon-photovoltaic_mgmt_extended
+odoo13-addon-pydantic
+odoo<13.1dev,>=13.0a
+pydantic[email]<2.0
+pyjwt
