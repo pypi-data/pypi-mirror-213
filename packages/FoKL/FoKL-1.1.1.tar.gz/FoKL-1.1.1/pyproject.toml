@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=45", "setuptools_scm[toml]>=6.2"]
+build-backend = "setuptools.build_meta"
+[tool.setuptools_scm]
+
+[project]
+name = "FoKL"
+authors = [
+    {name = "ESMS Group", email = "derek.slack.001@gmail.com"},
+]
+description = "Karhunen Loève decomposed Gaussian processes with forward variable selection"
+readme = "ReadMe.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+]
+dependencies = [
+    "requests",
+    'importlib-metadata; python_version<"3.8"',
+]
+dynamic = ["version"]
+
+
