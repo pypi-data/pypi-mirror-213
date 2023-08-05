@@ -1,0 +1,10 @@
+[console_scripts]
+metricq-check = metricq_tools.check:main
+metricq-csv = metricq_tools.csv:main
+metricq-discover = metricq_tools.discover:main
+metricq-energy = metricq_tools.energy:main
+metricq-inspect = metricq_tools.inspect:main
+metricq-send = metricq_tools.send:main
+metricq-slurm = metricq_tools.slurm:main
+metricq-spy = metricq_tools.spy:main
+metricq-summary = metricq_tools.summary:main
