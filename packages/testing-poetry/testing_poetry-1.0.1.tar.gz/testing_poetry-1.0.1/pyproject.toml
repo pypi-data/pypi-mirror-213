@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "testing-poetry"
+version = "1.0.1"
+description = "berikut projek pertama poetry (testing)"
+authors = ["Your Name <you@example.com>"]
+readme = "README.md"
+packages = [{include = "testing_poetry"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+
+[tool.poetry.scripts]
+testing_main = 'testing_poetry.main'
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
