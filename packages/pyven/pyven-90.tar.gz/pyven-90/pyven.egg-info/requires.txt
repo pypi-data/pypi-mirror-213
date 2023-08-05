@@ -1,0 +1,6 @@
+aridity>=62
+diapyr>=18
+lagoon>=24
+setuptools>=44.1.1
+twine>=1.15.0
+venvpool>=10
