@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+autodistill_grounding_dino/__init__.py
+autodistill_grounding_dino/grounding_dino_model.py
+autodistill_grounding_dino/helpers.py
+autodistill_grounding_dino.egg-info/PKG-INFO
+autodistill_grounding_dino.egg-info/SOURCES.txt
+autodistill_grounding_dino.egg-info/dependency_links.txt
+autodistill_grounding_dino.egg-info/requires.txt
+autodistill_grounding_dino.egg-info/top_level.txt
