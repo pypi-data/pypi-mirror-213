@@ -1,0 +1,10 @@
+LICENSE.txt
+README.md
+setup.cfg
+setup.py
+5_card_draw/video_poker.py
+5_card_draw.egg-info/PKG-INFO
+5_card_draw.egg-info/SOURCES.txt
+5_card_draw.egg-info/dependency_links.txt
+5_card_draw.egg-info/requires.txt
+5_card_draw.egg-info/top_level.txt
