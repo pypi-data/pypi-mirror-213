@@ -1,0 +1,2 @@
+[console_scripts]
+metalayer = metalayer.main:main

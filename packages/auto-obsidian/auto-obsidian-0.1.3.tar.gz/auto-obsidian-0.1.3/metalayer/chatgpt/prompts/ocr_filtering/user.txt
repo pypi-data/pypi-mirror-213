@@ -1,0 +1,9 @@
+"""
+{}
+"""
+This is the output of a text recognition model that was run on a screenshot of a users computer screen. **IMPORTANT:** Please remove all lines that are:
+ - Not related to the main content
+ - Likely from the menu bar, bookmarks, tabs, or buttons
+ - Incoherent
+ - Uninformative
+Then, format the remaining lines so they look like what the original text might have looked like (use lots of spacing).

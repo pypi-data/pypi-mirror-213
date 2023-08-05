@@ -1,0 +1,4 @@
+"""
+{0}
+"""
+Above is all of the text that is current visible on my screen. Summarize the new information I would be able to infer as independent information snippets. Before writing a line, ask yourself: "Does this line on its own tell me something useful?". For example: ignore lines like: "Linear Algebra", but not lines like "Linear algebra is a branch of mathematics".
