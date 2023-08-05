@@ -1,0 +1,28 @@
+[tool.poetry]
+name = "GB-chat-server-alexey-01"
+version = "0.1.0"
+description = ""
+authors = ["Alexey Ryzhkov <aler32@mail.ru>"]
+readme = "README.md"
+
+packages = [
+    { include = "server" }
+]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+chardet = "^5.1.0"
+pyyaml = "^6.0"
+tabulate = "^0.9.0"
+sqlalchemy = "1.4.46"
+pyqt5 = "^5.15.9"
+pyqt5-tools = "^5.15.9.3.3"
+sphinx = "^7.0.1"
+cx-freeze = "^6.15.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+
