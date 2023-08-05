@@ -1,0 +1,2 @@
+[console_scripts]
+xeno = xeno_canto_utils_nbm.xeno_canto_utils:main
