@@ -1,0 +1,38 @@
+{
+    "device_automation": {
+        "action_type": {
+            "clean": "Fes que {entity_name} netegi",
+            "dock": "Fes que {entity_name} torni a la base"
+        },
+        "condition_type": {
+            "is_cleaning": "{entity_name} est\u00e0 netejant",
+            "is_docked": "{entity_name} est\u00e0 acoblada"
+        },
+        "trigger_type": {
+            "cleaning": "{entity_name} ha comen\u00e7at a netejar",
+            "docked": "{entity_name} acoblada"
+        }
+    },
+    "entity_component": {
+        "_": {
+            "name": "Aspirador",
+            "state": {
+                "cleaning": "Netejant",
+                "docked": "Aparcada",
+                "error": "Error",
+                "idle": "Inactiu",
+                "off": "OFF",
+                "on": "ON",
+                "paused": "Pausat/ada",
+                "returning": "Retornant a la base"
+            }
+        }
+    },
+    "issues": {
+        "platform_integration_no_support": {
+            "description": "La plataforma {platform} de la integraci\u00f3 {domain} no \u00e9s compatible amb la configuraci\u00f3 de la plataforma.\n\nElimina-la de la teva configuraci\u00f3 i reinicia Home Assistant per solucionar aquest problema.",
+            "title": "Suport de la plataforma no compatible"
+        }
+    },
+    "title": "Aspirador"
+}

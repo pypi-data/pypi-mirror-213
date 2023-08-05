@@ -1,0 +1,161 @@
+{
+    "entity": {
+        "sensor": {
+            "condition_4d": {
+                "name": "\u72b6\u6001 4 \u5929\u540e"
+            },
+            "condition_5d": {
+                "name": "\u72b6\u6001 5 \u5929\u540e"
+            },
+            "conditioncode": {
+                "name": "\u72b6\u6001\u4ee3\u7801"
+            },
+            "conditioncode_1d": {
+                "name": "\u72b6\u6001\u4ee3\u7801 1 \u5929\u540e"
+            },
+            "conditioncode_2d": {
+                "name": "\u72b6\u6001\u4ee3\u7801 2 \u5929\u540e"
+            },
+            "conditioncode_3d": {
+                "name": "\u72b6\u6001\u4ee3\u7801 3 \u5929\u540e"
+            },
+            "conditioncode_4d": {
+                "name": "\u72b6\u6001\u4ee3\u7801 4 \u5929\u540e"
+            },
+            "conditioncode_5d": {
+                "name": "\u72b6\u6001\u4ee3\u7801 5 \u5929\u540e"
+            },
+            "conditiondetailed": {
+                "name": "\u8be6\u7ec6\u72b6\u6001",
+                "state": {
+                    "clear": "\u6674\u6717",
+                    "light-rain": "\u5c0f\u96e8",
+                    "partlycloudy-rain": "\u5c40\u90e8\u591a\u4e91\uff0c\u6709\u96e8",
+                    "partlycloudy-snow": "\u5c40\u90e8\u591a\u4e91\uff0c\u6709\u96ea"
+                }
+            },
+            "conditiondetailed_1d": {
+                "name": "\u8be6\u7ec6\u72b6\u60011\u5929\u540e",
+                "state": {
+                    "clear": "\u6674\u6717",
+                    "light-rain": "\u5c0f\u96e8",
+                    "partlycloudy-rain": "\u5c40\u90e8\u591a\u4e91\uff0c\u6709\u96e8",
+                    "partlycloudy-snow": "\u5c40\u90e8\u591a\u4e91\uff0c\u6709\u96ea"
+                }
+            },
+            "conditiondetailed_2d": {
+                "name": "\u8be6\u7ec6\u72b6\u6001 2\u5929\u540e",
+                "state": {
+                    "clear": "\u6674\u6717",
+                    "light-rain": "\u5c0f\u96e8"
+                }
+            },
+            "conditiondetailed_4d": {
+                "state": {
+                    "light-rain": "\u5c0f\u96e8",
+                    "partlycloudy-rain": "\u5c40\u90e8\u591a\u4e91\uff0c\u6709\u96e8",
+                    "partlycloudy-snow": "\u5c40\u90e8\u591a\u4e91\uff0c\u6709\u96ea"
+                }
+            },
+            "conditiondetailed_5d": {
+                "name": "\u8be6\u7ec6\u72b6\u6001 5\u5929\u540e",
+                "state": {
+                    "clear": "\u6674\u6717",
+                    "light-rain": "\u5c0f\u96e8",
+                    "partlycloudy-rain": "\u5c40\u90e8\u591a\u4e91\uff0c\u6709\u96e8",
+                    "partlycloudy-snow": "\u5c40\u90e8\u591a\u4e91\uff0c\u6709\u96ea"
+                }
+            },
+            "rain_2d": {
+                "name": "\u964d\u96e82\u5929\u540e"
+            },
+            "rain_3d": {
+                "name": "\u964d\u96e83\u5929\u540e"
+            },
+            "rain_4d": {
+                "name": "\u964d\u96e84\u5929\u540e"
+            },
+            "rain_5d": {
+                "name": "\u964d\u96e85\u5929\u540e"
+            },
+            "rainchance_1d": {
+                "name": "\u964d\u96e8\u73871\u5929\u540e"
+            },
+            "rainchance_2d": {
+                "name": "\u964d\u96e8\u73872\u5929\u540e"
+            },
+            "rainchance_3d": {
+                "name": "\u964d\u96e8\u73873\u5929\u540e"
+            },
+            "rainchance_4d": {
+                "name": "\u964d\u96e8\u73874\u5929\u540e"
+            },
+            "rainchance_5d": {
+                "name": "\u964d\u96e8\u73875\u5929\u540e"
+            },
+            "rainlast24hour": {
+                "name": "\u8fc7\u53bb 24 \u5c0f\u65f6\u964d\u96e8"
+            },
+            "rainlasthour": {
+                "name": "\u8fc7\u53bb1\u5c0f\u65f6\u964d\u96e8"
+            },
+            "stationname": {
+                "name": "\u7ad9\u540d"
+            },
+            "sunchance_1d": {
+                "name": "\u653e\u6674\u73871\u5929\u540e"
+            },
+            "sunchance_2d": {
+                "name": "\u653e\u6674\u73872\u5929\u540e"
+            },
+            "sunchance_3d": {
+                "name": "\u653e\u6674\u73873\u5929\u540e"
+            },
+            "sunchance_4d": {
+                "name": "\u653e\u6674\u73874\u5929\u540e"
+            },
+            "sunchance_5d": {
+                "name": "\u653e\u6674\u73875\u5929\u540e"
+            },
+            "symbol": {
+                "name": "\u6807\u5fd7"
+            },
+            "symbol_1d": {
+                "name": "\u6807\u5fd7 1d"
+            },
+            "symbol_2d": {
+                "name": "\u6807\u5fd7 2d"
+            },
+            "symbol_3d": {
+                "name": "\u6807\u5fd7 3d"
+            },
+            "symbol_4d": {
+                "name": "\u6807\u5fd7 4d"
+            },
+            "symbol_5d": {
+                "name": "\u6807\u5fd7 5d"
+            },
+            "temperature": {
+                "name": "\u6e29\u5ea6"
+            },
+            "temperature_1d": {
+                "name": "\u6e29\u5ea61\u5929\u540e"
+            },
+            "temperature_2d": {
+                "name": "\u6e29\u5ea62\u5929\u540e"
+            },
+            "temperature_3d": {
+                "name": "\u6e29\u5ea63\u5929\u540e"
+            },
+            "temperature_4d": {
+                "name": "\u6e29\u5ea64\u5929\u540e"
+            },
+            "temperature_5d": {
+                "name": "\u6e29\u5ea65\u5929\u540e"
+            },
+            "visibility": {
+                "name": "\u80fd\u89c1\u5ea6"
+            }
+        }
+    }
+}

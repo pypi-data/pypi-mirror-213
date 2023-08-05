@@ -1,0 +1,44 @@
+{
+    "entity_component": {
+        "_": {
+            "name": "C\u00e0mera",
+            "state": {
+                "idle": "Inactiu",
+                "recording": "Enregistrant",
+                "streaming": "Transmetent v\u00eddeo"
+            },
+            "state_attributes": {
+                "access_token": {
+                    "name": "Token d'acc\u00e9s"
+                },
+                "brand": {
+                    "name": "Marca"
+                },
+                "frontend_stream_type": {
+                    "name": "Tipus de flux de v\u00eddeo",
+                    "state": {
+                        "hls": "HLS",
+                        "webrtc": "WebRTC"
+                    }
+                },
+                "model_name": {
+                    "name": "Model"
+                },
+                "motion_detection": {
+                    "name": "Detecci\u00f3 de moviment",
+                    "state": {
+                        "false": "Desactivada",
+                        "true": "Activada"
+                    }
+                }
+            }
+        }
+    },
+    "issues": {
+        "platform_integration_no_support": {
+            "description": "La plataforma {platform} de la integraci\u00f3 {domain} no \u00e9s compatible amb la configuraci\u00f3 de la plataforma.\n\nElimina-la de la teva configuraci\u00f3 i reinicia Home Assistant per solucionar aquest problema.",
+            "title": "Suport de la plataforma no compatible"
+        }
+    },
+    "title": "C\u00e0mera"
+}

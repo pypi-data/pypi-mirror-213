@@ -1,0 +1,42 @@
+{
+    "config": {
+        "abort": {
+            "access_not_configured": "Google-t\u00f3l kapott \u00fczenet:\n\n{message}",
+            "already_configured": "A fi\u00f3k m\u00e1r konfigur\u00e1lva van",
+            "reauth_successful": "Az \u00fajrahiteles\u00edt\u00e9s sikeres volt.",
+            "unknown": "V\u00e1ratlan hiba t\u00f6rt\u00e9nt"
+        },
+        "error": {
+            "cannot_connect": "Sikertelen csatlakoz\u00e1s",
+            "invalid_auth": "\u00c9rv\u00e9nytelen hiteles\u00edt\u00e9s"
+        },
+        "step": {
+            "channels": {
+                "data": {
+                    "channels": "YouTube csatorn\u00e1k"
+                },
+                "description": "V\u00e1lassza ki a hozz\u00e1adni k\u00edv\u00e1nt csatorn\u00e1kat."
+            }
+        }
+    },
+    "entity": {
+        "sensor": {
+            "latest_upload": {
+                "name": "Legut\u00f3bbi felt\u00f6lt\u00e9s"
+            },
+            "subscribers": {
+                "name": "Feliratkoz\u00f3k"
+            }
+        }
+    },
+    "options": {
+        "step": {
+            "init": {
+                "data": {
+                    "channels": "YouTube csatorn\u00e1k"
+                },
+                "description": "V\u00e1lassza ki a hozz\u00e1adni k\u00edv\u00e1nt csatorn\u00e1kat."
+            }
+        }
+    }
+}

@@ -1,0 +1,44 @@
+{
+    "entity_component": {
+        "_": {
+            "name": "C\u00e1mara",
+            "state": {
+                "idle": "Inactivo",
+                "recording": "Grabando",
+                "streaming": "Transmitiendo"
+            },
+            "state_attributes": {
+                "access_token": {
+                    "name": "Token de acceso"
+                },
+                "brand": {
+                    "name": "Marca"
+                },
+                "frontend_stream_type": {
+                    "name": "Tipo de transmisi\u00f3n",
+                    "state": {
+                        "hls": "HLS",
+                        "webrtc": "WebRTC"
+                    }
+                },
+                "model_name": {
+                    "name": "Modelo"
+                },
+                "motion_detection": {
+                    "name": "Detecci\u00f3n de movimiento",
+                    "state": {
+                        "false": "Deshabilitado",
+                        "true": "Habilitado"
+                    }
+                }
+            }
+        }
+    },
+    "issues": {
+        "platform_integration_no_support": {
+            "description": "La plataforma {platform} para la integraci\u00f3n {domain} no es compatible con la configuraci\u00f3n de la plataforma. \n\nElim\u00ednala de tu configuraci\u00f3n y reinicia Home Assistant para solucionar este problema.",
+            "title": "Soporte de plataforma no compatible"
+        }
+    },
+    "title": "C\u00e1mara"
+}

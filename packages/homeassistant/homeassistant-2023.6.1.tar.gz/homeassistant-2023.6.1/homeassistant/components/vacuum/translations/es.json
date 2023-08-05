@@ -1,0 +1,38 @@
+{
+    "device_automation": {
+        "action_type": {
+            "clean": "Dejar que {entity_name} limpie",
+            "dock": "Dejar que {entity_name} regrese a la base"
+        },
+        "condition_type": {
+            "is_cleaning": "{entity_name} est\u00e1 limpiando",
+            "is_docked": "{entity_name} en la base"
+        },
+        "trigger_type": {
+            "cleaning": "{entity_name} empez\u00f3 a limpiar",
+            "docked": "{entity_name} en la base"
+        }
+    },
+    "entity_component": {
+        "_": {
+            "name": "Aspiradora",
+            "state": {
+                "cleaning": "Limpiando",
+                "docked": "En la base",
+                "error": "Error",
+                "idle": "Inactivo",
+                "off": "Apagado",
+                "on": "Encendido",
+                "paused": "En pausa",
+                "returning": "Volviendo a la base"
+            }
+        }
+    },
+    "issues": {
+        "platform_integration_no_support": {
+            "description": "La plataforma {platform} para la integraci\u00f3n {domain} no es compatible con la configuraci\u00f3n de la plataforma. \n\nElim\u00ednala de tu configuraci\u00f3n y reinicia Home Assistant para solucionar este problema.",
+            "title": "Soporte de plataforma no compatible"
+        }
+    },
+    "title": "Aspiradora"
+}

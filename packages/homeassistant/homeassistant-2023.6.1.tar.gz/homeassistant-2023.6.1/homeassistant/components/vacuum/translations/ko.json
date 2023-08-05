@@ -1,0 +1,38 @@
+{
+    "device_automation": {
+        "action_type": {
+            "clean": "{entity_name}\uc744(\ub97c) \uccad\uc18c\uc2dc\ud0a4\uae30",
+            "dock": "{entity_name}\uc744(\ub97c) \ucda9\uc804\ub300\ub85c \ubcf5\uadc0\uc2dc\ud0a4\uae30"
+        },
+        "condition_type": {
+            "is_cleaning": "{entity_name}\uc774(\uac00) \uccad\uc18c \uc911\uc774\uba74",
+            "is_docked": "{entity_name}\uc774(\uac00) \ub3c4\ud0b9\ub418\uc5b4 \uc788\uc73c\uba74"
+        },
+        "trigger_type": {
+            "cleaning": "{entity_name}\uc774(\uac00) \uccad\uc18c\ud558\uae30 \uc2dc\uc791\ud588\uc744 \ub54c",
+            "docked": "{entity_name}\uc774(\uac00) \ub3c4\ud0b9\ud588\uc744 \ub54c"
+        }
+    },
+    "entity_component": {
+        "_": {
+            "name": "\uccad\uc18c\uae30",
+            "state": {
+                "cleaning": "\uccad\uc18c \uc911",
+                "docked": "\ub3c4\ud0b9\ub428",
+                "error": "\uc624\ub958",
+                "idle": "\uc720\ud734 \uc911",
+                "off": "\ub044\uae30",
+                "on": "\ucf1c\uae30",
+                "paused": "\uc77c\uc2dc \uc815\uc9c0",
+                "returning": "\ucda9\uc804\ub300\ub85c \ubcf5\uadc0 \uc911"
+            }
+        }
+    },
+    "issues": {
+        "platform_integration_no_support": {
+            "description": "{domain} \ud1b5\ud569\uc744 \uc704\ud55c {platform} \ud50c\ub7ab\ud3fc\uc740 \ud50c\ub7ab\ud3fc \uc124\uc815\uc744 \uc9c0\uc6d0\ud558\uc9c0 \uc54a\uc2b5\ub2c8\ub2e4.\n\n\uc774 \ubb38\uc81c\ub97c \ud574\uacb0\ud558\ub824\uba74 \uad6c\uc131\uc5d0\uc11c \uc81c\uac70\ud558\uace0 Home Assistant\ub97c \ub2e4\uc2dc \uc2dc\uc791\ud558\uc2ed\uc2dc\uc624.",
+            "title": "\uc9c0\uc6d0\ub418\uc9c0 \uc54a\ub294 \ud50c\ub7ab\ud3fc \uc9c0\uc6d0"
+        }
+    },
+    "title": "\uccad\uc18c\uae30"
+}

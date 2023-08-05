@@ -1,0 +1,34 @@
+{
+    "device_automation": {
+        "action_type": {
+            "select_first": "Muuda {entity_name} esimeseks valikuks",
+            "select_last": "Muuda {entity_name} viimaseks valikuks",
+            "select_next": "Muutda {entity_name} j\u00e4rgmiseks valikuks",
+            "select_option": "Muuda {entity_name} s\u00e4tteid",
+            "select_previous": "Muuda {entity_name} eelmiseks valikuks"
+        },
+        "condition_type": {
+            "selected_option": "Praegused {entity_name} s\u00e4tted"
+        },
+        "trigger_type": {
+            "current_option_changed": "Olemi {entity_name} s\u00e4tted on muudetud"
+        }
+    },
+    "entity_component": {
+        "_": {
+            "name": "Vali",
+            "state_attributes": {
+                "options": {
+                    "name": "Valikud"
+                }
+            }
+        }
+    },
+    "issues": {
+        "platform_integration_no_support": {
+            "description": "{domain} integreerimise platvorm {platform} ei toeta platvormi seadistamist. \n\n Selle probleemi lahendamiseks eemalda see oma konfiguratsioonist ja taask\u00e4ivita Home Assistant.",
+            "title": "Platvormi tuge ei toetata"
+        }
+    },
+    "title": "Vali"
+}

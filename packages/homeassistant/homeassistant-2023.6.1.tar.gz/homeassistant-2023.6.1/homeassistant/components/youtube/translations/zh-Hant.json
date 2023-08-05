@@ -1,0 +1,42 @@
+{
+    "config": {
+        "abort": {
+            "access_not_configured": "\u8acb\u95b1\u8b80\u4ee5\u4e0b\u5f9e Google \u6536\u5230\u7684\u6d88\u606f\uff1a \n\n {message}",
+            "already_configured": "\u5e33\u865f\u5df2\u7d93\u8a2d\u5b9a\u904e",
+            "reauth_successful": "\u91cd\u65b0\u8a8d\u8b49\u5df2\u6210\u529f",
+            "unknown": "\u672a\u9810\u671f\u7684\u932f\u8aa4"
+        },
+        "error": {
+            "cannot_connect": "\u9023\u7dda\u5931\u6557",
+            "invalid_auth": "\u7121\u6548\u7684\u8a8d\u8b49"
+        },
+        "step": {
+            "channels": {
+                "data": {
+                    "channels": "YouTube \u983b\u9053"
+                },
+                "description": "\u9078\u64c7\u60a8\u60f3\u8981\u65b0\u589e\u7684\u983b\u9053\u3002"
+            }
+        }
+    },
+    "entity": {
+        "sensor": {
+            "latest_upload": {
+                "name": "\u6700\u65b0\u4e0a\u50b3"
+            },
+            "subscribers": {
+                "name": "\u8a02\u95b1\u7528\u6236"
+            }
+        }
+    },
+    "options": {
+        "step": {
+            "init": {
+                "data": {
+                    "channels": "YouTube \u983b\u9053"
+                },
+                "description": "\u9078\u64c7\u60a8\u60f3\u8981\u65b0\u589e\u7684\u983b\u9053\u3002"
+            }
+        }
+    }
+}

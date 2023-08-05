@@ -1,0 +1,24 @@
+{
+    "device_automation": {
+        "trigger_type": {
+            "changed_states": "{entity_name} Update Verf\u00fcgbarkeit ge\u00e4ndert",
+            "turned_off": "{entity_name} wurde auf den neuesten Stand gebracht",
+            "turned_on": "F\u00fcr {entity_name} ist ein Update verf\u00fcgbar"
+        }
+    },
+    "entity_component": {
+        "_": {
+            "name": "Aktualisieren"
+        },
+        "firmware": {
+            "name": "Firmware"
+        }
+    },
+    "issues": {
+        "platform_integration_no_support": {
+            "description": "Die {platform}-Plattform f\u00fcr die {domain}-Integration unterst\u00fctzt die Plattform-Einrichtung nicht. \n\nBitte entferne es aus deiner Konfiguration und starte Home Assistant neu, um dieses Problem zu beheben.",
+            "title": "Plattform-Unterst\u00fctzung nicht unterst\u00fctzt"
+        }
+    },
+    "title": "Aktualisieren"
+}

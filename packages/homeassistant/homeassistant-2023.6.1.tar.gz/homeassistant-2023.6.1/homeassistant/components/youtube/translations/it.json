@@ -1,0 +1,42 @@
+{
+    "config": {
+        "abort": {
+            "access_not_configured": "Si prega di leggere il seguente messaggio che abbiamo ricevuto da Google: \n\n {message}",
+            "already_configured": "L'account \u00e8 gi\u00e0 configurato",
+            "reauth_successful": "La riautenticazione ha avuto successo",
+            "unknown": "Errore imprevisto"
+        },
+        "error": {
+            "cannot_connect": "Impossibile connettersi",
+            "invalid_auth": "Autenticazione non valida"
+        },
+        "step": {
+            "channels": {
+                "data": {
+                    "channels": "Canali YouTube"
+                },
+                "description": "Seleziona i canali che desideri aggiungere."
+            }
+        }
+    },
+    "entity": {
+        "sensor": {
+            "latest_upload": {
+                "name": "Ultimo caricamento"
+            },
+            "subscribers": {
+                "name": "Iscritti"
+            }
+        }
+    },
+    "options": {
+        "step": {
+            "init": {
+                "data": {
+                    "channels": "Canali YouTube"
+                },
+                "description": "Seleziona i canali che desideri aggiungere."
+            }
+        }
+    }
+}

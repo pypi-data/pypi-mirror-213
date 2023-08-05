@@ -1,0 +1,44 @@
+{
+    "entity_component": {
+        "_": {
+            "name": "Kamera",
+            "state": {
+                "idle": "Ne\u010dinn\u00e1",
+                "recording": "Z\u00e1znam",
+                "streaming": "Streamovanie"
+            },
+            "state_attributes": {
+                "access_token": {
+                    "name": "Pr\u00edstupov\u00fd token"
+                },
+                "brand": {
+                    "name": "Zna\u010dka"
+                },
+                "frontend_stream_type": {
+                    "name": "Typ streamu",
+                    "state": {
+                        "hls": "HLS",
+                        "webrtc": "WebRTC"
+                    }
+                },
+                "model_name": {
+                    "name": "Model"
+                },
+                "motion_detection": {
+                    "name": "Detekcia pohybu",
+                    "state": {
+                        "false": "Zak\u00e1zan\u00e9",
+                        "true": "Povolen\u00e9"
+                    }
+                }
+            }
+        }
+    },
+    "issues": {
+        "platform_integration_no_support": {
+            "description": "Platforma {platform} pre integr\u00e1ciu {domain} nepodporuje nastavenie platformy. \n\n Odstr\u00e1\u0148te ho z konfigur\u00e1cie a re\u0161tartujte Home Assistant, aby ste tento probl\u00e9m vyrie\u0161ili.",
+            "title": "Podpora platformy nie je podporovan\u00e1"
+        }
+    },
+    "title": "Kamera"
+}

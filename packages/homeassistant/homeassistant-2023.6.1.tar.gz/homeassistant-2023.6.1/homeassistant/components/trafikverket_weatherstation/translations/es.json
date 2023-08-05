@@ -1,0 +1,69 @@
+{
+    "config": {
+        "abort": {
+            "already_configured": "La cuenta ya est\u00e1 configurada"
+        },
+        "error": {
+            "cannot_connect": "No se pudo conectar",
+            "invalid_auth": "Autenticaci\u00f3n no v\u00e1lida",
+            "invalid_station": "No se pudo encontrar una estaci\u00f3n meteorol\u00f3gica con el nombre especificado",
+            "more_stations": "Se encontraron varias estaciones meteorol\u00f3gicas con el nombre especificado"
+        },
+        "step": {
+            "user": {
+                "data": {
+                    "api_key": "Clave API",
+                    "station": "Estaci\u00f3n"
+                }
+            }
+        }
+    },
+    "entity": {
+        "sensor": {
+            "precipitation": {
+                "state": {
+                    "drizzle": "Llovizna",
+                    "freezing_rain": "Lluvia helada",
+                    "hail": "Granizo",
+                    "none": "Ninguna",
+                    "rain": "Lluvia",
+                    "rain_snow_mixed": "Lluvia y nieve mezcladas",
+                    "snow": "Nieve"
+                }
+            },
+            "precipitation_amountname": {
+                "state": {
+                    "error": "Error",
+                    "heavy_rain": "Fuertes lluvias",
+                    "heavy_snow": "Fuertes nevadas",
+                    "heavy_snow_rain": "Fuertes lluvias y nieve mezcladas",
+                    "mild_rain": "Lluvia leve",
+                    "mild_snow": "Nieve leve",
+                    "mild_snow_rain": "Lluvia leve y nieve mezcladas",
+                    "moderate_rain": "Lluvia moderada",
+                    "moderate_snow": "Nieve moderada",
+                    "moderate_snow_rain": "Lluvia moderada y nieve mezcladas",
+                    "none": "Ninguno",
+                    "other": "Otro",
+                    "unknown": "Desconocido"
+                }
+            },
+            "wind_direction_text": {
+                "state": {
+                    "east": "Este",
+                    "east_south_east": "Sur-sureste",
+                    "north": "Norte",
+                    "north_east": "Noreste",
+                    "north_north_east": "Nor-noreste",
+                    "north_north_west": "Nor-noroeste",
+                    "north_west": "Noroeste",
+                    "south": "Sur",
+                    "south_east": "Sureste",
+                    "south_south_west": "Sur-suroeste",
+                    "south_west": "Suroeste",
+                    "west": "Oeste"
+                }
+            }
+        }
+    }
+}

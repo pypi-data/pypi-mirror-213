@@ -1,0 +1,25 @@
+{
+    "options": {
+        "step": {
+            "addon_menu": {
+                "menu_options": {
+                    "reconfigure_addon": "\u91cd\u65b0\u914d\u7f6e IEEE 802.15.4 \u65e0\u7ebf\u7535\u591a\u534f\u8bae\u652f\u6301",
+                    "uninstall_addon": "\u5220\u9664 IEEE 802.15.4 \u65e0\u7ebf\u7535\u591a\u534f\u8bae\u652f\u6301\u3002"
+                }
+            },
+            "notify_channel_change": {
+                "description": "Zigbee \u548c Thread \u9891\u9053\u6539\u53d8\u5df2\u542f\u52a8\uff0c\u5c06\u5728{delay_minutes}\u5206\u949f\u5185\u5b8c\u6210\u3002",
+                "title": "\u5df2\u542f\u52a8\u9891\u9053\u66f4\u6539"
+            },
+            "reconfigure_addon": {
+                "data": {
+                    "channel": "\u9891\u9053"
+                },
+                "title": "\u91cd\u65b0\u914d\u7f6e IEEE 802.15.4 \u65e0\u7ebf\u7535\u591a\u534f\u8bae\u652f\u6301"
+            },
+            "uninstall_addon": {
+                "title": "\u5220\u9664 IEEE 802.15.4 \u65e0\u7ebf\u7535\u591a\u534f\u8bae\u652f\u6301\u3002"
+            }
+        }
+    }
+}

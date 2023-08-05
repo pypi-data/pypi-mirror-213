@@ -1,0 +1,34 @@
+{
+    "device_automation": {
+        "action_type": {
+            "select_first": "{entity_name} \uccab \ubc88\uc9f8 \uc635\uc158\uc73c\ub85c \ubcc0\uacbd",
+            "select_last": "{entity_name} \ub9c8\uc9c0\ub9c9 \uc635\uc158\uc73c\ub85c \ubcc0\uacbd",
+            "select_next": "{entity_name} \ub2e4\uc74c \uc635\uc158\uc73c\ub85c \ubcc0\uacbd",
+            "select_option": "{entity_name} \uc635\uc158 \ubcc0\uacbd",
+            "select_previous": "{entity_name} \uc774\uc804 \uc635\uc158\uc73c\ub85c \ubcc0\uacbd"
+        },
+        "condition_type": {
+            "selected_option": "\ud604\uc7ac {entity_name} \uc120\ud0dd\ub41c \uc635\uc158"
+        },
+        "trigger_type": {
+            "current_option_changed": "{entity_name} \uc635\uc158\uc774 \ubcc0\uacbd\ub428"
+        }
+    },
+    "entity_component": {
+        "_": {
+            "name": "\uc120\ud0dd",
+            "state_attributes": {
+                "options": {
+                    "name": "\uc635\uc158"
+                }
+            }
+        }
+    },
+    "issues": {
+        "platform_integration_no_support": {
+            "description": "{domain} \ud1b5\ud569\uc744 \uc704\ud55c {platform} \ud50c\ub7ab\ud3fc\uc740 \ud50c\ub7ab\ud3fc \uc124\uc815\uc744 \uc9c0\uc6d0\ud558\uc9c0 \uc54a\uc2b5\ub2c8\ub2e4.\n\n\uc774 \ubb38\uc81c\ub97c \ud574\uacb0\ud558\ub824\uba74 \uad6c\uc131\uc5d0\uc11c \uc81c\uac70\ud558\uace0 Home Assistant\ub97c \ub2e4\uc2dc \uc2dc\uc791\ud558\uc2ed\uc2dc\uc624.",
+            "title": "\uc9c0\uc6d0\ub418\uc9c0 \uc54a\ub294 \ud50c\ub7ab\ud3fc \uc9c0\uc6d0"
+        }
+    },
+    "title": "\uc120\ud0dd"
+}

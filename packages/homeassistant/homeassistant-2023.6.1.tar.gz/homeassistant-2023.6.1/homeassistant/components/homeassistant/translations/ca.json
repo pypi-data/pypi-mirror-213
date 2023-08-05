@@ -1,0 +1,45 @@
+{
+    "issues": {
+        "config_entry_only": {
+            "description": "La integraci\u00f3 {domain} no admet la configuraci\u00f3 mitjan\u00e7ant fitxer YAML. \u00c9s possible que no notis cap problema evident amb la integraci\u00f3, per\u00f2 cap configuraci\u00f3 definida en YAML s'aplica realment.\n\nPer resoldre aix\u00f2: \n\n1. Si encara no ho has fet, [configura la integraci\u00f3]({add_integration}). \n\n2. Elimina `{domain}:` del teu fitxer de configuraci\u00f3 YAML. \n\n3. Reinicia Home Assistant.",
+            "title": "La integraci\u00f3 {domain} no admet la configuraci\u00f3 via YAML"
+        },
+        "country_not_configured": {
+            "description": "No s'ha configurat cap pa\u00eds, si us plau, actualitza la configuraci\u00f3 fent clic al bot\u00f3 \"m\u00e9s informaci\u00f3\" a continuaci\u00f3.",
+            "title": "El pa\u00eds no s'ha configurat"
+        },
+        "historic_currency": {
+            "description": "El valor de moneda {currency} ja no s'utilitza, modifica la configuraci\u00f3 del valor de moneda.",
+            "title": "El valor de moneda configurat ja no s'utilitza"
+        },
+        "integration_key_no_support": {
+            "description": "La integraci\u00f3 {domain} no admet la configuraci\u00f3 mitjan\u00e7ant fitxer YAML. \u00c9s possible que no notis cap problema evident amb la integraci\u00f3, per\u00f2 cap configuraci\u00f3 definida en YAML s'aplica realment.\n\nPer resoldre aix\u00f2: \n\n1. Si encara no ho has fet, [configura la integraci\u00f3]({add_integration}). \n\n2. Elimina `{domain}:` del teu fitxer de configuraci\u00f3 YAML. \n\n3. Reinicia Home Assistant.",
+            "title": "La integraci\u00f3 {domain} no admet la configuraci\u00f3 via YAML"
+        },
+        "platform_only": {
+            "description": "La integraci\u00f3 {domain} no admet la configuraci\u00f3 amb la seva pr\u00f2pia clau o entreada, s'ha de configurar a trav\u00e9s de les plataformes compatibles. \n\nPer resoldre aix\u00f2: \n\n1. Elimina `{domain}:` del teu fitxer de configuraci\u00f3 YAML. \n\n2. Reinicia Home Assistant.",
+            "title": "La integraci\u00f3 {domain} no admet la configuraci\u00f3 via YAML amb la seva pr\u00f2pia clau o entrada"
+        },
+        "python_version": {
+            "description": "La versi\u00f3 actual de Python {current_python_version} est\u00e0 obsoleta per funcionar amb Home Assistant i s'eliminar\u00e0 a Home Assistant {breaks_in_ha_version}. Si us plau, actualitza Python a la versi\u00f3 {required_python_version} per evitar que la teva inst\u00e0ncia de Home Assistant s'espatlli.",
+            "title": "S'est\u00e0 eliminant la compatibilitat amb Python {current_python_version}"
+        }
+    },
+    "system_health": {
+        "info": {
+            "arch": "Arquitectura de la CPU",
+            "config_dir": "Directori de configuraci\u00f3",
+            "dev": "Desenvolupador",
+            "docker": "Docker",
+            "hassio": "Supervisor",
+            "installation_type": "Tipus d'instal\u00b7laci\u00f3",
+            "os_name": "Fam\u00edlia del sistema operatiu",
+            "os_version": "Versi\u00f3 del sistema operatiu",
+            "python_version": "Versi\u00f3 de Python",
+            "timezone": "Zona hor\u00e0ria",
+            "user": "Usuari",
+            "version": "Versi\u00f3",
+            "virtualenv": "Entorn virtual"
+        }
+    }
+}
