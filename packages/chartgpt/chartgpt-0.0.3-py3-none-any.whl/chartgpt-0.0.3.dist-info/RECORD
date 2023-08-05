@@ -1,0 +1,11 @@
+chartgpt/__init__.py,sha256=IwSCBl3B6TbExdT1ydxHfZUjnPutQzo-tnA0VBFIcPY,449
+chartgpt/__main__.py,sha256=WH5V71YW6ippqYEY3r_RnodqcWJsg1pX1DZ5Dt1a8fQ,259
+chartgpt/chartgpt.py,sha256=fXJ0yvvg5X1Tc9LQ7qqYHEb_SG1-K8H10MgPMkhMgag,3505
+chartgpt/constants.py,sha256=-ZYx0PaJiPIFqnVmL6ECdA7Zn2caK9yXnuWhxLnhAHA,1110
+chartgpt/llm.py,sha256=HyCNkEqAgbnt-nz7tdD0JQP5E8iYe0PpEoOrA0avbBY,3471
+chartgpt/prompts/base.py,sha256=-oPwVt2LFKxL_s7XW0Fir4jdd7z_iQ_juAtNQP4DG88,542
+chartgpt/prompts/generate_python_code.py,sha256=gBgJdl_MTzKwnw7cuW-CK00wtUt6ucGA8UBvmUAC5Tc,1124
+chartgpt-0.0.3.dist-info/METADATA,sha256=nGvVhvguJ2Wu0gZtPi6LW6r_KRR7z3jw0BrKpIU2Q0E,3499
+chartgpt-0.0.3.dist-info/WHEEL,sha256=KGYbc1zXlYddvwxnNty23BeaKzh7YuoSIvIMO4jEhvw,87
+chartgpt-0.0.3.dist-info/licenses/LICENSE,sha256=qkiRgI_STx07R0qpZoAZh3QyEZXkSqrniLijGPsKuLE,1085
+chartgpt-0.0.3.dist-info/RECORD,,
