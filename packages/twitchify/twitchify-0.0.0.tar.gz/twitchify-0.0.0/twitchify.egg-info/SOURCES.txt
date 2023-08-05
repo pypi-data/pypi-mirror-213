@@ -1,0 +1,6 @@
+setup.py
+twitch/__init__.py
+twitchify.egg-info/PKG-INFO
+twitchify.egg-info/SOURCES.txt
+twitchify.egg-info/dependency_links.txt
+twitchify.egg-info/top_level.txt
