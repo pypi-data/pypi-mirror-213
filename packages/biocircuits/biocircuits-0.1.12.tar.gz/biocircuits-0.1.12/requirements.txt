@@ -1,0 +1,10 @@
+numpy
+scipy
+pandas
+numba
+tqdm
+multiprocess
+bokeh
+matplotlib
+colorcet
+eqtk
