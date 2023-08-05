@@ -1,0 +1,9 @@
+pint
+plotly
+numpy
+streamlit
+matplotlib
+kaleido
+
+[tests]
+pytest
