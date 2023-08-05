@@ -1,0 +1,3 @@
+[console_scripts]
+specctl=specctl.specctl:transform
+
