@@ -1,0 +1,10 @@
+README.md
+pyproject.toml
+setup.py
+pascal/__init__.py
+pascal/main.py
+pascal_voc.egg-info/PKG-INFO
+pascal_voc.egg-info/SOURCES.txt
+pascal_voc.egg-info/dependency_links.txt
+pascal_voc.egg-info/requires.txt
+pascal_voc.egg-info/top_level.txt
