@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/lib_dzne_igblastn/__init__.py
+src/lib_dzne_igblastn/_functions.py
+src/lib_dzne_igblastn/_parsers.py
+src/lib_dzne_igblastn.egg-info/PKG-INFO
+src/lib_dzne_igblastn.egg-info/SOURCES.txt
+src/lib_dzne_igblastn.egg-info/dependency_links.txt
+src/lib_dzne_igblastn.egg-info/requires.txt
+src/lib_dzne_igblastn.egg-info/top_level.txt
