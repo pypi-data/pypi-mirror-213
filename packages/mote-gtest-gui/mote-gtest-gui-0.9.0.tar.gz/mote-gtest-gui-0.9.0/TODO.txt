@@ -1,0 +1,72 @@
+General:
+- extend code comments
+- refactor according to remaining pylint warnings
+- test suite at least for filter_expr & gtest sharding & gtest parser
+
+gtest:
+- clean-up at shutdown: delete traces from file that were deleted from result log
+- import of trace with core: executable not linked & not cleaned upon trace removal
+- import of trace: executable file & timestamp is unknown:
+  Add "info" file to directory, or encode name in sub-directory path (hash);
+  prerequisite: allow only one exe per directory even if timestamp equal
+- after crash: check if core dump is enabled, add warning to trace file
+- if /proc/sys/kernel/core_pattern pipes to apport: copy core from /var/lib/apport/coredump/
+- unit-test on many CPUs: GUI is overloaded => throttle updates of result log
+- optimize TC allocation per CPU: consider actual duration
+- restart test job after crash of a test case (problem: cannot change filter
+  without affecting gtest's "sharding", i.e. CPU partitioning)
+- Repeat with the actual SEED value (not supported by gtest)
+
+main:
+- import trace upon start: use separate thread
+- add menu cmd for trace import from file
+- support gtest input via socket
+- hide test_ctrl: switch status_line to wid_test_log
+
+wid_test_ctrl:
+- enhance popup_test_list for case that there's single test suite
+- option to make tc filter-string case-independent? (problem: gtest compatibility)
+- remote control for campaign start/stop for use in IDE build
+
+wid_test_log:
+- menu for result mgmt: remove selected, all old passed, all filtered;
+- when removing traces: rewrite trace files to actually remove text?
+  problem: cannot be done while test campaign is running for that file
+  OR: new command for "compressing" trace files
+- add key binding for toggling repetition mark on selected test cases
+- allow adding bookmark / attaching note to result log entries
+
+dlg_browser:
+- trowser command argv: use shell if cmd contains space or special chars; check if escape needed
+  or add config option
+- export trace files in other archive formats, or uncompressed to directory
+- make gdb command used for core dump analysis configurable
+
+dlg_config:
+- extend option for cleaning trace upon exit: Radiobutton all/failed-only/ask
+- add option: Save test control settings when quitting?
+- add option: Reg.exp. for extracting failure line
+  requires to parse all traces after changing expression to update file/line of exception
+- upon window close: ask for saving pending changes
+
+filter_expr:
+- use wildcard at front or middle to minimize name length
+- check_pattern: offer automatic correction (e.g. case)
+- replace use of Tcl "string match" for gtest filter globs
+
+dlg_tc_list:
+- update column widths after font change - same for dlg_job_list
+- add footer containing sums: #test cases, total pass/fail, exec time, #enabled
+- folding: show test suite names only (possibly controllable individually?)
+- add column showing skip count
+- enable sort via click in column head / via ctx menu
+- entry field for filtering by name
+
+dlg_job_list:
+- keep completed processes during the active campaign to see if done or crashed
+- use mclistbox (multi-column listbox, available in Tcl/Tk)
+- allow sending KILL signal to job
+- show %CPU read via /proc (Linux only)
+
+dlg_help:
+- text search

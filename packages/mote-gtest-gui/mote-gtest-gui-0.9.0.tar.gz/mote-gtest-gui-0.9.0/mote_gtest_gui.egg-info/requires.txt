@@ -1,0 +1,4 @@
+trowser
+
+[:platform_system == "Windows"]
+appdirs

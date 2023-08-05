@@ -1,0 +1,31 @@
+#!pythonw
+
+# ------------------------------------------------------------------------ #
+# Copyright (C) 2023 Th. Zoerner
+# ------------------------------------------------------------------------ #
+# This program is free software: you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation, either version 3 of the License, or
+# (at your option) any later version.
+#
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License
+# along with this program.  If not, see <http://www.gnu.org/licenses/>.
+# ------------------------------------------------------------------------ #
+
+import os
+
+# Add directory containing script to path in case trowser.py is at same location
+script_path = os.path.dirname(__file__)
+os_path = os.environ.get("PATH", None)
+if os_path:
+    if not script_path in os_path.split(os.pathsep):
+        os.environ["PATH"] = os_path + os.pathsep + script_path
+else:
+    os.environ["PATH"] = script_path
+
+import gtest_gui.__main__
