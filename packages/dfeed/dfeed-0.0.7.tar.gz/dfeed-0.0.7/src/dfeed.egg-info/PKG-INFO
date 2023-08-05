@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: dfeed
+Version: 0.0.7
+Summary: dfeed - dmenu + sfeed (works with fzf, and rofi too)
+License: GNU General Public License v3 (GPLv3)
+Project-URL: repository, https://codeberg.org/johndovern/dfeed
+Keywords: mpv,sfeed,dmenu
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# dfeed
+dfeed - dmenu + sfeed (works with fzf, and rofi too)
+
+[sfeed](https://codemadness.org/git/sfeed/file/README.html) is great  for
+scripting and there are many ways to use it.  dfeed aims to let a user access
+all the great parts about sfeed with the convenience of  dmenu, fzf, or rofi.

@@ -1,0 +1,2 @@
+[console_scripts]
+dfeed = dfeed.__main__:main
