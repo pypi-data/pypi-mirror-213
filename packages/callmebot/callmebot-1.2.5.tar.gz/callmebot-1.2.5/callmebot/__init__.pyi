@@ -1,0 +1,9 @@
+def whatsapp(message: str) -> str: ...
+def signal(message: str) -> str: ...
+def telegram(message: str) -> str: ...
+
+whatsapp_phone: str
+whatsapp_apikey: str
+signal_phone: str
+signal_apikey: str
+telegram_username: str
