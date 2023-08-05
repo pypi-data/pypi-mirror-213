@@ -1,0 +1,17 @@
+files:
+  - ".gitignore"
+  - ".github"
+  - ".vscode"
+  - "tests/conftest.py"
+  - ".flake8"
+  - ".pre-commit-config.yml"
+  - ".pypirc"
+  - "docs"
+  - "LICENSE"
+  - "README.md"
+  - "pyproject.toml"
+
+  - "!.github/workflows/template-sync.yml"
+  - "!.github/template-sync.yml"
+  - "!src/pyrchive"
+  - "!tests/test_archive_sesh.py"
