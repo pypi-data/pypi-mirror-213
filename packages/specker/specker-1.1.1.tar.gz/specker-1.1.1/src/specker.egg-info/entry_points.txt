@@ -1,0 +1,3 @@
+[console_scripts]
+generate-spec-docs = specker:generate_spec_docs
+validate-spec-file = specker:validate_spec_file
