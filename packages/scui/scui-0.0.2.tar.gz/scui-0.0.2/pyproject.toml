@@ -1,0 +1,36 @@
+[project]
+name = "scui"
+description = "Demo static svelte UI distributed as a python package."
+authors = [{name = "Jürgen Leschner", email = "jldec@users.noreply.github.com"}]
+readme = "README.md"
+license = {file = "LICENSE"}
+classifiers = ["License :: OSI Approved :: MIT License"]
+dynamic = ["version"]
+
+dependencies = [
+    "aiohttp"
+]
+
+[project.urls]
+Home = "https://github.com/jldec/scui"
+
+[project.scripts]
+scui = "scui:main"
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+scui = ["dist/**/*"]
+
+[tool.setuptools.dynamic]
+version = {attr = "scui.scui.__version__"}
+
+[tool.pytest.ini_options]
+testpaths = [
+    "scui/tests",
+]

@@ -1,0 +1,2 @@
+[console_scripts]
+scui = scui:main
