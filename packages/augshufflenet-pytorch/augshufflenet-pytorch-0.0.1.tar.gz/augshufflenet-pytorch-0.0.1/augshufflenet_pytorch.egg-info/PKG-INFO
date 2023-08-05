@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: augshufflenet-pytorch
+Version: 0.0.1
+Summary: AugShuffleNet: Communicate More, Compute Less - Pytorch
+Home-page: https://github.com/i404788/augshufflenet-pytorch
+Author: Ferris Kwaijtaal
+Author-email: ferris+gh@devdroplets.com
+License: MIT
+Keywords: artificial intelligence,deep learning,shufflenet,convnet,computer vision
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+UNKNOWN
+

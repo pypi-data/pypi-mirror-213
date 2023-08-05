@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+augshufflenet_pytorch/__init__.py
+augshufflenet_pytorch.egg-info/PKG-INFO
+augshufflenet_pytorch.egg-info/SOURCES.txt
+augshufflenet_pytorch.egg-info/dependency_links.txt
+augshufflenet_pytorch.egg-info/requires.txt
+augshufflenet_pytorch.egg-info/top_level.txt
