@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: MobilityCapstone1
+Version: 0.0.1
+Summary: DSC 공유대학 모빌리티캡스톤1 교통사고 유발요소 자동분석 시스템
+Home-page: https://github.com/Songmi54/MobilityCapstone1
+Author: songmi0504
+Author-email: songmi000504@gmail.com
+License: UNKNOWN
+Keywords: MobilityCapstone,Mobility,Capstone
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Python: >=3.6
+
+UNKNOWN
+
