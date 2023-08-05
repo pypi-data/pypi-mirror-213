@@ -1,0 +1,10 @@
+veles_research/__init__.py,sha256=WQnU1ZPdgyKJuOMf8ZDUtzEkK4NAWgkEqO3Sqr5EKSo,114
+veles_research/options.py,sha256=GjPSYUn4zUipl8Xi90lbOTHYZ-OUO6flIyTCccWeVQI,1004
+veles_research/question_types.py,sha256=IEA5TB4xK_PntbVegCXunOjYyYXg9slOvxGOVNHN7ZU,1343
+veles_research/structure.py,sha256=8fhDMFe87Suxln-6bvCVnAW9JPjj-OGCu2SMSI_ISuo,3684
+veles_research/survey_tools.py,sha256=EeSj1qQTA8-GinCQatfapFii8xTZFhSblf4zoIbxq-g,736
+veles_research/test.py,sha256=ptWPCjMpRu6hqWFkJhBG4nNfJHs1zgfBtbeEJYxOCpE,1077
+VelesResearch-0.0.1.dist-info/METADATA,sha256=DEZN_8PNEDIQkjkyD-NttqGgA9e01uc4AR_GLne8wJE,298
+VelesResearch-0.0.1.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+VelesResearch-0.0.1.dist-info/top_level.txt,sha256=QF43Lf5m53YolgIjFiMZ2LYi8vgk8PslMKZmW0q4k3g,15
+VelesResearch-0.0.1.dist-info/RECORD,,
