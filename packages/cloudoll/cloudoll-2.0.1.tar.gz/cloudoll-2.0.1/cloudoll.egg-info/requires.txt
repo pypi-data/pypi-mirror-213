@@ -1,0 +1,11 @@
+requests
+colorlog
+aiomysql
+aiopg
+aiohttp
+aioredis
+aiomcache
+jinja2
+pyjwt
+aiohttp_session[secure]
+PyYAML
