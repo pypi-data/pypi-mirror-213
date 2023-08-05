@@ -1,0 +1,3 @@
+[sceptre.hooks]
+openapi_substituter=hook.openapi_substituter:OpenApiSubstituter
+
