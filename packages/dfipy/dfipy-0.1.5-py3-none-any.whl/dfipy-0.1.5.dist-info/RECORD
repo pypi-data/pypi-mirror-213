@@ -1,0 +1,10 @@
+LICENCE,sha256=Z3sFIB_ObDxSZgbd81gBUM-4Ef_S5Fwl16a_U2aeeeY,568
+dfi/__init__.py,sha256=u69QGXkMUP9u9c01uQ38lWweG5wfrD0J5Jv_g5o4_zs,194
+dfi/analysis.py,sha256=n1kMp9xYNITuHdwWH72Zn7fELOb-jwfK2HSjCaaegec,16347
+dfi/connection.py,sha256=THTdwPbryMK2f6X_Au6RtCZIuWzIpT0dVxYuraumyA4,4631
+dfi/getters.py,sha256=PWvQxaqZbgKGe8rql2xN6cUOrZuwKm6u0UT1Yaa8cEs,26566
+dfi/show.py,sha256=VhjPmUL2QZmphBNQpwqvv8jOMonDfsOfe514EDOdJEk,14461
+dfi/stream.py,sha256=BTSY7olB2vHDFvfjW7JjOk0IOjAJV-YrdXrcdUCqqUE,7008
+dfipy-0.1.5.dist-info/METADATA,sha256=UEVOELlfTwN1s90RuXJiWsWgV7FYeI2UK7tlX-TwGkk,2657
+dfipy-0.1.5.dist-info/WHEEL,sha256=WGfLGfLX43Ei_YORXSnT54hxFygu34kMpcQdmgmEwCQ,88
+dfipy-0.1.5.dist-info/RECORD,,
