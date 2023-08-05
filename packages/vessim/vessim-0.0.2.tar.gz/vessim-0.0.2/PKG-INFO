@@ -1,0 +1,43 @@
+Metadata-Version: 2.1
+Name: vessim
+Version: 0.0.2
+Summary: A simulator for carbon-aware applications and systems.
+Keywords: simulation,energy system,testbed,carbon-aware
+Author-email: Philipp Wiesner <wiesner@tu-berlin.de>
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Science/Research
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Software Development :: Testing
+Classifier: Topic :: Education
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3 :: Only
+Requires-Dist: pandas
+Requires-Dist: mosaik
+Requires-Dist: mosaik-api
+Project-URL: Bug Reports, https://github.com/dos-group/vessim/issues
+Project-URL: Homepage, https://github.com/dos-group/vessim
+Project-URL: Source, https://github.com/dos-group/vessim
+
+# Vessim
+
+# Installation
+
+Install the requirements in a virtual environment:
+
+```
+python3 -m venv venv              # create venv
+. venv/bin/activate               # activate venv
+pip3 install -r requirements.txt  # install dependencies
+```
+install & start docker `systemctl start docker`
+

@@ -1,0 +1,45 @@
+# general
+pandas
+numpy
+
+# analysis
+jupyterlab
+matplotlib==3.6
+seaborn==0.12.2
+
+# database
+docker
+redis
+uvicorn
+fastapi
+
+# core
+mosaik
+mosaik-api
+mosaik-csv
+mosaik-pandapower
+# mosaik-hdf5
+# mosaik-web
+# NREL-PySAM
+
+# custom
+# boto3  # used in AwsPowerMeter
+
+# mqtt for physical power meter
+paho-mqtt
+
+# testing
+pytest
+
+# typechecking
+mypy
+pandas-stubs
+types-requests
+types-redis
+
+# linting
+black
+ruff
+
+# build
+flit
