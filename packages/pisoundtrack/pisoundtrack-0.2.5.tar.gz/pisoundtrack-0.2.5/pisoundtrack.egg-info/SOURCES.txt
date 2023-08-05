@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+pisoundtrack/__init__.py
+pisoundtrack/__main__.py
+pisoundtrack/config-template.yml
+pisoundtrack/soundtrack.py
+pisoundtrack.egg-info/PKG-INFO
+pisoundtrack.egg-info/SOURCES.txt
+pisoundtrack.egg-info/dependency_links.txt
+pisoundtrack.egg-info/requires.txt
+pisoundtrack.egg-info/top_level.txt

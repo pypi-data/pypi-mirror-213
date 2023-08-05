@@ -1,0 +1,8 @@
+pin: 2
+id: 0
+logpath: log
+influxdbconn:
+  host: pi00
+  bucket: hometelemetry
+  user: writer
+  password: +++++++++++++
