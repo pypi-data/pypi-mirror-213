@@ -1,0 +1,36 @@
+# Package Overview
+package_name: genero_pipe
+
+# Data Files
+training_data_file: train.csv
+test_data_file: test.csv
+
+# Variables
+# The variable we are attempting to predict
+target: Male
+
+pipeline_name: genero_pipe
+pipeline_save_file: genero_pipe_m
+
+
+features:
+  - Height
+  - Weight
+  - Age
+  - Country
+
+# set train/test split
+test_size: 0.3
+
+# to set the random seed
+random_state: 0
+
+
+numerical_vars_with_na:
+  - Height
+  - Weight
+
+drop_features:
+  - Age
+  - Country
+
