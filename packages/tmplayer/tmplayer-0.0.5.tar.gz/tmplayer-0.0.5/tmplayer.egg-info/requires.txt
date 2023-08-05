@@ -1,0 +1,9 @@
+urwid>=2.1.2
+python-vlc>=3.0.18121
+
+[formatting]
+black
+
+[linting]
+flake8
+mypy

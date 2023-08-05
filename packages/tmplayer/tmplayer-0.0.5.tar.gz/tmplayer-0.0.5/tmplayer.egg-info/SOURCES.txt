@@ -1,0 +1,15 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+tmplayer/__init__.py
+tmplayer/main.py
+tmplayer/player.py
+tmplayer/ui.py
+tmplayer/version.py
+tmplayer.egg-info/PKG-INFO
+tmplayer.egg-info/SOURCES.txt
+tmplayer.egg-info/dependency_links.txt
+tmplayer.egg-info/entry_points.txt
+tmplayer.egg-info/requires.txt
+tmplayer.egg-info/top_level.txt
