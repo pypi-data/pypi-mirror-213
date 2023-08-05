@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+cloudvault/__init__.py
+cloudvault/cloud_storage.py
+cloudvault.egg-info/PKG-INFO
+cloudvault.egg-info/SOURCES.txt
+cloudvault.egg-info/dependency_links.txt
+cloudvault.egg-info/requires.txt
+cloudvault.egg-info/top_level.txt
