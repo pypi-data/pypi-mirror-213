@@ -1,0 +1,10 @@
+wheel
+keras
+tensorflow
+numpy
+
+[dev]
+pytest
+
+[notebook]
+jupyterlab
