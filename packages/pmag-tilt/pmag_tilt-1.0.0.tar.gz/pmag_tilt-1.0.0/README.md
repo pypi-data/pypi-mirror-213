@@ -1,0 +1,3 @@
+This code package contains functions to perform the analysis needed for continental marginal tilt and as supplementary material to Mirzaei et al. (2023). However, it can also be used for the following applications: converting unit vectors from XYZ to polar coordinates and vice versa, finding the angle between vectors (directions), APWP interpolation, and wherever the goal is to find the amount of tilt (or folding) by comparing paleomagnetic directions.
+
+For more details about each function please refer to description part of each function.

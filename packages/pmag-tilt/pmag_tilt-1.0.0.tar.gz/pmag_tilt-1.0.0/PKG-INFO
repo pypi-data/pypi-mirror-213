@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: pmag_tilt
+Version: 1.0.0
+Summary: This code package contains functions to perform the analysis needed for continental marginal tilt and as supplementary material to Mirzaei et al. (2023). However, it can also be used for the following applications: converting unit vectors from XYZ to polar coordinates and vice versa, finding the angle between vectors (directions), APWP interpolation, and wherever the goal is to find the amount of tilt (or folding) by comparing paleomagnetic directions.
+Project-URL: Homepage, https://github.com/mmsmasoud/pmag_tilt
+Project-URL: Bug Tracker, https://github.com/mmsmasoud/pmag_tilt/issues
+Author-email: Masoud Mirzaei <mmsmasoud@gmail.com>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.7
+Requires-Dist: appdirs
+Requires-Dist: future
+Requires-Dist: matplotlib
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: pmagpy
+Requires-Dist: pytz
+Requires-Dist: requests
+Requires-Dist: scipy
+Requires-Dist: seaborn
+Requires-Dist: setuptools
+Requires-Dist: shapely
+Requires-Dist: wget
+Description-Content-Type: text/markdown
+
+This code package contains functions to perform the analysis needed for continental marginal tilt and as supplementary material to Mirzaei et al. (2023). However, it can also be used for the following applications: converting unit vectors from XYZ to polar coordinates and vice versa, finding the angle between vectors (directions), APWP interpolation, and wherever the goal is to find the amount of tilt (or folding) by comparing paleomagnetic directions.
+
+For more details about each function please refer to description part of each function.

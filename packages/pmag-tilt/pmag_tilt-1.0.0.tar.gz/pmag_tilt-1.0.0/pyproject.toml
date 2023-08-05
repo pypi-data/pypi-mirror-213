@@ -1,0 +1,37 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "pmag_tilt"
+version = "1.0.0"
+dependencies = [
+  'numpy',
+  'pmagpy',
+  'scipy',
+  'matplotlib',
+  'appdirs',
+  'future',
+  'pandas',
+  'pytz',
+  'Requests',
+  'seaborn',
+  'setuptools',
+  'Shapely',
+  'wget',
+]
+authors = [
+  { name="Masoud Mirzaei", email="mmsmasoud@gmail.com" },
+]
+description = "This code package contains functions to perform the analysis needed for continental marginal tilt and as supplementary material to Mirzaei et al. (2023). However, it can also be used for the following applications: converting unit vectors from XYZ to polar coordinates and vice versa, finding the angle between vectors (directions), APWP interpolation, and wherever the goal is to find the amount of tilt (or folding) by comparing paleomagnetic directions."
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/mmsmasoud/pmag_tilt"
+"Bug Tracker" = "https://github.com/mmsmasoud/pmag_tilt/issues"
