@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: bischoff_and_ratcliff_1995
+Version: 0.1.0
+Summary: Instance generator, as described in the paper of Bischoff and Ratcliff (1995)
+Home-page: https://github.com/lucasguesserts/bischoff-and-ratcliff-1995
+Author: Lucas Guesser
+Author-email: lucasguesserts@gmail.com
+Keywords: container loading problem,knapsack problem,single large object placement problem (slopp),packing problem
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Scientific/Engineering
+Requires-Python: >=3.0
+License-File: LICENSE

@@ -1,0 +1,84 @@
+#!/usr/bin/env python3
+
+import json
+import os
+
+import bischoff_and_ratcliff_1995 as br95
+
+# input parameters
+OUTPUT_DIR = "data/"
+ALL_INSTANCES_FILE_PATH = os.path.join(OUTPUT_DIR, "data.json")
+NUMBER_OF_INSTANCES_PER_BOX_TYPE = 100
+CONTAINER_DIMENSIONS = {
+    "length": 587,
+    "width": 233,
+    "height": 220,
+}  # the dimensions in cm of a 20 ft ISO container in 1995.
+NUMBER_OF_DIFFERENT_BOX_TYPES_LIST = [
+    1,
+    3,
+    5,
+    8,
+    10,
+    12,
+    15,
+    20,
+    30,
+    40,
+    50,
+    60,
+    70,
+    80,
+    90,
+    100,
+]  # n
+assert len(NUMBER_OF_DIFFERENT_BOX_TYPES_LIST) == 16
+BOX_DIMENSION_LOWER_LIMITS = [30, 25, 20]  # a_j, \forall j \in \{1, 2, 3\}
+BOX_DIMENSION_UPPER_LIMITS = [120, 100, 80]  # b_j, \forall j \in \{1, 2, 3\}
+BOX_STABILITY_LIMIT = 2  # L
+
+
+def random_seed_generator(p):
+    return 2502505 + 100 * (p - 1)
+
+
+def set_name(instance_set_number):
+    return f"set_{instance_set_number}"
+
+
+def initialize_instances(number_of_different_box_types_list):
+    return {
+        set_name(instance_set_number): []
+        for instance_set_number in range(len(number_of_different_box_types_list))
+    }
+
+
+def write_instance(instance_set_number, instance_number, instance):
+    output_dir = os.path.join(OUTPUT_DIR, f"set_{instance_set_number}")
+    os.makedirs(output_dir, exist_ok=True)
+    file_path = os.path.join(output_dir, f"{instance_number}.json")
+    with open(file_path, "w") as file:
+        json.dump(instance.to_dict(), file, indent=2)
+
+
+if __name__ == "__main__":
+    instances = initialize_instances(NUMBER_OF_DIFFERENT_BOX_TYPES_LIST)
+    for instance_set_number, number_of_different_box_types in enumerate(
+        NUMBER_OF_DIFFERENT_BOX_TYPES_LIST
+    ):
+        for instance_number in range(1, NUMBER_OF_INSTANCES_PER_BOX_TYPE + 1):
+            instance = br95.Instance(
+                C=CONTAINER_DIMENSIONS,
+                n=number_of_different_box_types,
+                a=BOX_DIMENSION_LOWER_LIMITS,
+                b=BOX_DIMENSION_UPPER_LIMITS,
+                L=BOX_STABILITY_LIMIT,
+                s=random_seed_generator(instance_number),
+            )
+            write_instance(instance_set_number, instance_number, instance)
+            instances[set_name(instance_set_number)].append(instance.to_dict())
+
+    with open(ALL_INSTANCES_FILE_PATH, "w") as file:
+        json.dump(instances, file, indent=2)
+
+    print(f"instances written into the directory '{OUTPUT_DIR}'")

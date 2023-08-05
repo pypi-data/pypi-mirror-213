@@ -1,0 +1,15 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+bin/generate_all_instances
+bischoff_and_ratcliff_1995/Instance.py
+bischoff_and_ratcliff_1995/Random.py
+bischoff_and_ratcliff_1995/__init__.py
+bischoff_and_ratcliff_1995.egg-info/PKG-INFO
+bischoff_and_ratcliff_1995.egg-info/SOURCES.txt
+bischoff_and_ratcliff_1995.egg-info/dependency_links.txt
+bischoff_and_ratcliff_1995.egg-info/requires.txt
+bischoff_and_ratcliff_1995.egg-info/top_level.txt
+test/test_Instance.py
+test/test_Random.py
