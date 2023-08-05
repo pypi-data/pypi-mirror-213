@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "prodot"
+version = "0.3.6"
+description = ""
+authors = ["Matheus Menezes Almeida <mrotame@gmail.com>"]
+license = "GNU GENERAL PUBLIC LICENSE"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+jsonpath-ng = "^1.5.3"
+
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.2.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
