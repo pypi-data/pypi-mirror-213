@@ -1,0 +1,76 @@
+[build-system]
+requires = [
+    "pdm-backend",
+]
+build-backend = "pdm.backend"
+
+[project]
+name = "Extractable"
+version = "0.0.28"
+description = "Extract tables from PDFs"
+authors = [
+    { name = "Suleymen C. Kandrouch", email = "suleyleeuw@gmail.com" },
+]
+dependencies = [
+    "Faker ~= 18.9.0",
+    "Pillow >= 9.2.0",
+    "PyPDF2 ~= 3.0.1",
+    "build ~= 0.10.0",
+    "defusedxml ~= 0.7.1",
+    "matplotlib >=3",
+    "mkdocs ~= 1.4.3",
+    "openpyxl ~= 3.1.2",
+    "pandas ~= 2.0.2",
+    "pandas-stubs ~= 2.0.2.230605 ",
+    "pdf2image ~= 1.15.1",
+    "pdf2jpg ~= 1.1",
+    "pytesseract ~= 0.3.10",
+    "scipy ~= 1.10.1",
+    "setuptools >=61.0",
+    "svgwrite ~= 1.4.3",
+    "timm ~= 0.9.2",
+    "toolz ~= 0.12.0",
+    "torch ~= 2.0.1",
+    "transformers ~= 4.29.2",
+    "wheel ~= 0.40.0",
+    "bs4>=0.0.1",
+    "requests>=2.31.0",
+]
+requires-python = ">=3.8,<3.12"
+readme = "README.md"
+keywords = [
+    "python",
+    "table-extraction",
+    "pdf",
+    "TATR",
+    "Table Transformer",
+    "Computer Vision",
+]
+classifiers = [
+    "License :: OSI Approved :: MIT License",
+    "Natural Language :: English",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.11",
+]
+
+[project.license]
+text = "MIT"
+
+[project.urls]
+Homepage = "https://github.com/SuleyNL/Extractable"
+Downloads = "https://github.com/SuleyNL/Extractable/archive/refs/tags/v1.0.0.tar.gz"
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.3.1",
+    "pdm>=2.7.0",
+]
+
+[tool.setuptools.package-dir]
+"" = "src"
+
+[tool.pdm]
+package-dir = "src"
+
+[mypy]
+ignore_missing_imports = "True"
