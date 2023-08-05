@@ -1,0 +1,3 @@
+[xblock.v1]
+excluded_html5 = html_xblock:ExcludedHTML5XBlock
+html5 = html_xblock:HTML5XBlock
