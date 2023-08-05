@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+dartrig/__init__.py
+dartrig/annotations.py
+dartrig/parser.py
+dartrig.egg-info/PKG-INFO
+dartrig.egg-info/SOURCES.txt
+dartrig.egg-info/dependency_links.txt
+dartrig.egg-info/requires.txt
+dartrig.egg-info/top_level.txt
+test/test_dart_parser.py
