@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: raw-telegram-api
+Version: 1.0
+Summary: Raw Telegram API
+Author: mishpro
+Author-email: mishpro <root@venusbiser.ru>
+Project-URL: Homepage, https://github.com/mishpro-programm/raw-telegram-api
+Project-URL: Bug Tracker, https://github.com/mishpro-programm/raw-telegram-api/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >3
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# raw-telegram-api
+Raw Telegram API for Python 3\
+#Example
+```python
+from raw-telegram.api import APIClient
+token = "<paste your token here>"
+api = APIClient(token)
+api.send_method("sendMessage", {'chat_id': 5102762920, 'text': 'Hello world!'})
+```
