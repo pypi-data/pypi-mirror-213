@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+substrate_interface_subsquid.egg-info/PKG-INFO
+substrate_interface_subsquid.egg-info/SOURCES.txt
+substrate_interface_subsquid.egg-info/dependency_links.txt
+substrate_interface_subsquid.egg-info/requires.txt
+substrate_interface_subsquid.egg-info/top_level.txt
+substrateinterface_subsquid/__init__.py
+substrateinterface_subsquid/extensions.py
+test/test_extension.py

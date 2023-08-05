@@ -1,0 +1,6 @@
+substrate-interface<2,>=1.7.1
+gql[aiohttp]~=3.4.0
+
+[test]
+coverage
+pytest
