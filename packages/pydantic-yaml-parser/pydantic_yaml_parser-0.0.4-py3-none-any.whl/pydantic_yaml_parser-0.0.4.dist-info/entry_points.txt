@@ -1,0 +1,2 @@
+[nbdev]
+pydantic_yaml_parser = pydantic_yaml_parser._modidx:d
