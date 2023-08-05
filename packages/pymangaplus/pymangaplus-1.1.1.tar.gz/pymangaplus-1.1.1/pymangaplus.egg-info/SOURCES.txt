@@ -1,0 +1,13 @@
+LICENSE
+README.md
+setup.py
+pymangaplus/__init__.py
+pymangaplus/api_protocol_pb2.py
+pymangaplus/client.py
+pymangaplus/constants.py
+pymangaplus/utils.py
+pymangaplus.egg-info/PKG-INFO
+pymangaplus.egg-info/SOURCES.txt
+pymangaplus.egg-info/dependency_links.txt
+pymangaplus.egg-info/requires.txt
+pymangaplus.egg-info/top_level.txt
