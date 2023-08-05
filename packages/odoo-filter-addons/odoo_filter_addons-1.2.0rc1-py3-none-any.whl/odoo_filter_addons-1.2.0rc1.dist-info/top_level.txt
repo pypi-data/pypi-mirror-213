@@ -1,0 +1,1 @@
+odoo_filter_addons
