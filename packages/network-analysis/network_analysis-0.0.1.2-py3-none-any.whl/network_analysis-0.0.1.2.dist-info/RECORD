@@ -1,0 +1,9 @@
+networkanalysis/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+networkanalysis/statistics.py,sha256=QXF1PtNa8IxJ3bkCNbkZKZqR1_SMMYLuPosxaVoCKgA,6384
+networkanalysis/ergm/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+networkanalysis/ergm/simulate.py,sha256=v8_bx0jxiLoqMahJsEd4PoD7TU8zNi4YgFwAncZeUZw,3350
+network_analysis-0.0.1.2.dist-info/LICENCE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+network_analysis-0.0.1.2.dist-info/METADATA,sha256=9bxxl7VBOSbnXVVQrNqr_tAdi7Wx-agGC5jnVhRY6uQ,521
+network_analysis-0.0.1.2.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+network_analysis-0.0.1.2.dist-info/top_level.txt,sha256=MT1dkzGBQ-qCmKe4TKD6zjmj-qVIE158AY4d5nnFYEw,16
+network_analysis-0.0.1.2.dist-info/RECORD,,
