@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: FoKL
+Version: 1.2.0
+Summary: Karhunen Loève decomposed Gaussian processes with forward variable selection
+Home-page: https://github.com/derek-slack/FokLPackage
+Author-email: ESMS Group <derek.slack.001@gmail.com>
+Project-URL: Bug Tracker, https://github.com/derek-slack/FokLPackage/issues
+Project-URL: Changelog, https://github.com/derek-slack/FokLPackage/releases
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
