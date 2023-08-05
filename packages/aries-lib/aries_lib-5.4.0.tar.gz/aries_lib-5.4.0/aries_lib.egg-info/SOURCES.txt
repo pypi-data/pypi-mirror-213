@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+aries_lib/MercadoPago.py
+aries_lib/MySQL.py
+aries_lib/__init__.py
+aries_lib.egg-info/PKG-INFO
+aries_lib.egg-info/SOURCES.txt
+aries_lib.egg-info/dependency_links.txt
+aries_lib.egg-info/requires.txt
+aries_lib.egg-info/top_level.txt
