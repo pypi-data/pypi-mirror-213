@@ -1,0 +1,210 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>bci_framework.default_extensions.Neuropathic_pain_Neurofeedback.feedback &#8212; BCI-Framework  documentation</title>
+    <link rel="stylesheet" type="text/css" href="../../../../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../../../../_static/alabaster.css" />
+    <link rel="stylesheet" type="text/css" href="../../../../_static/custom.css" />
+    <script data-url_root="../../../../" id="documentation_options" src="../../../../_static/documentation_options.js"></script>
+    <script src="../../../../_static/jquery.js"></script>
+    <script src="../../../../_static/underscore.js"></script>
+    <script src="../../../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="../../../../_static/doctools.js"></script>
+    <script src="../../../../_static/sphinx_highlight.js"></script>
+    <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <link rel="shortcut icon" href="../../../../_static/favico.ico"/>
+    <link rel="index" title="Index" href="../../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../../search.html" />
+   
+  <link rel="stylesheet" href="../../../../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <h1>Source code for bci_framework.default_extensions.Neuropathic_pain_Neurofeedback.feedback</h1><div class="highlight"><pre>
+<span></span>from radiant import PythonHandler
+from matplotlib import pyplot as plt
+from io import BytesIO
+import base64
+import numpy as np
+from copy import copy
+import logging
+
+status = {}
+fig = plt.figure(figsize=(12, 7), dpi=90)
+ax = plt.subplot(111)
+
+<div class="viewcode-block" id="BandFeedback"><a class="viewcode-back" href="../../../bci_framework.default_extensions.Neuropathic_pain_Neurofeedback.feedback.html#bci_framework.default_extensions.Neuropathic_pain_Neurofeedback.feedback.BandFeedback">[docs]</a>class BandFeedback(PythonHandler):
+    
+    
+    
+    def test_feed(self, bands):
+        
+        ax.clear()
+        ax.plot()
+        
+        f = BytesIO()
+        plt.savefig(f, format=&#39;png&#39;)
+        
+        return base64.b64encode(f.getvalue()).decode()
+        
+    def neurofeedback(self, bands):
+    
+        ax.clear()
+    
+        max_ = 10
+
+
+        for k in bands:
+        
+            status.setdefault(k, 0)
+        
+            if bands[k][0] and bands[k][1]==&#39;increase&#39;:
+                status[k] += 1
+            elif not bands[k][0] and bands[k][1]==&#39;increase&#39;:
+                status[k] -= 1
+            elif bands[k][0] and bands[k][1]==&#39;decrease&#39;:
+                status[k] += 1
+            elif not bands[k][0] and bands[k][1]==&#39;decrease&#39;:
+                status[k] -= 1
+    
+    
+        data = status
+    
+        bottom = []
+        for i in data:
+            if data[i]&gt;0:
+                bottom.append(1)
+            else:
+                bottom.append(-1)
+    
+        bottom = np.array(bottom, dtype=float)
+        bottom *= 0.5
+    
+        for i, (b, name) in enumerate(zip(bottom, bands)):
+        
+        
+        
+            # v = status[name]
+
+        
+            control = copy(bands[name][1])
+            value = bands[name][0]
+        
+        
+            if control==&#39;decrease&#39;:
+                control = &#39;increase&#39;
+                status[name] = -status[name]
+
+            b=np.sign(status[name])
+            b_ = 1
+            m = max_
+            
+            
+            if status[name]&gt;max_:
+                status[name] = max_
+            elif status[name]&lt;-max_:
+                status[name] = -max_
+        
+        
+            ax.arrow(i, b_, 0, m, capstyle=&#39;projecting&#39;, width=0.45, head_width=0.8, head_length=3, fc=&#39;w&#39;, ls=(0, (10,10)), ec=&#39;C0&#39;, alpha=0.5, length_includes_head=False)
+            if status[name] &gt; 0 and control==&#39;increase&#39; or status[name] &lt; 0 and control==&#39;decrease&#39;:
+                color=&#39;C0&#39;
+            else:
+                color=&#39;C3&#39;
+            
+            if status[name]:
+                ax.arrow(i, b, 0, status[name], capstyle=&#39;projecting&#39;, width=0.45, head_width=0.8, head_length=3, ec=&#39;white&#39;, fc=color, length_includes_head=False)
+            
+            
+            ax.text(i, 0, name, ha=&#39;center&#39;, va=&#39;center&#39;, fontsize=15)
+        
+
+            if bands[name][1]==&#39;decrease&#39;:
+                # control = &#39;increase&#39;
+                status[name] = -status[name]
+    
+        ax.set_ylim(-15, 15)
+        ax.axis(&#39;off&#39;)
+    
+        # fig.savefig(&#39;test.png&#39;, format=&#39;png&#39;)
+        f = BytesIO()
+        fig.savefig(f, format=&#39;png&#39;)
+        
+        # logging.warning(f&#39;{status}&#39;)
+    
+        return base64.b64encode(f.getvalue()).decode()</div>
+</pre></div>
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+            <p class="logo"><a href="../../../../index.html">
+              <img class="logo" src="../../../../_static/logo.svg" alt="Logo"/>
+            </a></p><h3>Navigation</h3>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../../notebooks/01-installation.html">Installation and running</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../notebooks/02-interface.html">Interface description</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../notebooks/03-data_analysis.html">Data analysis</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../notebooks/04-data_visualizations.html">Data visualization</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../notebooks/06-stimuli_delivery.html">Stimuli delivery</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../notebooks/07-neurofeedback.html">Neurofeedback</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../notebooks/08-event_marker_synchronization.html">Event marker synchronization</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../notebooks/09-ilustrative_example.html">Illustrative example</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../notebooks/10-paradigms.html">Paradigms</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../../../../index.html">Documentation overview</a><ul>
+  <li><a href="../../../index.html">Module code</a><ul>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../../../../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2021-2022, .
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 5.3.0</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+    </div>
+
+    
+
+    
+  </body>
+</html>
