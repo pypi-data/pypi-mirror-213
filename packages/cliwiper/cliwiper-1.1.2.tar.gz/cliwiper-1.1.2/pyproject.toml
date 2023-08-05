@@ -1,0 +1,36 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "cliwiper"
+authors = [
+  { name="Shall Mcfield", email="xhall.mc@protonmail.com" },
+]
+description = "clear the cli"
+readme = "README.md"
+requires-python = ">=3.8"
+license = "MIT"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python",
+    "Operating System :: OS Independent",
+    "Intended Audience :: Information Technology",
+    "Topic :: Internet",
+    "Development Status :: 5 - Production/Stable",
+    "License :: OSI Approved :: MIT License",
+
+]
+# dependencies = [
+#     "os==1.8.2",
+# ]
+
+dynamic = ["version"]
+
+[project.urls]
+"Homepage" = "https://github.com/SirX7/cliwiper"
+"Bug Tracker" = "https://github.com/SirX7/cliwiper/issues"
+
+[tool.hatch.version]
+path = "cliwiper/__init__.py"
+
