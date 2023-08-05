@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: python-parted
+Version: 1.1.1
+Summary: Python interface to access the parted library
+Home-page: https://github.com/dkmstr/python-parted
+License: MIT
+Author: Adolfo Gómez García
+Author-email: dkmaster@dkmon.com
+Requires-Python: >=3.8.0
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Topic :: System :: Filesystems
+Requires-Dist: cffi (>=1.15.1)
+Project-URL: Documentation, http://python-parted.readthedocs.io/
+Project-URL: Repository, https://github.com/dkmstr/python-parted
+Description-Content-Type: text/markdown
+
+python-parted
+=============
+
+Python bindings for **libparted** with some additional features.
+
+This is a set of Python bindings for the **libparted** library. It
+provides a Python interface to the functionality of **libparted**,
+including the ability to create, delete, resize, and move partitions
+on hard disks.
+
+[]: # License: MIT
+
