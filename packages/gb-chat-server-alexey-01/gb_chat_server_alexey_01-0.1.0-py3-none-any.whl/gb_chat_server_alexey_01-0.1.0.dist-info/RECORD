@@ -1,0 +1,16 @@
+server/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+server/chat.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+server/log/server.log,sha256=1d9Fk_oy1QFXg_Zq-XqzKoXFK12qizZEBqB7qlsF9nI,2009
+server/log/server.log.2023-04-25,sha256=rAS_tpNyhvR42opwtoih6r1M9wmGJh0rttbDt0d66J4,148128
+server/log/server.log.2023-05-02,sha256=eWNomcL1MW93dkUO9O0TFk5jhrGoE8fmM2ShdKPrnq0,97973
+server/log/server.log.2023-05-16,sha256=0bAC6Up_Gg1CgM9CZ4jsc54K045digYXor9gTjK8F68,56795
+server/log/server.log.2023-05-23,sha256=bU16XfxkaOeHhovMS1cPAEyejlyfnSJHd6jmFJ4Y8nU,240478
+server/log/server.log.2023-05-30,sha256=yVtA3XPJnqTfUjbBfzeqLEPEZRKdkC1KUl5nIi-Md34,209962
+server/log/server_log_config.py,sha256=FxZmHK_GSkf5pUN1LbqrnNhUn-3CmYJeSHF3Ti87NC4,703
+server/server.py,sha256=2_avUjR6kEcUFd7GIcbLCThHeb0Yh1kytrAKVS3KvXA,8992
+server/server_db.py,sha256=9AxcKiC8ZdV5VHTiKJSWm-0F7Hz5es5Yb5_HHstCzmo,4619
+server/sqlite-1.db,sha256=ufeCHblynBtF1zgVel8XMTd6H0C3pbvf78WZlaP4tSo,32768
+server/sqlite.db,sha256=AgLAEfiNrfvF7TmV5nmWDFWbTpYWma1h_pxXJ--CxgM,24576
+gb_chat_server_alexey_01-0.1.0.dist-info/WHEEL,sha256=vxFmldFsRN_Hx10GDvsdv1wroKq8r5Lzvjp6GZ4OO8c,88
+gb_chat_server_alexey_01-0.1.0.dist-info/METADATA,sha256=mfdfXB9JCw5foSwmEBXk7Xn7_ZFcgnuGxMsBb64TOlY,794
+gb_chat_server_alexey_01-0.1.0.dist-info/RECORD,,
