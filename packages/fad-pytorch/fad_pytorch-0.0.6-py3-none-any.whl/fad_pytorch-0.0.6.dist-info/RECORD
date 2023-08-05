@@ -1,0 +1,14 @@
+fad_pytorch/__init__.py,sha256=QiiYsv0kcJaB8wCWyT-FnI2b6be87HA-CrrIUn8LQhg,22
+fad_pytorch/_modidx.py,sha256=5Nswg04_qnCIqSIwFpL8loRQzEp-HYiTijCWaOpZZWM,31174
+fad_pytorch/fad_embed.py,sha256=5IDOaCIbZ7AOSuFfjV8E1nJNrlJ6EsLCHgtZgYzsIGQ,18465
+fad_pytorch/fad_gen.py,sha256=xrIb0iVkk6MSsX6kxEhUqVBbwXCOfMJcAGUt8aY4mGk,5083
+fad_pytorch/fad_score.py,sha256=8HKh0i5P1hQY3VPiLPTezXXTd6Z0k5rwXFnkwr69lwQ,3773
+fad_pytorch/pann.py,sha256=1ZXzVl_Dmbr_Rf7QaYLNe2G8JvRTRO27Pb3vgjUsKc0,123697
+fad_pytorch/pann_pytorch_utils.py,sha256=fnD4bSDoSZV8-JLwDBpYDoCj2WnzECVKVQxU6Af3KfI,9559
+fad_pytorch/sqrtm.py,sha256=_6a-XF3ceG1EY27QhLDvcTZAuTUAjLzb21P8fZCb1rY,8474
+fad_pytorch-0.0.6.dist-info/LICENSE,sha256=cC4rF8azr9NrX9zTygnZ0lWAY2agKhLv5KI48oEjbgM,1072
+fad_pytorch-0.0.6.dist-info/METADATA,sha256=4QLcrQ0-tjMUb90yZ-zy8I0EWNXlYxihXv1smOtlQY4,5803
+fad_pytorch-0.0.6.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+fad_pytorch-0.0.6.dist-info/entry_points.txt,sha256=QNkb8n-E4yfTGfTBdZ5KZalv84qtIkUVgFGirLRDclI,176
+fad_pytorch-0.0.6.dist-info/top_level.txt,sha256=PWhOGZX-T8cWRQ_V5VKHI91BkN3IXMHp72XxpQQFVTc,12
+fad_pytorch-0.0.6.dist-info/RECORD,,
