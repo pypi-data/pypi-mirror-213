@@ -1,0 +1,14 @@
+aiohttp
+asyncio
+fipper
+gitpython
+pymediainfo
+python-decouple
+python-dotenv
+py-Pyro
+requests
+telethon==1.24.0
+tgcrypto
+tracemoepy
+urllib3
+# yins-music==0.0.7.dev3
