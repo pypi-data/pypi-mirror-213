@@ -1,0 +1,13 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+gentoo_update/__init__.py
+gentoo_update/gentoo_update.py
+gentoo_update/updater.sh
+gentoo_update.egg-info/PKG-INFO
+gentoo_update.egg-info/SOURCES.txt
+gentoo_update.egg-info/dependency_links.txt
+gentoo_update.egg-info/entry_points.txt
+gentoo_update.egg-info/top_level.txt
+tests/test_updater.py
