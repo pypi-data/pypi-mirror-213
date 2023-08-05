@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: pyfilehandling
+Version: 0.1
+Summary: A Python package for file manipulation operations.
+Home-page: https://github.com/JeelDobariya38/pyfilehandling
+Author: JeelDobariya
+Author-email: dobariyaj34@gmail.com
+License: MIT
+Project-URL: Bug Tracker, https://github.com/JeelDobariya38/pyfilehandling/issues
+Project-URL: Documentation, https://jeeldobariya38.github.io/pyfilehandling/
+Project-URL: Source Code, https://github.com/JeelDobariya38/pyfilehandling
+Keywords: file handling manipulation
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+pyfilehandling is a Python package that provides functions and classes for handling file operations, including creating files and directories, reading and writing data, and more.
