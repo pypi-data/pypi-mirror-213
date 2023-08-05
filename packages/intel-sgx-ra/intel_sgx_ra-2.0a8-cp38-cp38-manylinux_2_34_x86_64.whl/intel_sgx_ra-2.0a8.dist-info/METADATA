@@ -1,0 +1,70 @@
+Metadata-Version: 2.1
+Name: intel-sgx-ra
+Version: 2.0a8
+Classifier: Programming Language :: Rust
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Dist: requests >=2.31.0, <3.0.0
+Requires-Dist: cryptography >=41.0.1, <42.0.0
+Requires-Dist: pytest >=7.3.1, <8.0.0 ; extra == 'tests'
+Requires-Dist: pylint >=2.17.4, <3.0.0 ; extra == 'tests'
+Requires-Dist: pycodestyle >=2.10.0, <3.0.0 ; extra == 'tests'
+Requires-Dist: pydocstyle >=6.3.0, <7.0.0 ; extra == 'tests'
+Requires-Dist: black >=23.3.0, <24.0.0 ; extra == 'tests'
+Requires-Dist: isort >=5.12.0, <6.0.0 ; extra == 'tests'
+Requires-Dist: mypy >=1.3.0, <2.0.0 ; extra == 'tests'
+Requires-Dist: types-requests >=2.31.0, <3.0.0 ; extra == 'tests'
+Provides-Extra: tests
+Summary: Intel SGX Remote Attestation verification library
+Author-email: Cosmian Tech <tech@cosmian.com>
+License: MIT
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown; charset=UTF-8; variant=GFM
+
+# Intel SGX DCAP Remote Attestation library
+
+## Overview
+
+Python library for Intel SGX DCAP remote attestation.
+
+## Installation
+
+```console
+$ pip install intel-sgx-ra
+```
+
+## Usage
+
+```console
+$ sgx-ra-verify --help
+usage: sgx-ra-verify [-h] [--verbose] [--mrenclave MRENCLAVE] [--mrsigner MRSIGNER] {certificate,quote} ...
+
+Intel SGX DCAP Quote verification
+
+positional arguments:
+  {certificate,quote}   sub-command help
+    certificate         Remote Attestation from X.509 certificate used for RA-TLS
+    quote               Remote Attestation of a raw SGX quote
+
+optional arguments:
+  -h, --help            show this help message and exit
+  --verbose             Verbose mode
+  --mrenclave MRENCLAVE
+                        Expected MRENCLAVE value in SGX quote
+  --mrsigner MRSIGNER   Expected MRSIGNER value in SGX quote
+$ sgx-ra-utils --help
+usage: sgx-ra-utils [-h] [--verbose] {extract} ...
+
+Intel SGX DCAP Quote tools
+
+positional arguments:
+  {extract}   sub-command help
+    extract   Extract Quote from X.509 certificate using RA-TLS
+
+optional arguments:
+  -h, --help  show this help message and exit
+  --verbose   Verbose mode
+```
+
