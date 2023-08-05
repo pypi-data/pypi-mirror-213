@@ -1,0 +1,66 @@
+Metadata-Version: 2.1
+Name: xarrayutils
+Version: 2.0.0
+Summary: A collection of various tools for data analysis built on top of xarray and xgcm
+Home-page: https://github.com/jbusecke/xarrayutils
+Author: xarrayutils Developers
+Author-email: julius@ldeo.columbia.edu
+License: MIT
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: xarray (>=0.14.1)
+Requires-Dist: dask
+Requires-Dist: numpy
+Requires-Dist: scipy
+Provides-Extra: complete
+Requires-Dist: xarray (>=0.14.1) ; extra == 'complete'
+Requires-Dist: dask ; extra == 'complete'
+Requires-Dist: numpy ; extra == 'complete'
+Requires-Dist: scipy ; extra == 'complete'
+Provides-Extra: dev
+Requires-Dist: xarray (>=0.14.1) ; extra == 'dev'
+Requires-Dist: dask ; extra == 'dev'
+Requires-Dist: numpy ; extra == 'dev'
+Requires-Dist: scipy ; extra == 'dev'
+Requires-Dist: pytest ; extra == 'dev'
+Requires-Dist: pytest-cov ; extra == 'dev'
+Requires-Dist: flake8 ; extra == 'dev'
+Requires-Dist: black ; extra == 'dev'
+Requires-Dist: codecov ; extra == 'dev'
+Provides-Extra: docs
+Requires-Dist: sphinx ; extra == 'docs'
+Requires-Dist: sphinxcontrib-srclinks ; extra == 'docs'
+Requires-Dist: sphinx-pangeo-theme ; extra == 'docs'
+Requires-Dist: numpydoc ; extra == 'docs'
+Requires-Dist: IPython ; extra == 'docs'
+Requires-Dist: nbsphinx ; extra == 'docs'
+
+[![Build Status](https://img.shields.io/github/workflow/status/jbusecke/xarrayutils/CI?logo=github)](https://github.com/jbusecke/xarrayutils/actions)
+[![codecov](https://codecov.io/gh/jbusecke/xarrayutils/branch/master/graph/badge.svg)](https://codecov.io/gh/jbusecke/xarrayutils)
+[![License:MIT](https://img.shields.io/badge/License-MIT-lightgray.svg?style=flt-square)](https://opensource.org/licenses/MIT)
+[![pypi](https://img.shields.io/pypi/v/xarrayutils.svg)](https://pypi.org/project/xarrayutils)
+[![conda-forge](https://img.shields.io/conda/dn/conda-forge/xarrayutils?label=conda-forge)](https://anaconda.org/conda-forge/xarrayutils)
+[![Documentation Status](https://readthedocs.org/projects/xarrayutils/badge/?version=latest)](https://xarrayutils.readthedocs.io/en/latest/?badge=latest)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.6360900.svg)](https://doi.org/10.5281/zenodo.6360900)
+[![pre-commit.ci status](https://results.pre-commit.ci/badge/github/jbusecke/xarrayutils/master.svg)](https://results.pre-commit.ci/latest/github/jbusecke/xarrayutils/master)
+
+
+
+# A collection of various tools for data analysis built on top of xarray and xgcm
+
+This package contains a variety of utility functions I have used in the past few years for data analysis.
+
+Please be aware that I am currently refactoring a lot of the code, which might cause breaking changes.
+
+For more information see the [documentation](https://xarrayutils.readthedocs.io/en/latest/)
+
+
