@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: zoi-python-sdk
+Version: 1.0.0
+Summary: Zoho Office Integrator Python SDK
+Home-page: https://github.com/iampraba/zoi-python-sdk
+Author: Team - Zoho Office Integrator
+Author-email: support@zohoofficeintegrator.com
+Keywords: development,zoho,api,zohosdk,sdk,Zoho Office Integrator,Office Suite Editors,Document,Presentation,Spreadsheet
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: requests
+Requires-Dist: python-dateutil
+Requires-Dist: urllib3
+Requires-Dist: mysql-connector
+
+# zoi-python-sdk
