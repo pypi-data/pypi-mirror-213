@@ -1,0 +1,13 @@
+aflabs_test/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+aflabs_test/admin.py,sha256=suMo4x8I3JBxAFBVIdE-5qnqZ6JAZV0FESABHOSc-vg,63
+aflabs_test/apps.py,sha256=dJq4P-GwF_LkB8-TPGiGPZG-PcifaD5w65AdehcVHqk,153
+aflabs_test/boot_django.py,sha256=Xm2OKzR41wGDTKDOGWYyCNoZP9X9KllWCml0c4J68vs,700
+aflabs_test/makemigrations.py,sha256=wbROvN2bf67ZA7MVzJHtZ9oyi48NuwXMv07qjzxsK90,199
+aflabs_test/migrate.py,sha256=vCTyNN3-yHbXwnnv04O-I0UOmcwAkPWkSmEyywpEuK0,151
+aflabs_test/migrations/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+aflabs_test/models.py,sha256=smcBMNHBuAnf2d-D5r7QUdjzSjqRIUa9Bs9_zZb2qcE,459
+aflabs_test/tests.py,sha256=mrbGGRNg5jwbTJtWWa7zSKdDyeB4vmgZCRc2nk6VY-g,60
+aflabs_test/views.py,sha256=xc1IQHrsij7j33TUbo-_oewy3vs03pw_etpBWaMYJl0,63
+aflabs_test-0.1.1.dist-info/METADATA,sha256=K96g2DV701FJImqkOM2Uuol5Onr90hyUuCIZTDwEikI,403
+aflabs_test-0.1.1.dist-info/WHEEL,sha256=Zb28QaM1gQi8f4VCBhsUklF61CTlNYfs9YAZn-TOGFk,88
+aflabs_test-0.1.1.dist-info/RECORD,,
