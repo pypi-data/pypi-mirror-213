@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: idoctorai
+Version: 0.3.1
+Summary: this is idoctorai, Generate code with natural speech
+License: MIT
+Author: Gabriele Venturi
+Requires-Python: >=3.9,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Provides-Extra: google
+Requires-Dist: astor (>=0.8.1,<0.9.0)
+Requires-Dist: google-generativeai (>=0.1.0rc2,<0.2.0) ; extra == "google"
+Requires-Dist: ipython (>=8.13.1,<9.0.0)
+Requires-Dist: langchain (==0.0.194)
+Requires-Dist: matplotlib (>=3.7.1,<4.0.0)
+Requires-Dist: openai (>=0.27.5,<0.28.0)
+Requires-Dist: pandas (==1.5.3)
+Requires-Dist: python-dotenv (>=1.0.0,<2.0.0)
+Description-Content-Type: text/markdown
+
+## idoctorai
+
+this is idoctorai, generate code with nlp
+
+use langchain generate code in this version
+
+
