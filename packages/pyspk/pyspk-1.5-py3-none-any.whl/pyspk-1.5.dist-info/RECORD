@@ -1,0 +1,10 @@
+pyspk/__init__.py,sha256=tpbB4kJbR6GUnNvuK-kfTYueWrRbHIjRvaE6Yo9D4Fs,20
+pyspk/fit_vals.py,sha256=tHl8I4ccLXD4MMPjdyrKSPrNtJrWushAMR7ZRJ--7Go,4114
+pyspk/model.py,sha256=QP6hjwDdFOCuH39oFpOPZhlu7dqJ7qgWYbEeWFqrDhg,16276
+pyspk/stat_errors_200.csv,sha256=e43fRucseyYyhhtRuizdtlJ6ScZ4hcnA6l6zWw6ZVSk,180588
+pyspk/stat_errors_500.csv,sha256=V2zYVnMF_M2TR0vXPguKb1rnnFcoEPKABBAQbF_FHm0,179036
+pyspk-1.5.dist-info/LICENSE.md,sha256=GiSBscxZGuBYUocEkA6A8dtAwE_AJRzsJh_mqggSqWE,7326
+pyspk-1.5.dist-info/METADATA,sha256=3qHcV2aEUrjRuDvxXF_7uDMCLoCYRphq1Yn9Bd3Xo-c,9230
+pyspk-1.5.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+pyspk-1.5.dist-info/top_level.txt,sha256=RBbs_aRSnAfUE_9hsYoHjec0JAnrhnJxICiz54GEqEA,6
+pyspk-1.5.dist-info/RECORD,,
