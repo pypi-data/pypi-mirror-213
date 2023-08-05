@@ -1,0 +1,33 @@
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <link rel="stylesheet" href="{{LIFEGUARD_DASHBOARD_PREFIX_PATH}}/simple-dashboard-css/dashboard.css">
+
+        <title>Lifeguard - Dashboard</title>
+    </head>
+
+    <body style="background-image: url('{{LIFEGUARD_DASHBOARD_PREFIX_PATH}}/simple-dashboard-img/wallpaper.jpg');">
+        <div class="container-fluid">
+            <div class="validations-container">
+                <ul class="validations-list">
+                    {% for validation in validations %}
+                    <li class="validation-item {{validation["status"]}}">
+                        <p class="validation-item-description">
+                            <a href="/lifeguard/validations/{{validation["validation_name"]}}">
+                                {{validation["validation_name"]}}
+                            </a>
+                        </p>
+                    </li>
+                    {% endfor %}
+                </ul>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+        <script src="/js/agents.js"></script>
+    </body>
+</html>

@@ -1,0 +1,11 @@
+lifeguard_simple_dashboard/__init__.py,sha256=bBtAMKlUA26ioH2pjNtnwN5oLY2_Beo5IXH3BAtaFrM,1092
+lifeguard_simple_dashboard/settings.py,sha256=cRjW83gu0V-X4kJqrDQ65rnNH3jhhMDZO9b17XXrDd0,341
+lifeguard_simple_dashboard/controllers/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+lifeguard_simple_dashboard/controllers/index_controller.py,sha256=pZKD9C7IHaS3gWHf9O7DNeeqkOWtRq1icDkk0G5gWNY,1951
+lifeguard_simple_dashboard/public/css/dashboard.css,sha256=QJOL9IFMeuozO1OsLCNaZ440_SvetUnjf82ZkPQ20E4,1670
+lifeguard_simple_dashboard/public/img/wallpaper.jpg,sha256=qaBht9K56lWYv3YRFli3OrUU-Dp1_3uuzVDkar4VQKs,2179899
+lifeguard_simple_dashboard/templates/dashboard.html,sha256=C7mepmRSyM_u7uhNDG6HtlU8IrdHOhru9kEiD9uAJq4,1499
+lifeguard_simple_dashboard-1.0.0.dist-info/METADATA,sha256=LVznNsoBcLSex2WwrKjNluI3wPUzKisav4BRNavJ89U,340
+lifeguard_simple_dashboard-1.0.0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+lifeguard_simple_dashboard-1.0.0.dist-info/top_level.txt,sha256=mHGMSMCKSbUglHWdFbyI6cxNy1eWqKKfbU3ZPLsnT9o,27
+lifeguard_simple_dashboard-1.0.0.dist-info/RECORD,,
