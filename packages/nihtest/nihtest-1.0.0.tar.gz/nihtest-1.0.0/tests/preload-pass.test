@@ -1,0 +1,6 @@
+precheck ./nihtest-can-preload run
+program nihtest
+arguments preload-pass.test
+return 0
+file preload-pass.test preload-pass.input
+file nihtest.conf nihtest-conf

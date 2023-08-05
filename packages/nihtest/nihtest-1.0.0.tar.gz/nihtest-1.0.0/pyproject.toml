@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "nihtest"
+version = "1.0.0"
+authors = [
+    { name="Dieter Baron", email="dillo@nih.at" },
+    { name="Thomas Klausner", email="wiz@gatalith.at"}
+]
+description = "A testing tool for command line utilities."
+license = {text = "BSD-3-Clause"}
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: BSD License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/nih-at/nihtest"
+"Bug Tracker" = "https://github.com/nih-at/nihtest/issues"
+
+[project.scripts]
+nihtest = "nihtest.__main__:main"

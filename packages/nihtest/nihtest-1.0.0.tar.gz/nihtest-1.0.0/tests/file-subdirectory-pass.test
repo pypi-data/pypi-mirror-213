@@ -1,0 +1,5 @@
+program nihtest
+arguments file-subdirectory-pass.test
+return 0
+file file-subdirectory-pass.test file-subdirectory-pass.input
+file nihtest.conf nihtest-conf

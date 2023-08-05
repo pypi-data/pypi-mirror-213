@@ -1,0 +1,11 @@
+program nihtest
+arguments stdout-fail.test
+return 1
+file stdout-fail.test stdout-fail.input
+file nihtest.conf nihtest-conf
+stdout
+output differs:
+-This is a successful test.
++This is not a successful test.
+stdout-fail -- FAIL: output
+end-of-inline-data
