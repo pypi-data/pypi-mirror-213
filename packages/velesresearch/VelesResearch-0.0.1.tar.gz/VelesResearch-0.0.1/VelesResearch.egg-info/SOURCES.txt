@@ -1,0 +1,12 @@
+README.md
+setup.py
+VelesResearch.egg-info/PKG-INFO
+VelesResearch.egg-info/SOURCES.txt
+VelesResearch.egg-info/dependency_links.txt
+VelesResearch.egg-info/top_level.txt
+veles_research/__init__.py
+veles_research/options.py
+veles_research/question_types.py
+veles_research/structure.py
+veles_research/survey_tools.py
+veles_research/test.py
