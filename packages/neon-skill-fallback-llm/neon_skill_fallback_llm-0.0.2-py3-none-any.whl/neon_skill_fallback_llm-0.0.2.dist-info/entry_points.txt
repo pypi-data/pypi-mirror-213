@@ -1,0 +1,3 @@
+[ovos.plugin.skill]
+skill-fallback_llm.neongeckocom=skill_fallback_llm:LLMSkill
+
