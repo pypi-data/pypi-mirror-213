@@ -1,0 +1,79 @@
+Metadata-Version: 2.1
+Name: tmplayer
+Version: 0.0.5
+Summary: Minimalist music player for audio files with a pleasant UI.
+Author: Piotr Skowroński
+License: MIT
+Classifier: Topic :: Multimedia :: Sound/Audio
+Classifier: Environment :: Console
+Classifier: Operating System :: POSIX
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: urwid (>=2.1.2)
+Requires-Dist: python-vlc (>=3.0.18121)
+Provides-Extra: formatting
+Requires-Dist: black ; extra == 'formatting'
+Provides-Extra: linting
+Requires-Dist: flake8 ; extra == 'linting'
+Requires-Dist: mypy ; extra == 'linting'
+
+# tmplayer
+
+Minimalist music player for audio files with a pleasant UI.
+
+![preview](./screenshots/preview.png)
+
+## Installation
+
+### PyPI
+
+```
+pip install tmplayer
+```
+
+### Manual
+
+1. Clone the repository
+
+```
+git clone https://github.com/H4wk507/tmplayer.git
+```
+
+2. Go into the directory and install
+
+```
+cd tmplayer && pip install .
+```
+
+## Usage
+
+Pass in directories/audio files as commandline arguments.
+
+Example:
+
+```
+tmplayer ~/Music/Rap/ sample.mp3 ...
+```
+
+## Key bindings
+
+- arrow keys: Navigate
+- k and j: Move up and down
+- enter: Play selected song
+- space: Play/Pause
+- n: Play the next song
+- p: Play the previous song
+- 1: Set default mode
+- 2: Set loop mode
+- 3: Set repeat mode
+- r: Set random mode
+- u: Increase volume by 5%
+- d: Decrease volume by 5%
+- q: Quit
+
+## License
+
+Licensed under the [MIT License](LICENSE).

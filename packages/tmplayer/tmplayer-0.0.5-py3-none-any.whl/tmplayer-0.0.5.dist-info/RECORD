@@ -1,0 +1,11 @@
+tmplayer/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tmplayer/main.py,sha256=mfjwpcOPVrgULnYVtRxri6U9qprgWozUbD0soTS-1y8,1007
+tmplayer/player.py,sha256=h-7jDgPpa9pX0MXfaPF9_j2i759o4GEFd1lCqzK29cM,6711
+tmplayer/ui.py,sha256=7OIm2cPy9Jf_XKT8TNkk338sg0CP6lZRYPfzYgrrmTA,11381
+tmplayer/version.py,sha256=S7u1lbuWmM3A3ajykBialmPoJUK6Jg-WmNqM-9OZFdk,22
+tmplayer-0.0.5.dist-info/LICENSE,sha256=-NxUjoEQSghYOFo5-h7JVg2Un2xZbVNGf7PQaeoxV84,1074
+tmplayer-0.0.5.dist-info/METADATA,sha256=HjqL-OnIKNKroKAy9duivsJa3PPHo-9qi6dFnTV7Cbg,1554
+tmplayer-0.0.5.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+tmplayer-0.0.5.dist-info/entry_points.txt,sha256=6Tix7DyMMepIjGhe3dObzlSXN2-mn4Wnf4_xAvGHwrY,48
+tmplayer-0.0.5.dist-info/top_level.txt,sha256=xN3F14vH3B7YQdz1Jj_oD4Z3Zsb2suGXUnPepJgLVIc,9
+tmplayer-0.0.5.dist-info/RECORD,,
