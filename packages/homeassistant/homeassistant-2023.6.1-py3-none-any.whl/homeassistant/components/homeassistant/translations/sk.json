@@ -1,0 +1,45 @@
+{
+    "issues": {
+        "config_entry_only": {
+            "description": "Integr\u00e1cia dom\u00e9ny {domain} nepodporuje konfigur\u00e1ciu prostredn\u00edctvom s\u00faboru YAML. Mo\u017eno si nev\u0161imnete \u017eiadne zjavn\u00e9 probl\u00e9my s integr\u00e1ciou, ale \u017eiadne konfigura\u010dn\u00e9 nastavenia definovan\u00e9 v YAML sa v skuto\u010dnosti nepou\u017eij\u00fa. \n\n Ak chcete vyrie\u0161i\u0165 toto: \n\n 1. Ak ste tak e\u0161te neurobili, [nastavte integr\u00e1ciu]({add_integration}). \n\n 2. Odstr\u00e1\u0148te `{domain}:` z konfigura\u010dn\u00e9ho s\u00faboru YAML. \n\n 3. Re\u0161tartujte Home Assistant.",
+            "title": "Integr\u00e1cia {domain} nepodporuje konfigur\u00e1ciu YAML"
+        },
+        "country_not_configured": {
+            "description": "Nebola nakonfigurovan\u00e1 \u017eiadna krajina, aktualizujte konfigur\u00e1ciu kliknut\u00edm na tla\u010didlo \"viac inform\u00e1ci\u00ed\" ni\u017e\u0161ie.",
+            "title": "Krajina nebola nakonfigurovan\u00e1"
+        },
+        "historic_currency": {
+            "description": "Mena {currency} sa u\u017e nepou\u017e\u00edva. Zme\u0148te konfigur\u00e1ciu meny.",
+            "title": "Konfigurovan\u00e1 mena sa u\u017e nepou\u017e\u00edva"
+        },
+        "integration_key_no_support": {
+            "description": "Integr\u00e1cia dom\u00e9ny {domain} nepodporuje konfigur\u00e1ciu prostredn\u00edctvom s\u00faboru YAML. Mo\u017eno si nev\u0161imnete \u017eiadne zjavn\u00e9 probl\u00e9my s integr\u00e1ciou, ale \u017eiadne konfigura\u010dn\u00e9 nastavenia definovan\u00e9 v YAML sa v skuto\u010dnosti nepou\u017eij\u00fa. \n\n Ak chcete vyrie\u0161i\u0165 toto: \n\n 1. Ak ste tak e\u0161te neurobili, [nastavte integr\u00e1ciu]({add_integration}). \n\n 2. Odstr\u00e1\u0148te `{domain}:` z konfigura\u010dn\u00e9ho s\u00faboru YAML. \n\n 3. Re\u0161tartujte Home Assistant.",
+            "title": "Integr\u00e1cia {domain} nepodporuje konfigur\u00e1ciu YAML"
+        },
+        "platform_only": {
+            "description": "Integr\u00e1cia {domain} nepodporuje konfigur\u00e1ciu pod vlastn\u00fdm k\u013e\u00fa\u010dom, mus\u00ed by\u0165 nakonfigurovan\u00e1 na podporovan\u00fdch platform\u00e1ch. \n\n Ak chcete vyrie\u0161i\u0165 toto: \n\n 1. Odstr\u00e1\u0148te `{domain}:` z konfigura\u010dn\u00e9ho s\u00faboru YAML. \n\n 2. Re\u0161tartujte Home Assistant.",
+            "title": "Integr\u00e1cia {domain} nepodporuje konfigur\u00e1ciu YAML pod vlastn\u00fdm k\u013e\u00fa\u010dom"
+        },
+        "python_version": {
+            "description": "Podpora pre spustenie Home Assistant v aktu\u00e1lne pou\u017e\u00edvanej verzii Pythonu {current_python_version} je zastaran\u00e1 a bude odstr\u00e1nen\u00e1 v Home Assistant {breaks_in_ha_version}. Inovujte Python na {required_python_version}, aby ste zabr\u00e1nili naru\u0161eniu va\u0161ej in\u0161tancie Home Assistant.",
+            "title": "Podpora pre Python {current_python_version} sa odstra\u0148uje"
+        }
+    },
+    "system_health": {
+        "info": {
+            "arch": "Architekt\u00fara CPU",
+            "config_dir": "Adres\u00e1r konfigur\u00e1cie",
+            "dev": "V\u00fdvoj",
+            "docker": "Docker",
+            "hassio": "Supervisor",
+            "installation_type": "Typ in\u0161tal\u00e1cie",
+            "os_name": "Rodina opera\u010dn\u00fdch syst\u00e9mov",
+            "os_version": "Verzia opera\u010dn\u00e9ho syst\u00e9mu",
+            "python_version": "Verzia Pythonu",
+            "timezone": "\u010casov\u00e9 p\u00e1smo",
+            "user": "Pou\u017e\u00edvate\u013e",
+            "version": "Verzia",
+            "virtualenv": "Virtu\u00e1lne prostredie"
+        }
+    }
+}

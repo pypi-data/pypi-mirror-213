@@ -1,0 +1,24 @@
+{
+    "device_automation": {
+        "trigger_type": {
+            "changed_states": "La disponibilidad de la actualizaci\u00f3n de {entity_name} cambi\u00f3",
+            "turned_off": "{entity_name} se actualiz\u00f3",
+            "turned_on": "{entity_name} tiene una actualizaci\u00f3n disponible"
+        }
+    },
+    "entity_component": {
+        "_": {
+            "name": "Actualizar"
+        },
+        "firmware": {
+            "name": "firmware"
+        }
+    },
+    "issues": {
+        "platform_integration_no_support": {
+            "description": "La plataforma {platform} para la integraci\u00f3n {domain} no es compatible con la configuraci\u00f3n de la plataforma. \n\nElim\u00ednala de tu configuraci\u00f3n y reinicia Home Assistant para solucionar este problema.",
+            "title": "Soporte de plataforma no compatible"
+        }
+    },
+    "title": "Actualizar"
+}

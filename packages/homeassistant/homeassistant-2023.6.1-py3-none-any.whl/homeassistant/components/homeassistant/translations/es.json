@@ -1,0 +1,45 @@
+{
+    "issues": {
+        "config_entry_only": {
+            "description": "La integraci\u00f3n {domain} no admite la configuraci\u00f3n a trav\u00e9s de un archivo YAML. Es posible que no notes ning\u00fan problema obvio con la integraci\u00f3n, pero los ajustes de configuraci\u00f3n definidos en YAML no se aplican realmente. \n\nPara resolver esto: \n\n1. Si a\u00fan no lo has hecho, [configura la integraci\u00f3n]({add_integration}). \n\n2. Elimina `{domain}:` de tu archivo de configuraci\u00f3n YAML. \n\n3. Reinicia Home Assistant.",
+            "title": "La integraci\u00f3n {domain} no es compatible con la configuraci\u00f3n YAML"
+        },
+        "country_not_configured": {
+            "description": "No se ha configurado ning\u00fan pa\u00eds, por favor, actualiza la configuraci\u00f3n haciendo clic en el bot\u00f3n \"Saber m\u00e1s\" a continuaci\u00f3n.",
+            "title": "El pa\u00eds no ha sido configurado"
+        },
+        "historic_currency": {
+            "description": "La moneda {currency} ya no est\u00e1 en uso, por favor, vuelve a configurar la moneda.",
+            "title": "La moneda configurada ya no est\u00e1 en uso"
+        },
+        "integration_key_no_support": {
+            "description": "La integraci\u00f3n {domain} no admite la configuraci\u00f3n a trav\u00e9s de un archivo YAML. Es posible que no notes ning\u00fan problema obvio con la integraci\u00f3n, pero los ajustes de configuraci\u00f3n definidos en YAML no se aplican realmente. \n\nPara resolver esto: \n\n1. Si a\u00fan no lo has hecho, [configura la integraci\u00f3n]({add_integration}). \n\n2. Elimina `{domain}:` de tu archivo de configuraci\u00f3n YAML. \n\n3. Reinicia Home Assistant.",
+            "title": "La integraci\u00f3n {domain} no es compatible con la configuraci\u00f3n YAML"
+        },
+        "platform_only": {
+            "description": "La integraci\u00f3n {domain} no admite la configuraci\u00f3n bajo su propia clave, debe configurarse bajo sus plataformas compatibles.\n\nPara resolver esto:\n\n1. Elimina `{domain}:` del archivo de configuraci\u00f3n de YAML.\n\n2. Reinicia Home Assistant.",
+            "title": "La integraci\u00f3n {domain} no es compatible con la configuraci\u00f3n YAML bajo su propia clave"
+        },
+        "python_version": {
+            "description": "La compatibilidad con la ejecuci\u00f3n de Home Assistant en la versi\u00f3n de Python utilizada actualmente {current_python_version} est\u00e1 obsoleta y se eliminar\u00e1 en Home Assistant {breaks_in_ha_version}. Actualiza Python a {required_python_version} para evitar que tu instancia de Home Assistant se rompa.",
+            "title": "Se va a eliminar la compatibilidad con Python {current_python_version}"
+        }
+    },
+    "system_health": {
+        "info": {
+            "arch": "Arquitectura de CPU",
+            "config_dir": "Directorio de configuraci\u00f3n",
+            "dev": "Desarrollo",
+            "docker": "Docker",
+            "hassio": "Supervisor",
+            "installation_type": "Tipo de instalaci\u00f3n",
+            "os_name": "Familia de Sistema Operativo",
+            "os_version": "Versi\u00f3n del Sistema Operativo",
+            "python_version": "Versi\u00f3n de Python",
+            "timezone": "Zona horaria",
+            "user": "Usuario",
+            "version": "Versi\u00f3n",
+            "virtualenv": "Entorno virtual"
+        }
+    }
+}

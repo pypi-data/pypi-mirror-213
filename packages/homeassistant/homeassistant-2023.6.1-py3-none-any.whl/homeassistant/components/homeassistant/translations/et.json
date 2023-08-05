@@ -1,0 +1,45 @@
+{
+    "issues": {
+        "config_entry_only": {
+            "description": "Sidumine {domain} ei toeta YAML-faili kaudu konfigureerimist. Sa ei pruugi sidumisega ilmseid probleeme m\u00e4rgata, kuid YAML-is m\u00e4\u00e4ratletud konfiguratsiooniseadistusi tegelikult ei rakendata.\n\nSelle lahendamiseks:\n\n1. Kui seda pole veel teinud, [seadista sidumine]({add_integration}).\n\n2. Eemalda `{domain}:` oma YAML-konfiguratsioonifailist.\n\n3. Taask\u00e4ivita Home Assistant.",
+            "title": "Sidumine {domain} ei toeta YAML-i konfiguratsiooni"
+        },
+        "country_not_configured": {
+            "description": "\u00dchtegi riiki pole m\u00e4\u00e4ratud, v\u00e4rskenda s\u00e4tteid kl\u00f5psates alloleval nupul \"Lisateave\".",
+            "title": "Riik pole m\u00e4\u00e4ratud"
+        },
+        "historic_currency": {
+            "description": "Valuuta {currency} ei ole enam kasutusel, seadista valuuta uuesti.",
+            "title": "Seadistatud valuutat enam ei kasutata"
+        },
+        "integration_key_no_support": {
+            "description": "Sidumine {domain} ei toeta YAML-faili kaudu konfigureerimist. Sa ei pruugi sidumisega ilmseid probleeme m\u00e4rgata, kuid YAML-is m\u00e4\u00e4ratletud konfiguratsiooniseadistusi tegelikult ei rakendata.\n\nSelle lahendamiseks:\n\n1. Kui seda pole veel teinud, [seadista sidumine]({add_integration}).\n\n2. Eemalda `{domain}:` oma YAML-konfiguratsioonifailist.\n\n3. Taask\u00e4ivita Home Assistant.",
+            "title": "Sidumine {domain} ei toeta YAML-i konfiguratsiooni"
+        },
+        "platform_only": {
+            "description": "Sidumine {domain} ei toeta konfigureerimist oma v\u00f5tme all, see tuleb konfigureerida toetatud platvormidel. \n\n Selle lahendamiseks tee j\u00e4rgmist:\n\n 1. Eemalda YAML-i konfiguratsioonifailist ` {domain} :`. \n\n 2. Taask\u00e4ivita Home Assistant.",
+            "title": "Sidumine {domain} ei toeta YAML-i konfiguratsiooni oma v\u00f5tmega"
+        },
+        "python_version": {
+            "description": "Home Assistanti k\u00e4itamise tugi praeguses kasutatavas Pythoni versioonis {current_python_version} on aegunud ja see eemaldatakse rakendusest Home Assistant {breaks_in_ha_version} . T\u00e4ienda Python versioonile {required_python_version} , et v\u00e4ltida Home Assistanti eksemplari t\u00f6\u00f6 l\u00f5ppemist.",
+            "title": "Pythoni {current_python_version} tugi eemaldatakse"
+        }
+    },
+    "system_health": {
+        "info": {
+            "arch": "Protsessori arhitektuur",
+            "config_dir": "Konfiguratsiooni kaust",
+            "dev": "Arendus",
+            "docker": "Docker",
+            "hassio": "Haldur",
+            "installation_type": "Paigalduse t\u00fc\u00fcp",
+            "os_name": "Operatsioonis\u00fcsteemi j\u00e4rk",
+            "os_version": "Operatsioonis\u00fcsteemi versioon",
+            "python_version": "Pythoni versioon",
+            "timezone": "Ajav\u00f6\u00f6nd",
+            "user": "Kasutaja",
+            "version": "Versioon",
+            "virtualenv": "Virtuaalne keskkond"
+        }
+    }
+}

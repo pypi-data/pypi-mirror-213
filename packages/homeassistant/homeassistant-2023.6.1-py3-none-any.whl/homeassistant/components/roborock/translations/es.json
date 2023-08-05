@@ -1,0 +1,134 @@
+{
+    "config": {
+        "abort": {
+            "already_configured": "El dispositivo ya est\u00e1 configurado"
+        },
+        "error": {
+            "invalid_code": "El c\u00f3digo que has introducido es incorrecto, por favor, compru\u00e9balo y vuelve a intentarlo.",
+            "invalid_email": "No hay ninguna cuenta asociada con el correo electr\u00f3nico que has introducido, por favor, int\u00e9ntalo de nuevo.",
+            "invalid_email_format": "Hay un problema con el formato de tu correo electr\u00f3nico. Por favor, vuelve a intentarlo.",
+            "unknown": "Error inesperado",
+            "unknown_roborock": "Se ha producido una excepci\u00f3n roborock desconocida. Por favor, comprueba tus registros.",
+            "unknown_url": "Ha habido un problema al determinar la url correcta para tu cuenta roborock. Por favor, comprueba tus registros."
+        },
+        "step": {
+            "code": {
+                "data": {
+                    "code": "C\u00f3digo de verificaci\u00f3n"
+                },
+                "description": "Escribe el c\u00f3digo de verificaci\u00f3n enviado a tu correo electr\u00f3nico"
+            },
+            "user": {
+                "data": {
+                    "username": "Correo electr\u00f3nico"
+                },
+                "description": "Introduce tu direcci\u00f3n de correo electr\u00f3nico Roborock."
+            }
+        }
+    },
+    "entity": {
+        "select": {
+            "mop_intensity": {
+                "name": "Intensidad de la mopa",
+                "state": {
+                    "custom": "Personalizado",
+                    "high": "Alta",
+                    "intense": "Intenso",
+                    "low": "Baja",
+                    "medium": "Media",
+                    "mild": "Moderado",
+                    "moderate": "Moderado",
+                    "off": "Apagado"
+                }
+            },
+            "mop_mode": {
+                "name": "Modo mopa",
+                "state": {
+                    "custom": "Personalizado",
+                    "deep": "Profundo",
+                    "deep_plus": "Profundo+",
+                    "fast": "R\u00e1pido",
+                    "standard": "Est\u00e1ndar"
+                }
+            }
+        },
+        "sensor": {
+            "cleaning_time": {
+                "name": "Tiempo de limpieza"
+            },
+            "filter_time_left": {
+                "name": "Tiempo restante del filtro"
+            },
+            "main_brush_time_left": {
+                "name": "Tiempo restante del cepillo principal"
+            },
+            "sensor_time_left": {
+                "name": "Tiempo restante del sensor"
+            },
+            "side_brush_time_left": {
+                "name": "Tiempo restante del cepillo lateral"
+            },
+            "status": {
+                "name": "Estado",
+                "state": {
+                    "charger_disconnected": "Cargador desconectado",
+                    "charging": "Cargando",
+                    "charging_complete": "Carga completa",
+                    "charging_problem": "Problema de carga",
+                    "cleaning": "Limpiando",
+                    "device_offline": "Dispositivo sin conexi\u00f3n",
+                    "docking": "Acoplando a la base",
+                    "emptying_the_bin": "Vaciando el dep\u00f3sito",
+                    "error": "Error",
+                    "going_to_target": "Yendo al destino",
+                    "going_to_wash_the_mop": "Yendo a limpiar la mopa",
+                    "idle": "Inactivo",
+                    "manual_mode": "Modo manual",
+                    "paused": "En pausa",
+                    "remote_control_active": "Control remoto activo",
+                    "returning_home": "Volviendo a la base",
+                    "segment_cleaning": "Limpieza de segmentos",
+                    "shutting_down": "Apagando",
+                    "spot_cleaning": "Limpieza de punto",
+                    "starting": "Iniciando",
+                    "updating": "Actualizando",
+                    "washing_the_mop": "Lavado de la mopa",
+                    "zoned_cleaning": "Limpieza por zonas"
+                }
+            },
+            "total_cleaning_time": {
+                "name": "Tiempo total de limpieza"
+            }
+        },
+        "switch": {
+            "child_lock": {
+                "name": "Bloqueo infantil"
+            },
+            "status_indicator": {
+                "name": "Luz indicadora de estado"
+            }
+        },
+        "vacuum": {
+            "roborock": {
+                "state_attributes": {
+                    "fan_speed": {
+                        "state": {
+                            "auto": "Auto",
+                            "balanced": "Equilibrado",
+                            "custom": "Personalizado",
+                            "gentle": "Suave",
+                            "max": "M\u00e1x",
+                            "max_plus": "M\u00e1x plus",
+                            "medium": "Medio",
+                            "off": "Apagado",
+                            "quiet": "Tranquilo",
+                            "silent": "Silencioso",
+                            "standard": "Est\u00e1ndar",
+                            "turbo": "Turbo"
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

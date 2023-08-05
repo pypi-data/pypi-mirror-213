@@ -1,0 +1,125 @@
+{
+    "config": {
+        "abort": {
+            "already_configured": "El dispositiu ja est\u00e0 configurat"
+        },
+        "error": {
+            "invalid_code": "El codi introdu\u00eft \u00e9s incorrecte, comprova'l i torna-ho a provar.",
+            "invalid_email": "No hi ha cap compte associat amb correu introdu\u00eft, torna-ho a provar.",
+            "invalid_email_format": "S'ha produ\u00eft un problema en la formataci\u00f3 del correu - torna-ho a provar.",
+            "unknown": "Error inesperat",
+            "unknown_roborock": "S'ha produ\u00eft una excepci\u00f3 desconeguda - comprova els registres.",
+            "unknown_url": "S'ha produ\u00eft un problema en determinar l'URL correcte del teu compte de roborock - comprova els registres."
+        },
+        "step": {
+            "code": {
+                "data": {
+                    "code": "Codi de verificaci\u00f3"
+                },
+                "description": "Introdueix el codi de verificaci\u00f3 enviat al teu correu electr\u00f2nic"
+            },
+            "user": {
+                "data": {
+                    "username": "Correu electr\u00f2nic"
+                },
+                "description": "Introdueix el correu electr\u00f2nic de Roborock."
+            }
+        }
+    },
+    "entity": {
+        "select": {
+            "mop_intensity": {
+                "name": "Intensitat de fregat",
+                "state": {
+                    "custom": "Personalitzat",
+                    "high": "Alta",
+                    "intense": "Intens",
+                    "low": "Baixa",
+                    "medium": "Mitjana",
+                    "mild": "Mitj\u00e0",
+                    "moderate": "Moderat",
+                    "off": "OFF"
+                }
+            },
+            "mop_mode": {
+                "name": "Mode de fregat",
+                "state": {
+                    "custom": "Personalitzat",
+                    "deep": "Profund",
+                    "deep_plus": "Profund+",
+                    "fast": "R\u00e0pid",
+                    "standard": "Est\u00e0ndard"
+                }
+            }
+        },
+        "sensor": {
+            "cleaning_time": {
+                "name": "Temps de neteja"
+            },
+            "filter_time_left": {
+                "name": "Vida restant del filtre"
+            },
+            "main_brush_time_left": {
+                "name": "Vida restant del respall principal"
+            },
+            "sensor_time_left": {
+                "name": "Vida restant del sensor"
+            },
+            "side_brush_time_left": {
+                "name": "Vida restant del respall lateral"
+            },
+            "status": {
+                "name": "Estat",
+                "state": {
+                    "charger_disconnected": "Carregador desconnectat",
+                    "charging": "Carregant",
+                    "charging_complete": "C\u00e0rrega completada",
+                    "charging_problem": "Problema en la c\u00e0rrega",
+                    "cleaning": "Netejant",
+                    "device_offline": "Dispositiu desconnectat",
+                    "docking": "Aparcant",
+                    "emptying_the_bin": "Buidant dip\u00f2sit",
+                    "error": "Error",
+                    "going_to_target": "Anant a l'objectiu",
+                    "idle": "Inactiu/va",
+                    "manual_mode": "Mode manual",
+                    "shutting_down": "Apagant",
+                    "starting": "Iniciant",
+                    "updating": "Actualitzant"
+                }
+            },
+            "total_cleaning_time": {
+                "name": "Temps total de neteja"
+            }
+        },
+        "switch": {
+            "child_lock": {
+                "name": "Pany infantil"
+            },
+            "status_indicator": {
+                "name": "Llum indicador d'estat"
+            }
+        },
+        "vacuum": {
+            "roborock": {
+                "state_attributes": {
+                    "fan_speed": {
+                        "state": {
+                            "auto": "Autom\u00e0tica",
+                            "balanced": "Equilibrada",
+                            "custom": "Personalitzada",
+                            "gentle": "Lenta",
+                            "max": "M\u00e0xima",
+                            "max_plus": "M\u00e0xima +",
+                            "medium": "Mitjana",
+                            "off": "OFF",
+                            "silent": "Silenciosa",
+                            "standard": "Est\u00e0ndard",
+                            "turbo": "Turbo"
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

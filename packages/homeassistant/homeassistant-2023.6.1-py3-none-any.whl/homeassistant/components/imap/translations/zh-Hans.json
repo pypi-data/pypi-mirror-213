@@ -1,0 +1,36 @@
+{
+    "config": {
+        "error": {
+            "ssl_error": "\u53d1\u751f SSL \u9519\u8bef\u3002\u66f4\u6539 SSL \u52a0\u5bc6\u65b9\u5f0f\u5217\u8868\u5e76\u91cd\u8bd5"
+        },
+        "step": {
+            "user": {
+                "data": {
+                    "ssl_cipher_list": "SSL \u52a0\u5bc6\u5217\u8868\uff08\u9ad8\u7ea7\uff09",
+                    "verify_ssl": "\u9a8c\u8bc1 SSL \u8bc1\u4e66"
+                }
+            }
+        }
+    },
+    "options": {
+        "error": {
+            "invalid_template": "\u6a21\u677f\u65e0\u6548"
+        },
+        "step": {
+            "init": {
+                "data": {
+                    "custom_event_data_template": "\u7528\u4e8e\u521b\u5efa\u81ea\u5b9a\u4e49\u4e8b\u4ef6\u6570\u636e\u7684\u6a21\u677f"
+                }
+            }
+        }
+    },
+    "selector": {
+        "ssl_cipher_list": {
+            "options": {
+                "intermediate": "\u4e2d\u95f4\u52a0\u5bc6",
+                "modern": "\u73b0\u4ee3\u52a0\u5bc6\u65b9\u5f0f",
+                "python_default": "\u9ed8\u8ba4\u8bbe\u7f6e"
+            }
+        }
+    }
+}

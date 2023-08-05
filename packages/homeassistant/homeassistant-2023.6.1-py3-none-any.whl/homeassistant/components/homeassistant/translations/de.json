@@ -1,0 +1,45 @@
+{
+    "issues": {
+        "config_entry_only": {
+            "description": "Die {domain}-Integration unterst\u00fctzt keine Konfiguration \u00fcber eine YAML-Datei. M\u00f6glicherweise bemerkt man bei der Integration keine offensichtlichen Probleme, aber die in YAML definierten Konfigurationseinstellungen werden nicht tats\u00e4chlich angewendet. \n\nUm dieses Problem zu beheben: \n\n1. Falls du dies noch nicht getan hast, [richte die Integration ein]( {add_integration} ). \n\n2. Entferne `{domain}:` aus deiner YAML-Konfigurationsdatei. \n\n3. Starte Home Assistant neu.",
+            "title": "Die {domain}-Integration unterst\u00fctzt keine YAML-Konfiguration"
+        },
+        "country_not_configured": {
+            "description": "Es wurde kein Land konfiguriert. Bitte aktualisiere die Konfiguration, indem du unten auf die Schaltfl\u00e4che \"Mehr erfahren\" klickst.",
+            "title": "Das Land wurde nicht konfiguriert"
+        },
+        "historic_currency": {
+            "description": "Die W\u00e4hrung {currency} wird nicht mehr verwendet, bitte konfiguriere die W\u00e4hrungskonfiguration neu.",
+            "title": "Die konfigurierte W\u00e4hrung ist nicht mehr in Gebrauch"
+        },
+        "integration_key_no_support": {
+            "description": "Die {domain}-Integration unterst\u00fctzt keine Konfiguration \u00fcber eine YAML-Datei. M\u00f6glicherweise bemerkt man bei der Integration keine offensichtlichen Probleme, aber die in YAML definierten Konfigurationseinstellungen werden nicht tats\u00e4chlich angewendet. \n\nUm dieses Problem zu beheben: \n\n1. Falls du dies noch nicht getan hast, [richte die Integration ein]( {add_integration} ). \n\n2. Entferne `{domain}:` aus deiner YAML-Konfigurationsdatei. \n\n3. Starte Home Assistant neu.",
+            "title": "Die {domain}-Integration unterst\u00fctzt keine YAML-Konfiguration"
+        },
+        "platform_only": {
+            "description": "Die {domain}-Integration unterst\u00fctzt keine Konfiguration unter ihrem eigenen Schl\u00fcssel, sie muss unter ihren unterst\u00fctzten Plattformen konfiguriert werden.\n\nSo l\u00f6st man dieses Problem:\n\n1. Entferne `{domain}:` aus deiner YAML-Konfigurationsdatei.\n\n2. Starte Home Assistant neu.",
+            "title": "Die {domain}-Integration unterst\u00fctzt keine YAML-Konfiguration unter eigenem Schl\u00fcssel"
+        },
+        "python_version": {
+            "description": "Die Unterst\u00fctzung f\u00fcr die Ausf\u00fchrung von Home Assistant in der aktuell verwendeten Python-Version {current_python_version} ist veraltet und wird in Home Assistant {breaks_in_ha_version} entfernt. Bitte aktualisiere Python auf {required_python_version}, um zu verhindern, dass deine Home Assistant-Instanz besch\u00e4digt wird.",
+            "title": "Die Unterst\u00fctzung f\u00fcr Python {current_python_version} wird entfernt"
+        }
+    },
+    "system_health": {
+        "info": {
+            "arch": "CPU-Architektur",
+            "config_dir": "Konfigurationsverzeichnis",
+            "dev": "Entwicklung",
+            "docker": "Docker",
+            "hassio": "Supervisor",
+            "installation_type": "Installationstyp",
+            "os_name": "Betriebssystemfamilie",
+            "os_version": "Betriebssystem-Version",
+            "python_version": "Python-Version",
+            "timezone": "Zeitzone",
+            "user": "Benutzer",
+            "version": "Version",
+            "virtualenv": "Virtuelle Umgebung"
+        }
+    }
+}
