@@ -1,0 +1,17 @@
+ogc/na/__init__.py,sha256=uzcNiJ3uKFNJ1HBfKxIwgAy2HMUFsLAe5RkrUg8ncac,464
+ogc/na/annotate_schema.py,sha256=RP4LTP0Xm3VTfd_4YrCAcdV2SMHzcyvX-q7Kou19vXM,24443
+ogc/na/domain_config.py,sha256=57BR-vue3OAAlj58lHqocco6MAZPBo7VaQt0BFQehcc,13409
+ogc/na/download.py,sha256=2afrLyl4WsAlxkCgXsl47fs9mNKfDmhVpeT2iwNSoq0,3354
+ogc/na/gsp.py,sha256=o_mwUG-FyDqLmA7Mx1eKkXqM7yX8BqxIwHuCS2eE1fo,5626
+ogc/na/ingest_json.py,sha256=qAWvRHZtVM2vC_QXkqkgzMaDibR-bL_vU0KIGmohPzE,32394
+ogc/na/profile.py,sha256=K8ylakfXdmp8mwB_jF06FGuANBvg8XtPQIm05LZ8wXM,16477
+ogc/na/provenance.py,sha256=zm3RwfnjISQfTekYXu1-GlgezGcUJSbmptTkLcitcfs,5446
+ogc/na/update_vocabs.py,sha256=zF1J7hel3iQ6n3NC3g1B_hZvVnpnzQ4diLb5oh0yA1w,18229
+ogc/na/util.py,sha256=gQj-dQAfVd53Xup56iDna4NvYI3SmR2S-6cc84eBWMM,7995
+ogc/na/validation.py,sha256=4cbjNiVWZmHxDuS4fU5YPTHdgJyJkLKI8BNSj3d5ULI,4255
+ogc/na/input_filters/__init__.py,sha256=PvWEI-rj5NNR_Cl903wHtS08oTywjDYEfappY5JtVkI,1169
+ogc/na/input_filters/csv.py,sha256=O2E3ivjP9i5tGtyvb6UjmR4eM7toVkzP58EUm6bxvfw,2530
+ogc_na-0.2.25.dist-info/METADATA,sha256=B8TjuBjyl2qdmE2OuMMJoRCHeQzzYh5PgQ0Hry0uQ5w,3558
+ogc_na-0.2.25.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+ogc_na-0.2.25.dist-info/top_level.txt,sha256=Kvy3KhzcIhNPT4_nZuJCmS946ptRr_MDyU4IIhZJhCY,4
+ogc_na-0.2.25.dist-info/RECORD,,
