@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+pypinterest.egg-info/PKG-INFO
+pypinterest.egg-info/SOURCES.txt
+pypinterest.egg-info/dependency_links.txt
+pypinterest.egg-info/requires.txt
+pypinterest.egg-info/top_level.txt
