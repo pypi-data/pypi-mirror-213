@@ -1,0 +1,17 @@
+LICENSE
+README.md
+setup.py
+servicex_databinder/__init__.py
+servicex_databinder/configuration.py
+servicex_databinder/get_servicex_data.py
+servicex_databinder/old_frontend.py
+servicex_databinder/old_output.py
+servicex_databinder/output_handler.py
+servicex_databinder/request.py
+servicex_databinder/servicex_databinder.py
+servicex_databinder.egg-info/PKG-INFO
+servicex_databinder.egg-info/SOURCES.txt
+servicex_databinder.egg-info/dependency_links.txt
+servicex_databinder.egg-info/requires.txt
+servicex_databinder.egg-info/top_level.txt
+tests/test_config.py
