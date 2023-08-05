@@ -1,0 +1,6 @@
+[user]
+        email = zhijxu@microsoft.com
+        name = zhijxu
+[core]
+        editor = vim
+        pager = less -i
