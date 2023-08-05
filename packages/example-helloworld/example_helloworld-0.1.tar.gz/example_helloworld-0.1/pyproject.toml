@@ -1,0 +1,18 @@
+[project]
+name = "example_helloworld"
+version = "0.1"
+authors = [
+  { name="mishpro", email="root@venusbiser.ru" },
+]
+description = "Example hello world script"
+readme = "README.md"
+requires-python = ">3"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/mishpro-programm/example_helloworld"
+"Bug Tracker" = "https://github.com/mishpro-programm/example_helloworld/issues"
