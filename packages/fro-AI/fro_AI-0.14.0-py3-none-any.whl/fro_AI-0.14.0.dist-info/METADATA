@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: fro-AI
+Version: 0.14.0
+Summary: A package for easy use of AI application
+Home-page: https://gitee.com/z14git/fro_-ai
+Author: z14git
+Author-email: lzl1992@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+License-File: LICENSE
+Requires-Dist: tqdm
+Requires-Dist: six
+Requires-Dist: loguru
+Provides-Extra: all
+Requires-Dist: torch ; extra == 'all'
+Requires-Dist: torchvision ; extra == 'all'
+Requires-Dist: opencv-python ; extra == 'all'
+Requires-Dist: flask ; extra == 'all'
+Requires-Dist: mediapipe (==0.10.0) ; extra == 'all'
+Provides-Extra: lpr
+Requires-Dist: hyperlpr3 ; extra == 'lpr'
+Requires-Dist: Pillow ; extra == 'lpr'
+Provides-Extra: mediapipe
+Requires-Dist: mediapipe (==0.10.0) ; extra == 'mediapipe'
+Provides-Extra: qrcode
+Requires-Dist: pyzbar ; extra == 'qrcode'
+Requires-Dist: qrcode ; extra == 'qrcode'
+
