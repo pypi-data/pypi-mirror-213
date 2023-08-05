@@ -1,0 +1,49 @@
+Metadata-Version: 2.1
+Name: ocdskit
+Version: 1.1.6
+Summary: A suite of command-line tools for working with OCDS data
+Home-page: https://github.com/open-contracting/ocdskit
+Author: Open Contracting Partnership
+Author-email: data@open-contracting.org
+License: BSD
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Description-Content-Type: text/x-rst
+Provides-Extra: perf
+Provides-Extra: test
+Provides-Extra: docs
+License-File: LICENSE
+
+|PyPI Version| |Build Status| |Coverage Status| |Python Version|
+
+A suite of command-line tools for working with OCDS data to:
+
+* create compiled releases, versioned releases and record packages
+* upgrade from an old version of OCDS to a new version
+* detect the format of an OCDS file
+* wrap releases in a release package, or records in a record package
+* combine small packages into large packages
+* split large packages into small packages
+* generate a spreadsheet version of a JSON schema
+
+.. tip::
+
+   Want to `download OCDS data <https://data.open-contracting.org/>`__? Use the `OCP Data Registry <https://data.open-contracting.org/>`__.
+
+If you are viewing this on GitHub or PyPI, open the `full documentation <https://ocdskit.readthedocs.io/>`__ for additional details.
+
+.. |PyPI Version| image:: https://img.shields.io/pypi/v/ocdskit.svg
+   :target: https://pypi.org/project/ocdskit/
+.. |Build Status| image:: https://github.com/open-contracting/ocdskit/workflows/CI/badge.svg
+   :target: https://github.com/open-contracting/ocdskit/actions?query=workflow%3ACI
+.. |Coverage Status| image:: https://coveralls.io/repos/github/open-contracting/ocdskit/badge.svg?branch=main
+   :target: https://coveralls.io/github/open-contracting/ocdskit?branch=main
+.. |Python Version| image:: https://img.shields.io/pypi/pyversions/ocdskit.svg
+   :target: https://pypi.org/project/ocdskit/
