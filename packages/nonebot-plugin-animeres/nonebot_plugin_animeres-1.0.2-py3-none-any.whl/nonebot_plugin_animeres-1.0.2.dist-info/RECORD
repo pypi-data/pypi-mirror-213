@@ -1,0 +1,13 @@
+nonebot_plugin_animeres/__init__.py,sha256=GFCU6kFAISArGfWwFlRBCL7XCBu0KVFkXKeOCHOTONg,3155
+nonebot_plugin_animeres/config.py,sha256=IqvWj76vrFE91ZVOqkI302-H0AXQaJglyGyibtQvMLI,449
+nonebot_plugin_animeres/internal.py,sha256=L_3mk18U_iEtCAAHAnYOPQ3Uf6uqcWTGN0g169bDEzA,2763
+nonebot_plugin_animeres/resources/__init__.py,sha256=os-Q7Lsj2Ky8Vilfu4yDe3U8R57mPSe-E94tHa-MhN8,2284
+nonebot_plugin_animeres/resources/anoneko.py,sha256=Ff7DyoE9i2hDLbDPxnATxDsgIEPY3T53NHHxfd9o8Tg,1186
+nonebot_plugin_animeres/resources/dongmanhuayuan.py,sha256=Xng3gyDhk5ttnccSRzeRG60m90xEqoCsUEw-Km0WPeY,1239
+nonebot_plugin_animeres/resources/myheartsite.py,sha256=P3BhYC0zaWzzixaK1fhCiwj9LQBd8n1FURVG53O5F2w,1559
+nonebot_plugin_animeres/schemas.py,sha256=wzEZR7MTNi32DLvqgqO_GV48zRCtTGTBRzArFrVCAas,1040
+nonebot_plugin_animeres/utils.py,sha256=45peoSiA8wyQHl5aBvO_nWKxT4MqsGj1MpfbsprHQsk,1562
+nonebot_plugin_animeres-1.0.2.dist-info/LICENSE,sha256=GJsa-V1mEVHgVM6hDJGz11Tk3k0_7PsHTB-ylHb3Fns,18431
+nonebot_plugin_animeres-1.0.2.dist-info/METADATA,sha256=yZRbKhEyyhs3PBWg_XmO0KMCD4TfRlvYVTEc6ksDEuY,2782
+nonebot_plugin_animeres-1.0.2.dist-info/WHEEL,sha256=7Z8_27uaHI_UZAc4Uox4PpBhQ9Y5_modZXWMxtUi4NU,88
+nonebot_plugin_animeres-1.0.2.dist-info/RECORD,,
