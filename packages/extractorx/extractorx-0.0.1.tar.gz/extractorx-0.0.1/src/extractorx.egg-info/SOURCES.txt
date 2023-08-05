@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+src/extractorx/__init__.py
+src/extractorx/api.py
+src/extractorx.egg-info/PKG-INFO
+src/extractorx.egg-info/SOURCES.txt
+src/extractorx.egg-info/dependency_links.txt
+src/extractorx.egg-info/requires.txt
+src/extractorx.egg-info/top_level.txt
