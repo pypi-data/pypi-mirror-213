@@ -1,0 +1,46 @@
+Metadata-Version: 2.1
+Name: genheader
+Version: 1.1.1
+Summary: A tool to inject prototypes into header from C files.
+Home-page: https://github.com/maplepy/genheader
+Author: maplepy
+Author-email: your-email@example.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Development Status :: 3 - Alpha
+Requires-Python: >=3.8.2
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# genheader
+
+## Introduction
+
+![showcase](https://user-images.githubusercontent.com/83401142/144825570-210f51ed-ddfc-4a14-b84a-10db1aac8563.gif)
+
+Injects c function prototypes(BSD-style) into header.
+
+## Usage
+
+`genheader [-h] -I header.h [dir/ ... file.c]`
+
+You need to have a .h file with
+
+- A line comment containing: `@functions` or `@func`
+- End with `#endif` or `@end`
+
+### examples
+
+```c
+#ifndef HEAD_H
+# define HEAD_H
+
+//	===== @functions =====
+#endif
+```
+
+```c
+//	@func
+//	@end
+```
