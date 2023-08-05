@@ -1,0 +1,7 @@
+redis
+msgpack
+semver
+
+[dev]
+pre-commit==3.3.2
+python-semantic-release==7.34.3
