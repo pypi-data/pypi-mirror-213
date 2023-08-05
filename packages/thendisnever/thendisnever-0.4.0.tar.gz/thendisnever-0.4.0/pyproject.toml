@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "thendisnever"
+version = "0.4.0"
+description = "A package to easily make an LLM talk with itself for eternity."
+authors = ["Andrew Hinh <ajhinh@gmail.com>"]
+repository = "https://github.com/andrewhinh/thendisnever"
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+torch = "^2.0.0"
+transformers = "^4.0.0"
+
+[tool.poetry.dev-dependencies]
+pytest = "*"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.urls]
+issues = "https://github.com/andrewhinh/thendisnever/issues"
