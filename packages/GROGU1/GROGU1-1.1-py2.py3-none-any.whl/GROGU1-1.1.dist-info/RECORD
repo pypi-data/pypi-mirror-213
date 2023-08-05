@@ -1,0 +1,15 @@
+GROGU1/GROGU_electronic.py,sha256=f4x5_eh7Pa5lFXRpYzPOgcl19AgT5IAIxVmUR0AFrSo,34313
+GROGU1/GROGU_finance.py,sha256=4pOExAMheR-owhBnZEYDXeqopdiLr-47wjVAg3kzDIQ,33869
+GROGU1/GROGU_food.py,sha256=_P2SraconGUT9tvYIdTAL_j-PBNsFwOdKoDtrO-x_JY,34284
+GROGU1/GROGU_hotel.py,sha256=9IT6nXwR0vxHuq5tGEfQaNfqqv30TTIytV2eDPN5jnA,34292
+GROGU1/GROGU_lexicon_electronic.txt,sha256=S9qa870i4xqo2qzOJCEcjqLwDIk3OfHPgw1qtPXJZbE,111054
+GROGU1/GROGU_lexicon_finance.txt,sha256=4_JmFnhIuEnNMbhG8B3JcrjKFTYXn4LqlftjPLay6u8,122566
+GROGU1/GROGU_lexicon_food.txt,sha256=BjuPVvMREHptq5pylPLyy78QFi4hW51X4NNKfnXhAKI,107729
+GROGU1/GROGU_lexicon_hotel.txt,sha256=NUoEwACGYPIRaEb26jIDKRMR6G8auZPWFhThmxDPsys,112307
+GROGU1/__init__.py,sha256=G2WICU_Zh5n_nB23EBynr3180BMfu-UHO-IerOnJgRg,17
+GROGU1/emoji_utf8_lexicon.txt,sha256=uNVCI64c4io-EsH3RTFrcWeMMo619dMGOoQvN8--KCM,121986
+GROGU1-1.1.dist-info/LICENSE.txt,sha256=wPwCqGrisXnEcpaUxSO79C2mdOUTbtjhLjyy8mVW6p8,1046
+GROGU1-1.1.dist-info/METADATA,sha256=TBCihzjAe0GhFedNuyenqmZ7Wq8vpUgz_A7bKj2goMw,1420
+GROGU1-1.1.dist-info/WHEEL,sha256=a-zpFRIJzOq5QfuhBzbhiA1eHTzNCJn8OdRvhdNX0Rk,110
+GROGU1-1.1.dist-info/top_level.txt,sha256=avWKiMcggwZF3dapjHSVViMy5Qk_OKNF26syanOK4rY,7
+GROGU1-1.1.dist-info/RECORD,,
