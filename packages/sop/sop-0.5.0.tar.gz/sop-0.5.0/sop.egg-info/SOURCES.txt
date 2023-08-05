@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+sop/__init__.py
+sop/__main__.py
+sop/__version__.py
+sop/py.typed
+sop.egg-info/PKG-INFO
+sop.egg-info/SOURCES.txt
+sop.egg-info/dependency_links.txt
+sop.egg-info/top_level.txt
