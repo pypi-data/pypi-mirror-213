@@ -1,0 +1,11 @@
+[Desktop Entry]
+Type=Application
+Version=1.5
+
+Name=no_vtf
+GenericName=Valve Texture Format Converter
+Icon=insert-image
+Exec=sh -c "\"\$(dirname %k)\"/no_vtf %F"
+Terminal=true
+Categories=Graphics;2DGraphics;RasterGraphics;ImageProcessing;ConsoleOnly
+Keywords=Source Engine;VTF

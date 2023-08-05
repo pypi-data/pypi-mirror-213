@@ -1,0 +1,43 @@
+# SPDX-FileCopyrightText: b5327157 <b5327157@protonmail.com>
+#
+# SPDX-License-Identifier: LGPL-3.0-or-later
+
+# Setuptools
+
+[build-system]
+build-backend = 'setuptools.build_meta'
+requires = [
+	'setuptools >= 67.8.0',
+	'setuptools-scm[toml] >= 7.1.0',
+	'wheel >= 0.40.0',
+]
+
+[tool.setuptools_scm]
+version_scheme = 'post-release'
+write_to = 'no_vtf/_version.py'
+
+# Other
+
+[tool.black]
+color = true
+extend-exclude = '''
+	/generated/
+'''
+fast = true
+line-length = 100
+quiet = true
+target-version = ['py310']
+
+[tool.coverage.report]
+exclude_also = [
+	'^\s*\.\.\.$'
+]
+skip_empty = true
+
+[tool.coverage.run]
+branch = true
+concurrency = [
+	'multiprocessing'
+]
+parallel = true
+sigterm = true
