@@ -1,0 +1,14 @@
+cythonbuilder/__init__.py,sha256=f_yfX-L6dQMx0HvbvxJ47NKOYWLwjun5Zgo4Ti3G1DY,22
+cythonbuilder/__main__.py,sha256=jqTl84vFh96bCM08vgx7rXQW4FPoQv_dc5uW-rnJaDs,147
+cythonbuilder/appsettings.py,sha256=9zz0Wf-SXLw-1ntrKsAsQOGqdZ8ywAT7YjUJB71gCnQ,220
+cythonbuilder/cli.py,sha256=LWzexyF7xHc8QH4aofAqslXdTyssqGM1ZW2p5FUjcMM,8179
+cythonbuilder/cython_builder.py,sha256=Os16chIlhk62UfK9jDFRR2q5BFmGxDpHtTlNNqrpIbE,6881
+cythonbuilder/definitions.py,sha256=Ud4EpuRBwsUXVYWaBwgJmwdbldD_oZntJpbwzU8w8_M,730
+cythonbuilder/helpers.py,sha256=ZPeCkpcis_O8WFakFw3rvSZATc19h9DvN49OIhKIIxg,5521
+cythonbuilder/logs.py,sha256=swbdP2EVwxVUtIyexntOGfKqOuPogjwHVQRXxEcUsiw,1886
+cythonbuilder/pyigenerator.py,sha256=3mIablyRKVageR-HV8dV1GnkHxBDDcTZdjMtsy6Br6E,11659
+cythonbuilder-0.1.18.dist-info/entry_points.txt,sha256=xGmj1XbMaISGqBacViH59JynF1vZ3Z69R7eM887eWqo,87
+cythonbuilder-0.1.18.dist-info/LICENSE.txt,sha256=4hFKETOOwbJcxwq8sLaaHcr5LLKyMvXOrjDd9eb8lBk,1100
+cythonbuilder-0.1.18.dist-info/METADATA,sha256=hFuMqewQbfjUS6OZ-ih8D9HAZ4cTEUJwSuIa1n3vwIQ,6422
+cythonbuilder-0.1.18.dist-info/WHEEL,sha256=7Z8_27uaHI_UZAc4Uox4PpBhQ9Y5_modZXWMxtUi4NU,88
+cythonbuilder-0.1.18.dist-info/RECORD,,

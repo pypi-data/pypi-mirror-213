@@ -1,0 +1,4 @@
+[console_scripts]
+cybuilder=cythonbuilder.cli:app
+cythonbuilder=cythonbuilder.cli:app
+
