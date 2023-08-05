@@ -1,0 +1,6 @@
+README.md
+setup.py
+llmtest.egg-info/PKG-INFO
+llmtest.egg-info/SOURCES.txt
+llmtest.egg-info/dependency_links.txt
+llmtest.egg-info/top_level.txt
