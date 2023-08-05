@@ -1,0 +1,69 @@
+unreleased
+    *
+
+0.5.0
+    * typing
+    * drop py27
+
+0.4.1
+	* packaging fixes
+
+0.4.0
+	* packaging fixes
+	* removed `htmlmeta_setup` from pyramid_helpers; use the `includeme` instead
+
+0.3.2
+	* upgraded black
+	* integrated with pre-commit
+	* tox testing
+	* github actions
+	* black
+
+0.3.1
+	reverted an aggressive 2to3 change
+
+0.3.0
+	python3 official support
+
+0.2.0
+	dropping pylons
+	
+0.1.2 - used dict's `get` method with an explicit fallback onto None, so data does not have to be explicitly checked
+
+0.1.1 - adding support for pyramid request methods
+		DEPRECATING CURRENT pyramid helpers
+
+0.1.0 - adding support for multiple keys in `link`
+
+0.0.9 - flake8
+
+0.0.8 - packaging fixes
+
+0.0.7 -
+	* improved HTML escaping and tag writing
+		- consolidated escaping into external library, `metadata_utils`
+		- escaping all property k/v
+		- using explicit unicode strings
+
+0.0.6
+	packaging fixes
+
+0.0.5
+	packaging fixes
+
+0.0.4
+	cleaned up 'link rel="%s"'
+	cleaned up pyramid/pylons helpers
+
+0.0.3
+	added Pyramid classifier
+	added support for <link rel="canonical" href="http://123.com" />
+
+0.0.2
+	bugfix in pyramid helper, a typo caused an error
+	updated pyramid and pylons __init__ functions to return the wrapped object
+	removed trailing space in meta tags -- ||" />|| becomes ||"/>||
+	added in tests for core and pyramid helpers. pylons is too difficult to test against. sorry
+
+0.0.1
+	initial import

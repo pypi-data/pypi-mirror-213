@@ -1,0 +1,6 @@
+metadata_utils>=0.2.0
+
+[testing]
+mypy
+pyramid
+pytest
