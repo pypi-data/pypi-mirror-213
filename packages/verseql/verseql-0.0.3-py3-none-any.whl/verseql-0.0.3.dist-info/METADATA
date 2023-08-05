@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: verseql
+Version: 0.0.3
+Summary: VerseQL provides a SQL-like query language for accessing and manipulating data across many Verses.
+Author-email: Rapidverse <verse@rapidverse.com>
+Project-URL: Homepage, https://github.com/rapidverse/verse
+Project-URL: Bug Tracker, https://github.com/rapidverse/verse/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: antlr4-python3-runtime (>=4.13.0)
+
+# VerseQL
+Coming soon
