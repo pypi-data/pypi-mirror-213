@@ -1,0 +1,10 @@
+CHANGELOG.txt
+LICENSE.txt
+MANIFEST.in
+README.txt
+setup.py
+mctlib/__init__.py
+mctlib.egg-info/PKG-INFO
+mctlib.egg-info/SOURCES.txt
+mctlib.egg-info/dependency_links.txt
+mctlib.egg-info/top_level.txt
