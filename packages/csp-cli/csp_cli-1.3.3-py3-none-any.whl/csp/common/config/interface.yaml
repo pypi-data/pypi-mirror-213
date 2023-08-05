@@ -1,0 +1,38 @@
+# 后端接口地址配置
+
+search:
+  dataset: http://27.196.43.166:30000/devkitClient/dataSetList
+  resource: http://27.196.43.166:30000/devkitClient/findRes
+  docker: http://27.196.43.166:30000/devkitClient/getDockerImagesInfo
+  model: http://27.196.43.166:30000/devkitClient/findModelList
+
+download:
+  dataset: http://27.196.43.166:30000/devkitClient/downDataSet
+  resource: http://27.196.43.166:30000/devkitClient/downRes
+  model: http://27.196.43.168:8181/cspdevkit/serviceCenter/downModel
+
+list:
+  resource: http://27.196.43.166:30000/devkitClient/resList
+  model: http://27.196.43.166:30000/devkitClient/modelList
+  image: http://27.196.43.166:30000/devkitClient/imageList
+  user_model: http://27.196.43.166:30000/devkitClient/getUserModelList
+
+
+info:
+  dataset: http://27.196.43.166:30000/
+  resource: http://27.196.43.166:30000/devkitClient/getInfo
+  model: http://27.196.43.166:30000/devkitClient/getModelInfo
+
+start:
+  model: http://27.196.43.168:8181/cspdevkit/serviceCenter/online
+
+upload:
+  model: http://27.196.43.166:30000/devkitClient/register
+  image: http://27.196.43.166:30000/devkitClient/registerImage
+
+user:
+  clientId: cspdevkit
+  clientSecret: b4b290b0e51eb068b7a7401f054db652
+  token: http://27.196.43.166:30000/devkitClient/getUserToken
+  logout: http://27.196.43.166:28080/kit-prod-api/oauth/remove/token
+  register: http://27.196.43.166:30000/devkitClient/userRegister

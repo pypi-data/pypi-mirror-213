@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: csp-cli
+Version: 1.3.3
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Dist: Click
+Requires-Dist: requests
+Requires-Dist: PyYAML (>=6.0)
+Requires-Dist: tqdm
+Requires-Dist: seaborn
+Requires-Dist: chardet
+Requires-Dist: prettytable
+Requires-Dist: Pillow
+Requires-Dist: numpy
+Requires-Dist: matplotlib
+Requires-Dist: lxml
+Requires-Dist: openpyxl
+Requires-Dist: pandas
+Requires-Dist: pipetool (>=0.0.8)
+Requires-Dist: zipp
+Requires-Dist: loguru
+Requires-Dist: requests-toolbelt
+Requires-Dist: wcwidth
+Requires-Dist: pycryptodome
+
