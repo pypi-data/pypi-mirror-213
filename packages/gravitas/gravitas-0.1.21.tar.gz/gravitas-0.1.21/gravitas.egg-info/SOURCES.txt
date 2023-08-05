@@ -1,0 +1,16 @@
+README.md
+pyproject.toml
+setup.py
+gravitas/EGM96.c
+gravitas/GRGM360.c
+gravitas/MRO120F.c
+gravitas/__init__.py
+gravitas/gravlib.c
+gravitas/lib.py
+gravitas/libgrav.h
+gravitas.egg-info/PKG-INFO
+gravitas.egg-info/SOURCES.txt
+gravitas.egg-info/dependency_links.txt
+gravitas.egg-info/not-zip-safe
+gravitas.egg-info/requires.txt
+gravitas.egg-info/top_level.txt
