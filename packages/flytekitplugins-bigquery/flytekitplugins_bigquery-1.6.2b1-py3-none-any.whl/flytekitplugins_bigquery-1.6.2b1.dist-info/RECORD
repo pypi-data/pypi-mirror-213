@@ -1,0 +1,10 @@
+flytekitplugins_bigquery-1.6.2b1-py3.11-nspkg.pth,sha256=lkJ-eVJsxHcpr3YkJBzWrgSFWPWyG3DLhUSGmTcjxhg,584
+flytekitplugins/bigquery/__init__.py,sha256=T8toikz5hu4sJm7MVdVd_hk2kPSep53ZE-Xw1Ikpu6I,323
+flytekitplugins/bigquery/agent.py,sha256=BvxHDu4K0_Y40j8Vh8o8xJ8anpRsnuO6BzC-84HKqSE,3813
+flytekitplugins/bigquery/task.py,sha256=wvHsaci0tVjkSSf70XzX2Gh9VcgafxseUF-Px-j6l1g,3273
+flytekitplugins_bigquery-1.6.2b1.dist-info/METADATA,sha256=NV2fWCFl5QiF8CAelj-a_alQrRKBe2Q0qt3VgcZbQwg,893
+flytekitplugins_bigquery-1.6.2b1.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+flytekitplugins_bigquery-1.6.2b1.dist-info/entry_points.txt,sha256=Z80x-2gzYgHv-WBGofIuObvIBjoKW5Ts49QNCwbYwSU,55
+flytekitplugins_bigquery-1.6.2b1.dist-info/namespace_packages.txt,sha256=b2gTzXFHuV5afchaJ28HueRhYzj-8x5Ytr8n2twnAik,16
+flytekitplugins_bigquery-1.6.2b1.dist-info/top_level.txt,sha256=b2gTzXFHuV5afchaJ28HueRhYzj-8x5Ytr8n2twnAik,16
+flytekitplugins_bigquery-1.6.2b1.dist-info/RECORD,,
