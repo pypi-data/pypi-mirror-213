@@ -1,0 +1,3 @@
+[console_scripts]
+aws-org-tree=aws_org_tree:main
+
