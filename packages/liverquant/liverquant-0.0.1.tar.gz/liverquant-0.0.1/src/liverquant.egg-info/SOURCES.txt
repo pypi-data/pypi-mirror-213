@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+src/liverquant/__init__.py
+src/liverquant/liverquant.py
+src/liverquant/slidepatch.py
+src/liverquant.egg-info/PKG-INFO
+src/liverquant.egg-info/SOURCES.txt
+src/liverquant.egg-info/dependency_links.txt
+src/liverquant.egg-info/requires.txt
+src/liverquant.egg-info/top_level.txt
