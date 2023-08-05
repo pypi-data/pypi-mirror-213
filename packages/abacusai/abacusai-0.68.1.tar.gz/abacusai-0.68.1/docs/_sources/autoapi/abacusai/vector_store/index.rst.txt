@@ -1,0 +1,145 @@
+:py:mod:`abacusai.vector_store`
+===============================
+
+.. py:module:: abacusai.vector_store
+
+
+Module Contents
+---------------
+
+Classes
+~~~~~~~
+
+.. autoapisummary::
+
+   abacusai.vector_store.VectorStore
+
+
+
+
+.. py:class:: VectorStore(client, name=None, vectorStoreId=None, createdAt=None, latestVectorStoreVersion={})
+
+   Bases: :py:obj:`abacusai.return_class.AbstractApiClass`
+
+   A vector store that stores embeddings for a list of document trunks.
+
+   :param client: An authenticated API Client instance
+   :type client: ApiClient
+   :param name: The name of the vector store.
+   :type name: str
+   :param vectorStoreId: The unique identifier of the vector store.
+   :type vectorStoreId: str
+   :param createdAt: When the vector store was created.
+   :type createdAt: str
+   :param latestVectorStoreVersion: The latest version of vector store.
+   :type latestVectorStoreVersion: VectorStoreVersion
+
+   .. py:method:: __repr__()
+
+      Return repr(self).
+
+
+   .. py:method:: to_dict()
+
+      Get a dict representation of the parameters in this class
+
+      :returns: The dict value representation of the class parameters
+      :rtype: dict
+
+
+   .. py:method:: update(feature_group_id = None, name = None)
+
+      Updates an existing vector store.
+
+      :param feature_group_id: The ID of the feature group to update the vector store with.
+      :type feature_group_id: str
+      :param name: The name group to update the vector store with.
+      :type name: str
+
+      :returns: The updated vector store.
+      :rtype: VectorStore
+
+
+   .. py:method:: create_version()
+
+      Creates a vector store version from the latest version of the feature group that the vector store associated with.
+
+      :param vector_store_id: The unique ID associated with the vector store to create version with.
+      :type vector_store_id: str
+
+      :returns: The newly created vector store version.
+      :rtype: VectorStoreVersion
+
+
+   .. py:method:: refresh()
+
+      Calls describe and refreshes the current object's fields
+
+      :returns: The current object
+      :rtype: VectorStore
+
+
+   .. py:method:: describe()
+
+      Describe a Vector Store.
+
+      :param vector_store_id: A unique string identifier associated with the vector store.
+      :type vector_store_id: str
+
+      :returns: The vector store object.
+      :rtype: VectorStore
+
+
+   .. py:method:: delete()
+
+      Delete a Vector Store.
+
+      :param vector_store_id: A unique string identifier associated with the vector store.
+      :type vector_store_id: str
+
+
+   .. py:method:: list_versions(limit = 100, start_after_version = None)
+
+      List all the vector store versions with a given vector store ID.
+
+      :param limit: The number of vector store versions to retrieve.
+      :type limit: int
+      :param start_after_version: An offset parameter to exclude all vector store versions up to this specified one.
+      :type start_after_version: str
+
+      :returns: All the vector store versions associated with the vector store.
+      :rtype: VectorStoreVersion
+
+
+   .. py:method:: lookup(query, deployment_token, limit_results = None)
+
+      Lookup relevant documents from the vector store deployed with given query.
+
+      :param query: The query to search for.
+      :type query: str
+      :param deployment_token: A deployment token used to authenticate access to created vector store.
+      :type deployment_token: str
+      :param limit_results: If provided, will limit the number of results to the value specified.
+      :type limit_results: int
+
+      :returns: The relevant documentation results found from the vector store.
+      :rtype: VectorStoreLookupResult
+
+
+   .. py:method:: wait_until_ready(timeout = 3600)
+
+      A waiting call until vector store is ready.
+
+      :param timeout: The waiting time given to the call to finish, if it doesn't finish by the allocated time, the call is said to be timed out. Default value given is 3600 seconds.
+      :type timeout: int, optional
+
+
+   .. py:method:: get_status()
+
+      Gets the status of the vector store.
+
+      :returns: A string describing the status of a vector store (pending, complete, etc.).
+      :rtype: str
+
+
+
