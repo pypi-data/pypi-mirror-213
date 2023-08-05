@@ -1,0 +1,17 @@
+ghga_datasteward_kit/__init__.py,sha256=YOPRTPMq5JynAttZOqINIeZQx4d29_nxRhMM1M3SBnU,755
+ghga_datasteward_kit/__main__.py,sha256=xzdskb1gLEKU6eN05oL8eVbXlwVnbtCKVUYFcQqoZtM,800
+ghga_datasteward_kit/batch_s3_upload.py,sha256=KjsUbtBfo2dBJwFgkj5UPBLSweVKZNGC9CCSoRqg7Jo,6557
+ghga_datasteward_kit/catalog_accession_generator.py,sha256=f-2fxLGj8tPK0xM2k3iF-ApN-YtAnMpwAi6hAYa9AFg,3301
+ghga_datasteward_kit/cli.py,sha256=11hiW_os5I7GaQyAxjE6GAuszQCv7eFQE-wlrM1i4ds,2998
+ghga_datasteward_kit/config.py,sha256=UcWiQ3VzzTQrrmHqmSmNBPxH_gLxZRt7r8JON5im80I,843
+ghga_datasteward_kit/main.py,sha256=YPIPpEG7q92thod-EGrIFtm5zj40NC0EuFD_Qnj9KLY,928
+ghga_datasteward_kit/s3_upload.py,sha256=87lnsYc0rsqVi0ftNaR0wqGDSa8MKa7upuxaOi0vpu4,23425
+tests/fixtures/__init__.py,sha256=E9gr4DMX7GAjMI2CGx9jny7essvn07almoATuULdpBU,750
+tests/fixtures/config.py,sha256=7xb3dye_J2hM2EIGOmtsrOg9_gvguRa6Prdaf7fFpu0,1316
+tests/fixtures/utils.py,sha256=a6t1vJFv2WoZoq1s7C29oyQSMyrYoYgb9Ujzz4VSaEI,789
+ghga_datasteward_kit-0.1.1.dist-info/LICENSE,sha256=a2nPPnhGY9QGdkfGrseHGDVj62fh8o5DoHsUpQp3GzA,11452
+ghga_datasteward_kit-0.1.1.dist-info/METADATA,sha256=jWAZYtCrU5nmtRTfKwVvBon1iVfUczLXur76bZprxG4,4086
+ghga_datasteward_kit-0.1.1.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+ghga_datasteward_kit-0.1.1.dist-info/entry_points.txt,sha256=yFgqQwQManLpt3AGu6HUxZx90kl3W2lm9piswJXPSGo,75
+ghga_datasteward_kit-0.1.1.dist-info/top_level.txt,sha256=203DlzxDGxpvMfXdUWQ2RSHA8WzU1nuKEhdb82g21zg,27
+ghga_datasteward_kit-0.1.1.dist-info/RECORD,,
