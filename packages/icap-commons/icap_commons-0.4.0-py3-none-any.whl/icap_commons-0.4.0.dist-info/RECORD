@@ -1,0 +1,7 @@
+icap_commons/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+icap_commons/gcp.py,sha256=EGWqRU2MRkv0x9PCDL405_I1eJNySnYM6gRFvLaNI3c,1407
+icap_commons/pubsub.py,sha256=ewsYj_7GSgNY8dJPWhiALddJaaATq2AFvYMVRI6Dshk,3683
+icap_commons-0.4.0.dist-info/METADATA,sha256=fNRVQdCqEa1DAhxfzRtNkuber7eeuU0GuSCRTRYmsQQ,543
+icap_commons-0.4.0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+icap_commons-0.4.0.dist-info/top_level.txt,sha256=2ojMKoXnvqUq3GG4TJ_ENcrIfUO91Cs066vOFDaTthQ,13
+icap_commons-0.4.0.dist-info/RECORD,,
