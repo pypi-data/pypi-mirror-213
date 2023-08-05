@@ -1,0 +1,35 @@
+[build-system]
+requires = ["flit_core >=3.2,<4"]
+build-backend = "flit_core.buildapi"
+
+[project]
+name = "jupancon"
+authors = [{name = "Juan Gonz\u00e1lez-Vallinas", email = "juan@multilayer.io"}]
+readme = "README.md"
+classifiers = ["License :: OSI Approved :: MIT License"]
+dynamic = ["version", "description"]
+
+dependencies = [
+    "pandas<2.0.0",
+    "sshtunnel>=0.4.0",
+    "pyparsing>=3.0.9",
+    "sqlalchemy-redshift>=0.8.14", 
+    "redshift-connector>=2.0.911",
+    "databricks-sql-connector>=2.6.1",
+    "sqlalchemy-bigquery>=1.6.1", 
+    "google-cloud-bigquery-storage>=2.20.0"
+]
+
+[project.optional-dependencies]
+test = [
+    "pytest>=6.2.5",
+    "jupyter>=1.0.0",
+    "jupyterlab>=3.1.14",
+    "black>=21.9b0",
+    "flake8>=3.9.2",
+    "isort>=5.9.3"
+]
+
+
+[project.urls]
+Home = "https://github.com/multilayer-io/jupancon"
