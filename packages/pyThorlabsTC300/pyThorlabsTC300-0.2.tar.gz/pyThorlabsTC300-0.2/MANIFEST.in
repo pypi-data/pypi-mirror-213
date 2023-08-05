@@ -1,0 +1,3 @@
+include pyThorlabsTC300/graphics/*
+include pyThorlabsTC300/*.json
+include pyThorlabsTC300/*.dll

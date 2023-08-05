@@ -1,0 +1,16 @@
+{
+    "auto_power_range": true,
+    "ramp": {
+        "ramp_numb_steps": 160,
+        "ramp_repeat": 1,
+        "ramp_reset": false,
+        "ramp_reverse": true,
+        "ramp_send_initial_trigger": true,
+        "ramp_send_trigger": true,
+        "ramp_step_size": 1.0,
+        "ramp_wait_1": 0.5,
+        "ramp_wait_2": 0.5
+    },
+    "refresh_time": 0.05,
+    "sensitivity_auto": true
+}
