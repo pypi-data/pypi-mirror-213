@@ -1,0 +1,2 @@
+[console_scripts]
+manytasks = manytasks.entry:main
