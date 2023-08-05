@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "domini"
+version = "0.8.0"
+description = "Create HTML documents using Pythonic syntax that mimics the real deal."
+license = "GPL-3.0-or-later"
+readme = "README.md"
+authors = ["Maximillian Strand <maxi@millian.se>"]
+repository = "https://gitlab.com/deepadmax/domini"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
