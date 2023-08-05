@@ -1,0 +1,37 @@
+Metadata-Version: 2.1
+Name: dingdong-sonos
+Version: 0.0.4
+Summary: Ring the Gong
+Author-email: Tim Rohner <info@timrohner.ch>
+Project-URL: Source, https://github.com/leokster/dingdong_sonos
+Keywords: dingdong_sonos
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Description-Content-Type: text/markdown
+Requires-Dist: soco (>=0.29.1)
+Requires-Dist: click (==8.1.3)
+Provides-Extra: dev
+Requires-Dist: build (>=0.10.0) ; extra == 'dev'
+Requires-Dist: setuptools-scm (>=7.1.0) ; extra == 'dev'
+
+# DinDong
+
+This is a Python script that allows you to play a DingDong on a Sonos speaker using a local HTTP server. The script uses the soco library to control the Sonos speaker and the click library for command line interface.
+
+
+# How to use it
+
+```
+pip install dingdong-sonos
+dingdong
+```
+
+You can adjust the volume or set the sonos_ip:
+```
+dingdong --sonos_ip <ip-of-your-sonos> --volume 80
