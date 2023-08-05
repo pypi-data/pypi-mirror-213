@@ -1,0 +1,3 @@
+[console_scripts]
+hdf5objects=hdf5objects.__main__:main
+
