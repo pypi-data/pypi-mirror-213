@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: pyautobot
+Version: 1.0.2
+Summary: pyautobot is a Python library provide functions that do robotic process automation jobs.
+Home-page: https://github.com/blacktear23/pyautobot
+Author: blacktear23
+Author-email: blacktear23@gmail.com
+License: BSD
+Keywords: automation rpa
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Win32 (MS Windows)
+Classifier: Environment :: X11 Applications
+Classifier: Environment :: MacOS X
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+pyautobot is a Python library provide functions that do robotic process automation jobs.
+
+It combines below librarys to archive the target:
+
+* PyAutoGUI and pyperclip: control clipboard, mouse and keyboard operations.
+* Selenium: control Chrome browser.
+* OpenCV-Python: provide graphic based operation.
+* EasyOCR: provide OCR functions.

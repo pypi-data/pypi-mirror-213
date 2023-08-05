@@ -1,0 +1,15 @@
+LICENSE
+README.md
+setup.py
+bin/pyautobot
+pyautobot/__init__.py
+pyautobot/chrome.py
+pyautobot/gui.py
+pyautobot/images.py
+pyautobot/ocr.py
+pyautobot/utils.py
+pyautobot.egg-info/PKG-INFO
+pyautobot.egg-info/SOURCES.txt
+pyautobot.egg-info/dependency_links.txt
+pyautobot.egg-info/requires.txt
+pyautobot.egg-info/top_level.txt
