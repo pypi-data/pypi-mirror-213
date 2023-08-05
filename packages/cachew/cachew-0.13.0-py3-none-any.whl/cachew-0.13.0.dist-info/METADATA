@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: cachew
+Version: 0.13.0
+Summary: Easy sqlite-backed persistent cache for dataclasses
+Home-page: https://github.com/karlicoss/cachew
+Author: Dima Gerasimov
+Author-email: karlicoss@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.8
+Requires-Dist: appdirs
+Requires-Dist: sqlalchemy (>=1.0)
+Provides-Extra: optional
+Requires-Dist: colorlog ; extra == 'optional'
+Provides-Extra: testing
+Requires-Dist: pytest ; extra == 'testing'
+Requires-Dist: pytz ; extra == 'testing'
+Requires-Dist: patchy ; extra == 'testing'
+Requires-Dist: pylint ; extra == 'testing'
+Requires-Dist: mypy ; extra == 'testing'
+Requires-Dist: lxml ; extra == 'testing'
+Requires-Dist: bandit ; extra == 'testing'
+Requires-Dist: more-itertools ; extra == 'testing'
+Requires-Dist: enlighten ; extra == 'testing'
+
+UNKNOWN
+
+
