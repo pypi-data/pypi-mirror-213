@@ -1,0 +1,6 @@
+client_utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+client_utils/base_client.py,sha256=MuLlB-vZB3PWRta-kZMjnM4C922Kb7ZXrrjrOJVqzP4,3544
+scramjet_client_utils-1.1.0.dist-info/METADATA,sha256=mbzFcjrtjZ054OraspcYzmgquJ7bUKcZ9WhEyJC1-4U,24267
+scramjet_client_utils-1.1.0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+scramjet_client_utils-1.1.0.dist-info/top_level.txt,sha256=qxaQGyAhPA8LT8PPKdPwUipYGrf1g04iALIx46Tkufs,13
+scramjet_client_utils-1.1.0.dist-info/RECORD,,
