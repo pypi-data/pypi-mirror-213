@@ -1,0 +1,18 @@
+[tool.cibuildwheel]
+skip = "*-manylinux_i686 *_ppc64le *_s390x *-musllinux_aarch64"
+
+[tool.cibuildwheel.linux]
+manylinux-x86_64-image = "manylinux2014"
+manylinux-aarch64-image = "manylinux2014"
+musllinux-x86_64-image = "musllinux_1_1"
+environment = {RUNNER_OS="Linux"}
+
+[tool.cibuildwheel.macos]
+archs = "x86_64 arm64"
+test-skip = "*_universal2:arm64"
+# MACOS linker doesn't support stripping symbols
+environment = {RUNNER_OS="macOS"}
+
+[build-system]
+requires = ["setuptools>=42", "wheel", "numpy"]
+build-backend = "setuptools.build_meta"
