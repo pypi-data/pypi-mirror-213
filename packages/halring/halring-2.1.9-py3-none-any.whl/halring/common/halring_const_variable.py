@@ -1,0 +1,301 @@
+# coding=utf-8
+
+class ConstVariable(object):
+    """
+    ConstVariable 全局变量
+    Author: xqzhou
+    """
+    # Const variable
+    INPUT_EMPTY = ""
+    INPUT_SPACE = " "
+    INPUT_HEX_ZERO = b'\x00'.decode()
+    INPUT_DELIMIT_COMMAS = ","
+    INPUT_DELIMIT_BAR = "|"
+    # TOOL KEYWORD
+    # include utils/mssql_utils,mysql_utils
+    NO_CHECK = "[NO_CHECK]"  # Database Execute Result: No Check
+    CHECK_CONSISTENCY = "[CHECK_CONSISTENCY]"  # Database Execute Result: Check consistency, only check fist line fist row unit
+    CHECK_STEP = "[CHECK_STEP]"  # Database Execute Result: Check STEP Protocol, ignore timestamp
+
+    # include utils/ezstep_order_utils
+    STEP_AUTOLEN = "[STEP_AUTOLEN]"  # STEP: auto calc step length
+    STEP_NULL = "[STEP_NULL]"  # STEP: step current key value invisible
+
+    # include utils/ezstep_order_utils,string_utils
+    SPACE = "[SPACE]"  # String: replace one space
+    EMPTY = "[EMPTY]"  # String: replace NULL
+
+    # include utils/plink_utils
+    SEARCH_NOT_EXIST = "[SEARCH_NOT_EXIST]"  # CMD: command execute reulst search not exist
+    VMS_SPECIAL = "[VMS_SPECIAL]"  # CMD: vms special result etc chm, long result
+
+    # include backend: rpl_fil_data.pl
+    DQM = "[DQM]"  # rpl_fil_data: repalce double quotation masks
+
+    # include aqcdb.field_config
+    FIELD_DELIVERY_TASK_STATUS_INIT = "I"
+    FIELD_DELIVERY_TASK_STATUS_START = "S"
+    FIELD_DELIVERY_TASK_STATUS_COMPLETE = "C"
+    FIELD_DELIVERY_TASK_STATUS_FAIL = "F"
+    FIELD_DELIVERY_TASK_STATUS_IGNOREFAIL = "IF"
+    FIELD_DELIVERY_TASK_MODE_DIRINIT = "I"
+    FIELD_DELIVERY_TASK_MODE_ALL = "A"
+    FIELD_DELIVERY_TASK_MODE_ONLYFILE = "F"
+    FIELD_DELIVERY_TASK_MODE_CONFIRM = "C"
+    FIELD_DELIVERY_TASK_MODE_OPR = "O"
+    FIELD_DELIVERY_TASK_FUNC_OPR = "OprDelivery"
+    FIELD_DELIVERY_TASK_FUNC_DEV = "DevDelivery"
+    FIELD_DELIVERY_ATTACH_TYPE_PROGRAM = "P"
+    FIELD_DELIVERY_ATTACH_TYPE_CODE = "C"
+    FIELD_DELIVERY_ATTACH_TYPE_DOC = "D"
+    FIELD_DELIVERY_ATTACH_TYPE_CONFIGFILE = "CF"
+    FIELD_DELIVERY_ATTACH_TYPE_UPGRADEFILE = "UF"
+    FIELD_DELIVERY_ATTAHC_TYPE_OPR = "O"
+    FIELD_DELIVERY_ATTACH_TYPE_IMAGE = "I"
+    FIELD_DELIVERY_MODULE_RISK_TYPE_REFUSE = "R"
+    FIELD_DELIVERY_MODULE_RISK_TYPE_WARNING = "W"
+    FIELD_DELIVERY_MODULE_RISK_TYPE_INFORMATION = "I"
+    FIELD_DELIVERY_MODULE_RISK_TYPE_EXCEPTION = "E"
+    FIELD_FILE_TYPE_IS = "IS"
+    FIELD_FILE_TYPE_TD = "TD"
+    FIELD_FILE_TYPE_FS = "FS"
+    FIELD_FILE_TYPE_MAN = "MAN"
+    FIELD_PROJECT_SYSTEM_LEVEL_1 = "1"
+    FIELD_PROJECT_SYSTEM_LEVEL_2 = "2"
+    FIELD_PROJECT_SYSTEM_LEVEL_3 = "3"
+    FIELD_PROJECT_SYSTEM_LEVEL_4 = "4"
+    FIELD_PROJECT_SYSTEM_DEPARTMENT_BY_TEST_TRADE = "1"
+    FIELD_PROJECT_SYSTEM_DEPARTMENT_BY_TEST_INTERNET = "2"
+    FIELD_PROJECT_SYSTEM_DEPARTMENT_BY_TEST_BIGDATA = "3"
+    FIELD_PROJECT_DEV_LANGUAGE_OPENVMSC = "OPENVMSC"
+    FIELD_PROJECT_DEV_LANGUAGE_OPENVMSDCL = "OPENVMSDCL"
+    FIELD_PROJECT_DEV_LANGUAGE_C = "C"
+    FIELD_PROJECT_DEV_LANGUAGE_CPP = "CPP"
+    FIELD_PROJECT_DEV_LANGUAGE_JAVA = "JAVA"
+    FIELD_PROJECT_DEV_LANGUAGE_PERL = "PERL"
+    FIELD_PROJECT_DEV_LANGUAGE_PYTHON = "PYTHON"
+    FIELD_PROJECT_DEV_LANGUAGE_GO = "GO"
+    FIELD_PROJECT_DEV_LANGUAGE_SQL = "SQL"
+    FIELD_PROJECT_DEV_LANGUAGE_XML = "XML"
+    FIELD_SWTICH_N = "N"
+    FIELD_SWTICH_Y = "Y"
+    FIELD_SWTICH_P = "P"
+    FIELD_MODULE_STATUS_ON = "ON"
+    FIELD_MODULE_STATUS_OFF = "OFF"
+    FIELD_HOST_TYPE_INTEG_VMS = "INTEG_VMS"
+    FIELD_HOST_TYPE_TEST_T_ENV = "TEST_T"
+    FIELD_HOST_TYPE_TEST_R_ENV = "TEST_R"
+    FIELD_HOST_TYPE_TEST_I_ENV = "TEST_I"
+    FIELD_HOST_STATUS_ON = "ON"
+    FIELD_HOST_STATUS_OFF = "OFF"
+    FIELD_HOST_ENV_STATUS_NORMAL = "NORMAL"
+    FIELD_HOST_ENV_STATUS_TEMP = "TEMP"
+    FIELD_HOST_ENV_STATUS_OFFLINE = "OFFLINE"
+    FIELD_HOST_ENV_STATUS_UNUSED = "UNUSED"
+    FIELD_HOST_ENV_TYPE_INTEG_USER = "INTEG"
+    FIELD_HOST_ENV_TYPE_TOOL_USER = "TOOL"
+    FIELD_HOST_ENV_TYPE_AQC_USER = "AQC"
+    FIELD_HOST_ENV_TYPE_PERSONAL_USER = "PERSONAL"
+    FIELD_HOST_ENV_TYPE_TEST_USER = "TEST"
+    FIELD_PROJECT_MODULE_NAME_NONE = "NONE"
+    FIELD_CHECK_MODE_NORMAL_CHECK = "NORMAL_CHECK"
+    FIELD_CHECK_MODE_IMAGE_TRANSFER_DEPOSIT = "IMAGE_TRANSFER_DEPOSIT"
+    FIELD_INTEG_MODE_JENKINS_INTEG = "JENKINS_INTEG"
+    FIELD_INTEG_MODE_CONFIG_INTEG = "CONFIG_INTEG"
+    FIELD_DEPLOY_MODE_DEPLOY_PAGEAGE = "DEPLOY_PAGEAGE"
+    FIELD_DEPLOY_MODE_DEPLOY_DOCKER = "DEPLOY_DOCKER"
+    FIELD_DEPLOY_MODE_DEPLOY_SCRIPT = "DEPLOY_SCRIPT"
+    FIELD_DEPLOY_CONFIG_MODE_NGAIR = "NGAIR"
+    FIELD_DEPLOY_CONFIG_MODE_ANSIBLE = "ANSIBLE"
+    FIELD_TEST_MODE_NGAIR = "NGAIR"
+    FIELD_TEST_MODE_AIR = "AIR"
+    FIELD_TEST_MODE_ART = "ART"
+    FIELD_TEST_MODE_OMEGA = "OMEGA"
+    FIELD_TEST_MODE_WAYANG = "WAYANG"
+    FIELD_DELIVERY_TEST_MODE_NORNAL_DELIVERY_TEST = "NORNAL_DELIVERY_TEST"
+    FIELD_DELIVERY_PROD_MODE_NORNAL_DELIVERY_PROD = "NORNAL_DELIVERY_PROD"
+    FILED_MODULE_INTEG_JOB_TIMEOUT_1800 = "1800"
+
+    # include aqcdb.module_config
+    FIELD_MODULE_AUTO_CHECK = 1
+    FIELD_MODULE_AUTO_INTEG = 2
+    FIELD_MODULE_AUTO_CODESCAN = 3
+    FIELD_MODULE_AUTO_DEPLOY = 4
+    FIELD_MODULE_AUTO_TEST = 5
+    FIELD_MODULE_AUTO_SECRUITY = 6
+    FIELD_MODULE_AUTO_REPORT = 7
+    FIELD_MODULE_AUTO_DELIVERY_TEST = 8
+    FIELD_MODULE_AUTO_DELIVERY_PROD = 9
+    FIELD_MODULE_AUTO_COMMANDER = 10
+    FIELD_MODULE_AUTO_DOCTREE = 11
+    FIELD_MODULE_AUTO_CODESTATS = 12
+    FIELD_MODULE_AUTO_PREPARE = 13
+    FIELD_MODULE_AUTO_DEVRELEASE_DIR_INIT = 14
+
+
+    field_module_dict = {0: FIELD_MODULE_AUTO_CHECK,
+                         1: FIELD_MODULE_AUTO_INTEG,
+                         2: FIELD_MODULE_AUTO_CODESCAN,
+                         3: FIELD_MODULE_AUTO_DEPLOY,
+                         4: FIELD_MODULE_AUTO_TEST,
+                         5: FIELD_MODULE_AUTO_SECRUITY,
+                         6: FIELD_MODULE_AUTO_REPORT,
+                         7: FIELD_MODULE_AUTO_DELIVERY_TEST,
+                         8: FIELD_MODULE_AUTO_DELIVERY_PROD,
+                         9: FIELD_MODULE_AUTO_COMMANDER,
+                         10: FIELD_MODULE_AUTO_DOCTREE,
+                         11: FIELD_MODULE_AUTO_CODESTATS,
+                         12: FIELD_MODULE_AUTO_PREPARE,
+                         13: FIELD_MODULE_AUTO_DEVRELEASE_DIR_INIT}
+
+
+    # 模块 对应 发送的消息队列名字
+    module_attach_queue = {
+        "auto_security_test": "auto_code_stats_safe",
+        "auto_code_stats": "auto_code_stats_safe",
+        "auto_deploy": "auto_deploy_test",
+        "auto_aqc_test": "auto_deploy_test"
+    }
+
+    field_delivery_task_mode_dict = {'全量交付': FIELD_DELIVERY_TASK_MODE_ALL,
+                                     '文档追加': FIELD_DELIVERY_TASK_MODE_ONLYFILE,
+                                     '运维交付': FIELD_DELIVERY_TASK_MODE_OPR,
+                                     '开发交付目录初始化': FIELD_DELIVERY_TASK_MODE_DIRINIT,
+                                     '开发确认': FIELD_DELIVERY_TASK_MODE_CONFIRM}
+    field_attach_type_name_dict = {
+        FIELD_DELIVERY_ATTACH_TYPE_PROGRAM: "程序",
+        FIELD_DELIVERY_ATTACH_TYPE_DOC: "文档",
+        FIELD_DELIVERY_ATTACH_TYPE_CONFIGFILE: "配置",
+        FIELD_DELIVERY_ATTACH_TYPE_UPGRADEFILE: "升级手册",
+        FIELD_DELIVERY_ATTAHC_TYPE_OPR: "交付件"
+    }
+
+    field_delivery_func_type_dict = {'DevDelivery': "版本交付单",
+                                     'OprDelivery': "运维交付单"}
+
+    field_path_type_field_dict = {
+        'D': "文档路径",
+        'P': "补丁包路径"
+    }
+    field_role_dict = {'需求人员': 'product_role',
+                       '开发人员': 'dev_role',
+                       '开发负责人': 'dev_leader_role',
+                       '运营人员': 'ops_role',
+                       '测试人员': 'test_role',
+                       '测试负责人': 'test_leader_role'}
+    INTEG_MODE_JENKINS = "JENKINS_INTEG"
+    INTEG_MODE_CONFIG = "CONFIG_INTEG"
+
+    DAILY_PATH_LOCATOR = "ARTIFACTORY_DAILY_PACKAGE_PATH:"
+
+    # include tools/public_tools/pub_vms_mem_tool
+    RSLT_EXEC_INIT = "未启动"
+    RSLT_EXEC_FAIL = "执行失败"
+    RSLT_EXEC_ILLEGAL_STARTUP = "非法启动"
+    RSLT_CHECK_INIT = "未查询"
+    RSLT_CHECK_FAIL = "查询失败"
+    RSLT_USED_INIT = "0"
+    HOST_RANGE_TEST = "TEST"
+    HOST_RANGE_DEVTEST = "DEVTEST"
+    HOST_RANGE_OPSTEST = "OPSTEST"
+    HOST_RANGE_AQCTEST = "AQCTEST"
+    RESOURCE_TYPE_MEM = "MEM"
+    RESOURCE_TYPE_SUB_MEM = "SHM"
+    RESOURCE_TYPE_DISK = "DISK"
+    RESOURCE_TYPE_SUB_MEM_DESC = "共享内存"
+
+    # 获取主机的模式
+    # FULL模式下：所有HOST上都要执行
+    # ONE_AQC模式下：只在AQCTEST类机器的一台HOST上执行AQC账户
+    MODE_FULL_HOST = "FULL"
+    MODE_ONE_AQC_HOST = "ONE_AQC"
+
+    # utils/db_aqcdb_util
+    # INSTANCE_AQCDB_TEST
+    AQCDB_TESTENV_IP = "197.2.55.3"
+    # AQCDB_DEV
+    AQCDB_TESTENV_INSTANCE_AQCDB_DEV = "aqcdb_dev"
+    # AQCDB_TEST
+    AQCDB_TESTENV_INSTANCE_AQCDB_TEST = "aqcdb_test"
+
+    # INSTANCE_AQCDB_PROD
+    AQCDB_PRODENV_IP = "197.2.55.4"
+    # AQCDB_PROD
+    AQCDB_PRODENV_INSTANCE_AQCDB_PROD = "aqcdb"
+
+    # get_host_env_info_by_host_env_type 同类主机类型上一台主机
+    MODE_ONE_HOST = "ONE_HOST"
+    MODE_MERGE = "MERGE"
+
+    # utils/common_util
+    CONV_SIZE_B = "B"
+    CONV_SIZE_KB = "KB"
+    CONV_SIZE_MB = "MB"
+    CONV_SIZE_GB = "GB"
+    CONV_SIZE_TB = "TB"
+
+    NO_DISTINGUISH_USER = "无法识别所属目录用户"
+
+    DIR_SPACE_TOTAL = "目录空间总计"
+    DIR_ROOT = "000000"
+    DIR_PATCH = "PATCH"
+    DIR_SYSJNL = "SYSJNL"
+    DIR_SYSLOST = "SYSLOST"
+    DIR_AIR = "AIR"
+    DIR_AIRFAST = "AIRFAST"
+    DIR_AIROPT = "AIROPT"
+    DIR_COMPLETATION = "COMPLETATION"
+    DIR_TOOLS = "TOOLS"
+    DIR_DWR = "DWR"
+    DIR_DWRTOOL = "DWRTOOL"
+    DIR_TESTENV_DATA = "TESTENV_DATA"
+    DIR_ENVCFG = "ENVCFG"
+    DIR_ENVTOOLS = "ENVTOOLS"
+    DIR_ENV_TOOLS = "ENV_TOOLS"
+    DIR_TOFF_NET = "TOFF_NET"
+    DIR_RESTORE_DIR = "RESTORE_DIR"
+    DIR_DATA = "DATA"
+    DIR_REPLAY = "REPLAY"
+    DIR_RESTORE_TOOL = "RESTORE_TOOL"
+    DIR_T4_DATA = "T4$DATA"
+    DIR_RDM_RUJ = "RDM$RUJ"
+    DIR_SORT = "SORT"
+    DIR_SSE_ADMIN = "SSE$ADMIN"
+    DIR_RDB_USER_DEFAULTS = "RDB$USER_DEFAULTS"
+    DIR_NODENUM = "NODENUM"
+    DIR_RAWOPT = "RAWOPT"
+    DIR_CHECKSUM_ALL = "CHECKSUM_ALL"
+    DIR_ITP_PROD_DELIVERY = "ITP_PROD_DELIVERY"
+    DIR_VIM80 = "VIM80"
+    DIR_TOFF = "TOFF"
+    DIR_ATPCFG = "ATPCFG"
+    DIR_EXEC_LOG = "EXEC_LOG"
+    DIR_SSL_V13 = "SSL_V13"
+    DIR_NGTSCFG = "NGTSCFG"
+    IGNORE_DIR_TUPLE = (
+    DIR_ROOT, DIR_PATCH, DIR_SYSJNL, DIR_SYSLOST, DIR_AIR, DIR_AIRFAST, DIR_AIROPT, DIR_COMPLETATION, DIR_TOOLS,
+    DIR_DWR, DIR_DWRTOOL,
+    DIR_TESTENV_DATA, DIR_ENVCFG, DIR_ENVTOOLS, DIR_ENV_TOOLS, DIR_TOFF_NET, DIR_RESTORE_DIR, DIR_DATA, DIR_REPLAY,
+    DIR_RESTORE_TOOL,
+    DIR_T4_DATA, DIR_RDM_RUJ, DIR_SORT, DIR_SSE_ADMIN, DIR_RDB_USER_DEFAULTS, DIR_NODENUM, DIR_CHECKSUM_ALL,
+    DIR_ITP_PROD_DELIVERY,
+    DIR_VIM80, DIR_TOFF, DIR_ATPCFG, DIR_EXEC_LOG, DIR_SSL_V13, DIR_NGTSCFG)
+    IGNORE_DISK_VOL_TUPLE = ("I64SYS$:[000000]", "PATROL$:[000000]", "LOGFILES$:[000000]", "ASII64V84$:[000000]",
+                             "DSTI64SYS$:[000000]", "ESII64V84$:[000000]", "DSRI64SYS2L1$:[000000]",
+                             "ESRI64SYS$:[000000]",
+                             "ESTI64SYS$:[000000]", "HSII64V84$:[000000]", "HSRI64SYS$:[000000]", "ADMIN$:[000000]",
+                             "HSTTCSYS$:[000000]", "COMMON_SYS$:[000000]", "HSTI64SYS$:[000000]", "BMCPATROL$:[000000]")
+
+    # utils/datetime_util
+    DRIFT_DIRECTION_FORWARD = "FORWARD"
+    DRIFT_DIRECTION_BACKWARD = "BACKWARD"
+    FORMAT_DATETIME_NORMAL = "%Y%m%d-%H:%M:%S"
+    FORMAT_DATETIME_MYSQL = "%Y-%m-%d %H:%M:%S"
+
+    # public_tools/pub_code_stats_tool
+    CODE_STATS_SWITCH_RECORD_ONLY = "1"
+    CODE_STATS_SWITCH_RECORD_COUNT = "2"
+    CODE_STATS_SWITCH_OFF = "0"
+
+    def __init__(self):
+        pass
