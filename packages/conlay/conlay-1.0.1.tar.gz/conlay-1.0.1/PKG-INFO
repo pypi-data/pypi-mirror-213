@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: conlay
+Version: 1.0.1
+Summary: A python library for creating nice layouts in the console environment
+Home-page: https://github.com/Salliii/conlay
+Author: Salliii
+Keywords: python,library,console,layout
+Description-Content-Type: text/markdown
+
+# Console Layout
