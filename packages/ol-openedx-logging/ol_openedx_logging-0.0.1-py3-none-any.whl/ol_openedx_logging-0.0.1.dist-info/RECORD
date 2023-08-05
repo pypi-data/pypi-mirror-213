@@ -1,0 +1,12 @@
+__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+backend_shim.py,sha256=ftcEJ8ZHQyDKQNKCBoPbg-uZLYBu4nI6JZWUBLemhRc,625
+ol_openedx_logging/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ol_openedx_logging/app.py,sha256=sjnzflTe1mULEN4sbBQgUqqkbVN9AMyQ4-WlXI97w4U,604
+ol_openedx_logging/settings/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ol_openedx_logging/settings/production.py,sha256=0O2ziktHaqpsOEFjof99SowY_987znfDmUmMRcEr7wk,3037
+ol_openedx_logging-0.0.1.dist-info/METADATA,sha256=RLsP4Ono72xZeesqhfJL4w0k75fvMC35poKeupVV09A,292
+ol_openedx_logging-0.0.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+ol_openedx_logging-0.0.1.dist-info/entry_points.txt,sha256=ZM2KwehRjCAcYjgSEthEPCct4W5_pJGL0udv0ryHroc,149
+ol_openedx_logging-0.0.1.dist-info/namespace_packages.txt,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+ol_openedx_logging-0.0.1.dist-info/top_level.txt,sha256=zEdP9GgRieWV26R1bBMkaVAmsTwNh4dFV2j9kcAEjz8,20
+ol_openedx_logging-0.0.1.dist-info/RECORD,,
