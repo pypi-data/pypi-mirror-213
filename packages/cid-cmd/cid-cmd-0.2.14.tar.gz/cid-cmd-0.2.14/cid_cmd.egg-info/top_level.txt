@@ -1,0 +1,7 @@
+assets
+cfn-templates
+changes
+cid
+dist
+docs
+terraform-modules
