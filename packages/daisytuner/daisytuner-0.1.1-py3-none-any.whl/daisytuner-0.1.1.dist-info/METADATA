@@ -1,0 +1,48 @@
+Metadata-Version: 2.1
+Name: daisytuner
+Version: 0.1.1
+Summary: A cloud-connected compiler pass for performance optimization
+Home-page: https://github.com/daisytuner/daisytuner
+Author: Lukas Truemper
+Author-email: lukas.truemper@outlook.de
+Classifier: Topic :: Utilities
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: requests (>=2.26.0)
+Requires-Dist: tqdm (>=4.64.1)
+Requires-Dist: tabulate (>=0.9.0)
+Requires-Dist: dace (>=0.14.3)
+Requires-Dist: numpy (>=1.23.0)
+Requires-Dist: pandas (>=1.5.0)
+Requires-Dist: scikit-learn (>=1.2.0)
+Requires-Dist: plotly (>=5.11.0)
+Requires-Dist: seaborn (>=0.2.12)
+Requires-Dist: kaleido (>=0.2.1)
+Requires-Dist: opt-einsum (>=3.3.0)
+Requires-Dist: torch (>=2.0)
+Requires-Dist: torchvision
+Requires-Dist: torchaudio
+Requires-Dist: torchmetrics (>=0.11.4)
+Requires-Dist: pytorch-lightning (>=1.9.4)
+Requires-Dist: torch-geometric (>=2.3)
+Requires-Dist: daisytuner-likwid (>=0.0.2)
+Provides-Extra: dev
+Requires-Dist: black (==22.10.0) ; extra == 'dev'
+Requires-Dist: pytest (>=7.2.0) ; extra == 'dev'
+
+[![CI](https://github.com/daisytuner/daisytuner/actions/workflows/tests.yml/badge.svg)](https://github.com/daisytuner/daisytuner/actions/workflows/tests.yml)
+
+Daisy is a cloud-connected compiler pass for advanced automatic performance optimization. Daisy re-writes loop nests of programs according to the optimizations of similar loop nests stored in a database. Several optimizations for common problems, such as linear algebra and neural networks, are available through the public database. In addition, the Daisy web app will allow you to create new collections of optimizations in the future.
+
+## Publications
+
+The daisy implementation is based on the concepts of transfer tuning via performance embeddings introduced in the [performance embeddings paper](https://arxiv.org/abs/2303.08142):
+```
+@misc{trümper2023performance,
+      title={Performance Embeddings: A Similarity-based Approach to Automatic Performance Optimization}, 
+      author={Lukas Trümper and Tal Ben-Nun and Philipp Schaad and Alexandru Calotoiu and Torsten Hoefler},
+      year={2023},
+      eprint={2303.08142},
+      archivePrefix={arXiv},
+      primaryClass={cs.SE}
+}
