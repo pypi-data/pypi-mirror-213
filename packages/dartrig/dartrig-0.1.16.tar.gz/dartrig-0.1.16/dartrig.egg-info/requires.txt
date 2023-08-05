@@ -1,0 +1,4 @@
+requests
+bs4
+adt_cache==0.0.12
+crawler_commons==0.0.39
