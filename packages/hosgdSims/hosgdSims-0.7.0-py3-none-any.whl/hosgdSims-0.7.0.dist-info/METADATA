@@ -1,0 +1,37 @@
+Metadata-Version: 2.1
+Name: hosgdSims
+Version: 0.7.0
+Summary: Hands on SGD
+Home-page: https://gitlab.com/prodrig/hosgdsims
+Author: Paul Rodriguez
+Author-email: prodrig@pucp.edu.pe
+License: GNU General Public License v3 or later (GPLv3+)
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python :: 3.8
+Description-Content-Type: text/markdown
+License-File: AUTHORS
+Requires-Dist: numpy (>=1.19.1)
+Requires-Dist: scipy (>=1.5.2)
+Requires-Dist: matplotlib (>=3.3.1)
+
+# hosgdSims
+
+* This simulations are related to [SC-1 Short Courses @ ICASSP'23](https://2023.ieeeicassp.org/education-short-courses/).
+* The associated lectures may be found [here](https://hands-on-sgd.readthedocs.io/)
+
+### Usage
+
+Read about the intended use [here](https://hosgdSims.readthedocs.io/)
+
+
+### Requirements
+
+Python 3.x
+
+
+### Legal
+
+hosgdSims is free software, you can redistribute it and/or modify it under the terms of the GNU General Public License (version 3).
+
+
