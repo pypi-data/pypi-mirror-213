@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: topography-surface
+Version: 0.0.1
+Summary: Exploring different approaches of determining roughness of a measured surface (reference object) by predicting phase in the centre of interferogram.
+Author: Daniel Jankowski
+License: MIT
+License-File: LICENSE
