@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools", "setuptools-scm"]
+build-backend = "setuptools.build_meta"
+[project]
+name = "docker_gobject"
+version = "0.0.1"
+authors = [
+  { name="Cameron Dahl", email="cameron@cameorndahl.com" },
+]
+description = "GObject wrapper for Docker Engine"
+readme = "README.md"
+requires-python = ">=3.7"
+dependencies = [
+    "PyGObject"
+]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+keywords = ["pygobject", "gtk", "gtk4", "docker", "wrapper", "python", "python3", "libsoup", "soup", "glib"]
+[project.urls]
+"Homepage" = "https://github.com/cameronthecoder/docker_gobject"
+"Bug Tracker" = "https://github.com/pypa/docker_gobject/issues"
