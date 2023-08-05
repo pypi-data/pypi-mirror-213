@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+firebase_auth/__init__.py
+firebase_auth/apps.py
+firebase_auth/authentication.py
+firebase_auth/forms.py
+firebase_auth/models.py
+graphene_django_firebase_auth.egg-info/PKG-INFO
+graphene_django_firebase_auth.egg-info/SOURCES.txt
+graphene_django_firebase_auth.egg-info/dependency_links.txt
+graphene_django_firebase_auth.egg-info/requires.txt
+graphene_django_firebase_auth.egg-info/top_level.txt
