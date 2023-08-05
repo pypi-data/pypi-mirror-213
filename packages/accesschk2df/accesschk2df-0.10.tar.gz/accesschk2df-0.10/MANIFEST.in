@@ -1,0 +1,7 @@
+include accesschk2df/requirements.txt
+include accesschk2df/thirdparty.json
+include accesschk2df/README.MD
+include accesschk2df/Eula.txt
+include accesschk2df/accesschk.exe
+include accesschk2df/accesschk64.exe
+include accesschk2df/accesschk64a.exe
