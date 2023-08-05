@@ -1,0 +1,3 @@
+[console_scripts]
+recognize=recognize.main:app
+
