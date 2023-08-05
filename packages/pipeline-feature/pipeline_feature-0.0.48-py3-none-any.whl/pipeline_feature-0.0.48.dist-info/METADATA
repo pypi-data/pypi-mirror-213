@@ -1,0 +1,39 @@
+Metadata-Version: 2.1
+Name: pipeline-feature
+Version: 0.0.48
+Summary: Feature Pipeline of MLOps Pipeline Version 1
+Author-email: Gao Hongnan <hongnangao@gmail.com>
+Project-URL: Homepage, https://github.com/gao-hongnan/mlops-pipeline-v1
+Project-URL: Bug Tracker, https://github.com/gao-hongnan/mlops-pipeline-v1/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: gaohn-common-utils
+Requires-Dist: hydra-core (==1.3.2)
+Provides-Extra: dev
+Requires-Dist: black (==23.3.0) ; extra == 'dev'
+Requires-Dist: pylint (==2.17.4) ; extra == 'dev'
+Requires-Dist: pytest (==6.2.5) ; extra == 'dev'
+Requires-Dist: mypy (==1.3.0) ; extra == 'dev'
+Requires-Dist: isort (==5.12.0) ; extra == 'dev'
+
+# Feature Pipeline
+
+```bash
+cd /path/to/pipeline-feature
+```
+
+```bash
+~/mlops-pipeline-v1/pipeline-feature $ curl -s -o make_venv.sh \
+  https://raw.githubusercontent.com/gao-hongnan/common-utils/main/scripts/devops/make_venv.sh && \
+bash make_venv.sh venv_pipeline_feature --pyproject --dev && \
+source venv_pipeline_feature/bin/activate && \
+rm make_venv.sh
+```
+
+```bash
+python pipeline-feature/mlops_pipeline_feature_v1/pipeline.py
+```
