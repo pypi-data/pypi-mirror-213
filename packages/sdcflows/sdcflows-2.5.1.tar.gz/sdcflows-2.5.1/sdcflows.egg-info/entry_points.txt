@@ -1,0 +1,2 @@
+[console_scripts]
+sdcflows-find-estimators = sdcflows.cli.find_estimators:main
