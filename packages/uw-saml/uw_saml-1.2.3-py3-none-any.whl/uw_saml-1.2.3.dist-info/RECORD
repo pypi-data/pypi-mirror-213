@@ -1,0 +1,14 @@
+uw_saml2/VERSION,sha256=KfvRGmXE-GkRx8fxB-ooFPdWJDNp9NIc8LNVFuUAw8E,53
+uw_saml2/__init__.py,sha256=A6drh6grAd0we3scvdxl6Fk6DBS3qBgCnROc4OQLJaU,70
+uw_saml2/auth.py,sha256=VFxRB-FjNvlmAqMui8jDcTvAVfaZm8ppQ_YvXwn-tXE,3221
+uw_saml2/idp/__init__.py,sha256=xfOpWsgSr6yHw_FkeTpE82xUGYMCXHT0025kibInExg,389
+uw_saml2/idp/attribute.py,sha256=3Akt-Rctwy50qr7sHY9JuRGxoP4-KwvSav88zI1jdCs,1619
+uw_saml2/idp/federated.py,sha256=2EhbDtmsRzp-R1GJxJvNaIEZdyFT5L34t6LTpraUGPs,12055
+uw_saml2/idp/uw.py,sha256=toX4d8n5FdECb6_BMRKL6reFV_yOVi3HD0NH-Rjlt0A,2589
+uw_saml2/mock.py,sha256=RdTD7luHwduCO2BX-4W--JIZCbCHY0HyOjk__uL8rys,1538
+uw_saml2/python3_saml.py,sha256=DGKepbEsQT0siSy5mz3vDV7ncimFUo7LqcP8Slalv1o,279
+uw_saml2/sp.py,sha256=gF5nwxezLM28BspjBX_7emRoKCcLvQHCQ_fIFhWlv20,2302
+uw_saml-1.2.3.dist-info/LICENSE,sha256=-GEpgoooV3PuShjyr51BIqOjiFPJ0nJy8HzfvHClfDc,564
+uw_saml-1.2.3.dist-info/METADATA,sha256=WL9EVPmI_TVmaqLjJW0g8AF7CaPIKSIkUX2Ml2wAYKE,732
+uw_saml-1.2.3.dist-info/WHEEL,sha256=Zb28QaM1gQi8f4VCBhsUklF61CTlNYfs9YAZn-TOGFk,88
+uw_saml-1.2.3.dist-info/RECORD,,
