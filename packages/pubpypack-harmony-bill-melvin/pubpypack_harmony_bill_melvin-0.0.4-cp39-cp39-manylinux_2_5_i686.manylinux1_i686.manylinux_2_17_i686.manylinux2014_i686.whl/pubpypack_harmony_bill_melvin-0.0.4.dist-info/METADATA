@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: pubpypack-harmony-bill-melvin
+Version: 0.0.4
+Summary: Working the exercises in Publishing Python Packages by Dane Hillard
+Home-page: https://github.com/wmelvin/first-python-package
+Author: Bill Melvin
+Author-email: "Bill Melvin" <bill@billmelvin.com>
+License: MIT
+Classifier: License :: OSI Approved :: MIT License
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: termcolor (<2,>=1.1.0)
+
+# pubpypack-harmony-bill-melvin
+ 
+Working the exercises in Publishing Python Packages by Dane Hillard
+ 
+## Installation
+ 
+```shell
+$ python -m pip install pubpypack-harmony-bill-melvin
+```
