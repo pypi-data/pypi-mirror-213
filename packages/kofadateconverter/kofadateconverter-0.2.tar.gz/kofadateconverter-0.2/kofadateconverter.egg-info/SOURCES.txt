@@ -1,0 +1,9 @@
+LICENSE.txt
+setup.py
+kofadateconverter/__init__.py
+kofadateconverter/miladij.py
+kofadateconverter/shamsij.py
+kofadateconverter.egg-info/PKG-INFO
+kofadateconverter.egg-info/SOURCES.txt
+kofadateconverter.egg-info/dependency_links.txt
+kofadateconverter.egg-info/top_level.txt
