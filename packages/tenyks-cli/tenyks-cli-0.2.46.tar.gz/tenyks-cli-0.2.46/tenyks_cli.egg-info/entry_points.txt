@@ -1,0 +1,2 @@
+[console_scripts]
+tenyks = tenyks.cli:commands

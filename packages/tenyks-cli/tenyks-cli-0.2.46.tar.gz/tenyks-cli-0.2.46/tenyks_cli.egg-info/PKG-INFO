@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: tenyks-cli
+Version: 0.2.46
+Summary: Tenyks AI
+Home-page: https://www.tenyks.ai/
+Author: Tenyks AI
+Author-email: info@tenyks.ai
+License: MIT
+Classifier: Programming Language :: Python :: 3.8
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+
+# Tenyks - Command Line Interface
+
+Contains Tenyks CLI module for uploading dataset and model.
+# Install
+
+### Install CLI tool:
+```bash
+pip install tenyks-cli
+```
+
+# Use:
+### Get help:
+```bash
+tenyks --help
+```
+
+### Create your first dataset:
+```bash
+tenyks dataset-create --name test
+```
+
