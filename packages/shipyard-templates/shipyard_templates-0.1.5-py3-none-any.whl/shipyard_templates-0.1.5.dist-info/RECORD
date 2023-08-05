@@ -1,0 +1,13 @@
+shipyard_templates/__init__.py,sha256=Q66FSDZIYv93KJmaljKDW_s1L5JfeYWrFSmzeA0lyWg,373
+shipyard_templates/cloudstorage.py,sha256=24oyQ-bem17K7OkqS3iSJseIQ6Rbr2rbDBxlqdfXY_E,552
+shipyard_templates/database.py,sha256=RVpBN_VAc8Sz-JAHy5huYPfUgEFQXbzgJ2SLLr_fbYw,1965
+shipyard_templates/datavisualization.py,sha256=AjXmqxz1wy2Cp7ZAzqzfl7C8H12pDJKxGbz_suTwSHw,267
+shipyard_templates/etl.py,sha256=-Ok6YeNM9LtwSaOC_YdU71Nxe2ksu5PnoemSukKXc3Q,1093
+shipyard_templates/messaging.py,sha256=dELBh-gImMMnBSl_I78ltbQ_a1v_sVcTeZNA6J3CcOY,245
+shipyard_templates/notebooks.py,sha256=9QsPAgeLecF_4oIimEwAoVkpb-4dpR2uIgLFPA0Oi7M,235
+shipyard_templates/projectmanagement.py,sha256=x8_yGb_AJFrg4yvGT7xlP9hhxMD_BTgrNn4SiwLgE7g,993
+shipyard_templates/shipyard_logger.py,sha256=SdvjD6qEzXCYlylF9bdL1MoPvPAWqxSDdONWAlHMPVc,543
+shipyard_templates/spreadsheets.py,sha256=0xV89LAdBmFwfSNnHI4RF4L93V4Boz_3-DflWQl-_lA,280
+shipyard_templates-0.1.5.dist-info/METADATA,sha256=YwKqWSAJ7pLYKaxPUzENxFiglk1itx7Lar4Ciqql5U0,514
+shipyard_templates-0.1.5.dist-info/WHEEL,sha256=7Z8_27uaHI_UZAc4Uox4PpBhQ9Y5_modZXWMxtUi4NU,88
+shipyard_templates-0.1.5.dist-info/RECORD,,
