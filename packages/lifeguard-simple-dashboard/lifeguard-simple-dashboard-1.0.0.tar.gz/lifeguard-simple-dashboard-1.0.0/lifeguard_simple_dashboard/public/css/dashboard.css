@@ -1,0 +1,107 @@
+body {
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  margin: 10px;
+}
+
+.clearfix {
+  display: block;
+  content: "";
+  clear: both;
+}
+
+ul.validations-list li {
+  background-color: rgba(50, 72, 92, 0.8);
+  padding: 5px;
+  margin: 5px;
+  float: left;
+  width: 150px;
+  height: 100px;
+  border-radius: 10px;
+}
+
+ul.validations-list {
+  padding: 0px;
+  margin: 0px;
+  list-style: none;
+}
+
+.container-fluid {
+  border: 4px yellow solid;
+  border-radius: 10px;
+  background-color: #47a5f077;
+  height: 100%;
+}
+
+.validations-container-name {
+  font-weight: bold;
+  font-size: 30px;
+  margin: 20px;
+}
+
+.validations-container {
+  float: left;
+  margin: 10px;
+}
+
+.validation-item-status {
+  font-weight: bold;
+  font-size: 20px;
+  text-align: center;
+}
+
+.agent-last-notification {
+  text-align: center;
+  color: white;
+  word-wrap: break-word;
+  font-size: 10px;
+}
+
+.validation-item-description {
+  text-align: center;
+  color: white;
+  word-wrap: break-word;
+  font-size: 15px;
+}
+
+.validation-item-description a {
+  color: white;
+  word-wrap: break-word;
+}
+
+.validation-item-description a:hover {
+  color: #47a5f0;
+  text-decoration: none;
+}
+
+.agent-remove {
+  color: red !important;
+}
+
+li.NORMAL {
+  border: 4px lime solid;
+}
+
+li.YELLOW {
+  border: 4px yellow solid;
+}
+
+li.PROBLEM {
+  border: 4px red solid;
+}
+
+p.NORMAL {
+  color: lime;
+  text-shadow: -1px 0 #47a5f0, 0 1px #47a5f0, 1px 0 #47a5f0, 0 -1px #47a5f0;
+}
+
+p.YELLOW {
+  color: yellow;
+  text-shadow: -1px 0 #47a5f0, 0 1px #47a5f0, 1px 0 #47a5f0, 0 -1px #47a5f0;
+}
+
+p.PROBLEM {
+  color: red;
+  text-shadow: -1px 0 #47a5f0, 0 1px #47a5f0, 1px 0 #47a5f0, 0 -1px #47a5f0;
+}
