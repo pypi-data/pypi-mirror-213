@@ -1,0 +1,288 @@
+.TH slpkg 1 "Orestiada, Hellas" "slpkg 4.8.5" dslackw
+.SH NOM
+.P
+slpkg \- Utilitaire de gestion de paquets pour Slackware.
+.SH SYNOPSIS
+.P
+slpkg \c
+[\fICOMMAND\fR] [\fIOPTIONS\fR] [\fIFILELIST|PACKAGES...\fR]
+.P
+slpkg [-h|-v] [-u, update] [-U, upgrade] [-c, check-updates] [-I, repo-info] [-g, configs]
+[-L, clean-logs] [-D, clean-tmp] [-T, clean-data] [-b, build] [-i, install] [-d, download]
+[-R, remove] [-f, find] [-w, view] [-s, search] [-e, dependees] [-t, tracking] -y, --yes, -j, --jobs, -O, --resolve-off,
+-r, --reinstall, -k, --skip-installed, -a, --install-data, -E, --full-reverse, -S, --search, -n, --no-silent, -p, --pkg-version,
+-P, --parallel, -o, --repository=\fINAME\fR, -z, --directory=\fIPATH\fR
+.SH DESCRIPTION
+.P
+Slpkg est un gestionnaire de paquets qui installe, met à jour et supprime les paquets sur les systèmes basés sur Slackware. 
+Il calcule automatiquement les dépendances et détermine ce qui doit se passer pour installer les paquets. 
+Slpkg facilite la maintenance de groupes de machines sans avoir à les mettre à jour manuellement. 
+.P
+Slpkg travaille en accord avec les standards de l'organisation SlackBuilds.org pour construire des paquets. 
+Il utilise également les instructions de Slackware Linux pour l'installation, la mise à jour ou la suppression des paquets. 
+.SH COMMANDES
+.P
+.B -u, update
+.RS
+Met à jour la liste des paquets et la base de données.
+.RE
+.P
+.B -U, upgrade
+.RS
+Met à jour tous les paquets installés si une version plus récente existe dans le référentiel.
+.RE
+.P
+.B -c, check-updates
+.RS
+Vérifier s'il y a des nouvelles dans le fichier ChangeLog.txt du référentiel.
+.RE
+.P
+.B -I, repo-info
+.RS
+Affiche les informations relatives aux dépôts, telles que les dépôts actifs, la date de leur mise à jour, et le nombre de paquets qu'ils contiennent.
+.RE
+.P
+.B -L, clean-logs
+.RS
+Nettoie le suivi du journal des dépendances. Après cette procédure, vous devez supprimer les dépendances à la main.
+.RE
+.P
+.B -T, clean-data
+.RS
+Il est parfois nécessaire de nettoyer toutes les données des référentiels de la base de données.
+Exécutez cette commande pour supprimer toutes les données et exécutez '\fIslpkg update\fR' pour les recréer.
+.RE
+.P
+.B -D, clean-tmp
+.RS
+Supprime tous les scripts et sources SlackBuilds téléchargés.
+.RE
+.P
+.B -g, configs
+.RS
+Modifie le fichier de configuration /etc/slpkg/slpkg.toml.
+.RE
+.P
+.B -b, build
+.RS
+Construit les scripts Slackbuilds et ajoute les paquets au répertoire '/tmp'.
+.RE
+.P
+.B -i, install
+.RS
+Construit et installe les paquets dans l'ordre correct, et enregistre également les paquets avec les dépendances pour les supprimer.
+.RE
+.P
+.B -d, download
+.RS
+Télécharge les scripts SlackBuilds actuels et les sources sans les construire ou les installer.
+.RE
+.P
+.B -R, remove
+.RS
+Supprime les paquets avec les dépendances si les paquets ont été installés avec la méthode '\fIslpkg install\fR'.
+Slpkg consulte la configuration 'REPO_TAG' pour trouver les paquets à supprimer par défaut, sauf si vous utilisez l'option \fB--file-pattern\fR.
+.RE
+.P
+.B -f, find
+.RS
+Recherche les paquets installés sur votre système.
+.RE
+.P
+.B -w, view
+.RS
+Visualiser les paquets d'information du référentiel et tout obtenir dans votre terminal.
+.RE
+.P
+.B -s, search
+.RS
+Rechercher et faire correspondre les paquets
+.RE
+.P
+.B -e, dependees
+.RS
+Montrer de quels SlackBuilds dépendent.
+.RE
+.P
+.B -t, tracking
+.RS
+Suivi des dépendances des paquets.
+.RE
+.SH OPTIONS
+.P
+.B -y, --yes
+.RS
+Répondre oui à toutes les questions. (à utiliser avec : -u, update, -U, upgrade, -b, build,
+-i, install, -R, remove, -d, download,)
+.RE
+.P
+.B -j, --jobs
+.RS
+Accélération des scripts SlackBuild. Lorsque l'option \fB--jobs\fR est activée, slpkg détecte automatiquement le nombre de processeurs et l'entre dans la variable MAKEFLAGS.
+Certains SlackBuilds échouent lorsque MAKEFLAGS est déclaré ou que le nombre de processeurs (-j) est supérieur à un. (à utiliser avec : -U, upgrade, -b, build, -i, install)
+.RE
+.P
+.B -O, --resolve-off
+.RS
+Désactive la résolution des dépendances. (à utiliser avec : -U, upgrade, -b, build, -i, install)
+.RE
+.P
+.B -r, --reinstall
+.RS
+Utilisez cette option si vous souhaitez mettre à jour tous les paquets, même si la même version est déjà installée.
+Ne pas ignorer les paquets installés. (à utiliser avec : -U, upgrade, -i, install)
+.RE
+.P
+.B -k, --skip-installed
+.RS
+Cette option est utile si vous souhaitez éviter de construire et de réinstaller des paquets.
+Remarque : cette option n'affecte que les dépendances. (à utiliser avec : -i, install)
+.RE
+.P
+.B -a, --install-data
+.RS
+Installe les données dans la base de données uniquement si vous ne souhaitez pas retélécharger ou resynchroniser les listes de paquets,
+et que vous avez déjà téléchargé le référentiel, vous pouvez appliquer cette option pour installer les données dans la base de données.
+Cette option est particulièrement utile pour les dépôts locaux et pour ceux qui téléchargent les dépôts manuellement.
+(à utiliser avec : -u, update)
+.RE
+.P
+.B -E, --full-reverse
+.RS
+Dépendance inversée complète. Ne fonctionne qu'avec les commandes -e, dependees et affiche également les besoins.
+(à utiliser avec : -e, dependees)
+.RE
+.P
+.B -S, --search
+.RS
+Active l'utilitaire de dialogue pour rechercher des paquets dans le référentiel.
+Exemple : '\fIslpkg install python3 --search\fR' ou '\fIslpkg download python3 --search\fR', etc.
+(à utiliser avec : -b, build, -i, install, -d, download, -R, remove, -f, find, -w, view,
+-s, search, -e, dependees, -t, tracking)
+.RE
+.P
+.B -n, --no-silent
+.RS
+Désactive le mode silencieux, s'il est activé dans le fichier de configuration. (à utiliser avec : -u, update, -U, upgrade, -b, build,
+-i, install, -R, remove)
+.RE
+.P
+.B -p, --pkg-version
+.RS
+Affiche la version du paquetage du référentiel. (à utiliser avec : -e, dependees, -t, tracking, -w, view)
+.RE
+.P
+.B -P, --parallel
+.RS
+Télécharger des fichiers en parallèle pour accélérer le processus.
+(à utiliser avec : -u, update, -U, upgrade, -b, build, -i, install, -d, download)
+.RE
+.P
+.B -m, --no-case
+.RS
+Paquets de correspondance de motifs sensibles à la casse.
+(à utiliser avec : -b, build, -i, install, -d, download, -s, search, -f, find, -w, view, -t, tracking, -e, dependees)
+.RE
+.P
+.BI "-o," "" " \-\--repository=" NAME "
+.RS
+Change le référentiel par défaut et définit le référentiel avec lequel vous voulez travailler.
+Assurez-vous d'avoir activé le référentiel dans le fichier '/etc/slpkg/repositories.toml'.
+Le modèle de référentiel '*' n'est supporté qu'avec l'option '-s, search'
+(à utiliser avec : -u, update, -U, upgrade, -c, check-updates, -I, repo-info, -b, build, -i, install, -d, download, -s, search,
+-t, tracking, -e, dependees, -w, view)
+.RE
+.P
+.BI "-z," "" " \-\-directory=" PATH "
+.RS
+Le répertoire est le chemin où les fichiers seront enregistrés. (à utiliser avec : -d, download)
+.RE
+.P
+.B -h | --help
+.RS
+Affiche les informations d'aide et quitte.
+.RE
+.P
+.B -v | --version
+.RS
+Affiche la version et quitte.
+.RE
+.SH SYNTAXE DES OPTIONS
+.P
+En dehors de la manière classique, vous pouvez mettre plusieurs options qui ne nécessitent pas d'arguments ensemble, comme :
+.PP
+.Vb 1.
+\&       slpkg -iPny [\fIPACKAGES...\fR]
+.Ve
+.RE
+.SH FILELIST|PACKAGES
+.P
+Au lieu de paquets, vous pouvez transmettre un fichier texte avec le suffixe '.pkgs' et les noms des paquets. 
+Exemple : '\fIslpkg install list.pkgs\fR'. 
+Editez le fichier de configuration '/etc/slpkg/slpkg.toml' pour changer le suffixe si vous le souhaitez. 
+Vous pouvez utiliser des listes provenant d'autres sources, comme les fichiers '.sqf'. 
+.RE
+.SH A SAVOIR
+.P
+Il y a cinq indicateurs lorsque certaines commandes sont utilisées, par exemple :
+
+Cyan : Installer, Jaune : Construire, Gris : Installé, Violet : Installé Pour construire, Gris : C'est installé, Violet : Pour la mise à jour, Rouge : Pour supprimer.
+
+Lorsque vous utilisez les commandes install, build, upgrade ou remove, vous devez savoir que si le paquet est installé, sa couleur passera au gris, 
+si le paquet peut être mis à jour, il devient violet, et s'il n'est pas installé, sa couleur est cyan.
+De même, si vous essayez de supprimer un paquet, la couleur du paquet devient rouge.
+
+Exemple : Si le paquet est déjà installé, que la couleur de l'indicateur est grise et que l'option '\fB-r, --reinstall\fR' n'est pas appliquée,
+le paquet ne sera pas installé et le message "(déjà installé)" s'affichera.
+Si le paquet peut être mis à jour, l'installation se poursuivra et le paquet sera mis à jour.
+
+Pour la commande de mise à jour, vous devez savoir que vous pouvez mettre à jour des paquets provenant de différents dépôts, si vous éditez
+le fichier '\fI/etc/slpkg/repositories.toml\fR' et supprimez la balise repository. Le slpkg ne peut alors pas reconnaître le dépôt des paquets.
+
+Avec la commande remove, il va supprimer les dépendances si le paquet a été installé avec la commande '\fIslpkg install\fR',
+sinon, le slpkg ne connaît pas les dépendances qui sont installées avec les paquets qu'il va supprimer.
+
+Vous pouvez appliquer l'astérisque '*' à la place d'un paquet, pour faire correspondre tous les paquets d'un dépôt. Vous ne pouvez pas appliquer
+un astérisque à l'option '\fB-o, --repository=\fR', sauf pour la commande '\fB-s, search\fR'.
+
+Note : Il n'existe actuellement aucune fonction permettant d'indiquer les paquets si les couleurs sont désactivées.
+.RE
+.SH ÉTAT DE SORTIE
+.P
+0 Exécution réussie de slpkg.
+.P
+1 Une erreur s'est produite.
+.P
+20 Aucun paquetage n'a été trouvé pour être téléchargé, installé, réinstallé, mis à jour ou supprimé.
+.RE
+.SH CARACTÈRES D'EXPLICATION
+.P
+[État du traitement : Rouge est en cours de traitement, Vert est terminé.
+.P
+[✔️] Caractère terminé : Apparaît lorsque le traitement est terminé.
+.P
+[X] Caractère d'échec : Apparaît lorsque le traitement a échoué.
+.P
+[Caractère ignoré : Apparaît lorsque le traitement a été ignoré.
+.P
+.RE
+.SH FICHIERS DE CONFIGURATION
+.P
+Fichier de configuration dans le fichier /etc/slpkg/slpkg.toml.
+.P
+Fichier de référentiels dans le fichier /etc/slpkg/repositories.toml.
+.P
+Fichier de liste noire dans le fichier /etc/slpkg/blacklist.toml.
+.P
+Fichier de règles dans le fichier /etc/slpkg/rules.toml.
+.P
+\fIslpkg_new-configs\fR permet de gérer les fichiers de configuration .new facilement et rapidement. Déplacez-les, copiez-les ou supprimez-les.
+.RE
+.SH RAPPORT DE BOGUES
+.P
+Veuillez rapporter tout bug trouvé à : https://gitlab.com/dslackw/slpkg/-/issues.
+.P
+Note : Avec le problème, veuillez référencer le fichier journal que vous trouverez dans le chemin /tmp/slpkg/logs/slpkg.log et le coller également.
+.SH AUTEUR
+.P
+Dimitris Zlatanidis <dslackw@gmail.com>
