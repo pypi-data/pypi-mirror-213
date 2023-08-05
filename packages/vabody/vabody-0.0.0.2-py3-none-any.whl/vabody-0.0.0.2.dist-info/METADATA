@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: vabody
+Version: 0.0.0.2
+Summary: VAAI-BODY gesture generation module
+Author: yoonhee
+Author-email: yhkim@ncsoft.com
+Requires-Python: >=3.8
+
