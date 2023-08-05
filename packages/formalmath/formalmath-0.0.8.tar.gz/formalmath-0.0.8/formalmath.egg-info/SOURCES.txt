@@ -1,0 +1,9 @@
+README.md
+setup.py
+formalmath/__init__.py
+formalmath.egg-info/PKG-INFO
+formalmath.egg-info/SOURCES.txt
+formalmath.egg-info/dependency_links.txt
+formalmath.egg-info/top_level.txt
+formalmath/setmm/__init__.py
+formalmath/setmm/basic_classes.py
