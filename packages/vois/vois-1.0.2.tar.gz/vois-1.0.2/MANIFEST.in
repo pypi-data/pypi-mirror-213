@@ -1,0 +1,18 @@
+# MANIFEST.in
+
+include vois/*.py
+include vois/vuetify/*.py
+include vois/vuetify/extra/*.py
+include vois/vuetify/extra/*.vue
+
+recursive-exclude vois *.ipynb
+recursive-exclude vois *.xml
+recursive-exclude vois *.geojson
+
+prune __pycache__
+prune */__pycache__ 
+recursive-exclude */__pycache__ *
+
+prune .ipynb_checkpoints
+prune */.ipynb_checkpoints 
+recursive-exclude */.ipynb_checkpoints *
