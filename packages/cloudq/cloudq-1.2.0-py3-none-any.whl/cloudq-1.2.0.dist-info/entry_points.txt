@@ -1,0 +1,4 @@
+[console_scripts]
+cloudqaws = cloudq.aws.cloudqaws:main
+cloudqcli = cloudq.client:main
+cloudqd = cloudq.agent:main
