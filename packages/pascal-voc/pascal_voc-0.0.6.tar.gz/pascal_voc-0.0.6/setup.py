@@ -1,0 +1,22 @@
+import setuptools
+
+with open("README.md", "r") as f:
+    long_description = f.read()
+
+setuptools.setup(
+    name="pascal_voc",
+    version="0.0.6",
+    author="Alexander Barmin",
+    author_email="barmin1@mail.ru",
+    description="Tool to work with annotation formats",
+    long_description=long_description,
+    long_description_content_type="text/markdown",
+    packages=setuptools.find_packages(),
+    install_requires=["lxml>=4.6.2", "Pillow>=8.1.0"],
+    license="MIT",
+    classifiers=[
+        "Programming Language :: Python :: 3",
+        "Operating System :: OS Independent",
+    ],
+    python_requires=">=3.6",
+)
