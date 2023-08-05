@@ -1,0 +1,1 @@
+[{"anonymous":false,"inputs":[{"indexed":false,"internalType":"bytes","name":"_msgDigest","type":"bytes"}],"name":"Msg","type":"event"},{"inputs":[],"name":"getMsg","outputs":[{"internalType":"bytes","name":"","type":"bytes"}],"stateMutability":"view","type":"function"}]

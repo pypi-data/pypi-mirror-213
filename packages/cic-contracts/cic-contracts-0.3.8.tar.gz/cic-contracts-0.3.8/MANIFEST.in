@@ -1,0 +1,1 @@
+include *requirements.txt solidity/* LICENSE README* cic_contracts/unittest/solidity/* cic_contracts/data/*

@@ -1,0 +1,1 @@
+[{"anonymous":false,"inputs":[{"indexed":true,"internalType":"uint256","name":"_oldCap","type":"uint256"},{"indexed":false,"internalType":"uint256","name":"_newCap","type":"uint256"}],"name":"Cap","type":"event"},{"inputs":[],"name":"maxSupply","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"nonpayable","type":"function"}]

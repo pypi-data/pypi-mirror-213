@@ -1,0 +1,1 @@
+[{"inputs":[{"internalType":"bytes","name":"_data","type":"bytes"}],"name":"toURI","outputs":[{"internalType":"string","name":"","type":"string"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"bytes","name":"_data","type":"bytes"}],"name":"toURL","outputs":[{"internalType":"string","name":"","type":"string"}],"stateMutability":"view","type":"function"}]
