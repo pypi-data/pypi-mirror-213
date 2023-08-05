@@ -1,0 +1,8 @@
+README.md
+setup.py
+xiaowupkg/__init__.py
+xiaowupkg/filefunc.py
+xiaowupkg.egg-info/PKG-INFO
+xiaowupkg.egg-info/SOURCES.txt
+xiaowupkg.egg-info/dependency_links.txt
+xiaowupkg.egg-info/top_level.txt
