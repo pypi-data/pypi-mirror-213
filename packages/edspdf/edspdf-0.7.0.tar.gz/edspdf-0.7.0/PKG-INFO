@@ -1,0 +1,70 @@
+Metadata-Version: 2.1
+Name: edspdf
+Version: 0.7.0
+Summary: Smart text extraction from PDF documents
+Author-email: Perceval Wajsburt <perceval.wajsburt-ext@aphp.fr>, Alice Calliger <alice.calliger-ext@aphp.fr>, Basile Dura <basile.dura-ext@aphp.fr>
+License: Copyright 2021 Assistance Publique - Hôpitaux de Paris
+        
+        Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:
+        
+        1. Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.
+        
+        2. Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.
+        
+        3. Neither the name of the copyright holder nor the names of its contributors may be used to endorse or promote products derived from this software without specific prior written permission.
+        
+        THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+        
+Project-URL: homepage, https://github.com/aphp/edspdf/
+Project-URL: repository, https://github.com/aphp/edspdf/
+Project-URL: documentation, https://aphp.github.io/edspdf/
+Requires-Python: !=3.8.1,<4.0,>3.7.6
+Description-Content-Type: text/markdown
+Provides-Extra: dev
+Provides-Extra: docs
+License-File: LICENSE
+
+![Tests](https://img.shields.io/github/actions/workflow/status/aphp/edspdf/tests.yml?branch=main&label=tests&style=flat-square)
+[![Documentation](https://img.shields.io/github/actions/workflow/status/aphp/edspdf/documentation.yml?branch=main&label=docs&style=flat-square)](https://aphp.github.io/edspdf/latest/)
+[![PyPI](https://img.shields.io/pypi/v/edspdf?color=blue&style=flat-square)](https://pypi.org/project/edspdf/)
+[![Codecov](https://img.shields.io/codecov/c/github/aphp/edspdf?logo=codecov&style=flat-square)](https://codecov.io/gh/aphp/edspdf)
+[![DOI](https://zenodo.org/badge/517726737.svg)](https://zenodo.org/badge/latestdoi/517726737)
+
+# EDS-PDF
+
+EDS-PDF provides modular framework to extract text from PDF documents.
+
+You can use it out-of-the-box, or extend it to fit your use-case.
+
+## Getting started
+
+Install the library with pip:
+
+<div class="termy">
+
+```console
+$ pip install edspdf
+```
+
+</div>
+
+Visit the [documentation](https://aphp.github.io/edspdf/) for more information!
+
+## Citation
+
+If you use EDS-PDF, please cite us as below.
+
+```bibtex
+@software{edspdf,
+  author  = {Dura, Basile and Wajsburt, Perceval and Calliger, Alice and Gérardin, Christel and Bey, Romain},
+  doi     = {10.5281/zenodo.6902977},
+  license = {BSD-3-Clause},
+  title   = {{EDS-PDF: Smart text extraction from PDF documents}},
+  url     = {https://github.com/aphp/edspdf}
+}
+```
+
+## Acknowledgement
+
+We would like to thank [Assistance Publique – Hôpitaux de Paris](https://www.aphp.fr/)
+and [AP-HP Foundation](https://fondationrechercheaphp.fr/) for funding this project.

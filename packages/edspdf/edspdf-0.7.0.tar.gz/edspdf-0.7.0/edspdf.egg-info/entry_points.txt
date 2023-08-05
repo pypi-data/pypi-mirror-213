@@ -1,0 +1,17 @@
+[edspdf_factories]
+box-layout-embedding = edspdf.pipes.embeddings.box_layout_embedding:BoxLayoutEmbedding
+box-preprocessor = edspdf.pipes.embeddings.box_layout_preprocessor:BoxLayoutPreprocessor
+box-transformer = edspdf.pipes.embeddings.box_transformer:BoxTransformer
+dummy-classifier = edspdf.pipes.classifiers.dummy:DummyClassifier
+embedding-combiner = edspdf.pipes.embeddings.embedding_combiner:EmbeddingCombiner
+mask-classifier = edspdf.pipes.classifiers.mask:simple_mask_classifier_factory
+multi-mask-classifier = edspdf.pipes.classifiers.mask:mask_classifier_factory
+pdfminer-extractor = edspdf.pipes.extractors.pdfminer:PdfMinerExtractor
+random-classifier = edspdf.pipes.classifiers.random:RandomClassifier
+simple-aggregator = edspdf.pipes.aggregators.simple:SimpleAggregator
+simple-text-embedding = edspdf.pipes.embeddings.simple_text_embedding:SimpleTextEmbedding
+sub-box-cnn-pooler = edspdf.pipes.embeddings.sub_box_cnn_pooler:SubBoxCNNPooler
+trainable-classifier = edspdf.pipes.classifiers.trainable:TrainableClassifier
+
+[mkdocs.plugins]
+bibtex = docs.scripts.bibtex:BibTexPlugin
