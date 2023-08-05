@@ -1,0 +1,3 @@
+requests>=2.3.0
+IPython>=7.9
+traitlets>=4.3.3
