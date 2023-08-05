@@ -1,0 +1,13 @@
+LICENSE.txt
+README.md
+setup.cfg
+setup.py
+five_card_draw/fcd_bank.txt
+five_card_draw/fcd_functions.py
+five_card_draw/fcd_pagegui.py
+five_card_draw/five_card_draw.py
+five_card_draw.egg-info/PKG-INFO
+five_card_draw.egg-info/SOURCES.txt
+five_card_draw.egg-info/dependency_links.txt
+five_card_draw.egg-info/requires.txt
+five_card_draw.egg-info/top_level.txt
