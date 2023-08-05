@@ -1,0 +1,7 @@
+numpy
+mrcfile
+
+[testing]
+tox
+pytest
+pytest-cov

@@ -1,0 +1,2 @@
+[napari.manifest]
+napari-mrcfile-reader = napari_mrcfile_reader:napari.yaml
