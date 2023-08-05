@@ -1,0 +1,8 @@
+setup.py
+completeness/__init__.py
+completeness/completeness.py
+completeness_ratio_check.egg-info/PKG-INFO
+completeness_ratio_check.egg-info/SOURCES.txt
+completeness_ratio_check.egg-info/dependency_links.txt
+completeness_ratio_check.egg-info/requires.txt
+completeness_ratio_check.egg-info/top_level.txt

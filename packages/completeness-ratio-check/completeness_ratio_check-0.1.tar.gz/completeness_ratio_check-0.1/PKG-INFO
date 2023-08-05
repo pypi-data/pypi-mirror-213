@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: completeness_ratio_check
+Version: 0.1
+Summary: A python package to calculate and visualize the completeness ratio of data in CSV files.
+Author: JeeAnRyu
+License: MIT
+Keywords: data analysis,completeness ratio,csv
