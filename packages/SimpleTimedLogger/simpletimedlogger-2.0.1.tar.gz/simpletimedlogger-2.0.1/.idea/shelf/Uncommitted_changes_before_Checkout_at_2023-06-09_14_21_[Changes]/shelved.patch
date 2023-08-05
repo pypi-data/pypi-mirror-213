@@ -1,0 +1,18 @@
+Index: setup.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>from setuptools import setup, find_packages\r\n\r\nVERSION = '2.0.0'\r\nDESCRIPTION = 'Simple logger, it logs, to terminal'\r\nLONG_DESCRIPTION = 'Simple logger with timed logs, to measure elapsed times between actions'\r\n\r\nsetup(\r\n    name=\"simplelogger\",\r\n    version=VERSION,\r\n    author=\"Karolis Andriunas\",\r\n    author_email=\"almex.developer@gmail.com\",\r\n    description=DESCRIPTION,\r\n    long_description=LONG_DESCRIPTION,\r\n    packages=find_packages(),\r\n    install_requires=[],\r\n\r\n    keywords=['python', 'logger', 'simple', 'simplelogger'],\r\n    classifiers=[\r\n        \"Development Status :: 3 - Alpha\",\r\n        \"Intended Audience :: Education\",\r\n        \"Programming Language :: Python :: 3\",\r\n        \"Operating System :: MacOS :: MacOS X\",\r\n        \"Operating System :: Microsoft :: Windows\",\r\n    ]\r\n)
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/setup.py b/setup.py
+--- a/setup.py	
++++ b/setup.py	
+@@ -1,6 +1,6 @@
+ from setuptools import setup, find_packages
+ 
+-VERSION = '2.0.0'
++VERSION = '2.0.1'
+ DESCRIPTION = 'Simple logger, it logs, to terminal'
+ LONG_DESCRIPTION = 'Simple logger with timed logs, to measure elapsed times between actions'
+ 
