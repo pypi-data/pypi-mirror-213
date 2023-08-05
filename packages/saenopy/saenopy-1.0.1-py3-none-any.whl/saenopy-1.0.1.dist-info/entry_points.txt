@@ -1,0 +1,3 @@
+[console_scripts]
+saenopy=saenopy.gui.gui_master:main
+
