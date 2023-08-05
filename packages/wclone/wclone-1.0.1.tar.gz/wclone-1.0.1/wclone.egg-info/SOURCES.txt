@@ -1,0 +1,11 @@
+README.md
+setup.py
+wclone/__init__.py
+wclone/__main__.py
+wclone/app.py
+wclone.egg-info/PKG-INFO
+wclone.egg-info/SOURCES.txt
+wclone.egg-info/dependency_links.txt
+wclone.egg-info/entry_points.txt
+wclone.egg-info/requires.txt
+wclone.egg-info/top_level.txt
