@@ -1,0 +1,171 @@
+Metadata-Version: 2.1
+Name: fenics-smart
+Version: 2.1.1
+Summary: Spatial Modeling Algorithms for Reactions and Transport (SMART) is a high-performance finite-element-based simulation package for model specification and numerical simulation of spatially-varying reaction-transport processes in biological cells.
+Author-email: Justin Laughlin <justinglaughlin@gmail.com>
+License: GNU LESSER GENERAL PUBLIC LICENSE
+        Version 3, 29 June 2007
+        
+        Copyright (C) 2007 Free Software Foundation, Inc. <http://fsf.org/>
+        
+        Everyone is permitted to copy and distribute verbatim copies of this license document, but changing it is not allowed.
+        
+        This version of the GNU Lesser General Public License incorporates the terms and conditions of version 3 of the GNU General Public License, supplemented by the additional permissions listed below.
+        
+        0. Additional Definitions.
+        As used herein, “this License” refers to version 3 of the GNU Lesser General Public License, and the “GNU GPL” refers to version 3 of the GNU General Public License.
+        
+        “The Library” refers to a covered work governed by this License, other than an Application or a Combined Work as defined below.
+        
+        An “Application” is any work that makes use of an interface provided by the Library, but which is not otherwise based on the Library. Defining a subclass of a class defined by the Library is deemed a mode of using an interface provided by the Library.
+        
+        A “Combined Work” is a work produced by combining or linking an Application with the Library. The particular version of the Library with which the Combined Work was made is also called the “Linked Version”.
+        
+        The “Minimal Corresponding Source” for a Combined Work means the Corresponding Source for the Combined Work, excluding any source code for portions of the Combined Work that, considered in isolation, are based on the Application, and not on the Linked Version.
+        
+        The “Corresponding Application Code” for a Combined Work means the object code and/or source code for the Application, including any data and utility programs needed for reproducing the Combined Work from the Application, but excluding the System Libraries of the Combined Work.
+        
+        1. Exception to Section 3 of the GNU GPL.
+        You may convey a covered work under sections 3 and 4 of this License without being bound by section 3 of the GNU GPL.
+        
+        2. Conveying Modified Versions.
+        If you modify a copy of the Library, and, in your modifications, a facility refers to a function or data to be supplied by an Application that uses the facility (other than as an argument passed when the facility is invoked), then you may convey a copy of the modified version:
+        
+        a) under this License, provided that you make a good faith effort to ensure that, in the event an Application does not supply the function or data, the facility still operates, and performs whatever part of its purpose remains meaningful, or
+        b) under the GNU GPL, with none of the additional permissions of this License applicable to that copy.
+        3. Object Code Incorporating Material from Library Header Files.
+        The object code form of an Application may incorporate material from a header file that is part of the Library. You may convey such object code under terms of your choice, provided that, if the incorporated material is not limited to numerical parameters, data structure layouts and accessors, or small macros, inline functions and templates (ten or fewer lines in length), you do both of the following:
+        
+        a) Give prominent notice with each copy of the object code that the Library is used in it and that the Library and its use are covered by this License.
+        b) Accompany the object code with a copy of the GNU GPL and this license document.
+        4. Combined Works.
+        You may convey a Combined Work under terms of your choice that, taken together, effectively do not restrict modification of the portions of the Library contained in the Combined Work and reverse engineering for debugging such modifications, if you also do each of the following:
+        
+        a) Give prominent notice with each copy of the Combined Work that the Library is used in it and that the Library and its use are covered by this License.
+        b) Accompany the Combined Work with a copy of the GNU GPL and this license document.
+        c) For a Combined Work that displays copyright notices during execution, include the copyright notice for the Library among these notices, as well as a reference directing the user to the copies of the GNU GPL and this license document.
+        d) Do one of the following:
+        0) Convey the Minimal Corresponding Source under the terms of this License, and the Corresponding Application Code in a form suitable for, and under terms that permit, the user to recombine or relink the Application with a modified version of the Linked Version to produce a modified Combined Work, in the manner specified by section 6 of the GNU GPL for conveying Corresponding Source.
+        1) Use a suitable shared library mechanism for linking with the Library. A suitable mechanism is one that (a) uses at run time a copy of the Library already present on the user's computer system, and (b) will operate properly with a modified version of the Library that is interface-compatible with the Linked Version.
+        e) Provide Installation Information, but only if you would otherwise be required to provide such information under section 6 of the GNU GPL, and only to the extent that such information is necessary to install and execute a modified version of the Combined Work produced by recombining or relinking the Application with a modified version of the Linked Version. (If you use option 4d0, the Installation Information must accompany the Minimal Corresponding Source and Corresponding Application Code. If you use option 4d1, you must provide the Installation Information in the manner specified by section 6 of the GNU GPL for conveying Corresponding Source.)
+        5. Combined Libraries.
+        You may place library facilities that are a work based on the Library side by side in a single library together with other library facilities that are not Applications and are not covered by this License, and convey such a combined library under terms of your choice, if you do both of the following:
+        
+        a) Accompany the combined library with a copy of the same work based on the Library, uncombined with any other library facilities, conveyed under the terms of this License.
+        b) Give prominent notice with the combined library that part of it is a work based on the Library, and explaining where to find the accompanying uncombined form of the same work.
+        6. Revised Versions of the GNU Lesser General Public License.
+        The Free Software Foundation may publish revised and/or new versions of the GNU Lesser General Public License from time to time. Such new versions will be similar in spirit to the present version, but may differ in detail to address new problems or concerns.
+        
+        Each version is given a distinguishing version number. If the Library as you received it specifies that a certain numbered version of the GNU Lesser General Public License “or any later version” applies to it, you have the option of following the terms and conditions either of that published version or of any later version published by the Free Software Foundation. If the Library as you received it does not specify a version number of the GNU Lesser General Public License, you may choose any version of the GNU Lesser General Public License ever published by the Free Software Foundation.
+        
+        If the Library as you received it specifies that a proxy can decide whether future versions of the GNU Lesser General Public License shall apply, that proxy's public statement of acceptance of any version is permanent authorization for you to choose that version for the Library.
+        
+Project-URL: homepage, https://rangamanilabucsd.github.io/smart
+Project-URL: repository, https://github.com/RangamaniLabUCSD/smart
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Provides-Extra: test
+Provides-Extra: docs
+Provides-Extra: examples
+Provides-Extra: all
+License-File: LICENSE
+
+[![Test fenics_smart](https://github.com/RangamaniLabUCSD/smart/actions/workflows/test_fenics_smart.yml/badge.svg)](https://github.com/RangamaniLabUCSD/smart/actions/workflows/test_fenics_smart.yml)
+[![PyPI](https://img.shields.io/pypi/v/fenics-smart)](https://pypi.org/project/fenics-smart/)
+[![Deploy static content to Pages](https://github.com/RangamaniLabUCSD/smart/actions/workflows/build_docs.yml/badge.svg)](https://github.com/RangamaniLabUCSD/smart/actions/workflows/build_docs.yml)
+[![pre-commit](https://github.com/RangamaniLabUCSD/smart/actions/workflows/pre-commit.yml/badge.svg)](https://github.com/RangamaniLabUCSD/smart/actions/workflows/pre-commit.yml)
+# Spatial Modeling Algorithms for Reaction-Transport [systems|models|equations]
+
+## Statement of Need
+
+*Spatial Modeling Algorithms for Reactions and Transport* (SMART) is a high-performance finite-element-based simulation package for model specification and numerical simulation of spatially-varying reaction-transport processes,
+especially tailored to modeling such systems within biological cells.
+SMART is based on the [FEniCS finite element library](https://fenicsproject.org/), provides a symbolic representation
+framework for specifying reaction pathways, and supports large and irregular cell geometries in 2D and 3D.
+
+- Documentation: https://rangamanilabucsd.github.io/smart
+- Source code: https://github.com/RangamaniLabUCSD/smart
+
+
+## Installation
+
+### Using docker (recommended)
+The simplest way to use `fenics-smart` is to use the provided docker image. You can get this image by pulling it from the github registry
+```
+docker pull ghcr.io/rangamanilabucsd/smart:latest
+```
+It is also possible to pull a specific version by changing the tag, e.g
+```
+docker pull ghcr.io/rangamanilabucsd/smart:v2.0.1
+```
+will use version 2.0.1.
+
+In order to start a container you can use the [`docker run`](https://docs.docker.com/engine/reference/commandline/run/) command. For example the command
+```
+docker run --rm -v $(pwd):/home/shared -w /home/shared -ti ghcr.io/rangamanilabucsd/smart:latest
+```
+will run the latest version and share your current working directory with the container.
+
+### Using pip
+`fenics-smart` is also available on [pypi](https://pypi.org/project/fenics-smart/) and can be installed with
+```
+python3 -m pip install fenics-smart
+```
+However this requires FEniCS version 2019.2.0 or later to already be installed. Currently, FEniCS version 2019.2.0 needs to be built [from source](https://bitbucket.org/fenics-project/dolfin/src/master/) or use some of the [pre-built docker images](https://github.com/orgs/scientificcomputing/packages?repo_name=packages)
+
+## Example usage
+The SMART repository contains a number of examples in the `examples` directory which also run as continuous integration tests (see "Automated Tests" below):
+* [Example 1](https://rangamanilabucsd.github.io/smart/examples/example1/example1.html): Formation of Turing patterns in 2D reaction-diffusion (rectangular domain)
+* [Example 2](https://rangamanilabucsd.github.io/smart/examples/example2/example2.html): Simple cell signaling model in 2D (ellipse)
+* [Example 3](https://rangamanilabucsd.github.io/smart/examples/example3/example3.html): Model of protein phosphorylation and diffusion in 3D (sphere)
+* [Example 4](https://rangamanilabucsd.github.io/smart/examples/example4/example4.html): Model of second messenger reaction-diffusion in 3D (ellipsoid-in-an-ellipsoid)
+* [Example 5](https://rangamanilabucsd.github.io/smart/examples/example5/example5.html): Simple cell signaling model in 3D (cube-in-a-cube)
+* [Example 6](https://rangamanilabucsd.github.io/smart/examples/example6/example6.html): Model of calcium dynamics in a neuron (sphere-in-a-sphere)
+
+## Functionality documentation
+SMART is equipped to handle:
+* Reaction-diffusion with any number of species, reactions, and compartments.
+* 3D-2D problems or 2D-1D problems; that is, you can solve a problem with many 3d sub-volumes coupled to many 2d sub-surfaces, or a problem with many 2d "sub-volumes" coupled to many 1d "sub-surfaces"
+* Conversion of units at run-time via [Pint](https://pint.readthedocs.io/en/stable/) so that models can be specified in whatever units are most natural/convenient to the user.
+* Specification of a time-dependent function either algebraically or from data (SMART will numerically integrate the data points at each time-step).
+* Customized reaction equations (e.g. irreversible Hill equation).
+
+The general form of the mixed-dimensional partial differential equations (PDEs) solved by SMART, along with mathematical details of the numerical implementation, are documented [here](https://rangamanilabucsd.github.io/smart/docs/math.html).
+
+Our API documentation can be accessed [here](https://rangamanilabucsd.github.io/smart/docs/api.html).
+
+## Automated tests
+Upon pushing new code to the SMART repository, a number of tests run:
+* pre-commit tests
+* unit tests (can be found in `tests` folder): test initialization of compartment, species, and parameter objects
+* Examples 1-6: All 6 examples are run when building the docs. These serve as Contiuous Integration (CI) tests; within each run, there is a regression test comparing the output values from the simulation with values obtained from a previous build of SMART. Outputs from examples 2 and 3 are also compared to analytical solutions to demonstrate the accuracy of SMART simulations.
+* Example 3 with MPI: Example 3 is run using MPI to run differently sized meshes in parallel (each process is assigned a single mesh).
+
+## Contributing guidelines
+
+Detailed contributing guidelines are given [here](https://rangamanilabucsd.github.io/smart/CONTRIBUTING.html).
+
+### Dependencies
+* SMART uses [FEniCS](https://fenicsproject.org/) to assemble finite element matrices from the variational form
+* SMART uses [PETSc4py] to solve the resultant linear algebra systems.
+* SMART uses [pandas](https://pandas.pydata.org/) as an intermediate data structure to help organize and process models.
+* SMART uses [Pint](https://pint.readthedocs.io/en/stable/) for unit tracking and conversions.
+* SMART uses [matplotlib](https://matplotlib.org/) to generate plots in examples
+* SMART uses [sympy](https://www.sympy.org/) to allow users to input custom reactions and also to determine the appopriate solution techniques (e.g. testing for non-linearities).
+* SMART uses [numpy](https://numpy.org/) and [scipy](https://www.scipy.org/) for general array manipulations and basic calculations.
+* SMART uses [tabulate](https://pypi.org/project/tabulate/) to make ASCII tables.
+* SMART uses [termcolor](https://pypi.org/project/termcolor/) for colored terminal output.
+
+## License
+LGPL-3.0
+
+## SMART development team
+* [Justin Laughlin](https://github.com/justinlaughlin) - original author of the repository
+* [Christopher Lee](https://github.com/ctlee)
+* [Emmet Francis](https://github.com/emmetfrancis)
+* [Jorgen Dokken](https://github.com/jorgensd)
+* [Henrik Finsberg](https://github.com/finsberg)
+
+Previous contributors:
+* [Yuan Gao](https://github.com/Rabona17)
+* [William Xu](https://github.com/willxu1234)
