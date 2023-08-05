@@ -1,0 +1,40 @@
+[project]
+name = "absl_extra"
+version = "0.0.17"
+description = "A wrapper to run and monitor absl app."
+readme = "Readme.md"
+requires-python = ">=3.8"
+authors = [
+    { name = "Artem Sereda", email = "artem.sereda.tub@gmail.com" }
+]
+maintainers = [
+    { name = "Artem Sereda", email = "artem.sereda.tub@gmail.com" }
+]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+]
+dependencies = [
+    "absl_py"
+]
+[project.optional-dependencies]
+dev = [
+    "black",
+    "pytest",
+    "absl_extra[mongo,ml_collections,slack,tensorflow]"
+]
+mongo = ["pymongo"]
+ml_collections = ["ml_collections"]
+slack = ["slack_sdk"]
+tensorflow = [
+    "tensorflow; sys_platform == 'linux'",
+    "tensorflow_macos; sys_platform == 'darwin'"
+]
+
+
+[project.urls]
+"Homepage" = "https://github.com/aaarrti/absl_extra"
+
+
+[build-system]
+requires = ["flit-core >= 3.4"]
+build-backend = "flit_core.buildapi"
