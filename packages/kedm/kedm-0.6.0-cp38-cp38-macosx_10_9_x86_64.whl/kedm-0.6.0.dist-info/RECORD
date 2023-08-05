@@ -1,0 +1,10 @@
+kedm/_version.py,sha256=Fqc8k5ji6acrMU9OFJfyI8ipcsF7HL-mJDil9JOfNyI,497
+kedm/__init__.py,sha256=EZUiaCjggOAic59VtQE4dsVqZTLTqV8gTOj4FN1Vi7o,312
+kedm/_kedm.cpython-38-darwin.so,sha256=AIEPwHhifkE85rmyfRr51IDhelkrvJodLES4EnIIz08,1078576
+kedm/.dylibs/libomp.dylib,sha256=cPEu_0RefVg7zfWgcnQRpd-ftgpiNUYdac8x04CS37s,1495696
+kedm-0.6.0.dist-info/LICENSE-THIRD-PARTY,sha256=-A7pHHXqtkNQeC6vvnNmvO3ONQdRlduLGNM7YOaDJ_M,16971
+kedm-0.6.0.dist-info/RECORD,,
+kedm-0.6.0.dist-info/LICENSE,sha256=HPKibR5umz0gbhyiqDnRglJHCtNpqB3Ak2bJYDSBkaQ,1078
+kedm-0.6.0.dist-info/WHEEL,sha256=_0Wg2cWkNFH8-JyedQUo5zi8Mm64rhMhBZSgZNefByE,103
+kedm-0.6.0.dist-info/top_level.txt,sha256=neU2V7Q0pOirziEOZV4wygWLoEnnLiOFKKKSvpuSUf8,5
+kedm-0.6.0.dist-info/METADATA,sha256=4euoxsW72nvoQhOZW5lYiXKNtLKeOGa5-8ZYVNZWKPI,3134
