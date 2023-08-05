@@ -1,0 +1,15 @@
+datacube
+shapely
+xarray
+matplotlib
+numpy
+geopandas
+dea_tools
+scikit-learn
+pydotplus
+flusstools
+scikit-image
+GDAL
+scipy
+folium
+odc.ui
