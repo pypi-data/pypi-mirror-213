@@ -1,0 +1,63 @@
+Metadata-Version: 2.1
+Name: evalutils
+Version: 0.4.2
+Summary: evalutils helps users create extensions for grand-challenge.org
+Home-page: https://github.com/comic/evalutils
+License: MIT
+Author: James Meakin
+Author-email: evalutils@jmsmkn.com
+Requires-Python: >=3.8,<4.0
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Healthcare Industry
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: SimpleITK (>=2.0,!=2.1.1.1)
+Requires-Dist: click
+Requires-Dist: cookiecutter
+Requires-Dist: imageio[tifffile] (>=2.31)
+Requires-Dist: numpy (>=1.22)
+Requires-Dist: pandas (>=1.3)
+Requires-Dist: pip-tools (>=6)
+Requires-Dist: scikit-learn
+Requires-Dist: scipy
+Project-URL: Repository, https://github.com/comic/evalutils
+Description-Content-Type: text/markdown
+
+# evalutils
+
+[![Build Status](https://github.com/comic/evalutils/workflows/CI/badge.svg?branch=main)](https://github.com/comic/evalutils/actions?query=workflow%3ACI+branch%3Amain)
+[![PyPI version](https://badge.fury.io/py/evalutils.svg)](https://badge.fury.io/py/evalutils)
+[![PyPI - Python Version](https://img.shields.io/pypi/pyversions/evalutils)](https://pypi.org/project/evalutils/)
+[![Documentation Status](https://img.shields.io/badge/docs-passing-4a4c4c1.svg)](https://comic.github.io/evalutils/)
+[![Code style](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/ambv/black)
+
+evalutils helps challenge administrators easily create evaluation
+containers for grand-challenge.org.
+
+  - Free software: MIT license
+  - Documentation: <https://comic.github.io/evalutils/>.
+
+## Features
+
+  - Generation your challenge evaluation project boilerplate using
+    [Cookiecutter](https://github.com/audreyr/cookiecutter)
+  - Scripts to build, test and export your generated docker container
+    for grand-challenge.org
+  - Loading of CSV, ITK and Pillow compatible prediction files
+  - Validation of submitted predictions
+  - Interface to SciKit-Learn metrics and Pandas aggregations
+  - Bounding box annotations with Jaccard Index calculations
+
+## Getting Started
+
+[evalutils](https://github.com/comic/evalutils) requires Python 3.8 or
+above, and can be installed from `pip`.
+Please see the [Getting Started](https://comic.github.io/evalutils/usage.html)
+documentation for more details.
+
