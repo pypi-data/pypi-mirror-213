@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: appstream-python
+Version: 0.6.2
+Summary: A library for dealing with Freedesktop Appstream data
+Author-email: JakobDev <jakobdev@gmx.de>
+License: BSD-2-Clause
+Project-URL: Documentation, https://appstream-python.readthedocs.io
+Project-URL: Issues, https://codeberg.org/JakobDev/appstream-python/issues
+Project-URL: Source, https://codeberg.org/JakobDev/appstream-python
+Project-URL: Donation, https://ko-fi.com/jakobdev
+Keywords: JakobDev,AppStream,Freedesktop,Linux
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Environment :: Other Environment
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: POSIX :: BSD
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: lxml
+
+# appstream-python
+
+A library for dealing with Freedesktop Appstream data. This lib is currently in development.
