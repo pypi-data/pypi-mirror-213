@@ -1,0 +1,79 @@
+Metadata-Version: 2.1
+Name: graphce
+Version: 0.0.2
+Summary: Working with databases related to IP, phone, and email information.
+Author: authsafe
+Description-Content-Type: text/markdown
+
+Readme
+
+This package provides the GraphCE class for working with databases related to IP, phone, and email information.
+
+Usage:
+To use the GraphCE class, import it from the graphce.tree module.
+
+Example:
+from graphce.tree import GraphCE
+
+Creating an Instance:
+To create an instance of GraphCE, provide the following arguments:
+- Type: The type of data you want to work with. Choose from IP, PHONE, or EMAIL.
+- Path: The path of the database where you want to create or use the database.
+
+Note: When creating an instance, a database file with the specified type will be created at the given path. For example, if the type is "IP", it will create a file called "IPs.sqlite" at the specified path. Additionally, an "edges.sqlite" file will also be created at the given path. This file is used for adding, deleting, and updating edges in the graph.
+
+Operations:
+Once you have an instance of GraphCE, you can perform the following operations:
+
+1. Adding Data:
+To add data to the database, use the add() function. Provide the following arguments:
+- Value: The IP, phone, or email value you want to add.
+- Info: Additional information related to the value.
+
+Example:
+graph_ce = GraphCE("IP", "path_to_database")
+graph_ce.add("192.168.0.1", "Some information about the IP")
+
+2. Searching Data:
+To search for data in the database, use the search() function. Provide the value you want to search for.
+
+Example:
+result = graph_ce.search("192.168.0.1")
+print(result)  # return the True and info if present else return False, -1
+
+3. Updating Data:
+To update existing data in the database, use the update() function. Provide the following arguments:
+- Value: The IP, phone, or email value you want to update.
+- Info: The updated information for the value.
+
+Example:
+graph_ce.update("192.168.0.1", "Updated information for the IP")
+
+4. Managing Edges:
+To manage the edges between nodes in the graph, use the following functions:
+
+- Creating an Edge:
+To create an edge between two nodes, use the create_edge() function. Provide the following arguments:
+  - Nodes: A tuple of nodes that form the edge.
+  - Value: The value associated with the edge.
+
+Example:
+graph_ce.create_edge(("Node1", "Node2"), "Edge value")
+
+- Deleting an Edge:
+To delete an existing edge, use the delete_edge() function. Provide the tuple of nodes that form the edge.
+
+Example:
+graph_ce.delete_edge(("Node1", "Node2"))
+
+- Updating an Edge:
+To update the value of an existing edge, use the update_edge() function. Provide the following arguments:
+  - Nodes: A tuple of nodes that form the edge.
+  - Value: The updated value for the edge.
+
+Example:
+graph_ce.update_edge(("Node1", "Node2"), "Updated edge value")
+
+Please note that the provided examples assume the "grpahce" package is installed and available in your Python environment. Make sure to replace "path_to_database" with the actual path where you want to create or use the database.
+
+
