@@ -1,0 +1,9 @@
+README.md
+setup.py
+pars_avito/__init__.py
+pars_avito/pars_avito.py
+pars_avito.egg-info/PKG-INFO
+pars_avito.egg-info/SOURCES.txt
+pars_avito.egg-info/dependency_links.txt
+pars_avito.egg-info/requires.txt
+pars_avito.egg-info/top_level.txt
