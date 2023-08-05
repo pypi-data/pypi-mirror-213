@@ -1,0 +1,16 @@
+README.md
+setup.py
+src/openi/__init__.py
+src/openi/dataset/__init__.py
+src/openi/dataset/dataset.py
+src/openi/utils/__init__.py
+src/openi/utils/helper.py
+src/openi/utils/minio.py
+src/openi/utils/modelarts.py
+src/openi/utils/obs.py
+src/openi/utils/utils.py
+src/openi_test.egg-info/PKG-INFO
+src/openi_test.egg-info/SOURCES.txt
+src/openi_test.egg-info/dependency_links.txt
+src/openi_test.egg-info/requires.txt
+src/openi_test.egg-info/top_level.txt
