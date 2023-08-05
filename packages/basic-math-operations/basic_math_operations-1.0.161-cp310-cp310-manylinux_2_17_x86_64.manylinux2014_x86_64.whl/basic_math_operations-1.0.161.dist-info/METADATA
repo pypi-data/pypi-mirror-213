@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: basic-math-operations
+Version: 1.0.161
+Summary: Biginteger library written in assembly and C.
+Author: avighnac
+Author-email: avighnakc@gmail.com
+License-File: LICENSE
+
