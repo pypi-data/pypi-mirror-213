@@ -1,0 +1,3 @@
+[console_scripts]
+python-dspobjects=dspobjects.__main__:main
+
