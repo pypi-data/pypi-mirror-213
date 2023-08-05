@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: example-helloworld
+Version: 1.0
+Summary: Example hello world script
+Author: mishpro
+Author-email: mishpro <root@venusbiser.ru>
+Project-URL: Homepage, https://github.com/mishpro-programm/example_helloworld
+Project-URL: Bug Tracker, https://github.com/mishpro-programm/example_helloworld/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >3
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+Hello world package\
+Usage: ```import helloworld```
