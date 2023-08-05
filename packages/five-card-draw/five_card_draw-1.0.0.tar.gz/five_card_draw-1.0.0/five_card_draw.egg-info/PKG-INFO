@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: five-card-draw
+Version: 1.0.0
+Summary: Video Poker application for 5 Card Draw Poker
+Home-page: https://github.com/ralbee1/5_card_draw
+Author: Richard Albee
+Author-email: Ralbee1@iwu.edu
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Requires-Python: >=3.8
+License-File: LICENSE.txt
