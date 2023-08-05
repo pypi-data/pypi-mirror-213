@@ -1,0 +1,2 @@
+design-django-theme
+django<4.0,>=2.0

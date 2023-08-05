@@ -1,0 +1,7 @@
+README.md
+setup.py
+unicms_template_italia/unicms_template_italia.egg-info/PKG-INFO
+unicms_template_italia/unicms_template_italia.egg-info/SOURCES.txt
+unicms_template_italia/unicms_template_italia.egg-info/dependency_links.txt
+unicms_template_italia/unicms_template_italia.egg-info/requires.txt
+unicms_template_italia/unicms_template_italia.egg-info/top_level.txt
