@@ -1,0 +1,9 @@
+coregio/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+coregio/registry_api.py,sha256=m0cLdGAuvjiMNpSD3m-kgFlr2GPsV_yNOk2FtdnfjCY,12280
+coregio/registry_auth.py,sha256=WoYrALsikg4GxO0-GhByssSKFs8tzG5xi9_C1P-dHOo,10017
+coregio/utils.py,sha256=I5rPA4bnX9d0nxQSCR27uyTV6wRj8uQHdKMEfKO_bWM,2175
+coregio-0.5.0.dist-info/LICENSE.txt,sha256=P3WbQo9ERN_xY-loI0HnyRa4hFs5X5QyawmaYlE_EQo,1054
+coregio-0.5.0.dist-info/METADATA,sha256=OXkXHvAyBlKG8RxEeUcXEiOe6HlECf4OTbJaxkwOa-M,7257
+coregio-0.5.0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+coregio-0.5.0.dist-info/top_level.txt,sha256=4BLZkx7VmecGO7E4dLYqX3DLS2w2iuAgiKaxu_-9IXo,8
+coregio-0.5.0.dist-info/RECORD,,
