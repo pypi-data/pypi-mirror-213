@@ -1,0 +1,16 @@
+autodistill/__init__.py,sha256=YvuYzWnKtqBb-IqG8HAu-nhIYAsgj9Vmc_b9o7vO-js,22
+autodistill/helpers.py,sha256=EvkXzG9bTYL4v6o7ERzrtltlCK6Q_0fwkt1sHbA_2LA,3258
+autodistill/core/__init__.py,sha256=CtT6hsqfTZ0obAHMU2CMm6symQ6QOG28gWxTnd5nl7E,151
+autodistill/core/base_model.py,sha256=z-837iK9cJIVo4gMwKR5GQ-csezID8K24c6hZGy3SuE,516
+autodistill/core/ontology.py,sha256=SKuRbogGgXd49k9M5AtKW8Ey7-A8A04yp8RhaDrWfZI,114
+autodistill/core/target_model.py,sha256=PwfSRyXcfTk2ztb7SzYj6pSOU8JUgpY0eplz5R0T-7Y,236
+autodistill/detection/__init__.py,sha256=ENgkOF7IVPpf54ZTPTcvej8DB6T06IF-WqC4-Ctlgz0,290
+autodistill/detection/caption_ontology.py,sha256=rDaXhi7aS-WZwsQxEE8wh_867XEhtNDL6chvkUUzEs8,580
+autodistill/detection/detection_base_model.py,sha256=Fc_t2boaXkSDSiQ1vemtdaYfxRAxYwNNtACWQ2UhTtc,1760
+autodistill/detection/detection_ontology.py,sha256=Jeb2AVlQuX7MN01gFgveBFk37XWVXcxU6QM7lmZpGAM,769
+autodistill/detection/detection_target_model.py,sha256=21LOzzkjG0o9iXaMifyJo0J3lWFDKoxqkEtqFsiUCgY,366
+autodistill-0.1.2.dist-info/LICENSE,sha256=QwcOLU5TJoTeUhuIXzhdCEEDDvorGiC6-3YTOl4TecE,11356
+autodistill-0.1.2.dist-info/METADATA,sha256=vrcfKFLVFHEGXEzKx6327M_ldUQugA-Up7qzqVfQXaQ,14493
+autodistill-0.1.2.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+autodistill-0.1.2.dist-info/top_level.txt,sha256=nf7-nP_YvnaI1F_Vn1uH3jwlehkgNQ14gVsi0FzjIcM,12
+autodistill-0.1.2.dist-info/RECORD,,
