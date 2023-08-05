@@ -1,0 +1,2 @@
+[console_scripts]
+junit-to-md-py = script.junit_to_md:main

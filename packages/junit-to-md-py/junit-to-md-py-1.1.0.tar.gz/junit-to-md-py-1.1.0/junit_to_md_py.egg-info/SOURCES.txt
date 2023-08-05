@@ -1,0 +1,10 @@
+README.rst
+setup.py
+junit_to_md_py.egg-info/PKG-INFO
+junit_to_md_py.egg-info/SOURCES.txt
+junit_to_md_py.egg-info/dependency_links.txt
+junit_to_md_py.egg-info/entry_points.txt
+junit_to_md_py.egg-info/requires.txt
+junit_to_md_py.egg-info/top_level.txt
+script/__init__.py
+script/junit_to_md.py
