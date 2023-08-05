@@ -1,0 +1,15 @@
+trefleapi/__init__.py,sha256=duXXXcs5MUmmiqG9aK7TZOxSQIQ5Q_502SZN3mfEQAg,259
+trefleapi/api_operations.py,sha256=5YklXvFkxUpCLf19JGTPSq9PHfHC-eeL7qyY9_XI4jM,1038
+trefleapi/custom_validators.py,sha256=FQwx-nWOyPbkSEFdE7xJwItYG6bkM3G9W4SYSxg3-gE,1866
+trefleapi/exceptions.py,sha256=ztkRDud3SWmx18d0-4n60e5Gs-GQaxUp5OxOlHq-98M,97
+trefleapi/main.py,sha256=NwN0vNBgANpIUKxsKHZYxHeB2mzNibcw26_ATI3d2z0,2143
+trefleapi/models.py,sha256=2k2i_YjV3r_ebn_V0JcCToX-EWUfWowaXA5MgKuyi04,6916
+trefleapi/queryset.py,sha256=zj2VKq-Dx-_mIP1SQElSEIiyx6fQhMnAYXN6VCX8aLY,11948
+trefleapi/rest_adapter.py,sha256=vccNHY1N8Kqr_MPMMew2aDnc7k3IFvl49OuHEwUS5TI,2952
+trefleapi/settings.py,sha256=IA3x6daBuBBqj7h2nSUD1R32hH-PlYu_vRrX1p6cXYE,3487
+trefleapi/utils.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+trefleapi-0.1.0.dist-info/LICENSE,sha256=2bm9uFabQZ3Ykb_SaSU_uUbAj2-htc6WJQmS_65qD00,1073
+trefleapi-0.1.0.dist-info/METADATA,sha256=I6DMe9FxJoCp9zXdECo8kGsseqlgi10PnGsIvKjs3gM,2553
+trefleapi-0.1.0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+trefleapi-0.1.0.dist-info/top_level.txt,sha256=U6kOsTLABjlmPnvBdikYK6FTYpokcCEZ7zaPrLoF6rs,10
+trefleapi-0.1.0.dist-info/RECORD,,
