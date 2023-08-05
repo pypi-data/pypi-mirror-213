@@ -1,0 +1,5 @@
+napari
+numpy>=1.20
+qtpy
+scikit-learn
+sparse
