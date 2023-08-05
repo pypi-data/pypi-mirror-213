@@ -1,0 +1,3 @@
+[console_scripts]
+frontmatter = frontmatter_cli:cli
+frontmatter-cli = frontmatter_cli:cli
