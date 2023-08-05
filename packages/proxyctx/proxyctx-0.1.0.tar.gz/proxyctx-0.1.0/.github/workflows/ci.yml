@@ -1,0 +1,54 @@
+# This workflow will install Python dependencies, run tests and lint with a variety of Python versions
+# For more information see: https://help.github.com/actions/language-and-framework-guides/using-python-with-github-actions
+
+name: CI/CD
+
+on:
+  push:
+    branches:
+      - main
+    tags:
+      - '*'
+  pull_request:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: [3.7, 3.8, 3.9]
+
+    steps:
+    - uses: actions/checkout@v3
+    - name: Set up Python ${{ matrix.python-version }}
+      uses: actions/setup-python@v4
+      with:
+        python-version: ${{ matrix.python-version }}
+    - name: Test with pytest
+      run: |
+        python -m pip install nox
+        nox -rs tests-${{ matrix.python-version }}
+    - name: Upload coverage to Codecov
+      uses: codecov/codecov-action@v3
+
+  deploy:
+    needs: test
+    if: github.event_name == 'push' && startsWith(github.ref, 'refs/tags')
+    environment: Deployment
+
+    runs-on: ubuntu-latest
+    permissions:
+      id-token: write # IMPORTANT: this permission is mandatory for trusted publishing
+
+    steps:
+    - uses: actions/checkout@v3
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.x'
+    - name: Build
+      run: |
+        python -m pip install nox
+        nox -rs build
+    - name: Publish
+      uses: pypa/gh-action-pypi-publish@release/v1
