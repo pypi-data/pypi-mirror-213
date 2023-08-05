@@ -1,0 +1,14 @@
+numpy
+scipy
+pandas
+neo
+tqdm
+
+[docs]
+matplotlib
+sphinx-gallery
+numpydoc
+
+[test]
+pytest
+matplotlib
