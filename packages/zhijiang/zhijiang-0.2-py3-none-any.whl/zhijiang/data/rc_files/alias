@@ -1,0 +1,8 @@
+alias ls='ls --color=auto'
+alias grep='grep --color=auto'
+alias less='less -i' # ignore case when searching
+alias ps='ps auxf' # process tree
+alias top='top c'
+alias sudo='sudo env PATH=$PATH'
+alias j='autojump'
+alias gdb='gdb -q'
