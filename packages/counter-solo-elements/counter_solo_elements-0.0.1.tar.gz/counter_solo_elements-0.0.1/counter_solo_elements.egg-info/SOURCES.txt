@@ -1,0 +1,9 @@
+README.md
+setup.cfg
+setup.py
+counter_solo_elements/__init__.py
+counter_solo_elements/collection.py
+counter_solo_elements.egg-info/PKG-INFO
+counter_solo_elements.egg-info/SOURCES.txt
+counter_solo_elements.egg-info/dependency_links.txt
+counter_solo_elements.egg-info/top_level.txt

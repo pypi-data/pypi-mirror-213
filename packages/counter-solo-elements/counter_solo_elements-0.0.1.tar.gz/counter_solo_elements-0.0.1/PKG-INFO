@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: counter_solo_elements
+Version: 0.0.1
+Summary: Tells how many elements are found only 1 time
+Home-page: https://git.foxminded.ua/foxstudent105136/task-4/-/merge_requests/2
+Author: OlexandrTsubera
+Author-email: bolshoygrizli@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+
+Hello\
+This package help you count all element in string, and print element quantity which are repeated only 1 time.
+
+If you need to count the number of elements which equal one in string, write in terminal:
+python your_file -s 'your_string', or --string 'your_string' 
+
+If you need to count the number of elements which equal one in file, write in terminal:
+python your_file -f 'path_to_your_file', or --file 'path_to_your_file' \
+P.S. "Outputs the result of each line in the file.If the file is not in the current folder, you must specify its full path"
+
+
