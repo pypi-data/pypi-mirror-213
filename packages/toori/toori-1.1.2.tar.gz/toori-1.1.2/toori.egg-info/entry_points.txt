@@ -1,0 +1,3 @@
+[console_scripts]
+toori = toori.console:main
+
