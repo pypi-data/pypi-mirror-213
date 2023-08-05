@@ -1,0 +1,5 @@
+large-image>=1.22.3.dev20
+wsidicom>=0.9.0
+
+[girder]
+girder-large-image>=1.22.3.dev20
