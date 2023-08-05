@@ -1,0 +1,15 @@
+nwbmatic/__init__.py,sha256=K18J-0TLOgbIGXP6c-2RPk_TuZo0MR8NBlukU12iW2g,42
+nwbmatic/cnmfe.py,sha256=ZZiHn7dPTAzGztDOsKPYkj8AAjsBswApYWNi1XbBeLU,21203
+nwbmatic/ephys_gui.py,sha256=pZq3SRR2mn45tGwxDrNLpnr4XSJYNIj_DxyL4n6fK9g,4296
+nwbmatic/loader.py,sha256=IV0VleRRO1BIHfOyfgMs5pcZLA_20KX61lkaJduxpjE,21092
+nwbmatic/loader_gui.py,sha256=S0szf6-sRfk2_zSjE2VZCsu-7F_Th1B-XxUAjIeDtjc,22879
+nwbmatic/misc.py,sha256=OTHsPN8kj9pAh6BvcUrOLyBrE1N82QVtHRGSVG40w0Q,6904
+nwbmatic/neurosuite.py,sha256=slr66SwxSjfmuYrvmLdUYa0XuIUgDvqH2TxkAYybjPs,24097
+nwbmatic/ophys_gui.py,sha256=4Mivp3OVnPwy9_o4OcjnBJw4vMT24DMwv0VNWzCYBSA,4199
+nwbmatic/phy.py,sha256=HHIjk7kV-DddY4jNF5MU54niTcxxXBDLOmbNakdFbgo,13983
+nwbmatic/suite2p.py,sha256=7c9uaSGtgwxnWBxvJTTggg-rK48xLGMYtVKng-FOzrE,18352
+nwbmatic-0.1.0.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+nwbmatic-0.1.0.dist-info/METADATA,sha256=OZhOADiC-6IJceBScWZsu2keq2Hs1O8vjzEXarEhjAM,44822
+nwbmatic-0.1.0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+nwbmatic-0.1.0.dist-info/top_level.txt,sha256=Af4efu1GuloSs0fqnrsdjvqbFvST9sd-KimRm4UZ8A0,9
+nwbmatic-0.1.0.dist-info/RECORD,,
