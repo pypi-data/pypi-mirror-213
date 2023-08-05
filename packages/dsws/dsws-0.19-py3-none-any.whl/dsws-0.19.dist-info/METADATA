@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: dsws
+Version: 0.19
+Summary: dsws
+Home-page: 
+Author: Brad Barker
+Author-email: brad@ratiocinate.com
+License: MIT
+Keywords: Data Science WorkSpace JDBC
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: System :: Distributed Computing
+Classifier: Topic :: System :: Benchmark
+Classifier: Topic :: Database :: Database Engines/Servers
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# DSWS
+
+**Data Science WorkSpace**: Management solution for Data Science Workspaces.
+
+[![DatabricksRuntime](https://img.shields.io/badge/Databricks%20Runtime-12.2%20LTS-orange)](https://docs.databricks.com/release-notes/runtime/releases.html)
+[![PyPi](https://img.shields.io/pypi/v/tpcdi)](https://pypi.org/project/tpcdi)
+[![PyPi](https://img.shields.io/pypi/wheel/tpcdi)](https://pypi.org/project/tpcdi)
+
+## Interactive Evaluation
+
+```python
+from dsws.duct import Duct
+```
