@@ -1,0 +1,13 @@
+jxl_decode/__init__.py,sha256=jMDJDhrSYVrz6IzzB4cupKMPNCJjX7uVvZKa6YILi-s,152
+jxl_decode/__main__.py,sha256=MizD-Ey_lviH4jSDhFbeBSioAv6yz6NqTyHz2PIiaRI,94
+jxl_decode/common.py,sha256=4s8oXCp6jUSFPBV_z-HrhoFiXhzIKhwhpBTIFYDjBsk,1299
+jxl_decode/decode_jpg.py,sha256=gCNiYcFHyO8UeIUiEref5ToYrZvrUT-KM9G9gw_gE7g,296
+jxl_decode/decode_jxl.py,sha256=Gc8kl4FQ1JfT6DoRwZoKMcLdOBt3LRpiRH5BpgmHBGs,4684
+jxl_decode/decode_ppm.py,sha256=eNxBOspjWho7zlJHNUtxqkDlR4htyVnAfoUQCgxptXw,2052
+jxl_decode/encode_png.py,sha256=_t0c0l3UunV01Ao6QmlsWvaqLF-aIKMSVqZtfcQb6kM,234
+jxl_decode/main.py,sha256=aV08LX9a2gftGBUmisfagIFdsjepJTKFTKbMxMWFhJ4,2442
+jxl_decode-0.0.2.dist-info/LICENCE.md,sha256=ANrOYOFhFJbUNnsTu2DFWvYI5LEY9Rs3kSwN6EbPuVk,1111
+jxl_decode-0.0.2.dist-info/METADATA,sha256=aRdDnTnAkuYJUe8ksJig1_HMOusvjqQIHeYNSFFCTLA,2646
+jxl_decode-0.0.2.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+jxl_decode-0.0.2.dist-info/top_level.txt,sha256=cccAlw1t1XRIBefWqKEcbPzVDNoVGkvQbpeA2IT4N3s,11
+jxl_decode-0.0.2.dist-info/RECORD,,
