@@ -1,0 +1,1 @@
+from .minter import EthMinter
