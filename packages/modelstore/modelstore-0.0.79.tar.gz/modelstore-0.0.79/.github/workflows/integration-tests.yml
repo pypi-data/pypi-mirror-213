@@ -1,0 +1,58 @@
+name: Integration tests
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+env:
+  MODEL_STORE_AWS_BUCKET: ${{ secrets.MODEL_STORE_AWS_BUCKET }}
+  AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+  AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+  MODEL_STORE_GCP_PROJECT: ${{ secrets.MODEL_STORE_GCP_PROJECT }}
+  MODEL_STORE_GCP_BUCKET: ${{ secrets.MODEL_STORE_GCP_BUCKET }}
+  MODEL_STORE_AZURE_CONTAINER: ${{ secrets.MODEL_STORE_AZURE_CONTAINER }}
+  AZURE_ACCOUNT_NAME: ${{ secrets.AZURE_ACCOUNT_NAME }}
+  AZURE_ACCESS_KEY: ${{ secrets.AZURE_ACCESS_KEY }}
+  AZURE_STORAGE_CONNECTION_STRING: ${{ secrets.AZURE_STORAGE_CONNECTION_STRING }}
+  MODEL_STORE_ROOT_PREFIX: "/home/runner"
+  MODEL_STORE_MINIO_BUCKET: ${{ secrets.MODEL_STORE_AWS_BUCKET }}
+  MINIO_ACCESS_KEY: ${{ secrets.AWS_ACCESS_KEY_ID }}
+  MINIO_SECRET_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    permissions:
+      id-token: write
+      contents: read
+    strategy:
+      matrix:
+        storage-type: ["filesystem", "aws-s3", "google-cloud-storage", "azure-container", "minio"]
+    env:
+      MODEL_STORE_STORAGE: ${{ matrix.storage-type }}
+    steps:
+    - name: 'Check out repo'
+      uses: actions/checkout@v3
+    - name: Set up Python 3.8
+      uses: actions/setup-python@v4
+      with:
+        python-version: 3.8
+    - name: Install dependencies
+      run: |
+        cd workflows/
+        make setup
+        pip install -r requirements/${{ matrix.storage-type }}.txt
+        pip install -e ..
+    - name: 'Authenticate to Google Cloud'
+      if: ${{ env.MODEL_STORE_STORAGE == 'google-cloud-storage' }}
+      uses: 'google-github-actions/auth@v1'
+      with:
+        create_credentials_file: true
+        workload_identity_provider: ${{ secrets.GCP_WORKLOAD_ID_PROVIDER }}
+        service_account: ${{ secrets.GCP_SERVICE_ACCOUNT }}
+    - name: Run integration script
+      run: |
+        cd workflows/
+        python main.py --modelstore-in ${{ matrix.storage-type }}
