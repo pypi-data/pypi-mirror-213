@@ -1,0 +1,13 @@
+LICENSE
+README.md
+README.rst
+setup.cfg
+setup.py
+pytorch_speech_features/__init__.py
+pytorch_speech_features/base.py
+pytorch_speech_features/sigproc.py
+pytorch_speech_features.egg-info/PKG-INFO
+pytorch_speech_features.egg-info/SOURCES.txt
+pytorch_speech_features.egg-info/dependency_links.txt
+pytorch_speech_features.egg-info/requires.txt
+pytorch_speech_features.egg-info/top_level.txt

@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: pytorch_speech_features
+Version: 0.0.2
+Summary: PyTorch Speech Feature extraction
+Home-page: https://github.com/Debjoy10/pytorch_speech_features
+Author: Debjoy Saha
+Author-email: sahadebjoy10@gmail.com
+License: MIT
+License-File: LICENSE
