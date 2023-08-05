@@ -1,0 +1,10 @@
+README.md
+setup.py
+acellera_envlicenses.egg-info/PKG-INFO
+acellera_envlicenses.egg-info/SOURCES.txt
+acellera_envlicenses.egg-info/dependency_links.txt
+acellera_envlicenses.egg-info/entry_points.txt
+acellera_envlicenses.egg-info/not-zip-safe
+acellera_envlicenses.egg-info/top_level.txt
+envlicenses/__init__.py
+envlicenses/permissive.txt

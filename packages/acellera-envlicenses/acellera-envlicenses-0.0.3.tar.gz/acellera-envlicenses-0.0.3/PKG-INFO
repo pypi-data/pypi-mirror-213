@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: acellera-envlicenses
+Version: 0.0.3
+Summary: envlicenses
+Home-page: https://www.htmd.org
+Maintainer: Acellera Ltd
+Maintainer-email: info@acellera.com
+
+# EnvLicenses
+
+This package allows you to inspect a conda environment for licenses of all installed packages
+
+## Installing
+
+`pip install acellera-envlicenses`
+
+## Running
+
+`envlicenses /home/user/miniconda3/envs/myenv/`

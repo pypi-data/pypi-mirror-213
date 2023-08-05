@@ -1,0 +1,77 @@
+mit
+apache-2.0
+bsd-3-clause
+BSD License
+bsd 3-clause
+bsd-2-clause
+BSD 2-Clause
+bsd-2-clause and psf-2.0
+BSD-3-Clause and Apache
+psf 2.0
+isc
+ofl-1.1
+bsl-1.0
+HTMD Software License version 1.1
+Ubuntu Font Licence Version 1.0
+TCL
+curl
+IJG
+MIT License
+Python-2.0
+X11 AND BSD-3-Clause
+OpenSSL
+bzip2-1.0.6
+LGPL-2.1-or-later
+LGPL-3.0-or-later
+LGPL-3.0-only
+PSF
+PSF-2.0
+MIT/X11 Derivative
+MPL 2.0
+MPL-2.0
+MPL-2.0 or MIT
+LGPL-2.1-only OR MPL-1.1
+Apache-2.0 AND BSD-3-Clause AND PSF-2.0 AND MIT
+LGPL-2.1-only or MPL-1.1
+Apache-2.0 WITH LLVM-exception
+Zlib
+NCSA
+LicenseRef-PIL
+LicenseRef-PSF-based
+zlib/libpng
+LicenseRef-Public-Domain
+BSD-3-Clause AND LGPL-3.0-or-later
+GNU Lesser General Public v2 (LGPLv2)
+LGPLv3+
+LGPL
+LGPL 2.1
+LGPL-2.0-only
+LGPL-3.0
+LGPL-3.0+
+LGPL 2.1 or MPL 1.1
+LGPL-2.1
+LGPL-2.1-only
+LGPL2
+LGPLv2
+LGPLv3
+LGPL-2.0-or-later
+BSD-3-Clause AND PSF-2.0
+BSD Like
+BSD
+CC0
+CC0-1.0
+NetCDF
+Tcl/Tk
+MPL-2.0 AND MIT
+Public-Domain AND BSD-3-clause
+bzip2
+HPND
+LicenseRef-PSF-2.0 and CC0-1.0
+JasPer-2.0
+zlib-acknowledgement
+PostgreSQL
+BSD-2-Clause AND BSD-3-Clause
+CC-PDDC OR BSD-3-Clause
+CC-PDDC
+BSD-4-Clause
+CC-BY-4.0
