@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: oxbumpy
+Version: 1.0.0
+Summary: A tool for extracting, analysing, simulating, and predicting Oxford bumps racing
+Author: Henry Ginn
+Author-email: <henryginn137@gmail.com>
+Keywords: python,oxford,bumps,rowing,fantasy,simulation
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: Microsoft :: Windows
+License-File: LICENSE.md
+
