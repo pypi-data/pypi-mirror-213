@@ -1,0 +1,15 @@
+MANIFEST.in
+README.md
+RELEASE-VERSION
+setup.py
+version.py
+RoxiLib/RoxiCommunication.py
+RoxiLib/RoxiStateHandler.py
+RoxiLib/__init__.py
+RoxiLib/bt_data.h
+RoxiLib/libRoxi.dll
+RoxiLib/roxi_api_wdk.h
+RoxiLib.egg-info/PKG-INFO
+RoxiLib.egg-info/SOURCES.txt
+RoxiLib.egg-info/dependency_links.txt
+RoxiLib.egg-info/top_level.txt

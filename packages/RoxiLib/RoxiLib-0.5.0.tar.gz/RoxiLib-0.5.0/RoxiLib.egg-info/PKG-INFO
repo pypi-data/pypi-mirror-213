@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: RoxiLib
+Version: 0.5.0
+Summary: Python API for Roxi lib
+Home-page: https://github.com/wavingroup/allinclusive_API
+Author: Wavin T&I
+Author-email: support@wavin.com
+License: MIT
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Description-Content-Type: text/markdown
+
+# allinclusive_API
+
+initial commit, working example for testing purposes 
+
+# Python Module for Roxibus communication
+This is contains a python module for ROXi bus communication
+libRoxi DLL Version = 15. 2. 2021
+
+Install using:
+`python setup.py install`
