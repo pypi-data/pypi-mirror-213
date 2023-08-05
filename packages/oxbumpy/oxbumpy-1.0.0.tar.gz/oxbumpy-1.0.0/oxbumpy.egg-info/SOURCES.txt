@@ -1,0 +1,7 @@
+LICENSE.md
+README.md
+setup.py
+oxbumpy.egg-info/PKG-INFO
+oxbumpy.egg-info/SOURCES.txt
+oxbumpy.egg-info/dependency_links.txt
+oxbumpy.egg-info/top_level.txt
