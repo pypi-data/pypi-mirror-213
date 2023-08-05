@@ -1,0 +1,41 @@
+[tool.poetry]
+name = "fast_captcha"
+version = "0.2.0"
+description = "Fast to use captcha"
+authors = ["wu <jianhengwu0407@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+homepage = "https://github.com/wu-clan/fast_captcha"
+repository = "https://github.com/wu-clan/fast_captcha"
+classifiers = [
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3 :: Only",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Topic :: Software Development :: Libraries",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+]
+
+[tool.poetry.dependencies]
+python = "^3.7"
+Pillow = "^9.2.0"
+pytest = "^7.3.1"
+
+[tool.poetry.dev-dependencies]
+pytest = '^7.0.0'
+
+[tool.ruff]
+line-length = 120
+cache-dir = "./.ruff_cache"
+
+[tool.ruff.isort]
+lines-between-types = 1
+order-by-type = true
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
