@@ -1,0 +1,8 @@
+pgtransaction/__init__.py,sha256=aXmnflU7WXkVfb0jVdIbOonaLTjhHhAKwQk7YB0KasY,224
+pgtransaction/config.py,sha256=H6rCvIHNFcAcRuEIYGR8S-vPKUy--9gs5c7zSeTHLJU,717
+pgtransaction/transaction.py,sha256=EBykxJVfbFL5JBL2flE3oc_OyLIW7MvZK14_fpjC_3U,7174
+pgtransaction/version.py,sha256=rV62QGYKQIr7zMdb1VCeNl5NZ3Xao05-EtITC4rf8jE,158
+django_pgtransaction-1.1.0.dist-info/LICENSE,sha256=bOsMPbrECIWYOAqsPawE7zdJ0aT9DbtpSCQQ8mRv0tA,1456
+django_pgtransaction-1.1.0.dist-info/METADATA,sha256=ePsIgsmsTSWtHOotfHUdreNJ_343K6W4Ffj0JS8703o,4611
+django_pgtransaction-1.1.0.dist-info/WHEEL,sha256=Zb28QaM1gQi8f4VCBhsUklF61CTlNYfs9YAZn-TOGFk,88
+django_pgtransaction-1.1.0.dist-info/RECORD,,
