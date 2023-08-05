@@ -1,0 +1,6 @@
+from .onnx_to_vino import Onnx2Vino
+from .saliency_segment_vino import SaliencySegmentVino
+from .object_classification_vino import ObjectClassificationVino
+from .object_detection_vino import ObjectDetectionVino
+from .instance_segment_vino import InstanceSegmentVino
+from .yolo_segment_vino import YoloSegmentVino

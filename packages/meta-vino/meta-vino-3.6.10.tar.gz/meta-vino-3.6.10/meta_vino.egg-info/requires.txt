@@ -1,0 +1,5 @@
+opencv-python
+setuptools
+openvino
+numpy
+pillow
