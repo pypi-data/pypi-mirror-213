@@ -1,0 +1,9 @@
+LICENSE
+setup.py
+MarketVision/MarketVision.py
+MarketVision/__init__.py
+MarketVision.egg-info/PKG-INFO
+MarketVision.egg-info/SOURCES.txt
+MarketVision.egg-info/dependency_links.txt
+MarketVision.egg-info/requires.txt
+MarketVision.egg-info/top_level.txt
