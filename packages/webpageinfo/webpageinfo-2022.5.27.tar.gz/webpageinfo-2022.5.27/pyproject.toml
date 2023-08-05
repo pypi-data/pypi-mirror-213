@@ -1,0 +1,53 @@
+[tool.poetry]
+name = "webpageinfo"
+version = "2022.5.27"
+description = "Web page information (title, content, tags…)"
+classifiers=[
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: BSD License",
+    "Natural Language :: English",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Topic :: Utilities",
+]
+authors = ["Vincent Poulailleau <vpoulailleau@gmail.com>"]
+readme = "README.md"
+repository = "https://github.com/vpoulailleau/webpageinfo"
+homepage = "https://github.com/vpoulailleau/webpageinfo"
+documentation = "https://webpageinfo.readthedocs.io/en/latest/"
+keywords = ["web", "page", "information"]
+license = "BSD-3-Clause"
+include = ["webpageinfo/**/*.py"]
+
+[tool.poetry.dependencies]
+python = ">=3.10,<4.0"
+beautifulsoup4 = "^4"
+httpx = "^0"
+"pdfminer.six" = "^20220524"
+pillow = "^9"
+splinter = {version = "^0", extras = ["selenium4"]}
+
+[tool.poetry.dev-dependencies]
+python-dev-tools = "^2022"
+
+#[tool.poetry.scripts]
+#webpageinfo = "webpageinfo.cli:main"
+
+[tool.pytest.ini_options]
+minversion = "7.0"
+addopts = "-ra -q  -s -vv --cov=webpageinfo"
+testpaths = [
+    "tests",
+]
+
+[tool.coverage.report]
+exclude_lines = [
+    "pragma: no cover",
+    "if TYPE_CHECKING:",
+]
+
+[build-system]
+requires = ["poetry_core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"

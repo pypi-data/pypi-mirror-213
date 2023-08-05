@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: webpageinfo
+Version: 2022.5.27
+Summary: Web page information (title, content, tags…)
+Home-page: https://github.com/vpoulailleau/webpageinfo
+License: BSD-3-Clause
+Keywords: web,page,information
+Author: Vincent Poulailleau
+Author-email: vpoulailleau@gmail.com
+Requires-Python: >=3.10,<4.0
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Topic :: Utilities
+Requires-Dist: beautifulsoup4 (>=4,<5)
+Requires-Dist: httpx (>=0,<1)
+Requires-Dist: pdfminer.six (>=20220524,<20220525)
+Requires-Dist: pillow (>=9,<10)
+Requires-Dist: splinter[selenium4] (>=0,<1)
+Project-URL: Documentation, https://webpageinfo.readthedocs.io/en/latest/
+Project-URL: Repository, https://github.com/vpoulailleau/webpageinfo
+Description-Content-Type: text/markdown
+
+# WebPageInfo
+
+Web page information (title, content, tags…)
+
+Internal tool, no public documentation…
+
