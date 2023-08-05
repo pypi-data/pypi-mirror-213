@@ -1,0 +1,9 @@
+README.md
+setup.py
+Andreani_QA_Debugger/Debugger.py
+Andreani_QA_Debugger/__init__.py
+Andreani_QA_Debugger.egg-info/PKG-INFO
+Andreani_QA_Debugger.egg-info/SOURCES.txt
+Andreani_QA_Debugger.egg-info/dependency_links.txt
+Andreani_QA_Debugger.egg-info/requires.txt
+Andreani_QA_Debugger.egg-info/top_level.txt
