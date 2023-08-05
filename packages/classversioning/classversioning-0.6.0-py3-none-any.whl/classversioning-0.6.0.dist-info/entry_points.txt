@@ -1,0 +1,3 @@
+[console_scripts]
+classversioning=classversioning.__main__:main
+
