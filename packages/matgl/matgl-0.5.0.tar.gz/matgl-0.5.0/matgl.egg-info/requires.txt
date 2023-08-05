@@ -1,0 +1,8 @@
+torch
+dgl
+
+[munch]
+munch
+
+[pymatgen]
+pymatgen
