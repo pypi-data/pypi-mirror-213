@@ -1,0 +1,17 @@
+LICENSE
+MANIFEST.in
+README.rst
+setup.py
+admin_resumable2/__init__.py
+admin_resumable2/fields.py
+admin_resumable2/files.py
+admin_resumable2/tests.py
+admin_resumable2/urls.py
+admin_resumable2/views.py
+admin_resumable2/static/admin_resumable2/js/resumable.js
+admin_resumable2/templates/admin_resumable2/file_input.html
+django_admin_resumable2.egg-info/PKG-INFO
+django_admin_resumable2.egg-info/SOURCES.txt
+django_admin_resumable2.egg-info/dependency_links.txt
+django_admin_resumable2.egg-info/requires.txt
+django_admin_resumable2.egg-info/top_level.txt
