@@ -1,0 +1,5 @@
+include src/csp/common/config/*.yaml
+include src/csp/datatool/image_detection/simhei.ttf
+exclude test/*
+exclude README.md
+exclude example/
