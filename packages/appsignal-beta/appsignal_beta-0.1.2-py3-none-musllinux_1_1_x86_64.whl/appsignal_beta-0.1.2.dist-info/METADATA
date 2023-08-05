@@ -1,0 +1,93 @@
+Metadata-Version: 2.1
+Name: appsignal-beta
+Version: 0.1.2
+Summary: The AppSignal integration for the Python programming language
+Project-URL: Documentation, https://docs.appsignal.com/python
+Project-URL: Issues, https://github.com/appsignal/appsignal-python/issues
+Project-URL: Source, https://github.com/appsignal/appsignal-python
+Author-email: Tom de Bruijn <tom@tomdebruijn.com>, Noemi Lapresta <noemi@appsignal.com>
+Classifier: Development Status :: 3 - Alpha
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.8
+Requires-Dist: docopt
+Requires-Dist: opentelemetry-api
+Requires-Dist: opentelemetry-exporter-otlp-proto-http
+Requires-Dist: opentelemetry-sdk
+Description-Content-Type: text/markdown
+
+# AppSignal Python
+
+[![PyPI - Version](https://img.shields.io/pypi/v/appsignal-python.svg)](https://pypi.org/project/appsignal-python)
+[![PyPI - Python Version](https://img.shields.io/pypi/pyversions/appsignal-python.svg)](https://pypi.org/project/appsignal-python)
+
+-----
+
+**Table of Contents**
+
+- [Installation](#installation)
+- [License](#license)
+
+## Installation
+
+```console
+pip install appsignal-beta
+```
+
+## Development
+
+AppSignal for Python uses [Hatch](https://hatch.pypa.io/latest/) to manage dependencies, packaging and development environments.
+
+```sh
+pip install hatch
+```
+
+### Linting and type checking
+
+```sh
+hatch run lint:all
+
+hatch run lint:fmt # auto-formatting only
+hatch run lint:style # style checking only
+hatch run lint:typing # type checking only
+```
+
+### Running tests
+
+```sh
+hatch run test:pytest
+```
+
+### Running the CLI command
+
+```sh
+hatch shell
+appsignal
+```
+
+### Building wheels
+
+```sh
+hatch run build:all # for all platforms
+hatch run build:me # for your current platform
+hatch run build:for <triple> # for a specific agent triple
+```
+
+#### Custom agent build
+```sh
+hatch run build:me /path/to/agent
+# or place the desired agent binary at
+# `src/appsignal/appsignal-agent`, and then:
+hatch run build:me --keep-agent
+```
+
+### Clean up build artifacts
+```sh
+hatch clean # clean dist folder
+rm -r tmp # clean agent build cache
+```
