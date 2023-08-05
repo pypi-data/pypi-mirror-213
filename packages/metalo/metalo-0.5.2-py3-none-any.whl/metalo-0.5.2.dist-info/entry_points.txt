@@ -1,0 +1,2 @@
+[console_scripts]
+metalo = metalo.metalo:main
