@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+GeneralSQL/Error.py
+GeneralSQL/__init__.py
+GeneralSQL.egg-info/PKG-INFO
+GeneralSQL.egg-info/SOURCES.txt
+GeneralSQL.egg-info/dependency_links.txt
+GeneralSQL.egg-info/top_level.txt
+GeneralSQL/Template/__init__.py
+GeneralSQL/Template/base.py
+GeneralSQL/db/Jmysql.py
+GeneralSQL/db/__init__.py
