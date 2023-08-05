@@ -1,0 +1,7 @@
+setup.py
+Lopster/__init__.py
+Lopster.egg-info/PKG-INFO
+Lopster.egg-info/SOURCES.txt
+Lopster.egg-info/dependency_links.txt
+Lopster.egg-info/requires.txt
+Lopster.egg-info/top_level.txt
