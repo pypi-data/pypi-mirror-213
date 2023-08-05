@@ -1,0 +1,3 @@
+[console_scripts]
+iro = iro.console:main
+
