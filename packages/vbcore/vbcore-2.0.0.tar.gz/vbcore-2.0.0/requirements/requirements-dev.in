@@ -1,0 +1,37 @@
+-c requirements-all.txt
+-c requirements-build.txt
+-c requirements-test.txt
+
+autoflake
+bandit
+black
+bump2version
+coloredlogs
+flake8
+flake8-bugbear
+isort
+liccheck
+mypy<1
+pip-tools
+pipdeptree
+pylint
+radon
+
+sqlalchemy-stubs
+sqlalchemy[mypy]
+
+types-backports
+types-chardet
+types-paramiko
+types-python-dateutil
+types-pytz
+types-PyYAML
+types-requests
+types-setuptools
+types-toml
+types-xmltodict
+
+
+# constraints
+#
+safety<2.3.5

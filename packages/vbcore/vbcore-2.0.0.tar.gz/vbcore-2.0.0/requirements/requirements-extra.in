@@ -1,0 +1,11 @@
+-c requirements.txt
+-c requirements-build.txt
+
+chardet
+jsonschema
+rule_engine
+gql
+gunicorn
+
+defusedxml
+xmltodict
