@@ -1,0 +1,310 @@
+Metadata-Version: 2.1
+Name: django-project-version
+Version: 0.18.0
+Summary: Django reusable app to show your project version
+Home-page: https://github.com/DCOD-OpenSource/django-project-version/
+Author: DCOD
+Author-email: contact@d-cod.com
+License: MIT
+Keywords: django,version,project,django-project-version
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Plugins
+Classifier: Framework :: Django :: 3.2
+Classifier: Framework :: Django :: 4.0
+Classifier: Framework :: Django :: 4.1
+Classifier: Framework :: Django :: 4.2
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: Unix
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Topic :: Utilities
+Description-Content-Type: text/x-rst
+License-File: MIT-LICENSE
+Requires-Dist: django (<4.3,>=3.2)
+Requires-Dist: django-appconf (>=1.0.3)
+Provides-Extra: git
+Requires-Dist: gitpython (>=3.0.2) ; extra == 'git'
+Provides-Extra: rest
+Requires-Dist: djangorestframework (>=3.10.3) ; extra == 'rest'
+Provides-Extra: test
+Requires-Dist: attrs (==23.1.0) ; extra == 'test'
+Requires-Dist: autoflake (==2.1.1) ; extra == 'test'
+Requires-Dist: bandit (==1.7.5) ; extra == 'test'
+Requires-Dist: black (==23.3.0) ; extra == 'test'
+Requires-Dist: check-manifest (==0.49) ; extra == 'test'
+Requires-Dist: check-wheel-contents (==0.4.0) ; extra == 'test'
+Requires-Dist: coverage (==6.5.0) ; extra == 'test'
+Requires-Dist: coveralls (==3.3.1) ; extra == 'test'
+Requires-Dist: curlylint (==0.13.1) ; extra == 'test'
+Requires-Dist: darglint (==1.8.1) ; extra == 'test'
+Requires-Dist: dennis (==1.1.0) ; extra == 'test'
+Requires-Dist: django-stubs (==4.2.1) ; extra == 'test'
+Requires-Dist: djangorestframework-stubs (==3.14.1) ; extra == 'test'
+Requires-Dist: dlint (==0.14.1) ; extra == 'test'
+Requires-Dist: dodgy (==0.2.1) ; extra == 'test'
+Requires-Dist: dotenv-linter (==0.4.0) ; extra == 'test'
+Requires-Dist: flake8-annotations-complexity (==0.0.7) ; extra == 'test'
+Requires-Dist: flake8-annotations-coverage (==0.0.6) ; extra == 'test'
+Requires-Dist: flake8-blind-except (==0.2.1) ; extra == 'test'
+Requires-Dist: flake8-boolean-trap (==1.0.0) ; extra == 'test'
+Requires-Dist: flake8-broken-line (==1.0.0) ; extra == 'test'
+Requires-Dist: flake8-bugbear (==23.6.5) ; extra == 'test'
+Requires-Dist: flake8-builtins (==2.1.0) ; extra == 'test'
+Requires-Dist: flake8-coding (==1.3.2) ; extra == 'test'
+Requires-Dist: flake8-cognitive-complexity (==0.1.0) ; extra == 'test'
+Requires-Dist: flake8-comprehensions (==3.12.0) ; extra == 'test'
+Requires-Dist: flake8-datetimez (==20.10.0) ; extra == 'test'
+Requires-Dist: flake8-debugger (==4.1.2) ; extra == 'test'
+Requires-Dist: flake8-django (==1.3) ; extra == 'test'
+Requires-Dist: flake8-docstrings (==1.7.0) ; extra == 'test'
+Requires-Dist: flake8-eradicate (==1.5.0) ; extra == 'test'
+Requires-Dist: flake8-executable (==2.1.3) ; extra == 'test'
+Requires-Dist: flake8-expression-complexity (==0.0.11) ; extra == 'test'
+Requires-Dist: flake8-fixme (==1.1.1) ; extra == 'test'
+Requires-Dist: flake8-functions (==0.0.8) ; extra == 'test'
+Requires-Dist: flake8-gettext (==0.0.0.1) ; extra == 'test'
+Requires-Dist: flake8-logging-format (==0.9.0) ; extra == 'test'
+Requires-Dist: flake8-mutable (==1.2.0) ; extra == 'test'
+Requires-Dist: flake8-no-implicit-concat (==0.3.4) ; extra == 'test'
+Requires-Dist: flake8-no-pep420 (==2.4.0) ; extra == 'test'
+Requires-Dist: flake8-pie (==0.16.0) ; extra == 'test'
+Requires-Dist: flake8-print (==5.0.0) ; extra == 'test'
+Requires-Dist: flake8-raise (==0.0.5) ; extra == 'test'
+Requires-Dist: flake8-return (==1.2.0) ; extra == 'test'
+Requires-Dist: flake8-self (==0.2.2) ; extra == 'test'
+Requires-Dist: flake8-simplify (==0.20.0) ; extra == 'test'
+Requires-Dist: flake8-spellcheck (==0.28.0) ; extra == 'test'
+Requires-Dist: flake8-super (==0.1.3) ; extra == 'test'
+Requires-Dist: flake8-tidy-imports (==4.8.0) ; extra == 'test'
+Requires-Dist: flake8-todos (==0.3.0) ; extra == 'test'
+Requires-Dist: flake8-typing-imports (==1.14.0) ; extra == 'test'
+Requires-Dist: flake8-use-fstring (==1.4) ; extra == 'test'
+Requires-Dist: flake8-use-pathlib (==0.3.0) ; extra == 'test'
+Requires-Dist: flake8-variables-names (==0.0.5) ; extra == 'test'
+Requires-Dist: flake8 (==6.0.0) ; extra == 'test'
+Requires-Dist: flynt (==0.78) ; extra == 'test'
+Requires-Dist: importlib-metadata (==6.6.0) ; extra == 'test'
+Requires-Dist: interrogate (==1.5.0) ; extra == 'test'
+Requires-Dist: isort (==5.12.0) ; extra == 'test'
+Requires-Dist: mypy (==1.3.0) ; extra == 'test'
+Requires-Dist: pep8-naming (==0.13.3) ; extra == 'test'
+Requires-Dist: perflint (==0.7.3) ; extra == 'test'
+Requires-Dist: pip-outdated (==0.6.0) ; extra == 'test'
+Requires-Dist: polint (==0.4) ; extra == 'test'
+Requires-Dist: pre-commit-hooks (==4.4.0) ; extra == 'test'
+Requires-Dist: pre-commit (==3.3.2) ; extra == 'test'
+Requires-Dist: pygments (==2.15.1) ; extra == 'test'
+Requires-Dist: pylint-django (==2.5.3) ; extra == 'test'
+Requires-Dist: pylint (==2.17.4) ; extra == 'test'
+Requires-Dist: pyroma (==4.2) ; extra == 'test'
+Requires-Dist: pytest-cov (==4.1.0) ; extra == 'test'
+Requires-Dist: pytest-django (==4.5.2) ; extra == 'test'
+Requires-Dist: pytest-extra-durations (==0.1.3) ; extra == 'test'
+Requires-Dist: pytest-instafail (==0.5.0) ; extra == 'test'
+Requires-Dist: pytest-sugar (==0.9.7) ; extra == 'test'
+Requires-Dist: pytest-timer[termcolor] (==0.0.11) ; extra == 'test'
+Requires-Dist: pytest (==7.3.1) ; extra == 'test'
+Requires-Dist: pymarkdownlnt (==0.9.11) ; extra == 'test'
+Requires-Dist: readme-renderer (==37.3) ; extra == 'test'
+Requires-Dist: removestar (==1.3.1) ; extra == 'test'
+Requires-Dist: rstcheck (==6.1.2) ; extra == 'test'
+Requires-Dist: seed-isort-config (==2.2.0) ; extra == 'test'
+Requires-Dist: tabulate (==0.9.0) ; extra == 'test'
+Requires-Dist: tox-gh-actions (==3.1.1) ; extra == 'test'
+Requires-Dist: tox (==4.6.0) ; extra == 'test'
+Requires-Dist: twine (==4.0.2) ; extra == 'test'
+Requires-Dist: tryceratops (==2.3.2) ; extra == 'test'
+Requires-Dist: wheel (==0.40.0) ; extra == 'test'
+Requires-Dist: yesqa (==1.4.0) ; extra == 'test'
+
+A django-project-version documentation
+======================================
+
+|GitHub|_ |Coveralls|_ |pypi-license|_ |pypi-version|_ |pypi-python-version|_ |pypi-django-version|_ |pypi-format|_ |pypi-wheel|_ |pypi-status|_
+
+    *django-project-version is a Django reusable app to show your project version*
+
+.. contents::
+
+Installation
+------------
+* Obtain your copy of source code from the git repository: ``$ git clone https://github.com/DCOD-OpenSource/django-project-version.git``. Or download the latest release from https://github.com/DCOD-OpenSource/django-project-version/tags/.
+* Run ``$ python ./setup.py install`` from the repository source tree or unpacked archive. Or use pip: ``$ pip install django-project-version``.
+
+Configuration
+-------------
+* Add ``"djversion"`` to ``settings.INSTALLED_APPS``.
+
+.. code-block:: python
+
+    # settings.py
+
+    INSTALLED_APPS += [
+        "djversion",
+    ]
+
+Settings
+--------
+``DJVERSION_VERSION``
+    Contains project version. Defaults to ``None``.
+
+``DJVERSION_UPDATED``
+    Contains project update date or datetime. Defaults to ``None``.
+
+``DJVERSION_FORMAT_STRING``
+    Contains version and updated format string. Defaults to ``"{version} ({updated})"``.
+
+``DJVERSION_GIT_REPO_PATH``
+    Contains path to git repository from where version info can get. Defaults to ``None``.
+
+``DJVERSION_GIT_USE_TAG``
+    Indicate usage of git repository current tag as project version. Defaults to ``False``.
+
+``DJVERSION_GIT_USE_COMMIT``
+    Indicate usage of git repository last commit hash as project version. Defaults to ``False``.
+
+Usage
+-----
+If you want always have ``"VERSION"`` variable in templates context, just add ``"djversion.context_processors.version"`` to ``settings.TEMPLATE_CONTEXT_PROCESSORS``
+
+.. code-block:: python
+
+    # settings.py
+
+    TEMPLATE_CONTEXT_PROCESSORS += [
+        "djversion.context_processors.version",
+    ]
+
+
+Or you can use ``project_version`` templatetag which can be loaded from ``djversion_tags``.
+
+.. code-block:: django
+
+    {# footer.html #}
+
+    {% load djversion_tags %}
+
+    {% project_version as VERSION %}
+    {{ VERSION }}
+
+Also simple management command ``print-version`` which prints project version to stdout is available. Just run: ``$ django-admin print-version``.
+
+Advanced features
+-----------------
+If you want to have REST-style view with your project version:
+
+* Install ``django-project-version`` with additional dependencies: ``$ pip install django-project-version[rest]``.
+* Extend you ``settings.INSTALLED_APPS`` by adding ``"rest_framework"``.
+
+.. code-block:: python
+
+    # settings.py
+
+    INSTALLED_APPS += [
+        "rest_framework",
+    ]
+
+* Add ``"djversion"`` to your URLs definitions:
+
+.. code-block:: python
+
+    # urls.py
+
+    from django.urls import re_path, include
+
+
+    urlpatterns += [
+        re_path(r"^version/", include("djversion.urls")),
+    ]
+
+Or to use information from the project git repository as project version:
+
+* Install ``django-project-version`` with additional dependencies: ``$ pip install django-project-version[git]``.
+* Configure git related settings.
+
+Contributing
+------------
+- `Fork it <https://github.com/DCOD-OpenSource/django-project-version/>`_
+- Install `GNU Make <https://www.gnu.org/software/make/>`_
+- Install and configure `pyenv <https://github.com/pyenv/pyenv/>`_ and `pyenv-virtualenv plugin <https://github.com/pyenv/pyenv-virtualenv/>`_
+- Install and configure `direnv <https://github.com/direnv/direnv/>`_
+- Create environment config from example
+
+.. code-block:: bash
+
+    cp .env.example .env
+
+- Install development dependencies:
+
+.. code-block:: bash
+
+    make install
+
+- Create your fix/feature branch:
+
+.. code-block:: bash
+
+    git checkout -b my-new-fix-or-feature
+
+- Check code style and moreover:
+
+.. code-block:: bash
+
+    make check
+
+- Run tests:
+
+.. code-block:: bash
+
+    make test
+
+- Push to the branch:
+
+.. code-block:: bash
+
+    git push origin my-new-fix-or-feature
+
+- `Create a new Pull Request <https://github.com/DCOD-OpenSource/django-project-version/compare/>`_
+
+Licensing
+---------
+django-project-version uses the MIT license. Please check the MIT-LICENSE file for more details.
+
+Contacts
+--------
+**Project Website**: https://github.com/DCOD-OpenSource/django-project-version/
+
+**Author**: DCOD <contact@d-cod.com>
+
+For contributors list see CONTRIBUTORS file.
+
+
+.. |GitHub| image:: https://github.com/DCOD-OpenSource/django-project-version/workflows/build/badge.svg
+    :alt: GitHub
+.. |Coveralls| image:: https://coveralls.io/repos/github/DCOD-OpenSource/django-project-version/badge.svg?branch=master
+    :alt: Coveralls
+.. |pypi-license| image:: https://img.shields.io/pypi/l/django-project-version
+    :alt: License
+.. |pypi-version| image:: https://img.shields.io/pypi/v/django-project-version
+    :alt: Version
+.. |pypi-django-version| image:: https://img.shields.io/pypi/djversions/django-project-version
+    :alt: Supported Django version
+.. |pypi-python-version| image:: https://img.shields.io/pypi/pyversions/django-project-version
+    :alt: Supported Python version
+.. |pypi-format| image:: https://img.shields.io/pypi/format/django-project-version
+    :alt: Package format
+.. |pypi-wheel| image:: https://img.shields.io/pypi/wheel/django-project-version
+    :alt: Python wheel support
+.. |pypi-status| image:: https://img.shields.io/pypi/status/django-project-version
+    :alt: Package status
+.. _GitHub: https://github.com/DCOD-OpenSource/django-project-version/actions/
+.. _Coveralls: https://coveralls.io/github/DCOD-OpenSource/django-project-version?branch=master
+.. _pypi-license: https://pypi.org/project/django-project-version/
+.. _pypi-version: https://pypi.org/project/django-project-version/
+.. _pypi-django-version: https://pypi.org/project/django-project-version/
+.. _pypi-python-version: https://pypi.org/project/django-project-version/
+.. _pypi-format: https://pypi.org/project/django-project-version/
+.. _pypi-wheel: https://pypi.org/project/django-project-version/
+.. _pypi-status: https://pypi.org/project/django-project-version/
