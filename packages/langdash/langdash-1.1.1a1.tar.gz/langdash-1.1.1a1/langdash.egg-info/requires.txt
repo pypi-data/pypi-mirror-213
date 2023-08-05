@@ -1,0 +1,16 @@
+torch
+
+[embeddings]
+faiss-cpu
+
+[llama_cpp]
+llama-cpp-python==0.1.57
+
+[rwkv_cpp]
+tokenizers
+
+[sentence_transformers]
+sentence_transformers
+
+[transformers]
+transformers
