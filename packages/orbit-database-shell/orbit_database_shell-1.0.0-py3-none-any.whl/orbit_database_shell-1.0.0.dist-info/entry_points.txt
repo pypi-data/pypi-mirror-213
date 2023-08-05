@@ -1,0 +1,3 @@
+[console_scripts]
+orbit_database_shell=orbit_database_shell.__main__:main
+
