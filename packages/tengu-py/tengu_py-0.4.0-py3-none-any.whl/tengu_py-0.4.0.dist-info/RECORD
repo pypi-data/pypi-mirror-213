@@ -1,0 +1,8 @@
+tengu/__init__.py,sha256=xO2PrmakFw7l1rYMKfJtD66SJTBatLcTwK98JmPZIqo,113
+tengu/api.py,sha256=Hsjl6nawXaJ-8Vdg_bEPpnQWnCI8b7dynkCtvySrJtE,12664
+tengu/calcq.py,sha256=YTPctfvWmZ7t-0vAiKzAlTUT-RqiLPEdfCpDDrDMKGc,7311
+tengu/data.py,sha256=1tACxKQpeuN7dvMNaQUp-0pN6eFDuN2igy5Fl3ftWkY,4434
+tengu_py-0.4.0.dist-info/entry_points.txt,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tengu_py-0.4.0.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+tengu_py-0.4.0.dist-info/METADATA,sha256=VlnT_9a2k7j8jgbO5McbSgsimSno4N_qHLQVB9QK6LQ,3817
+tengu_py-0.4.0.dist-info/RECORD,,
