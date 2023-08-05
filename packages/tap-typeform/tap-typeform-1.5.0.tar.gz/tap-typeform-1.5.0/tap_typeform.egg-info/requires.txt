@@ -1,0 +1,10 @@
+singer-python==5.10.0
+pendulum
+ratelimit
+backoff
+requests
+
+[dev]
+pylint
+ipdb
+nose
