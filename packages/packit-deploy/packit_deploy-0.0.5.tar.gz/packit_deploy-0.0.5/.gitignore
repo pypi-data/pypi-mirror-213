@@ -1,0 +1,8 @@
+.idea
+.pytest_cache
+dist
+*/**/__pycache__
+.ruff_cache
+.mypy_cache
+.coverage*
+coverage.*
