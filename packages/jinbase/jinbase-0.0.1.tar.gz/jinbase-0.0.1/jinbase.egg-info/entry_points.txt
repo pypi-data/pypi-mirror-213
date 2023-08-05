@@ -1,0 +1,3 @@
+[console_scripts]
+jinbase = jinbase.__main__:main
+

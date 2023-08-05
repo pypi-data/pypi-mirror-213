@@ -1,0 +1,3 @@
+recursive-include jinbase *
+global-exclude *.py[cod]
+include VERSION
