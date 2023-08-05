@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: protein-folding-gym-utils
+Version: 0.0.1
+Summary: Package with Reinforcement Learning Environments for Protein Folding
+Author: Muscalagiu Anca Ioana
+Author-email: ancamuscalagiu1@gmail.com
+License: MIT
+Keywords: protein,folding,reinforcement
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+
+Python Library implementing various Gym Environments for solving the Protein Folding Problem using Reinforcement Learning

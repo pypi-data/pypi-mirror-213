@@ -1,0 +1,17 @@
+setup.py
+protein_folding_environment/__init__.py
+protein_folding_environment/base_environment.py
+protein_folding_environment/base_environment_2d.py
+protein_folding_environment/environement_triunghiular.py
+protein_folding_environment/environment_2d.py
+protein_folding_environment/environment_3d.py
+protein_folding_environment/environment_LRF.py
+protein_folding_gym_utils.egg-info/PKG-INFO
+protein_folding_gym_utils.egg-info/SOURCES.txt
+protein_folding_gym_utils.egg-info/dependency_links.txt
+protein_folding_gym_utils.egg-info/requires.txt
+protein_folding_gym_utils.egg-info/top_level.txt
+utils/__init__.py
+utils/input_handler.py
+utils/movement_utils.py
+utils/plotting_utils.py
