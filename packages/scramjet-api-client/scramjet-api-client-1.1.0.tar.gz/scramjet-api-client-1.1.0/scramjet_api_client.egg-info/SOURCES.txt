@@ -1,0 +1,11 @@
+README.md
+setup.py
+client/__init__.py
+client/host_client.py
+client/instance_client.py
+client/sequence_client.py
+scramjet_api_client.egg-info/PKG-INFO
+scramjet_api_client.egg-info/SOURCES.txt
+scramjet_api_client.egg-info/dependency_links.txt
+scramjet_api_client.egg-info/requires.txt
+scramjet_api_client.egg-info/top_level.txt
