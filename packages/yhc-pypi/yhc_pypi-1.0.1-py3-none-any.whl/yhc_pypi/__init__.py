@@ -1,0 +1,2 @@
+from yhc_module import yhc_test
+import yhc_module
