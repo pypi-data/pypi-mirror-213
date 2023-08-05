@@ -1,0 +1,1 @@
+recursive-include streamlit_d3_network_component/frontend/build *
