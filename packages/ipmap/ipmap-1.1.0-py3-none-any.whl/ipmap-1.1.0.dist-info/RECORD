@@ -1,0 +1,12 @@
+ipmap/__init__.py,sha256=wDTUEyGdJijEuwJSFMAe5ukQ-_7CZP3vjDjGIkQ-R5c,1508
+ipmap/config.py,sha256=4ojEJsgsgL-kTdSmCObFiDHbF0uwz8gjZXmdcfOU8W8,4441
+ipmap/data/settings.json,sha256=qUG5DfQjA6oAX4bbhLtn9BBv2ppIT_vRKEfhCgIpumM,735
+ipmap/data/templates/map.html,sha256=KkoBs0blmbZsmwLcZuxvG42q0TJciFbEdpxli8FfAdk,2215
+ipmap/ipmap.py,sha256=sWOZqgZD3fJEyMNP07DtGhYthEw6j_2za5fvM4ZOtCc,4699
+ipmap/main.py,sha256=ldw3SLpYj4MoGAMj4zE7T3mNxELJ-CpO0knKCotOZJI,1036
+ipmap/utils.py,sha256=Np_gRG5o-78vXz3Kqw7W-NJ4rbX9_EsyZk2hpIiNvpY,2263
+ipmap-1.1.0.dist-info/LICENSE,sha256=LlmfokbPQQM5Pi5VU47beKlHWN_XL5q-ZBlZpxZWr0c,1500
+ipmap-1.1.0.dist-info/METADATA,sha256=C4B6LCKnG_XJw_kVXy3WbPXdE_Etfar_AoRh-q4vvXU,6200
+ipmap-1.1.0.dist-info/WHEEL,sha256=Zb28QaM1gQi8f4VCBhsUklF61CTlNYfs9YAZn-TOGFk,88
+ipmap-1.1.0.dist-info/entry_points.txt,sha256=geuEt9iqIQqgzmpXSKKtAMGPhFuQWAieG_IxSGZLb6c,40
+ipmap-1.1.0.dist-info/RECORD,,
