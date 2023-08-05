@@ -1,0 +1,28 @@
+\__pycache__
+\mikeio.egg-info
+\build
+
+.ipynb_checkpoints
+.coverage
+.vscode
+
+# Python virtual environment folder
+\env
+
+# Sphinx documentation
+docs/_build/
+
+# PyCharm project folder
+.idea/
+
+dist/
+
+\.spyproject
+\.pytest_cache
+.vs
+cov_html
+cov_annotate
+htmlcov
+
+docs/_build
+\tmp
