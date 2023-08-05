@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: charLLM
+Version: 0.0.3
+Summary: Character Level Language Model implemented following "Bengio.et.al 2003"
+Home-page: https://github.com/RAravindDS/Neural-Probabilistic-Language-Model
+Author: Aravind
+Author-email: aravindan22052001@gmail.com
+Project-URL: Bug Tracker, https://github.com/RAravindDS/Neural-Probabilistic-Language-Model/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+
