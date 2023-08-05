@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: launchflow
+Version: 0.1.19
+Author-email: Caleb Van Dyke <caleb@launchflow.com>, Josh Tanke <josh@launchflow.com>
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Provides-Extra: dev
+
+# Launchflow CLI
+
+CLI For interacting with [LaunchFlow](www.launchflow.com) for more info see: https://docs.launchflow.com/cli/overview
