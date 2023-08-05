@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: isilon-sdk-thaonv
+Version: 0.1.0
+Summary: Python language bindings for managing OneFS clusters.
+Home-page: https://github.com/Isilon/isilon_sdk_python
+Author: Isilon SDK
+Author-email: sdk@isilon.com
+Maintainer: Isilon SDK
+Maintainer-email: sdk@isilon.com
+License: MIT
+Project-URL: Source code, https://github.com/Isilon/isilon_sdk
+Project-URL: Documentation, https://github.com/Isilon/isilon_sdk_python
+Keywords: Swagger,Isilon SDK,OneFS,PowerScale
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=2.7
