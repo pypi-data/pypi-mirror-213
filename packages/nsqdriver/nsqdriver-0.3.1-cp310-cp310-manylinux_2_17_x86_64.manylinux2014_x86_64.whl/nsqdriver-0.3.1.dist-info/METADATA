@@ -1,0 +1,103 @@
+Metadata-Version: 2.1
+Name: nsqdriver
+Version: 0.3.1
+Summary: Naishu Q series quantum measurement and control equipment driver interface
+Home-page: https://g2hoyqcmh4.feishu.cn/wiki/wikcnzvyMd82DLZUe2NsI6HxsFc
+Author: Naishu Technology
+Author-email: jilianyi@naishu.tech
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Scientific/Engineering :: Interface Engine/Protocol Translator
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: POSIX
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+Requires-Dist: numpy (>=1.18)
+Requires-Dist: waveforms
+
+```
+  _   _   ____     ___    ____           _                       
+ | \ | | / ___|   / _ \  |  _ \   _ __  (_) __   __   ___   _ __ 
+ |  \| | \___ \  | | | | | | | | | '__| | | \ \ / /  / _ \ | '__|
+ | |\  |  ___) | | |_| | | |_| | | |    | |  \ V /  |  __/ | |   
+ |_| \_| |____/   \__\_\ |____/  |_|    |_|   \_/    \___| |_|   
+```
+
+[![Tests](https://github.com/mianyan-echo/UltraMCI/actions/workflows/tests.yml/badge.svg?branch=master)](https://github.com/mianyan-echo/UltraMCI/)
+***
+
+### 简介
+NSQDriver为一套耐数®量子测控系列设备的Python通用驱动接口。可使用Python作为编程语言，基于此驱动接口可以实现对本公司测控设备的控制，进而完成各种超导量子芯片的表征实验和高保真门操作。
+
+```
+                              +------------------------+
+                              |          Python        |
+                              |     +------------------+
+                              |     |      NSQDriver   |
+                              +------------------------+
+                                     :     :         :
+                           +----------     :         -----+
+                           :               :              :
+                           V               V              V
+                     +-----------+   +-----------+   +-----------+   
+                     |  Device A |   |  Device B |   |   QSYNC   |    
+                     +-----------+   +-----------+   +-----------+   
+```
+
+NSQDriver接口可用于统一控制耐数®生产的Q100、MC、QSYNC等一系列量子测控仪器，可详细控制每台仪器每个OUT、IN通道的播放与采集行为，以及查看设备的运行状态等。在一个多台测控设备组成的多量子比特测控系统中，可以有效的在软件层面实现对系统中每台设备的详细控制。
+
+耐数®量子测控系列设备详细信息参考: [耐数](http://naishu.tech)
+
+***
+### 快速开始
+- 驱动接口的通用流程如下
+```python
+from nsqdriver import MCIDriver, QSYNCDriver
+
+# 实例化设备驱动接口
+driver = MCIDriver('127.0.0.1')
+qsync = QSYNCDriver('127.0.0.1')
+
+# 连接设备
+qsync.open()
+driver.open()
+
+# 初始化系统
+qsync.sync_system()
+
+
+# 相关参数，参数细节相关参考 8.可用参数列表
+driver.set('Shot', 1024)
+```
+
+- NSWave接口
+  - NSWave是一种对于耐数®参数化波形技术的控制接口，参数化波形将量子测控所需的各种门的编辑由主控计算机直接生成波形转化成了设备实时计算
+  - 提供了一套直观的时序编辑接口
+```python
+from nsqdriver import InsChannel
+import numpy as np
+
+ch = InsChannel()                        # 生成参数化波形通道实例
+
+frame_65e9 = ch.ins_frame(6.5e9)         # 生成一个frame
+frame_67e9 = ch.ins_frame(6.7e9)         # 生成一个frame
+
+gaussian = ch.evlp_gaussian(4500e-9)     # 生成一个高斯包络
+square = ch.evlp_square(2500e-9)         # 生成一个方波包络
+
+wave1 = gaussian * frame_67e9            # 生成一段高斯包络的波形
+wave2 = square * frame_65e9              # 生成一段方波包络的波形
+
+ch.ins_reset_frame('phase', frame_65e9)
+ch.ins_reset_frame('phase', frame_67e9)
+ch.wait_for_trigger()                    # 等待触发到来
+# 循环播放200次 3μs延迟+ 7μs波形
+with ch.ins_loop(times=200) as _loop:
+    _loop.play_zero(3000e-9)
+    _loop.inc_phase(frame_65e9, np.pi / 2)
+    _loop.play_wave(wave2)
+    _loop.play_wave(wave1)
+```
