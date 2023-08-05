@@ -1,0 +1,10 @@
+CHANGELOG.md
+LICENSE.txt
+MANIFEST.in
+README.md
+setup.py
+GILB/__init__.py
+GILBypass.egg-info/PKG-INFO
+GILBypass.egg-info/SOURCES.txt
+GILBypass.egg-info/dependency_links.txt
+GILBypass.egg-info/top_level.txt
