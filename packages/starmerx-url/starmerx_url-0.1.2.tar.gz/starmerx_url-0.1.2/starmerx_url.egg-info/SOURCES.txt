@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+starmerx_url/__init__.py
+starmerx_url/verify_url.py
+starmerx_url.egg-info/PKG-INFO
+starmerx_url.egg-info/SOURCES.txt
+starmerx_url.egg-info/dependency_links.txt
+starmerx_url.egg-info/top_level.txt
+starmerx_url.egg-info/zip-safe
