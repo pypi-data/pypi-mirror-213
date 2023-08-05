@@ -1,0 +1,4 @@
+include readme.md
+include license
+include changelog.md
+include manifest.in
