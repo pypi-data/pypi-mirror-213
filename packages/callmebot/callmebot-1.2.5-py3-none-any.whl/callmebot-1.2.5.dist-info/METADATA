@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: callmebot
+Version: 1.2.5
+Summary: CallMeBot Python Client
+Home-page: https://github.com/jutge-org/callmebot
+Download-URL: https://github.com/jutge-org/callmebot/tarball/1.2.5
+Author: Jordi Petit
+Author-email: jpetit@cs.upc.edu
+License: Apache
+Keywords: callmebot
+License-File: LICENSE
+Requires-Dist: requests
+Requires-Dist: typer
+Requires-Dist: rich
+Requires-Dist: html2text
+
+CallMeBot Python Client
