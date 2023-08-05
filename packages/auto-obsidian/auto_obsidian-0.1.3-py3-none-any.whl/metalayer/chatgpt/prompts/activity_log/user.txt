@@ -1,0 +1,4 @@
+"""
+{0}
+"""
+Above is all of the text that is currently visible on my screen. First, summarize the information on my screen and infer what I'm doing. Then, list what specific information (paraphrased from the text) I have learned that I could apply to my main task. Respond with headers for "Summary", "Activity", and "Information".
