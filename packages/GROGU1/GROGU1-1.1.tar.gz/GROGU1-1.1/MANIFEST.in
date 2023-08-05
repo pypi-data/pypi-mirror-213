@@ -1,0 +1,2 @@
+include *.txt *.py *.rst
+recursive-include GROGU1 *.txt *.py
