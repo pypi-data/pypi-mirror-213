@@ -1,0 +1,45 @@
+Metadata-Version: 2.1
+Name: ponder
+Version: 0.1.12
+Summary: Ponder - An extension to Modin that runs pandas and numpy in your database or data warehouse.
+Home-page: https://ponder.io
+Author: Ponder
+Author-email: support@ponder.io
+License: Other/Proprietary License
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+Requires-Dist: snowflake-connector-python[pandas] (>3.0.2)
+Requires-Dist: boto3
+Requires-Dist: cloudpickle (==2.0.0)
+Requires-Dist: db-dtypes
+Requires-Dist: duckdb (==0.8.0)
+Requires-Dist: fsspec[http]
+Requires-Dist: google-cloud-bigquery
+Requires-Dist: matplotlib
+Requires-Dist: modin (>=0.21.0)
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: pytest
+Requires-Dist: pytz
+Requires-Dist: scipy
+Requires-Dist: scikit-learn
+Requires-Dist: schedule
+
+<div align="center">
+  <img src="https://ponder.io/wp-content/uploads/2023/06/Ponder_LogoWordmark_H1_Color.svg"><br>
+</div>
+
+
+# ponder:  the Python API to your data anywhere
+
+Ponder lets you run pandas workflows directly in your database, meaning that you get
+all the scalability and security benefits of your database, while still preserving the
+[ease-of-use](https://ponder.io/pandas-vs-sql-part-4-pandas-is-more-convenient) and
+[flexibility](https://ponder.io/pandas-vs-sql-part-3-pandas-is-more-flexible) of pandas.
+
+Ponder builds on top of the open source project
+[Modin](https://github.com/modin-project/modin), with added support for commercial data
+warehouses, tailored to the needs of production workloads in enterprise settings.
+
+Visit [app.ponder.io](https://app.ponder.io) to sign up.
