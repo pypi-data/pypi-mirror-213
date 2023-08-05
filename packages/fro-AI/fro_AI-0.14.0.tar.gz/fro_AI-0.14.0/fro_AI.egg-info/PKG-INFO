@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: fro-AI
+Version: 0.14.0
+Summary: A package for easy use of AI application
+Home-page: https://gitee.com/z14git/fro_-ai
+Author: z14git
+Author-email: lzl1992@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Provides-Extra: all
+Provides-Extra: mediapipe
+Provides-Extra: lpr
+Provides-Extra: qrcode
+License-File: LICENSE
