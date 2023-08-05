@@ -1,0 +1,39 @@
+[build-system]
+requires = [
+    "setuptools>=42",
+    "wheel",
+    "scikit-build",
+    "cmake==3.24",
+    "ninja; platform_system!='Windows'",
+    "oldest-supported-numpy",
+    "mkl-devel",
+    "mkl-static"
+]
+build-backend = "setuptools.build_meta"
+
+[tool.cibuildwheel]
+skip = [
+    "*win32",
+    "*-musl*",
+    "pp*",
+    "*linux_i686",
+    "*arm64",
+    "*universal2",
+    "cp3{6,7}-*"
+]
+build-verbosity=1
+
+test-requires = ["pytest", "numpy"]
+test-command = ["pytest --capture=no {project}/tests"]
+
+[tool.cibuildwheel.windows]
+before-build = "pip install delvewheel"
+repair-wheel-command = "delvewheel show {wheel} --ignore-in-wheel & delvewheel repair -w {dest_dir} --ignore-in-wheel {wheel}"
+
+[tool.cibuildwheel.linux]
+before-all = [
+    "yum install -y curl zip unzip tar",
+    "git clone https://github.com/Microsoft/vcpkg.git",
+    "vcpkg/bootstrap-vcpkg.sh",
+    ]
+environment = { VCPKG_INSTALLATION_ROOT="vcpkg" }
