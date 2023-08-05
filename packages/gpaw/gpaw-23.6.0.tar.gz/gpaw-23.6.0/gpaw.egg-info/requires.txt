@@ -1,0 +1,13 @@
+ase>=3.22.1
+scipy>=1.6.0
+pyyaml
+
+[devel]
+flake8
+mypy
+pytest-xdist
+interrogate
+
+[docs]
+sphinx-rtd-theme
+graphviz
