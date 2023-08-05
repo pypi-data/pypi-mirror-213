@@ -1,0 +1,1 @@
+recursive-include mapbot_frontend/mapbot_frontend/frontend/build *

@@ -1,0 +1,7 @@
+MANIFEST.in
+setup.py
+mapbot_frontend/__init__.py
+mapbot_frontend.egg-info/PKG-INFO
+mapbot_frontend.egg-info/SOURCES.txt
+mapbot_frontend.egg-info/dependency_links.txt
+mapbot_frontend.egg-info/top_level.txt
