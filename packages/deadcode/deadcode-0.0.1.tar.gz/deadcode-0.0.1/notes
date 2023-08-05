@@ -1,0 +1,88 @@
+ ##################
+### Aggreed plan ##########################################
+# Create a pip package with a good name, write some tests #
+###########################################################
+#
+# [2023-06-05]
+# Solution: load all the files 
+# Check accourance count of the definition in all the files (if more than 1) - is used.
+# Can remove string and comments before checking.
+#
+# Subtasks:
+#   expand provided file paths
+#   read all files into memory (filename, content)
+#   is string in for 5k file a long operation?
+#   Should use a counter instead.
+#
+# Check SolarCube checks and Ruff if it detects such cases
+# Check Vulture for false positives with Mainhive repository.
+
+
+
+#
+
+SonarQube and ide linters: do they detect unused class definitions in other files?
+#############
+
+List of imported objects in dot separated form (how does import as work for this?):
+sys.modules.keys()
+#############
+
+
+Go through files and detect, what has been defined in those files and whether all definitions are used.
+    entry point: lambdas_handler.py
+
+
+
+Get Tree Representation of Loaded Python Modules (Python recipe)
+    https://code.activestate.com/recipes/442478-get-tree-representation-of-loaded-python-modules/
+
+
+from xml.dom.minidom import Document
+
+def get_tree_representation_of_loaded_python_modules(self):
+        modules = sys.modules.keys()
+        modules.sort()
+
+        tree_data = Document()
+        node = tree_data.createElement('li')
+        text = tree_data.createTextNode('Loaded Python Modules')
+        node.appendChild(text)
+        tree_data.appendChild(node)
+        map = {}
+        for module in modules:
+            ms = module.split('.')
+            path = node
+            for level in range(len(ms)):
+                nodes = map.get(level)
+                if nodes == None:
+                    node1 = tree_data.createElement('ul')
+                    node2 = tree_data.createElement('li')
+                    textNode = tree_data.createTextNode(ms[level])
+                    node2.appendChild(textNode)
+                    node1.appendChild(node2)
+                    path.appendChild(node1)
+                    nodes = [node2]
+                    map[level] = nodes
+                else:
+                    node2 = None
+                    for tmpNode in nodes:
+                        if tmpNode.firstChild.data == ms[level]:
+                            node2 = tmpNode
+                            node1 = node2.parentNode
+                    if node2 == None:
+                        node1 = path.childNodes.item(1)
+                        if node1==None:
+                            node1 = tree_data.createElement('ul')
+                            path.appendChild(node1)
+                        node2 = tree_data.createElement('li')
+                        textNode = tree_data.createTextNode(ms[level])
+                        node2.appendChild(textNode)
+                        node1.appendChild(node2)
+                        nodes += [node2]
+                        map[level] = nodes
+                path = node2
+
+        str = tree_data.toprettyxml()
+        str = str[len('<?xml version="1.0" ?>')+1:]
+        return str
