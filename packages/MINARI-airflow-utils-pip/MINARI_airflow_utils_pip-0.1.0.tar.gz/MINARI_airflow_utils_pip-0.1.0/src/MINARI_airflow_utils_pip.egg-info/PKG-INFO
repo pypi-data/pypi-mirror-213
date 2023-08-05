@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: MINARI-airflow-utils-pip
+Version: 0.1.0
+Summary: practice
+Home-page: https://blahxblah.github.io/MINARI_airflow_utils
+Author: kjuheon
+Author-email: id.blahxblah@gmail.com
+License: GNU General Public License (GPL)
+Project-URL: Bug Tracker, https://github.com/blahxblah/MINARI_airflow_utils/issues
+Platform: macOS
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License (GPL)
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+<<<<<<< HEAD
+# MINARI_airflow_utils_pip
+### practice
+
+- [https://pypi.org/project/MINARI_airflow_utils_pip](https://pypi.org/project/MINARI_airflow_utils_pip)
+
+```
+- MINARI_airflow_utils_pip is interesting and interesting.
+```
+
+# User Guide
+- [https://blahxblah.github.io/MINARI_airflow_utils](https://blahxblah.github.io/MINARI_airflow_utils)
+
+![logo](https://blahxblah.github.io/MINARI_airflow_utils/img/social_preview.png)
+=======
+# MINARI_airflow_utils
+airflow_utils_pip
+>>>>>>> 42dc0cacb00f2a8d2d1ba3b22bf945347064194b

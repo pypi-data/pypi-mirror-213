@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/MINARI_airflow_utils_pip/MINARI_airflow_utils_pip.py
+src/MINARI_airflow_utils_pip/__init__.py
+src/MINARI_airflow_utils_pip.egg-info/PKG-INFO
+src/MINARI_airflow_utils_pip.egg-info/SOURCES.txt
+src/MINARI_airflow_utils_pip.egg-info/dependency_links.txt
+src/MINARI_airflow_utils_pip.egg-info/entry_points.txt
+src/MINARI_airflow_utils_pip.egg-info/top_level.txt
