@@ -1,0 +1,9 @@
+README.md
+lsb.py
+setup.py
+easylsb.egg-info/PKG-INFO
+easylsb.egg-info/SOURCES.txt
+easylsb.egg-info/dependency_links.txt
+easylsb.egg-info/entry_points.txt
+easylsb.egg-info/requires.txt
+easylsb.egg-info/top_level.txt

@@ -1,0 +1,6 @@
+wave
+des
+numpy
+chardet
+rsa
+pillow
