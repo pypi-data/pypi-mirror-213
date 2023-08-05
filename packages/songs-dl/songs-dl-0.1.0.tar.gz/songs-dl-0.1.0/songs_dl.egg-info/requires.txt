@@ -1,0 +1,15 @@
+mutagen
+rapidfuzz
+requests
+yt-dlp
+
+[build]
+build
+twine
+
+[dev]
+black
+bumpver
+flake8
+isort
+pylint
