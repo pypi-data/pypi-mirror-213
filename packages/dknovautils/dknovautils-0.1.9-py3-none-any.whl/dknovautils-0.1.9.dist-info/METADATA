@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: dknovautils
+Version: 0.1.9
+Summary: A small example package
+Project-URL: Homepage, https://github.com/pypa/sampleproject
+Project-URL: Bug Tracker, https://github.com/pypa/sampleproject/issues
+Author-email: dknova <dikisite@outlook.com>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+
+# Learning python
+
+This is a simple example package. 
+
+just for learning how to build a package.
+
+
+
+
+
+
+
+
+
+
+
+
+
