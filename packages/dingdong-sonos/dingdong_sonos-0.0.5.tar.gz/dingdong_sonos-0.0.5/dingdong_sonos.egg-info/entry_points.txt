@@ -1,0 +1,2 @@
+[console_scripts]
+dingdong = dingdong_sonos.main:main
