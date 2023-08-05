@@ -1,0 +1,2 @@
+[console_scripts]
+crooked_airflow_utils-ping = crooked_airflow_utils:ping

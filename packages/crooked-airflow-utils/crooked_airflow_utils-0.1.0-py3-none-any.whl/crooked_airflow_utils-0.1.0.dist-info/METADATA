@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: crooked-airflow-utils
+Version: 0.1.0
+Summary: test
+Home-page: https://jungssg.github.io/crooked_airflow_utils
+Author: crooked
+Author-email: younwjdtjr@naver.com
+License: GNU General Public License (GPL)
+Project-URL: Bug Tracker, https://github.com/jungssg/crooked_airflow_utils/issues
+Platform: macOS
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License (GPL)
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# crooked_airflow_utils
+### test
+
+- [https://pypi.org/project/crooked_airflow_utils](https://pypi.org/project/crooked_airflow_utils)
+
+```
+- crooked_airflow_utils is interesting and interesting.
+```
+
+# User Guide
+- [https://jungssg.github.io/crooked_airflow_utils](https://jungssg.github.io/crooked_airflow_utils)
+
+![logo](https://jungssg.github.io/crooked_airflow_utils/img/social_preview.png)
