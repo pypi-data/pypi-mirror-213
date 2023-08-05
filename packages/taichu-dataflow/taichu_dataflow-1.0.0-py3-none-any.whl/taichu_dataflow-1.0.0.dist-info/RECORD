@@ -1,0 +1,8 @@
+storage/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+storage/alluxio.py,sha256=IIdi_-A5ezPWlOmNFBGYdBg2JaOMi1z8uOWj419MTLs,1191
+storage/env.py,sha256=D5aphzp-eEjPCDYgrwUt9mp-SpiHkBCnSiWeSw_sJoU,437
+storage/storage.py,sha256=cmi9BWVG5UMyqWQ85jqm9iDHcSjcKKH9s9jsd9WbBis,383
+taichu_dataflow-1.0.0.dist-info/METADATA,sha256=yzwStqJAWEQAFNEuroDtAnOazI3oxR55nw1nDQyjYBw,281
+taichu_dataflow-1.0.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+taichu_dataflow-1.0.0.dist-info/top_level.txt,sha256=yphqphSuwRzNyEfTnt0xnNv02quslUAR1yj7mKZ_KxI,8
+taichu_dataflow-1.0.0.dist-info/RECORD,,
