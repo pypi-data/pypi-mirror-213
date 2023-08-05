@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "pyatp-buildkit"
+version = "1.1.7"
+description = "a iflytek ailab library ..."
+authors = ["mjchen <mjchen@iflytek.com>","ybyang <ybyang7@iflytek.com>", "kqxu <kqxu@iflytek.com>"]
+license = "Apache License 2"
+packages = [
+    { include = "pyatp_buildkit", from = "src" }
+]
+
+exclude = [
+    "dist",
+]
+
+[tool.poetry.dependencies]
+python = ">3.7"
+jinja2 = "*"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
