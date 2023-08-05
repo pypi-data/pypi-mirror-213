@@ -1,0 +1,16 @@
+include UComp/libopenblas.dll
+include UComp/UCc.pyd
+include UComp/ETSc.pyd
+include UComp/UCmodule.py
+include UComp/ETSmodule.py
+include UComp/PTSmodule.py
+include UComp/tsfile.py
+include UComp/tools.py
+include UComp/gdp.bin
+include UComp/airpas.bin
+include UComp/ipi.bin
+include UComp/__init__.py
+include UComp/ETSc.cpython-311-darwin.so
+include UComp/UCc.cpython-311-darwin.so
+
+
