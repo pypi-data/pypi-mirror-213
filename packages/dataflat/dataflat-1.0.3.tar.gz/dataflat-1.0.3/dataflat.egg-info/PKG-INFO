@@ -1,0 +1,64 @@
+Metadata-Version: 2.1
+Name: dataflat
+Version: 1.0.3
+Home-page: https://github.com/JuanARojasA/dataflat
+Author: Juan Rojas
+Author-email: jarojasa97@gmail.com
+License: Apache License 2.0
+Platform: any
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Information Technology
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Software Development :: Pre-processors
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# dataflat
+A library to flatten all this annoiyng nested keys and columns on Dictionaries, Pandas Dataframes
+and Spark (pyspark) Dataframes.
+
+### Installation
+```
+pip install dataflat
+```
+
+### Get started
+How to instantiate a Flattener:
+
+```Python
+from dataflat.flattener_handler import Options, Flattener
+
+id_key = 'id'
+black_list = ['keys','or','columns','to','skip']
+
+#The following variables have the default values for each transform function
+to_snake_case = False
+replace_dots = False
+
+# Instantiate a Dictionary Flattener
+dict_name = 'dct'
+flattener_dict = Flattener().handler(Options.DICTIONARY)
+flattener_dict.transform(dictionary, id_key, black_list, dict_name, to_snake_case, replace_dots)
+
+
+# Instantiate a Pandas Dataframe Flattener
+##Default chunk size = 500
+dataframe_name = 'df'
+chunk_size = 500
+flattener_pd = Flattener().handler(Options.PANDAS_DF)
+flattener_pd.transform(dataframe, id_key, black_list, dataframe_name, to_snake_case, replace_dots, chunk_size)
+
+# Instantiate a Spark Dataframe Flattener
+dataframe_name = 'df'
+flattener_sp = Flattener().handler(Options.SPARK_DF)
+flattener_sp.transform(dataframe, id_key, black_list, dataframe_name, to_snake_case, replace_dots)
+```
