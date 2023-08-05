@@ -1,0 +1,9 @@
+README.md
+setup.py
+client_utils/__init__.py
+client_utils/base_client.py
+scramjet_client_utils.egg-info/PKG-INFO
+scramjet_client_utils.egg-info/SOURCES.txt
+scramjet_client_utils.egg-info/dependency_links.txt
+scramjet_client_utils.egg-info/requires.txt
+scramjet_client_utils.egg-info/top_level.txt
