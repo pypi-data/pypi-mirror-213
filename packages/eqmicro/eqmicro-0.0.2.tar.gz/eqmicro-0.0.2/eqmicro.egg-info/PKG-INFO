@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: eqmicro
+Version: 0.0.2
+Summary: python microservice
+Home-page: https://github.com/eqauto/eqmicro.git
+Author: eqauto
+Author-email: eqauto@yeah.net
+License: MIT
+Keywords: eqmicro,micro,eqauto
+Platform: any
+License-File: LICENSE
+
+easy and quick microservice
