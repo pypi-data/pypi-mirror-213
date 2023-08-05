@@ -1,0 +1,12 @@
+df2onehot/__init__.py,sha256=YXyX4xP3HgxWXE6iMHFy96gjITvJCCJ-lAt0YP4pqBU,600
+df2onehot/df2onehot.py,sha256=Ev9wbXxg8J-h467qMXfayWxyA3JrZYrXKI20Si0rBL4,21335
+df2onehot/examples.py,sha256=Cu8yKr_klHteO5mXWcUECj3PD6abS5NgD4Iw5bZYMc4,1053
+df2onehot/utils.py,sha256=dTARBYRnYdqXP5hhGATlWFz1XRRJBrwxwTX6xWP4i_8,10215
+df2onehot/data/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+df2onehot/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+df2onehot/tests/test_df2onehot.py,sha256=YcP10N_BmDTbBALC73ZL0tlx2jZ9yROyc3hl9VmaWxw,3813
+df2onehot-1.0.6.dist-info/LICENSE,sha256=KW_XcSMLyM3kAI-THNF-taYs9Lf-O7B19CAW_ueHw-w,1122
+df2onehot-1.0.6.dist-info/METADATA,sha256=9kGz53gxtq2cr6597bKLM24MieX8rZTWJkaz6txKMxc,3251
+df2onehot-1.0.6.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+df2onehot-1.0.6.dist-info/top_level.txt,sha256=khOnqYIvoVEm6bUw7dB9MRv0RZAN_ymHnr1Alz6KFu8,10
+df2onehot-1.0.6.dist-info/RECORD,,
