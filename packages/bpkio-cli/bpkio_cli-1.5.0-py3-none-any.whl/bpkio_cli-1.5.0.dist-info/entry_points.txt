@@ -1,0 +1,4 @@
+[console_scripts]
+bic=bpkio_cli.app:safe_entry_point
+bic-debug=bpkio_cli.app:debug_entry_point
+
