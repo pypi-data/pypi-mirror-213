@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: foveatorch
+Version: 0.1.1
+Summary: Differentiable foveated vision for Deep Learning methods
+Home-page: https://github.com/emaballarin/foveatorch
+Author: Emanuele Ballarin
+Author-email: emanuele@ballarin.cc
+License: MIT
+Keywords: Deep Learning,Machine Learning,Computer Vision,Computational Neuroscience,Differentiable Programming
+Classifier: Development Status :: 4 - Beta
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: Environment :: Console
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# `FoveaTorch` 👀🔥 <a href="https://bucket.ballarin.cc/serve/img/foveatorch_dalle2.png"><img src="https://bucket.ballarin.cc/serve/img/foveatorch_dalle2.png" align="right" height="139" /></a>
+
+Differentiable foveated vision for Deep Learning methods
+
+---
+
+### References
+- [J.S. Perry and W.S. Geisler, "Gaze-contingent real-time simulation of arbitrary visual fields", IS&T/SPIE Electronic Imaging, 2002](https://sci-hub.ru/10.1117/12.469554)
+- [M. Jiang, S. Huang, J. Duan and Q. Zhao, "SALICON: Saliency in Context", IEEE Conference on Computer Vision and Pattern Recognition, 2015](https://sci-hub.ru/10.1109/CVPR.2015.7298710)
+- [Zhibo Yang, "Image_Foveation_Python: Python implementation of image retina transformation"](https://github.com/ouyangzhibo/Image_Foveation_Python)

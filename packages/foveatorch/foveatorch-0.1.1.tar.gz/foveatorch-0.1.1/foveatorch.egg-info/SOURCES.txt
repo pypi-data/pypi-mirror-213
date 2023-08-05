@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+foveatorch/__init__.py
+foveatorch/modfoveate.py
+foveatorch/neopyramid.py
+foveatorch.egg-info/PKG-INFO
+foveatorch.egg-info/SOURCES.txt
+foveatorch.egg-info/dependency_links.txt
+foveatorch.egg-info/not-zip-safe
+foveatorch.egg-info/top_level.txt
