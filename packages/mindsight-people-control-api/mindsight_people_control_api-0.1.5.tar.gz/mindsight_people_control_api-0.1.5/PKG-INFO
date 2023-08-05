@@ -1,0 +1,56 @@
+Metadata-Version: 2.1
+Name: mindsight-people-control-api
+Version: 0.1.5
+Summary: Mindsight People Control API to create, update and delete records
+Home-page: https://github.com/Diogo56/mindsight-people-control-api
+License: MIT
+Author: Diogo56
+Author-email: diogo.amorim2001@gmail.com
+Requires-Python: >=3.9,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: python-decouple (>=3.8,<4.0)
+Requires-Dist: requests (>=2.31.0,<3.0.0)
+Project-URL: Repository, https://github.com/Diogo56/mindsight-people-control-api
+Description-Content-Type: text/markdown
+
+# Mindsight People Control API
+[![PyPI Latest Release](https://img.shields.io/pypi/v/mindsight-people-control-api.svg)](https://pypi.org/project/mindsight-people-control-api/)
+
+Use mindsight people control functionalities in your python application.
+## Instalation
+```sh
+pip install mindsight-people-control-api
+```
+
+# Configuration
+## Environment variables
+To use mindsight-people-control-api, you need to set two environment variables:
+```dotenv
+# ---DOTENV EXAMPLE---
+MINDSIGHT_API_TOKEN= # Token to authenticate
+MINDSIGHT_API_BASE_URL=https://controle.mindsight.com.br/api # Base path of your api instance
+```
+# Usage Example
+You can use mindsight-people-control-api create, update and delete registers on all system tables.
+
+## List registers
+You can use get methods to list registers of system table. See the following example:
+```python
+import mindsight_people_control_api
+
+
+# Instantiate Areas client object
+areas_client = mindsight_people_control_api.Areas()
+
+# get_list_areas will return a ApiPaginationResponse object.
+# This object represents a pagination response from rest api from people control
+# and with get_all method from ApiPaginationResponse object, you can get all
+# data of all pages. The data will stored in results attribute of ApiPaginationResponse
+
+areas_data = areas_client.get_list_areas().get_all().results
+```
+
