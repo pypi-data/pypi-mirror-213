@@ -1,0 +1,3 @@
+python-socketio
+scapy
+sanic
