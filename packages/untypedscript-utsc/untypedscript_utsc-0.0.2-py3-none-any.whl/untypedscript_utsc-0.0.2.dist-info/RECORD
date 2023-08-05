@@ -1,0 +1,16 @@
+utsc/__init__.py,sha256=-LZeSxsMj_jmAh_MPkxatRV8KbU0uPaFeb8UPG2Ldm0,9308
+utsc/ast_cleaner.py,sha256=fmQx_GTL1t65P_Z3KG_ZZxrSGRvKcIYC7yWG1LK-vX8,576
+utsc/ast_preprocessor.py,sha256=A4pGSmi4sSC3LeTy5MOnf9TqYXcMxFJueS6V5Cdgk0Q,2734
+utsc/code_lowerer.py,sha256=NyPUXGKR8GGUix3TejUJrb0nQtYcmP2XB9iw6w25Q6w,7217
+utsc/compiler.py,sha256=4QIsDzrAJ2PrAUD0DluXkD_qfgK0YxfaziW6idK6sTE,36276
+utsc/optimizer.py,sha256=jSBoZBEuCV0oNDxGTBNhr4hrM2FeAajnr8PmjbENNts,2340
+utsc/sequential_lexer.py,sha256=0mqMUw7T5l4ZYznQTeMnl892DIPCJsAs2ifsPOMdMjU,7829
+utsc/utils.py,sha256=e5RmJ9fKRfIEokgOmFps91OY1GxzF3a472nkqYdkTtI,4789
+utsc/uts_parser.py,sha256=ufJt6y4qHlkvSW02GYZcTLnFE9pY8DEinwECmbzMNXo,39560
+utsc/utsc-config.json,sha256=2V_lE13wSkx0-6jZTkmjCstWsnaiTo4pz9ZTLqM41Ts,161
+untypedscript_utsc-0.0.2.dist-info/LICENSE,sha256=UkgsugPk6cQbByPmpuQV1CWeKN4kkAqXCMEZByqGAJ4,1090
+untypedscript_utsc-0.0.2.dist-info/METADATA,sha256=zW_9pNqQPUmMGpNviwmiXRvhAuE7CFRSiruxlfFne7g,6567
+untypedscript_utsc-0.0.2.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+untypedscript_utsc-0.0.2.dist-info/entry_points.txt,sha256=KrCEHYWp8xXQVONMtVx14yyHZMgcuLMl7ptRSq8AtKQ,67
+untypedscript_utsc-0.0.2.dist-info/top_level.txt,sha256=x9J9HHWwTgrOvZW0PnzZgmkjABMlq2sUOmAuIFNJYUU,5
+untypedscript_utsc-0.0.2.dist-info/RECORD,,
