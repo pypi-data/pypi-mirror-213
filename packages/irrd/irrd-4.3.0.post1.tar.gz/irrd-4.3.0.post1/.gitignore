@@ -1,0 +1,23 @@
+.DS_Store
+
+.idea
+.vscode
+
+.mypy_cache
+.pytest_cache
+.tmpdirs
+
+local_config.yaml
+
+.coverage
+cov.xml
+
+build
+dist
+gnupg
+irrd.egg-info
+
+syntax: glob
+__pycache__
+_build
+twisted/plugins/dropin.cache

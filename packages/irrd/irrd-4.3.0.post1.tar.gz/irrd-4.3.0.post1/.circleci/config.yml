@@ -1,0 +1,388 @@
+# Check https://circleci.com/docs/2.0/language-python/ for more details
+#
+version: 2.1
+
+parameters:
+  build_extensive:
+    type: boolean
+    default: false
+
+workflows:
+  test-regular:
+    # This workflow is about 400 credits
+    when:
+      condition:
+        - not: << pipeline.parameters.build_extensive >>
+    jobs:
+      - unit_tests_cpython:
+          name: unit-tests-cpython<< matrix.python_version >>-pg<< matrix.postgres_version >>-redis<< matrix.redis_version >>
+          matrix:
+            parameters:
+              python_version: ["3.7", "3.11"]
+              postgres_version: ["15.0"]
+              redis_version: ["5.0"]
+      - unit_tests_pypy:
+          name: unit-tests-pypy<< matrix.python_version >>-pg<< matrix.postgres_version >>-redis<< matrix.redis_version >>
+          matrix:
+            parameters:
+              python_version: ["3.7", "3.9"]
+              postgres_version: ["15.0"]
+              redis_version: ["5.0"]
+      - integration_tests_cpython:
+          name: integration-tests-cpython<< matrix.python_version >>-pg<< matrix.postgres_version >>-redis<< matrix.redis_version >>
+          matrix:
+            parameters:
+              python_version: ["3.7", "3.11"]
+              postgres_version: ["15.0"]
+              redis_version: ["5.0"]
+      - integration_tests_pypy:
+          name: integration-tests-pypy<< matrix.python_version >>-pg<< matrix.postgres_version >>-redis<< matrix.redis_version >>
+          matrix:
+            parameters:
+              python_version: ["3.7", "3.9"]
+              postgres_version: ["15.0"]
+              redis_version: ["5.0"]
+      - lint:
+          name: lint-cpython-3-10
+          docker_image: cimg/python:3.10
+      - build_docs:
+          name: build-docs-cpython-3-10
+          docker_image: cimg/python:3.10
+
+  test-extensive:
+    # This workflow is about 10K credits
+    when: << pipeline.parameters.build_extensive >>
+    jobs:
+      - unit_tests_cpython:
+          name: unit-tests-cpython<< matrix.python_version >>-pg<< matrix.postgres_version >>-redis<< matrix.redis_version >>
+          matrix:
+            parameters:
+              python_version: ["3.7", "3.8", "3.9", "3.10", "3.11"]
+              postgres_version: ["9.6", "11.16", "13.7", "15.0"]
+              redis_version: ["5.0", "6.2", "7.0"]
+      - unit_tests_pypy:
+          name: unit-tests-pypy<< matrix.python_version >>-pg<< matrix.postgres_version >>-redis<< matrix.redis_version >>
+          matrix:
+            parameters:
+              python_version: ["3.7", "3.8", "3.9"]
+              postgres_version: ["9.6", "11.16", "13.7", "15.0"]
+              redis_version: ["5.0", "6.2", "7.0"]
+      - integration_tests_cpython:
+          name: integration-tests-cpython<< matrix.python_version >>-pg<< matrix.postgres_version >>-redis<< matrix.redis_version >>
+          matrix:
+            parameters:
+              python_version: ["3.7", "3.8", "3.9", "3.10", "3.11"]
+              postgres_version: ["9.6", "11.16", "13.7", "15.0"]
+              redis_version: ["5.0", "6.2", "7.0"]
+      - integration_tests_pypy:
+          name: integration-tests-pypy<< matrix.python_version >>-pg<< matrix.postgres_version >>-redis<< matrix.redis_version >>
+          matrix:
+            parameters:
+              python_version: ["3.7", "3.8", "3.9"]
+              postgres_version: ["9.6", "11.16", "13.7", "15.0"]
+              redis_version: ["5.0", "6.2", "7.0"]
+      - lint:
+          name: lint-cpython-3-10
+          docker_image: cimg/python:3.10
+      - build_docs:
+          name: build-docs-cpython-3-10
+          docker_image: cimg/python:3.10
+
+commands:
+  install_dependencies:
+    steps:
+      - run:
+          name: apt update
+          command: |
+            set +e
+            $SUDO apt update
+            echo
+
+      - run:
+          name: Installing psql client, enchant, netcat, rust
+          command: $SUDO apt -y install postgresql-client netcat python3-enchant rustc
+
+      - restore_cache:
+          keys:
+            - v23-dependencies-{{ .Environment.CIRCLE_JOB }}-{{ checksum
+              "requirements.txt" }}
+            # fallback to using the latest cache if no exact match is found
+            - v23-dependencies-{{ .Environment.CIRCLE_JOB }}
+
+      - run:
+          name: install latest pip
+          command: |
+            $PYTHON_INTERPRETER -m venv venv
+            . venv/bin/activate
+            pip install -U pip
+
+      - run:
+          name: install dependencies
+          command: |
+            PATH=$PATH:/root/.cargo/bin/
+            $PYTHON_INTERPRETER -m venv venv
+            . venv/bin/activate
+            pip install -vUr requirements.txt
+
+      - save_cache:
+          paths:
+            - ./venv
+          key: v23-dependencies-{{ .Environment.CIRCLE_JOB }}-{{ checksum
+            "requirements.txt" }}
+
+  wait_for_postgres:
+    steps:
+      - run:
+          name: Waiting for PostgreSQL to be ready
+          command: |
+            for i in `seq 1 10`;
+            do
+              nc -z localhost 5432 && echo Success && exit 0
+              echo -n .
+              sleep 1
+            done
+            echo Failed waiting for PostgreSQL && exit 1
+
+  run_unit_tests:
+    steps:
+      - run:
+          name: run regular tests
+          command: |
+            . venv/bin/activate
+            py.test -s -vvvv --cov=irrd irrd --junitxml=test-reports/junit.xml --cov-fail-under=100 --cov-report term-missing:skip-covered
+
+  create_integration_test_db:
+    steps:
+      - run:
+          name: Creating additional database 1
+          command: |
+            psql -U root -h localhost -d circle_test -c "CREATE DATABASE circle_test_integration_1;"
+
+      - run:
+          name: Creating additional database 2
+          command: |
+            psql -U root -h localhost -d circle_test -c "CREATE DATABASE circle_test_integration_2;"
+
+  run_integration_tests:
+    steps:
+      - run:
+          name: run integration tests
+          command: |
+            . venv/bin/activate
+            py.test irrd/integration_tests/run.py -s
+
+  store_results:
+    steps:
+      - store_test_results:
+          path: test-reports
+
+      - store_artifacts:
+          path: /tmp/pytest-of-circleci/
+
+
+
+jobs:
+  unit_tests_cpython:
+    parameters:
+      python_version:
+        type: string
+      postgres_version:
+        type: string
+      redis_version:
+        type: string
+
+    resource_class: small
+    working_directory: /mnt/ramdisk
+    docker:
+      - image: cimg/python:<< parameters.python_version >>
+        environment:
+          IRRD_DATABASE_URL: 'postgresql://root@localhost/circle_test'
+          IRRD_REDIS_URL: 'redis://localhost'
+          PYTHON_INTERPRETER: python3
+          SUDO: sudo
+
+      - image: cimg/postgres:<< parameters.postgres_version >>
+        environment:
+          POSTGRES_USER: root
+          POSTGRES_DB: circle_test
+          POSTGRES_HOST_AUTH_METHOD: trust
+
+      - image: cimg/redis:<< parameters.redis_version >>
+#      - image: cimg/rust:1.65
+
+    steps:
+      - checkout
+      - install_dependencies
+      - wait_for_postgres
+      - run_unit_tests
+      - store_results
+
+
+  unit_tests_pypy:
+    parameters:
+      python_version:
+        type: string
+      postgres_version:
+        type: string
+      redis_version:
+        type: string
+
+    resource_class: small
+    working_directory: /mnt/ramdisk
+    docker:
+      - image: pypy:<< parameters.python_version >>
+        environment:
+          IRRD_DATABASE_URL: 'postgresql://root@localhost/circle_test'
+          IRRD_REDIS_URL: 'redis://localhost'
+          PYTHON_INTERPRETER: pypy3
+          SUDO: ''
+
+      - image: cimg/postgres:<< parameters.postgres_version >>
+        environment:
+          POSTGRES_USER: root
+          POSTGRES_DB: circle_test
+          POSTGRES_HOST_AUTH_METHOD: trust
+
+      - image: cimg/redis:<< parameters.redis_version >>
+#      - image: cimg/rust:1.65
+
+    steps:
+      - checkout
+      - install_dependencies
+      - wait_for_postgres
+      - run_unit_tests
+      - store_results
+
+
+  integration_tests_cpython:
+    parameters:
+      python_version:
+        type: string
+      postgres_version:
+        type: string
+      redis_version:
+        type: string
+
+    resource_class: large
+    working_directory: /mnt/ramdisk
+    docker:
+      - image: cimg/python:<< parameters.python_version >>
+        environment:
+          IRRD_DATABASE_URL_INTEGRATION_1: 'postgresql://root@localhost/circle_test_integration_1'
+          IRRD_DATABASE_URL_INTEGRATION_2: 'postgresql://root@localhost/circle_test_integration_2'
+          IRRD_REDIS_URL_INTEGRATION_1: 'redis://localhost/4'
+          IRRD_REDIS_URL_INTEGRATION_2: 'redis://localhost/5'
+          PYTHON_INTERPRETER: python3
+          SUDO: sudo
+
+      - image: cimg/postgres:<< parameters.postgres_version >>
+        environment:
+          POSTGRES_USER: root
+          POSTGRES_DB: circle_test
+          POSTGRES_HOST_AUTH_METHOD: trust
+
+      - image: cimg/redis:<< parameters.redis_version >>
+#      - image: cimg/rust:1.65
+
+    steps:
+      - checkout
+      - install_dependencies
+      - wait_for_postgres
+      - create_integration_test_db
+      - run_integration_tests
+      - store_results
+
+
+  integration_tests_pypy:
+    parameters:
+      python_version:
+        type: string
+      postgres_version:
+        type: string
+      redis_version:
+        type: string
+
+    resource_class: large
+    working_directory: /mnt/ramdisk
+    docker:
+      - image: pypy:<< parameters.python_version >>
+        environment:
+          IRRD_DATABASE_URL_INTEGRATION_1: 'postgresql://root@localhost/circle_test_integration_1'
+          IRRD_DATABASE_URL_INTEGRATION_2: 'postgresql://root@localhost/circle_test_integration_2'
+          IRRD_REDIS_URL_INTEGRATION_1: 'redis://localhost/4'
+          IRRD_REDIS_URL_INTEGRATION_2: 'redis://localhost/5'
+          PYTHON_INTERPRETER: pypy3
+          SUDO: ''
+
+      - image: cimg/postgres:<< parameters.postgres_version >>
+        environment:
+          POSTGRES_USER: root
+          POSTGRES_DB: circle_test
+          POSTGRES_HOST_AUTH_METHOD: trust
+
+      - image: cimg/redis:<< parameters.redis_version >>
+#      - image: cimg/rust:1.65
+
+    steps:
+      - checkout
+      - install_dependencies
+      - wait_for_postgres
+      - create_integration_test_db
+      - run_integration_tests
+      - store_results
+
+
+  lint:
+    parameters:
+      docker_image:
+        type: string
+
+    resource_class: small
+    working_directory: /mnt/ramdisk
+    docker:
+      - image: << parameters.docker_image >>
+        environment:
+          PYTHON_INTERPRETER: python3
+          SUDO: sudo
+#      - image: cimg/rust:1.65
+
+    steps:
+      - checkout
+      - install_dependencies
+
+      - run:
+          name: run flake8
+          command: |
+            . venv/bin/activate
+            flake8 irrd
+
+      - run:
+          name: run mypy
+          command: |
+            . venv/bin/activate
+            mypy irrd
+
+
+  build_docs:
+    parameters:
+      docker_image:
+        type: string
+
+    resource_class: small
+    working_directory: /mnt/ramdisk
+    docker:
+      - image: << parameters.docker_image >>
+        environment:
+          PYTHON_INTERPRETER: python3
+          SUDO: sudo
+#      - image: cimg/rust:1.65
+
+    steps:
+      - checkout
+      - install_dependencies
+
+      - run:
+          name: build docs
+          command: |
+            . venv/bin/activate
+            sphinx-build -nW -b spelling docs/ docs/build
