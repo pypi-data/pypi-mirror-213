@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: pytrition
+Version: 0.1.0
+Summary: Nutrition Facts data for common foods.
+License: MIT
+Author: Sabih Hass
+Requires-Python: >=3.11,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Description-Content-Type: text/markdown
+
+# pytrition
+Python library for nutrition facts data for common foods.
+
