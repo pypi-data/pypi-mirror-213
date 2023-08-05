@@ -1,0 +1,38 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.rstcheck]
+report_level = "WARNING"
+ignore_directives = ["autoclass", "autofunction"]
+
+[tool.pytest.ini_options]
+addopts = [
+    "--import-mode=importlib",
+]
+
+[project]
+name = "charex"
+version = "0.2.0"
+authors = [
+    {name="Paul J. Iutzi", email="pji@mac.com"},
+]
+description = "A unicode and character set explorer."
+readme = "README.rst"
+requires-python = ">=3.11"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    'flask',
+]
+
+[project.urls]
+"Homepage" = "https://charex.readthedocs.io/en/latest/index.html#"
+"Documentation" = "https://charex.readthedocs.io/en/latest/index.html#"
+"Source" = "https://github.com/pji/charex"
+
+[project.scripts]
+charex = "charex.__main__:main"
