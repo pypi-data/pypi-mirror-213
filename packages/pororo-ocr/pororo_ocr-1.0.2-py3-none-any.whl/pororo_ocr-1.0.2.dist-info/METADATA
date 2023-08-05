@@ -1,0 +1,90 @@
+Metadata-Version: 2.1
+Name: pororo-ocr
+Version: 1.0.2
+Summary: Rebuilding only the OCR part of the pororo package for lightweight and fast operation.
+Home-page: https://github.com/stellarway/pororo-ocr
+Author: Wonhee Go
+Author-email: whgo.nlp@gmail.com
+License: Apache-2.0
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Requires-Python: >=3.6.0
+Description-Content-Type: text/markdown
+License-File: LICENSE
+License-File: LICENSE.3rd_party_library
+License-File: LICENSE.3rd_party_model
+Requires-Dist: torch (>=1.6.0)
+Requires-Dist: torchvision (>=0.7.0)
+Requires-Dist: pillow (>=4.1.1)
+Requires-Dist: wget
+Requires-Dist: opencv-python
+Requires-Dist: scikit-image
+
+# pororo-ocr
+`pororo-ocr` inspired by [kakaobrain/pororo](https://github.com/kakaobrain/pororo), rebuilding only the OCR task of the pororo package for lighteweight and fast performance.
+
+## Installation
+
+- `pororo-ocr` is based on `torch>=1.6(cuda 10.1)` and `python>=3.6`
+
+- You can install a package through the command below:
+
+```console
+pip install pororo-ocr
+```
+
+## Usage
+
+- `pororo-ocr` can be used as follows:
+- First, in order to import `pororo-ocr`, you must execute the following snippet
+
+```python
+>>> import prrocr
+```
+
+- After the import, you can check languages currently supported by the `pororo-ocr` through the following commands
+
+```python
+>>> import prrocr
+>>> prrocr.ocr.get_available_langs()
+"Available lanugages are ['en', 'ko']"
+```
+
+- To check which models are supported by each task, you can go through the following process
+
+```python
+>>> import prrocr
+>>> prrocr.ocr.get_available_models()
+"Available models are {'en': ['brainocr'], 'ko': ['brainocr']}"
+```
+
+- If you want to perform in specific language, you can put the language name in the `lang` argument
+
+```python
+>>> import prrocr
+>>> ocr = prrocr.ocr(lang="en")
+```
+
+- After object construction, it can be used in a way that passes the input value as follows:
+
+```python
+>>> ocr("sample.jpg")
+['MAKE TODAY', 'TOLERABLE']
+```
+
+- If you want to get position information for each string, you can turn on `detail` argument as follows:
+
+```python
+>>> ocr("sample.jpg", detail=True)
+{'description': ['MAKE TODAY', 'TOLERABLE'], 'bounding_poly': [{'description': 'MAKE TODAY', 'vertices': [{'x': 585, 'y': 397}, {'x': 730, 'y': 397}, {'x': 730, 'y': 520}, {'x': 585, 'y': 520}]}, {'description': 'TOLERABLE', 'vertices': [{'x': 588, 'y': 558}, {'x': 884, 'y': 558}, {'x': 884, 'y': 612}, {'x': 588, 'y': 612}]}]}
+```
+
+
+## License
+
+`pororo-ocr` project is licensed under the terms of **the Apache License 2.0**.
+
