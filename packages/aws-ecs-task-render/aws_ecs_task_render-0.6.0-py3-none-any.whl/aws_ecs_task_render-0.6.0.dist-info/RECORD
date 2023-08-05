@@ -1,0 +1,9 @@
+aws_ecs_task_render/__init__.py,sha256=rTLL1wdpPXKpXT5pG4S4uOcmw27lYMaxW2aRniLYwdI,126
+aws_ecs_task_render/__main__.py,sha256=Bu9-MlIOvpbi4eIVAJmuhMAGaYjVe2Ph2YsxvzHt2r0,3543
+aws_ecs_task_render/profile_checker.py,sha256=bvTDlX1sTCthhB4WBDSw6FOkWlqB_jy1ieICc2freHM,2940
+aws_ecs_task_render-0.6.0.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+aws_ecs_task_render-0.6.0.dist-info/METADATA,sha256=VzIF3Lj97retQ2hcDDCIMPzZ9hE4Dva7ZMtM7npbwe8,1938
+aws_ecs_task_render-0.6.0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+aws_ecs_task_render-0.6.0.dist-info/entry_points.txt,sha256=0gCXJTbJpjWf8gYnMdbk55fnX9Mwi2ctxKs7X-6K8DE,75
+aws_ecs_task_render-0.6.0.dist-info/top_level.txt,sha256=CyTQMgIVD0z_EBF9J-wxlq0vZAOlfO53dvmSTYSoSJY,20
+aws_ecs_task_render-0.6.0.dist-info/RECORD,,
