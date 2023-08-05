@@ -1,0 +1,7 @@
+LICENSE
+README.md
+setup.py
+libsrgtk.egg-info/PKG-INFO
+libsrgtk.egg-info/SOURCES.txt
+libsrgtk.egg-info/dependency_links.txt
+libsrgtk.egg-info/top_level.txt
