@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+README.rst
+setup.py
+kolibri_google_analytics_plugin/__init__.py
+kolibri_google_analytics_plugin/kolibri_plugin.py
+kolibri_google_analytics_plugin/options.py
+kolibri_google_analytics_plugin.egg-info/PKG-INFO
+kolibri_google_analytics_plugin.egg-info/SOURCES.txt
+kolibri_google_analytics_plugin.egg-info/dependency_links.txt
+kolibri_google_analytics_plugin.egg-info/entry_points.txt
+kolibri_google_analytics_plugin.egg-info/not-zip-safe
+kolibri_google_analytics_plugin.egg-info/top_level.txt

@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: kolibri_google_analytics_plugin
+Version: 0.1.0
+Summary: A plugin to provide Google Analytics support for Kolibri
+Home-page: https://github.com/endlessm/kolibri-google-analytics-plugin
+Author: Endless OS Foundation
+Author-email: maintainers@endlessos.org
+License: MIT
+Keywords: kolibri
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+License-File: LICENSE
+
+
+A plugin that provides Google Analytics support for the frontend and backend
+of Kolibri. See the `Github repo <https://github.com/endlessm/kolibri-google-analytics-plugin>`_ for more details.

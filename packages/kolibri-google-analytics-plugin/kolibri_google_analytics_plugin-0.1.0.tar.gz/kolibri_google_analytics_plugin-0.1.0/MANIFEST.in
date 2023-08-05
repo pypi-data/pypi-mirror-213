@@ -1,0 +1,8 @@
+include LICENSE
+include README.rst
+include requirements.txt
+recursive-exclude kolibri_google_analytics_plugin/* *pyc
+recursive-include kolibri_google_analytics_plugin/static *.*
+
+recursive-include kolibri_google_analytics_plugin/build *.json
+recursive-exclude kolibri_google_analytics_plugin/assets *
