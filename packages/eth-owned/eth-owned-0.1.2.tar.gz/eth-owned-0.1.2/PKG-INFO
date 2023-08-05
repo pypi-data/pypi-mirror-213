@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: eth-owned
+Version: 0.1.2
+Summary: EIP 173 interface and tools
+Home-page: https://holbrook.no/src/eth-owned/log.html
+Author: Louis Holbrook
+Author-email: dev@holbrook.no
+License: AGPL3
+Keywords: ethereum
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: No Input/Output (Daemon)
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU Affero General Public License v3 or later (AGPLv3+)
+Classifier: Topic :: Internet
+Classifier: Topic :: Software Development :: Libraries
+Requires-Python: >=3.8
+Provides-Extra: testing
+License-File: LICENSE
