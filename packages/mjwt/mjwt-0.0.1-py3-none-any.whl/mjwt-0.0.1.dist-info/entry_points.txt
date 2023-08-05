@@ -1,0 +1,6 @@
+[console_scripts]
+
+
+[nbdev]
+mjwt = mjwt._modidx:d
+
