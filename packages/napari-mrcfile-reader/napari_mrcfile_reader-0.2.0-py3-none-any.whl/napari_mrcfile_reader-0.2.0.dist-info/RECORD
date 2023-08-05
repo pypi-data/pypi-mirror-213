@@ -1,0 +1,11 @@
+napari_mrcfile_reader/__init__.py,sha256=Yd7cu-MtMEpg1f1zwHzZF_S4GJ9lkzXU-VVEvPeSnoM,187
+napari_mrcfile_reader/_reader.py,sha256=xZ6T1fQHXo5MBoHt9irCeLLuFK942zjAHC1_anAZmAA,3097
+napari_mrcfile_reader/_version.py,sha256=dQUHa1PGpJsNE2x_SQFxtOX-jousEqplwH1bdsk6mnE,160
+napari_mrcfile_reader/napari.yaml,sha256=mhiKUttomlZ_hP3Q6VT9Vy90V5xA7Zi_L15GRXCD_GE,500
+napari_mrcfile_reader/_tests/test_reader.py,sha256=zReoeocw-2faLRbOjl7SqQlhLgiuZSSLhqMqZYEF8R4,1023
+napari_mrcfile_reader-0.2.0.dist-info/LICENSE,sha256=-scU6uN62qNxQSgbcoavK2JZR4MwaviMPuDhClJHHSI,1492
+napari_mrcfile_reader-0.2.0.dist-info/METADATA,sha256=VCLpWccyOoVrN99BVNsaivCuawplASB4UWxpRlgcwwk,3894
+napari_mrcfile_reader-0.2.0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+napari_mrcfile_reader-0.2.0.dist-info/entry_points.txt,sha256=tnzfVAauhIInYfis3tv-oRrXBpok4cwe22xhr5VVVi0,76
+napari_mrcfile_reader-0.2.0.dist-info/top_level.txt,sha256=hKJkFLkVfo6EYAG569b-OSWsFdZfZhXEexhIvZKaW-8,22
+napari_mrcfile_reader-0.2.0.dist-info/RECORD,,
