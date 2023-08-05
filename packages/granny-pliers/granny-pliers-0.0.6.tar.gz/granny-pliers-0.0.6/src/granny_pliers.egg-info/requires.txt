@@ -1,0 +1,18 @@
+
+[:python_version >= "3.8"]
+structlog>=23.1.0
+colorama>=0.4.6
+jsonplus>=0.8.0
+cryptography>=41.0.1
+aiohttp>=3.8.4
+aiofiles>=23.1.0
+dateparser>=1.1.8
+PyYAML>=6.0
+
+[dev]
+black>=22.3.0
+pylint>=2.17.4
+
+[test]
+coverage>=7.2.7
+pytest>=7.3.1
