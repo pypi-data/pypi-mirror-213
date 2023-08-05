@@ -1,0 +1,42 @@
+[tool.poetry]
+name = "orbit-component-vcheck"
+version = "1.0.10"
+description = "Orbit Component to track product versions"
+authors = ["Gareth Bult <gareth@madpenguin.uk>"]
+license = "MIT"
+readme = "README.md"
+include = ['README.md', 'LICENSE.md']
+packages = [{include = "orbit_component_vcheck"}]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Development Status :: 4 - Beta",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Topic :: Database :: Database Engines/Servers",
+    "Intended Audience :: Developers",
+]
+homepage = "https://gitlab.com/madpenguin/orbit-component-vcheck"
+repository = "https://gitlab.com/madpenguin/orbit-component-vcheck"
+documentation = "https://gitlab.com/madpenguin/orbit-component-vcheck"
+
+[project.urls]
+"Homepage" = "https://gitlab.com/madpenguin/orbit-component-vcheck"
+"Bug Tracker" = "https://gitlab.com/madpenguin/orbit-component-vcheck/-/issues"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+orbit-database = "^1.0"
+loguru = "^0.7.0"
+pygments = "^2.15.1"
+bs4 = "^0.0.1"
+orbit-component-base = "^1.0"
+rich = "^13.3.5"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.3.1"
+pytest-asyncio = "^0.21.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

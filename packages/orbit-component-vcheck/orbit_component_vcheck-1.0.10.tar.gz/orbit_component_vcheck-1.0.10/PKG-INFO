@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: orbit-component-vcheck
+Version: 1.0.10
+Summary: Orbit Component to track product versions
+Home-page: https://gitlab.com/madpenguin/orbit-component-vcheck
+License: MIT
+Author: Gareth Bult
+Author-email: gareth@madpenguin.uk
+Requires-Python: >=3.10,<4.0
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Topic :: Database :: Database Engines/Servers
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Dist: bs4 (>=0.0.1,<0.0.2)
+Requires-Dist: loguru (>=0.7.0,<0.8.0)
+Requires-Dist: orbit-component-base (>=1.0,<2.0)
+Requires-Dist: orbit-database (>=1.0,<2.0)
+Requires-Dist: pygments (>=2.15.1,<3.0.0)
+Requires-Dist: rich (>=13.3.5,<14.0.0)
+Project-URL: Documentation, https://gitlab.com/madpenguin/orbit-component-vcheck
+Project-URL: Repository, https://gitlab.com/madpenguin/orbit-component-vcheck
+Description-Content-Type: text/markdown
+
+# Orbit Component :: VCheck
+
+#### This reusable component provides an example version checking system that allows other Orbit applications maintain a connection to a central server in order to be notified in real time of any version changes. Written more as a demo that the finished article, but good as a general purpose example.
+
+
