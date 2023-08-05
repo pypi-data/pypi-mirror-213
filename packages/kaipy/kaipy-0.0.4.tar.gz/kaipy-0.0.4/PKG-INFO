@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: kaipy
+Version: 0.0.4
+Summary: Postprocessing code for models in the kaiju software system
+Home-page: https://bitbucket.org/aplkaiju/kaiju/src/master/
+Author: Center for Geospace Storms
+Author-email: eric.winter@jhuapl.edu
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+
+# Project Kaiju
+Simulation tools for space plasmas using fluid and particle models.
+
+To build:
+Create a build folder.
+From inside the build folder, call cmake on the base kaiju directory.
+From inside the build folder, call "make" to build the application.
+
+To use Python tools:
+Assuming $KAIJUDIR is base installation directory, add $KAIJUDIR/scripts to $PATH and $KAIJUDIR to $PYTHONPATH.  
+
+For help, see the wiki at
+https://bitbucket.org/aplkaiju/kaiju/wiki/Home
