@@ -1,0 +1,6 @@
+[console_scripts]
+gettext-extract = jupyterlab_translate.gettext_extract:main
+jupyterlab-translate = jupyterlab_translate.cli:main
+
+[hatch]
+jupyter-translate = jupyterlab_translate.hooks
