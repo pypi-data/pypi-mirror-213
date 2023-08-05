@@ -1,0 +1,2 @@
+[prefect.collections]
+langchain_prefect = langchain_prefect
