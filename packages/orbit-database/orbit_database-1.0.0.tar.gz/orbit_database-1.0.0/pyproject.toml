@@ -1,0 +1,59 @@
+[tool.poetry]
+name = "orbit_database"
+version = "1.0.0"
+description = "Database library for Python based on LMDB storage engine"
+authors = ["Gareth Bult <gareth@madpenguin.uk>"]
+readme = "README.md"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Development Status :: 4 - Beta",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Topic :: Database :: Database Engines/Servers",
+    "Intended Audience :: Developers",
+]
+keywords = ['database', 'nosql', 'lmdb']
+include = ['README.md', 'LICENSE.md']
+homepage = "https://gitlab.com/madpenguin/orbit-database"
+repository = "https://gitlab.com/madpenguin/orbit-database"
+documentation = "https://gitlab.com/madpenguin/orbit-database"
+
+[project.urls]
+"Homepage" = "https://gitlab.com/madpenguin/orbit-database"
+"Bug Tracker" = "https://gitlab.com/madpenguin/orbit-database/-/issues"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+posix-ipc = "^1.1.1"
+lmdb = "^1.4.1"
+
+[tool.poetry.dev-dependencies]
+pipenv = "*"
+pytest = "*"
+pytest-cov = "*"
+coverage = "*"
+ujson = "*"
+orjson = "*"
+zstandard = "*"
+python-snappy = "*"
+tox = "*"
+lxml = "*"
+nltk = "*"
+
+[tool.poetry.group.dev.dependencies]
+pytest-asyncio = "^0.20.3"
+bs4 = "^0.0.1"
+pytest = "^7.3.1"
+poetry = "^1.4.2"
+pip = "^23.1"
+pytest-cov = "^4.0.0"
+coverage = "^7.2.3"
+coverage-badge = "^1.1.0"
+unittest2 = "^1.1.0"
+zstandard = "^0.21.0"
+python-snappy = "^0.6.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
