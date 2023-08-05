@@ -1,0 +1,14 @@
+MANIFEST.in
+changelog.md
+license
+manifest.in
+readme.md
+setup.py
+mkdocs_table_of_figures/__init__.py
+mkdocs_table_of_figures/plugin.py
+mkdocs_table_of_figures.egg-info/PKG-INFO
+mkdocs_table_of_figures.egg-info/SOURCES.txt
+mkdocs_table_of_figures.egg-info/dependency_links.txt
+mkdocs_table_of_figures.egg-info/entry_points.txt
+mkdocs_table_of_figures.egg-info/requires.txt
+mkdocs_table_of_figures.egg-info/top_level.txt
