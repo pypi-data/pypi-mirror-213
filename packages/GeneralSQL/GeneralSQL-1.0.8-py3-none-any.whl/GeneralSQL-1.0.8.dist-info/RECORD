@@ -1,0 +1,11 @@
+GeneralSQL/Error.py,sha256=kBrYZ17K0Jps9-DY3QFG_tLa9GOrLBJvoTLv8wwxfMk,2321
+GeneralSQL/__init__.py,sha256=8euyr9mlCMsLRFg32_3SugYrnZYrMFqe59g7v0ZW9CY,2155
+GeneralSQL/Template/__init__.py,sha256=F80meUoOqQIOiYxE9ryCJzTMqFPBOwajkaf6Gk1e7Zk,1431
+GeneralSQL/Template/base.py,sha256=oQTj7lN5JmlD3l3fG3-pm3dD8lPd0e6T1H5b0yOxToE,3024
+GeneralSQL/db/Jmysql.py,sha256=Zrks5OJog5Hxj-ghUy8xw_-mBgSzLlU_jIIyZDSEII8,14741
+GeneralSQL/db/__init__.py,sha256=PgWm-6m5ZDVt2vjNOtrgO7sQYzXa6A0p8Y2RnoZNTl0,57
+GeneralSQL-1.0.8.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+GeneralSQL-1.0.8.dist-info/METADATA,sha256=H8dwaZeH0w8YR8ef0QkGt6X3ITXa_xsYoqPBqgIB1IM,1888
+GeneralSQL-1.0.8.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+GeneralSQL-1.0.8.dist-info/top_level.txt,sha256=N28y8Tp5KNt4vFIdlg6UXzrY9QGtXwgK-oqRvdRBuh8,11
+GeneralSQL-1.0.8.dist-info/RECORD,,
