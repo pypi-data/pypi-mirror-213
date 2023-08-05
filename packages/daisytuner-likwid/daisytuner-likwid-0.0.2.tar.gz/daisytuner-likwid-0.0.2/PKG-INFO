@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: daisytuner-likwid
+Version: 0.0.2
+Summary: Likwid functions used by the daisytuner
+Home-page: https://github.com/daisytuner/daisytuner-likwid
+Author: Lukas Truemper
+Author-email: lukas.truemper@outlook.de
+Classifier: Topic :: Utilities
+Requires-Python: >=3.6
+License-File: LICENSE
+
+Likwid functions used by the daisytuner

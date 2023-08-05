@@ -1,0 +1,8 @@
+LICENSE
+README.md
+daisy_likwid_helpers.c
+setup.py
+daisytuner_likwid.egg-info/PKG-INFO
+daisytuner_likwid.egg-info/SOURCES.txt
+daisytuner_likwid.egg-info/dependency_links.txt
+daisytuner_likwid.egg-info/top_level.txt
