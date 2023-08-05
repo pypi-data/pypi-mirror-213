@@ -1,0 +1,5 @@
+[console_scripts]
+xenosite-fragment = xenosite.fragment.__main__:app
+
+[xenosite_command]
+fragment = xenosite.fragment.__main__:app
