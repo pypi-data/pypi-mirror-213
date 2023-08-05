@@ -1,0 +1,13 @@
+hasiihelper/Dimensions.py,sha256=wOoxIpyWQLRT2xPaS9pc5N6GVq8LEpa9hjUveP-hhzA,705
+hasiihelper/Position.py,sha256=LeYer9UHP49hmGSpO52o2WOQvUFUVlFiuQudUxiRKx0,694
+hasiihelper/ResourceManager.py,sha256=_D3sebEAKIdrusvw5jNk11c0xFy_C6iMAY17xCuzSdA,1123
+hasiihelper/SemanticVersion.py,sha256=vvPXLnAbjgGjV88j19W4AuQTt8Zy_W-FJ0KLMe31pmQ,5601
+hasiihelper/Singleton.py,sha256=4neFrQZ-ucxUmnOS4NCqox49SdqO3xl8dDN4FDf7B9E,1832
+hasiihelper/UnitTestBase.py,sha256=tb_DlLny6otHESqLXC636RwhxxPrRxjv5EGoyr0KEBM,2369
+hasiihelper/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+hasiihelper/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+hasiihelper-0.2.1.dist-info/LICENSE,sha256=hIahDEOTzuHCU5J2nd07LWwkLW7Hko4UFO__ffsvB-8,34523
+hasiihelper-0.2.1.dist-info/METADATA,sha256=xg7_RZ_NadzdiVsVNL80_kRdWnA9Femh5kTqEqrYOj8,2067
+hasiihelper-0.2.1.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+hasiihelper-0.2.1.dist-info/top_level.txt,sha256=EiocqRXsv_1WBTpr2Wk5p2cqvflZ1NHVXJMaV9NPX6g,12
+hasiihelper-0.2.1.dist-info/RECORD,,
