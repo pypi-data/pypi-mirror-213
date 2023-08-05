@@ -1,0 +1,37 @@
+Metadata-Version: 2.1
+Name: altcos-common
+Version: 0.0.1
+Summary: Components for working with altcos
+Author-email: Ivan Pepelyaev <fl0pp5@altlinux.org>
+Project-URL: Homepage, https://github.com/fl0pp5/altcos-common
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: POSIX :: Linux
+Classifier: License :: OSI Approved :: MIT License
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pygobject
+
+# altcos-common
+
+Библиотека для удобного взаимодейтсвия с `altcos`-репозиториями.
+
+# Пример
+
+Получение последнего коммита
+```python
+import altcos
+import os
+
+from altcos import ostree
+
+# Путь до корня altcos-репозитория
+SR = os.environ["STREAMS_ROOT"]
+
+# Создание экземпляра потока на основе названия ветки
+stream = ostree.Stream.from_ostree_ref(SR, "altcos/x86_64/sisyphus")
+# Открытие ostree репозитория (по умолчанию в режиме bare)
+repo = ostree.Repository(stream).open()
+# Получение последнего коммита
+print(repo.last_commit())
+```

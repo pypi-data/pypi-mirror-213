@@ -1,0 +1,9 @@
+altcos/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+altcos/build.py,sha256=nhsJnk6k_YdaEQGY3gkcNswIP9B1rc6raqGWCZHDTK4,676
+altcos/common.py,sha256=LsPEUL5C3HTIY3zc7xurWY000K-ADgOeoARDL-1vwF4,174
+altcos/ostree.py,sha256=iH-Ek2_0ZN2R80Sy9Ep7iIR7IlNHvGtIG8n2fzxWw38,7745
+altcos_common-0.0.1.dist-info/LICENSE,sha256=jJ9hBxpXq28UCp3pBwZ1AkMYLUGScIV7qZIi6d-NeAM,1070
+altcos_common-0.0.1.dist-info/METADATA,sha256=umLwHk4W_8_qgk0MubJ8HDjhxRS9aOea04lHrB9CAv4,1219
+altcos_common-0.0.1.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+altcos_common-0.0.1.dist-info/top_level.txt,sha256=Nbwl0_Ow1lSez2qRr25wX7UhwrYQjfTT6bmP0TvAm7M,7
+altcos_common-0.0.1.dist-info/RECORD,,
