@@ -1,0 +1,3 @@
+beautifulsoup4
+wget
+git+https://github.com/PanQiWei/AutoGPTQ@v0.2.1
