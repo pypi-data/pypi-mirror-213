@@ -1,0 +1,38 @@
+Metadata-Version: 2.1
+Name: sphinx-xournal
+Version: 0.0.1
+Summary: Sphinx extension to generate images from xournal files.
+Keywords: sphinx,xournal,notes
+Author-email: Arkadiusz Michał Ryś <Arkadiusz.Michal.Rys@gmail.com>
+Requires-Python: >=3.10
+Description-Content-Type: text/x-rst
+Classifier: License :: OSI Approved :: GNU Library or Lesser General Public License (LGPL)
+Classifier: Programming Language :: Python :: 3
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Requires-Dist: sphinx>=5,<8
+Requires-Dist: docutils>=0.15,<2
+Requires-Dist: tox~=4.6.0 ; extra == "dev"
+Requires-Dist: pip~=23.1.2 ; extra == "dev"
+Requires-Dist: flit~=3.9.0 ; extra == "dev"
+Requires-Dist: twine~=4.0.2 ; extra == "dev"
+Requires-Dist: vermin~=1.5.1 ; extra == "dev"
+Requires-Dist: invoke~=2.1.2 ; extra == "dev"
+Requires-Dist: jinja2~=3.1.2 ; extra == "dev"
+Requires-Dist: flake8~=6.0.0 ; extra == "dev"
+Requires-Dist: coverage~=7.2.7 ; extra == "dev"
+Requires-Dist: pytest~=7.3.1 ; extra == "test"
+Project-URL: source, https://git.rys.one/arrys/sphinx-xournal
+Provides-Extra: dev
+Provides-Extra: doc
+Provides-Extra: graphical
+Provides-Extra: test
+
+==============
+Sphinx Xournal
+==============
+
+.. image:: https://img.shields.io/pypi/v/sphinx-xournal.svg
+        :target: https://pypi.python.org/pypi/sphinx-xournal
+
