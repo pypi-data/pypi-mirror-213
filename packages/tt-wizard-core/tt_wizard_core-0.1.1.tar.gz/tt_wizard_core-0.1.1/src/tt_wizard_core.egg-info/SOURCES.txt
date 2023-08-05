@@ -1,0 +1,11 @@
+Example.py
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+src/tt_wizard_core.py
+src/tt_wizard_core.egg-info/PKG-INFO
+src/tt_wizard_core.egg-info/SOURCES.txt
+src/tt_wizard_core.egg-info/dependency_links.txt
+src/tt_wizard_core.egg-info/requires.txt
+src/tt_wizard_core.egg-info/top_level.txt
