@@ -1,0 +1,14 @@
+villa/__init__.py,sha256=2mPUPjwrrfFGc8t8rfPu4h94UWGA22yt04GHJZ6Fw9w,120
+villa/bot.py,sha256=IVgj4SIxUBkxxOIakTYyKtAoUfSYF3uEjFI5I4PIHSs,30542
+villa/event.py,sha256=-_n-loSsmZCpjMON0mPXBFhaNZnjWrqBn-x_SxsjwnQ,7799
+villa/exception.py,sha256=k7eX1tEAnHMw7KQvZ-JObp0KSfmlkKydezYbVgckYzQ,473
+villa/log.py,sha256=sZiMrcFRrpZFiw9RfIkuNe2dYvuPgX0bGxxeW6t4JxI,1504
+villa/message.py,sha256=T3hp35EZlZ9Aehg6CeO6j0_tQCOP6iPNh42ZWjF6aP0,16613
+villa/models.py,sha256=UcKilXMg85lkk-8MAiKOyyrRJssYfnZi7t_YHh2E6VY,9982
+villa/store.py,sha256=BZY01mWGrS4YNxc1-ZPYvdzWjDWuzJUqBeM1k_SJP-o,113
+villa/typing.py,sha256=MJP9EfzHxMTsecVBgLDFiqQgjdK9DNCseQg_QGsDcog,794
+villa/utils.py,sha256=ATcspJ08XQUjHjtnzB_kjpakRXGHXlI3ns-xs9BV4WY,995
+villa-0.1.2.dist-info/LICENSE,sha256=j26kGmIlTFZ_5VeJFWSyyQFM38h0P3dT6AQHDcJ6JR4,1062
+villa-0.1.2.dist-info/METADATA,sha256=fObITSCMUgKzv9uUrmhm9ttLhFB19DNJU2Ftv5FwGaA,3351
+villa-0.1.2.dist-info/WHEEL,sha256=Zb28QaM1gQi8f4VCBhsUklF61CTlNYfs9YAZn-TOGFk,88
+villa-0.1.2.dist-info/RECORD,,
