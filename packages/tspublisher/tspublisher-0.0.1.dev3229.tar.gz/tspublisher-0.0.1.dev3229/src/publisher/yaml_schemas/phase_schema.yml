@@ -1,0 +1,124 @@
+name: str(required=True)
+publish: enum("yes", "no")
+supported_app: str(equals="touchsurgery")
+distribution_groups: list()
+country_restriction: str()
+assets: list(include('icon_template'), min=1, max=1)
+objectives: list(include('objective_template'))
+test_objectives: list(include('objective_template'))
+---
+icon_template:
+  icon:
+    name: any(str(min=1), int(), required=True)
+    code: any(str(min=1), int(), required=True)
+objective_template:
+  name: str(required=True)
+  code: any(str(min=1), int(), required=True)
+  steps: list(include('step_template'), min=1)
+step_template:
+  code: any(str(min=1), int(), required=True)
+  studio_metadata: map(required=False)
+  widgets: list(
+    include('text_widget_template'),
+    include('auto_complete_widget_template'),
+    include('tap_widget_template'),
+    include('dragger_ab_template'),
+    include('dragger_dir_template'),
+    include('label_template'),
+    include('pip_template'),
+    include('gallery_widget_template'),
+    include('flipbook_template'),
+    include('question_template'),
+    min=1
+    )
+  assets: list(include('step_video_template'), include('step_image_template'), min=1, max=2)
+step_image_template:
+  image:
+    name: any(str(min=1), int(), required=True)
+    code: any(str(min=1), int(), required=True)
+step_video_template:
+  video:
+    name: any(str(min=1), int(), required=True)
+    code: any(str(min=1), int(), required=True)
+text_widget_template:
+  text:
+    code: any(str(min=1), int(), required=True)
+    content: str()
+    information_cards: list(include('information_card_template'), required=False)
+auto_complete_widget_template:
+  auto_complete:
+    code: any(str(min=1), int(), required=True)
+    duration: int(min=0)
+tap_widget_template:
+  tap:
+    code: any(str(min=1), int(), required=True)
+    position_x: num(min=0, max=1, required=True)
+    position_y: num(min=0, max=1, required=True)
+    duration: int(min=0, required=True)
+    min_value: any(int(), str(), required=False)  # TODO: should be int only
+    max_value: any(int(), str(), required=False)  # TODO: should be int only
+    units: str(required=False)
+dragger_ab_template:
+  dragger_ab:
+    code: any(str(min=1), int(), required=True)
+    start_x: num(min=0, max=1, required=True)
+    start_y: num(min=0, max=1, required=True)
+    target_x: num(min=0, max=1, required=True)
+    target_y: num(min=0, max=1, required=True)
+dragger_dir_template:
+  dragger_directional:
+    code: any(str(min=1), int(), required=True)
+    start_x: num(min=0, max=1, required=True)
+    start_y: num(min=0, max=1, required=True)
+    target_angle: num(min=0, max=360, required=True)
+    tolerance: int(required=True)
+    distance: num(required=True)
+label_template:
+  label:
+    code: any(str(min=1), int(), required=True)
+    position_x: num(min=0, max=1, required=True)
+    position_y: num(min=0, max=1, required=True)
+    text_anchor_x: num(min=0, max=1, required=False)
+    text_anchor_y: num(min=0, max=1, required=False)
+    content: str()
+    information_cards: list(include('information_card_template'), required=False)
+pip_template:
+  pip:
+    code: any(str(min=1), int(), required=True)
+    position: enum("topRight", "topLeft", "middleRight", "middleLeft", "bottomRight", "bottomLeft")
+    expandable: bool()
+    shrinkable: bool()
+    assets: list(include('step_image_template'), include('step_video_template'), min=1)
+gallery_widget_template:
+  gallery:
+    code: any(str(min=1), int(), required=True)
+    items: list(include('gallery_image_template'), include('gallery_video_template'), min=1, max=9)
+gallery_image_template:
+  title: str()
+  text: str()
+  image:
+    name: any(str(min=1), int(), required=True)
+    code: any(str(min=1), int(), required=True)
+  thumbnail:
+    name: any(str(min=1), int(), required=True)
+    code: any(str(min=1), int(), required=True)
+gallery_video_template:
+  title: str()
+  text: str()
+  video:
+    name: any(str(min=1), int(), required=True)
+    code: any(str(min=1), int(), required=True)
+  thumbnail:
+    name: any(str(min=1), int(), required=True)
+    code: any(str(min=1), int(), required=True)
+flipbook_template:
+  flip_book:
+    code: any(str(min=1), int(), required=True)
+    scrubber_position: enum("top", "bottom", "left", "right")
+    assets: list(include('step_video_template'), include('step_image_template') ,min=2, max=2)
+question_template:
+  mcq:
+    code: any(str(min=1), int(), required=True)
+    content: str(min=1, required=True)
+    answer: str(min=1, required=True)
+    choices: list(str(min=1), min=1, max=3, required=True)
