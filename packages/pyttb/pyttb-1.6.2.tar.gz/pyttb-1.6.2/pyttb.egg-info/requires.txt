@@ -1,0 +1,14 @@
+numpy
+numpy_groupies
+scipy
+
+[dev]
+black
+isort
+pylint
+mypy
+pytest
+pytest-cov
+
+[doc]
+sphinx_rtd_theme
