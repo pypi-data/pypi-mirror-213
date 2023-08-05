@@ -1,0 +1,6 @@
+README.md
+setup.py
+langtest.egg-info/PKG-INFO
+langtest.egg-info/SOURCES.txt
+langtest.egg-info/dependency_links.txt
+langtest.egg-info/top_level.txt
