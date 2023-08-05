@@ -1,0 +1,16 @@
+-c requirements-build.txt
+
+Flask<2.3
+Flask-Caching
+Flask-Cors
+Flask-HTTPAuth
+Flask-JWT-Extended
+Flask-Limiter
+Flask-SQLAlchemy
+json2html
+jsonschema
+nest-asyncio
+netaddr
+vbcore[all]==2.0.*
+webargs
+xmltodict

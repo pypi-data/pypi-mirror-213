@@ -1,0 +1,13 @@
+-c requirements.txt
+
+pyfcm
+stripe
+redis
+hiredis
+gunicorn
+gevent
+gevent_websocket
+Flask-Mail
+Flask-APScheduler
+flask_pymongo
+flask_socketio

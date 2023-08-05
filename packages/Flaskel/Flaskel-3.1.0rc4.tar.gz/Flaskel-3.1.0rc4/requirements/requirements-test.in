@@ -1,0 +1,7 @@
+-c requirements.txt
+-c requirements-extra.txt
+
+coverage
+pytest
+pytest-cov
+responses
