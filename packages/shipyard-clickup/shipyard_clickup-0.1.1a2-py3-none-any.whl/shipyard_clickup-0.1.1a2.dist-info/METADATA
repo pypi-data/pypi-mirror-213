@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: shipyard-clickup
+Version: 0.1.1a2
+Summary: 
+Author: wrp801
+Author-email: wespoulsen@gmail.com
+Requires-Python: >=3.9,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: datetime (>=5.1,<6.0)
+Requires-Dist: requests (==2.31.0)
+Requires-Dist: shipyard-templates (==0.1.5)
+Description-Content-Type: text/markdown
+
+

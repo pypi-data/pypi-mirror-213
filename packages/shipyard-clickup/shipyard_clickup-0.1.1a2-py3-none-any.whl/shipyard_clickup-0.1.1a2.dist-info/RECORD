@@ -1,0 +1,8 @@
+shipyard_clickup/__init__.py,sha256=zj4vRjiB8LVSDghfm4yVde2THlFZ7uhEuW8Qimcp1zE,34
+shipyard_clickup/cli/add_comment.py,sha256=XeeKu4KHhN9DRc1S0EJTJelW_IzFfLLmyo6124RijZI,1183
+shipyard_clickup/cli/create_task.py,sha256=PCU0LFwcQuBMgWkRqmJK5VuPHyoJcp-QP3JrwtDma_A,1380
+shipyard_clickup/cli/edit_task.py,sha256=6arSrrgakEyqfm1ci3Kdnk5_pucHltG2R49Pi-jf1YA,1366
+shipyard_clickup/clickup.py,sha256=SJgFgBddSGLZTSfLfhVD_84g9LE1O9QvDREcatGCCOo,6365
+shipyard_clickup-0.1.1a2.dist-info/METADATA,sha256=jqBEbWTy4BA0atifAavcjqSyluT7TNYD7tlhZYnwUI0,508
+shipyard_clickup-0.1.1a2.dist-info/WHEEL,sha256=7Z8_27uaHI_UZAc4Uox4PpBhQ9Y5_modZXWMxtUi4NU,88
+shipyard_clickup-0.1.1a2.dist-info/RECORD,,
