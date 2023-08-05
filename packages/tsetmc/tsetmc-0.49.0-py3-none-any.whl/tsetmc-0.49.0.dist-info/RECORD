@@ -1,0 +1,12 @@
+tsetmc/__init__.py,sha256=pjny-IQEe0cOckv7ObiAbo4DZqNUMx9pdGdSVk321OY,5456
+tsetmc/docs.py,sha256=qXbtlDUECngXFqtS53-r6Ft-yAzUicDcejLD8KlCSpA,3450
+tsetmc/general.py,sha256=MwjI2wRUgti-QKyUqb5UpLdS6G0Ylg180N6BLw6Lbas,3867
+tsetmc/instruments.py,sha256=ELeI98k_BRYLpxMq47yfqujoCWTuRLRBfGVD2-9QfeU,34634
+tsetmc/market_watch.py,sha256=BZYGDqH0gPtfAEIUMxqOLpzDR-ZwpPsiV2CujiMHdkE,11301
+tsetmc/dataset/__init__.py,sha256=4d26BGsE-wf9hAyiCTWu1Z2XUB7JIBQLcrbX5omrSUA,2085
+tsetmc/dataset/dataset.csv,sha256=-wEvuBZB8itwFN8qjEsPlivfe2S0fv63aLSMD1vwEMg,98340
+tsetmc-0.49.0.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+tsetmc-0.49.0.dist-info/METADATA,sha256=WEwZzAQ8sgV8YwdlRNWFdYnepqYVIxN--13HRbSZsLE,10593
+tsetmc-0.49.0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+tsetmc-0.49.0.dist-info/top_level.txt,sha256=eGvJyDlzkONKexTNAdwZykW0lxyaaNw-FiBpt8yHww4,7
+tsetmc-0.49.0.dist-info/RECORD,,
