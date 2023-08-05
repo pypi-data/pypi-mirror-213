@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: pybsn
+Version: 0.4.0
+Summary: pybsn is a python interface to Big Switch Networks' products
+Home-page: https://github.com/floodlight/pybsn
+Author: Andreas Wundsam, Andre Kutzleb, Jason Parraga, Rich Lane
+Author-email: Andreas.Wundsam@arista.com, Andre.Kutzleb@arista.com
+License: ECLIPSE
+License-File: LICENSE
+Requires-Dist: requests (>=2.3.0)
+Requires-Dist: IPython (>=7.9)
+Requires-Dist: traitlets (>=4.3.3)
+
