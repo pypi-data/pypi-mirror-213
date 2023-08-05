@@ -1,0 +1,7 @@
+t2qc:
+  t2w:
+    tags:
+      - .*#t2w_(?P<run>\d+).* 
+  t2w_vnav:
+    tags:
+      - .*#t2w_move_(?P<run>\d+).*
