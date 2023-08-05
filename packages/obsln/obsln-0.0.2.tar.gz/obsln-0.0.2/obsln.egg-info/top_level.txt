@@ -1,0 +1,2 @@
+libsegy_Linux_64bit_py310
+obsln
