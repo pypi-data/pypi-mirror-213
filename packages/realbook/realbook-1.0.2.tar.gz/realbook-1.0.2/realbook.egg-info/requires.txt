@@ -1,0 +1,37 @@
+tensorboard
+types-protobuf
+numpy
+typing_extensions
+
+[:sys_platform != "darwin" or platform_machine != "arm64"]
+tensorflow>=2.4
+
+[:sys_platform == "darwin" and platform_machine == "arm64"]
+tensorflow-macos>=2.4
+
+[dev]
+realbook[tensorboard,test]
+bumpversion>=0.5.3
+
+[tensorboard]
+matplotlib
+psutil
+nvsmi
+librosa<0.10,>=0.9
+
+[test]
+coverage>=5.0.2
+pytest>=7.1.1
+pytest-cov>=4.0.0
+pytest-mock>=3.10.0
+tox
+torch
+nnaudio
+numpy==1.21.6
+librosa<0.10,>=0.9
+
+[test:sys_platform != "darwin" or platform_machine != "arm64"]
+tensorflow<2.11,>=2.4
+
+[test:sys_platform == "darwin" and platform_machine == "arm64"]
+tensorflow-macos<2.11,>=2.4
