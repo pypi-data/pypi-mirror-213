@@ -1,0 +1,2 @@
+[kolibri.plugins]
+kolibri_google_analytics_plugin = kolibri_google_analytics_plugin
