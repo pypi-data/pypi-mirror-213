@@ -1,0 +1,2 @@
+[console_scripts]
+pyThorlabsTC300 = pyThorlabsTC300.main:main
