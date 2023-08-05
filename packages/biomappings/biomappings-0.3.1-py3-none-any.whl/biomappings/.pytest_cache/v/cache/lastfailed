@@ -1,0 +1,6 @@
+{
+  "semra.py::TestOperations::test_mixed_inference_1": true,
+  "semra.py::TestOperations::test_infer_broad_match": true,
+  "semra.py": true,
+  "semra.py::TestOperations::test_infer_exact_match": true
+}

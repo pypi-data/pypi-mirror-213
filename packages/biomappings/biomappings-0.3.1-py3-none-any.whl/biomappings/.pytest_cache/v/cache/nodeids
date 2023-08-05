@@ -1,0 +1,11 @@
+[
+  "semra.py::TestOperations::test_flip_exact_match",
+  "semra.py::TestOperations::test_flip_narrow",
+  "semra.py::TestOperations::test_index",
+  "semra.py::TestOperations::test_infer",
+  "semra.py::TestOperations::test_infer_broad_match",
+  "semra.py::TestOperations::test_infer_exact_match",
+  "semra.py::TestOperations::test_infer_narrow_match",
+  "semra.py::TestOperations::test_mixed_inference_1",
+  "semra.py::TestOperations::test_path"
+]
