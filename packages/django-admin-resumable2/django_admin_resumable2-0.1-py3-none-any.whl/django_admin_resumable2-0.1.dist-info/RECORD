@@ -1,0 +1,13 @@
+admin_resumable2/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+admin_resumable2/fields.py,sha256=gQ7C_avpfhkv8PG2ucw6YlGRlYO-JNqpaeNoxXfpH-0,3591
+admin_resumable2/files.py,sha256=5ZW9THrRxu-A2E_2HGWzmUwtMxMroaMH2XuRfYSKQZg,3076
+admin_resumable2/tests.py,sha256=mrbGGRNg5jwbTJtWWa7zSKdDyeB4vmgZCRc2nk6VY-g,60
+admin_resumable2/urls.py,sha256=e2YjneSAE49cfdEOHmdMxW3iCQuLjxlywkYaWyy1_r4,155
+admin_resumable2/views.py,sha256=QmBgU7gVkk2y5fGBV__TgZGTou-a1g-dcR_mh3AwZbw,2412
+admin_resumable2/static/admin_resumable2/js/resumable.js,sha256=9DIesGE8qXj2Hd5qQxXo9S0HaIa1pTX2r45xKszTUjw,37199
+admin_resumable2/templates/admin_resumable2/file_input.html,sha256=ki26EuvHYozark4JCtjOL_gSsaNimTIoRNfomRh0FhA,1963
+django_admin_resumable2-0.1.dist-info/LICENSE,sha256=bjdQH_m8PyZWBQDYSWwRxjuaDEzeDKd_lA2TbfizYPw,1072
+django_admin_resumable2-0.1.dist-info/METADATA,sha256=REFv0tudSslaxE6X_FpQRm-yTcbktzNJtROdRB25qQI,3851
+django_admin_resumable2-0.1.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+django_admin_resumable2-0.1.dist-info/top_level.txt,sha256=wnJC6Ag-k90mz7VggYQPYogr6hpA5GWv0JcvOdR4CHg,17
+django_admin_resumable2-0.1.dist-info/RECORD,,
