@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: pisoundtrack
+Version: 0.2.5
+Summary: Raspberry Pi Sound tracking and influx output
+Home-page: https://github.com/Phornee/pisoundtrack
+Author: Ismael Raya
+Author-email: phornee@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Topic :: Home Automation
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: config-yml (>=0.3.1)
+Requires-Dist: log-mgr (>=0.0.2)
+Requires-Dist: influxdb-wrapper (>=0.0.5)
+Requires-Dist: numpy (>=1.21.5)
+Requires-Dist: pyaudio (==0.2.11)
+
+# pisoundtrack
+Track sounds from mic and outputs it to influx
+
+
