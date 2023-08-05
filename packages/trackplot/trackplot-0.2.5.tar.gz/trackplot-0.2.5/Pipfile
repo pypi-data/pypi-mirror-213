@@ -1,0 +1,27 @@
+[[source]]
+url = "https://pypi.org/simple/"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+adjusttext = "*"
+cairocffi = "1.4.0"
+click = "*"
+click-option-group = "*"
+filetype = "*"
+hicmatrix = "*"
+loguru = "*"
+matplotlib = "*"
+numpy = "*"
+pandas = "*"
+pybigwig = "*"
+pysam = "*"
+requests = "*"
+scipy = "*"
+seaborn = "*"
+xmltodict = "*"
+
+[dev-packages]
+
+[requires]
+python_version = "3"
