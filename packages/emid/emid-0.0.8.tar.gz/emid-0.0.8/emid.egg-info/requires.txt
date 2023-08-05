@@ -1,0 +1,6 @@
+numpy>=1.0.0
+pandas>=1.0.0
+PyAudio>=0.2.11
+PyQt5>=5.12
+scipy>=1.0.1
+soundfile>=0.10.1

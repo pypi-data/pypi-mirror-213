@@ -1,0 +1,21 @@
+<!DOCTYPE RCC><RCC version="1.0">
+<qresource>
+<file>translations/emid_it.qm</file>
+<file>translations/emid_fr.qm</file>
+<file>translations/emid_es.qm</file>
+<file>translations/emid_el.qm</file>
+<file>translations/emid_en_US.qm</file>
+<file>translations/emid_en_GB.qm</file>
+<file alias="audio-headphones">icons/audio-headphones.svgz</file>
+<file alias="help-about">icons/help-about.svgz</file>
+<file alias="help-contents">icons/help-contents.svgz</file>
+<file alias="help-contextual">icons/help-contextual.svgz</file>
+<file alias="preferences-other">icons/preferences-other.svgz</file>
+<file alias="oem-face-angry">icons/oem-face-angry.svg</file>
+<file alias="oem-face-anguished">icons/oem-face-anguished.svg</file>
+<file alias="oem-face-frowning">icons/oem-face-frowning.svg</file>
+<file alias="oem-face-smiling">icons/oem-face-smiling.svg</file>
+<file alias="oem-face-neutral">icons/oem-face-neutral.svg</file>
+<file alias="oem-face-worried">icons/oem-face-worried.svg</file>
+</qresource>
+</RCC>
