@@ -1,0 +1,16 @@
+controlnet_aux==0.0.5
+diffusers==0.17.0.dev0
+moviepy==1.0.3
+numpy==1.23.5
+opencv_python==4.6.0.66
+Pillow==9.5.0
+pytube==15.0.0
+setuptools==58.0.4
+torch==2.0.1+cu118
+transformers==4.25.1
+
+[dev]
+black==21.7b0
+flake8==3.9.2
+isort==5.9.2
+click==8.0.4
