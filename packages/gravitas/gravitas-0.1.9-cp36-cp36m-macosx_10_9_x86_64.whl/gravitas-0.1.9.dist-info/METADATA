@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: gravitas
+Version: 0.1.9
+Summary: UNKNOWN
+Home-page: UNKNOWN
+Author: Liam Robinson
+Author-email: robin502@purdue.edu
+License: GPL-2
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: MacOS
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
+Requires-Dist: numpy
+
+High-fidelity gravity fields for satellite propagation
+
