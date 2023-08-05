@@ -1,0 +1,2 @@
+[console_scripts]
+devpi-builder = devpi_builder.cli:main
