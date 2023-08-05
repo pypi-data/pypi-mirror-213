@@ -1,0 +1,9 @@
+dynocli/__init__.py,sha256=LN5yaPbZGI-OPgwQqyr32Ffuj4k443xKYmfkw0sxxKA,42
+dynocli/document_visualizer.py,sha256=tBqLw33zARIhqM1ub-deuOY30JhO3ENQrJT58EDcb7c,817
+dynocli/dynamo_gateway.py,sha256=8X8TkYvCfFjsD_vDFwMoWpcW4E5p27QFJFqhY6el_QM,6522
+dynocli/dyno.py,sha256=tE10yFkjEb0rECgx0MtjZqyme4pw0v_U_rIlgp_Ggq4,6622
+dynamocli-0.0.8.dist-info/METADATA,sha256=gYg1OZK2fl5duPMA9lRaR6Ppa3UQtUZab7qDQhlUvvA,1937
+dynamocli-0.0.8.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+dynamocli-0.0.8.dist-info/entry_points.txt,sha256=4FEvWs2R8L4SozxTxBKOSVndQmFnQFL1WZAbYzKdJBc,48
+dynamocli-0.0.8.dist-info/top_level.txt,sha256=UZuskrYfXi6yISjVAh8arm65mvRRLG2NtAvy-1-Gtdg,8
+dynamocli-0.0.8.dist-info/RECORD,,
