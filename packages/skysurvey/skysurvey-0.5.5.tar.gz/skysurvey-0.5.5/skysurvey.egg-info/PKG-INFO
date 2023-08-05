@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: skysurvey
+Version: 0.5.5
+Summary: Simulating Transient in the sky and how to observe them
+Home-page: https://github.com/MickaelRigault/skysurvey
+Author: Mickael Rigault
+Author-email: m.rigault@ipnl.in2p3.fr
+License-File: LICENSE
