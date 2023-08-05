@@ -1,0 +1,37 @@
+[project]
+name = "ns_lab_aws"
+version = "23.06.09-1349"
+description = "AWS Console Tool"
+readme = "PyPi_README.md"
+requires-python = ">=3.8"
+keywords = ["aws", "s3 bucket"]
+dependencies = [
+    "boto3==1.26.147",
+    "botocore==1.29.147",
+    "colorlog==6.7.0",
+    "jmespath==1.0.1",
+    "markdown-it-py==2.2.0",
+    "mdurl==0.1.2",
+    "Pygments==2.15.1",
+    "python-dateutil==2.8.2",
+    "python-dotenv==1.0.0",
+    "rich==13.4.1",
+    "s3transfer==0.6.1",
+    "six==1.16.0",
+    "urllib3==1.26.16",
+]
+authors = [
+    { name = "Salavat Nigmatullin", email = "salavat@nigmatullin.net" },
+]
+
+
+
+[project.urls]
+Homepage        = "https://github.com/salavatn/Python/tree/main/AWS"
+Documentation   = "https://github.com/salavatn/Python/blob/main/AWS/README.md"
+Changes         = "https://github.com/salavatn/Python/commits/main/AWS/README.md"
+
+
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
