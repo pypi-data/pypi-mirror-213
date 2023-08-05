@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: pyAMI-atlas
+Version: 5.1.4
+Summary: Python ATLAS Metadata Interface (pyAMI) for ATLAS
+Home-page: http://ami.in2p3.fr/
+Author: Jerome Odier
+Author-email: jerome.odier@cern.ch
+License: CeCILL-C
+Platform: any
