@@ -1,0 +1,10 @@
+LICENSE.txt
+README.md
+pyproject.toml
+src/MT_PY_ErrorLogging/MT_Errorlogging.py
+src/MT_PY_ErrorLogging/__init__.py
+src/MT_PY_ErrorLogging/testcode.py
+src/MT_PY_ErrorLogging.egg-info/PKG-INFO
+src/MT_PY_ErrorLogging.egg-info/SOURCES.txt
+src/MT_PY_ErrorLogging.egg-info/dependency_links.txt
+src/MT_PY_ErrorLogging.egg-info/top_level.txt
