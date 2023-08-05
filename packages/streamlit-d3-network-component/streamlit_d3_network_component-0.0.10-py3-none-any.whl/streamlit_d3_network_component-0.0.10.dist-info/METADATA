@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: streamlit-d3-network-component
+Version: 0.0.10
+Summary: This package is a Streamlit custom component to represent network diagram using D3.js
+Home-page: 
+Author: Andras Gyacsok
+Author-email: andras.gyacsok@boehringer-ingelheim.com
+Requires-Python: >=3.6
+Description-Content-Type: text/plain
+Requires-Dist: streamlit (>=0.63)
+
+This package is the custom Streamlit component to visualise network graphs using D3.js
