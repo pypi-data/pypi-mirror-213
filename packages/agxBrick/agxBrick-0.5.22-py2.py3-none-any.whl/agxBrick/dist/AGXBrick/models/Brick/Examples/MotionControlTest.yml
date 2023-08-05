@@ -1,0 +1,7 @@
+.format: 4
+
+MotionControlTest:
+  .extends: Physics.Component
+  motionControl:
+    .type: Physics.MotionControl
+    .value: Kinematics

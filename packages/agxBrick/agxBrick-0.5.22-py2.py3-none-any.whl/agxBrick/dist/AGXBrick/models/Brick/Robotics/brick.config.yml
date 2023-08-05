@@ -1,0 +1,38 @@
+ModuleConfig:
+  name: Robotics
+  targetDirectory: ${env:BRICK_DIR}
+
+  files.exclude:
+    - Test
+
+  import:
+    Math:
+      filepath: ../Math
+      autoImport: true
+
+    Scene:
+      filepath: ../Scene
+
+    Physics:
+      filepath: ../Physics
+
+    Signal:
+      filepath: ../Signal
+
+    ROS:
+      filepath: ../ROS
+
+  generators:
+    Python:
+      # targetDirectory: python
+      enable: false
+      useGrpc: false
+
+    Cs:
+      useGrpc: false
+      enable: true
+
+    Grpc:
+      enable: false
+      csNamespace: Brick.Robotics.Grpc
+      goPackage: algoryx/bamse/worker/api/grpc/brick/Robotics

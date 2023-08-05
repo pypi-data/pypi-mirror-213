@@ -1,0 +1,39 @@
+.format: 4
+.strict: false
+.ignore: true
+
+
+Test:
+  test:
+    .type: Keyboard.KeyboardAction
+    key: h
+    onEnd: Action.TestAction
+
+  camera1:
+    .type: Scene.Camera
+    localPosition: Vec3(0, -2, 1)
+
+  loadNew:
+    .type: Keyboard.KeyboardAction
+    lol: Vec3(1,2,3)
+    camera3:
+      .value: Scene.Camera
+      localPosition: Vec3(0, -2, 1)
+
+    key: t
+    onBegin:
+      .value: Simulation.Actions.Load
+      model: Examples.Bar
+
+
+  foo:
+    .type: Int
+    .value: 0
+
+  test2:
+    .type: Keyboard.KeyboardAction
+    key: g
+    onEnd:
+      .value: Action.SetValue
+      target: foo
+      value: duration * 1.2

@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: agxBrick
+Version: 0.5.22
+Summary: Core framework, API and runtime, for generic data modelling, and construction of domain specific modelling APIs/formats. Specifically supporting modelling of simulation components.
+Author: Algoryx
+Author-email: algoryx@algoryx.com
+Classifier: Development Status :: 3 - Alpha
+Classifier: Programming Language :: Python :: 3.6
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Requires-Dist: click (>=7.1.2)
+Requires-Dist: coloredlogs (>=15.0)
+Provides-Extra: dev
+Requires-Dist: check-manifest ; extra == 'dev'
+Provides-Extra: test
+
+# agxBrick
+
+agxBrick is a python package (with C# runtime implementation) for loading Brick.yml files with [AGX Dynamics](https://www.algoryx.se/agx-dynamics/).
+
+The development of agxBrick has come to an end, since the ReBRICK C++ project will replace and go beyond the experience of "old" BRICK.
+
+This distributable is free to use for anyone, but do not expect any additional features or bugfixes.
+
+## License
+
+  [Apache License 2.0](https://www.apache.org/licenses/LICENSE-2.0)

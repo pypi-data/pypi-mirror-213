@@ -1,0 +1,27 @@
+.format: 4
+.ignore: true
+
+.import:
+  Physics.Mechanics.Attachments: [MechanicalAttachment]
+
+BoxWithAttachments:
+  .extends: AGXBrick.ExternalAgxScene
+  .doc: A box with a number of attachment points.
+  entrypoint: BoxWithAttachments.agxPy
+  body:
+    .type: Physics.RigidBody
+    attachments:
+      # left/right front/back bottom/top
+      leftFrontTop:
+        .type: Physics.Attachment
+        position: Vec3(-0.25, -0.25, 0.25)
+      top:
+        .type: MechanicalAttachment
+        position: Vec3(0.0, 0.0, 0.25)
+        normal: Vec3(0.0, 0.0, 1.0)
+        tangent: Vec3(0.2, 0.8, 0.0)
+      bottom:
+        .type: MechanicalAttachment
+        position: Vec3(0.0, 0.0, -0.25)
+        normal: Vec3(0.0, 0.0, -1)
+        tangent: Vec3(1.0, 0.0, 0.0)

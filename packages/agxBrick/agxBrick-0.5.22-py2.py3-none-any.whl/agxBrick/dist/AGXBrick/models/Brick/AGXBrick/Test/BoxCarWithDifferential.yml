@@ -1,0 +1,18 @@
+.format: 4
+
+BoxCarWithDifferential:
+  .extends: AGXBrick.Test.BoxCarNoMotor.BoxCarNoMotor
+
+  driveTrain:
+    .type: AGXBrick.Test.FixedVelocityDifferentialDriveTrain.FixedVelocityDifferentialDriveTrain
+    rotationalActuatorLeft:
+      interaction: this.BoxCarNoMotoraxleRBattachment.mainInteraction
+    rotationalActuatorRight:
+      interaction: this.BoxCarNoMotoraxleLBattachment.mainInteraction
+
+  plane:
+    .type: Physics.Geometry.Plane
+    a: 0
+    b: 0
+    c: 1
+    d: 1

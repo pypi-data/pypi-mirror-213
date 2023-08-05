@@ -1,0 +1,139 @@
+.format: 4
+
+
+.import:
+  Physics: [Component]
+  Physics.Mechanics: [RigidBody]
+  # Physics.Mechanics.Attachments: [MechanicalAttachment]
+  Physics.Geometry: [Rotated2DPolygonMesh,Plane]
+
+CupBody:
+  .extends: RigidBody
+
+  geometry:
+    .type: Rotated2DPolygonMesh
+    resolution: 100
+    points:
+      - Vec3(0.01, 0.0025,0)
+      - Vec3(0.05, 0.0025,0)
+      - Vec3(0.05, 0.08,0)
+      - Vec3(0.055, 0.08,0)
+      - Vec3(0.06, 0.05,0)
+      - Vec3(0.06, 0.03,0)
+      - Vec3(0.055,-0.0025,0)
+      - Vec3(0.01,-0.0025,0)
+
+DiscBody:
+  .extends: RigidBody
+
+  geometry:
+    .type: Rotated2DPolygonMesh
+    resolution: 100
+    points:      
+     - Vec3(0.01,0.02,0)
+     - Vec3(0.05,0.019,0)
+     - Vec3(0.07,0.018,0)
+     - Vec3(0.09,0.017,0)
+     - Vec3(0.093,0.015,0)
+     - Vec3(0.089,0.014,0)
+     - Vec3(0.089,0.0135,0)
+     - Vec3(0.088,0.013,0)
+     - Vec3(0.087,0.0125,0)
+     - Vec3(0.0855,0.008,0)
+     - Vec3(0.085,0.005,0)
+     - Vec3(0.083,0.003,0)
+     - Vec3(0.077,0.003,0)
+     - Vec3(0.077,0.01,0)
+     - Vec3(0.077,0.017,0)
+     - Vec3(0.01,0.018,0)
+
+Gear:
+  .extends: Physics.Component
+
+  body:
+    .type: DiscBody
+    geometry:
+      resolution: 300
+      numOuterCogs: 10
+      outerCogHeight: 0.01
+      innerRadius: 0.01
+
+
+DecomposedDisc:
+  .extends: DiscBody
+  geometry:
+    .value: AGXBrick.DecomposedRotated2DPolygonMesh
+    elementResolution: 50
+    resolution: 100
+    points:      
+     - Vec3(0.01,0.02,0)
+     - Vec3(0.05,0.019,0)
+     - Vec3(0.07,0.018,0)
+     - Vec3(0.09,0.017,0)
+     - Vec3(0.093,0.015,0)
+     - Vec3(0.089,0.014,0)
+     - Vec3(0.089,0.0135,0)
+     - Vec3(0.088,0.013,0)
+     - Vec3(0.087,0.0125,0)
+     - Vec3(0.0855,0.008,0)
+     - Vec3(0.085,0.005,0)
+     - Vec3(0.083,0.003,0)
+     - Vec3(0.077,0.003,0)
+     - Vec3(0.077,0.01,0)
+     - Vec3(0.077,0.017,0)
+     - Vec3(0.01,0.018,0)
+
+DiscScene:
+  .extends: Component
+
+  hyzerRadian:
+    .type: Real
+    .value: 0.1
+  noseUpRadian:
+    .type: Real
+    .value: -0.5
+
+  rotX:
+    .type: Real
+    .value: Math.Sin(this.hyzerRadian)
+  rotY:
+    .type: Real
+    .value: Math.Cos(this.hyzerRadian)*Math.Sin(this.noseUpRadian)
+  rotZ:
+    .type: Real
+    .value: Math.Sqrt(1.0-this.rotX*this.rotX-this.rotY*this.rotY)
+
+  toVector:
+    .type: Vec3
+    .value: Vec3(this.rotX,this.rotY,this.rotZ)
+
+  rotSpeed:
+    .type: Real
+    .value: 90
+
+  aVel:
+    .type: Vec3
+    .value: Vec3(this.rotX*this.rotSpeed,this.rotY*this.rotSpeed,this.rotZ*this.rotSpeed)
+
+  zVectorRotation:
+    .type: Quat
+    .value:  Quat.FromTo(Vec3(0,0,1),this.toVector)
+
+  disc:
+    .type: DiscBody
+    .value: DiscBody
+    mass: 0.170
+    localTransform:
+      position: Vec3(0,-50, 1.5)
+      rotation: this.zVectorRotation
+    kinematics:
+      linearVelocity: Vec3(0,30,0)
+      angularVelocity: this.aVel
+
+  plane:
+    .type: Plane
+    .value: Plane
+    a: 0
+    b: 0
+    c: 1
+    d: 0

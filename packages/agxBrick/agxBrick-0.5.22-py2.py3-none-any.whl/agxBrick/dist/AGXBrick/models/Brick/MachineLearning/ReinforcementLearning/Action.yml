@@ -1,0 +1,44 @@
+.format: 4
+.import:
+  Robotics: [Joint]
+
+Action:
+  .doc: Generic action
+  signal:
+    .type: Signal.SignalBase
+
+ContinuousAction:
+  .doc: >
+    Action with a continuous value between maxValue and minValue
+    Use min/maxValues when the signal is a single value signal.
+    If the signal is a Vec3 or Transform or similar, the min/maxValues
+    lists can be used to scale each individual value. 
+  .extends: Action
+  maxValue:
+    .type: Real
+    .value: 1
+  minValue:
+    .type: Real
+    .value: -1
+
+  maxValues:
+    .type: List<Real>
+    .value: []
+  minValues:
+    .type: List<Real>
+    .value: []
+
+
+DiscreteAction:
+  .doc: Action can only be one of the values listed
+  .extends: Action
+  values:
+    .type: List<Real>
+    .value: []
+
+JointAction:
+  .extends: ContinuousAction
+  .doc: Action connected to a robotic joint instead of a signal. The robotic joint must containt a signal instead.
+  signal: null
+  joint:
+    .type: Joint

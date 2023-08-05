@@ -1,0 +1,206 @@
+.format: 4
+.import:
+  Physics.Mechanics: [AttachmentPairConnector, RigidBody]
+  Robotics: [Segment, Joint]
+  Robotics.SignalType: [OutputForceSignal, OutputVelocitySignal, OutputDistanceSignal]
+
+Sensor:
+  .doc: >
+    A Sensor points to one signal in the model
+    It also declares the outputReference for this signal
+
+  name:
+    .type: String
+    .value: ""
+
+  communicationProtocol:
+    .doc: >
+      If not specified, the sensor will have the same protocol
+      as the Robot it is part of.
+      The Sensor need to define the protocolReference
+      for publishers to be created.
+    .type: CommunicationProtocol
+    .value: null
+
+  protocolReference:
+    .doc: Reference for the sensor use for communication over some protocol
+    .type: String
+    .value: null
+
+RotatingBodyVelocitySensor:
+  .extends: Sensor
+  rotatingBody:
+    .type: Physics.DriveTrain.RotatingBody1D
+
+RotatingBodyAngleSensor:
+  .extends: Sensor
+  rotatingBody:
+    .type: Physics.DriveTrain.RotatingBody1D
+
+FixedVelocityEngineTorqueSensor:
+  .extends: Sensor
+  engine:
+    .type: Physics.DriveTrain.FixedVelocityEngine 
+
+JointSensor:
+  .extends: Sensor
+  .doc: >
+    Joint sensor, will internally create the wanted sensor type
+
+  outputSignalType:
+    .type: Robotics.SignalType
+
+  joint:
+    .type: Joint
+
+
+Vec3Sensor:
+  .extends: Sensor
+  .abstract: true
+  .doc: > 
+    Abstract class for 3D vector sensor
+    
+
+  referenceRigidBody:
+    .doc: > 
+      Reference RigidBody in which coordinate system
+      the force and torque vectors are present. 
+      If not defined, the force and torque will be
+      in the world coordinate frame
+    .type: Physics.Mechanics.RigidBody
+    .value: null
+
+
+Vec3NodeSensor:
+  .extends: Sensor
+  .abstract: true
+  .doc: > 
+    Abstract class for 3D vector sensor
+
+
+  node:
+    .doc: > 
+      Scene.Node for which some 3D property is reported. 
+    .type: Scene.Node
+
+  referenceNode:
+    .doc: > 
+      Reference Scene.Node in which coordinate system
+      the output vector is reported. 
+      If set to null, the data will be
+      in the world coordinate frame.
+      By default the same node as for the measurement
+    .type: Scene.Node
+    .value: this.node
+
+Vec3AttachmentSensor:
+  .extends: Vec3NodeSensor
+  .abstract: true
+
+  attachment:
+    .doc: >
+      The the measured output of the Vec3AttachmentSensor
+      can be either relative world frame or relative the frame
+      of the parent RigidBody of this attachment.
+      
+      This is toggled using the boolean relativeBodyFrame attribute.
+      
+      The resulting measured output can be reported relative an
+      arbitrary reference frame.
+      If the referenceNode is declared to null (not default null),
+      the vector output is in world coordinates,
+      otherwise in the referenceNode frame.
+    .type: Physics.Mechanics.RigidBodyAttachment
+  
+  node: this.attachment
+
+  relativeBodyFrame:
+    .type: Bool
+    .value: True
+
+
+LinearAccelerationSensor:
+  .extends: Vec3AttachmentSensor
+  .doc: >
+    3D Sensor measuring linear acceleration of the attachment.
+    Toggle the relativeBodyFrame attribute for acceleration of the
+    frame relative the parent RigidBody of the attachment, or world.
+    
+    Set the referenceNode attribute to null for world frame measurement.
+    Internally creates a Signal.AttachmentLinearAccelerationOutput
+    which is accessible with sensor.GetOrCreateSignal()
+
+AngularVelocitySensor:
+  .extends: Vec3AttachmentSensor
+  .doc: >
+    3D Sensor measuring angular velocity of the attachment.
+    Toggle the relativeBodyFrame attribute for angular velocity of the
+    frame relative the parent RigidBody of the attachment, or world.
+    
+    Set the referenceNode attribute to null for world frame measurement.
+    Internally creates a Signal.AttachmentAngularVelocityOutput
+    which is accessible with sensor.GetOrCreateSignal()
+    
+
+Force3DSensor:
+  .extends: Vec3Sensor
+  .doc: > 
+    Sensor for 3D force vector relative the referenceRigidBody
+
+Torque3DSensor:
+  .extends: Vec3Sensor
+  .doc: > 
+    Sensor for 3D torque vector relative the referenceRigidBody
+
+ConnectorForce3DSensor:
+  .extends: Force3DSensor
+  .doc: >
+    Sensor for force for a AttchmentPairConnector
+  connector:
+    .type: Physics.Mechanics.AttachmentPairConnector
+
+ConnectorTorque3DSensor:
+  .extends: Torque3DSensor
+  .doc: >
+    Sensor for force for a AttchmentPairConnector
+  connector:
+    .type: Physics.Mechanics.AttachmentPairConnector
+
+JointForce3DSensor:
+  .extends: Force3DSensor
+  .doc: >
+    Sensor for force and torque for a Joint
+  joint:
+    .type: Robotics.Joint
+
+JointTorque3DSensor:
+  .extends: Torque3DSensor
+  .doc: >
+    Sensor for force and torque for a Joint
+  joint:
+    .type: Robotics.Joint
+
+DistanceSensor:
+  .extends: Sensor
+  .doc: >
+    Measures distance to first obstacle
+
+  outputSignalType:
+    .type: OutputDistanceSignal
+    .value: OutputDistanceSignal
+
+  body:
+    .type: RigidBody
+    .value: null
+
+  startPoint:
+    .type: Vec3
+    .value: Vec3(0,0,0)
+
+  direction:
+    .type: Vec3
+    .value: Vec3(1,0,0)
+
+  length:
+    .type: Real
+    .value: 1

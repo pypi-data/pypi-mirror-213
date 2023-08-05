@@ -1,0 +1,250 @@
+# This example demonstrates how to add Attachments and Connectors to a model. When this have
+# been added, Brick will automatically try to position and align the bodies to make the joint
+# equations be satisfied at the start of the simulation.
+
+# OBSERVE
+# The MyRobot model is used in a unit test
+# python/test/test_position_and_rotation_sign.py
+.format: 4
+
+# Use imports to avoid having two write the whole name of the component
+.import:
+  Robotics: [Robot, RobotArm, Segment, RobotBase, Joint, HingeJoint, SignalType]
+  Physics: [Component, CollisionGroup]
+  Physics.Mechanics.HingeConnector: [RotationalActuatorHingeConnector]
+  Physics.Mechanics.PrismaticConnector: [TranslationalActuatorPrismaticConnector]
+  Physics.DriveTrain: [RotatingBody1D, RotatingShaft, GearAttachment, TorqueDrivenEngine, FixedVelocityEngine, GearConnector]
+  Examples.MyRobot: [MyBase, MyRobotArm]
+
+ToolPart:
+  .extends: Physics.Mechanics.RigidBody
+  side:
+    .type: Real
+    .value: 1
+  geometry:
+    .type: Physics.Geometry
+    .value: Physics.Geometry.Box
+    lengths: Vec3(0.02,0.05,0.2)
+  attachment:
+    .type: Physics.Mechanics.RigidBodyAttachment
+    localTransform:
+      position: Vec3(0.02*side,0,-0.1)
+      rotation: Quat.AngleAxis(90,Vec3(0,1,0))
+  inputAttachment:
+    .type: Physics.Mechanics.RigidBodyAttachment
+    localTransform:
+      position: Vec3(0,0,0)
+      rotation: Quat.AngleAxis(90,Vec3(1,0,0))
+
+MimicDriveTrain:
+  .extends: Physics.Component
+  
+  shaftLeft:
+    .type: RotatingShaft
+    .value: RotatingShaft
+
+  shaftRight:
+    .type: RotatingShaft
+    .value: RotatingShaft
+
+  gear:
+    .type: GearConnector
+    attachment1: this.shaftLeft.outputAttachment
+    attachment2: this.shaftRight.inputAttachment
+    interaction:
+      gearRatio: -1
+
+GripperTool:
+  .extends: Physics.Component
+  wantInternalPositioning: true
+
+  driveTrain:
+    .type: MimicDriveTrain
+    .value: MimicDriveTrain
+
+  base:
+    .type: ToolPart
+    attachment:
+      localTransform: 
+        position: Vec3(0,0,0)
+    localTransform:
+      position: Vec3(0,0,0)
+      rotation: Quat.AngleAxis(0,Vec3(0,1,0))
+
+  right:
+    .type: ToolPart
+    .value: ToolPart
+  left:
+    .type: ToolPart
+    side: -1
+  
+  rightConnector:
+    .type: TranslationalActuatorPrismaticConnector
+    attachment1: this.base.attachment
+    attachment2: this.right.attachment
+    shaft: this.driveTrain.shaftRight
+    distance: 0
+
+  leftConnector:
+    .type: TranslationalActuatorPrismaticConnector
+    attachment1: this.base.attachment
+    attachment2: this.left.attachment
+    shaft: this.driveTrain.shaftLeft
+    distance: 0
+    range:
+      minValue: 0
+      maxValue: 0.04
+
+DriveTrainJoint:
+  .extends: HingeJoint
+  shaftAttachment:
+    .type: GearAttachment
+  
+
+DriveTrainTorqueJoint:
+  .extends: DriveTrainJoint
+  engine:
+    .type: TorqueDrivenEngine 
+    initialTorque: 10
+  inputSignal:
+    .type: Signal.EngineTorqueInput
+    engine: this.engine
+  gear:
+    .type: GearConnector
+    attachment1: this.engine.outputAttachment
+    attachment2: this.shaftAttachment
+    interaction:
+      gearRatio: 2
+
+DriveTrainVelocityJoint:
+  .extends: DriveTrainJoint
+  name: VelocityJoint
+  engine:
+    .type: FixedVelocityEngine 
+    targetRPM: 2
+  inputSignal:
+    .type: Signal.FixedVelocityEngineInput
+    engine: this.engine
+    name: BNLA
+  gear:
+    .type: GearConnector
+    attachment1: this.engine.outputAttachment
+    attachment2: this.shaftAttachment
+    interaction:
+      gearRatio: 2
+# Put the two boxes together and add a lock connector to world
+DriveTrainRobot:
+  .extends: Robot
+  wantInternalPositioning: true
+
+  base:
+    .value: MyBase
+
+  arm1:
+    .type: MyRobotArm
+    .value: MyRobotArm
+  shaft:
+    .type: RotatingShaft
+    massProperties:
+      inertia: 0.1
+  joint:
+    .type: DriveTrainJoint
+    .value: DriveTrainTorqueJoint
+    shaftAttachment: this.shaft.inputAttachment
+    hingeConnector:
+      .value: RotationalActuatorHingeConnector
+      shaft: this.shaft
+      angle: 0
+    segment1: this.base
+    segment2: this.arm1.segment1
+  
+  jointAngleSensor:
+    .type: Robotics.Sensor.JointSensor
+    joint: this.joint
+    outputSignalType: Robotics.SignalType.OutputPositionSignal
+
+  jointVelocitySensor:
+    .type: Robotics.Sensor.JointSensor
+    joint: this.joint
+    outputSignalType: Robotics.SignalType.OutputVelocitySignal
+
+  jointTorqueSensor:
+    .type: Robotics.Sensor.JointSensor
+    joint: this.joint
+    outputSignalType: Robotics.SignalType.OutputForceSignal
+
+
+  plotSensors:
+    .type: List<Robotics.Sensor>
+    .value: [this.jointTorqueSensor]
+
+  worldAttachment:
+    .type: Physics.Mechanics.LockJointAttachment
+    .value: Physics.Mechanics.LockJointAttachment
+    localTransform:
+      rotation: Quat.TryFromToZXPair(Vec3(0,1,0),Vec3(0,0,1))
+
+  worldConnector:
+    .type: Physics.Mechanics.PrismaticConnector
+    attachment1: this.base.inputAttachment
+    attachment2: this.worldAttachment
+    motor:
+      speed: 0
+      constrainDof: true
+  
+
+DriveTrainRobotTool:
+  .extends: DriveTrainRobot
+  tool:
+    .type: GripperTool
+    .value: GripperTool
+  arm1:
+    segment2:
+      outputAttachment:
+        localTransform:
+          position: Vec3(0,0,1.02)
+  toolConnector:
+    .type: Physics.Mechanics.LockJointConnector
+    attachment1: arm1.segment2.outputAttachment
+    attachment2: tool.base.inputAttachment
+
+  allGroup:
+    .type: CollisionGroup
+    members:
+      - this.tool
+      - this.arm1
+  allGroupPair:
+    .type: CollisionGroup.CollisionGroupPair
+    group1: this.allGroup
+    group2: this.allGroup
+
+DriveTrainRobotMotorSignals:
+  .extends: DriveTrainRobotTool
+
+  motorAngleSensor:
+    .type: Robotics.Sensor.RotatingBodyAngleSensor
+    rotatingBody: this.joint.engine
+
+  motorVelocitySensor:
+    .type: Robotics.Sensor.RotatingBodyVelocitySensor
+    rotatingBody: this.joint.engine
+
+  joint:
+    .value: DriveTrainVelocityJoint
+    shaftAttachment: this.shaft.inputAttachment
+    hingeConnector:
+      .value: RotationalActuatorHingeConnector
+      shaft: this.shaft
+      angle: 0
+    segment1: this.base
+    segment2: this.arm1.segment1
+    engine: FixedVelocityEngine()
+
+  motorGeneratedTorque:
+    .type: Robotics.Sensor.FixedVelocityEngineTorqueSensor
+    engine: this.joint.engine
+
+  plotSensors:
+    - this.jointTorqueSensor
+    - this.motorAngleSensor
+    - this.motorGeneratedTorque

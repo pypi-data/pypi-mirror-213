@@ -1,0 +1,19 @@
+ModuleConfig:
+  name: DevOps
+  doc: DevOps utilities
+  targetDirectory: ${env:BRICK_DIR}
+
+  generators:
+
+    Python:
+      useGrpc: false
+      enable: false
+
+    Cs:
+      useGrpc: false
+      targetDirectory: ${env:BRICK_DIR}/cli/src
+      enable: true
+
+    Grpc:
+      enable: false
+      csNamespace: Brick.DevOps.Grpc

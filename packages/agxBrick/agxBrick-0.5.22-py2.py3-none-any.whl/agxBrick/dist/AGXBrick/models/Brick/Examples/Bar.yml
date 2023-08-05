@@ -1,0 +1,41 @@
+.format: 4
+
+Bar:
+  foo1:
+    .type: Foo
+  foo2:
+    .type: Foo
+    # myStrings: []
+    testMap: {}
+  m2:
+    .type: Map<String, Real>
+    .value: {}
+
+MyBar:
+  .value: Bar
+  # foo: {hej: 1, myString: lol}
+  foo2:
+    .value: Foo
+    myStrings: [ what! ]
+    hej: foo1.hej
+    testMap:
+      yas: 2.0 * (1.4 + this.foo1.hej)
+    bar: "-1.2"
+
+  foo1:
+    .value: Foo.MyFoo
+    bar: 12
+
+
+MyBar2:
+  .value: MyBar
+  foo1: Foo.MyFoo
+
+  # foo2: MyFoo
+  foo2:
+    # .value: Foo
+    hej: 1.111
+
+    testMap:
+      yas: 222
+

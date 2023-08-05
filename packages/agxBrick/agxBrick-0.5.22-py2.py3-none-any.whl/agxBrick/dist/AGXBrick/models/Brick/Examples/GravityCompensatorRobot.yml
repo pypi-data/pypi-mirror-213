@@ -1,0 +1,240 @@
+.format: 4
+
+# Use imports to avoid having two write the whole name of the component
+.import:
+  Robotics: [Robot, RobotArm, Segment, RobotBase, Joint, HingeJoint, SignalType]
+  Physics: [Component, CollisionGroup]
+  Physics.Mechanics: [RigidBodyAttachment, HingeConnector]
+  Physics.Mechanics.HingeConnector: [RotationalActuatorHingeConnector]
+  Physics.Mechanics.PrismaticConnector: [TranslationalActuatorPrismaticConnector]
+  Physics.DriveTrain: [RotatingBody1D, RotatingShaft, GearAttachment, TorqueDrivenEngine, FixedVelocityEngine, GearConnector]
+  Examples.MyRobot: [MyBase, MySegment]
+
+
+GCRobotArm:
+  .extends: RobotArm
+  wantInternalPositioning: false
+  joint1:
+    .type: HingeJoint
+    hingeConnector: 
+      .type: HingeConnector
+      mainInteraction:
+        name: segment_connection
+      motor:
+        speed: 0
+        minForce: 0
+        maxForce: 0
+    segment1: this.segment1
+    segment2: this.segment2
+    inputSignalType: SignalType.InputForceSignal
+
+  segment1:
+    .type: MySegment
+    body:
+      name: segment1
+
+  segment2:
+    .type: MySegment
+    body:
+      name: segment2
+      localTransform:
+        position: Vec3(0,0,1.5)
+
+
+# Put the two boxes together and add a lock connector to world
+GravityCompensatorRobot:
+  .extends: Robot
+  wantInternalPositioning: true
+
+  base:
+    .value: MyBase
+
+  arm1:
+    .type: GCRobotArm
+    .value: GCRobotArm
+
+  joint:
+    .type: HingeJoint
+    hingeConnector:
+      .type: HingeConnector
+      mainInteraction:
+        name: base_connection
+      angle: 40
+
+    segment1: this.base
+    segment2: this.arm1.segment1
+    inputSignalType: SignalType.InputForceSignal
+  
+  jointAngleSensor:
+    .type: Robotics.Sensor.JointSensor
+    joint: this.joint
+    protocolReference: /joint_angle_output
+    outputSignalType: Robotics.SignalType.OutputPositionSignal
+
+  worldAttachment:
+    .type: Physics.Mechanics.LockJointAttachment
+    .value: Physics.Mechanics.LockJointAttachment
+    localTransform:
+      rotation: Quat.TryFromToZXPair(Vec3(0,1,0),Vec3(0,0,1))
+
+  worldConnector:
+    .type: Physics.Mechanics.PrismaticConnector
+    attachment1: this.base.inputAttachment
+    attachment2: this.worldAttachment
+    motor:
+      speed: 0
+      constrainDof: true
+
+DriveTrainJoint:
+  .extends: HingeJoint
+  shaftAttachment:
+    .type: GearAttachment
+  
+
+DriveTrainTorqueJoint:
+  .extends: DriveTrainJoint
+  engine:
+    .type: TorqueDrivenEngine 
+    initialTorque: 0
+  inputSignal:
+    .type: Signal.EngineTorqueInput
+    engine: this.engine
+  gear:
+    .type: GearConnector
+    attachment1: this.engine.outputAttachment
+    attachment2: this.shaftAttachment
+    interaction:
+      gearRatio: 2
+
+
+DriveTrainRobotArm:
+  .extends: RobotArm
+  wantInternalPositioning: false
+
+  rotShaft:
+    .type: RotatingShaft
+    massProperties:
+      inertia: 0.1
+
+  joint1:
+    .type: DriveTrainJoint
+    .value: DriveTrainTorqueJoint
+    shaftAttachment: this.rotShaft.inputAttachment
+    hingeConnector: 
+      .value: RotationalActuatorHingeConnector
+      shaft: this.rotShaft
+      angle: 40
+    segment1: this.segment1
+    segment2: this.segment2
+
+  segment1:
+    .type: MySegment
+    body:
+      name: segment1
+
+  segment2:
+    .type: MySegment
+    body:
+      name: segment2
+
+# Put the two boxes together and add a lock connector to world
+DriveTrainGCRobot:
+  .extends: Robot
+  wantInternalPositioning: true
+  assistedControlType: Robotics.AssistedControlType.GravityCompensation
+
+  base:
+    .value: MyBase
+
+  arm1:
+    .type: DriveTrainRobotArm
+    .value: DriveTrainRobotArm
+
+  shaft:
+    .type: RotatingShaft
+    massProperties:
+      inertia: 0.1
+  joint:
+    .type: DriveTrainJoint
+    .value: DriveTrainTorqueJoint
+    shaftAttachment: this.shaft.inputAttachment
+    hingeConnector:
+      .value: RotationalActuatorHingeConnector
+      shaft: this.shaft
+      angle: 0
+    segment1: this.base
+    segment2: this.arm1.segment1
+  
+  jointAngleSensor:
+    .type: Robotics.Sensor.JointSensor
+    joint: this.joint
+    outputSignalType: Robotics.SignalType.OutputPositionSignal
+
+  jointVelocitySensor:
+    .type: Robotics.Sensor.JointSensor
+    joint: this.joint
+    outputSignalType: Robotics.SignalType.OutputVelocitySignal
+
+  jointTorqueSensor:
+    .type: Robotics.Sensor.JointSensor
+    joint: this.joint
+    outputSignalType: Robotics.SignalType.OutputForceSignal
+
+
+  plotSensors:
+    .type: List<Robotics.Sensor>
+    .value: [this.jointTorqueSensor]
+
+  worldAttachment:
+    .type: Physics.Mechanics.LockJointAttachment
+    .value: Physics.Mechanics.LockJointAttachment
+    localTransform:
+      rotation: Quat.TryFromToZXPair(Vec3(0,1,0),Vec3(0,0,1))
+
+  worldConnector:
+    .type: Physics.Mechanics.PrismaticConnector
+    attachment1: this.base.inputAttachment
+    attachment2: this.worldAttachment
+    motor:
+      speed: 0
+      constrainDof: true
+
+BoxTool:
+  .extends: Physics.Mechanics.RigidBody
+  shape:
+    .type: Physics.Geometry.Box
+    lengths: Vec3(0.1,0.1,0.1)
+  attachment:
+    .type: Physics.Mechanics.RigidBodyAttachment
+    localTransform:
+      position: Vec3(0,-0.1,0)
+      rotation: Quat.AngleAxis(180, Vec3(0,1,0))
+
+Tool:
+  .extends: Physics.Component
+  object:
+    .type: BoxTool
+    .value: BoxTool
+  connector:
+    .type: Physics.Mechanics.LockJointConnector
+    attachment2: this.object.attachment
+
+DriveTrainGCRobotUnknownManipulator:
+  .extends: Physics.Component
+  wantInternalPositioning: true
+  robot:
+    .type: DriveTrainGCRobot
+    .value: DriveTrainGCRobot
+
+  boxTool:
+    .type: Tool
+    connector:
+      attachment1: this.robot.arm1.segment2.outputAttachment
+
+DriveTrainGCRobotKnownManipulator:
+  .extends: DriveTrainGCRobotUnknownManipulator
+  
+  robot:
+    assistedControlExternals:
+      - this.boxTool
+

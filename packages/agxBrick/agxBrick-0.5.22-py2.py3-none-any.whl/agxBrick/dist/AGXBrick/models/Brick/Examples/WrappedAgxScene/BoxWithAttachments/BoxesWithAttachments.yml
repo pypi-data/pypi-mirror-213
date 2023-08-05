@@ -1,0 +1,24 @@
+.format: 4
+.ignore: true
+
+.import:
+  Physics: [Component]
+  Physics.Mechanics.Connectors: [SurfaceConnector]
+  WrappedAgxScene.BoxWithAttachments: [BoxWithAttachments]
+
+
+BoxesWithAttachments:
+  .extends: Physics.Component
+  name: BoxesWithAttachments
+  firstBox:
+    .type: BoxWithAttachments
+    name: firstBox
+  secondBox:
+    .type: BoxWithAttachments
+    name: secondBox
+    isPlaced: True
+  connectors:
+    onTopOf:
+      .type: Physics.Mechanics.Connectors.SurfaceConnector
+      attachment1: this.firstBox.body.attachments.top
+      attachment2: this.secondBox.body.attachments.bottom

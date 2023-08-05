@@ -1,0 +1,174 @@
+.format: 4
+
+.import:
+  Physics: [Interaction]
+  Physics.Mechanics.InteractionData6D: [Stiffness6D, Damping6D]
+  Physics.DriveTrain: [RotatingShaft]
+
+AttachmentPairInteraction:
+  .extends: Interaction
+
+  damping6D:
+    .type: Damping6D
+    .value: Damping6D
+    defaultValue: this.damping
+
+  stiffness6D:
+    .type: Stiffness6D
+    .value: Stiffness6D
+    defaultValue: this.stiffness
+
+  # frame1:
+  #   .type: Geometry.Frame
+
+  # frame2:
+  #   .type: Geometry.Frame
+
+Interaction1D:
+  .doc: Describes an interaction constraining one degree of freedom
+  .extends: Interaction
+  constrainDof:
+    .type: Bool
+    .value: false
+
+  minForce:
+    .type: Real
+    .value: -.inf
+    .doc: >
+          the smallest possible force (torque if it is a rotational dof)
+          this interaction can produce. If not set, it is considered negative infinity.
+  maxForce:
+    .type: Real
+    .value: .inf
+    .doc: >
+          the largest possible force (torque if it is a rotational dof)
+          this interaction can produce. If not set, it is considered infinity.
+
+MotorInteraction1D:
+  .doc: Describes a motor interaction constraining one degree of freedom
+  .extends: Interaction1D
+  lockAtZeroSpeed:
+    .type: Bool
+    .value: false
+
+  speed:
+    .type: Real
+    .value: 0
+  
+  constantForce:
+    .doc: >
+      If also enableConstantForce is set True, the motor will always apply this
+      constant force. Used in practise to do force/torque control.
+      Can not override any min or max force declared for the interaction,
+      The force will be clamped within thise limits.
+      Can be updated with a signal.
+    .type: Real
+    .value: 0.0
+  
+  enableConstantForce:
+    .doc: >
+      If set, the motor will always apply the constantForce. 
+    .type: Bool
+    .value: false
+
+
+LockInteraction1D:
+  .doc: Describes a motor interaction constraining one degree of freedom
+  .extends: Interaction1D
+
+  position:
+    .doc: Reference position relative connector angle/distance
+    .type: Real
+    .value: 0.0
+
+RangeMinMaxInteraction1D:
+  .doc: Describes a range for where the DOF is free
+  .extends: Interaction1D
+  minValue:
+    .type: Real
+    .value: 0
+  maxValue:
+    .type: Real
+    .value: 0
+
+RotationalRangeMinMaxInteraction1D:
+  .extends: RangeMinMaxInteraction1D
+  interactionType: RotationalRange
+
+TranslationalRangeMinMaxInteraction1D:
+  .extends: RangeMinMaxInteraction1D
+  interactionType: TranslationalRange
+
+RotationalMotorInteraction1D:
+  .extends: MotorInteraction1D
+  interactionType: RotationalMotor
+
+AngleRotationalMotorInteraction1D:
+  .extends: RotationalMotorInteraction1D
+  .doc: A motor that moves to a desired angle with a constant speed.
+  maxSpeed:
+    .doc: Maximum allowed speed, in degrees/second
+    .type: Real
+    .value: 1
+
+TranslationalMotorInteraction1D:
+  .extends: MotorInteraction1D
+  interactionType: TranslationalMotor
+
+
+RelativeDistanceInteraction1D:
+  .extends: Interaction1D
+  interactionType: RelativeDistance
+
+TranslationalLockInteraction1D:
+  .extends: LockInteraction1D
+  interactionType: TranslationalLock
+
+RotationalLockInteraction1D:
+  .extends: LockInteraction1D
+  interactionType: TranslationalLock
+
+FrictionInteraction1D:
+  .doc: > 
+    Describes a dynamic friction interaction constraining one degree of freedom.
+    The friction force will depend on the load on the mainInteraction of the
+    owning AttachmentPairConnector of this interaction.
+  .extends: Interaction1D
+  coefficient:
+    .type: Real
+    .value: 0
+
+StaticFrictionInteraction1D:
+  .extends: Interaction1D
+  .doc: >
+    A constant friction force, which resist motion in the direction of this interaction.
+  minForce: 0
+  maxForce: 0
+
+StaticRotationalFrictionInteraction1D:
+  .doc: Describes a rotational static friction interaction constraining one degree of freedom
+  .extends: StaticFrictionInteraction1D
+
+StaticTranslationalFrictionInteraction1D:
+  .doc: Describes a translational static friction interaction constraining one degree of freedom
+  .extends: StaticFrictionInteraction1D
+
+RotationalFrictionInteraction1D:
+  .doc: Describes a friction interaction constraining one degree of freedom
+  .extends: FrictionInteraction1D
+
+TranslationalFrictionInteraction1D:
+  .doc: Describes a friction interaction constraining one degree of freedom
+  .extends: FrictionInteraction1D
+
+Gear1DInteraction:
+  .extends: Interaction
+  interactionType: Gear1DInteraction
+
+  internalInertia:
+    .doc: Inertia of extra part connecting to the two bodies of the interaction
+    .type: Real
+    .value: 0.01
+
+  inputShaft:
+    .type: RotatingShaft

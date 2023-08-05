@@ -1,0 +1,150 @@
+import agx
+import agxSDK
+import agxPython
+import agxCollide
+
+
+def get_next_assembly_name(simulation):
+    from os import path
+    basename = path.basename(__file__)
+
+    counter = 1
+    name = f"{basename}-{counter}"
+    assembly = simulation.getAssembly(name)
+    while assembly is not None:
+        counter += 1
+        if counter > 10000:
+            raise ValueError(f"Found unexpectedly many {basename} assemblies.")
+        name = f"{basename}-{counter}"
+        assembly = simulation.getAssembly(name)
+    return name, counter
+
+
+def create_assembly():
+    simulation = agxPython.getContext().environment.getSimulation()
+    assembly = agxSDK.Assembly()
+    assembly_name, _ = get_next_assembly_name(simulation)
+    assembly.setName(assembly_name)
+    simulation.add(assembly)
+    return assembly
+
+
+def buildScene():
+    assembly = create_assembly()
+
+    print(f"Created assembly with name {assembly.getName()}.")
+
+    width = 1.5
+    height = 0.4
+    depth = 0.2
+
+    w = width / 2
+    h = height / 2
+    d = depth / 2
+
+    w2 = w * 0.9
+    h2 = 0
+
+    vertices = agx.Vec3Vector()
+    indices = agx.UInt32Vector()
+
+    def v(x, y, z):
+        vertices.append(agx.Vec3(x, y, z))
+
+    v(-w, -h, -d)
+    v(-w, h, -d)
+    v(-w2, h, -d)
+    v(-w2, h2, -d)
+    v(0, h2, -d)
+    v(w2, h2, -d)
+    v(w2, h, -d)
+    v(w, h, -d)
+    v(w, -h, -d)
+
+    v(-w, -h, d)
+    v(-w, h, d)
+    v(-w2, h, d)
+    v(-w2, h2, d)
+    v(0, h2, d)
+    v(w2, h2, d)
+    v(w2, h, d)
+    v(w, h, d)
+    v(w, -h, d)
+
+    v(0, -h, -d)
+    v(0, -h, d)
+
+    def tri(i0, i1, i2):
+        indices.append(i0)
+        indices.append(i1)
+        indices.append(i2)
+
+    # Front
+    tri(1, 3, 2)
+    tri(1, 0, 3)
+    tri(0, 4, 3)
+    tri(0, 18, 4)
+    tri(18, 8, 4)
+    tri(4, 8, 5)
+    tri(5, 8, 7)
+    tri(6, 5, 7)
+
+    # Back
+    tri(10, 11, 12)
+    tri(10, 12, 9)
+    tri(9, 12, 13)
+    tri(9, 13, 19)
+    tri(13, 17, 19)
+    tri(13, 14, 17)
+    tri(14, 16, 17)
+    tri(15, 16, 14)
+
+    # Left
+    tri(9, 1, 10)
+    tri(0, 1, 9)
+    tri(1, 11, 10)
+    tri(1, 2, 11)
+    tri(2, 12, 11)
+    tri(2, 3, 12)
+
+    # Middle
+    tri(3, 4, 12)
+    tri(12, 4, 13)
+    tri(4, 5, 14)
+    tri(4, 14, 13)
+    tri(0, 9, 18)
+    tri(9, 19, 18)
+    tri(18, 19, 17)
+    tri(18, 17, 8)
+
+    # Right
+    tri(5, 6, 14)
+    tri(14, 6, 15)
+    tri(6, 7, 15)
+    tri(7, 16, 15)
+    tri(7, 8, 16)
+    tri(8, 17, 16)
+
+    trimesh = agxCollide.Trimesh(
+        vertices, indices, "base", agxCollide.Trimesh.CLOCKWISE_ORIENTATION)
+
+    base = agx.RigidBody("Base")
+    base.add(agxCollide.Geometry(trimesh))
+    assembly.add(base)
+
+    poppet = agx.RigidBody("Poppet")
+    poppet.add(agxCollide.Geometry(agxCollide.Box(d, d / 2, d / 2)))
+    poppet.setPosition(0.0, 1.5 * d, 0.0)
+    assembly.add(poppet)
+
+    frame1 = agx.Frame()
+    frame2 = agx.Frame()
+    agx.Constraint.calculateFramesFromBody(
+        agx.Vec3(0.0), agx.Vec3.X_AXIS(),
+        poppet, frame1, base, frame2)
+    prismatic = agx.Prismatic(poppet, frame1, base, frame2)
+    assembly.add(prismatic)
+
+    print(
+        f"  At end of scene creation, positions are "
+        f"{base.getPosition()} and {poppet.getPosition()}.")

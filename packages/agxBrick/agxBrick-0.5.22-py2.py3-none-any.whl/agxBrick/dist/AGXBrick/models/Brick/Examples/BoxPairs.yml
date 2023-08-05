@@ -1,0 +1,28 @@
+.format: 4
+.ignore: true
+
+.import:
+  Physics: [Component]
+  Physics.Mechanics.Connectors: [SurfaceConnector]
+
+
+BoxPairs:
+  .extends: Component
+
+  .doc: >
+    Simple demonstrating showing that a Component with several unconnected
+    bodies can be placed as a unit.
+
+  base:
+    .type: BoxPair
+    name: Base
+    isPlaced: True
+
+  top:
+    .type: BoxPair
+    name: Top
+
+  topOnBase:
+    .type: SurfaceConnector
+    attachment1: this.base.right.attachments.top
+    attachment2: this.top.left.attachments.side

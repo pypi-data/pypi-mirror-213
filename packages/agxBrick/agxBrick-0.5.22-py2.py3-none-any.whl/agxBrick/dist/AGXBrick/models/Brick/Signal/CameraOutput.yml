@@ -1,0 +1,11 @@
+.format: 4
+
+CameraOutput:
+  .extends: Output<Image>
+  .doc: Outputs a camera image of set pixel width and height 
+  camera:
+    .type: Scene.Camera
+  width:
+    .type: Int
+  height:
+    .type: Int

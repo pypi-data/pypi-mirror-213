@@ -1,0 +1,364 @@
+.format: 4
+wheelRB:
+  .extends: Physics.Mechanics.RigidBody
+  motionControl: Dynamics
+  massProperties:
+    localTransform:
+      position: [0, 0, 0]
+      rotation: [0, 0, 0, 1]
+    mass: 1
+    inertia: [1, 1, 1]
+  attachment:
+    .type: Physics.Mechanics.HingeAttachment
+    connectName: RB
+    connectType: Hinge
+    localTransform:
+      position: [0, -0.12, 0]
+      rotation: [-0.7071067811865476, 0, 0, 0.7071067811865476]
+  autoGenerateMass: true
+  tire:
+    .type: Physics.Geometry.Sphere
+    enableCollisions: true
+    material: Physics.Materials.DefaultMaterial
+    localTransform:
+      position: [0, 0, 0]
+      rotation: [0, 0, 0, 1]
+    renderMaterial: 
+      specularColor: [0.7,0.7,0.7]
+      diffuseColor: [0.7,0.7,0.7]
+      opacity: 1
+    radius: 0.12
+wheelRF:
+  .extends: Physics.Mechanics.RigidBody
+  motionControl: Dynamics
+  massProperties:
+    localTransform:
+      position: [0, 0, 0]
+      rotation: [0, 0, 0, 1]
+    mass: 1
+    inertia: [1, 1, 1]
+  attachment:
+    .type: Physics.Mechanics.HingeAttachment
+    connectName: RF
+    connectType: Hinge
+    localTransform:
+      position: [0, -0.12, 0]
+      rotation: [-0.7071067811865476, 0, 0, 0.7071067811865476]
+  autoGenerateMass: true
+  tire:
+    .type: Physics.Geometry.Sphere
+    enableCollisions: true
+    material: Physics.Materials.DefaultMaterial
+    localTransform:
+      position: [0, 0, 0]
+      rotation: [0, 0, 0, 1]
+    renderMaterial: 
+      specularColor: [0.7,0.7,0.7]
+      diffuseColor: [0.7,0.7,0.7]
+      opacity: 1
+    radius: 0.12
+wheelLB:
+  .extends: Physics.Mechanics.RigidBody
+  motionControl: Dynamics
+  massProperties:
+    localTransform:
+      position: [0, 0, 0]
+      rotation: [0, 0, 0, 1]
+    mass: 1
+    inertia: [1, 1, 1]
+  attachment:
+    .type: Physics.Mechanics.HingeAttachment
+    connectName: LB
+    connectType: Hinge
+    localTransform:
+      position: [0, -0.12, 0]
+      rotation: [-0.7071067811865476, 0, 0, 0.7071067811865476]
+  autoGenerateMass: true
+  tire:
+    .type: Physics.Geometry.Sphere
+    enableCollisions: true
+    material: Physics.Materials.DefaultMaterial
+    localTransform:
+      position: [0, 0, 0]
+      rotation: [0, 0, 0, 1]
+    renderMaterial: 
+      specularColor: [0.7,0.7,0.7]
+      diffuseColor: [0.7,0.7,0.7]
+      opacity: 1
+    radius: 0.12
+wheelLF:
+  .extends: Physics.Mechanics.RigidBody
+  motionControl: Dynamics
+  massProperties:
+    localTransform:
+      position: [0, 0, 0]
+      rotation: [0, 0, 0, 1]
+    mass: 1
+    inertia: [1, 1, 1]
+  attachment:
+    .type: Physics.Mechanics.HingeAttachment
+    connectName: LF
+    connectType: Hinge
+    localTransform:
+      position: [0, -0.12, 0]
+      rotation: [-0.7071067811865476, 0, 0, 0.7071067811865476]
+  autoGenerateMass: true
+  tire:
+    .type: Physics.Geometry.Sphere
+    enableCollisions: true
+    material: Physics.Materials.DefaultMaterial
+    localTransform:
+      position: [0, 0, 0]
+      rotation: [0, 0, 0, 1]
+    renderMaterial: 
+      specularColor: [0.7,0.7,0.7]
+      diffuseColor: [0.7,0.7,0.7]
+      opacity: 1
+    radius: 0.12
+wheels:
+  .extends: Physics.Component
+  internalCollisionsEnabled: true
+  wantInternalPositioning: false
+  positioningThreshold: 1E-07
+  wheelRB:
+    .type: wheelRB
+    localTransform:
+      position: [-0.35, 0.395, -0.08999999999999991]
+      rotation: [0, -0.7071067811865477, 1.5700924586837752E-16, 0.7071067811865474]
+  wheelRF:
+    .type: wheelRF
+    localTransform:
+      position: [0.35, 0.395, -0.08999999999999991]
+      rotation: [0, -0.7071067811865477, 1.5700924586837752E-16, 0.7071067811865474]
+  wheelLB:
+    .type: wheelLB
+    localTransform:
+      position: [-0.35, -0.395, -0.08999999999999997]
+      rotation: [0.7071067811865472, -1.137114430566029E-16, -0.7071067811865478, 4.3297802811774677E-17]
+  wheelLF:
+    .type: wheelLF
+    localTransform:
+      position: [0.35, -0.395, -0.08999999999999997]
+      rotation: [0.7071067811865472, 1.137114430566029E-16, 0.7071067811865478, 4.3297802811774677E-17]
+chassis:
+  .extends: Physics.Mechanics.RigidBody
+  motionControl: Dynamics
+  massProperties:
+    localTransform:
+      position: [0, 0, 0]
+      rotation: [0, 0, 0, 1]
+    mass: 1
+    inertia: [1, 1, 1]
+  worldAttachment:
+    .type: Physics.Mechanics.RigidBodyAttachment
+    localTransform:
+      position: [0, 0, 0]
+      rotation: [0, 0, 0, 1]
+  axleRB:
+    .type: Physics.Mechanics.HingeAttachment
+    connectName: RB
+    connectType: Hinge
+    localTransform:
+      position: [-0.35, 0.275, -0.09]
+      rotation: [-0.5000000000000001, -0.5000000000000002, -0.5, 0.5000000000000001]
+  axleRF:
+    .type: Physics.Mechanics.HingeAttachment
+    connectName: RF
+    connectType: Hinge
+    localTransform:
+      position: [0.35, 0.275, -0.09]
+      rotation: [-0.5000000000000001, -0.5000000000000002, -0.5, 0.5000000000000001]
+  axleLB:
+    .type: Physics.Mechanics.HingeAttachment
+    connectName: LB
+    connectType: Hinge
+    localTransform:
+      position: [-0.35, -0.275, -0.09]
+      rotation: [0.5000000000000001, 0.5000000000000002, -0.5, 0.5000000000000001]
+  axleLF:
+    .type: Physics.Mechanics.HingeAttachment
+    connectName: LF
+    connectType: Hinge
+    localTransform:
+      position: [0.35, -0.275, -0.09]
+      rotation: [0.5000000000000001, -0.5000000000000002, 0.5, 0.5000000000000001]
+  autoGenerateMass: true
+  shape:
+    .type: Physics.Geometry.Box
+    enableCollisions: true
+    material: Physics.Materials.DefaultMaterial
+    localTransform:
+      position: [0, 0, 0]
+      rotation: [0, 0, 0, 1]
+    renderMaterial: 
+      specularColor: [0.7,0.7,0.7]
+      diffuseColor: [0.7,0.7,0.7]
+      opacity: 1
+    lengths: [1, 0.5, 0.3]
+BoxCarNoMotor:
+  .extends: Physics.Component
+  internalCollisionsEnabled: true
+  wantInternalPositioning: true
+  positioningThreshold: 1E-07
+  chassis:
+    .type: chassis
+    localTransform:
+      position: [0, 0, 0]
+      rotation: [0, 0, 0, 1]
+  wheels:
+    .type: wheels
+    name: wheels
+  BoxCarNoMotoraxleRBattachment:
+    .type: Physics.Mechanics.HingeConnector
+    name: BoxCarNoMotoraxleRBattachment
+    enabledPositioning: false
+    enabledInteractions: true
+    constrainDofs: true
+    attachment1: this.chassis.axleRB
+    attachment2: this.wheels.wheelRB.attachment
+    mainInteraction:
+      name: axleRBattachmentConnector
+      stiffness: 10000000000
+      damping: 500000000
+      stiffness6D:
+        defaultValue: 10000000000
+        alongNormal: 10000000000
+        alongCross: 10000000000
+        alongTangent: 10000000000
+        aroundNormal: 10000000000
+        aroundCross: 10000000000
+        aroundTangent: 10000000000
+      damping6D:
+        defaultValue: 500000000
+        alongNormal: 500000000
+        alongCross: 500000000
+        alongTangent: 500000000
+        aroundNormal: 500000000
+        aroundCross: 500000000
+        aroundTangent: 500000000
+    connectOrder: -1
+    angleConstrainDof: true
+    rotationalFrictionCoefficient: 0
+    frictionRotational:
+      stiffness: 10000000000
+      damping: 100000000
+      constrainDof: false
+      maxForce: .inf
+      minForce: -.inf
+  BoxCarNoMotoraxleRFattachment:
+    .type: Physics.Mechanics.HingeConnector
+    name: BoxCarNoMotoraxleRFattachment
+    enabledPositioning: false
+    enabledInteractions: true
+    constrainDofs: true
+    attachment1: this.chassis.axleRF
+    attachment2: this.wheels.wheelRF.attachment
+    mainInteraction:
+      name: axleRFattachmentConnector
+      stiffness: 10000000000
+      damping: 500000000
+      stiffness6D:
+        defaultValue: 10000000000
+        alongNormal: 10000000000
+        alongCross: 10000000000
+        alongTangent: 10000000000
+        aroundNormal: 10000000000
+        aroundCross: 10000000000
+        aroundTangent: 10000000000
+      damping6D:
+        defaultValue: 500000000
+        alongNormal: 500000000
+        alongCross: 500000000
+        alongTangent: 500000000
+        aroundNormal: 500000000
+        aroundCross: 500000000
+        aroundTangent: 500000000
+    connectOrder: -1
+    angleConstrainDof: true
+    rotationalFrictionCoefficient: 0
+    frictionRotational:
+      stiffness: 10000000000
+      damping: 100000000
+      constrainDof: false
+      maxForce: .inf
+      minForce: -.inf
+  BoxCarNoMotoraxleLBattachment:
+    .type: Physics.Mechanics.HingeConnector
+    name: BoxCarNoMotoraxleLBattachment
+    enabledPositioning: false
+    enabledInteractions: true
+    constrainDofs: true
+    attachment1: this.chassis.axleLB
+    attachment2: this.wheels.wheelLB.attachment
+    mainInteraction:
+      name: axleLBattachmentConnector
+      stiffness: 10000000000
+      damping: 500000000
+      stiffness6D:
+        defaultValue: 10000000000
+        alongNormal: 10000000000
+        alongCross: 10000000000
+        alongTangent: 10000000000
+        aroundNormal: 10000000000
+        aroundCross: 10000000000
+        aroundTangent: 10000000000
+      damping6D:
+        defaultValue: 500000000
+        alongNormal: 500000000
+        alongCross: 500000000
+        alongTangent: 500000000
+        aroundNormal: 500000000
+        aroundCross: 500000000
+        aroundTangent: 500000000
+    connectOrder: -1
+    angleConstrainDof: true
+    rotationalFrictionCoefficient: 0
+    frictionRotational:
+      stiffness: 10000000000
+      damping: 100000000
+      constrainDof: false
+      maxForce: .inf
+      minForce: -.inf
+  BoxCarNoMotoraxleLFattachment:
+    .type: Physics.Mechanics.HingeConnector
+    name: BoxCarNoMotoraxleLFattachment
+    enabledPositioning: false
+    enabledInteractions: true
+    constrainDofs: true
+    attachment1: this.chassis.axleLF
+    attachment2: this.wheels.wheelLF.attachment
+    mainInteraction:
+      name: axleLFattachmentConnector
+      stiffness: 10000000000
+      damping: 500000000
+      stiffness6D:
+        defaultValue: 10000000000
+        alongNormal: 10000000000
+        alongCross: 10000000000
+        alongTangent: 10000000000
+        aroundNormal: 10000000000
+        aroundCross: 10000000000
+        aroundTangent: 10000000000
+      damping6D:
+        defaultValue: 500000000
+        alongNormal: 500000000
+        alongCross: 500000000
+        alongTangent: 500000000
+        aroundNormal: 500000000
+        aroundCross: 500000000
+        aroundTangent: 500000000
+    connectOrder: -1
+    angleConstrainDof: true
+    rotationalFrictionCoefficient: 0
+    frictionRotational:
+      stiffness: 10000000000
+      damping: 100000000
+      constrainDof: false
+      maxForce: .inf
+      minForce: -.inf
+  orderedConnectorLimit: -1
+  definedConnectorsOrder:
+    - this.BoxCarNoMotoraxleRBattachment
+    - this.BoxCarNoMotoraxleRFattachment
+    - this.BoxCarNoMotoraxleLBattachment
+    - this.BoxCarNoMotoraxleLFattachment

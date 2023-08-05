@@ -1,0 +1,59 @@
+.format: 4
+
+.import:
+  Physics: [BatchVariable]
+  Physics.Mechanics: [RigidBody, HingeAttachment, HingeConnector]
+  # Physics.Geometry: [Geometry, Box]
+  Physics.Mechanics.AttachmentPairInteraction: [RotationalMotorInteraction1D]
+
+Box:
+  .extends: RigidBody
+
+  lengths:
+    .type: Vec3
+    .value: Vec3(1, 1, 0.05)
+
+  geometry:
+    .type: Physics.Geometry.Box
+    lengths: this.lengths
+
+  hingeAttachment:
+    .type: HingeAttachment
+
+    localTransform:
+      position: Vec3(0,0,-this.lengths.z*0.5)
+
+RotatingBoxOnHinge:
+  .extends: Physics.Component
+
+  box:
+    .type: Box
+    .value: Box
+
+  hingeConnector:
+    .type: HingeConnector
+    attachment1: box.hingeAttachment
+    attachment2: worldAttachment
+    motor:
+      .value: RotationalMotorInteraction1D
+      speed: -5
+      minForce: -10
+      maxForce: 10
+
+  worldAttachment:
+    .type: HingeAttachment
+    .value: HingeAttachment
+
+
+RotatingBoxOnHingeBatch:
+  .extends: RotatingBoxOnHinge
+
+  speedVariable:
+    .type: BatchVariable
+    target: this.hingeConnector.motor.speed
+    model: this
+    name: hingeSpeed
+    default: -5
+    step: 10
+    numStep: 2
+

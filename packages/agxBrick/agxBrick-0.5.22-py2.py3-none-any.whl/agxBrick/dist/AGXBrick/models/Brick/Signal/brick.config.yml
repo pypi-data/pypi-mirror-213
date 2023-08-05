@@ -1,0 +1,32 @@
+ModuleConfig:
+  name: Signal
+  # apiRoot: api
+  targetDirectory: ${env:BRICK_DIR}
+
+  files.exclude:
+    - Test
+
+  import:
+    Math:
+      filepath: ../Math
+      autoImport: true
+    Scene:
+      filepath: ../Scene
+    Physics:
+      filepath: ../Physics
+
+  generators:
+    Python:
+      # targetDirectory: python
+      enable: false
+      useGrpc: false
+
+    Cs:
+      useGrpc: false
+      enable: true
+
+
+    Grpc:
+      enable: false
+      csNamespace: Brick.Signal.Grpc
+      goPackage: algoryx/bamse/worker/api/grpc/brick/Signal # TODO!

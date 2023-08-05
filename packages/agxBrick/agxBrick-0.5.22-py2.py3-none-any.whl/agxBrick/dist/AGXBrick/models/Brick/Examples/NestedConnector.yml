@@ -1,0 +1,69 @@
+.format: 4
+.ignore: true
+
+.import:
+  Physics: [Attachment, RigidBody, Connector]
+  Physics.Mechanics.Attachments: [MechanicalAttachment]
+
+
+NestedConnector:
+  .extends: Physics.Component
+  name: NestedConnector
+  axle:
+    .type: Physics.RigidBody
+    name: Axle
+    geometry:
+      .type: Physics.Geometry.Cylinder
+      length: 0.1
+      radius: 0.03
+    attachments:
+      left:
+        .type: MechanicalAttachment
+        position: Vec3(0.0, 0.0, 0.0)
+        normal: Vec3(-1.0, 0.0, 0.0)
+        tangent: Vec3(0.0, 1.0, 0.0)
+      right:
+        .type: MechanicalAttachment
+        position: Vec3(0.0, 0.0, 0.0)
+        normal: Vec3(1.0, 0.0, 0.0)
+        tangent: Vec3(0.0, 1.0, 0.0)
+  link1:
+    .type: Physics.RigidBody
+    name: Link1
+    geometry:
+      .type: Physics.Geometry.Box
+      lengths: Vec3(0.5, 0.1, 0.1)
+    attachments:
+      side:
+        .type: MechanicalAttachment
+        position: Vec3(0.25, 0.0, 0.0)
+        normal: Vec3(1.0, 0.0, 0.0)
+        tangent: Vec3(0.0, 1.0, 0.0)
+  link2:
+    .type: Physics.RigidBody
+    name: Link2
+    geometry:
+      .type: Physics.Geometry.Box
+      lengths: Vec3(0.5, 0.1, 0.1)
+    attachments:
+      side:
+        .type: MechanicalAttachment
+        position: Vec3(-0.25, 0.0, 0.0)
+        normal: Vec3(1.0, 0.0, 0.0)
+        tangent: Vec3(0.0, 1.0, 0.0)
+  # outerConnector:
+  #   .type: Physics.Connector
+  #   attachment1:
+  #     .type: Attachment
+  #     .value: this.link1.attachments.side
+  #   attachment2:
+  #     .type: Attachment
+  #     .value: this.link2.attachments.side
+  #   innerConnector1:
+  #     .type: SuraceConnector
+  #     attachment1: this.link1.attachments.side
+  #     attachment2: this.axle.attachments.left
+  #   innerConnector2:
+  #     .type: SuraceConnector
+  #     attachment1: this.axle.attachments.right
+  #     attachment2: this.link2.attachments.side

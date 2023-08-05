@@ -1,0 +1,10 @@
+ModuleConfig:
+  name: Examples
+
+  import:
+    Physics: {}
+    Math:
+      autoImport: true
+    Scene: {}
+    Visual: {}
+    Simulation: {}

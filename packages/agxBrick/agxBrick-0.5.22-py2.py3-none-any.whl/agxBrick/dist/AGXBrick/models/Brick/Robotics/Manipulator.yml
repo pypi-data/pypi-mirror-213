@@ -1,0 +1,11 @@
+.format: 4
+.import:
+  Robotics: [Equipment]
+
+Manipulator:
+  .extends: Equipment
+  wantInternalPositioning: true
+  .doc: >
+    Base class of both RobotArm and Tool.
+    Extends the Equipment model, with the concept of joints.
+    The runtime environment should allow the user access to all internal Joints.

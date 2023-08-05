@@ -1,0 +1,26 @@
+.format: 4
+
+.import:
+  Physics.DriveTrain: [GearAttachment, GearInteraction]
+
+GearConnector:
+  .doc: >
+    Gear connecor with no memory of position
+  .extends: Physics.Connector
+
+  attachment1:
+    .type: GearAttachment
+    .value: null
+
+  attachment2:
+    .type: GearAttachment
+    .value: null
+
+  interaction:
+    .type: GearInteraction
+    attachment1: this.attachment1
+    attachment2: this.attachment2
+
+
+
+

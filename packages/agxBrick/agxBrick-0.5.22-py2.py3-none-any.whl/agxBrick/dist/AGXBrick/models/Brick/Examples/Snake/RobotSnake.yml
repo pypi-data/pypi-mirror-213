@@ -1,0 +1,211 @@
+# Model of a "Snake" configured by RobotSnakeSegments
+# This file contain a 4, 5, 6 and 7 segment snake
+
+.format: 4
+.strict: false
+
+.import:
+  Examples.Snake: [RobotSnakeSegment]
+  Examples.Snake.RobotSnakeSegment: [SnakeMaterial]
+  Physics: [Material, ContactMaterial, BatchVariable]
+  Physics.Mechanics: [RigidBody, HingeAttachment,HingeConnector]
+  Robotics: [HingeJoint]
+
+HingeWithInitialAngle:
+  .extends: HingeConnector
+  angle: 0
+
+RobotSnake4:
+  .extends: Robotics.Robot
+  wantInternalPositioning: true
+
+  segment1:
+    .type: RobotSnakeSegment
+    .value: RobotSnakeSegment
+
+  segment2:
+    .type: RobotSnakeSegment
+    .value: RobotSnakeSegment
+
+  joint12:
+    .type: HingeJoint
+    hingeConnector: HingeWithInitialAngle
+    segment1: this.segment1
+    segment2: this.segment2
+    position: 0
+
+
+
+
+  segment3:
+    .type: RobotSnakeSegment
+    .value: RobotSnakeSegment
+
+  joint23:
+    .type: HingeJoint
+    hingeConnector: HingeWithInitialAngle
+    segment1: this.segment2
+    segment2: this.segment3
+    position: 0
+
+  segment4:
+    .type: RobotSnakeSegment
+    .value: RobotSnakeSegment
+
+  joint34:
+    .type: HingeJoint
+    hingeConnector: HingeWithInitialAngle
+    segment1: this.segment3
+    segment2: this.segment4
+    position: 0
+
+RobotSnake5:
+  .extends: RobotSnake4
+
+  segment5:
+    .type: RobotSnakeSegment
+    .value: RobotSnakeSegment
+
+  joint45:
+    .type: HingeJoint
+    hingeConnector: HingeWithInitialAngle
+    segment1: this.segment4
+    segment2: this.segment5
+    position: 0
+
+  joint45Positions:
+    .type: BatchVariable
+    target: this.joint45.position
+    model: this
+    name: joint45angle
+    default: -60
+    step: 30
+    numStep: 5
+
+RobotSnake6:
+  .extends: RobotSnake5
+  segment6:
+    .type: RobotSnakeSegment
+    .value: RobotSnakeSegment
+
+  joint56:
+    .type: HingeJoint
+    hingeConnector: HingeWithInitialAngle
+    segment1: this.segment5
+    segment2: this.segment6
+    position: 0
+
+  joint56Positions:
+    .type: BatchVariable
+    target: this.joint56.position
+    model: this
+    name: joint56angle
+    default: -60
+    step: 30
+    numStep: 5
+
+RobotSnake7:
+  .extends: RobotSnake6
+  segment7:
+    .type: RobotSnakeSegment
+    .value: RobotSnakeSegment
+
+  joint67:
+    .type: HingeJoint
+    hingeConnector: HingeWithInitialAngle
+    segment1: this.segment6
+    segment2: this.segment7
+    position: 0
+
+  joint67Positions:
+    .type: BatchVariable
+    target: this.joint67.position
+    model: this
+    name: joint67angle
+    default: -60
+    step: 30
+    numStep: 5
+
+
+
+FloorMaterial:
+  .const: true
+  .extends: Material
+  name: FloorMaterial
+  bulk:
+    density: 2E2
+    viscosity: 1.0
+
+
+
+RobotSnakeOnAPlane:
+  .extends: Physics.Component
+  wantInternalPositioning: true
+
+  worldAttachment:
+    .type: Physics.Mechanics.LockJointAttachment
+    .value: Physics.Mechanics.LockJointAttachment
+    localTransform:
+      position: Vec3(0,0,0.1)
+
+  worldConnector:
+    .type: Physics.Mechanics.LockJointConnector
+    attachment1: this.snake.segment1.body.horizontalAttachment
+    attachment2: this.worldAttachment
+    enabledInteractions: False
+
+  snake:
+    .type: RobotSnake4
+    .value: RobotSnake4
+    segment1:
+      body:
+        name: Head
+
+  joint12Positions:
+    .type: BatchVariable
+    target: this.snake.joint12.position
+    model: this
+    name: joint12angle
+    default: -60
+    step: 30
+    numStep: 5
+
+  joint23Positions:
+    .type: BatchVariable
+    target: this.snake.joint23.position
+    model: this
+    name: joint23angle
+    default: -60
+    step: 30
+    numStep: 5
+  joint34Positions:
+    .type: BatchVariable
+    target: this.snake.joint34.position
+    model: this
+    name: joint34angle
+    default: -60
+    step: 30
+    numStep: 5
+  plane:
+    .type: Physics.Geometry.Plane
+    material: FloorMaterial
+    a: 0
+    b: 0
+    c: 1
+    d: 0.04999
+
+  contactMaterial:
+    .type: ContactMaterial
+    material1: SnakeMaterial
+    material2: FloorMaterial
+    youngsModulus: 1E7
+    primaryFrictionCoefficient: 0.5
+    secondaryFrictionCoefficient: 0.5
+
+  contactMaterialSelf:
+    .type: ContactMaterial
+    material1: SnakeMaterial
+    material2: SnakeMaterial
+    youngsModulus: 1E7
+    primaryFrictionCoefficient: 0.0
+    secondaryFrictionCoefficient: 0.0

@@ -1,0 +1,22 @@
+.format: 4
+.ignore: true
+
+.import:
+  Physics.Mechanics.Connectors: [SurfaceConnector]
+
+
+SliderWithBox:
+  .extends: Physics.Component
+
+  slider:
+    .type: WrappedAgxScene.Slider.Slider
+    .value: WrappedAgxScene.Slider.Slider()
+  box:
+    .type: WrappedAgxScene.BoxWithAttachments.BoxWithAttachments
+    .value: WrappedAgxScene.BoxWithAttachments.BoxWithAttachments()
+
+  connectors:
+    boxOnSlider:
+      .type: SurfaceConnector
+      attachment1: this.box.body.attachments.bottom
+      attachment2: this.slider.poppet.attachments.top

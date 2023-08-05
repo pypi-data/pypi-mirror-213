@@ -1,0 +1,9 @@
+.format: 4
+
+MyStack:
+  .extends: BoxStack
+  numLevels: 3
+  boxDimensions:
+    x: 1
+    y: 2
+    z: 3

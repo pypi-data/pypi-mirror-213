@@ -1,0 +1,14 @@
+ModuleConfig:
+  name: ExternalModule
+  doc: |
+    This demonstrates the following
+    - An external target directory structure for generated python files
+    - Using environment variable for module imports
+    - Using nested modules (`Examples`, and `Examples.ExternalModule` )
+
+  import:
+    Physics: {}
+
+  generators:
+    Python:
+      targetDirectory: python

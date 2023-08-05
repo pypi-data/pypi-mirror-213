@@ -1,0 +1,310 @@
+# Model of a parametrized convex geometry
+# Designed to whave two round surfaces
+#  1. for contact with the ground
+#  2. for contact with a similar shape,
+#     free rotation for a specific range
+#     and then making contact at a specific angle
+#     See RobotSnake.yml for usecase
+#
+.format: 4
+
+Cut:
+  .doc: A 2D cut
+  cRadius:
+    .doc: Curvature Radius
+    .type: Real
+
+  width:
+    .type: Real
+
+  length:
+    .type: Real
+
+  freeAngle:
+    .type: Real
+
+  fD:
+    .doc: free distance
+    .type: Real
+
+  cHeight:
+    .type: Real
+
+  additionalHeight:
+    .type: Real
+    .value: this.cRadius - this.cHeight
+
+  radius:
+    .type: Real
+    .value: this.length * 0.5 - this.fD
+
+  cosa:
+    .type: Real
+    .value: Math.Cos(Math.PI - this.freeAngle*0.5)
+  talj:
+    .type: Real
+    .value: this.radius + this.fD + this.fD*this.fD / (2 * this.radius) + this.cosa*(this.radius + this.fD)
+  bR:
+    .type: Real
+    .value: this.talj /(1.0 + this.cosa + this.fD * this.cosa / this.radius)
+  xx:
+    .type: Real
+    .value: Math.Sqrt(this.bR*this.bR - this.width*this.width/9.0)
+  lh:
+    .type: Real
+    .value: this.width*this.width / (this.xx*6.0*3.0)
+  curveHeight:
+    .type: Real
+    .value: this.bR - this.xx
+  cl:
+    .type: Real
+    .value: this.length - this.curveHeight + this.fD + this.lh
+  height:
+    .type: Real
+    .value: this.cHeight + this.additionalHeight
+
+  angle:
+    .type: Real
+
+  cosInputAngle:
+    .type: Real
+    .value: Math.Cos(this.angle)
+
+  minZ:
+    .type: Real
+    .value: (this.cHeight + this.additionalHeight)*-0.9
+
+  largeHypo:
+    .type: Real
+    .value: this.cRadius / this.cosInputAngle
+  smallHypo:
+    .type: Real
+    .value: this.largeHypo - this.cRadius
+  z:
+    .type: Real
+    .value: this.smallHypo * this.cosInputAngle
+  y:
+    .type: Real
+    .value: (this.largeHypo - this.smallHypo) * Math.Sin(this.angle)
+  x:
+    .type: Real
+    .value: this.length - this.fD - this.bR*(1.0-Math.Cos(Math.Asin(this.y/this.bR)))
+
+  minX:
+    .type: Real
+    .value: this.length - this.fD - this.curveHeight - this.lh
+
+  P0_a:
+    .type: Vec3
+    .value: Vec3(this.minX,this.y, -this.z)
+  P0_b:
+    .type: Vec3
+    .value: Vec3(this.minX,-this.y, -this.z)
+
+  P0_c:
+    .type: Vec3
+    .value: Vec3(this.minX,this.y, this.minZ)
+  P0_d:
+    .type: Vec3
+    .value: Vec3(this.minX,-this.y, this.minZ)
+  P0_e:
+    .type: Vec3
+    .value: Vec3(0,this.y, this.minZ)
+  P0_f:
+    .type: Vec3
+    .value: Vec3(0,-this.y, this.minZ)
+
+  P0_A:
+    .type: Vec3
+    .value: Vec3(0,this.y, -this.z)
+  P0_B:
+    .type: Vec3
+    .value: Vec3(0,-this.y, -this.z)
+  P1:
+    .type: Vec3
+    .value: Vec3(this.x, this.y, -this.z)
+  P2:
+    .type: Vec3
+    .value: Vec3(this.x, -this.y, -this.z)
+  P3:
+    .type: Vec3
+    .value: Vec3(this.x, this.y, this.minZ)
+  P4:
+    .type: Vec3
+    .value: Vec3(this.x, -this.y, this.minZ)
+
+RoundedConvex:
+  .extends: Physics.Geometry.Convex
+
+  width:
+    .type: Real
+
+  length:
+    .type: Real
+
+  fD:
+    .doc: free distance
+    .type: Real
+
+  freeAngle:
+    .type: Real
+
+  cRadius:
+    .type: Real
+
+  # Resolution chosen for (15-1)/2 = 7 cuts (+ cut0)
+  resolution:
+    .type: Int
+    .value: 15
+
+  halfNumWidth:
+    .type: Int
+    .value: (this.resolution-1)/2
+
+  angleToThirdWidth:
+    .type: Real
+    .value: Math.Sin(this.width/(3.0*this.cRadius))
+
+  cHeight:
+    .type: Real
+    .value: this.cRadius - Math.Sqrt(this.cRadius * this.cRadius - this.width * this.width * 0.25)
+
+  prod:
+    .type: Real
+    .value: (this.cRadius - this.cHeight)/this.cRadius
+
+  # This should be clamped... but didn't compute
+  cosAngle:
+    .type: Real
+    .value: this.prod #Math.Floor(Math.Ceil(this.prod, -1.0), 1.0)
+
+
+  cut0:
+    .type: Cut
+    angle: Math.Acos(this.cosAngle)
+    cHeight: this.cHeight
+    width: this.width
+    length: this.length
+    fD: this.fD
+    freeAngle: this.freeAngle
+    cRadius: this.cRadius
+  cut1:
+    .type: Cut
+    width: this.width
+    cHeight: this.cHeight
+    length: this.length
+    fD: this.fD
+    freeAngle: this.freeAngle
+    cRadius: this.cRadius
+    angle: this.angleToThirdWidth * 1 / this.halfNumWidth
+  cut2:
+    .type: Cut
+    cHeight: this.cHeight
+    width: this.width
+    length: this.length
+    fD: this.fD
+    freeAngle: this.freeAngle
+    cRadius: this.cRadius
+    angle: this.angleToThirdWidth * 2 / this.halfNumWidth
+  cut3:
+    .type: Cut
+    width: this.width
+    cHeight: this.cHeight
+    length: this.length
+    fD: this.fD
+    freeAngle: this.freeAngle
+    cRadius: this.cRadius
+    angle: this.angleToThirdWidth * 3 / this.halfNumWidth
+  cut4:
+    .type: Cut
+    width: this.width
+    cHeight: this.cHeight
+    length: this.length
+    fD: this.fD
+    freeAngle: this.freeAngle
+    cRadius: this.cRadius
+    angle: this.angleToThirdWidth * 4 / this.halfNumWidth
+  cut5:
+    .type: Cut
+    width: this.width
+    cHeight: this.cHeight
+    length: this.length
+    fD: this.fD
+    freeAngle: this.freeAngle
+    cRadius: this.cRadius
+    angle: this.angleToThirdWidth * 5 / this.halfNumWidth
+  cut6:
+    .type: Cut
+    width: this.width
+    cHeight: this.cHeight
+    length: this.length
+    fD: this.fD
+    freeAngle: this.freeAngle
+    cRadius: this.cRadius
+    angle: this.angleToThirdWidth * 6 / this.halfNumWidth
+  cut7:
+    .type: Cut
+    cHeight: this.cHeight
+    width: this.width
+    length: this.length
+    fD: this.fD
+    freeAngle: this.freeAngle
+    cRadius: this.cRadius
+    angle: this.angleToThirdWidth * 7 / this.halfNumWidth
+
+  #.doc: First 8 are box corners, rest the roudedness
+  vertices:
+    - cut0.P0_a
+    - cut0.P0_b
+    - cut0.P0_c
+    - cut0.P0_d
+    - cut0.P0_e
+    - cut0.P0_f
+    - cut0.P0_A
+    - cut0.P0_B
+    - cut0.P1
+    - cut0.P2
+    - cut0.P3
+    - cut0.P4
+    - cut1.P0_A
+    - cut1.P0_B
+    - cut1.P1
+    - cut1.P2
+    - cut1.P3
+    - cut1.P4
+    - cut2.P0_A
+    - cut2.P0_B
+    - cut2.P1
+    - cut2.P2
+    - cut2.P3
+    - cut2.P4
+    - cut3.P0_A
+    - cut3.P0_B
+    - cut3.P1
+    - cut3.P2
+    - cut3.P3
+    - cut3.P4
+    - cut4.P0_A
+    - cut4.P0_B
+    - cut4.P1
+    - cut4.P2
+    - cut4.P3
+    - cut4.P4
+    - cut5.P0_A
+    - cut5.P0_B
+    - cut5.P1
+    - cut5.P2
+    - cut5.P3
+    - cut5.P4
+    - cut6.P0_A
+    - cut6.P0_B
+    - cut6.P1
+    - cut6.P2
+    - cut6.P3
+    - cut6.P4
+    - cut7.P0_A
+    - cut7.P0_B
+    - cut7.P1
+    - cut7.P2
+    - cut7.P3
+    - cut7.P4

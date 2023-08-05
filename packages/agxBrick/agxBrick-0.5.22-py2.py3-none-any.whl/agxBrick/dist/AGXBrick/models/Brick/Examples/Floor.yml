@@ -1,0 +1,15 @@
+.format: 4
+.ignore: true
+
+Floor:
+  .extends: Physics.RigidBody
+  # transform: <={Transform.translate(0, 0, height)}
+  # geometries:
+  #   - shape:
+  #       Physics.Geometry.Box:
+  #         # extents: <={this.extents}
+  .attributes:
+    height:
+      .type: Real
+    extents:
+      .type: Vec3

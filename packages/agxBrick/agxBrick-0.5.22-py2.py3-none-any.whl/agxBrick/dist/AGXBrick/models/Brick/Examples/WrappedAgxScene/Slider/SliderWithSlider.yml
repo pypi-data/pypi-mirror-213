@@ -1,0 +1,29 @@
+.format: 4
+.ignore: true
+
+.import:
+  Physics.Mechanics.Connectors: [SurfaceConnector]
+
+  # Why doesn't this work?
+  # Gives
+  #  [1346]  ERROR Brick.ModelDB [WrappedAgxScene.Slider.SliderWithSlider]
+  #  Failed to load from DB: error: 'Unable to locate Slider (sourcePath: None)'
+  #  path: WrappedAgxScene.Slider.SliderWithSlider
+  #  stack:
+  #  - WrappedAgxScene.Slider.SliderWithSlider
+  #
+  # WrappedAgxScene.Slider: [Slider]
+
+
+SliderWithSlider:
+  .extends: Physics.Component
+  base:
+    .type: WrappedAgxScene.Slider.Slider
+    isPlaced: True
+  top:
+    .type: WrappedAgxScene.Slider.Slider
+    .value: WrappedAgxScene.Slider.Slider()
+  sliderOnSlider:
+    .type: SurfaceConnector
+    attachment1: this.base.poppet.attachments.top
+    attachment2: this.top.base.attachments.left

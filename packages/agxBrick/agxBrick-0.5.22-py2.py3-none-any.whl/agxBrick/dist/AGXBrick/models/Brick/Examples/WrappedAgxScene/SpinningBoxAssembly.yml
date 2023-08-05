@@ -1,0 +1,46 @@
+.format: 4
+
+
+VelocityPlot:
+  .extends: Physics.Component
+  # .type: Plot
+  targetMotorSpeed:
+    .type: Real
+    .value: 0 # TODO: Should not need default
+  boxAngularVelocity:
+    .type: Real
+    .value: 0 # TODO: Should not need default
+
+  enable:
+    .type: Bool
+    .value: true
+
+
+SpinningBoxAssembly:
+  .extends: Physics.Component
+  spinningBox:
+    .type: WrappedAgxScene.SpinningBox
+    .value: WrappedAgxScene.SpinningBox()
+  motorController:
+    .type: WrappedAgxScene.MotorController
+    speedRange:
+      max: 8
+  plot:
+    .type: VelocityPlot
+    enable: false
+
+  dataBindings:
+  - source: motorController.targetMotorSpeed
+    target: spinningBox.targetMotorSpeed
+
+  - source: spinningBox.targetMotorSpeed
+    target: plot.targetMotorSpeed
+
+  - source: spinningBox.boxAngularVelocity
+    target: plot.boxAngularVelocity
+
+
+  # - source: spinningBox.boxAngularVelocity
+  #   target: plot.data.boxAngularVelocity
+  # - source: this.time
+  #   target: plot.data.time

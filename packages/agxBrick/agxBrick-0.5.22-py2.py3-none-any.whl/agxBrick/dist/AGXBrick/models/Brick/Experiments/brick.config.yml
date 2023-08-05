@@ -1,0 +1,8 @@
+ModuleConfig:
+  name: Experiments
+  targetDirectory: ${env:BRICK_DIR}
+
+  # generators:
+  #   Python:
+  #     # targetDirectory: python
+  #     useGrpc: false

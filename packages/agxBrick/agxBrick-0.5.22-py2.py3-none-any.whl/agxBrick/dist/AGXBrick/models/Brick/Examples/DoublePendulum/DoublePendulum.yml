@@ -1,0 +1,235 @@
+.format: 4
+LinkAttachment:
+  .extends: Physics.Mechanics.HingeAttachment
+  distance:
+    .type: Real
+    .value: 0
+  localRotation: Quat.FromTo(Vec3(0,0,1), Vec3(0,1,0))
+  localPosition: Vec3(0,0,this.distance)
+
+
+LinkGeometry:
+  .extends: Physics.Geometry.Box
+  length:
+    .type: Real
+    .value: 1
+  lengths: Vec3(0.1,0.1,this.length)
+
+# An input attachment with a visual element to show its axis
+LinkInputAttachment:
+  .extends: LinkAttachment
+  visualScaling:
+    .type: Vec3
+
+  axleVisual:
+    .type: Visual.File
+    filepath: "Axle.glb"
+    localTransform:
+      rotation: Quat.FromTo(Vec3.Y_Axis, Vec3.Z_Axis)
+    scaling: this.visualScaling
+
+Link:
+  .extends: Physics.Mechanics.RigidBody
+  shape:
+    .type: LinkGeometry
+    length: 1
+  inputAttachment:
+    .type: LinkInputAttachment
+    distance: -this.shape.length * 0.6
+    visualScaling: this.visual.scaling
+
+  outputAttachment:
+    .type: LinkAttachment
+    distance: this.shape.length * 0.6
+
+  visualMeshLength:
+    .type: Real
+    .value: 0.2
+  visualAttachmentDistance:
+    .type: Real
+    .value: 0.186
+  attachmentDistance:
+    .type: Real
+    .value: Math.Abs(inputAttachment.distance * 2)
+
+  visual:
+    .type: Visual.File
+    # filepath: "BrickModels/Link v2 - Link.gltf"  # Is relative to root directory for now, but should be relative to this file
+    filepath: "Link.glb"
+    localTransform:
+      # rotation: Quat.FromTo(Vec3.X_Axis, Vec3.Z_Axis)
+      rotation: EulerAngles.Degrees(90, -90, 0)
+      position: Vec3(0, 0.05, 0)
+    scaling: Vec3(attachmentDistance / visualAttachmentDistance)
+
+
+DoublePendulum:
+  .extends: Physics.Component
+  wantInternalPositioning: true
+  link1:
+    .type: Link
+    .value: Link
+  link2:
+    .type: Link
+    .value: Link
+
+  linkConnector:
+    .type: Physics.Mechanics.HingeConnector
+    attachment1: this.link1.outputAttachment
+    attachment2: this.link2.inputAttachment
+    angle: 45
+  # visualConnector:
+  #   # .type: Visual.Box
+  #   # lengths: Vec3(0.2, 0.2, 0.2)
+  #   .type: Visual.File
+  #   # filepath: "BrickModels/Link v2 - Axle.gltf"  # Is relative to root directory for now, but should be relative to this file
+  #   filepath: "BrickModels/Axle.glb"
+  #   parent: this.link1.outputAttachment
+  #   localTransform:
+  #     rotation: Quat.FromTo(Vec3.Y_Axis, -Vec3.Z_Axis)
+  #   scaling: link1.visual.scaling
+
+DoublePendulumInWorld:
+  .extends: DoublePendulum
+
+  worldAttachment:
+    .type: LinkAttachment
+    .value: LinkAttachment
+
+  worldConnector:
+    .type: Physics.Mechanics.HingeConnector
+    attachment1: this.link1.inputAttachment
+    attachment2: this.worldAttachment
+    angle: -135
+
+DoublePendulumBatch:
+  .extends: DoublePendulumInWorld
+
+  angle2:
+    .type: Physics.BatchVariable
+    target: this.worldConnector.angle
+    model: this
+    name: angle2
+    default: -175
+    step: -30
+    numStep: 5
+
+  angle1:
+    .type: Physics.BatchVariable
+    target: this.linkConnector.angle
+    model: this
+    name: angle1
+    default: 25
+    step: 60
+    numStep: 3
+
+Axle:
+  .extends: Physics.Mechanics.RigidBody
+  shape:
+    .type: Physics.Geometry.Cylinder
+    radius: 0.01
+    length: 0.1
+  attachment:
+    .type: LinkAttachment
+    .value: LinkAttachment
+
+DoublePendulumWithAxle:
+  .extends: Physics.Component
+  wantInternalPositioning: true
+  link1:
+    .type: Link
+    .value: Link
+  link2:
+    .type: Link
+    .value: Link
+  axle:
+    .type: Axle
+    .value: Axle
+    # visual:
+    #   scaling: link1.visual.scaling
+
+  linkConnector:
+    .type: Physics.Mechanics.MultiHingeConnector
+    centralAttachment: this.axle.attachment
+    attachments:
+      - this.link1.outputAttachment
+      - this.link2.inputAttachment
+
+DoublePendulumAxleWorld:
+  .extends: DoublePendulumWithAxle
+
+  worldAttachment:
+    .type: LinkAttachment
+    .value: LinkAttachment
+
+  worldConnector:
+    .type: Physics.Mechanics.HingeConnector
+    attachment1: this.link1.inputAttachment
+    attachment2: this.worldAttachment
+    angle: -135
+
+
+
+MultiPendulum:
+  .extends: Physics.Component
+  wantInternalPositioning: true
+  noAxlePendulum:
+    .type: DoublePendulumInWorld
+    .value: DoublePendulumInWorld
+
+  axlePendulum:
+    .type: DoublePendulumWithAxle
+    .value: DoublePendulumWithAxle
+
+  pendulumConnector:
+    .type: Physics.Mechanics.HingeConnector
+    attachment1: this.noAxlePendulum.link2.outputAttachment
+    attachment2: this.axlePendulum.link1.inputAttachment
+    angle: 45
+
+MultiPendulumNoCollisions:
+  .extends: MultiPendulum
+
+  disabledCollisionGroup:
+    .type: Physics.CollisionGroup
+    members:
+      - this.noAxlePendulum
+      - this.axlePendulum
+
+  collisionGroupPair:
+    .type: Physics.CollisionGroup.CollisionGroupPair
+    group1: this.disabledCollisionGroup
+    group2: this.disabledCollisionGroup
+
+DoubleMultiPendulum:
+  .extends: Physics.Component
+  wantInternalPositioning: true
+  internalCollisionsEnabled: false
+  p1:
+    .type: MultiPendulum
+    .value: MultiPendulum
+  p2:
+    .type: MultiPendulum
+    .value: MultiPendulum
+    noAxlePendulum:
+      worldAttachment:
+        distance: 1
+
+  endConnector:
+    .type: Physics.Mechanics.HingeConnector
+    attachment1: this.p1.axlePendulum.link2.outputAttachment
+    attachment2: this.p2.axlePendulum.link2.outputAttachment
+    validAngleRange:
+      minValue: -180
+      maxValue: 0
+
+  enabledCollisionGroup:
+    .type: Physics.CollisionGroup
+    members:
+      - this.p1.axlePendulum
+      - this.p2.axlePendulum
+
+  collisionGroupPair:
+    .type: Physics.CollisionGroup.CollisionGroupPair
+    group1: this.enabledCollisionGroup
+    group2: this.enabledCollisionGroup

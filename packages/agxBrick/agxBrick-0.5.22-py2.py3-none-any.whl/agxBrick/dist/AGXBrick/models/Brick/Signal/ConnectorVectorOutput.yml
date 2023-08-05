@@ -1,0 +1,20 @@
+.format: 4
+
+ConnectorVectorOutput:
+  .extends: Signal.VectorOutput
+  .doc: > 
+    Outputs the force/torque vector from an AttachmentPairConnector.
+    onlyMainInteraction as true, will ignore the other interactions.
+    onlyMainInteraction as false, will include the other interactions.
+
+  connector:
+    .type: Physics.Mechanics.AttachmentPairConnector
+
+  referenceRigidBody:
+    .doc: > 
+      The force and torque vectors will be in the coordinate system of the 
+      reference RigidBody. 
+      If not defined, the force and torque will be in the world coordinate frame.
+    .type: Physics.Mechanics.RigidBody
+    .value: null
+

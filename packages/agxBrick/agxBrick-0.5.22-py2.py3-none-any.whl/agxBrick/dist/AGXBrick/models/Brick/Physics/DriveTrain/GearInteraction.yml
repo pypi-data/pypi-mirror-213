@@ -1,0 +1,24 @@
+.format: 4
+
+.import:
+  Physics: [Interaction]
+  Physics.DriveTrain: [GearAttachment]
+
+GearInteraction:
+  .doc: >
+    Gear interaction with no memory of position
+  .extends: Interaction
+
+  attachment1:
+    .type: GearAttachment
+
+  attachment2:
+    .type: GearAttachment
+
+  interactionType: Gear
+
+  gearRatio:
+    .type: Real
+    .value: 1.0
+
+

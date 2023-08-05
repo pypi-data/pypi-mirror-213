@@ -1,0 +1,16 @@
+.format: 4
+
+BoxStack:
+  .extends: Physics.Component
+  .doc: Generates a stack of boxes
+  numLevels:
+    .type: Int
+    .value: 5
+  boxDimensions:
+    .type: Vec3
+    .value: {x: 1, y: 1, z: 1}
+  boxes:
+    .type: List<Physics.Mechanics.RigidBody>
+    .access:
+      get: Public
+    .value: null

@@ -1,0 +1,49 @@
+.format: 4
+
+SignalType:
+  name:
+    .type: String
+
+OutputDistanceSignal:
+  .extends: SignalType
+  .const: true
+  name: OutputDistanceSignal
+
+InputForceSignal:
+  .extends: SignalType
+  .const: true
+  name: InputForceSignal
+
+OutputForceSignal:
+  .extends: SignalType
+  .const: true
+  name: OutputForceSignal
+
+InputVelocitySignal:
+  .extends: SignalType
+  .const: true
+  name: InputVelocitySignal
+
+OutputVelocitySignal:
+  .extends: SignalType
+  .const: true
+  name: OutputVelocitySignal
+
+InputPositionSignal:
+  .extends: SignalType
+  .const: true
+  name: InputPositionSignal
+
+OutputPositionSignal:
+  .extends: SignalType
+  .const: true
+  name: OutputPositionSignal
+
+ArbitraryInputSignal:
+  .extends: SignalType
+  .doc: >
+    Let the input signal type depend on something else than the specified one.
+    For example if a Joint has a drive train, then the signal type is defined
+    by the first declared signal in the Joint, not the signal type.
+  .const: true
+  name: ArbitraryInputSignal

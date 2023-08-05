@@ -1,0 +1,134 @@
+# This example declares 3 box pyramid.
+# The relative size of the boxes are constant
+# but the size can be scaled.
+# The box material and the
+# box-box contact material are declared
+# Also the pose of the top box
+# is published if using ROS
+
+.format: 4
+
+# Use imports to avoid having two write the whole name of the component
+.import:
+  Physics.Mechanics: [RigidBodyAttachment, HingeConnector, RigidBody]
+  Physics: [MassProperties]
+
+BoxMaterial:
+  .const: true
+  .extends: Physics.Material
+  name: BoxMaterial
+  bulk:
+    density: 2E2
+
+ConveyorMaterial:
+  .const: true
+  .extends: Physics.Material
+  name: ConveyorMaterial
+  bulk:
+    density: 2E3
+
+InitialStateData:
+  .extends: RigidBody
+  state_path:
+    .type: String
+    .value: box_states.csv
+  body:
+    .type: RigidBody
+
+CardboardBox:
+  .extends: RigidBody
+
+  massProperties:
+    .value: MassProperties.OffDiagonalMassProperties3D
+    mass: 0.088
+    inertia: [0.00014,0.000154,0.0001829]
+    inertia12_21: 0.000014
+    inertia13_31: 0.000015
+    inertia23_32: 0.000016
+
+  geom:
+    .type: Physics.Geometry.Box
+    lengths: [0.117, 0.091, 0.066]
+    material: BoxMaterial
+
+BoxToss:
+  .extends: Physics.Component
+  wantInternalPositioning: true
+
+  box:
+    .type: CardboardBox
+    .value: CardboardBox
+    localTransform:
+      position: [0,0,0.8]
+
+  conveyor:
+    .type: AGXBrick.SurfaceVelocityConveyorBox
+
+    lengths: [2,0.8, 0.7]
+    speed: 1
+    localTransform:
+      position: [0,0,-0.4]
+
+    points:
+      - [-1,0,0.7]
+      - [1,0,0.7]
+
+  # box_states:
+  #   .type: InitialStateData
+  #   body: this.box
+  #   state_path: box_states.csv
+
+  contactMaterial:
+    .type: Physics.ContactMaterial
+    material1: BoxMaterial
+    material2: ConveyorMaterial
+    youngsModulus: 1E9
+    restitution: 0
+    primaryFrictionCoefficient: 1
+
+BoxTossBatch:
+  .extends: BoxToss
+
+  box:
+    kinematics:
+      linearVelocity: [0,0,1]
+
+  conveyor_pos:
+    .type: Physics.BatchVariable
+    target: this.conveyor.localTransform.position.z
+    model: this
+    name: conveyor_pos
+    default: 0
+    step: 1
+    numStep: 2
+  friction:
+    .type: Physics.BatchVariable
+    target: this.contactMaterial.primaryFrictionCoefficient
+    model: this
+    name: friction
+    default: 0
+    step: 1
+    numStep: 2
+
+BoxTossParameterSpace:
+  .extends: BoxToss
+
+  box:
+    kinematics:
+      linearVelocity: [0,0,0]
+
+  conveyorSpeed:
+    .type: Physics.ExperimentFactorialDimension
+    name: conveyorSpeed
+    targets:
+      - this.conveyor.speed
+    model: this
+    start: -1
+    stop: 2
+    numStep: 3
+    
+  parameterSpace:
+    .type: Physics.ExperimentParameterSpace
+    
+    factorialDimensions:
+      - this.conveyorSpeed

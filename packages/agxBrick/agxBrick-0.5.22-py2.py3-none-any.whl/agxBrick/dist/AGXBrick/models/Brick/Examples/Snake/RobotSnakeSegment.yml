@@ -1,0 +1,198 @@
+# Contains
+# 1. Model of a SnakeSegment
+#    - RigidBody with the Geoemtry of a Rounded Convex
+#    - Geometry has SnakeMaterial
+# 2. Model of a RobotSnakeSegment
+#    - Robotics.Segment with SnakeSegment Rigid body + 4 distance sensors
+#    - two orthogonal attachmets, for attaching next and previous segment
+# The math is not well documented
+# But what you can do is to load the VariousShapes Component
+# And see the differences
+
+.format: 4
+.strict: false
+
+.import:
+  Physics.Geometry: [Cylinder]
+  Physics: [Material]
+  Physics.Mechanics: [RigidBody, HingeAttachment]
+  Robotics: [Segment]
+  Examples.Snake: [RoundedConvex]
+
+SnakeMaterial:
+  .const: true
+  .extends: Material
+  name: SnakeMaterial
+  bulk:
+    density: 2E2
+    viscosity: 1.0
+
+
+
+SnakeSegment:
+  .extends: RigidBody
+  mass: 0.1
+
+  relativeAngle:
+    .type: Real
+    .value: 1.5
+
+  radius:
+    .type: Real
+    .value: 0.05
+
+  segmentLength:
+    .type: Real
+    .value: 0.11
+
+  circleLength:
+    .type: Real
+    .value: 0.01
+
+  padLength:
+    .type: Real
+    .value: this.segmentLength*0.5 - this.circleLength
+
+  circle:
+    .type: Cylinder
+    radius: this.radius*0.9
+    length: this.circleLength
+
+    material: SnakeMaterial
+    localTransform:
+      position: Vec3(0,0,0)
+      rotation: Quat.FromTo(Vec3.Y_Axis,Vec3.X_Axis)
+
+  horizontalPad:
+    .type: RoundedConvex
+    .value: RoundedConvex
+    cRadius: this.radius
+    fD: this.circleLength * 0.05
+    freeAngle: relativeAngle
+    length: this.padLength
+    width: this.segmentLength*0.5
+
+    material: SnakeMaterial
+    localTransform:
+      position: Vec3(-this.circleLength*0.5,0,this.radius)
+      rotation: Quat.AngleAxis(180, Vec3(0,0,1))
+
+  verticalPad:
+    .type: RoundedConvex
+    .value: RoundedConvex
+    cRadius: this.radius
+    freeAngle: relativeAngle
+    fD: this.circleLength * 0.05
+    length: this.padLength
+    width: this.segmentLength*0.5
+    material: SnakeMaterial
+    localTransform:
+      position: Vec3(this.circleLength*0.5,this.radius,0)
+      rotation: Quat.AngleAxis(-90, Vec3(1,0,0))
+
+  horizontalAttachment:
+    .type: HingeAttachment
+    localTransform:
+      position: Vec3(-this.padLength*0.5 - this.circleLength*0.5, 0, 0)
+      rotation: Quat.TryFromToZXPair(Vec3.Z_Axis, Vec3.X_Axis)
+
+  verticalAttachment:
+    .type: HingeAttachment
+    localTransform:
+      position: Vec3(this.padLength*0.5+ this.circleLength*0.5, 0, 0)
+      rotation: Quat.TryFromToZXPair(-Vec3.Y_Axis, Vec3.X_Axis)
+
+
+RobotSnakeSegment:
+  .extends: Segment
+
+  body: SnakeSegment
+
+  inputAttachment: this.body.horizontalAttachment
+
+  outputAttachment: this.body.verticalAttachment
+
+  distanceSensorYdir:
+    .type: Robotics.Sensor.DistanceSensor
+    body: this.body
+
+    startPoint: Vec3(0,this.body.radius,0)
+
+    direction: Vec3(0,1,0)
+
+    length: 0.2
+
+  distanceSensorNegYdir:
+    .type: Robotics.Sensor.DistanceSensor
+    body: this.body
+
+    startPoint: Vec3(0,-this.body.radius,0)
+
+    direction: Vec3(0,-1,0)
+
+    length: 0.2
+
+  distanceSensorZdir:
+    .type: Robotics.Sensor.DistanceSensor
+    body: this.body
+
+    startPoint: Vec3(0,0,this.body.radius)
+
+    direction: Vec3(0,0,1)
+
+    length: 0.2
+
+  distanceSensorNegZdir:
+    .type: Robotics.Sensor.DistanceSensor
+    body: this.body
+
+    startPoint: Vec3(0,0,-this.body.radius)
+
+    direction: Vec3(0,0,-1)
+
+    length: 0.2
+
+ShapeBody:
+  .extends: Physics.Mechanics.RigidBody
+  shape:
+    .type: RoundedConvex
+    freeAngle: 1.5
+    fD: 0.003
+    length: 0.055
+
+
+VariousShapes:
+  .extends: Physics.Component
+
+  b1:
+    .type: ShapeBody
+    localTransform:
+      position: Vec3(-0.2,0,0)
+    shape:
+      cRadius: 0.4
+      width: 0.07
+
+  b2:
+    .type: ShapeBody
+    localTransform:
+      position: Vec3(-0.1,0,0)
+    shape:
+      cRadius: 0.1
+      width: 0.07
+
+  b3:
+    .type: ShapeBody
+    localTransform:
+      position: Vec3(0,0,0)
+    shape:
+      cRadius: 0.15
+      width: 0.09
+      length: 0.05
+
+  b4:
+    .type: ShapeBody
+    localTransform:
+      position: Vec3(0.1,0,0)
+    shape:
+      cRadius: 0.1
+      width: 0.07

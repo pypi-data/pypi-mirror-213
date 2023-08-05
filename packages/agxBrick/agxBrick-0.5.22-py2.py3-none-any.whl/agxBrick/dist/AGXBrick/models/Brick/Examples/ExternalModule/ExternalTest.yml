@@ -1,0 +1,7 @@
+.format: 4
+
+ExternalTest:
+  .extends: Physics.Component
+  foo:
+    .type: Int
+

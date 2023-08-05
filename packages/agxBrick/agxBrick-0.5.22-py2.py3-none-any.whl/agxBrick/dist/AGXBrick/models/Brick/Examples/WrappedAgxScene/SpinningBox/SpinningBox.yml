@@ -1,0 +1,21 @@
+.format: 4
+
+SpinningBox:
+  .extends: AGXBrick.ExternalAgxScene
+  .doc: Spinning box model
+
+  entrypoint: SpinningBox.agxPy
+
+  targetMotorSpeed:
+    .doc: The target speed for the hinge motor
+    .type: Real
+    .value: 3.5
+
+  boxAngularVelocity:
+    .doc: The actual rotational velocity of the box around the vertical axis
+    .type: Real
+    .access:
+      get: Public
+    .value: 0
+
+

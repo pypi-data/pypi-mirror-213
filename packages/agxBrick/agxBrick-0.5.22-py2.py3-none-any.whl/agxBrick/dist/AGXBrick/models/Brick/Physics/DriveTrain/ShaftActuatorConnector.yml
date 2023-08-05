@@ -1,0 +1,21 @@
+.format: 4
+
+.import:
+  Physics.DriveTrain: [Body1DActuatorConnector, RotatingShaft]
+
+ShaftActuatorConnector:
+  .extends: Body1DActuatorConnector
+
+  shaft:
+    .type: RotatingShaft
+    .value: null
+
+  internalInertia:
+    .type: Real
+    .value: 0.0
+
+  body1D: this.shaft
+
+
+
+

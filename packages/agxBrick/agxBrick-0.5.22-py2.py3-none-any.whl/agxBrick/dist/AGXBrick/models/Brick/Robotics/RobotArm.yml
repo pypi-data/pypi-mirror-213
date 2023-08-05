@@ -1,0 +1,10 @@
+.format: 4
+.import:
+  Robotics: [Manipulator]
+
+RobotArm:
+  .extends: Manipulator
+  .doc: >
+    A linear structure of Segments, connected by Joints.
+
+

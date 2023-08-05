@@ -1,0 +1,61 @@
+.format: 4
+# .strict: false
+
+
+Project:
+  baseUrl:
+    .type: String
+  path:
+    .type: Path
+  projectId:
+    .doc: 'TODO: Should be automatically retreived'
+    .type: Int
+
+
+Artifact:
+  project:
+    .type: Project
+  reference:
+    .doc: The branch or tag ref
+    .type: String
+  job:
+    .type: String
+  authTokenVariable:
+    .doc: Name of environment vairable containing the auth token
+    .type: String
+
+
+
+AlgoryxProject:
+  .extends: Project
+  baseUrl: https://git.algoryx.se
+
+AgxProject:
+  .extends: AlgoryxProject
+  path: algoryx.agx
+  projectId: 5
+
+AgxEmbedArtifact:
+  .value: Artifact
+  project: AgxProject
+  reference: feature/build-agx-embedding-artifacts
+  authTokenVariable: AGX_CI_ARTIFACT_DOWNLOAD_TOKEN
+
+AgxArtifactSet:
+  .doc: Set of AGX artifacts for all target platforms
+  mac:
+    # .value: AgxEmbedArtifact
+    .type: Artifact
+    project: AgxProject
+    reference: feature/build-agx-embedding-artifacts
+    authTokenVariable: AGX_CI_ARTIFACT_DOWNLOAD_TOKEN
+
+    job: build-embed-package-mac
+  macDeps:
+    # .value: AgxEmbedArtifact
+    .type: Artifact
+    project: AgxProject
+    reference: feature/build-agx-embedding-artifacts
+    authTokenVariable: AGX_CI_ARTIFACT_DOWNLOAD_TOKEN
+
+    job: create-dependency-archive-mac

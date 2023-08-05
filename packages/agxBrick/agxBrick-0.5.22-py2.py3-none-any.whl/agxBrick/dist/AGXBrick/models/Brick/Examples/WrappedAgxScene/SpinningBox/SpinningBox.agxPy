@@ -1,0 +1,38 @@
+import agx
+import agxOSG
+import agxPython
+import agxCollide
+
+def buildScene():
+    print(f'buildScene: Loading SpinningBox model from {__file__}')
+
+    # print(f'foo?: {model.}')
+    # print(f'foo?: {model.dict()}')
+
+    sim = agxPython.getContext().environment.getSimulation()
+    app = agxPython.getContext().environment.getApplication()
+    osgRoot = agxPython.getContext().environment.getSceneRoot()
+    #print("SpinningBox ScriptContext: {}".format(context))
+
+    # NOTE: We need something like getResourcePath in FMI bindings?
+
+
+    #print("Creating box...")
+    box = agx.RigidBody(agxCollide.Geometry(agxCollide.Box(1.0, 1.0, 1.0)))
+    box.setName('box')
+    sim.add(box)
+    #print("Box: {}".format(box))
+
+    hf = agx.HingeFrame()
+
+    hf.setAxis(agx.Vec3(0.0, 0.0, 1.0))
+    hf.setCenter(agx.Vec3(0.0, 0.0, 2.0))
+
+    hinge = agx.Hinge(hf, box)
+    hinge.setName('hinge')
+    hinge.getMotor1D().setEnable(True)
+    hinge.getMotor1D().setCompliance(5.0 * 1e-5)
+
+    sim.add(hinge)
+
+    agxOSG.createVisual(box, osgRoot)

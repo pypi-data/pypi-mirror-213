@@ -1,0 +1,38 @@
+import agx
+import agxSDK
+import agxPython
+import agxCollide
+
+
+def get_next_assembly_name(simulation):
+    from os import path
+    basename = path.basename(__file__)
+
+    counter = 1
+    name = f"{basename}-{counter}"
+    assembly = simulation.getAssembly(name)
+    while assembly is not None:
+        counter += 1
+        if counter > 10000:
+            raise ValueError(f"Found unexpectedly many {basename} assemblies.")
+        name = f"{basename}-{counter}"
+        assembly = simulation.getAssembly(name)
+    return name, counter
+
+
+def buildScene():
+    simulation = agxPython.getContext().environment.getSimulation()
+    assembly = agxSDK.Assembly()
+    assembly_name, _ = get_next_assembly_name(simulation)
+    assembly.setName(assembly_name)
+    simulation.add(assembly)
+    print(f"Created assembly with name '{assembly.getName()}'")
+
+    body = agx.RigidBody("BoxWithAttachments")
+    large_box = agxCollide.Box(agx.Vec3(0.25, 0.25, 0.25))
+    small_box = agxCollide.Box(agx.Vec3(0.2, 0.1, 0.1))
+    geometry = agxCollide.Geometry()
+    geometry.add(large_box)
+    geometry.add(small_box, agx.AffineMatrix4x4.translate(0.45, 0.0, -0.15))
+    body.add(geometry)
+    assembly.add(body)

@@ -1,0 +1,76 @@
+.format: v4.0.0
+.ignore: true
+
+Foo:
+  # .format: 4
+  a:
+    .type: Real
+    .value: 5
+  b:
+    .type: String
+
+Bar:
+  .extends: Foo
+  c:
+    .type: Foo
+    .value: Bar
+    a: 2 * (1.4 + d)
+    b: lol
+    c: null
+  d:
+    .type: Int
+    .value: 45
+
+Hej:
+  .extends: Bar
+  a: -44
+
+  # Which one to export? Heuristic model
+  c.b: hej
+  c:
+    b: hej
+
+foo:
+  # .kind: Value
+  .extends: Foo
+  a: 3
+
+
+
+
+###
+
+Gear:
+  .auto: true
+  .strict: false
+  .extends: Any
+
+  circle:
+    .declaration: Circle
+    radius: 100mm
+    origin: Vec2(1, 1)
+  numPoints: 10 # Int(10)
+  angleInterval: 2 * pi / numPoints
+  points:
+    .map: range(0, angleInterval, 2*pi - angleInterval)
+    .it: angle
+    .local:
+      offset: Vec2(Cos(angle), Sin(angle)) * circle.radius
+    .value: circle.origin + offset
+
+  points2:
+    .map:
+      .it: range(0, angleInterval, 2*pi - angleInterval) => angle
+      offset: Vec2(Cos(angle), Sin(angle)) * circle.radius
+      result: circle.origin + offset
+
+# Circle.Sample:
+CircleSample:
+  angle: Angle
+  tangent: Normal2 # Normal<Vec2>
+  position: Vec2
+
+# Circle.CircumferenceSampler:
+#   {}
+
+

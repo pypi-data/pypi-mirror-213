@@ -1,0 +1,23 @@
+.format: 4
+
+MotorController:
+  .extends: Physics.Component
+  .doc: Will randomly set target speed with random intervals
+
+  targetMotorSpeed:
+    .doc: Output target motor speed signal
+    .type: Real
+    # .causality: Output
+    .value: 0 # TODO: This should not be required!
+
+  speedRange:
+    .doc: Range for randomly selecting target speed values
+    .type: Range # TODO: Want to use Range<AngularVelocity>
+    min: -5
+    max: 5
+
+  timeIntervalRange:
+    .doc: Each new target speed will have a random duration until a new target speed is generated
+    .type: Range # TODO: Want to use Range<Time>
+    min: 0.6
+    max: 4

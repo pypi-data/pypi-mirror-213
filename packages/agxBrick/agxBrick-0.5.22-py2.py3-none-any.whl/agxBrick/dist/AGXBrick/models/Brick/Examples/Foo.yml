@@ -1,0 +1,38 @@
+.format: 4
+
+Foo:
+  .doc: Testing parser
+  bar:
+    .doc: This is an attribute!
+    .type: Real
+    .value: 4.2
+  hej:
+    .type: Real
+  myStrings:
+    .type: List<String>
+  testMap:
+    .type: Map<String, Real>
+    .value: {}
+
+  # .methods:
+  #   doFoo:
+  #     doc: Method test
+  #     parameters:
+  #       vec: Vec3
+  #       s: String
+
+MyFoo:
+  .value: Foo
+  hej: 1.2345
+  myStrings: [ hello2 ]
+  testMap:
+    foo: 55
+
+MyFoo2:
+  .value: Foo
+  hej: -30
+  bar: hej + 2
+  # myStrings: [ hello2 ]
+  testMap:
+    fooz: bar - 3
+    lol: 2

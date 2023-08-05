@@ -1,0 +1,44 @@
+.format: 4
+
+.import:
+  Physics.Mechanics: [RotationalPairConnector, HingeAttachment, HingeInteraction]
+  Physics.Mechanics.AttachmentPairInteraction: [Gear1DInteraction,RotationalMotorInteraction1D, RotationalRangeMinMaxInteraction1D, RotationalLockInteraction1D]
+  Physics.DriveTrain: [RotatingShaft]
+
+HingeConnector:
+  .extends: RotationalPairConnector
+
+  mainInteraction:
+    .value: HingeInteraction
+
+  motor:
+    .type: RotationalMotorInteraction1D
+    .value: null
+
+  range:
+    .type: RotationalRangeMinMaxInteraction1D
+    .value: null
+
+  lock:
+    .type: RotationalLockInteraction1D
+    .value: null
+  # .constructors:
+  # - attachment1:
+  #     .type: Physics.Mechanics.RigidBodyAttachment
+  #   attachment2:
+  #     .type: Physics.Mechanics.RigidBodyAttachment
+
+RotationalActuatorHingeConnector:
+  .extends: HingeConnector
+
+  shaft:
+    .type: RotatingShaft
+
+  internalInertia:
+    .type: Real
+    .value: 0.01
+
+  actuator:
+    .type: Gear1DInteraction
+    internalInertia: this.internalInertia
+    inputShaft: this.shaft

@@ -1,0 +1,51 @@
+.format: 4
+
+.import:
+  Physics: [Component]
+  Physics.Geometry: [Box]
+  Physics.DriveTrain: [RotatingShaft, Engine, FixedVelocityEngine, GearAttachment, GearConnector, DifferentialConnector, RotationalActuator]
+  Physics.Mechanics: [RigidBody,HingeAttachment, RigidBodyAttachment]
+  Physics.Mechanics.HingeConnector: [RotationalActuatorHingeConnector]
+
+
+FixedVelocityDifferentialDriveTrain:
+  .extends: Component
+
+  engine:
+    .type: Engine
+    .value: Engine
+
+  shaftLeft:
+    .type: RotatingShaft
+    .value: RotatingShaft
+
+  shaftRight:
+    .type: RotatingShaft
+    .value: RotatingShaft
+
+  rotationalActuatorLeft:
+    .type: RotationalActuator
+    .value: RotationalActuator
+
+  rotationalActuatorRight:
+    .type: RotationalActuator
+    .value: RotationalActuator
+
+  gearLeft:
+    .type: GearConnector
+    attachment1: this.shaftLeft.outputAttachment
+    attachment2: this.rotationalActuatorLeft.inputAttachment
+    interaction:
+      gearRatio: -1
+
+  gearRight:
+    .type: GearConnector
+    attachment1: this.shaftRight.outputAttachment
+    attachment2: this.rotationalActuatorRight.inputAttachment
+
+  differential:
+    .type: DifferentialConnector
+    inputAttachment: this.engine.outputAttachment
+    outputAttachments:
+      - this.shaftLeft.inputAttachment
+      - this.shaftRight.inputAttachment

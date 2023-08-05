@@ -1,0 +1,234 @@
+# Test for setting up a simple car with TwoBodyTire and making sure internal positioning 
+# works as it should.
+
+.format: 4
+
+.import:
+  Physics: [Component]
+  Physics.Geometry: [Cylinder, Box]
+  Physics.Mechanics: [RigidBody, HingeAttachment, RigidBodyAttachment, HingeConnector]
+  Physics.Mechanics.DegreeOfFreedom: [NoDegreeOfFreedomRelativeParent]
+  AGXBrick: [TwoBodyTire]
+
+TireCyl:
+  .extends: TwoBodyTire.TireBody
+  shape:
+    .type: Cylinder
+    length: 0.05
+    radius: 0.12
+
+RimCyl:
+  .extends: TwoBodyTire.RimBody
+  shape:
+    .type: Cylinder
+    length: 0.055
+    radius: 0.06
+  attachment:
+    localTransform:
+      rotation: Quat.FromTo(Vec3(0,0,1), Vec3(0,1,0))
+
+Wheel:
+  .extends: Component
+
+  tireBody:
+    .type: TireCyl
+    .value: TireCyl
+
+  rimBody:
+    .type: RimCyl
+    .value: RimCyl
+
+  twoBodyTire:
+    .type: TwoBodyTire
+    attachmentOnRim: rimBody.attachmentToTire
+    attachmentOnTire: tireBody.attachmentToRim
+    tireRadius: this.tireBody.shape.radius
+    rimRadius: this.rimBody.shape.radius
+
+
+
+WorldAttachment:
+  .extends: RigidBodyAttachment
+  worldLock:
+    .type: NoDegreeOfFreedomRelativeParent
+    .value: NoDegreeOfFreedomRelativeParent
+
+Chassis:
+  .extends: RigidBody
+
+  width:
+    .type: Real
+
+  length:
+    .type: Real
+
+  height:
+    .type: Real
+
+  shape:
+    .type: Box
+    lengths: Vec3(this.length,this.width, this.height)
+
+  worldAttachment:
+    .type: WorldAttachment
+    .value: WorldAttachment
+
+  axleRB:
+    .type: HingeAttachment
+    localTransform:
+      position: Vec3(-this.length*0.35,this.width*0.55, -this.height*0.3)
+      rotation: Quat.TryFromToZXPair(Vec3(0,1,0), Vec3(0,0,1))
+
+  axleRF:
+    .type: HingeAttachment
+    localTransform:
+      position: Vec3(this.length*0.35,this.width*0.55, -this.height*0.3)
+      rotation: Quat.TryFromToZXPair(Vec3(0,1,0), Vec3(0,0,1))
+
+  axleLB:
+    .type: HingeAttachment
+    localTransform:
+      position: Vec3(-this.length*0.35,-this.width*0.55, -this.height*0.3)
+      rotation: Quat.TryFromToZXPair(Vec3(0,-1,0), Vec3(0,0,-1))
+
+  axleLF:
+    .type: HingeAttachment
+    localTransform:
+      position: Vec3(this.length*0.35,-this.width*0.55, -this.height*0.3)
+      rotation: Quat.TryFromToZXPair(Vec3(0,-1,0), Vec3(0,0,1))
+
+
+Wheels:
+  .extends: Component
+
+  wheelRB:
+    .type: Wheel
+    .value: Wheel
+
+  wheelRF:
+    .type: Wheel
+    .value: Wheel
+
+  wheelLB:
+    .type: Wheel
+    .value: Wheel
+
+  wheelLF:
+    .type: Wheel
+    .value: Wheel
+
+BoxCar:
+  .doc: >
+    Test for declaring a box Car
+  .extends: Component
+
+  width:
+    .type: Real
+    .value: 0.5
+
+  length:
+    .type: Real
+    .value: 1
+
+  height:
+    .type: Real
+    .value: 0.3
+
+  chassis:
+    .type: Chassis
+    length: this.length
+    height: this.height
+    width: this.width
+    localTransform:
+      position: Vec3(0,0,0)
+
+  wheels:
+    .type: Wheels
+    .value: Wheels
+
+TireCar:
+  .extends: BoxCar
+  wantInternalPositioning: true
+  connectRB:
+    .type: HingeConnector
+    angle: 0
+    attachment1: this.chassis.axleRB
+    attachment2: this.wheels.wheelRB.rimBody.attachment
+
+  connectRF:
+    .type: HingeConnector
+    angle: 0
+    attachment1: this.chassis.axleRF
+    attachment2: this.wheels.wheelRF.rimBody.attachment
+
+  connectLB:
+    .type: HingeConnector
+    angle: 0
+    attachment1: this.chassis.axleLB
+    attachment2: this.wheels.wheelLB.rimBody.attachment
+
+  connectLF:
+    .type: HingeConnector
+    angle: 0
+    attachment1: this.chassis.axleLF
+    attachment2: this.wheels.wheelLF.rimBody.attachment
+
+ExtendedTireCar:
+  .extends: Physics.Component
+  externalFilepath: car.agx
+
+  rim1:
+    .type: AGXBrick.TwoBodyTire.RimBody
+    externalReference: 444df95e-4881-f435-3383-621eaeb3df9e
+  tire1:
+    .type: AGXBrick.TwoBodyTire.TireBody
+    externalReference: 984b753d-2a11-d16d-7400-a8182a4fcf81
+
+  wheel1:
+    .type: AGXBrick.TwoBodyTire
+    attachmentOnTire: this.tire1.attachmentToRim
+    rimRadius: 0.06
+    attachmentOnRim: this.rim1.attachmentToTire
+    tireRadius: 0.12
+
+  rim2:
+    .type: AGXBrick.TwoBodyTire.RimBody
+    externalReference: 4648a650-8e4a-c107-f5eb-d41a90461187
+  tire2:
+    .type: AGXBrick.TwoBodyTire.TireBody
+    externalReference: 9742bcc4-b8d1-476b-65ce-57f109b852bf
+
+  wheel2:
+    .type: AGXBrick.TwoBodyTire
+    attachmentOnTire: this.tire2.attachmentToRim
+    rimRadius: 0.06
+    attachmentOnRim: this.rim2.attachmentToTire
+    tireRadius: 0.12
+
+  rim3:
+    .type: AGXBrick.TwoBodyTire.RimBody
+    externalReference: f2405692-6213-786d-4edd-d67e68bb41b0
+  tire3:
+    .type: AGXBrick.TwoBodyTire.TireBody
+    externalReference: bf41e0fe-0bf6-d10e-cc6d-66d1f07db4bc
+
+  wheel3:
+    .type: AGXBrick.TwoBodyTire
+    attachmentOnTire: this.tire3.attachmentToRim
+    rimRadius: 0.06
+    attachmentOnRim: this.rim3.attachmentToTire
+    tireRadius: 0.12
+
+  rim4:
+    .type: AGXBrick.TwoBodyTire.RimBody
+    externalReference: 024fb8dc-f2dd-abfa-e103-9bf32874f29d
+  tire4:
+    .type: AGXBrick.TwoBodyTire.TireBody
+    externalReference: f64dabb2-de24-a676-b910-7d7cb1bce784
+
+  wheel4:
+    .type: AGXBrick.TwoBodyTire
+    attachmentOnTire: this.tire4.attachmentToRim
+    rimRadius: 0.06
+    attachmentOnRim: this.rim4.attachmentToTire
+    tireRadius: 0.12
