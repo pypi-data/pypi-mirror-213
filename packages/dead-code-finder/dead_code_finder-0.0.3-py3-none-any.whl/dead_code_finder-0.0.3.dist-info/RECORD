@@ -1,0 +1,13 @@
+dead_code_finder/Makefile,sha256=f8BocrCBpiVibjggITt3e1EPRfOi-VjydESBQq-bPmQ,132
+dead_code_finder/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dead_code_finder/cli.py,sha256=jdJYqy5CYt_bBfP9130y7aBOMd_mUVmdC2waH23y88c,2512
+dead_code_finder/tests/module_a.py,sha256=wTKokhDsi2NKWRj6g_GmALx3wLmDIM4wHSsk1dPvkOQ,122
+dead_code_finder/tests/module_b.py,sha256=ZgxDqORSjqaJ-3vNu4GsYFUSBQnacjH7wim1DJfIk6E,80
+dead_code_finder/tests/test_dead_code_finder.py,sha256=sThi-_JaWnSHPLru_Pyxp6VK3MLe2-H19F8zvJXjQhc,575
+dead_code_finder/tests/test_case1/hello_world.py,sha256=vNBqVZ6FAO-ocfhKMMMCIuH9L48kJWCRv3xhaPCkVrY,316
+dead_code_finder/tests/test_case1/subdir/one_more_file.py,sha256=jutuYnvLPR4q01x7MPHVne0aFZ3LPsWOIh4s0wkEfJU,42
+dead_code_finder/tests/test_case1/subdir/another_subdir/__init__.py,sha256=d1K2oLd4Ixh1U0yZcQ_vNdTWbXGGkUDIWQhS694jylg,23
+dead_code_finder-0.0.3.dist-info/METADATA,sha256=zDp8GDUhCmQ1ZJZTlSy7sndCSVFFlHktlQ1zFL1n24E,915
+dead_code_finder-0.0.3.dist-info/WHEEL,sha256=y1bSCq4r5i4nMmpXeUJMqs3ipKvkZObrIXSvJHm1qCI,87
+dead_code_finder-0.0.3.dist-info/entry_points.txt,sha256=cVbFX63idRbI3JK-BXdR7bUIT9U18pb1N7uF8qwHyGQ,63
+dead_code_finder-0.0.3.dist-info/RECORD,,
