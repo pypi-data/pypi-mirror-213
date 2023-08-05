@@ -1,0 +1,7 @@
+LICENSE
+README.md
+setup.py
+QConnectBase.egg-info/PKG-INFO
+QConnectBase.egg-info/SOURCES.txt
+QConnectBase.egg-info/dependency_links.txt
+QConnectBase.egg-info/top_level.txt
