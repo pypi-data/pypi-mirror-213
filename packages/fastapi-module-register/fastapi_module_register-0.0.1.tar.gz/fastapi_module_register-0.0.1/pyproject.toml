@@ -1,0 +1,26 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "fastapi_module_register"
+version = "0.0.1"
+authors = [
+    { name="stan", email="gd19920125@hotmail.com"},
+]
+description = "通过将fastapi的模型自动注册路由"
+readme = "README.md"
+license = { file="LICENSE" }
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "fastapi>=0.95.1",
+    "tortoise-orm>=0.19.3"
+]
+
+[project.urls]
+"Homepage" = "https://github.com/dcshoecousa"
