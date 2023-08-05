@@ -1,0 +1,49 @@
+[project]
+name = "temper-std"
+version = "0.0.4"
+description = "Optional support library provided with Temper"
+readme = ""
+requires-python = "~=3.8"
+license = {text = "Apache-2.0"}
+authors = [ "Temper Contributors" ]
+homepage = "https://temperlang.dev/"
+repository = "https://github.com/temper-lang/temper"
+maintainers = [ ]
+keywords = [ ]
+classifiers = [ ]
+urls = { }
+dependencies = [
+    "temper-core == 0.0.4"
+]
+
+[project.scripts]
+
+[project.gui-scripts]
+
+[project.entry-points]
+
+
+[tool.poetry]
+name = "temper-std"
+version = "0.0.4"
+license = "Apache-2.0"
+description = "Optional support library provided with Temper"
+authors = [ "Temper Contributors" ]
+homepage = "https://temperlang.dev/"
+repository = "https://github.com/temper-lang/temper"
+packages = [{ include = "temper_std" }]
+include = ["temper_std/**/*", "./**/*.so"]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+temper-core = "0.0.4"
+
+[build-system]
+requires = ["poetry_core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.pytest.ini_options]
+python_functions = "test_[!_]*"
+python_files = "test_*.py"
+python_classes = "*"
+testpaths = ["tests"]
