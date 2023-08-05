@@ -1,0 +1,10 @@
+audit_logging_pepsico/Kafka_log.py,sha256=Zcq1kz7oBHvkANAuJgO7poEZ7C_rV4niE_XvaWeaaSU,2059
+audit_logging_pepsico/audit.py,sha256=GilQrMfYdcjFzM22z7KbwwJTtJmHoub-kAYEeglG3Uo,3021
+audit_logging_pepsico/audit_config.py,sha256=AoNzXrBPCBifYt1j7MSSOhUTA7kFPjGa8oBSzT50mE4,2978
+audit_logging_pepsico/constants.py,sha256=CQQx5LyJbp7yN3Dg-LaIvaApgR0nitDaKDfjbfPl_to,152
+audit_logging_pepsico/kafka_utilities.py,sha256=vKj4kFGwMZTbonsqXYJygVTfQZ3M6AwPXcbK-QpMxbA,5219
+audit_logging_pepsico-0.0.7.dist-info/LICENSE,sha256=NlQc7NeXuGCcq-cc6At-LIfWJJIFkkOp_3O2clXARbc,1070
+audit_logging_pepsico-0.0.7.dist-info/METADATA,sha256=bAHjS7RzvhsUFyaLp1-39SqwcW7U1e1nnF2yhkfKEkk,1709
+audit_logging_pepsico-0.0.7.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+audit_logging_pepsico-0.0.7.dist-info/top_level.txt,sha256=BL3wWgXaAt_9zDdEyrORroVZhZt2PRooEa_lTmw6llQ,22
+audit_logging_pepsico-0.0.7.dist-info/RECORD,,
