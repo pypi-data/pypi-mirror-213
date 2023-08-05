@@ -1,0 +1,80 @@
+Metadata-Version: 2.1
+Name: kaiju-db
+Version: 2.1.0
+Summary: Postgresql db services and tools
+Home-page: https://gitlab.com/kaiju-python/kaiju-db
+Author: antonnidhoggr@me.com
+Author-email: antonnidhoggr@me.com
+License: Apache Software License 2.0
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Requires-Python: >=3.8
+Description-Content-Type: text/x-rst
+License-File: LICENSE
+Requires-Dist: asyncpg (>=0.27)
+Requires-Dist: greenlet (>=2.0.2)
+Requires-Dist: sqlalchemy[asyncio] (>=2.0.9)
+Requires-Dist: sqlalchemy-utils (>=0.41)
+Requires-Dist: kaiju-tools (<3,>=2)
+Provides-Extra: dev
+Requires-Dist: bump2version (>=1.0) ; extra == 'dev'
+Requires-Dist: pyroma (>=4.1) ; extra == 'dev'
+Requires-Dist: bandit (>=1.7) ; extra == 'dev'
+Requires-Dist: black (>=22.12) ; extra == 'dev'
+Requires-Dist: flake8 (>=6.0) ; extra == 'dev'
+Requires-Dist: pyproject-flake8 ; extra == 'dev'
+Requires-Dist: pre-commit (>=3.1) ; extra == 'dev'
+Requires-Dist: pydocstyle (>=6.3) ; extra == 'dev'
+Requires-Dist: setup-cfg-fmt (>=2.2) ; extra == 'dev'
+Requires-Dist: restructuredtext-lint (>=1.4) ; extra == 'dev'
+Requires-Dist: tox (>=3.28) ; extra == 'dev'
+Requires-Dist: tox-pyenv (>=1.1) ; extra == 'dev'
+Requires-Dist: pip-tools (>=6.13) ; extra == 'dev'
+Requires-Dist: pyupgrade (>=3.4) ; extra == 'dev'
+Requires-Dist: towncrier (>=23.6) ; extra == 'dev'
+Provides-Extra: docs
+Requires-Dist: sphinx ; extra == 'docs'
+Requires-Dist: python-docs-theme ; extra == 'docs'
+Provides-Extra: test
+Requires-Dist: pytest (>=7.2) ; extra == 'test'
+Requires-Dist: pytest-asyncio (>=0.20) ; extra == 'test'
+Requires-Dist: docker (>=6.0) ; extra == 'test'
+Requires-Dist: pytest-timeout (>=2.1) ; extra == 'test'
+
+
+.. image:: https://badge.fury.io/py/kaiju-db.svg
+    :target: https://pypi.org/project/kaiju-db
+    :alt: Latest package version
+
+.. image:: https://readthedocs.org/projects/kaiju-db/badge/?version=latest
+    :target: https://kaiju-db.readthedocs.io/en/latest/?badge=latest
+    :alt: Documentation Status
+
+.. image:: https://img.shields.io/badge/code%20style-black-000000.svg
+   :target: https://github.com/psf/black
+   :alt: Code style - Black
+
+Summary
+-------
+
+**Python** >=3.8
+**Postgresql** >= 14
+
+`Project documentation <https://kaiju-db.readthedocs.io/en/latest/>`_
+
+System and user tasks management classes.
+They are used to schedule and execute sets of RPC commands across applications.
+
+Use `pip install kaiju-db` to install the package.
+
+For development run the init script `tools/init.sh`.
+It will setup git hooks and install the dev version of the project.
+
+See `developer guide <https://kaiju-db.readthedocs.io/en/latest/#developer-guide>`_ for details.
