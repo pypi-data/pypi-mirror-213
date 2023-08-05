@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: sleqp
+Version: 1.0.0
+Summary: Active set-based NLP solver
+Author: Christoph Hansknecht
+Author-email: c.hansknecht@tu-braunschweig.de
+Classifier: Programming Language :: Cython
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering :: Mathematics
+License-File: LICENSE.txt
+
+This package provides SLEQP, an open-source solver for large-scale nonlinear continuous optimization. SLEQP is available as a callable library with interfaces to C, Python, AMPL, and MATLAB / Octave. It uses an active set method based on a combination of successive linear programming and equality constrained quadratic programming.
