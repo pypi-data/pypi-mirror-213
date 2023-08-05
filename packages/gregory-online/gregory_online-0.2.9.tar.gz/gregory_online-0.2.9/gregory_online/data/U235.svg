@@ -1,0 +1,651 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" width="1306" height="2070.53" version="1.1" id="svg2" inkscape:version="0.48.2 r9819" sodipodi:docname="U235.png">
+  <metadata id="metadata405">
+    <rdf:RDF>
+      <cc:Work rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+        <dc:title/>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <sodipodi:namedview pagecolor="#ffffff" bordercolor="#666666" borderopacity="1" objecttolerance="10" gridtolerance="10" guidetolerance="10" inkscape:pageopacity="0" inkscape:pageshadow="2" inkscape:window-width="1024" inkscape:window-height="716" id="namedview403" showgrid="false" inkscape:zoom="0.35355339" inkscape:cx="632.45185" inkscape:cy="1154.7919" inkscape:window-x="-8" inkscape:window-y="-8" inkscape:window-maximized="1" inkscape:current-layer="svg2"/>
+  <defs id="defs4">
+    <style type="text/css" id="style6">
+  
+  tspan {font-family: DejaVu Sans Condensed, sans-serif; font-size:25px}
+  .symbol {font-family: DejaVu Sans Condensed, sans-serif; font-size:90px; font-weight:bold; stroke: none}
+  .su {font-size: 32px; font-family: DejaVu Sans Condensed, sans-serif; text-anchor:end; letter-spacing:-3px}
+  .halflife {font-size: 32px; font-family: DejaVu Sans Condensed, sans-serif; text-anchor:middle; font-size: 30px}
+  
+  circle {stroke-width:3.5; stroke:black}
+  .nonmetal {fill: url(#nonmetal)}
+  .noblegas {fill: url(#noblegas)}
+  .alkali {fill:url(#alkali)}
+  .alkaline {fill:url(#alkaline)}
+  .metalloid {fill:url(#metalloid)}
+  .halogen {fill:url(#halogen)}
+  .poormetal {fill:url(#poormetal)}
+  .lanthanide {fill:url(#lanthanide)}
+  .actinide {fill: url(#actinide)}
+  .transition {fill: url(#transition)}
+  line {marker-end:url(#Arrow2Mend); stroke-width:3.5; stroke:black}
+  .ab {font-family: Liberation Sans, sans-serif; font-style:italic; font-size:40px}
+  .background1 {stroke: none; fill: #ffffff}
+  .background0 {stroke: none; fill: #f5f5f5}
+  .SideKey {fill: #555555; font-family: DejaVu Sans Light, sans-serif; font-size: 40px; text-anchor: end}
+  .key {font-family: DejaVu Sans Light, sans-serif; font-size: 25px}
+  </style>
+    <marker refX="0" refY="0" orient="auto" id="Arrow2Mend" style="overflow:visible">
+      <path d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z" transform="scale(-1,-1)" id="path4011" style="font-size:12px;fill-rule:evenodd;stroke-width:0.625;stroke-linejoin:round" inkscape:connector-curvature="0"/>
+    </marker>
+    <radialGradient id="ball" fx="0.75" fy="0.25">
+      <stop offset="0%" stop-color="white" id="stop11"/>
+      <stop offset="100%" stop-color="grey" id="stop13"/>
+    </radialGradient>
+    <radialGradient id="actinide" cx="0.5" cy="0.5" r="0.5" fx="0.5" fy="0.5" gradientUnits="objectBoundingBox" spreadMethod="pad">
+      <stop offset="0%" stop-color="white" id="stop16"/>
+      <stop offset="100%" stop-color="#add5ff" id="stop18"/>
+    </radialGradient>
+    <radialGradient id="nonmetal" xlink:href="#ball">
+      <stop offset="0%" stop-color="white" id="stop21"/>
+      <stop offset="100%" stop-color="#a0ffa0" id="stop23"/>
+    </radialGradient>
+    <radialGradient id="noblegas" cx="40" cy="240" fx="40" fy="240" r="20" gradientUnits="userSpaceOnUse" spreadMethod="pad">
+      <stop offset="0%" stop-color="white" id="stop26"/>
+      <stop offset="100%" stop-color="#c0ffff" id="stop28"/>
+    </radialGradient>
+    <radialGradient id="alkali" xlink:href="#ball">
+      <stop offset="0%" stop-color="white" id="stop31"/>
+      <stop offset="100%" stop-color="#ff6666" id="stop33"/>
+    </radialGradient>
+    <radialGradient id="alkaline" cx="0.5" cy="0.5" r="0.5" fx="0.5" fy="0.5" gradientUnits="objectBoundingBox" spreadMethod="pad">
+      <stop offset="0%" stop-color="white" id="stop36"/>
+      <stop offset="100%" stop-color="#ffdead" id="stop38"/>
+    </radialGradient>
+    <radialGradient id="metalloid" cx="0.5" cy="0.5" r="0.5" fx="0.5" fy="0.5" gradientUnits="objectBoundingBox" spreadMethod="pad">
+      <stop offset="0%" stop-color="white" id="stop41"/>
+      <stop offset="100%" stop-color="#cccc99" id="stop43"/>
+    </radialGradient>
+    <radialGradient id="halogen" xlink:href="#ball">
+      <stop offset="0%" stop-color="white" id="stop46"/>
+      <stop offset="100%" stop-color="#ffff99" id="stop48"/>
+    </radialGradient>
+    <radialGradient id="poormetal" xlink:href="#ball">
+      <stop offset="0%" stop-color="white" id="stop51"/>
+      <stop offset="100%" stop-color="#cccccc" id="stop53"/>
+    </radialGradient>
+    <radialGradient id="lanthanide" xlink:href="#ball">
+      <stop offset="0%" stop-color="white" id="stop56"/>
+      <stop offset="100%" stop-color="#ffbfff" id="stop58"/>
+    </radialGradient>
+    <radialGradient id="transition" xlink:href="#ball" cx="40" cy="320" fx="40" fy="320" r="20" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="white" id="stop61"/>
+      <stop offset="100%" stop-color="#ffc0c0" id="stop63"/>
+    </radialGradient>
+    <radialGradient inkscape:collect="always" xlink:href="#metalloid" id="radialGradient3382" cx="710" cy="1910" fx="710" fy="1910" r="101.75" gradientUnits="userSpaceOnUse"/>
+    <radialGradient inkscape:collect="always" xlink:href="#poormetal" id="radialGradient3386" cx="910" cy="2110" fx="910" fy="2110" r="101.75" gradientUnits="userSpaceOnUse"/>
+    <radialGradient inkscape:collect="always" xlink:href="#poormetal" id="radialGradient3388" cx="710" cy="2310" fx="710" fy="2310" r="101.75" gradientUnits="userSpaceOnUse"/>
+    <radialGradient inkscape:collect="always" xlink:href="#poormetal" id="radialGradient3390" cx="510" cy="2510" fx="510" fy="2510" r="101.75" gradientUnits="userSpaceOnUse"/>
+    <radialGradient inkscape:collect="always" xlink:href="#poormetal" id="radialGradient3392" cx="510" cy="2110" fx="510" fy="2110" r="101.75" gradientUnits="userSpaceOnUse"/>
+    <radialGradient inkscape:collect="always" xlink:href="#halogen" id="radialGradient3394" cx="510" cy="1710" fx="510" fy="1710" r="101.75" gradientUnits="userSpaceOnUse"/>
+    <radialGradient inkscape:collect="always" xlink:href="#alkali" id="radialGradient3396" cx="510" cy="1310" fx="510" fy="1310" r="101.75" gradientUnits="userSpaceOnUse"/>
+    <radialGradient inkscape:collect="always" xlink:href="#actinide" id="radialGradient3398" cx="510" cy="910" fx="510" fy="910" r="101.75" gradientUnits="userSpaceOnUse"/>
+    <radialGradient inkscape:collect="always" xlink:href="#alkaline" id="radialGradient3400" cx="310" cy="1110" fx="310" fy="1110" r="101.75" gradientUnits="userSpaceOnUse"/>
+    <radialGradient inkscape:collect="always" xlink:href="#actinide" id="radialGradient3402" cx="310" cy="710" fx="310" fy="710" r="101.75" gradientUnits="userSpaceOnUse"/>
+    <radialGradient inkscape:collect="always" xlink:href="#actinide" id="radialGradient3406" cx="110" cy="510" fx="110" fy="510" r="101.75" gradientUnits="userSpaceOnUse"/>
+    <radialGradient inkscape:collect="always" xlink:href="#actinide" id="radialGradient3408" cx="40" cy="40" fx="40" fy="40" r="20" gradientUnits="userSpaceOnUse"/>
+    <radialGradient inkscape:collect="always" xlink:href="#alkali" id="radialGradient3410" cx="40" cy="80" fx="40" fy="80" r="20" gradientUnits="userSpaceOnUse"/>
+    <radialGradient inkscape:collect="always" xlink:href="#alkaline" id="radialGradient3412" cx="40" cy="120" fx="40" fy="120" r="20" gradientUnits="userSpaceOnUse"/>
+    <radialGradient inkscape:collect="always" xlink:href="#halogen" id="radialGradient3414" cx="40" cy="160" fx="40" fy="160" r="20" gradientUnits="userSpaceOnUse"/>
+    <radialGradient inkscape:collect="always" xlink:href="#metalloid" id="radialGradient3416" cx="40" cy="200" fx="40" fy="200" r="20" gradientUnits="userSpaceOnUse"/>
+    <radialGradient inkscape:collect="always" xlink:href="#poormetal" id="radialGradient3418" cx="40" cy="280" fx="40" fy="280" r="20" gradientUnits="userSpaceOnUse"/>
+    <marker refX="0" refY="0" orient="auto" id="Arrow2Mend-1" style="overflow:visible">
+      <path inkscape:connector-curvature="0" d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z" transform="scale(-1,-1)" id="path4011-7" style="font-size:12px;fill-rule:evenodd;stroke-width:0.625;stroke-linejoin:round"/>
+    </marker>
+    <marker refX="0" refY="0" orient="auto" id="marker3275" style="overflow:visible">
+      <path inkscape:connector-curvature="0" d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z" transform="scale(-1,-1)" id="path3277" style="font-size:12px;fill-rule:evenodd;stroke-width:0.625;stroke-linejoin:round"/>
+    </marker>
+    <radialGradient id="actinide-0" xlink:href="#ball-8">
+      <stop offset="0%" stop-color="white" id="stop16-9"/>
+      <stop offset="100%" stop-color="#add5ff" id="stop18-4"/>
+    </radialGradient>
+    <radialGradient id="ball-8" fx="0.75" fy="0.25">
+      <stop offset="0%" stop-color="white" id="stop11-8"/>
+      <stop offset="100%" stop-color="grey" id="stop13-2"/>
+    </radialGradient>
+    <marker refX="0" refY="0" orient="auto" id="Arrow2Mend-16" style="overflow:visible">
+      <path inkscape:connector-curvature="0" d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z" transform="scale(-1,-1)" id="path4011-8" style="font-size:12px;fill-rule:evenodd;stroke-width:0.625;stroke-linejoin:round"/>
+    </marker>
+    <radialGradient id="actinide-7" xlink:href="#ball-89">
+      <stop offset="0%" stop-color="white" id="stop16-6"/>
+      <stop offset="100%" stop-color="#add5ff" id="stop18-1"/>
+    </radialGradient>
+    <radialGradient id="ball-89" fx="0.75" fy="0.25">
+      <stop offset="0%" stop-color="white" id="stop11-2"/>
+      <stop offset="100%" stop-color="grey" id="stop13-7"/>
+    </radialGradient>
+    <radialGradient inkscape:collect="always" xlink:href="#actinide-0-7" id="radialGradient3406-4-2" cx="110" cy="510" fx="110" fy="510" r="101.75" gradientUnits="userSpaceOnUse"/>
+    <radialGradient id="actinide-0-7" xlink:href="#ball-8-3">
+      <stop offset="0%" stop-color="white" id="stop16-9-7"/>
+      <stop offset="100%" stop-color="#add5ff" id="stop18-4-9"/>
+    </radialGradient>
+    <radialGradient id="ball-8-3" fx="0.75" fy="0.25">
+      <stop offset="0%" stop-color="white" id="stop11-8-1"/>
+      <stop offset="100%" stop-color="grey" id="stop13-2-9"/>
+    </radialGradient>
+    <marker refX="0" refY="0" orient="auto" id="Arrow2Mend-17" style="overflow:visible">
+      <path inkscape:connector-curvature="0" d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z" transform="scale(-1,-1)" id="path4011-4" style="font-size:12px;fill-rule:evenodd;stroke-width:0.625;stroke-linejoin:round"/>
+    </marker>
+    <marker refX="0" refY="0" orient="auto" id="marker3321" style="overflow:visible">
+      <path inkscape:connector-curvature="0" d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z" transform="scale(-1,-1)" id="path3323" style="font-size:12px;fill-rule:evenodd;stroke-width:0.625;stroke-linejoin:round"/>
+    </marker>
+    <radialGradient id="poormetal-9" xlink:href="#ball-82">
+      <stop offset="0%" stop-color="white" id="stop51-4"/>
+      <stop offset="100%" stop-color="#cccccc" id="stop53-8"/>
+    </radialGradient>
+    <radialGradient id="ball-82" fx="0.75" fy="0.25">
+      <stop offset="0%" stop-color="white" id="stop11-4"/>
+      <stop offset="100%" stop-color="grey" id="stop13-5"/>
+    </radialGradient>
+    <marker refX="0" refY="0" orient="auto" id="marker3332" style="overflow:visible">
+      <path inkscape:connector-curvature="0" d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z" transform="scale(-1,-1)" id="path3334" style="font-size:12px;fill-rule:evenodd;stroke-width:0.625;stroke-linejoin:round"/>
+    </marker>
+    <radialGradient id="actinide-8" cx="0.5" cy="0.5" r="0.5" fx="0.5" fy="0.5" gradientUnits="objectBoundingBox" spreadMethod="pad">
+      <stop offset="0%" stop-color="white" id="stop16-92"/>
+      <stop offset="100%" stop-color="#add5ff" id="stop18-7"/>
+    </radialGradient>
+    <radialGradient id="ball-9" fx="0.75" fy="0.25">
+      <stop offset="0%" stop-color="white" id="stop11-5"/>
+      <stop offset="100%" stop-color="grey" id="stop13-4"/>
+    </radialGradient>
+    <marker refX="0" refY="0" orient="auto" id="Arrow2Mend-3" style="overflow:visible">
+      <path inkscape:connector-curvature="0" d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z" transform="scale(-1,-1)" id="path4011-1" style="font-size:12px;fill-rule:evenodd;stroke-width:0.625;stroke-linejoin:round"/>
+    </marker>
+    <radialGradient inkscape:collect="always" xlink:href="#halogen-7" id="radialGradient3394-1" cx="510" cy="1710" fx="510" fy="1710" r="101.75" gradientUnits="userSpaceOnUse"/>
+    <radialGradient id="halogen-7" cx="0.5" cy="0.5" r="0.5" fx="0.5" fy="0.5" gradientUnits="objectBoundingBox" spreadMethod="pad">
+      <stop offset="0%" stop-color="white" id="stop46-4"/>
+      <stop offset="100%" stop-color="#ffff99" id="stop48-0"/>
+    </radialGradient>
+    <radialGradient id="ball-94" fx="0.75" fy="0.25">
+      <stop offset="0%" stop-color="white" id="stop11-88"/>
+      <stop offset="100%" stop-color="grey" id="stop13-24"/>
+    </radialGradient>
+    <radialGradient r="101.75" fy="1710" fx="510" cy="1710" cx="510" gradientUnits="userSpaceOnUse" id="radialGradient3375" xlink:href="#halogen-7" inkscape:collect="always"/>
+    <radialGradient inkscape:collect="always" xlink:href="#poormetal-1" id="radialGradient3388-1" cx="710" cy="2310" fx="710" fy="2310" r="101.75" gradientUnits="userSpaceOnUse"/>
+    <radialGradient id="poormetal-1" cx="0.5" cy="0.5" r="0.5" fx="0.5" fy="0.5" gradientUnits="objectBoundingBox" spreadMethod="pad">
+      <stop offset="0%" stop-color="white" id="stop51-3"/>
+      <stop offset="100%" stop-color="#cccccc" id="stop53-87"/>
+    </radialGradient>
+    <radialGradient id="ball-4" fx="0.75" fy="0.25">
+      <stop offset="0%" stop-color="white" id="stop11-27"/>
+      <stop offset="100%" stop-color="grey" id="stop13-79"/>
+    </radialGradient>
+    <marker refX="0" refY="0" orient="auto" id="Arrow2Mend-31" style="overflow:visible">
+      <path inkscape:connector-curvature="0" d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z" transform="scale(-1,-1)" id="path4011-9" style="font-size:12px;fill-rule:evenodd;stroke-width:0.625;stroke-linejoin:round"/>
+    </marker>
+    <radialGradient inkscape:collect="always" xlink:href="#metalloid-1" id="radialGradient3382-6" cx="710" cy="1910" fx="710" fy="1910" r="101.75" gradientUnits="userSpaceOnUse"/>
+    <radialGradient id="metalloid-1" cx="0.5" cy="0.5" r="0.5" fx="0.5" fy="0.5" gradientUnits="objectBoundingBox" spreadMethod="pad">
+      <stop offset="0%" stop-color="white" id="stop41-3"/>
+      <stop offset="100%" stop-color="#cccc99" id="stop43-8"/>
+    </radialGradient>
+    <radialGradient id="ball-93" fx="0.75" fy="0.25">
+      <stop offset="0%" stop-color="white" id="stop11-44"/>
+      <stop offset="100%" stop-color="grey" id="stop13-6"/>
+    </radialGradient>
+    <radialGradient r="101.75" fy="1910" fx="710" cy="1910" cx="710" gradientUnits="userSpaceOnUse" id="radialGradient3626" xlink:href="#metalloid-1" inkscape:collect="always"/>
+    <radialGradient inkscape:collect="always" xlink:href="#actinide-3" id="radialGradient3402-1" cx="310" cy="710" fx="310" fy="710" r="101.75" gradientUnits="userSpaceOnUse"/>
+    <radialGradient id="actinide-3" cx="0.5" cy="0.5" r="0.5" fx="0.5" fy="0.5" gradientUnits="objectBoundingBox" spreadMethod="pad">
+      <stop offset="0%" stop-color="white" id="stop16-5"/>
+      <stop offset="100%" stop-color="#add5ff" id="stop18-9"/>
+    </radialGradient>
+    <radialGradient id="ball-84" fx="0.75" fy="0.25">
+      <stop offset="0%" stop-color="white" id="stop11-0"/>
+      <stop offset="100%" stop-color="grey" id="stop13-76"/>
+    </radialGradient>
+    <radialGradient r="101.75" fy="710" fx="310" cy="710" cx="310" gradientUnits="userSpaceOnUse" id="radialGradient3705" xlink:href="#actinide-3" inkscape:collect="always"/>
+    <marker refX="0" refY="0" orient="auto" id="Arrow2Mend-0" style="overflow:visible">
+      <path d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z" transform="scale(-1,-1)" id="path4011-16" style="font-size:12px;fill-rule:evenodd;stroke-width:0.625;stroke-linejoin:round" inkscape:connector-curvature="0"/>
+    </marker>
+    <marker refX="0" refY="0" orient="auto" id="Arrow2Mend-5" style="overflow:visible">
+      <path d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z" transform="scale(-1,-1)" id="path4011-41" style="font-size:12px;fill-rule:evenodd;stroke-width:0.625;stroke-linejoin:round" inkscape:connector-curvature="0"/>
+    </marker>
+    <radialGradient inkscape:collect="always" xlink:href="#noblegas" id="radialGradient3400-0" cx="310" cy="1110" fx="310" fy="1110" r="101.75" gradientUnits="userSpaceOnUse"/>
+    <radialGradient id="alkaline-1" cx="0.5" cy="0.5" r="0.5" fx="0.5" fy="0.5" gradientUnits="objectBoundingBox" spreadMethod="pad">
+      <stop offset="0%" stop-color="white" id="stop36-4"/>
+      <stop offset="100%" stop-color="#ffdead" id="stop38-6"/>
+    </radialGradient>
+    <radialGradient id="ball-0" fx="0.75" fy="0.25">
+      <stop offset="0%" stop-color="white" id="stop11-7"/>
+      <stop offset="100%" stop-color="grey" id="stop13-1"/>
+    </radialGradient>
+    <marker refX="0" refY="0" orient="auto" id="Arrow2Mend-7" style="overflow:visible">
+      <path d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z" transform="scale(-1,-1)" id="path4011-77" style="font-size:12px;fill-rule:evenodd;stroke-width:0.625;stroke-linejoin:round" inkscape:connector-curvature="0"/>
+    </marker>
+    <marker refX="0" refY="0" orient="auto" id="Arrow2Mend-01" style="overflow:visible">
+      <path d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z" transform="scale(-1,-1)" id="path4011-2" style="font-size:12px;fill-rule:evenodd;stroke-width:0.625;stroke-linejoin:round" inkscape:connector-curvature="0"/>
+    </marker>
+    <marker refX="0" refY="0" orient="auto" id="Arrow2Mend-9" style="overflow:visible">
+      <path d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z" transform="scale(-1,-1)" id="path4011-47" style="font-size:12px;fill-rule:evenodd;stroke-width:0.625;stroke-linejoin:round" inkscape:connector-curvature="0"/>
+    </marker>
+    <marker refX="0" refY="0" orient="auto" id="Arrow2Mend-51" style="overflow:visible">
+      <path d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z" transform="scale(-1,-1)" id="path4011-20" style="font-size:12px;fill-rule:evenodd;stroke-width:0.625;stroke-linejoin:round" inkscape:connector-curvature="0"/>
+    </marker>
+    <marker refX="0" refY="0" orient="auto" id="Arrow2Mend-4" style="overflow:visible">
+      <path d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z" transform="scale(-1,-1)" id="path4011-0" style="font-size:12px;fill-rule:evenodd;stroke-width:0.625;stroke-linejoin:round" inkscape:connector-curvature="0"/>
+    </marker>
+    <radialGradient inkscape:collect="always" xlink:href="#noblegas" id="radialGradient4838" gradientUnits="userSpaceOnUse" spreadMethod="pad" cx="40" cy="240" fx="40" fy="240" r="20"/>
+    <radialGradient inkscape:collect="always" xlink:href="#actinide-8-8" id="radialGradient3404-1-9" cx="310" cy="310" fx="310" fy="310" r="101.75" gradientUnits="userSpaceOnUse"/>
+    <radialGradient id="actinide-8-8" xlink:href="#ball-9-4">
+      <stop offset="0%" stop-color="white" id="stop16-92-4"/>
+      <stop offset="100%" stop-color="#add5ff" id="stop18-7-1"/>
+    </radialGradient>
+    <radialGradient id="ball-9-4" fx="0.75" fy="0.25">
+      <stop offset="0%" stop-color="white" id="stop11-5-3"/>
+      <stop offset="100%" stop-color="grey" id="stop13-4-9"/>
+    </radialGradient>
+    <radialGradient r="101.75" fy="310" fx="310" cy="310" cx="310" gradientUnits="userSpaceOnUse" id="radialGradient4888" xlink:href="#actinide-8-8" inkscape:collect="always"/>
+    <radialGradient inkscape:collect="always" xlink:href="#actinide-34" id="radialGradient3406-7" cx="110" cy="510" fx="110" fy="510" r="101.75" gradientUnits="userSpaceOnUse"/>
+    <radialGradient id="actinide-34" cx="0.5" cy="0.5" r="0.5" fx="0.5" fy="0.5" gradientUnits="objectBoundingBox" spreadMethod="pad">
+      <stop offset="0%" stop-color="white" id="stop16-96"/>
+      <stop offset="100%" stop-color="#add5ff" id="stop18-5"/>
+    </radialGradient>
+    <radialGradient r="101.75" fy="710" fx="310" cy="710" cx="310" gradientUnits="userSpaceOnUse" id="radialGradient3705-0" xlink:href="#actinide-3-9" inkscape:collect="always"/>
+    <radialGradient id="actinide-3-9" cx="0.5" cy="0.5" r="0.5" fx="0.5" fy="0.5" gradientUnits="objectBoundingBox" spreadMethod="pad">
+      <stop offset="0%" stop-color="white" id="stop16-5-9"/>
+      <stop offset="100%" stop-color="#add5ff" id="stop18-9-6"/>
+    </radialGradient>
+    <radialGradient r="101.75" fy="1710" fx="510" cy="1710" cx="510" gradientUnits="userSpaceOnUse" id="radialGradient3375-3" xlink:href="#halogen-7-4" inkscape:collect="always"/>
+    <radialGradient id="halogen-7-4" cx="0.5" cy="0.5" r="0.5" fx="0.5" fy="0.5" gradientUnits="objectBoundingBox" spreadMethod="pad">
+      <stop offset="0%" stop-color="white" id="stop46-4-8"/>
+      <stop offset="100%" stop-color="#ffff99" id="stop48-0-4"/>
+    </radialGradient>
+    <radialGradient inkscape:collect="always" xlink:href="#poormetal-1-2" id="radialGradient3388-1-9" cx="710" cy="2310" fx="710" fy="2310" r="101.75" gradientUnits="userSpaceOnUse"/>
+    <radialGradient id="poormetal-1-2" cx="0.5" cy="0.5" r="0.5" fx="0.5" fy="0.5" gradientUnits="objectBoundingBox" spreadMethod="pad">
+      <stop offset="0%" stop-color="white" id="stop51-3-5"/>
+      <stop offset="100%" stop-color="#cccccc" id="stop53-87-5"/>
+    </radialGradient>
+    <radialGradient inkscape:collect="always" xlink:href="#poormetal-1-3" id="radialGradient3388-1-3" cx="710" cy="2310" fx="710" fy="2310" r="101.75" gradientUnits="userSpaceOnUse"/>
+    <radialGradient id="poormetal-1-3" cx="0.5" cy="0.5" r="0.5" fx="0.5" fy="0.5" gradientUnits="objectBoundingBox" spreadMethod="pad">
+      <stop offset="0%" stop-color="white" id="stop51-3-7"/>
+      <stop offset="100%" stop-color="#cccccc" id="stop53-87-4"/>
+    </radialGradient>
+    <marker refX="0" refY="0" orient="auto" id="Arrow2Mend-8" style="overflow:visible">
+      <path d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z" transform="scale(-1,-1)" id="path4011-08" style="font-size:12px;fill-rule:evenodd;stroke-width:0.625;stroke-linejoin:round" inkscape:connector-curvature="0"/>
+    </marker>
+    <marker refX="0" refY="0" orient="auto" id="Arrow2Mend-6" style="overflow:visible">
+      <path d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z" transform="scale(-1,-1)" id="path4011-81" style="font-size:12px;fill-rule:evenodd;stroke-width:0.625;stroke-linejoin:round" inkscape:connector-curvature="0"/>
+    </marker>
+    <marker refX="0" refY="0" orient="auto" id="Arrow2Mend-97" style="overflow:visible">
+      <path d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z" transform="scale(-1,-1)" id="path4011-22" style="font-size:12px;fill-rule:evenodd;stroke-width:0.625;stroke-linejoin:round" inkscape:connector-curvature="0"/>
+    </marker>
+  </defs>
+  <text id="text173-17" x="-796.39368" y="-385.52505">
+    <tspan x="-686.39368" class="halflife" id="tspan181-2" style="font-size:30px;text-anchor:middle;font-family:'DejaVu Sans Condensed, sans-serif'"/>
+  </text>
+  <flowRoot xml:space="preserve" id="flowRoot3396" style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans" transform="translate(0,-341.47006)"><flowRegion id="flowRegion3398"><rect id="rect3400" width="96.163528" height="68.688232" x="-380.72906" y="92.27301"/></flowRegion><flowPara id="flowPara3402"/></flowRoot>  <g id="g3547" transform="translate(0,-341.47006)">
+    <flowRoot style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans" id="flowRoot3539" xml:space="preserve"><flowRegion id="flowRegion3541"><rect y="455.33939" x="-578.94366" height="194.28958" width="278.67798" id="rect3543"/></flowRegion><flowPara id="flowPara3545"/></flowRoot>  </g>
+  <flowRoot xml:space="preserve" id="flowRoot3553" style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans" transform="translate(0,-341.47006)"><flowRegion id="flowRegion3555"><rect id="rect3557" width="29.437815" height="41.21294" x="-594.64386" y="390.5762"/></flowRegion><flowPara id="flowPara3559"/></flowRoot>  <flowRoot xml:space="preserve" id="flowRoot3881" style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans" transform="translate(0,-341.47006)"><flowRegion id="flowRegion3883"><rect id="rect3885" width="227.65244" height="186.43948" x="-991.07306" y="1623.0393"/></flowRegion><flowPara id="flowPara3887"/></flowRoot>  <flowRoot xml:space="preserve" id="flowRoot3451" style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans" transform="translate(0,-341.47006)"><flowRegion id="flowRegion3453"><rect id="rect3455" width="1484.6154" height="261.53845" x="-119.23077" y="-226.15384"/></flowRegion><flowPara id="flowPara3457"/></flowRoot>  <rect x="3.1778622" y="353.98254" width="1304.1302" height="171.54898" class="background1" id="rect67" style="fill:#f5f5f5;stroke:none"/>
+  <rect x="3.1778622" y="525.53162" width="1304.1302" height="171.54898" class="background0" id="rect69" style="fill:#ffffff;stroke:none"/>
+  <rect x="3.1778622" y="697.08057" width="1304.1302" height="171.54898" class="background1" id="rect71" style="fill:#f5f5f5;stroke:none"/>
+  <rect x="3.1778622" y="868.6297" width="1304.1302" height="171.54898" class="background0" id="rect73" style="fill:#ffffff;stroke:none"/>
+  <rect x="3.1778622" y="1040.1786" width="1304.1302" height="171.54898" class="background1" id="rect75" style="fill:#f5f5f5;stroke:none"/>
+  <rect x="3.1778622" y="1211.7275" width="1304.1302" height="171.54898" class="background0" id="rect77" style="fill:#ffffff;stroke:none"/>
+  <rect x="3.1778622" y="1383.2765" width="1304.1302" height="171.54898" class="background1" id="rect79" style="fill:#f5f5f5;stroke:none"/>
+  <rect x="3.1778622" y="1554.8257" width="1304.1302" height="171.54898" class="background0" id="rect81" style="fill:#ffffff;stroke:none"/>
+  <rect x="3.1778622" y="1726.3745" width="1304.1302" height="171.54898" class="background1" id="rect83" style="fill:#f5f5f5;stroke:none"/>
+  <rect x="3.1778622" y="1895.9196" width="1304.1302" height="171.54898" class="background0" id="rect85" style="fill:#ffffff;stroke:none"/>
+  <rect x="3.1778622" y="180.71803" width="1304.1302" height="171.54898" class="background0" id="rect89" style="fill:#ffffff;stroke:none"/>
+  <text x="1290.7472" y="343.9603" class="SideKey" id="text95" style="font-size:34.24327469px;text-anchor:end;fill:#555555;font-family:'DejaVu Sans Light, sans-serif'">Protactinium</text>
+  <text x="1290.7472" y="515.17676" class="SideKey" id="text97" style="font-size:34.24327469px;text-anchor:end;fill:#555555;font-family:'DejaVu Sans Light, sans-serif'">Thorium</text>
+  <text x="1290.7472" y="686.39319" class="SideKey" id="text99" style="font-size:34.24327469px;text-anchor:end;fill:#555555;font-family:'DejaVu Sans Light, sans-serif'">Actinium</text>
+  <text x="1290.7472" y="857.6095" class="SideKey" id="text101" style="font-size:34.24327469px;text-anchor:end;fill:#555555;font-family:'DejaVu Sans Light, sans-serif'">Radium</text>
+  <text x="1290.7472" y="1030.8259" class="SideKey" id="text103" style="font-size:34.24327469px;text-anchor:end;fill:#555555;font-family:'DejaVu Sans Light, sans-serif'">Francium</text>
+  <text x="1290.7472" y="1200.0422" class="SideKey" id="text105" style="font-size:34.24327469px;text-anchor:end;fill:#555555;font-family:'DejaVu Sans Light, sans-serif'">Radon</text>
+  <text x="1290.7472" y="1371.2588" class="SideKey" id="text107" style="font-size:34.24327469px;text-anchor:end;fill:#555555;font-family:'DejaVu Sans Light, sans-serif'">Astatine</text>
+  <text x="1290.7472" y="1542.4751" class="SideKey" id="text109" style="font-size:34.24327469px;text-anchor:end;fill:#555555;font-family:'DejaVu Sans Light, sans-serif'">Polonium</text>
+  <text x="1290.7472" y="1713.6914" class="SideKey" id="text111" style="font-size:34.24327469px;text-anchor:end;fill:#555555;font-family:'DejaVu Sans Light, sans-serif'">Bismuth</text>
+  <text x="1290.7472" y="1884.9077" class="SideKey" id="text113" style="font-size:34.24327469px;text-anchor:end;fill:#555555;font-family:'DejaVu Sans Light, sans-serif'">Lead</text>
+  <text x="1290.7472" y="2056.124" class="SideKey" id="text115" style="font-size:34.24327469px;text-anchor:end;fill:#555555;font-family:'DejaVu Sans Light, sans-serif'">Thallium</text>
+  <g transform="matrix(0.85608186,0,0,0.85608186,4.674594,1765.617)" id="g117">
+    <rect x="10" y="10" width="340" height="340" style="fill:#ffffff;stroke:#000000;stroke-width:2px" id="rect119"/>
+    <rect x="20" y="20" width="40" height="40" class="actinide" id="rect121" style="fill:url(#radialGradient3408)"/>
+    <text x="65" y="50" class="key" id="text123" style="font-size:25px;font-family:'DejaVu Sans Light, sans-serif'">Actinides</text>
+    <rect x="20" y="60" width="40" height="40" class="alkali" id="rect125" style="fill:url(#radialGradient3410)"/>
+    <text x="65" y="90" class="key" id="text127" style="font-size:25px;font-family:'DejaVu Sans Light, sans-serif'">Alkali Metals</text>
+    <rect x="20" y="100" width="40" height="40" class="alkaline" id="rect129" style="fill:url(#radialGradient3412)"/>
+    <text x="65" y="130" class="key" id="text131" style="font-size:25px;font-family:'DejaVu Sans Light, sans-serif'">Alkaline Earth Metals</text>
+    <rect x="20" y="140" width="40" height="40" class="halogen" id="rect133" style="fill:url(#radialGradient3414)"/>
+    <text x="65" y="170" class="key" id="text135" style="font-size:25px;font-family:'DejaVu Sans Light, sans-serif'">Halogens</text>
+    <rect x="20" y="180" width="40" height="40" class="metalloid" id="rect137" style="fill:url(#radialGradient3416)"/>
+    <text x="65" y="210" class="key" id="text139" style="font-size:25px;font-family:'DejaVu Sans Light, sans-serif'">Metalloids</text>
+    <rect x="20" y="220" width="40" height="40" class="noblegas" id="rect141" style="fill:url(#radialGradient4838)"/>
+    <text x="65" y="250" class="key" id="text143" style="font-size:25px;font-family:'DejaVu Sans Light, sans-serif'">Noble Gases</text>
+    <rect x="20" y="260" width="40" height="40" class="poormetal" id="rect145" style="fill:url(#radialGradient3418)"/>
+    <text x="65" y="290" class="key" id="text147" style="font-size:25px;font-family:'DejaVu Sans Light, sans-serif'">Poor Metals</text>
+    <rect x="20" y="300" width="40" height="40" class="transition" id="rect149" style="fill:url(#transition)"/>
+    <text x="65" y="330" class="key" id="text151" style="font-size:25px;font-family:'DejaVu Sans Light, sans-serif'">Transition Metals</text>
+  </g>
+  <circle d="M 210,510 C 210,565.22847 165.22847,610 110,610 54.771525,610 10,565.22847 10,510 10,454.77153 54.771525,410 110,410 c 55.22847,0 100,44.77153 100,100 z" style="fill:url(#radialGradient3406);stroke:#000000;stroke-width:3.5" cx="110" cy="510" r="100" class="actinide" id="circle171" sodipodi:cx="110" sodipodi:cy="510" sodipodi:rx="100" sodipodi:ry="100" transform="matrix(0.85608186,0,0,0.85608186,340.3719,-171.68877)"/>
+  <line x1="257.75729" y1="181.30478" x2="257.75729" y2="348.24075" id="line203" style="stroke:#000000;stroke-width:2.99628639;marker-end:url(#Arrow2Mend)"/>
+  <text x="262.03769" y="266.91293" class="ab" id="text205" style="font-size:34.24327469px;font-style:italic;font-family:'Liberation Sans, sans-serif'">α</text>
+  <circle d="m 410,710 c 0,55.22847 -44.77153,100 -100,100 -55.22847,0 -100,-44.77153 -100,-100 0,-55.22847 44.77153,-100 100,-100 55.22847,0 100,44.77153 100,100 z" style="fill:url(#radialGradient3402);stroke:#000000;stroke-width:3.5" cx="310" cy="710" r="100" class="actinide" id="circle207" sodipodi:cx="310" sodipodi:cy="710" sodipodi:rx="100" sodipodi:ry="100" transform="matrix(0.85608186,0,0,0.85608186,-7.628096,-169.68877)"/>
+  <line x1="619.75732" y1="523.73755" x2="619.75732" y2="690.67358" id="line221" style="stroke:#000000;stroke-width:2.99628639;marker-end:url(#Arrow2Mend)"/>
+  <text x="624.03772" y="609.34583" class="ab" id="text223" style="font-size:34.24327469px;font-style:italic;font-family:'Liberation Sans, sans-serif'">α</text>
+  <circle d="m 410,1110 c 0,55.2285 -44.77153,100 -100,100 -55.22847,0 -100,-44.7715 -100,-100 0,-55.2285 44.77153,-100 100,-100 55.22847,0 100,44.7715 100,100 z" style="fill:url(#radialGradient3400);stroke:#000000;stroke-width:3.5" cx="310" cy="1110" r="100" class="alkaline" id="circle225" sodipodi:cx="310" sodipodi:cy="1110" sodipodi:rx="100" sodipodi:ry="100" transform="matrix(0.85608186,0,0,0.85608186,354.3719,-165.68877)"/>
+  <circle d="m 610,910 c 0,55.22847 -44.77153,100 -100,100 -55.22847,0 -100,-44.77153 -100,-100 0,-55.22847 44.77153,-100 100,-100 55.22847,0 100,44.77153 100,100 z" style="fill:url(#radialGradient3398);stroke:#000000;stroke-width:3.5" cx="510" cy="910" r="100" class="actinide" id="circle243" sodipodi:cx="510" sodipodi:cy="910" sodipodi:rx="100" sodipodi:ry="100" transform="matrix(0.85608186,0,0,0.85608186,2.371904,-169.68877)"/>
+  <line x1="438.97366" y1="694.95398" x2="438.97366" y2="861.88989" id="line257" style="stroke:#000000;stroke-width:2.99628639;marker-end:url(#Arrow2Mend)"/>
+  <text x="443.25406" y="780.56213" class="ab" id="text259" style="font-size:34.24327469px;font-style:italic;font-family:'Liberation Sans, sans-serif'">α</text>
+  <circle d="m 610,1310 c 0,55.2285 -44.77153,100 -100,100 -55.22847,0 -100,-44.7715 -100,-100 0,-55.2285 44.77153,-100 100,-100 55.22847,0 100,44.7715 100,100 z" style="fill:url(#radialGradient3396);stroke:#000000;stroke-width:3.5" cx="510" cy="1310" r="100" class="alkali" id="circle261" sodipodi:cx="510" sodipodi:cy="1310" sodipodi:rx="100" sodipodi:ry="100" transform="matrix(0.85608186,0,0,0.85608186,2.371904,-167.68877)"/>
+  <line x1="438.97366" y1="1037.3867" x2="438.97366" y2="1204.3225" id="line275" style="stroke:#000000;stroke-width:2.99628639;marker-end:url(#Arrow2Mend)"/>
+  <text x="443.25406" y="1122.9949" class="ab" id="text277" style="font-size:34.24327469px;font-style:italic;font-family:'Liberation Sans, sans-serif'">α</text>
+  <circle d="m 610,1710 c 0,55.2285 -44.77153,100 -100,100 -55.22847,0 -100,-44.7715 -100,-100 0,-55.2285 44.77153,-100 100,-100 55.22847,0 100,44.7715 100,100 z" style="fill:url(#radialGradient3394);stroke:#000000;stroke-width:3.5" cx="510" cy="1710" r="100" class="halogen" id="circle279" sodipodi:cx="510" sodipodi:cy="1710" sodipodi:rx="100" sodipodi:ry="100" transform="matrix(0.85608186,0,0,0.85608186,2.371904,-169.68877)"/>
+  <line x1="438.97366" y1="1379.8196" x2="438.97366" y2="1546.7554" id="line293" style="stroke:#000000;stroke-width:2.99628639;marker-end:url(#Arrow2Mend)"/>
+  <text x="443.25406" y="1465.4276" class="ab" id="text295" style="font-size:34.24327469px;font-style:italic;font-family:'Liberation Sans, sans-serif'">α</text>
+  <circle d="m 610,2110 c 0,55.2285 -44.77153,100 -100,100 -55.22847,0 -100,-44.7715 -100,-100 0,-55.2285 44.77153,-100 100,-100 55.22847,0 100,44.7715 100,100 z" style="fill:url(#radialGradient3392);stroke:#000000;stroke-width:3.5" cx="510" cy="2110" r="100" class="poormetal" id="circle297" sodipodi:cx="510" sodipodi:cy="2110" sodipodi:rx="100" sodipodi:ry="100" transform="matrix(0.85608186,0,0,0.85608186,2.371904,-167.68877)"/>
+  <line x1="798.97363" y1="1724.2522" x2="798.97363" y2="1891.1882" id="line311" style="stroke:#000000;stroke-width:2.99628639;marker-end:url(#Arrow2Mend)"/>
+  <text x="803.25403" y="1809.8604" class="ab" id="text313" style="font-size:34.24327469px;font-style:italic;font-family:'Liberation Sans, sans-serif'">α</text>
+  <circle d="m 610,2510 c 0,55.2285 -44.77153,100 -100,100 -55.22847,0 -100,-44.7715 -100,-100 0,-55.2285 44.77153,-100 100,-100 55.22847,0 100,44.7715 100,100 z" style="fill:url(#radialGradient3390);stroke:#000000;stroke-width:3.5" cx="510" cy="2510" r="100" class="poormetal" id="circle315" sodipodi:cx="510" sodipodi:cy="2510" sodipodi:rx="100" sodipodi:ry="100" transform="matrix(0.85608186,0,0,0.85608186,362.3719,-167.68877)"/>
+  <line x1="857.75549" y1="1576.2949" x2="904.83997" y2="1529.2104" id="line329" style="stroke:#000000;stroke-width:2.99628639;marker-end:url(#Arrow2Mend)"/>
+  <text x="872.021" y="1587.7119" class="ab" id="text331" style="font-size:34.24327469px;font-style:italic;font-family:'Liberation Sans, sans-serif'">β⁻</text>
+  <circle d="m 810,2310 c 0,55.2285 -44.77153,100 -100,100 -55.22847,0 -100,-44.7715 -100,-100 0,-55.2285 44.77153,-100 100,-100 55.22847,0 100,44.7715 100,100 z" style="fill:url(#radialGradient3388);stroke:#000000;stroke-width:3.5" cx="710" cy="2310" r="100" class="poormetal" id="circle333" sodipodi:cx="710" sodipodi:cy="2310" sodipodi:rx="100" sodipodi:ry="100" transform="matrix(0.85608186,0,0,0.85608186,12.371904,-169.68877)"/>
+  <line x1="680.97186" y1="1747.0786" x2="728.05634" y2="1699.9941" id="line347" style="stroke:#000000;stroke-width:2.99628639;marker-end:url(#Arrow2Mend)"/>
+  <text x="697.23737" y="1756.4956" class="ab" id="text349" style="font-size:34.24327469px;font-style:italic;font-family:'Liberation Sans, sans-serif'">β⁻</text>
+  <circle d="m 1010,2110 c 0,55.2285 -44.77153,100 -100,100 -55.22847,0 -100,-44.7715 -100,-100 0,-55.2285 44.77153,-100 100,-100 55.22847,0 100,44.7715 100,100 z" style="fill:url(#radialGradient3386);stroke:#000000;stroke-width:3.5" cx="910" cy="2110" r="100" class="poormetal" id="circle351" sodipodi:cx="910" sodipodi:cy="2110" sodipodi:rx="100" sodipodi:ry="100" transform="matrix(0.85608186,0,0,0.85608186,18.371904,-167.68877)"/>
+  <line x1="797.40637" y1="1380.2522" x2="797.40637" y2="1547.1882" id="line365" style="stroke:#000000;stroke-width:2.99628639;marker-end:url(#Arrow2Mend)"/>
+  <text x="801.68683" y="1465.8604" class="ab" id="text367" style="font-size:34.24327469px;font-style:italic;font-family:'Liberation Sans, sans-serif'">α</text>
+  <line x1="499.75549" y1="1575.8623" x2="546.83997" y2="1528.7778" id="line381" style="stroke:#000000;stroke-width:2.99628639;marker-end:url(#Arrow2Mend)"/>
+  <text x="516.021" y="1585.2791" class="ab" id="text383" style="font-size:34.24327469px;font-style:italic;font-family:'Liberation Sans, sans-serif'">β⁻</text>
+  <circle d="m 810,1910 c 0,55.2285 -44.77153,100 -100,100 -55.22847,0 -100,-44.7715 -100,-100 0,-55.2285 44.77153,-100 100,-100 55.22847,0 100,44.7715 100,100 z" style="fill:url(#radialGradient3382);stroke:#000000;stroke-width:3.5" cx="710" cy="1910" r="100" class="metalloid" id="circle385" sodipodi:cx="710" sodipodi:cy="1910" sodipodi:rx="100" sodipodi:ry="100" transform="matrix(0.85608186,0,0,0.85608186,12.371904,-167.68877)"/>
+  <line x1="620.19" y1="1551.0359" x2="620.19" y2="1717.9717" id="line399" style="stroke:#000000;stroke-width:2.99628639;marker-end:url(#Arrow2Mend)"/>
+  <text x="624.47046" y="1636.644" class="ab" id="text401" style="font-size:34.24327469px;font-style:italic;font-family:'Liberation Sans, sans-serif'">α</text>
+  <g id="g3597" transform="matrix(0.85608186,0,0,0.85608186,788.32876,41.760462)">
+    <text y="677.05652" x="-518.72345" id="text173-4" sodipodi:linespacing="125%" style="line-height:125%">
+      <tspan style="font-size:90px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;stroke:none;font-family:Sans;-inkscape-font-specification:Sans Bold" id="tspan179-3" class="symbol" x="-438.72345">Ac</tspan>
+    </text>
+    <text y="123.22596" x="-521.53296" id="text173-1-1">
+      <tspan style="font-size:32px;letter-spacing:-3px;text-anchor:end;font-family:'DejaVu Sans Condensed, sans-serif'" id="tspan175-7-2" class="su" y="638.22595" x="-441.53296">227</tspan>
+    </text>
+    <text style="font-size:11.59958458px" transform="scale(0.96663206,1.0345198)" y="152.08835" x="-536.30945" id="text173-8-3">
+      <tspan style="font-size:30.93222618px;letter-spacing:-2.89989614px;text-anchor:end;font-family:'DejaVu Sans Condensed, sans-serif'" id="tspan175-8-4" class="su" y="649.90399" x="-458.97888">89</tspan>
+    </text>
+    <text id="text3265-1" y="711.61066" x="-520.89789" style="font-size:12px">
+      <tspan id="tspan3267-13" style="font-size:27px;text-anchor:middle;font-family:'DejaVu Sans Condensed, sans-serif'" class="halflife" x="-410.89798">21.772</tspan>
+    </text>
+  </g>
+  <g id="g3579" transform="matrix(0.85608186,0,0,0.85608186,1001.1701,215.4484)">
+    <text y="677.84357" x="-556.90369" id="text173-4-7" sodipodi:linespacing="125%" style="line-height:125%">
+      <tspan style="font-size:90px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;stroke:none;font-family:Sans;-inkscape-font-specification:Sans Bold" id="tspan179-3-4" class="symbol" x="-476.90366">Ra</tspan>
+    </text>
+    <text y="124.01302" x="-559.7132" id="text173-1-1-2">
+      <tspan style="font-size:32px;letter-spacing:-3px;text-anchor:end;font-family:'DejaVu Sans Condensed, sans-serif'" id="tspan175-7-2-7" class="su" y="639.013" x="-479.71317">223</tspan>
+    </text>
+    <text style="font-size:11.59958458px" transform="scale(0.96663206,1.0345198)" y="152.84915" x="-575.80762" id="text173-8-3-7">
+      <tspan style="font-size:30.93222618px;letter-spacing:-2.89989614px;text-anchor:end;font-family:'DejaVu Sans Condensed, sans-serif'" id="tspan175-8-4-9" class="su" y="650.66479" x="-498.47708">88</tspan>
+    </text>
+    <text id="text3265-1-3" y="719.40643" x="-561.75061">
+      <tspan id="tspan3267-13-1" style="font-size:27px;text-anchor:middle;font-family:'DejaVu Sans Condensed, sans-serif'" class="halflife" dy="0 0 0 0 0 0 3.2106046e-039" x="-451.75061">11.43 Days</tspan>
+    </text>
+  </g>
+  <g id="g3649" transform="matrix(0.85608186,0,0,0.85608186,696.29275,-90.325898)">
+    <g transform="translate(-97.055836,-44.350912)" id="g3597-9">
+      <text id="text173-4-8" x="-518.72345" y="677.05652" sodipodi:linespacing="125%" style="line-height:125%">
+        <tspan x="-438.72345" class="symbol" id="tspan179-3-6" style="font-size:90px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;stroke:none;font-family:Sans;-inkscape-font-specification:Sans Bold">Th</tspan>
+      </text>
+      <text id="text173-1-1-5" x="-521.53296" y="123.22596">
+        <tspan x="-441.53296" y="638.22595" class="su" id="tspan175-7-2-0" style="font-size:32px;letter-spacing:-3px;text-anchor:end;font-family:'DejaVu Sans Condensed, sans-serif'">231</tspan>
+      </text>
+      <text id="text173-8-3-2" x="-536.30945" y="152.08835" transform="scale(0.96663206,1.0345198)" style="font-size:11.59958458px">
+        <tspan x="-458.97888" y="649.90399" class="su" id="tspan175-8-4-8" style="font-size:30.93222618px;letter-spacing:-2.89989614px;text-anchor:end;font-family:'DejaVu Sans Condensed, sans-serif'">90</tspan>
+      </text>
+      <text x="-525.57037" y="711.61066" id="text3265-1-6" style="font-size:12px">
+        <tspan x="-415.5704" class="halflife" style="font-size:27px;text-anchor:middle;font-family:'DejaVu Sans Condensed, sans-serif'" id="tspan3267-13-0">25.52</tspan>
+      </text>
+    </g>
+    <text xml:space="preserve" style="font-size:46.72450256px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans" x="-551.69128" y="696.02679" id="text3336" sodipodi:linespacing="125%"><tspan sodipodi:role="line" id="tspan3338" style="font-size:26.99508286px;font-family:'DejaVu Sans Condensed, sans-serif'" x="-551.69128" y="696.02679">Hours</tspan></text>
+  </g>
+  <g id="g3702" transform="matrix(0.85608186,0,0,0.85608186,874.60481,-195.16271)">
+    <g transform="translate(-66.294324,-123.6388)" id="g3579-2">
+      <text id="text173-4-7-4" x="-556.90369" y="677.84357" sodipodi:linespacing="125%" style="line-height:125%">
+        <tspan x="-476.90366" class="symbol" id="tspan179-3-4-8" style="font-size:90px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;stroke:none;font-family:Sans;-inkscape-font-specification:Sans Bold">Pa</tspan>
+      </text>
+      <text id="text173-1-1-2-6" x="-559.7132" y="124.01302">
+        <tspan x="-479.71317" y="639.013" class="su" id="tspan175-7-2-7-5" style="font-size:32px;letter-spacing:-3px;text-anchor:end;font-family:'DejaVu Sans Condensed, sans-serif'">231</tspan>
+      </text>
+      <text id="text173-8-3-7-0" x="-575.80762" y="152.84915" transform="scale(0.96663206,1.0345198)" style="font-size:11.59958458px">
+        <tspan x="-498.47708" y="650.66479" class="su" id="tspan175-8-4-9-9" style="font-size:30.93222618px;letter-spacing:-2.89989614px;text-anchor:end;font-family:'DejaVu Sans Condensed, sans-serif'">91</tspan>
+      </text>
+      <text x="-559.41437" y="710.06146" id="text3265-1-3-0" style="font-size:12px">
+        <tspan x="-449.4144" dy="0 0 0 0 0" class="halflife" style="font-size:27px;text-anchor:middle;font-family:'DejaVu Sans Condensed, sans-serif'" id="tspan3267-13-1-0">32760</tspan>
+      </text>
+    </g>
+  </g>
+  <g id="g3763" transform="matrix(0.85608186,0,0,0.85608186,912.94243,67.921412)">
+    <text y="1048.76" x="-654.59833" id="text173-4-7-1" sodipodi:linespacing="125%" style="line-height:125%">
+      <tspan style="font-size:90px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;stroke:none;font-family:Sans;-inkscape-font-specification:Sans Bold" id="tspan179-3-4-3" class="symbol" x="-574.59833">Fr</tspan>
+    </text>
+    <text y="494.9295" x="-657.40784" id="text173-1-1-2-8">
+      <tspan style="font-size:32px;letter-spacing:-3px;text-anchor:end;font-family:'DejaVu Sans Condensed, sans-serif'" id="tspan175-7-2-7-9" class="su" y="1009.9295" x="-577.40784">223</tspan>
+    </text>
+    <text style="font-size:11.59958458px" transform="scale(0.96663206,1.0345198)" y="511.38892" x="-676.87469" id="text173-8-3-7-3">
+      <tspan style="font-size:30.93222618px;letter-spacing:-2.89989614px;text-anchor:end;font-family:'DejaVu Sans Condensed, sans-serif'" id="tspan175-8-4-9-4" class="su" y="1009.2045" x="-599.54413">87</tspan>
+    </text>
+    <text id="text3265-1-3-4" y="1090.3229" x="-659.44525">
+      <tspan id="tspan3267-13-1-6" style="font-size:27px;text-anchor:middle;font-family:'DejaVu Sans Condensed, sans-serif'" class="halflife" dy="0 0 0 0 0 0 0 0 0 0 0" x="-549.44525">22 Minutes</tspan>
+    </text>
+  </g>
+  <g id="g3579-0" transform="matrix(0.85608186,0,0,0.85608186,825.94763,724.51224)">
+    <text y="677.84357" x="-556.90369" id="text173-4-7-6" sodipodi:linespacing="125%" style="line-height:125%">
+      <tspan style="font-size:90px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;stroke:none;font-family:Sans;-inkscape-font-specification:Sans Bold" id="tspan179-3-4-6" class="symbol" x="-476.90366">At</tspan>
+    </text>
+    <text y="124.01302" x="-559.7132" id="text173-1-1-2-1">
+      <tspan style="font-size:32px;letter-spacing:-3px;text-anchor:end;font-family:'DejaVu Sans Condensed, sans-serif'" id="tspan175-7-2-7-8" class="su" y="639.013" x="-479.71317">219</tspan>
+    </text>
+    <text style="font-size:11.59958458px" transform="scale(0.96663206,1.0345198)" y="152.84915" x="-575.80762" id="text173-8-3-7-4">
+      <tspan style="font-size:30.93222618px;letter-spacing:-2.89989614px;text-anchor:end;font-family:'DejaVu Sans Condensed, sans-serif'" id="tspan175-8-4-9-96" class="su" y="650.66479" x="-498.47708">85</tspan>
+    </text>
+    <text id="text3265-1-3-3" y="719.40643" x="-561.75061">
+      <tspan id="tspan3267-13-1-7" style="font-size:27px;text-anchor:middle;font-family:'DejaVu Sans Condensed, sans-serif'" class="halflife" x="-451.75061">56 Seconds</tspan>
+    </text>
+  </g>
+  <g id="g3579-8" transform="matrix(0.85608186,0,0,0.85608186,828.62533,1068.2076)">
+    <text y="677.84357" x="-556.90369" id="text173-4-7-8" sodipodi:linespacing="125%" style="line-height:125%">
+      <tspan style="font-size:90px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;stroke:none;font-family:Sans;-inkscape-font-specification:Sans Bold" id="tspan179-3-4-2" class="symbol" x="-476.90366">Bi</tspan>
+    </text>
+    <text y="124.01302" x="-559.7132" id="text173-1-1-2-9">
+      <tspan style="font-size:32px;letter-spacing:-3px;text-anchor:end;font-family:'DejaVu Sans Condensed, sans-serif'" id="tspan175-7-2-7-1" class="su" y="639.013" x="-479.71317">215</tspan>
+    </text>
+    <text style="font-size:11.59958458px" transform="scale(0.96663206,1.0345198)" y="152.84915" x="-575.80762" id="text173-8-3-7-35">
+      <tspan style="font-size:30.93222618px;letter-spacing:-2.89989614px;text-anchor:end;font-family:'DejaVu Sans Condensed, sans-serif'" id="tspan175-8-4-9-98" class="su" y="650.66479" x="-498.47708">83</tspan>
+    </text>
+    <text id="text3265-1-3-40" y="719.40643" x="-561.75061">
+      <tspan id="tspan3267-13-1-76" style="font-size:27px;text-anchor:middle;font-family:'DejaVu Sans Condensed, sans-serif'" class="halflife" dy="0 0 0 0 0 0 0 0 0 0 0 0" x="-451.75061">7.6 Minutes</tspan>
+    </text>
+  </g>
+  <g id="g3965" transform="matrix(0.85608186,0,0,0.85608186,1121.7994,183.81474)">
+    <text y="1708.8809" x="-479.20569" id="text173-4-7-8-6" sodipodi:linespacing="125%" style="line-height:125%">
+      <tspan style="font-size:90px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;stroke:none;font-family:Sans;-inkscape-font-specification:Sans Bold" id="tspan179-3-4-2-1" class="symbol" x="-399.20563">Bi</tspan>
+    </text>
+    <text y="1155.0503" x="-482.0152" id="text173-1-1-2-9-5">
+      <tspan style="font-size:32px;letter-spacing:-3px;text-anchor:end;font-family:'DejaVu Sans Condensed, sans-serif'" id="tspan175-7-2-7-1-4" class="su" y="1670.0503" x="-402.01514">211</tspan>
+    </text>
+    <text style="font-size:11.59958458px" transform="scale(0.96663206,1.0345198)" y="1149.4828" x="-495.42746" id="text173-8-3-7-35-2">
+      <tspan style="font-size:30.93222618px;letter-spacing:-2.89989614px;text-anchor:end;font-family:'DejaVu Sans Condensed, sans-serif'" id="tspan175-8-4-9-98-0" class="su" y="1647.2985" x="-418.09695">83</tspan>
+    </text>
+    <text id="text3265-1-3-40-9" y="1746.8923" x="-491.90271" style="font-size:12px">
+      <tspan id="tspan3267-13-1-76-7" style="font-size:27px;text-anchor:middle;font-family:'DejaVu Sans Condensed, sans-serif'" class="halflife" dy="0 0 0 0 0 0 0 0" x="-381.90271">2.14</tspan>
+    </text>
+    <text sodipodi:linespacing="125%" id="text3931" y="1772.1909" x="-412.12939" style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans" xml:space="preserve"><tspan y="1772.1909" x="-412.12939" style="font-size:25px;font-family:'DejaVu Sans Condensed, sans-serif'" id="tspan3933" sodipodi:role="line"/></text>
+  </g>
+  <g id="g3579-0-3" transform="matrix(0.85608186,0,0,0.85608186,26.19607,1037.9321)">
+    <g id="g4045" transform="translate(1042.0237,-204.17714)">
+      <text id="text173-4-7-6-7" x="-456.81512" y="715.13147" sodipodi:linespacing="125%" style="line-height:125%">
+        <tspan x="-376.81509" class="symbol" id="tspan179-3-4-6-2" style="font-size:90px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;stroke:none;font-family:Sans;-inkscape-font-specification:Sans Bold">Po</tspan>
+      </text>
+      <text id="text173-1-1-2-1-6" x="-459.62463" y="161.30092">
+        <tspan x="-379.6246" y="676.3009" class="su" id="tspan175-7-2-7-8-0" style="font-size:32px;letter-spacing:-3px;text-anchor:end;font-family:'DejaVu Sans Condensed, sans-serif'">215</tspan>
+      </text>
+      <text id="text173-8-3-7-4-1" x="-472.26401" y="188.89282" transform="scale(0.96663206,1.0345198)" style="font-size:11.59958458px">
+        <tspan x="-394.93347" y="686.7085" class="su" id="tspan175-8-4-9-96-6" style="font-size:30.93222618px;letter-spacing:-2.89989614px;text-anchor:end;font-family:'DejaVu Sans Condensed, sans-serif'">84</tspan>
+      </text>
+      <text x="-455.66205" y="750.69434" id="text3265-1-3-3-5">
+        <tspan x="-345.66205" class="halflife" style="font-size:27px;text-anchor:middle;font-family:'DejaVu Sans Condensed, sans-serif'" id="tspan3267-13-1-7-7">1.781e-03</tspan>
+      </text>
+      <text sodipodi:linespacing="125%" id="text4019" y="778.33575" x="-396.80231" style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans" xml:space="preserve"><tspan y="778.33575" x="-396.80231" style="font-size:26.99510002px;font-family:'DejaVu Sans Condensed, sans-serif'" id="tspan4021" sodipodi:role="line">Seconds</tspan></text>
+    </g>
+  </g>
+  <g id="g4151" transform="matrix(0.85608186,0,0,0.85608186,860.7795,72.673802)">
+    <text y="2037.5885" x="-389.40131" id="text173-4-7-6-7-1" sodipodi:linespacing="125%" style="line-height:125%">
+      <tspan style="font-size:90px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;stroke:none;font-family:Sans;-inkscape-font-specification:Sans Bold" id="tspan179-3-4-6-2-2" class="symbol" x="-309.40128">Pb</tspan>
+    </text>
+    <text y="1483.7581" x="-392.21082" id="text173-1-1-2-1-6-0">
+      <tspan style="font-size:32px;letter-spacing:-3px;text-anchor:end;font-family:'DejaVu Sans Condensed, sans-serif'" id="tspan175-7-2-7-8-0-0" class="su" y="1998.7579" x="-312.21078">211</tspan>
+    </text>
+    <text style="font-size:11.59958458px" transform="scale(0.96663206,1.0345198)" y="1467.2222" x="-402.52307" id="text173-8-3-7-4-1-1">
+      <tspan style="font-size:30.93222618px;letter-spacing:-2.89989614px;text-anchor:end;font-family:'DejaVu Sans Condensed, sans-serif'" id="tspan175-8-4-9-96-6-4" class="su" y="1965.0378" x="-325.19254">82</tspan>
+    </text>
+    <text id="text3265-1-3-3-5-6" y="2073.1514" x="-390.24823">
+      <tspan id="tspan3267-13-1-7-7-0" style="font-size:27px;text-anchor:middle;font-family:'DejaVu Sans Condensed, sans-serif'" class="halflife" x="-280.24823">36.1</tspan>
+    </text>
+    <text xml:space="preserve" style="font-size:40px;font-style:normal;font-weight:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans" x="-280.99957" y="2100.7927" id="text4019-7" sodipodi:linespacing="125%"><tspan sodipodi:role="line" id="tspan4021-1" style="font-size:24.7990303px;text-align:center;text-anchor:middle;font-family:'DejaVu Sans Condensed, sans-serif'" x="-280.99957" y="2100.7927">Minutes</tspan></text>
+  </g>
+  <g id="g3579-0-7" transform="matrix(0.85608186,0,0,0.85608186,1185.994,1412.5896)">
+    <text y="677.84357" x="-556.90369" id="text173-4-7-6-77" sodipodi:linespacing="125%" style="line-height:125%">
+      <tspan style="font-size:90px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;stroke:none;font-family:Sans;-inkscape-font-specification:Sans Bold" id="tspan179-3-4-6-7" class="symbol" x="-476.90366">Tl</tspan>
+    </text>
+    <text y="124.01302" x="-559.7132" id="text173-1-1-2-1-3">
+      <tspan style="font-size:32px;letter-spacing:-3px;text-anchor:end;font-family:'DejaVu Sans Condensed, sans-serif'" id="tspan175-7-2-7-8-3" class="su" y="639.013" x="-479.71317">207</tspan>
+    </text>
+    <text style="font-size:11.59958458px" transform="scale(0.96663206,1.0345198)" y="152.84915" x="-575.80762" id="text173-8-3-7-4-5">
+      <tspan style="font-size:30.93222618px;letter-spacing:-2.89989614px;text-anchor:end;font-family:'DejaVu Sans Condensed, sans-serif'" id="tspan175-8-4-9-96-9" class="su" y="650.66479" x="-498.47708">81</tspan>
+    </text>
+    <text id="text3265-1-3-3-9" y="719.40643" x="-561.75061">
+      <tspan id="tspan3267-13-1-7-8" style="font-size:27px;text-anchor:middle;font-family:'DejaVu Sans Condensed, sans-serif'" class="halflife" x="-451.75061">4.77 Minutes</tspan>
+    </text>
+  </g>
+  <line x1="313.97864" y1="371.1893" x2="361.06314" y2="324.10483" id="line185-2" style="stroke:#000000;stroke-width:2.99628639;marker-end:url(#Arrow2Mend)"/>
+  <text x="336.24417" y="378.60623" class="ab" id="text187-3" style="font-size:34.24327469px;font-style:italic;font-family:'Liberation Sans, sans-serif'">β⁻</text>
+  <text xml:space="preserve" style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans" x="401" y="330.52994" id="text3332" sodipodi:linespacing="125%"><tspan sodipodi:role="line" id="tspan3334" style="font-size:23.11000061px;font-family:'DejaVu Sans Condensed, sans-serif'" x="401" y="330.52994">Years</tspan></text>
+  <text xml:space="preserve" style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans" x="407" y="676.53003" id="text3340" sodipodi:linespacing="125%"><tspan sodipodi:role="line" id="tspan3342" style="font-size:23.11000061px;font-family:'DejaVu Sans Condensed, sans-serif'" x="407" y="676.53003">Years</tspan></text>
+  <text xml:space="preserve" style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans" x="760" y="1702.53" id="text3344" sodipodi:linespacing="125%"><tspan sodipodi:role="line" id="tspan3346" style="font-size:22px;font-family:'DejaVu Sans Condensed, sans-serif'" x="760" y="1702.53">Minutes</tspan></text>
+  <circle d="m 610,1710 c 0,55.2285 -44.77153,100 -100,100 -55.22847,0 -100,-44.7715 -100,-100 0,-55.2285 44.77153,-100 100,-100 55.22847,0 100,44.7715 100,100 z" style="fill:url(#radialGradient3375);stroke:#000000;stroke-width:3.5" cx="510" cy="1710" r="100" class="halogen" id="circle279-5" sodipodi:cx="510" sodipodi:cy="1710" sodipodi:rx="100" sodipodi:ry="100" transform="matrix(0.85608186,0,0,0.85608186,359.39825,-169.37004)"/>
+  <g id="g3579-0-5" transform="matrix(0.85608186,0,0,0.85608186,1182.974,722.83102)">
+    <text y="677.84357" x="-556.90369" id="text173-4-7-6-1" sodipodi:linespacing="125%" style="line-height:125%">
+      <tspan style="font-size:90px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;stroke:none;font-family:Sans;-inkscape-font-specification:Sans Bold" id="tspan179-3-4-6-71" class="symbol" x="-476.90366">At</tspan>
+    </text>
+    <text y="124.01302" x="-559.7132" id="text173-1-1-2-1-1">
+      <tspan style="font-size:32px;letter-spacing:-3px;text-anchor:end;font-family:'DejaVu Sans Condensed, sans-serif'" id="tspan175-7-2-7-8-5" class="su" y="639.013" x="-479.71317">215</tspan>
+    </text>
+    <text style="font-size:11.59958458px" transform="scale(0.96663206,1.0345198)" y="152.84915" x="-575.80762" id="text173-8-3-7-4-2">
+      <tspan style="font-size:30.93222618px;letter-spacing:-2.89989614px;text-anchor:end;font-family:'DejaVu Sans Condensed, sans-serif'" id="tspan175-8-4-9-96-7" class="su" y="650.66479" x="-498.47708">85</tspan>
+    </text>
+    <text id="text3265-1-3-3-6" y="714.73395" x="-561.75061" style="font-size:12px">
+      <tspan id="tspan3267-13-1-7-1" style="font-size:27px;text-anchor:middle;font-family:'DejaVu Sans Condensed, sans-serif'" class="halflife" x="-451.75061">1e-4</tspan>
+    </text>
+  </g>
+  <text xml:space="preserve" style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans" x="754" y="1356.53" id="text3418" sodipodi:linespacing="125%"><tspan sodipodi:role="line" id="tspan3420" style="font-size:23.11000061px;font-family:'DejaVu Sans Condensed, sans-serif'" x="754" y="1356.53">Seconds</tspan></text>
+  <circle d="m 810,2310 c 0,55.2285 -44.77153,100 -100,100 -55.22847,0 -100,-44.7715 -100,-100 0,-55.2285 44.77153,-100 100,-100 55.22847,0 100,44.7715 100,100 z" style="fill:url(#radialGradient3388-1);stroke:#000000;stroke-width:3.5" cx="710" cy="2310" r="100" class="poormetal" id="circle333-50" sodipodi:cx="710" sodipodi:cy="2310" sodipodi:rx="100" sodipodi:ry="100" transform="matrix(0.85608186,0,0,0.85608186,365.17654,-165.43668)"/>
+  <g id="g4151-8" transform="matrix(0.85608186,0,0,0.85608186,1213.5841,84.92582)">
+    <text y="2037.5885" x="-389.40131" id="text173-4-7-6-7-1-6" sodipodi:linespacing="125%" style="line-height:125%">
+      <tspan style="font-size:90px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;stroke:none;font-family:Sans;-inkscape-font-specification:Sans Bold" id="tspan179-3-4-6-2-2-0" class="symbol" x="-309.40128">Pb</tspan>
+    </text>
+    <text y="1483.7581" x="-392.21082" id="text173-1-1-2-1-6-0-24">
+      <tspan style="font-size:32px;letter-spacing:-3px;text-anchor:end;font-family:'DejaVu Sans Condensed, sans-serif'" id="tspan175-7-2-7-8-0-0-8" class="su" y="1998.7579" x="-312.21078">207</tspan>
+    </text>
+    <text style="font-size:11.59958458px" transform="scale(0.96663206,1.0345198)" y="1467.2222" x="-402.52307" id="text173-8-3-7-4-1-1-6">
+      <tspan style="font-size:30.93222618px;letter-spacing:-2.89989614px;text-anchor:end;font-family:'DejaVu Sans Condensed, sans-serif'" id="tspan175-8-4-9-96-6-4-5" class="su" y="1965.0378" x="-325.19254">82</tspan>
+    </text>
+    <text id="text3265-1-3-3-5-6-0" y="2073.1514" x="-390.24823">
+      <tspan id="tspan3267-13-1-7-7-0-9" style="font-size:27px;text-anchor:middle;font-family:'DejaVu Sans Condensed, sans-serif'" class="halflife" x="-280.24823"/>
+    </text>
+    <text xml:space="preserve" style="font-size:40px;font-style:normal;font-weight:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans" x="-280.99957" y="2082.1033" id="text4019-7-0" sodipodi:linespacing="125%"><tspan sodipodi:role="line" id="tspan4021-1-0" style="font-size:25px;text-align:center;text-anchor:middle;font-family:'DejaVu Sans Condensed, sans-serif'" x="-280.99957" y="2082.1033">Stable</tspan></text>
+  </g>
+  <circle d="m 810,1910 c 0,55.2285 -44.77153,100 -100,100 -55.22847,0 -100,-44.7715 -100,-100 0,-55.2285 44.77153,-100 100,-100 55.22847,0 100,44.7715 100,100 z" style="fill:url(#radialGradient3626);stroke:#000000;stroke-width:3.5" cx="710" cy="1910" r="100" class="metalloid" id="circle385-0" sodipodi:cx="710" sodipodi:cy="1910" sodipodi:rx="100" sodipodi:ry="100" transform="matrix(0.85608186,0,0,0.85608186,362.18188,-168.58641)"/>
+  <g id="g3579-0-3-6" transform="matrix(0.85608186,0,0,0.85608186,376.00604,1037.0344)">
+    <g id="g4045-6" transform="translate(1042.0237,-204.17714)">
+      <text id="text173-4-7-6-7-18" x="-456.81512" y="715.13147" sodipodi:linespacing="125%" style="line-height:125%">
+        <tspan x="-376.81509" class="symbol" id="tspan179-3-4-6-2-4" style="font-size:90px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;stroke:none;font-family:Sans;-inkscape-font-specification:Sans Bold">Po</tspan>
+      </text>
+      <text id="text173-1-1-2-1-6-9" x="-459.62463" y="161.30092">
+        <tspan x="-379.6246" y="676.3009" class="su" id="tspan175-7-2-7-8-0-6" style="font-size:32px;letter-spacing:-3px;text-anchor:end;font-family:'DejaVu Sans Condensed, sans-serif'">211</tspan>
+      </text>
+      <text id="text173-8-3-7-4-1-3" x="-472.26401" y="188.89282" transform="scale(0.96663206,1.0345198)" style="font-size:11.59958458px">
+        <tspan x="-394.93347" y="686.7085" class="su" id="tspan175-8-4-9-96-6-7" style="font-size:30.93222618px;letter-spacing:-2.89989614px;text-anchor:end;font-family:'DejaVu Sans Condensed, sans-serif'">84</tspan>
+      </text>
+      <text x="-455.66205" y="750.69434" id="text3265-1-3-3-5-8">
+        <tspan x="-345.66205" class="halflife" style="font-size:27px;text-anchor:middle;font-family:'DejaVu Sans Condensed, sans-serif'" id="tspan3267-13-1-7-7-8">0.516</tspan>
+      </text>
+      <text sodipodi:linespacing="125%" id="text4019-2" y="778.33575" x="-396.80231" style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans" xml:space="preserve"><tspan y="778.33575" x="-396.80231" style="font-size:26.99508286px;font-family:'DejaVu Sans Condensed, sans-serif'" id="tspan4021-9" sodipodi:role="line">Seconds</tspan></text>
+    </g>
+  </g>
+  <circle d="m 410,710 c 0,55.22847 -44.77153,100 -100,100 -55.22847,0 -100,-44.77153 -100,-100 0,-55.22847 44.77153,-100 100,-100 55.22847,0 100,44.77153 100,100 z" style="fill:url(#radialGradient3705);stroke:#000000;stroke-width:3.5" cx="310" cy="710" r="100" class="actinide" id="circle207-3" sodipodi:cx="310" sodipodi:cy="710" sodipodi:rx="100" sodipodi:ry="100" transform="matrix(0.85608186,0,0,0.85608186,348.61462,-169.28818)"/>
+  <g id="g3649-6" transform="matrix(0.85608186,0,0,0.85608186,1052.5355,-89.925308)">
+    <g transform="translate(-97.055836,-44.350912)" id="g3597-9-1">
+      <text id="text173-4-8-5" x="-518.72345" y="677.05652" sodipodi:linespacing="125%" style="line-height:125%">
+        <tspan x="-438.72345" class="symbol" id="tspan179-3-6-4" style="font-size:90px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;stroke:none;font-family:Sans;-inkscape-font-specification:Sans Bold">Th</tspan>
+      </text>
+      <text id="text173-1-1-5-2" x="-521.53296" y="123.22596">
+        <tspan x="-441.53296" y="638.22595" class="su" id="tspan175-7-2-0-0" style="font-size:32px;letter-spacing:-3px;text-anchor:end;font-family:'DejaVu Sans Condensed, sans-serif'">227</tspan>
+      </text>
+      <text id="text173-8-3-2-9" x="-536.30945" y="152.08835" transform="scale(0.96663206,1.0345198)" style="font-size:11.59958458px">
+        <tspan x="-458.97888" y="649.90399" class="su" id="tspan175-8-4-8-7" style="font-size:30.93222618px;letter-spacing:-2.89989614px;text-anchor:end;font-family:'DejaVu Sans Condensed, sans-serif'">90</tspan>
+      </text>
+      <text x="-525.57037" y="718.61938" id="text3265-1-6-3" style="font-size:12px">
+        <tspan x="-415.5704" class="halflife" style="font-size:27px;text-anchor:middle;font-family:'DejaVu Sans Condensed, sans-serif'" id="tspan3267-13-0-7">18.68 Days</tspan>
+      </text>
+    </g>
+    <text xml:space="preserve" style="font-size:46.72450256px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans" x="-542.34631" y="696.02679" id="text3336-2" sodipodi:linespacing="125%"><tspan sodipodi:role="line" id="tspan3338-6" style="font-size:26.99508286px;font-family:'DejaVu Sans Condensed, sans-serif'" x="-542.34631" y="696.02679"/></text>
+  </g>
+  <line x1="438.60022" y1="350.50421" x2="438.60022" y2="517.44031" id="line221-5" style="stroke:#000000;stroke-width:2.99628639;marker-end:url(#Arrow2Mend)"/>
+  <text x="442.88062" y="436.11249" class="ab" id="text223-7" style="font-size:34.24327469px;font-style:italic;font-family:'Liberation Sans, sans-serif'">α</text>
+  <line x1="494.53134" y1="542.31647" x2="541.61584" y2="495.23193" id="line185-2-2" style="stroke:#000000;stroke-width:2.99628639;marker-end:url(#Arrow2Mend)"/>
+  <text x="518.79688" y="551.7334" class="ab" id="text187-3-0" style="font-size:34.24327469px;font-style:italic;font-family:'Liberation Sans, sans-serif'">β⁻</text>
+  <line x1="620" y1="869.31366" x2="620" y2="1036.2498" id="line221-7" style="stroke:#000000;stroke-width:2.99628639;marker-end:url(#Arrow2Mend)"/>
+  <text x="624.2804" y="954.92194" class="ab" id="text223-3" style="font-size:34.24327469px;font-style:italic;font-family:'Liberation Sans, sans-serif'">α</text>
+  <circle d="m 410,1110 c 0,55.2285 -44.77153,100 -100,100 -55.22847,0 -100,-44.7715 -100,-100 0,-55.2285 44.77153,-100 100,-100 55.22847,0 100,44.7715 100,100 z" style="fill:url(#radialGradient3400-0);fill-opacity:1;stroke:#000000;stroke-width:3.5" cx="310" cy="1110" r="100" class="alkaline" id="circle225-3" sodipodi:cx="310" sodipodi:cy="1110" sodipodi:rx="100" sodipodi:ry="100" transform="matrix(0.85608186,0,0,0.85608186,354.61462,175.88731)"/>
+  <g id="g3579-5" transform="matrix(0.85608186,0,0,0.85608186,1001.4128,559.02448)">
+    <text y="677.84357" x="-556.90369" id="text173-4-7-9" sodipodi:linespacing="125%" style="line-height:125%">
+      <tspan style="font-size:90px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;stroke:none;font-family:Sans;-inkscape-font-specification:Sans Bold" id="tspan179-3-4-9" class="symbol" x="-476.90366">Rn</tspan>
+    </text>
+    <text y="124.01302" x="-559.7132" id="text173-1-1-2-81">
+      <tspan style="font-size:32px;letter-spacing:-3px;text-anchor:end;font-family:'DejaVu Sans Condensed, sans-serif'" id="tspan175-7-2-7-82" class="su" y="639.013" x="-479.71317">223</tspan>
+    </text>
+    <text style="font-size:11.59958458px" transform="scale(0.96663206,1.0345198)" y="152.84915" x="-575.80762" id="text173-8-3-7-6">
+      <tspan style="font-size:30.93222618px;letter-spacing:-2.89989614px;text-anchor:end;font-family:'DejaVu Sans Condensed, sans-serif'" id="tspan175-8-4-9-6" class="su" y="650.66479" x="-498.47708">86</tspan>
+    </text>
+    <text id="text3265-1-3-03" y="710.06146" x="-561.75061" style="font-size:12px">
+      <tspan id="tspan3267-13-1-8" style="font-size:27px;text-anchor:middle;font-family:'DejaVu Sans Condensed, sans-serif'" class="halflife" dy="0 0 0 0 0" x="-451.75061">3.96</tspan>
+    </text>
+  </g>
+  <text xml:space="preserve" style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans" x="570" y="1190.53" id="text4726" sodipodi:linespacing="125%"><tspan sodipodi:role="line" id="tspan4728" style="font-size:25px;font-family:'DejaVu Sans Condensed, sans-serif'" x="570" y="1190.53">Seconds</tspan></text>
+  <line x1="620.60022" y1="1210.5042" x2="620.60022" y2="1377.4403" id="line221-7-5" style="stroke:#000000;stroke-width:2.99628639;marker-end:url(#Arrow2Mend)"/>
+  <text x="624.88062" y="1296.1125" class="ab" id="text223-3-0" style="font-size:34.24327469px;font-style:italic;font-family:'Liberation Sans, sans-serif'">α</text>
+  <line x1="675.6004" y1="1400.5723" x2="722.68488" y2="1353.4878" id="line381-8" style="stroke:#000000;stroke-width:2.99628639;marker-end:url(#Arrow2Mend)"/>
+  <text x="691.86591" y="1409.989" class="ab" id="text383-3" style="font-size:34.24327469px;font-style:italic;font-family:'Liberation Sans, sans-serif'">β⁻</text>
+  <line x1="970.60022" y1="1552.5043" x2="970.60022" y2="1719.4403" id="line311-1" style="stroke:#000000;stroke-width:2.99628639;marker-end:url(#Arrow2Mend)"/>
+  <text x="974.88062" y="1638.1124" class="ab" id="text313-6" style="font-size:34.24327469px;font-style:italic;font-family:'Liberation Sans, sans-serif'">α</text>
+  <line x1="853.25427" y1="1913.9863" x2="900.33875" y2="1866.9019" id="line329-6" style="stroke:#000000;stroke-width:2.99628639;marker-end:url(#Arrow2Mend)"/>
+  <text x="867.51978" y="1925.4033" class="ab" id="text331-1" style="font-size:34.24327469px;font-style:italic;font-family:'Liberation Sans, sans-serif'">β⁻</text>
+  <rect x="2.2245483" y="4.3058777" width="1304.1302" height="171.54898" class="background1" id="rect67-8" style="fill:#f5f5f5;stroke:none"/>
+  <circle d="m 410,310 c 0,55.22847 -44.77153,100 -100,100 -55.22847,0 -100,-44.77153 -100,-100 0,-55.22847 44.77153,-100 100,-100 55.22847,0 100,44.77153 100,100 z" style="fill:url(#radialGradient4888);stroke:#000000;stroke-width:3.5" cx="310" cy="310" r="100" class="actinide" id="circle189-3-8" sodipodi:cx="310" sodipodi:cy="310" sodipodi:rx="100" sodipodi:ry="100" transform="matrix(0.85608186,0,0,0.85608186,-7.89519,-173.25463)"/>
+  <text id="text191-4-8" x="7.7651367" y="66.252838" sodipodi:linespacing="125%" style="font-size:10.2729826px;line-height:125%">
+    <tspan x="247.46808" dy="35.955437" class="symbol" id="tspan197-1-0" style="font-size:77.04737091px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;stroke:none;font-family:Sans;-inkscape-font-specification:Sans Bold">U</tspan>
+  </text>
+  <text id="text191-8-1-8" x="5.5969772" y="-167.60657" style="font-size:10.2729826px">
+    <tspan x="245.29987" y="102.05923" class="su" id="tspan193-8-3-7" style="font-size:27.39461899px;letter-spacing:-2.56824565px;text-anchor:end;font-family:'DejaVu Sans Condensed, sans-serif'" dy="-35.955437">235</tspan>
+  </text>
+  <text id="text191-17-8-7" x="-44.417717" y="133.95767" style="font-size:15.40947342px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:Sans;-inkscape-font-specification:Sans" sodipodi:linespacing="125%">
+    <tspan x="220.96771" class="halflife" id="tspan199-2-7-8" style="font-size:23.11421013px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:Sans;-inkscape-font-specification:Sans">7.04e8</tspan>
+  </text>
+  <text x="-37.360962" y="155.62468" style="font-size:23.11421013px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:Sans;-inkscape-font-specification:Sans" sodipodi:linespacing="125%" id="text3552-4-3">
+    <tspan x="228.02441" dy="2.7485404e-039 0 0 0 0 0 0 2.7485404e-039" class="halflife" style="font-size:23.11421013px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:Sans;-inkscape-font-specification:Sans" id="tspan3554-2-8">Years</tspan>
+  </text>
+  <text id="text191-6-7-3" x="4.7552795" y="-179.34491" style="font-size:10.2729826px">
+    <tspan x="244.45819" y="90.320885" class="su" id="tspan193-1-7-7" style="font-size:27.39461899px;letter-spacing:-2.56824565px;text-anchor:end;font-family:'DejaVu Sans Condensed, sans-serif'" dy="0 0">92</tspan>
+  </text>
+  <text x="1289.626" y="165.95293" class="SideKey" id="text93-9-1" style="font-size:34.24327469px;text-anchor:end;fill:#555555;font-family:'DejaVu Sans Light, sans-serif'">Uranium</text>
+  <line x1="499.45825" y1="1234.6727" x2="546.54272" y2="1187.5883" id="line381-9" style="stroke:#000000;stroke-width:2.99628639;marker-end:url(#Arrow2Mend)"/>
+  <text x="515.72375" y="1244.0895" class="ab" id="text383-8" style="font-size:34.24327469px;font-style:italic;font-family:'Liberation Sans, sans-serif'">β⁻</text>
+  <line x1="506.62982" y1="896.12439" x2="553.71429" y2="849.03992" id="line381-9-8" style="stroke:#000000;stroke-width:2.99628639;marker-end:url(#Arrow2Mend)"/>
+  <text x="522.89532" y="905.54108" class="ab" id="text383-8-2" style="font-size:34.24327469px;font-style:italic;font-family:'Liberation Sans, sans-serif'">β⁻</text>
+</svg>
