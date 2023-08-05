@@ -1,0 +1,6 @@
+[console_scripts]
+cm = cmind.cli:run
+cme = cmind.cli:run_experiment
+cmind = cmind.cli:run
+cmr = cmind.cli:run_script
+
