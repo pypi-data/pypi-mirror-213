@@ -1,0 +1,43 @@
+Metadata-Version: 2.1
+Name: OrbusMaker
+Version: 1.1.1
+Summary: An app skeleton creator, using CLI interface
+Home-page: https://github.com/Orbus-Company/OrbusMaker
+Author: Wilovy09
+Author-email: orbuscompany@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Orbus
+
+Orbus es un creador de proyectos.
+
+Puedes instalarlo con:
+
+```bash
+pip install Orbus
+```
+
+Para invocarlo hace falta usar el comando:
+
+```bash
+python -m orbus create-flet-app
+
+# Out:
+# Ingrese el nombre de su proyecto (flet-app)
+# >> 
+```
+
+Esto generara una carpeta donde estemos ubicados.
+
+
+Links:
+- [Pypi](https://pypi.org/project/Orbus/)
+- [Github](https://github.com/Orbus-Company/OrbusMaker)
+
+Actualizaciones:
+- [ ] Soporte a distintos lenguajes/frameworks
