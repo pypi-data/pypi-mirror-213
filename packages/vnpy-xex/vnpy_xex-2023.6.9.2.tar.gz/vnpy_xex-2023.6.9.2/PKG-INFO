@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: vnpy_xex
+Version: 2023.6.9.2
+Summary: gateway of xex exchange for vnpy
+Home-page: https://github.com/monk-after-90s/vnpy_xex
+Author: antas
+Author-email: 907333918@qq.com
+License: MIT
+Keywords: quant,quantitative,investment,trading,algotrading
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Topic :: Office/Business :: Financial :: Investment
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: Chinese (Simplified)
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# vnpy_xex
+
+gateway of xex exchange for vnpy
+
+查看文件夹scripts学习使用
