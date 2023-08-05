@@ -1,0 +1,2 @@
+[console_scripts]
+fake_traffic = fake_traffic.cli:fake_traffic
