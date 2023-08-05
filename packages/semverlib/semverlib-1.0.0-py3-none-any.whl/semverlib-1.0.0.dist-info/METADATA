@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: semverlib
+Version: 1.0.0
+Summary: Semantic Versioning 2 library
+Project-URL: Homepage, https://gitlab.com/pbacterio/semverpy
+Author-email: Germán Moya <pbacterio@gmail.com>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.11
+Requires-Python: >=3.11
