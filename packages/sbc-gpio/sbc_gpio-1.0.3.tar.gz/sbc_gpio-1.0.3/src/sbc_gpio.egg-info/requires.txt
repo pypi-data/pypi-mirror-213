@@ -1,0 +1,10 @@
+gpiod
+bmx280-spi
+dht11-spi
+Jinja2
+lirc
+logging-handler
+pyserial
+RPLCD
+smbus2
+spidev

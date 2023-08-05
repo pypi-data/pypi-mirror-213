@@ -1,0 +1,2 @@
+[console_scripts]
+update_dynamic_overlay.py = sbc_gpio.scripts:update_dynamic_overlay
