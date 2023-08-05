@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: dendrox
+Version: 0.1.0
+Summary: Utility functions to create JSON input for the DendroX app
+Project-URL: Homepage, https://github.com/frlender/dendrox-util
+Project-URL: DendroX app, https://github.com/frlender/DendroX
+Author-email: Qiaonan Duan <geonann@gmail.com>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.7
+Requires-Dist: numpy
+Requires-Dist: seaborn
+Description-Content-Type: text/markdown
+
+DendroX
+
+Utility functions to create JSON input for the online DendroX app

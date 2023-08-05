@@ -1,0 +1,25 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+[project]
+name = "dendrox"
+version = "0.1.0"
+authors = [
+  { name="Qiaonan Duan", email="geonann@gmail.com" },
+]
+description = "Utility functions to create JSON input for the DendroX app"
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "numpy",
+    "seaborn"
+]
+
+[project.urls]
+"Homepage" = "https://github.com/frlender/dendrox-util"
+"DendroX app" = "https://github.com/frlender/DendroX"
