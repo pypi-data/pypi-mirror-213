@@ -1,0 +1,6 @@
+# libsnmp - a Python SNMP library
+
+This library uses python distutils. To install the library module, simply run:
+
+python setup.py install
+
