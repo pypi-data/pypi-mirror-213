@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: odoo-addons-oca-crm
+Version: 16.0.20230608.0
+Summary: Meta package for oca-crm Odoo addons
+Home-page: UNKNOWN
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: Framework :: Odoo
+Classifier: Framework :: Odoo :: 16.0
+Requires-Dist: odoo-addon-crm-claim (<16.1dev,>=16.0dev)
+Requires-Dist: odoo-addon-crm-industry (<16.1dev,>=16.0dev)
+Requires-Dist: odoo-addon-crm-lead-code (<16.1dev,>=16.0dev)
+Requires-Dist: odoo-addon-crm-lead-firstname (<16.1dev,>=16.0dev)
+Requires-Dist: odoo-addon-crm-lead-search-archive (<16.1dev,>=16.0dev)
+Requires-Dist: odoo-addon-crm-location (<16.1dev,>=16.0dev)
+Requires-Dist: odoo-addon-crm-partner-assign (<16.1dev,>=16.0dev)
+Requires-Dist: odoo-addon-crm-phonecall (<16.1dev,>=16.0dev)
+
+UNKNOWN
+
