@@ -1,0 +1,7 @@
+rich
+ruff
+isort
+black[jupyter]
+pyright
+langchain
+notebook
