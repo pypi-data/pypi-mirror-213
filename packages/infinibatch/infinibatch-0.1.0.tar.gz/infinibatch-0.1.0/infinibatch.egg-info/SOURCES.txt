@@ -1,0 +1,14 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+infinibatch/__init__.py
+infinibatch/datasets.py
+infinibatch/iterators.py
+infinibatch.egg-info/PKG-INFO
+infinibatch.egg-info/SOURCES.txt
+infinibatch.egg-info/dependency_links.txt
+infinibatch.egg-info/top_level.txt
+test/test_datasets.py
+test/test_doctests.py
+test/test_iterators.py
