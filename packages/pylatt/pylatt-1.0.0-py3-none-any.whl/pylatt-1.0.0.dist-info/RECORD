@@ -1,0 +1,11 @@
+pylatt/__about__.py,sha256=SnHoAmX0PecwTSzmB-7b4gZv0rX7zkzb-VT8mdw14t4,798
+pylatt/__init__.py,sha256=y8R8pyK9SwHYpfcSMapUzctumSD4SbJspEg6rmV1Gfw,530
+pylatt/core.py,sha256=LKeRPJFQbY9smn-kyMFq5Ftk0wOExLKroWsBe5QVIc8,44486
+pylatt/isocontour.py,sha256=MCGqMRJbYH2eMk4BcXFS8B0SEKQc0aygeRVXx_UGnVY,5921
+pylatt/kl.py,sha256=Yj5ayuJq_Pu8_i6r-t_jLxO-gQhKuxWm7ptwzpWOCxY,8626
+pylatt/optimize.py,sha256=dVvYYkg4khcfqqabV4YMBxh8b55alRKed_aK1zfmSyI,2583
+pylatt-1.0.0.dist-info/LICENSE.txt,sha256=jOtLnuWt7d5Hsx6XXB2QxzrSe2sWWh3NgMfFRetluQM,35147
+pylatt-1.0.0.dist-info/METADATA,sha256=4UmO_WjuvBGNcTRhv6qgkBebcenU22UTrMbP4V8hOsE,4222
+pylatt-1.0.0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+pylatt-1.0.0.dist-info/top_level.txt,sha256=zvlO2JMoXUu4Nfz8ZzmWieiuoIzauCoUwBBRXCzzZQ0,7
+pylatt-1.0.0.dist-info/RECORD,,
