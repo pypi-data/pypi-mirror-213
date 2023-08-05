@@ -1,0 +1,2 @@
+[nbdev]
+dreamai_ray = dreamai_ray._modidx:d
