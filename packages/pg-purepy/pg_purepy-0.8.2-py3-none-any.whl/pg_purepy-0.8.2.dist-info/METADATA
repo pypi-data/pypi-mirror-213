@@ -1,0 +1,38 @@
+Metadata-Version: 2.1
+Name: pg-purepy
+Version: 0.8.2
+Summary: A pure-Python anyio-based PostgreSQL adapter.
+License: LGPL-3.0-or-later
+Author: Lura Skye
+Author-email: l@veriny.tf
+Requires-Python: >=3.10,<4.0
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: GNU Lesser General Public License v3 or later (LGPLv3+)
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Topic :: Database
+Classifier: Topic :: Database :: Front-Ends
+Provides-Extra: docs
+Requires-Dist: anyio (==3.6.2)
+Requires-Dist: arrow (>=1.2.3,<2.0.0)
+Requires-Dist: attrs (>=23.1.0,<24.0.0)
+Requires-Dist: python-dateutil (>=2.8.2,<3.0.0)
+Requires-Dist: scramp (>=1.4.4,<2.0.0)
+Description-Content-Type: text/x-rst
+
+pg-purepy
+=========
+
+.. image:: https://img.shields.io/pypi/pyversions/pg-purepy?style=flat-square
+    :alt: PyPI - Python Version
+
+pg-purepy is a pure-Python PostgreSQL wrapper based on the `anyio`_ library.
+
+A lot of this library was inspired by the `pg8000`_ library. Credits to that.
+
+Read the docs at https://pg.py.veriny.tf/.
+
+.. _anyio: https://github.com/agronholm/anyio
+.. _pg8000: https://github.com/tlocke/pg8000
