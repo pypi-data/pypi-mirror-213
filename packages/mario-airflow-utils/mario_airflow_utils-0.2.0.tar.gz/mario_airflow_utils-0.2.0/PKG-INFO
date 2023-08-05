@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: mario_airflow_utils
+Version: 0.2.0
+Summary: apache airflow utils
+Home-page: https://dMario24.github.io/mario_airflow_utils
+Author: dMario24
+Author-email: data.mario24@gmail.com
+License: GNU General Public License (GPL)
+Project-URL: Bug Tracker, https://github.com/dMario24/mario_airflow_utils/issues
+Platform: macOS
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License (GPL)
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# mario_airflow_utils
+### apache airflow utils
+
+- [https://pypi.org/project/mario_airflow_utils](https://pypi.org/project/mario_airflow_utils)
+
+```
+- mario_airflow_utils is interesting and interesting.
+```
+
+# User Guide
+- [https://dMario24.github.io/mario_airflow_utils](https://dMario24.github.io/mario_airflow_utils)
+
+![logo](https://dMario24.github.io/mario_airflow_utils/img/social_preview.png)
