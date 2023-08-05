@@ -1,0 +1,109 @@
+Metadata-Version: 2.1
+Name: grecy
+Version: 1.0
+Summary: grecy installs six ancient Greek spaCy models that were trained using the Universal Dependency Proiel and Perseus treebanks.
+Author-email: Jacobo Myerston <jmyerston@ucsd.edu>
+License: MIT License
+        
+        Copyright (c) 2023 Jacobo Myerston
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+        
+Project-URL: Homepage, https://github.com/jmyerston/greCy
+Project-URL: Bug Tracker, https://github.com/jmyerston/greCy/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+Requires-Dist: spacy (<4.0.0,>=3.5)
+
+# greCy
+## Ancient Greek models for spaCy
+
+greCy is a set of spaCy ancient Greek models and its installer. The models were trained using the [Perseus](https://universaldependencies.org/treebanks/grc_perseus/index.html) and  [Proiel UD](https://universaldependencies.org/treebanks/grc_proiel/index.html) corpora.
+
+### Installation
+
+First install the python package as usual:
+
+``` bash
+pip install -U grecy
+```
+
+Once the package is successfully installed, you can proceed to install any of the followings models:
+
+* grc_perseus_sm
+* grc_proiel_sm
+* grc_perseus_lg
+* grc_proiel_lg
+* grc_perseus_trf
+* grc_proiel_trf
+
+
+The models can be installed from the terminal with the commands below:
+
+```
+python -m grecy install MODEL
+```
+where you replace MODEL by any of the model names listed above.  The suffixes after the corpus name _sm, _lg, and _trf indicate the size of the model, which directly depends on the word embeddings used to train the models. The smallest models end in _sm (small) and are the less accurate ones: they are good for testing and building lightweight apps. The _lg and _trf are the large and transformer models which are more accurate. The _lg were trained using floret word vectors, and the _trf models use a special version of BERT that was pretrained with the largest Ancient Greek corpus available in the web. 
+
+
+### Loading
+
+As usual, you can load any of the six models with the following Python lines:
+
+```
+import spacy
+nlp = spacy.load("grc_proiel_XX")
+```
+Remember to replace  _XX  with the size of the model you would like to use, this means, _sm for small, _lg for large, and _trf for transformer. The _trf model is the most accurate but also the slowest.
+
+### Use
+
+spaCy is a powerful NLP library with many applications. The most basic of its function is the morpho-syntantic annotation of texts for further processing. A common routine is to load a model, create a doc object, and process a text:
+
+```
+import spacy
+nlp = spacy.load("grc_proiel_trf")
+
+text = "καὶ πρὶν μὲν ἐν κακοῖσι κειμένην ὅμως ἐλπίς μʼ ἀεὶ προσῆγε σωθέντος τέκνου ἀλκήν τινʼ εὑρεῖν κἀπικούρησιν δόμον"
+
+doc = nlp(text)
+
+for token in doc:
+    print(f'{token.text}, lemma: {token.lemma_} pos:{token.pos_}')
+    
+```
+
+#### The apostrophe issue
+
+Unfortunately, there is no consensus how to represent the Ancient Greek apostrophe. Modern Greek simply uses the regular apostrophe, but ancient texts available in Perseus and Perseus under Philologic use various unicode characters for the apostrophe. Instead of the apostrophe, we find the 'Greek koronis', 'modifier letter apostrophe', and 'right single quotation mark.' Provisionally, I have opted to use 'modifier letter apostrophe' in the corpora with which I trained the models. This means that, if you want the greCy models to properly handle the apostrophe, you have to make sure that the Ancient Greek texts that you are processing use the modifier letter apostrophe **ʼ** (U+02BC ). Otherwise the models will fail to lemmatize and tag some words in your texts that ends with an 'apostrophe'.
+
+
+
+
+
+
+
+
+
+
+
