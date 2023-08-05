@@ -1,0 +1,16 @@
+crdb/__init__.py,sha256=So6qymalaF4DclVMmDaD-DORf01o1Rh63-Br8bgNRwI,676
+crdb/__main__.py,sha256=FiyPBNsxbOyye8NsBpdvCdhgzxbNFpq6mjyedwxPUFc,354
+crdb/cli.py,sha256=d-QgaBlrwywG_1Epy9wOij-gE68pu_Hl0NzCF26k_u4,2088
+crdb/core.py,sha256=lfwEILOEL-9Gf2eiwXJzeNQWlqHzbjM4DGW3dZHy9TY,20626
+crdb/crdb_logo.png,sha256=FqIoLDMlIxQjHjvKO2ETtArRzhloFt4e6hjo-kaSuAo,14332
+crdb/experimental.py,sha256=wyi8nT52IgilcoOQxcJ7GJqQK1HB1Xi1hkzPsl23SHo,3554
+crdb/mpl.py,sha256=GZPQIhFHuJ433e6ZmpNzvPptSdZFABSsXHNU6Ay7r8s,7830
+crdb/solarsystem_abundances2003.dat,sha256=uoWBYQVz8WCwyf-EwlRkGwMUAN60Nh78SgrUhPrO0SU,9328
+crdb/units.py,sha256=PhRWJaeUkpO3HK3QlHnCmbqBL4jn6S3YDujQQjdRRNE,496
+crdb-0.12.0.dist-info/AUTHORS.rst,sha256=JbAnrnKG6mpRYf19JnaOHKlcHgPyfOCYaMBUvTvFkCc,108
+crdb-0.12.0.dist-info/LICENSE,sha256=XDItmDzt8rLII1IJ2prjWWmDz_d_5zxUUKGRGBtnUAs,1103
+crdb-0.12.0.dist-info/METADATA,sha256=4PeSBtKdiAKpYu_LaB5RN0JrNw31tQlRwA_cSMeNLmM,3943
+crdb-0.12.0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+crdb-0.12.0.dist-info/entry_points.txt,sha256=OrRPY0xX26mFViEfXGh0aj-EH2LJJSMdoPtCyBM3nqo,39
+crdb-0.12.0.dist-info/top_level.txt,sha256=SqKrivqPI3q2sM6fMm5MJhwzUDEzOHbeCgGKC15ZfSI,5
+crdb-0.12.0.dist-info/RECORD,,
