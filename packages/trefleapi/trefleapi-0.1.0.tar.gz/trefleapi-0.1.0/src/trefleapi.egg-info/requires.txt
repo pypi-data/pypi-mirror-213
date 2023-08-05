@@ -1,0 +1,7 @@
+requests>=2.3
+appdirs>=1.4.4
+
+[dev]
+pytest
+validators
+twine>=4.0.2
