@@ -1,0 +1,64 @@
+[tool.black]
+line-length = 100
+
+[tool.poetry]
+name = "pg-purepy"
+version = "0.8.2"
+description = "A pure-Python anyio-based PostgreSQL adapter."
+authors = ["Lura Skye <l@veriny.tf>"]
+license = "LGPL-3.0-or-later"
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Topic :: Database",
+    "Topic :: Database :: Front-Ends",
+    "Operating System :: OS Independent",
+]
+readme = "README.rst"
+
+[tool.poetry.dependencies]
+python = ">=3.10,<4.0"
+scramp = "^1.4.4"
+attrs = "^23.1.0"
+arrow = "^1.2.3"
+python-dateutil = "^2.8.2"
+anyio = "3.6.2"
+
+[tool.poetry.group.docs.dependencies]
+sphinx = "^6.1"
+sphinx-rtd-theme = "^1.2.2"
+sphinxcontrib-trio = "^1.1.2"
+sphinx-inline-tabs = "^2023.4.21"
+sphinx-autodoc-typehints = "^1.23.0"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.3.1"
+trio = "^0.22.0"
+isort = "^5.12.0"
+pytest-cov = "^4.1.0"
+
+[tool.poetry.extras]
+docs = ["Sphinx", "sphinxcontrib-trio", "sphinx-autodoc-typehints", "sphinx-rtd-theme",
+    "sphinx-inline-tabs"]
+
+[tool.pytest.ini_options]
+log_cli_level = "5"
+log_cli = false
+addopts = "--cov --cov-report=html"
+
+[tool.coverage.run]
+branch = true
+source = ["pg_purepy"]
+
+[tool.coverage.report]
+exclude_lines = [
+    "raise UnknownMessageError",  # this only happens if the postgresql server breaks
+    "pragma: no cover"  # defualt behaviour...
+]
+
+[tool.isort]
+profile = "black"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
