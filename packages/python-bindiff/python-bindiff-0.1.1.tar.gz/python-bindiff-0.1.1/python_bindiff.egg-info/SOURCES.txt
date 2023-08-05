@@ -1,0 +1,13 @@
+LICENSE
+README.md
+setup.py
+bin/bindiffer
+bindiff/__init__.py
+bindiff/bindiff.py
+bindiff/file.py
+bindiff/types.py
+python_bindiff.egg-info/PKG-INFO
+python_bindiff.egg-info/SOURCES.txt
+python_bindiff.egg-info/dependency_links.txt
+python_bindiff.egg-info/requires.txt
+python_bindiff.egg-info/top_level.txt
