@@ -1,0 +1,29 @@
+[bsb.commands]
+commands = bsb.cli.commands._commands
+projects = bsb.cli.commands._projects
+
+[bsb.config.parsers]
+json = bsb.config.parsers.json
+yaml = bsb.config.parsers.yaml
+
+[bsb.config.templates]
+bsb_templates = bsb.config.templates
+
+[bsb.options]
+config = bsb._options:config
+profiling = bsb._options:profiling
+sudo = bsb._options:sudo
+verbosity = bsb._options:verbosity
+version = bsb._options:version
+
+[bsb.simulation_backends]
+arbor = bsb.simulators.arbor
+nest = bsb.simulators.nest
+neuron = bsb.simulators.neuron
+
+[bsb.storage.engines]
+fs = bsb.storage.fs
+
+[console_scripts]
+bsb = bsb.cli:handle_cli
+
