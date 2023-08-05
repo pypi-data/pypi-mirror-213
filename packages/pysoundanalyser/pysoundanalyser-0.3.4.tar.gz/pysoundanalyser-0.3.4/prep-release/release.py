@@ -1,0 +1,119 @@
+#! /usr/bin/env python
+# -*- coding: utf-8 -*-
+
+import getopt, datetime, os, subprocess, sys
+os.chdir('../')
+
+def main(argv):
+    try:
+        opts, args = getopt.getopt(argv, "m:", ["message="])
+    except getopt.GetoptError:
+        sys.exit(2)
+    for opt, arg in opts:
+        if opt in ("-m", "--message"):
+            message = arg
+    major_v = 0
+    minor_v = 3
+
+    pyqtver = input('pyqtver: ')
+    if pyqtver == 5:
+        os.system("python3 prep-release/switch_pyqt5.py")
+        os.system("python3 prep-release/mkupdate_pyqt5")
+    elif pyqtver == 6:
+        os.system("python3 prep-release/switch_pyqt6.py")
+        os.system("python3 prep-release/mkupdate_pyqt6")
+
+    #read minor minor release number
+    f = open('prep-release/minor_minor_number.txt', 'r')
+    ln = f.readlines()
+    f.close()
+    minor_minor_v = int(ln[0].strip()) + 1
+    #write incremented minor minor release number
+    f = open('prep-release/minor_minor_number.txt', 'w')
+    f.write(str(minor_minor_v))
+    f.close()
+    builddate = datetime.datetime.now().strftime("%d-%b-%Y %H:%M")
+    #set git tag
+    gittag = str(major_v) + '.' + str(minor_v) + '.' + str(minor_minor_v)
+    
+    f = open('pyproject.toml', 'r')
+    ln = f.readlines()
+    f.close()
+    for i in range(len(ln)):
+        if ln[i].strip().split('=')[0].strip() == "version":
+            ln[i] = '    version="' + gittag +'"\n'
+
+    f = open('pyproject.toml', 'w')
+    f.writelines(ln)
+    f.close()
+
+    
+
+    f = open('pysoundanalyser/_version_info.py', 'r')
+    ln = f.readlines()
+    f.close()
+    for i in range(len(ln)):
+        if ln[i].strip().split('=')[0].strip() == "pysoundanalyser_version":
+            ln[i] = 'pysoundanalyser_version = "' + gittag +'"\n'
+        if ln[i].strip().split('=')[0].strip() == "pysoundanalyser_builddate":
+            ln[i] = 'pysoundanalyser_builddate = "' + builddate +'"\n'
+
+    f = open('pysoundanalyser/_version_info.py', 'w')
+    f.writelines(ln)
+    f.close()
+
+
+    f = open('pysoundanalyser/doc/conf.py', 'r')
+    ln = f.readlines()
+    f.close()
+    for i in range(len(ln)):
+        if ln[i].strip().split('=')[0].strip() == "version":
+            ln[i] = 'version = "' + gittag +'"\n'
+        if ln[i].strip().split('=')[0].strip() == "release":
+            ln[i] = 'release = "' + gittag + '"\n'
+
+    f = open('pysoundanalyser/doc/conf.py', 'w')
+    f.writelines(ln)
+    f.close()
+
+    f = open('pysoundanalyser.desktop', 'r')
+    ln = f.readlines()
+    f.close()
+    for i in range(len(ln)):
+        if ln[i].strip().split('=')[0].strip() == "Version":
+            ln[i] = 'Version = ' + gittag +',\n'
+
+    f = open('pysoundanalyser.desktop', 'w')
+    f.writelines(ln)
+    f.close()
+
+    f = open('setup_cx.py', 'r')
+    ln = f.readlines()
+    f.close()
+    for i in range(len(ln)):
+        if ln[i].strip().split('=')[0].strip() == "version":
+            ln[i] = '    version="' + gittag +'",\n'
+
+    f = open('setup_cx.py', 'w')
+    f.writelines(ln)
+    f.close()
+
+    f = open('prep-release/win_pysoundanalyser.iss', 'r')
+    ln = f.readlines()
+    f.close()
+    for i in range(len(ln)):
+        if len(ln[i].strip().split(" "))>1:
+            if ln[i].strip().split(" ")[1] == "MyAppVersion":
+                ln[i] = "#define MyAppVersion " + '"' + gittag + '"\n'#'    version="' + gittag +'"\n'
+
+    f = open('prep-release/win_pysoundanalyser.iss', 'w')
+    f.writelines(ln)
+    f.close()
+
+ 
+    subprocess.call('git commit -a -m"' + message+'"', shell=True)
+    #tag the commit so that it can be easily retrieved
+    subprocess.call('git tag -a "' + gittag +'"' + ' -m "' + gittag +'"', shell=True)
+    
+if __name__ == "__main__":
+    main(sys.argv[1:])

@@ -1,0 +1,8 @@
+ 
+Requirements:
+- python
+- numpy, 
+- matplotlib, 
+- pyqt4
+
+On Windows:
