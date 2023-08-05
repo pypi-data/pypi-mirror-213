@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: prometheus-summary
+Version: 0.0.1
+Summary: Prometheus summary with quantiles over configurable sliding time window
+Home-page: https://github.com/RefaceAI/prometheus-summary
+Author: RefaceAI
+Author-email: github-support@reface.ai
+License: Apache License 2.0
+Platform: Platform Independent
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Scientific/Engineering :: Mathematics
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: prometheus-client (>=0.11.0)
+Requires-Dist: quantile-estimator (>=0.1.0)
+
+# prometheus-summary
+Prometheus summary with quantiles over configurable sliding time window
+
+## Installation
+
+```
+pip install prometheus-summary==0.0.1
+```
