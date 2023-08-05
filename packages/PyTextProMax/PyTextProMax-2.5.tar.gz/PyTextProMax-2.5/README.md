@@ -1,0 +1,50 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"></head><body id="preview">
+<h1 class="code-line" data-line-start="0" data-line-end="1"><a id="PyTextProMax_0"></a>PyTextProMax</h1>
+<h4 class="code-line" data-line-start="1" data-line-end="2"><a id="A_simple_but_useful_python_library_1"></a>A simple but useful python library.</h4>
+<h6 class="code-line" data-line-start="3" data-line-end="4"><a id="POEWERED_BY_CITTIDABOZOhttpsgithubcomCittiTheBozo_3"></a><a href="https://github.com/CittiTheBozo">POEWERED BY CITTIDABOZO</a></h6>
+<h5 class="code-line" data-line-start="5" data-line-end="6"><a id="Latest_release__100_5"></a>Latest release =&gt; 1.0.0</h5>
+<h1 class="code-line" data-line-start="7" data-line-end="8"><a id="_7"></a></h1>
+<p class="has-line-data" data-line-start="9" data-line-end="11">PyTextProMax is a library that can help in automating the hardest task of all,<br>
+getting the actual meaning of a sentence.</p>
+<h1 class="code-line" data-line-start="12" data-line-end="13"><a id="Features_12"></a>Features</h1>
+<ul>
+<li class="has-line-data" data-line-start="14" data-line-end="15">Get the emotion of a sentence</li>
+<li class="has-line-data" data-line-start="15" data-line-end="16">Get the keywords of said sentence</li>
+<li class="has-line-data" data-line-start="16" data-line-end="18">Get the named entities in said sentence</li>
+</ul>
+<p class="has-line-data" data-line-start="18" data-line-end="19">And of course PyTextProMax itself is open source with a <a href="https://github.com/CittiTheBozo/PyTextProMax">public repository</a> on GitHub.</p>
+<h2 class="code-line" data-line-start="19" data-line-end="20"><a id="Installation_19"></a>Installation</h2>
+<p class="has-line-data" data-line-start="21" data-line-end="22">PyTextProMax requires <a href="https://www.python.org/downloads/release/python-3110/">python 3.11</a> to run.</p>
+<p class="has-line-data" data-line-start="23" data-line-end="24">Use the following command to install it:</p>
+<pre><code class="has-line-data" data-line-start="25" data-line-end="27">pip install PyTextProMax
+</code></pre>
+<h2 class="code-line" data-line-start="28" data-line-end="29"><a id="Development_28"></a>Development</h2>
+<p class="has-line-data" data-line-start="30" data-line-end="31">Want to contribute in the project or come up with ideas? Add me on <a href="https:%5Cdiscord.com">discord</a> using my discord id “964421984844939285”.</p>
+<h2 class="code-line" data-line-start="32" data-line-end="33"><a id="Building_for_source_32"></a>Building for source</h2>
+<p class="has-line-data" data-line-start="34" data-line-end="35">Use the following command to download the PyTextProMax source.</p>
+<pre><code class="has-line-data" data-line-start="37" data-line-end="39" class="language-sh">git <span class="hljs-built_in">clone</span> https://github.com/CittiTheBozo/PyTextProMax.git
+</code></pre>
+<h1 class="code-line" data-line-start="40" data-line-end="41"><a id="Usage_40"></a>Usage</h1>
+<h1 class="code-line" data-line-start="41" data-line-end="42"><a id="_41"></a></h1>
+<pre><code class="has-line-data" data-line-start="43" data-line-end="56" class="language-sh">from PyTextProMax import *
+
+text = <span class="hljs-string">"The Apple Inc. is planning on opening a new store in San Francisco."</span>
+PyTextProMax = PyTextProMax()
+emotion = PyTextProMax.get_emotion(text)
+listofkeywords = PyTextProMax.extract_keywords(text)
+listofentities = PyTextProMax.get_entities(text)
+
+<span class="hljs-built_in">print</span>(f<span class="hljs-string">'\nBase sentence: \'</span>{text}\<span class="hljs-string">''</span>)
+<span class="hljs-built_in">print</span>(f<span class="hljs-string">' Emotion: {emotion}.'</span>)
+<span class="hljs-built_in">print</span>(f<span class="hljs-string">' Keywords: {listofkeywords}.'</span>)
+<span class="hljs-built_in">print</span>(f<span class="hljs-string">' Named entities: {listofentities}.'</span>)
+</code></pre>
+
+<h3 class="code-line" data-line-start="57" data-line-end="58"><a id="Output_should_be__57"></a>Output should be :</h3>
+<pre><code class="has-line-data" data-line-start="60" data-line-end="65" class="language-sh">Base sentence: <span class="hljs-string">'The Apple Inc. is planning on opening a new store in San Francisco.'</span>
+ Emotion: Neutral \ Unrecognized.
+  Keywords: [<span class="hljs-string">'apple'</span>, <span class="hljs-string">'planning'</span>, <span class="hljs-string">'opening'</span>, <span class="hljs-string">'new'</span>, <span class="hljs-string">'store'</span>, <span class="hljs-string">'san'</span>, <span class="hljs-string">'francisco'</span>].
+   Named entities: [<span class="hljs-string">'The Apple Inc.'</span>, <span class="hljs-string">'San Francisco'</span>].
+</code></pre>
+<h5 class="code-line" data-line-start="65" data-line-end="66"><a id="You_can_use_it_any_way_you_want_this_is_just_an_example_of_how_you_should_use_it_65"></a>You can use it any way you want, this is just an example of how you should use it.</h5>
+</body></html>

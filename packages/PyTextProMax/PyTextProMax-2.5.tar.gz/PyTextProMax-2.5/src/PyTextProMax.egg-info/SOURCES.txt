@@ -1,0 +1,8 @@
+LICENSE
+README.md
+pyproject.toml
+src/PyTextProMax/__init__.py
+src/PyTextProMax.egg-info/PKG-INFO
+src/PyTextProMax.egg-info/SOURCES.txt
+src/PyTextProMax.egg-info/dependency_links.txt
+src/PyTextProMax.egg-info/top_level.txt
