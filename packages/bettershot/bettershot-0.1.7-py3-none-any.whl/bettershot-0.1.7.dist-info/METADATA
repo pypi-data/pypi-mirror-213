@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: bettershot
+Version: 0.1.7
+Summary: 
+Author: krrishdholakia
+Author-email: krrishdholakia@gmail.com
+Requires-Python: >=3.8.1,<4.0.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: langchain (>=0.0.118,<0.5.0)
+Description-Content-Type: text/markdown
+
+
