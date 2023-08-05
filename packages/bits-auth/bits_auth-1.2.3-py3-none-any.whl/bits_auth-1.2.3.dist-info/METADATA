@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: bits-auth
+Version: 1.2.3
+Summary: BITS Auth
+Author: Lukas Karlsson
+Author-email: karlsson@broadinstitute.org
+License: Apache Software License
+Requires-Dist: bits-secrets (>=1.0.1)
+
