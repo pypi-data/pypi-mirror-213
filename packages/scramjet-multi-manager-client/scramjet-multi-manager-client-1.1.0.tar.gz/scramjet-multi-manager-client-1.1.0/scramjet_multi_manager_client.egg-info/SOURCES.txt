@@ -1,0 +1,9 @@
+README.md
+setup.py
+multi_manager_client/__init__.py
+multi_manager_client/multi_manager_client.py
+scramjet_multi_manager_client.egg-info/PKG-INFO
+scramjet_multi_manager_client.egg-info/SOURCES.txt
+scramjet_multi_manager_client.egg-info/dependency_links.txt
+scramjet_multi_manager_client.egg-info/requires.txt
+scramjet_multi_manager_client.egg-info/top_level.txt
