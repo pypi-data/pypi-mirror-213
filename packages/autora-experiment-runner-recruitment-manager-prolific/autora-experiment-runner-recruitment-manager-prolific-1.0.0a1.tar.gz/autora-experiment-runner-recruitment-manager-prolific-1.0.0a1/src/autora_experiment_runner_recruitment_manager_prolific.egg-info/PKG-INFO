@@ -1,0 +1,39 @@
+Metadata-Version: 2.1
+Name: autora-experiment-runner-recruitment-manager-prolific
+Version: 1.0.0a1
+Summary: AutoRA Prolific Recruitment Manager provides functionality to recruit participants via Prolific to set up an experiment runner for AutoRA
+Author-email: Kevin Phan <kphan@princeton.edu>, Younes Strittmatter <younes_strittmatter@brown.edu>
+License: MIT License
+Project-URL: homepage, http://www.empiricalresearch.ai
+Project-URL: repository, https://github.com/AutoResearch/autora-experiment-runner-recruitment-manager-prolific
+Project-URL: documentation, https://autoresearch.github.io/autora/
+Requires-Python: <4,>=3.8
+Description-Content-Type: text/markdown
+Provides-Extra: dev
+
+# AutoRA Prolific Recruitment Manager
+
+Prolific Recruitment Manager provides functionality to recruit participants via Prolific to set up an experiment runner for AutoRA.
+
+# Quickstart Guide
+
+You will need:
+`python` >=3.8,<4: [https://www.python.org/downloads/](https://www.python.org/downloads/)
+
+!!! It is recommended to use a python environment manger like virtualenv
+
+Install the package via pip:
+
+```shell
+pip install "aurora[experiment-runner-recruitment-manager-prolific]"
+```
+
+## Test
+```shell
+python -c "from autora.experiment_runner.recruitment_manager.prolific import setup_study"
+```
+
+
+## Dependencies
+
+autora-core
