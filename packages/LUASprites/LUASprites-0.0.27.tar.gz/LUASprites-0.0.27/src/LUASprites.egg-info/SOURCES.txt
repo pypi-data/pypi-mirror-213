@@ -1,0 +1,13 @@
+LICENSE.txt
+MANIFEST.in
+README.md
+requirements.txt
+setup.cfg
+setup.py
+src/LUASprites.egg-info/PKG-INFO
+src/LUASprites.egg-info/SOURCES.txt
+src/LUASprites.egg-info/dependency_links.txt
+src/LUASprites.egg-info/entry_points.txt
+src/LUASprites.egg-info/requires.txt
+src/LUASprites.egg-info/top_level.txt
+src/spritegen/cli.py
