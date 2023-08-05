@@ -1,0 +1,3 @@
+[console_scripts]
+tca-beam=tca_beam.tca_beam:start
+

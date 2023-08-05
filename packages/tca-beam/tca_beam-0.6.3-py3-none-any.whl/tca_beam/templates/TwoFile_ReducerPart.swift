@@ -1,0 +1,3 @@
+import ComposableArchitecture
+
+{{ reducerContent }}
