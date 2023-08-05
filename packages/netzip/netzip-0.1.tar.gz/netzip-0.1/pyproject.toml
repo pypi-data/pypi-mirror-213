@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools", "setuptools-scm"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "netzip"
+authors = [
+    {name = "Emil Melnikov", email = "emilmelnikov@gmail.com"},
+]
+description = "ZIP file reader optimized for network access"
+readme = "README.md"
+requires-python = ">=3.8"
+license = {text = "MIT"}
+dynamic = ["version"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools_scm]
+
+[tool.pytest.ini_options]
+addopts = "-ra --quiet"
+testpaths = ["tests"]
+
+[tool.isort]
+profile = "black"
