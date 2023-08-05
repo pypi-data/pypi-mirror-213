@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: arkitekt
+Version: 0.4.123
+Summary: client for the arkitekt platform
+License: CC BY-NC 3.0
+Author: jhnnsrs
+Author-email: jhnnsrs@gmail.com
+Requires-Python: >=3.8,<=3.12
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Provides-Extra: all
+Provides-Extra: cli
+Provides-Extra: scheduler
+Requires-Dist: fakts (>=0.3.25)
+Requires-Dist: fluss (>=0.1.54)
+Requires-Dist: herre (>=0.3.22)
+Requires-Dist: mikro (>=0.3.79)
+Requires-Dist: reaktion (>=0.1.33) ; (python_version >= "3.9" and python_version < "4.0") and (extra == "scheduler")
+Requires-Dist: rekuest (>=0.1.48)
+Requires-Dist: rich-click (>=1.6.1,<2.0.0) ; extra == "cli"
+Requires-Dist: turms (>=0.3.1a0) ; (python_version >= "3.9" and python_version < "4.0") and (extra == "cli")
+Requires-Dist: unlok (>=0.1.14)
+Requires-Dist: watchfiles (>=0.18.1,<0.19.0) ; extra == "cli"
