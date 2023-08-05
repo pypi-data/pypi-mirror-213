@@ -1,0 +1,111 @@
+# OpenRepos.net Web Client
+
+[![pipeline status](https://gitlab.com/nobodyinperson/python3-openrepos-webclient/badges/master/pipeline.svg)](https://gitlab.com/nobodyinperson/python3-openrepos/commits/master)
+[![coverage report](https://gitlab.com/nobodyinperson/python3-openrepos-webclient/badges/master/coverage.svg)](https://nobodyinperson.gitlab.io/python3-openrepos-webclient/coverage-report/)
+[![documentation](https://img.shields.io/badge/docs-sphinx-brightgreen.svg)](https://nobodyinperson.gitlab.io/python3-openrepos-webclient)
+[![PyPI](https://badge.fury.io/py/openrepos-webclient.svg)](https://badge.fury.io/py/openrepos-webclient)
+
+`openrepos-webclient` is a Python package to interface the OpenRepos.net
+website in an automated way.
+
+## Installation
+
+To install, run from the repository root:
+
+```bash
+python3 -m pip install --user .
+```
+
+or install it from [PyPi](https://pypi.org/project/openrepos):
+
+```bash
+python3 -m pip install --user openrepos
+```
+
+> (Run `sudo apt-get update && sudo apt-get -y install python3-pip && pip3 install --user -U pip` if it
+complains about `pip` not being found)
+
+You will also need to install at least one [`selenium`](https://selenium-python.readthedocs.io/)-compatible browser with webdriver, for example [Firefox](https://www.mozilla.org/de/firefox/new/) together with [`geckodriver`](https://github.com/mozilla/geckodriver).
+
+If you want to run `openrepos` headlessly, you will also need [`Xvfb`](https://en.wikipedia.org/wiki/Xvfb).
+
+## What can `openrepos` do?
+
+> #### OpenRepos Credentials
+>
+> Define your [OpenRepos.net](https://openrepos.net) login credentials as environment variables.
+> You can either run this in each terminal session once before running the `openrepos` command:
+>
+> ```bash
+> export OPENREPOS_USERNAME=myuser OPENREPOS_PASSWORD=mypass
+> ```
+>
+> ... or you can put the above in a file (say `openrepos-credentials.sh`) and then `source` this file, which is safer as you don't specify any credentials on the command-line:
+>
+> ```bash
+> source openrepos-credentials.sh
+> ```
+>
+> #### Executing
+>
+> If running just `openrepos` errors out with something like `command not found`, then just run `python3 -m openrepos` instead.
+
+### Create a new app
+
+This command creates a new SailfishOS app `TestApp` in the `Libraries` category.
+
+```bash
+openrepos -i new-app -n TestApp -p SailfishOS -c Libraries
+```
+
+### Upload RPMs to an app
+
+This command uploads all RPMs in the current directory to an app on OpenRepos called `TestApp`:
+
+```bash
+openrepos upload-rpm -n TestApp *.rpm
+```
+
+If you want to create the app if it doesn't exist yet, you have to provide the same metadata as above for `new-app`:
+
+```bash
+openrepos upload-rpm -n TestApp -p SailfishOS -c Libraries *.rpm
+```
+
+### Delete an App
+
+This delete a `TestApp`:
+
+```bash
+openrepos delete-app -n TestApp
+```
+
+## Using this to automate uploading RPMs to OpenRepos in GitLab CI
+
+This package was designed to automate RPM upload to [OpenRepos.net](https://openrepos.net).
+To do that in GitLab CI, you can `include` the file [`openrepos-upload-rpm.gitlab-ci.yml`](https://gitlab.com/nobodyinperson/python3-openrepos-webclient/-/blob/master/openrepos-upload-rpm.gitlab-ci.yml) from this repository in your CI config.
+The file contains an example of how to do that.
+
+## Troubleshooting
+
+If you experience problems and want to debug them, you can run `openrepos` interactively (`--interacitve`) and verbosely (`-vvv`):
+
+```bash
+openrepos --interactive -vvv upload-rpm ...
+```
+
+This will ask you before every step and tell you what's going on.
+
+To run without opening the browser window (like in CI), run it with `--xvfb`:
+
+```bash
+openrepos --xvfb --interactive -vvv upload-rpm ...
+```
+
+
+## Documentation
+
+Documentation of the `openrepos` package can be found [here on
+GitLab](https://nobodyinperson.gitlab.io/python3-openrepos/).
+
+Also, the command-line help page `openrepos -h` is your friend.
