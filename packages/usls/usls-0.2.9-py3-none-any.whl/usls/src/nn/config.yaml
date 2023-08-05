@@ -1,0 +1,30 @@
+commons:  # common settings
+  device: 0       # test on onnxruntime=1.12.0
+  warmup_times: 3   # ONNXRT basiclly need warmup 3 times, while TRT only need once.
+  min_batch_size: 1
+  opt_batch_size: 2   # warmup use this batch size
+  max_batch_size: 16
+
+
+# database parts
+
+
+modules:
+  # detector:  # modules name
+  #   type: DET
+  #   conf_threshold: 0.6
+  #   iou_threshold: 0.35
+  #   weights: assets/upperbody-230518.onnx 
+  #   v8_nms: yes 
+  #   min_bbox_size: 30
+  #   overlap_iou: 0.9
+
+
+  extractor:  # modules name
+    type: FEAT_EXT
+    # weights: usls/src/nn/fe-224.onnx
+    threshold: 0.5
+    query_with_gpu: False
+    use_center_crop: no 
+    # saveout: assets/images/collections/clothing.index
+    # metric_type: FlatIP   # FlatL2, FlatIP
