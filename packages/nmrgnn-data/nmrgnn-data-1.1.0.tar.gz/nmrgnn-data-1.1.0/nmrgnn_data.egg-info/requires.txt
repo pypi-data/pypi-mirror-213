@@ -1,0 +1,11 @@
+tensorflow>=2.7
+click
+numpy
+MDAnalysis~=2.0
+importlib_resources
+
+[parse]
+pdbfixer
+biopython
+gsd
+rdkit-pypi
