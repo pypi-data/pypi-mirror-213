@@ -1,0 +1,3 @@
+[console_scripts]
+rxn-extract-csv-column = rxn.utilities.scripts.extract_csv_column:main
+rxn-stable-shuffle = rxn.utilities.scripts.stable_shuffle:main
