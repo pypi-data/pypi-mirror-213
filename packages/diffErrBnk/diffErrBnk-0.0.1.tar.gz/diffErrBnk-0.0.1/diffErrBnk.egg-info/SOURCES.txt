@@ -1,0 +1,9 @@
+README.md
+__init__.py
+diffBnk.py
+func.py
+setup.py
+diffErrBnk.egg-info/PKG-INFO
+diffErrBnk.egg-info/SOURCES.txt
+diffErrBnk.egg-info/dependency_links.txt
+diffErrBnk.egg-info/top_level.txt
