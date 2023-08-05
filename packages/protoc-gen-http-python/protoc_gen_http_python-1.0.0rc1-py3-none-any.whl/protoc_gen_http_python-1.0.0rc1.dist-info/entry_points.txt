@@ -1,0 +1,2 @@
+[console_scripts]
+protoc-gen-http_python = protoc_gen_http_python.main:main

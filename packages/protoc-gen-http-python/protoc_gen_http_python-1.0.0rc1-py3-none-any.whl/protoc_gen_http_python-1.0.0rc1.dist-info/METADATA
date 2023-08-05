@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: protoc-gen-http-python
+Version: 1.0.0rc1
+Summary: Generate server classes that correspond to services defined in http-protobuf.
+Home-page: https://github.com/azicen/protoc-gen-http-python
+Author: azicen
+Author-email: chenjiazi@aliyun.com
+License: Apache License 2.0
+Keywords: protobuf,proto
+Requires-Python: >=3.7
+License-File: LICENSE
+Requires-Dist: protobuf (>=3.20.3)
+Requires-Dist: googleapis-common-protos (>=1.57.1)
+Requires-Dist: Jinja2 (>=3.0.0)
+
