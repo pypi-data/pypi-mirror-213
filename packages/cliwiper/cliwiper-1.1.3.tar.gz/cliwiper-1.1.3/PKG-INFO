@@ -1,0 +1,41 @@
+Metadata-Version: 2.1
+Name: cliwiper
+Version: 1.1.3
+Summary: clear the cli
+Project-URL: Homepage, https://github.com/SirX7/cliwiper
+Project-URL: Bug Tracker, https://github.com/SirX7/cliwiper/issues
+Author-email: Shall Mcfield <xhall.mc@protonmail.com>
+License-Expression: MIT
+License-File: LICENSE
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Information Technology
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Internet
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+
+# cliwiper
+A Basic cli cleaner in the form as a cross-platform Python module that provides a function which clears the terminal.  
+**This is a simpler alternative to defining this function on your own**.  
+
+# Installation
+To install with pip, or pipx run:  
+
+`pip install cliwiper`  
+`pipx install cliwiper`  
+
+# Usages  
+
+```
+from cliwiper import wiper  
+```
+
+```
+wiper()  
+```
+
+# License  
+This project is licensed under the terms of the [MIT license](#LICENSE).  
