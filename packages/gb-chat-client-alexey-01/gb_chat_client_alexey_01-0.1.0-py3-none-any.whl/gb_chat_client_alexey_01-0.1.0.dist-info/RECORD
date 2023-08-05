@@ -1,0 +1,12 @@
+client/client.py,sha256=LFNV_0KJDbOpF1kxVOXTJm2GA6cLjYUEuLYO4PQc5XY,8617
+client/client.ui,sha256=m3uWDXMXp0tjeIZ7q4ugNuHSor4N8xnmWu7W7f29rkg,5391
+client/client_db.py,sha256=k7E_VOPoFgwJtHgVYu2gYfDeLnF0ZXieBSBtO-Ioqk8,2683
+client/client_gui.py,sha256=AmSDE9Jd0KULnFGUGm4IVffELLcPNUWK2JijvEc9VGo,5757
+client/client_sqlite-1.db,sha256=gBTefxvLTSazdHYsN43KlQKll-JGCWzJJGDvTfScmag,16384
+client/client_sqlite.db,sha256=e8WCr_NBTvAhglyfws15CCibpIcfd0QX6yAHs1YBJEk,16384
+client/log/client.log,sha256=uNiLsVg-9OMzrJ1bkTi19ptXLeGlrMDjqY1wkJrYYjo,362151
+client/log/client_log_config.py,sha256=kET7A7MvnWaMkCPqHism2mPeIHtrd3jeeXJDHY2S2p4,672
+client/main_window.py,sha256=1t4m0JpcATKX5seH_p19CtcJjkoKsiXfbKKq4MRzEM4,6676
+gb_chat_client_alexey_01-0.1.0.dist-info/WHEEL,sha256=vxFmldFsRN_Hx10GDvsdv1wroKq8r5Lzvjp6GZ4OO8c,88
+gb_chat_client_alexey_01-0.1.0.dist-info/METADATA,sha256=S-rGucQz9nxQoSGVWdjJcZ_RuT8REXGOG3VWBrrivJU,794
+gb_chat_client_alexey_01-0.1.0.dist-info/RECORD,,
