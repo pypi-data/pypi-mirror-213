@@ -1,0 +1,66 @@
+Metadata-Version: 2.1
+Name: vbcore
+Version: 2.0.0
+Summary: VBCore common helpers and components
+Home-page: https://github.com/cs91chris/vbcore
+Author: cs91chris
+Author-email: cs91chris@voidbrain.me
+License: MIT
+Platform: any
+Requires-Python: >=3.8
+Requires-Dist: click
+Requires-Dist: python-dateutil
+Requires-Dist: python-decouple
+Requires-Dist: python-dotenv
+Requires-Dist: pyyaml
+Requires-Dist: psutil
+Provides-Extra: all
+Requires-Dist: click ; extra == 'all'
+Requires-Dist: python-dateutil ; extra == 'all'
+Requires-Dist: python-decouple ; extra == 'all'
+Requires-Dist: python-dotenv ; extra == 'all'
+Requires-Dist: pyyaml ; extra == 'all'
+Requires-Dist: psutil ; extra == 'all'
+Requires-Dist: sqlalchemy (<2) ; extra == 'all'
+Requires-Dist: sqlalchemy-schemadisplay ; extra == 'all'
+Requires-Dist: argon2-cffi ; extra == 'all'
+Requires-Dist: bcrypt ; extra == 'all'
+Requires-Dist: aiohttp ; extra == 'all'
+Requires-Dist: requests ; extra == 'all'
+Requires-Dist: user-agents ; extra == 'all'
+Requires-Dist: email-validator ; extra == 'all'
+Requires-Dist: pysocks ; extra == 'all'
+Requires-Dist: paramiko ; extra == 'all'
+Requires-Dist: apscheduler ; extra == 'all'
+Requires-Dist: chardet ; extra == 'all'
+Requires-Dist: jsonschema ; extra == 'all'
+Requires-Dist: rule-engine ; extra == 'all'
+Requires-Dist: gql ; extra == 'all'
+Requires-Dist: gunicorn ; extra == 'all'
+Requires-Dist: defusedxml ; extra == 'all'
+Requires-Dist: xmltodict ; extra == 'all'
+Provides-Extra: crypto
+Requires-Dist: argon2-cffi ; extra == 'crypto'
+Requires-Dist: bcrypt ; extra == 'crypto'
+Provides-Extra: db
+Requires-Dist: sqlalchemy (<2) ; extra == 'db'
+Requires-Dist: sqlalchemy-schemadisplay ; extra == 'db'
+Provides-Extra: extra
+Requires-Dist: chardet ; extra == 'extra'
+Requires-Dist: jsonschema ; extra == 'extra'
+Requires-Dist: rule-engine ; extra == 'extra'
+Requires-Dist: gql ; extra == 'extra'
+Requires-Dist: gunicorn ; extra == 'extra'
+Requires-Dist: defusedxml ; extra == 'extra'
+Requires-Dist: xmltodict ; extra == 'extra'
+Provides-Extra: http
+Requires-Dist: aiohttp ; extra == 'http'
+Requires-Dist: requests ; extra == 'http'
+Requires-Dist: user-agents ; extra == 'http'
+Provides-Extra: net
+Requires-Dist: email-validator ; extra == 'net'
+Requires-Dist: pysocks ; extra == 'net'
+Requires-Dist: paramiko ; extra == 'net'
+Provides-Extra: scheduler
+Requires-Dist: apscheduler ; extra == 'scheduler'
+
