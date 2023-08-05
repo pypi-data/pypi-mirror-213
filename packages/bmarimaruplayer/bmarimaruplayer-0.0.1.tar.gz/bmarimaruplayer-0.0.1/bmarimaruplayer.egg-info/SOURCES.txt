@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+bmarimaruplayer.egg-info/PKG-INFO
+bmarimaruplayer.egg-info/SOURCES.txt
+bmarimaruplayer.egg-info/dependency_links.txt
+bmarimaruplayer.egg-info/top_level.txt
+holamundoplayer/__init__.py
+holamundoplayer/lala.py
+holamundoplayer/player.py
