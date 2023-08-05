@@ -1,0 +1,6 @@
+Metadata-Version: 2.1
+Name: ol-openedx-logging
+Version: 0.0.1
+Summary: An Open edX plugin to customize the logging configuration used by the edx-platform application
+License: BSD-3-Clause
+Requires-Python: >=3.8

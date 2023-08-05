@@ -1,0 +1,5 @@
+[cms.djangoapp]
+ol_openedx_logging = ol_openedx_logging.app:EdxLoggingCMS
+
+[lms.djangoapp]
+ol_openedx_logging = ol_openedx_logging.app:EdxLoggingLMS
