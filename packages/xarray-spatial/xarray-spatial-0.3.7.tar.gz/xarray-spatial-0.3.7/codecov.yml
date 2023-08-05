@@ -1,0 +1,19 @@
+coverage:
+  status:
+    patch: off
+    project:
+      default:
+        target: auto
+        threshold: 0.5%
+
+comment:
+  require_changes: yes
+
+ignore:
+  - "./setup.py"
+  - "xrspatial/tests/*"
+  - "xrspatial/experimental/*"
+  - "xrspatial/gpu_rtx/*"
+  - "xrspatial/datasets/*"
+  - "xrspatial/__init__.py"
+  - "xrspatial/__main__.py"
