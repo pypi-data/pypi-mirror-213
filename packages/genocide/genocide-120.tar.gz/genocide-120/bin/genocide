@@ -1,0 +1,7 @@
+#!/usr/bin/sh
+# This file is placed in the Public Domain.
+#
+# pylint: disable=E0001
+
+
+python3 -m genocide $* ;
