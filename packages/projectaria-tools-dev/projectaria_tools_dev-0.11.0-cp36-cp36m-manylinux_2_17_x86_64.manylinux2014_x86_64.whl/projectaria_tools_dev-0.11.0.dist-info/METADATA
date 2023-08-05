@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: projectaria-tools-dev
+Version: 0.11.0
+Summary: Project Aria Tools
+Home-page: https://github.com/facebookresearch/aria_data_tools
+Author: Meta Reality Labs Research
+License: Apache-2.0
+Platform: UNKNOWN
+Requires-Python: >=3.6
+License-File: LICENSE
+Requires-Dist: numpy
+Provides-Extra: all
+Requires-Dist: requests ; extra == 'all'
+Requires-Dist: tqdm ; extra == 'all'
+Requires-Dist: jupyter ; extra == 'all'
+Requires-Dist: matplotlib ; extra == 'all'
+Requires-Dist: pillow ; extra == 'all'
+Requires-Dist: plotly ; extra == 'all'
+Requires-Dist: scipy ; extra == 'all'
+
+Python API for sensor models and streaming of Aria datasets.
+
