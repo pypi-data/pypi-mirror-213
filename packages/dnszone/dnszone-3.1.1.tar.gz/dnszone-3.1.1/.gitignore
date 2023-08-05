@@ -1,0 +1,15 @@
+# This file is generated
+dnszone/version.py
+
+.*.swp
+*.egg-info
+.tox
+__pycache__
+*.pyc
+.coverage
+coverage.xml
+htmlcov
+build
+dist
+.eggs
+.coverage.*

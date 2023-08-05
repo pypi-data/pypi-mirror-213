@@ -1,0 +1,108 @@
+name: tox
+
+on:
+  create:  # is used for publishing to PyPI and TestPyPI
+    tags:  # any tag regardless of its name, no branches
+      - "**"
+  push:  # only publishes pushes to the main branch to TestPyPI
+    branches:  # any integration branch but not tag
+      - "main"
+  pull_request:
+  release:
+    types:
+      - published  # It seems that you can publish directly without creating
+      - prereleased
+  schedule:
+    - cron: 1 0 * * *  # Run daily at 0:01 UTC
+
+jobs:
+  pre:
+    name: Generate matrix
+    runs-on: ubuntu-22.04
+    outputs:
+      matrix: ${{ steps.generate_matrix.outputs.matrix }}
+    steps:
+      - name: Generate matrix
+        id: generate_matrix
+        uses: coactions/dynamic-matrix@v1
+        with:
+          min_python: "3.8"
+          other_names: |
+            lint
+            packaging
+
+  test:
+    name: ${{ matrix.name }}
+    runs-on: ${{ matrix.os || 'ubuntu-22.04' }}
+    needs: pre
+    strategy:
+      fail-fast: false
+      matrix: ${{ fromJson(needs.pre.outputs.matrix) }}
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+      - name: Set up python ${{ matrix.python_version }}
+        uses: actions/setup-python@v4
+        with:
+          python-version: ${{ matrix.python_version }}
+      - name: Install tox
+        run: |
+          python3 -m pip install -U tox
+      - name: Run test
+        run: tox -e ${{ matrix.passed_name }}
+        env:
+          COVERAGE_FILE: .coverage.${{ matrix.python-version }}
+      - name: upload artifacts
+        uses: actions/upload-artifact@v3
+        with:
+          name: coverage-results
+          path: .coverage.${{ matrix.python-version }}
+
+  coverage:
+    needs: test
+    runs-on: ubuntu-22.04
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-python@v3
+        with:
+          python-version: "3.x"
+      - uses: actions/download-artifact@v3
+        with:
+          name: coverage-results
+          path: .
+      - name: run coverage
+        run: |
+          python3 -m pip install tox codecov
+          python3 -m tox -e coverage
+      - name: Upload coverage to Codecov
+        uses: codecov/codecov-action@v2
+        with:
+          fail_ci_if_error: true
+
+  publish:
+    needs:
+      - coverage
+    if: github.event_name == 'release'  # Only release during tags
+    runs-on: ubuntu-22.04
+
+    env:
+      PY_COLORS: 1
+      TOXENV: packaging
+
+    steps:
+      - name: Check out src from Git
+        uses: actions/checkout@v3
+      - name: Switch to using Python 3.10 by default
+        uses: actions/setup-python@v3
+        with:
+          python-version: "3.10"
+      - name: Install tox
+        run: python3 -m pip install --user tox
+      - name: Build dists
+        run: python3 -m tox
+      - name: Publish to pypi.org
+        if: >-  # "create" workflows run separately from "push" & "pull_request"
+          github.event_name == 'release'
+        uses: pypa/gh-action-pypi-publish@release/v1
+        with:
+          password: ${{ secrets.PYPI_TOKEN }}
