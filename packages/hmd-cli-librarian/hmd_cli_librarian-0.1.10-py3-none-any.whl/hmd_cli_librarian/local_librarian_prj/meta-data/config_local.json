@@ -1,0 +1,32 @@
+{
+  "loader_config": {
+    "local": ["hmd-lang-local-librarian"]
+  },
+  "service_loader": "local",
+  "operations_modules": [
+    "hmd_ms_base.crud_operations",
+    "hmd_ms_librarian.hmd_ms_librarian"
+  ],
+  "hmd_db_engines": {
+    "dynamo": {
+      "engine_type": "dynamo",
+      "engine_config": {
+        "dynamo_table": "test-local-ms-librarian",
+        "dynamo_url": "http://dynamodb:8000/"
+      }
+    },
+    "graph": {
+      "engine_type": "gremlin",
+      "engine_config": {
+        "db_host": "global-graph",
+        "db_protocol": "ws",
+        "with_strategies": false
+      }
+    }
+  },
+  "hmd_entity_config": {
+    "__default__": {
+      "persistence": ["dynamo", "graph"]
+    }
+  }
+}

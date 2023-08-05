@@ -1,0 +1,15 @@
+{
+  "name": "local_project_prj",
+  "build": {
+    "commands": [["mickey"]]
+  },
+  "generate": {
+    "base_vocabgen": {
+      "config": "gh:NeuronSphere/hmd-tmpl-vocabgen:src/mickey/templates/python_service_config.json"
+    }
+  },
+  "global_variables": {
+    "base_package": "hmd_lang_local_librarian",
+    "package_name": "hmd_lang_local_librarian"
+  }
+}
