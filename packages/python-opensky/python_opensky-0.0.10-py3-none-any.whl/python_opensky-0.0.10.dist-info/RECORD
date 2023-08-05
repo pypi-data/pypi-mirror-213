@@ -1,0 +1,10 @@
+python_opensky/__init__.py,sha256=XNCuyKBOgw_eA71pOj423nRfyIColHYtnLNjhliHyv0,444
+python_opensky/const.py,sha256=kGShc6G2uVD0aIb_iti7fdJBtzoaeveg2WwNcPlrc_k,849
+python_opensky/exceptions.py,sha256=Xds-ENS3quj2a15l7JPSUvNrWs6OecwnAykDFamgQq8,384
+python_opensky/models.py,sha256=5Ovpgon_phsrfwoTn4oFwpxrWDyKXodb8MyrA0NJBEo,3573
+python_opensky/opensky.py,sha256=pkhHB1Mc8r1oW5xKNnmwoXPuNKqyfDg9aF9vXeFwS-w,9397
+python_opensky/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+python_opensky-0.0.10.dist-info/LICENSE.md,sha256=3xmRQIFR_yEChVxsySUfjGCyHs_grkXLcyB0V-UbfLI,1077
+python_opensky-0.0.10.dist-info/METADATA,sha256=z-I8j_I2UE-xQ44QXsG6qn9pv4gj5aQUUtkSnRov2W0,6581
+python_opensky-0.0.10.dist-info/WHEEL,sha256=Zb28QaM1gQi8f4VCBhsUklF61CTlNYfs9YAZn-TOGFk,88
+python_opensky-0.0.10.dist-info/RECORD,,
