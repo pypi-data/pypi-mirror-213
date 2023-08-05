@@ -1,0 +1,45 @@
+[build-system]
+requires = ["setuptools", "setuptools-scm"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "emid"
+version="0.0.7"
+
+authors = [
+  { name="Samuele Carcagno", email="sam.carcagno@gmail.com" },
+]
+description = "emid is a software for running a voice emotion identification experiment"
+license = {file = "COPYING.txt"}
+readme = "README.md"
+requires-python = ">=3.7"
+dependencies = ["numpy (>=1.0.0)",
+		"pandas (>=1.0.0)",
+		"PyAudio (>=0.2.11)",
+		"PyQt5 (>=5.12)",
+		"scipy (>=1.0.1)",
+		"soundfile (>=0.10.1)"
+		]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
+    "Operating System :: OS Independent",
+    "Development Status :: 3 - Alpha",
+    "Environment :: X11 Applications :: Qt",
+    "Intended Audience :: Developers",
+    "Operating System :: MacOS :: MacOS X",
+    "Operating System :: Microsoft :: Windows",
+    "Operating System :: POSIX",
+    "Topic :: Scientific/Engineering"
+]
+
+[project.urls]
+Homepage = "https://gitlab.com/sam81/emid"
+"Bug Tracker" = "https://gitlab.com/sam81/emid/-/issues"
+
+[project.gui-scripts]
+emid = "emid.__main__:main"
+
+[tool.setuptools]
+packages = ["emid"]
+
