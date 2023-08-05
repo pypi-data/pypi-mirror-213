@@ -1,0 +1,15 @@
+ray[air]
+dreamai
+fastai
+fastapi
+modin
+pandas
+pypdf
+redis
+requests
+sentence_transformers
+setfit
+torch
+transformers
+
+[dev]
