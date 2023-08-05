@@ -1,0 +1,17 @@
+README.md
+setup.py
+manytasks/__init__.py
+manytasks/cuda_manager.py
+manytasks/defs.py
+manytasks/entry.py
+manytasks/log_extractor.py
+manytasks/task_runner.py
+manytasks/taskpool_loader.py
+manytasks/util.py
+manytasks.egg-info/PKG-INFO
+manytasks.egg-info/SOURCES.txt
+manytasks.egg-info/dependency_links.txt
+manytasks.egg-info/entry_points.txt
+manytasks.egg-info/not-zip-safe
+manytasks.egg-info/requires.txt
+manytasks.egg-info/top_level.txt
