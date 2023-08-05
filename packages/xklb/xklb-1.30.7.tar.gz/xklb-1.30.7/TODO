@@ -1,0 +1,48 @@
+- use rowid alias instead of string pks: playlists table: switch playlist_path nullable fk to integer id
+
+- POIs CLI -- save your trip plans and see places to go with automated day trip itineraries, geopandas buffer
+
+- wt/lt/search join and use fts on both tables, threading ?
+
+- upscale command -- download higher quality videos; use webpath, PURL, comment to get URL
+
+- move mpv specific playhead code to a script subcommand
+
+option to delete mpv watch_later file if media file does not exist
+
+- move time_played, playhead, and other ephemeral data to its own table
+
+add time_first_played, time_last_played; remove time_played instead use play_count
+
+- improve playlists subcommand
+
+- make generic printer. support --json or --csv for most subcommands
+
+- improve dlstatus subcommand
+
+- scan bpm and key sig  https://github.com/aubio/aubio https://github.com/tyiannak/pyAudioAnalysis
+
+- cluster images
+
+https://github.com/HughKu/Im2txt
+https://github.com/immich-app/immich/tree/main/machine-learning/app
+
+- CLI EDA tool
+
+- CLI incremental diff (SQLITE, NDJSON, CSV)
+
+    compare 100 rows at a time using primary key
+
+    show the differences between files
+
+- todo recursive todo management, fortune cookie style
+
+- CLI recursive financial planner (nano budget)
+
+- CLI incremental book reading
+
+- CLI reverse flight search
+
+- CLI city abacus
+
+- CLI UNLI Neighborhoods
