@@ -1,0 +1,9 @@
+bert_pruners/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+bert_pruners/bert_pruner.py,sha256=qK-5Zk6ZUd-j4jxbppb3dxgEWDD-KpQaV4fDoRYfrRU,2044
+bert_pruners/factory.py,sha256=kn3uvnJS8B2Qa8NguUGYU8elBtMyExhme9GSmgchcq8,15039
+bert_pruners/main.py,sha256=uMtBgwTaomaBDMhMoUmCemdo6Q9CQL6_DW5b_1QPPAs,815
+bert_pruners-0.0.5.dist-info/METADATA,sha256=mWQ0PKwQxatlIeDdG4L3GGOh4XBOiwDSpgwwTnDi8lM,420
+bert_pruners-0.0.5.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+bert_pruners-0.0.5.dist-info/entry_points.txt,sha256=T8P4gFgv-3yNlL9kqxvYqS4BaIByb7J6WVUutTGa1-c,54
+bert_pruners-0.0.5.dist-info/top_level.txt,sha256=hp-3MEp3VJwr8S8G8NWsuj4dFpjF9wiw6S79YYOEio0,13
+bert_pruners-0.0.5.dist-info/RECORD,,

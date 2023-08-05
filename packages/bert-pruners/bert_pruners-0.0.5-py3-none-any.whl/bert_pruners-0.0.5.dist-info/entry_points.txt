@@ -1,0 +1,2 @@
+[console_scripts]
+bert_prune = bert_pruners.main:main
