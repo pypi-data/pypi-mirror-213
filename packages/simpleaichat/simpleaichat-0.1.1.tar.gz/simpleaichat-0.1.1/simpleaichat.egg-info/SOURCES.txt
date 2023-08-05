@@ -1,0 +1,15 @@
+LICENSE
+README.md
+setup.py
+simpleaichat/__init__.py
+simpleaichat/chatgpt.py
+simpleaichat/cli.py
+simpleaichat/models.py
+simpleaichat/simpleaichat.py
+simpleaichat/utils.py
+simpleaichat.egg-info/PKG-INFO
+simpleaichat.egg-info/SOURCES.txt
+simpleaichat.egg-info/dependency_links.txt
+simpleaichat.egg-info/entry_points.txt
+simpleaichat.egg-info/requires.txt
+simpleaichat.egg-info/top_level.txt

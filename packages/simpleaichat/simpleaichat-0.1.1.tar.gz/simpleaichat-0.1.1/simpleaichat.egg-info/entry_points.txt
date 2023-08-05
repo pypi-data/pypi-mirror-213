@@ -1,0 +1,2 @@
+[console_scripts]
+simpleaichat = simpleaichat.cli:interactive_chat
