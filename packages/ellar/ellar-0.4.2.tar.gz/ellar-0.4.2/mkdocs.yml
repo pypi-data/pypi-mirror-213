@@ -1,0 +1,153 @@
+site_name: Ellar
+site_description: Ellar - Python ASGI web framework for building fast, efficient and scalable RESTAPIs and server-side application.
+site_url: https://github.com/eadwinCode/ellar
+repo_name: eadwinCode/ellar
+repo_url: https://github.com/eadwinCode/ellar
+edit_uri: blob/master/docs
+copyright: |
+  Copyright &copy; 2021 - 2023 <a href="https://github.com/eadwinCode"  target="_blank" rel="noopener">Eadwin Ezeudoh</a>
+
+docs_dir: docs
+site_dir: site
+
+theme:
+  name: material
+  features:
+    - announce.dismiss
+    - content.action.edit
+    - content.action.view
+    - content.code.annotate
+    - content.code.copy
+    - content.tooltips
+    - search.highlight
+    - search.share
+    - search.suggest
+    - toc.follow
+    - navigation.footer
+    - navigation.indexes
+    - navigation.instant
+    # - navigation.prune
+    - navigation.tabs
+    - navigation.left
+    - navigation.tracking
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: pink
+      accent: pink
+      toggle:
+        icon: material/lightbulb
+        name: Switch to dark mode
+
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: pink
+      accent: pink
+      toggle:
+        icon: material/lightbulb-outline
+        name: Switch to light mode
+  font:
+    text: Source Sans Pro
+    code: Fira Code
+  language: en
+  logo: img/Icon.svg
+  favicon: img/Icon.svg
+  icon:
+    repo: fontawesome/brands/git-alt
+
+plugins:
+  - search:
+        separator: '[\s\-,:!=\[\]()"`/]+|\.(?!\d)|&[lg]t;|(?!\b)(?=[A-Z][a-z])'
+  - minify:
+        minify_html: true
+  - git-revision-date-localized:
+      enable_creation_date: false
+
+nav:
+  - Introduction: index.md
+  - Overview:
+      - Step One:  overview/index.md
+      - Controllers:  overview/controllers.md
+      - Providers:  overview/providers.md
+      - Modules:  overview/modules.md
+      - Middlewares:  overview/middleware.md
+      - Exception Handling:  overview/exception_handling.md
+      - Guards:  overview/guards.md
+      - Custom Decorators:  overview/custom_decorators.md
+      - Module Router:  overview/module-router.md
+      - Interceptors:  overview/interceptors.md
+  - Essentials:
+      - Execution Context: basics/execution-context.md
+      - Dynamic Modules: basics/dynamic-modules.md
+      - Injector Scopes: basics/injector-scopes.md
+      - Lifespan: basics/lifespan.md
+      - Testing: basics/testing.md
+  - Techniques:
+      - Configuration: techniques/configurations.md
+      - Input Validations:
+          - Index: techniques/validations/index.md
+          - Path: techniques/validations/path-params.md
+          - Query: techniques/validations/query-params.md
+          - Header: techniques/validations/header-params.md
+          - Cookie: techniques/validations/cookie-params.md
+          - Body: techniques/validations/body.md
+          - Form: techniques/validations/form-params.md
+          - File: techniques/validations/file-params.md
+      - Serializers: techniques/serializers.md
+      - Response Model: techniques/response-model.md
+      - Versioning: techniques/versioning.md
+      - Caching: techniques/caching.md
+      - Templating:
+          - Html: techniques/templating.md
+          - Static Files: techniques/staticfiles.md
+      - Mount: techniques/mount.md
+      - Background Tasks: techniques/background-task.md
+
+  - Security:
+      - Authentication: security/authentication.md
+      - Authorization: security/authorization.md
+      - CSRF Protection: security/csrf.md
+      - Sessions: security/sessions.md
+      - Rate Limiting: security/throttling.md
+
+  - CLI:
+    - Introduction: cli/index.md
+    - Commands:
+        - new: cli/new-command.md
+        - create project: cli/create-project-command.md
+        - create module: cli/create-module-command.md
+        - runserver: cli/runserver-command.md
+    - Custom Commands: cli/custom-commands.md
+    - Command Grouping: cli/command-grouping.md
+
+  - WebSockets:
+      - index: websockets/index.md
+      - socketio: websockets/socketio.md
+
+  - Contribution:
+      - index: contribution.md
+  - Release Notes: release-notes.md
+
+markdown_extensions:
+  - attr_list
+  - toc:
+      permalink: true
+  - admonition
+  - def_list
+  - tables
+  - abbr
+  - footnotes
+  - md_in_html
+  - codehilite
+  - pymdownx.superfences:
+      custom_fences:
+      - name: mermaid
+        class: mermaid
+  - pymdownx.details
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.saneheaders
+  - pymdownx.tilde
+
+extra_css:
+  - stylesheets/extra.css
