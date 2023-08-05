@@ -1,0 +1,6 @@
+README.md
+setup.py
+shopee_mesos_cli_toc.egg-info/PKG-INFO
+shopee_mesos_cli_toc.egg-info/SOURCES.txt
+shopee_mesos_cli_toc.egg-info/dependency_links.txt
+shopee_mesos_cli_toc.egg-info/top_level.txt
