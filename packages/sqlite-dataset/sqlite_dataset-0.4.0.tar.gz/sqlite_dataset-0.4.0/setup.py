@@ -1,0 +1,30 @@
+# -*- coding: utf-8 -*-
+from setuptools import setup
+
+packages = \
+['sqlite_dataset']
+
+package_data = \
+{'': ['*']}
+
+install_requires = \
+['sqlalchemy>=1.3.0']
+
+setup_kwargs = {
+    'name': 'sqlite-dataset',
+    'version': '0.4.0',
+    'description': 'Use SQLite database to store datasets.',
+    'long_description': "# SQLite Dataset\n\nUse [SQLite](https://sqlite.org/index.html) database to store datasets. Based on [SQLAlchemy core](https://docs.sqlalchemy.org/en/20/core/).\n\n## Structure\n\nThe core of sqlite-dataset is the Class **SQLiteDataset**, which wraps a SQLAlchemy connection to a SQLite database.\n\n## Usage\n\n### Declare a dataset\n\nTo declare a dataset, extend the base **SQLiteDataset** class and specify fields.\n\n```python\nfrom sqlite_dataset import SQLiteDataset, Field, String, Float\n\nclass MyIrisDataset(SQLiteDataset):\n    \n    sepal_length_cm = Field(String, tablename='iris')\n    sepal_width_cm = Field(Float, tablename='iris')\n    petal_length_cm = Field(Float, tablename='iris')\n    petal_width_cm = Field(Float, tablename='iris')\n    class_field = Field(String, tablename='iris', name='class')\n\nds = MyIrisDataset('my_iris_dataset.db')\n```\n\nThis will create a sqlite database file on the specified path. If a dataset already exists, it will then be loaded. \n\n#### The *Field* object\n\n`Field` can be seen as a factory that can create a SQLAlchemy's Column object.\n\nThe `Field` object's constructor takes same arguments as `sqlalchemy.schema.Column` with the difference that `Field` does not take positional name argument and has an extra keyword argument `tablename`.\n\nDeclare a Column using sqlalchemy.Column:\n\n```python\nfrom sqlalchemy import Column, String\n\nColumn('sepal_length_cm', String)\nColumn(name='sepal_length_cm', type_=String)\n```\n\nDeclare a sqlite_dataset.Field:\n\n```python\nfrom sqlite_dataset import Field, String\n\nsepal_length_cm = Field(String)\n```\n\nThe variable name will be automatically used as the column name.\n\nColumn name can also be specified using `name` argument, which is useful if the column name is a Python preserved keyword:\n\n```python\nfrom sqlite_dataset import SQLiteDataset, Field, String\n\nclass MyDataset(SQLiteDataset):\n    class_field = Field(String, name='class')\n    type_field = Field(String, name='type')\n```\n\nTable name can be specified using `tablename` keyword argument:\n\n```python\nfrom sqlite_dataset import SQLiteDataset, Field, String\n\nclass MyDataset(SQLiteDataset):\n    class_field = Field(String, name='class', tablename='table1')\n    type_field = Field(String, name='type', tablename='table2')\n```\n\nThis will create two tables: table1, table2.\n\nIf tablename is not specified, the column will be created in default table **data**. \n\n#### Field type and keyword arguments\n\nThe field type is the sqlalchemy column type. All sqlalchemy members were imported into sqlite_dataset.\n\n```python\nfrom sqlalchemy import String, Integer\n```\n\nis exactly the same as:\n\n```python\nfrom sqlite_dataset import String, Integer\n```\n\n### Inheritance\n\nDataset can be inherited.\n\n```python\nfrom sqlite_dataset import SQLiteDataset, Field, String, Float\n\nclass BaseDataset(SQLiteDataset):\n    class_field = Field(String, tablename='iris', name='class')\n    example_field = Field(String, tablename='example_table')\n\nclass ChildDataset(BaseDataset): \n    sepal_length_cm = Field(String, tablename='iris')\n    sepal_width_cm = Field(Float, tablename='iris')\n    petal_length_cm = Field(Float, tablename='iris')\n    petal_width_cm = Field(Float, tablename='iris')\n```\n\n### Connect to an existing dataset\n\nTo connect to a dataset, call the `connect()` method. Call `close()` to close it.\n\n```python\nds = SQLiteDataset('test.db')\nds.connect()\n# do something\nds.close()\n```\n\nOr the dataset can be used as a context manager\n\n```python\nwith SQLiteDataset('test.db') as ds:\n    # do something\n    pass\n```\n\n### Schema for existing dataset\n\n**SQLiteDataset** object uses SQLAlchemy connection under the hood, so a schema is required to make any database queries or operations.\n\nIf no schema provided by either of the above, a [SQLAlchemy **reflection**](https://docs.sqlalchemy.org/en/13/core/reflection.html) is performed to load and parse schema from the existing database.\n\nIt is recommended to explicitly define the schema as **reflection** may have performance issue in some cases if the schema is very large and complex.\n\n## Add and read data\n\n```python\ndata = [\n    {\n        'sepal_length_cm': '5.1',\n        'sepal_width_cm': '3.5',\n        'petal_length_cm': '1.4',\n        'petal_width_cm': '0.2',\n        'class': 'setosa'\n    },\n    {\n        'sepal_length_cm': '4.9',\n        'sepal_width_cm': '3.0',\n        'petal_length_cm': '1.4',\n        'petal_width_cm': '0.2',\n        'class': 'setosa'\n    }\n]\n\nwith MyIrisDataset('test.db') as ds:\n    ds.insert_data('iris', data)\n```\n\n```python\nwith MyIrisDataset('test.db') as ds:\n    res = ds.read_data('iris')\n```\n\n\n### Use with pandas\n\nA pandas DataFrame can be inserted into a dataset by utilizing the `to_sql()` function, and read from the dataset using `read_sql` function.\n\nBe aware that in this case, `SQLiteDataset()` should be used without specifying the schema.\n\n```python\nimport seaborn as sns\nimport pandas as pd\n\ndf = sns.load_dataset('iris')\nwith SQLiteDataset('iris11.db') as ds:\n    df.to_sql('iris', ds.connection)\n    ds.connection.commit()\n```\n\n```python\nwith SQLiteDataset('iris11.db') as ds:\n    res = pd.read_sql(\n        ds.get_table('iris').select(),\n        ds.connection\n    )\n```",
+    'author': 'Jinshuai Ma',
+    'author_email': 'mayazureee@gmail.com',
+    'maintainer': 'None',
+    'maintainer_email': 'None',
+    'url': 'https://github.com/Mayazure/sqlite-dataset',
+    'packages': packages,
+    'package_data': package_data,
+    'install_requires': install_requires,
+    'python_requires': '>=3.7,<4.0',
+}
+
+
+setup(**setup_kwargs)
