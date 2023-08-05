@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: aioprometheus-summary
+Version: 0.0.1
+Summary: Aioprometheus summary with quantiles over configurable sliding time window
+Home-page: https://github.com/RefaceAI/aioprometheus-summary
+Author: RefaceAI
+Author-email: github-support@reface.ai
+License: Apache License 2.0
+Platform: Platform Independent
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Scientific/Engineering :: Mathematics
+License-File: LICENSE
+
+# aioprometheus-summary
+Aioprometheus summary with quantiles over configurable sliding time window
+
+## Installation
+
+```
+pip install aioprometheus-summary==0.0.1
+```
