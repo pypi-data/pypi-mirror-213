@@ -1,0 +1,13 @@
+*
+!*.py
+!*.toml
+!.gitignore
+!.github
+!.github/**
+!README.md
+!data
+!example
+!example/**
+!src
+!src/*
+_version.py
