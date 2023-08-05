@@ -1,0 +1,11 @@
+jupancon/__init__.py,sha256=0iWdOiIJvF-52pM0v3CAD-ka4TATt2mv_RZuYQfsh30,675
+jupancon/config.py,sha256=89EXS1Hb2wPRUwE6E8QjpaNkKqeT9SfP4ObdvBrPltQ,5145
+jupancon/core.py,sha256=IvNm_DFDXt3rW7eo-yV_nJo-XIOqIhuduAE8k3EttQ8,4614
+jupancon/defaults.py,sha256=d5j8CORLwCDjvVTBkVN4sQTY85BECvx1wzUYfrz1rEY,110
+jupancon/magic.py,sha256=sdHs4TRjBNhDVR0lVM_Vtqjb6VkbUtXutZAICeggijE,1594
+jupancon/engine/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+jupancon/engine/databricks.py,sha256=qsA74rsTPNWwSrp6vhRB41ulo6r2T6aBBSFIM72DjF4,513
+jupancon-0.3.1.dist-info/LICENSE.md,sha256=sCH0QnRGiQSEV28JkZ3sNFPEzEia2D800t0IBwAt-zU,1072
+jupancon-0.3.1.dist-info/WHEEL,sha256=Sgu64hAMa6g5FdzHxXv9Xdse9yxpGGMeagVtPMWpJQY,99
+jupancon-0.3.1.dist-info/METADATA,sha256=MmSIOLw14lbCPoTKX0mjM81fAEmgDn8iPHV_Vn52voo,5625
+jupancon-0.3.1.dist-info/RECORD,,
