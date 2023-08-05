@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: cmtj
+Version: 1.3.1
+Summary: CMTJ - C Magnetic Tunnel Junctions.
+Home-page: https://github.com/LemurPwned/cmtj
+Author: Jakub
+Author-email: mojsieju@agh.edu.pl
+Keywords: magnetics,physics,simulation,spintronics
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: C++
+Classifier: License :: OSI Approved :: GNU General Public License v2 (GPLv2)
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Scientific/Engineering :: Physics
+Classifier: Typing :: Stubs Only
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Provides-Extra: utils
+Requires-Dist: matplotlib ; extra == 'utils'
+Requires-Dist: numpy ; extra == 'utils'
+Requires-Dist: scipy ; extra == 'utils'
+Requires-Dist: pandas ; extra == 'utils'
+Requires-Dist: tqdm ; extra == 'utils'
+Requires-Dist: multiprocess ; extra == 'utils'
+Requires-Dist: numba ; extra == 'utils'
+
+Fast library for simulating magnetic multilayers.
