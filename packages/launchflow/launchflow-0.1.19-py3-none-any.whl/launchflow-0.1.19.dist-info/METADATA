@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: launchflow
+Version: 0.1.19
+Author-email: Caleb Van Dyke <caleb@launchflow.com>, Josh Tanke <josh@launchflow.com>
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Requires-Dist: aiohttp
+Requires-Dist: fastapi
+Requires-Dist: google-auth
+Requires-Dist: httpx[http2]
+Requires-Dist: nest-asyncio
+Requires-Dist: pydantic
+Requires-Dist: pydata-google-auth
+Requires-Dist: pyaml
+Requires-Dist: requests
+Requires-Dist: urwid
+Requires-Dist: uvicorn
+Requires-Dist: typer[all]
+Requires-Dist: websockets
+Requires-Dist: websocket-client
+Provides-Extra: dev
+Requires-Dist: httpx ; extra == 'dev'
+Requires-Dist: pyinstaller ; extra == 'dev'
+Requires-Dist: pytest ; extra == 'dev'
+Requires-Dist: flake8 ; extra == 'dev'
+Requires-Dist: requests-mock ; extra == 'dev'
+Requires-Dist: setuptools ; extra == 'dev'
+Requires-Dist: wheel ; extra == 'dev'
+
+# Launchflow CLI
+
+CLI For interacting with [LaunchFlow](www.launchflow.com) for more info see: https://docs.launchflow.com/cli/overview
