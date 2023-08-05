@@ -1,0 +1,2 @@
+[console_scripts]
+tap-tiktok-ads = tap_tiktok_ads:main
