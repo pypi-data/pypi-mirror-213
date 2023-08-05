@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: tj_kits_winds
+Version: 0.0.7
+Summary: Some Kits
+Home-page: https://github.com/TJNo-1/tj_kits_wind.git
+Author: tjno-1
+Author-email: tjno-1@qq.com
+License: MIT
+Keywords: python,build-in-module kits
+Requires-Python: >=3.8
