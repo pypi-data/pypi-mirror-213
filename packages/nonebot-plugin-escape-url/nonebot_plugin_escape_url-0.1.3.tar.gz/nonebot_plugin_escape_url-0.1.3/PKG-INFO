@@ -1,0 +1,48 @@
+Metadata-Version: 2.1
+Name: nonebot-plugin-escape-url
+Version: 0.1.3
+Summary: 
+Author: ssttkkl
+Author-email: huang.wen.long@hotmail.com
+Requires-Python: >=3.9,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: nonebot2 (>=2.0.0,<3.0.0)
+Description-Content-Type: text/markdown
+
+nonebot-plugin-escape-url
+========
+
+自动转换发送消息中的URL🤔
+
+支持适配器：OneBot V11、QQ频道
+
+## 卖家秀
+
+使用前：
+
+![使用前](img/1.png)
+
+使用后：
+
+![使用后](img/2.png)
+
+## 配置项
+
+### escape_url_replace_dot_by
+
+将URL中的点替换为
+
+类型：`str`
+
+默认值：`"。"`
+
+### escape_url_ignore_adapters
+
+不进行转换的适配器
+
+类型：`List[str]`
+
+默认值：`[]`
