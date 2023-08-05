@@ -1,0 +1,67 @@
+
+stages:
+  - checks
+  - build
+  - publish
+
+black:
+  stage: checks
+  image: registry.gitlab.com/pipeline-components/black:latest
+  script:
+    - black --check --verbose -- .
+  tags:
+    - docker
+
+tests:
+  stage: checks
+  image: "registry.forgemia.inra.fr/jbleger/docker-image-pandas-torch-sphinx:master"
+  before_script:
+    pip install '.[tests]'
+  script:
+    - pip install .
+    - cd tests
+    - pytest
+
+build_package:
+  stage: build
+  image: "registry.forgemia.inra.fr/jbleger/docker-image-pandas-torch-sphinx:master"
+  before_script:
+    - pip install build
+  script:
+    - rm -rf dist/
+    - python -m build
+  artifacts:
+    untracked: true
+    expire_in: 1 week
+  tags:
+    - docker
+
+publish_package:
+  stage: publish
+  image: "python:3.9"
+  before_script:
+    - pip install twine
+  script:
+    - TWINE_PASSWORD=${pypln_token} TWINE_USERNAME=__token__ python -m twine upload dist/*
+  tags:
+    - docker
+  only:
+    - tags
+
+pages:
+  stage: publish
+  image: "registry.forgemia.inra.fr/jbleger/docker-image-pandas-torch-sphinx:master"
+  before_script:
+    - pip install '.[build-doc]'
+  script:
+    - pip install .
+    - make -C docs html
+    - rm -rf public/
+    - cp -r docs/build/html public
+  artifacts:
+    paths:
+      - public
+  tags:
+    - docker
+  only:
+    - tags
