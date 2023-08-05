@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: hypergraphx
+Version: 1.4.1
+Summary: HGX is a multi-purpose, open-source Python library for higher-order network analysis
+Home-page: https://github.com/HGX-Team/hypergraphx
+Author: HGX-Team
+Author-email: lotitoqf@gmail.com
+License: BSD-3-Clause license
+Keywords: hypergraphs,networks
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+License-File: LICENSE.md
+
+HGX is a multi-purpose, open-source Python library for higher-order network analysis
