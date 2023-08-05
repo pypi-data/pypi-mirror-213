@@ -1,0 +1,6 @@
+README.md
+setup.py
+chrono_chatgpt.egg-info/PKG-INFO
+chrono_chatgpt.egg-info/SOURCES.txt
+chrono_chatgpt.egg-info/dependency_links.txt
+chrono_chatgpt.egg-info/top_level.txt
