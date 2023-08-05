@@ -1,0 +1,12 @@
+LICENSE.md
+README.md
+setup.cfg
+setup.py
+NCBIQuery/NCBIQuery.py
+NCBIQuery/__init__.py
+NCBIQuery/version.py
+NCBIQuery.egg-info/PKG-INFO
+NCBIQuery.egg-info/SOURCES.txt
+NCBIQuery.egg-info/dependency_links.txt
+NCBIQuery.egg-info/requires.txt
+NCBIQuery.egg-info/top_level.txt
