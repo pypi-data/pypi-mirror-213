@@ -1,0 +1,15 @@
+LICENSE
+README.md
+pyproject.toml
+edspdf_mupdf/__init__.py
+edspdf_mupdf.egg-info/PKG-INFO
+edspdf_mupdf.egg-info/SOURCES.txt
+edspdf_mupdf.egg-info/dependency_links.txt
+edspdf_mupdf.egg-info/entry_points.txt
+edspdf_mupdf.egg-info/requires.txt
+edspdf_mupdf.egg-info/top_level.txt
+tests/blocks_ground_truth.py
+tests/conftest.py
+tests/test_mupdf_extractor.py
+tests/test_styled_aggregation.py
+tests/utils.py

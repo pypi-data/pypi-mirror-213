@@ -1,0 +1,2 @@
+[edspdf_factories]
+mupdf-extractor = edspdf_mupdf:MuPdfExtractor
