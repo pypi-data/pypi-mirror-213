@@ -1,0 +1,68 @@
+Metadata-Version: 2.1
+Name: inpost
+Version: 0.1.3
+Summary: Asynchronous InPost package allowing you to manage existing incoming parcels without mobile app
+Home-page: https://github.com/IFOSSA/inpost-python
+Author: loboda4450
+Author-email: loboda4450@gmail.com
+Maintainer: loboda4450
+Maintainer-email: loboda4450@gmail.com
+Requires-Python: >=3.10,<4.0
+Classifier: Development Status :: 3 - Alpha
+Classifier: Framework :: aiohttp
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: Pillow (>=9.4.0,<10.0.0)
+Requires-Dist: aiohttp (>=3.8.1,<4.0.0)
+Requires-Dist: arrow (>=1.2.3,<2.0.0)
+Requires-Dist: qrcode (>=7.3.1,<8.0.0)
+Project-URL: Documentation, https://inpost-python.readthedocs.io/en/latest/index.html
+Project-URL: Repository, https://github.com/IFOSSA/inpost-python
+Description-Content-Type: text/markdown
+
+
+# Inpost Python
+
+Fully async Inpost library using Python 3.10.
+
+
+
+
+## Documentation
+
+[Readthedocs.io](https://inpost-python.readthedocs.io/en/latest/)
+
+
+## Usage/Examples
+
+
+```python
+from inpost.api import Inpost
+
+inp = await Inpost.from_phone_number('555333444')
+await inp.send_sms_code():
+...
+if await inp.confirm_sms_code(123321):
+   print('Congratulations, you initialized successfully!')
+```
+
+
+## Authors
+
+- [@loboda4450](https://www.github.com/loboda4450)
+- [@mrkazik99](https://www.github.com/mrkazik99)
+
+
+## Used By
+
+This project is used by the following repos:
+
+[Inpost Telegram Bot](https://github.com/loboda4450/inpost-telegram-bot)
+
+
