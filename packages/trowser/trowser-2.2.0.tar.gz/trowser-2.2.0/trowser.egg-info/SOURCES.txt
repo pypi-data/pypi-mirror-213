@@ -1,0 +1,10 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+bin/trowser.py
+trowser.egg-info/PKG-INFO
+trowser.egg-info/SOURCES.txt
+trowser.egg-info/dependency_links.txt
+trowser.egg-info/requires.txt
+trowser.egg-info/top_level.txt
