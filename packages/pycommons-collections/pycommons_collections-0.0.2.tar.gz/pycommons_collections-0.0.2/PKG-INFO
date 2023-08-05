@@ -1,0 +1,63 @@
+Metadata-Version: 2.1
+Name: pycommons-collections
+Version: 0.0.2
+Summary: Python Commons Collections
+Home-page: https://github.com/shashankrnr32/pycommons-collections
+License: Apache-2.0
+Author: Shashank Sharma
+Author-email: shashankrnr32@gmail.com
+Requires-Python: >=3.8,<4.0
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.7
+Requires-Dist: importlib_metadata
+Requires-Dist: pycommons-lang (==0.0.3)
+Requires-Dist: typing_extensions (==4.6.3)
+Description-Content-Type: text/markdown
+
+# pycommons-collections
+
+[![PyPI](https://img.shields.io/pypi/v/pycommons-collections)](https://pypi.org/project/pycommons-collections/)
+![versions](https://img.shields.io/pypi/pyversions/pycommons-collections.svg)
+![PyPI - License](https://img.shields.io/pypi/l/pycommons-collections)
+![PyPI - Downloads](https://img.shields.io/pypi/dw/pycommons-collections)
+
+[![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
+
+Python Commons Collections package inspired
+by [Apache Commons Collections](https://commons.apache.org/proper/commons-collections/)
+available in Java.
+
+Visit the [documentation](https://pycommons.github.io/pycommons-collections) to view
+the usage of each and every class and feature provided by this library.
+
+## Get Started
+
+To get started with this library, you can install this in your virtual environment
+by running
+
+```shell
+pip install pycommons-collections
+```
+
+With [poetry](https://python-poetry.org/), you can run the following command to add the library to your
+project
+
+```shell
+poetry add pycommons-collections
+```
+
+## License
+
+Apache-2.0 (See [License](LICENSE))
+
+## Author
+
+[Shashank Sharma](https://github.com/shashankrnr32).
+
+
