@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: quantile-estimator
+Version: 0.1.1
+Summary: Python Implementation of Graham Cormode and S. Muthukrishnan's Effective Computation of Biased Quantiles over Data Streams in ICDE'05
+Home-page: https://github.com/RefaceAI/quantile-estimator
+Author: RefaceAI
+Author-email: github-support@reface.ai
+License: Apache License 2.0
+Platform: Platform Independent
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Scientific/Engineering :: Mathematics
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+quantile-estimator
+==========================
+
+Python Implementation of Graham Cormode and S. Muthukrishnan's Effective Computation of Biased Quantiles over Data Streams in ICDE’05
+
+## Installation
+```
+pip install quantile-estimator==0.1.1
+```
