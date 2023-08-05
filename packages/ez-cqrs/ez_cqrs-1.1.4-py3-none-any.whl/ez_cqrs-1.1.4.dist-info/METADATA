@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: ez_cqrs
+Version: 1.1.4
+Project-URL: Documentation, https://github.com/Tomperez98/ez-cqrs#readme
+Project-URL: Issues, https://github.com/Tomperez98/ez-cqrs/issues
+Project-URL: Source, https://github.com/Tomperez98/ez-cqrs
+Author-email: Tomas Perez Alvarez <tomasperezalvarez@gmail.com>
+License-File: LICENSE
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.7
+Requires-Dist: mashumaro[orjson]
+Requires-Dist: pydantic
+Requires-Dist: result
+Provides-Extra: dev
+Requires-Dist: pyrgo>=0.3.0; extra == 'dev'
+Requires-Dist: pytest-asyncio; extra == 'dev'
+Requires-Dist: pytest-cov; extra == 'dev'
+Description-Content-Type: text/markdown
+
+# ez-cqrs
+
+A lightweight, opinionated framework to write software in a procedural way.
