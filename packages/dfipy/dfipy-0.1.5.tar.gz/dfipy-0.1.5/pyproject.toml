@@ -1,0 +1,102 @@
+
+
+[tool.coverage.run]
+source = ["dfi"]
+
+[tool.mypy]
+exclude = ["^build/", "^tests/", "^docs/", "^ci/"]
+
+
+[tool.black]
+line-length = 120
+target-version = ['py39']
+include = '\.pyi?$'
+exclude = '''
+/(
+    \.git
+    | \.hg
+    | \.mypy_cache
+    | \.tox
+    | \.venv
+    | _build
+    | buck-out
+    | build
+    | dist
+
+    # The following are specific to Black, you probably don't want those.
+    | blib2to3
+    | tests/data
+)/
+'''
+
+[tool.isort]
+profile = "black"
+py_version = "39"
+multi_line_output = 3
+include_trailing_comma = true
+force_grid_wrap = 0
+use_parentheses = true
+line_length = 120
+src_paths = ["./dfi", "./tests"]
+skip_glob = ["ci/cache"]
+
+
+[tool.pylint.'MASTER']
+jobs = 0       # use all cores
+fail-under = 9
+
+[tool.pylint.'MESSAGES CONTROL']
+max-line-length = 120
+
+disable = [
+  "C0116", # missing-docstring
+]
+
+[tool.pylint.'MISCELLANEOUS']
+notes = [
+  "TODO",
+  "FIXME",
+  "XXX",
+] # List of note tags to take in consideration, separated by a comma.
+
+[tool.poetry]
+name = "dfipy"
+# Package versions are derived from Git tags in CI and overridden during
+# building/publishing. See build/publish jobs in .gitlab-ci.yml.
+# Keep the following version at 0.0.0 as it is not used anyway.
+version = "0.1.5"
+description = "DFI api python wrapper"
+authors = [
+  "Maurizio Morriello <maurizio.morriello@excession.co>",
+  "Sebastiano Ferraris <sebastiano.ferraris@excession.co>",
+]
+readme = "README.md"
+include = ["LICENCE"]
+packages = [{ include = "dfi" }]
+
+[tool.poetry.dependencies]
+python = "^3.8.1"
+h3 = "^3.7.6"
+pandas = "^2.0.1"
+pydeck = "^0.8.0"
+requests = "^2.30.0"
+shapely = "^2.0.1"
+sseclient-py = "^1.7.2"
+tqdm = "^4.65.0"
+numpy = "^1.24.3"
+geopandas = "^0.13.0"
+branca = "^0.6.0"
+pyperclip = "^1.8.2"
+ipython = "7.31.0"
+
+[tool.poetry.group.dev.dependencies]
+black = "^23.3.0"
+flake8 = "^6.0.0"
+isort = "^5.12.0"
+pylint = "^2.17.4"
+pytest = "^7.3.1"
+coverage = "^7.2.5"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
