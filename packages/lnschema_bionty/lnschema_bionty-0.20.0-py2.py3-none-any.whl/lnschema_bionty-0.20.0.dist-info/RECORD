@@ -1,0 +1,10 @@
+lnschema_bionty/__init__.py,sha256=JyqZKGVQPCWD9H_-imSFgEhm8mrMSUo1_CzJmQnZ38s,974
+lnschema_bionty/_bionty.py,sha256=vwMSLmbU2W4VZwTtPg1sYZHe923AYPnk3JCc_1E5Ke4,4660
+lnschema_bionty/ids.py,sha256=u6wGedVMi986_FTe1vPXkNuEu6FiNxNeaBjZqMgZN7E,1572
+lnschema_bionty/models.py,sha256=nfzyzbcsEvxBoPPTQFdNCqmJoRp11GwyuMc5IwIH0i8,20713
+lnschema_bionty/migrations/0001_initial.py,sha256=0MKM8kmRxSbjPoz8Uol1XTUrjq3908x0KT16bbBck-s,29775
+lnschema_bionty/migrations/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+lnschema_bionty-0.20.0.dist-info/LICENSE,sha256=UOZ1F5fFDe3XXvG4oNnkL1-Ecun7zpHzRxjp-XsMeAo,11324
+lnschema_bionty-0.20.0.dist-info/WHEEL,sha256=Sgu64hAMa6g5FdzHxXv9Xdse9yxpGGMeagVtPMWpJQY,99
+lnschema_bionty-0.20.0.dist-info/METADATA,sha256=De_h5DpnR_xlMi9f9kabQroBjBJS338CPOfAC3aVVNA,1104
+lnschema_bionty-0.20.0.dist-info/RECORD,,
