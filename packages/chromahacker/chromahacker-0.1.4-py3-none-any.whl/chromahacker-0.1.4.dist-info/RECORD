@@ -1,0 +1,9 @@
+chromahacker/.DS_Store,sha256=cfeHTV1vACQG_VB4h7Tf6Hz0IFHl5ObbcHJEKTS8jDU,6148
+chromahacker/__init__.py,sha256=lat2kpdNeejTw3ZJmm9-LG_b_l4uL_MoV79ujZ6h1n4,89
+chromahacker/color_input.py,sha256=XQ2hvVix3XQ0N6pD0Wbrtw-CmHexcEdIzg4xo9aM8_Y,6621
+chromahacker/palettize.py,sha256=jmEHAdnUPz-zLbAi3uxXp--Kdl1poIbLD_fPVhbkFLs,405
+chromahacker/process_image.py,sha256=8j7VOZzHLcEG0ThqbxUCnZYl9qvxHFfx2b0GKuVPCOs,266
+chromahacker/spline.py,sha256=NOdjk7MGGuOQJDACiQdYK5XhLAlnn_R15cTu1mn6i-Q,424
+chromahacker-0.1.4.dist-info/METADATA,sha256=wwybTSUoztRIuQ97v4GGdY3Ag9aZJBEvBzWDJLe63Xo,473
+chromahacker-0.1.4.dist-info/WHEEL,sha256=7Z8_27uaHI_UZAc4Uox4PpBhQ9Y5_modZXWMxtUi4NU,88
+chromahacker-0.1.4.dist-info/RECORD,,
