@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: sbc-gpio
+Version: 1.0.3
+Summary: Python Library for abstraction GPIO and for SBC testing
+Author-email: Thomas Dunteman <git@learningtopi.com>
+Project-URL: Homepage, https://www.learningtopi.com/python-modules-applications/sbc_gpio/
+Project-URL: Bug Tracker, https://github.com/LearningToPi/sbc_gpio/issues
+Project-URL: Source Code, https://github.com/LearningToPi/sbc_gpio
+Keywords: sbc,gpio,overlays
+Classifier: Topic :: System :: Logging
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: gpiod
+Requires-Dist: bmx280-spi
+Requires-Dist: dht11-spi
+Requires-Dist: Jinja2
+Requires-Dist: lirc
+Requires-Dist: logging-handler
+Requires-Dist: pyserial
+Requires-Dist: RPLCD
+Requires-Dist: smbus2
+Requires-Dist: spidev
+
