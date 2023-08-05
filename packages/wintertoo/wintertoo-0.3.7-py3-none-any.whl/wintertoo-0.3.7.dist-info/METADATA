@@ -1,0 +1,43 @@
+Metadata-Version: 2.1
+Name: wintertoo
+Version: 0.3.7
+Summary: 
+Home-page: https://github.com/winter-telescope/wintertoo
+Author: Danielle Frostig
+Author-email: frostig@mit.edu
+Requires-Python: >=3.9.0,<3.12
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: astroplan (>=0.8)
+Requires-Dist: astropy (>=5.2.1)
+Requires-Dist: bcrypt (>=4.0.1,<5.0.0)
+Requires-Dist: black (>=23.1.0,<24.0.0)
+Requires-Dist: coveralls (>=3.3.1)
+Requires-Dist: isort (>=5.12.0,<6.0.0)
+Requires-Dist: jsonschema (>=4.17.3)
+Requires-Dist: matplotlib (>=3.7.0)
+Requires-Dist: numpy (>=1.24.2)
+Requires-Dist: pandas (>=2.0.2)
+Requires-Dist: pre-commit (>=3.2.2)
+Requires-Dist: psycopg (>=3.1.8)
+Requires-Dist: psycopg-binary (>=3.1.8)
+Requires-Dist: pydantic (>=1.10.5)
+Requires-Dist: pylint (>=2.16.2,<3.0.0)
+Requires-Dist: pytz (>=2022.7.1)
+Requires-Dist: sqlalchemy (>=2.0.4)
+Description-Content-Type: text/markdown
+
+# wintertoo
+[![PyPI version](https://badge.fury.io/py/wintertoo.svg)](https://badge.fury.io/py/wintertoo)
+[![CI](https://github.com/winter-telescope/wintertoo/actions/workflows/continuous_integration.yml/badge.svg)](https://github.com/winter-telescope/wintertoo/actions/workflows/continuous_integration.yml) 
+[![Coverage Status](https://coveralls.io/repos/github/winter-telescope/wintertoo/badge.svg?branch=main)](https://coveralls.io/github/winter-telescope/wintertoo?branch=main) 
+
+General package for Target-of-Opportunity (ToO) observations with the [WINTER observatory](https://github.com/winter-telescope). 
+
+Current functionality includes:
+* Converting RA/DEC positions to fields
+* Building ToO schedules
+* Verifying ToO schedules
+
