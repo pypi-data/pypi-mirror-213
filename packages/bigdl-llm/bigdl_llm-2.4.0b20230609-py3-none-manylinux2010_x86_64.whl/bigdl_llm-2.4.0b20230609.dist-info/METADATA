@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: bigdl-llm
+Version: 2.4.0b20230609
+Summary: Large Language Model Develop Toolkit
+Home-page: https://github.com/intel-analytics/BigDL
+Author: BigDL Authors
+Author-email: bigdl-user-group@googlegroups.com
+License: Apache License, Version 2.0
+Platform: windows
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Description-Content-Type: text/markdown
+Provides-Extra: all
+Requires-Dist: numpy ; extra == 'all'
+Requires-Dist: torch ; extra == 'all'
+Requires-Dist: transformers ; extra == 'all'
+Requires-Dist: sentencepiece ; extra == 'all'
+Requires-Dist: accelerate ; extra == 'all'
+
+
+BigDL LLM
+
+
