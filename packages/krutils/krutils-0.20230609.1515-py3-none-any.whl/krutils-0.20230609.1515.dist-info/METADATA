@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: krutils
+Version: 0.20230609.1515
+Summary: Some utils for me.
+Author: bonfireof
+Author-email: bonfireof@gmail.com
+Project-URL: Bug Tracker, https://github.com/bonfireof/krutils
+Project-URL: Documentation, https://github.com/bonfireof/krutils
+Project-URL: Source Code, https://github.com/bonfireof/krutils
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.0
+Requires-Dist: PyMySQL (>=1.0.3)
+Requires-Dist: python-telegram-bot
+
