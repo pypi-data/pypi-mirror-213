@@ -1,0 +1,2 @@
+[console_scripts]
+gdash = gdash.__main__:main
