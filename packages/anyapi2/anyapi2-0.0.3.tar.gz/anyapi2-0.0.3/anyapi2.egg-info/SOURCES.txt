@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+anyapi/__init__.py
+anyapi/cookies.py
+anyapi2.egg-info/PKG-INFO
+anyapi2.egg-info/SOURCES.txt
+anyapi2.egg-info/dependency_links.txt
+anyapi2.egg-info/requires.txt
+anyapi2.egg-info/top_level.txt
