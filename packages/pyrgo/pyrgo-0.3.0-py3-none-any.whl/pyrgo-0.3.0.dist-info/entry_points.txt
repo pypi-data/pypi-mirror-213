@@ -1,0 +1,3 @@
+[console_scripts]
+pyrgo = pyrgo.cli.pyrgo_core.cli:root
+pyrgo-new = pyrgo.cli.pyrgo_new.cli:new
