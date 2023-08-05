@@ -1,0 +1,5 @@
+Metadata-Version: 2.1
+Name: jupyter_echarts
+Version: 0.1.14
+Summary: Use echarts in jupyter!
+Classifier: License :: OSI Approved :: MIT License
