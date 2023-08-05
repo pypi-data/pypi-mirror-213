@@ -1,0 +1,16 @@
+MANIFEST.in
+README-COPYRIGHT-utf8.txt
+README-LICENCE-utf8.txt
+README.rst
+pyproject.toml
+setup.py
+documentation/wiki/description.asciidoc
+logger_36/__init__.py
+logger_36/main.py
+logger_36/test.py
+logger_36/version.py
+logger_36.egg-info/PKG-INFO
+logger_36.egg-info/SOURCES.txt
+logger_36.egg-info/dependency_links.txt
+logger_36.egg-info/requires.txt
+logger_36.egg-info/top_level.txt
