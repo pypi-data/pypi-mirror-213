@@ -1,0 +1,153 @@
+Metadata-Version: 2.1
+Name: azureml-rag
+Version: 0.1.7
+Summary: Contains Retrieval Augmented Generation related utilities for Azure Machine Learning and OSS interoperability.
+Home-page: https://docs.microsoft.com/python/api/overview/azure/ml/?view=azure-ml-py
+Author: Microsoft Corporation
+License: Proprietary https://aka.ms/azureml-preview-sdk-license 
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Operating System :: MacOS
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Topic :: Scientific/Engineering
+Requires-Python: >=3.7,<4.0
+Description-Content-Type: text/markdown
+Requires-Dist: azureml-dataprep[parquet] (<4.12.0a,>=4.11.1)
+Requires-Dist: azureml-core
+Requires-Dist: azureml-telemetry
+Requires-Dist: azureml-mlflow
+Requires-Dist: azureml-fsspec
+Requires-Dist: fsspec (~=2023.3)
+Requires-Dist: openai (~=0.27.4)
+Requires-Dist: tiktoken (~=0.3.0)
+Requires-Dist: langchain (!=0.0.174,>=0.0.149)
+Requires-Dist: cloudpickle
+Requires-Dist: msrest (>=0.6.18)
+Requires-Dist: pyyaml (<7.0.0,>=5.1.0)
+Provides-Extra: cognitive_search
+Requires-Dist: azure-search-documents (~=11.4.0b3) ; extra == 'cognitive_search'
+Provides-Extra: document_parsing
+Requires-Dist: pandas (>=1) ; extra == 'document_parsing'
+Requires-Dist: nltk (~=3.8.1) ; extra == 'document_parsing'
+Requires-Dist: markdown ; extra == 'document_parsing'
+Requires-Dist: beautifulsoup4 (~=4.11.2) ; extra == 'document_parsing'
+Requires-Dist: tika (~=2.6.0) ; extra == 'document_parsing'
+Requires-Dist: pypdf (~=3.7.0) ; extra == 'document_parsing'
+Requires-Dist: unstructured ; extra == 'document_parsing'
+Requires-Dist: GitPython (>=3.1) ; extra == 'document_parsing'
+Provides-Extra: faiss
+Requires-Dist: faiss-cpu (~=1.7.3) ; extra == 'faiss'
+Provides-Extra: hugging_face
+Requires-Dist: scikit-learn (~=0.24.2) ; extra == 'hugging_face'
+Requires-Dist: sentence-transformers ; extra == 'hugging_face'
+Provides-Extra: remote_tests
+Requires-Dist: pytest ; extra == 'remote_tests'
+Requires-Dist: azure-ai-ml ; extra == 'remote_tests'
+Requires-Dist: azure-cli (>=2.30.0) ; extra == 'remote_tests'
+Requires-Dist: azure-core (!=1.22.0,<2.0.0,>=1.8.0) ; extra == 'remote_tests'
+Requires-Dist: azure-mgmt-core (<2.0.0,>=1.3.0) ; extra == 'remote_tests'
+Requires-Dist: azure-keyvault-secrets (==4.6.0) ; extra == 'remote_tests'
+
+# AzureML Retrieval Augmented Generation Utilities
+
+This package is in alpha stage at the moment, use at risk of breaking changes and unstable behavior.
+
+It contains utilities for:
+
+- Processing text documents into chunks appropriate for use in LLM prompts, with metadata such is source url.
+- Embedding chunks with OpenAI or HuggingFace embeddings models, including the ability to update a set of embeddings over time.
+- Create MLIndex artifacts from embeddings, a yaml file capturing metadata needed to deserialize different kinds of Vector Indexes for use in langchain. Supported Index types:
+  - FAISS index (via langchain)
+  - Azure Cognitive Search index
+
+## Getting started
+
+You can install AzurrML RAG package via pip.
+
+```bash
+pip install azureml-rag
+```
+
+## MLIndex
+
+MLIndex files describe an index of data + embeddings and the embeddings model used in yaml.
+
+```yaml
+embeddings:
+  dimension: 768
+  kind: hugging_face
+  model: sentence-transformers/all-mpnet-base-v2
+  schema_version: '2'
+index:
+  api_version: 2021-04-30-Preview
+  connection:
+    id: /subscriptions/<subscription_id>/resourceGroups/<resource_group>/providers/Microsoft.MachineLearningServices/workspaces/<workspace>/connections/<acs_connection_name>
+  connection_type: workspace_connection
+  endpoint: https://<acs_name>.search.windows.net
+  engine: azure-sdk
+  field_mapping:
+    content: content
+    filename: sourcefile
+    metadata: meta_json_string
+    title: title
+    url: sourcepage
+  index: azureml-rag-test-206e03b6-3880-407b-9bc4-c0a1162d6c70
+  kind: acs
+```
+
+### Create MLIndex
+
+TODO: Link to Example Notebooks
+
+### Consume MLIndex
+
+```python
+from azureml.rag.mlindex import MLIndex
+
+retriever = MLIndex(uri_to_folder_with_mlindex).as_langchain_retriever()
+retriever.get_relevant_documents('What is an AzureML Compute Instance?')
+```
+
+
+# Changelog
+
+## 0.1.6 (2023-05-31)
+
+- Fail crack_and_chunk task when no files were processed (usually because of a malformed `input_glob`)
+- Change `update_acs.py` to default `push_embeddings=True` instead of `False`.
+
+## 0.1.5 (2023-05-19)
+
+- Add api_base back to MLIndex embeddings config for back-compat (until all clients start getting it from Workspace Connection).
+- Add telemetry for tasks used in pipeline components, not enabled by default for SDK usage.
+
+## 0.1.4 (2023-05-17)
+
+- Fix bug where enabling rcts option on split_documents used nltk splitter instead.
+
+## 0.1.3 (2023-05-12)
+
+- Support Workspace Connection based auth for Git, Azure OpenAI and Azure Cognitive Search usage.
+
+## 0.1.2 (2023-05-05)
+
+- Refactored document chunking to allow insertion of custom processing logic
+
+## 0.0.1 (2023-04-25)
+
+### Features Added
+
+- Introduced package
+- langchain Retriever for Azure Cognitive Search
+
+
