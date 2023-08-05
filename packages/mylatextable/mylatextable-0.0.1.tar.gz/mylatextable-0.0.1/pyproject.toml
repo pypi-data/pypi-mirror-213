@@ -1,0 +1,42 @@
+# pyproject.toml
+
+[build-system]
+requires = ["setuptools>=59.0.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+
+["src"]
+
+
+[project]
+name = "mylatextable"
+version = "0.0.1"
+requires-python = ">=3.5"
+description = "Quickly generate LaTeX tables"
+readme = "README.md"
+authors = [
+    {name = "Peter Robinson", email="peter.robinson@jax.org"},
+     ]
+license = { file = "LICENSE" }
+classifiers = [
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+]
+keywords = [
+    "LaTeX",
+    "table",
+    ]
+dependencies = [
+]
+
+
+
+[project.urls]
+homepage = "https://github.com/pnrobinson/mylatextable"
+repository = "https://github.com/pnrobinson/mylatextable.git"
+documentation = "https://github.com/pnrobinson/mylatextable"
+bugtracker = "https://github.com/pnrobinson/mylatextable/issues"
+
+#[project.scripts]
+# ... = "reader.__main__:main"

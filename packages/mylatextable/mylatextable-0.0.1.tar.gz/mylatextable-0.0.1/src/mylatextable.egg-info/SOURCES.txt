@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+src/mylatextable/__init__.py
+src/mylatextable/my_latex_table.py
+src/mylatextable/my_long_table.py
+src/mylatextable/my_table.py
+src/mylatextable.egg-info/PKG-INFO
+src/mylatextable.egg-info/SOURCES.txt
+src/mylatextable.egg-info/dependency_links.txt
+src/mylatextable.egg-info/top_level.txt
