@@ -1,0 +1,10 @@
+LICENCE
+README.md
+pyproject.toml
+setup.cfg
+src/charLLM/NPLM.py
+src/charLLM/__init__.py
+src/charLLM.egg-info/PKG-INFO
+src/charLLM.egg-info/SOURCES.txt
+src/charLLM.egg-info/dependency_links.txt
+src/charLLM.egg-info/top_level.txt
