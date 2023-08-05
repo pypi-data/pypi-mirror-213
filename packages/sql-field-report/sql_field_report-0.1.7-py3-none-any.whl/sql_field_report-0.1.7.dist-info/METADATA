@@ -1,0 +1,44 @@
+Metadata-Version: 2.1
+Name: sql-field-report
+Version: 0.1.7
+Summary: 
+Author: Will James
+Author-email: willj@dealcloud.com
+Requires-Python: >=3.11,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: openpyxl (>=3.1.2,<4.0.0)
+Requires-Dist: pandas (>=1.5.3,<2.0.0)
+Requires-Dist: pyodbc (>=4.0.39,<5.0.0)
+Requires-Dist: python-dotenv (>=1.0.0,<2.0.0)
+Requires-Dist: regex (>=2023.3.23,<2024.0.0)
+Requires-Dist: sqlalchemy (>=2.0.11,<3.0.0)
+Requires-Dist: typer[all] (>=0.7.0,<0.8.0)
+Description-Content-Type: text/markdown
+
+# SQL Field Report
+
+## Installation
+To install use pip:
+`pip install sql-field-report`
+
+## Usage
+
+SQL Field Report is a [Typer](https://github.com/tiangolo/typer) CLI tool to see the available functions run:
+
+`sql-field-report --help`
+
+```
+MSSQL Database Report
+
+Generate an excel report summarising the data in an MSSQL Database
+
+Args:
+    server (str): The SQL server name
+    port (int): The SQL server port
+    user (str): Your SQL Server username
+    password (str): Your SQL Server password
+    database_name (str): The name of the database to analyse
+    schema (str): The schema for the database tables to analyse
+    output_file_name (str): The output file name of the report
+```
