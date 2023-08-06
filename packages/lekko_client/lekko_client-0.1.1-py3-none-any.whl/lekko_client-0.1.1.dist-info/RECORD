@@ -1,0 +1,11 @@
+lekko_client/__init__.py,sha256=xVqTM4N87CGDa8xhSXd-R7oOT_OFUVOPJniBLIn_8aE,245
+lekko_client/client.py,sha256=M9gXyBE7udvOrK3_SgAJeq1LHV5r1LiNuviUDQk-nEc,7353
+lekko_client/exceptions.py,sha256=DYhozoB7iUzeIAudDUi72RPWiO7R5aToUmGYeq41sFU,279
+lekko_client/helpers.py,sha256=rB68nCgHnmd-6HhgySvr8Ns8eK98oCfBjGBee18VpPQ,1761
+lekko_client/gen/lekko/client/v1beta1/configuration_service_pb2.py,sha256=1XztfxyIgeGO10zz-_WVpGft_e2RsXfzGmCmiL1Qz8w,9857
+lekko_client/gen/lekko/client/v1beta1/configuration_service_pb2.pyi,sha256=naHTFWXzrM70mqUD5Dk6GhS7fURIwnZXXdVrZx2jcwY,18544
+lekko_client/gen/lekko/client/v1beta1/configuration_service_pb2_grpc.py,sha256=eUjUE1JG0M0A30o5BO8qa9INYXFq_Vn7PPYjv43uluA,16283
+lekko_client-0.1.1.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+lekko_client-0.1.1.dist-info/WHEEL,sha256=rSgq_JpHF9fHR1lx53qwg_1-2LypZE_qmcuXbVUq948,81
+lekko_client-0.1.1.dist-info/METADATA,sha256=venRiGlPvIoZhSJhKHkLQLGFVv8KLFAk8oZ3pyo9w88,500
+lekko_client-0.1.1.dist-info/RECORD,,
