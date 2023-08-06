@@ -1,0 +1,40 @@
+Metadata-Version: 2.1
+Name: rivendellaudio
+Version: 4.0.0rc4
+Summary: Python 3 interface to the Rivendell Radio Automation System
+Home-page: https://github.com/ElvishArtisan/rivendell
+Author: Fred Gleason
+Author-email: fredg@paravelsystems.com
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/ElvishArtisan/rivendell/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU Lesser General Public License v2 (LGPLv2)
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+This is a Python 3 interface for the Rivendell Radio
+Automation System. It contains the following modules:
+
+- PyPAD. A system for processing Program Associated Data (PAD) generated
+by Rivendell.
+
+Example plug-ins for processing PAD updates can be found in the
+[Rivendell sources](https://github.com/ElvishArtisan/rivendell/tree/qt5)
+in 'apis/pypad/tests/'.
+
+- Web API. Classes for remotely interacting with Rivendell objects,
+including
+* Carts
+* Cuts
+* Groups
+* Logs
+* Podcasts
+* Scheduler Codes
+
+Example scripts for testing and exercising the API can be found in the
+[Rivendell sources](https://github.com/ElvishArtisan/rivendell/tree/qt5)
+in 'apis/rivwebpyapi/tests/'.
+
