@@ -1,0 +1,9 @@
+mciplayer/__init__.py,sha256=1SpY_iAFXqyJQL_4czVeU1K3o22ZLJ4Sm3QDXEwgyvE,8256
+mciplayer/_mciwnd.cp39-win_amd64.pyd,sha256=bPgn0p5JR5Nl-v8_mPzbKBV_9bWahv_92nNCBaAOxP8,120320
+mciplayer/_mciwnd_unicode.cp39-win_amd64.pyd,sha256=Cq7CDFTMMvbmtJc9ik8hrpHq4PdprBxlls-alIYxg9k,120832
+mciplayer/tool.py,sha256=A_PVYHTMnMrs2o9AxjIwRNqGErJi1klL0cRyspYVdos,856
+mciplayer-2.0.1.dist-info/METADATA,sha256=nRhI1Lp7gJJfnq4DVOr4p2eCLTiKht86knpYux4XkKs,989
+mciplayer-2.0.1.dist-info/WHEEL,sha256=eep6QWEFiQfg2wcclssb_WY-D33AnLYLnEKGA9Rn-VU,100
+mciplayer-2.0.1.dist-info/entry_points.txt,sha256=FLfXMN_Ect0VqT_5z67SRmSwFPKTph5LGO18TXAxLnI,89
+mciplayer-2.0.1.dist-info/top_level.txt,sha256=bHATEJLe-hrBAQgHG3nZn57dTEvDky1zEv2QlxvJZj8,10
+mciplayer-2.0.1.dist-info/RECORD,,
