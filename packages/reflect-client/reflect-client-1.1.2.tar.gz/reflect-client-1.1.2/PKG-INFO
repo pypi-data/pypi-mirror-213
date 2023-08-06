@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: reflect-client
+Version: 1.1.2
+Summary: Python library for communicating with an API built with Reflect over HTTP or UNIX sockets
+Home-page: https://github.com/victorwesterlund/reflect-client-python
+Author: Victor Westerlund
+Author-email: victor.vesterlund@gmail.com
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
