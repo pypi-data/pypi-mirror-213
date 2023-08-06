@@ -1,0 +1,3 @@
+dls_slurmjob_api
+dls_slurmjob_cli
+dls_slurmjob_lib
