@@ -1,0 +1,7 @@
+LICENSE
+README.md
+setup.py
+protoc_gen_http_python.egg-info/PKG-INFO
+protoc_gen_http_python.egg-info/SOURCES.txt
+protoc_gen_http_python.egg-info/dependency_links.txt
+protoc_gen_http_python.egg-info/top_level.txt
