@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: better-web3
+Version: 1.0.0
+Summary: Chain, Explorer, Contracts(Multicall, ERC20/ERC721), batch calls and other..
+Author: Alen
+Author-email: alen.kimov@gmail.com
+Requires-Python: >=3.11,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: pydantic (>=1.10.9,<2.0.0)
+Requires-Dist: requests (>=2.31.0,<3.0.0)
+Requires-Dist: web3 (>=6.4.0,<7.0.0)
+Description-Content-Type: text/markdown
+
+# Better Web3.py
+
+## Код был собран из кусков с этих репозиториев:
+- [safe-global](https://github.com/safe-global) / [Safe-eth-py (previosly known as Gnosis-py)](https://github.com/safe-global/safe-eth-py)
+- [Whynot63](https://github.com/Whynot63) / [web3-premium](https://github.com/Whynot63/web3-premium)
+
