@@ -1,0 +1,7 @@
+LICENSE
+setup.py
+cliopts/__init__.py
+cliopts.egg-info/PKG-INFO
+cliopts.egg-info/SOURCES.txt
+cliopts.egg-info/dependency_links.txt
+cliopts.egg-info/top_level.txt
