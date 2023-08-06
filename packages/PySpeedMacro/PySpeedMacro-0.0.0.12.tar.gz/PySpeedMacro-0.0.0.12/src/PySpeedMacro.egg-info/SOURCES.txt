@@ -1,0 +1,14 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/PySpeedMacro/PSMInterface.py
+src/PySpeedMacro/PSMMain.py
+src/PySpeedMacro/PSMMouse.py
+src/PySpeedMacro/__init__.py
+src/PySpeedMacro.egg-info/PKG-INFO
+src/PySpeedMacro.egg-info/SOURCES.txt
+src/PySpeedMacro.egg-info/dependency_links.txt
+src/PySpeedMacro.egg-info/top_level.txt
+tests/testMore.py
+tests/testing.py
