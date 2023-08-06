@@ -1,0 +1,44 @@
+Metadata-Version: 2.1
+Name: procastro
+Version: 0.0.13
+Summary: Framework to process astronomical data files
+Home-page: https://github.com/duckrojo/procastro
+License: BSD-3-Clause
+Author: Patricio Rojo
+Author-email: pato@das.uchile.cl
+Requires-Python: >=3.9,<4.0
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Provides-Extra: docs
+Requires-Dist: Sphinx (==4.2.0) ; extra == "docs"
+Requires-Dist: asdf-astropy (>=0.4.0,<0.5.0)
+Requires-Dist: sphinx-rtd-theme (==1.0.0) ; extra == "docs"
+Requires-Dist: sphinxcontrib-napoleon (==0.7) ; extra == "docs"
+Project-URL: Documentation, https://procastro.readthedocs.io/en/latest/
+Project-URL: Repository, https://github.com/duckrojo/procastro
+Description-Content-Type: text/markdown
+
+# procastro
+
+**Saving time for astronomers handling data everywhere**
+
+procastro is a framework created to intuitively handle astronomical data files
+in an pythonic style
+
+
+
+
+## Installation
+
+You can install procastro by using pip
+
+	$ pip install procastro
+
+## Documentation
+
+Please, check https://procastro.readthedocs.io/en/latest/
+
+

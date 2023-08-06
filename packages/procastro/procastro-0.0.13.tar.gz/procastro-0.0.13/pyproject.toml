@@ -1,0 +1,37 @@
+[tool.poetry]
+name = "procastro"
+version = "0.0.13"
+description = "Framework to process astronomical data files"
+authors = ["Patricio Rojo <pato@das.uchile.cl>"]
+license = "BSD-3-Clause"
+readme = "README.md"
+documentation = "https://procastro.readthedocs.io/en/latest/"
+repository = "https://github.com/duckrojo/procastro"
+
+[tool.poetry-dynamic-versioning]
+enable = false
+
+[tool.poetry-dynamic-versioning.substitution]
+
+
+[tool.poetry.dependencies]
+python = "^3.9"
+asdf-astropy = "^0.4.0"
+Sphinx = { version = "4.2.0", optional = true }
+sphinx-rtd-theme = { version = "1.0.0", optional = true }
+sphinxcontrib-napoleon = { version = "0.7", optional = true }
+
+[tool.poetry.extras]
+docs = ["Sphinx", "sphinx-rtd-theme", "sphinxcontrib-napoleon", "numpydoc"]
+
+[tool.poetry.group.dev.dependencies]
+astropy = "^5.3"
+numpy = "^1.23.2"
+astroquery = "^0.4.6"
+scipy = "^1.10.1"
+matplotlib = "^3.7.1"
+pandas = "^2.0.2"
+
+[build-system]
+requires = ["poetry-core", "poetry-dynamic-versioning"]
+build-backend = "poetry_dynamic_versioning.backend"
