@@ -1,0 +1,12 @@
+LICENSE
+README.md
+WignerSymbol
+lib.cpp
+pyproject.toml
+setup.py
+WignerSymbol/WignerSymbol.hpp
+WignerSymbol.egg-info/PKG-INFO
+WignerSymbol.egg-info/SOURCES.txt
+WignerSymbol.egg-info/dependency_links.txt
+WignerSymbol.egg-info/not-zip-safe
+WignerSymbol.egg-info/top_level.txt

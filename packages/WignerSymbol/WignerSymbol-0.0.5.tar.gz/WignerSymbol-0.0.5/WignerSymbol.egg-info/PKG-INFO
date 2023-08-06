@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: WignerSymbol
+Version: 0.0.5
+Summary: Python port of 0382/WignerSymbol
+Home-page: https://github.com/0382/WignerSymbol-pybind11
+Author: 0382
+Author-email: 18322825326@163.com
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# WignerSymbol-pybind11
+
+Python bindings for [0382/WignerSymbol](https://github.com/0382/WignerSymbol).
+
+## Example
+
+```python
+import WignerSymbol as ws
+ws.init(20, "Jmax", 3)
+ws.CG(1,1,2,-1,1,0) # 1/\sqrt(2)
+```
