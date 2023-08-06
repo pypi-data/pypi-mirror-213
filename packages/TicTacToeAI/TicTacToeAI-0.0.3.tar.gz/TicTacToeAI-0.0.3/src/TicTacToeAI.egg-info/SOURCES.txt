@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+src/TicTacToeAI.py
+src/TicTacToeAI.egg-info/PKG-INFO
+src/TicTacToeAI.egg-info/SOURCES.txt
+src/TicTacToeAI.egg-info/dependency_links.txt
+src/TicTacToeAI.egg-info/requires.txt
+src/TicTacToeAI.egg-info/top_level.txt
