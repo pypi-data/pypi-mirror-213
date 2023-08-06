@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "aifunc"
+version = "0.3.2"
+description = ""
+authors = ["Ziyan Wu <ziyanwu93@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+openai = "^0.27.8"
+pyyaml = "^6.0"
+urllib3 = "^1.26"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
