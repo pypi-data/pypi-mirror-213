@@ -1,0 +1,60 @@
+Metadata-Version: 2.1
+Name: hardyweinberg-equilibrium
+Version: 0.1.3.post20230611
+Summary: Hardy-Weinberg Equilibrium Calculator. Calculates the expected genotype frequencies based on the allele frequencies of a population in Hardy-Weinberg equilibrium.
+Author: Dellius Alexander
+Author-email: info@hyfisolutions.com
+Maintainer: info@hyfisolutions.com
+Maintainer-email: info@hyfisolutions.com
+License: LICENSE
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Hardy Weinberg Equilibrium
+
+
+Hardy-Weinberg Equilibrium Calculator. Calculates the expected 
+genotype frequencies based on the allele frequencies of a 
+population in Hardy-Weinberg equilibrium.
+
+## Usage
+
+```text
+usage: 
+    main.py [-h] [--version] [--verbose] [--debug] [--samples SAMPLES] [--p P] [--q Q] [--tpop TPOP] [--ppop PPOP] [--qpop QPOP] [--pq2pop PQ2POP] [--genes GENES [GENES ...]]
+
+Alternate module usage: 
+    python3 -m src.main [-h] [--version] [--verbose] [--debug] [--samples SAMPLES] [--p P] [--q Q] [--tpop TPOP] [--ppop PPOP] [--qpop QPOP] [--pq2pop PQ2POP] [--genes GENES [GENES ...]]
+
+
+Hardy-Weinberg Equilibrium Calculator. Calculates the expected genotype frequencies based on the allele frequencies of a population in Hardy-Weinberg equilibrium. Alternate module usage: python3 -m src.main --ppop 10 --qpop 10
+--pq2pop 200 --verbose See: https://en.wikipedia.org/wiki/Hardy%E2%80%93Weinberg_principle
+
+optional arguments:
+  -h, --help            show this help message and exit
+  --version             show program's version number and exit
+  --verbose             Enable verbose logging. (default: False)
+  --debug               Enable debug logging. (default: False)
+  --samples SAMPLES     Number of samples to generate, if using random data generator. (default: None)
+  --p P                 Frequency of dominant allele. (default: None)
+  --q Q                 Frequency of recessive allele. (default: None)
+  --tpop TPOP           Total population. (default: None)
+  --ppop PPOP           Original population of dominant allele. (default: None)
+  --qpop QPOP           Original population of recessive allele. (default: None)
+  --pq2pop PQ2POP       Original population of heterozygous allele. (default: None)
+  --genes GENES [GENES ...]
+                        List of JSON[Genes] to calculate. Note: This is list of json objects representing of Gene class. (default: <lambda>)
+
+Example: python3 -m main.py --ppop 10 --qpop 10 --pq2pop 200 --verbose | Example: python3 -m [package].[module] --samples 1000 --verbose
+```

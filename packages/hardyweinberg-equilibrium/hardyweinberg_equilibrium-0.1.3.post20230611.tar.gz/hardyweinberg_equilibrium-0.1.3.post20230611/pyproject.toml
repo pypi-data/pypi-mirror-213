@@ -1,0 +1,67 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+#
+#[project]
+#name = "hardyweinberg_equilibrium"
+#version = "0.1.2"
+#description = 'Hardy-Weinberg Equilibrium Calculator. Calculates the expected genotype frequencies based on the allele frequencies of a population in Hardy-Weinberg equilibrium.'
+#readme = {file = "README.md", content-type = "text/markdown"}
+#requires-python = ">=3.7"
+#keywords = ["FastAPI", "Hardy Weinberg", "Python"]
+#authors = [
+#  { name="Dellius Alexander",  email="info@hyfisolutions.com" },
+#]
+#
+#maintainers = [
+#    { name="Dellius Alexander", email="info@hyfisolutions.com"}
+#]
+#
+#classifiers = [
+#    "Programming Language :: Python :: 3",
+#    "License :: OSI Approved :: MIT License",
+#    "Operating System :: OS Independent",
+#    "Development Status :: 3 - Alpha",
+#    "Intended Audience :: Developers",
+#    "Topic :: Software Development :: Libraries :: Python Modules",
+#    "Topic :: Internet :: WWW/HTTP :: HTTP Servers",
+#    "Topic :: Internet :: WWW/HTTP :: WSGI :: Server",
+#    "Topic :: Internet :: WWW/HTTP :: Dynamic Content",
+#]
+
+#dependencies = [
+#    "sympy",
+#    "numpy",
+#    "matplotlib",
+#    "pandas",
+#]
+
+#[project.urls]
+## https://packaging.python.org/en/latest/specifications/declaring-project-metadata/
+#"Homepage" = "https://github.com/dellius-alexander/FastAPI-GraphQL-MongoDB-Demo.git"
+#"Bug_Tracker" = "https://github.com/dellius-alexander/FastAPI-GraphQL-MongoDB-Demo.git/issues"
+
+[requires]
+files=["requirements.txt"]
+
+
+#[integrations]
+#mongodb = { version = "4.3.3" }
+#graphql = { version = "3.2.3" }
+
+[tool.black]
+line-length = 88
+target-version = ['py38', 'py39', 'py310']
+
+
+[tool.pytest.ini_options]
+minversion = "6.0"
+addopts = "--verbose --color=yes --trace"
+testpaths = [
+    "tests",
+    "tests/integration",
+]
+
+#[project.license]
+#file = "LICENSE"
+
