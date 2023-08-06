@@ -1,0 +1,7 @@
+LICENSE
+README.md
+setup.py
+binance_c2c_sapi.egg-info/PKG-INFO
+binance_c2c_sapi.egg-info/SOURCES.txt
+binance_c2c_sapi.egg-info/dependency_links.txt
+binance_c2c_sapi.egg-info/top_level.txt
