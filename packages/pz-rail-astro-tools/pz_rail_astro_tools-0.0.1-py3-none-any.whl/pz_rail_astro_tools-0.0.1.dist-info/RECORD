@@ -1,0 +1,17 @@
+rail/astro_tools/__init__.py,sha256=BTXEytC6N25I1t9oH2g0qUAYKcXEhLKGSPaVcL58_Ew,328
+rail/astro_tools/_version.py,sha256=0E2q3bbXSYHV7qQaXVj0To-J2XdlP2Roo0TsM8oQtR4,160
+rail/creation/degradation/grid_selection.py,sha256=aJ8tJsR9DiqgEhDEUKTo-O0T1uQXlN119yji8tT9dYU,11974
+rail/creation/degradation/observing_condition_degrader.py,sha256=iacZu54A4y4wSFy7n3nz3IZEMmtak9OADrvtWZOnRKE,15697
+rail/creation/degradation/spectroscopic_degraders.py,sha256=-Qko0oFVjPSnC5RKIJ7InMsVJkPAUnt3lRnuhTFWTzI,4935
+rail/creation/degradation/spectroscopic_selections.py,sha256=f-87GGSDIORaupuU-7TZG_IgNjTIWQS1hx6BbTz-7Yc,22251
+rail/examples_data/creation_data/data/hsc_ratios_and_specz.hdf5,sha256=liH54wuuuHxToqjoAwQ_fFmEefk3haNweVThMwdDKN4,13823712
+rail/examples_data/creation_data/data/survey_conditions/DC2-dr6-galcounts-i20-i25.3-nside-128.fits,sha256=jHv3dwoLQSKcGUx29cnN9t9AWef4JlGsqSbITJfZI0o,1581120
+rail/examples_data/creation_data/data/survey_conditions/DC2-mask-neg-nside-128.fits,sha256=79Kg4xRP4WHlOCcS-3SKqf9aP_LZRAq-izIM0DFL6bw,1581120
+rail/examples_data/creation_data/data/survey_conditions/minion_1016_dc2_Median_airmass_i_and_nightlt1825_HEAL.fits,sha256=twvyce70G3h1MQnGGFQJG9wZc8UbuNqXc6mjtiuaL1s,1581120
+rail/examples_data/creation_data/data/survey_conditions/minion_1016_dc2_Median_fiveSigmaDepth_i_and_nightlt1825_HEAL.fits,sha256=RbMMFSVJQxGhZnL4BnISE9VTNljfTZwV6Bax6NxverY,1581120
+rail/tools/utilPhotometry.py,sha256=oRxBSNyBaiRuaSbf52w16W_vXLA8cAkQYLmdRRt_Ro8,17806
+pz_rail_astro_tools-0.0.1.dist-info/LICENSE,sha256=tLMEN21HbzvT-7umOVVvPjaJZbQxCa-2bAeYLwG5Q04,1102
+pz_rail_astro_tools-0.0.1.dist-info/METADATA,sha256=YeeWdosykH3Ia79tfn5IQzn6W22hb04QpxJiwKiG2I8,3863
+pz_rail_astro_tools-0.0.1.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+pz_rail_astro_tools-0.0.1.dist-info/top_level.txt,sha256=6R6sqn-85I8YZTzmB9gv7sqckB2QaOTHbu-QLGTWBRE,5
+pz_rail_astro_tools-0.0.1.dist-info/RECORD,,
