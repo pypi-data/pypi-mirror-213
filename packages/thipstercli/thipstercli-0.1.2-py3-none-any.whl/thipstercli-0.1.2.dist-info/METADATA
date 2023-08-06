@@ -1,0 +1,112 @@
+Metadata-Version: 2.1
+Name: thipstercli
+Version: 0.1.2
+Summary: CLI interface build with typer, designed to use the thipster package
+Home-page: https://github.com/THipster/THipster-cli
+Download-URL: https://github.com/THipster/THipster-cli.git
+License: MIT
+Keywords: thipster,cli,generator,infrastructure as code,iac,terraform,typer
+Classifier: Development Status :: 1 - Planning
+Classifier: Environment :: Console
+Classifier: Programming Language :: Python :: 3.11
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: importlib-metadata (==6.6.0)
+Requires-Dist: importlib-resources (==5.12.0)
+Requires-Dist: typer[all] (==0.9.0)
+Requires-Dist: thipster (==0.16.4)
+Provides-Extra: dev
+Requires-Dist: pytest ; extra == 'dev'
+Requires-Dist: pytest-mock ; extra == 'dev'
+Requires-Dist: dagger.io ; extra == 'dev'
+Requires-Dist: pre-commit ; extra == 'dev'
+Provides-Extra: doc
+Requires-Dist: sphinx ; extra == 'doc'
+Requires-Dist: myst-parser ; extra == 'doc'
+Provides-Extra: test
+Requires-Dist: pytest ; extra == 'test'
+Requires-Dist: pytest-mock ; extra == 'test'
+
+# THipster CLI
+
+CLI tool to interact and use [THipster](https://github.com/THipster/THipster), build with [Typer](https://typer.tiangolo.com/).
+
+THipster is a tool dedicated to simplifying the ordeal associated with writing Terraform files.
+It allows users to write infrastructure as code in a simplified format, using either YAML (with JINJA) or the dedicated Thipster DSL.
+
+Written entirely in Python, it leverages the Python CDK for Terraform to create Terraform files and apply them to the chosen provider.
+
+
+## Technology Stack
+Written in Python 3.11, thipster-cli is build using [Typer](https://typer.tiangolo.com/).
+
+## Project Status
+THipster-cli is currently in an active development state. If you want to know more, please check the [CHANGELOG](CHANGELOG.md) for more details.
+
+## Dependencies
+
+To use the CLI, you will need to have all the required THipster dependencies installed on your machine. Please refer to the [THipster documentation](https://github.com/THipster/THipster#dependencies) for more details.
+
+## Installation
+
+The project is designed to be simply installed using [pip](https://pip.pypa.io/en/stable/).
+
+```bash
+pip install thipstercli
+```
+
+The list of available versions can be found on [PyPI](https://pypi.org/project/thipstercli/).
+
+## Usage
+
+The cli is composed of 3 main commands:
+- `version`: display the current version of the package
+```bash
+thipster version -t
+```
+
+- `providers`: subcommand group tp handle all tasks related to infrastructure providers
+```bash
+thipster providers --help
+```
+
+- `run`: main command to execute the thipster tool
+```bash
+thipster run --help
+```
+
+You can also check the [thipster package documentation](https://github.com/THipster/THipster/tree/main#usage) for more details on the main features and purpose of the tool.
+
+## How to test the software
+
+To test the CLI, you can run the following command:
+
+```bash
+pip install -e .[test]
+pytest tests
+```
+
+## Known issues
+
+All known issues, bugs, improvements, etc. are tracked as [GitHub issues](https://github.com/THipster/THipster-cli/issues).
+
+## Getting help
+
+If you have questions, concerns, bug reports, etc, please file an issue in this repository's [Issue Tracker](https://github.com/THipster/THipster-cli/issues).
+
+## Getting involved
+
+To install the project in development mode, run the following command:
+
+```bash
+pip install -e .[dev,test]
+pre-commit install && pre-commit run --all-files
+```
+
+If you would like to be involved in the project feel free to check the [CONTRIBUTING](https://github.com/THipster/THipster-cli/blob/main/CONTRIBUTING.md) file. We will be happy to have you onboard.
+
+## Open source licensing info
+1. [LICENSE](https://github.com/THipster/THipster-cli/blob/main/LICENSE)
+3. [CFPB Source Code Policy](https://github.com/cfpb/source-code-policy/)

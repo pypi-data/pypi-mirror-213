@@ -1,0 +1,15 @@
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_cli.py,sha256=x3sdiglK3b06DwcYTYBJBfJk-VJwnqtHFa8nWyihmQ8,2673
+tests/test_providers.py,sha256=H7LTMFB6rioNXsV9xaCLub7HwfSAeUs8Cksa30Bzgfw,1273
+thipstercli/__init__.py,sha256=3e1KJ1upeJaVHoDYLh-YTCO-80IxiT_1r1ikGDr3W3Q,106
+thipstercli/__main__.py,sha256=XcYI9WTUNL2xEiYvMXhMLw8QcmspG5DMmhMm-e0rcu0,58
+thipstercli/cli.py,sha256=WEj1CwN6U-a3j5B1WjrWR5gRAvZg2GbdnvQJWDYTESw,3663
+thipstercli/helpers.py,sha256=2kHKztEqzpkFKZq8IewtAL45ud9eeaavg1Cw72Zby8M,321
+thipstercli/providers.py,sha256=4M8zYZpzk8otltQQAxoQ8uF61BJp3xhgFBPA4WjOH_s,2772
+thipstercli/state.py,sha256=KwTUXcRwjl_itCQTJRjaTpv8zoXpAgRfS2ux0vZ7kR0,520
+thipstercli-0.1.2.dist-info/LICENSE,sha256=SX3uycH4ncZO3GlyTNuQEf1DgpM1PMX-prAjUSYc-rk,1052
+thipstercli-0.1.2.dist-info/METADATA,sha256=uD9VCYFZ2zXg-q9eXMJkcuWY6FlDJWgBLzUxPAlE6rQ,3983
+thipstercli-0.1.2.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+thipstercli-0.1.2.dist-info/entry_points.txt,sha256=a5QBwdtT9Kahrg2Fpp5zrcyDfyo2x41-R4qvC7z6TYI,49
+thipstercli-0.1.2.dist-info/top_level.txt,sha256=ZH9j1H7PdL7U-rUxdF07nM4WTC8LQqKD31OarzHPaxE,18
+thipstercli-0.1.2.dist-info/RECORD,,
