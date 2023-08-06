@@ -1,0 +1,87 @@
+Metadata-Version: 2.1
+Name: pixelsort-cli
+Version: 0.1.7
+Summary: A Python CLI tool for sorting pixels in images.
+Author-email: Ferdinand Theil <f.p.theil@proton.me>
+Project-URL: Homepage, https://github.com/Blotz/pixelsort-cli
+Project-URL: Bug Tracker, https://github.com/Blotz/pixelsort-cli/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy (~=1.24.3)
+Requires-Dist: scipy (~=1.10.1)
+Requires-Dist: opencv-python (~=4.7.0.72)
+Requires-Dist: filetype (~=1.2.0)
+Provides-Extra: test
+Requires-Dist: pytest (~=7.3.2) ; extra == 'test'
+
+# pixelsort cli
+
+[![tests](https://github.com/Blotz/pixelsort-cli/actions/workflows/python-package.yml/badge.svg)](https://github.com/Blotz/pixelsort-cli/actions/workflows/python-package.yml)
+[![package](https://github.com/Blotz/pixelsort-cli/actions/workflows/python-publish.yml/badge.svg)](https://github.com/Blotz/pixelsort-cli/actions/workflows/python-publish.yml)
+[![CodeQL](https://github.com/Blotz/pixelsort-cli/actions/workflows/codeql.yml/badge.svg)](https://github.com/Blotz/pixelsort-cli/actions/workflows/codeql.yml)
+
+A simple python command line tool for sort pixels in an image.
+Based on the works of [Kim Asendorf](https://github.com/kimasendorf/ASDFPixelSort).
+
+The script blocks pixels into dark and light areas using a contrast mask.
+Then it sorts the pixels in a given direction via their luminance.
+
+- You can increase/decrease the contrast by setting the threshold.
+- You can also invert the mask to sort the light pixels instead of the dark ones.
+
+## Usage
+
+### Install
+
+```bash
+pip install git+https://github.com/Blotz/pixelsort-cli
+```
+
+or
+
+```bash
+pip install pixelsort-cli
+```
+
+## Examples
+
+```bash
+pixelsort --help
+```
+
+```bash
+usage: pixelsort [-h] [--threshold THRESHOLD] [--sort_brightest SORT_BRIGHTEST] [--reverse_sorting REVERSE_SORTING] [--output OUTPUT]
+                 image_path angle
+
+Command line tool for sorting pixels in images
+
+positional arguments:
+  image_path            path to image
+  angle                 angle that the image is sorted. 0° is up. [0, 360]
+
+options:
+  -h, --help            show this help message and exit
+  --threshold THRESHOLD
+                        threshold for contrast. [-1.0, 1.0] Default: 1.0
+  --sort_brightest SORT_BRIGHTEST
+                        Sort the brightest area of the image. Default: True
+  --reverse_sorting REVERSE_SORTING
+                        Sorts the pixels from lightest to darkest instead of darkest to lightest. Default: False
+  --output OUTPUT       path to output file
+```
+
+```bash
+pixelsort data/mountains.jpg 90 --threshold 1.2
+```
+
+![example 1](https://raw.githubusercontent.com/Blotz/pixelsort-cli/main/data/example1.png)
+
+---
+
+## License
+
+MIT Ferdinand Theil
