@@ -1,0 +1,13 @@
+crackerjack-0.3.0.dist-info/METADATA,sha256=SaTq2TFQkKlRo26ycfgv1WCYKXXsmxCh__IJufcOcyU,6321
+crackerjack-0.3.0.dist-info/WHEEL,sha256=2pzpU5yX8ZDRkL1JJPwjqHXoJgM2dqtofaxvD6IHFj4,90
+crackerjack-0.3.0.dist-info/licenses/LICENSE,sha256=fDt371P6_6sCu7RyqiZH_AhT1LdN3sN1zjBtqEhDYCk,1531
+crackerjack/.gitignore,sha256=7EqovFDKiY3OPG9sGPjbH-vZkHASmGuM20T5H9rwVTQ,210
+crackerjack/.libcst.codemod.yaml,sha256=TLE_I07llPTYk_tm36z-hN15O3X27qztNdJ3Ev9ODMk,768
+crackerjack/.pre-commit-config.yaml,sha256=zniJGH8xaOhlCZ95vRrihGtjL_S_qtjuwyPLZichFgM,2407
+crackerjack/.ruff_cache/.gitignore,sha256=aEiIwOuxfzdCmLZe4oB1JsBmCUxwG8x-u-HBCV9JT8E,1
+crackerjack/.ruff_cache/CACHEDIR.TAG,sha256=WVMVbX4MVkpCclExbq8m-IcOZIOuIZf5FrYw5Pk-Ma4,43
+crackerjack/__init__.py,sha256=AuglbbJHkUJ2GdvyT0ca35ntexo1RkT2V6DgypoFeEk,121
+crackerjack/__main__.py,sha256=XU07It42ZWkn_FZ88pFIBA6FQWJFqQADTcs75n435SA,1413
+crackerjack/crackerjack.py,sha256=srKi3DWv2788DYpV0FKifmFne93YnYj83Ghb_A-wY6I,5833
+crackerjack/pyproject.toml,sha256=61hTIy6GH2S5uCYX2evhZkl_eTI3-HfExh7Lu5yVloE,1669
+crackerjack-0.3.0.dist-info/RECORD,,
