@@ -1,0 +1,13 @@
+- name: set localtime to UTC time
+  shell: rm -f /etc/localtime && cp /usr/share/zoneinfo/UTC /etc/localtime
+
+- name: get time
+  shell: echo $(( $(date +%s) ))
+  register: time_result
+  delegate_to: localhost
+  run_once: true
+
+- name: set time
+  shell: date -s "$(date -d "@{{ time_result.stdout }}" "+%F %T")"; hwclock -w
+  when: inventory_hostname in ansible_play_hosts_all[1:]
+

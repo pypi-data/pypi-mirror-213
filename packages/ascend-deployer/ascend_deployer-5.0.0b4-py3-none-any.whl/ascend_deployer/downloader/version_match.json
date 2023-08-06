@@ -1,0 +1,25 @@
+{
+  "MindSpore_2.0.0rc1": "CANN_6.3.RC1",
+  "MindSpore_1.10.0": "CANN_6.0.1",
+  "MindSpore_1.9.0": "CANN_6.0.RC1",
+  "DL_5.0.RC1": "CANN_6.3.RC1",
+  "MindStudio_6.0.RC1": "CANN_6.3.RC1",
+  "MindStudio_5.0.0": "CANN_6.0.1",
+  "MindStudio_5.0.RC1": "CANN_6.0.RC1",
+  "Torch-npu_1.8.1.post1": "CANN_6.3.RC1",
+  "Torch-npu_1.11.0rc2": "CANN_6.0.1",
+  "Torch-npu_1.8.1": "CANN_6.0.1",
+  "Torch-npu_1.11.0": "CANN_6.3.RC1",
+  "NoneMatched": [
+    "MindSpore_1.5.0",
+    "MindSpore_1.6.2",
+    "MindStudio_3.0.4",
+    "MindStudio_3.0.3",
+    "MindStudio_5.0.RC3",
+    "MindSpore_1.7.0",
+    "MindSpore_1.8.0",
+    "MindStudio_5.0.RC2",
+    "MEF_5.0.RC1"
+  ]
+}
+

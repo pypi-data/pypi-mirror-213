@@ -1,0 +1,63 @@
+- name: check driver exists
+  shell: npu-smi info ||true
+  register: raw_driver_info
+
+- name: get the driver info
+  copy:
+    src: ./get_npu_info.py
+    dest: "{{ ansible_env.HOME }}/"
+    mode: 0700
+    force: yes
+
+- name: execute the info script1
+  command: python3 {{ansible_env.HOME}}/get_npu_info.py {{raw_driver_info.stdout_lines|default([])}}
+  register: driver_info
+  when: python3_exist.stdout != ''
+
+- name: gather driver facts
+  set_fact:
+    driver_dict: "{{driver_dict|default({})|combine({item:{'npu':hostvars[item]['driver_info']['stdout']}})}}"
+  delegate_to: localhost
+  run_once: true
+  with_items: "{{ groups['master'] +  groups['worker'] }}"
+
+- name: output driver file
+  copy:
+    content: "{{ driver_dict }}"
+    dest:  "{{ tmp_file_path }}/driver_dict.json"
+    mode: 0700
+    force: yes
+  delegate_to: localhost
+  run_once: true
+
+- name: copy hccn-aarch64 to remote hosts
+  copy:
+    src: "{{ resource_dir }}/tool/hccn/hccn-aarch64"
+    dest: "{{ ansible_env.HOME }}/"
+    mode: 0700
+    force: yes
+
+- name: copy hccn-x86_64 to remote hosts
+  copy:
+    src: "{{ resource_dir }}/tool/hccn/hccn-x86_64"
+    dest: "{{ ansible_env.HOME }}/"
+    mode: 0700
+    force: yes
+
+- name: hccn_tool configures IP address
+  shell: "{{ ansible_env.HOME }}/hccn-{{ ansible_architecture }} view"
+  register: hccn_result
+- set_fact:
+    hccn_dict: "{{hccn_dict|default({})|combine({item:{'hccn':hostvars[item]['hccn_result']['stdout']}})}}"
+  delegate_to: localhost
+  run_once: true
+  with_items: "{{ groups['master'] +  groups['worker'] }}"
+
+- name: output hccn file
+  copy:
+    content: "{{ hccn_dict }}"
+    dest:  "{{ tmp_file_path }}/hccn_dict.json"
+    mode: 0700
+    force: yes
+  delegate_to: localhost
+  run_once: true
