@@ -1,0 +1,1 @@
+from django_pyp8s.views.internal import IndexView, VersionView, MetricsView

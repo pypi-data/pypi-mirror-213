@@ -1,0 +1,60 @@
+Metadata-Version: 2.1
+Name: django-pyp8s
+Version: 1.0.0
+Summary: Django application that provides an interface to pyp8s metrics collector
+Home-page: https://github.com/pyp8s/django-pyp8s
+Author: Pavel Kim
+Author-email: hello@pavelkim.com
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Framework :: Django
+Classifier: Framework :: Django :: 4
+Classifier: Topic :: Internet :: WWW/HTTP
+Classifier: Topic :: Internet :: WWW/HTTP :: Dynamic Content
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pyp8s (>=3.2.0)
+Requires-Dist: Django (>=4.0)
+
+# django-pyp8s
+
+Django application for pyp8s — customisable prometheus exporter for your python application.
+
+## Installation
+
+```bash
+python3 -m pip install django-pyp8s
+```
+
+## Usage
+
+Examples: [https://github.com/pyp8s/examples](https://github.com/pyp8s/examples)
+
+### urls.py
+
+```python
+from django.urls import path, include
+
+urlpatterns += [
+    path('', include('django_pyp8s.urls')),
+]
+```
+
+### settings.py
+
+```python
+INSTALLED_APPS += [
+    django_pyp8s,
+]
+```
+
+## Reporting bugs
+
+Please, use GitHub issues.
+
+## Requesting new functionality
+
+Please, use GitHub issues.

@@ -1,0 +1,12 @@
+django_pyp8s/__init__.py,sha256=xv-Cm37ov5ohDKyg7IWcYdzqlaWRf1he49_rEfeJIR4,46
+django_pyp8s/_version.py,sha256=aRJS-byPNKw93FV9KIyScVPoClEuuvXOP8iYD6A_G0c,19
+django_pyp8s/apps.py,sha256=FRwuzf0Wjq-QD6tLKfbN_epe0fxsdMhbdL0pOyB_8Q8,155
+django_pyp8s/urls.py,sha256=_-TegpJfXnYLC97ELclMqnwtvpSa17JBk9Q39NXCnkQ,303
+django_pyp8s/migrations/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_pyp8s/views/__init__.py,sha256=3VAer9T57DWi4TF-K0eN6M8MN1XUmoRroaYaR5hSsNQ,75
+django_pyp8s/views/internal.py,sha256=SINNV9dQfc3oq13iJ6CU8EaeXeNmzzu8j_s9NIqLetc,555
+django_pyp8s-1.0.0.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+django_pyp8s-1.0.0.dist-info/METADATA,sha256=93776KHFggtHaP4Mg8IEK7yVsKIlB4Yo63hzD_vZuZQ,1351
+django_pyp8s-1.0.0.dist-info/WHEEL,sha256=a-zpFRIJzOq5QfuhBzbhiA1eHTzNCJn8OdRvhdNX0Rk,110
+django_pyp8s-1.0.0.dist-info/top_level.txt,sha256=G1NXhCeSf3h761af-hb-jJ9p7uQq0bmnOj28SftDJBw,13
+django_pyp8s-1.0.0.dist-info/RECORD,,
