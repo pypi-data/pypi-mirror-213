@@ -1,0 +1,3 @@
+[console_scripts]
+generate=mock_data_generator.driver:run
+
