@@ -1,0 +1,10 @@
+numpy
+re
+random
+itertools
+functools
+math
+time
+qiskit
+pennylane
+scikit-learn

@@ -1,0 +1,10 @@
+LICENSE.ttxt
+setup.py
+amin_qvm/QuantumComputer.py
+amin_qvm/__init__.py
+amin_qvm/functions.py
+amin_qvm.egg-info/PKG-INFO
+amin_qvm.egg-info/SOURCES.txt
+amin_qvm.egg-info/dependency_links.txt
+amin_qvm.egg-info/requires.txt
+amin_qvm.egg-info/top_level.txt
