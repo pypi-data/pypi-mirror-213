@@ -1,0 +1,9 @@
+git_semver_tags/__init__.py,sha256=q0HbZLKHb0Gmbf3PU9yxMxhp3TH5oCzAOtN1ZmFq0ZQ,81
+git_semver_tags/__main__.py,sha256=UiX5irC8NDa5xA9FM_1kYpb-47Ym8jmOd_G-G7WT7yU,881
+git_semver_tags/git.py,sha256=jR6XokTrApLefj2K-enibi0oN31QnaceTvvJ7CifqdQ,781
+git_semver_tags/version.py,sha256=B7uibGroTzAk1rj6btdGu34uq75OF88uCEDJselBccw,17216
+git_semver_tags-1.0.0.dist-info/LICENSE,sha256=HrhfyXIkWY2tGFK11kg7vPCqhgh5DcxleloqdhrpyMY,11558
+git_semver_tags-1.0.0.dist-info/METADATA,sha256=rv3L8yTybMh7JdzRse3_O-NnzXvj7x5q3ACBx8CBVDs,997
+git_semver_tags-1.0.0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+git_semver_tags-1.0.0.dist-info/top_level.txt,sha256=GaKLLTjpnuS-IN1wXxbDK-kt8uJ8C-2AnbxFa8IUSTg,16
+git_semver_tags-1.0.0.dist-info/RECORD,,
