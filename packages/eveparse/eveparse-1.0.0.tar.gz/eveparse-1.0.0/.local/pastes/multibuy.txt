@@ -1,0 +1,8 @@
+Atmospheric Gases	4	-	-
+Cadmium	1	-	-
+Caesium	8	-	-
+Chromium	5	-	-
+Cobalt	3	-	-
+Dysprosium	2	-	-
+Evaporite Deposits	1	-	-
+Total:			0

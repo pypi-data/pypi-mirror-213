@@ -1,0 +1,26 @@
+Nanite Repair Paste	Nanite Repair Paste	Cargo Hold	94
+Sisters Core Scanner Probe	Scanner Probe	Cargo Hold	8
+Small Transverse Bulkhead II	Rig Armor	Rig Slot	1
+Small Hyperspatial Velocity Optimizer II	Rig Navigation	Rig Slot	1
+Small Gravity Capacitor Upgrade I	Rig Scanning	Rig Slot	1
+Small Ancillary Armor Repairer	Ancillary Armor Repairer	Low Slot	1
+Sisters Core Probe Launcher	Scan Probe Launcher	High Slot	1
+Multispectrum Coating II	Armor Coating	Low Slot	1
+Hornet II	Combat Drone	Drone Bay	1
+Hornet II	Combat Drone	Drone Bay	1
+Hornet II	Combat Drone	Drone Bay	1
+Hornet II	Combat Drone	Drone Bay	1
+Hornet II	Combat Drone	Drone Bay	1
+Hobgoblin II	Combat Drone	Drone Bay	1
+Hobgoblin II	Combat Drone	Drone Bay	1
+Hobgoblin II	Combat Drone	Drone Bay	1
+Hobgoblin II	Combat Drone	Drone Bay	1
+Hobgoblin II	Combat Drone	Drone Bay	1
+Damage Control II	Damage Control	Low Slot	1
+Covert Ops Cloaking Device II	Cloaking Device	High Slot	1
+Acolyte II	Combat Drone	Drone Bay	1
+Acolyte II	Combat Drone	Drone Bay	1
+Acolyte II	Combat Drone	Drone Bay	1
+Acolyte II	Combat Drone	Drone Bay	1
+Acolyte II	Combat Drone	Drone Bay	1
+5MN Quad LiF Restrained Microwarpdrive	Propulsion Module	Medium Slot	1

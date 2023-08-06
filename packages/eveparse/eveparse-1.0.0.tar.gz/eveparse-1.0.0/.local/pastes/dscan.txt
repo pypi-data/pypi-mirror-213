@@ -1,0 +1,126 @@
+26574	Pithatis Assassin Wreck	Guristas Medium Wreck	-
+26573	Dire Pithi Imputor Wreck	Guristas Small Wreck	-
+26575	Pith Conquistador Wreck	Guristas Large Wreck	-
+26573	Dire Pithi Demolisher Wreck	Guristas Small Wreck	-
+26574	Pithum Abolisher Wreck	Guristas Medium Wreck	-
+26573	Pithi Plunderer Wreck	Guristas Small Wreck	-
+26575	Pith Usurper Wreck	Guristas Large Wreck	-
+26573	Dire Pithi Demolisher Wreck	Guristas Small Wreck	-
+26574	Pithatis Revolter Wreck	Guristas Medium Wreck	-
+26573	Pithi Plunderer Wreck	Guristas Small Wreck	-
+26573	Pithi Destructor Wreck	Guristas Small Wreck	-
+26575	Pith Conquistador Wreck	Guristas Large Wreck	-
+26575	Pith Usurper Wreck	Guristas Large Wreck	-
+26575	Pith Massacrer Wreck	Guristas Large Wreck	-
+26574	Pithatis Death Dealer Wreck	Guristas Medium Wreck	-
+26575	Pith Exterminator Wreck	Guristas Large Wreck	-
+26574	Dire Pithum Annihilator Wreck	Guristas Medium Wreck	-
+26574	Pithatis Revolter Wreck	Guristas Medium Wreck	-
+26575	Pith Conquistador Wreck	Guristas Large Wreck	-
+26574	Pithatis Revolter Wreck	Guristas Medium Wreck	-
+26575	Pith Usurper Wreck	Guristas Large Wreck	-
+26575	Pith Usurper Wreck	Guristas Large Wreck	-
+26574	Pithatis Death Dealer Wreck	Guristas Medium Wreck	-
+26575	Pith Massacrer Wreck	Guristas Large Wreck	-
+26574	Pithatis Assassin Wreck	Guristas Medium Wreck	-
+26574	Pithatis Executor Wreck	Guristas Medium Wreck	-
+26574	Pithatis Assassin Wreck	Guristas Medium Wreck	-
+26574	Pithatis Executor Wreck	Guristas Medium Wreck	-
+26574	Dire Pithum Inferno Wreck	Guristas Medium Wreck	-
+26573	Dire Pithi Plunderer Wreck	Guristas Small Wreck	-
+26574	Pithatis Death Dealer Wreck	Guristas Medium Wreck	-
+26574	Pithatis Assassin Wreck	Guristas Medium Wreck	-
+26574	Pithatis Enforcer Wreck	Guristas Medium Wreck	-
+26574	Pithatis Death Dealer Wreck	Guristas Medium Wreck	-
+26574	Pithatis Death Dealer Wreck	Guristas Medium Wreck	-
+26573	Dire Pithi Arrogator Wreck	Guristas Small Wreck	-
+26574	Dire Pithum Nullifier Wreck	Guristas Medium Wreck	-
+26574	Pithatis Revolter Wreck	Guristas Medium Wreck	-
+26575	Pith Destroyer Wreck	Guristas Large Wreck	-
+26574	Pithatis Revolter Wreck	Guristas Medium Wreck	-
+26575	Pith Massacrer Wreck	Guristas Large Wreck	-
+26573	Dire Pithi Arrogator Wreck	Guristas Small Wreck	-
+26575	Pith Usurper Wreck	Guristas Large Wreck	-
+26575	Pith Massacrer Wreck	Guristas Large Wreck	-
+26574	Dire Pithum Abolisher Wreck	Guristas Medium Wreck	-
+26573	Dire Pithi Destructor Wreck	Guristas Small Wreck	-
+26575	Pith Conquistador Wreck	Guristas Large Wreck	-
+26575	Pith Destroyer Wreck	Guristas Large Wreck	-
+26573	Dire Pithi Infiltrator Wreck	Guristas Small Wreck	-
+26575	Pith Usurper Wreck	Guristas Large Wreck	-
+26574	Pithum Abolisher Wreck	Guristas Medium Wreck	-
+26575	Pith Usurper Wreck	Guristas Large Wreck	-
+26575	Pith Massacrer Wreck	Guristas Large Wreck	-
+26573	Pithi Demolisher Wreck	Guristas Small Wreck	-
+26574	Dire Pithum Inferno Wreck	Guristas Medium Wreck	-
+26573	Dire Pithi Plunderer Wreck	Guristas Small Wreck	-
+23	Cargo Container	Cargo Container	-
+26574	Dire Pithum Killer Wreck	Guristas Medium Wreck	-
+26574	Pithatis Assassin Wreck	Guristas Medium Wreck	-
+26575	Pith Massacrer Wreck	Guristas Large Wreck	-
+26574	Pithatis Executor Wreck	Guristas Medium Wreck	-
+23	Cargo Container	Cargo Container	-
+26573	Dire Pithi Destructor Wreck	Guristas Small Wreck	-
+26575	Pith Massacrer Wreck	Guristas Large Wreck	-
+26574	Dire Pithum Inferno Wreck	Guristas Medium Wreck	-
+26574	Dire Pithum Abolisher Wreck	Guristas Medium Wreck	-
+23	Cargo Container	Cargo Container	-
+26573	Dire Pithi Demolisher Wreck	Guristas Small Wreck	-
+26575	Pith Massacrer Wreck	Guristas Large Wreck	-
+26573	Pithior Supremacist Wreck	Guristas Small Wreck	-
+26573	Pithi Plunderer Wreck	Guristas Small Wreck	-
+26575	Pith Massacrer Wreck	Guristas Large Wreck	-
+26573	Pithior Supremacist Wreck	Guristas Small Wreck	-
+26573	Dire Pithi Plunderer Wreck	Guristas Small Wreck	-
+26573	Pithi Plunderer Wreck	Guristas Small Wreck	-
+26575	Pith Usurper Wreck	Guristas Large Wreck	-
+26574	Dire Pithum Murderer Wreck	Guristas Medium Wreck	-
+26573	Pithi Wrecker Wreck	Guristas Small Wreck	-
+26573	Pithior Supremacist Wreck	Guristas Small Wreck	-
+26573	Pithi Wrecker Wreck	Guristas Small Wreck	-
+26574	Dire Pithum Eraser Wreck	Guristas Medium Wreck	-
+26573	Pithi Destructor Wreck	Guristas Small Wreck	-
+26573	Pithi Plunderer Wreck	Guristas Small Wreck	-
+26574	Dire Pithum Mortifier Wreck	Guristas Medium Wreck	-
+26575	Pith Massacrer Wreck	Guristas Large Wreck	-
+26575	Pith Usurper Wreck	Guristas Large Wreck	-
+26575	Pith Massacrer Wreck	Guristas Large Wreck	-
+26574	Pithum Eraser Wreck	Guristas Medium Wreck	-
+26575	Pith Usurper Wreck	Guristas Large Wreck	-
+26575	Pith Usurper Wreck	Guristas Large Wreck	-
+26574	Pithatis Assaulter Wreck	Guristas Medium Wreck	-
+26574	Pithatis Revolter Wreck	Guristas Medium Wreck	-
+26574	Pithum Abolisher Wreck	Guristas Medium Wreck	-
+26573	Dire Pithi Destructor Wreck	Guristas Small Wreck	-
+26574	Pithatis Death Dealer Wreck	Guristas Medium Wreck	-
+26575	Pith Usurper Wreck	Guristas Large Wreck	-
+26575	Pith Usurper Wreck	Guristas Large Wreck	-
+26573	Dire Pithi Arrogator Wreck	Guristas Small Wreck	-
+26575	Pith Conquistador Wreck	Guristas Large Wreck	-
+26575	Pith Usurper Wreck	Guristas Large Wreck	-
+26575	Pith Usurper Wreck	Guristas Large Wreck	-
+26573	Dire Pithi Invader Wreck	Guristas Small Wreck	-
+30486	Scanner Probe	Sisters Combat Scanner Probe	-
+26574	Pithum Eraser Wreck	Guristas Medium Wreck	-
+30486	Scanner Probe	Sisters Combat Scanner Probe	-
+26574	Pithatis Enforcer Wreck	Guristas Medium Wreck	-
+26575	Pith Usurper Wreck	Guristas Large Wreck	-
+35683	stuck in the past	Hecate	48 km
+670	Shadowgard's Capsule	Capsule	49 km
+29627	MC6O-F	Stargate (Caldari Constellation)	49 km
+12044	10mn Railgun A.Frig	Enyo	50 km
+3756	Cheetodust	Gnosis	52 km
+29340	Ready ONI	Osprey Navy Issue	52 km
+29340	mattyou's Osprey Navy Issue	Osprey Navy Issue	54 km
+22464	Rock Lobster	Flycatcher	54 km
+29340	Battle Turkey	Osprey Navy Issue	58 km
+631	I Can Healz Now Yes?	Scythe	60 km
+14	8TPX-N V - Moon 1	Moon	13.8 AU
+32226	Territorial Claim Unit	Territorial Claim Unit	13.8 AU
+32458	Infrastructure Hub	Infrastructure Hub	13.8 AU
+2233	Customs Office (8TPX-N V)	Customs Office	13.8 AU
+11	8TPX-N V	Planet (Temperate)	13.8 AU
+14	8TPX-N V - Moon 2	Moon	13.8 AU
+11	8TPX-N IV	Planet (Temperate)	13.9 AU
+2233	Customs Office (8TPX-N IV)	Customs Office	13.9 AU
+14	8TPX-N IV - Moon 1	Moon	13.9 AU
