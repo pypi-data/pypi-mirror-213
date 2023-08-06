@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+setup_py_upgrade.py
+setup_py_upgrade.egg-info/PKG-INFO
+setup_py_upgrade.egg-info/SOURCES.txt
+setup_py_upgrade.egg-info/dependency_links.txt
+setup_py_upgrade.egg-info/entry_points.txt
+setup_py_upgrade.egg-info/top_level.txt
