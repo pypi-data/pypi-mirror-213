@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "nanochain"
+version = "0.1"
+
+[options]
+install_requires = [
+    "openai",
+    "demjson3",
+    "tiktoken",
+    "chromadb",
+    "PyPDF2",
+]
