@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: zy-predict-tool
+Version: 0.0.6
+Summary: My package description
+Author-email: rainbow <xchloading@sina.com>
+License: MPL-2.0 and MIT and BSD-3-Clause
+Requires-Python: >=3.8
+Description-Content-Type: text/x-rst
+License-File: LICENSE.txt
+Requires-Dist: requests
+Requires-Dist: importlib-metadata ; python_version < "3.10"
+
+## zy-predict-tool
