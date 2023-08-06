@@ -1,0 +1,19 @@
+.vscode
+.pytest_cache
+__pycache__
+
+.mypy_cache
+
+test.py
+
+/htmlcov
+.coverage
+
+# Setuptools distribution folder.
+/dist/
+/build/
+# Python egg metadata, regenerated from source files by setuptools.
+/*.egg-info
+/*.egg
+.eggs
+.tox
