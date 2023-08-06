@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: wemp
+Version: 1.0.0
+Summary: Watcher tool
+Home-page: https://github.com/shouxieai
+Author: ShouXie AI
+Author-email: djw.hope@gmail.com
+Platform: linux
+Requires-Python: >=3.6
+Requires-Dist: requests
+Requires-Dist: tqdm
+Requires-Dist: urllib3
+
