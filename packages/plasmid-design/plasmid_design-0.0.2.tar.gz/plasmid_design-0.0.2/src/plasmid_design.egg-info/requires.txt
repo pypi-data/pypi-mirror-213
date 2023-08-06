@@ -1,0 +1,8 @@
+dnachisel
+fire
+joblib
+natsort
+python-slugify
+pandas
+pygsheets
+pyyaml

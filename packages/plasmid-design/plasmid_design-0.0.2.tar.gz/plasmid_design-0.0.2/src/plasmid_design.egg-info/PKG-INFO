@@ -1,0 +1,84 @@
+Metadata-Version: 2.1
+Name: plasmid-design
+Version: 0.0.2
+Summary: Automated plasmid design from speadsheet specification
+Author: David Feldman
+License: Copyright (c) 2022 David Feldman
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+Project-URL: Homepage, https://github.com/feldman4/plasmid-design
+Project-URL: Bug Tracker, https://github.com/feldman4/plasmid-design/issues
+Keywords: plasmid,vector,design,DNA
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
+## Installation
+`pip install plasmid_design`
+
+## Example
+In a new directory, save the following to `config.yaml`, then run `plasmid_design run`. The configuration below refers to [this spreadsheet](https://docs.google.com/spreadsheets/d/1QWFQUlIJYERJ6zY-THD9uNagD2a_He7RUfcOeF2eEKM/edit#gid=52604569).
+
+```yaml
+tables:
+  # vector definitions
+  templates: 
+    table: drive_key:templates
+    # selects just these rows
+    gate: experiment == "example"
+    drive_key: 1QWFQUlIJYERJ6zY-THD9uNagD2a_He7RUfcOeF2eEKM
+
+  # DNA and protein part definitions
+  parts: 
+    table: drive_key:parts
+    drive_key: 1QWFQUlIJYERJ6zY-THD9uNagD2a_He7RUfcOeF2eEKM
+  
+  # these DNA features will automatically be annotated
+  features: 
+    table: drive_key:features
+    drive_key: 1QWFQUlIJYERJ6zY-THD9uNagD2a_He7RUfcOeF2eEKM
+  
+  # these restriction sites will be avoided
+  restriction_enzymes: 
+    table: drive_key:enzymes
+    # selects just these rows
+    gate: pT02_BsaI == "x"
+    drive_key: 1QWFQUlIJYERJ6zY-THD9uNagD2a_He7RUfcOeF2eEKM
+```
+
+The `run` command prints estimated cost and complexity scores. the following files will be generated.
+
+## Configuration
+Tables can be sourced in different ways.
+- local csv
+    - `table: /path/to/csv`
+- private google sheets
+    - `table: "drive:{spreadsheet name}/{sheet name}"`
+- public google sheets
+    - `table: "drive_key:{sheet_name}"`
+    - `drive_key: {drive_key}`
+
+For the public option, first enable link access in google sheets, then copy `drive_key` from the URL: `https://docs.google.com/spreadsheets/d/{drive_key}/`.
+
+## Changing the vector backbone
+The DNA sequences upstream and downstream of the designed gene are identified by having "up" or "down" in the part name. To change the vector backbone, define new upstream and downstream DNA parts, then change the template column in the templates sheet accordingly.
+
