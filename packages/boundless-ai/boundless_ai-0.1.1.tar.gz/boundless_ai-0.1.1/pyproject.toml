@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "boundless-ai"
+version = "0.1.1"
+description = "Python SDK for Boundless AI."
+authors = ["AI Bootstrapper <aibootstrapper@gmail.com>"]
+license = "MIT"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+requests = "^2.26.0"
+ratelimiter = "^1.2.0.post0"
+pydantic = "^1.10.9"
+
+[tool.poetry.dev-dependencies]
+pytest = "^6.2.5"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
