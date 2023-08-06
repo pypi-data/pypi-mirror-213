@@ -1,0 +1,19 @@
+test:
+  imports:
+    - cmomy
+  commands:
+    - pip check
+  requires:
+    - pip
+
+about:
+  home: https://github.com/usnistgov/cmomy
+  summary: Central (co)moment calculation/manipulation
+  description: |
+    Central (co)moment calculation/manipulation
+  license: NIST-PD
+  license_file: LICENSE
+
+extra:
+  recipe-maintainers:
+    - usnistgov
