@@ -1,0 +1,7 @@
+aiobtclientapi
+data
+dist
+docs
+tests
+torrents
+venv

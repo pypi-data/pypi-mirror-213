@@ -1,0 +1,62 @@
+[project]
+name = "aiobtclientapi"
+description = "Asynchronous high-level communication with BitTorrent clients"
+readme = "README.rst"
+license = {text = "GPL-3.0-or-later"}
+authors = [
+  { name="plotski", email="plotski@example.org" },
+]
+dynamic = ["version"]  # Get version from PROJECT/__version__
+classifiers = [
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)",
+]
+requires-python = ">=3.8"
+dependencies = [
+    "aiobtclientrpc==5.*",
+    "async-timeout==4.*",
+    "httpx==0.*",
+    "torf==4.*",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest",
+    "pytest-asyncio",
+    "pytest-mock",
+
+    "tox",
+
+    "coverage",
+    "pytest-cov",
+
+    "ruff",
+    "flake8",
+    "isort",
+]
+
+[project.scripts]
+btclient = "aiobtclientapi.cli:run_sync"
+
+[project.urls]
+Repository = "https://codeberg.org/plotski/aiobtclientapi"
+Documentation = "https://aiobtclientapi.readthedocs.io"
+"Bug Tracker" = "https://codeberg.org/plotski/aiobtclientapi/issues"
+Changelog = "https://codeberg.org/plotski/aiobtclientapi/raw/branch/master/NEWS"
+
+
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+# For some unknown reason, we need to specify explicity to scan the project
+# directory with default parameters or setuptools gets confused about
+# directories like "docs" or "venv".
+[tool.setuptools.packages]
+find = {}
+
+[tool.setuptools.dynamic]
+version = {attr = "aiobtclientapi.__version__"}
