@@ -1,0 +1,9 @@
+LICENSE
+pyproject.toml
+src/cached_file_fetcher/__init__.py
+src/cached_file_fetcher.egg-info/PKG-INFO
+src/cached_file_fetcher.egg-info/SOURCES.txt
+src/cached_file_fetcher.egg-info/dependency_links.txt
+src/cached_file_fetcher.egg-info/requires.txt
+src/cached_file_fetcher.egg-info/top_level.txt
+test/test_file_fetcher.py
