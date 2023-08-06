@@ -1,0 +1,12 @@
+tab/__init__.py,sha256=9hdXHABrVpkbpjZgUft39kOFL2xSGeG4GEua0Hmelus,785
+tab/cli.py,sha256=50_TZPsmB6fhv4kv6I3cZBIXUaDjKiA9J3AL43UqzcY,3716
+tab/exceptions.py,sha256=Srux-BY7YY4vFfo_5lmE05RrQLt6SBNRuUzJhk8jhN0,871
+tab/oauth.py,sha256=9Y81e9WbWmjFl84i2he6C7vn_bmWJwDQ1u8U7zI8pqM,5045
+tab/util.py,sha256=oev3lsGSRhd3LQm82GVvWMSi073O1TxL6sRCOCWf7zg,1004
+tabular/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tabular/loader.py,sha256=bAXbDp0YY_tW8yvv_8LoFKNu7A6A0Ph-H7vRcoejQjE,4955
+tabulario-0.3.1.dist-info/LICENSE,sha256=z8d0m5b2O9McPEK1xHG_dWgUBT6EfBDz6wA0F7xSPTA,11358
+tabulario-0.3.1.dist-info/METADATA,sha256=XWF2xqE7X-Jk-wkp73kt3zp4Ej4ojjHTVqayHYBlcw8,6642
+tabulario-0.3.1.dist-info/WHEEL,sha256=Zb28QaM1gQi8f4VCBhsUklF61CTlNYfs9YAZn-TOGFk,88
+tabulario-0.3.1.dist-info/entry_points.txt,sha256=ZMjEaLpseKBxtEYI9-gXZJJKPXa67kmWlfSQg1hbc9E,35
+tabulario-0.3.1.dist-info/RECORD,,
