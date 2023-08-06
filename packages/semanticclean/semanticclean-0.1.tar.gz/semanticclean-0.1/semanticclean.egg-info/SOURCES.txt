@@ -1,0 +1,8 @@
+setup.py
+semanticclean/__init__.py
+semanticclean/label.py
+semanticclean.egg-info/PKG-INFO
+semanticclean.egg-info/SOURCES.txt
+semanticclean.egg-info/dependency_links.txt
+semanticclean.egg-info/not-zip-safe
+semanticclean.egg-info/top_level.txt
