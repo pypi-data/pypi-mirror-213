@@ -1,0 +1,8 @@
+README.md
+setup.py
+Python_dictionaries_deep_merge/Python_dictionaries_deep_merge.py
+Python_dictionaries_deep_merge/__init__.py
+Python_dictionaries_deep_merge.egg-info/PKG-INFO
+Python_dictionaries_deep_merge.egg-info/SOURCES.txt
+Python_dictionaries_deep_merge.egg-info/dependency_links.txt
+Python_dictionaries_deep_merge.egg-info/top_level.txt
