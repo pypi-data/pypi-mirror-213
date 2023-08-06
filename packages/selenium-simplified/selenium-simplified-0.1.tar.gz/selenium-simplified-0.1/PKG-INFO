@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: selenium-simplified
+Version: 0.1
+Summary: a better approach to do automation using simplified python on chrome browser
+Home-page: https://github.com/raajrajnish/SeleniumSimplified.git
+Author: rajnish kumar
+Author-email: raajrajnish@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+
+# SeleniumSimplified
+a better approach to do automation using selenium python on chrome browser
+
+
+https://www.freecodecamp.org/news/how-to-create-and-upload-your-first-python-package-to-pypi/
