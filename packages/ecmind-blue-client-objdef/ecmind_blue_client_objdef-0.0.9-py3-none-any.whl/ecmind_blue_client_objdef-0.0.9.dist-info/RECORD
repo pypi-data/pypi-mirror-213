@@ -1,0 +1,14 @@
+ecmind_blue_client_objdef/__init__.py,sha256=gbJGSY7f-K1wIx-biVvfgdp4CDtg-Mu_3lhuME8jxww,292
+ecmind_blue_client_objdef/addons.py,sha256=_7ojmRKDivHoo5iOXALsiCN_B5LDtXp8rhKojEhUh1U,2278
+ecmind_blue_client_objdef/cabinet.py,sha256=Is3H9rBUvLAgKzVoWyDO3VKfjcvXH7nvACEmhF6LACc,421
+ecmind_blue_client_objdef/field.py,sha256=-80VYoSZA3XKgITdsUTHC4zHJi7EHeNkq7u7EgW2A00,864
+ecmind_blue_client_objdef/field_types.py,sha256=aSjVKlXwqFQ0MBoHAulLEVlZFOGkOQYBFt9w7zrlopg,326
+ecmind_blue_client_objdef/object.py,sha256=BN4ZgCfHKo2jP7FuEpAUyAv9E_JQrTw-mryOy9mEYEM,482
+ecmind_blue_client_objdef/object_definition.py,sha256=SpMvQSfzufLcfj4ItjrJLm9j3ulWnHo__9Yn-i4HDmo,9247
+ecmind_blue_client_objdef/table_column.py,sha256=LqxZwTzGIqDR_WTyZX7Q_B-3TPSp7ouilHcXYja36_0,653
+ecmind_blue_client_objdef/table_field.py,sha256=3jFBaKYo6c5OC4uaA1uHj3hMTf8WD8Q9FGvvoGwx9q0,607
+ecmind_blue_client_objdef-0.0.9.dist-info/LICENSE,sha256=4VZH9W_xneLxHFOk8fYwE5oHA6mhRs4xpByMm4anJ5Q,1069
+ecmind_blue_client_objdef-0.0.9.dist-info/METADATA,sha256=x2MOL6aD_fzuyaVPMQnnACXFyoZKfaqzkbfXJSEX2Lw,1576
+ecmind_blue_client_objdef-0.0.9.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+ecmind_blue_client_objdef-0.0.9.dist-info/top_level.txt,sha256=biRqsz_P03O7-45gx0HEhaVTUl1SPy6COOeleqX3J5c,26
+ecmind_blue_client_objdef-0.0.9.dist-info/RECORD,,
