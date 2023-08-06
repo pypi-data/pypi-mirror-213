@@ -1,0 +1,13 @@
+LICENSE.txt
+README.rst
+setup.py
+src/omero/plugins/democleanup.py
+src/omero_demo_cleanup/__init__.py
+src/omero_demo_cleanup/cli.py
+src/omero_demo_cleanup/library.py
+src/omero_demo_cleanup.egg-info/PKG-INFO
+src/omero_demo_cleanup.egg-info/SOURCES.txt
+src/omero_demo_cleanup.egg-info/dependency_links.txt
+src/omero_demo_cleanup.egg-info/requires.txt
+src/omero_demo_cleanup.egg-info/top_level.txt
+src/omero_demo_cleanup.egg-info/zip-safe
