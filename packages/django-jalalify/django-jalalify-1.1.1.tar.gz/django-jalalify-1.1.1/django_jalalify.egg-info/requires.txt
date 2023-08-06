@@ -1,0 +1,5 @@
+django>=3.0
+djangorestframework>=3.11.0
+django-filter>=2.3.0
+khayyam>=3.0.17
+pytz>=2023.3
