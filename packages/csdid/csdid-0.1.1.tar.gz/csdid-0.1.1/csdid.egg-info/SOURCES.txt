@@ -1,0 +1,8 @@
+LICENSE
+setup.py
+csdid/__init__.py
+csdid/att_gt.py
+csdid.egg-info/PKG-INFO
+csdid.egg-info/SOURCES.txt
+csdid.egg-info/dependency_links.txt
+csdid.egg-info/top_level.txt
