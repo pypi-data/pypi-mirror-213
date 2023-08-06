@@ -1,0 +1,1 @@
+SELECT * FROM `ssm_commdep_projects_activities` WHERE project_id = {project_id}
