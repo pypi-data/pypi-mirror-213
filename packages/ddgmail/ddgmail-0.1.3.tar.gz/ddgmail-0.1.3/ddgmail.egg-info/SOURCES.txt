@@ -1,0 +1,13 @@
+.gitignore
+.pylintrc
+LICENSE
+Makefile
+build_and_publish.sh
+ddgmail.py
+setup.py
+ddgmail.egg-info/PKG-INFO
+ddgmail.egg-info/SOURCES.txt
+ddgmail.egg-info/dependency_links.txt
+ddgmail.egg-info/entry_points.txt
+ddgmail.egg-info/requires.txt
+ddgmail.egg-info/top_level.txt
