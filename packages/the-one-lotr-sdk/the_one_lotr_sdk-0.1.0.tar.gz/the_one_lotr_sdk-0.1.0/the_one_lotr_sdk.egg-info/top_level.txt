@@ -1,0 +1,2 @@
+lotr_sdk
+tests

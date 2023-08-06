@@ -1,0 +1,11 @@
+README.md
+setup.py
+lotr_sdk/__init__.py
+lotr_sdk/sdk.py
+tests/__init__.py
+tests/test_sdk.py
+the_one_lotr_sdk.egg-info/PKG-INFO
+the_one_lotr_sdk.egg-info/SOURCES.txt
+the_one_lotr_sdk.egg-info/dependency_links.txt
+the_one_lotr_sdk.egg-info/requires.txt
+the_one_lotr_sdk.egg-info/top_level.txt
