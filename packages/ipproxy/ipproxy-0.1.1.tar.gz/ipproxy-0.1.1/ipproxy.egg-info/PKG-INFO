@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: ipproxy
+Version: 0.1.1
+Summary: ipproxy is a tool for obtaining and managing proxy IPs in Python. It can help crawler programs hide their real IP addresses when accessing target websites, thereby avoiding being blocked or restricted.
+Home-page: https://example.com/ipproxy
+Author: sega
+Author-email: yourname@example.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
