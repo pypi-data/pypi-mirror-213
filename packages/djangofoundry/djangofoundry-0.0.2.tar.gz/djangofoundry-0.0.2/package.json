@@ -1,0 +1,34 @@
+{
+  "name": "django-foundry",
+  "version": "0.0.1",
+  "description": "A framework to be used alongside django for jumpstarting a new project.",
+  "main": "index.js",
+  "scripts": {
+    "test": "python manage.py test",
+    "pylint": "pylint src",
+    "lint": "find src/ -name '*.py' -exec yapf --diff {} +",
+    "lint:fix": "find src/ -name '*.py' -exec yapf --in-place {} +",
+    "lint:check": "find src/ -name '*.py' -exec echo 'Checking:' {} ';' -exec yapf --diff {} +",
+    "black:check": "black --check src",
+    "black:diff": "black --diff src"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/avranu/Django-Foundry.git"
+  },
+  "keywords": [
+    "django",
+    "framework",
+    "boilerplate",
+    "quickstart",
+    "python",
+    "web",
+    "framework"
+  ],
+  "author": "Jess Mann",
+  "license": "BSD-3-Clause",
+  "bugs": {
+    "url": "https://github.com/avranu/Django-Foundry/issues"
+  },
+  "homepage": "https://github.com/avranu/Django-Foundry#readme"
+}
