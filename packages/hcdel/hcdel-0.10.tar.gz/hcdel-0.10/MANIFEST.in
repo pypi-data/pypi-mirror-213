@@ -1,0 +1,12 @@
+include hcdel/requirements.txt
+include hcdel/thirdparty.json
+include hcdel/README.MD
+include hcdel/movefile64.exe
+include hcdel/movefile64a.exe
+include hcdel/pendmoves.exe
+include hcdel/pendmoves64.exe
+include hcdel/pendmoves64a.exe
+include hcdel/Eula.txt
+include hcdel/hcdel.cmd
+include hcdel/hcdel.py
+include hcdel/movefile.exe
