@@ -1,0 +1,7 @@
+requests
+lxml
+bs4
+aiohttp
+cloudscraper
+selenium
+urllib3
