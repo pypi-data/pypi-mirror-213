@@ -1,0 +1,8 @@
+README.md
+setup.py
+utils-pandas/__init__.py
+utils-pandas/convert.py
+utils_pandas.egg-info/PKG-INFO
+utils_pandas.egg-info/SOURCES.txt
+utils_pandas.egg-info/dependency_links.txt
+utils_pandas.egg-info/top_level.txt
