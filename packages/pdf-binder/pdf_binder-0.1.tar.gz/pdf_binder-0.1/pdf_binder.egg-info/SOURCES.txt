@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+pdf_binder/__init__.py
+pdf_binder/pdf_to_signatures.py
+pdf_binder.egg-info/PKG-INFO
+pdf_binder.egg-info/SOURCES.txt
+pdf_binder.egg-info/dependency_links.txt
+pdf_binder.egg-info/entry_points.txt
+pdf_binder.egg-info/requires.txt
+pdf_binder.egg-info/top_level.txt
