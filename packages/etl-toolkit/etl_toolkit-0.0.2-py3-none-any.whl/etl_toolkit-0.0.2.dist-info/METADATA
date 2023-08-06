@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: etl-toolkit
+Version: 0.0.2
+Summary: ETL CLI Toolkit. Performs common ETL tasks for standard industry and custom files in various formats.
+License: MIT
+Keywords: etl,file load,interfaces,pershing
+Author: eithery
+Author-email: eithery.pro@gmail.com
+Requires-Python: >=3.10,<4.0
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: click (>=8.1,<8.2)
+Requires-Dist: pandas (>=1.5,<1.6)
+Requires-Dist: pyodbc (>=4.0,<4.1)
+Requires-Dist: python-dotenv (>=1.0,<1.1)
+Requires-Dist: pyyaml (>=6.0,<6.1)
+Requires-Dist: sqlalchemy (>=1.4,<1.5)
+Description-Content-Type: text/markdown
+
+# ETL CLI Toolkit
+
+Performs import/export and other ETL operations for standard industry and custom files in various formats.
+
