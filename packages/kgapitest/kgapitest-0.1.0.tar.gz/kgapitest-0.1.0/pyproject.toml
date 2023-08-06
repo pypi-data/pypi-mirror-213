@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "kgapitest"
+version = "0.1.0"
+description = ""
+authors = ["Farid Seifi <faridsei@med.umich.edu>"]
+readme = "README.md"
+packages = [{include = "kgapitest", from = "src"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+fastapi = "^0.97.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+
+
