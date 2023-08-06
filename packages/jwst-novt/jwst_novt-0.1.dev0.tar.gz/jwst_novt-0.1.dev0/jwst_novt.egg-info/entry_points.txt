@@ -1,0 +1,2 @@
+[console_scripts]
+novt = jwst_novt.run_notebook:_main
