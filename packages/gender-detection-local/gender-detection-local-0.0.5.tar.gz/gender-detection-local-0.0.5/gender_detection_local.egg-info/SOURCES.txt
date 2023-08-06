@@ -1,0 +1,11 @@
+README.md
+pyproject.toml
+setup.py
+CirclesGenderDetectionPython/__init__.py
+CirclesGenderDetectionPython/gender_detection
+CirclesGenderDetectionPython/gender_detection.py
+CirclesGenderDetectionPython/main.py
+gender_detection_local.egg-info/PKG-INFO
+gender_detection_local.egg-info/SOURCES.txt
+gender_detection_local.egg-info/dependency_links.txt
+gender_detection_local.egg-info/top_level.txt
