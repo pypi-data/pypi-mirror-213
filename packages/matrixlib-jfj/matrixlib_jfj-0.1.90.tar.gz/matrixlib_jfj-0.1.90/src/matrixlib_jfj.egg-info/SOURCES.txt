@@ -1,0 +1,15 @@
+LICENSE.md
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+src/matrixlib_jfj/__init__.py
+src/matrixlib_jfj/__main__.py
+src/matrixlib_jfj/matrix.py
+src/matrixlib_jfj/utils.py
+src/matrixlib_jfj/vector.py
+src/matrixlib_jfj.egg-info/PKG-INFO
+src/matrixlib_jfj.egg-info/SOURCES.txt
+src/matrixlib_jfj.egg-info/dependency_links.txt
+src/matrixlib_jfj.egg-info/requires.txt
+src/matrixlib_jfj.egg-info/top_level.txt
