@@ -1,0 +1,3 @@
+[console_scripts]
+ts=tool_server_generator:tool_server
+
