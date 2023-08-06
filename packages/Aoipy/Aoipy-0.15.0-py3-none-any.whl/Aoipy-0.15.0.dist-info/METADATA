@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: Aoipy
+Version: 0.15.0
+Summary: Aoi.py is the best python string-based package for Discord bot devs
+Home-page: UNKNOWN
+Author: Jade
+License: MIT
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: CharmCord
+
+DISCONTINUED! GO SEE 'CharmCord' for newest updates!
+
