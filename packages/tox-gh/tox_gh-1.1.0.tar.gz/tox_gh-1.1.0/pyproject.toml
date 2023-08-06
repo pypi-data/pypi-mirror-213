@@ -1,0 +1,31 @@
+[build-system]
+build-backend = 'setuptools.build_meta'
+requires = [
+  "setuptools>=67.6.1",
+  "setuptools-scm>=7.1",
+]
+
+[tool.setuptools_scm]
+write_to = "src/tox_gh/version.py"
+
+[tool.black]
+line-length = 120
+
+[tool.isort]
+line_length = 120
+profile = "black"
+known_first_party = ["tox_gh"]
+
+[tool.flake8]
+max-complexity = 22
+max-line-length = 120
+unused-arguments-ignore-abstract-functions = true
+noqa-require-code = true
+dictionaries = ["en_US", "python", "technical", "django"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[tool.mypy]
+python_version = "3.9"
+strict = true
