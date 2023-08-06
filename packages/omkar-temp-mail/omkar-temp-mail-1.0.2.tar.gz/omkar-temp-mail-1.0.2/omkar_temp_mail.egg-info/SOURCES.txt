@@ -1,0 +1,12 @@
+AUTHORS
+LICENSE
+README.rst
+setup.cfg
+setup.py
+omkar-temp-mail/__init__.py
+omkar-temp-mail/temp_mail.py
+omkar_temp_mail.egg-info/PKG-INFO
+omkar_temp_mail.egg-info/SOURCES.txt
+omkar_temp_mail.egg-info/dependency_links.txt
+omkar_temp_mail.egg-info/requires.txt
+omkar_temp_mail.egg-info/top_level.txt
