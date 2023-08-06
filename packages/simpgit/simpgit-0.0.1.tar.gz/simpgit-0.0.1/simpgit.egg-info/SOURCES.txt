@@ -1,0 +1,16 @@
+.gitattributes
+.gitignore
+README.md
+config.py
+pyproject.toml
+requirements.txt
+gitllm/__init__.py
+gitllm/cli.py
+gitllm/git.py
+simpgit.egg-info/PKG-INFO
+simpgit.egg-info/SOURCES.txt
+simpgit.egg-info/dependency_links.txt
+simpgit.egg-info/entry_points.txt
+simpgit.egg-info/requires.txt
+simpgit.egg-info/top_level.txt
+tests/__init__.py
