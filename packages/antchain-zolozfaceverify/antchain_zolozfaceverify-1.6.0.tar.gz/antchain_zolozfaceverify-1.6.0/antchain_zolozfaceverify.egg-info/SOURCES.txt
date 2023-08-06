@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README-CN.md
+README.md
+setup.cfg
+setup.py
+antchain_sdk_zolozfaceverify/__init__.py
+antchain_sdk_zolozfaceverify/client.py
+antchain_sdk_zolozfaceverify/models.py
+antchain_zolozfaceverify.egg-info/PKG-INFO
+antchain_zolozfaceverify.egg-info/SOURCES.txt
+antchain_zolozfaceverify.egg-info/dependency_links.txt
+antchain_zolozfaceverify.egg-info/requires.txt
+antchain_zolozfaceverify.egg-info/top_level.txt
