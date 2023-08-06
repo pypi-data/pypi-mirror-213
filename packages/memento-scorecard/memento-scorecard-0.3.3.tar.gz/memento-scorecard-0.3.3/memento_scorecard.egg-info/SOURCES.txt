@@ -1,0 +1,13 @@
+LICENSE
+README.md
+setup.py
+memento/__init__.py
+memento/bojack.py
+memento/diane.py
+memento/mr_peanutbutter.py
+memento/princess_carolyn.py
+memento/todd.py
+memento_scorecard.egg-info/PKG-INFO
+memento_scorecard.egg-info/SOURCES.txt
+memento_scorecard.egg-info/dependency_links.txt
+memento_scorecard.egg-info/top_level.txt
