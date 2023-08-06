@@ -1,0 +1,2 @@
+[console_scripts]
+aioarp = aioarp._cli:app
