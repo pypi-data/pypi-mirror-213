@@ -1,0 +1,10 @@
+deap
+global_chem_extensions
+mcts
+mcts-solver
+pandas
+rdkit-pypi
+
+[classification]
+chem_classification
+transformers
