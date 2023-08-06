@@ -1,0 +1,73 @@
+Metadata-Version: 2.1
+Name: conversion-units
+Version: 0.0.2
+Summary: unified package contening collection of method to convert values from one unit to another. It can be a Distance, a Time, a Temperature, a Mass . . .etc
+Home-page: https://github.com/Brice-KENGNI-ZANGUIM/conversion-units
+Author: Brice KENGNI ZANGUIM
+Author-email: kenzabri2@yahoo.com
+License: MIT
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Operating System :: OS Independent
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: Natural Language :: English
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# conversion-units
+This package provide a unified collection of method to **convert values from one unit to another.** 
+Yet i start with only 4 physical size namely <strong> distance, time, mass and temperature </strong>
+
+## 1. Installation
+
+```python
+pip install conversion_units
+```
+
+## 2. Availables dimensions
+<ul>
+    <li> Mass   </li>
+    <li> Distance   </li>
+    <li> Time   </li>
+    <li> Temperature   </li>
+</ul>
+
+## 3. Import
+
+```python
+
+from conversion_units import mass
+from conversion_units import time
+from conversion_units import distance
+from conversion_units import temperature
+
+```
+
+## 4. Usage
+a - <strong> Temperature conversion </strong>
+```python
+
+from conversion_units import temperature
+print(temperature.kelvin_to_celcius( 0. ) )
+print( temperature.kelvin_to_rankine(62))
+```
+b - <strong> distance conversion </strong>
+
+```python
+
+from conversion_units import distance
+print(meter_to_kilometer(23000))
+
+```
+## 5. Author
+
+<ul>
+    <li> Full Name : <strong> Brice KENGNI ZANGUIM </strong>  </li>
+    <li> Email : <strong> kenzabri2@yahoo.com </strong>   </li>
+</ul>
+
+## 6. Contributors
+
+
