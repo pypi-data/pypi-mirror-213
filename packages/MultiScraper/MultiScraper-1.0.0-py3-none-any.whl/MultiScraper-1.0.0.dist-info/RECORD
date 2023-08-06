@@ -1,0 +1,15 @@
+MultiScraper/Aiohttp.py,sha256=qnv_oIYCsYmbFn1LQ0mZQDVyE6VRFNeMXz67vpnVWF0,489
+MultiScraper/CloudScraper.py,sha256=tkOmZ56FS_wM4LBXMR3KlbFrRkoLaJ_ULU5joaN5MSI,354
+MultiScraper/HttpClient.py,sha256=IzF2yLNQa8iFzHqNAddTxQSDDL_IsZWh7t4qS37h2LU,679
+MultiScraper/LxmlSoup.py,sha256=wqLjtbb1nuwvox0FbhHduOW6CWsN5DRoi_SBCVLbrmc,2805
+MultiScraper/Regular.py,sha256=S7-tD4aOBozVRRWEAgeRj2x9s42VeToE1GGnSm5yQTg,1870
+MultiScraper/Requests.py,sha256=Y-GS73YBs4AW8pxWRC8aRuLi-h3iKkqTgIKy9eif-Rs,1030
+MultiScraper/ResponseHandler.py,sha256=3nbZHpBLMPqCV75r44pGo76tyRZ5mOGjvT9Ov1FQOfM,954
+MultiScraper/Selenium.py,sha256=zYyHG0Kbv4Zz_a6Ba439OSI4JJinZ42fHYaDsQic6os,899
+MultiScraper/Urllib.py,sha256=2kQN4fn5Cbin86rJnw9ptNltVM_5BrS3pinzZ_hbrbk,356
+MultiScraper/__init__.py,sha256=eKXRexpUkSIsLafIxRYU6PPk8EGeuivhQLRSWvPqSjY,551
+MultiScraper-1.0.0.dist-info/LICENSE,sha256=8Ez5EhUEhGHxUu0QbomGyjadJxFA3dbKMaHSrG1tBFQ,1339
+MultiScraper-1.0.0.dist-info/METADATA,sha256=CGRS28TXJ1_27YbORydKSJXiM3mmDsKPC765RDMS7S4,2118
+MultiScraper-1.0.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+MultiScraper-1.0.0.dist-info/top_level.txt,sha256=b2xZKeIbeo28fhGbKa_hudzCbkMqnwEfumcfHra_cK8,13
+MultiScraper-1.0.0.dist-info/RECORD,,
