@@ -1,0 +1,2 @@
+# Spotify Lyrics Grabber
+This basic Python Module allows you to grab Spotify Lyrics from their API. You can input Song Names or input a Track ID and it will return with the pure lyrics JSON (including timings).
