@@ -1,0 +1,6 @@
+requests
+tqdm
+azure-storage-blob
+azure-cognitiveservices-vision-customvision
+cffi
+opencv-python-headless
