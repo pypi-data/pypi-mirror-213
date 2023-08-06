@@ -1,0 +1,23 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "zemail"
+version = "1.0.0"
+authors = [
+  { name="inspirare6", email="inspirare6@163.com" },
+]
+description = "zen email library"
+readme = "README.md"
+requires-python = ">=3.7"
+dependencies = []
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/inspirare6/zemail"
+"Bug Tracker" = "https://github.com/inspirare6/zemail/issues"
