@@ -1,0 +1,2 @@
+[console_scripts]
+libmonty-hexdump = libmonty_hexdump.__main__:main
