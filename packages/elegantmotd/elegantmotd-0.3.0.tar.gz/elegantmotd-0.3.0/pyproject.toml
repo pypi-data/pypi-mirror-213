@@ -1,0 +1,26 @@
+[tool.poetry]
+name = "elegantmotd"
+version = "0.3.0"
+authors = ["Emerick Biron <emerick.biron@gmail.com>"]
+readme = "README.md"
+description = "A visually appealing and informative Message of the Day (MOTD) generator for Linux systems."
+homepage = "https://github.com/emerick-biron/elegantmotd"
+repository = "https://github.com/emerick-biron/elegantmotd.git"
+keywords = ["motd", "system", "information", "console", "dashboard"]
+license = "MIT"
+packages = [{ include = "elegantmotd", from = "src" }]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+rich = "^13.3.4"
+psutil = "^5.9.5"
+netifaces = "^0.11.0"
+art = "^5.9"
+rich-click = "^1.6.1"
+
+[tool.poetry.scripts]
+elegantmotd="elegantmotd.motd:display"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
