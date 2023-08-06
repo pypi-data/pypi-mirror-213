@@ -1,0 +1,6 @@
+setuptools
+amqplib
+graypy
+
+[test]
+plone.app.testing

@@ -1,0 +1,280 @@
+Metadata-Version: 2.1
+Name: eea.graylogger
+Version: 2.4
+Summary: GELF (Graylog Extended Log Format) for Zope
+Home-page: https://github.com/collective/eea.graylogger
+Author: European Environment Agency: IDM2 A-Team
+Author-email: eea-edw-a-team-alerts@googlegroups.com
+License: GPL version 2
+Keywords: EEA Add-ons Plone Zope
+Platform: UNKNOWN
+Classifier: Framework :: Plone :: 4.0
+Classifier: Framework :: Plone :: 4.1
+Classifier: Framework :: Plone :: 4.2
+Classifier: Framework :: Plone :: 4.3
+Classifier: Framework :: Plone :: 5.1
+Classifier: Framework :: Plone :: 5.2
+Classifier: Framework :: Plone :: Addon
+Classifier: Framework :: Zope :: 2
+Classifier: Framework :: Zope :: 4
+Classifier: Framework :: Zope
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: License :: OSI Approved :: GNU General Public License (GPL)
+Description-Content-Type: text/x-rst
+Provides-Extra: test
+License-File: LICENSE
+
+==============
+EEA Graylogger
+==============
+.. image:: https://ci.eionet.europa.eu/buildStatus/icon?job=eea/eea.graylogger/develop
+  :target: https://ci.eionet.europa.eu/job/eea/job/eea.graylogger/job/develop/display/redirect
+  :alt: develop
+.. image:: https://ci.eionet.europa.eu/buildStatus/icon?job=eea/eea.graylogger/master
+  :target: https://ci.eionet.europa.eu/job/eea/job/eea.graylogger/job/master/display/redirect
+  :alt: master
+
+GELF (Graylog Extended Log Format) for Zope event logs
+
+
+Contents
+========
+
+.. contents::
+
+
+Main features
+=============
+
+1. Sends Zope event logs to Graylog_ instead of a file.
+
+
+Install
+=======
+
+Plone 5.2+ (WSGI)
+-----------------
+
+- Add `eea.graylogger`_ to your eggs section in your buildout and re-run buildout
+
+  ::
+
+    [instance]
+    eggs +=
+        eea.graylogger
+
+    event-log-handler = eea.graylogger.GELFHandler
+    event-log-args = ('logs.example.com', 12201)
+    event-log-kwargs = {'level_names': True, 'facility': 'example.com'}
+
+    access-log-handler = eea.graylogger.GELFHandler
+    access-log-args = ('logs.example.com', 12201)
+    access-log-kwargs = {'facility': 'example.com'}
+
+See `graypy`_ documentation for more details.
+
+Alternatively, you can skip `-log-args` and `-log-kwargs` and use environment variables to
+define Graylog `host:port` and `facility`:
+
+  ::
+
+    [instance]
+    eggs +=
+        eea.graylogger
+
+    event-log-handler = eea.graylogger.GELFHandler
+    access-log-handler = eea.graylogger.GELFHandler
+
+* `GRAYLOG` - Graylog `host`, or `host:port` (e.g.: `GRAYLOG=logs.example.com:12201`)
+* `GRAYLOG_FACILITY` - Graylog facility (e.g.: `GRAYLOG_FACILITY=example.com`)
+
+Plone < 5.2 (non-WSGI)
+----------------------
+
+- Add `eea.graylogger`_ to your eggs section in your buildout and re-run buildout.
+  You can download a sample buildout from
+  https://github.com/eea/eea.graylogger/tree/master/buildouts/plone4
+
+  ::
+
+    [instance]
+    eggs =
+        ...
+        eea.graylogger
+
+    zope-conf-imports =
+      eea.graylogger
+
+    event-log-custom =
+      <graylog>
+        server 172.17.0.18:12201
+      </graylog>
+
+Getting started
+===============
+
+1. Install Graylog_ server or use `Graylog2 Docker image`_
+2. Restart Zope
+3. Go to http://localhost:9000 to see your Zope logs
+
+Configuration parameters
+========================
+
+* **rabbit** - True if you want to use GELFRabbitHandler instead of GELFHandler.
+  See `graypy`_ documentation for more details.
+
+GELFHandler
+-----------
+
+* **server** - the host[:port] of the graylog server.
+* **debugging_fields** - send debug fields if true (the default).
+* **extra_fields** - send extra fields on the log record to graylog if true (the default).
+* **fqdn** - use fully qualified domain name of localhost as source host (socket.getfqdn()).
+* **localname** - use specified hostname as source host.
+* **facility** - replace facility with specified value. if specified, record.name
+  will be passed as logger parameter.
+
+GELFRabbitHandler
+-----------------
+
+* **server** - RabbitMQ URL (ex: amqp://guest:guest@localhost:5672/%2F).
+* **exchange** - RabbitMQ exchange. Default `logging.gelf`. A queue binding must
+  be defined on the server to prevent log messages from being dropped.
+* **debugging_fields** - send debug fields if true (the default).
+* **extra_fields** - send extra fields on the log record to graylog if true (the default).
+* **fqdn** - use fully qualified domain name of localhost as source host - socket.getfqdn().
+* **exchange_type** - RabbitMQ exchange type (default fanout).
+* **localname** - use specified hostname as source host.
+* **facility** - replace facility with specified value. if specified, record.name
+  will be passed as logger parameter.
+
+
+Dependencies
+============
+
+1. Graylog_ server
+2. graypy_ >= 2.1.0
+3. `plone.recipe.zope2instance`_ >= 6.5.0
+
+Source code
+===========
+
+- Latest source code (Plone 5 / Python 3 compatible):
+  https://github.com/eea/eea.graylogger
+
+
+Copyright and license
+=====================
+The Initial Owner of the Original Code is European Environment Agency (EEA).
+All Rights Reserved.
+
+The EEA Graylogger (the Original Code) is free software;
+you can redistribute it and/or modify it under the terms of the GNU
+General Public License as published by the Free Software Foundation;
+either version 2 of the License, or (at your option) any later
+version.
+
+More details under docs/License.txt
+
+
+Funding
+=======
+
+EEA_ - European Environment Agency (EU)
+
+.. _`EEA`: https://www.eea.europa.eu/
+.. _`Graylog`: https://www.graylog.org
+.. _`graypy`: https://pypi.org/project/graypy/
+.. _`Graylog2 Docker image`: https://github.com/eea/eea.docker.graylog2
+.. _`eea.graylogger`: https://github.com/eea/eea.graylogger
+.. _`plone.recipe.zope2instance`: https://pypi.org/project/plone.recipe.zope2instance
+
+Changelog
+=========
+
+2.4 - (2023-06-12)
+---------------------------
+* Bug fix: Fix tests
+  [iulianpetchesi refs #249331]
+
+2.3 - (2023-03-31)
+---------------------------
+* Change: Remove graypy pin
+  [iulianpetchesi refs #249331]
+
+2.2 - (2023-03-31)
+---------------------------
+* Change: Change setup.py version pinnings
+  [iulianpetchesi refs #249331]
+
+2.1 - (2023-03-31)
+---------------------------
+* Change: Bypass Plone 6 error when using eea.graylogger
+  [iulianpetchesi refs #249331]
+
+2.0 - (2019-11-25)
+--------------------------
+* Feature: Python3 / Plone 5.2 / WSGI support
+  [avoinea refs #110157]
+* Change: Upgrade to graypy 2.1.0
+  [avoinea refs #110157]
+* Change: Remove chunk_size option
+  [avoinea refs #110157]
+
+1.9 - (2019-04-02)
+------------------
+* Bug fix: Fix Readme unicode/decode error
+  [avoinea]
+
+1.8 - (2019-04-02)
+------------------
+* Bug fix: Pin graypy version
+  [valipod]
+
+1.7 - (2019-01-28)
+-----------------------
+* Jenkins: Add sonarqube step
+  [avoinea refs #101552]
+* Change: updated URLs pointing to eea.europa.eu with https://
+  [alecghica refs #95849]
+
+1.6 - (2017-12-12)
+------------------
+* Change: Replace eeacms/zptlint with eeacms/plone-test:4 zptlint
+  [avoinea refs #90415]
+
+1.5 - (2017-06-15)
+------------------
+* Bug fix: Fix to work with graypy 0.2.14+ (facility override)
+  [avoinea refs #85963]
+
+1.4 - (2017-05-15)
+------------------
+* Change: fixed PyLint warnings and errors
+  [eduard-fironda refs #84949]
+
+1.3 - (2017-04-24)
+------------------
+* Change: updated package information
+  [eduard-fironda]
+
+1.2 - (2015-10-05)
+------------------
+* Bug fix: Instance name param added to graylog's log entry
+  [lucas, refs #28304]
+
+1.1 - (2015-07-06)
+------------------
+* Bug fix: Added hard dependency to amqplib in order to fix GELFRabbitHandler
+  [voineali refs #21610]
+
+1.0 - (2015-05-05)
+------------------
+* Initial release
+  [voineali]
+
+
