@@ -1,0 +1,38 @@
+Metadata-Version: 2.1
+Name: spcache
+Version: 0.1.0
+Summary: Ensure Spotify's cache size doesn't exceed a specified threshold.
+Home-page: https://github.com/Qwerty-133/spcache
+License: MIT
+Author: Qwerty-133
+Author-email: 74311372+Qwerty-133@users.noreply.github.com
+Requires-Python: >=3.8.1,<3.12
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Framework :: Flake8
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Operating System :: MacOS
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Topic :: Internet
+Classifier: Topic :: System :: Shells
+Classifier: Topic :: Terminals
+Classifier: Topic :: Utilities
+Classifier: Typing :: Typed
+Requires-Dist: click (>=8.1.3,<9.0.0)
+Requires-Dist: python-dotenv (>=1.0.0,<2.0.0)
+Project-URL: Repository, https://github.com/Qwerty-133/spcache
+Description-Content-Type: text/markdown
+
+# Spcache
+Ensure Spotify's cache size doesn't exceed a specified threshold.
+

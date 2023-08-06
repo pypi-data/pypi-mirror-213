@@ -1,0 +1,3 @@
+[console_scripts]
+spcache=spcache.cli:spcache
+
