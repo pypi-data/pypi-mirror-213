@@ -1,0 +1,13 @@
+# the basics
+*~
+.DS_Store
+
+# python
+__init__.pyc
+__pycache__/
+.mypy_cache/
+
+# pip
+build/
+dist/
+pcDataLoader.egg-info/
