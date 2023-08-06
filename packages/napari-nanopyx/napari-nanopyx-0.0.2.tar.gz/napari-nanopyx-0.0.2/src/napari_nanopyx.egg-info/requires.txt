@@ -1,0 +1,6 @@
+napari
+nanopyx
+
+[testing]
+pytest
+pytest-cov
