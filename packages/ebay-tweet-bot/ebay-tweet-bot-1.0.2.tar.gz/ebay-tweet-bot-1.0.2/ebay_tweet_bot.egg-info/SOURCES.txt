@@ -1,0 +1,7 @@
+LICENSE
+README.md
+setup.py
+ebay_tweet_bot.egg-info/PKG-INFO
+ebay_tweet_bot.egg-info/SOURCES.txt
+ebay_tweet_bot.egg-info/dependency_links.txt
+ebay_tweet_bot.egg-info/top_level.txt
