@@ -1,0 +1,7 @@
+LICENSE
+README.md
+setup.py
+labeltransform.egg-info/PKG-INFO
+labeltransform.egg-info/SOURCES.txt
+labeltransform.egg-info/dependency_links.txt
+labeltransform.egg-info/top_level.txt
