@@ -1,0 +1,12 @@
+anfema_django_testutils/__init__.py,sha256=_-yLu-3P311BhOaocjDidRjSdC1mPDceUVCg00P1XUA,336
+anfema_django_testutils/apps.py,sha256=uIcTbaUj5u5pCxx9K18INY4PB4Cx8BnCydUR2mSQlTo,317
+anfema_django_testutils/runner.py,sha256=ZV7AZvU2_8mFGx9hhSCX3uAYibiXDYoZX-nevyo9VrU,16161
+anfema_django_testutils/settings.py,sha256=NXjIZXKssugUWwAWWmGIf6y_SSd9zLmkTL7LPUiD3X8,959
+anfema_django_testutils/tags.py,sha256=612pgeXuw_VThrKTCfIf_irAv1r7uJcwx8qhKmG9rEg,1636
+anfema_django_testutils/testcases.py,sha256=aLzvZHRNou8GJDctcrknDqSz7zHQmdeDnjfBSvVkrlc,4977
+anfema_django_testutils/static/css/test-results.css,sha256=vVxDEf7Fyn2-fFXhTuvoE0RzhjzEQoYF1TTAKZT580E,2335
+anfema_django_testutils/templates/test-results-template.html,sha256=zMAcXKRHQy6N0uI3zyZxvsn1w69eqMyIFbu6cdMZhsM,10501
+anfema_django_testutils-0.4.0.dist-info/LICENSE,sha256=Oq9bowfBofHQGNFPmtoPP4GlYsKiPPiZk5zh_x6PKIY,1067
+anfema_django_testutils-0.4.0.dist-info/WHEEL,sha256=EZbGkh7Ie4PoZfRQ8I0ZuP9VklN_TvcZ6DSE5Uar4z4,81
+anfema_django_testutils-0.4.0.dist-info/METADATA,sha256=R11yWAbNKzBBVnZLEkswKGV6fe-KeiBiijjZnEagSVs,2447
+anfema_django_testutils-0.4.0.dist-info/RECORD,,

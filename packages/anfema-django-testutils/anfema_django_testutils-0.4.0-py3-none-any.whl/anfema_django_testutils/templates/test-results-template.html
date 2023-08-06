@@ -1,0 +1,196 @@
+{% load static %}
+{% load mathfilters %}
+<!--<!DOCTYPE html>-->
+<html lang="en">
+    <head>
+        <title>Test-Report</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="test-results.css" type="text/css" />
+    </head>
+    <body>
+        <div>
+            <div class="test-report-summary">
+                <h1>{{ title }}</h1>
+                <table>
+                    <tr>
+                        <th>Timestamp:</th>
+                        <td>{{ summary.timestamp }}</td>
+                    </tr>
+                    <tr>
+                        <th>Duration:</th>
+                        <td>{{ summary.duration.total_seconds }}s</td>
+                    </tr>
+                    <tr>
+                        <th>Number of tests:</th>
+                        <td>{{ summary.totals }}</td>
+                    </tr>
+                    <tr>
+                        <th>Skipped:</th>
+                        <td style=background-color:var(--skipped);width:50%;>{{ summary.skipped }}</td>
+                    </tr>
+                    <tr>
+                        <th>Passed:</th>
+                        <td style=background-color:var(--passed);width:50%:;>{{ summary.passed }}</td>
+                    </tr>
+                    <tr>
+                        <th>Precondition Failures:</th>
+                        <td style=background-color:var(--precondition_failure);width:50%;>{{ summary.precondition_failure }}</td>
+                    </tr>
+                    <tr>
+                        <th>Failures:</th>
+                        <td style=background-color:var(--failure);width:50%;>{{ summary.failure }}</td>
+                    </tr>
+                    <tr>
+                        <th>Expected Failures:</th>
+                        <td style=background-color:var(--expected_failure);width:50%;>{{ summary.expected_failure }}</td>
+                    </tr>
+                    <tr>
+                        <th>Unexpected Successes:</th>
+                        <td style=background-color:var(--unexpected_success);width:50%;>{{ summary.unexpected_success }}</td>
+                    </tr>
+                    <tr>
+                        <th>Errors:</th>
+                        <td style=background-color:var(--error);width:50%;>{{ summary.error }}</td>
+                    </tr>
+                    <tr>
+                        <th>Coverage Report:</th>
+                        <td>
+                            <a href="coverage/index.html">click here</a>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="container">
+                {% for testcase, testcase_results in testcases.items %}
+                    <div class="testcase">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>{{ testcase }}</th>
+                                    <th>Duration</th>
+                                    <th>
+                                        Result
+                                    </th>
+                                    <th>
+                                        <button class="btn-testcase-details">
+                                            &ctdot;
+                                        </button>
+                                    </th>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="color-bar">
+                                            {% with result_width=testcase_results.summary.skipped|div:testcase_results.summary.totals|mul:100 result=testcase_results.summary.skipped %}
+                                                <div class="skipped" style="width:{{ result_width }}%;">
+                                                    {{ result_width }}
+                                                </div>
+                                            {% endwith %}
+                                            {% with result_width=testcase_results.summary.passed|div:testcase_results.summary.totals|mul:100 result=testcase_results.summary.passed %}
+                                                <div class="passed" style="width:{{ result_width }}%;">
+                                                    {{ result_width }}
+                                                </div>
+                                            {% endwith %}
+                                            {% with result_width=testcase_results.summary.precondition_failure|div:testcase_results.summary.totals|mul:100 result=testcase_results.summary.precondition_failure %}
+                                                <div class="precondition_failure" style="width:{{ result_width }}%;">
+                                                    {{ result_width }}
+                                                </div>
+                                            {% endwith %}
+                                            {% with result_width=testcase_results.summary.failure|div:testcase_results.summary.totals|mul:100 result=testcase_results.summary.failure %}
+                                                <div class="failure" style="width:{{ result_width }}%;">
+                                                    {{ result_width }}
+                                                </div>
+                                            {% endwith %}
+                                            {% with result_width=testcase_results.summary.expected_failure|div:testcase_results.summary.totals|mul:100 result=testcase_results.summary.expected_failure %}
+                                                <div class="expected_failure" style="width:{{ result_width }}%;">
+                                                    {{ result_width }}
+                                                </div>
+                                            {% endwith %}
+                                            {% with result_width=testcase_results.summary.unexpected_success|div:testcase_results.summary.totals|mul:100 result=testcase_results.summary.unexpected_success %}
+                                                <div class="unexpected_success" style="width:{{ result_width }}%;">
+                                                    {{ result_width }}
+                                                </div>
+                                            {% endwith %}
+                                            {% with result_width=testcase_results.summary.error|div:testcase_results.summary.totals|mul:100 result=testcase_results.summary.error %}
+                                                <div class="error" style="width:{{ result_width }}%;">
+                                                    {{ result_width }}
+                                                </div>
+                                            {% endwith %}
+                                        </div>
+                                    </td>
+                                    <td>
+                                        {{ testcase_results.summary.duration.total_seconds }}s
+                                    </td>
+                                    <td/>
+                                    <td/>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                {% for test in testcase_results.tests %}
+                                    <tr class="testrun" style=background-color:var(--{{ test.result }})>
+                                        <td>
+                                            {{ test.name }}
+                                        </td>
+                                        <td>
+                                            {{ test.duration.total_seconds }}s
+                                        </td>
+                                        <td>
+                                            {{ test.result }}
+                                        </td>
+                                        <td align="center">
+                                            {% if test.result != 'passed' %}
+                                                <button class="btn-testrun-details">
+                                                    View
+                                                </button>
+                                            {% endif %}
+                                        </td>
+                                    </tr>
+                                    <tr style="display: none">
+                                        <td class="testrun-outcome">
+                                            <pre>{{ test.outcome }}</pre>
+                                        </td>
+                                    </tr>
+                                {% endfor %}
+                            </tbody>
+                        </table>
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script type="text/javascript">
+            $(document).ready(function(){
+                $('th').on('click', '.btn-testcase-details', function(e){
+                    e.preventDefault();
+                    e.stopImmediatePropagation();
+                    var $this = $(this);
+                    $(this).parents("table").find("tbody").toggle();
+                    $this.text(function(i, text){
+                        if (text === '\u22EF') {
+                            return 'Hide';
+                        } else {
+                            return '\u22EF';
+                        };
+                    });
+                });
+            });
+    </script>
+    <script type="text/javascript">
+            $(document).ready(function(){
+                $('td').on('click', '.btn-testrun-details', function(e){
+                    e.preventDefault();
+                    e.stopImmediatePropagation();
+                    var $this = $(this);
+                    $(this).closest("tr").next('tr').toggle();
+                    $this.text(function(i, text){
+                        if (text === 'View') {
+                            return 'Hide';
+                        } else {
+                            return 'View';
+                        };
+                    });
+                });
+            });
+    </script>
+</body>
+</html>
