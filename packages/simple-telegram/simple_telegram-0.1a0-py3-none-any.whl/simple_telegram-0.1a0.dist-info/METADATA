@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: simple-telegram
+Version: 0.1a0
+Summary: For sending and receiving messages using Telegram
+Home-page: https://github.com/alex-merge/telegram_py
+Author: Alexis M.
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Telegram-Py-API
+Python implementation of Telegram API
