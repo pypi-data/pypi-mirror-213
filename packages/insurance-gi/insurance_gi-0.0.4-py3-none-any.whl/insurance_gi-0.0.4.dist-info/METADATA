@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: insurance-gi
+Version: 0.0.4
+Summary: GI projection tools
+Home-page: https://github.com/pdavidsonFIA/insurance_gi
+Author: Peter Davidson
+Author-email: peterjd41@gmail.com
+Project-URL: Bug Tracker, https://github.com/pdavidsonFIA/insurance_gi/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Financial and Insurance Industry
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pandas (>=1.0.0)
+
+# insurance_gi
+Projection tools for general insurance

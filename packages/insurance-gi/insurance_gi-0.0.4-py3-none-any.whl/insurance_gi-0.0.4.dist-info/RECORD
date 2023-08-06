@@ -1,0 +1,10 @@
+insurance_gi/__init__.py,sha256=Iaf3HAZLLX2-XUkWQZh9s2ctcJcR3HaxjvxHUL5Ys5U,178
+insurance_gi/claims.py,sha256=Dcqh-KUmJAB8OYFNVNPGAZRLVzypG4s-DVPXVNR9ze8,3394
+insurance_gi/decrements.py,sha256=YzJJ-kb8sPFbojPzehMNMB-SHhCdcw1nm8T6iq5PD8E,624
+insurance_gi/financials.py,sha256=jFbtGhzdx0Tstrt3KHEzLaHh-JzIWtvwp-4j21q2DuU,1612
+insurance_gi/renewals.py,sha256=8l9spwYp1jjbmM94-yhlXF95lMFKlVyQqzv2tS4RIns,8067
+insurance_gi-0.0.4.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+insurance_gi-0.0.4.dist-info/METADATA,sha256=4HeRGo4wYGR2E9BN87_21v4pVBSiverBn3UwWI-_jTw,734
+insurance_gi-0.0.4.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+insurance_gi-0.0.4.dist-info/top_level.txt,sha256=5grkm0udU7-Dr_yZPKnGCtCNcAJlrwMDqOxg_skOy7Q,13
+insurance_gi-0.0.4.dist-info/RECORD,,
