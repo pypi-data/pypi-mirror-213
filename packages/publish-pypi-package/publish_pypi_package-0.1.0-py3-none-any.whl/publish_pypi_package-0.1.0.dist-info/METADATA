@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: publish-pypi-package
+Version: 0.1.0
+Summary: A conversion package
+Author: Refael
+Author-email: beker.refael@gmail.com
+License: MIT
+Keywords: conversion
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+License-File: LICENSE
+
+A package that makes it easy to convert values between several units of measurement
