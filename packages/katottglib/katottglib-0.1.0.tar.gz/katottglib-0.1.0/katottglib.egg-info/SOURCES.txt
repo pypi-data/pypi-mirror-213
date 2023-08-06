@@ -1,0 +1,13 @@
+LICENSE
+README.rst
+pyproject.toml
+setup.cfg
+setup.py
+data/__init__.py
+data/data.py
+data/entity.py
+katottglib.egg-info/PKG-INFO
+katottglib.egg-info/SOURCES.txt
+katottglib.egg-info/dependency_links.txt
+katottglib.egg-info/top_level.txt
+test/__init__.py
