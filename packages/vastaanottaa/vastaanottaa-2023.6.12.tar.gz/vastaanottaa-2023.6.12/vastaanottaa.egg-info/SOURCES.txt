@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+test/test_cli.py
+vastaanottaa/__init__.py
+vastaanottaa/__main__.py
+vastaanottaa/cli.py
+vastaanottaa.egg-info/PKG-INFO
+vastaanottaa.egg-info/SOURCES.txt
+vastaanottaa.egg-info/dependency_links.txt
+vastaanottaa.egg-info/entry_points.txt
+vastaanottaa.egg-info/requires.txt
+vastaanottaa.egg-info/top_level.txt
