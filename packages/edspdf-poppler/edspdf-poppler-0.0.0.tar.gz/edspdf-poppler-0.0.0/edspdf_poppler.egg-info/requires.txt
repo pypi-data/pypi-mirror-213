@@ -1,0 +1,17 @@
+edspdf>=0.7.0
+six>=1.16.0
+attrs>=23.1.0
+
+[dev]
+pre-commit~=2.18.1
+pytest~=7.1.1
+pytest-cov~=3.0.0
+
+[docs]
+mike~=1.1.2
+mkdocs@ git+https://github.com/mkdocs/mkdocs.git@5af8bd30538ff8f0cfb698c8b90c3020da319f92
+mkdocstrings@ git+https://github.com/percevalw/mkdocstrings.git@7c50413ebdffdcbfad40b69d1574f55ba4f88a5c
+mkdocs-autorefs@ git+https://github.com/percevalw/mkdocs-autorefs.git@0652a0031a5402c5abcbac8cf1e846fcadbbacbc
+mkdocs-material~=9.1.0
+mkdocstrings-python~=0.8.3
+mkdocs-autorefs~=0.4.1
