@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: SAMYOL
+Version: 1.0.8
+Summary: Combines YOLO models and SAM
+Author: Jawher Ben Abdallah
+Author-email: jawher.b.abdallah@gmail.com
+Maintainer: Rim Sleimi
+Maintainer-email: sleimi.rim1996@gmail.com
+License: Apache License 2.0
+Project-URL: Source, https://github.com/Jawher-Ben-Abdallah/SAMYOL
+Keywords: YOLOv6,YOLOv7,YOLOv8,YOLO-NAS SAM,Object_Detection,Segmentation
+Classifier: Programming Language :: Python :: 3.10
+Requires-Python: >=3.10
+Description-Content-Type: text/x-rst
+Provides-Extra: dev
+License-File: LICENSE
+
+SAMYOL is a Python library that combines an object detection model (YOLOv6, YOLOv7, YOLOv8, or YOLO-NAS) and the Segment Anything Model (SAM).
