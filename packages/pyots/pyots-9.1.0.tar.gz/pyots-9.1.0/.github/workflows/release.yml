@@ -1,0 +1,102 @@
+name: Build Python Wheels
+
+on:
+  push:
+    tags:
+      - '\d+\.\d+\.[0-9a-z]+'
+
+  workflow_dispatch:
+    inputs:
+      reason:
+        description: 'Reason for running workflow'
+        required: true
+
+jobs:
+  build_wheels:
+    name: Build Py3 Wheel on ${{ matrix.os }}
+    runs-on: ${{ matrix.os }}
+    strategy:
+      matrix:
+        os: [ubuntu-latest, macos-latest]
+
+    steps:
+
+    - name: Log reason (manual run only)
+      if: github.event_name == 'workflow_dispatch'
+      run: |
+        echo "Reason for triggering: ${{ github.event.inputs.reason }}"
+
+    - name: Check out
+      uses: actions/checkout@v3
+      with:
+        fetch-depth: 0  # unshallow fetch for setuptools-scm
+
+    - name: Install Python 3.9
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.9'
+
+    - name: Build wheel
+      uses: pypa/cibuildwheel@v2.13.1
+      with:
+        output-dir: dist
+      env:
+        CIBW_BUILD: "cp38-* cp39-* cp310-* cp311-*"
+        CIBW_ARCHS_MACOS: x86_64 arm64
+        CIBW_ENVIRONMENT_MACOS: "CFLAGS='-arch arm64 -arch x86_64' CXXFLAGS='-arch arm64 -arch x86_64' LDFLAGS='-arch arm64 -arch x86_64'"
+        CIBW_ARCHS_LINUX: x86_64
+        CIBW_MANYLINUX_X86_64_IMAGE: manylinux2014
+        CIBW_SKIP: "*musllinux*"
+        CIBW_BEFORE_ALL_LINUX: "yum install -y libuuid-devel"
+
+    - name: Build sdist (Ubuntu only)
+      if: matrix.os == 'ubuntu-latest'
+      run: |
+        python setup.py sdist
+
+    - name: Upload build artifacts
+      uses: actions/upload-artifact@v3
+      with:
+        name: wheelstorage
+        path: ./dist/*
+        if-no-files-found: error
+        retention-days: 30
+
+  publish_release:
+    name: Publish Release
+    needs: build_wheels
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write  # Required by 'action-gh-release'
+
+    steps:
+
+    - name: Get date & flat tag
+      id: date_tag
+      run: |
+        export DATE=$(TZ=US/Pacific date +'%Y-%m-%d')
+        echo $DATE
+        export FLAT_TAG=$(echo ${GITHUB_REF##*/})
+        echo $FLAT_TAG
+        echo "TODAY=$DATE" >> "$GITHUB_OUTPUT"
+        echo "VERSION=$FLAT_TAG" >> "$GITHUB_OUTPUT"
+      shell: bash
+
+    - name: Download release assets
+      uses: actions/download-artifact@v3
+      with:
+        name: wheelstorage
+        path: dist
+
+    - name: Publish dist(s) to PyPI
+      uses: pypa/gh-action-pypi-publish@release/v1
+      with:
+        user: __token__
+        password: ${{ secrets.pypi_password }}
+
+    - name: Create GitHub Release
+      uses: softprops/action-gh-release@v1
+      with:
+        body: '${{ steps.date_tag.outputs.VERSION }} released ${{ steps.date_tag.outputs.TODAY }} - [Upstream OTS v${{ steps.date_tag.outputs.VERSION }} Release Notes](https://github.com/khaledhosny/ots/releases/tag/v${{ steps.date_tag.outputs.VERSION }})'
+        prerelease: true
+        files: ./dist/*
