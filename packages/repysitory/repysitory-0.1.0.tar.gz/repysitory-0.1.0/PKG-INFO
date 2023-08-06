@@ -1,0 +1,40 @@
+Metadata-Version: 2.1
+Name: repysitory
+Version: 0.1.0
+Summary: SOLID compatible python repositories.
+Author: Nikita Vovchenko
+Author-email: oldnote.public@gmail.com
+Requires-Python: >=3.10,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Description-Content-Type: text/markdown
+
+# Repysitory
+
+SOLID compatible python repositories.
+
+## Installation
+
+Use the package manager [pip](https://pip.pypa.io/en/stable/) to install repysitory.
+
+```bash
+pip install repysitory
+```
+
+## Usage
+
+```python
+import repysitory
+
+# TODO
+```
+
+## Contributing
+
+TODO
+
+## License
+
+[MIT](https://choosealicense.com/licenses/mit/)
+
