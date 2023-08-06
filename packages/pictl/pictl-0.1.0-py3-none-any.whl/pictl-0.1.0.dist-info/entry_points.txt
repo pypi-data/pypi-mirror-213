@@ -1,0 +1,3 @@
+[console_scripts]
+pictl=pictl.cli.main:cli
+
