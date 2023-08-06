@@ -1,0 +1,11 @@
+fsps
+pz-rail-base
+astropy
+
+[dev]
+qp-prob[full]
+coverage
+pylint
+pytest
+pytest-cov
+yamllint
