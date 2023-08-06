@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: HaplyHardwareAPI
+Version: 0.1.1
+Summary: Python API for Haply Hardware
+Author: Haply Robotics
+Author-email: antoine@haply.co
+Requires-Python: >=3.6
+Provides-Extra: test
+Requires-Dist: pytest (>=6.0) ; extra == 'test'
+
+This package provides a Python API for using Haply Hardware like the inverse3, more info can be found at https://www.haply.co
