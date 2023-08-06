@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: lztmarketapi
+Version: 0.2.2.2
+Summary: Данная библиотека создана для взаимодействия с api lzt.market.
+Home-page: https://github.com/KazariFox/AsyncMarketLztApi
+Author: KazariFox
+Author-email: 
+License: apache-2.0
+Keywords: lzt,lolzteam,lolzteam market,api
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+License-File: LICENSE.txt
