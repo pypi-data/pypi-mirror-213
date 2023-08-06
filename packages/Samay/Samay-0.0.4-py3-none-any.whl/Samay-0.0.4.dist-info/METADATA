@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: Samay
+Version: 0.0.4
+Summary: Samay
+Home-page: UNKNOWN
+Author: Saurav Sharma
+Author-email: sv19projects@gmail.com
+License: UNKNOWN
+Keywords: Samay,samay,timeit,time,execution,execution time,run time,runtime,function runtime,function execution time,compare function
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
+Requires-Dist: matplotlib
+
+Samay is a powerful Python module designed to help you effectively measure the 
+execution time of your functions, compare them side by side, and optimize their
+performance. With Samay, you can gain valuable insights into the efficiency of 
+your code and make informed decisions to improve its speed and effectiveness.
+
