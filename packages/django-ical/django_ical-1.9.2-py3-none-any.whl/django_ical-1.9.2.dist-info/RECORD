@@ -1,0 +1,12 @@
+django_ical/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_ical/feedgenerator.py,sha256=RefH9nyDSD7quJUQfVnM30GxgJ3bBreCq5y5bPI0g3w,4509
+django_ical/utils.py,sha256=FiNHFi77QeVYQ9AVKTlTlntg-oKi846Q8dnOeR141IQ,3103
+django_ical/views.py,sha256=Ck6HgcW87SFNwZMXiz5y7mU6DSUt-3UWBWKYgl04rdQ,4377
+django_ical/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_ical/tests/test_feed.py,sha256=wZaR2BjMrYaVoAUcu7mG2tqLPxiDJxv_RcA300t9UXc,19581
+django_ical/tests/test_recurrence.py,sha256=reMKCiATf7MnwlhOdrHHeyOYjEkHlgf8wH3KldeJoiY,25053
+django_ical-1.9.2.dist-info/LICENSE,sha256=Xebny1AMHsrwbulD_pUGyGYFH5OdwsmxogN5bGz1VRc,1076
+django_ical-1.9.2.dist-info/METADATA,sha256=t9McDjaU2XI6LqdMQLvSLvrnkDK282jQbzKG6-iNAGw,6538
+django_ical-1.9.2.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+django_ical-1.9.2.dist-info/top_level.txt,sha256=IJC7ZLvqL1mTjRYKAtu1p1GyuObA4PdipxrOFHqFioU,12
+django_ical-1.9.2.dist-info/RECORD,,
