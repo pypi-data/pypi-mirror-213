@@ -1,0 +1,17 @@
+[build-system]
+requires = ["flit_core >=3.2,<4"]
+build-backend = "flit_core.buildapi"
+
+[project]
+name = "templaterSPLN"
+authors = [{name = "JC", email = "pg50469@alunos.uminho.pt"},
+{name = "HB", email = "pg50418@alunos.uminho.pt"},
+{name = "DF", email = "pg50306@alunos.uminho.pt"}]
+license = {file = "LICENSE"}
+classifiers = ["License :: OSI Approved :: MIT License"]
+dynamic = ["version", "description"]
+dependencies = ["argparse", "shutil"]
+readme = "README.md"
+
+[project.scripts]
+templater = "templaterSPLN:main"

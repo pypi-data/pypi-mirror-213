@@ -1,0 +1,99 @@
+Metadata-Version: 2.1
+Name: templaterSPLN
+Version: 0.1
+Summary: Simple program that reads a template file and creates the folder structure and files based on the template.
+Author-email: JC <pg50469@alunos.uminho.pt>, HB <pg50418@alunos.uminho.pt>, DF <pg50306@alunos.uminho.pt>
+Description-Content-Type: text/markdown
+Classifier: License :: OSI Approved :: MIT License
+Requires-Dist: argparse
+Requires-Dist: shutil
+
+# SPLN-TP2 Template Multi-file
+
+**Daniel Faria PG50306**
+**Hugo Brandão PG50418**
+**João Cerquido PG50469**
+
+Projeto desenvolvido no âmbito da UC de SPLN.
+Permite a criação de uma estrutura de ficheiros e pastas, a partir de um ficheiro de template, podendo ser especificado o conteúdo de cada ficheiro criado.
+Também é possível realizar o processo inverso, ou seja, a partir de uma estrutura de ficheiros e pastas, criar um ficheiro de template.
+
+## Utilização:
+utilização: Templater [-h] -i INPUT -t TYPE [-o OUTPUT] [-v [VARIABLES [VARIABLES ...]]]
+
+Programa simples que lê um ficheiro de template e cria a estrutura de pastas e ficheiros com base no template. Também
+pode ser feito o inverso, pode ler uma estrutura de pastas e criar um ficheiro de template com base nela.
+
+    optional arguments:
+        -h, --help            mostra esta mensagem de ajuda e sai
+        -i INPUT, --input INPUT
+            Input file ou folder
+        -t TYPE, --type TYPE  
+            Tipo de operação. Pode ser template (gera template segundo uma diretoria) ou create (gera diretoria de um template file)
+        -o OUTPUT, --output OUTPUT
+            Output file ou folder
+        -v [VARIABLES [VARIABLES ...]], --variables [VARIABLES [VARIABLES ...]]
+            Variaveis a serem substituidas no template
+
+
+## Formato do template:
+Seguindo o exemplo dado pelos professores no enunciado, o template deve ter a seguinte estrutura:
+
+=== meta
+name:             // provided or ask
+author: JJoao     // provided or default
+
+=== tree
+
+pyproject.toml
+{{name}}/
+    __init__.py
+    {{name}}.md
+exemplo/
+README.md
+tests/
+    test-1.py
+    unit/
+        test-2.py
+
+=== pyproject.toml
+[build-system]
+requires = ["flit_core >=3.2,<4"]
+build-backend = "flit_core.buildapi"
+
+[project]
+name = "{{name}}"
+authors = [ {name = "{{author}}", email = "FIXME"}]
+license = {file = "LICENSE"}
+dynamic = ["version", "description"]
+dependencies = [ ]
+readme = "{{name}}.md"
+
+[project.scripts]
+## script1 = "{{name}}:main"
+
+=== {{name}}/{{name}}.md
+
+# NAME
+
+{{name}} - FIXME the fantastic module for...
+
+=== {{name}}/__init__.py
+""" FIXME: docstring """
+__version__ = "0.1.0"
+
+=== tests/test-1.py
+import pytest
+import {{name}} 
+
+def test_1():
+    assert "FIXME" == "FIXME"
+
+O template deverá então ser constituído por 3 partes:
+- metadata
+- tree
+- files
+
+Onde na meta deverá conter o nome do projeto e o nome do autor, na tree deverá ser especificada a estrutura de pastas e ficheiros a ser criada, e na files deverá ser especificado o conteúdo de cada ficheiro.
+
+Na tree, sempre que se trata duma pasta deverá ser especificado o nome da pasta seguido de uma barra, e todos os ficheiro dentro dessa pasta deverão estar identificados com um tab.
