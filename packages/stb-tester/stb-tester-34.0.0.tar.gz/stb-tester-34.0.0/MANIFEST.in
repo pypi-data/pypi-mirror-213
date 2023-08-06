@@ -1,0 +1,2 @@
+# Note the implicit includes from setup.py: packages=["stbt"]
+exclude README.md
