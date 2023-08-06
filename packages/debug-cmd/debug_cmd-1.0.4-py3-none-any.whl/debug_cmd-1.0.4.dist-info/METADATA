@@ -1,0 +1,44 @@
+Metadata-Version: 2.1
+Name: debug-cmd
+Version: 1.0.4
+Summary: Debug linux command error by using GPT/LLM.
+Home-page: https://github.com/megmogmog1965/debug_cmd
+Author: Yusuke Kawatsu
+Author-email: mail@sample.com
+License: MIT
+Keywords: gpt debug
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.10
+Requires-Python: >=3
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: openai
+Requires-Dist: langchain
+
+# debug_cmd
+
+## Installation
+
+```shell
+pip install debug_cmd
+```
+
+## How to use.
+
+You need OpenAI key.
+
+```shell
+export OPENAI_API_KEY='your key'
+```
+
+Then,
+
+```shell
+debug_cmd ls /aaa
+```
+
+Or, if you want to use pipe `|` or redirect `>`, etc, you need to use -c option.
+
+```shell
+debug_cmd -c 'ls /aaa'
+```
