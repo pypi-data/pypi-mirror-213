@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: sendysms
+Version: 0.3
+Summary: A Python package for sending SMS messages
+Home-page: https://github.com/sendysms/sendysms
+Author: Sendy SMS Services
+Author-email: private123@mailitant.ink
+License: MIT

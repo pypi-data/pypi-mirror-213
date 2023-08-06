@@ -1,0 +1,7 @@
+setup.py
+sendysms/__init__.py
+sendysms.egg-info/PKG-INFO
+sendysms.egg-info/SOURCES.txt
+sendysms.egg-info/dependency_links.txt
+sendysms.egg-info/requires.txt
+sendysms.egg-info/top_level.txt
