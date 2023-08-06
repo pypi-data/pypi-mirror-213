@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: natia
+Version: 0.0.1
+Summary: Natia stands for NATural IterAction. We aim to build a toolkit that leverages LLMs.
+Author-email: Isaac Fei <isaac.omega.fei@gmail.com>
+Project-URL: Homepage, https://github.com/Isaac-Fate/natural-interact
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+
+# Natia
+
+Natia stands for NATural IterAction. We aim to build a toolkit that leverages LLMs.
