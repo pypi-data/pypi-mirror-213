@@ -1,0 +1,3 @@
+[console_scripts]
+sublime-music=sublime_music.__main__:main
+
