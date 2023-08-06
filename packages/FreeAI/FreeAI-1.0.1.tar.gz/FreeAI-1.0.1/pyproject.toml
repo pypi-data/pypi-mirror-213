@@ -1,0 +1,18 @@
+[project]
+name = "FreeAI"
+version = "1.0.1"
+authors = [
+  { name="Ashiq Hussain", email="imseldrith@gmail.com" }
+]
+description = "FreeAI is a powerful Python package that utilizes the advanced capabilities of GPT (Generative Pre-trained Transformer) models for text generation. It allows users to generate creative and context-aware text based on a given prompt. Whether you need to generate code snippets, creative writing pieces, or technical documentation, FreeAI has got you covered."
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent"
+]
+
+[project.urls]
+"Homepage" = "https://github.com/mir-ashiq/FreeAI"
+"Bug Tracker" = "https://github.com/mir-ashiq/FreeAI/issues"

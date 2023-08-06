@@ -1,0 +1,8 @@
+README.md
+pyproject.toml
+setup.py
+FreeAI.egg-info/PKG-INFO
+FreeAI.egg-info/SOURCES.txt
+FreeAI.egg-info/dependency_links.txt
+FreeAI.egg-info/requires.txt
+FreeAI.egg-info/top_level.txt
