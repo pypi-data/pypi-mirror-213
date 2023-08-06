@@ -1,0 +1,12 @@
+neon_cli/__init__.py,sha256=UHsfyqWe1vyI_YfG8g_tWQrBr8gTaoiQKLWof0DCl-4,2433
+neon_cli/__main__.py,sha256=xOmH8MotMwr-IiDPC6zparno9ARBP9n4184HBKCrIRc,3776
+neon_cli/cli.py,sha256=psoytpg4e6qaQsflucIqKyPJ18NtSb4Ex202MLBPxw0,2824
+neon_cli/gui_server.py,sha256=cFN25T_HsvjlrKbBh0zutfagu_oW4yZSuV19B9YUqSs,6242
+neon_cli/text_client.py,sha256=_-RoJu6_lkjLORLGtrlDZNG_zCfFvDO2D-SlSlzgcdo,48473
+neon_cli/utils.py,sha256=PBzFs1Ee3DwrNzMZ-ColLvuqmT_gJwL3JctrqqACTJw,94
+neon_cli_client-0.2.4a9.dist-info/LICENSE.md,sha256=duRln-UxVnKWHvIyXZeOgHZv1irQZdI-lkcjKCXFz2M,11745
+neon_cli_client-0.2.4a9.dist-info/METADATA,sha256=Ou2VUePSUGId-r2S4ETad267P7JLid5g8YAm8bR_AuY,1866
+neon_cli_client-0.2.4a9.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+neon_cli_client-0.2.4a9.dist-info/entry_points.txt,sha256=aCTbMQZ17oVNKm6iDm65f-DivrADAQvnCgD9H1xT_Jg,51
+neon_cli_client-0.2.4a9.dist-info/top_level.txt,sha256=vVXnTS1KMPYOlG_GuwSC80myxPIi1lwJdyHzwn6bMsI,9
+neon_cli_client-0.2.4a9.dist-info/RECORD,,
