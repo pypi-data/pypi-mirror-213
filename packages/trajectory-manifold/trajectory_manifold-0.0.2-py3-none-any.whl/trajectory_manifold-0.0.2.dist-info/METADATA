@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: trajectory-manifold
+Version: 0.0.2
+Summary: Statistically Rigorous ODE Forecasting
+Author-email: Helmuth Naumer <hnaumer2@illinois.edu>
+Project-URL: Homepage, https://github.com/helmuthn/trajectory_manifold
+Project-URL: Documentation, https://www.helmuthnaumer.com/trajectory_manifold/
+Project-URL: Bug Tracker, https://github.com/helmuthn/trajectory_manifold/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: Topic :: Scientific/Engineering :: Mathematics
+Classifier: Intended Audience :: Science/Research
+Classifier: Development Status :: 2 - Pre-Alpha
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: jax (>=0.4.3)
+Requires-Dist: diffrax (>=0.3.0)
+Requires-Dist: jaxtyping
+
+# Trajectory Manifold
+
+[![Documentation](https://img.shields.io/badge/Documentation-Main-darkgreen)](https://www.helmuthnaumer.com/trajectory_manifold/)
+
+This repository contains code around statistical estimation on the trajectory manifold.
+
+It is intended to accompany a paper currently under review.
+
+The directory `figures` contains code to reproduce the figures in the work, while the directory `examples` contains the quick start example from the documentation.
