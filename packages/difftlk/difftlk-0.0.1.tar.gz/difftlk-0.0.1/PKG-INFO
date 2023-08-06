@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: difftlk
+Version: 0.0.1
+Summary: Toolkit for arbitrary object comparison.
+License: MIT
+Author: Viran Ribic
+Author-email: viran.ribic@gmail.com
+Requires-Python: >=3.11,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Description-Content-Type: text/markdown
+
+# difftlk
+
+Repository containing diff toolkit for data comparison of arbitrary types.
+
