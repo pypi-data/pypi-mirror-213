@@ -1,0 +1,9 @@
+djsm/__init__.py,sha256=IsUcDEfYWJ94OM5bmnPhQTtl5_H720U25VEDU2edoR0,625
+djsm/crypt.py,sha256=oEn35rKC7kSrrr5AzSoJHzubKfhxOm8bJ_MGo5E4J4o,7999
+djsm/jcrypt.py,sha256=O_V979MmL1YK948VblxKS82iW7M55vV6_DDq-bVhuM4,7337
+djsm/manager.py,sha256=mASzyaMzM_tXEiPUdOieEZSvpWXSWuxZvgQ2zwBrg1A,14305
+djsm-0.0.2.dist-info/LICENSE,sha256=ZzouGaDV5JeAFT3qP8e0RNE6AEDBWGWTtZoQ9iyi4Uo,1104
+djsm-0.0.2.dist-info/METADATA,sha256=FGzABpW9xymneIKz6HwYjHdbqRq4I14DCZdXdGw5wpQ,13136
+djsm-0.0.2.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+djsm-0.0.2.dist-info/top_level.txt,sha256=ylhIAadTPGkbrthQC28sd7TiDoIJ0e3JmpITQrA_MRE,5
+djsm-0.0.2.dist-info/RECORD,,
