@@ -1,0 +1,11 @@
+README.md
+setup.py
+caraml_auth/__init__.py
+caraml_auth/id_token_credentials.py
+caraml_auth_google.egg-info/PKG-INFO
+caraml_auth_google.egg-info/SOURCES.txt
+caraml_auth_google.egg-info/dependency_links.txt
+caraml_auth_google.egg-info/requires.txt
+caraml_auth_google.egg-info/top_level.txt
+tests/__init__.py
+tests/test_id_token_credentials.py
