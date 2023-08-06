@@ -1,0 +1,4 @@
+[console_scripts]
+lollms-console = lollms.console:main
+lollms-server = lollms.server:main
+
