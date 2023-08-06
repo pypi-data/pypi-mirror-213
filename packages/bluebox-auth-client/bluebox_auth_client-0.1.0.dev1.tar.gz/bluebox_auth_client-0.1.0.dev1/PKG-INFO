@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: bluebox-auth-client
+Version: 0.1.0.dev1
+Summary: 
+Requires-Python: >=3.10,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: grpcio-tools (>=1.54.2,<2.0.0)
+Description-Content-Type: text/markdown
+
+In progress...

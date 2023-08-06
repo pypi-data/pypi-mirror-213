@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "bluebox-auth-client"
+version = "0.1.0dev1"
+description = ""
+authors = []
+readme = "README.md"
+packages = [{include = "bluebox_auth_client"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+grpcio-tools = "^1.54.2"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
