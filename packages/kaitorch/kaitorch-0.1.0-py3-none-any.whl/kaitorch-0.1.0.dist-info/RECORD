@@ -1,0 +1,16 @@
+kaitorch/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+kaitorch/activations.py,sha256=r0e77fvtN_HTdHE5qNNCE7rA33WF77Fudhr12jUoiOQ,3509
+kaitorch/core.py,sha256=o5H0eiAgo3zqS9REQsi_4f2QkxgaTaOwDq4jBxbvDt0,4599
+kaitorch/functional.py,sha256=04iEm9PQ42JBo_hF6iTEglwHLgt6hBo_FSBQVE4Alqw,2871
+kaitorch/graph.py,sha256=hLknY-amYj7tqMAAvUBfv9H-rAEORWys64pUVhJpQFY,1215
+kaitorch/initializers.py,sha256=VUwaKqWstAkrbu0w96XNvbJ6bIT8VGNzOLoYIYLEp8Q,3162
+kaitorch/layers.py,sha256=qLCqYQqh-jt95zNjLsdX6T9aYZxqDtkoOu-zIPW9IOI,3488
+kaitorch/losses.py,sha256=vkGM18FQDTn_J_zKdzkNkfArgRdbPzLd89rLx3CwPNg,2455
+kaitorch/models.py,sha256=5EYbeX7saEupfZkLRvTeAeLVpApX_GuN0VYZh1m2v8M,6175
+kaitorch/optimizers.py,sha256=-G0Pft2Ir5Cr15AHhT2QT5rLr84eWqnFl4T2fIc2Fes,4512
+kaitorch/utils.py,sha256=aZERbdUKvFFqdsBwe9gE-9OAlyVXW1tgW582-5lTmWo,555
+kaitorch-0.1.0.dist-info/LICENSE,sha256=DMMpIq-37D3IqB85fVPzDKJZhmECKVj5l-5_FZxfiMY,1064
+kaitorch-0.1.0.dist-info/METADATA,sha256=DJ-LsI1SaXcmBfDL1A_4ldX3C3jRoKXCuieq3gFLSLw,3630
+kaitorch-0.1.0.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+kaitorch-0.1.0.dist-info/top_level.txt,sha256=VskF_gfqu0wW1Shb4OVp69o43XPkAFBVlcY8bIYjWrQ,9
+kaitorch-0.1.0.dist-info/RECORD,,

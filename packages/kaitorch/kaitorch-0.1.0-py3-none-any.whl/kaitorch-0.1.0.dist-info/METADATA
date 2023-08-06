@@ -1,0 +1,109 @@
+Metadata-Version: 2.1
+Name: kaitorch
+Version: 0.1.0
+Summary: A Keras-like neural network library with an autograd engine operating on a dynamically built DAG of scalar values
+Home-page: https://github.com/kaihayden/kaitorch
+Author: Kai Hayden
+Author-email: kaihayden97@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# KaiTorch
+
+![logo](./imgs/kaitorch.png)
+
+KaiTorch is a  deep learning library that dynamically builds a neural network as a **decentralized acyclic graph** (DAG) of `Scalar` values and implements backprop using reverse-mode autodiff. Heavily over-commented, highly impractical, but hopefully educational.
+
+It implements a **Keras-like API** that allows you to build models using a `Sequential` class with Dense and Dropout layers, with implementations of several commonly used weight initializers, activation functions, optimizers, and loss functions.
+
+This project was inspired by and is an extension of Andrej Karpathy's [micrograd](https://github.com/karpathy/micrograd) :)
+
+-----
+
+## Installation
+
+```python
+pip install kaitorch
+```
+
+-----
+
+## Tutorial Notebooks
+0) __Functions and Gradients__
+	* Jupyter Notebook // Google Colab
+    * **keywords:** functions, derivatives, gradients
+1) __Functions as a Feed Forward Neural Net__
+	* Jupyter Notebook // Google Colab
+    * **keywords:** directed acyclic graph, operator overloading, magic methods, recursion
+2) __Reverse-mode Autodiff and Backpropogation__
+	* Jupyter Notebook // Google Colab
+    * **keywords:** chain rule, reverse-mode autodiff, topological sort, backprop
+3) __Activation Functions__
+	* Jupyter Notebook // Google Colab
+    * **keywords:** sigmoid, tanh, ReLU, LeakyReLU, ELU, swish
+4) __Multi-layer Perceptron and Weight Initialization__
+	* Jupyter Notebook // Google Colab
+    * **keywords:** dense layer, multi-layer perceptron, weight initialization, sequential class
+5) __Loss Functions__
+	* Jupyter Notebook // Google Colab
+    * **keywords:** mean squared error, binary crossentropy, categorical crossentropy
+6) __Gradient Descent and Optimizers__ (\*personal favorite)
+	* Jupyter Notebook // Google Colab
+    * **keywords**: gradient descent, learning rate, momentum, adagrad, rmsprop, adam
+7) __Inverted Dropout__
+	* Jupyter Notebook // Google Colab
+    * **keywords:** dropout layer, inverted dropout, regularization
+
+## Example Notebooks
+8) __Regression__
+	* Jupyter Notebook // Google Colab
+9) __Binary Classification__
+	* Jupyter Notebook // Google Colab
+10) __Multi-class Classification__
+	* Jupyter Notebook // Google Colab
+
+-----
+
+# Keras-esque API
+## Building a Neural Net
+```python
+from kaitorch.models import Sequential
+from kaitorch.layers import Dense, Dropout
+from kaitorch.losses import CategoricalCrossentropy
+from kaitorch.optimizers import Adam
+from kaitorch.activations import LeakyReLU
+from kaitorch.initializers import LecunNormal
+
+model = Sequential()
+
+model.add(Dense(12, activation='sigmoid', initializer='he_normal'))
+model.add(Dropout(0.25))
+model.add(Dense(12, activation=LeakyReLU(alpha=0.01), initializer=LecunNormal()))
+model.add(Dense(3, activation='softmax'))
+
+model.compile(
+    optimizer=Adam(lr=0.025),
+    loss=CategoricalCrossentropy()
+)
+```
+
+## Training a Neural Net
+```python
+history = model.fit(X_train, y_train, epochs=32)
+
+y_pred = model.predict(X_test)
+```
+
+## Tracing/Visualization
+```python
+model.plot_model(filename='trace')
+```
+![logo](./imgs/trace.png)
+
+
