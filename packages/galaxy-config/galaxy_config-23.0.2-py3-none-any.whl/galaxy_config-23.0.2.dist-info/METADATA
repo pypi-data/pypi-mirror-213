@@ -1,0 +1,80 @@
+Metadata-Version: 2.1
+Name: galaxy-config
+Version: 23.0.2
+Summary: Galaxy configuration
+Home-page: https://github.com/galaxyproject/galaxy
+Author: Galaxy Project and Community
+Author-email: galaxy-committers@lists.galaxyproject.org
+License: AFL
+Keywords: Galaxy
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Academic Free License (AFL)
+Classifier: Natural Language :: English
+Classifier: Operating System :: POSIX
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Topic :: Software Development
+Classifier: Topic :: Software Development :: Code Generators
+Classifier: Topic :: Software Development :: Testing
+Requires-Python: >=3.7
+Description-Content-Type: text/x-rst
+License-File: LICENSE
+Requires-Dist: galaxy-util
+Requires-Dist: boltons
+Requires-Dist: jinja2
+Requires-Dist: pykwalify
+Requires-Dist: PyYAML
+
+
+.. image:: https://badge.fury.io/py/galaxy-config.svg
+   :target: https://pypi.org/project/galaxy-config/
+
+
+Overview
+--------
+
+The Galaxy_ config module.
+
+* Code: https://github.com/galaxyproject/galaxy
+
+.. _Galaxy: http://galaxyproject.org/
+
+History
+-------
+
+.. to_doc
+
+-------------------
+23.0.2 (2023-06-13)
+-------------------
+
+No recorded changes since last release
+
+-------------------
+23.0.1 (2023-06-08)
+-------------------
+
+
+=========
+Bug fixes
+=========
+
+* Change default watchdog inotify_buffer log level to info by `@mvdbeek <https://github.com/mvdbeek>`_ in `#15967 <https://github.com/galaxyproject/galaxy/pull/15967>`_
+
+============
+Enhancements
+============
+
+* Add ``ca_certs`` option for sentry client by `@mvdbeek <https://github.com/mvdbeek>`_ in `#15943 <https://github.com/galaxyproject/galaxy/pull/15943>`_
+
+-------------------
+22.1.1 (2022-08-22)
+-------------------
+
+* Initial release
