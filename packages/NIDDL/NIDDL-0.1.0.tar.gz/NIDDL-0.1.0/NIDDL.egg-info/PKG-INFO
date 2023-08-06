@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: NIDDL
+Version: 0.1.0
+Summary: Neuro Imaging Denoising via Deep Learning (NIDDL)
+Home-page: https://github.com/shiveshc/whole-brain_DeepDenoising
+Author: Shivesh Chaudhary
+Author-email: shiveshc@gmail.com
+License: MIT
+Keywords: conversion
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+License-File: LICENSE
+
+NIDDL code for denoising of volumetric calcium imaging recordings. Chaudhary, S., Moon, S. & Lu, H. Fast, efficient, and accurate neuro-imaging denoising via supervised deep learning. Nat Commun 13, 5165 (2022). https://doi.org/10.1038/s41467-022-32886-w
