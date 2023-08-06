@@ -1,0 +1,11 @@
+LICENSE,sha256=ACwmltkrXIz5VsEQcrqljq-fat6ZXAMepjXGoe40KtE,1069
+pytest_watcher/__init__.py,sha256=xW4R0OesF-_j1_Iz6k1RXWGZhletrrWuyenXPQFgjns,76
+pytest_watcher/__main__.py,sha256=T1I_TktTfhAby6q-z5IWn5fdEHeJpOjF6QmQAqa3noY,81
+pytest_watcher/config.py,sha256=DNHkxGnmrK-5yC_aLkU_gTAxRh-wC5gp9A2Y9SEZ_4M,2393
+pytest_watcher/constants.py,sha256=VOpTdUkhb7ZuN6g9FjpF-Jj65KB_QCR0cNPD58scRoQ,56
+pytest_watcher/watcher.py,sha256=c8JepFibs0RBYTHZV-KeU020Aa9jkp1xm2YTEWqdKCQ,4885
+pytest_watcher-0.3.3.dist-info/LICENSE,sha256=ACwmltkrXIz5VsEQcrqljq-fat6ZXAMepjXGoe40KtE,1069
+pytest_watcher-0.3.3.dist-info/METADATA,sha256=CT4rUx2B1_azUUYyuQ0VmP5jfnRxRwRjnQDy3hhn8no,5533
+pytest_watcher-0.3.3.dist-info/WHEEL,sha256=Zb28QaM1gQi8f4VCBhsUklF61CTlNYfs9YAZn-TOGFk,88
+pytest_watcher-0.3.3.dist-info/entry_points.txt,sha256=VuWUyILuGaHz5yQK7izpd5qJtD8u-lSFNhZSTFpvxG0,76
+pytest_watcher-0.3.3.dist-info/RECORD,,
