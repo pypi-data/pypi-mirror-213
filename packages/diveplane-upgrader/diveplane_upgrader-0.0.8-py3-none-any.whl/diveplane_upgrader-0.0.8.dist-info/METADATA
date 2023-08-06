@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: diveplane-upgrader
+Version: 0.0.8
+Summary: Diveplane Python package upgrade utility.
+Home-page: https://www.diveplane.com
+Author: Diveplane Corp
+Author-email: support@diveplane.com
+License: Diveplane Corporation Free Software License
+Keywords: machine learning artificial intelligence
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+Requires-Dist: pyyaml (<7.0,>=5.4.1)
+
+# Diveplane Upgrader
+
