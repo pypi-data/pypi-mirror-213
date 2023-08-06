@@ -1,0 +1,22 @@
+[project]
+name = "la-env"
+version = "0.1.0"
+description = "Check environment variables"
+authors = [
+    { name = "thiagola92", email = "thiagola92@gmail.com" },
+]
+dependencies = []
+requires-python = ">=3.11"
+readme = "README.md"
+
+[project.license]
+text = "MIT"
+
+[build-system]
+requires = [
+    "pdm-backend",
+]
+build-backend = "pdm.backend"
+
+[tool.pdm.dev-dependencies]
+dev = []

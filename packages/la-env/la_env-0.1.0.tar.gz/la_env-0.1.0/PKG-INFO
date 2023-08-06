@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: la-env
+Version: 0.1.0
+Summary: Check environment variables
+Author-Email: thiagola92 <thiagola92@gmail.com>
+License: MIT
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+
+# la-env
+Simple function to raise error if environment variables do not exists.
+
+# install
+`pip install la-env`
+
+# usage
+```python
+from la_env import env_exists
+
+env_exists(["POSTGRES_URI", "RABBIT_URI", "REDIS_URI"])
+```
