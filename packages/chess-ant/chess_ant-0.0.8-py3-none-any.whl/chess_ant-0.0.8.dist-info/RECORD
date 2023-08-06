@@ -1,0 +1,9 @@
+chess_ant/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+chess_ant/chess_ant.py,sha256=dPVMBpKpZ5HMzbdR-TZk6IFZm81GyIjSgPX3On3AY2o,13067
+chess_ant/chess_mcts.py,sha256=QV-oEw_d2W2uL4nyfTQuabZz2JR11e7tFwC_EHlLzjU,2116
+chess_ant-0.0.8.dist-info/LICENSE.txt,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+chess_ant-0.0.8.dist-info/METADATA,sha256=P1OwmWT04RaIZZn5CksfAIR7DVNR-xmAUbPmMbV59JQ,2206
+chess_ant-0.0.8.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+chess_ant-0.0.8.dist-info/entry_points.txt,sha256=nhaXILQIlAKp2j_-WBfG0aBUqMh58CJyjEKwUyAWzRE,115
+chess_ant-0.0.8.dist-info/top_level.txt,sha256=RSYImuv24g9NwubVROGWYHkpYfp77rVrepGkG-vE5cY,10
+chess_ant-0.0.8.dist-info/RECORD,,
