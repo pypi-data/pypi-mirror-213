@@ -1,0 +1,37 @@
+Metadata-Version: 2.1
+Name: SeanFunctions
+Version: 0.5.4
+Summary: Collection of useful python functions
+Author-email: Sean Fayfar <sfayfar@gmail.com>
+Project-URL: Homepage, https://github.com/sfayfar/SeanFunctions
+Project-URL: Bug Tracker, https://github.com/sfayfar/SeanFunctions/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy
+Requires-Dist: scipy
+Requires-Dist: lmfit
+Requires-Dist: uncertainties
+Requires-Dist: mendeleev
+
+# SeanFunctions python package
+![GitHub tag (latest SemVer)](https://img.shields.io/github/v/tag/sfayfar/SeanFunctions)
+![PyPI](https://img.shields.io/pypi/v/SeanFunctions)
+
+This is a collection of python functions that have been useful
+
+## Installation
+This Python package is available to download through [PyPi](https://pypi.org/project/SeanFunctions/)
+
+To install the function use
+
+`pip install SeanFunctions`
+
+The required packages should automatically be installed.
+
+## Version number
+current version = 'v0.5.4'
+
