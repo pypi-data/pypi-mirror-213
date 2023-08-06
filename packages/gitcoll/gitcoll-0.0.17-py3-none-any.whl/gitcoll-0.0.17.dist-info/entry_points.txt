@@ -1,0 +1,3 @@
+[console_scripts]
+gcln = gcln.main:main
+gcln2 = gcln2.main:main_no_args
