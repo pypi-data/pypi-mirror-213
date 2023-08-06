@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=61", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "SpotiStats"
+version = "0.1.4"
+description = ""
+authors = [
+    { name = "jaypyles", email = "jpylesbusiness@gmail.com" },
+]
+requires-python = ">=3.9"
+readme = "README.md"
+license = { text = "MIT" }
+
+[tool.pdm]
+name = "SpotiStats"
+version = "0.1.2"
+description = "Description of your application"
+dependencies = [
+    "requests",
+    "python-dotenv",
+    "click",
+    "jsonpath_ng"
+]
+
+[tool.pdm.entrypoints]
+console_scripts = ["SpotiStats=SpotiStats.__main__:cli"]
