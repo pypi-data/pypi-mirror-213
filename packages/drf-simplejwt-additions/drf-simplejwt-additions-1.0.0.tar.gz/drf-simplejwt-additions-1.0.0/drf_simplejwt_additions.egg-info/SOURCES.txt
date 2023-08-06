@@ -1,0 +1,12 @@
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+drf_simplejwt_additions/__init__.py
+drf_simplejwt_additions/serializers.py
+drf_simplejwt_additions/views.py
+drf_simplejwt_additions.egg-info/PKG-INFO
+drf_simplejwt_additions.egg-info/SOURCES.txt
+drf_simplejwt_additions.egg-info/dependency_links.txt
+drf_simplejwt_additions.egg-info/requires.txt
+drf_simplejwt_additions.egg-info/top_level.txt
