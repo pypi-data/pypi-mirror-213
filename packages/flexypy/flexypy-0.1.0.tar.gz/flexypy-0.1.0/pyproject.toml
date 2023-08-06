@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "flexypy"
+version = '0.1.0'
+description = "Web framework."
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+]
+dependencies = [
+    'gunicorn',
+    'Jinja2',
+    'fire',
+    'cryptography'
+]
+
+[tool.setuptools.packages.find]
+include = ["flexypy*"]
+namespaces = false

@@ -1,0 +1,6 @@
+Metadata-Version: 2.1
+Name: flexypy
+Version: 0.1.0
+Summary: Web framework.
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.7
