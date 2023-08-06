@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: labeltransform2
+Version: 1.4
+Summary: dataset label style transform tool
+Home-page: 
+Author: victor
+Requires-Python: >=3
+License-File: LICENSE
