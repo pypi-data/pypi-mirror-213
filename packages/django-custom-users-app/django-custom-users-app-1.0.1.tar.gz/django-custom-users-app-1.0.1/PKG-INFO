@@ -1,0 +1,89 @@
+Metadata-Version: 2.1
+Name: django-custom-users-app
+Version: 1.0.1
+Summary: Template for your own Django users app with custom user model.
+Home-page: https://github.com/AllYouZombies/django_custom_users_app
+Author: Astafeev Rustam
+Author-email: rustam@astafeev.dev
+License: MIT License
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Django
+Classifier: Framework :: Django :: 3
+Classifier: Framework :: Django :: 3.0
+Classifier: Framework :: Django :: 3.1
+Classifier: Framework :: Django :: 3.2
+Classifier: Framework :: Django :: 4
+Classifier: Framework :: Django :: 4.0
+Classifier: Framework :: Django :: 4.1
+Classifier: Framework :: Django :: 4.2
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Topic :: Internet :: WWW/HTTP
+Classifier: Topic :: Internet :: WWW/HTTP :: Dynamic Content
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+# Django Custom Users App
+  
+App that provides custom user model for Django projects.
+You don't need to create your own app for users in every project.
+  
+This app itself might not be useful. It's just a template for creating custom user model.  
+You can use it as a starting point for your own app.  
+E.g. you can fork this repo, customize it and push to your own repo.  
+Then you can install it in your projects using `pip install <your-repo-url>`.
+  
+> If you find this app useful, please consider giving it a star on [GitHub](https://github.com/AllYouZombies/django-custom-users-app).
+  
+---
+  
+## Installation
+  
+```shell
+pip install django-custom-users-app
+```
+  
+---
+  
+## Usage
+  
+Add `users` to `INSTALLED_APPS` in your `settings.py` file.
+  
+```python
+INSTALLED_APPS = [
+    ...
+    'users',
+    ...
+]
+```
+  
+Add `AUTH_USER_MODEL` to your `settings.py` file.
+  
+```python
+AUTH_USER_MODEL = 'users.User'
+```
+  
+Then run migrations:
+  
+```shell
+python manage.py migrate
+```
+  
+---
+  
+## License
+  
+[MIT](https://choosealicense.com/licenses/mit/)
+  
+---
+  
