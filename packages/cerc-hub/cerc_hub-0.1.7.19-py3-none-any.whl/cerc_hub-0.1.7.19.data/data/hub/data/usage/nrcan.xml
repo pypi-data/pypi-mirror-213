@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<nrcan base_url="https://raw.githubusercontent.com/NREL/openstudio-standards/master/lib/openstudio-standards/standards/necb/">
+    <space_types>NECB2015/data/space_types.json</space_types>
+    <space_types_compliance>NECB2015/qaqc/qaqc_data/space_compliance_2015.json</space_types_compliance>>
+    <schedules>NECB2015/data/schedules.json</schedules>
+</nrcan>
