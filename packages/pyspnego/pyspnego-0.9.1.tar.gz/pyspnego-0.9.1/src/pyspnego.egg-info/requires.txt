@@ -1,0 +1,10 @@
+cryptography
+
+[kerberos]
+
+[kerberos:sys_platform != "win32"]
+gssapi>=1.6.0
+krb5>=0.3.0
+
+[yaml]
+ruamel.yaml
