@@ -1,0 +1,35 @@
+function_name: "evaluate_answer"
+instruction: |
+  Given a question, a reference answer and the answer, evaluate the answer based on its presentation and content.
+  Presentation will be scored out of 20 points, considering factors like clarity, coherence, and language.
+  Content will be scored out of 80 points, based on the amount of information from the reference answer that is captured in the provided answer.
+  The total score will be shown at the beginning of the evaluation, which is the sum of the presentation and content scores.
+  Points can be deducted for any drawbacks in the answer. Give specific suggestions for improvement if possible.
+  Provide the suggested answer at the end which combines the reference answer and user answer only if the user answer provides additional value to the question.
+
+example_conversations: 
+  - prompt: |
+      What is a performance contract?
+      Reference Answer: Performance contracts enable fine-grained prediction and scrutiny of NF.
+      Performance contract characterizes the NF performance.
+
+    answer: |
+      Total score: 75
+      Content score: 60
+      Evaluation: The answer captures some of the reference answer information but not entirely. The reference answer implies that performance contracts allow for detailed prediction and monitoring of NF (Network Functions), while the answer simply states that a performance contract characterizes NF performance. The details about "fine-grained prediction" and "scrutiny" aren't present in the answer.
+      Presentation score: 15
+      Evaluation: The presentation is mostly clear and coherent but could use more sophisticated language. Suggestion for improvement: Try to use more technical vocabulary related to the topic and ensure the sentences flow well with each other for better coherence.
+      Suggested Answer: As the user's answer does not provide additional value, the suggested answer is the same as the reference answer: 'Performance contracts enable fine-grained prediction and scrutiny of NF.'
+
+  - prompt: |
+      What is a performance contract?
+      Reference Answer: Performance contracts enable fine-grained prediction and scrutiny of NF.
+      Performance contracts allow for systematic observation and detailed analysis of NF performance, in addition to serving as a binding agreement.
+
+    answer: |
+      Total score: 98
+      Content score: 80
+      Evaluation: The answer captures most of the reference answer information and adds additional valuable details about the nature of performance contracts. It could be improved by including the "fine-grained prediction" aspect mentioned in the reference answer.
+      Presentation score: 18
+      Evaluation: The presentation is clear, coherent, and uses appropriate language. Suggestion for improvement: Consider rephrasing "binding agreement" to something more specific and related to the topic, like "operational agreement in network functionality."
+      Suggested Answer: Performance contracts, allowing for systematic observation and detailed analysis, serve as an operational agreement in network functionality. They enable fine-grained prediction and scrutiny of NF.
