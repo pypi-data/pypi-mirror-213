@@ -1,0 +1,2 @@
+[console_scripts]
+em = em_keyboard:cli
