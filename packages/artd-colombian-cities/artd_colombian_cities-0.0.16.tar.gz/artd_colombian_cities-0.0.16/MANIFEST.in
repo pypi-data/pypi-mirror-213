@@ -1,0 +1,7 @@
+include LICENSE
+include README.rst
+include *.py
+graft colombian_cities/
+global-exclude *.pyc
+global-exclude *.pyo
+prune __pycache__
