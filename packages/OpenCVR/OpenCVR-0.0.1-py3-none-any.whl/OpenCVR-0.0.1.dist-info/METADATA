@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: OpenCVR
+Version: 0.0.1
+Summary: A small example package
+Author-email: Kent Madsen <kent.vejrup.madsen@cloud.iojaegers.com>
+Maintainer-email: maintenance@cloud.iojaegers.com
+Project-URL: Homepage, https://github.com/IO-Jaegers/FetchCVR
+Project-URL: Issues, https://github.com/IO-Jaegers/FetchCVR/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+

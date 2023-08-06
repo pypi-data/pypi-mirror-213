@@ -1,0 +1,9 @@
+__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+FetchCVR/FetchCVRAPI.py,sha256=M_yMHmV9JA-bTwkN3ZUsjMiPjTB77rAnf18TKiZh58U,363
+FetchCVR/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+FetchCVR/Labels/__init__.py,sha256=6mxHphtozRkcXFm7-0sKSAitFQo7gVdO6bN0LAwCl5s,51
+FetchCVR/Labels/acronyms.py,sha256=Isc-O53hD6i5nw27KHq-iAn7bGrOuHdX9RgtJrAmN-s,40
+OpenCVR-0.0.1.dist-info/METADATA,sha256=Wv2xSS5QLLJhvsZHmSFDHUvA5pl1sTyma9ILwTX2ces,540
+OpenCVR-0.0.1.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+OpenCVR-0.0.1.dist-info/top_level.txt,sha256=Zl-owFxmY43ouA1X1BHFUfGUVXPbNX2raGspiUmxujg,18
+OpenCVR-0.0.1.dist-info/RECORD,,
