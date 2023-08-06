@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+./cpdb/parser.c
+cpdb/almost_working.pyx
+cpdb/old.pyx
+cpdb/parser.c
+cpdb/parser.pyx
+cpdb_protein.egg-info/PKG-INFO
+cpdb_protein.egg-info/SOURCES.txt
+cpdb_protein.egg-info/dependency_links.txt
+cpdb_protein.egg-info/requires.txt
+cpdb_protein.egg-info/top_level.txt
+tests/test_similarity_to_biopandas.py
