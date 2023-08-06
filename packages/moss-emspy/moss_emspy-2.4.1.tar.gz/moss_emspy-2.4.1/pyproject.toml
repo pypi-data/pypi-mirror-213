@@ -1,0 +1,72 @@
+[tool.poetry]
+name = "moss_emspy"
+version = "2.4.1"
+description = "Package to interact with MOSS WEGA-EMS"
+license = "MIT"
+authors = ["M.O.S.S.Computer Grafik Systeme GmbH <develop@moss.de>"]
+maintainers = ["M.O.S.S.Computer Grafik Systeme GmbH <develop@moss.de>"]
+homepage = "https://www.moss.de/"
+packages = [{ include = "moss" }]
+readme = "README.md"
+keywords = ["wegaems",]
+classifiers = [
+    "Environment :: Console",
+    "Operating System :: OS Independent",
+    "Development Status :: 5 - Production/Stable",
+    "Intended Audience :: Developers",
+    "Environment :: Other Environment",
+    "Topic :: Software Development :: Libraries :: Python Modules"
+]
+
+[tool.poetry.dependencies]
+python = ">=3.7,<4"
+requests = "^2.27.0"
+anytree = "2.8.0"
+tqdm = "4.64.0"
+
+[tool.poetry.dev-dependencies]
+black = "^22.6.0"
+isort = "^5.10.1"
+pytest = "^7.1.2"
+pre-commit = "^2.20.0"
+commitizen = "^2.32.2"
+flake8 = "^5.0.4"
+mkdocs = "1.2.*"
+mkdocs-material = "8.2.*"
+tox = "^3.25.1"
+pytest-cov = "^3.0.0"
+mkdocstrings = "^0.19.0"
+taskipy = "^1.10.2"
+mkdocstrings-python = "^0.7.1"
+mypy = "^0.971"
+gdal = {path = "GDAL-3.4.3-cp39-cp39-win_amd64.whl", markers = "sys_platform == 'win32'"}
+
+
+[tool.poetry.scripts]
+moss_emscli = {reference = "moss/ems/scripts/moss_emscli.py", type = "file"}
+
+[tool.poetry.group.dev.dependencies]
+mock = "^4.0.3"
+mkdocs-with-pdf = "^0.9.3"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.isort]
+profile = "black"
+
+[tool.taskipy.tasks]
+new_release = "generate_release && push_tag"
+generate_release = "poetry run cz bump --changelog"
+push_tag = "git push --tags"
+
+[tool.commitizen]
+name = "cz_conventional_commits"
+version = "2.4.1"
+tag_format = "$version"
+version_files = [
+    "moss/ems/__init__.py",
+    "pyproject.toml:version"
+]
+changelog_file = "CHANGELOG.md"

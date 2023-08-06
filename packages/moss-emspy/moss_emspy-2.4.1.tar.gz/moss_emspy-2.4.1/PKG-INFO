@@ -1,0 +1,53 @@
+Metadata-Version: 2.1
+Name: moss-emspy
+Version: 2.4.1
+Summary: Package to interact with MOSS WEGA-EMS
+Home-page: https://www.moss.de/
+License: MIT
+Keywords: wegaems
+Author: M.O.S.S.Computer Grafik Systeme GmbH
+Author-email: develop@moss.de
+Maintainer: M.O.S.S.Computer Grafik Systeme GmbH
+Maintainer-email: develop@moss.de
+Requires-Python: >=3.7,<4
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Console
+Classifier: Environment :: Other Environment
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Dist: anytree (==2.8.0)
+Requires-Dist: requests (>=2.27.0,<3.0.0)
+Requires-Dist: tqdm (==4.64.0)
+Description-Content-Type: text/markdown
+
+# MOSS emspy
+
+## Description
+
+This is the Python SDK to interact with [M.O.S.S. Computer Grafik Systeme GmbH](https://www.moss.de/wega/) WEGA-EMS
+
+## Installation
+
+This package kann be installed using pip
+
+```shell
+python -m pip install moss_emspy
+```
+
+## Usage
+
+```python
+my_service = Service("http://localhost:8080/wega-ems/",
+            username="Test",
+            password="Test")
+my_service.projects
+```
+
