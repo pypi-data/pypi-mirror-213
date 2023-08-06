@@ -1,0 +1,2 @@
+[aioworkers]
+prometheus = aioworkers_prometheus
