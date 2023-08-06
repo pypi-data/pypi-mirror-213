@@ -1,0 +1,29 @@
+[build-system]
+requires      = ["setuptools>=61.0.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "models-files-manager"
+version = "1.0.2"
+description = "Manage saved models files, encode fields into filenames"
+readme = "README.md"
+authors = [{ name = "Ram Nathaniel", email = "ram.nathaniel@gmail.com" }]
+license = { file = "LICENSE" }
+classifiers = [
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+]
+keywords = ["deep", "learning", "models", "files", "manager"]
+dependencies = ['tomli; python_version < "3.11"']
+requires-python = ">=3.7"
+
+[project.optional-dependencies]
+dev   = ["pip-tools", "mypy", "pytest"]
+
+[project.urls]
+repository    = "https://github.com/RamNathaniel/models-files-manager"
+documentation = "https://ramnathaniel.github.io/models-files-manager"
+
+[tool.mypy]
+strict = true

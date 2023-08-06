@@ -1,0 +1,83 @@
+Metadata-Version: 2.1
+Name: models-files-manager
+Version: 1.0.2
+Summary: Manage saved models files, encode fields into filenames
+Author-email: Ram Nathaniel <ram.nathaniel@gmail.com>
+License: MIT License
+        
+        Copyright (c) 2023 Ram Nathaniel
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+        
+Project-URL: repository, https://github.com/RamNathaniel/models-files-manager
+Project-URL: documentation, https://ramnathaniel.github.io/models-files-manager
+Keywords: deep,learning,models,files,manager
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Provides-Extra: dev
+License-File: LICENSE
+
+# Models Files Manager
+
+The Models Files Manager is a simple tool that helps you keep track of saved models (PyTorch/Keras/Onnx/etc.) saved on the hard drive. You can set up a number of fields, that will get encoded into the file names, and query the files saved.
+
+The Models Files Manager helps you avoid illegal chars in the paths, and easily retrive saved files for loading.
+
+## Installation
+
+You can install the Models Files Manager from [PyPI](https://pypi.org/project/models-files-manager/):
+
+    python -m pip install models-files-manager
+
+The manager is supported and tested on Python 3.8 and above.
+
+## How to use
+
+To use the Models Files Manager, in your own Python code, by importing from the `models_files_manager` package:
+
+    >>> from models_files_manager import ModelsFilesManager
+    >>> manager = ModelsFilesManager(root, ['field1', 'field2'], 'ext')
+    >>> models_file_names = manager.get_model_files(lambda d: d['field1'] == 'value1')
+
+Or to create a new file name:
+
+    >>> from models_files_manager import ModelsFilesManager
+    >>> manager = ModelsFilesManager(root, ['field1', 'field2'], 'ext')
+    >>> file_name = manager.get_file_name({'field1': 'value1', 'field2': 'value2'})
+
+Or get the field values of a specific model, from the path:
+
+    >>> from models_files_manager import ModelsFilesManager
+    >>> manager = ModelsFilesManager(root, ['field1', 'field2'], 'ext')
+    >>> fields = manager.get_fields_values('model file name')
+    >>> print(fields['field1'])
+
+To directly encode/decode into strings to a path-safe format:
+    
+    >>> from models_files_manager import ModelsFilesManager
+    >>> safe_string = ModelsFilesManager.path_escape(string)
+    >>> orig_string = ModelsFilesManager.path_decode(safe_string)
+
+Free to use in any way, open source or commercial - see attached license.
+
+Happy training!
+Ram Nathaniel, 2023

@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+models_files_manager/__init__.py
+models_files_manager/models_files_manager.py
+models_files_manager.egg-info/PKG-INFO
+models_files_manager.egg-info/SOURCES.txt
+models_files_manager.egg-info/dependency_links.txt
+models_files_manager.egg-info/requires.txt
+models_files_manager.egg-info/top_level.txt
+test/test_manager.py
