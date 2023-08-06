@@ -1,0 +1,17 @@
+LICENSE
+MANIFEST.in
+README.rst
+pyproject.toml
+setup.cfg
+setup.py
+src/result/__init__.py
+src/result/py.typed
+src/result/result.py
+src/result.egg-info/PKG-INFO
+src/result.egg-info/SOURCES.txt
+src/result.egg-info/dependency_links.txt
+src/result.egg-info/requires.txt
+src/result.egg-info/top_level.txt
+src/result.egg-info/zip-safe
+tests/test_pattern_matching.py
+tests/test_result.py
