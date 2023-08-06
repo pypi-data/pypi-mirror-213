@@ -1,0 +1,3 @@
+[console_scripts]
+HistoEncoder=histoencoder._cli:run
+
