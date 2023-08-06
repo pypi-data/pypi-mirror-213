@@ -1,0 +1,50 @@
+LICENCE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+seg/__init__.py
+seg.egg-info/PKG-INFO
+seg.egg-info/SOURCES.txt
+seg.egg-info/dependency_links.txt
+seg.egg-info/requires.txt
+seg.egg-info/top_level.txt
+seg/data/SEH/L-20190710105904098.jpg
+seg/data/SEH/Left Eye (OS)-1a49cc95-8243-4bf7-8876-7a3b5ad268d3.12.jpg
+seg/data/SEH/Left Eye (OS)-3a9205b9-3c6b-420b-b29a-28fc62d71723.18.jpg
+seg/data/SEH/Left Eye (OS)-3a9205b9-3c6b-420b-b29a-28fc62d71723.26.jpg
+seg/data/SEH/Left Eye (OS)-3cf1ffb6-534b-457f-84d9-8c2d493f78f9.20.jpg
+seg/data/SEH/Left Eye (OS)-3cf1ffb6-534b-457f-84d9-8c2d493f78f9.29.jpg
+seg/data/SEH/Left Eye (OS)-4a0a63b7-927e-441a-981c-ab9d3d88c82e.40.jpg
+seg/data/SEH/Left Eye (OS)-4a0ceec1-2e04-477c-974f-2a6201bffe61.12.jpg
+seg/data/SEH/Left Eye (OS)-4a0ceec1-2e04-477c-974f-2a6201bffe61.16.jpg
+seg/data/SEH/Left Eye (OS)-4c9f80aa-e1fe-4650-b0ee-a0b6ff94c4b0.30.jpg
+seg/data/SEH/Left Eye (OS)-4c9f80aa-e1fe-4650-b0ee-a0b6ff94c4b0.32.jpg
+seg/data/SEH/Left Eye (OS)-4d20f2e0-513c-4f93-8284-d0fdaf70fa48.41.jpg
+seg/data/SEH/Left Eye (OS)-4dd4f885-3193-4fd2-b15a-eb17952a9fb1.17.jpg
+seg/data/SEH/Left Eye (OS)-4dd4f885-3193-4fd2-b15a-eb17952a9fb1.19.jpg
+seg/data/SEH/Left Eye (OS)-4e4e9d6b-2acf-4b2d-8371-a13027848100.27.jpg
+seg/data/SEH/Left Eye (OS)-4fbc22ef-ddf3-4440-b848-af6a72daf243.13.jpg
+seg/data/SEH/Left Eye (OS)-4fbc22ef-ddf3-4440-b848-af6a72daf243.18.jpg
+seg/data/SEH/Left Eye (OS)-5b92c0a8-5d8e-4eef-8503-eb70c228d5a9.20.jpg
+seg/data/SEH/Left Eye (OS)-659fe945-2826-42a6-b1ce-18968aa29ec3.21.jpg
+seg/data/SEH/Left Eye (OS)-77360d52-26c2-4126-8556-fad4c3394292.22.jpg
+seg/data/SEH/OD-01de9516-dffa-412b-8bb8-48c95b053bf5.9.png
+seg/data/SEH/OD-0e3aa543-e90c-4127-acae-4e05a77723f4.37.jpg
+seg/data/SEH/OD-1dd7e75f-ecd2-41c6-9abb-518c00ce30c7.26.jpg
+seg/data/SEH/OD-1fc21ead-1ce0-403e-88f8-7aaece27e066.4.png
+seg/data/SEH/OD-697cc1fb-351c-4602-a1de-4d51c85c5aea.33.png
+seg/data/SEH/OD-697cc1fb-351c-4602-a1de-4d51c85c5aea.8.png
+seg/data/SEH/OD-7821556e-5f57-4a99-82fa-1b618f599f59.4.png
+seg/data/SEH/OD-a5634d69-c6a0-490e-be7f-190166772037.13.jpg
+seg/data/SEH/OD-ae66c9bd-652e-4dd6-a6cc-45aeb0226a85.36.jpg
+seg/data/SEH/OD-b8babbc1-3842-4a3f-aed1-81e9942729d1.jpg
+seg/data/SEH/OD-c2ed6483-878d-47d0-8e12-1d5a6db9cd70.22.png
+seg/data/SEH/OD-f97fda00-1064-4bea-b216-9c47c45bf745.48.jpg
+seg/data/SEH/OS-8e884d25-3962-4916-98bf-5e5ea5816d65.34.png
+seg/data/SEH/Right Eye (OD)-aab75462-969e-46d0-8fd5-78ce22b4d530.7.jpg
+seg/data/SEH/cbff746c-a6ab-4750-a41a-04e6c4d0fc00.5.jpg
+seg/data/SEH/cbff746c-a6ab-4750-a41a-04e6c4d0fc00.7.jpg
+seg/data/SEH/left-10e1209c-6d4a-4b03-be47-cac81ff305b3.22.jpg
+seg/data/SEH/left-8ea222d3-fa00-43dc-b362-ac6d16c25a83.17.jpg
+seg/data/SEH/left-c7aed0e7-1673-4112-8883-7e4eca0d313b.23.jpg
