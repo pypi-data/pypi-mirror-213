@@ -1,0 +1,8 @@
+drjson/__init__.py,sha256=dHSvR1_wm89QLGV9yFp_jq9oo7rPMzU-wpJSzRniYSE,55
+drjson/drjson.pyi,sha256=prmgCjBZ931ON8FOdPo62c-VFKvboXu7fov8WDritvc,1686
+drjson/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+drjson/drjson.cpython-39-darwin.so,sha256=HP6rNNWZ550UPINSCFaaNpMVpgU5Kc4kFD7_mDgShBY,129304
+drjson-3.0.0.dist-info/RECORD,,
+drjson-3.0.0.dist-info/WHEEL,sha256=d8sjrkKo8h1ZY8Oxdq-K-58JEo6nLEfNKzkM0CYZtr0,108
+drjson-3.0.0.dist-info/top_level.txt,sha256=F_UvpF7yRih5m2ey-UypoZ2VjBOmiHmX7ard5O4Pjr0,7
+drjson-3.0.0.dist-info/METADATA,sha256=3zoDBiBGWCcg-kZJMI_zecwlwRZ65F1gH1zhcXIKBJA,889
