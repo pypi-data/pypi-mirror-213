@@ -1,0 +1,22 @@
+{
+    "kleine_miserie": {
+        "punten_geslaagd": 18,
+        "punten_niet_geslaagd": -18,
+        "punten_anderen_niet_geslaagd": {"1": 12, "2": 24, "3": 36}
+    },
+    "piccolo": {
+        "punten_geslaagd": 27,
+        "punten_niet_geslaagd": -27,
+        "punten_anderen_niet_geslaagd": {"1": 18, "2": 36, "3": 54}
+    },
+    "grote_miserie": {
+        "punten_geslaagd": 36,
+        "punten_niet_geslaagd": -36,
+        "punten_anderen_niet_geslaagd": {"1": 24, "2": 48, "3": 72}
+    },
+    "grote_miserie_op_tafel": {
+        "punten_geslaagd": 72,
+        "punten_niet_geslaagd": -72,
+        "punten_anderen_niet_geslaagd": {"1": 48, "2": 96, "3": 144}
+    }
+}
