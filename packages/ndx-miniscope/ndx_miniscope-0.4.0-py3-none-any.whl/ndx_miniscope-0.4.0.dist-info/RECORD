@@ -1,0 +1,9 @@
+ndx_miniscope/__init__.py,sha256=bjlrbtyBF-_ZVF8IHzazLlyVEs2oFkAfLzG0AsGvL8s,25
+ndx_miniscope/miniscope.py,sha256=gsvBNErcgFpmXp4pxjHYaaH4LxHTFZg2vzvARgim0aE,2453
+ndx_miniscope/spec/ndx-miniscope.extensions.yaml,sha256=VYJamtQZICpBTHWBSkhu7dcpqCR7O9yn2UPG4L0mMZg,1255
+ndx_miniscope/spec/ndx-miniscope.namespace.yaml,sha256=dec97n0Eq4R2za1Oy4--StDthwNcgSaXew3_FNFZXD4,277
+ndx_miniscope-0.4.0.dist-info/LICENSE.txt,sha256=gPsr0u4J9LZCKwuVKsOkRLO-pS9YDPwNelgswkJuO0o,1559
+ndx_miniscope-0.4.0.dist-info/METADATA,sha256=MjKI9zmeShHbiv3c_2qT2s3c3wM6sqGW1SAK1ys62tg,3257
+ndx_miniscope-0.4.0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+ndx_miniscope-0.4.0.dist-info/top_level.txt,sha256=xsojWEsqWbmdozfVRMUeYPeO_lHSZZxjdMLg0QzeDDs,14
+ndx_miniscope-0.4.0.dist-info/RECORD,,
