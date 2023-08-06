@@ -1,0 +1,34 @@
+[tool.poetry]
+name = "py-sec-vault"
+version = "0.0.1.2"
+description = "Hashicorp Vault implementation in python software"
+authors = ["CISolutions B.V. <info@cisolutions.nl>"]
+license = "MIT"
+readme = "README.md"
+packages = [{include = "src"}]
+homepage = "https://github.com/zEktONO/py-sec-vault"
+repository = "https://github.com/zEktONO/py-sec-vault"
+keywords = ["vault", "hashicorp", "security"]
+classifiers = [
+    "Environment :: Console",
+    "Operating System :: OS Independent",
+    "Topic :: Software Development :: Documentation",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Topic :: Software Development :: Quality Assurance",
+]
+include = [
+    "LICENSE",
+]
+
+
+[tool.poetry.dependencies]
+python = "^3.11"
+hvac = "^1.1.0"
+
+
+[tool.poetry.group.dev.dependencies]
+black = "^23.3.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
