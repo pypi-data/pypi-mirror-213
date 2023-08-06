@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "advancedselector"
+version = "2.1.0.1"
+authors = [
+  { name="Hegedus Joshua", email="jh.host39@gmail.com" },
+]
+description = "An advanced python selection picker"
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: Microsoft :: Windows"
+]
+dependencies = [
+    "py-getch",
+    'windows-curses',
+]
+[project.urls]
+"Homepage" = "https://github.com/bit-of-faith/python-solutions/advancedselector"
+"Bug Tracker" = "https://github.com/bit-of-faith/python-solutions/issues"
