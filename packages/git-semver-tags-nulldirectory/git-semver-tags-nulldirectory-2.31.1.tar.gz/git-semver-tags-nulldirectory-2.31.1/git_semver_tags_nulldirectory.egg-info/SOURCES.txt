@@ -1,0 +1,7 @@
+LICENSE
+README.md
+setup.py
+git_semver_tags_nulldirectory.egg-info/PKG-INFO
+git_semver_tags_nulldirectory.egg-info/SOURCES.txt
+git_semver_tags_nulldirectory.egg-info/dependency_links.txt
+git_semver_tags_nulldirectory.egg-info/top_level.txt
