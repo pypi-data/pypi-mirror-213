@@ -1,0 +1,51 @@
+[build-system]
+requires = ["flit_core >=3.2,<4"]
+build-backend = "flit_core.buildapi"
+
+[project]
+name = "sphinx-xournal"
+authors = [
+    {name = "Arkadiusz Michał Ryś", email = "Arkadiusz.Michal.Rys@gmail.com"},
+]
+readme = "README.rst"
+requires-python = ">=3.10"
+classifiers = [
+    "License :: OSI Approved :: GNU Library or Lesser General Public License (LGPL)",
+    "Programming Language :: Python :: 3",
+    "Development Status :: 2 - Pre-Alpha",
+    "Intended Audience :: Developers",
+    "Natural Language :: English",
+]
+dynamic = ["version", "description"]
+license = {file = "LICENSE"}
+keywords = ["sphinx", "xournal", "notes"]
+dependencies = [
+{%- for dependency in requirements.sphinx_xournal %}
+    "{{ dependency }}",
+{%- endfor %}
+]
+
+[project.optional-dependencies]
+test = [
+{%- for dependency in requirements.test %}
+    "{{ dependency }}",
+{%- endfor %}
+]
+doc = [
+{%- for dependency in requirements.doc %}
+    "{{ dependency }}",
+{%- endfor %}
+]
+dev = [
+{%- for dependency in requirements.dev %}
+    "{{ dependency }}",
+{%- endfor %}
+]
+graphical = [
+{%- for dependency in requirements.graphical %}
+    "{{ dependency }}",
+{%- endfor %}
+]
+
+[project.urls]
+source = "https://git.rys.one/arrys/sphinx-xournal"

@@ -1,0 +1,76 @@
+image: python:3.11
+
+variables:
+  DOCKER_DRIVER: overlay2
+  DOCKER_TLS_CERTDIR: "/certs"
+  DOCKER_HOST: tcp://docker:2376
+  DRAWIO_VERSION: "21.2.8"
+
+stages:
+  - build
+  - test
+  - release
+
+build-upload:
+  image: python:3.11
+  stage: release
+  before_script:
+    - python -V
+    - echo "${CI_API_V4_URL}/projects/${CI_PROJECT_ID}/packages/pypi"
+  script:
+    - pip install build twine flit
+    #- FLIT_NO_NETWORK=1
+    - FLIT_INDEX_URL=${CI_API_V4_URL}/projects/${CI_PROJECT_ID}/packages/pypi flit build
+    - TWINE_PASSWORD=${CI_JOB_TOKEN} TWINE_USERNAME=gitlab-ci-token python -m twine upload --repository-url ${CI_API_V4_URL}/projects/${CI_PROJECT_ID}/packages/pypi dist/*
+  cache:
+    paths:
+      - .cache/pip
+  rules:
+    - if: $CI_COMMIT_TAG
+    - if: $CI_PIPELINE_SOURCE == "push" || $CI_COMMIT_BRANCH == "dev"
+      when: manual
+      allow_failure: true
+
+build-upload-pypi:
+  image: python:3.11
+  stage: release
+  before_script:
+    - python -V
+    - echo "${CI_API_V4_URL}/projects/${CI_PROJECT_ID}/packages/pypi"
+  script:
+    - pip install build twine flit
+    - flit build
+    - python -m twine upload dist/*
+  cache:
+    paths:
+      - .cache/pip
+  rules:
+    - if: $CI_COMMIT_TAG
+    - if: $CI_PIPELINE_SOURCE == "push" || $CI_COMMIT_BRANCH == "dev"
+      when: manual
+      allow_failure: true
+
+deploy-docs:
+  image: python:3.11
+  stage: release
+  before_script:
+    - export DISPLAY=:0
+    - add-apt-repository ppa:apandada1/xournalpp-stable && apt-get update && apt-get install xournalpp
+    - apt-get update && apt-get -y install wget curl xvfb nano libgtk-3-0 libnotify4 libnss3 libxss1 libxtst6 xdg-utils libatspi2.0-0 libappindicator3-1 libsecret-1-0 libgbm1 desktop-file-utils libasound2 && rm -rf /var/lib/apt/lists/*
+    - wget https://github.com/jgraph/drawio-desktop/releases/download/v$DRAWIO_VERSION/drawio-amd64-$DRAWIO_VERSION.deb
+    - dpkg -i drawio-amd64-$DRAWIO_VERSION.deb
+    - rm drawio-amd64-$DRAWIO_VERSION.deb
+    - python -V
+    - echo "${CI_API_V4_URL}/projects/${CI_PROJECT_ID}/packages/pypi"
+  script:
+    - export DISPLAY=:0
+    - pip install -U -r requirements.txt
+    - python3 -m sphinx docs public
+  artifacts:
+    paths:
+      - public
+  rules:
+    - if: $CI_COMMIT_TAG
+    - if: $CI_PIPELINE_SOURCE == "push" || $CI_COMMIT_BRANCH == "dev"
+      when: manual
+      allow_failure: true
