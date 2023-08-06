@@ -1,0 +1,13 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+Lib/wbpOutput/__init__.py
+Lib/wbpOutput/outputwin.py
+Lib/wbpOutput/preferences.py
+Lib/wbpOutput.egg-info/PKG-INFO
+Lib/wbpOutput.egg-info/SOURCES.txt
+Lib/wbpOutput.egg-info/dependency_links.txt
+Lib/wbpOutput.egg-info/entry_points.txt
+Lib/wbpOutput.egg-info/requires.txt
+Lib/wbpOutput.egg-info/top_level.txt
