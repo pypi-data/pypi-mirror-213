@@ -1,0 +1,6 @@
+build
+dist
+fdlogger
+install_icon
+pics
+testing
