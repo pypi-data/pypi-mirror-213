@@ -1,0 +1,2 @@
+[console_scripts]
+example_cli_command = example_package_joaopcnogueira.__main__:main
