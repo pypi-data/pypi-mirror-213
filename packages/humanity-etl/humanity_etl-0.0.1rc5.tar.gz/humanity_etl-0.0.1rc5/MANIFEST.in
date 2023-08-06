@@ -1,0 +1,13 @@
+include LICENSE
+include README_PUBLIC.md
+exclude README.md
+
+recursive-include tests *
+
+recursive-exclude * __pycache__
+recursive-exclude * *.py[co]
+recursive-exclude * .github
+recursive-exclude .env
+recursive-exclude * sample_output
+
+recursive-include docs *.rst conf.py Makefile make.bat *.jpg *.png *.gif
