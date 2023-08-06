@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+README.md
+settings.ini
+setup.py
+mjwt/__init__.py
+mjwt/_modidx.py
+mjwt/utils.py
+mjwt.egg-info/PKG-INFO
+mjwt.egg-info/SOURCES.txt
+mjwt.egg-info/dependency_links.txt
+mjwt.egg-info/entry_points.txt
+mjwt.egg-info/not-zip-safe
+mjwt.egg-info/requires.txt
+mjwt.egg-info/top_level.txt
