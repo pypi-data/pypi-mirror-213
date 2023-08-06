@@ -1,0 +1,7 @@
+LICENSE
+README.md
+setup.py
+ntmpackage.egg-info/PKG-INFO
+ntmpackage.egg-info/SOURCES.txt
+ntmpackage.egg-info/dependency_links.txt
+ntmpackage.egg-info/top_level.txt
