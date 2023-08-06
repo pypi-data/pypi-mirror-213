@@ -1,0 +1,36 @@
+@charset "UTF-8";
+/* CSS Document */
+
+@page {
+
+    margin-top: 16%;
+
+}
+
+:root {
+
+  --branding-color: black;
+
+}
+
+/************************** NARRATIVE **************************/
+
+.narrative {
+
+    column-count: 2;
+    column-gap: 50px;
+    column-fill: balance;
+
+}
+
+/* subheads */
+.narrative h1,
+.narrative h2,
+.narrative h3,
+.narrative h4,
+.narrative h5,
+.narrative h6 {
+
+    font-weight: 700;
+
+}

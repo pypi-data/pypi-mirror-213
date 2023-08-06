@@ -1,0 +1,3 @@
+pkgparser
+pytest
+pytest-cov

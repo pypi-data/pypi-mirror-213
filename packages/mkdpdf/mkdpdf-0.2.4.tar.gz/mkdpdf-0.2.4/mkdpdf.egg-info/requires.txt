@@ -1,0 +1,8 @@
+markdown
+pyyaml
+weasyprint==52.5
+
+[test]
+pkgparser
+pytest
+pytest-cov
