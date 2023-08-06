@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: intel-extension-for-deepspeed
+Version: 0.1.dev20230613
+Summary: Intel Extension for DeepSpeed
+Author: Intel Corporation
+License-File: LICENSE
+
