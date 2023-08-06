@@ -1,0 +1,3 @@
+[console_scripts]
+cosmian-anonymize=cosmian_anonymization.anonymize:cli
+

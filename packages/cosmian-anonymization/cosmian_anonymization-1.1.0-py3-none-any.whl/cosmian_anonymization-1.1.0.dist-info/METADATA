@@ -1,0 +1,65 @@
+Metadata-Version: 2.1
+Name: cosmian-anonymization
+Version: 1.1.0
+Summary: Cosmian Anonymization library in Python
+Author: Hugo Rosenkranz-Costa
+Author-email: hugo.rosenkranz@cosmian.com
+Requires-Python: >=3.8,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: cloudproof-py (>=4.0,<5.0)
+Requires-Dist: pandas (>=2.0,<3.0)
+Requires-Dist: pyhumps (>=3.8,<4.0)
+Requires-Dist: python-dateutil (>=2.8,<3.0)
+Description-Content-Type: text/markdown
+
+# anonymization-python
+
+[![PyPI version](https://badge.fury.io/py/cosmian-anonymization.svg)](https://badge.fury.io/py/cosmian-anonymization)
+![Build status](https://github.com/Cosmian/anonymization-python/actions/workflows/ci.yml/badge.svg)
+
+Cosmian Anonymization library in Python
+
+## Usage
+
+- As a library
+
+```python
+from cosmian_anonymization import anonymize_dataframe
+
+try:
+    # Anonymize the raw data according to a configuration.
+    anonymized_df = anonymize_dataframe(df_raw, config)
+except ValueError as e:
+    print("Anonymization failed:", e)
+```
+
+- From command line
+
+```bash
+cosmian-anonymize <input_csv> <input_config> <output_csv>
+```
+
+## Build from source
+
+- Install dependencies
+
+```bash
+poetry install
+```
+
+- Build package
+
+```bash
+poetry build
+```
+
+- Run tests
+
+```bash
+poetry run python -m unittest tests/*.py
+```
+
