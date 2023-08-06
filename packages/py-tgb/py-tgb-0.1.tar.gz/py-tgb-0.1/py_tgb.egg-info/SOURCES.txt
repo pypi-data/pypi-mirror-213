@@ -1,0 +1,6 @@
+README.md
+setup.py
+py_tgb.egg-info/PKG-INFO
+py_tgb.egg-info/SOURCES.txt
+py_tgb.egg-info/dependency_links.txt
+py_tgb.egg-info/top_level.txt
