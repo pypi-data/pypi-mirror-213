@@ -1,0 +1,2 @@
+[console_scripts]
+jdMinecraftLauncher = jdMinecraftLauncher.jdMinecraftLauncher:main

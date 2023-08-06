@@ -1,0 +1,64 @@
+Metadata-Version: 2.1
+Name: jdMinecraftLauncher
+Version: 5.0
+Summary: A classic styled Minecraft Launcher
+Author-email: JakobDev <jakobdev@gmx.de>
+License: GPL v3
+Project-URL: Source, https://codeberg.org/JakobDev/jdMinecraftLauncher
+Project-URL: Issues, https://codeberg.org/JakobDev/jdMinecraftLauncher/issues
+Project-URL: Translate, https://translate.codeberg.org/projects/jdMinecraftLauncher
+Project-URL: Donation, https://ko-fi.com/jakobdev
+Keywords: JakobDev,Minecraft,Mojang,launcher,PyQt
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: Environment :: Other Environment
+Classifier: Environment :: X11 Applications :: Qt
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Natural Language :: English
+Classifier: Natural Language :: German
+Classifier: Topic :: Games/Entertainment
+Classifier: Operating System :: OS Independent
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: PyQt6
+Requires-Dist: PyQt6-WebEngine
+Requires-Dist: minecraft-launcher-lib
+Requires-Dist: requests
+
+# jdMinecraftLauncher
+
+![Flathub](https://img.shields.io/flathub/downloads/com.gitlab.JakobDev.jdMinecraftLauncher)
+![Flathub](https://img.shields.io/flathub/v/com.gitlab.JakobDev.jdMinecraftLauncher)
+![PyPI - License](https://img.shields.io/pypi/l/jdMinecraftLauncher)
+![PyPI - Python Version](https://img.shields.io/pypi/pyversions/jdMinecraftLauncher)
+![Language grade: Python](https://img.shields.io/lgtm/grade/python/g/JakobDev/jdMinecraftLauncher.svg)
+
+jdMinecraftLauncher is a OpenSource Minecraft Launcher written in Python. You need Java and a Mojang Account to use this programm.
+
+This program uses [minecraft-launcher-lib](https://pypi.org/project/minecraft-launcher-lib) to install and start Minecraft.
+
+You need [Python](https://www.python.org/) to run jdMinecraftLauncher.
+
+## Installation
+### Windows
+You can find a prebuild portable version on [Sourceforge](https://sourceforge.net/projects/jdminecraftlauncher).
+
+### Linux
+You can install jdMinecraftLauncher from [Flathub](https://flathub.org/apps/details/com.gitlab.JakobDev.jdMinecraftLauncher). Users of Arch basee systems can also install it from the [AUR](https://aur.archlinux.org/packages/jdminecraftlauncher).
+
+### From source
+Install all needed dependencies before the first run:  
+`pip install -r requirements.txt`  
+After that, run jdMinecraftLauncher.py with Python.
