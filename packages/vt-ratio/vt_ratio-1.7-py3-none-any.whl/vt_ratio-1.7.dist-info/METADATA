@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: vt-ratio
+Version: 1.7
+Summary: A Python3 package for calculating VirusTotal scan malicious ratios.
+Home-page: https://github.com/th3tr1ckst3r/vt_ratio
+Author: Adrian Tarver
+Keywords: VirusTotal scan malicious ratio
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+License-File: LICENSE
+Requires-Dist: vt
+
