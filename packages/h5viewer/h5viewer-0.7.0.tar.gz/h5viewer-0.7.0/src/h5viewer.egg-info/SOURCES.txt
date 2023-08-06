@@ -1,0 +1,15 @@
+LICENCE
+MANIFEST.in
+README.md
+requirements.txt
+setup.py
+docs/releases/0.7.0.md
+src/h5viewer/__init__.py
+src/h5viewer/hdf5_viewer.bat
+src/h5viewer/main.py
+src/h5viewer.egg-info/PKG-INFO
+src/h5viewer.egg-info/SOURCES.txt
+src/h5viewer.egg-info/dependency_links.txt
+src/h5viewer.egg-info/entry_points.txt
+src/h5viewer.egg-info/requires.txt
+src/h5viewer.egg-info/top_level.txt
