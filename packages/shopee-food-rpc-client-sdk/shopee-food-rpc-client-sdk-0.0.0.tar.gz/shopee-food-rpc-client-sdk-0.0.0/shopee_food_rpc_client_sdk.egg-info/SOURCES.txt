@@ -1,0 +1,6 @@
+README.md
+setup.py
+shopee_food_rpc_client_sdk.egg-info/PKG-INFO
+shopee_food_rpc_client_sdk.egg-info/SOURCES.txt
+shopee_food_rpc_client_sdk.egg-info/dependency_links.txt
+shopee_food_rpc_client_sdk.egg-info/top_level.txt
