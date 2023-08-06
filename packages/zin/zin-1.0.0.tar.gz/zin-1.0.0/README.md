@@ -1,0 +1,64 @@
+# Zin
+
+zin is a lightweight command management tool that simplifies scripting and task automation. It provides an simple interface for defining and executing custom commands, helping you streamline your workflows and boost productivity.
+
+## Features
+
+- Command Definition: Easily define custom commands using a YAML configuration file.
+- Command Execution: Use a straightforward command-line interface to carry out the commands you've specified.
+- Modeled after [Rav](https://github.com/jmitchel3/rav): The flexibility and ease-of-use of the command-line program [Rav](https://github.com/jmitchel3/rav) serve as inspiration for zin.
+
+## Usage
+
+To install `zin`, you can use pip:
+
+```bash
+pip install zin
+```
+
+## Configuration
+
+Make sure that 'zin.yaml' is present in the root working directory of your project before using 'zin'. But running 'zin' for the first time will automatically create the file if it doesn't already exist.
+
+The `zin.yaml` file follows a simple and easy-to-use format. Start with the `scripts:` section, followed by the command names and their corresponding commands. You can include multiple commands for a single command name using YAML collections.
+
+Example `zin.yaml` configuration:<br>
+(this is just an example for demonstration purposes.)
+
+```yaml
+scripts:
+  tests: python -m pytest --cov=my_module tests/
+  build:
+    - rm -rf dist/
+    - venv/bin/python3 -m build
+    - venv/bin/pip uninstall rav
+    - venv/bin/pip install -e .
+```
+
+Feel free to add more commands as needed.
+
+**To run a command** using `zin`, you can use the following syntax:
+
+```bash
+zin run <command_name>
+```
+
+**To list all the commands** using `zin`, you can use the following syntax:
+
+```bash
+zin list
+``` 
+
+## Contributing
+
+Contributions are encouraged! Please start an issue or submit a pull request if you want to share thoughts, ideas, or problem reports. As stated in the [CONTRIBUTING.md](CONTRIBUTING.md) file, be sure that you stick to the guidelines.
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more information.
+
+---
+
+**Note:** zin is highly inspired by [Rav](https://github.com/jmitchel3/rav), a command-line tool developed by [Justin Mitchel](https://github.com/jmitchel3).
+
+**Happy coding with zin! 😁**
