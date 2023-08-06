@@ -1,0 +1,25 @@
+[tool.poetry]
+name = "s3uploader-ci-cd"
+version = "1.0.4"
+description = "S3 Uploader for CI/CD pipeline"
+readme = "README.md"
+homepage = "https://github.com/Mellkori/s3uploader"
+authors = ["Mellkori <milos.slavik@outlook.com>"]
+packages = [
+    { include = "s3uploader", from = "src" },
+]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+boto3 = "1.26.122"
+python-dotenv = "1.0.0"
+coverage = "7.2.3"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+s3uploader = "s3uploader:main"
