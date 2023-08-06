@@ -1,0 +1,12 @@
+uglyduck/.DS_Store,sha256=Oz-dRKY8-unwNw00tlB6cp4pIhmatx0ifEGN1QKw2Qc,6148
+uglyduck/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+uglyduck/analyzer.py,sha256=ulYWkQUQhVqlqkl046jw98d1sxNkUfkEFFNaBLtvjiI,187
+uglyduck/inspector.py,sha256=yb5maceSrZatjgiEV8GNP2QDnMvvHy43r3B3l0A4q_A,18607
+uglyduck/parse.py,sha256=3eRbuo6_H8GJbukEaFJTHxsl-OXRLK9ni2ENSyMKyJ4,2905
+uglyduck/tests.py,sha256=r4oAusqh5637vl4y657W1uom7CYCtnpgorwJT7F9gik,2293
+uglyduck/types.py,sha256=WaCeCanu8K2uP3eOTz_J5NcsY85fmFmg2RagHXSSURQ,42
+uglyduck/utils.py,sha256=zvY7SzbvfiBS3lGYmBzgq-v0tjx-kfyLvLSW6UTIOIA,209
+uglyduck-0.0.2.dist-info/METADATA,sha256=R3nI_YSBayMONeAMDSJ5P3mtCuDt3yS66ZAAQyrO9NY,2302
+uglyduck-0.0.2.dist-info/WHEEL,sha256=9QBuHhg6FNW7lppboF2vKVbCGTVzsFykgRQjjlajrhA,87
+uglyduck-0.0.2.dist-info/licenses/LICENSE,sha256=EVwSP0sOkuOuWRHG1VxeRvZTcHAwEHr737nk0Re-xW4,1069
+uglyduck-0.0.2.dist-info/RECORD,,
