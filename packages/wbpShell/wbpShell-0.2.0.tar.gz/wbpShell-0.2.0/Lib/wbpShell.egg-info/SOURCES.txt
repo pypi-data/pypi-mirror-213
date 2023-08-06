@@ -1,0 +1,13 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+Lib/wbpShell/__init__.py
+Lib/wbpShell/preferences.py
+Lib/wbpShell/shellwin.py
+Lib/wbpShell.egg-info/PKG-INFO
+Lib/wbpShell.egg-info/SOURCES.txt
+Lib/wbpShell.egg-info/dependency_links.txt
+Lib/wbpShell.egg-info/entry_points.txt
+Lib/wbpShell.egg-info/requires.txt
+Lib/wbpShell.egg-info/top_level.txt
