@@ -1,0 +1,2 @@
+[console_scripts]
+cobib = cobib.__main__:_main
