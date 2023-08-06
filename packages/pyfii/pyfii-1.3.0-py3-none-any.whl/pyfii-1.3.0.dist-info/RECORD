@@ -1,0 +1,14 @@
+pyfii/__init__.py,sha256=JZTEr1yE-jCPOvI0QBuC_ODbCzp6w-Bx6x6EtUlFRTk,152
+pyfii/drone.py,sha256=3aaxAZZd1Xxw-CYCssWs2LTai9r49YAFbq-GFiEGq6Q,16682
+pyfii/fii.py,sha256=foaGitpBUdUz5Of9eiC7KTW0yBxQ_EG6pBfaIq7GXPU,3190
+pyfii/read.py,sha256=1lihiW_TKZw0kIWMq3-sQ1HzgZ5HWdisDAeCfj7nQ5o,16559
+pyfii/show.py,sha256=PljbhiR9Tza0en_0UpnsQ3Cw4bPz3DBz-yYfX7wCVD8,21817
+pyfii/cv3d/IIID.py,sha256=sX-I8wB3GLwuotY2MA--tYVZ9C2Gjys2K1UiBQEfxpI,5441
+pyfii/cv3d/IIID2.py,sha256=dbGhaSOl33AqUVPWxIwT2A9G-dfvx5tzOYgOYr1pbMc,3978
+pyfii/cv3d/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pyfii/cv3d/transfer.py,sha256=2JhO-oQ8mQOlilfWMCR2L_LCTXGTJXvXTl0UQDrxa9o,1426
+pyfii-1.3.0.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+pyfii-1.3.0.dist-info/METADATA,sha256=iQHpcSWNLt-t1G33WMgBAkTDLLEXvVPE99nG01pFZ6k,2127
+pyfii-1.3.0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+pyfii-1.3.0.dist-info/top_level.txt,sha256=SsUaVbLTx_OJ6CUkbDk_e57FgvajPx3i_zisADJjjIc,6
+pyfii-1.3.0.dist-info/RECORD,,
