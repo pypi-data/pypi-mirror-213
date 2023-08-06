@@ -1,0 +1,2 @@
+homeassistant==2023.6.1
+asyncio-mqtt==0.16.1
