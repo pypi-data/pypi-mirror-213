@@ -1,0 +1,16 @@
+MLsuite/MLArguments.py,sha256=4fh2NEkKur9zlKy5wrxNeXRiEQRCIvLc2ExvTpTifk4,8860
+MLsuite/MLEstimators.py,sha256=HgygiE3qmj6e-0oAikaUlKN8tNlZZaH7KtSD3lKOGAc,26629
+MLsuite/MLLogging.py,sha256=dYcJJCjGFzTxJM2GHQRDPa8S6e1TO-Jmzf7fBTCQVSE,1931
+MLsuite/MLOpenWrite.py,sha256=kPweD5GaFoZ71LuPisl9KiOSpfEm6xGKJIE8KBA62Lw,2197
+MLsuite/MLPipeline.py,sha256=y--q-xIwyIDjLwJ8iD3wCZ8cGXu3wY7tpgDPpzLUWy8,836
+MLsuite/MLPredicting.py,sha256=qJNVla0bSXDr6wQSe1xZ61P3JOdWfWOYcCGhIz7_hJU,4450
+MLsuite/MLSupervising.py,sha256=RqPFbPk8uqYp47LNnR7WnjBWKnm8cDG-A-SCHb8VB98,28223
+MLsuite/MLUtilities.py,sha256=LRc5jWrEraFj21giCDZ8QdFCGAPGpa9O_zIB9Bl4reM,3424
+MLsuite/__init__.py,sha256=0l2UlP2BAlEpzfWMGvGYQbOAigdVdL5IAadoPz1fR70,17
+MLsuite/main.py,sha256=2_DDzDSdYs1xoN5pNR-pnUdjd3Y3kuI1gu-Z2lZ_2QA,2118
+mlsuite-2.1.5.data/scripts/mlsuite.py,sha256=aizvBoHJ8bAxoKILdVFSn8cKkWYdeMLDoSHvEzsfGuQ,421
+mlsuite-2.1.5.dist-info/LICENSE,sha256=MiC5KaJNP2ls2x-peuRnsjHPkgsA2ZMCDJTOspzd6g8,1067
+mlsuite-2.1.5.dist-info/METADATA,sha256=aeGCjSuj9mQVWsoC10aUmr3BPMrlz5siVtRLENlu9zw,1527
+mlsuite-2.1.5.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+mlsuite-2.1.5.dist-info/top_level.txt,sha256=qsg9W-t2ZBvu4tDlE0jti2mFp71ScB8NREsVBd9BkXs,8
+mlsuite-2.1.5.dist-info/RECORD,,
