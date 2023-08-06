@@ -1,0 +1,2 @@
+[console_scripts]
+mlsteam-model-cli = mlsteam_model_sdk.cli:cli
