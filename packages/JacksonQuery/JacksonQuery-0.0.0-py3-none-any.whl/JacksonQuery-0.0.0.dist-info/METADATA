@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: JacksonQuery
+Version: 0.0.0
+Summary: Automated interaction and data extraction tool for Jackson National Life Insurance website
+Home-page: https://github.com/username/JacksonQuery
+Author: Nathan Ramos, CFA®
+Author-email: info@nrcapitalmanagement.com
+Keywords: automation,jackson,scraping,selenium
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.11
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+Requires-Dist: beautifulsoup4 (>=4.12.2)
+Requires-Dist: bt (>=0.2.9)
+Requires-Dist: ffn (>=0.3.6)
+Requires-Dist: fuzzywuzzy (>=0.18.0)
+Requires-Dist: keyring (>=23.13.1)
+Requires-Dist: matplotlib (>=3.7.1)
+Requires-Dist: numpy (>=1.23.5)
+Requires-Dist: pandas (>=1.5.3)
+Requires-Dist: patsy (>=0.5.3)
+Requires-Dist: seaborn (>=0.12.2)
+Requires-Dist: selenium (>=4.9.0)
+Requires-Dist: setuptools (>=66.0.0)
+Requires-Dist: statsmodels (>=0.13.5)
+Requires-Dist: tika (>=2.6.0)
+Requires-Dist: tiafork (>=1.2.0)
+Requires-Dist: tqdm (>=4.65.0)
+
