@@ -1,0 +1,7 @@
+otel_tracer/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+otel_tracer/tracing/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+otel_tracer/tracing/tracer.py,sha256=7fGT0kPmNvd2wUpwbsMIjnjjaQKK6v8KlyB_LAztRAI,1550
+otel_tracer-0.0.3.dist-info/METADATA,sha256=iSmJAS3CczXCr4dz1I6_ZS76PZW6Pt9XK9hyoK_nsZI,854
+otel_tracer-0.0.3.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+otel_tracer-0.0.3.dist-info/top_level.txt,sha256=llJBDjZB1BQSEOpLnQesdrfISu_CEXguxypv2CGx0aY,12
+otel_tracer-0.0.3.dist-info/RECORD,,
