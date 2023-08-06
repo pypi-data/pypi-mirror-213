@@ -1,0 +1,102 @@
+@import './variables.css';
+
+/* Set the default typography for monospace elements */
+tt,
+code,
+kbd,
+samp,
+pre {
+  font-family: var(--jp-code-font-family);
+  font-size: var(--jp-code-font-size);
+  line-height: var(--jp-code-line-height);
+}
+
+.gk-exercise {
+  margin: 0;
+  padding: 10px;
+  border-style: solid;
+  border-width: 2px;
+  border-color: green;
+}
+
+.gk-exercise-image {
+  float: right;
+  width: 75px;
+}
+
+.gk-exercise-label {
+  padding: 5px;
+  border-radius: 5px;
+  background-color: green;
+  color: white;
+}
+
+table.gk-keywords tr td code {
+  background-color: transparent;
+}
+
+table.gk-keywords tr td code.new {
+  font-weight: bold;
+}
+
+table.gk-keywords tr td code.known {
+  background-color: lightgreen;
+}
+
+div.gk-cell-feedback-container {
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+  align-items: flex-end;
+  margin: 0;
+  padding: 10px;
+  border-style: solid;
+  border-width: 2px;
+  border-color: green;
+  margin-left: 78px;
+  margin-right: 21px;
+}
+
+.gk-cell-feedback-container .rating {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.gk-cell-feedback-container .star {
+  width: 20px;
+  height: 20px;
+  margin: 5px;
+  cursor: pointer;
+}
+
+.gk-cell-feedback-container .submit-button {
+  background-color: blue;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 10px;
+  cursor: pointer;
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s;
+}
+
+.gk-cell-feedback-container .submit-button:hover {
+  background-color: deepskyblue;
+  transform: translateY(-1px);
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.gk-cell-feedback-container .submit-button:active {
+  transform: translateY(1px);
+  box-shadow: none;
+}
+
+.gk-cell-feedback-container .submitted-message {
+  margin-left: 10px;
+  font-size: 12px;
+  font-weight: lighter;
+  display: flex;
+  gap: 5px;
+  justify-content: flex-end;
+}

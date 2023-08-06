@@ -1,0 +1,14 @@
+{
+  "title": "Grundkurs Theme",
+  "description": "Settings of the grundkurs theme.",
+  "properties": {
+    "url": {
+      "type": "string",
+      "title": "Url",
+      "description": "Feedback Backend Url",
+      "default": ""
+    }
+  },
+  "additionalProperties": false,
+  "type": "object"
+}
