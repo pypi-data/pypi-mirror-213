@@ -1,0 +1,24 @@
+#Prac02-Program to implement regularization to prevent the model from overfitting
+import tensorflow as tf
+
+#load data
+(train_data, train_labels), (test_data, test_labels) = tf.keras.datasets.mnist.load_data()             #load mnist dataset
+#preprocess tha data
+train_data= train_data.reshape((60000, 784))/255.0                                   # Reshape and normalize training data
+test_data= test_data.reshape((10000, 784))/255.0                                       #Reshape and normalize testing data
+train_labels= tf.keras.utils.to_categorical(train_labels)                                  #Convert training labels to one-hot encoding
+test_labels= tf.keras.utils.to_categorical(test_labels)                                     #Convert testing labels to one-hot encoding
+
+#define the model architecture
+model= tf.keras.models.Sequential([                                                                                                   #Define sequential model
+    tf.keras.layers.Dense(128, activation='relu', input_shape=(784,), kernel_regularizer=tf.keras.regularizers.l2(0.01)),   #Add a fully connected layer with 128 units, ReLU activation, and L2 regularization
+    tf.keras.layers.Dense(64, activation='relu', kernel_regularizer=tf.keras.regularizers.l2(0.01)),                              #Add another fully connected layer with 64 units, ReLU activation, and L2 regularization
+    tf.keras.layers.Dense(10, activation='softmax' )                                                                                #Add a final output layer with 10 units (one for each class), softmax activation
+])
+
+#compile the model
+model.compile(optimizer=tf.keras.optimizers.Adam(learning_rate=0.001), # Use Adam optimizer with learning rate 0.001
+              loss='categorical_crossentropy',                                                                           # Use categorical cross-entropy loss function
+              metrics=['accuracy']) 
+# Train the model
+history = model.fit(train_data, train_labels, epochs=10, batch_size=128, validation_data=(test_data, test_labels))               # Train the model for 10 epochs, using batches of size 128, and validate on the testing data at the end of each epoch
