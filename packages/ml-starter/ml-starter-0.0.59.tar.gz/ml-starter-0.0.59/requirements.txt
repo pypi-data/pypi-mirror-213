@@ -1,0 +1,12 @@
+# requirements.txt
+
+av
+numpy
+omegaconf
+psutil
+soundfile
+tensorboard
+torch>=2.0.0
+torchaudio
+torchvision
+tqdm
