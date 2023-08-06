@@ -1,0 +1,55 @@
+{% extends 'simplewiki/base.html' %}
+{% load i18n %}
+{% load humanize %}
+{% load static %}
+{% load markdown_filters %}
+{% load custom_filters %}
+
+{% block details %}
+<form method="GET" action="{% url 'simplewiki:search' %}">
+    <div class="input-group">
+      <input type="text" class="form-control" type="search" name="query" placeholder="Search.." id="searchInput" style="width: 100%;">
+      <span class="input-group-btn">
+        <button class="btn btn-success" type="submit">
+          <i class="fas fa-search"></i>
+          Go!
+          </button>
+      </span>
+    </div>
+  </form>
+    <br />
+    {% for item in available_results %}
+    <div class="panel panel-primary">
+        <div class="panel-heading">
+            <div class="panel-title">
+                <i class="{{ item.icon }}"></i>
+                <a href="{% url 'simplewiki:dynamic_menu' menu_name=item.menu_path %}">
+                    {{ item.title }}
+                </a>
+            </div>
+        </div>
+        <div class="panel-body">
+            <p>
+                {{ item.content|markdown|safe }}
+            </p>
+        </div>
+    </div>
+    {% empty %}
+        {% if oldQuery %}
+            <div class="alert alert-warning" role="alert">
+                Nothing found for "<b>{{ oldQuery }}</b>"
+            </div>
+        {% endif %}
+    {% endfor %}
+{% endblock %}
+
+{% block extra_javascript %}
+{% if oldQuery %}
+    <script>
+        document.getElementById("searchInput").value = '{{ oldQuery|escapejs }}';
+    </script>
+{% endif %}
+{% endblock %}
+
+{% block extra_script %}
+{% endblock %}
