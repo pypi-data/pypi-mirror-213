@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: chat-box-streamlit
+Version: 0.0.1
+Summary: Seamlessly visualize engaging conversations in a sleek ChatBox.
+Home-page: 
+Author: SSK-14
+Author-email: sanjaykumar1481999@gmail.com
+Requires-Python: >=3.6
+Description-Content-Type: text/plain
+License-File: LICENSE
+Requires-Dist: streamlit (>=0.63)
+
+ChatBox is a powerful Streamlit component designed to effortlessly display and showcase interactive chat conversations between users. With its seamless integration with Streamlit, ChatBox offers a sleek and intuitive interface for visualizing dynamic dialogues, making it an ideal solution for chatbots, virtual assistants, and interactive conversational applications.
