@@ -1,0 +1,12 @@
+MANIFEST.in
+README.md
+setup.py
+tr/__init__.py
+tr/char_table.txt
+tr/conlib.py
+tr/crnn.bin
+tr/libtr.so
+tr.egg-info/PKG-INFO
+tr.egg-info/SOURCES.txt
+tr.egg-info/dependency_links.txt
+tr.egg-info/top_level.txt
