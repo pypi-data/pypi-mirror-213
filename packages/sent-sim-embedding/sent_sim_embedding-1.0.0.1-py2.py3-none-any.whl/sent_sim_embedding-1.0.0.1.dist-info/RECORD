@@ -1,0 +1,8 @@
+sent_sim_embedding/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sent_sim_embedding/rocketqa/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sent_sim_embedding/rocketqa/rocketqa.py,sha256=-Ij48zHiyq95hU5e56ce1jTC7LAQNLMmThrTz6a5-QA,4582
+sent_sim_embedding/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sent_sim_embedding-1.0.0.1.dist-info/METADATA,sha256=Kk_U3C_je3tiMdp2D5CMPBK4_D5PZkW5hFf2bqMSsRI,3138
+sent_sim_embedding-1.0.0.1.dist-info/WHEEL,sha256=oh0NKYrTcu1i1-wgrI1cnhkjYIi8WJ-8qd9Jrr5_y4E,110
+sent_sim_embedding-1.0.0.1.dist-info/top_level.txt,sha256=7SqfEy5TXjsQBO7cJJIog4H9dzPeGBkhkgMMVfrUbiY,19
+sent_sim_embedding-1.0.0.1.dist-info/RECORD,,
