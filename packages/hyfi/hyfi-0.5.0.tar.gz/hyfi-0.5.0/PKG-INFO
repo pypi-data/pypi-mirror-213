@@ -1,0 +1,79 @@
+Metadata-Version: 2.1
+Name: hyfi
+Version: 0.5.0
+Summary: Hydra Fast Interface (Hydra and Pydantic based interface framework)
+Home-page: https://hyfi.entelecheia.ai
+License: MIT
+Author: Young Joon Lee
+Author-email: entelecheia@hotmail.com
+Requires-Python: >=3.8.1,<3.12
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Provides-Extra: ipython
+Requires-Dist: chardet (<=5.1.0)
+Requires-Dist: colorama (>=0.4.3,<0.5.0)
+Requires-Dist: filelock (>=3.4,<3.10)
+Requires-Dist: gdown (<=4.6.6)
+Requires-Dist: huggingface-hub (>=0.8.1,<0.13.0)
+Requires-Dist: hydra-colorlog (>=1.2.0,<2.0.0)
+Requires-Dist: hydra-core (>=1.3.2,<2.0.0)
+Requires-Dist: matplotlib (>=3.7.1,<4.0.0)
+Requires-Dist: numpy (<1.24)
+Requires-Dist: pandas (>=1.5.3,<2.0.0)
+Requires-Dist: pathspec (>=0.9.0)
+Requires-Dist: pydantic (>=1.10.7,<2.0.0)
+Requires-Dist: python-dotenv (>=1.0.0,<2.0.0)
+Requires-Dist: requests (>=2.27.1,<3.0.0)
+Requires-Dist: rich (>=12.1,<14.0)
+Requires-Dist: scipy (>=1.10.1,<2.0.0)
+Requires-Dist: tqdm (>=4.64.1,<5.0.0)
+Project-URL: Repository, https://github.com/entelecheia/hyfi
+Description-Content-Type: text/markdown
+
+# HyFI: Hydra Fast Interface
+
+[![pypi-image]][pypi-url]
+[![version-image]][release-url]
+[![release-date-image]][release-url]
+[![license-image]][license-url]
+
+
+<!-- Links: -->
+[pypi-image]: https://img.shields.io/pypi/v/hyfi
+[license-image]: https://img.shields.io/github/license/entelecheia/hyfi
+[license-url]: https://github.com/entelecheia/hyfi/blob/main/LICENSE
+[version-image]: https://img.shields.io/github/v/release/entelecheia/hyfi?sort=semver
+[release-date-image]: https://img.shields.io/github/release-date/entelecheia/hyfi
+[release-url]: https://github.com/entelecheia/hyfi/releases
+[jupyter-book-image]: https://jupyterbook.org/en/stable/_images/badge.svg
+
+[repo-url]: https://github.com/entelecheia/hyfi
+[pypi-url]: https://pypi.org/project/hyfi
+[docs-url]: https://hyfi.entelecheia.ai
+[changelog]: https://github.com/entelecheia/hyfi/blob/main/CHANGELOG.md
+[contributing guidelines]: https://github.com/entelecheia/hyfi/blob/main/CONTRIBUTING.md
+<!-- Links: -->
+
+Hydra Fast Interface (Hydra and Pydantic based interface framework)
+
+- Documentation: [https://hyfi.entelecheia.ai][docs-url]
+- GitHub: [https://github.com/entelecheia/hyfi][repo-url]
+- PyPI: [https://pypi.org/project/hyfi][pypi-url]
+
+HyFI is a framework for building interfaces for Python applications. It is based on [Hydra] and [Pydantic] and provides a set of tools to build interfaces for Python applications.
+
+## Changelog
+
+See the [CHANGELOG] for more information.
+
+## Contributing
+
+Contributions are welcome! Please see the [contributing guidelines] for more information.
+
+## License
+
+This project is released under the [MIT License][license-url].
+
