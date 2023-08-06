@@ -1,0 +1,10 @@
+recipys/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+recipys/ingredients.py,sha256=CGxyUD0BdZ7CLXSEmTlE_7EeEue37HnWY6-hocKjTGs,4775
+recipys/recipe.py,sha256=HsFKcj9z47OQ47rpLhZ7a4fiZYJf8NGTuoKzp8mBkRE,6057
+recipys/selector.py,sha256=q1gfoh1ECgjHMFcrlUHHXOxVrCCSYaxqTowuXmEOwS0,8322
+recipys/step.py,sha256=0D8Fiq0kV_WHumSZH92UwYw-bvvIZmp-dS2WtgVPX64,15196
+recipies-0.1.2.dist-info/LICENSE,sha256=76BsoJ12c3WvG9nIr6zreenJl8xyCKUbfLW2AvNujJc,1135
+recipies-0.1.2.dist-info/METADATA,sha256=YmdBZtCpgRKoN5shyawFBdrup5bXM4yUNdkmZkrbzHM,3862
+recipies-0.1.2.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+recipies-0.1.2.dist-info/top_level.txt,sha256=aoSBVXxn5toticrVI-8zVNNOLeccKdC6S9WHB0b9Q80,8
+recipies-0.1.2.dist-info/RECORD,,
