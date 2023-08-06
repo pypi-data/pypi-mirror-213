@@ -1,0 +1,16 @@
+LICENSE,sha256=MEMLwzm3R7mN8kgE_GLU-ZuUiuJVjXDXcMJMNe1GSU8,34493
+__init__.py,sha256=vVvnJI4CZ-TTwnbwuL3gTNxM27hmKRVSMHZ5kwbREu0,94
+constants.py,sha256=odpL8W74LjZJIUgM6jNuT1x-_Gmmrk3UmVPnVU5Uwik,381
+convert.py,sha256=KujtKn3Dwc8aUkRd8Vm9EYq_HyDA4tDWcNMtunuIT90,1386
+decoder.py,sha256=-fRf6LnB-diajTJ2t7ZPga1u2RuwaN_wciR-HsTof2w,5252
+encoder.py,sha256=hNqyVhBVv5zxFHlZGgaP2XD7zEnbdiHBevPdOUONtdg,4285
+models.py,sha256=PHB1Y_Cwz2I4kfAVE-wg2URn747bZuv_eCL0VXCP7jA,2070
+tests.py,sha256=LHRuDrz92SOz2Byiw0oBLdshCB2kUUrZP4fiEgxsrTo,703
+utils.py,sha256=0v62RL70aijhPCJs--Msb-EI45_HBVw-qw9nfqkZNSM,955
+data/checklist.ace,sha256=hqP4Dc8oi9b2LaXFIK-GAMMNKMeAaNqGHUtSiOAD0tk,300
+data/test.org,sha256=seg1cYI4L56swzbgy2B53XpF7FcwS1592FBPXxPmOb8,108
+garmin_ace-0.0.1a3.dist-info/METADATA,sha256=0CSgAGqonIM74W6LkUmOHBA5YRwbZ94adoJAp-XtN7E,1969
+garmin_ace-0.0.1a3.dist-info/WHEEL,sha256=KGYbc1zXlYddvwxnNty23BeaKzh7YuoSIvIMO4jEhvw,87
+garmin_ace-0.0.1a3.dist-info/entry_points.txt,sha256=0ZkqXbR-h9SPB8-TkWBcIc0oBpHQ1-5gC_L3e7XWpP0,56
+garmin_ace-0.0.1a3.dist-info/licenses/LICENSE,sha256=MEMLwzm3R7mN8kgE_GLU-ZuUiuJVjXDXcMJMNe1GSU8,34493
+garmin_ace-0.0.1a3.dist-info/RECORD,,
