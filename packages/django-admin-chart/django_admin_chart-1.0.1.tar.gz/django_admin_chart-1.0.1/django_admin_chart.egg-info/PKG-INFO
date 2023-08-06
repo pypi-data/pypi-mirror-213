@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: django-admin-chart
+Version: 1.0.1
+Summary: django admin chart
+Home-page: https://github.com/reimibeta/django_html_render
+Author: ReimiBeta
+Author-email: reimi846@gmail.com
+License: MIT
+License-File: LICENSE
+
+django admin chart
