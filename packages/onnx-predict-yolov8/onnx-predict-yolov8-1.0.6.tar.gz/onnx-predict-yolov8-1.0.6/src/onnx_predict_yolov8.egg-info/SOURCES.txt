@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+src/onnx_predict_yolov8.egg-info/PKG-INFO
+src/onnx_predict_yolov8.egg-info/SOURCES.txt
+src/onnx_predict_yolov8.egg-info/dependency_links.txt
+src/onnx_predict_yolov8.egg-info/requires.txt
+src/onnx_predict_yolov8.egg-info/top_level.txt
+src/opyv8/__init__.py
+src/opyv8/model.py
+src/opyv8/predictor.py
+src/opyv8/utils.py
