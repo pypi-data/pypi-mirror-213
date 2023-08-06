@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: tool_server_generator
+Version: 0.4.2
+Summary: Module to create tools server
+Author-email: brazafonso <a93178@uminho.pt>, Tiago Silva <a93277@uminho.pt>
+Description-Content-Type: text/markdown
+Classifier: License :: OSI Approved :: MIT License
+Requires-Dist: lark
+Requires-Dist: argparse
+Requires-Dist: pyngrok
+
+

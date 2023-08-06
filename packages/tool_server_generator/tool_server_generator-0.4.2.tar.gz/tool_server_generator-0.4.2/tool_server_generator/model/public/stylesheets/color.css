@@ -1,0 +1,23 @@
+.primary_text_color{
+    color: $primary_text_color!important;
+}
+
+.secondary_text_color{
+    color:$secondary_text_color!important;
+}
+
+.primary_bg_color{
+    background-color: $primary_bg_color!important;
+}
+
+.secondary_bg_color{
+    background-color:$secondary_bg_color!important;
+}
+
+.label_color{
+    color: $label_color!important;
+}
+
+.border_color{
+    border: 1px solid $border_color!important;
+}
