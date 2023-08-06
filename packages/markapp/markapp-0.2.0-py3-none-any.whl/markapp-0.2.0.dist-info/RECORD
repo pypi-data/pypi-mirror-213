@@ -1,0 +1,10 @@
+markapp/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+markapp/cli.py,sha256=06kmq5p-gFApffsAskytVl5-5DL-A_rGojhwpgYLDrQ,1657
+markapp/markapp.py,sha256=XCiUjXX0Dfm7rqQPg3d78gqTrcP1G2A8fRhpPrnvE7c,1903
+markapp/watcher.py,sha256=ygrLxf7uxizLWDireox4B_VpTkFwQMhNh0qpPG9__5s,1336
+markapp-0.2.0.dist-info/LICENSE,sha256=i4Doqn4GT_ansxDG_BUR_HkNpGVChE5eN-DP2yZV2dw,1069
+markapp-0.2.0.dist-info/METADATA,sha256=qZbBmJPZLVbe4vsiQhynK6ulh-f65GQbQ7yU6eDARQs,1840
+markapp-0.2.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+markapp-0.2.0.dist-info/entry_points.txt,sha256=mAqvmgpK_R0fRjDmasO-qrg9_eMwZphRKBT_jZjLqAk,44
+markapp-0.2.0.dist-info/top_level.txt,sha256=HFzzaUTqERzSBcpb9aAZ9VMG8u_dOAhiNHGIXOljtvA,8
+markapp-0.2.0.dist-info/RECORD,,
