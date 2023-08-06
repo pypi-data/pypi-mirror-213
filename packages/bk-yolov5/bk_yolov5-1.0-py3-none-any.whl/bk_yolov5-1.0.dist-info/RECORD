@@ -1,0 +1,12 @@
+yolov5-5/detect.py,sha256=KQw1CdKDnWIYJoQ3bNkpAETcWdZBS1aCWE5CXt-ERZI,9081
+yolov5-5/detectCopy.py,sha256=6OSHui6fLDzQkdZ_-Ok64gb8YjuJX9tf4XmI1YR-ldA,9850
+yolov5-5/django.py,sha256=6fqvBTQOIlmY9NgERyVHvn9z7Ungu49mphtKGzx6j9M,2966
+yolov5-5/hubconf.py,sha256=bPOBiLYZHlPkQBhjhD7fTbxbWrVFr8pEc1n3HmYBcDA,5508
+yolov5-5/sh_video.py,sha256=nnyauiD33gm5yZP1jx0O39gFethM7Nj-A9a4m-7alCA,4439
+yolov5-5/test.py,sha256=Dmzq5Z63jgLqSNCMewTf5nIe5xRgQ2JEJTW3CV8lQ9Y,16985
+yolov5-5/train.py,sha256=vXS2N8C1EwT7kJNAHkbr0fxcPSy0H4hfbeZHAOISsog,33797
+yolov5-5/train2.py,sha256=FdIw6MAZyNEqMMZb1ktarrZXqca9geC777q1Zbg4coY,33801
+bk_yolov5-1.0.dist-info/METADATA,sha256=fXJr2xC9_Ekbus6fq3mCxwQ3O3C-d4G9DmfrJ0ZiZaw,145
+bk_yolov5-1.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+bk_yolov5-1.0.dist-info/top_level.txt,sha256=DVVusO2Dq3k4Kfu1yBHfwOCdCeApCOoiALWTczaWHAw,9
+bk_yolov5-1.0.dist-info/RECORD,,
