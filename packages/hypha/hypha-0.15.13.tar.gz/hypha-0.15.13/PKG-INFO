@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: hypha
+Version: 0.15.13
+Summary: A serverless application framework for large-scale data management and AI model serving.
+Home-page: http://github.com/amun-ai/hypha
+Author: Amun AI AB
+Author-email: info@amun.ai
+License: MIT
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Provides-Extra: s3
+Provides-Extra: server-apps
+License-File: LICENSE
+
+![PyPI](https://img.shields.io/pypi/v/hypha.svg?style=popout)
+# Hypha
+
+Hypha is an application framework for large-scale data management and AI model serving, it allows creating computational platforms consists of computational and user interface components.
+
+Hypha server act as a hub for connecting different components through [imjoy-rpc](https://github.com/imjoy-team/imjoy-rpc).
+
+
+See https://ha.amun.ai for more detailed usage.
