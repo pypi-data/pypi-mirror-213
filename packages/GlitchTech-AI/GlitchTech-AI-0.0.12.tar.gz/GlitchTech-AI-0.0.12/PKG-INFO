@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: GlitchTech-AI
+Version: 0.0.12
+Summary: Basic utility to interface with OpenAI via command line or terminal.
+Author: Clutch_Reboot
+Author-email: clutchshadow26@gmail.com
+License: GNU General Public License v3.0
+Project-URL: Source, https://github.com/ClutchReboot/openai-cli
+Keywords: openai cli terminal glitchtech
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# openai-cli
+Basic utility to interface with OpenAI via command line or terminal
