@@ -1,0 +1,17 @@
+morel/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+morel/__main__.py,sha256=Q1jHUSuATh3dABA5oqrLXFV2fnZMc1uIketECOZrV28,959
+morel/config.py,sha256=e5ZsZZqbE78BOjChlsFmcyq84O3LlRtb5zrFEA_mApY,1401
+morel/db.py,sha256=lBJE1myIU63sPXq_WbJaTku30oEDh2Vk6RMwbXE__40,1699
+morel/exploits.py,sha256=5j8MBvCNV_xfQr8rtWX_tGapT33-eHmWzuuhqkGDyS8,4489
+morel/lipsum.py,sha256=K3JYriyQaXQlbsVn_q_OUTfwDsPPAkKAGHame0tc_tY,588
+morel/logger.py,sha256=1bqlBRLW8uPLx3vp0OEhsBivabS-QxMCdiGHkulz1OI,2061
+morel/singleton.py,sha256=xjWrRJhVwbr24dfz79Kf_R6fIiCCezaNb_GNmbSSqGU,1525
+morel/processes/FileObserver.py,sha256=kSzbrlwn3_tPQdC0tfoOEWcm9cUQgvChZTINuBUeZTg,1646
+morel/processes/FlagSubmitter.py,sha256=3n4AwLs7sqPrI0iWCffK-3B5NMvSpwoMu7orphHAQcE,1596
+morel/processes/GametickManager.py,sha256=nMonhiV5AeOQZQ3DLxJtnrFxZRoSqF2pZrNQSmqT190,3785
+morel/processes/__init__.py,sha256=75ZN8T6NQTd6mB67nZgmygdnkxAmLiIOGknm-qd7tRg,125
+morel-0.1.1.dist-info/LICENSE,sha256=ixuiBLtpoK3iv89l7ylKkg9rs2GzF9ukPH7ynZYzK5s,35148
+morel-0.1.1.dist-info/METADATA,sha256=HcAStTQl8MYpb2MebGpH1V943m0c-1tjy_9SVvjZOgw,732
+morel-0.1.1.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+morel-0.1.1.dist-info/top_level.txt,sha256=jRuLg4BujXX3XosCyUi1iH5IhtZyWYCe5l_sDKEEMrc,6
+morel-0.1.1.dist-info/RECORD,,
