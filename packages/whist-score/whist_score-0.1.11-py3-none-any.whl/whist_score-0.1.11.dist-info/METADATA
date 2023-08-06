@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: whist-score
+Version: 0.1.11
+Summary: whist_score is a scorekeeper for the whist card game.
+Home-page: https://github.com/erwinmintiens/whist-score
+Author: Erwin Mintiens
+Author-email: erwin.mintiens@protonmail.com
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: click (>=7.1.2)
+Requires-Dist: colorama (>=0.4.6)
+
