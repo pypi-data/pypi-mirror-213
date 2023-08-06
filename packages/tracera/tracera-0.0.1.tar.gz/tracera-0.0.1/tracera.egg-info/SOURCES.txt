@@ -1,0 +1,14 @@
+AUTHORS.txt
+LICENSE.txt
+MANIFEST.in
+README.rst
+requirements.txt
+setup.py
+tracera/__init__.py
+tracera/__main__.py
+tracera/__version__.py
+tracera.egg-info/PKG-INFO
+tracera.egg-info/SOURCES.txt
+tracera.egg-info/dependency_links.txt
+tracera.egg-info/requires.txt
+tracera.egg-info/top_level.txt
