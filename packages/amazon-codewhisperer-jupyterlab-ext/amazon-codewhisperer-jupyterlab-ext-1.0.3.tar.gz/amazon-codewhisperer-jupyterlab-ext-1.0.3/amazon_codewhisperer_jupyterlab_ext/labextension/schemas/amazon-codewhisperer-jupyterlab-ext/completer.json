@@ -1,0 +1,76 @@
+{
+  "jupyter.lab.setting-icon": "codewhisperer:logo",
+  "jupyter.lab.setting-icon-label": "Amazon CodeWhisperer",
+  "title": "Amazon CodeWhisperer",
+  "description": "Settings for Amazon CodeWhisperer.",
+  "properties": {
+    "shareCodeWhispererContentWithAWS": {
+      "type": "boolean",
+      "title": "Share content with Amazon CodeWhisperer",
+      "description": "When checked, your content processed by CodeWhisperer may be used for service improvement. Unchecking this box will cause AWS to delete any of your content used for that purpose. The information used to provide the CodeWhisperer service to you will not be affected.",
+      "default": true
+    },
+    "suggestionsWithCodeReferences": {
+      "type": "boolean",
+      "title": "Enable suggestions with code references",
+      "description": "When checked, Amazon CodeWhisperer will include suggestions with code references.",
+      "default": true
+    },
+    "codeWhispererTelemetry": {
+      "type": "boolean",
+      "title": "Share usage data with Amazon CodeWhisperer",
+      "description": "Enable Amazon CodeWhisperer to send usage data to AWS.",
+      "default": true
+    },
+    "codeWhispererLogLevel": {
+      "title": "Amazon CodeWhisperer Log level",
+      "description": "Amazon CodeWhiperer extension's console log level (changes reflected on page refresh)",
+      "default": "ERROR",
+      "enum": ["ERROR","WARN","INFO","DEBUG"]
+    }
+  },
+  "jupyter.lab.shortcuts": [
+    {
+      "command": "completer:invoke-notebook",
+      "keys": ["Tab"],
+      "selector": ".jp-Notebook.jp-mod-editMode .jp-mod-completer-enabled"
+    },
+    {
+      "command": "completer:invoke-file",
+      "keys": ["Tab"],
+      "selector": ".jp-FileEditor .jp-mod-completer-enabled"
+    },
+    {
+      "command": "completer:select-notebook",
+      "keys": ["Enter"],
+      "selector": ".jp-Notebook .jp-mod-completer-active"
+    },
+    {
+      "command": "codewhisperer:invoke-inline",
+      "keys": ["Alt C"],
+      "selector": ".jp-Document"
+    },
+    {
+      "command": "codewhisperer:reject-inline",
+      "keys": ["Escape"],
+      "selector": ".jp-Document .jp-mod-inlinecompleter-active"
+    },
+    {
+      "command": "codewhisperer:accept-inline",
+      "keys": ["Tab"],
+      "selector": ".jp-Document .jp-mod-inlinecompleter-active"
+    },
+    {
+      "command": "codewhisperer:show-next",
+      "keys": ["ArrowDown"],
+      "selector": ".jp-Document .jp-mod-inlinecompleter-active"
+    },
+    {
+      "command": "codewhisperer:show-prev",
+      "keys": ["ArrowUp"],
+      "selector": ".jp-Document .jp-mod-inlinecompleter-active"
+    }
+],
+  "additionalProperties": false,
+  "type": "object"
+}

@@ -1,0 +1,7 @@
+{
+    "ServerApp": {
+      "jpserver_extensions": {
+        "amazon_codewhisperer_jupyterlab_ext": true
+      }
+    }
+}
