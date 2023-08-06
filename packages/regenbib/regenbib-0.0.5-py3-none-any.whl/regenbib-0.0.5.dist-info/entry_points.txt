@@ -1,0 +1,4 @@
+[console_scripts]
+regenbib=regenbib.cli_render:run
+regenbib-import=regenbib.cli_import:run
+

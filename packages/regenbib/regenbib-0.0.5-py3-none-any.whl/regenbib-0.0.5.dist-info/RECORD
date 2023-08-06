@@ -1,0 +1,9 @@
+regenbib/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+regenbib/cli_import.py,sha256=glRtGvEmMuZvKNPExXfOeR-WwtIv-KtTbs-LExFt1Qw,7677
+regenbib/cli_render.py,sha256=fUVVlrc5SxBmR3ysWT3YKV3QL-1kI__xe__vGg3Y3DI,1282
+regenbib/store.py,sha256=a8nzGOo1tcFNW7IXeyY9cwpQa0REIX6jayVbubUlsZM,4320
+regenbib-0.0.5.dist-info/entry_points.txt,sha256=sGAKt6XRIEj3FehnCpSfeRzJ-sn18IRVSQGOIwGk5CY,92
+regenbib-0.0.5.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+regenbib-0.0.5.dist-info/METADATA,sha256=a8O-s7R9N_GOPDKLwc19qFpS6ycnIHYMwBUwEFWzDpM,5392
+regenbib-0.0.5.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+regenbib-0.0.5.dist-info/RECORD,,
