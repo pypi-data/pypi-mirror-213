@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+amplitude_data_wrapper/__init__.py
+amplitude_data_wrapper/analytics_api.py
+amplitude_data_wrapper.egg-info/PKG-INFO
+amplitude_data_wrapper.egg-info/SOURCES.txt
+amplitude_data_wrapper.egg-info/dependency_links.txt
+amplitude_data_wrapper.egg-info/top_level.txt
