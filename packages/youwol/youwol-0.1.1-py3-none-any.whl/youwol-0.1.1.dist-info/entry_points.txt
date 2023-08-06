@@ -1,0 +1,2 @@
+[console_scripts]
+youwol = youwol.app.main:main
