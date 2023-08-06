@@ -1,0 +1,34 @@
+Metadata-Version: 2.1
+Name: acapela-downloader-py
+Version: 0.0.8
+Summary: Acapela pwned but in Python.
+Author: JWKK
+Project-URL: Homepage, https://memerdev.com
+Project-URL: GitHub, https://memerdev.com
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Acapela Downloader but in Python
+Translated over to Python from C#: https://github.com/weespin/WillFromAfarDownloader
+
+# How to use
+
+First download the pip package.
+
+```
+pip install acapela-downloader-py
+```
+
+Then use the 'generate_audio' function from the 'acapela' library
+
+``` python
+from acapela import generate_audio
+generate_audio("Great Test", "enu_willhappy_22k_ns.bvcu", "output.mp3")
+```
+
+## Other Stuff
+
+If you find any code from StupidTown in my package feel free to make a pull request.
