@@ -1,0 +1,47 @@
+Metadata-Version: 2.1
+Name: code2gist
+Version: 0.0.2
+Summary: Upload Python files in a directory to a GitHub Gist.
+Author-email: Cameron Spears <crspears@outlook.com>
+License: GPL-3.0
+Keywords: python,github,gist,upload
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.11.4
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Code2Gist
+
+Code2Gist is a command-line tool for uploading all Python files in a directory (and its subdirectories) to a GitHub Gist.
+
+## Installation
+
+Install the package using pip:
+
+```
+pip install code2gist
+```
+
+## Usage
+
+To use Code2Gist, open a terminal window and navigate to the directory containing the Python files you want to upload. Then, run the following command:
+
+```
+code2gist .
+```
+
+This will upload all Python files in the current directory and its subdirectories to a new GitHub Gist.
+
+If you want to specify a different directory, use the directory's path as the argument:
+
+```
+code2gist /path/to/directory
+```
+
+## Environment Variables
+
+Code2Gist uses the `GITHUB_TOKEN` environment variable for authentication with the GitHub API. You must set this environment variable to your GitHub token for the script to work.
+
+## License
+
+Code2Gist is licensed under the [GNU General Public License v3.0](https://www.gnu.org/licenses/gpl-3.0.en.html).
