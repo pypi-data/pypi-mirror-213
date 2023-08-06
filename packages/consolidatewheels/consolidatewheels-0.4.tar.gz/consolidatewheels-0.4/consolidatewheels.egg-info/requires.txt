@@ -1,0 +1,7 @@
+wheel
+pkginfo
+pefile
+
+[testing]
+pytest>=3.4
+pytest-cov
