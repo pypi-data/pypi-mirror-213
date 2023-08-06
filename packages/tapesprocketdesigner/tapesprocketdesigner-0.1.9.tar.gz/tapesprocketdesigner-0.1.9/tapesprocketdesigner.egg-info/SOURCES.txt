@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+tapesprocketdesigner/__init__.py
+tapesprocketdesigner/designer.py
+tapesprocketdesigner/dxf_templates_b2.py
+tapesprocketdesigner.egg-info/PKG-INFO
+tapesprocketdesigner.egg-info/SOURCES.txt
+tapesprocketdesigner.egg-info/dependency_links.txt
+tapesprocketdesigner.egg-info/entry_points.txt
+tapesprocketdesigner.egg-info/requires.txt
+tapesprocketdesigner.egg-info/top_level.txt
