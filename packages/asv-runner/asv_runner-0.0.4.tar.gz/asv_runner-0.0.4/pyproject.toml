@@ -1,0 +1,55 @@
+[tool.pdm.scripts.lint]
+composite = [
+    "ruff --fix asv_runner/",
+    "black asv_runner/",
+]
+
+[tool.ruff]
+line-length = 88
+extend-ignore = [
+    "E741",
+]
+select = [
+    "E",
+    "F",
+    "UP",
+    "I001",
+]
+
+[tool.black]
+line-length = 88
+target-version = [
+    "py37",
+]
+
+[tool.setuptools_scm]
+write_to = "asv_runner/_version.py"
+
+[project]
+name = "asv_runner"
+description = "Core Python benchmark code for ASV"
+authors = [
+    { name = "Rohit Goswami", email = "rog32@hi.is" },
+]
+maintainers = [
+    { name = "Rohit Goswami", email = "rog32@hi.is" },
+]
+version = "0.0.4"
+dependencies = []
+requires-python = ">=3.7"
+readme = "README.md"
+
+[project.license]
+text = "MIT"
+
+[project.optional-dependencies]
+lint = [
+    "ruff>=0.0.265",
+    "black>=23.3.0",
+]
+
+[build-system]
+requires = [
+    "pdm-backend",
+]
+build-backend = "pdm.backend"
