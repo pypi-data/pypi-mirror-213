@@ -1,0 +1,12 @@
+ceci
+numpy
+scipy>=1.9
+pz-rail-base
+
+[dev]
+qp-prob[full]
+coverage
+pylint
+pytest
+pytest-cov
+yamllint

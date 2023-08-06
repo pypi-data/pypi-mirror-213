@@ -1,0 +1,56 @@
+import numpy as np
+import os
+import sys
+import glob
+import pickle
+import pytest
+import yaml
+import tables_io
+from rail.core.stage import RailStage
+from rail.core.data import DataStore, TableHandle
+from rail.core.algo_utils import one_algo
+from rail.core.utils import RAILDIR
+from rail.estimation.algos import cmnn
+
+default_dict = {'zmin': 0.0, 'zmax': 3.0, 'nzbins': 301}
+                
+
+def test_cmnn():
+    train_config_dict = default_dict.copy()
+    estim_config_dict = default_dict.copy()
+    train_config_dict["hdf5_groupname"] = "photometry"
+    train_config_dict["model"] = "model.tmp"
+    
+    estim_config_dict["hdf5_groupname"] = "photometry"
+    estim_config_dict["model"] = "model.tmp"
+    # zb_expected = np.array([0.13, 0.13, 0.13, 0.12, 0.12, 0.13, 0.12, 0.13,
+    #                         0.12, 0.12])
+    train_algo = cmnn.Inform_CMNNPDF
+    pz_algo = cmnn.CMNNPDF
+    results, rerun_results, rerun3_results = one_algo("CMNN", train_algo, pz_algo, train_config_dict, estim_config_dict)
+    # assert np.isclose(results.ancil['zmode'], zb_expected).all()
+    assert np.isclose(results.ancil['zmode'], rerun_results.ancil['zmode']).all()
+
+
+def test_catch_bad_bands():
+    params = dict(bands='x,y,z,a,b,c')
+    with pytest.raises(ValueError):
+        cmnn.Inform_CMNNPDF.make_stage(hdf5_groupname='', **params)
+    with pytest.raises(ValueError):
+        cmnn.CMNNPDF.make_stage(hdf5_groupname='', **params)
+
+
+def test_missing_groupname_keyword():
+    config_dict = default_dict.copy()
+    with pytest.raises(ValueError):
+        _ = cmnn.CMNNPDF.make_stage(**config_dict)
+
+
+def test_wrong_modelfile_keyword():
+    RailStage.data_store.clear()
+    config_dict = default_dict.copy()
+    config_dict["hdf5_groupname"] = "photometry"
+    config_dict["model"] = "notreal.pkl"
+    with pytest.raises(FileNotFoundError):
+        pz_algo = cmnn.CMNNPDF.make_stage(**config_dict)
+        assert pz_algo.model is None
