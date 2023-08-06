@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: raga-testing-platform
+Version: 1.0.5
+Summary: Short description or overview of the raga package.
+Author-email: Raga AI <support@ragaai.com>
+Maintainer-email: Raga AI <support@ragaai.com>
+Project-URL: Homepage, https://github.com/whoosh-labs/testing-platform-python-client
+Project-URL: Bug Tracker, https://github.com/whoosh-labs/testing-platform-python-client/issues
+Keywords: testing-platform,raga-testing-platform,model-testing,AB_testing
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# testing_platform
+
+Short description or overview of the my_package package.
+
+## Installation
+
+Instructions for installing the package.
+
+## Usage
+
+Instructions or code examples demonstrating how to use the package.
+
+## License
+
+Specify the license of the package (e.g., MIT, Apache, GPL).
