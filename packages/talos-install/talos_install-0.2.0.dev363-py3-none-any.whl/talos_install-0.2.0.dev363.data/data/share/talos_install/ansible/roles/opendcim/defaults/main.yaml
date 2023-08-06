@@ -1,0 +1,12 @@
+---
+opendcim:
+  image: "{{ docker.namespace }}/talos-opendcim:{{ docker.opendcim_tag }}"
+  web_exposed_port: 80
+  web_published_port: 8003
+  privileged: false
+  recreate: true
+  uid: "{{ master.uid }}"
+  container_name: opendcim_talos
+
+
+opendcim_state: "started"

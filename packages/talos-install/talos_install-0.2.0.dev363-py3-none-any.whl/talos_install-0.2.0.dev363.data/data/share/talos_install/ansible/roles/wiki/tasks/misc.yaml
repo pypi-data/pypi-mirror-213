@@ -1,0 +1,10 @@
+---
+- name: Copy wiki.conf templates
+  ansible.builtin.template:
+    src: "{{ item }}.j2"
+    dest: "{{ app.etcdir }}/conf/.{{ item }}"
+    mode: '0600'
+    owner: "{{ master.user }}"
+    group: "{{ master.group }}"
+  loop:
+    - wiki.conf

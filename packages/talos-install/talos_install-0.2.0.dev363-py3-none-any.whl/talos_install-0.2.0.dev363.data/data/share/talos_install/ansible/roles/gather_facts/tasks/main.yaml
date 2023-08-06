@@ -1,0 +1,23 @@
+---
+- name: Wait for ssh server to become available
+  become: false
+  ansible.builtin.wait_for:
+    host: "{{ inventory_hostname }}"
+    port: 22
+    delay: 1
+    timeout: 300
+  delegate_to: "localhost"
+
+- name: Collect facts
+  ansible.builtin.setup:
+    gather_subset:
+      - all
+      - min
+      - hardware
+      - network
+      - virtual
+      - ohai
+      - facter
+
+- name: Set OS distribution dependent variables
+  ansible.builtin.include_vars: "{{ ansible_facts['distribution'] }}.yaml"

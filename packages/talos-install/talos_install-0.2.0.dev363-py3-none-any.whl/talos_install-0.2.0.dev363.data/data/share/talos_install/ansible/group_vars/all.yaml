@@ -1,0 +1,29 @@
+---
+### App Specifications
+ansible:
+  collections:
+    - community.general:==6.5.0
+    - ansible.posix:==1.5.2
+    - community.docker:==3.4.3
+    - community.crypto:==2.11.1
+
+### DOCKER REGISTRY
+docker:
+  namespace: "ilciko"
+  nagios_tag: 1.0
+  opendcim_tag: 1.0
+
+### TALOS
+app:
+  name: 'talos'
+  cli_version: '0.2.0'  # tversion
+  cli_repo: 'git@github.com:E4-Computer-Engineering/talos-cli.git'
+  data_repo: 'git@github.com:E4-Computer-Engineering/talos-data.git'
+  nexus_repo: 'srv-nexus01.e4srv:8081'
+  dir: "/opt/talos"
+  clidir: "/opt/talos/cli"
+  datadir: "/opt/talos/cli/data"
+  repodir: "/opt/talos/repos"
+  etcdir: "/etc/e4company/talos"
+  webdir: "/opt/talos/web"
+  logdir: "/var/log/talos"

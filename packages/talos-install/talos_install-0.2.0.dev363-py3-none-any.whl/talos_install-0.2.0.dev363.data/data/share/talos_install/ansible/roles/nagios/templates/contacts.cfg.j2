@@ -1,0 +1,70 @@
+###############################################################################
+# CONTACTS.CFG - CONTACT/CONTACTGROUP DEFINITIONS
+###############################################################################
+
+###############################################################################
+# CONTACTS
+###############################################################################
+
+define contact {
+    contact_name            {{ master.user }}             ; Short name of user
+    use                     admin-contact         ; Inherit default values from generic-contact template (defined above)
+    alias                   Talos Admin            ; Full name of user
+    email                   {{ master.mail }}
+}
+
+define contact {
+    contact_name            {{ guest.user }}             ; Short name of user
+    use                     guest-contact         ; Inherit default values from generic-contact template (defined above)
+    alias                   Guest            ; Full name of user
+    email                   guest@localhost
+}
+
+define contact{
+    name                            admin-contact    	; The name of this contact template
+    service_notification_period     24x7			    ; service notifications can be sent anytime
+    host_notification_period        24x7			    ; host notifications can be sent anytime
+    service_notification_options    w,c,f,s		        ; send notifications for all service states, flapping events, and scheduled downtime events
+    host_notification_options       d,f,s		        ; send notifications for all host states, flapping events, and scheduled downtime events
+    service_notification_commands   notify-service-by-email	; send service notifications via email
+    host_notification_commands      notify-host-by-email	; send host notifications via email
+}
+
+define contact{
+    name                            generic-contact    	; The name of this contact template
+    service_notification_period     24x7			    ; service notifications can be sent anytime
+    host_notification_period        24x7			    ; host notifications can be sent anytime
+    service_notification_options    w,c,f,s		        ; send notifications for all service states, flapping events, and scheduled downtime events
+    host_notification_options       d,f,s		        ; send notifications for all host states, flapping events, and scheduled downtime events
+    service_notification_commands   notify-service-by-email	; send service notifications via email
+    host_notification_commands      notify-host-by-email	; send host notifications via email
+}
+
+define contact{
+    name                            guest-contact    	; The name of this contact template
+    service_notification_period     none			    ; service notifications can be sent anytime
+    host_notification_period        none			    ; host notifications can be sent anytime
+    host_notifications_enabled      0			    ; service notifications can be sent anytime
+    service_notifications_enabled   0			    ; host notifications can be sent anytime
+    service_notification_commands   no_notify	; send service notifications via email
+    host_notification_commands      no_notify	; send host notifications via email
+}
+
+###############################################################################
+# CONTACT GROUPS
+###############################################################################
+
+# We only have one contact in this simple configuration file, so there is
+# no need to create more than one contact group.
+
+define contactgroup {
+    contactgroup_name       talos_master
+    alias                   Talos Administrators
+    members                 {{ master.user }}
+}
+
+define contactgroup {
+    contactgroup_name       guest
+    alias                   Guest
+    members                 {{ guest.user }}
+}

@@ -1,0 +1,351 @@
+#!/usr/bin/env bash
+# =======================================================================
+# TALOS-CLI HPC Manager
+# =======================================================================
+#    Copyright (C) 2022-2023  E4 Computer Engineering SPA (e4company.com)
+#
+#    This file is part of TALOS-CLI.
+#
+#    TALOS-CLI is free software: you can redistribute it and/or modify
+#    it under the terms of the GNU General Public License as published by
+#    the Free Software Foundation, either version 3 of the License, or
+#    (at your option) any later version.
+#
+#    TALOS-CLI is distributed in the hope that it will be useful,
+#    but WITHOUT ANY WARRANTY; without even the implied warranty of
+#    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+#    GNU General Public License for more details.
+#
+#    You should have received a copy of the GNU General Public License
+#    along with TALOS-CLI.  If not, see <http://www.gnu.org/licenses/>.
+#
+
+check_no_root_sudo(){
+  if [[ $(whoami) == "root" ]]; then
+    echo "Run as root is not supported"
+    exit 2
+  elif [[ $(sudo -l &> /dev/null; echo $?) -ne 0 ]]; then
+    echo "User $(whoami) is not sudoers"
+    exit 2
+  fi
+}
+
+check_for_target(){
+  echo $hostdef > $inventory
+  if [[ -z $target ]]; then target=$(hostname); fi
+  target_ip=$(ping $target -4 -c 1 | grep PING | awk '{print $3}' | tr -dc '[:alnum:][.]\n')
+  echo "$target   ssh_ip=$target_ip"  >> $inventory
+
+  # Try to prevent ssh_pass error copying pub key in authorized_keys file
+  if [[ ! -f ~/.ssh/id_rsa ]];  then ssh-keygen -q -t rsa -N ""  ; fi
+  if [[ $(grep -c "$(awk '{print $2}' ~/.ssh/id_rsa.pub)" ~/.ssh/authorized_keys) -eq 0 ]]; then
+    cat ~/.ssh/id_rsa.pub >> ~/.ssh/authorized_keys
+  fi
+}
+
+check_environment_coherence(){
+  if [[ $(rpm -qa | grep -c epel-release) -ne 1 ]]; then
+    sudo dnf install epel-release -y &>/dev/null
+  fi
+  if ! which python3.9 &>/dev/null ; then
+    echo "Missing Python 3.9"
+    exit 2
+  fi
+
+  if ! which pip3.9 &>/dev/null ; then
+    echo "Missing pip 3.9"
+    exit 2
+  fi
+
+  if ! which ansible &>/dev/null ; then
+    echo "Missing ansible"
+    exit 2
+  fi
+}
+
+talos_install_menu(){
+  title_message="$1"
+  clear
+  # Get Terminal info
+  echo "TALOS-CLI | HPC Manager Platform "
+  printf "# $title_message\n\n"
+}
+
+confirm_precheck(){
+  talos_install_menu "Talos Precheck"
+  current_selinux=$(grep ^SELINUX= /etc/selinux/config | cut -d= -f2)
+
+  echo "These actions will be performed:
+  - Stop firewall service (if present)
+  - Set Timezone {{ customer.timezone }}"
+  if [[ "$current_selinux" != "disabled" ]]; then
+    echo "  - Disable Selinux
+    ------------------------------------------------
+    !!! A REBOOT WILL OCCOUR DURING INSTALLATION !!!
+    ------------------------------------------------"
+    force_install=false
+  fi
+  confirm_action
+}
+
+confirm_deploy(){
+  talos_install_menu "Talos deploy"
+
+  echo "These actions will be performed:
+  - Add an user {{ master.user }} with sudo permission.
+  - Install python dependencies
+  - Install docker and give to {{ master.user }} permission to run containers
+  - Install ansible dependencies
+  - Install CA certificates (if required by {{ ca_idm.enable }})
+  - Create Talos environment paths
+  - Install Talos-cli dependencies
+  - Install Talos-cli source code
+  - Install and configure logrotate
+  - Install and start Web services
+  - Pull Nagios docker
+  - Pull OpenDcim docker
+  - Pull Wiki.js Docker
+  "
+  confirm_action
+}
+
+confirm_destroy(){
+  talos_install_menu "Talos Uninstall"
+  current_selinux=$(grep ^SELINUX= /etc/selinux/config | cut -d= -f2)
+
+  echo "These actions will be performed:
+  - Remove user {{ master.user }}
+  - Delete Talos environment paths
+  - Uninstall Talos-cli source code
+  - Uninstall logrotate
+  - Uninstall Web services
+  - Prune Nagios docker
+  - Prune OpenDcim docker
+  - Prune Wiki.js Docker
+  "
+  confirm_action
+}
+
+confirm_build(){
+  talos_install_menu "Talos build image"
+
+  echo "These actions will be performed:
+  - Push Nagios container on Docker
+  - Push OpenDcim container on Docker"
+
+  echo "!!! THESE ACTIONS REQUIRE A VALID DOCKER TOKEN !!!
+  "
+  confirm_action
+}
+
+confirm_action(){
+  if $force_install ; then reply=true
+  else reply=false
+  fi
+
+  while ! $reply; do
+    read -rp "Do you want to proceed? [y/n] " read_reply
+    case $read_reply in
+      y|Y) reply=true ;;
+      n|N)
+        exit 3 ;;
+    esac
+  done
+}
+
+process_cmd(){
+  echo "$action : $cmd"
+  $cmd
+  if [[ $? -ne 0 ]]; then
+    echo "Command failed $cmd"
+    exit 1
+  elif [[ $f_action == "precheck" ]]; then
+    echo 0 > /tmp/precheck
+  elif [[ $f_action == "remove" ]]; then
+    echo 1 > /tmp/precheck
+  fi
+}
+
+init_step(){
+  if [[ ! -f /tmp/precheck ]]; then
+    echo 1 > /tmp/precheck
+  fi
+}
+
+verify_step(){
+  if [[ $(cat /tmp/precheck) -eq 1 ]]; then
+    echo "ERROR: run talos_install precheck first"
+    exit 2
+  fi
+}
+
+usage(){
+    cat <<EOF
+Usage: $0 COMMAND [options]
+
+Options:
+    --key -k <key_path>                Specify path to ansible vault keyfile
+    --help, -h                         Show this usage information
+    --tags, -t <tags>                  Only run plays and tasks tagged with these values
+    --skip-tags <tags>                 Only run plays and tasks whose tags do not match these values
+    --extra, -e <ansible variables>    Set additional variables as key=value or YAML/JSON passed to ansible-playbook
+    --limit <host>                     Specify host to run plays
+    --forks <forks>                    Number of forks to run Ansible with
+    --vault-id <@prompt or path>       Specify @prompt or password file (Ansible >=  2.4)
+    --ask-vault-pass                   Ask for vault password
+    --vault-password-file <path>       Specify password file for vault decrypt
+    --verbose, -v                      Increase verbosity of ansible-playbook
+
+Environment variables:
+    extra_opts                         Additional arguments to pass to ansible-playbook
+
+Commands:
+    precheck             Prepare OS for installation
+    deploy               Deploy and start main talos containers
+    build                Build talos custom containers
+    remove               Uninstall Talos-cli
+EOF
+}
+
+### MAIN HERE
+
+# Check Environment
+check_no_root_sudo
+check_environment_coherence
+init_step
+
+# Verifiy if system is able to find shared playbooks
+found=false
+# Trying to use User TPATH variable if passed
+if ! $found && [[ -n $TPATH ]]; then
+  basedir="${TPATH}/share/talos_install"
+  if [[ -d "$basedir" ]]; then found=true ; fi
+fi
+# Trying to user python --user-base
+if ! $found ; then
+  env_bin=$(python3.9 -m site --user-base)
+  basedir=${env_bin}/share/talos_install
+  if [[ -d "$basedir" ]]; then found=true ; fi
+fi
+# Trying to user sys.executable
+if ! $found ; then
+  env_bin=$(pip debug 2>/dev/null | grep sys.executable | awk '{print $2}')
+  env_bin="$(dirname $env_bin)"
+  env_bin="$(dirname $env_bin)"
+  basedir=${env_bin}/share/talos_install
+  if [[ -d "$basedir" ]]; then found=true ; fi
+fi
+
+if ! $found ; then
+  echo "Unable to find a valid path/to/share/talos_install . Please try to pass right path as TPATH=/path/to/..."
+  exit 127
+fi
+
+# Verifify if user have dev_key for GIT
+if [[ -f ~/.ssh/dev_key ]]; then
+  # WA Fix keys
+  sudo chmod 700 ~/.ssh/
+  sudo chmod 600 ~/.ssh/dev_key
+  sudo chmod 644 ~/.ssh/dev_key
+  sudo chmod g-w ~/.ssh/*
+  \cp ~/.ssh/dev_key* ${basedir}/ansible/roles/cli/files/
+else
+  echo "Missing dev_key in ~/.ssh folder"
+  exit 127
+fi
+
+# Start check options
+short_opts="h:t:k:e:v:y"
+long_opts="help,skip-tags:,tags:,key:,extra:,verbose,limit:,forks:,vault-id:,ask-vault-pass,vault-password-file:"
+
+args=$(getopt -o "${short_opts}" -l "${long_opts}" --name "$0" -- "$@") || { usage >&2; exit 2; }
+
+eval set -- "$args"
+
+ANSIBLE_CONFIG="${basedir}/ansible/ansible.cfg"
+config_dir="${basedir}/etc"
+inventory="${basedir}/etc/inventory"
+playbook="${basedir}/ansible/site.yml"
+verbosity=""
+extra_opts=""
+target=""
+hostdef="[talos]"
+force_install=false
+
+while [ "$#" -gt 0 ]; do
+    case "$1" in
+    (--skip-tags)
+      extra_opts="$extra_opts --skip-tags $2" ; shift 2 ;;
+    (--tags|-t)
+      extra_opts="$extra_opts --tags $2" ; shift 2 ;;
+    (--verbose|-v)
+      verbosity="$verbosity --verbose" ; shift 1 ;;
+    (--key|-k)
+      vault_pass_file="$2"
+      extra_opts="$extra_opts --vault-password-file=$vault_pass_file"
+      shift 2 ;;
+    (--extra|-e)
+      extra_opts="$extra_opts -e $2" ; shift 2 ;;
+    (--limit)
+      extra_opts="$extra_opts --limit $2" ; shift 2 ;;
+    (--forks)
+      extra_opts="$extra_opts --forks $2" ; shift 2 ;;
+    (--vault-id)
+      extra_opts="$extra_opts --vault-id $2" ; shift 2 ;;
+    (--ask-vault-pass)
+      verbosity="$extra_opts --ask-vault-pass" ; shift 1 ;;
+    (--vault-password-file)
+      extra_opts="$extra_opts --vault-password-file $2" ; shift 2 ;;
+    (--help|-h)
+      usage ; shift ; exit 0 ;;
+    (--)
+      shift ; break ;;
+    (-y)
+      force_install=true ; shift ;;
+    (*)
+      echo "Syntax error" ; usage ; exit 1 ;;
+esac
+done
+
+case "$1" in
+  (precheck)
+    confirm_precheck
+    f_action=precheck
+    action="Precheck server"
+    playbook="${basedir}/ansible/site.yaml"
+    extra_opts="$extra_opts -e cli_action=precheck"
+    hostdef="[talos]" ;;
+  (build)
+    confirm_build
+    f_action=build
+    action="Build Talos containers"
+    playbook="${basedir}/ansible/site.yaml"
+    extra_opts="$extra_opts -e cli_action=build"
+    hostdef="[builder]" ;;
+  (deploy)
+    verify_step
+    confirm_deploy
+    f_action=deploy
+    action="Deploying Playbooks"
+    playbook="${basedir}/ansible/site.yaml"
+    extra_opts="$extra_opts -e cli_action=deploy"
+    hostdef="[talos]" ;;
+  (remove)
+    confirm_destroy
+    f_action=deploy
+    action="Uninstall talos"
+    playbook="${basedir}/ansible/site.yaml"
+    extra_opts="$extra_opts -e cli_action=remove"
+    hostdef="[talos]" ;;
+  (*)
+    usage
+    exit 0 ;;
+esac
+
+check_for_target
+
+export ANSIBLE_CONFIG
+config_opts="-e @${config_dir}/talos.yaml -e @${config_dir}/globals.yaml -e config_dir=${config_dir} -e ansible_user=$(whoami)"
+
+cmd="ansible-playbook -i $inventory $config_opts $extra_opts $playbook $verbosity"
+process_cmd

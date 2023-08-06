@@ -1,0 +1,74 @@
+---
+- name: Create docker directory
+  ansible.builtin.file:
+    state: directory
+    path: /etc/docker
+    mode: '0755'
+
+- name: Install pre-reqs
+  ansible.builtin.package:
+    name: "{{ item }}"
+    state: present
+    update_cache: true
+  loop: '{{ pkgreq }}'
+
+- name: Remove uncompatibile packages
+  ansible.builtin.package:
+    name: "{{ item }}"
+    state: absent
+    update_cache: true
+  loop:
+    - podman
+    - buildah
+
+- name: Add docker yum repo
+  ansible.builtin.template:
+    dest: /etc/yum.repos.d/docker-ce.repo
+    group: root
+    mode: '0644'
+    owner: root
+    src: docker-ce.repo.j2
+
+- name: Install docker
+  ansible.builtin.package:
+    name: "{{ item }}"
+    state: present
+    update_cache: true
+  loop: '{{ pkgdocker }}'
+  notify:
+    - Restart Docker
+
+- name: Add the user master to group 'docker'
+  ansible.builtin.user:
+    name: "{{ master.user }}"
+    groups: docker
+    append: true
+
+- name: Add docker daemon config file
+  ansible.builtin.template:
+    dest: /etc/docker/daemon.json
+    group: root
+    mode: '0644'
+    owner: root
+    src: daemon.json.j2
+  notify:
+    - Restart Docker
+
+- name: Ugrade Pip
+  ansible.builtin.pip:
+    name: pip
+    state: present
+    extra_args: --user --upgrade
+    executable: pip3.9
+  become_user: "{{ master.user }}"
+
+- name: Install docker-compose
+  ansible.builtin.pip:
+    name: docker-compose
+    state: present
+    extra_args: --user
+    executable: pip3.9
+  become_user: "{{ master.user }}"
+
+- name: Flush handlers
+  ansible.builtin.meta: flush_handlers

@@ -1,0 +1,12 @@
+---
+nagios:
+  image: "{{ docker.namespace }}/talos-nagios:{{ docker.nagios_tag }}"
+  web_exposed_port: 80
+  web_published_port: 8001
+  privileged: false
+  recreate: true
+  uid: "{{ master.uid }}"
+  container_name: nagios_talos
+
+
+nagios_state: "started"

@@ -1,0 +1,30 @@
+---
+- name: Install cert package
+  ansible.builtin.package:
+    name: ca-certificates
+    state: present
+
+- name: Add idm on /etc/hosts
+  ansible.builtin.blockinfile:
+    dest: /etc/hosts
+    block: |
+      {{ ca_idm.ip }} {{ ca_idm.ipa }}
+    marker: '# {mark} IDM configuration'
+
+- name: Add idm CA certificate
+  ansible.builtin.get_url:
+    url: "{{ ca_idm.url }}"
+    dest: "{{ ca_idm.dest }}"
+    validate_certs: false
+    mode: '0644'
+
+- name: Update certificates
+  ansible.builtin.command: "{{ certcmd }}"
+  args:
+    chdir: "{{ certdir }}"
+
+- name: Remove idm on /etc/hosts
+  ansible.builtin.blockinfile:
+    dest: /etc/hosts
+    block: ""
+    marker: '# {mark} IDM configuration'

@@ -1,0 +1,20 @@
+### App Specifications
+
+### DOCKER REGISTRY
+docker:
+  namespace: "{{ docker.namespace }}"
+
+### TALOS
+app:
+  name: "{{ app.name }}"
+  cli_version: "{{ app.cli_version }}"
+  cli_repo: "{{ app.cli_repo }}"
+  data_repo: "{{ app.data_repo }}"
+  nexus_repo: "{{ app.nexus_repo }}"
+  dir:     "{{ app.dir }}"
+  clidir:  "{{ app.clidir }}"
+  datadir: "{{ app.datadir }}"
+  repodir: "{{ app.repodir }}"
+  etcdir:  "{{ app.etcdir }}"
+  webdir:  "{{ app.webdir }}"
+  logdir:  "{{ app.logdir }}"

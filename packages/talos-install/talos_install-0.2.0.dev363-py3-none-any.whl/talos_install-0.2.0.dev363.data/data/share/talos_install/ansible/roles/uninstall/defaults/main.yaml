@@ -1,0 +1,6 @@
+---
+running_docker:
+  - wiki_talos
+  - wiki_db_talos
+  - nagios_talos
+  - opendcim_talos

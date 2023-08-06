@@ -1,0 +1,9 @@
+---
+- name: Docker
+  ansible.builtin.include_tasks: docker.yaml
+
+- name: Cli
+  ansible.builtin.include_tasks: cli.yaml
+
+- name: User
+  ansible.builtin.include_tasks: user.yaml

@@ -1,0 +1,92 @@
+---
+- hosts: all
+  name: "Prechecks"
+  roles:
+    - role: os_tune
+      become: true
+      tags: os_tune
+      when: cli_action in ['precheck']
+
+- hosts: all
+  name: "Build container"
+  roles:
+    - role: install_docker
+      become: true
+      tags: docker
+      when: cli_action in ['build']
+
+    - role: install_ansible
+      become: true
+      tags: ansible
+      when: cli_action in ['build']
+
+    - role: install_certificates
+      become: true
+      tags: certificates
+      when: cli_action in ['build'] and ca_idm.enable == 'true'
+
+    - role: nagios
+      become: true
+      tags: nagios
+      when: cli_action in ['build']
+
+    - role: opendcim
+      become: true
+      tags: opendcim
+      when: cli_action in ['build']
+
+- hosts: all
+  name: "Deploy"
+  roles:
+    - role: talos_users
+      become: true
+      tags: talos_users
+      when: cli_action in ['deploy']
+
+    - role: install_docker
+      become: true
+      tags: docker
+      when: cli_action in ['deploy']
+
+    - role: install_ansible
+      become: true
+      tags: ansible
+      when: cli_action in ['deploy']
+
+    - role: install_certificates
+      become: true
+      tags: certificates
+      when: cli_action in ['build'] and ca_idm.enable == 'true'
+
+    - role: common
+      become: true
+      tags: common
+      when: cli_action in ['deploy']
+
+    - role: cli
+      become: true
+      tags: cli
+      when: cli_action in ['deploy']
+
+    - role: nagios
+      become: true
+      tags: nagios
+      when: cli_action in ['deploy']
+
+    - role: opendcim
+      become: true
+      tags: opendcim
+      when: cli_action in ['deploy']
+
+    - role: wiki
+      become: true
+      tags: wiki
+      when: cli_action in ['deploy']
+
+- hosts: all
+  name: "Remove"
+  roles:
+    - role: uninstall
+      become: true
+      tags: uninstall
+      when: cli_action in ['remove']

@@ -1,0 +1,36 @@
+---
+- name: Start nagios container
+  tags: nagios-run
+  community.general.docker_container:
+    name: "{{ nagios.container_name }}"
+    image: "{{ nagios.image }}"
+    state: "{{ nagios_state }}"
+    recreate: "{{ nagios.recreate }}"
+    exposed_ports:
+      - "{{ nagios.web_exposed_port }}"
+    published_ports:
+      - "{{ nagios.web_published_port }}:{{ nagios.web_exposed_port }}"
+    env:
+      container: 'docker'
+    tmpfs:
+      - /tmp
+      - /run
+      - /run/lock
+    volumes:
+      - "{{ app.etcdir }}/nagios:/opt/nagios/etc"
+      - "{{ app.logdir }}/nagios:/opt/nagios/var"
+      - "{{ app.etcdir }}/nagios/Custom-Nagios-Plugins:/opt/Custom-Nagios-Plugins"
+      - /sys/fs/cgroup:/sys/fs/cgroup:ro
+      - "{{ app.etcdir }}/html/htpasswd:/opt/nagios/htpasswd.users:ro"
+    capabilities:
+      - sys_admin
+      - net_admin
+      - syslog
+      - net_broadcast
+      - sys_module
+    privileged: "{{ nagios.privileged }}"
+    stop_signal: 'SIGRTMIN+3'
+    debug: "{{ master.debug }}"
+    pull: true
+    restart_policy: unless-stopped
+    labels: "talos_version={{ app.cli_version }}"

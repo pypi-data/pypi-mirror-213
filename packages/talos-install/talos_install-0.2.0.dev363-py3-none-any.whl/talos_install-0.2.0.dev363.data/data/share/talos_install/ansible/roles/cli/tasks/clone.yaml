@@ -1,0 +1,52 @@
+---
+- name: Copy dev key
+  ansible.builtin.copy:
+    src: "{{ item.file }}"
+    dest: "{{ master.home }}/.ssh/{{ item.file }}"
+    mode: '{{ item.mode }}'
+    owner: "{{ master.user }}"
+    group: "{{ master.user }}"
+  loop:
+    - file: dev_key
+      mode: "600"
+    - file: dev_key.pub
+      mode: "644"
+  become_user: "{{ master.user }}"
+  become: true
+
+- name: Ensure ssh config exist
+  ansible.builtin.file:
+    path: "{{ master.home }}/.ssh/config"
+    state: touch
+    mode: '0600'
+    owner: "{{ master.user }}"
+    group: "{{ master.user }}"
+
+- name: Enable Dev Key
+  ansible.builtin.blockinfile:
+    dest: "{{ item }}"
+    block: |
+      Host github.com
+        IdentityFile {{ master.home }}/.ssh/dev_key
+        IdentitiesOnly yes
+    marker: '# {mark} GIT configuration'
+  loop:
+    - "{{ master.home }}/.ssh/config"
+
+- name: Git checkout talos cli
+  ansible.builtin.git:
+    repo: "{{ app.cli_repo }}"
+    dest: "{{ app.clidir }}"
+    version: main
+    force: true
+    update: true
+  become_user: "{{ master.user }}"
+  become: true
+
+- name: Remove dev key
+  ansible.builtin.file:
+    path: "{{ master.home }}/.ssh/{{ item }}"
+    state: absent
+  loop:
+    - dev_key
+    - dev_key.pub

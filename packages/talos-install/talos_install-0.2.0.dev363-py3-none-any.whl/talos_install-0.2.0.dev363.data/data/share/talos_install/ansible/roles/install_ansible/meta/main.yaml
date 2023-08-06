@@ -1,0 +1,5 @@
+---
+dependencies:
+  - role: gather_facts
+  - role: install_python
+  - role: os_tune

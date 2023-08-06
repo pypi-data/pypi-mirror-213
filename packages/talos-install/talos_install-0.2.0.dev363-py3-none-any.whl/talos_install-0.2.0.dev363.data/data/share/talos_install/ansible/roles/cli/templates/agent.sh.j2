@@ -1,0 +1,129 @@
+#!/usr/bin/env bash
+# =======================================================================
+# TALOS-CLI HPC Manager
+# =======================================================================
+#    Copyright (C) 2022-2023  E4 Computer Engineering SPA (e4company.com)
+#
+#    This file is part of TALOS-CLI.
+#
+#    TALOS-CLI is free software: you can redistribute it and/or modify
+#    it under the terms of the GNU General Public License as published by
+#    the Free Software Foundation, either version 3 of the License, or
+#    (at your option) any later version.
+#
+#    TALOS-CLI is distributed in the hope that it will be useful,
+#    but WITHOUT ANY WARRANTY; without even the implied warranty of
+#    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+#    GNU General Public License for more details.
+#
+#    You should have received a copy of the GNU General Public License
+#    along with TALOS-CLI.  If not, see <http://www.gnu.org/licenses/>.
+#
+
+export GREEN='\033[0;32m'
+export BLUE='\033[1;34m'
+export RED='\033[0;31m'
+
+T_notice(){
+  notice_message=$1
+  printf "${GREEN}$notice_message${NC}\n"
+}
+
+T_warning(){
+  warning_message="$1"
+  printf "${RED}$warning_message${NC}\n"
+}
+
+T_title(){
+  title_message=$1
+  clear
+  printf "${BLUE}# TALOS CLI HPC Manager - Release $RELEASE\n"
+  printf "# $title_message${NC}\n\n"
+}
+
+T_check(){
+  message=$1
+  if [[ $? -ne 0 ]]; then
+    T_warning "$message"
+    exit 127
+  fi
+}
+
+### MAIN
+T_title "Agent Precheck requirement "
+
+T_notice "Create user Talos Master"
+sudo useradd -m -u {{ master.uid }} -s /bin/bash {{ master.user }}
+T_check "Fails to create User Talos Master"
+echo "---"
+
+T_notice "Set Temporaly Password"
+echo -e "{{ master.password }}\n{{ master.password }}" | sudo passwd {{ master.user }}
+T_check "Fails to set Talos Master password"
+echo "---"
+
+T_notice "Add user Talos to sudo group"
+echo 'talos ALL=(ALL)       NOPASSWD: ALL' | sudo EDITOR='tee -a' visudo
+T_check "Fails to add talos as sudoers"
+echo "---"
+
+T_notice "Check Python requirement"
+if ! command -v python &> /dev/null
+then
+  if ! command -v python3 &> /dev/null
+  then
+    T_warning "Python3 needs to be installed"
+    distro=$(cat /etc/*-release | tr [:upper:] [:lower:] | grep ^id= | cut -d"=" -f2| sed 's/\"//g')
+    case $distro in
+      centos|rhel)
+        sudo yum install -y python3 &> /dev/null
+        alternatives --set python /usr/bin/python3
+        ;;
+      ubuntu)
+        apt install python3 -y
+        sudo update-alternatives --install /usr/local/bin/python python /usr/bin/python3 40
+        ;;
+    esac
+  else
+    distro=$(cat /etc/*-release | tr [:upper:] [:lower:] | grep ^id= | cut -d"=" -f2| sed 's/\"//g')
+    case $distro in
+      centos|rhel)
+        alternatives --set python /usr/bin/python3
+        ;;
+      ubuntu)
+        sudo update-alternatives --install /usr/local/bin/python python /usr/bin/python3 40
+        ;;
+    esac
+  fi
+fi
+
+
+T_notice "Check Pip requirement"
+if ! command -v pip &> /dev/null
+then
+  if ! command -v pip3 &> /dev/null
+  then
+    T_warning "pip3 needs to be installed"
+    distro=$(cat /etc/*-release | tr [:upper:] [:lower:] | grep ^id= | cut -d"=" -f2| sed 's/\"//g')
+    case $distro in
+      centos|rhel)
+        sudo yum install -y python3-pip &> /dev/null
+        alternatives --set pip /usr/bin/pip3
+        ;;
+      ubuntu)
+        apt install python3-pip -y
+        sudo update-alternatives --install /usr/local/bin/pip pip /usr/bin/pip3 40
+        ;;
+    esac
+  else
+    distro=$(cat /etc/*-release | tr [:upper:] [:lower:] | grep ^id= | cut -d"=" -f2| sed 's/\"//g')
+    case $distro in
+      centos|rhel)
+        alternatives --set pip /usr/bin/pip3
+        ;;
+      ubuntu)
+        sudo update-alternatives --install /usr/local/bin/pip pip /usr/bin/pip3 40
+        ;;
+    esac
+  fi
+fi

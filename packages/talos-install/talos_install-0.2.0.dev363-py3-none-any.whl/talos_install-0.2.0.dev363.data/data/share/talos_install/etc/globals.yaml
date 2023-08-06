@@ -1,0 +1,14 @@
+---
+### Customer settings
+customer:
+  name: 'E4'
+  timezone: 'Europe/Rome'
+
+### IDM
+ca_idm:
+  enable: true
+  ipa: 'srv-e4inf04.e4red.lan'
+  ip: '172.18.16.24'
+  force_resolve: 'True'
+  url: 'https://srv-e4inf04.e4red.lan/ipa/config/ca.crt'
+  dest: '/etc/pki/ca-trust/source/anchors/e4lan.crt'

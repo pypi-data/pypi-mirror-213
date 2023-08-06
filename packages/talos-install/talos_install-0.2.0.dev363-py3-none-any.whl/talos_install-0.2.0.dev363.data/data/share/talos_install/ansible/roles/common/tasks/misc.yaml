@@ -1,0 +1,34 @@
+---
+- name: Create folders
+  ansible.builtin.file:
+    path: "{{ item }}"
+    state: directory
+    mode: '0775'
+    owner: "{{ master.user }}"
+    group: "{{ master.group }}"
+  loop:
+    - "{{ app.dir }}"
+    - "{{ app.etcdir }}/html"
+    - "{{ app.etcdir }}/conf"
+
+- name: Set master user pass
+  community.general.htpasswd:
+    path: "{{ item }}"
+    name: "{{ master.user }}"
+    password: "{{ master.password }}"
+    owner: "{{ master.user }}"
+    group: "{{ master.group }}"
+    mode: '0644'
+  loop:
+    - "{{ app.etcdir }}/html/htpasswd"
+
+- name: Set guest user pass
+  community.general.htpasswd:
+    path: "{{ item }}"
+    name: "{{ guest.user }}"
+    password: "{{ guest.password }}"
+    owner: "{{ master.user }}"
+    group: "{{ master.group }}"
+    mode: '0644'
+  loop:
+    - "{{ app.etcdir }}/html/htpasswd"

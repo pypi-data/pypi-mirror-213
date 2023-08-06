@@ -1,0 +1,49 @@
+version: "3"
+services:
+
+  db:
+    image: postgres:11-alpine
+    container_name: {{ wiki_db_container_name }}
+    labels:
+      talos_version: "{{ app.cli_version }}"
+    hostname: {{ wiki_db_hostname }}
+    environment:
+      POSTGRES_DB: {{ wiki_pg_database }}
+      POSTGRES_PASSWORD: {{ master.password }}
+      POSTGRES_USER: {{ wiki_pg_admin_user }}
+    logging:
+      driver: "none"
+    restart: unless-stopped
+    volumes:
+      - db-data:/var/lib/postgresql/data
+
+  wiki:
+    image: requarks/wiki:2
+    container_name: {{ wiki_container_name }}
+    labels:
+      talos_version: "{{ app.cli_version }}"
+    depends_on:
+      - db
+    hostname: {{ wiki_hostname }}
+    environment:
+      DB_TYPE: postgres
+      DB_HOST: {{ wiki_db_hostname }}
+      DB_PORT: 5432
+      DB_USER: {{ wiki_pg_admin_user }}
+      DB_PASS: {{ master.password }}
+      DB_NAME: {{ wiki_pg_database }}
+    logging:
+      driver: "none"
+    restart: unless-stopped
+    ports:
+      - "{{ wiki_expose_port }}:3000"
+networks:
+  default:
+    driver: bridge
+    ipam:
+      driver: default
+      config:
+      - subnet:  {{ wiki_docker_compose_subnet }}
+
+volumes:
+  db-data:

@@ -1,0 +1,33 @@
+---
+master:
+  user: 'talos'
+  group: 'talos'
+  uid: 1000
+  gid: 1000
+  debug: false
+  password: 'E4company!TM'
+  mail: 'talosmaster@e4company.com'
+  home: '/usr/talos'
+
+guest:
+  user: 'guest'
+  password: 'guest'
+
+mgm_password: 'E4password!'
+
+### Talos configuration
+# Set use_default to enable the default setting, if 'false' on client you'll need to run talos-setup config
+# ansible_inventory_enable: set to true to add/remove nodes on Ansible inventory (Default = true)
+# ansible_init_mode: set to true to run init sequence on node added. (Default = false)
+# dcim_inventory_enable: set to true to add/remove nodes on DCIM inventory (Default = false)
+# nagios_enable: set to true to add/remove nodes Monitoring (Default = true)
+# default_domain: set to true to use a fixed domain for host resolution (Default = true)
+# talos_domain: set extension, dont forget dot! (Default = .e4red)
+talos_conf:
+  use_default: 'true'
+  ansible_inventory_enable: 'true'
+  ansible_init_mode: 'false'
+  dcim_inventory_enable: 'false'
+  nagios_enable: 'true'
+  default_domain: 'true'
+  talos_domain: '.e4red'

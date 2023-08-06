@@ -1,0 +1,36 @@
+---
+- name: Start opendcim container
+  tags: opendcim-run
+  community.general.docker_container:
+    name: "{{ opendcim.container_name }}"
+    image: "{{ opendcim.image }}"
+    state: "{{ opendcim_state }}"
+    recreate: "{{ opendcim.recreate }}"
+    exposed_ports:
+      - "{{ opendcim.web_exposed_port }}"
+    published_ports:
+      - "{{ opendcim.web_published_port }}:{{ opendcim.web_exposed_port }}"
+    env:
+      container: 'docker'
+    tmpfs:
+      - /tmp
+      - /run
+      - /run/lock
+    volumes:
+      - "{{ app.etcdir }}/opendcim/pictures:/var/www/dcim/pictures"
+      - "{{ app.etcdir }}/opendcim/drawings:/var/www/dcim/drawings"
+      - "{{ app.etcdir }}/opendcim/mysql:/var/lib/mysql:rw"
+      - "{{ app.etcdir }}/html/htpasswd:/var/www/opendcim.password:ro"
+      - /sys/fs/cgroup:/sys/fs/cgroup:ro
+    capabilities:
+      - sys_admin
+      - net_admin
+      - syslog
+      - net_broadcast
+      - sys_module
+    privileged: "{{ opendcim.privileged }}"
+    stop_signal: 'SIGRTMIN+3'
+    debug: "{{ master.debug }}"
+    pull: true
+    restart_policy: unless-stopped
+    labels: "talos_version={{ app.cli_version }}"

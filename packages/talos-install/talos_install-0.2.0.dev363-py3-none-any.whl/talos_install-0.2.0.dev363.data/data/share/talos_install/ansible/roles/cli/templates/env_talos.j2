@@ -1,0 +1,68 @@
+#!/usr/bin/env bash
+# =======================================================================
+# TALOS-CLI HPC Manager
+# =======================================================================
+#    Copyright (C) 2022-2023  E4 Computer Engineering SPA (e4company.com)
+#
+#    This file is part of TALOS-CLI.
+#
+#    TALOS-CLI is free software: you can redistribute it and/or modify
+#    it under the terms of the GNU General Public License as published by
+#    the Free Software Foundation, either version 3 of the License, or
+#    (at your option) any later version.
+#
+#    TALOS-CLI is distributed in the hope that it will be useful,
+#    but WITHOUT ANY WARRANTY; without even the implied warranty of
+#    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+#    GNU General Public License for more details.
+#
+#    You should have received a copy of the GNU General Public License
+#    along with TALOS-CLI.  If not, see <http://www.gnu.org/licenses/>.
+#
+
+export RELEASE="{{ app.cli_version }}"
+export TALOS_IP="{{ ssh_ip }}"
+export CUSTOMERNAME="{{ customer.name }}"
+
+# PATHS
+export TALOS_PATH="{{ app.dir }}"
+
+export TALOS_CLI_PATH="{{ app.clidir }}"
+export TALOS_ETC_PATH="{{ app.etcdir }}"
+export TALOS_DATA_PATH="{{ app.datadir }}"
+export TALOS_REPOS_PATH="{{ app.repodir }}"
+export TALOS_WEB_PATH="{{ app.webdir }}"
+export TALOS_LOG_PATH="{{ app.logdir }}"
+
+export TALOS_TEMPLATE_PATH="$TALOS_ETC_PATH/templates"
+export TALOS_PROFILE_PATH="$TALOS_ETC_PATH/profiles"
+export TALOS_BENCH_PATH="$TALOS_ETC_PATH/benchmarks"
+export TALOS_ROLE_PATH="$TALOS_ETC_PATH/roles"
+export TALOS_PO_PATH="$TALOS_ETC_PATH/pos"
+export TALOS_BACKUP_PATH="$TALOS_ETC_PATH/backup"
+
+# FILES
+export TALOS_LOG="$TALOS_LOG_PATH/talos-cli.logs"
+export TALOS_FULL_LOG="$TALOS_LOG_PATH/history.logs"
+export TALOS_HG_JSON="$TALOS_ETC_PATH/hostgroup.json"
+export TALOS_BACKUP_JSON="$TALOS_BACKUP_PATH/backup.json"
+
+export NAGIOS_CONF_PATH="$TALOS_ETC_PATH/nagios"
+export NAGIOS_OBJ_PATH="$NAGIOS_CONF_PATH/objects"
+
+export ANSIBLE_PATH="$TALOS_ETC_PATH/ansible"
+export ANSIBLE_CONFIG="$TALOS_ETC_PATH/ansible/ansible.cfg"
+export ANSIBLE_INVENTORY="$ANSIBLE_PATH/inventory/hosts-cli"
+export ANSIBLE_PB_PATH="$ANSIBLE_PATH/playbook"
+
+# REPOS
+export NEXUS_REPOSITORY="{{ app.nexus_repo }}"
+export DATA_REPOSITORY="{{ app.data_repo }}"
+
+# DATA
+export GREEN='\033[0;32m'
+export BLUE='\033[0;34m'
+export RED='\033[1;31m'
+export REDBAND='\033[41;1;37m'
+export YELLOW='\033[0;33m'
+export NC='\033[0m'

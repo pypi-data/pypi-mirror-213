@@ -1,0 +1,77 @@
+###############################################################################
+# TALOS-SERVER.CFG - OBJECT CONFIG FILE FOR MONITORING TALOS MACHINE
+###############################################################################
+
+###############################################################################
+# HOST DEFINITION
+###############################################################################
+
+# Define a host for the local machine
+
+define host{
+        use                     talos-server            ; Name of host template to use
+        host_name               {{ inventory_hostname }}
+        alias                   {{ inventory_hostname }}
+        address                 {{ ssh_ip }}
+        }
+
+###############################################################################
+# HOST GROUP DEFINITION
+###############################################################################
+
+# Define an optional hostgroup for Linux machines
+
+define hostgroup{
+  hostgroup_name  talos
+  alias           Talos Servers
+  members         {{ inventory_hostname }}
+}
+
+###############################################################################
+# SERVICE DEFINITIONS
+###############################################################################
+# 01 PING
+# 02 SSH
+# 03 LOCAL PROCESS
+# 03 CURRENT LOAD
+# 04 CPU LOAD
+# 05 MEMORY LOAD
+# 06 SWAP USAGE
+# 07 ROOT PARTITION
+# 09 WEB SERVICE
+
+# Define a service to "ping" the local machine
+define service{
+  use                 local-service,graphed-service     ; Name of service template to use
+  host_name           {{ inventory_hostname }}
+  service_description PING
+  check_command       check_ping!100.0,20%!500.0,60%
+}
+
+# Define a service to check the number of currently running procs
+# on the local machine.  Warning if > 250 processes, critical if
+# > 400 users.
+define service{
+  use                 local-service,graphed-service     ; Name of service template to use
+  host_name           {{ inventory_hostname }}
+  service_description LOCAL_PROCESS
+  check_command       check_local_procs!250!400!RSZDT
+}
+
+# Define a service to check the disk space of the root partition
+# on the local machine.  Warning if < 20% free, critical if
+# < 10% free space on partition.
+define service{
+  use                 local-service,graphed-service     ; Name of service template to use
+  host_name           {{ inventory_hostname }}
+  service_description ROOT_PART
+  check_command       check_local_disk!20%!10%!/
+}
+
+# Define a service to check the load on the local machine.
+define service{
+  use                 local-service,graphed-service     ; Name of service template to use
+  host_name           {{ inventory_hostname }}
+  service_description LOAD
+  check_command       check_local_load!15,25,30!35,40,50
+}
