@@ -1,0 +1,7 @@
+README.md
+setup.py
+src/aorta_sirius_dev.egg-info/PKG-INFO
+src/aorta_sirius_dev.egg-info/SOURCES.txt
+src/aorta_sirius_dev.egg-info/dependency_links.txt
+src/aorta_sirius_dev.egg-info/top_level.txt
+src/sirius/__init__.py
