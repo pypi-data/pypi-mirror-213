@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: learn-python-ceg-test
+Version: 1.0.2
+Summary: learn_python check answers
+Home-page: https://github.com/mike-mendoza/learn_python_ceg_test
+Download-URL: https://github.com/mike-mendoza/learn_python_ceg_test/archive/refs/tags/v1.0.2.tar.gz
+Author: Miguel Angel Mendoza-Lugo, Robert Lanzafame, Ahmed Farahat
+Author-email: mendozalugo@gmail.com
+License: GNU
+Project-URL: Bug Tracker, https://github.com/mike-mendoza/learn_python_ceg_test/issues
+Keywords: pypi
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Documentation
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
+# learn_python_ceg_test
+
+**This is a test!**
+
+In this repository the functions to check answers of the jupyterbook learn pyhton ceg are hosted. 
+---
+M i k e ! ! ! 
