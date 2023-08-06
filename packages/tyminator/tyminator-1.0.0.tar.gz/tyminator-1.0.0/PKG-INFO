@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: tyminator
+Version: 1.0.0
+Summary: Fake timing tools for testing time-dependent functionality
+Author: Rafe Kaplan
+Author-email: slobberchops@gmail.com
+Requires-Python: >=3.9,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Project-URL: Issue Tracker, https://github.com/milton-hirsch-institute/tyminator/issues
