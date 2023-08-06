@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: leidian
+Version: 1.0.1
+Summary: 雷电模拟器操作
+Author-email: hpcm <hpcm@foxmail.com>
+Maintainer-email: hpcm <hpcm@foxmail.com>
+License: MIT License
+Project-URL: homepage, https://github.com/HPCMCN/leidian
+Project-URL: documentation, https://github.com/HPCMCN/leidian
+Project-URL: repository, https://github.com/HPCMCN/leidian
+Project-URL: changelog, https://github.com/HPCMCN/leidian
+Keywords: 雷电,Virtual,模拟器
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: Unix
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.4
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+nothing
