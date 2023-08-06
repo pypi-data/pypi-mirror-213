@@ -1,0 +1,7 @@
+LICENSE
+README.md
+setup.py
+cumulus_library_core.egg-info/PKG-INFO
+cumulus_library_core.egg-info/SOURCES.txt
+cumulus_library_core.egg-info/dependency_links.txt
+cumulus_library_core.egg-info/top_level.txt
