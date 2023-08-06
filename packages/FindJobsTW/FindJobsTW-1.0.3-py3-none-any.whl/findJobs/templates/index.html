@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Job Finder</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+<body class="bg-light">
+    <div class="container">
+        <div class="py-5 text-center">
+            <h2>Job Finder</h2>
+            <p class="lead">Welcome to the Job Finder. Please select the job type and click the button below.</p>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card">
+                    <div class="card-body">
+                        <form id="myForm" action="/" method="post" class="form">
+                            
+                            <button type="submit" name="clear" style="margin-bottom: 20px;">清除</button>
+                            <div class="form-group">
+                                <label>關鍵字:</label>
+                                <div class="input-group">
+                                    <input type="str" class="form-control" id="JobKeyword" name="JobKeyword" placeholder="搜尋關鍵字"  value="{{ current_JobKeyword if current_JobKeyword}}">  
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label>查詢數量:</label>
+                                <div class="input-group">
+                                    <input type="number" class="form-control" id="JobNumber" name="JobNumber" placeholder="搜尋工作數量(建議不要超過100以免等待過久)" min="0"  value="{{ current_JobNumber if current_JobNumber else '20' }}">  
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="job_type">選擇工作類型:</label>
+                                <select name="job_type" id="job_type" class="form-control">
+                                    <option value="不限"{% if current_job_type == '不限' %}selected{% endif %}>不限</option>
+                                    <option value="經營／人資類"{% if current_job_type == '經營／人資類' %}selected{% endif %}>經營／人資類</option>
+                                    <option value="行政／總務／法務類"{% if current_job_type == '行政／總務／法務類' %}selected{% endif %}>行政／總務／法務類</option>
+                                    <option value="財會／金融專業類"{% if current_job_type == '財會／金融專業類' %}selected{% endif %}>財會／金融專業類</option>
+                                    <option value="行銷／企劃／專案管理類"{% if current_job_type == '行銷／企劃／專案管理類' %}selected{% endif %}>行銷／企劃／專案管理類</option>
+                                    <option value="客服／門市／業務／貿易類"{% if current_job_type == '客服／門市／業務／貿易類' %}selected{% endif %}>客服／門市／業務／貿易類</option>
+                                    <option value="餐飲／旅遊 ／美容美髮類"{% if current_job_type == '餐飲／旅遊 ／美容美髮類' %}selected{% endif %}>餐飲／旅遊 ／美容美髮類</option>
+                                    <option value="資訊軟體系統類"{% if current_job_type == '資訊軟體系統類' %}selected{% endif %}>資訊軟體系統類</option>
+                                    <option value="操作／技術／維修類"{% if current_job_type == '操作／技術／維修類' %}selected{% endif %}>操作／技術／維修類</option>
+                                    <option value="資材／物流／運輸類"{% if current_job_type == '資材／物流／運輸類' %}selected{% endif %}>資材／物流／運輸類</option>
+                                    <option value="營建／製圖類"{% if current_job_type == '營建／製圖類' %}selected{% endif %}>營建／製圖類</option>
+                                    <option value="傳播藝術／設計類"{% if current_job_type == '傳播藝術／設計類' %}selected{% endif %}>傳播藝術／設計類</option>
+                                    <option value="文字／傳媒工作類"{% if current_job_type == '文字／傳媒工作類' %}selected{% endif %}>文字／傳媒工作類</option>
+                                    <option value="醫療／保健服務類"{% if current_job_type == '醫療／保健服務類' %}selected{% endif %}>醫療／保健服務類</option>
+                                    <option value="學術／教育／輔導類"{% if current_job_type == '學術／教育／輔導類' %}selected{% endif %}>學術／教育／輔導類</option>
+                                    <option value="研發相關類"{% if current_job_type == '研發相關類' %}selected{% endif %}>研發相關類</option>
+                                    <option value="生產製造／品管／環衛類"{% if current_job_type == '生產製造／品管／環衛類' %}selected{% endif %}>生產製造／品管／環衛類</option>
+                                    <option value="軍警消／保全類"{% if current_job_type == '軍警消／保全類' %}selected{% endif %}>軍警消／保全類</option>
+                                    <option value="其他職類"{% if current_job_type == '其他職類' %}selected{% endif %}>其他職類</option>
+                                </select>
+                            </div>
+                            <style>
+                                .label-area {
+                                    display: block; 
+                                    
+                                }
+                                
+                                .form-group-area {
+                                    width: 100%;
+                                }
+                                
+                                .custom-control {
+                                    display: inline-block;
+                                    width: 90px; /* 设置固定的宽度 */
+                                    overflow: hidden;
+                                    white-space: nowrap;
+                                    text-overflow: ellipsis;
+                                    margin-bottom: 1em;
+                                }
+                            </style>
+                            
+                            <div class="form-group-area">
+                                <label class="label-area">地區選項:</label>
+                                <div class="custom-control custom-radio custom-control-inline" style="flex: 1 0 7%;">
+                                    <input class="custom-control-input" type="checkbox" name="area_condition" id="defaultArea" value="all" {% if 'all' in current_area_condition %}checked{% endif %}>
+                                    <label class="custom-control-label" for="defaultArea">不限</label>
+                                </div>
+                                <div class="custom-control custom-radio custom-control-inline" style="flex: 1 0 7%;">
+                                    <input class="custom-control-input" type="checkbox" name="area_condition" id="area9" value=6001001000 {% if '6001001000' in current_area_condition %}checked{% endif %}>
+                                    <label class="custom-control-label" for="area9">台北市</label>
+                                </div>
+                                
+                                <div class="custom-control custom-radio custom-control-inline" style="flex: 1 0 7%;">
+                                    <input class="custom-control-input" type="checkbox" name="area_condition" id="area10" value=6001002000 {% if '6001002000' in current_area_condition %}checked{% endif %}>
+                                    <label class="custom-control-label" for="area10">新北市</label>
+                                </div>
+                                
+                                <div class="custom-control custom-radio custom-control-inline" style="flex: 1 0 7%;">
+                                    <input class="custom-control-input" type="checkbox" name="area_condition" id="area11" value=6001003000 {% if '6001003000' in current_area_condition %}checked{% endif %}>
+                                    <label class="custom-control-label" for="area11">宜蘭縣</label>
+                                </div>
+                                
+                                <div class="custom-control custom-radio custom-control-inline" style="flex: 1 0 7%;">
+                                    <input class="custom-control-input" type="checkbox" name="area_condition" id="area12" value=6001004000 {% if '6001004000' in current_area_condition %}checked{% endif %}>
+                                    <label class="custom-control-label" for="area12">基隆市</label>
+                                </div>
+                                
+                                <div class="custom-control custom-radio custom-control-inline" style="flex: 1 0 7%;">
+                                    <input class="custom-control-input" type="checkbox" name="area_condition" id="area13" value=6001005000 {% if '6001005000' in current_area_condition %}checked{% endif %}>
+                                    <label class="custom-control-label" for="area13">桃園市</label>
+                                </div>
+                                
+                                <div class="custom-control custom-radio custom-control-inline" style="flex: 1 0 7%;">
+                                    <input class="custom-control-input" type="checkbox" name="area_condition" id="area14" value=6001006000 {% if '6001006000' in current_area_condition %}checked{% endif %}>
+                                    <label class="custom-control-label" for="area14">新竹縣市</label>
+                                </div>
+                                
+                                <div class="custom-control custom-radio custom-control-inline" style="flex: 1 0 7%;">
+                                    <input class="custom-control-input" type="checkbox" name="area_condition" id="area15" value=6001007000 {% if '6001007000' in current_area_condition %}checked{% endif %}>
+                                    <label class="custom-control-label" for="area15">苗栗縣</label>
+                                </div>
+                                
+                                <div class="custom-control custom-radio custom-control-inline" style="flex: 1 0 7%;">
+                                    <input class="custom-control-input" type="checkbox" name="area_condition" id="area16" value=6001008000 {% if '6001008000' in current_area_condition %}checked{% endif %}>
+                                    <label class="custom-control-label" for="area16">台中市</label>
+                                </div>
+                                
+                                <div class="custom-control custom-radio custom-control-inline" style="flex: 1 0 7%;">
+                                    <input class="custom-control-input" type="checkbox" name="area_condition" id="area17" value=6001010000 {% if '6001010000' in current_area_condition %}checked{% endif %}>
+                                    <label class="custom-control-label" for="area17">彰化縣</label>
+                                </div>
+                                
+                                <div class="custom-control custom-radio custom-control-inline" style="flex: 1 0 7%;">
+                                    <input class="custom-control-input" type="checkbox" name="area_condition" id="area18" value=6001011000 {% if '6001011000' in current_area_condition %}checked{% endif %}>
+                                    <label class="custom-control-label" for="area18">南投縣</label>
+                                </div>
+                                
+                                <div class="custom-control custom-radio custom-control-inline" style="flex: 1 0 7%;">
+                                    <input class="custom-control-input" type="checkbox" name="area_condition" id="area19" value=6001012000 {% if '6001012000' in current_area_condition %}checked{% endif %}>
+                                    <label class="custom-control-label" for="area19">雲林縣</label>
+                                </div>
+                                
+                                <div class="custom-control custom-radio custom-control-inline" style="flex: 1 0 7%;">
+                                    <input class="custom-control-input" type="checkbox" name="area_condition" id="area20" value=6001013000 {% if '6001013000' in current_area_condition %}checked{% endif %}>
+                                    <label class="custom-control-label" for="area20">嘉義縣市</label>
+                                </div>
+                                
+                                <div class="custom-control custom-radio custom-control-inline" style="flex: 1 0 7%;">
+                                    <input class="custom-control-input" type="checkbox" name="area_condition" id="area21" value=6001014000 {% if '6001014000' in current_area_condition %}checked{% endif %}>
+                                    <label class="custom-control-label" for="area21">台南市</label>
+                                </div>
+                                
+                                <div class="custom-control custom-radio custom-control-inline" style="flex: 1 0 7%;">
+                                    <input class="custom-control-input" type="checkbox" name="area_condition" id="area22" value=6001016000 {% if '6001016000' in current_area_condition %}checked{% endif %}>
+                                    <label class="custom-control-label" for="area22">高雄市</label>
+                                </div>
+                                
+                                <div class="custom-control custom-radio custom-control-inline" style="flex: 1 0 7%;">
+                                    <input class="custom-control-input" type="checkbox" name="area_condition" id="area23" value=6001018000 {% if '6001018000' in current_area_condition %}checked{% endif %}>
+                                    <label class="custom-control-label" for="area23">屏東縣</label>
+                                </div>
+                                
+                                <div class="custom-control custom-radio custom-control-inline" style="flex: 1 0 7%;">
+                                    <input class="custom-control-input" type="checkbox" name="area_condition" id="area24" value=6001019000 {% if '6001019000' in current_area_condition %}checked{% endif %}>
+                                    <label class="custom-control-label" for="area24">台東縣</label>
+                                </div>
+                                
+                                <div class="custom-control custom-radio custom-control-inline" style="flex: 1 0 7%;">
+                                    <input class="custom-control-input" type="checkbox" name="area_condition" id="area25" value=6001020000 {% if '6001020000' in current_area_condition %}checked{% endif %}>
+                                    <label class="custom-control-label" for="area25">花蓮縣</label>
+                                </div>
+                                
+                                <div class="custom-control custom-radio custom-control-inline" style="flex: 1 0 7%;">
+                                    <input class="custom-control-input" type="checkbox" name="area_condition" id="area26" value=6001021000 {% if '6001021000' in current_area_condition %}checked{% endif %}>
+                                    <label class="custom-control-label" for="area26">澎湖縣</label>
+                                </div>
+                                
+                                <div class="custom-control custom-radio custom-control-inline" style="flex: 1 0 7%;">
+                                    <input class="custom-control-input" type="checkbox" name="area_condition" id="area27" value=6001022000 {% if '6001022000' in current_area_condition %}checked{% endif %}>
+                                    <label class="custom-control-label" for="area27">金門縣</label>
+                                </div>
+                                
+                                <div class="custom-control custom-radio custom-control-inline" style="flex: 1 0 7%;">
+                                    <input class="custom-control-input" type="checkbox" name="area_condition" id="area28" value=6001023000 {% if '6001023000' in current_area_condition %}checked{% endif %}>
+                                    <label class="custom-control-label" for="area28">連江縣</label>
+                                </div>
+                                
+                            </div>
+                            <div class="form-group">
+                                <label for="update_date">更新日期:</label>
+                                <select name="update_date" id="update_date" class="form-control">
+                                    <option value="不限"{% if current_update_date == '不限' %}selected{% endif %}>不限</option>
+                                    <option value="本日最新"{% if current_update_date == '本日最新' %}selected{% endif %}>本日最新</option>
+                                    <option value="三日內"{% if current_update_date == '三日內' %}selected{% endif %}>三日內</option>
+                                    <option value="一週內"{% if current_update_date == '一週內' %}selected{% endif %}>一週內</option>
+                                    <option value="二週內"{% if current_update_date == '二週內' %}selected{% endif %}>二週內</option>
+                                    <option value="一個月內"{% if current_update_date == '一個月內' %}selected{% endif %}>一個月內</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="salarytype">薪資類型:</label>
+                                <select name="salarytype" id="salarytype" class="form-control">
+                                    <option value="不限"{% if current_salarytype == '不限' %}selected{% endif %}>不限</option>
+                                    <option value="月薪"{% if current_salarytype == '月薪' %}selected{% endif %}>月薪</option>
+                                    <option value="年薪"{% if current_salarytype == '年薪' %}selected{% endif %}>年薪</option>
+                                    <option value="日薪"{% if current_salarytype == '日薪' %}selected{% endif %}>日薪</option>
+                                    <option value="時薪"{% if current_salarytype == '時薪' %}selected{% endif %}>時薪</option>
+                                </select>
+                            </div>
+                            <style>
+                                /* 增加对 "薪資條件" 标签单独控制的能力 */
+                                .label-main {
+                                    display: block; 
+                                    margin-bottom: 1em;
+                                }
+                                .custom-control_s {
+                                    display: inline-block;
+                                    width: 120px; /* 设置固定的宽度 */
+                                    overflow: hidden;
+                                    white-space: nowrap;
+                                    text-overflow: ellipsis;
+                                    margin-bottom: -1em;
+                                }
+                                .custom-control_b {
+                                    display: inline-block;
+                                    width: 120px; /* 设置固定的宽度 */
+                                    overflow: hidden;
+                                    white-space: nowrap;
+                                    text-overflow: ellipsis;
+                                    margin-bottom: 0em;
+                                }
+
+                            </style>
+                            
+                            <div class="form-group">
+                                <label class="label-main">薪資條件:</label>
+                                <div class="custom-control_s custom-radio custom-control-inline" style="margin-bottom: -1;">
+                                    <input class="custom-control_s-input" type="radio" name="salary_condition" id="defaultSalary" value="default" checked {% if 'default' in current_salary_condition %}checked{% endif %}>
+                                    <label class="custom-control_s-label" for="defaultSalary">不限</label>
+                                </div>
+                                <div class="custom-control_s custom-radio custom-control-inline">
+                                    <input class="custom-control_s-input" type="radio" name="salary_condition" id="salaryAny" value="any" {% if 'any' in current_salary_condition %}checked{% endif %}>
+                                    <label class="custom-control_s-label" for="salaryAny">有寫薪資</label>
+                                </div>
+                                <div class="custom-control_s custom-radio custom-control-inline">
+                                    <input class="custom-control_s-input" type="radio" name="salary_condition" id="salary30k" value="30000" {% if '30000' in current_salary_condition %}checked{% endif %}>
+                                    <label class="custom-control_s-label" for="salary30k">月薪3萬up</label>
+                                </div>
+                                <div class="custom-control_s custom-radio custom-control-inline">
+                                    <input class="custom-control_s-input" type="radio" name="salary_condition" id="salary40k" value="40000" {% if '40000' in current_salary_condition %}checked{% endif %}>
+                                    <label class="custom-control_s-label" for="salary40k">月薪4萬up</label>
+                                </div>
+                                <div class="custom-control_s custom-radio custom-control-inline">
+                                    <input class="custom-control-input_s" type="radio" name="salary_condition" id="salary50k" value="50000" {% if '50000' in current_salary_condition %}checked{% endif %}>
+                                    <label class="custom-control-label_s" for="salary50k">月薪5萬up</label>
+                                </div>
+                            </div>
+                            
+                            <div class="custom-control_b custom-radio custom-control-inline" >
+                                <input class="custom-control_b-input" type="radio" name="salary_condition" id="salaryCustom" value="custom" {% if 'custom' in current_salary_condition %}checked{% endif %}>
+                                <label class="custom-control_b-label" for="salaryCustom">自訂</label>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label>自訂薪資範圍:</label>
+                                <div class="input-group">
+                                    <input type="number" class="form-control" id="customSalaryMin" name="custom_salary_min" placeholder="下限" min="0" value="{{ current_custom_salary_min if 'custom' in current_salary_condition }}" {% if 'custom' not in current_salary_condition %}disabled{% endif %}>
+                                    <input type="number" class="form-control" id="customSalaryMax" name="custom_salary_max" placeholder="上限(可不填)" min="0" value="{{ current_custom_salary_max if 'custom' in current_salary_condition }}" {% if 'custom' not in current_salary_condition %}disabled{% endif %}>
+                                </div>
+                                <small class="form-text text-muted">選擇自訂薪資條件時填寫</small>
+                            </div>
+                            <div class="form-group">
+                                <label for="experience">經歷要求:</label>
+                                <select name="experience" id="experience" class="form-control">
+            
+                                    <option value="不限"{% if current_experience == '不限' %}selected{% endif %}>不限</option>
+                                    <option value="1年以下"{% if current_experience == '1年以下' %}selected{% endif %}>1年以下</option>
+                                    <option value="1-3年"{% if current_experience == '1-3年' %}selected{% endif %}>1-3年</option>
+                                    <option value="3-5年"{% if current_experience == '3-5年' %}selected{% endif %}>3-5年</option>
+                                    <option value="5-10年"{% if current_experience == '5-10年' %}selected{% endif %}>5-10年</option>
+                                    <option value="10年以上"{% if current_experience == '10年以上' %}selected{% endif %}>10年以上</option>
+                                </select>
+                            </div>
+                            <button type="submit" id="submitButton" class="btn btn-primary btn-lg btn-block">提交</button>
+                            <style>
+                                /* 增加对 "薪資條件" 标签单独控制的能力 */
+                                .container {
+                                    margin-top: 5em;
+                                }
+                            </style>
+                        </form>
+                    </div>
+                </div>
+                {% if message %}
+                <div class="card mt-3">
+                    <div class="card-body">
+                        <p class="card-text">{{ message | safe }}</p>
+                    </div>
+                </div>
+                {% endif %}
+                <div class="container">
+                    {% if table %}
+                    {{ table | safe }}
+                    {% endif %}
+                </div>
+                <img src="{{ url_for('static', filename='drake.png') }}" alt="My Image" style="width: 90%; height: auto;">
+                <h1>Your Plot</h1>
+                {% if image_filename %}
+                <img src="{{ url_for('static', filename= image_filename) }}" alt="Plot Image" style="width: 70%; height: auto;">
+                {% else %}
+                <p>The box plot is being generated, please wait...</p>
+                {% endif %}
+                {% if image_filename2 %}
+                <img src="{{ url_for('static', filename= image_filename2) }}" alt="Plot Image" style="width: 70%; height: auto;">
+                {% else %}
+                <p>The density plot is being generated, please wait...</p>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        $(function() {
+            $('input[type=radio][name=salary_condition]').change(function() {
+                if (this.value === 'custom') {
+                    $('#customSalaryMin').prop('disabled', false);
+                    $('#customSalaryMax').prop('disabled', false);
+                } else {
+                    $('#customSalaryMin').prop('disabled', true);
+                    $('#customSalaryMax').prop('disabled', true);
+                }
+            });
+        });
+        function clearForm() {
+            document.getElementById("myForm").reset();
+        }
+    </script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script>
+    $(document).ready(function() {
+        $('#submitButton').click(function() {
+            alert("已送出資料，請至VS Code Terminal查看下載進度");  // 這行會顯示一個彈出窗口，並顯示文字"已送出資料"
+        });
+    });
+    </script>
+</body>
+</html>
