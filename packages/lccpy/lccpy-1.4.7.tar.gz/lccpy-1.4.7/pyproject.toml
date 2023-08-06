@@ -1,0 +1,18 @@
+[build-system]
+requires = ["flit_core >=3.2,<4"]
+build-backend = "flit_core.buildapi"
+
+[project]
+name = "lccpy"
+version = "1.4.7"
+description = "项目 <让Python更简单一点> 的依赖包"
+dependencies = ["motor", "aiomysql", "pymongo", "pymysql", "pycryptodome", "tornado"]
+
+readme = "README.md"
+authors = [{name = "许灿标", email = "lcctoor@outlook.com"}]
+license = {file = "LICENSE"}
+classifiers = ["License :: OSI Approved :: Apache Software License"]
+requires-python = ">=3.7"
+
+[project.urls]
+HomePage = "https://github.com/lcctoor/lccpy#readme"
