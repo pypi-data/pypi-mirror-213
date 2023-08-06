@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+reqto/__init__.py
+reqto/example.py
+reqto.egg-info/PKG-INFO
+reqto.egg-info/SOURCES.txt
+reqto.egg-info/dependency_links.txt
+reqto.egg-info/requires.txt
+reqto.egg-info/top_level.txt
+reqto/core/__init__.py
+reqto/core/reqto.py
