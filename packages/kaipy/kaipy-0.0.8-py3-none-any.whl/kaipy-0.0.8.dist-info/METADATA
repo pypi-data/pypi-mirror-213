@@ -1,0 +1,46 @@
+Metadata-Version: 2.1
+Name: kaipy
+Version: 0.0.8
+Summary: Python tools for the kaiju software
+Project-URL: Homepage, https://bitbucket.org/aplkaiju/kaiju/wiki/Home
+Project-URL: Bug Tracker, https://bitbucket.org/aplkaiju/kaiju/src/master/
+Author-email: Eric Winter <eric.winter@jhuapl.edu>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.7
+Requires-Dist: ai-cdas==1.2.3
+Requires-Dist: alive-progress==3.1.4
+Requires-Dist: astropy==4.3.1
+Requires-Dist: cdasws==1.7.40
+Requires-Dist: cdflib==0.4.4
+Requires-Dist: configparser==5.2.0
+Requires-Dist: dataclasses-json==0.5.7
+Requires-Dist: h5py==3.7.0
+Requires-Dist: matplotlib==3.5.2
+Requires-Dist: netcdf4==1.6.0
+Requires-Dist: numpy==1.21.6
+Requires-Dist: progressbar==2.5
+Requires-Dist: pyhdf==0.10.5
+Requires-Dist: pytest==7.1.2
+Requires-Dist: scipy==1.7.3
+Requires-Dist: setuptools==65.0.2
+Requires-Dist: spacepy==0.3.0
+Requires-Dist: sunpy==3.1.8
+Requires-Dist: xarray==0.20.2
+Description-Content-Type: text/markdown
+
+# Project Kaiju
+Simulation tools for space plasmas using fluid and particle models.
+
+To build:
+Create a build folder.
+From inside the build folder, call cmake on the base kaiju directory.
+From inside the build folder, call "make" to build the application.
+
+To use Python tools:
+Assuming $KAIJUDIR is base installation directory, add $KAIJUDIR/scripts to $PATH and $KAIJUDIR to $PYTHONPATH.  
+
+For help, see the wiki at
+https://bitbucket.org/aplkaiju/kaiju/wiki/Home
