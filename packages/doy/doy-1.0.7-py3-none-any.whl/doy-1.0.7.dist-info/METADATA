@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: doy
+Version: 1.0.7
+Summary: 
+Author: Dominik Schmidt
+Author-email: schmidtdominik30@gmail.com
+Requires-Python: >=3.8
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Requires-Dist: matplotlib (>=3.6.2)
+Requires-Dist: numpy
+Requires-Dist: rich (>=13.4.1)
+Requires-Dist: tqdm (>=4.65.0)
+Description-Content-Type: text/markdown
+
+# Doy
+
+Simple utility package
+
