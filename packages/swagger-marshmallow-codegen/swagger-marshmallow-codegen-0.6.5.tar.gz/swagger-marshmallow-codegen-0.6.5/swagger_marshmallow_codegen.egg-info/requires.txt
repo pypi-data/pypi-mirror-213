@@ -1,0 +1,14 @@
+dictknife[load]>=0.14.0
+magicalimport
+marshmallow>=3.0.0
+prestring
+typing_extensions
+
+[dev]
+black
+flake8
+
+[docs]
+
+[testing]
+pytest
