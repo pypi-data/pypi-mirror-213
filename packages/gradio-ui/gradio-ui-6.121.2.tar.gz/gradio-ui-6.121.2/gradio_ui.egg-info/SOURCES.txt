@@ -1,0 +1,7 @@
+LICENSE
+README.md
+setup.py
+gradio_ui.egg-info/PKG-INFO
+gradio_ui.egg-info/SOURCES.txt
+gradio_ui.egg-info/dependency_links.txt
+gradio_ui.egg-info/top_level.txt
