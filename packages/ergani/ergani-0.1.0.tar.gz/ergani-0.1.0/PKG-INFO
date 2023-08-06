@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: ergani
+Version: 0.1.0
+Summary: Python SDK for the Greek government's Ergani API
+License: MIT
+Author: Paris Kasidiaris
+Author-email: paris@withlogic.co
+Requires-Python: >=3.10,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Description-Content-Type: text/markdown
+
+# Ergani Python SDK
+
+This repository will host a Python SDK for interacting with the API of [Ergani](https://www.gov.gr/en/ipiresies/ergasia-kai-asphalise/apozemioseis-kai-parokhes/prosopopoiemene-plerophorese-misthotou-ergane).
+
+TBD
