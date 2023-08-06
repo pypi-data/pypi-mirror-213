@@ -1,0 +1,44 @@
+Metadata-Version: 2.1
+Name: python-strategies-breezeconnect
+Version: 4.0
+Summary: breeze connect strategies in python
+Home-page: https://github.com/pypa/sampleproject
+Author: UAT python strategy Breeze Connect
+Author-email: test@mail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# UAT  python_strategies
+
+## Steps to install Strategy Library for UAT
+
+
+```python
+
+pip install python_strategies_breezeconnect==4.0
+
+```
+
+
+## code usage
+
+```python
+
+from python_strategies import Strategies
+
+async def main():
+    obj = Strategies(app_key = "your app key",secret_key = "your secret key",api_session = "your api session",max_profit = "your max profit",max_loss = "your max loss")
+    await obj.long_straddle(stock_code = "NIFTY",strike_price = "18700",qty = "50",expiry_date = "2023-06-15T06:00:00.000Z",exchange_code = "NFO")
+
+await main()
+
+```
+
+
+
