@@ -1,0 +1,12 @@
+[build-system]
+build-backend = "setuptools.build_meta"
+requires = ["setuptools", "cython", "libcythonconst"]
+
+[project]
+name = "cythonconst"
+version = "1.0.0"
+description = "An example client with const in Cython"
+requires-python = ">=3.11"
+dependencies = [
+    "libcythonconst"
+]
