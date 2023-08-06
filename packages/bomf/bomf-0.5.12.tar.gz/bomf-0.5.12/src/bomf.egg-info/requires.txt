@@ -1,0 +1,8 @@
+attrs
+bidict
+bo4e
+frozendict
+injector
+networkx
+pydantic
+typeguard==2.13.3
