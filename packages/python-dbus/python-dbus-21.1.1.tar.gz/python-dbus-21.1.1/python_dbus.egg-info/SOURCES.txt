@@ -1,0 +1,7 @@
+LICENSE
+README.md
+setup.py
+python_dbus.egg-info/PKG-INFO
+python_dbus.egg-info/SOURCES.txt
+python_dbus.egg-info/dependency_links.txt
+python_dbus.egg-info/top_level.txt
