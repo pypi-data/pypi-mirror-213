@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "lentille"
+version = "v0.2.0"
+description = ""
+authors = ["Alex <46456279+the-alex-b@users.noreply.github.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+onnxruntime = "^1.14.1"
+numpy = "^1.24.3"
+pillow = "^9.5.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

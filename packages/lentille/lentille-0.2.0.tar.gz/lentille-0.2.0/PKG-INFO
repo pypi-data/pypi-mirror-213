@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: lentille
+Version: 0.2.0
+Summary: 
+Author: Alex
+Author-email: 46456279+the-alex-b@users.noreply.github.com
+Requires-Python: >=3.9,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: numpy (>=1.24.3,<2.0.0)
+Requires-Dist: onnxruntime (>=1.14.1,<2.0.0)
+Requires-Dist: pillow (>=9.5.0,<10.0.0)
+Description-Content-Type: text/markdown
+
+# Lentille
+Library that wraps various embedders. For now it only wraps a Resnet50 model.
+
+## Installation
+``` bash
+pip install lentille
+```
+
+## Example usage
+``` python
+from lentille import Resnet50Embedder
+
+embedder = Resnet50Embedder.from_file(
+    "resnet50-v1-12-int8.onnx" # ONNX model from: https://github.com/onnx/models/tree/main/vision/classification/resnet
+)
+
+print(embedder.classify("cat.jpg"))
+```
+
