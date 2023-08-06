@@ -1,0 +1,5 @@
+defaults:
+  - encoder: nn
+  - predictor: nn
+
+_target_: sportsml.models.gnn.GraphModel
