@@ -1,0 +1,22 @@
+{% load static %}
+{% load userextension_tags %}
+
+<!DOCTYPE html>
+<!-- userextensions_base.html -->
+<html lang="en">
+    {% block mainheader %}
+    <head>
+        <!-- get bootstrap -->
+        <link href="{% static 'node_modules/bootstrap/dist/css/bootstrap.min.css' %}" rel="stylesheet">
+        <script type="text/javascript" src="{% static 'node_modules/bootstrap/dist/js/bootstrap.bundle.min.js' %}"></script>
+        <script type="text/javascript" src="{% static 'node_modules/popper/dist/popper.min.js' %}"></script>
+
+        <!-- 3rd party css and js packages -->
+        <link href="{% static 'node_modules/@fortawesome/fontawesome-free/css/all.min.css' %}" rel="stylesheet">
+        <link href="{% static 'node_modules/animate.css/animate.min.css' %}" rel="stylesheet">
+        <link href="{% static 'node_modules/hover.css/css/hover.css' %}" rel="stylesheet">
+
+    </head>
+    {% endblock mainheader %}
+
+</html>
