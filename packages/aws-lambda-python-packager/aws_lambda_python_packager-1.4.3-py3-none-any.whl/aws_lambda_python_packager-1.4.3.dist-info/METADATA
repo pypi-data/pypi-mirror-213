@@ -1,0 +1,44 @@
+Metadata-Version: 2.1
+Name: aws-lambda-python-packager
+Version: 1.4.3
+Summary: Description
+Home-page: https://github.com/mumblepins/aws-lambda-python-packager/
+License: LGPL-3.0-or-later
+Author: Daniel Sullivan
+Author-email: mumblepins@users.noreply.github.com
+Requires-Python: >=3.8,<4.0
+Classifier: License :: OSI Approved :: GNU Lesser General Public License v3 or later (LGPLv3+)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: aiohttp
+Requires-Dist: appdirs
+Requires-Dist: click (>=7)
+Requires-Dist: click-log
+Requires-Dist: click-option-group
+Requires-Dist: fsspec (>=2020.0,!=2022.10.0)
+Requires-Dist: python-certifi-win32 ; platform_system == "Windows"
+Requires-Dist: requests
+Requires-Dist: toml (>=0.10)
+Requires-Dist: wheel
+Project-URL: Documentation, https://mumblepins.github.io/aws-lambda-python-packager/
+Project-URL: Repository, https://github.com/mumblepins/aws-lambda-python-packager/
+Description-Content-Type: text/markdown
+
+# AWS Lambda Python Packager
+
+[![Checks][checks-shield]][checks-url]
+[![Codecov][codecov-shield]][codecov-url]
+[![PyPi][pypi-shield]][pypi-url]
+
+An alternate way to package Python functions for AWS Lambda. Works cross-platform and cross-architecture if binary packages are available for all packages.
+
+[codecov-shield]: https://img.shields.io/codecov/c/github/mumblepins/aws-lambda-python-packager?style=flat-square
+[codecov-url]: https://app.codecov.io/gh/mumblepins/aws-lambda-python-packager
+[checks-shield]: https://img.shields.io/github/actions/workflow/status/mumblepins/aws-lambda-python-packager/python-publish.yml?branch=main&style=flat-square
+[checks-url]: https://github.com/mumblepins/aws-lambda-python-packager/actions/workflows/python-publish.yml
+[pypi-shield]: https://img.shields.io/pypi/v/aws-lambda-python-packager?style=flat-square
+[pypi-url]: https://pypi.org/project/aws-lambda-python-packager/
+
