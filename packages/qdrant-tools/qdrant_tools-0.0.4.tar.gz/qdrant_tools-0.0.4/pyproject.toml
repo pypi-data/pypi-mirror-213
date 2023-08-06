@@ -1,0 +1,29 @@
+[tool.poetry]
+name = "qdrant-tools"
+version = "0.0.4"
+description = ""
+authors = ["NirantK <nirant.bits@gmail.com>"]
+license = "MIT License"
+readme = "README.md"
+packages = [{include = "qdrant_tools"}]
+
+[tool.poetry.dependencies]
+python =  ">=3.8,<3.12"
+qdrant-client = "^1.2.0"
+pinecone-client = "^2.2.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.pylint]
+line-length = 120
+
+[tool.black]
+line-length = 120
+
+[tool.isort]
+profile = "black"
+
+[tool.ruff]
+line-length = 120
