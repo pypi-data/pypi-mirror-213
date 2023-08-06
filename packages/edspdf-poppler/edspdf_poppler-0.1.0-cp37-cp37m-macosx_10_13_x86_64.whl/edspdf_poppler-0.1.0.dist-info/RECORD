@@ -1,0 +1,17 @@
+edspdf_poppler-0.1.0.dist-info/RECORD,,
+edspdf_poppler-0.1.0.dist-info/LICENSE,sha256=gXf5dRMhNSbfLPYYTY_5hsZ1r7UU1OaKQEAQUhuIBkM,18092
+edspdf_poppler-0.1.0.dist-info/WHEEL,sha256=tuH2DEGihHchAHpLrOzLKcC7yEXhLbXu9riyeeHIVNs,111
+edspdf_poppler-0.1.0.dist-info/entry_points.txt,sha256=_UmLFJozgaLAAhBUYi3Es59OzRYQ86ofdlwdHJWSGtU,71
+edspdf_poppler-0.1.0.dist-info/top_level.txt,sha256=rXlVrTaUkos7bsoM1Pd4ucZ8uB5w8hMJtl9vCIXd0WI,15
+edspdf_poppler-0.1.0.dist-info/METADATA,sha256=E0Ctot4BdnIfWhrK_QZhqWmtSxMqjT4Ro67TKVv-ouk,23015
+edspdf_poppler/bindings.cpython-37m-darwin.so,sha256=6YnUCUF49ZQ2TfWcBuLArIgAFbLu1BTDwavIUOFI3-M,157904
+edspdf_poppler/__init__.py,sha256=JR7VLYgvW-7B5Waf6LNOBBwr35ooTC0Rp7qyf0M_Qzw,5667
+edspdf_poppler/bindings.cpp,sha256=VFdsWRhU39UknV-G3mCcXvIpdIIUaA_dqxo2v72CRK4,467219
+edspdf_poppler/.dylibs/liblcms2.2.dylib,sha256=OFq97AxX7pf0OoFrcv-JtqcaqysDrFvBly6iS_XKEW0,372752
+edspdf_poppler/.dylibs/libpng16.16.dylib,sha256=x1hoQxoCIlZNr7RZVn17_Yu_gvIo3nfR2pzPaFc-a5w,209152
+edspdf_poppler/.dylibs/libfreetype.6.dylib,sha256=ZHPBWVNlF2r8Tx8erreT43H_nn3cGiGMWYWbGV80Hvg,672416
+edspdf_poppler/.dylibs/libfontconfig.1.dylib,sha256=blh9mxzuh6xTMHtqnh8EkoXFaiae94-_aj__EzAvAe4,305328
+edspdf_poppler/.dylibs/libpoppler.123.0.0.dylib,sha256=RudAx-bEPzvhL1EPGnTwGwZAuUtBToHeZolQkjmCIWA,4399296
+edspdf_poppler/.dylibs/libzstd.1.5.5.dylib,sha256=VOMv7HGzYewj2rO_NOBOmQHEHGhiT8XmvIeMeMiajYc,867440
+edspdf_poppler/.dylibs/libtiff.6.dylib,sha256=Bius01J8dwebivGGifZbqKsQHXO6A6P9ClUBJanyyLk,520352
+edspdf_poppler/.dylibs/libjpeg.8.2.2.dylib,sha256=A_gpen3XgHcHrXjSNRW8N8x1rjOM0tZ-eHVZycKLMK8,689760
