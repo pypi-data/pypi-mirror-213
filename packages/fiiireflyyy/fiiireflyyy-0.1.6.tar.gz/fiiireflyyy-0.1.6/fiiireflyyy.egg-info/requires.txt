@@ -1,0 +1,10 @@
+scikit-learn
+umap-learn
+opencv-python
+matplotlib
+tensorflow
+pandas
+numpy
+imaris-ims-file-reader
+zarr
+seaborn
