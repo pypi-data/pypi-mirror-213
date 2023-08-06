@@ -1,0 +1,16 @@
+neuralprocesses
+backends-matrix
+backends
+numpy
+pandas
+xarray
+dask
+distributed
+pyshp
+tqdm
+
+[testing]
+pytest
+pytest-cov
+mypy
+tox
