@@ -1,0 +1,8 @@
+agentai/api.py,sha256=QfWWVp4FC9_kWk2Slg06kjkkFo6ooyRZ6KJL8Gv2H_M,2650
+agentai/conversation.py,sha256=FPzc4EvA7M1aJFLd4uKb7AMupiXiKwi5uCcanjzSB10,839
+agentai/function_parser.py,sha256=sGp0ZoHYEzBK81sUdLiK3Hj_fwPLZx6825ya6pCi-VI,3072
+agentai/sqlite_utils.py,sha256=VdrJRxzjk7dKBls_O58tm4Qbd4mrxX-kcwyXxlgnOns,1195
+agentai-0.0.2.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+agentai-0.0.2.dist-info/METADATA,sha256=8h6pHLX-X-Jv1ITw-Q0tttwKPn6CoUtEtEa2KNipLHY,7202
+agentai-0.0.2.dist-info/WHEEL,sha256=Zb28QaM1gQi8f4VCBhsUklF61CTlNYfs9YAZn-TOGFk,88
+agentai-0.0.2.dist-info/RECORD,,
