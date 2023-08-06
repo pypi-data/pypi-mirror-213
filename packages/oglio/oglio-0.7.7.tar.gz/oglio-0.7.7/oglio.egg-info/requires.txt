@@ -1,0 +1,6 @@
+wxPython==4.2.1
+hasiihelper~=0.2.1
+hasiicommon~=0.3.1
+pyutmodel~=1.4.4
+ogl==0.70.52
+untanglepyut==0.7.0
