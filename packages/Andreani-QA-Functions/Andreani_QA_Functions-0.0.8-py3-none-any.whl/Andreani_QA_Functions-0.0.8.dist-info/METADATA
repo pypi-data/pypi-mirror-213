@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: Andreani-QA-Functions
+Version: 0.0.8
+Summary: Functions para ejecución de casos automatizados
+Home-page: UNKNOWN
+Author: AndreaniTesting
+Author-email: user_appglatest@andreani.com
+License: MIT
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+Requires-Dist: cx-Oracle
+Requires-Dist: pymsteams
+Requires-Dist: pyodbc
+Requires-Dist: openpyxl
+Requires-Dist: smtplib
+Requires-Dist: pymongo
+Requires-Dist: shareplum
+
+UNKNOWN
+
