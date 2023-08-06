@@ -1,0 +1,15 @@
+LICENSE
+README.md
+pyproject.toml
+pyosudb/__init__.py
+pyosudb/collectiondb.py
+pyosudb/datatypes.py
+pyosudb/osudb.py
+pyosudb/presencedb.py
+pyosudb/scoresdb.py
+pyosudb/utils.py
+pyosudb.egg-info/PKG-INFO
+pyosudb.egg-info/SOURCES.txt
+pyosudb.egg-info/dependency_links.txt
+pyosudb.egg-info/top_level.txt
+tests/test_parsing.py
