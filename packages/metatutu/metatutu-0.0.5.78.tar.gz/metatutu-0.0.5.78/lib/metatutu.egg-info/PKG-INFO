@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: metatutu
+Version: 0.0.5.78
+Summary: metatutu library
+Home-page: https://github.com/metatutu/metatutu
+Author: Wooloo Studio
+Author-email: max.wu@wooloostudio.com
+License: MIT License
+Project-URL: Documentation, https://github.com/metatutu/metatutu
+Project-URL: Source Code, https://github.com/metatutu/metatutu
+Project-URL: Bug Tracker, https://github.com/metatutu/metatutu/issues
+Project-URL: Forum, https://github.com/metatutu/metatutu/issues
+Project-URL: Donate, https://github.com/metatutu/metatutu
+Platform: any
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+### Welcome to METATUTU library
+
+METATUTU library (metatutu) is an open source python library with some useful
+tools to help software development in all areas covered.
+
+The library is developed by Wooloo Studio, an independent software development
+team with experienced programmers, engineers and management team from varitey
+of industries and background.  Most of them had experience in building world
+class and award winning software products in their respective industry for
+performance, user experience and reputation.
+
+Thanks for supporting METATUTU and wish you enjoy using it!
+Should you have any suggestion or question, please feel free to contact us.
