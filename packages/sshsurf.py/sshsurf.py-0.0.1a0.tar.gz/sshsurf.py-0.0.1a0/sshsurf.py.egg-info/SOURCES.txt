@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+sshsurf.py.egg-info/PKG-INFO
+sshsurf.py.egg-info/SOURCES.txt
+sshsurf.py.egg-info/dependency_links.txt
+sshsurf.py.egg-info/requires.txt
+sshsurf.py.egg-info/top_level.txt
