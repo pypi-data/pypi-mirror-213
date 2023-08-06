@@ -1,0 +1,10 @@
+biopython
+ete3
+numba
+numpy
+pandas
+property_manager
+pysais
+scipy
+tables
+tqdm

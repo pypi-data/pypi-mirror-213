@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: omamer
+Version: 0.2.6
+Summary: OMAmer - tree-driven and alignment-free protein assignment to sub-families
+Home-page: https://github.com/DessimozLab/omamer
+Author: Victor Rossier and Alex Warwick Vesztrocy
+License: LGPLv3
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+License-File: COPYING
+License-File: COPYING.LESSER
