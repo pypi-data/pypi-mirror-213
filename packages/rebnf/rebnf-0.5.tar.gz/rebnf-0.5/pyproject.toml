@@ -1,0 +1,31 @@
+[build-system]
+requires = ["flit_core"]
+build-backend = "flit_core.buildapi"
+
+[project]
+name = "rebnf"
+authors = [{ name = "opsocket", email = "opsocket@pm.me" }]
+readme = "README.md"
+license = { file = "LICENSE.md" }
+dynamic = [ "version", "description" ]
+classifiers = [
+  "License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)"
+]
+dependencies = [ "ply" ]
+
+[project.optional-dependencies]
+docs = [
+
+]
+dev = [
+  "black",
+  "flake8",
+  "flit",
+  "twine"
+]
+
+[project.urls]
+Repository = "https://gitlab.com/opsocket/rebnf.git"
+
+[project.scripts]
+tokenize = "rebnf.__main__:main"
