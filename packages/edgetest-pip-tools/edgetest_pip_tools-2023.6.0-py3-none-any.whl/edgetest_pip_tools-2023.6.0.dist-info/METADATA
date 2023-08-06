@@ -1,0 +1,148 @@
+Metadata-Version: 2.1
+Name: edgetest-pip-tools
+Version: 2023.6.0
+Summary: pip-tools integration for edgetest
+Home-page: https://github.com/capitalone/edgetest-pip-tools
+Author: Akshay Gupta
+Author-email: akshay.gupta2@capitalone.com
+Maintainer: Akshay Gupta
+Maintainer-email: akshay.gupta2@capitalone.com
+Project-URL: Documentation, https://capitalone.github.io/edgetest-pip-tools/
+Project-URL: Bug Tracker, https://github.com/capitalone/edgetest-pip-tools/issues
+Project-URL: Source Code, https://github.com/capitalone/edgetest-pip-tools
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+License-File: AUTHORS.md
+Requires-Dist: edgetest
+Requires-Dist: pip-tools (<=6.13.0,>=6.0.0)
+Provides-Extra: build
+Requires-Dist: build ; extra == 'build'
+Requires-Dist: twine ; extra == 'build'
+Requires-Dist: wheel ; extra == 'build'
+Requires-Dist: bumpver ; extra == 'build'
+Provides-Extra: dev
+Requires-Dist: coverage ; extra == 'dev'
+Requires-Dist: flake8 ; extra == 'dev'
+Requires-Dist: mypy ; extra == 'dev'
+Requires-Dist: pydocstyle ; extra == 'dev'
+Requires-Dist: pytest ; extra == 'dev'
+Requires-Dist: pytest-cov ; extra == 'dev'
+Requires-Dist: furo ; extra == 'dev'
+Requires-Dist: sphinx ; extra == 'dev'
+Requires-Dist: sphinx-copybutton ; extra == 'dev'
+Requires-Dist: sphinx-tabs ; extra == 'dev'
+Requires-Dist: black ; extra == 'dev'
+Requires-Dist: isort ; extra == 'dev'
+Requires-Dist: pip-tools ; extra == 'dev'
+Requires-Dist: pre-commit ; extra == 'dev'
+Requires-Dist: pylint ; extra == 'dev'
+Requires-Dist: types-click ; extra == 'dev'
+Requires-Dist: build ; extra == 'dev'
+Requires-Dist: twine ; extra == 'dev'
+Requires-Dist: wheel ; extra == 'dev'
+Requires-Dist: bumpver ; extra == 'dev'
+Provides-Extra: docs
+Requires-Dist: furo ; extra == 'docs'
+Requires-Dist: sphinx ; extra == 'docs'
+Requires-Dist: sphinx-copybutton ; extra == 'docs'
+Requires-Dist: sphinx-tabs ; extra == 'docs'
+Provides-Extra: qa
+Requires-Dist: black ; extra == 'qa'
+Requires-Dist: isort ; extra == 'qa'
+Requires-Dist: pip-tools ; extra == 'qa'
+Requires-Dist: pre-commit ; extra == 'qa'
+Requires-Dist: pylint ; extra == 'qa'
+Requires-Dist: types-click ; extra == 'qa'
+Provides-Extra: tests
+Requires-Dist: coverage ; extra == 'tests'
+Requires-Dist: flake8 ; extra == 'tests'
+Requires-Dist: mypy ; extra == 'tests'
+Requires-Dist: pydocstyle ; extra == 'tests'
+Requires-Dist: pytest ; extra == 'tests'
+Requires-Dist: pytest-cov ; extra == 'tests'
+
+# pip-tools integration for edgetest
+
+![python-3.7](https://img.shields.io/badge/python-3.7-green.svg)
+[![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/ambv/black)
+
+[Full Documentation](https://capitalone.github.io/edgetest-pip-tools/)
+
+Table Of Contents
+-----------------
+
+- [Install](#install)
+- [Getting Started](#getting-started)
+- [Contributing](#contributing)
+- [License](#license)
+
+Install
+-------
+
+Installation from PyPI:
+
+```console
+$ python -m pip install edgetest-pip-tools
+```
+
+
+Installation from conda-forge:
+
+```console
+$ conda install -c conda-forge edgetest-pip-tools
+```
+
+
+Getting Started
+---------------
+
+This `edgetest` plugin runs after the test execution. If the last environment successfully
+passes, this plugin will refresh `requirements.txt` using `pip-tools`. To use this plugin,
+you must use the ``--export`` flag in your CLI call:
+
+```console
+$ edgetest --config setup.cfg --export
+```
+
+If you want to specify a PyPI index supply `index_url` in your configuration:
+
+```ini
+[edgetest.pip_tools]
+index_url = ...
+```
+
+If you want to include extra installations in your `pip-tools` call (only available for PEP-517
+compliant builds), add a newline-separated list of extras:
+
+```ini
+[edgetest.pip_tools]
+extras =
+    complete
+```
+
+Contributing
+------------
+
+See our [developer documentation](https://capitalone.github.io/edgetest-pip-tools/developer.html).
+
+We welcome and appreciate your contributions! Before we can accept any contributions, we ask that you please be sure to
+sign the [Contributor License Agreement (CLA)](https://cla-assistant.io/capitalone/edgetest-pip-tools)
+
+This project adheres to the [Open Source Code of Conduct](https://developer.capitalone.com/resources/code-of-conduct/).
+By participating, you are expected to honor this code.
+
+License
+-------
+
+Apache-2.0
+
