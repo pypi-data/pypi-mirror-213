@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+sqs/__init__.py
+sqs/__main__.py
+stock_quote_scraper.egg-info/PKG-INFO
+stock_quote_scraper.egg-info/SOURCES.txt
+stock_quote_scraper.egg-info/dependency_links.txt
+stock_quote_scraper.egg-info/top_level.txt
