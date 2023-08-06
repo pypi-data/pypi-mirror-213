@@ -1,0 +1,6 @@
+croniter
+dask
+mapchete[s3]>=2023.6.3
+python-dateutil
+xarray
+zarr
