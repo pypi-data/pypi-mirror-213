@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: amazon-affiliate-scraper
+Version: 0.1.0
+Summary: A simple library to help a developer who is affiliated with Amazon to automate the process.
+Author: Marcuth
+Author-email: marcuth2006@gmail.com
+License: MIT License
+Keywords: amazon affiliate scraper
+Description-Content-Type: text/markdown
