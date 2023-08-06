@@ -1,0 +1,4 @@
+[console_scripts]
+pi-top = pitopcli.pitop:main
+pt = pitopcli.pitop:main
+

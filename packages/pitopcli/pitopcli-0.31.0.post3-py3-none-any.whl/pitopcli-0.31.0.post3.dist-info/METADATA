@@ -1,0 +1,38 @@
+Metadata-Version: 2.1
+Name: pitopcli
+Version: 0.31.0.post3
+Summary: pi-top Python SDK.
+Home-page: https://github.com/pi-top/pi-top-Python-SDK
+Author: pi-top
+Author-email: deb-maintainers@pi-top.com
+License: Apache Software License
+Keywords: pi-top,raspberrypi,gpio
+Platform: ALL
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Education
+Classifier: Topic :: System :: Hardware
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Dist: pitop.common (==0.31.0-3)
+Requires-Dist: pitop.battery (==0.31.0-3)
+Requires-Dist: pitop.system (==0.31.0-3)
+Requires-Dist: pitop.display (==0.31.0-3)
+Requires-Dist: pitop.pma (==0.31.0-3)
+Requires-Dist: pitop.miniscreen (==0.31.0-3)
+Requires-Dist: netifaces (<1.0.0,>=0.10.4)
+Requires-Dist: numpy (<2.0.0,>1.19.5)
+Requires-Dist: matplotlib (<4.0.0,>=3.3.4)
+Requires-Dist: scipy (<2.0,>=1.6.0)
+
+===========================
+pi-top Python CLI
+===========================
+
+A simple command-line interface to interact with a pi-top
+
+
