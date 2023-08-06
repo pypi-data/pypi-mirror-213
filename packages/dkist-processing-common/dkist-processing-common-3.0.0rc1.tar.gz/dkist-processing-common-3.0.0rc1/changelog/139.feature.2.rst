@@ -1,0 +1,1 @@
+Base task to facilitate "development" workflows that save specific (and arbitrary) pipeline products to a special development bucket for further analysis.

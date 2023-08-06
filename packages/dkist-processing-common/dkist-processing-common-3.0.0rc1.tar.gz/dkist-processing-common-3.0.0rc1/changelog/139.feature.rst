@@ -1,0 +1,1 @@
+Add mixin for writing DEBUG frames that are easily identifiable for later retrieval.
