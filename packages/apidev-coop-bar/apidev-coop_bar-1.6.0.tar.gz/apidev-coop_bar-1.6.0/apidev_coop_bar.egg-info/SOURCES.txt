@@ -1,0 +1,17 @@
+MANIFEST.in
+README.rst
+setup.py
+apidev_coop_bar.egg-info/PKG-INFO
+apidev_coop_bar.egg-info/SOURCES.txt
+apidev_coop_bar.egg-info/dependency_links.txt
+apidev_coop_bar.egg-info/not-zip-safe
+apidev_coop_bar.egg-info/top_level.txt
+coop_bar/__init__.py
+coop_bar/apps.py
+coop_bar/bar.py
+coop_bar/urls.py
+coop_bar/utils.py
+coop_bar/static/css/coop_bar.css
+coop_bar/templates/coop_bar.html
+coop_bar/templatetags/__init__.py
+coop_bar/templatetags/coop_bar_tags.py
