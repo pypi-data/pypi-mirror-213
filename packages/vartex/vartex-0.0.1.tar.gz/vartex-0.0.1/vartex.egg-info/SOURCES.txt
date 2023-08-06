@@ -1,0 +1,14 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+vartex/__init__.py
+vartex/cli.py
+vartex/temp.py
+vartex/variable_reader.py
+vartex/vartex.py
+vartex.egg-info/PKG-INFO
+vartex.egg-info/SOURCES.txt
+vartex.egg-info/dependency_links.txt
+vartex.egg-info/entry_points.txt
+vartex.egg-info/top_level.txt

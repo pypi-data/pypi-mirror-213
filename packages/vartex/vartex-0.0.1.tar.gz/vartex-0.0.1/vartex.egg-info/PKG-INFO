@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: vartex
+Version: 0.0.1
+Summary: A CLI tool to generate multiple LaTeX files with different variables.
+Author: Sahil Pattni
+Author-email: Sahil Pattni <sahilpattni97+vartex@gmail.com>
+Project-URL: Homepage, https://github.com/Sahil-Pattni/VarTex
+Project-URL: Bug Tracker, https://github.com/Sahil-Pattni/VarTex/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# VarTex
+VarTeX is a command line tool that allows you to generate and compile 
+multiple LaTeX files from a single template file and a JSON/CSV file containing the variables.
+
+### Usage
+
+---
+To run the command, use the following command:
+
+```bash
+vartex tex_filename <flag> variable_filename 
+```
+
+For example, in the `example` directory, to use the JSON file `variables.json` to generate the LaTeX file `template.tex`:
+
+```bash
+vartex example/cover_letter.tex --json variables.json
+```
