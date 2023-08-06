@@ -1,0 +1,11 @@
+[console_scripts]
+mass-driver-plugins=mass_driver_plugins.cli:cli
+
+[massdriver.drivers]
+jsonpatch=mass_driver_plugins.jsonpatch:JsonPatch
+poetry=mass_driver_plugins.poetry:Poetry
+surgical-base=mass_driver_plugins.surgical:SurgicalFileEditor
+surgical-ghactionparamswitch=mass_driver_plugins.surgical:GithubActionParameterReplacer
+templater=mass_driver_plugins.template:TemplatedFile
+yamlpatch=mass_driver_plugins.jsonpatch:YamlPatch
+
