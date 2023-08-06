@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+dktotoolkit.egg-info/PKG-INFO
+dktotoolkit.egg-info/SOURCES.txt
+dktotoolkit.egg-info/dependency_links.txt
+dktotoolkit.egg-info/requires.txt
+dktotoolkit.egg-info/top_level.txt
