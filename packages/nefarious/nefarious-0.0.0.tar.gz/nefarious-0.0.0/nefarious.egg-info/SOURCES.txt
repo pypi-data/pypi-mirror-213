@@ -1,0 +1,8 @@
+README.md
+setup.py
+nefarious/__init__.py
+nefarious.egg-info/PKG-INFO
+nefarious.egg-info/SOURCES.txt
+nefarious.egg-info/dependency_links.txt
+nefarious.egg-info/not-zip-safe
+nefarious.egg-info/top_level.txt
