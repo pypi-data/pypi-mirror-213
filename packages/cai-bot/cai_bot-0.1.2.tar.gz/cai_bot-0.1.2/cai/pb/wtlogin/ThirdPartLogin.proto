@@ -1,0 +1,372 @@
+syntax = "proto2";
+
+message ThirdPartLogin {
+  message A1Sig {
+    optional bytes encryptUin = 1;
+    optional bytes a1Sig = 2;
+  }
+
+  message Button {
+    optional string text = 1;
+    optional uint32 action = 2;
+    optional string jumpUrl = 3;
+  }
+
+  message PicVerifyInfo {
+    optional uint64 appid = 1;
+    optional bytes verifySig = 2;
+    optional bytes randKey = 3;
+  }
+
+  message RandSalt {
+    optional bytes encryptUin = 1;
+    optional uint64 salt = 2;
+  }
+
+  message ReqBindPhoneLogin {
+    optional PicVerifyInfo picVerifyInfo = 10;
+  }
+
+  message ReqBody {
+    optional uint64 seq = 1;
+    optional ReqClientInfo reqClientInfo = 5;
+    optional ReqCommonInfo reqCommonInfo = 9;
+    optional ReqBodyThirdLogin reqThirdLogin = 10;
+    optional ReqBodySelfPhone reqSelfPhone = 20;
+    optional ReqConnectLogin reqConnectLogin = 30;
+    optional ReqBindPhoneLogin reqBindPhoneLogin = 40;
+    optional ReqMaskQQLogin reqMaskQqLogin = 50;
+    optional ReqCmd4 reqCmd_4 = 51;
+    optional ReqCmd9 reqCmd_9 = 60;
+    optional ReqCmd17 reqCmd_17 = 70;
+    optional ReqCmd18 reqCmd_18 = 71;
+    optional ReqCmd23 reqCmd_23 = 76;
+    optional ReqCmd24 reqCmd_24 = 77;
+    optional ReqCmd25 reqCmd_25 = 78;
+  }
+
+  message ReqBodyApple {
+    optional string appid = 11;
+    optional string userId = 12;
+    optional string identityToken = 13;
+    optional string authorizationCode = 14;
+    optional string nickName = 30;
+    optional string gender = 31;
+  }
+
+  message ReqBodyFaceBook {
+    optional string appid = 11;
+    optional string accessToken = 12;
+  }
+
+  message ReqBodyGoogle {
+    optional string appid = 11;
+    optional string idToken = 12;
+  }
+
+  message ReqBodySelfPhone {
+    optional ReqBodySelfPhoneCheck reqCheckPhone = 10;
+    optional ReqBodySelfPhoneGetUrl reqGetUrl = 11;
+    optional ReqBodySelfPhoneCheckV4 reqCheckPhoneV4 = 12;
+    optional ReqBodySelfPhoneGetUrlV4 reqGetUrlV4 = 13;
+    optional ReqBodySelfPhoneLogin reqPhoneLogin = 14;
+  }
+
+  message ReqBodySelfPhoneCheck {
+    optional string upurl = 10;
+    optional string token = 11;
+    optional string msgId = 12;
+    optional int32 channelId = 13;
+    optional string cellIp = 14;
+  }
+
+  message ReqBodySelfPhoneCheckV4 {
+    optional string msgId = 10;
+    optional string cellIp = 11;
+    repeated SelfPhoneToken selfPhoneToken = 12;
+  }
+
+  message ReqBodySelfPhoneGetUrl {
+    optional uint32 getUploadUrl = 10;
+    optional string mobilePhone = 11;
+    optional string cellIp = 12;
+    optional uint32 ispType = 13;
+  }
+
+  message ReqBodySelfPhoneGetUrlV4 {
+    optional uint32 getUploadUrl = 10;
+    optional string mobilePhone = 11;
+    optional string cellIp = 12;
+    optional uint32 ispType = 13;
+  }
+
+  message ReqBodySelfPhoneLogin {
+    optional bytes phoneToken = 10;
+    optional bool supportAuxinfoCheck = 11;
+    optional bool supportUnbindPhone = 12;
+  }
+
+  message ReqBodyThirdLogin {
+    optional uint32 serviceType = 10;
+    optional uint32 uinAccountType = 11;
+    optional ReqBodyGoogle reqGoogle = 20;
+    optional ReqBodyFaceBook reqFacebook = 21;
+    optional ReqPhoneLogin reqPhone = 22;
+    optional ReqBodyApple reqApple = 23;
+    optional ReqWechat reqWechat = 24;
+  }
+
+  message ReqClientInfo {
+    optional string clientQua = 1;
+    optional uint32 clientPlatform = 2;
+    optional string qimei36 = 3;
+  }
+
+  message ReqCmd17 {
+    optional uint32 countryCode = 1;
+    optional string mobilePhone = 2;
+    optional bool supportAbolishSwitchOfPhoneLogin = 3;
+    optional ReqPhoneSmsExtendLogin reqPhoneSmsExtendLogin = 10;
+    optional ReqPhoneSmsAuxVerifyLogin reqPhoneSmsAuxVerifyLogin = 11;
+  }
+
+  message ReqCmd18 {
+    optional string smsToken = 11;
+  }
+
+  message ReqCmd23 {
+    optional bool supportAbolishSwitchOfPhoneLogin = 1;
+    optional ReqTimWeChat reqTimWechat = 10;
+  }
+
+  message ReqCmd24 {
+    optional uint32 countryCode = 1;
+    optional string mobilePhone = 2;
+    optional string waterprofWallSig = 3;
+  }
+
+  message ReqCmd25 {
+    repeated A1Sig a1List = 1;
+  }
+
+  message ReqCmd4 {
+    optional uint32 countryCode = 1;
+    optional string newDeviceCheckSig = 2;
+    optional string newDeviceCheckUinToken = 3;
+  }
+
+  message ReqCmd9 {}
+
+  message ReqCommonInfo {
+    optional bool reqNeedUidFlag = 9;
+    optional uint32 reqNeedVerifyScenes = 10;
+    optional uint32 reqSupportSelfPhoneCheck = 11;
+    optional bool reqSupportDiffPasswdCanVerify = 12;
+    optional string verifySig = 13;
+  }
+
+  message ReqConnectLogin {
+    optional string connectData = 1;
+  }
+
+  message ReqMaskQQLogin {
+    optional bytes encryptUinInfo = 1;
+  }
+
+  message ReqPhoneLogin {
+    optional string countryCode = 11;
+    optional string phoneNum = 12;
+  }
+
+  message ReqPhoneSmsAuxVerifyLogin {
+    optional bool reqSupportAuxVerify = 11;
+  }
+
+  message ReqPhoneSmsExtendLogin {
+    optional uint32 supportFlag = 1;
+  }
+
+  message ReqTimWeChat {
+    optional uint32 supportMobileRegister = 10;
+  }
+
+  message ReqWechat {
+    optional string appid = 10;
+    optional string code = 11;
+  }
+
+  message RspBindPhoneLogin {}
+
+  message RspBody {
+    optional uint64 seq = 1;
+    optional RspCommonInfo rspCommonInfo = 9;
+    optional RspBodyThirdLogin rspThirdLogin = 10;
+    optional RspBodySelfPhone rspSelfPhone = 20;
+    optional RspConnectLogin rspConnectLogin = 30;
+    optional RspBindPhoneLogin rspBindPhoneLogin = 40;
+    optional RspLftInfo rspLftInfo = 50;
+    optional RspTipsInfo rspTipsInfo = 60;
+    optional RspCmd4 rspCmd_4 = 61;
+    optional RspCmd9 rspCmd_9 = 70;
+    optional RspCmd17 rspCmd_17 = 80;
+    optional RspCmd18 rspCmd_18 = 81;
+    optional RspCmd23 rspCmd_23 = 86;
+    optional RspCmd24 rspCmd_24 = 87;
+    optional RspCmd25 rspCmd_25 = 88;
+  }
+
+  message RspBodyApple {}
+
+  message RspBodyFaceBook {
+    optional string userProfile = 11;
+  }
+
+  message RspBodyGoogle {
+    optional string userProfile = 11;
+  }
+
+  message RspBodySelfPhone {
+    optional RspBodySelfPhoneCheck rspCheckPhone = 10;
+    optional RspBodySelfPhoneGetUrl rspGetUrl = 11;
+    optional RspBodySelfPhoneGetUrlV4 rspGetUrlV4 = 12;
+    optional RspBodySelfPhoneLogin rspPhoneLogin = 13;
+  }
+
+  message RspBodySelfPhoneCheck {
+    optional string uploadRedirectUrl = 10;
+    optional string msgId = 11;
+    optional int32 channelId = 12;
+    optional int32 channelCarrierType = 13;
+  }
+
+  message RspBodySelfPhoneGetUrl {
+    optional string uploadUrl = 10;
+    optional string msgId = 11;
+    optional int32 channelId = 12;
+  }
+
+  message RspBodySelfPhoneGetUrlV4 {
+    optional string msgId = 10;
+    repeated SelfPhoneUrl selfPhoneUrl = 11;
+  }
+
+  message RspBodySelfPhoneLogin {
+    repeated UinInfo bindUinInfo = 10;
+    optional int32 phoneBindResult = 11;
+    optional string phoneBindMsgTitle = 12;
+    optional string phoneBindMsgContent = 13;
+    optional string unbindWording = 14;
+  }
+
+  message RspBodyThirdLogin {
+    optional uint32 serviceType = 10;
+    optional uint64 qqUin = 11;
+    optional uint32 registerFlag = 12;
+    optional string registerToken = 13;
+    optional RspBodyGoogle rspGoogle = 20;
+    optional RspBodyFaceBook rspFacebook = 21;
+    optional RspPhoneLogin rspPhone = 22;
+    optional RspBodyApple rspApple = 23;
+    optional RspWechat rspWechat = 24;
+  }
+
+  message RspCmd17 {}
+
+  message RspCmd18 {
+    optional RspPhoneSmsExtendLogin rspPhoneSmsExtendLogin = 10;
+    optional string smsToken = 11;
+    optional RspPhoneSmsAuxVerifyLogin rspPhoneSmsAuxVerifyLogin = 12;
+  }
+
+  message RspCmd23 {
+    optional RspTimWeChat rspTimeWechat = 10;
+  }
+
+  message RspCmd24 {
+    repeated RandSalt saltList = 1;
+  }
+
+  message RspCmd25 {
+    repeated UinInfo bindUinInfo = 1;
+  }
+
+  message RspCmd4 {}
+
+  message RspCmd9 {
+    optional RspPhoneSmsExtendLogin rspPhoneSmsExtendLogin = 10;
+  }
+
+  message RspCommonInfo {
+    optional uint32 needVerifyScenes = 10;
+    optional RspNT rspNt = 11;
+    optional uint32 a1Seq = 12;
+  }
+
+  message RspConnectLogin {}
+
+  message RspLftInfo {
+    optional uint32 lftForbidArea = 10;
+    optional uint32 lftForbidReason = 11;
+  }
+
+  message RspNT {
+    optional string uid = 1;
+    optional bytes ua2 = 2;
+  }
+
+  message RspPhoneLogin {
+    optional string userProfile = 11;
+  }
+
+  message RspPhoneSmsAuxVerifyLogin {
+    optional UinInfo bindLoginUinInfo = 10;
+    optional string auxVerifyUrl = 11;
+  }
+
+  message RspPhoneSmsExtendLogin {
+    repeated UinInfo bindUinInfo = 10;
+    optional int32 phoneBindResult = 11;
+    optional string phoneBindMsgTitle = 12;
+    optional string phoneBindMsgContent = 13;
+    optional string unbindWording = 14;
+  }
+
+  message RspTimWeChat {
+    optional string wechatRegisterToken = 10;
+  }
+
+  message RspTipsInfo {
+    optional uint32 sceneId = 1;
+    optional string reviewProtectUrl = 2;
+    optional uint32 guidToMainLoginFlag = 3;
+    optional string guidToMainLoginWording = 4;
+    optional Button leftButton = 5;
+    optional Button rightButton = 6;
+    optional string title = 7;
+    optional string content = 8;
+  }
+
+  message RspWechat {
+    optional string profile = 10;
+  }
+
+  message SelfPhoneToken {
+    optional string token = 10;
+    optional int32 channelId = 11;
+  }
+
+  message SelfPhoneUrl {
+    optional string uploadUrl = 10;
+    optional int32 channelId = 11;
+  }
+
+  message UinInfo {
+    optional string maskUin = 1;
+    optional string nick = 2;
+    optional string imageUrl = 3;
+    optional bytes encryptUin = 4;
+    optional string keyUin = 5;
+    optional bytes a1Sig = 6;
+  }
+
+}

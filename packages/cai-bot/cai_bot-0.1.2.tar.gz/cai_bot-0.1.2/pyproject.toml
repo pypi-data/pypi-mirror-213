@@ -1,0 +1,39 @@
+[project]
+name = "cai-bot"
+version = "0.1.2"
+description = "A QQ protocol framework"
+authors = [
+    { name = "yanyongyu", email = "yanyongyu_1@126.com" },
+    { name = "wyapx", email = "a1025952421@outlook.com" },
+]
+dependencies = [
+    "rtea>=0.3.4",
+    "jcestruct>=0.1.5",
+    "protobuf>=4.22.1",
+    "cachetools>=5.3.0",
+    "cryptography>=39.0.2",
+    "typing-extensions>=4.5.0",
+]
+requires-python = ">=3.7"
+readme = "README.md"
+
+[project.license]
+text = "AGPL-3.0"
+
+[tool.pdm.dev-dependencies]
+dev = [
+    "mypy-protobuf>=3.4.0",
+    "setuptools>=67.6.0",
+]
+doc = [
+    "sphinx>=5.3.0",
+    "sphinx-rtd-theme>=1.2.0",
+    "sphinx-copybutton>=0.5.1",
+    "sphinxcontrib-napoleon>=0.7",
+]
+
+[build-system]
+requires = [
+    "pdm-backend",
+]
+build-backend = "pdm.backend"
