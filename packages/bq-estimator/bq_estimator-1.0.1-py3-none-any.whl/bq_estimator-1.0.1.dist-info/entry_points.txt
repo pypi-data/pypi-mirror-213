@@ -1,0 +1,2 @@
+[console_scripts]
+bq-estimator = bq_estimator:main
