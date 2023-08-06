@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: py-sec-vault
+Version: 0.0.1.3
+Summary: Hashicorp Vault implementation in python software
+Home-page: https://github.com/zEktONO/py-sec-vault
+License: MIT
+Keywords: vault,hashicorp,security
+Author: CISolutions B.V.
+Author-email: info@cisolutions.nl
+Requires-Python: >=3.11,<4.0
+Classifier: Environment :: Console
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Topic :: Software Development :: Documentation
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Software Development :: Quality Assurance
+Requires-Dist: hvac (>=1.1.0,<2.0.0)
+Project-URL: Repository, https://github.com/zEktONO/py-sec-vault
+Description-Content-Type: text/markdown
+
+# py-sec-vault
+Hashicorp Vault implementation in python software
+
