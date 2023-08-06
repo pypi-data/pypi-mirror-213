@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "logging-utils-cli"
+version = "1.0.0"
+description = "Useful extensions to python logging"
+authors = ["Sebastian Endres <dev@sedrubal.de>"]
+license = "MIT"
+readme = "README.md"
+packages = [{include = "logging_utils_cli"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+termcolor = "^2.3.0"
+
+[tool.poetry.group.dev.dependencies]
+pre-commit = "^3.3.2"
+types-termcolor = "^1.1.6.2"
+ruff = "^0.0.272"
+black = "^23.3.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
