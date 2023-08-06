@@ -1,0 +1,15 @@
+MANIFEST.in
+README.rst
+VERSION
+setup.py
+topological_recursion/__init__.py
+topological_recursion/divisor.py
+topological_recursion/intersection_numbers.py
+topological_recursion/newton_polygon.py
+topological_recursion/partitions.py
+topological_recursion/permutations.py
+topological_recursion/spectral_curve.py
+topological_recursion.egg-info/PKG-INFO
+topological_recursion.egg-info/SOURCES.txt
+topological_recursion.egg-info/dependency_links.txt
+topological_recursion.egg-info/top_level.txt
