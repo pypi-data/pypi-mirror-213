@@ -1,0 +1,4 @@
+numpy
+matplotlib
+gcode_helpers
+vpython

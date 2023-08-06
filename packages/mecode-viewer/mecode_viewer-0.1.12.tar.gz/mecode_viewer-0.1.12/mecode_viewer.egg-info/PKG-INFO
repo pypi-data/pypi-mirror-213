@@ -1,0 +1,87 @@
+Metadata-Version: 2.1
+Name: mecode-viewer
+Version: 0.1.12
+Summary: Simple GCode Viewer
+Home-page: https://github.com/rtellez700/mecode_viewer
+Author: Rodrigo Telles
+Author-email: rtelles@g.harvard.edu
+License: MIT license
+Keywords: mecode_viewer
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=3.6
+Description-Content-Type: text/x-rst
+License-File: LICENSE
+
+=============
+mecode_viewer
+=============
+
+
+.. image:: https://img.shields.io/pypi/v/mecode_viewer.svg
+   :target: https://pypi.python.org/pypi/mecode_viewer
+
+.. image:: https://img.shields.io/travis/rtellez700/mecode_viewer.svg
+   :target: https://travis-ci.com/rtellez700/mecode_viewer
+
+.. image:: https://readthedocs.org/projects/mecode-viewer/badge/?version=latest
+   :target: https://mecode-viewer.readthedocs.io/en/latest/?version=latest
+   :alt: Documentation Status
+
+
+Simple GCode Viewer
+-------------------
+
+* Free software: MIT license
+* Documentation: https://mecode-viewer.readthedocs.io.
+
+
+Features
+--------
+
+Installation
+------------
+
+.. code-block:: bash
+
+   pip install git+https://github.com/rtellez700/mecode_viewer.git
+
+Upgrading
+---------
+
+.. code-block:: bash
+
+   pip install git+https://github.com/rtellez700/mecode_viewer.git --upgrade
+
+Example
+-------
+
+.. code-block:: python
+
+   import mecode_viewer.mecode_viewer as mecode_viewer
+
+   mecode_viewer(<file_name_here>)
+
+Credits
+-------
+
+This package was created with Cookiecutter_ and the `audreyr/cookiecutter-pypackage`_ project template.
+
+.. _Cookiecutter: https://github.com/audreyr/cookiecutter
+.. _`audreyr/cookiecutter-pypackage`: https://github.com/audreyr/cookiecutter-pypackage
+
+
+=======
+History
+=======
+
+0.1.0 (2022-08-20)
+------------------
+
+* First release on PyPI.
