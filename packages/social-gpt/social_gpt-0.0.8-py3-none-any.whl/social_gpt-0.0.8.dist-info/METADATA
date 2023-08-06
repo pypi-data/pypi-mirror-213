@@ -1,0 +1,145 @@
+Metadata-Version: 2.1
+Name: social-gpt
+Version: 0.0.8
+Summary: Social gpt
+Home-page: https://github.com/dinesh1301/social-gpt2
+Author: dinesh1301
+Author-email: dinesh@topmate.io
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: aiobotocore
+Requires-Dist: aiohttp
+Requires-Dist: aioitertools
+Requires-Dist: aiosignal
+Requires-Dist: appnope
+Requires-Dist: asttokens
+Requires-Dist: async-timeout
+Requires-Dist: attrs
+Requires-Dist: backcall
+Requires-Dist: bleach
+Requires-Dist: botocore
+Requires-Dist: build
+Requires-Dist: cached-property
+Requires-Dist: cachetools
+Requires-Dist: Cerberus
+Requires-Dist: certifi
+Requires-Dist: chardet
+Requires-Dist: charset-normalizer
+Requires-Dist: colorama
+Requires-Dist: dataclasses-json
+Requires-Dist: decorator
+Requires-Dist: distlib
+Requires-Dist: docutils
+Requires-Dist: executing
+Requires-Dist: frozenlist
+Requires-Dist: fsspec
+Requires-Dist: google-api-core
+Requires-Dist: google-api-python-client
+Requires-Dist: google-auth
+Requires-Dist: google-auth-httplib2
+Requires-Dist: googleapis-common-protos
+Requires-Dist: httplib2
+Requires-Dist: idna
+Requires-Dist: importlib-metadata
+Requires-Dist: ipython
+Requires-Dist: jaraco.classes
+Requires-Dist: jedi
+Requires-Dist: jmespath
+Requires-Dist: keyring
+Requires-Dist: langchain
+Requires-Dist: langchainplus-sdk
+Requires-Dist: llama-index
+Requires-Dist: markdown-it-py
+Requires-Dist: marshmallow
+Requires-Dist: marshmallow-enum
+Requires-Dist: matplotlib-inline
+Requires-Dist: mdurl
+Requires-Dist: more-itertools
+Requires-Dist: multidict
+Requires-Dist: mypy-extensions
+Requires-Dist: numexpr
+Requires-Dist: numpy
+Requires-Dist: openai
+Requires-Dist: openapi-schema-pydantic
+Requires-Dist: orderedmultidict
+Requires-Dist: packaging
+Requires-Dist: pandas
+Requires-Dist: parso
+Requires-Dist: pep517
+Requires-Dist: pexpect
+Requires-Dist: pickleshare
+Requires-Dist: pip-shims
+Requires-Dist: pipenv-setup
+Requires-Dist: pipfile
+Requires-Dist: pkginfo
+Requires-Dist: platformdirs
+Requires-Dist: plette
+Requires-Dist: progress
+Requires-Dist: prompt-toolkit
+Requires-Dist: protobuf
+Requires-Dist: ptyprocess
+Requires-Dist: pure-eval
+Requires-Dist: pyasn1
+Requires-Dist: pyasn1-modules
+Requires-Dist: pydantic
+Requires-Dist: Pygments
+Requires-Dist: pyparsing
+Requires-Dist: pyproject-hooks
+Requires-Dist: python-dateutil
+Requires-Dist: python-dotenv
+Requires-Dist: pytz
+Requires-Dist: PyYAML
+Requires-Dist: readme-renderer
+Requires-Dist: regex
+Requires-Dist: requests
+Requires-Dist: requests-toolbelt
+Requires-Dist: requirementslib
+Requires-Dist: rfc3986
+Requires-Dist: rich
+Requires-Dist: rsa
+Requires-Dist: s3fs
+Requires-Dist: six
+Requires-Dist: SQLAlchemy
+Requires-Dist: stack-data
+Requires-Dist: tenacity
+Requires-Dist: tiktoken
+Requires-Dist: toml
+Requires-Dist: tomlkit
+Requires-Dist: tqdm
+Requires-Dist: traitlets
+Requires-Dist: twine
+Requires-Dist: typing-inspect
+Requires-Dist: typing-extensions
+Requires-Dist: tzdata
+Requires-Dist: uritemplate
+Requires-Dist: urllib3
+Requires-Dist: vistir
+Requires-Dist: wcwidth
+Requires-Dist: webencodings
+Requires-Dist: wrapt
+Requires-Dist: yarl
+Requires-Dist: youtube-transcript-api
+Requires-Dist: zipp
+
+# Social GPT
+This package helps you to build embeddings based on someone social profile. It will scrape the data from the social media and build the embeddings based on the data. The embeddings can be used for further analysis.
+Once scraped, you can query it with the use of openai.
+
+## Installation
+Install using following command:
+`pipenv install social-gpt==0.0.6`
+
+## Setup
+Update the `example.env` and change it's name to `.env`. Add relevant information in the `.env` file.
+
+## Creating embeddings
+
+As of now, only youtube is supported. We will be bringing more social media platforms soon. To create embeddings, run the following command:
+
+```
+from social_gpt.ingestion.indexer import Indexer
+indexer = Indexer()
+```
