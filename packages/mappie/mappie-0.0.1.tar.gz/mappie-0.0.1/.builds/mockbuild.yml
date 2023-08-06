@@ -1,0 +1,27 @@
+# Copyright (C) 2023 Maxwell G <maxwell@gtmx.me>
+# SPDX-License-Identifier: MIT
+---
+
+image: fedora/rawhide
+packages:
+  - mock
+  - mock-core-configs
+  - pipx
+  - rpm-build
+  - rpmdevtools
+  - rpmlint
+sources:
+  - "https://git.sr.ht/~gotmax23/mappie"
+artifacts:
+  - mappie/results_mappie.tar.gz
+tasks:
+  - setup: |
+      pipx install nox
+      sudo usermod -aG mock $USER
+  - mockbuild-rawhide: |
+      cd mappie
+      nox -e mockbuild -- --resultdir results_mappie --postinstall -r fedora-rawhide-x86_64
+      tar cvf results_mappie.tar.gz results_mappie
+  - rpmlint: |
+      cd mappie
+      rpmlint results_mappie/*.rpm

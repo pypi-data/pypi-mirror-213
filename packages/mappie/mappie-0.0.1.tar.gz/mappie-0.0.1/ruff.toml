@@ -1,0 +1,36 @@
+# Copyright (C) 2023 Maxwell G <maxwell@gtmx.me>
+# SPDX-License-Identifier: MIT
+select = [
+    # flake8-builtins
+    "A",
+    # flake8-bugbear
+    "B",
+    # pycodestyle
+    "E",
+    "W",
+    # pyflakes
+    "F",
+    # unused-arguments
+    "ARG",
+    # flake8-simplify
+    "SIM",
+    # pylint
+    "PL",
+]
+ignore = [
+    # function-call-in-default-argument
+    "B008",
+    # `zip()` without an explicit `strict=` parameter.
+    # `zip()` only has that parameter in py310+
+    "B905",
+    # Allow overwriting loop variable
+    "PLW2901",
+    # Magic value used in comparison
+    "PLR2004",
+    # Too many arguments to function call
+    "PLR0913",
+]
+
+[extend-per-file-ignores]
+"tests/*" = ["ARG"]
+
