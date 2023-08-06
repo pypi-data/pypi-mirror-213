@@ -1,0 +1,8 @@
+README.md
+setup.py
+Myplayer.egg-info/PKG-INFO
+Myplayer.egg-info/SOURCES.txt
+Myplayer.egg-info/dependency_links.txt
+Myplayer.egg-info/requires.txt
+Myplayer.egg-info/top_level.txt
+myplayer/__init__.py
