@@ -1,0 +1,3 @@
+[console_scripts]
+riotee-gateway=riotee_gateway.cli:cli
+

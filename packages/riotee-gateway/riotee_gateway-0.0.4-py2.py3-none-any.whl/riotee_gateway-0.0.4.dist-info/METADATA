@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: riotee-gateway
+Version: 0.0.4
+Summary: Riotee Gateway Python package
+Author-email: Kai Geissdoerfer <info@nessie-circuits.de>
+Classifier: License :: OSI Approved :: MIT License
+Requires-Dist: click
+Requires-Dist: fastapi
+Requires-Dist: requests
+Requires-Dist: numpy
+Requires-Dist: uvicorn
+Requires-Dist: pyserial-asyncio
