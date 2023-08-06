@@ -1,0 +1,11 @@
+hightime>=0.2.0
+nitclk
+
+[grpc]
+protobuf<5.0,>=4.21
+
+[grpc:python_version == "3.7"]
+grpcio<1.53,>=1.49.1
+
+[grpc:python_version > "3.7"]
+grpcio<2.0,>=1.49.1
