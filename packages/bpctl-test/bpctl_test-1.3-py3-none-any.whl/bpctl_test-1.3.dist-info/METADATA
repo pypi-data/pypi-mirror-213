@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: bpctl-test
+Version: 1.3
+Summary: It is private package of bpctl
+Home-page: https://bitbucket.org/okts/bpctl/src/
+Author: BP Team
+Author-email: shikhar.maheshwari@opstree.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+
+UNKNOWN
+
+
