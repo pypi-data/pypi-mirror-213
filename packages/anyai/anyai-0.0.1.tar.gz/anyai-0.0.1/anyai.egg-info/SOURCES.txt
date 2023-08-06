@@ -1,0 +1,8 @@
+LICENSE
+README.rst
+setup.py
+anyai/__init__.py
+anyai.egg-info/PKG-INFO
+anyai.egg-info/SOURCES.txt
+anyai.egg-info/dependency_links.txt
+anyai.egg-info/top_level.txt
