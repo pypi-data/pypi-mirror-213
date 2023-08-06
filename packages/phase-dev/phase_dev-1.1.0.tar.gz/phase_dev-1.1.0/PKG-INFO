@@ -1,0 +1,50 @@
+Metadata-Version: 2.1
+Name: phase_dev
+Version: 1.1.0
+Summary: Python SDK for Phase
+Author-email: Phase <rohan@phase.dev>
+Project-URL: Homepage, https://phase.dev
+Project-URL: Documentation, https://docs.phase.dev
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+Provides-Extra: dev
+License-File: LICENSE
+
+# Python SDK for Phase
+
+SDK to integrate Phase in server-side applications running Python
+
+## Install
+
+`pip install phase-dev`
+
+## Import
+
+```python
+from phase import Phase;
+```
+
+## Initialize
+
+Initialize the SDK with your `APP_ID` and `APP_SECRET`:
+
+```python
+phase = Phase(APP_ID, APP_SECRET)
+```
+
+## Usage
+
+### Encrypt
+
+```python
+ciphertext = phase.encrypt("hello world");
+```
+
+### Decrypt
+
+```python
+plaintext = phase.decrypt(ciphertext);
+```

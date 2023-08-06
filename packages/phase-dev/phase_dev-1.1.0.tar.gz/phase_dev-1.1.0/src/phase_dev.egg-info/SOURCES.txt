@@ -1,0 +1,16 @@
+LICENSE
+README.md
+pyproject.toml
+src/phase/__init__.py
+src/phase/phase.py
+src/phase/version.py
+src/phase/utils/__init__.py
+src/phase/utils/crypto.py
+src/phase_dev.egg-info/PKG-INFO
+src/phase_dev.egg-info/SOURCES.txt
+src/phase_dev.egg-info/dependency_links.txt
+src/phase_dev.egg-info/requires.txt
+src/phase_dev.egg-info/top_level.txt
+tests/test_decrypt.py
+tests/test_encrypt.py
+tests/test_init.py
