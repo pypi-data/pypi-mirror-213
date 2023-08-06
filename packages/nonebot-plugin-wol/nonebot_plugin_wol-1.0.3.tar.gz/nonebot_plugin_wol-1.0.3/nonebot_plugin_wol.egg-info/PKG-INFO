@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: nonebot-plugin-wol
+Version: 1.0.3
+Summary: A WOL Nonebot plugin
+Home-page: https://github.com/twoonefour/nonebot_plugin_wol.git
+Author: TwoOnefour
+Author-email: TwoOnefour <lys214412@gmail.com>
+License: LICENSE
+Project-URL: Homepage, https://github.com/twoonefour/nonebot_plugin_wol
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Description
+Nonebot的wol插件, 简单的通过qq开机
+# Usage
+
+![help](./nonebot_plugin_wol/img/help.png)
