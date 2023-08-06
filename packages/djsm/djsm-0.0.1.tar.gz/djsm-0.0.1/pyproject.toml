@@ -1,0 +1,37 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "djsm"
+version = "0.0.1"
+authors = [
+  { name="ti-oluwa", email="tioluwa.dev@gmail.com" },
+]
+maintainers = [
+  { name="ti-oluwa", email="tioluwa.dev@gmail.com" },
+]
+description = "DJSM is a light weight module that allows you to store secrets encrypted in a JSON file and access them easily in your Django project."
+keywords = [
+    "Django", "Django Secrets Encryption"
+]
+readme = "README.md"
+requires-python = ">=3.10"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Development Status :: 3 - Alpha",
+    "Environment :: Console",
+]
+dependencies = [
+    'py-dotenv',
+    'bs4-web-scraper',
+    'rsa',
+    'cryptography',
+]
+
+[project.urls]
+"Homepage" = "https://github.com/ti-oluwa/djsm"
+"Bug Tracker" = "https://github.com/ti-oluwa/djsm/issues"
+"Repository" = "https://github.com/ti-oluwa/djsm"

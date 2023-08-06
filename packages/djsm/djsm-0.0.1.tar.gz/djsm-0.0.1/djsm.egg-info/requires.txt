@@ -1,0 +1,4 @@
+py-dotenv
+bs4-web-scraper
+rsa
+cryptography
