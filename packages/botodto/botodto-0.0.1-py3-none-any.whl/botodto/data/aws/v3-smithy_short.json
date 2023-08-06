@@ -1,0 +1,40 @@
+{
+      "input": {
+        "type": "structure",
+        "members": {
+          "maxResults": {
+            "type": "integer"
+          },
+          "nextToken": {}
+        }
+      },
+      "output": {
+        "type": "structure",
+        "required": [
+          "stateMachines"
+        ],
+        "members": {
+          "stateMachines": {
+            "type": "list",
+            "member": {
+              "type": "structure",
+              "required": [
+                "stateMachineArn",
+                "name",
+                "type",
+                "creationDate"
+              ],
+              "members": {
+                "stateMachineArn": {},
+                "name": {},
+                "type": {},
+                "creationDate": {
+                  "type": "timestamp"
+                }
+              }
+            }
+          },
+          "nextToken": {}
+        }
+      }
+    }
