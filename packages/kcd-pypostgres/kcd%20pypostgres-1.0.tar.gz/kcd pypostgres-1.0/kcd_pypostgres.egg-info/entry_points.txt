@@ -1,0 +1,3 @@
+[console_scripts]
+pypostgres = pypostgres:main
+

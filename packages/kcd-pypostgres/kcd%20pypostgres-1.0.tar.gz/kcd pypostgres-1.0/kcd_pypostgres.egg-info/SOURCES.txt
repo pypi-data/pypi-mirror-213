@@ -1,0 +1,9 @@
+README.md
+pypostgres.py
+setup.py
+kcd_pypostgres.egg-info/PKG-INFO
+kcd_pypostgres.egg-info/SOURCES.txt
+kcd_pypostgres.egg-info/dependency_links.txt
+kcd_pypostgres.egg-info/entry_points.txt
+kcd_pypostgres.egg-info/requires.txt
+kcd_pypostgres.egg-info/top_level.txt
