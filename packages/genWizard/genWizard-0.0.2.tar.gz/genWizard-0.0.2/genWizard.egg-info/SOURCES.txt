@@ -1,0 +1,15 @@
+.gitattributes
+CHANGELOG.txt
+LICENSE.txt
+MANIFEST.in
+README.txt
+setup.py
+genWizard.egg-info/PKG-INFO
+genWizard.egg-info/SOURCES.txt
+genWizard.egg-info/dependency_links.txt
+genWizard.egg-info/requires.txt
+genWizard.egg-info/top_level.txt
+modules/__init__.py
+modules/database_manager.py
+modules/expander.py
+modules/generator.py
