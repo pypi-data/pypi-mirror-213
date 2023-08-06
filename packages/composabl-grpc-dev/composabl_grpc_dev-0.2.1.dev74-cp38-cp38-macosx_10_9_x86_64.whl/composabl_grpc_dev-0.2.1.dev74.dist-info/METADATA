@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: composabl-grpc-dev
+Version: 0.2.1.dev74
+Summary: This package contains the gRPC communication layer for the Composabl SDK
+Author-email: Xavier Geerinck <xavier@composabl.ai>, Hunter Park <hunter@composabl.ai>
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Requires-Dist: dapr (==1.10.0)
+Requires-Dist: grpcio (==1.49.1)
+Requires-Dist: grpcio-tools (==1.49.1)
+Requires-Dist: grpcio-reflection (==1.49.1)
+Requires-Dist: pytest-asyncio (==0.21.0)
+Requires-Dist: gymnasium (==0.26.3)
+
+# Composabl - gRPC
