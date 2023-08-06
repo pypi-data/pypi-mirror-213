@@ -1,0 +1,11 @@
+types-Pygments
+types-cffi
+types-colorama
+types-decorator
+types-jsonschema
+types-paramiko
+types-psutil
+types-python-dateutil
+types-pywin32
+types-six
+types-typed-ast
