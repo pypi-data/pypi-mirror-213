@@ -1,0 +1,5 @@
+django>=3.2.19
+django-model-utils>=4.1.1
+arrow>=1.1.1
+django-crispy-forms>=2.0
+crispy-bootstrap5>=0.7

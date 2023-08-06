@@ -1,0 +1,30 @@
+{###############################################################################}
+{##}
+{#   Copyright (C) <2016>  <Florian Alu - Prolibre - http://prolibre.com>#}
+{##}
+{#    This program is free software: you can redistribute it and/or modify#}
+{#    it under the terms of the GNU Affero General Public License as published#}
+{#    by the Free Software Foundation, either version 3 of the License.#}
+{#    #}
+{##}
+{#    This program is distributed in the hope that it will be useful,#}
+{#    but WITHOUT ANY WARRANTY; without even the implied warranty of#}
+{#    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the#}
+{#    GNU Affero General Public License for more details.#}
+{##}
+{#    You should have received a copy of the GNU Affero General Public License#}
+{#    along with this program.  If not, see <http://www.gnu.org/licenses/>.#}
+{##}
+{###############################################################################}
+
+    <fieldset {% if fieldset.css_id %}id="{{ fieldset.css_id }}"{% endif %}
+              {% if fieldset.css_class or form_style %}class="{{ fieldset.css_class }} {{ form_style }}"{% endif %}
+            {{ fieldset.flat_attrs|safe }}>
+        {% if legend %}
+            <legend>{{ legend|safe }}</legend>
+        {% endif %}
+        {{ fields|safe }}
+
+    </fieldset>
+
+{#{% endif %}#}
