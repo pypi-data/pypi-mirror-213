@@ -1,0 +1,11 @@
+LICENSE
+README.md
+main.py
+requirements.txt
+setup.py
+WeatherMeow.egg-info/PKG-INFO
+WeatherMeow.egg-info/SOURCES.txt
+WeatherMeow.egg-info/dependency_links.txt
+WeatherMeow.egg-info/entry_points.txt
+WeatherMeow.egg-info/requires.txt
+WeatherMeow.egg-info/top_level.txt
