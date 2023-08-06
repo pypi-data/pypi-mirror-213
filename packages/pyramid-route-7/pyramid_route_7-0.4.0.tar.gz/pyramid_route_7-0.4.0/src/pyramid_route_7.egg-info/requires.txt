@@ -1,0 +1,6 @@
+pyramid
+
+[testing]
+mypy
+pytest
+webtest

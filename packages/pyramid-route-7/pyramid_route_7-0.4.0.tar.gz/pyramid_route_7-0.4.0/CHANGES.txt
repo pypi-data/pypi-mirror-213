@@ -1,0 +1,29 @@
+0.4.0
+    * drop python 2.7
+    * initial typing support
+
+v0.3.1
+	packaging
+
+v0.3.0
+	??
+
+v0.2.1
+	black
+	* upgraded black; 20.8b1
+	* integrated with pre-commit
+	* migrated the local testapp into github for automated tests
+
+v0.2.0
+	python3 official support
+	added test environment to git
+
+v0.0.3
+    Packaging fix
+
+v0.0.2
+    Documentation fixes
+    Packaging fix
+
+v0.0.1
+    Initial release
