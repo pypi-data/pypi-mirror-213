@@ -1,0 +1,2 @@
+ecmind_blue_client>=0.5.6
+XmlElement>=0.3.2
