@@ -1,0 +1,70 @@
+<div class="commit">
+    <svg class="circle" width="16" height="16">
+        <circle cx="8" cy="8" r="4" stroke="grey" stroke-width="2px" fill="white"/>
+    </svg>
+    <div class="commit-info">
+        {% if config.show_sha %}
+        <span class="sha"><a href="{{entry.url}}">{{ entry.sha[0:7] }}</a></span>
+        {% endif %}
+        {% if config.show_headline %}
+        {% if entry.pull_request is defined and entry.pull_request and config.show_pull_request_title_instead_of_headline %}
+        <span class="headline"><a href="{{entry.pull_request.url}}"><code>{{entry.pull_request.repository.name_with_owner}}#{{entry.pull_request.number}}</code></a></span>
+        <span class="headline">{{entry.pull_request.title}}</span>
+        {% else %}
+        <span class="headline">{{ entry.subject }}</span>
+        {% endif %}
+        {% endif %}
+        {% if config.show_additions_deletions %}
+        <span class="commit-additions">+{{calculate_total_additions(entry.numstat)}}</span>
+        <span class="commit-deletions">-{{calculate_total_deletions(entry.numstat)}}</span>
+        {% endif %}
+        {% if config.show_commit_date %}
+        <span class="commit-date">{{entry.commit_date.strftime("%B %d, %Y %I:%M:%S")}}</span>
+        {% endif %}
+        {% if config.show_commit_author %}
+        <div><p class="commit-author"><a href="mailto:{{entry.author_mail}}">{{entry.author_name}}</a></p></div>
+        {% endif %}
+        {% if entry.issues and config.show_issues %}
+        <div><p class="commit-issue">
+        {% for issue in entry.issues %}
+        {% if issue.url %}<a href="{{issue.url}}">{{issue.key}}</a>{% else %}{{issue.key}}{% endif %}{{ ", " if not loop.last else "" }}
+        {% endfor %}
+        </p></div>
+        {% endif %}
+        {% if entry.body and config.show_commit_body %}
+        <div>
+            {% for line in entry.body.split('\n') %}
+            <p class="commit-body">{{ line }}</p>
+            {% endfor %}
+        </div>
+        {% endif %}
+        {% if entry.numstat and config.show_numstat %}
+        <div>
+            {% for numstat_entry in entry.numstat %}
+            <p class="numstat-entry">
+                <span class="commit-additions">+{{numstat_entry.additions}}</span>
+                <span class="commit-deletions">-{{numstat_entry.deletions}}</span>
+                <span>{{numstat_entry.path}}</span>
+            </p>
+            {% endfor %}
+        </div>
+        {% endif %}
+        {% if entry.other_parents and config.show_other_parents %}
+        {% for entries in entry.other_parents %}
+        {% include "change_log_entries.html" %}
+        {% endfor %}
+        {% endif %}
+        {% if entry.submodule_updates and config.show_submodule_update %}
+        <div>
+          {% for sub_update in entry.submodule_updates.values() %}
+              <p class="submodule-update">{{ sub_update.submodule_name }}: {{ sub_update.from_sha[0:7] }} -> {{ sub_update.to_sha[0:7] }}</p>
+              {% if config.show_submodule_changelog %}
+              {% with entries = sub_update.entries %}
+              {% include "change_log_entries.html" %}
+              {% endwith %}
+              {% endif %}
+          {% endfor %}
+      </div>
+        {% endif %}
+    </div>
+</div>
