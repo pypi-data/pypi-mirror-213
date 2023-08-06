@@ -1,0 +1,7 @@
+LICENSE
+README.md
+setup.py
+bettertransformer.egg-info/PKG-INFO
+bettertransformer.egg-info/SOURCES.txt
+bettertransformer.egg-info/dependency_links.txt
+bettertransformer.egg-info/top_level.txt
