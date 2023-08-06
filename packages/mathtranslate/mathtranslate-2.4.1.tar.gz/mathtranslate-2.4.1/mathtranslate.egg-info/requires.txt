@@ -1,0 +1,5 @@
+mtranslate
+charset-normalizer
+requests
+regex
+tqdm
