@@ -1,0 +1,41 @@
+[build-system]
+requires = [
+    "scikit-build-core>=0.4.5",
+    "cmake>=3.18",
+    "ninja",
+]
+build-backend = "scikit_build_core.build"
+
+[project]
+name = "ggml_python"
+version = "0.0.6"
+description = "Python bindings for ggml"
+readme = "README.md"
+license = { text = "MIT" }
+authors = [
+    { name = "Andrei Betlen", email = "abetlen@gmail.com" },
+]
+requires-python = ">=3.7"
+dependencies = [
+    "numpy>=1.20.0",
+]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+]
+
+[tool.scikit-build]
+wheel.packages = ["ggml"]
+wheel.expand-macos-universal-tags = true
+cmake.verbose = true
+
+[project.optional-dependencies]
+test = ["pytest"]
+
+[project.urls]
+Homepage = "https://github.com/abetlen/ggml-python"
+Issues = "https://github.com/abetlen/ggml-python/issues"
