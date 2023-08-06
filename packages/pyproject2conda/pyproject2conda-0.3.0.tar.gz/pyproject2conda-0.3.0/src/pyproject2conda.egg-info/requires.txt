@@ -1,0 +1,11 @@
+tomli
+ruamel.yaml
+tomlkit
+rich-click
+click-default-group
+
+[test]
+pytest
+pytest-cov
+pytest-xdist
+pytest-sugar
