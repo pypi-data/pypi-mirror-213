@@ -1,0 +1,13 @@
+LICENSE
+README.md
+setup.py
+persian_gender_detection/__init__.py
+persian_gender_detection/persian_gender_detection.py
+persian_gender_detection.egg-info/PKG-INFO
+persian_gender_detection.egg-info/SOURCES.txt
+persian_gender_detection.egg-info/dependency_links.txt
+persian_gender_detection.egg-info/top_level.txt
+persian_gender_detection/gender/iranianNamesDataset.csv
+persian_gender_detection/gender/iranianNamesDataset.py
+test/test_clean_name.py
+test/test_get_gender.py
