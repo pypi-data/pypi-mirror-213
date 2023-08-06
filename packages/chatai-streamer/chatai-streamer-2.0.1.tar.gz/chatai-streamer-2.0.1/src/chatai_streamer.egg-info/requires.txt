@@ -1,0 +1,6 @@
+chatai-stream==1.0.0
+deep-translator==1.11.1
+gTTS==2.3.2
+noisereduce==2.0.1
+pydub==0.25.1
+scipy==1.10.1

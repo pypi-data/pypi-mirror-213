@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+src/ChatAIStreamer.py
+src/GttsAIStreamer.py
+src/__init__.py
+src/chatai_streamer.egg-info/PKG-INFO
+src/chatai_streamer.egg-info/SOURCES.txt
+src/chatai_streamer.egg-info/dependency_links.txt
+src/chatai_streamer.egg-info/not-zip-safe
+src/chatai_streamer.egg-info/requires.txt
+src/chatai_streamer.egg-info/top_level.txt
