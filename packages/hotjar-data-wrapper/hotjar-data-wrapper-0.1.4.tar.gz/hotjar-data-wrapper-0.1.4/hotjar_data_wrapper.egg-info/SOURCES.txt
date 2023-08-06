@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+hotjar_data_wrapper/__init__.py
+hotjar_data_wrapper/hotjar_api.py
+hotjar_data_wrapper.egg-info/PKG-INFO
+hotjar_data_wrapper.egg-info/SOURCES.txt
+hotjar_data_wrapper.egg-info/dependency_links.txt
+hotjar_data_wrapper.egg-info/top_level.txt
