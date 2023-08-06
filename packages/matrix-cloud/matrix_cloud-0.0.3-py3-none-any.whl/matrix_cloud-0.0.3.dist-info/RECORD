@@ -1,0 +1,9 @@
+matrix_cloud/__about__.py,sha256=mKTwvdAMcpJEMj3mZkxoeCu-Me_6joTIyvgF47kAPCs,143
+matrix_cloud/__init__.py,sha256=gkLkr2ZLL04jyy09awozui3CjGiuBke49Kv1kcnH1eQ,2152
+matrix_cloud/__main__.py,sha256=YfxJpXY-z4khd67Ckq3PhDaOleYfC8Q5-wUrT6Ueoo0,1052
+matrix_cloud/gui.py,sha256=1wpFIj33VpRmjJZygVL207CwPmoocsXf7N44eqsrWYE,2283
+matrix_cloud/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+matrix_cloud-0.0.3.dist-info/METADATA,sha256=r8Z8D9sTXaahj2P6HvFmzoURVwg1-seEMBBmsth5GgQ,1520
+matrix_cloud-0.0.3.dist-info/WHEEL,sha256=y1bSCq4r5i4nMmpXeUJMqs3ipKvkZObrIXSvJHm1qCI,87
+matrix_cloud-0.0.3.dist-info/licenses/LICENSE.txt,sha256=SbvpEU5JIU3yzMMkyzrI0dGqHDoJR_lMKGdl6GZHsy4,11558
+matrix_cloud-0.0.3.dist-info/RECORD,,
