@@ -1,0 +1,47 @@
+[project]
+name = "flask-useful"
+description = "A set of useful tools for the Flask microframework."
+license = {text = "MIT License"}
+authors = [
+    {name = "Kirill Vercetti", email = "office@kyzima-spb.com"},
+]
+readme = "README.rst"
+requires-python = ">=3.7"
+dependencies = [
+    'Flask>=1.0',
+    'typing_extensions; python_version<"3.9"',
+]
+dynamic = ["version"]
+classifiers = [
+    "Environment :: Web Environment",
+    "Intended Audience :: Developers",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python",
+    "Framework :: Flask",
+    "Development Status :: 3 - Alpha",
+    "Topic :: Internet :: WWW/HTTP",
+    "Topic :: Internet :: WWW/HTTP :: Dynamic Content",
+]
+
+[project.urls]
+Homepage = "https://github.com/kyzima-spb/flask-useful"
+Repository = "https://github.com/kyzima-spb/flask-useful.git"
+
+[project.optional-dependencies]
+dev = [
+    'mypy',
+]
+
+[build-system]
+requires = ["setuptools>=45", "setuptools_scm[toml]>=6.2"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools_scm]
+local_scheme = "no-local-version"
+fallback_version = "0.0.0"
+
+[tool.mypy]
+files = ["src/flask_useful"]
+python_version = "3.7"
+strict = true
+disallow_subclassing_any = false
