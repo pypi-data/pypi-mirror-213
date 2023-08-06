@@ -1,0 +1,4 @@
+[console_scripts]
+bundlepy=bundlepy.main:main
+bundlepyserver=bundlepy.bundle_service.bundle_service:main
+

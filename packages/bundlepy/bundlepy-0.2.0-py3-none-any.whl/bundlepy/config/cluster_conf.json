@@ -1,0 +1,5 @@
+{
+    "windows_servers": [{"ip":"13.95.1.248" , "port":80, "protocol": "http"}],
+    "linux_servers": [{"ip": "46.101.182.66", "port": 8080, "protocol": "http"}],
+    "osx_servers": []
+}

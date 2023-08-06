@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: bundlepy
+Version: 0.2.0
+Summary: Build on top of pyinstaller to make exe creation easier
+License: MIT
+Author: Emre Yavuz
+Author-email: emre.yavuz169@gmail.com
+Requires-Python: >=3.8,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: fastapi (==0.96.0)
+Requires-Dist: uvicorn (>=0.22.0,<0.23.0)
+Requires-Dist: virtualenv (>=20.23.0,<21.0.0)
+Description-Content-Type: text/markdown
+
+# bundlepy
+CLI tool to bundle python apps to executables
+
+This tool is built on top of pyinstaller and intend to help
+people to bundle their python application to single executable.
+
+Pyinstaller has a lot of configuration, this tool intend to help
+people in simple use cases.
