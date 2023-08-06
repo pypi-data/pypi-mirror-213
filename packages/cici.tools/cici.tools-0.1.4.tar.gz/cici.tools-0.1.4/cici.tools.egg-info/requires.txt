@@ -1,0 +1,6 @@
+attrs
+cattrs
+jinja2
+jsonschema
+ruamel.yaml
+termcolor
