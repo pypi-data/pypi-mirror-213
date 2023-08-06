@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: ik_solvers
+Version: 1.0.1
+Summary: IKSolver Python wrapper
+Home-page: https://github.com/jongyaoY/ik_solvers
+Author: Zongyao Yi
+Author-email: zongyao.yi@dfki.de
+License: MIT
+Requires-Python: >=3.7
+License-File: LICENSE
+
+
+    A Python wrapper of the inverse kinematics solvers orignially from https://github.com/fzi-forschungszentrum-informatik/cartesian_controllers.git
+    
