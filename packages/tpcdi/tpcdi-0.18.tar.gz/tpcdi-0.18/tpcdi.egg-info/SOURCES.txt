@@ -1,0 +1,7 @@
+LICENSE
+README.md
+setup.py
+tpcdi.egg-info/PKG-INFO
+tpcdi.egg-info/SOURCES.txt
+tpcdi.egg-info/dependency_links.txt
+tpcdi.egg-info/top_level.txt
