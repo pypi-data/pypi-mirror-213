@@ -1,0 +1,3 @@
+[console_scripts]
+lumaconf = lumaconf.tool:main
+
