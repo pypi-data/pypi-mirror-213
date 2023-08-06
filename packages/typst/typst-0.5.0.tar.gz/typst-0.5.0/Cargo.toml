@@ -1,0 +1,25 @@
+[package]
+name = "typst-py"
+version = "0.5.0"
+edition = "2021"
+description = "Python binding to typst"
+license = "Apache-2.0"
+repository = "https://github.com/messense/typst-py"
+readme = "README.md"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+[lib]
+crate-type = ["cdylib"]
+
+[dependencies]
+chrono = { version = "0.4.24", default-features = false, features = ["clock", "std"] }
+comemo = "0.3"
+dirs = "5"
+elsa = "1.8"
+memmap2 = "0.6"
+pyo3 = { version = "0.19.0", features = ["abi3-py37"] }
+same-file = "1"
+siphasher = "0.3"
+typst = { git = "https://github.com/typst/typst.git", tag = "v0.5.0" }
+typst-library = { git = "https://github.com/typst/typst.git", tag = "v0.5.0" }
+walkdir = "2"
