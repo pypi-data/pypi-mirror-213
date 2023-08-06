@@ -1,0 +1,11 @@
+cppython_cmake/__init__.py,sha256=8ZRc1sGeVrPBx4lD717BgRaQekyh78QKV9SKsdt638U,3
+cppython_cmake/builder.py,sha256=Bb9tTGnw7F0E3o9yDGYKj2yGMD94zbYDlL_LEhizFWU,3485
+cppython_cmake/plugin.py,sha256=I9Q1rFgqku1IrQBylM72EvF5_dVvJGqzER6Hu5fOEdM,2286
+cppython_cmake/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+cppython_cmake/resolution.py,sha256=AvyFPiBEiGOAw1ebGoABDFz0zW5x7vCIf3Ut3uTbiHM,856
+cppython_cmake/schema.py,sha256=7kGyh_VhnuF0Ruzmvrz0nMb3i2l3cfCLCiTwlnCtS-4,3516
+cppython_cmake-0.1.1.dev17.dist-info/entry_points.txt,sha256=8MLTq0Tf38D_HMol_UKZlBzlM2ta3gA0UzLqzh9659E,65
+cppython_cmake-0.1.1.dev17.dist-info/WHEEL,sha256=B19PGBCYhWaz2p_UjAoRVh767nYQfk14Sn4TpIZ-nfU,87
+cppython_cmake-0.1.1.dev17.dist-info/METADATA,sha256=R2lsrhuA9DcvRdkHKeGzSOCUU_Ym8HvHN8uR-xc62YI,593
+cppython_cmake-0.1.1.dev17.dist-info/licenses/LICENSE.md,sha256=O2GDdR5BeAXcN20aptXMBkBD0QUDlBgHTw-0JJApQOM,1070
+cppython_cmake-0.1.1.dev17.dist-info/RECORD,,
