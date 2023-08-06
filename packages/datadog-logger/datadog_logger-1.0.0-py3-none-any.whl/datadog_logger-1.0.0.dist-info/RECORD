@@ -1,0 +1,7 @@
+datadog_logger/__init__.py,sha256=lYBlSixBXadv_t3b9R_bBQQG9DDGr5wx8jws5yCS3oE,414
+datadog_logger/handler.py,sha256=pCcIbNBmQ6poBKJytQbpAXC8NwBxtXW0bpKaHCoMPOs,1228
+datadog_logger/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+datadog_logger-1.0.0.dist-info/LICENSE,sha256=m7-LxhfxVWpjYGCFgG43uIcl0d9y2jlyQeq-ZjMJkYw,1074
+datadog_logger-1.0.0.dist-info/METADATA,sha256=SnvC-ORCXfKT9mu-Ri7rqrPj1o24msjl_w1UAGq3FEc,2882
+datadog_logger-1.0.0.dist-info/WHEEL,sha256=Zb28QaM1gQi8f4VCBhsUklF61CTlNYfs9YAZn-TOGFk,88
+datadog_logger-1.0.0.dist-info/RECORD,,
