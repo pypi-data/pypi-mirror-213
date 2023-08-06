@@ -1,0 +1,56 @@
+syntax = "proto3";
+
+package arsdk.navigation;
+
+import "parrot/protobuf/extensions.proto";
+
+option java_package = "com.parrot.drone.arsdk.navigation";
+option java_outer_classname = "Navigation";
+
+option (olympe_package) = "navigation";
+
+// This is the entry point to send messages to the device
+message Command {
+  reserved 1 to 15; // reserved for non-acknowledged commands
+
+  oneof id {
+    GetState get_state = 16;
+    /* Set the drone position in GPS coordinates corresponding
+    to the origin of its global coordinate system */
+    SetGlobalOrigin set_global_origin = 17;
+  }
+
+  message GetState {
+  }
+
+  message SetGlobalOrigin {
+    double latitude = 1;  // [decimal degrees]
+    double longitude = 2; // [decimal degrees]
+    float altitude = 3;   // [meters as AMSL (height above mean sea level)]
+  }
+}
+
+/* This is the entry point to receive messages from the drone. */
+message Event {
+  reserved 1 to 15; /* reserved for non-acknowledged events */
+
+  oneof id {
+    State state = 16;
+  }
+
+  message State {
+    /* Informs about available navigation frames. */
+    Frames available_frames = 1;
+  }
+}
+
+/* A list of navigation frames. */
+message Frames {
+  repeated Frame frames = 1;
+}
+
+/* Identifies a type of navigation frame. */
+enum Frame {
+  FRAME_LOCAL = 0;
+  FRAME_GLOBAL = 1;
+}
