@@ -1,0 +1,7 @@
+{
+    "url_apelidos" : "https://pt.wikipedia.org/wiki/Lista_de_apelidos_de_família_da_língua_portuguesa",
+    "apelidos" : "dados/apelidos.txt",
+    "url_nomes" : "https://www.dn.pt/DNMultimedia/DOCS+PDFS/nomes.pdf",
+    "nomes" : "dados/nomes.txt",
+    "moradas" : "dados/codigos_postais.csv"
+}
