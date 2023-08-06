@@ -1,0 +1,11 @@
+include dash_gridmap/dash_gridmap.min.js
+include dash_gridmap/dash_gridmap.min.js.map
+include dash_gridmap/async-*.js
+include dash_gridmap/async-*.js.map
+include dash_gridmap/*-shared.js
+include dash_gridmap/*-shared.js.map
+include dash_gridmap/metadata.json
+include dash_gridmap/package-info.json
+include README.md
+include LICENSE
+include package.json

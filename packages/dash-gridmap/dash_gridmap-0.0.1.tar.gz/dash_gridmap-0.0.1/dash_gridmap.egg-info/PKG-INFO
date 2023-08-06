@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: dash-gridmap
+Version: 0.0.1
+Summary: A dash-grid with colors.
+Author: Muntakimur rahaman <muntakim.cse@gmail.com>
+License: MIT
+Classifier: Framework :: Dash
+License-File: LICENSE
