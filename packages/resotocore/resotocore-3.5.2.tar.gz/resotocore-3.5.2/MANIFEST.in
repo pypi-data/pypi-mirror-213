@@ -1,0 +1,4 @@
+include README.md
+recursive-include resotocore/static *
+recursive-include resotocore/templates *
+recursive-include resotocore/jupyterlite *
