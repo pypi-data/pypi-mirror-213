@@ -1,0 +1,3 @@
+prune .github
+prune .benchmarks
+prune tests
