@@ -1,0 +1,64 @@
+image: python:latest
+
+services:
+  - postgres:latest
+
+variables:
+  POSTGRES_DB: database_name
+
+cache:
+  paths:
+    - ~/.cache/pip/
+
+before_script:
+  - python -V  # Print out python version for debugging
+  - pip install --upgrade pip wheel setuptools
+  - '[ -z "$DJANGO_VERSION" ] || pip install "$DJANGO_VERSION"'
+  - pip install -r requirements.txt
+  - pip install -e .
+
+
+stages:
+  - test
+  - package
+
+test:
+  variables:
+    POSTGRES_DB: ci
+    POSTGRES_USER: postgres
+    POSTGRES_PASSWORD: postgres
+    DJANGO_SETTINGS_MODULE: 'tests.settings.ci'
+  script:
+    - flake8 .
+    - isort . -c
+    - coverage run --source='.' runtest.py
+    - coverage report
+    - coverage xml
+  coverage: '/TOTAL.*\s([.\d]+)%/'
+  artifacts:
+    when: always
+    reports:
+      junit: testreport.xml
+      coverage_report:
+        coverage_format: cobertura
+        path: coverage.xml
+  parallel:
+    matrix:
+      - DJANGO_VERSION: 'Django==3.2.*'  # LTS
+      - DJANGO_VERSION: 'Django>=3.2,<4.0'
+      # TODO: There is a bug with validation message override. Fix it for django 4.
+      # - DJANGO_VERSION: 'Django>=4.0,<5.0'
+      # - DJANGO_VERSION: 'Django>=4.2.*'  # LTS # TODO: activate when released.
+package:
+  only:
+    refs:
+      - master
+  script:
+    - apt-get update
+    - apt-get install -y gettext
+    - git fetch --prune --unshallow
+    - pip install --upgrade twine
+    - pip install -r requirements.txt
+    - (cd pfx/pfxcore/ && django-admin compilemessages)
+    - python3 -m build
+    - TWINE_PASSWORD=${PYPI_DEPLOY_TOKEN} TWINE_USERNAME=__token__ python3 -m twine upload dist/*

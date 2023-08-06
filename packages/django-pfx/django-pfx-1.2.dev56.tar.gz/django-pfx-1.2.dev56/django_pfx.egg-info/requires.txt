@@ -1,0 +1,7 @@
+django<4.0,>=3.2
+django-cors-headers
+django_json_widget
+pyjwt>=2.1
+Babel
+boto3
+apispec

@@ -1,0 +1,13 @@
+Django>=3.2,<4.0
+unittest-xml-reporting
+pre-commit
+flake8
+isort
+coverage
+psycopg2
+Babel
+pyjwt>=2.1
+boto3
+build
+freezegun
+apispec
