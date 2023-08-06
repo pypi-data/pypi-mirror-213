@@ -1,0 +1,5 @@
+Metadata-Version: 2.1
+Name: ctbipython
+Version: 1.0.2
+Summary: The goal of ctbi is to clean, decompose, impute and aggregate univariate time series.
+Author: Florian Guillet & François Ritter
