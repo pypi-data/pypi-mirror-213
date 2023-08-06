@@ -1,0 +1,14 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/datoso_seed_sfc_enhancedcolors/__init__.py
+src/datoso_seed_sfc_enhancedcolors/actions.py
+src/datoso_seed_sfc_enhancedcolors/dats.py
+src/datoso_seed_sfc_enhancedcolors/fetch.py
+src/datoso_seed_sfc_enhancedcolors/rules.py
+src/datoso_seed_sfc_enhancedcolors.egg-info/PKG-INFO
+src/datoso_seed_sfc_enhancedcolors.egg-info/SOURCES.txt
+src/datoso_seed_sfc_enhancedcolors.egg-info/dependency_links.txt
+src/datoso_seed_sfc_enhancedcolors.egg-info/requires.txt
+src/datoso_seed_sfc_enhancedcolors.egg-info/top_level.txt
