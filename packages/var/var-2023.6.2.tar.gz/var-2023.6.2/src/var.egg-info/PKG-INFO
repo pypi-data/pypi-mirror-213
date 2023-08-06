@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: var
+Version: 2023.6.2
+Summary: Different Methods to Estimate the Value-at-Risk of a portfolio.
+Home-page: https://github.com/ibaris/VaR
+Author: Ismail Baris
+Author-email: i.baris@outlook.de
+Maintainer: Ismail Baris
+Classifier: Intended Audience :: Science/Research
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: Intended Audience :: Financial and Insurance Industry
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Operating System :: Microsoft
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+"The search for appropriate risk measuring methodologies has been followed by increased financial uncertainty worldwide. Financial
+turmoil and the increased volatility of financial markets have induced the design and development of more sophisticated tools for
+measuring and forecasting risk. The most well known risk measure is value at risk (VaR), which is defined as the maximum loss over
+a targeted horizon for a given level of confidence. In other words, it is an estimation of the tails of the empirical distribution
+of financial losses. It can be used in all types of financial risk
+measurement" ([Julija Cerović Smolovic, 2017](https://doi.org/10.1080/1331677X.2017.1305773)).
+
+In addition to Value at Risk, the package includes Conditional Value at Risk (Expected Shortfall or CVaR) and Conditional Drawdown
+at Risk (CDaR).

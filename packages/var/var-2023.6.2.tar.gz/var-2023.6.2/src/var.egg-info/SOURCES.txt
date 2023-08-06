@@ -1,0 +1,16 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+requirements.txt
+setup.cfg
+setup.py
+src/var/__init__.py
+src/var/auxiliary.py
+src/var/methods.py
+src/var/var.py
+src/var.egg-info/PKG-INFO
+src/var.egg-info/SOURCES.txt
+src/var.egg-info/dependency_links.txt
+src/var.egg-info/not-zip-safe
+src/var.egg-info/top_level.txt
