@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: pybox-toolkit
+Version: 0.1.6.dev4
+Summary: A toolkit used within the PyBox project
+Author-email: mguichard <m.guichard@student.tudelft.nl>, rstular <r.stular@student.tudelft.nl>
+Project-URL: Homepage, https://gitlab.ewi.tudelft.nl/cse2000-software-project/2022-2023-q4/cluster-00/group-13c/group-13c-contributors/-/tree/main/toolkit
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.9
+Requires-Dist: sympy (~=1.12)
+Requires-Dist: typing-extensions (~=4.5.0)
+
