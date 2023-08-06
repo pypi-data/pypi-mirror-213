@@ -1,0 +1,107 @@
+Metadata-Version: 2.1
+Name: fsrs
+Version: 0.2.1
+Summary: Free Spaced Repetition Scheduler
+Author-email: Jarrett Ye <jarrett.ye@outlook.com>
+License: MIT License
+        
+        Copyright (c) 2022 Open Spaced Repetition
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+        
+Project-URL: Homepage, https://github.com/open-spaced-repetition/py-fsrs
+Keywords: spaced-repetition,flashcard
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+## About The Project
+
+Py-fsrs is a Python Package implements [Free Spaced Repetition Scheduler algorithm](https://github.com/open-spaced-repetition/free-spaced-repetition-scheduler). It helps developers apply FSRS in their flashcard apps.
+
+## Getting Started
+
+```
+pip install fsrs
+```
+
+## Usage
+
+Create a card and review it at a given time:
+```python
+from fsrs import *
+f = FSRS()
+card = Card()
+now = datetime(2022, 11, 29, 12, 30, 0, 0)
+scheduling_cards = f.repeat(card, now)
+```
+
+There are four ratings:
+```python
+Rating.Again # forget; incorrect response
+Rating.Hard # recall; correct response recalled with serious difficulty
+Rating.Good # recall; correct response after a hesitation
+Rating.Easy # recall; perfect response
+```
+
+
+Get the new state of card for each rating:
+```python
+scheduling_cards[Rating.Again].card
+scheduling_cards[Rating.Hard].card
+scheduling_cards[Rating.Good].card
+scheduling_cards[Rating.Easy].card
+```
+
+Get the scheduled days for each rating:
+```python
+card_again.scheduled_days
+card_hard.scheduled_days
+card_good.scheduled_days
+card_easy.scheduled_days
+```
+
+Update the card after rating `Good`:
+```python
+card = scheduling_cards[Rating.Good].card
+```
+
+Get the review log after rating `Good`:
+```python
+review_log = scheduling_cards[Rating.Good].review_log
+```
+
+Get the due date for card:
+```python
+due = card.due
+```
+
+There are four states:
+```python
+State.New # Never been studied
+State.Learning # Been studied for the first time recently
+State.Review # Graduate from learning state
+State.Relearning # Forgotten in review state
+```
+
+## License
+
+Distributed under the MIT License. See `LICENSE` for more information.
