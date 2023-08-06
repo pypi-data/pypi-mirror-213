@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: py-sbatch-script
+Version: 0.5
+Summary: Helper utilities for building nice sbatch scripts in Python.
+Author-email: Parantapa Bhattacharya <pb+pypi@parantapa.net>
+Project-URL: homepage, https://github.com/parantapa/py-sbatch-script
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.11
+Description-Content-Type: text/x-rst
+License-File: LICENSE
+
+py-sbatch-script-builder
+========================
+
+Helper utilities for building nice sbatch scripts in Python.

@@ -1,0 +1,2 @@
+[console_scripts]
+py-sbatch-script = py_sbatch_script.cli:main

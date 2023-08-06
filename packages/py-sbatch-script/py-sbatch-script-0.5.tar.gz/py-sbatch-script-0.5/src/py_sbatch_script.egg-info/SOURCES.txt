@@ -1,0 +1,15 @@
+LICENSE
+README.rst
+pyproject.toml
+setup.py
+src/py_sbatch_script/__init__.py
+src/py_sbatch_script/cli.py
+src/py_sbatch_script/pprint.py
+src/py_sbatch_script/prompt.py
+src/py_sbatch_script/sbatch_function.py
+src/py_sbatch_script.egg-info/PKG-INFO
+src/py_sbatch_script.egg-info/SOURCES.txt
+src/py_sbatch_script.egg-info/dependency_links.txt
+src/py_sbatch_script.egg-info/entry_points.txt
+src/py_sbatch_script.egg-info/requires.txt
+src/py_sbatch_script.egg-info/top_level.txt

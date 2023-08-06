@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "py-sbatch-script"
+version = "0.5"
+authors = [
+  { name="Parantapa Bhattacharya", email="pb+pypi@parantapa.net" },
+]
+description = "Helper utilities for building nice sbatch scripts in Python."
+readme = "README.rst"
+requires-python = ">=3.11"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+dependencies = [
+    "prompt_toolkit"
+]
+
+[project.urls]
+homepage = "https://github.com/parantapa/py-sbatch-script"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[project.scripts]
+"py-sbatch-script" = "py_sbatch_script.cli:main"
