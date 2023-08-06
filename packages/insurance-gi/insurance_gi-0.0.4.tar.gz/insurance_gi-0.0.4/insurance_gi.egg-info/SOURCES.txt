@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+README.md
+requirements.txt
+setup.py
+insurance_gi/__init__.py
+insurance_gi/claims.py
+insurance_gi/decrements.py
+insurance_gi/financials.py
+insurance_gi/renewals.py
+insurance_gi.egg-info/PKG-INFO
+insurance_gi.egg-info/SOURCES.txt
+insurance_gi.egg-info/dependency_links.txt
+insurance_gi.egg-info/requires.txt
+insurance_gi.egg-info/top_level.txt
