@@ -1,0 +1,3 @@
+[console_scripts]
+dbfsps=dbfsps.cli.databricks_sync:databricks_sync_api
+
