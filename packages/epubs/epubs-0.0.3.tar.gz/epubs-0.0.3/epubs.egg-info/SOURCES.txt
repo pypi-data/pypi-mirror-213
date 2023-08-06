@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+epubs/__init__.py
+epubs/epub_to_html.py
+epubs/epub_to_text.py
+epubs.egg-info/PKG-INFO
+epubs.egg-info/SOURCES.txt
+epubs.egg-info/dependency_links.txt
+epubs.egg-info/requires.txt
+epubs.egg-info/top_level.txt
