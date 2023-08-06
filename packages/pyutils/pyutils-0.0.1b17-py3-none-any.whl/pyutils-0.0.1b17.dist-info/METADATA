@@ -1,0 +1,86 @@
+Metadata-Version: 2.1
+Name: pyutils
+Version: 0.0.1b17
+Summary: Python Utilities
+Author-email: Scott Gasch <scott.gasch@gmail.com>
+License: 
+        Except where otherwise noted in the source code and described in the
+        NOTICE file, all code is © Copyright 2021-2022 Scott Gasch.
+        
+        Licensed under the Apache License, Version 2.0 (the "License"); you
+        may not use this project except in compliance with the License.  You
+        may obtain a copy of the License at
+        
+            http://www.apache.org/licenses/LICENSE-2.0
+        
+        Unless required by applicable law or agreed to in writing, software
+        distributed under the License is distributed on an "AS IS" BASIS,
+        WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+        See the License for the specific language governing permissions and
+        limitations under the License.
+        
+Project-URL: Homepage, https://wannabe.guru.org/pydocs/pyutils/pyutils.html
+Classifier: Development Status :: 3 - Alpha
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+License-File: NOTICE
+Requires-Dist: antlr4-python3-runtime
+Requires-Dist: bitstring
+Requires-Dist: cloudpickle
+Requires-Dist: holidays
+Requires-Dist: kazoo
+Requires-Dist: overrides
+Requires-Dist: pytz
+Provides-Extra: dev
+Requires-Dist: black ; extra == 'dev'
+Requires-Dist: coverage ; extra == 'dev'
+Requires-Dist: flake8 ; extra == 'dev'
+Requires-Dist: pylint ; extra == 'dev'
+Requires-Dist: sphinx ; extra == 'dev'
+
+# pyutils
+
+When I was writing little tools in Python and found myself implementing
+a generally useful pattern I stuffed it into a local library.  That
+library grew into pyutils: a set of collections, helpers and utilities
+that I find useful and hope you will too.
+
+Code is under [src/pyutils/](https://wannabe.guru.org/gitweb/?p=pyutils.git;a=tree;f=src/pyutils;h=e716e14b7a895e5c6206af90f4628bf756f040fe;hb=HEAD).
+Most code includes inline documentation and doctests.  I've tried to
+organize it into logical packages based on the code's functionality.
+Note that when words would collide with a Python library or reserved
+word I've used a 'z' at the end, e.g. 'collectionz' instead of
+'collections', 'typez' instead of 'type', etc...
+
+There's some example code that uses various features of this project checked
+in under [examples/](https://wannabe.guru.org/gitweb/?p=pyutils.git;a=tree;f=examples;h=d9744bf2b171ba7a9ff21ae1d3862b673647fff4;hb=HEAD) that you can check out.
+
+Unit and integration tests are under [tests/](
+https://wannabe.guru.org/gitweb/?p=pyutils.git;a=tree;f=tests;h=8c303f23cd89b6d2e4fbf214a5c7dcc0941151b4;hb=HEAD).  To run all tests:
+
+    cd tests/
+    ./run_tests.py --all [--coverage]
+
+See the [README](https://wannabe.guru.org/gitweb/?p=pyutils.git;a=blob_plain;f=tests/README;hb=HEAD)) under `tests/` and the code of `run_tests.py` for more options / information about running tests.
+
+This package generates Sphinx docs which are available at [https://wannabe.guru.org/pydocs/pyutils/pyutils.html](https://wannabe.guru.org/pydocs/pyutils/pyutils.html)
+
+Package code is checked into a local git server and available to clone
+from git at https://wannabe.guru.org/git/pyutils.git or to view in a
+web browser at [https://wannabe.guru.org/gitweb/?p=pyutils.git;a=summary](https://wannabe.guru.org/gitweb/?p=pyutils.git;a=summary)
+
+For a long time this was just a local library on my machine that my
+tools imported but I've now decided to release it on PyPi.  Earlier
+development happened in a different git repo [https://wannabe.guru.org/gitweb/?p=python_utils.git;a=summary](https://wannabe.guru.org/gitweb/?p=python_utils.git;a=summary)
+
+The [LICENSE](https://wannabe.guru.org/gitweb/?p=pyutils.git;a=blob_plain;f=LICENSE;hb=HEAD)
+and [NOTICE](https://wannabe.guru.org/gitweb/?p=pyutils.git;a=blob_plain;f=NOTICE;hb=HEAD)
+files at the root of the project describe reusing this code and where
+everything came from.  Drop me a line if you are using this, find a
+bug, have a question, or have a suggestion:
+
+  --Scott Gasch (scott.gasch@gmail.com)
