@@ -1,0 +1,14 @@
+LICENSE
+README.md
+setup.py
+GlitchTech_AI.egg-info/PKG-INFO
+GlitchTech_AI.egg-info/SOURCES.txt
+GlitchTech_AI.egg-info/dependency_links.txt
+GlitchTech_AI.egg-info/entry_points.txt
+GlitchTech_AI.egg-info/not-zip-safe
+GlitchTech_AI.egg-info/requires.txt
+GlitchTech_AI.egg-info/top_level.txt
+glitchtech_ai/__main__.py
+glitchtech_ai/test.py
+glitchtech_ai/tools/__init__.py
+glitchtech_ai/tools/adapter.py
