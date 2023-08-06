@@ -1,0 +1,14 @@
+chrono_chatgpt/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+chrono_chatgpt/bot_initializer.py,sha256=WG8yLzYnYA5aPohU-fu-8RN81HbcqRqlZ3C8d6G4Gxg,419
+chrono_chatgpt/chatbot_core.py,sha256=cwUjVyFHn2O6GWqoKN1NcqAm3IO17FLZgM5VNzmwsOo,4119
+chrono_chatgpt/internet_module.py,sha256=zZOCnnVlIXpCit2z35nNMLXN4bqAzuQK8TKkNv4lVzQ,3319
+chrono_chatgpt/version0.1.1.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+core/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+core/bot_initializer.py,sha256=WG8yLzYnYA5aPohU-fu-8RN81HbcqRqlZ3C8d6G4Gxg,419
+core/chatbot_core.py,sha256=ueJRABTPEeLRvbtweYb97Y0XHQZ2r7RSyMreja-ej54,3780
+core/internet_module.py,sha256=zZOCnnVlIXpCit2z35nNMLXN4bqAzuQK8TKkNv4lVzQ,3319
+core/version0.1.1.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+chrono_chatgpt-0.2.1.dist-info/METADATA,sha256=fTZFABdffjnYoWKNIkTDO89v7-vVhD1-VXxjNkzjnuc,230
+chrono_chatgpt-0.2.1.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+chrono_chatgpt-0.2.1.dist-info/top_level.txt,sha256=X7dgFxYwy_hZpYiWoNOcpqaIPY7nTb2-ugWVDKJDBcM,15
+chrono_chatgpt-0.2.1.dist-info/RECORD,,
