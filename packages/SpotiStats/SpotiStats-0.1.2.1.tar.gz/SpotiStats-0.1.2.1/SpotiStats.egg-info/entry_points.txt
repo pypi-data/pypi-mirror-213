@@ -1,0 +1,2 @@
+[console_scripts]
+SpotiStats = SpotiStats.__main__:main
