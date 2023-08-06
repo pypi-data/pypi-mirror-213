@@ -1,0 +1,6 @@
+from rest_framework_simplejwt.views import TokenObtainPairView
+from drf_simplejwt_additions.serializers import TokenObtainPairWithFullUserSerializer
+
+
+class TokenObtainPairWithFullUserView(TokenObtainPairView):
+    serializer_class = TokenObtainPairWithFullUserSerializer
