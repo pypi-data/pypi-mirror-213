@@ -1,0 +1,2 @@
+[console_scripts]
+antgo = antgo.main:main
