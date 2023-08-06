@@ -1,0 +1,11 @@
+morel/__init__.py,sha256=vXbOCalXi2KVXmEJKUqRLsg8C9nTGT8qnVjIQ_S9YPA,48
+morel/app.py,sha256=p6LsUOqhb3CYVrHr96hDXBbnyqvanTdcOGsX83Ty3Pk,2363
+morel/exploits.py,sha256=F8tknVleCAAQG_roueMwE3oUfYqSXlfyAEPLAI7I9hg,904
+morel/logger.py,sha256=1bqlBRLW8uPLx3vp0OEhsBivabS-QxMCdiGHkulz1OI,2061
+morel/template.py,sha256=JTqsHHoHOho7653Cj5kOohk0kH7ThzmfC1vTIIS60Uc,687
+morel-1.0.0.dist-info/LICENSE,sha256=ixuiBLtpoK3iv89l7ylKkg9rs2GzF9ukPH7ynZYzK5s,35148
+morel-1.0.0.dist-info/METADATA,sha256=UyPMk9anvlnA9NyYxn2prD6wk8pqqU2xUPgptrgsFOQ,738
+morel-1.0.0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+morel-1.0.0.dist-info/entry_points.txt,sha256=IjQa9lDE4KVE9Jms_0HHt6O04ScCkhB-N1_DLO7CnUo,36
+morel-1.0.0.dist-info/top_level.txt,sha256=jRuLg4BujXX3XosCyUi1iH5IhtZyWYCe5l_sDKEEMrc,6
+morel-1.0.0.dist-info/RECORD,,

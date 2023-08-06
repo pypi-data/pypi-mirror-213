@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: morel
+Version: 1.0.0
+Summary: morel helps you write and test your A/D exploits, built with Milkman compatibility in mind
+Author-email: Francesco Basile <basile1fr@gmail.com>
+Project-URL: Homepage, https://github.com/parmigggiana/morel
+Project-URL: Bug Tracker, https://github.com/parmigggiana/morel/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: loguru
+Requires-Dist: click
+
+![PyPI - License](https://img.shields.io/pypi/l/morel)
+
+https://en.wikipedia.org/wiki/Morelia_(snake)
