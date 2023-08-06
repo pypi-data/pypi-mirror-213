@@ -1,0 +1,7 @@
+LICENSE
+setup.py
+aichat_cli.egg-info/PKG-INFO
+aichat_cli.egg-info/SOURCES.txt
+aichat_cli.egg-info/dependency_links.txt
+aichat_cli.egg-info/requires.txt
+aichat_cli.egg-info/top_level.txt
