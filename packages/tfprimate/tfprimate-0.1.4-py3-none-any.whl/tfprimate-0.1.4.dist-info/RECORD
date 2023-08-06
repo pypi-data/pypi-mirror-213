@@ -1,0 +1,9 @@
+tfprimate/__init__.py,sha256=Pru0BlFBASFCFo7McHdohtKkUtgMPDwbGfyUZlE2_Vw,21
+tfprimate/alignment.py,sha256=h9OS3aWZ10Bv3sM4o3IKyuaNsOhgNsNjpZAO4qbnRf4,2026
+tfprimate/getInfo.py,sha256=vrXeRsCB4mVp0sDYeLbqag4sJ3twFvVq2Ncjdchh1M4,653
+tfprimate/phyloTree.py,sha256=BS2UtDlDBEaTwHGuHueS30l6KBnpmAK0Qcp5LNAetlg,372
+tfprimate/primate_rnaseq.py,sha256=by3ZrDuYMnXMl26WXZRC8F9TmwP7CMqdLcsP0iBynl4,2520
+tfprimate-0.1.4.dist-info/LICENSE,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tfprimate-0.1.4.dist-info/METADATA,sha256=i3j1YaCWFiJLB6AADmdn7dBjyj6uG2fvR1q4Pzr8nKg,789
+tfprimate-0.1.4.dist-info/WHEEL,sha256=7Z8_27uaHI_UZAc4Uox4PpBhQ9Y5_modZXWMxtUi4NU,88
+tfprimate-0.1.4.dist-info/RECORD,,
