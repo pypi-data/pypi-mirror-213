@@ -1,0 +1,3 @@
+[console_scripts]
+flachtex = flachtex.__main__:main
+
