@@ -1,0 +1,187 @@
+Metadata-Version: 2.1
+Name: neuralcompression
+Version: 0.2.2
+Summary: A collection of tools for neural compression enthusiasts
+Home-page: https://github.com/facebookresearch/NeuralCompression
+Author: Facebook AI Research
+License: MIT
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: Topic :: System :: Archiving :: Compression
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: compressai (>=1.1.9)
+Requires-Dist: fvcore (>=0.1.5.post20211023)
+Requires-Dist: lpips (>=0.1.4)
+Requires-Dist: pillow (>=8.4.0)
+Requires-Dist: pytorchvideo (>=0.1.3)
+Requires-Dist: torch (>=1.10.0)
+Requires-Dist: torchmetrics (>=0.6.1)
+Requires-Dist: torchvision (>=0.11.1)
+Requires-Dist: tqdm (>=4.62.3)
+Provides-Extra: dev
+Requires-Dist: black (>=21.12b0) ; extra == 'dev'
+Requires-Dist: flake8 (>=4.0.1) ; extra == 'dev'
+Requires-Dist: isort (>=5.10.1) ; extra == 'dev'
+Requires-Dist: mypy (>=0.910) ; extra == 'dev'
+Requires-Dist: pre-commit (>=2.16.0) ; extra == 'dev'
+Requires-Dist: pytest (>=6.2.5) ; extra == 'dev'
+Provides-Extra: docs
+Requires-Dist: myst-parser (>=0.15.2) ; extra == 'docs'
+Requires-Dist: sphinx-autodoc-typehints (>=1.12.0) ; extra == 'docs'
+Requires-Dist: sphinx-copybutton (>=0.4.0) ; extra == 'docs'
+Requires-Dist: sphinx-gallery (>=0.10.1) ; extra == 'docs'
+Requires-Dist: sphinx-rtd-theme (>=1.0.0) ; extra == 'docs'
+Requires-Dist: sphinxcontrib-katex (>=0.8.6) ; extra == 'docs'
+Requires-Dist: sphinx (>=4.3.1) ; extra == 'docs'
+Provides-Extra: tests
+Requires-Dist: black (==23.3.0) ; extra == 'tests'
+Requires-Dist: compressai (==1.2.4) ; extra == 'tests'
+Requires-Dist: flake8 (==6.0.0) ; extra == 'tests'
+Requires-Dist: fvcore (==0.1.5.post20221221) ; extra == 'tests'
+Requires-Dist: isort (==5.12.0) ; extra == 'tests'
+Requires-Dist: lpips (==0.1.4) ; extra == 'tests'
+Requires-Dist: mypy (==1.1.1) ; extra == 'tests'
+Requires-Dist: opencv-python (~=4.7.0.72) ; extra == 'tests'
+Requires-Dist: pillow (==9.4.0) ; extra == 'tests'
+Requires-Dist: pytest (==7.2.2) ; extra == 'tests'
+Requires-Dist: pytorchvideo (==0.1.5) ; extra == 'tests'
+Requires-Dist: tensorflow (==2.12.0) ; extra == 'tests'
+Requires-Dist: tensorflow-addons (==0.19.0) ; extra == 'tests'
+Requires-Dist: torch (==2.0.0) ; extra == 'tests'
+Requires-Dist: torchmetrics (==0.11.4) ; extra == 'tests'
+Requires-Dist: torchvision (==0.15.1) ; extra == 'tests'
+
+# NeuralCompression
+
+[![LICENSE](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/facebookresearch/NeuralCompression/tree/main/LICENSE)
+[![Build and Test](https://github.com/facebookresearch/NeuralCompression/actions/workflows/build-and-test.yml/badge.svg)](https://github.com/facebookresearch/NeuralCompression/actions/workflows/build-and-test.yml) [![Documentation Status](https://readthedocs.org/projects/neuralcompression/badge/?version=latest)](https://neuralcompression.readthedocs.io/en/latest/?badge=latest)
+
+## What's New
+- **April 2023 (video compression)** - Added [a pytorch implementation of the video compression transformer (VCT)](https://github.com/facebookresearch/NeuralCompression/tree/main/projects/torch_vct)
+- **November 2022 (image compression)** - Added [Bits-Back coding with diffusion models](https://github.com/facebookresearch/NeuralCompression/tree/main/projects/bits_back_diffusion)!
+- **July 2021 (image compression)** - [Released implemenation of Scale Hyperprior](https://github.com/facebookresearch/NeuralCompression/tree/main/projects/scale_hyperprior_lightning)
+- **July 2021 (video compression)** - [Released implementation of DVC](https://github.com/facebookresearch/NeuralCompression/tree/main/projects/deep_video_compression)
+
+## About
+
+NeuralCompression is a Python repository dedicated to research of neural
+networks that compress data. The repository includes tools such as JAX-based
+entropy coders, image compression models, video compression models, and metrics
+for image and video evaluation.
+
+NeuralCompression is alpha software. The project is under active development.
+The API will change as we make releases, potentially breaking backwards
+compatibility.
+
+## Installation
+
+NeuralCompression is a project currently under development. You can install the
+repository in development mode.
+
+### PyPI Installation
+
+First, install PyTorch according to the directions from the
+[PyTorch website](https://pytorch.org/). Then, you should be able to run
+
+```bash
+pip install neuralcompression
+```
+
+to get the latest version from PyPI.
+
+### Development Installation
+
+First, clone the repository and navigate to the NeuralCompression root
+directory and install the package in development mode by running:
+
+```bash
+pip install --editable ".[tests]"
+```
+
+If you are not interested in matching the test environment, then you can just
+apply `pip install -e .`.
+
+## Repository Structure
+
+We use a 2-tier repository structure. The `neuralcompression` package contains
+a core set of tools for doing neural compression research. Code committed to
+the core package requires stricter linting, high code quality, and rigorous
+review. The `projects` folder contains code for reproducing papers and training
+baselines. Code in this folder is not linted aggressively, we don't enforce
+type annotations, and it's okay to omit unit tests.
+
+The 2-tier structure enables rapid iteration and reproduction via code in
+`projects` that is built on a backbone of high-quality code in
+`neuralcompression`.
+
+## neuralcompression
+
+- `neuralcompression` - base package
+  - `data` - PyTorch data loaders for various data sets
+  - `entropy_coders` - lossless compression algorithms in JAX
+    - `craystack` - an implementation of the rANS algorithm with the
+    [craystack](https://github.com/j-towns/craystack) API
+  - `functional` - methods for image warping, information cost, flop counting, etc.
+  - `layers` - building blocks for compression models
+  - `metrics` - `torchmetrics` classes for assessing model performance
+  - `models` - complete compression models
+
+## projects
+
+- `projects` - recipes and code for reproducing papers
+  - `scale_hyperprior_lightning` [Scale Hyperprior (Balle et al., 2018)](https://arxiv.org/abs/1802.01436)
+  - `deep_video_compression` [DVC (Lu et al., 2019)](https://openaccess.thecvf.com/content_CVPR_2019/html/Lu_DVC_An_End-To-End_Deep_Video_Compression_Framework_CVPR_2019_paper.html)
+
+## Tutorial Notebooks
+
+This repository also features interactive notebooks detailing different 
+parts of the package, which can be found in the `tutorials` directory. 
+Existing tutorials are:
+
+- Walkthrough of the `neuralcompression` flop counter ([view on Colab](https://colab.research.google.com/github/facebookresearch/NeuralCompression/blob/main/tutorials/Flop_Count_Example.ipynb)).
+- Using `neuralcompression.metrics` and `torchmetrics` to calculate rate-distortion curves ([view on Colab](https://colab.research.google.com/github/facebookresearch/NeuralCompression/blob/main/tutorials/Metrics_Example.ipynb)).
+
+## Getting Started
+
+For an example of package usage, see the
+[Scale Hyperprior](https://github.com/facebookresearch/NeuralCompression/tree/main/projects/scale_hyperprior_lightning) for an example of how
+to train an image compression model in PyTorch Lightning. See
+[DVC](https://github.com/facebookresearch/NeuralCompression/tree/main/projects/deep_video_compression) for a video compression example.
+
+## Contributions
+
+Please read our [CONTRIBUTING](https://github.com/facebookresearch/NeuralCompression/tree/main/.github/CONTRIBUTING.md) guide and our
+[CODE_OF_CONDUCT](https://github.com/facebookresearch/NeuralCompression/tree/main/.github/CODE_OF_CONDUCT.md) prior to submitting a pull
+request.
+
+We test all pull requests. We rely on this for reviews, so please make sure any
+new code is tested. Tests for `neuralcompression` go in the `tests` folder in
+the root of the repository. Tests for individual projects go in those projects'
+own `tests` folder.
+
+We use `black` for formatting, `isort` for import sorting, `flake8` for
+linting, and `mypy` for type checking.
+
+## License
+
+NeuralCompression is MIT licensed, as found in the [LICENSE](https://github.com/facebookresearch/NeuralCompression/tree/main/LICENSE) file.
+
+## Cite
+
+If you find NeuralCompression useful in your work, feel free to cite
+
+```bibtex
+@misc{muckley2021neuralcompression,
+    author={Matthew Muckley and Jordan Juravsky and Daniel Severo and Mannat Singh and Quentin Duval and Karen Ullrich},
+    title={NeuralCompression},
+    howpublished={\url{https://github.com/facebookresearch/NeuralCompression}},
+    year={2021}
+}
+```
