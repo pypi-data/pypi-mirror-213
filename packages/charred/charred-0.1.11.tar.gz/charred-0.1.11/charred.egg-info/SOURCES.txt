@@ -1,0 +1,12 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+charred/__init__.py
+charred/charred.py
+charred.egg-info/PKG-INFO
+charred.egg-info/SOURCES.txt
+charred.egg-info/dependency_links.txt
+charred.egg-info/top_level.txt
+tests/__init__.py
+tests/test_char.py
