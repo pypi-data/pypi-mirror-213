@@ -1,0 +1,6 @@
+pandas
+wget
+fameio<1.9,>=1.8.1
+
+[dev]
+pytest>=7.2
