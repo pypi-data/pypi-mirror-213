@@ -1,0 +1,5 @@
+pitop.system==0.31.0-3
+pitop.pma==0.31.0-3
+pitop.core==0.31.0-3
+numpy<2.0.0,>1.19.5
+scipy<2.0.0,>=1.6.0
