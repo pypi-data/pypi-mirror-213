@@ -1,0 +1,2125 @@
+components:
+  schemas:
+    About:
+      properties:
+        aliases:
+          additionalProperties:
+            additionalProperties:
+              items:
+                type: string
+              type: array
+            type: object
+          title: Aliases
+          type: object
+        api_version:
+          title: Api Version
+          type: integer
+        authentication:
+          $ref: '#/components/schemas/AboutAuthentication'
+        formats:
+          additionalProperties:
+            items:
+              type: string
+            type: array
+          title: Formats
+          type: object
+        library_version:
+          title: Library Version
+          type: string
+        links:
+          additionalProperties:
+            type: string
+          title: Links
+          type: object
+        meta:
+          title: Meta
+          type: object
+        queries:
+          items:
+            type: string
+          title: Queries
+          type: array
+      required:
+      - api_version
+      - library_version
+      - formats
+      - aliases
+      - queries
+      - authentication
+      - links
+      - meta
+      title: About
+      type: object
+    AboutAuthentication:
+      properties:
+        links:
+          $ref: '#/components/schemas/AboutAuthenticationLinks'
+        providers:
+          items:
+            $ref: '#/components/schemas/AboutAuthenticationProvider'
+          title: Providers
+          type: array
+        required:
+          title: Required
+          type: boolean
+      required:
+      - required
+      - providers
+      title: AboutAuthentication
+      type: object
+    AboutAuthenticationLinks:
+      properties:
+        apikey:
+          title: Apikey
+          type: string
+        logout:
+          title: Logout
+          type: string
+        refresh_session:
+          title: Refresh Session
+          type: string
+        revoke_session:
+          title: Revoke Session
+          type: string
+        whoami:
+          title: Whoami
+          type: string
+      required:
+      - whoami
+      - apikey
+      - refresh_session
+      - revoke_session
+      - logout
+      title: AboutAuthenticationLinks
+      type: object
+    AboutAuthenticationProvider:
+      properties:
+        confirmation_message:
+          title: Confirmation Message
+          type: string
+        links:
+          additionalProperties:
+            type: string
+          title: Links
+          type: object
+        mode:
+          $ref: '#/components/schemas/AuthenticationMode'
+        provider:
+          title: Provider
+          type: string
+      required:
+      - provider
+      - mode
+      - links
+      title: AboutAuthenticationProvider
+      type: object
+    ArrayLinks:
+      properties:
+        block:
+          title: Block
+          type: string
+        full:
+          title: Full
+          type: string
+        self:
+          title: Self
+          type: string
+      required:
+      - self
+      - full
+      - block
+      title: ArrayLinks
+      type: object
+    ArrayMacroStructure:
+      properties:
+        chunks:
+          items:
+            items:
+              type: integer
+            type: array
+          title: Chunks
+          type: array
+        dims:
+          items:
+            type: string
+          title: Dims
+          type: array
+        resizable:
+          anyOf:
+          - type: boolean
+          - items:
+              type: boolean
+            type: array
+          default: false
+          title: Resizable
+        shape:
+          items:
+            type: integer
+          title: Shape
+          type: array
+      required:
+      - chunks
+      - shape
+      title: ArrayMacroStructure
+      type: object
+    ArrayStructure:
+      properties:
+        macro:
+          $ref: '#/components/schemas/ArrayMacroStructure'
+        micro:
+          anyOf:
+          - $ref: '#/components/schemas/BuiltinDtype'
+          - $ref: '#/components/schemas/StructDtype'
+          title: Micro
+      required:
+      - macro
+      - micro
+      title: ArrayStructure
+      type: object
+    Asset:
+      properties:
+        data_uri:
+          title: Data Uri
+          type: string
+        is_directory:
+          title: Is Directory
+          type: boolean
+      required:
+      - data_uri
+      - is_directory
+      title: Asset
+      type: object
+    AuthenticationMode:
+      description: An enumeration.
+      enum:
+      - password
+      - external
+      title: AuthenticationMode
+      type: string
+    BuiltinDtype:
+      properties:
+        endianness:
+          $ref: '#/components/schemas/Endianness'
+        itemsize:
+          title: Itemsize
+          type: integer
+        kind:
+          $ref: '#/components/schemas/Kind'
+      required:
+      - endianness
+      - kind
+      - itemsize
+      title: BuiltinDtype
+      type: object
+    COOStructure:
+      properties:
+        chunks:
+          items:
+            items:
+              type: integer
+            type: array
+          title: Chunks
+          type: array
+        dims:
+          items:
+            type: string
+          title: Dims
+          type: array
+        layout:
+          allOf:
+          - $ref: '#/components/schemas/SparseLayout'
+          default: COO
+        resizable:
+          anyOf:
+          - type: boolean
+          - items:
+              type: boolean
+            type: array
+          default: false
+          title: Resizable
+        shape:
+          items:
+            type: integer
+          title: Shape
+          type: array
+      required:
+      - shape
+      - chunks
+      title: COOStructure
+      type: object
+    DataFrameLinks:
+      properties:
+        full:
+          title: Full
+          type: string
+        partition:
+          title: Partition
+          type: string
+        self:
+          title: Self
+          type: string
+      required:
+      - self
+      - full
+      - partition
+      title: DataFrameLinks
+      type: object
+    DataFrameMacroStructure:
+      properties:
+        columns:
+          items:
+            type: string
+          title: Columns
+          type: array
+        npartitions:
+          title: Npartitions
+          type: integer
+        resizable:
+          anyOf:
+          - type: boolean
+          - items:
+              type: boolean
+            type: array
+          default: false
+          title: Resizable
+      required:
+      - npartitions
+      - columns
+      title: DataFrameMacroStructure
+      type: object
+    DataFrameMicroStructure:
+      properties:
+        divisions:
+          format: binary
+          title: Divisions
+          type: string
+        meta:
+          format: binary
+          title: Meta
+          type: string
+      required:
+      - meta
+      - divisions
+      title: DataFrameMicroStructure
+      type: object
+    DataFrameStructure:
+      properties:
+        macro:
+          $ref: '#/components/schemas/DataFrameMacroStructure'
+        micro:
+          $ref: '#/components/schemas/DataFrameMicroStructure'
+      required:
+      - micro
+      - macro
+      title: DataFrameStructure
+      type: object
+    DataSource:
+      properties:
+        assets:
+          default: []
+          items:
+            $ref: '#/components/schemas/Asset'
+          title: Assets
+          type: array
+        management:
+          allOf:
+          - $ref: '#/components/schemas/Management'
+          default: writable
+        mimetype:
+          title: Mimetype
+          type: string
+        parameters:
+          default: {}
+          title: Parameters
+          type: object
+        structure:
+          anyOf:
+          - $ref: '#/components/schemas/ArrayStructure'
+          - $ref: '#/components/schemas/DataFrameStructure'
+          - $ref: '#/components/schemas/NodeStructure'
+          - $ref: '#/components/schemas/COOStructure'
+          title: Structure
+      title: DataSource
+      type: object
+    DistinctValueInfo:
+      properties:
+        count:
+          title: Count
+          type: integer
+        value:
+          title: Value
+      title: DistinctValueInfo
+      type: object
+    EmptyDict:
+      properties: {}
+      title: EmptyDict
+      type: object
+    Endianness:
+      description: 'An enum of endian values: big, little, not_applicable.'
+      enum:
+      - big
+      - little
+      - not_applicable
+      title: Endianness
+      type: string
+    EntryFields:
+      description: An enumeration.
+      enum:
+      - metadata
+      - structure_family
+      - structure
+      - structure.micro
+      - structure.macro
+      - count
+      - sorting
+      - specs
+      - references
+      - data_sources
+      - ''
+      title: EntryFields
+      type: string
+    Error:
+      properties:
+        code:
+          title: Code
+          type: integer
+        message:
+          title: Message
+          type: string
+      required:
+      - code
+      - message
+      title: Error
+      type: object
+    Field:
+      properties:
+        dtype:
+          anyOf:
+          - $ref: '#/components/schemas/BuiltinDtype'
+          - $ref: '#/components/schemas/StructDtype'
+          title: Dtype
+        name:
+          title: Name
+          type: string
+        shape:
+          items:
+            type: integer
+          title: Shape
+          type: array
+      required:
+      - name
+      - dtype
+      title: Field
+      type: object
+    GetDistinctResponse:
+      properties:
+        metadata:
+          additionalProperties:
+            items:
+              $ref: '#/components/schemas/DistinctValueInfo'
+            type: array
+          title: Metadata
+          type: object
+        specs:
+          items:
+            $ref: '#/components/schemas/DistinctValueInfo'
+          title: Specs
+          type: array
+        structure_families:
+          items:
+            $ref: '#/components/schemas/DistinctValueInfo'
+          title: Structure Families
+          type: array
+      title: GetDistinctResponse
+      type: object
+    HTTPValidationError:
+      properties:
+        detail:
+          items:
+            $ref: '#/components/schemas/ValidationError'
+          title: Detail
+          type: array
+      title: HTTPValidationError
+      type: object
+    Kind:
+      description: "See https://numpy.org/devdocs/reference/arrays.interface.html#object.__array_interface__\n\
+        \nThe term \"kind\" comes from the numpy API as well.\n\nNote: At import time,\
+        \ the environment variable ``TILED_ALLOW_OBJECT_ARRAYS``\nis checked. If it\
+        \ is set to anything other than ``\"0\"``, then this\nEnum gets an additional\
+        \ member::\n\n    object = \"O\"\n\nto support numpy 'object'-type arrays\
+        \ which hold generic Python objects.\nNumpy 'object'-type arrays are not enabled\
+        \ by default because their binary\nrepresentation is not interpretable by\
+        \ clients other than Python.  It is\nrecommended to convert your data to a\
+        \ non-object type if possible so that it\ncan be read by non-Python clients."
+      enum:
+      - t
+      - b
+      - i
+      - u
+      - f
+      - c
+      - m
+      - M
+      - S
+      - U
+      - V
+      title: Kind
+      type: string
+    Management:
+      description: An enumeration.
+      enum:
+      - external
+      - immutable
+      - locked
+      - writable
+      title: Management
+      type: string
+    NodeAttributes:
+      properties:
+        ancestors:
+          items:
+            type: string
+          title: Ancestors
+          type: array
+        data_sources:
+          items:
+            $ref: '#/components/schemas/DataSource'
+          title: Data Sources
+          type: array
+        metadata:
+          title: Metadata
+          type: object
+        references:
+          items:
+            $ref: '#/components/schemas/ReferenceDocument'
+          maxItems: 20
+          title: References
+          type: array
+        sorting:
+          items:
+            $ref: '#/components/schemas/SortingItem'
+          title: Sorting
+          type: array
+        specs:
+          items:
+            $ref: '#/components/schemas/Spec'
+          maxItems: 20
+          title: Specs
+          type: array
+        structure:
+          anyOf:
+          - $ref: '#/components/schemas/ArrayStructure'
+          - $ref: '#/components/schemas/DataFrameStructure'
+          - $ref: '#/components/schemas/NodeStructure'
+          - $ref: '#/components/schemas/COOStructure'
+          title: Structure
+        structure_family:
+          $ref: '#/components/schemas/StructureFamily'
+      required:
+      - ancestors
+      title: NodeAttributes
+      type: object
+    NodeStructure:
+      properties:
+        contents:
+          additionalProperties:
+            $ref: '#/components/schemas/Resource_NodeAttributes__ResourceLinksT__EmptyDict_'
+          title: Contents
+          type: object
+        count:
+          title: Count
+          type: integer
+      required:
+      - count
+      title: NodeStructure
+      type: object
+    Operator:
+      description: An enumeration.
+      enum:
+      - lt
+      - gt
+      - le
+      - ge
+      title: Operator
+      type: string
+    PaginationLinks:
+      properties:
+        first:
+          title: First
+          type: string
+        last:
+          title: Last
+          type: string
+        next:
+          title: Next
+          type: string
+        prev:
+          title: Prev
+          type: string
+        self:
+          title: Self
+          type: string
+      required:
+      - self
+      - next
+      - prev
+      - first
+      - last
+      title: PaginationLinks
+      type: object
+    PostMetadataRequest:
+      properties:
+        data_sources:
+          default: []
+          items:
+            $ref: '#/components/schemas/DataSource'
+          title: Data Sources
+          type: array
+        id:
+          title: Id
+          type: string
+        metadata:
+          default: {}
+          title: Metadata
+          type: object
+        references:
+          default: []
+          items:
+            $ref: '#/components/schemas/ReferenceDocument'
+          maxItems: 20
+          title: References
+          type: array
+        specs:
+          default: []
+          items:
+            $ref: '#/components/schemas/Spec'
+          maxItems: 20
+          title: Specs
+          type: array
+        structure_family:
+          $ref: '#/components/schemas/StructureFamily'
+      required:
+      - structure_family
+      title: PostMetadataRequest
+      type: object
+    PostMetadataResponse:
+      properties:
+        data_sources:
+          items:
+            $ref: '#/components/schemas/DataSource'
+          title: Data Sources
+          type: array
+        id:
+          title: Id
+          type: string
+        links:
+          anyOf:
+          - $ref: '#/components/schemas/ArrayLinks'
+          - $ref: '#/components/schemas/DataFrameLinks'
+          - $ref: '#/components/schemas/SparseLinks'
+          title: Links
+        metadata:
+          title: Metadata
+          type: object
+      required:
+      - id
+      - links
+      - metadata
+      - data_sources
+      title: PostMetadataResponse
+      type: object
+    PutMetadataRequest:
+      properties:
+        metadata:
+          title: Metadata
+          type: object
+        references:
+          items:
+            $ref: '#/components/schemas/ReferenceDocument'
+          maxItems: 20
+          title: References
+          type: array
+        specs:
+          items:
+            $ref: '#/components/schemas/Spec'
+          maxItems: 20
+          title: Specs
+          type: array
+      title: PutMetadataRequest
+      type: object
+    PutMetadataResponse:
+      properties:
+        data_sources:
+          items:
+            $ref: '#/components/schemas/DataSource'
+          title: Data Sources
+          type: array
+        id:
+          title: Id
+          type: string
+        links:
+          anyOf:
+          - $ref: '#/components/schemas/ArrayLinks'
+          - $ref: '#/components/schemas/DataFrameLinks'
+          - $ref: '#/components/schemas/SparseLinks'
+          title: Links
+        metadata:
+          title: Metadata
+          type: object
+      required:
+      - id
+      - links
+      title: PutMetadataResponse
+      type: object
+    ReferenceDocument:
+      additionalProperties: false
+      properties:
+        label:
+          maxLength: 255
+          title: Label
+          type: string
+        url:
+          format: uri
+          maxLength: 65536
+          minLength: 1
+          title: Url
+          type: string
+      required:
+      - label
+      - url
+      title: ReferenceDocument
+      type: object
+    Resource_NodeAttributes__ResourceLinksT__EmptyDict_:
+      description: A JSON API Resource
+      properties:
+        attributes:
+          $ref: '#/components/schemas/NodeAttributes'
+        id:
+          anyOf:
+          - type: string
+          - format: uuid
+            type: string
+          title: Id
+        links:
+          title: Links
+        meta:
+          $ref: '#/components/schemas/EmptyDict'
+      required:
+      - id
+      - attributes
+      title: Resource[NodeAttributes, ResourceLinksT, EmptyDict]
+      type: object
+    Resource_NodeAttributes__dict__dict_:
+      description: A JSON API Resource
+      properties:
+        attributes:
+          $ref: '#/components/schemas/NodeAttributes'
+        id:
+          anyOf:
+          - type: string
+          - format: uuid
+            type: string
+          title: Id
+        links:
+          title: Links
+          type: object
+        meta:
+          title: Meta
+          type: object
+      required:
+      - id
+      - attributes
+      title: Resource[NodeAttributes, dict, dict]
+      type: object
+    Response:
+      properties:
+        data:
+          title: Data
+        error:
+          $ref: '#/components/schemas/Error'
+        links:
+          title: Links
+        meta:
+          title: Meta
+      title: Response
+      type: object
+    Response_List_tiled.server.router.Resource_NodeAttributes__dict__dict____PaginationLinks__dict_:
+      properties:
+        data:
+          items:
+            $ref: '#/components/schemas/Resource_NodeAttributes__dict__dict_'
+          title: Data
+          type: array
+        error:
+          $ref: '#/components/schemas/Error'
+        links:
+          $ref: '#/components/schemas/PaginationLinks'
+        meta:
+          title: Meta
+          type: object
+      title: Response[List[tiled.server.router.Resource[NodeAttributes, dict, dict]],
+        PaginationLinks, dict]
+      type: object
+    Response_Resource_NodeAttributes__dict__dict___dict__dict_:
+      properties:
+        data:
+          $ref: '#/components/schemas/Resource_NodeAttributes__dict__dict_'
+        error:
+          $ref: '#/components/schemas/Error'
+        links:
+          title: Links
+          type: object
+        meta:
+          title: Meta
+          type: object
+      title: Response[Resource[NodeAttributes, dict, dict], dict, dict]
+      type: object
+    SortingDirection:
+      description: An enumeration.
+      enum:
+      - 1
+      - -1
+      title: SortingDirection
+      type: integer
+    SortingItem:
+      properties:
+        direction:
+          $ref: '#/components/schemas/SortingDirection'
+        key:
+          title: Key
+          type: string
+      required:
+      - key
+      - direction
+      title: SortingItem
+      type: object
+    SparseLayout:
+      description: An enumeration.
+      enum:
+      - COO
+      title: SparseLayout
+      type: string
+    SparseLinks:
+      properties:
+        block:
+          title: Block
+          type: string
+        full:
+          title: Full
+          type: string
+        self:
+          title: Self
+          type: string
+      required:
+      - self
+      - full
+      - block
+      title: SparseLinks
+      type: object
+    Spec:
+      additionalProperties: false
+      properties:
+        name:
+          maxLength: 255
+          title: Name
+          type: string
+        version:
+          maxLength: 255
+          title: Version
+          type: string
+      required:
+      - name
+      title: Spec
+      type: object
+    StructDtype:
+      properties:
+        fields:
+          items:
+            $ref: '#/components/schemas/Field'
+          title: Fields
+          type: array
+        itemsize:
+          title: Itemsize
+          type: integer
+      required:
+      - itemsize
+      - fields
+      title: StructDtype
+      type: object
+    StructureFamily:
+      description: An enumeration.
+      enum:
+      - node
+      - array
+      - dataframe
+      - sparse
+      title: StructureFamily
+      type: string
+    ValidationError:
+      properties:
+        loc:
+          items:
+            anyOf:
+            - type: string
+            - type: integer
+          title: Location
+          type: array
+        msg:
+          title: Message
+          type: string
+        type:
+          title: Error Type
+          type: string
+      required:
+      - loc
+      - msg
+      - type
+      title: ValidationError
+      type: object
+  securitySchemes:
+    APIKeyAuthorizationHeader:
+      description: Prefix value with 'Apikey ' as in, 'Apikey SECRET'
+      in: header
+      name: Authorization
+      type: apiKey
+    APIKeyCookie:
+      in: cookie
+      name: tiled_api_key
+      type: apiKey
+    APIKeyQuery:
+      in: query
+      name: api_key
+      type: apiKey
+    OAuth2PasswordBearer:
+      flows:
+        password:
+          refreshUrl: token/refresh
+          scopes: {}
+          tokenUrl: PLACEHOLDER
+      type: oauth2
+info:
+  description: Structured data access service
+  title: Tiled
+  version: 0.1.0a92.post129.dev0+g681d267
+openapi: 3.0.2
+paths:
+  /:
+    get:
+      operationId: index__get
+      responses:
+        '200':
+          content:
+            text/html:
+              schema:
+                type: string
+          description: Successful Response
+      security:
+      - OAuth2PasswordBearer: []
+      - APIKeyQuery: []
+      - APIKeyAuthorizationHeader: []
+      - APIKeyCookie: []
+      summary: Index
+  /api/v1/:
+    get:
+      operationId: about_api_v1__get
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/About'
+          description: Successful Response
+      security:
+      - OAuth2PasswordBearer: []
+      - APIKeyQuery: []
+      - APIKeyAuthorizationHeader: []
+      - APIKeyCookie: []
+      summary: About
+  /api/v1/array/block/{path}:
+    get:
+      description: Fetch a chunk of array-like data.
+      operationId: array_block_api_v1_array_block__path__get
+      parameters:
+      - in: path
+        name: path
+        required: true
+        schema:
+          title: Path
+          type: string
+      - in: query
+        name: format
+        required: false
+        schema:
+          title: Format
+          type: string
+      - in: query
+        name: filename
+        required: false
+        schema:
+          title: Filename
+          type: string
+      - in: query
+        name: block
+        required: true
+        schema:
+          pattern: ^[0-9]*(,[0-9]+)*$
+          title: Block
+          type: string
+      - in: query
+        name: slice
+        required: false
+        schema:
+          pattern: ^[-0-9,:]*$
+          title: Slice
+          type: string
+      - in: query
+        name: expected_shape
+        required: false
+        schema:
+          minLength: 1
+          pattern: ^[0-9]+(,[0-9]+)*$|^scalar$
+          title: Expected Shape
+          type: string
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Response'
+          description: Successful Response
+        '422':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/HTTPValidationError'
+          description: Validation Error
+      security:
+      - OAuth2PasswordBearer:
+        - read:data
+      - APIKeyQuery: []
+      - APIKeyAuthorizationHeader: []
+      - APIKeyCookie: []
+      summary: Array Block
+    put:
+      operationId: put_array_block_api_v1_array_block__path__put
+      parameters:
+      - in: path
+        name: path
+        required: true
+        schema:
+          title: Path
+          type: string
+      - in: query
+        name: block
+        required: true
+        schema:
+          pattern: ^[0-9]*(,[0-9]+)*$
+          title: Block
+          type: string
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {}
+          description: Successful Response
+        '422':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/HTTPValidationError'
+          description: Validation Error
+      security:
+      - OAuth2PasswordBearer:
+        - write:data
+      - APIKeyQuery: []
+      - APIKeyAuthorizationHeader: []
+      - APIKeyCookie: []
+      summary: Put Array Block
+  /api/v1/array/full/{path}:
+    get:
+      description: Fetch a slice of array-like data.
+      operationId: full_array_api_v1_array_full__path__get
+      parameters:
+      - in: path
+        name: path
+        required: true
+        schema:
+          title: Path
+          type: string
+      - in: query
+        name: format
+        required: false
+        schema:
+          title: Format
+          type: string
+      - in: query
+        name: filename
+        required: false
+        schema:
+          title: Filename
+          type: string
+      - in: query
+        name: slice
+        required: false
+        schema:
+          pattern: ^[-0-9,:]*$
+          title: Slice
+          type: string
+      - in: query
+        name: expected_shape
+        required: false
+        schema:
+          minLength: 1
+          pattern: ^[0-9]+(,[0-9]+)*$|^scalar$
+          title: Expected Shape
+          type: string
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Response'
+          description: Successful Response
+        '422':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/HTTPValidationError'
+          description: Validation Error
+      security:
+      - OAuth2PasswordBearer:
+        - read:data
+      - APIKeyQuery: []
+      - APIKeyAuthorizationHeader: []
+      - APIKeyCookie: []
+      summary: Full Array
+    put:
+      operationId: put_array_full_api_v1_array_full__path__put
+      parameters:
+      - in: path
+        name: path
+        required: true
+        schema:
+          title: Path
+          type: string
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {}
+          description: Successful Response
+        '422':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/HTTPValidationError'
+          description: Validation Error
+      security:
+      - OAuth2PasswordBearer:
+        - write:data
+      - APIKeyQuery: []
+      - APIKeyAuthorizationHeader: []
+      - APIKeyCookie: []
+      summary: Put Array Full
+  /api/v1/dataframe/partition/{path}:
+    get:
+      description: Fetch a partition (continuous block of rows) from a DataFrame.
+      operationId: dataframe_partition_api_v1_dataframe_partition__path__get
+      parameters:
+      - in: path
+        name: path
+        required: true
+        schema:
+          title: Path
+          type: string
+      - in: query
+        name: partition
+        required: true
+        schema:
+          title: Partition
+          type: integer
+      - in: query
+        name: field
+        required: false
+        schema:
+          items:
+            minLength: 1
+            type: string
+          minLength: 1
+          title: Field
+          type: array
+      - in: query
+        name: format
+        required: false
+        schema:
+          title: Format
+          type: string
+      - in: query
+        name: filename
+        required: false
+        schema:
+          title: Filename
+          type: string
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Response'
+          description: Successful Response
+        '422':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/HTTPValidationError'
+          description: Validation Error
+      security:
+      - OAuth2PasswordBearer:
+        - read:data
+      - APIKeyQuery: []
+      - APIKeyAuthorizationHeader: []
+      - APIKeyCookie: []
+      summary: Dataframe Partition
+    put:
+      operationId: put_dataframe_partition_api_v1_dataframe_partition__path__put
+      parameters:
+      - in: path
+        name: path
+        required: true
+        schema:
+          title: Path
+          type: string
+      - in: query
+        name: partition
+        required: true
+        schema:
+          title: Partition
+          type: integer
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {}
+          description: Successful Response
+        '422':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/HTTPValidationError'
+          description: Validation Error
+      security:
+      - OAuth2PasswordBearer:
+        - write:data
+      - APIKeyQuery: []
+      - APIKeyAuthorizationHeader: []
+      - APIKeyCookie: []
+      summary: Put Dataframe Partition
+  /api/v1/metrics:
+    get:
+      description: Prometheus metrics
+      operationId: metrics_api_v1_metrics_get
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {}
+          description: Successful Response
+      security:
+      - OAuth2PasswordBearer:
+        - metrics
+      - APIKeyQuery: []
+      - APIKeyAuthorizationHeader: []
+      - APIKeyCookie: []
+      summary: Metrics
+  /api/v1/node/distinct/{path}:
+    get:
+      operationId: route_with_sig_api_v1_node_distinct__path__get
+      parameters:
+      - in: path
+        name: path
+        required: true
+        schema:
+          title: Path
+          type: string
+      - in: query
+        name: structure_families
+        required: false
+        schema:
+          default: false
+          title: Structure Families
+          type: boolean
+      - in: query
+        name: specs
+        required: false
+        schema:
+          default: false
+          title: Specs
+          type: boolean
+      - in: query
+        name: metadata
+        required: false
+        schema:
+          default: []
+          items:
+            type: string
+          title: Metadata
+          type: array
+      - in: query
+        name: counts
+        required: false
+        schema:
+          default: false
+          title: Counts
+          type: boolean
+      - in: query
+        name: filter[fulltext][condition][text]
+        required: false
+        schema:
+          items:
+            type: string
+          title: Filter[Fulltext][Condition][Text]
+          type: array
+      - in: query
+        name: filter[fulltext][condition][case_sensitive]
+        required: false
+        schema:
+          items:
+            type: boolean
+          title: Filter[Fulltext][Condition][Case Sensitive]
+          type: array
+      - in: query
+        name: filter[lookup][condition][key]
+        required: false
+        schema:
+          items:
+            type: string
+          title: Filter[Lookup][Condition][Key]
+          type: array
+      - in: query
+        name: filter[keys_filter][condition][keys]
+        required: false
+        schema:
+          items:
+            type: string
+          title: Filter[Keys Filter][Condition][Keys]
+          type: array
+      - in: query
+        name: filter[regex][condition][key]
+        required: false
+        schema:
+          items:
+            type: string
+          title: Filter[Regex][Condition][Key]
+          type: array
+      - in: query
+        name: filter[regex][condition][pattern]
+        required: false
+        schema:
+          items:
+            type: string
+          title: Filter[Regex][Condition][Pattern]
+          type: array
+      - in: query
+        name: filter[regex][condition][case_sensitive]
+        required: false
+        schema:
+          items:
+            type: boolean
+          title: Filter[Regex][Condition][Case Sensitive]
+          type: array
+      - in: query
+        name: filter[eq][condition][key]
+        required: false
+        schema:
+          items:
+            type: string
+          title: Filter[Eq][Condition][Key]
+          type: array
+      - in: query
+        name: filter[eq][condition][value]
+        required: false
+        schema:
+          items: {}
+          title: Filter[Eq][Condition][Value]
+          type: array
+      - in: query
+        name: filter[noteq][condition][key]
+        required: false
+        schema:
+          items:
+            type: string
+          title: Filter[Noteq][Condition][Key]
+          type: array
+      - in: query
+        name: filter[noteq][condition][value]
+        required: false
+        schema:
+          items: {}
+          title: Filter[Noteq][Condition][Value]
+          type: array
+      - in: query
+        name: filter[comparison][condition][operator]
+        required: false
+        schema:
+          items:
+            $ref: '#/components/schemas/Operator'
+          type: array
+      - in: query
+        name: filter[comparison][condition][key]
+        required: false
+        schema:
+          items:
+            type: string
+          title: Filter[Comparison][Condition][Key]
+          type: array
+      - in: query
+        name: filter[comparison][condition][value]
+        required: false
+        schema:
+          items: {}
+          title: Filter[Comparison][Condition][Value]
+          type: array
+      - in: query
+        name: filter[contains][condition][key]
+        required: false
+        schema:
+          items:
+            type: string
+          title: Filter[Contains][Condition][Key]
+          type: array
+      - in: query
+        name: filter[contains][condition][value]
+        required: false
+        schema:
+          items: {}
+          title: Filter[Contains][Condition][Value]
+          type: array
+      - in: query
+        name: filter[in][condition][key]
+        required: false
+        schema:
+          items:
+            type: string
+          title: Filter[In][Condition][Key]
+          type: array
+      - in: query
+        name: filter[in][condition][value]
+        required: false
+        schema:
+          items:
+            type: string
+          title: Filter[In][Condition][Value]
+          type: array
+      - in: query
+        name: filter[notin][condition][key]
+        required: false
+        schema:
+          items:
+            type: string
+          title: Filter[Notin][Condition][Key]
+          type: array
+      - in: query
+        name: filter[notin][condition][value]
+        required: false
+        schema:
+          items:
+            type: string
+          title: Filter[Notin][Condition][Value]
+          type: array
+      - in: query
+        name: filter[specs][condition][include]
+        required: false
+        schema:
+          items:
+            type: string
+          title: Filter[Specs][Condition][Include]
+          type: array
+      - in: query
+        name: filter[specs][condition][exclude]
+        required: false
+        schema:
+          items:
+            type: string
+          title: Filter[Specs][Condition][Exclude]
+          type: array
+      - in: query
+        name: filter[structure_family][condition][value]
+        required: false
+        schema:
+          items:
+            $ref: '#/components/schemas/StructureFamily'
+          type: array
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/GetDistinctResponse'
+          description: Successful Response
+        '422':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/HTTPValidationError'
+          description: Validation Error
+      security:
+      - OAuth2PasswordBearer:
+        - read:metadata
+      - APIKeyQuery: []
+      - APIKeyAuthorizationHeader: []
+      - APIKeyCookie: []
+      summary: Route With Sig
+  /api/v1/node/full/{path}:
+    get:
+      description: Fetch the data below the given node.
+      operationId: full_generic__node__or__dataframe__api_v1_node_full__path__get
+      parameters:
+      - in: path
+        name: path
+        required: true
+        schema:
+          title: Path
+          type: string
+      - in: query
+        name: field
+        required: false
+        schema:
+          items:
+            minLength: 1
+            type: string
+          minLength: 1
+          title: Field
+          type: array
+      - in: query
+        name: format
+        required: false
+        schema:
+          title: Format
+          type: string
+      - in: query
+        name: filename
+        required: false
+        schema:
+          title: Filename
+          type: string
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Response'
+          description: Successful Response
+        '422':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/HTTPValidationError'
+          description: Validation Error
+      security:
+      - OAuth2PasswordBearer:
+        - read:data
+      - APIKeyQuery: []
+      - APIKeyAuthorizationHeader: []
+      - APIKeyCookie: []
+      - OAuth2PasswordBearer: []
+      - APIKeyQuery: []
+      - APIKeyAuthorizationHeader: []
+      - APIKeyCookie: []
+      summary: Full Generic 'Node' Or 'Dataframe'
+    put:
+      operationId: put_dataframe_full_api_v1_node_full__path__put
+      parameters:
+      - in: path
+        name: path
+        required: true
+        schema:
+          title: Path
+          type: string
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {}
+          description: Successful Response
+        '422':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/HTTPValidationError'
+          description: Validation Error
+      security:
+      - OAuth2PasswordBearer:
+        - write:data
+      - APIKeyQuery: []
+      - APIKeyAuthorizationHeader: []
+      - APIKeyCookie: []
+      summary: Put Dataframe Full
+  /api/v1/node/metadata/{path}:
+    delete:
+      operationId: delete_api_v1_node_metadata__path__delete
+      parameters:
+      - in: path
+        name: path
+        required: true
+        schema:
+          title: Path
+          type: string
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {}
+          description: Successful Response
+        '422':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/HTTPValidationError'
+          description: Validation Error
+      security:
+      - OAuth2PasswordBearer:
+        - write:data
+        - write:metadata
+      - APIKeyQuery: []
+      - APIKeyAuthorizationHeader: []
+      - APIKeyCookie: []
+      summary: Delete
+    get:
+      description: Fetch the metadata and structure information for one entry.
+      operationId: node_metadata_api_v1_node_metadata__path__get
+      parameters:
+      - in: path
+        name: path
+        required: true
+        schema:
+          title: Path
+          type: string
+      - in: query
+        name: fields
+        required: false
+        schema:
+          default:
+          - metadata
+          - structure_family
+          - structure
+          - structure.micro
+          - structure.macro
+          - count
+          - sorting
+          - specs
+          - references
+          - data_sources
+          - ''
+          items:
+            $ref: '#/components/schemas/EntryFields'
+          type: array
+      - in: query
+        name: select_metadata
+        required: false
+        schema:
+          title: Select Metadata
+          type: string
+      - in: query
+        name: max_depth
+        required: false
+        schema:
+          maximum: 5.0
+          minimum: 0.0
+          title: Max Depth
+          type: integer
+      - in: query
+        name: omit_links
+        required: false
+        schema:
+          default: false
+          title: Omit Links
+          type: boolean
+      - in: query
+        name: show_sources
+        required: false
+        schema:
+          default: false
+          title: Show Sources
+          type: boolean
+      - in: query
+        name: root_path
+        required: false
+        schema:
+          default: false
+          title: Root Path
+          type: boolean
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Response_Resource_NodeAttributes__dict__dict___dict__dict_'
+          description: Successful Response
+        '422':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/HTTPValidationError'
+          description: Validation Error
+      security:
+      - OAuth2PasswordBearer:
+        - read:metadata
+      - APIKeyQuery: []
+      - APIKeyAuthorizationHeader: []
+      - APIKeyCookie: []
+      summary: Node Metadata
+    post:
+      operationId: post_metadata_api_v1_node_metadata__path__post
+      parameters:
+      - in: path
+        name: path
+        required: true
+        schema:
+          title: Path
+          type: string
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/PostMetadataRequest'
+        required: true
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PostMetadataResponse'
+          description: Successful Response
+        '422':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/HTTPValidationError'
+          description: Validation Error
+      security:
+      - OAuth2PasswordBearer:
+        - write:metadata
+        - create
+      - APIKeyQuery: []
+      - APIKeyAuthorizationHeader: []
+      - APIKeyCookie: []
+      summary: Post Metadata
+    put:
+      operationId: put_metadata_api_v1_node_metadata__path__put
+      parameters:
+      - in: path
+        name: path
+        required: true
+        schema:
+          title: Path
+          type: string
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/PutMetadataRequest'
+        required: true
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PutMetadataResponse'
+          description: Successful Response
+        '422':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/HTTPValidationError'
+          description: Validation Error
+      security:
+      - OAuth2PasswordBearer:
+        - write:metadata
+      - APIKeyQuery: []
+      - APIKeyAuthorizationHeader: []
+      - APIKeyCookie: []
+      summary: Put Metadata
+  /api/v1/node/revisions/{path}:
+    delete:
+      operationId: delete_revision_api_v1_node_revisions__path__delete
+      parameters:
+      - in: path
+        name: path
+        required: true
+        schema:
+          title: Path
+          type: string
+      - in: query
+        name: number
+        required: true
+        schema:
+          title: Number
+          type: integer
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {}
+          description: Successful Response
+        '422':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/HTTPValidationError'
+          description: Validation Error
+      security:
+      - OAuth2PasswordBearer:
+        - write:metadata
+      - APIKeyQuery: []
+      - APIKeyAuthorizationHeader: []
+      - APIKeyCookie: []
+      summary: Delete Revision
+    get:
+      operationId: get_revisions_api_v1_node_revisions__path__get
+      parameters:
+      - in: path
+        name: path
+        required: true
+        schema:
+          title: Path
+          type: string
+      - in: query
+        name: page[offset]
+        required: false
+        schema:
+          default: 0
+          minimum: 0.0
+          title: Page[Offset]
+          type: integer
+      - in: query
+        name: page[limit]
+        required: false
+        schema:
+          default: 100
+          maximum: 300.0
+          minimum: 0.0
+          title: Page[Limit]
+          type: integer
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {}
+          description: Successful Response
+        '422':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/HTTPValidationError'
+          description: Validation Error
+      security:
+      - OAuth2PasswordBearer:
+        - read:metadata
+      - APIKeyQuery: []
+      - APIKeyAuthorizationHeader: []
+      - APIKeyCookie: []
+      summary: Get Revisions
+  /api/v1/node/search/{path}:
+    get:
+      operationId: route_with_sig_api_v1_node_search__path__get
+      parameters:
+      - in: path
+        name: path
+        required: true
+        schema:
+          title: Path
+          type: string
+      - in: query
+        name: fields
+        required: false
+        schema:
+          default:
+          - metadata
+          - structure_family
+          - structure
+          - structure.micro
+          - structure.macro
+          - count
+          - sorting
+          - specs
+          - references
+          - data_sources
+          - ''
+          items:
+            $ref: '#/components/schemas/EntryFields'
+          type: array
+      - in: query
+        name: select_metadata
+        required: false
+        schema:
+          title: Select Metadata
+          type: string
+      - in: query
+        name: page[offset]
+        required: false
+        schema:
+          default: 0
+          minimum: 0.0
+          title: Page[Offset]
+          type: integer
+      - in: query
+        name: page[limit]
+        required: false
+        schema:
+          default: 100
+          maximum: 300.0
+          minimum: 0.0
+          title: Page[Limit]
+          type: integer
+      - in: query
+        name: sort
+        required: false
+        schema:
+          title: Sort
+          type: string
+      - in: query
+        name: max_depth
+        required: false
+        schema:
+          maximum: 5.0
+          minimum: 0.0
+          title: Max Depth
+          type: integer
+      - in: query
+        name: omit_links
+        required: false
+        schema:
+          default: false
+          title: Omit Links
+          type: boolean
+      - in: query
+        name: show_sources
+        required: false
+        schema:
+          default: false
+          title: Show Sources
+          type: boolean
+      - in: query
+        name: filter[fulltext][condition][text]
+        required: false
+        schema:
+          items:
+            type: string
+          title: Filter[Fulltext][Condition][Text]
+          type: array
+      - in: query
+        name: filter[fulltext][condition][case_sensitive]
+        required: false
+        schema:
+          items:
+            type: boolean
+          title: Filter[Fulltext][Condition][Case Sensitive]
+          type: array
+      - in: query
+        name: filter[lookup][condition][key]
+        required: false
+        schema:
+          items:
+            type: string
+          title: Filter[Lookup][Condition][Key]
+          type: array
+      - in: query
+        name: filter[keys_filter][condition][keys]
+        required: false
+        schema:
+          items:
+            type: string
+          title: Filter[Keys Filter][Condition][Keys]
+          type: array
+      - in: query
+        name: filter[regex][condition][key]
+        required: false
+        schema:
+          items:
+            type: string
+          title: Filter[Regex][Condition][Key]
+          type: array
+      - in: query
+        name: filter[regex][condition][pattern]
+        required: false
+        schema:
+          items:
+            type: string
+          title: Filter[Regex][Condition][Pattern]
+          type: array
+      - in: query
+        name: filter[regex][condition][case_sensitive]
+        required: false
+        schema:
+          items:
+            type: boolean
+          title: Filter[Regex][Condition][Case Sensitive]
+          type: array
+      - in: query
+        name: filter[eq][condition][key]
+        required: false
+        schema:
+          items:
+            type: string
+          title: Filter[Eq][Condition][Key]
+          type: array
+      - in: query
+        name: filter[eq][condition][value]
+        required: false
+        schema:
+          items: {}
+          title: Filter[Eq][Condition][Value]
+          type: array
+      - in: query
+        name: filter[noteq][condition][key]
+        required: false
+        schema:
+          items:
+            type: string
+          title: Filter[Noteq][Condition][Key]
+          type: array
+      - in: query
+        name: filter[noteq][condition][value]
+        required: false
+        schema:
+          items: {}
+          title: Filter[Noteq][Condition][Value]
+          type: array
+      - in: query
+        name: filter[comparison][condition][operator]
+        required: false
+        schema:
+          items:
+            $ref: '#/components/schemas/Operator'
+          type: array
+      - in: query
+        name: filter[comparison][condition][key]
+        required: false
+        schema:
+          items:
+            type: string
+          title: Filter[Comparison][Condition][Key]
+          type: array
+      - in: query
+        name: filter[comparison][condition][value]
+        required: false
+        schema:
+          items: {}
+          title: Filter[Comparison][Condition][Value]
+          type: array
+      - in: query
+        name: filter[contains][condition][key]
+        required: false
+        schema:
+          items:
+            type: string
+          title: Filter[Contains][Condition][Key]
+          type: array
+      - in: query
+        name: filter[contains][condition][value]
+        required: false
+        schema:
+          items: {}
+          title: Filter[Contains][Condition][Value]
+          type: array
+      - in: query
+        name: filter[in][condition][key]
+        required: false
+        schema:
+          items:
+            type: string
+          title: Filter[In][Condition][Key]
+          type: array
+      - in: query
+        name: filter[in][condition][value]
+        required: false
+        schema:
+          items:
+            type: string
+          title: Filter[In][Condition][Value]
+          type: array
+      - in: query
+        name: filter[notin][condition][key]
+        required: false
+        schema:
+          items:
+            type: string
+          title: Filter[Notin][Condition][Key]
+          type: array
+      - in: query
+        name: filter[notin][condition][value]
+        required: false
+        schema:
+          items:
+            type: string
+          title: Filter[Notin][Condition][Value]
+          type: array
+      - in: query
+        name: filter[specs][condition][include]
+        required: false
+        schema:
+          items:
+            type: string
+          title: Filter[Specs][Condition][Include]
+          type: array
+      - in: query
+        name: filter[specs][condition][exclude]
+        required: false
+        schema:
+          items:
+            type: string
+          title: Filter[Specs][Condition][Exclude]
+          type: array
+      - in: query
+        name: filter[structure_family][condition][value]
+        required: false
+        schema:
+          items:
+            $ref: '#/components/schemas/StructureFamily'
+          type: array
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Response_List_tiled.server.router.Resource_NodeAttributes__dict__dict____PaginationLinks__dict_'
+          description: Successful Response
+        '422':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/HTTPValidationError'
+          description: Validation Error
+      security:
+      - OAuth2PasswordBearer:
+        - read:metadata
+      - APIKeyQuery: []
+      - APIKeyAuthorizationHeader: []
+      - APIKeyCookie: []
+      - OAuth2PasswordBearer: []
+      - APIKeyQuery: []
+      - APIKeyAuthorizationHeader: []
+      - APIKeyCookie: []
+      summary: Route With Sig
+  /ui/{path}:
+    get:
+      operationId: ui_ui__path__get
+      parameters:
+      - in: path
+        name: path
+        required: true
+        schema:
+          title: Path
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {}
+          description: Successful Response
+        '422':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/HTTPValidationError'
+          description: Validation Error
+      summary: Ui
