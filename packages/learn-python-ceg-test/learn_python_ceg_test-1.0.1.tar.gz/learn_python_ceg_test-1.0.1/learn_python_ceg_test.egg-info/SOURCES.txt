@@ -1,0 +1,11 @@
+LICENSE.txt
+README.md
+setup.cfg
+setup.py
+learn_python_ceg_test/__init__.py
+learn_python_ceg_test/check_answers.py
+learn_python_ceg_test.egg-info/PKG-INFO
+learn_python_ceg_test.egg-info/SOURCES.txt
+learn_python_ceg_test.egg-info/dependency_links.txt
+learn_python_ceg_test.egg-info/requires.txt
+learn_python_ceg_test.egg-info/top_level.txt
