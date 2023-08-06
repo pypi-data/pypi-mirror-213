@@ -1,0 +1,8 @@
+[console_scripts]
+mlcvzoo-cvat-handler=mlcvzoo_util.cvat_annotation_handler.cvat_annotation_handler:main
+mlcvzoo-modelevaluator=mlcvzoo_util.model_evaluator.model_evaluator:main
+mlcvzoo-modeltimer=mlcvzoo_util.model_timer.model_timer:main
+mlcvzoo-modeltrainer=mlcvzoo_util.model_trainer.model_trainer:main
+mlcvzoo-preannotator=mlcvzoo_util.pre_annotation_tool.pre_annotation_tool:main
+mlcvzoo-video-image-creator=mlcvzoo_util.video_image_creator.video_image_creator:main
+
