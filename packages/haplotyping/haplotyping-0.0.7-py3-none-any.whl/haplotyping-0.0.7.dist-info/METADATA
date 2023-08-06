@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: haplotyping
+Version: 0.0.7
+Summary: Haplotyping
+Home-page: https://github.com/haplotyping/haplotyping
+Author: Matthijs Brouwer
+Author-email: matthijs.brouwer@wur.nl
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: graphviz (>=0.20.1)
+Requires-Dist: pandas (>=1.5.2)
+Requires-Dist: networkit (>=10.0)
+Requires-Dist: h5py (>=3.7.0)
+Requires-Dist: tables (>=3.7.0)
+Requires-Dist: pyahocorasick (>=1.4.4)
+Requires-Dist: flask (>=2.2.2)
+Requires-Dist: flask-restx (>=1.0.3)
+Requires-Dist: waitress (>=2.1.2)
+Requires-Dist: flask-caching (>=2.0.1)
+Requires-Dist: openpyxl (>=3.0.10)
+Requires-Dist: frictionless (==5.10.5)
+Requires-Dist: psutil (>=5.9.5)
+Requires-Dist: metis (>=0.2a5)
+
+# haplotyping
