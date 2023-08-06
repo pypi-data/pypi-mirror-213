@@ -1,0 +1,8 @@
+segment_lidar/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+segment_lidar/main.py,sha256=rVa1zFRdhEQLb4v1ChUa-Sp_SQI0_KqUYvx1jhBgrW0,10979
+segment_lidar-0.1.2.dist-info/LICENSE,sha256=-9k6ANvWmT2BTVMEM3lNvmTi0FfwaBfoRlYzVjzI3fU,1246
+segment_lidar-0.1.2.dist-info/METADATA,sha256=9rV2_XFe9hcgNTfahSMNc4le4szxchYDEJqz-913TFI,7313
+segment_lidar-0.1.2.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+segment_lidar-0.1.2.dist-info/entry_points.txt,sha256=bkk1Sd8haJld9iewNZECCT4WuysabjmeEYdUyEZk4b8,57
+segment_lidar-0.1.2.dist-info/top_level.txt,sha256=IrUxFQra4CpZmNmshw-JIfpXhnYfDh9743qk57aWmeU,14
+segment_lidar-0.1.2.dist-info/RECORD,,
