@@ -1,0 +1,3 @@
+[console_scripts]
+conscript=conscript.main:main
+
