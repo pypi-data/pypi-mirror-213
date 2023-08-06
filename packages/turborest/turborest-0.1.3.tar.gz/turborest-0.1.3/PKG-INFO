@@ -1,0 +1,71 @@
+Metadata-Version: 2.1
+Name: turborest
+Version: 0.1.3
+Summary: A library for monitoring files and directories for changes
+Home-page: https://github.com/bytesentinel-io/turborest
+Author: ByteSentinel.io
+Author-email: dev@bytesentinel.io
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+
+# TurboREST
+
+TurboREST is a REST API framework for Python 3.7+.
+
+## Installation
+
+```bash
+pip install turborest
+```
+
+## Usage
+
+```python
+from turborest import Client
+
+def main():
+    client = Client(format="json")
+    client.get("https://api.bytesentinel.io/test")
+```
+
+## Authentication
+
+```python
+from turborest import Client
+
+def main():
+    auth = ("Bearer", "xyz")
+    client = Client(format="json", auth=auth)
+    client.get("https://api.bytesentinel.io/test")
+```
+
+## Proxy
+
+```python
+from turborest import Client
+
+def main():
+    proxy = "http://localhost:8080"
+    client = Client(format="json", proxy=proxy)
+    client.get("https://api.bytesentinel.io/test")
+```
+
+## Contributing
+
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+
+## License
+
+### MIT License
+
+```text
+MIT License
+
+TurboREST - A REST API framework for Python 3.7+.
+
+...
+    
+```
