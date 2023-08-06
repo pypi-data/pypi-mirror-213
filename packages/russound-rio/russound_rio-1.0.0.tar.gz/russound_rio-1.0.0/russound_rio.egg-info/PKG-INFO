@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: russound-rio
+Version: 1.0.0
+Summary: Asyncio client for Russound RIO devices
+Home-page: https://github.com/chphilli/russound_rio
+Author: Chris Phillips
+License: MIT
+License-File: LICENSE
+
+=================================
+Russound RIO Async Python Package
+=================================
+This is the new home for the Russound Rio Python package, forked from @wickerwaka's excellent work at https://github.com/wickerwaka/russound_rio. 
+
+This module implements a Python client for the Russound I/O (RIO) protocol used to control Russound audio controllers. RIO supports a superset of the RNET feature set, allows for push notifications of system changes and supports TCP/IP and RS232 communication.

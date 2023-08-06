@@ -1,0 +1,11 @@
+LICENSE
+MANIFEST.in
+README.rst
+setup.py
+russound_rio/__init__.py
+russound_rio/rio.py
+russound_rio.egg-info/PKG-INFO
+russound_rio.egg-info/SOURCES.txt
+russound_rio.egg-info/dependency_links.txt
+russound_rio.egg-info/top_level.txt
+tests/test_zoneid.py
