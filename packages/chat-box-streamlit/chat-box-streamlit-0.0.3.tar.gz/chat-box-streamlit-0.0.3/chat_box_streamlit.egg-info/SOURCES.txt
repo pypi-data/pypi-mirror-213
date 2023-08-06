@@ -1,0 +1,10 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+chat_box/__init__.py
+chat_box_streamlit.egg-info/PKG-INFO
+chat_box_streamlit.egg-info/SOURCES.txt
+chat_box_streamlit.egg-info/dependency_links.txt
+chat_box_streamlit.egg-info/requires.txt
+chat_box_streamlit.egg-info/top_level.txt
