@@ -1,0 +1,6 @@
+confluent_kafka-stubs/__init__.pyi,sha256=EY1-_PKXtZLTiCols4pofzOkiGa47uYs2vrT7IzFL_w,40
+confluent_kafka-stubs/cimpl.pyi,sha256=fWJ87zjUDC4KK2l6NP7hRRW6GQFDN061YB99DQKOw1U,10833
+confluent_kafka_stubs-0.0.2.dist-info/LICENSE,sha256=1QwCYJ1nyFrG1rDe9whSLzYIHmsPBl9ulra_JHyNJvU,11562
+confluent_kafka_stubs-0.0.2.dist-info/METADATA,sha256=nIL_AcKDhOztM1OZRYyu-HZ0cyoXGxiqBVdB9FWR1Y4,1961
+confluent_kafka_stubs-0.0.2.dist-info/WHEEL,sha256=Zb28QaM1gQi8f4VCBhsUklF61CTlNYfs9YAZn-TOGFk,88
+confluent_kafka_stubs-0.0.2.dist-info/RECORD,,
