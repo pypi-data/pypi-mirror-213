@@ -1,0 +1,49 @@
+Metadata-Version: 2.1
+Name: libmonty-hexdump
+Version: 0.1.0
+Summary: libmonty-hexdump - Python library - hexdump utility
+Home-page: https://codeberg.org/sunarch/libmonty-hexdump
+Author: András Németh (sunarch)
+Author-email: sunarch@protonmail.com
+Maintainer: András Németh (sunarch)
+Maintainer-email: sunarch@protonmail.com
+License: Mozilla Public License 2.0 (MPL 2.0)
+Project-URL: Bug Tracker, https://codeberg.org/sunarch/libmonty-hexdump/issues
+Keywords: libmonty,hexdump
+Platform: Any
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: Intended Audience :: System Administrators
+Classifier: License :: OSI Approved :: Mozilla Public License 2.0 (MPL 2.0)
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Software Development
+Classifier: Topic :: System
+Classifier: Topic :: Text Processing :: General
+Classifier: Topic :: Utilities
+Classifier: Typing :: Typed
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# libmonty-hexdump
+
+Python library - a hex hump utility
+
+## License
+
+[Mozilla Public License 2.0](https://www.mozilla.org/en-US/MPL/2.0/)
+
+```
+This Source Code Form is subject to the terms of the Mozilla Public
+License, v. 2.0. If a copy of the MPL was not distributed with this
+file, You can obtain one at http://mozilla.org/MPL/2.0/.
+```
+
+## Acknowledgements
+
+- Python section in global .gitignore taken from [github/gitignore](https://github.com/github/gitignore) under the [CC0-1.0 License](https://choosealicense.com/licenses/cc0-1.0/).
+- Thanks to [Guido van Rossum](https://gvanrossum.github.io/), the [Python Software Foundation](https://www.python.org/psf/), and all contributors for the [Python](https://www.python.org/) programming language
