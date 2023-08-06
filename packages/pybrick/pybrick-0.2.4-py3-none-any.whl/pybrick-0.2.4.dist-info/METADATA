@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: pybrick
+Version: 0.2.4
+Summary: UNKNOWN
+Home-page: UNKNOWN
+License: UNKNOWN
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+Requires-Dist: pandas
+Requires-Dist: psycopg2
+Requires-Dist: sqlalchemy
+
+An interface for Yellowbrick data warehouse, written with the data analyst in mind.
+
+
