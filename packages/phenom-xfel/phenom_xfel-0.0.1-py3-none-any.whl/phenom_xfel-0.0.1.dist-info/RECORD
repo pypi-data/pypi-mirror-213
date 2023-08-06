@@ -1,0 +1,12 @@
+phenom/__init__.py,sha256=t9KZdp_DIvv91kyAlbqfXkrky_63qicYujvE-nd8xlM,93
+phenom/_version.py,sha256=qcAzURupdY5wKvnKT6OPcWY-08F9HZImkauw6zhI1FU,516
+phenom/spectra.py,sha256=Rdh_-kCWIXjNBE_PJa7jid18uyG-630a3eLEB_FcxqQ,281
+phenom/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+phenom/tests/conftest.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+phenom/tests/test_examples.py,sha256=-31uWxZpDTqJ22RdTKToXOTUOm_NXZ9RUlCo_n9j9NU,219
+phenom_xfel-0.0.1.dist-info/AUTHORS.rst,sha256=oRNMKw14RE9ScpdCjR7o5z-G9jiSlSVXSntdt5D_W-E,164
+phenom_xfel-0.0.1.dist-info/LICENSE,sha256=aySI9CvUUXSqVwpCAJsiEnfzQ_kRjiXD8wVJA5OpBRA,1518
+phenom_xfel-0.0.1.dist-info/METADATA,sha256=TyID5xXS-1re6xErRX0FLaQYiQjmHV-ejLIYVPdgwvw,1143
+phenom_xfel-0.0.1.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+phenom_xfel-0.0.1.dist-info/top_level.txt,sha256=IxOX4a7G659LCVUQ8GeiUaINUY_eZrAG58dDq3p_MbE,7
+phenom_xfel-0.0.1.dist-info/RECORD,,

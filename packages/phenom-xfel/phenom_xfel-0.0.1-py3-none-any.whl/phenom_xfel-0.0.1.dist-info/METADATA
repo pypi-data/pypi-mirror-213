@@ -1,0 +1,40 @@
+Metadata-Version: 2.1
+Name: phenom-xfel
+Version: 0.0.1
+Summary: A phenomenological model of X-ray Free Electron Laser (XFEL) radiation and radiation statistics.
+Home-page: https://github.com/twguest/phenom
+Author: Trey Guest
+Author-email: trey.guest@xfel.eu
+License: BSD (3-clause)
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8
+License-File: LICENSE
+License-File: AUTHORS.rst
+Requires-Dist: matplotlib (==3.7.1)
+Requires-Dist: numpy (==1.24.3)
+Requires-Dist: scipy (==1.10.1)
+Requires-Dist: pandas (==2.0.2)
+
+======
+phenom
+======
+
+.. image:: https://github.com/twguest/phenom/actions/workflows/testing.yml/badge.svg
+   :target: https://github.com/twguest/phenom/actions/workflows/testing.yml
+
+
+.. image:: https://img.shields.io/pypi/v/phenom.svg
+        :target: https://pypi.python.org/pypi/phenom
+
+
+A phenomenological model of X-ray Free Electron Laser (XFEL) radiation and radiation statistics.
+
+* Free software: 3-clause BSD license
+* Documentation: (COMING SOON!) https://twguest.github.io/phenom.
+
+Features
+--------
+
+* TODO
