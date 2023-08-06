@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "elapse-secrets"
+version = "0.1.0"
+description = "Detects and removes sensitive information from the client-side to secure a user's data."
+authors = ["kdcokenny <kenny@kdco.llc>"]
+readme = "README.md"
+packages = [{include = "elapse_secrets"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+pyyaml = "^6.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
