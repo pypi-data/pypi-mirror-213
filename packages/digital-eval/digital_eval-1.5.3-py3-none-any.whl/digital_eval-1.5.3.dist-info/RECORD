@@ -1,0 +1,16 @@
+digital_eval/VERSION,sha256=wD44JAAfOblRgkm41lIkIvxN5yJ-EqVowBZGYrA7d1g,6
+digital_eval/__init__.py,sha256=mGUj6SofeG-SOmloC0PccQDfE39R_Kpib9nzsm1WCPU,617
+digital_eval/cli.py,sha256=ye6UXlame5DAB--y_VuIDueAZWbKszcyjfu628_Xqp4,8595
+digital_eval/evaluation.py,sha256=zrLTIAXUl5l8QY5F_YNm0hMZmLBQhr_kUfiuqFEX_Xw,28651
+digital_eval/metrics.py,sha256=wIFlsxzga9C9c-INnyJo_p1Vw9Wm6yr6IdBTqzmnlW8,17660
+digital_eval/model.py,sha256=vgSIXxNjLDHQXr4QtAs-ldffBeOfL-VbWEL5jKx2tPY,26728
+digital_eval/model_legacy.py,sha256=Jxlh1usGO4IuivZBkZNMz4nDZWrLGDq32vb3xBQwtlI,14939
+ocr_util/__init__.py,sha256=mQGz7npuQq8YAkUY6-KzqBuV8gJxSEF6An7g8aPhg1g,21
+ocr_util/cli.py,sha256=Q8oT4r8Y7mAJLJQmNQAaAfLLbQHngSwbK4UuHDguOYM,2690
+ocr_util/frame.py,sha256=g-nDNKp76RvnGt2G44xUNGSUrqKHTThy6STobT-WEsE,4120
+digital_eval-1.5.3.dist-info/LICENSE,sha256=DItBhE1p6-xBDCSH8zFN-Lzx3oXrOtGAKuwMTlvV_9E,1107
+digital_eval-1.5.3.dist-info/METADATA,sha256=kx32L9tQ_X4Vg_hK_5jgNiXTkCf3vbM7W4x6NkdFJYQ,5892
+digital_eval-1.5.3.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+digital_eval-1.5.3.dist-info/entry_points.txt,sha256=cNf6E2-WwQjfo5IN1rQtzIQ3Dp9oDYMsXy31ioJ4djs,86
+digital_eval-1.5.3.dist-info/top_level.txt,sha256=oNQ0Qs7O5ciHMgdcxf8Q-bVKxoVohLmQ0wmJrRje9aI,22
+digital_eval-1.5.3.dist-info/RECORD,,
