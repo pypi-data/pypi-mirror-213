@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: panda_utils
+Version: 1.1
+Summary: PandaUtils includes multiple tools for basic Panda3D automation
+Author-email: "Toontown: Event Horizon" <development@toontowneventhorizon.com>
+Project-URL: homepage, https://github.com/toontown-event-horizon/panda-utils
+Project-URL: bugtracker, https://github.com/toontown-event-horizon/panda-utils/issues
+Classifier: Programming Language :: Python :: 3.8
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.9
+Provides-Extra: imagery
+Provides-Extra: autopath
+Provides-Extra: runnable
+Provides-Extra: pipeline
+Provides-Extra: everything
+License-File: LICENSE
