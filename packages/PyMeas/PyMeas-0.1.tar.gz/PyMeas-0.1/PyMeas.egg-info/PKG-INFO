@@ -1,0 +1,6 @@
+Metadata-Version: 2.1
+Name: PyMeas
+Version: 0.1
+Summary: This library has been developed specifically for the purpose of measuring parameters such as diameter, concentricity, and other relevant characteristics of ring-shaped components.
+Author: Mehmet Kaçmaz
+Author-email: mehmetkcmz5@gmail.com

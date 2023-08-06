@@ -1,0 +1,7 @@
+circle-fit
+opencv-python
+matplotlib
+pyodbc
+mpl_point_clicker
+subpixel-edges
+scikit-image
