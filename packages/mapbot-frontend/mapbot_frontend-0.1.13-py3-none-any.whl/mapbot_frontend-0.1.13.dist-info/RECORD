@@ -1,0 +1,17 @@
+mapbot_frontend/__init__.py,sha256=B67XMMufVU-DaeGTCNDzWuhd48ku8lpG4wbtliWLAWo,621
+mapbot_frontend/frontend/build/asset-manifest.json,sha256=vw1n2yQ4m1tTrdFyMb0YiKWpitL7L28VGeFGfr7g1pg,890
+mapbot_frontend/frontend/build/bootstrap.min.css,sha256=hTwg6axJ8dAPmGVJmYTrsQS3JhKWA0skJ-td54UbEOk,197459
+mapbot_frontend/frontend/build/index.html,sha256=Xib0urDZakHhtazYlDvc1WbBCcIf9EDM4l8l0qzrKTs,3066
+mapbot_frontend/frontend/build/static/css/2.19230d7e.chunk.css,sha256=smf0v1xaytA5WwN9jszpUdBpSi3roJ5SxKvdF-sFYuI,34063
+mapbot_frontend/frontend/build/static/css/2.19230d7e.chunk.css.map,sha256=3af3g87qdpaQ0J99o4GGJHgBJruLowkRFMisOGyOCJw,40516
+mapbot_frontend/frontend/build/static/js/2.0ea95e57.chunk.js,sha256=aP9E3dOvunOlbBv27nt7nPn-3aIw9kddmmQPGQfmogA,1317648
+mapbot_frontend/frontend/build/static/js/2.0ea95e57.chunk.js.LICENSE.txt,sha256=YEJH-SCaNueYUwaPfm7mw2mQkauTpW2oPZXLZckS_PQ,1249
+mapbot_frontend/frontend/build/static/js/2.0ea95e57.chunk.js.map,sha256=bZyfgjQ752Mkg5W_DH5fS3UkOBW2dlMI9S3B6wCuoFY,5974368
+mapbot_frontend/frontend/build/static/js/main.8e249bda.chunk.js,sha256=qSkyiHDgKvTeE_4kRovzXEdouD2eA2TgeUnEBNfYdkk,13700
+mapbot_frontend/frontend/build/static/js/main.8e249bda.chunk.js.map,sha256=wn2x373PKMg8CL3pEk7NyreuHFHMDPa_uiYypRLyERc,41486
+mapbot_frontend/frontend/build/static/js/runtime-main.48f3c07e.js,sha256=uscSCQcv2Vr6O0bZYASZcalttCbeDcqD9Xkj1MnMUeE,1566
+mapbot_frontend/frontend/build/static/js/runtime-main.48f3c07e.js.map,sha256=tXnP4x3sfZgUh9085rR-BKgEhmIzcZMXjX5Lf5hQhww,8351
+mapbot_frontend-0.1.13.dist-info/METADATA,sha256=xbaypi6IbBq8sNXLhF8jTmQQGwaaThEWY6_u5KcKX7M,330
+mapbot_frontend-0.1.13.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+mapbot_frontend-0.1.13.dist-info/top_level.txt,sha256=prXb1msBnPPtuxnTeiY9wq05Ah2fsBKJmOx7QOLBZIo,16
+mapbot_frontend-0.1.13.dist-info/RECORD,,
