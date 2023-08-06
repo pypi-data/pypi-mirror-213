@@ -1,0 +1,117 @@
+Metadata-Version: 2.1
+Name: figanos
+Version: 0.1.0
+Summary: Outils pour produire des graphiques informatifs sur les impacts des changements climatiques.
+Author: Sarah-Claude Bourdeau-Goulet
+Author-email: bourdeau-goulet.sarah-claude@ouranos.ca
+License: Apache Software License 2.0
+Project-URL: Source, https://github.com/Ouranosinc/figanos
+Project-URL: Issue tracker, https://github.com/Ouranosinc/figanos/issues
+Project-URL: About Ouranos, https://www.ouranos.ca/en/
+Keywords: figanos
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Requires-Python: >=3.7
+Description-Content-Type: text/x-rst
+License-File: LICENSE
+License-File: AUTHORS.rst
+Requires-Dist: cartopy
+Requires-Dist: click (>=8.0)
+Requires-Dist: dask
+Requires-Dist: geopandas
+Requires-Dist: geoviews
+Requires-Dist: h5py
+Requires-Dist: holoviews
+Requires-Dist: jupyter
+Requires-Dist: matplotlib
+Requires-Dist: netCDF4
+Requires-Dist: notebook
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: xarray
+Requires-Dist: xclim (>=0.38)
+Requires-Dist: pyyaml
+Requires-Dist: zarr
+Provides-Extra: dev
+Requires-Dist: pip (==21.1) ; extra == 'dev'
+Requires-Dist: bump2version (==0.5.11) ; extra == 'dev'
+Requires-Dist: wheel (==0.38.1) ; extra == 'dev'
+Requires-Dist: watchdog (==0.9.0) ; extra == 'dev'
+Requires-Dist: flake8 (==3.7.8) ; extra == 'dev'
+Requires-Dist: tox (==3.14.0) ; extra == 'dev'
+Requires-Dist: coverage (==4.5.4) ; extra == 'dev'
+Requires-Dist: coveralls (==3.3.1) ; extra == 'dev'
+Requires-Dist: Sphinx (==1.8.5) ; extra == 'dev'
+Requires-Dist: twine (==1.14.0) ; extra == 'dev'
+Requires-Dist: pytest (==6.2.4) ; extra == 'dev'
+Requires-Dist: pytest-cov (==3.0.0) ; extra == 'dev'
+Requires-Dist: black (==21.7b0) ; extra == 'dev'
+Requires-Dist: isort (==5.10.1) ; extra == 'dev'
+Requires-Dist: pre-commit ; extra == 'dev'
+Provides-Extra: docs
+Requires-Dist: ipykernel ; extra == 'docs'
+Requires-Dist: ipython ; extra == 'docs'
+Requires-Dist: jupyter-client ; extra == 'docs'
+Requires-Dist: nbsphinx ; extra == 'docs'
+Requires-Dist: pandoc ; extra == 'docs'
+Requires-Dist: sphinx ; extra == 'docs'
+Requires-Dist: sphinx-autoapi ; extra == 'docs'
+Requires-Dist: sphinx-click ; extra == 'docs'
+Requires-Dist: sphinx-rtd-theme (>=1.0) ; extra == 'docs'
+Requires-Dist: sphinxcontrib-napoleon ; extra == 'docs'
+
+==========
+figanos
+==========
+
+
+.. image:: https://img.shields.io/pypi/v/figanos.svg
+        :target: https://pypi.python.org/pypi/figanos
+
+.. image:: https://img.shields.io/travis/Zeitsperre/figanos.svg
+        :target: https://travis-ci.com/Zeitsperre/figanos
+
+.. image:: https://readthedocs.org/projects/figanos/badge/?version=latest
+        :target: https://figanos.readthedocs.io/en/latest/?version=latest
+        :alt: Documentation Status
+
+
+Outils pour produire des graphiques informatifs sur les impacts des changements climatiques.
+
+Pour nous partager vos codes à ajouter dans figanos, s.v.p créer un issue sur le repo github avec une description de la fonction et
+le code de celle-ci.
+
+
+* Free software: Apache Software License 2.0
+* Documentation: https://figanos.readthedocs.io.
+
+
+Features
+--------
+
+* TODO
+
+Credits
+-------
+
+This package was created with Cookiecutter_ and the `Ouranosinc/cookiecutter-pypackage`_ project template.
+
+.. _Cookiecutter: https://github.com/audreyfeldroy/cookiecutter-pypackage
+.. _`Ouranosinc/cookiecutter-pypackage`: https://github.com/Ouranosinc/cookiecutter-pypackage
+
+
+=======
+History
+=======
+
+0.1.0 (unreleased)
+------------------
+
+* First release on PyPI.
