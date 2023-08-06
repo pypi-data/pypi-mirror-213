@@ -1,0 +1,2 @@
+ipyevents>=2.0.1
+ipycanvas>=0.13.1
