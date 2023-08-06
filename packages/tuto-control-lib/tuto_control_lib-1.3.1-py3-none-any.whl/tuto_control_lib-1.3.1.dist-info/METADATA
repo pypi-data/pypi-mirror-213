@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: tuto-control-lib
+Version: 1.3.1
+Summary: Helper lib for tuto control for computing
+Home-page: 
+Author: Quentin Guilloteau
+Author-email: Quentin.Guilloteau@inria.fr
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+License-File: LICENSE
+
