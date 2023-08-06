@@ -1,0 +1,2 @@
+[console_scripts]
+ve-power-meter = ve_power_meter:main
