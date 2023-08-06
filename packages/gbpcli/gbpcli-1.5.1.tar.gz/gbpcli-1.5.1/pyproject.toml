@@ -1,0 +1,87 @@
+[project]
+name = "gbpcli"
+dynamic = []
+description = "Gentoo Build Publisher Command-Line Interface"
+readme = "README.md"
+authors = [
+    { name = "Albert Hopkins", email = "marduk@letterboxes.org" },
+]
+dependencies = [
+    "requests",
+    "rich>=12.5.1",
+    "yarl",
+]
+requires-python = ">=3.10"
+classifiers = [
+    "Environment :: Console",
+    "License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)",
+    "Operating System :: POSIX :: Linux",
+    "Topic :: System :: Software Distribution",
+    "Programming Language :: Python :: 3",
+]
+version = "1.5.1"
+
+[project.license]
+text = "GPL3+"
+
+[project.urls]
+homepage = "https://github.com/enku/gbpcli"
+repository = "https://github.com/enku/gbpcli"
+
+[project.scripts]
+gbp = "gbpcli:main"
+
+[project.entry-points."gbpcli.subcommands"]
+build = "gbpcli.subcommands.build"
+diff = "gbpcli.subcommands.diff"
+inspect = "gbpcli.subcommands.inspect"
+keep = "gbpcli.subcommands.keep"
+latest = "gbpcli.subcommands.latest"
+list = "gbpcli.subcommands.list"
+logs = "gbpcli.subcommands.logs"
+machines = "gbpcli.subcommands.machines"
+notes = "gbpcli.subcommands.notes"
+packages = "gbpcli.subcommands.packages"
+publish = "gbpcli.subcommands.publish"
+pull = "gbpcli.subcommands.pull"
+status = "gbpcli.subcommands.status"
+tag = "gbpcli.subcommands.tag"
+
+[project.optional-dependencies]
+
+[build-system]
+requires = [
+    "pdm-backend",
+]
+build-backend = "pdm.backend"
+
+[tool.pdm.version]
+source = "scm"
+
+[tool.pdm.dev-dependencies]
+dev = [
+    "black",
+    "coverage",
+    "build",
+    "mypy",
+    "pylint",
+    "types-requests",
+]
+
+[tool.coverage.run]
+source = [
+    "gbpcli",
+]
+omit = [
+    "src/gbpcli/__main__.py",
+]
+
+[tool.flake8]
+max-line-length = 88
+
+[tool.pylint.master]
+init-hook = "import sys; sys.path.insert(0, 'tests')"
+ignore-imports = "yes"
+
+[tool.isort]
+profile = "black"
