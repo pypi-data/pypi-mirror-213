@@ -1,0 +1,6 @@
+[mycroft.plugin.audioservice]
+ovos_spotify=ovos_audio_plugin_spotify
+
+[mycroft.plugin.audioservice.config]
+ovos_spotify.config=ovos_audio_plugin_spotify:spotifyAudioPluginConfig
+
