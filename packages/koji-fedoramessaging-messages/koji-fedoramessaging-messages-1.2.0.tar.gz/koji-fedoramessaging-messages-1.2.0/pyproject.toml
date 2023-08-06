@@ -1,0 +1,67 @@
+[tool.poetry]
+name = "koji-fedoramessaging-messages"
+version = "1.2.0"
+description = "A schema package for messages sent by the koji-fedoramessaging plugin"
+
+license = "GPL-3.0-or-later"
+
+authors = [
+  "Fedora Infrastructure Team <infrastructure@lists.fedoraproject.org>"
+]
+
+readme = 'README.md'  # Markdown files are supported
+
+repository = "https://github.com/fedora-infra/koji-fedoramessaging-messages"
+homepage = "https://github.com/fedora-infra/koji-fedoramessaging-messages"
+
+keywords = ['fedora']
+
+include = [
+    { path = "tox.ini", format = "sdist" },
+    { path = "*.spec.in", format = "sdist" },
+    { path = "make-spec.sh", format = "sdist" },
+    { path = "tests/*", format = "sdist" },
+]
+
+[tool.poetry.plugins."fedora.messages"]
+"koji_fedoramessaging.build.BuildStateChangeV1"="koji_fedoramessaging_messages.build:BuildStateChangeV1"
+"koji_fedoramessaging.package.ListChangeV1"="koji_fedoramessaging_messages.package:ListChangeV1"
+"koji_fedoramessaging.repo.DoneV1"="koji_fedoramessaging_messages.repo:DoneV1"
+"koji_fedoramessaging.repo.InitV1"="koji_fedoramessaging_messages.repo:InitV1"
+"koji_fedoramessaging.rpm.SignV1"="koji_fedoramessaging_messages.rpm:SignV1"
+"koji_fedoramessaging.tag.TagV1"="koji_fedoramessaging_messages.tag:TagV1"
+"koji_fedoramessaging.tag.UntagV1"="koji_fedoramessaging_messages.tag:UntagV1"
+"koji_fedoramessaging.task.TaskStateChangeV1"="koji_fedoramessaging_messages.task:TaskStateChangeV1"
+
+
+[tool.poetry.dependencies]
+python = "^3.10"
+fedora-messaging = ">=3.0.1"
+
+[tool.poetry.dev-dependencies]
+pytest = "^7.1.2"
+pytest-cov = "^3.0.0 || ^4.0.0"
+sphinx = "^3.0"
+mock = "^4.0"
+black = "^22.6.0"
+poetry = "^1.2.0b2"
+ruff = "^0.0.272"
+
+[tool.black]
+line-length = 100
+
+[tool.ruff]
+select = ["E", "F", "W", "I", "UP", "S", "B", "RUF"]
+line-length = 100
+target-version = "py310"
+# Allow UP007 when python 3.11 is our minimum version: the construct wasn't
+# optimized yet on python 3.10
+ignore = ["RUF010", "UP038", "UP007"]
+
+[tool.ruff.per-file-ignores]
+"tests/*" = ["S101"]
+
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
