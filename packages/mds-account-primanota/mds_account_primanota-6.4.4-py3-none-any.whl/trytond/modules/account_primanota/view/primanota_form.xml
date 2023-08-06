@@ -1,0 +1,64 @@
+<?xml version="1.0"?>
+<!-- This file is part of Tryton.  The COPYRIGHT file at the top level of
+this repository contains the full copyright notices and license terms. -->
+<form col="1">
+    <notebook>
+        <page id="pg1" string="General" col="4">
+            <separator id="sep1" colspan="4" string="Number and Date"/>
+            <label name="post_number"/>
+            <field name="post_number"/>
+            <label name="movenumber"/>
+            <field name="movenumber"/>
+
+            <label name="date"/>
+            <field name="date"/>
+            <label name="period"/>
+            <field name="period"/>
+
+            <label name="post_date"/>
+            <field name="post_date"/>
+            <label name="journal"/>
+            <field name="journal"/>
+
+            <separator id="sep2" colspan="4" string="Account and Amount"/>
+            <label name="account"/>
+            <field name="account"/>
+            <label name="party"/>
+            <field name="party"/>
+
+            <label name="debit"/>
+            <field name="debit" symbol="currency"/>
+            <label name="credit"/>
+            <field name="credit" symbol="currency"/>
+
+            <label name="amount_second_currency"/>
+            <field name="amount_second_currency" symbol="second_currency"/>
+            <label name="rate_second_currency"/>
+            <field name="rate_second_currency"/>
+
+            <label name="description"/>
+            <field name="description" colspan="3"/>
+            <label name="line_description"/>
+            <field name="line_description" colspan="3"/>
+
+            <separator id="sep3" colspan="4" string="Origin of Move and Line"/>
+            <label name="origin"/>
+            <field name="origin"/>
+            <label name="line_origin"/>
+            <field name="line_origin"/>
+
+            <separator id="sep4" colspan="4" string="State and Reconciliation"/>
+            <label name="reconciliation"/>
+            <field name="reconciliation"/>
+            <label name="state"/>
+            <field name="state"/>
+        </page>
+        <page name="tax_lines" col="1" string="Tax Lines">
+            <field name="tax_lines"
+                view_ids="account_primanota.taxline_view_list,account.tax_line_view_form"/>
+        </page>
+        <page name="reconciliations_delegated" col="1" string="Reconciliations Delegated">
+            <field name="reconciliations_delegated"/>
+        </page>
+    </notebook>
+</form>

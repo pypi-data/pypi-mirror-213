@@ -1,0 +1,264 @@
+#
+msgid ""
+msgstr "Content-Type: text/plain; charset=utf-8\n"
+
+
+
+###############################
+# account_primanota.primanota #
+###############################
+msgctxt "model:account_primanota.primanota,name:"
+msgid "Primanota"
+msgstr "Primanota"
+
+msgctxt "model:ir.action,name:act_primanota_view"
+msgid "Primanota"
+msgstr "Primanota"
+
+msgctxt "view:account_primanota.primanota:"
+msgid "General"
+msgstr "Allgemein"
+
+msgctxt "view:account_primanota.primanota:"
+msgid "Number and Date"
+msgstr "Nummer und Datum"
+
+msgctxt "view:account_primanota.primanota:"
+msgid "Account and Amount"
+msgstr "Konto und Betrag"
+
+msgctxt "view:account_primanota.primanota:"
+msgid "Origin of Move and Line"
+msgstr "Herkunft von Buchungssatz und -zeile"
+
+msgctxt "view:account_primanota.primanota:"
+msgid "Credit"
+msgstr "Haben"
+
+msgctxt "view:account_primanota.primanota:"
+msgid "Debit"
+msgstr "Soll"
+
+msgctxt "view:account_primanota.primanota:"
+msgid "State and Reconciliation"
+msgstr "Status und Abstimmung"
+
+msgctxt "view:account_primanota.primanota:"
+msgid "Reconciliations Delegated"
+msgstr "Abstimmung Übertragen"
+
+msgctxt "view:account_primanota.primanota:"
+msgid "Tax Lines"
+msgstr "Steuerpositionen"
+
+msgctxt "view:account_primanota.primanota:"
+msgid "Analytic Lines"
+msgstr "Kostenstelle Positionen"
+
+msgctxt "field:account_primanota.primanota,movenumber:"
+msgid "Number"
+msgstr "Nummer"
+
+msgctxt "help:account_primanota.primanota,movenumber:"
+msgid "Number of Move"
+msgstr "Nummer des Buchungssatzes"
+
+msgctxt "field:account_primanota.primanota,post_number:"
+msgid "Post Number"
+msgstr "Festschreibungsnummer"
+
+msgctxt "help:account_primanota.primanota,post_number:"
+msgid "Also known as Folio Number."
+msgstr "Auch bekannt als Folio Nummer."
+
+msgctxt "field:account_primanota.primanota,period:"
+msgid "Period"
+msgstr "Buchungszeitraum"
+
+msgctxt "field:account_primanota.primanota,journal:"
+msgid "Journal"
+msgstr "Journal"
+
+msgctxt "field:account_primanota.primanota,date:"
+msgid "Effective Date"
+msgstr "Effektives Datum"
+
+msgctxt "field:account_primanota.primanota,post_date:"
+msgid "Post Date"
+msgstr "Festschreibungsdatum"
+
+msgctxt "field:account_primanota.primanota,description:"
+msgid "Description"
+msgstr "Beschreibung"
+
+msgctxt "field:account_primanota.primanota,line_description:"
+msgid "Line Description"
+msgstr "Zeile-Beschreibung"
+
+msgctxt "field:account_primanota.primanota,party:"
+msgid "Party"
+msgstr "Partei"
+
+msgctxt "field:account_primanota.primanota,origin:"
+msgid "Origin"
+msgstr "Herkunft"
+
+msgctxt "help:account_primanota.primanota,origin:"
+msgid "Origin of the Move"
+msgstr "Herkunft des Buchungssatzes"
+
+msgctxt "field:account_primanota.primanota,line_origin:"
+msgid "Line Origin"
+msgstr "Zeile-Herkunft"
+
+msgctxt "help:account_primanota.primanota,line_origin:"
+msgid "Origin of the Moveline"
+msgstr "Herkunft der Buchungssatzzeile"
+
+msgctxt "field:account_primanota.primanota,state:"
+msgid "State"
+msgstr "Status"
+
+msgctxt "selection:account_primanota.primanota,state:"
+msgid "Draft"
+msgstr "Entwurf"
+
+msgctxt "selection:account_primanota.primanota,state:"
+msgid "Posted"
+msgstr "Festgeschrieben"
+
+msgctxt "field:account_primanota.primanota,debit:"
+msgid "Debit"
+msgstr "Soll"
+
+msgctxt "field:account_primanota.primanota,credit:"
+msgid "Credit"
+msgstr "Haben"
+
+msgctxt "field:account_primanota.primanota,account:"
+msgid "Account"
+msgstr "Konto"
+
+msgctxt "field:account_primanota.primanota,account_code:"
+msgid "Account Code"
+msgstr "Konto-Nr"
+
+msgctxt "field:account_primanota.primanota,currency:"
+msgid "Currency"
+msgstr "Währung"
+
+msgctxt "field:account_primanota.primanota,currency_digits:"
+msgid "Currency Digits"
+msgstr "Nachkommastellen Währung"
+
+msgctxt "field:account_primanota.primanota,reconciliation:"
+msgid "Reconciliation"
+msgstr "Abstimmung"
+
+msgctxt "field:account_primanota.primanota,reconciliations_delegated:"
+msgid "Reconciliations Delegated"
+msgstr "Abstimmung Übertragen"
+
+msgctxt "field:account_primanota.primanota,tax_lines:"
+msgid "Tax Lines"
+msgstr "Steuerpositionen"
+
+msgctxt "field:account_primanota.primanota,amount_second_currency:"
+msgid "Amount Second Currency"
+msgstr "Fremdwährungsbetrag"
+
+msgctxt "help:account_primanota.primanota,amount_second_currency:"
+msgid "The amount expressed in a second currency."
+msgstr "Der Betrag in einer Fremdwährung (bezogen auf die Währung des Unternehmens)."
+
+msgctxt "field:account_primanota.primanota,second_currency:"
+msgid "Second Currency"
+msgstr "Fremdwährung"
+
+msgctxt "help:account_primanota.primanota,second_currency:"
+msgid "The second currency."
+msgstr "Die Fremdwährung."
+
+msgctxt "field:account_primanota.primanota,second_currency_digits:"
+msgid "Second Currency Digits"
+msgstr "Nachkommastellen Fremdwährung"
+
+msgctxt "field:account_primanota.primanota,rate_second_currency:"
+msgid "Rate"
+msgstr "Kurs"
+
+msgctxt "help:account_primanota.primanota,rate_second_currency:"
+msgid "The exchange rate of the second currency."
+msgstr "Der Wechselkurs der Zweitwährung."
+
+msgctxt "field:account_primanota.primanota,analytic_lines:"
+msgid "Analytic Lines"
+msgstr "Kostenstelle Positionen"
+
+msgctxt "field:account_primanota.primanota,has_analytic_lines:"
+msgid "Analytic Lines"
+msgstr "Kostenstellen"
+
+msgctxt "help:account_primanota.primanota,has_analytic_lines:"
+msgid "Account move line has analytic lines."
+msgstr "Buchungszeile hat Kostenstellenzeilen."
+
+
+#######################################
+# account_primanota.primanota.context #
+#######################################
+msgctxt "model:account_primanota.primanota.context,name:"
+msgid "Primanota Context"
+msgstr "Primanota Kontext"
+
+msgctxt "field:account_primanota.primanota.context,company:"
+msgid "Company"
+msgstr "Unternehmen"
+
+msgctxt "field:account_primanota.primanota.context,fiscalyear:"
+msgid "Fiscal Year"
+msgstr "Geschäftsjahr"
+
+msgctxt "field:account_primanota.primanota.context,end_period:"
+msgid "End Period"
+msgstr "Bis Buchungszeitraum"
+
+msgctxt "field:account_primanota.primanota.context,start_period:"
+msgid "Start Period"
+msgstr "Von Buchungszeitraum"
+
+msgctxt "field:account_primanota.primanota.context,from_date:"
+msgid "From Date"
+msgstr "Startdatum"
+
+msgctxt "field:account_primanota.primanota.context,to_date:"
+msgid "To Date"
+msgstr "Enddatum"
+
+msgctxt "field:account_primanota.primanota.context,journal:"
+msgid "Journal"
+msgstr "Journal"
+
+msgctxt "field:account_primanota.primanota.context,posted:"
+msgid "Posted Move"
+msgstr "Nur festgeschriebene Buchungssätze"
+
+
+####################
+# account.tax.line #
+####################
+msgctxt "view:account.tax.line:"
+msgid "Amount"
+msgstr "Betrag"
+
+
+#########################
+# analytic_account.line #
+#########################
+msgctxt "view:analytic_account.line:"
+msgid "Debit"
+msgstr "Soll"
+
+msgctxt "view:analytic_account.line:"
+msgid "Credit"
+msgstr "Haben"
