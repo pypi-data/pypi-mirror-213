@@ -1,0 +1,61 @@
+[tool.poetry]
+name = "jaxrenderer"
+version = "0.3.0"
+description = "Jax implementation of rasterizer renderer."
+authors = ["Joey Teng <joey.teng.dev@gmail.com>"]
+license = "Apache-2.0"
+readme = "README.md"
+homepage = "https://github.com/JoeyTeng/jaxrenderer"
+repository = "https://github.com/JoeyTeng/jaxrenderer"
+classifiers = [
+    "Topic :: Multimedia :: Graphics :: 3D Rendering",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+    "Topic :: Scientific/Engineering :: Visualization",
+    "Development Status :: 3 - Alpha",
+    "Operating System :: OS Independent",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Education",
+    "Intended Audience :: Science/Research",
+    "Natural Language :: Chinese (Simplified)",
+    "Natural Language :: English",
+    "Typing :: Typed",
+]
+packages = [
+    { include = "renderer" },
+]
+include = [
+    "LICENSE",
+    "README.md",
+    "changelog.md",
+    "pyproject.toml",
+]
+
+
+[tool.poetry.dependencies]
+python = "^3.10"
+jax = ">=0.3.25,<5.0.0"
+numpy = "^1.22.0"
+jaxlib = {version = ">=0.3.25,<5.0.0", source = "jax"}
+jaxtyping = "^0.2.19"
+importlib-metadata = "^6.6.0"
+
+
+[tool.poetry.group.dev.dependencies]
+matplotlib = "^3.6.2"
+pillow = "^9.4.0"
+importlib-resources = "^5.12.0"
+
+
+[[tool.poetry.source]]
+name = "jax"
+url = "https://storage.googleapis.com/jax-releases/jax_releases.html"
+priority = "explicit"
+
+
+[tool.poetry.urls]
+"Bug Tracker" = "https://github.com/JoeyTeng/jaxrenderer/issues"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
