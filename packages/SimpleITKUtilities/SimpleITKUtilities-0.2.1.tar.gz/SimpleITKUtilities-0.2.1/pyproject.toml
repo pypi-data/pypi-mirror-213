@@ -1,0 +1,35 @@
+[build-system]
+requires = ["setuptools>=61.0", "setuptools_scm[toml]>=6.2"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "SimpleITKUtilities"
+authors = [
+  { name="Bradley Lowekamp", email="blowekamp@mail.nih.gov" },
+  { name="Ziv Yaniv", email="zivyaniv@nih.gov" },
+]
+description = "A collection of utilities and integration tools to enhance SimpleITK."
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: Apache Software License",
+    "Operating System :: OS Independent",
+]
+dynamic = ["dependencies", "version"]
+
+
+[project.optional-dependencies]
+vtk=['vtk>=9.0']
+dask=['dask']
+pyside=['PySide6']
+
+[tool.setuptools]
+packages = ["SimpleITK.utilities"]
+
+
+[tool.setuptools.dynamic]
+dependencies = {file = ["requirements.txt"]}
+
+[tool.setuptools_scm]
+write_to = "SimpleITK/utilities/_version.py"
