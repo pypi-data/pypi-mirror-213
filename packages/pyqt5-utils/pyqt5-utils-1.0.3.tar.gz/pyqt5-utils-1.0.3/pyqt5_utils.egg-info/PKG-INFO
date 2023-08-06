@@ -1,0 +1,34 @@
+Metadata-Version: 2.1
+Name: pyqt5-utils
+Version: 1.0.3
+Summary: Utilities for PyQt5
+Home-page: UNKNOWN
+Author: Hadi Hassan
+Author-email: hassanhadi17@hotmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# PyQt5-Utils
+
+Dies ist eine Sammlung von nÃ¼tzlichen Werkzeugen fÃ¼r die Arbeit mit PyQt5.
+
+## Installation
+
+Sie kÃ¶nnen dieses Paket mit pip installieren:
+
+```bash
+pip install pyqt5-utils
+```
+
+## Verwendung
+#### Umwandelung von ui. Dateien zu .py Dateien:
+
+```python
+from pyqt5_utils import Utils
+
+Utils.convert_ui_to_py(path_where_ui_files_are_located)
+```
+
