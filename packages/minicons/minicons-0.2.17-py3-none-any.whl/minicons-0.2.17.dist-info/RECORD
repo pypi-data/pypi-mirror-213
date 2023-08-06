@@ -1,0 +1,13 @@
+minicons/__init__.py,sha256=iGaTwv2hqOZnwUd0PLrIfw3ILV1NHyCT3vlxnvDunLw,23
+minicons/bin/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+minicons/bin/score_cli.py,sha256=rW-YD4P3KeUJcLHU0sokf-FjgkU_-5CFiw3Fb5rcCLg,7665
+minicons/bin/sentence_score_cli.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+minicons/cwe.py,sha256=Um2nQefWDqmYs4mb-yvNb7Ma4Q9xzfCGr9UoMaEOnjU,20084
+minicons/scorer.py,sha256=Vkq1r7pejow_Zcv7MpKQwOriMYw3B9RPT7VnBxIZaKQ,78370
+minicons/supervised.py,sha256=eBV_nib0XEP7suysHzyK_MdgDza4GjKyTz45WfoEI5I,3223
+minicons/utils.py,sha256=4uqiQ0-1EzQdWnSvC6E8aVT72ddr-AdGgLJznpwnOVY,3365
+minicons-0.2.17.dist-info/LICENSE,sha256=uQQjp3D3hGyVRYojGJUjjrVKIIdB0VbGkeIB-Zngjkw,1065
+minicons-0.2.17.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+minicons-0.2.17.dist-info/entry_points.txt,sha256=lxPCdvqrTyNKPfyxJvi_8YmKMhMNQhV8EWICZDqFSMk,59
+minicons-0.2.17.dist-info/METADATA,sha256=il9mt5WFc8nnDlfq0v0S2Y_NT_7NdlpT2Xdb0Kt_UnQ,6482
+minicons-0.2.17.dist-info/RECORD,,
