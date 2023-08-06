@@ -1,0 +1,2 @@
+[console_scripts]
+bludwig = bludwig.__main__:main
