@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/fridex/__init__.py
+src/fridex.egg-info/PKG-INFO
+src/fridex.egg-info/SOURCES.txt
+src/fridex.egg-info/dependency_links.txt
+src/fridex.egg-info/top_level.txt
