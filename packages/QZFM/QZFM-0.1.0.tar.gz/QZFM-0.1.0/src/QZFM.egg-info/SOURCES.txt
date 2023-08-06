@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+src/QZFM.py
+src/__init__.py
+src/QZFM.egg-info/PKG-INFO
+src/QZFM.egg-info/SOURCES.txt
+src/QZFM.egg-info/dependency_links.txt
+src/QZFM.egg-info/requires.txt
+src/QZFM.egg-info/top_level.txt
