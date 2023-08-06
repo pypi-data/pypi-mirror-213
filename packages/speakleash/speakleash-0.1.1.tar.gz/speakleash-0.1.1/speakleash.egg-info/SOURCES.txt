@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+speakleash/__init__.py
+speakleash.egg-info/PKG-INFO
+speakleash.egg-info/SOURCES.txt
+speakleash.egg-info/dependency_links.txt
+speakleash.egg-info/requires.txt
+speakleash.egg-info/top_level.txt
