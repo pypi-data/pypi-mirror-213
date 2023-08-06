@@ -1,0 +1,15 @@
+attrs
+mne>=1.4.1
+mne-qt-browser
+pyqt5
+yasa==0.6.3
+lspopt
+ipympl
+numpy<=1.23.5
+pandas
+scipy
+fooof
+natsort
+more-itertools
+h5io
+loguru
