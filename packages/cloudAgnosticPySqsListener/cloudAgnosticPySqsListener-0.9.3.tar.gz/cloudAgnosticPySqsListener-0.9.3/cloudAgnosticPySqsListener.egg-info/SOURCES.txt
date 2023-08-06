@@ -1,0 +1,12 @@
+LICENSE
+README.rst
+setup.py
+cloudAgnosticPySqsListener.egg-info/PKG-INFO
+cloudAgnosticPySqsListener.egg-info/SOURCES.txt
+cloudAgnosticPySqsListener.egg-info/dependency_links.txt
+cloudAgnosticPySqsListener.egg-info/requires.txt
+cloudAgnosticPySqsListener.egg-info/top_level.txt
+sqs_launcher/__init__.py
+sqs_listener/__init__.py
+sqs_listener/daemon.py
+sqs_queue/__init__.py
