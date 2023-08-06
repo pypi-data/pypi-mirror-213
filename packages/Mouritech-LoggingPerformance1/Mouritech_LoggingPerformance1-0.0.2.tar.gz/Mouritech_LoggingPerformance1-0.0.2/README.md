@@ -1,0 +1,91 @@
+## Package Name 
+Mouritech_LoggingPerformance
+
+''' Performance in python.
+This is the project ,Whenever you need to check the performance of the code like time taken by the code to perform some task we will use this package in our module'''
+a
+
+## Requirements 
+'''For running this, you need to have python3 installed on your system'''
+
+
+## Debugging tools 
+
+'''supported tools pycharm ,Anakonda ,Visual Studio etc...
+
+
+## Installation 
+
+Install my-project with Python
+Install Mouritech_LoggingPerformance
+
+
+  pip install  Mouritech_LoggingPerformance
+  cd  Mouritech_LoggingPerformance
+
+  (globally )
+
+pip install -i https://test.pypi.org/simple/ Mouritech-LoggingPerformance
+
+
+## Steps 
+
+pip install -i https://test.pypi.org/simple/ Mouritech-LoggingPerformance
+
+pip install Mouritech_LoggingPerformance
+
+
+from Mouritech_LoggingPerformance.Performance import PerformanceLogger
+from LogPerformance import PerformanceLogger
+
+PerformanceLogger(
+
+)
+
+
+
+### Receiver Example  
+
+# import time module 
+import time
+
+'''Importing our custom package from module Logperformance'''
+from Mouritech_LoggingPerformance.LogPerformance import PerformanceLogger
+
+# Create an instance of PerformanceLogger with a log file
+logger = PerformanceLogger(__name__, log_file='performance.log')
+
+# Use the logger to measure function performance
+@logger.log_performance
+def Disarum():
+    '''Code which checks the Provided Number is Disarum number or Not'''
+    num=int(input('Enter Num value:'))
+    result=0
+    power=1
+    for x in str(num):
+        y=int(x)
+
+        '''Logic to check the disarum Number '''
+        result= result + y**power
+        power=power+1
+
+        '''If the provided number is same as resultant number then it will be disarum number '''
+    if num==result:
+        print(f'The provide {num} is Disarum')
+    else:
+        print(f'The Provided {num} is Not a Disarum Number')
+    
+
+    '''Time taken by the funtion to excute the output '''
+    time.sleep(1)
+
+# Call the function
+Disarum()
+
+
+
+## Output :
+'''The Provided Number is Disarum Number or Not Disarum number '''
+
+
+2023-06-01 11:48:05,439 - __main__ - INFO - Function 'Disarum' executed in = started at 1685600283.4058442   ended at 1685600285.4397306 = 2.0339 seconds
