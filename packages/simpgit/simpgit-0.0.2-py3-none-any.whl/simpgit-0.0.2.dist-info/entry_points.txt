@@ -1,0 +1,3 @@
+[console_scripts]
+bgitllm = gitllm.cli:backgroundcli
+sg = gitllm.cli:cli
