@@ -1,0 +1,61 @@
+[tool.poetry]
+name = "etl-toolkit"
+version = "0.0.2"
+description = "ETL CLI Toolkit. Performs common ETL tasks for standard industry and custom files in various formats."
+license = "MIT"
+authors = ["eithery <eithery.pro@gmail.com>"]
+readme = "README.md"
+keywords = ["etl", "file load", "interfaces", "pershing"]
+classifiers = [
+    "Development Status :: 2 - Pre-Alpha",
+    "License :: OSI Approved :: MIT License",
+    "Natural Language :: English",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3.11"
+]
+packages = [
+    { include = "etl", from = "src" }
+]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+click = "~8.1"
+pandas = "~1.5"
+python-dotenv = "~1.0"
+pyodbc = "~4.0"
+pyyaml = "~6.0"
+sqlalchemy = "~1.4"
+
+[tool.poetry.group.test.dependencies]
+expects = "~0.9"
+pytest = "~7.2"
+pytest-cov = "~4.0"
+pytest-describe = "~2.0"
+pytest-flake8 = "~1.1"
+pytest-randomly = "~3.12"
+pytest-spec = "~3.2"
+tox = "~4.5"
+
+[tool.poetry.scripts]
+etl = "etl.cli.main:main"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.pytest.ini_options]
+minversion = "7.2"
+addopts = "--strict-markers"
+testpaths = [
+    "tests"
+]
+
+[tool.coverage.run]
+branch = true
+source = ["etl"]
+omit = ["tests/*"]
+
+[tool.coverage.report]
+show_missing = true
+skip_covered = true
