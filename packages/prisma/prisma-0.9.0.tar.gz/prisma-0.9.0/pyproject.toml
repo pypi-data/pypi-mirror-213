@@ -1,0 +1,37 @@
+[tool.pyright]
+include = [
+    "src",
+    "tests",
+    "scripts"
+]
+ignore = [
+    # these are type checked separately
+    "databases/tests",
+    "databases/sync_tests",
+    # TODO: this should not ignore tests/integrations/conftest.py
+    "tests/integrations/**/*",
+]
+pythonVersion = "3.9"
+
+# NOTE: whenever you update any of these values you will most likely also have to update `databases/constants.py::PYRIGHT_CONFIG`
+typeCheckingMode = "strict"
+reportUnusedImport = true
+reportPrivateUsage = false
+
+# TODO: pending some major refactoring, enable this
+reportImportCycles = false
+
+# NOTE: these should be periodically enabled and disabled
+# they are too stict for general usage as I don't want
+# pyright disable comments everywhere and I also don't
+# want to have to maintain my own stubs just to mark
+# some types as Any, however they can find potential
+# holes in our type information.
+reportUnknownVariableType = false
+reportUnknownMemberType = false
+reportUnknownArgumentType = false
+
+# very strict errors
+reportUnusedCallResult = false
+reportImplicitStringConcatenation = false
+reportCallInDefaultInitializer = true
