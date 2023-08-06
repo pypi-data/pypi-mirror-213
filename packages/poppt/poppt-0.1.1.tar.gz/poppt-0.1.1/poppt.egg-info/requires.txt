@@ -1,0 +1,4 @@
+pywin32
+poprogress
+pofile
+pillow
