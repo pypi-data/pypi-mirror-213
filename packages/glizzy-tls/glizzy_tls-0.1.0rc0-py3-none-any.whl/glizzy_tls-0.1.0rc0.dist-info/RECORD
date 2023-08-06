@@ -1,0 +1,15 @@
+glizzy_tls/__init__.py,sha256=ffxRaPdreLPdHz8Uzk_u6_H8ygY5K3DQlLgzkuDWH84,200
+glizzy_tls/exceptions.py,sha256=HtKYiXZA4kSeWAgEOAIhgMpkFc67GiIrIl12VjdBDd8,264
+glizzy_tls/models.py,sha256=rEKOcpMTAMewBXmpo1-OrC-9uteNMmiKbdGCJlHrfwA,1644
+glizzy_tls/request.py,sha256=ktXztXcpyA6aVbQ-cMvLDkcZq47HkR8lNmLXC3yCelQ,1149
+glizzy_tls/session.py,sha256=rPBI0EsVBMqeh-C2Uf7HOw15aMTCF59NdVky6gk9lok,4970
+glizzy_tls/dependencies/__init__.py,sha256=HAQRRknqpixZ82fNUY4Zcpt2h8RYX8eWqurKqrIV5CM,27
+glizzy_tls/dependencies/build_go.py,sha256=BZ8GAvA4LnJlJddRJ_SIAq6ZBXhLKyb8Ht941yfa9lU,1580
+glizzy_tls/dependencies/go.mod,sha256=YcAyXcUmpNALKeY4Gv2vju8xJ_6PQm96Aub2i3nCHVY,531
+glizzy_tls/dependencies/go.sum,sha256=bnaFgYK4qKVXoSWXSoB5qJRExahFTh4U7iymhOrHfA8,2175
+glizzy_tls/dependencies/tls_client.go,sha256=LOxLxLqtT4o62NxEl_zCD3gufr1nKEurYcsBEoZD2Ow,5104
+glizzy_tls-0.1.0rc0.dist-info/LICENSE,sha256=UO0PMCHOEETPW5rv6crhtRiHAw5gjqNKFhRexnUjLWU,1071
+glizzy_tls-0.1.0rc0.dist-info/METADATA,sha256=N5UPSu_9XpycgBKQX42mUEEYVGuhotEIHw3F4AtgADY,6096
+glizzy_tls-0.1.0rc0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+glizzy_tls-0.1.0rc0.dist-info/top_level.txt,sha256=HFQgx-8qAGClhP73AdfhsvjJ3b8GZYz482LnYtE53ik,11
+glizzy_tls-0.1.0rc0.dist-info/RECORD,,
