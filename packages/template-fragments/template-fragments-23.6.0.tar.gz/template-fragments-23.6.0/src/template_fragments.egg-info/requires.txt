@@ -1,0 +1,11 @@
+
+[dev]
+build
+black
+ruff
+jinja2
+pytest
+flask
+
+[jinja]
+jinja2
