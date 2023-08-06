@@ -1,0 +1,8 @@
+openai
+
+[dev]
+black
+mypy
+pylint
+build
+twine

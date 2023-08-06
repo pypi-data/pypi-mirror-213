@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+src/cheerup/__init__.py
+src/cheerup.egg-info/PKG-INFO
+src/cheerup.egg-info/SOURCES.txt
+src/cheerup.egg-info/dependency_links.txt
+src/cheerup.egg-info/entry_points.txt
+src/cheerup.egg-info/requires.txt
+src/cheerup.egg-info/top_level.txt
