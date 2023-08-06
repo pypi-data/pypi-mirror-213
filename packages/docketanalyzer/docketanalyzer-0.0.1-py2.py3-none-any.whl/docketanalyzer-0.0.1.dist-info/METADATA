@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: docketanalyzer
+Version: 0.0.1
+Home-page: https://github.com/docketanalyzer/docketanalyzer
+Author: Nathan Dahlberg
+Requires-Dist: click
+Requires-Dist: pathlib
+Requires-Dist: simplejson
+
