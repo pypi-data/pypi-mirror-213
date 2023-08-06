@@ -1,0 +1,110 @@
+Metadata-Version: 2.1
+Name: minidevice
+Version: 1.1.1
+Summary: Android Auto Pypi
+Home-page: https://github.com/NakanoSanku/minidevice
+Author: KateTseng
+Author-email: Kate.TsengK@outlook.com
+License: MIT
+Keywords: game
+Requires-Python: >=3
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# minidevice
+[跳转api文档](https://nakanosanku.github.io/minidevice)
+
+    粗略地写了一些其他功能，并使用mkdoc自动生成了文档,后续会继续完善(~~画饼~~)
+
+|模块|描述|完成情况|
+|----|----|------|
+|adb|adb操作设备|✅|
+|images|图色相关|✅|
+|Automation|基础操作|❌|
+
+- ✅代表大部分功能已实现
+- ❌代表完成度很低(局限性较大)
+- 没写出来的就是基本还没写的
+
+[English README](README_en.md)
+
+一个对安卓设备(主要是安卓模拟器)进行基础操作的工具包
+
+由于部分没有基础，故whl中为用户提供adb工具,minicap/minitouch等静态资源
+
+以方便网络环境较差的用户能够正常使用
+
+由于uiautomator截图严重拉高模拟器cpu占用
+
+加上uiautomator已许久未更新,移除这一方法
+## requirements
+`opencv-python` [`pyminitouch`](https://github.com/williamfzc/pyminitouch)
+## 使用实例
+安装
+```shell
+pip install minidevice
+```
+使用实例
+```python
+#导入库
+from minidevice import MiniDevice
+game = MiniDevice("127.0.0.1:16384")
+
+#截图 
+img = game.captureScreen()
+
+# #显示截图
+# import cv2
+# cv2.imshow("显示截图",img)
+# cv2.waitkey()
+
+# 点击 用150的压力按压(100,100)的坐标300ms
+game.miniPress(x=100,y=100,duration=300,pressure=150)
+
+# 滑动
+game.miniSwipe([(100,100),(300,300)],duration=300,pressure=150)
+
+# 释放minitouch
+if game.touchMethod == "minitouch":
+    game.stop()
+```
+
+
+## CaptureScreen类
+### init 
+初始化时安装minicap并检测是否可用,不可用则抛出异常
+### minicap_screen
+使用minicap进行截图 
+
+截图效率:一张1280x720的图片 0.05s~0.15s之间 看屏幕内容复杂程度(游戏场景一般0.1s~0.15s甚至更高)
+### adb_screen
+使用adb截图 
+
+截图效率:同上情况, 0.5s~0.8s之间
+
+
+## MiniDevice 类
+参数:device 设备id
+
+继承CaptureScreen,pyminitouh
+
+初始化时当minitouch/minicap不可用时则替换为adb
+
+### captureScreen
+截图方法，返回Mat(opencv)格式图像
+
+详细方法见[CaptureScreen类](##CaptureScreen类)
+
+### miniPress
+按压某点
+- `x` 横坐标
+- `y` 纵坐标
+- `duration`(可选) 持续时长 默认150ms 
+- `pressure`(可选) 压力 默认100 仅使用minitouch时生效
+
+### miniSwipe
+滑动
+- `pointArray` 滑动坐标列表 格式为`[(x,y),(x,y),(x,y),(x,y)]`
+- `duration`(可选) 持续时长 默认500ms
+- `pressure`(可选) 压力 默认100 仅使用minitouch时生效
+
