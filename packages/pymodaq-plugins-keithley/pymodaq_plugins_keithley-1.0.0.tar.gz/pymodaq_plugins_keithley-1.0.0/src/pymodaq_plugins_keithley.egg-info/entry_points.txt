@@ -1,0 +1,2 @@
+[pymodaq.plugins]
+keithley = pymodaq_plugins_keithley
