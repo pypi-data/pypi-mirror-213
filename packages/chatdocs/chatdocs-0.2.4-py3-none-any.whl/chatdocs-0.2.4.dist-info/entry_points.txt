@@ -1,0 +1,3 @@
+[console_scripts]
+chatdocs = chatdocs.main:app
+
