@@ -1,0 +1,2 @@
+[console_scripts]
+torch-waymo-convert = torch_waymo.convert_waymo:main
