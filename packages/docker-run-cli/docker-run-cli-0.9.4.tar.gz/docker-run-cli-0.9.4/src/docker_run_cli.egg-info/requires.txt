@@ -1,0 +1,14 @@
+
+[all]
+docker-run-cli[plugins]
+docker-run-cli[dev]
+
+[dev]
+build
+twine
+
+[docker-ros]
+docker-run-docker-ros>=1.0.3
+
+[plugins]
+docker-run-cli[docker-ros]
