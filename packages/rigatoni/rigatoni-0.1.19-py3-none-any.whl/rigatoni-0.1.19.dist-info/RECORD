@@ -1,0 +1,10 @@
+rigatoni/__init__.py,sha256=Y8nNjBQLHT9_92M8W0-RQWrhK-n30Fuu2BLjPFW0ibg,931
+rigatoni/core.py,sha256=OviTawqvJRY_rZIxLyWzkjj5N63ozhhPgqd41VaIZfc,31073
+rigatoni/noodle_objects.py,sha256=os_m_pCHjr3HUqJj2K0ifLPVRHYL-HjRxEWvVIUPlcg,15215
+rigatoni/geometry/__init__.py,sha256=TA2qjmEgYCNTlft8jZp3Yg1FlwO8qUM5F7ZAJJvi7xE,515
+rigatoni/geometry/byte_server.py,sha256=m2JVcpztjU11wxC3Zf9L4swqvUot71qWwtcan23DcB8,4285
+rigatoni/geometry/geometry_creation.py,sha256=XZgURjtTQh1bYTJ0WHEtSpttX4pr3d4ugEduJB9jBd0,23834
+rigatoni/geometry/geometry_objects.py,sha256=UlZX10pqnXWNk6_4vCIP9-UHo_RKLFFIx7-Abogl3ro,836
+rigatoni-0.1.19.dist-info/WHEEL,sha256=EZbGkh7Ie4PoZfRQ8I0ZuP9VklN_TvcZ6DSE5Uar4z4,81
+rigatoni-0.1.19.dist-info/METADATA,sha256=CO2ECMU1SLwDqhFl-QlxND0BK4TiLGUqm3GpQo5T-vk,7364
+rigatoni-0.1.19.dist-info/RECORD,,
