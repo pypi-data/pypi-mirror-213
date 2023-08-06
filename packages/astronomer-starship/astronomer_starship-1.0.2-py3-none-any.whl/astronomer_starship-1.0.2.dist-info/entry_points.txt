@@ -1,0 +1,7 @@
+[airflow.plugins]
+starship=astronomer.starship.main:StarshipPlugin
+starship_aeroscope=astronomer.aeroscope.plugins:AeroscopePlugin
+
+[console_scripts]
+orion=orion.__main__:migrate
+
