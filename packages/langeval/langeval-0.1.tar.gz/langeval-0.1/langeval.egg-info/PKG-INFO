@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: langeval
+Version: 0.1
+Summary: An evaluation library for NLP models
+Author: Openlayer
+Author-email: engineers@openlayer.com
+License-File: LICENSE
