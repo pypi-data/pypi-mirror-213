@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+[project]
+name = "max_num"
+version = "0.0.2"
+authors = [
+  { name="Esharat Mia", email="esharat1992@gmail.com" },
+]
+description = "check max_number of arguments,list and dictionary"
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: GNU General Public License (GPL)",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/esharat1992/max_num"
+"Bug Tracker" = "https://github.com/esharat1992/max_num/issues"
