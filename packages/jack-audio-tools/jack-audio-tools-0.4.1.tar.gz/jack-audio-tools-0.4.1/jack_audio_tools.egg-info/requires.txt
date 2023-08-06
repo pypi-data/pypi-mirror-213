@@ -1,0 +1,11 @@
+JACK-Client>=0.5.0
+
+[dbus]
+PyGObject
+dbus-python
+
+[rdflib]
+rdflib
+
+[rtmidi]
+python-rtmidi
