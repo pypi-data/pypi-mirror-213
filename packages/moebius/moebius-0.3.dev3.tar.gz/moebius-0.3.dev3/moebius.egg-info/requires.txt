@@ -1,0 +1,14 @@
+botorch
+gpytorch
+matplotlib
+numpy
+numpydoc
+pandas
+rdkit
+scikit-learn
+scipy
+sphinx==6.2.1
+sphinx_rtd_theme
+torch
+ray
+mhfp

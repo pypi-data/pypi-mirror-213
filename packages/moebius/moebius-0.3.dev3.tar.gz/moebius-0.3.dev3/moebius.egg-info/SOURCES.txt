@@ -1,0 +1,8 @@
+LICENSE
+README.md
+pyproject.toml
+moebius.egg-info/PKG-INFO
+moebius.egg-info/SOURCES.txt
+moebius.egg-info/dependency_links.txt
+moebius.egg-info/requires.txt
+moebius.egg-info/top_level.txt
