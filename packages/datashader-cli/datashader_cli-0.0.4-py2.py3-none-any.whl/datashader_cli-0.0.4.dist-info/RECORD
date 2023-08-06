@@ -1,0 +1,11 @@
+datashader_cli/__init__.py,sha256=20EznXNxzQiOq31MWluTgDlkpe6SITb9hMkMK0IDL_4,129
+datashader_cli/cli.py,sha256=AiEOBiUlfrfGUMss96uEqqvg4mzH1A5X8TaCXysvhd4,7568
+datashader_cli/common.py,sha256=Si4ZvbkkaVGyKrOa7gmsVNWS2Abtji-V5nEsJhrIM3M,188
+datashader_cli/datashader_cli.py,sha256=h0hwdogXGFqerm-5ZPeT-irPn91pCcQRjiHThXsRzEk,19
+datashader_cli-0.0.4.dist-info/LICENSE,sha256=WVtWhyGbqFU-H9WyLWtKuakillg5iHgXfEOiDF88vik,1070
+datashader_cli-0.0.4.dist-info/METADATA,sha256=8uUEWB2Fes7OufyYPXN0UE1UZgJyydZ152DkUd6nY_c,5371
+datashader_cli-0.0.4.dist-info/WHEEL,sha256=a-zpFRIJzOq5QfuhBzbhiA1eHTzNCJn8OdRvhdNX0Rk,110
+datashader_cli-0.0.4.dist-info/dependency_links.txt,sha256=x5lVdyIt0lRT537ZYvrICJCAx6bsGlkreX3h6mfw82M,53
+datashader_cli-0.0.4.dist-info/entry_points.txt,sha256=1LdJSQTrZkuy2o64eWo7k1JBiEABtcyZhRkbYDggt6o,59
+datashader_cli-0.0.4.dist-info/top_level.txt,sha256=aayLGj_PLlc9eQOzFHfsZGTlAgQTiH4FF2tzE8R-QMA,15
+datashader_cli-0.0.4.dist-info/RECORD,,
