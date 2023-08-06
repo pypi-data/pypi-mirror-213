@@ -1,0 +1,7 @@
+line-profiler==4.0.3
+
+[doc]
+
+[test]
+
+[upload]

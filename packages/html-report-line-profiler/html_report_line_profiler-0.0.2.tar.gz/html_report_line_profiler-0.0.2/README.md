@@ -1,0 +1,62 @@
+# Utilisation :
+
+A ajouter a un test unittaire unittest, et à lancer avec $ coverage run -m unittest test_str.py 
+
+Dans :
+```
+class Test_CeciEstUnTest(unittest.TestCase):
+    def setUp(self):
+        # Code execute avant chaque test
+        [...] # ce que l'on veut
+
+        # Profiler :
+        if os.environ.get("PROFILING", False).lower() == "time":
+            os.environ["PROFILING"] = "1"
+            self.delete_profiling_env = True
+
+            self.profiler = LineProfiler()
+            self.profiler.add_function(str2digit)
+            self.profiler.enable_by_count()
+        #endIf
+    #endDef
+
+    # ...
+
+    def tearDown(self):
+        # Code executé après chaque test
+        # Terminer le profiler en premier
+        if os.environ.get("PROFILING", False).lower() == "time":
+            output_folder = "./profile_time/"
+            self.profiler.disable_by_count()
+            os.makedirs(output_folder, exist_ok=True)  # Creer si necessaire le dossier
+
+            test_method_name = self._testMethodName
+            class_name = self.__class__.__name__
+
+            # Ecriture du fichier .lprof
+            filename = f"{class_name}_{test_method_name}.lprof".replace("Test_","")
+            outfile = os.path.join(output_folder, filename)
+            self.profiler.dump_stats(outfile)
+            print(f">> WRITE {outfile}")
+
+            # Ecriture du fichier texte
+            outfile = outfile.replace(".lprof", ".dat")
+            output_stream = io.StringIO()
+            self.profiler.print_stats(stream=output_stream)
+            stats_output = output_stream.getvalue()
+            with open(outfile, "w") as f:
+                f.write(stats_output)
+ 	    #
+            print(f">> WRITE {outfile}")
+
+            # Affichage a l'ecran
+            self.profiler.print_stats()
+	    
+	    # Supprimer la variable d'environnement
+            if self.delete_profiling_env:
+                del os.environ["PROFILING"]
+	    #
+        #
+	# [...] # Les autres commandes
+    #endDef
+#endClass
