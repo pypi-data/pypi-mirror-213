@@ -1,0 +1,5 @@
+[console_scripts]
+ofrak = ofrak.__main__:main
+
+[ofrak.packages]
+ofrak_pkg = ofrak
