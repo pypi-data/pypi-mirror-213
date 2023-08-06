@@ -1,0 +1,76 @@
+Metadata-Version: 2.1
+Name: django-cookiefilter
+Version: 1.0
+Summary: Django Cookie Filter
+Home-page: https://github.com/developersociety/django-cookiefilter
+Maintainer: The Developer Society
+Maintainer-email: studio@dev.ngo
+License: BSD
+Platform: any
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Framework :: Django
+Classifier: Framework :: Django :: 2.2
+Classifier: Framework :: Django :: 3.2
+Classifier: Framework :: Django :: 4.2
+Requires-Python: >=3.7
+Description-Content-Type: text/x-rst
+License-File: LICENSE
+
+Django Cookie Filter
+====================
+
+Django_ middleware which removes all unwanted cookies - useful for improving cache hit ratios when
+analytics cookies interfere with caching.
+
+.. _Django: https://www.djangoproject.com/
+
+Installation
+------------
+
+Using pip_:
+
+.. _pip: https://pip.pypa.io/
+
+.. code-block:: console
+
+    $ pip install django-cookiefilter
+
+Edit your Django project's settings module, and add the middleware to the start of ``MIDDLEWARE``:
+
+.. code-block:: python
+
+    MIDDLEWARE = [
+        "cookiefilter.middleware.CookieFilterMiddleware",
+        # ...
+    ]
+
+.. note::
+
+    The middleware should be added before ``UpdateCacheMiddleware``, as it uses the value of
+    HTTP_COOKIES which needs to be modified.
+
+Configuration
+-------------
+
+Out of the box the standard Django cookie names will work without any other configuration. However
+if your project uses different or additional cookie names, edit ``COOKIEFILTER_ALLOWED`` in your
+project's settings module:
+
+.. code-block:: python
+
+    COOKIEFILTER_ALLOWED = [
+        "analytics",
+        "csrftoken",
+        "django_language",
+        "messages",
+        "sessionid",
+    ]

@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.rst
+pyproject.toml
+setup.cfg
+setup.py
+cookiefilter/__init__.py
+cookiefilter/middleware.py
+django_cookiefilter.egg-info/PKG-INFO
+django_cookiefilter.egg-info/SOURCES.txt
+django_cookiefilter.egg-info/dependency_links.txt
+django_cookiefilter.egg-info/requires.txt
+django_cookiefilter.egg-info/top_level.txt
+tests/test_middleware.py
