@@ -1,0 +1,8 @@
+cryptg
+discord.py
+flanautils
+hachoir
+pillow
+pymongo
+telethon
+twitchio
