@@ -1,0 +1,78 @@
+[project]
+name = "storekit-python"
+version = "0.0.1"
+description = "The Storekit Python library provides support for in-app purchases and interactions with the App Store."
+authors = [
+    { name = "crowser", email = "xuwendi@xiachufang.com" },
+]
+dependencies = [
+    "requests>=2.12.0",
+    "pydantic>=1.9.0",
+    "PyJWT>=2.6.0",
+    "cryptography>=38.0.0",
+]
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+]
+readme = "README.md"
+license = { text = "MIT" }
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.pdm.dev-dependencies]
+lint = [
+    "pip",
+    "pre-commit",
+    "mypy",
+]
+test = [
+    "coverage[toml]",
+    "dirty-equals",
+    "pytest",
+    "pytest-cov",
+    "pytest-mock",
+    "pytest-pretty",
+    "pytest-examples",
+]
+
+[tool.ruff]
+line-length = 120
+select = [
+    "E", # pycodestyle
+    "F", # pyflakes
+    "UP", # pyupgrade
+]
+ignore = [
+    "E501", # line too long, handled by black
+]
+
+[tool.isort]
+profile = "black"
+line_length = 120
+
+[tool.black]
+target-version = ["py37", "py38", "py39", "py310"]
+line-length = 120
+
+[tool.mypy]
+plugins = ["pydantic.mypy"]
+disallow_untyped_defs = true
+
+[tool.pydantic-mypy]
+init_forbid_extra = true
+init_typed = true
+warn_required_dynamic_aliases = true
+warn_untyped_fields = true
+
+[tool.coverage.run]
+source = ['storekit']
+branch = true
+context = '${CONTEXT}'
