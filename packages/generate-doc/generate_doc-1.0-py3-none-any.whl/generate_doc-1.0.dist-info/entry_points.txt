@@ -1,0 +1,2 @@
+[console_scripts]
+generate_doc = generate_doc.generate_doc:add_descriptions_to_functions

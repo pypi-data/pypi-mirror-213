@@ -1,0 +1,7 @@
+generate_doc/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+generate_doc/generate_doc.py,sha256=ppuyRIdNHmwPr9_-Wk7B3ABidM13DCALR7S0vKCBRGQ,2799
+generate_doc-1.0.dist-info/METADATA,sha256=Y7VucUOa6zyZaDVKgoPplAMl6oqYPr_rlXTPTl5n9Ek,606
+generate_doc-1.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+generate_doc-1.0.dist-info/entry_points.txt,sha256=I8HjB8QElubQm2HnGnenMgI7-sgFqZPIgbF9742hQuM,89
+generate_doc-1.0.dist-info/top_level.txt,sha256=oRTC46GjduDi2mSfh_LRgzV0SeuVRDDZjFp8AAW84Ic,13
+generate_doc-1.0.dist-info/RECORD,,
