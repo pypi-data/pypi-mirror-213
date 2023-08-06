@@ -1,0 +1,10 @@
+controlnet_aux
+diffusers
+moviepy
+numpy
+opencv_python
+Pillow
+pytube
+setuptools
+torch
+transformers

@@ -1,0 +1,45 @@
+Metadata-Version: 2.1
+Name: custom-diffusion
+Version: 0.0.5
+Summary: Custom Diffusion: Creating Video from Frame Using Multiple Diffusion
+Home-page: https://github.com/kadirnar/Custom-Diffusion
+Author: kadirnar
+License: Apache License 2.0
+Keywords: machine-learning,deep-learning,pytorch,diffusion,diffusion models,controlnet,stable diffusion
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Operating System :: OS Independent
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Education
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Provides-Extra: dev
+License-File: LICENSE
+
+<div align="center">
+<h2>
+     Custom Diffusion: Creating Video from Frame Using Multiple Diffusion
+</h2>
+</div>
+
+
+### Installation
+```bash
+
+```
+
+### Usage
+```python
+
+```
+
+
