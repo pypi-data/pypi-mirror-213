@@ -1,0 +1,9 @@
+README.md
+setup.cfg
+setup.py
+FlyBaseDownloads/FBD.py
+FlyBaseDownloads/__init__.py
+FlyBaseDownloads.egg-info/PKG-INFO
+FlyBaseDownloads.egg-info/SOURCES.txt
+FlyBaseDownloads.egg-info/dependency_links.txt
+FlyBaseDownloads.egg-info/top_level.txt
