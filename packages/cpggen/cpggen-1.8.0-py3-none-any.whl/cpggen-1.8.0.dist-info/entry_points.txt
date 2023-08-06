@@ -1,0 +1,5 @@
+[console_scripts]
+atomgen=cpggen.cli:main
+cpg=cpggen.cli:main
+cpggen=cpggen.cli:main
+
