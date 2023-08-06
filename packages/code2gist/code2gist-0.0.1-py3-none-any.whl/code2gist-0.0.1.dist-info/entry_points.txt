@@ -1,0 +1,2 @@
+[console_scripts]
+code2gist = code2gist.main:main
