@@ -1,0 +1,10 @@
+lnschema_bionty/__init__.py,sha256=x3mFN8oaHdMyxNO8iP5f4Jvp3Ye9EwZXOFI3L_m4QF4,974
+lnschema_bionty/_bionty.py,sha256=oFmAHH18yzv-2nkl2kw1aDZrUWkhtwipIPmukHCFd8I,5351
+lnschema_bionty/ids.py,sha256=uwgx9xa-84aWEY-B4j7vT6QHziSs5jL55VtWr3BoW_c,1572
+lnschema_bionty/models.py,sha256=XOkUV3SFuzNpD7bHkPrrs2t2LB4MQK-epdmw-aAwWIM,21006
+lnschema_bionty/migrations/0001_initial.py,sha256=7fXiIWrSkgGbXcg5x8Icm3NWrYnNlQlfU4shUwEY16I,29676
+lnschema_bionty/migrations/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+lnschema_bionty-0.21.3.dist-info/LICENSE,sha256=UOZ1F5fFDe3XXvG4oNnkL1-Ecun7zpHzRxjp-XsMeAo,11324
+lnschema_bionty-0.21.3.dist-info/WHEEL,sha256=Sgu64hAMa6g5FdzHxXv9Xdse9yxpGGMeagVtPMWpJQY,99
+lnschema_bionty-0.21.3.dist-info/METADATA,sha256=R5ZhM3vkI7Y_aSaM_BLinP42aUlHO0jpxhK37ZZbSXQ,1128
+lnschema_bionty-0.21.3.dist-info/RECORD,,
