@@ -1,0 +1,2 @@
+[console_scripts]
+ace-convert = garmin_ace.convert:main
