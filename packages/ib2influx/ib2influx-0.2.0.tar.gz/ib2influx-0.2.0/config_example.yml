@@ -1,0 +1,6 @@
+interval: 10
+influxdb:
+  server: http://influxdb:8086
+  org: org_name
+  bucket: bucket_name
+  token: token
