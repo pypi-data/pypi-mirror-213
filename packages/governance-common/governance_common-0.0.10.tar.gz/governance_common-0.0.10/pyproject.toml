@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "governance-common"
+version = "0.0.10"
+description = "Governance common classes, to enable reuse in multiple apps"
+authors = ["Sebastian Montero <sebastian.montero@gmail.com>"]
+readme = "README.md"
+packages = [{include = "governance_common"}]
+
+[tool.poetry.dependencies]
+alembic = "^1.11.1"
+python = ">=3.8.1,<4.0"
+python-dotenv = "^1.0.0"
+SQLAlchemy = ">=1.4,<3"
+langchain = "^0.0.199"
+
+
+
+[tool.poetry.group.dev.dependencies]
+autopep8 = "^2.0.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
