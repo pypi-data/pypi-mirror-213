@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: essenceApi
+Version: 4.2
+Summary: Библиотка для использования анти краша
+Author: Toyota
+Requires-Dist: requests
+
