@@ -1,0 +1,44 @@
+{% load static %}
+{% load i18n %}
+{% load navactive %}
+
+<nav class="navbar navbar-default">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">{% trans "Toggle navigation" %}</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="{% url 'inactivity:index' %}">Leave of Absence</a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+                <li class="{% navactive request 'inactivity:my_requests' %}">
+                    <a href="{% url 'inactivity:my_requests' %}">
+                        My requests
+                    </a>
+                </li>
+
+                {% if perms.inactivity.manage_leave %}
+                    <li class="{% navactive request 'inactivity:manage_requests' %}">
+                        <a href="{% url 'inactivity:manage_requests' %}">
+                            Manage requests&nbsp;
+                            {% if unapproved_count > 0 %}
+                                <span class="badge badge-nav">{{ unapproved_count }}</span>
+                            {% endif %}
+                        </a>
+                    </li>
+
+                    <li class="{% navactive request 'inactivity:inactive_users' %}">
+                        <a href="{% url 'inactivity:inactive_users' %}">
+                            Inactive users
+                        </a>
+                    </li>
+                {% endif %}
+
+            </ul>
+        </div>
+    </div>
+</nav>
