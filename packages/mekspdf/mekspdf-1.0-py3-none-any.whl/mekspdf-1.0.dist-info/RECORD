@@ -1,0 +1,8 @@
+mekspdf/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mekspdf/pdf2image.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mekspdf/pdf2text.py,sha256=38HRWpEVXKo1tMs4fRO77mS59-SCEzmtHVng-Ov7Hr4,37
+mekspdf-1.0.dist-info/LICENSE,sha256=ixuiBLtpoK3iv89l7ylKkg9rs2GzF9ukPH7ynZYzK5s,35148
+mekspdf-1.0.dist-info/METADATA,sha256=13bmrK9uuujC2g4fC7mNrtk0tzr91NZHC0AC6hRsba4,109
+mekspdf-1.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+mekspdf-1.0.dist-info/top_level.txt,sha256=FP5qu6lAjLZUC54iwDKVaXw7TX1-FQu88T_RS4FsR5s,8
+mekspdf-1.0.dist-info/RECORD,,
