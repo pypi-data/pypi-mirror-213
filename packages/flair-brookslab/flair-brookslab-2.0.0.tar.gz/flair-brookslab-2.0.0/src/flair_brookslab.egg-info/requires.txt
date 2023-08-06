@@ -1,0 +1,7 @@
+numpy
+tqdm
+ncls
+pybedtools
+mappy==2.24
+pysam
+scipy
