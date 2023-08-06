@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: heimdallm
+Version: 0.1.0
+Summary: 
+Author: Andrew Moffat
+Author-email: arwmoffat@gmail.com
+Requires-Python: >=3.8.1,<4.0.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Description-Content-Type: text/markdown
+
+
