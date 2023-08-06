@@ -1,0 +1,55 @@
+Metadata-Version: 2.1
+Name: quiltplus
+Version: 0.9.4
+Summary: Resource-oriented Python API/CLI for Quilt's decentralized social knowledge platform
+License: MIT
+Keywords: yaml,api,resource,quilt
+Author: Ernest Prabhakar
+Author-email: ernest@quiltdata.io
+Requires-Python: >=3.10,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: anyio (>=3.7.0,<4.0.0)
+Requires-Dist: asyncclick (>=8.1.3.4,<9.0.0.0)
+Requires-Dist: isort (>=5.12.0,<6.0.0)
+Requires-Dist: pytest-cov (>=4.0.0,<5.0.0)
+Requires-Dist: quilt3 (>=5.1.0,<6.0.0)
+Requires-Dist: trio (>=0.22.0,<0.23.0)
+Requires-Dist: typing-extensions (>=4.6.3,<5.0.0)
+Requires-Dist: tzlocal (>=5.0.1,<6.0.0)
+Requires-Dist: un-yaml (>=0.3.1)
+Requires-Dist: urllib3 (<2)
+Description-Content-Type: text/markdown
+
+# QuiltPlus
+
+## Next-generation API for Quilt Universal Data Collections
+
+QuiltPlus provides an asychronous, object-oriented wrapper around the Quilt API.
+In particular, it implements a resource-based architecture using Quilt+ URIs in
+order to support the Universal Data Client [udc](https://github.com/data-yaml/udc).
+
+## Installation
+
+```bash
+python3 -m pip install quiltplus
+```
+
+## Usage
+
+```python
+from quiltplus import QuiltPackage
+import anyio
+
+URI = "quilt+s3://quilt-example#package=examples/wellplates"
+
+async def print_contents(uri: str):
+    pkg = QuiltPackage.FromURI(URI)
+    files = await pkg.list()
+    print(files)
+
+anyio.run(print_contents, URI)
+```
+
