@@ -1,0 +1,16 @@
+LICENSE.txt
+README.md
+pyproject.toml
+src/plasmid_design/__init__.py
+src/plasmid_design/constants.py
+src/plasmid_design/drive.py
+src/plasmid_design/idt_api.py
+src/plasmid_design/plasmid_design.py
+src/plasmid_design/sequence.py
+src/plasmid_design/utils.py
+src/plasmid_design.egg-info/PKG-INFO
+src/plasmid_design.egg-info/SOURCES.txt
+src/plasmid_design.egg-info/dependency_links.txt
+src/plasmid_design.egg-info/entry_points.txt
+src/plasmid_design.egg-info/requires.txt
+src/plasmid_design.egg-info/top_level.txt
