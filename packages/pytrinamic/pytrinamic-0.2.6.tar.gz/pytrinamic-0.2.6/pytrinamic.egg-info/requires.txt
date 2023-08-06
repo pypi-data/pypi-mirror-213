@@ -1,0 +1,6 @@
+python-can<4,>=3
+canopen
+pyserial>=3
+
+[Extra]
+IntelHex>=2.3
