@@ -1,0 +1,3 @@
+[console_scripts]
+envname=envname:_parsecmd
+
