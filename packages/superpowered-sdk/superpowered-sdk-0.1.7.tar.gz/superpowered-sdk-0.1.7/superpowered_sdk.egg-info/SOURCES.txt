@@ -1,0 +1,10 @@
+README.md
+setup.py
+superpowered/__init__.py
+superpowered/exceptions.py
+superpowered/superpowered.py
+superpowered_sdk.egg-info/PKG-INFO
+superpowered_sdk.egg-info/SOURCES.txt
+superpowered_sdk.egg-info/dependency_links.txt
+superpowered_sdk.egg-info/requires.txt
+superpowered_sdk.egg-info/top_level.txt
