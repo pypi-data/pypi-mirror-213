@@ -1,0 +1,4 @@
+[submodule "yolov5_utils/yolov5"]
+	path = yolov5_utils/yolov5
+	url = https://github.com/msclock/yolov5.git
+	shallow = 1

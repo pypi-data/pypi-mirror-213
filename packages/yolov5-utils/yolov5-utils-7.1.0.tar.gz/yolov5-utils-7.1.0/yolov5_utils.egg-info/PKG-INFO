@@ -1,0 +1,53 @@
+Metadata-Version: 2.1
+Name: yolov5-utils
+Version: 7.1.0
+Summary: Packaged version of the Yolov5 object detector
+License: GPL
+Project-URL: Documentation, https://github.com/msclock/yolov5-utils
+Project-URL: Source, https://github.com/msclock/yolov5-utils
+Project-URL: Tracker, https://github.com/msclock/yolov5-utils/issues
+Keywords: machine-learning,deep-learning,ml,triton,inference,pytorch,YOLO,object-detection,vision,YOLOv5,YOLOv7
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: License :: OSI Approved :: GNU General Public License (GPL)
+Classifier: Operating System :: OS Independent
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Education
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: Topic :: Scientific/Engineering :: Image Recognition
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Provides-Extra: test
+Provides-Extra: dev
+License-File: LICENSE
+
+# YOLOv5 Installable Package
+
+Packaged [ultralytics/yolov5](https://github.com/ultralytics/yolov5)
+
+Inspired from https://github.com/fcakyon/yolov5-pip.
+
+## Build Package
+Build wheel file:
+```bash
+python setup.py bdist_wheel
+```
+
+### General imports
+Insert `yolov5_utils.yolov5.` prefix when importing modules `models` and `utils`.
+For example: 
+```python
+from yolov5_utils.yolov5.models.common import DetectMultiBackend
+```
+
+
+## Authors
+**Msclock** - msclock@qq.com  - [Github account](https://github.com/msclock)

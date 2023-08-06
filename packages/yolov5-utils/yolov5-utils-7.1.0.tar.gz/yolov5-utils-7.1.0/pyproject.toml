@@ -1,0 +1,151 @@
+[project]
+name = "yolov5-utils"
+readme = "README.md"
+description = "Packaged version of the Yolov5 object detector"
+dynamic = ["version"]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "License :: OSI Approved :: GNU General Public License (GPL)",
+    "Operating System :: OS Independent",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Science/Research",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Topic :: Software Development :: Libraries",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Topic :: Education",
+    "Topic :: Scientific/Engineering",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+    "Topic :: Scientific/Engineering :: Image Recognition",
+]
+authors = []
+maintainers = []
+keywords = [
+    "machine-learning",
+    "deep-learning",
+    "ml",
+    "triton",
+    "inference",
+    "pytorch",
+    "YOLO",
+    "object-detection",
+    "vision",
+    "YOLOv5",
+    "YOLOv7",
+]
+license = { text = "GPL" }
+requires-python = ">=3.7"
+dependencies = [
+    "fire",
+    "gitpython>=3.1.30",
+    "matplotlib>=3.3",
+    "numpy>=1.18.5",
+    "opencv-python>=4.1.1",
+    "Pillow>=7.1.2",
+    "psutil",
+    "PyYAML>=5.3.1",
+    "requests>=2.23.0",
+    "scipy>=1.4.1",
+    "thop>=0.1.1",
+    "torch>=1.7.0",
+    "torchvision>=0.8.1",
+    "tqdm>=4.64.0",
+    "ultralytics>=8.0.100",
+    "tensorboard>=2.4.1",
+    "pandas>=1.1.4",
+    "seaborn>=0.11.0",
+]
+
+[project.scripts]
+yolov5_cli = "yolov5_utils.cli:app"
+
+[project.urls]
+"Documentation" = "https://github.com/msclock/yolov5-utils"
+"Source" = "https://github.com/msclock/yolov5-utils"
+"Tracker" = "https://github.com/msclock/yolov5-utils/issues"
+
+[project.optional-dependencies]
+test = [
+    "GitPython >= 3.1.30",
+    "pytest >= 5.2",
+    "pytest-mock >= 3.8.2",
+    "pytype!=2021.11.18,!=2022.2.17",
+    "pre-commit >= 2.20.0",
+    "pytest-unordered ~= 0.5",
+]
+dev = [
+    "black >= 22.8",
+    "build >= 0.8",
+    "ipython >= 7.16",
+    "isort >= 5.10",
+    "pdbpp >= 0.10",
+    "pip >= 21.1",
+    "pre-commit >= 2.20.0",
+    "psutil ~= 5.1",
+    "twine >= 4.0",
+]
+
+[build-system]
+requires = ["setuptools>=65.3.0", "setuptools_scm>=2.0.0,<3", "wheel>=0.37.1"]
+build-backend = "setuptools.build_meta"
+
+[tool.pytest.ini_options]
+addopts = ["--import-mode=importlib"]
+
+[tool.setuptools]
+include-package-data = true
+license-files = ["LICENSE"]
+
+[tool.distutils.bdist_wheel]
+python_tag = "py37.py38.py39.py310"
+
+[tool.setuptools.packages.find]
+namespaces = false
+include = [
+    "yolov5_utils",
+    "yolov5_utils.yolov5.utils",
+    "yolov5_utils.yolov5.classify",
+    "yolov5_utils.yolov5.segment",
+]
+
+[tool.setuptools.package-data]
+yolov5_utils = ["**/*"]
+
+[tool.setuptools.dynamic]
+version = { attr = "yolov5_utils.__version__.__version__" }
+
+[tool.black]
+line-length = 120
+target-version = ['py38']
+include = '\.pyi?$'
+exclude = '''
+
+(
+  /(
+      \.eggs         # exclude a few common directories in the
+    | \.git          # root of the project
+    | \.mypy_cache
+    | \.venv
+    | _build
+    | build
+    | dist
+  )/
+)
+'''
+
+[tool.isort]
+profile = "black"
+line_length = 120
+
+[tool.vulture]
+exclude = []
+ignore_decorators = []
+ignore_names = []
+make_whitelist = true
+min_confidence = 80
+paths = ["model_navigator"]
+sort_by_size = true
+verbose = false
