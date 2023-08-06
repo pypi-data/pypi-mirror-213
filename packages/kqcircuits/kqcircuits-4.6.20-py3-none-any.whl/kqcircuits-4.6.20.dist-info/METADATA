@@ -1,0 +1,38 @@
+Metadata-Version: 2.1
+Name: kqcircuits
+Version: 4.6.20
+Summary: KQCircuits is a KLayout/Python-based superconducting quantum circuit library developed by IQM.
+Home-page: https://iqm-finland.github.io/KQCircuits/
+Author: IQM Finland Oy
+Author-email: kqcircuits@meetiqm.com
+Requires-Python: >=3.6.9
+Description-Content-Type: text/markdown
+Requires-Dist: klayout (>=0.28)
+Requires-Dist: numpy (>=1.16)
+Requires-Dist: Autologging (~=1.3)
+Requires-Dist: scipy (>=1.2)
+Requires-Dist: tqdm (>=4.61)
+Provides-Extra: docs
+Requires-Dist: sphinx (~=4.4) ; extra == 'docs'
+Requires-Dist: sphinx-rtd-theme (~=0.4) ; extra == 'docs'
+Requires-Dist: networkx (>=2.7) ; extra == 'docs'
+Requires-Dist: matplotlib (>=3.5.1) ; extra == 'docs'
+Provides-Extra: graphs
+Requires-Dist: networkx (>=2.7) ; extra == 'graphs'
+Requires-Dist: matplotlib (>=3.5.1) ; extra == 'graphs'
+Provides-Extra: notebooks
+Requires-Dist: jupyter (~=1.0.0) ; extra == 'notebooks'
+Requires-Dist: klayout (>=0.28) ; extra == 'notebooks'
+Provides-Extra: simulations
+Requires-Dist: gmsh (>=4.11.1) ; extra == 'simulations'
+Requires-Dist: pandas (>=1.5.3) ; extra == 'simulations'
+Provides-Extra: tests
+Requires-Dist: pytest (>=6.0.2) ; extra == 'tests'
+Requires-Dist: pytest-cov (~=2.8) ; extra == 'tests'
+Requires-Dist: pytest-xdist (>=2.1) ; extra == 'tests'
+Requires-Dist: tox (>=3.18) ; extra == 'tests'
+Requires-Dist: pylint (==2.9) ; extra == 'tests'
+Requires-Dist: networkx (>=2.7) ; extra == 'tests'
+Requires-Dist: matplotlib (>=3.5.1) ; extra == 'tests'
+
+See https://iqm-finland.github.io/KQCircuits/developer/standalone.html#klayout-standalone-usage
