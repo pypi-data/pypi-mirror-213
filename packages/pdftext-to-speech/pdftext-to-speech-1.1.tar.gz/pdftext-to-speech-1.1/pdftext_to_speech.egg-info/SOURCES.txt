@@ -1,0 +1,10 @@
+LICENSE.txt
+README.md
+setup.py
+pdftext_to_speech.egg-info/PKG-INFO
+pdftext_to_speech.egg-info/SOURCES.txt
+pdftext_to_speech.egg-info/dependency_links.txt
+pdftext_to_speech.egg-info/requires.txt
+pdftext_to_speech.egg-info/top_level.txt
+textToSpeech/__init__.py
+textToSpeech/textToSpeech.py
