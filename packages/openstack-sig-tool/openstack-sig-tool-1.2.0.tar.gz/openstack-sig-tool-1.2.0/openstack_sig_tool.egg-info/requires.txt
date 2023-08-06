@@ -1,0 +1,16 @@
+ansible==2.9.27
+bs4
+click
+huaweicloudsdkecs
+huaweicloudsdkims
+huaweicloudsdkvpc
+Jinja2
+lxml
+markdown
+packaging
+pandas
+prettytable
+pymdown-extensions
+pyyaml
+requests
+xmltodict

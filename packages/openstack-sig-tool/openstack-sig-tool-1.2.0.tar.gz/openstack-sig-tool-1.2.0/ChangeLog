@@ -1,0 +1,1304 @@
+CHANGES
+=======
+
+1.2.0
+-----
+
+* !717 Daily update - openEuler repo
+* Daily update - openEuler repo
+* !716 Daily update - openEuler repo
+* !715 Daily update - opentack release
+* Daily update - openEuler repo
+* Daily update - opentack release
+* !714 Daily update - openEuler repo
+* Daily update - openEuler repo
+* !713 Daily update - opentack release
+* Daily update - opentack release
+* !712 Daily update - openEuler repo
+* Daily update - openEuler repo
+* !711 Update unit test Merge pull request !711 from 王玺源/master
+* Update unit test
+* !710 Update unit test
+* Update unit test
+* !708 Daily update - openEuler repo
+* Daily update - openEuler repo
+* !707 Add unittest for oos
+* Add unittest
+* !705 【轻量级 PR】：specify openstackclient version for 22.03 LTS SP1
+* specify openstackclient version for 22.03 LTS SP1
+* !703 Daily update - openEuler repo
+* !702 Daily update - opentack release
+* Daily update - openEuler repo
+* Daily update - opentack release
+* Update oos requirement
+* add docs/spec/openstack-sig-tool-requirement.md
+* !701 Daily update - openEuler repo
+* Daily update - openEuler repo
+* !700 Daily update - openEuler repo
+* Daily update - openEuler repo
+* !698 Daily update - opentack release
+* Daily update - opentack release
+* !697 Add OOS SPEC FILE
+* OOS SPEC
+* !696 Daily update - openEuler repo
+* Daily update - openEuler repo
+* !695 Daily update - openEuler repo
+* Daily update - openEuler repo
+* !694 Daily update - openEuler repo
+* Daily update - openEuler repo
+* !693 Daily update - opentack release
+* Daily update - opentack release
+* !691 Add pyproject support for oos spec create
+* Add pyproject support for oos spec create
+* !692 Daily update - openEuler repo
+* Daily update - openEuler repo
+* !689 Daily update - opentack release
+* !690 Daily update - openEuler repo
+* Daily update - openEuler repo
+* Daily update - opentack release
+* !688 Add oos pypi mapping
+* Add oos pypi mapping
+* !687 Daily update - openEuler repo
+* Daily update - openEuler repo
+* !686 Fix some issue
+* Fix spec update issue
+* !685 Daily update - opentack release
+* Daily update - opentack release
+* !683 Daily update - openEuler repo
+* Daily update - openEuler repo
+* !682 Daily update - openEuler repo
+* Daily update - openEuler repo
+* !681 Fix repo mirror and mapping problem
+* Fix repo mirror and mapping problem
+* !680 Daily update - openEuler repo
+* Daily update - openEuler repo
+* !679 Daily update - openEuler repo
+* Daily update - openEuler repo
+* !678 Daily update - openEuler repo
+* Daily update - openEuler repo
+* !677 Daily update - opentack release
+* Daily update - opentack release
+* !674 Remove unused imports and local variables
+* remove unused imports and local variables
+* !676 【轻量级 PR】：修复了api请求函数中的一些问题
+* fix bugs
+* !675 Daily update - openEuler repo
+* Daily update - openEuler repo
+* !673 Daily update - openEuler repo
+* !672 Daily update - opentack release
+* Daily update - openEuler repo
+* Daily update - opentack release
+* !671 Daily update - openEuler repo
+* !670 Daily update - opentack release
+* Daily update - openEuler repo
+* Daily update - opentack release
+* !669 Daily update - openEuler repo
+* Daily update - openEuler repo
+* !668 Daily update - openEuler repo
+* Daily update - openEuler repo
+* !667 Daily update - openEuler repo
+* Daily update - openEuler repo
+* !666 Daily update - openEuler repo
+* Daily update - openEuler repo
+* !665 oos nit update
+* OOS nit fix
+* !664 Daily update - openEuler repo
+* Daily update - openEuler repo
+* !662 Fix 22.03 lts sp1 doc
+* Fix 22.03 lts sp1 doc
+* !661 Daily update - openEuler repo
+* Daily update - openEuler repo
+* !660 Add more openstack project
+* Add more openstack project
+* !659 Daily update - opentack release
+* Daily update - opentack release
+* !658 Daily update - openEuler repo
+* Daily update - openEuler repo
+* !657 Daily update - openEuler repo
+* Daily update - openEuler repo
+* !656 Daily update - openEuler repo
+* Daily update - openEuler repo
+* !655 Daily update - openEuler repo
+* !654 【轻量级 PR】：update openstack ci script
+* Daily update - openEuler repo
+* update openstack ci script
+* !653 Daily update - openEuler repo
+* Daily update - openEuler repo
+* !652 Daily update - openEuler repo
+* !651 Daily update - opentack release
+* Daily update - openEuler repo
+* Daily update - opentack release
+* !650 Daily update - openEuler repo
+* Daily update - openEuler repo
+* !649 Daily update - openEuler repo
+* Daily update - openEuler repo
+* !648 Daily update - openEuler repo
+* Daily update - openEuler repo
+* !646 Daily update - openEuler repo
+* Daily update - openEuler repo
+* !645 Daily update - openEuler repo
+* Daily update - openEuler repo
+* !644 Daily update - openEuler repo
+* Daily update - openEuler repo
+
+1.1.0
+-----
+
+* !643 Daily update - openEuler repo
+* Daily update - openEuler repo
+* !641 Daily update - openEuler repo
+* Daily update - openEuler repo
+* !639 Daily update - openEuler repo
+* Daily update - openEuler repo
+* !638 fix typo
+* Fix typo
+* !636 Daily update - opentack release
+* !637 Daily update - openEuler repo
+* Daily update - openEuler repo
+* Daily update - opentack release
+* !635 Daily update - openEuler repo
+* Daily update - openEuler repo
+* !634 Daily update - openEuler repo
+* Daily update - openEuler repo
+* !633 Daily update - openEuler repo
+* Daily update - openEuler repo
+* !632 Daily update - openEuler repo
+* Daily update - openEuler repo
+* !631 Daily update - opentack release
+* Daily update - opentack release
+* !630 Refactor oos spec command
+* Refactor oos spec command
+* !629 Daily update - openEuler repo
+* Daily update - openEuler repo
+* !628 Remove obs command
+* Remove obs command
+* !627 Daily update - openEuler repo
+* Daily update - openEuler repo
+* !625 update priority spec Merge pull request !625 from 王玺源/update\_priority
+* Update priority spec
+* !622 Update 22.09 ironic doc
+* !623 Daily update - openEuler repo
+* Daily update - openEuler repo
+* Update 2209 ironic doc
+* !620 Fix doc issue Merge pull request !620 from 王玺源/fix\_doc
+* Fix doc
+* !616 刷新依赖分析项目 Merge pull request !616 from 王玺源/update\_project
+* !619 Daily update - opentack release
+* Daily update - opentack release
+* !617 Daily update - opentack release
+* !618 Daily update - openEuler repo
+* Daily update - openEuler repo
+* Daily update - opentack release
+* Update project
+* !615 Daily update - opentack release
+* Daily update - opentack release
+* !614 Daily update - opentack release
+* Daily update - opentack release
+* !612 Daily update - opentack release
+* Daily update - opentack release
+* !611 Update index doc Merge pull request !611 from 王玺源/N/A
+* Update index doc
+* !610 Daily update - opentack release
+* Daily update - opentack release
+* !609 Daily update - openEuler repo
+* Daily update - openEuler repo
+* !607 Daily update - opentack release
+* !608 Daily update - openEuler repo
+* Daily update - openEuler repo
+* Daily update - opentack release
+* !606 Add \`oos env inject\` command
+* Add \`oos env inject\` command
+* !605 Daily update - openEuler repo
+* Daily update - openEuler repo
+* !604 Daily update - openEuler repo
+* Daily update - openEuler repo
+* !603 Daily update - openEuler repo
+* Daily update - openEuler repo
+* !602 Daily update - opentack release
+* Daily update - opentack release
+* !601 Daily update - openEuler repo
+* !600 Daily update - opentack release
+* Daily update - openEuler repo
+* Daily update - opentack release
+* !599 Daily update - opentack release
+* Daily update - opentack release
+* !598 Daily update - openEuler repo
+* Daily update - openEuler repo
+* !597 Daily update - openEuler repo
+* Daily update - openEuler repo
+* !595 Daily update - openEuler repo
+* Daily update - openEuler repo
+* !594 add opensd doc for 22.03 SP1
+* add opensd install doc
+* !593 Daily update - openEuler repo
+* Daily update - openEuler repo
+* !592 Daily update - openEuler repo
+* !591 Daily update - opentack release
+* Daily update - openEuler repo
+* Daily update - opentack release
+* !589 Daily update - opentack release
+* !590 Daily update - openEuler repo
+* Daily update - openEuler repo
+* Daily update - opentack release
+* !588 Daily update - openEuler repo
+* Daily update - openEuler repo
+* !587 Use quickissue to fetch PR Merge pull request !587 from 王玺源/fix\_pr\_get\_script
+* Fix pr fetch script
+* !583 Daily update - openEuler repo
+* !586 Daily update - opentack release
+* Daily update - opentack release
+* !585 Fix openstack release mapping script Merge pull request !585 from 王玺源/fix\_openstack\_release\_mapping
+* Fix openstack release mapping script
+* Daily update - openEuler repo
+* !582 Update nit Merge pull request !582 from 王玺源/update
+* Update nit
+* !580 Daily update - openEuler repo
+* Daily update - openEuler repo
+* !577 【轻量级 PR】：update docs/spec/openkite.md
+* !578 Daily update - openEuler repo
+* Daily update - openEuler repo
+* update docs/spec/openkite.md. 修改错误内容
+* !576 【轻量级 PR】：add docs/spec/openkite.md
+* add docs/spec/openkite.md. 开发文档还没有全部修改好，我尽快把初版的开发文档完善
+* !575 Daily update - openEuler repo
+* Daily update - openEuler repo
+* !574 Daily update - openEuler repo
+* Daily update - openEuler repo
+* !573 刷新OOS脚本 Merge pull request !573 from 王玺源/nit\_fix
+* Nit fix
+* !572 Daily update - openEuler repo
+* !571 Daily update - opentack release
+* Daily update - openEuler repo
+* Daily update - opentack release
+* !570 Daily update - opentack release
+* Daily update - opentack release
+* !568 Daily update - opentack release
+* !569 Daily update - openEuler repo
+* Daily update - openEuler repo
+* Daily update - opentack release
+* !567 Daily update - openEuler repo
+* Daily update - openEuler repo
+* !566 Daily update - openEuler repo
+* Daily update - openEuler repo
+* !564 Daily update - opentack release
+* !565 Daily update - openEuler repo
+* Daily update - openEuler repo
+* Daily update - opentack release
+* !560 Daily update - opentack release
+* !561 Daily update - openEuler repo
+* !562 Init 22.03 LTS SP1 install doc
+* Init 22.03 LTS SP1 install doc
+* Daily update - openEuler repo
+* Daily update - opentack release
+* !559 Daily update - openEuler repo
+* Daily update - openEuler repo
+* !557 Daily update - opentack release
+* !558 Daily update - openEuler repo
+* Daily update - openEuler repo
+* Daily update - opentack release
+* !556 Daily update - openEuler repo
+* !555 Daily update - opentack release
+* Daily update - openEuler repo
+* Daily update - opentack release
+* !554 Daily update - openEuler repo
+* !553 Daily update - opentack release
+* Daily update - openEuler repo
+* Daily update - opentack release
+* !551 Daily update - opentack release
+* !552 Daily update - openEuler repo
+* Daily update - openEuler repo
+* Daily update - opentack release
+* !550 Daily update - openEuler repo
+* Daily update - openEuler repo
+* !549 Daily update - openEuler repo
+* Daily update - openEuler repo
+* !548 Daily update - openEuler repo
+* Daily update - openEuler repo
+* !547 Daily update - openEuler repo
+* Daily update - openEuler repo
+* !546 Daily update - openEuler repo
+* !545 Daily update - opentack release
+* Daily update - openEuler repo
+* Daily update - opentack release
+* !544 Daily update - opentack release
+* Daily update - opentack release
+* !543 Daily update - openEuler repo
+* !542 Daily update - opentack release
+* Daily update - openEuler repo
+* Daily update - opentack release
+* !541 Daily update - opentack release
+* Daily update - opentack release
+* !540 Daily update - openEuler repo
+* Daily update - openEuler repo
+* !539 Daily update - openEuler repo
+* Daily update - openEuler repo
+* !538 Daily update - openEuler repo
+* Daily update - openEuler repo
+* !537 Daily update - openEuler repo
+* Daily update - openEuler repo
+* !535 Daily update - opentack release
+* !536 Daily update - openEuler repo
+* Daily update - openEuler repo
+* Daily update - opentack release
+* !532 Update release status
+* !533 Daily update - opentack release
+* Daily update - opentack release
+* !531 Daily update - openEuler repo
+* Update release status
+* Daily update - openEuler repo
+* !530 Daily update - opentack release
+* Daily update - opentack release
+* !529 Daily update - openEuler repo
+* Daily update - openEuler repo
+* !528 Daily update - opentack release
+* Daily update - opentack release
+* !527 Add Zed OpenStack release
+* Add zed openstack release
+* !525 Daily update - opentack release
+* !526 Daily update - openEuler repo
+* Daily update - openEuler repo
+* Daily update - opentack release
+* !524 Daily update - openEuler repo
+* Daily update - openEuler repo
+* !523 Daily update - openEuler repo
+* Daily update - openEuler repo
+* !522 Daily update - opentack release
+* Daily update - opentack release
+* !520 Daily update - openEuler repo
+* Daily update - openEuler repo
+* !518 【轻量级 PR】：update docs/install/openEuler-22.09/OpenStack-yoga.md
+* !519 Daily update - openEuler repo
+* Daily update - openEuler repo
+* update docs/install/openEuler-22.09/OpenStack-yoga.md. 由统信任同学发现文档dashboard处配置文件错误，现已修改完成
+* !516 Daily update - openEuler repo
+* Daily update - openEuler repo
+* !514 【轻量级 PR】：update docs/install/openEuler-22.09/OpenStack-yoga.md
+* !515 Daily update - opentack release
+* Daily update - opentack release
+* update docs/install/openEuler-22.09/OpenStack-yoga.md. 同步doc格式
+* !511 删除oos env老式用法 Merge pull request !511 from 王玺源/remove\_old
+* Remove old env way
+* !509 Fix mysql doc Merge pull request !509 from 王玺源/fix\_mysql
+* !510 【轻量级 PR】：update docs/install/openEuler-22.09/OpenStack-yoga.md
+* update docs/install/openEuler-22.09/OpenStack-yoga.md. 修改提交https://gitee.com/openeuler/openstack/issues/I5RVFA?from=project-issue中的问题2-3的问题内容
+* Fix mysql doc
+* !507 Fix format Merge pull request !507 from 王玺源/fix\_format
+* Fix format
+* !506 Fix circular import error Merge pull request !506 from 王玺源/fix\_circular\_import
+* Fix circular import error
+* !504 Fix typo Merge pull request !504 from 王玺源/typo\_fix
+* !503 Daily update - openEuler repo
+* Fix typo
+* Daily update - openEuler repo
+* !502 Fix doc
+* Fix doc
+* !500 Fix doc format
+* Fix doc
+* !499 fix doc for keystone/neutron/glance
+* fix doc for level
+* !497 fix img error
+* fix img error
+* !496 Daily update - openEuler repo
+* !495 Daily update - opentack release
+* Daily update - openEuler repo
+* Daily update - opentack release
+* !493 Daily update - openEuler repo
+* Daily update - openEuler repo
+* !485 Update doc and oos
+* !491 Daily update - openEuler repo
+* Daily update - openEuler repo
+* Update doc and oos
+* !490 【轻量级 PR】：Modify EPOL url
+* Modify EPOL url
+* !489 Daily update - openEuler repo
+* Daily update - openEuler repo
+* !488 Daily update - openEuler repo
+* Daily update - openEuler repo
+* !487 Correct CI job name Merge pull request !487 from 王玺源/correct\_ci\_name
+* Correct CI job name
+* !486 Fix CI check index error
+* Fix CI check index error
+* !484 Daily update - openEuler repo
+* Daily update - openEuler repo
+* !482 刷新测试报告
+* Update test doc for openEuler 22.09
+* !480 Daily update - openEuler repo
+* Daily update - openEuler repo
+* !479 docs: Init openEuler 22.09 test report
+* docs: Init openEuler 22.09 test report
+* !477 【轻量级 PR】：update docs/install/openEuler-22.09/OpenStack-yoga.md
+* update docs/install/openEuler-22.09/OpenStack-yoga.md. 完善OPS三节点部署释义图
+* !476 Update doc
+* Upate doc
+* !475 Daily update - openEuler repo
+* Daily update - openEuler repo
+* !469 Add placement/nova/ironic for 22.09 yoga doc
+* !471 Daily update - openEuler repo
+* !470 Daily update - opentack release
+* Daily update - openEuler repo
+* Daily update - opentack release
+* Add placement/nova/ironic doc for 22.09 yoga
+* !468 Add neutron install doc
+* Add neutron install doc
+* !467 Add cyborg doc
+* Add cyborg doc
+* !464 Add oos and heat docs
+* Add heat and oos docs
+* !465 Daily update - opentack release
+* Daily update - opentack release
+* !463 Add install doc for keystone/glance/tempest/opensd
+* add install doc
+* !456 Add cinder horizon doc
+* !460 Add 22.09 Yoga Installation Document
+* Add 22.09 Yoga Installation Document
+* !457 增加 OpenStack-Helm 安装文档
+* Add cinder and horizon doc
+* !458 Daily update - openEuler repo
+* Daily update - openEuler repo
+* 增加 OpenStack-Helm 安装文档
+* !455 Add install doc for 22.09
+* Add prepare part doc
+* !453 Daily update - openEuler repo
+* Daily update - openEuler repo
+* !452 Add openstack yoga doc toc
+* Add openstack yoga doc toc
+* !451 Daily update - openEuler repo
+* Daily update - openEuler repo
+* !450 Daily update - opentack release
+* Daily update - opentack release
+* !449 Daily update - openEuler repo
+* !448 Daily update - opentack release
+* Daily update - openEuler repo
+* Daily update - opentack release
+* !447 Daily update - openEuler repo
+* Daily update - openEuler repo
+* !446 Daily update - openEuler repo
+* !445 Daily update - opentack release
+* Daily update - openEuler repo
+* Daily update - opentack release
+* !444 Fix oos bug
+* Fix oos horizon bug
+* !443 Fix oos env command
+* Fix oos env setup command
+* !442 Daily update - openEuler repo
+* Daily update - openEuler repo
+* !441 Daily update - openEuler repo
+* !440 Daily update - opentack release
+* Daily update - openEuler repo
+* Daily update - opentack release
+* !439 oos env命令刷新
+* Add more info
+* !438 Daily update - openEuler repo
+* Daily update - openEuler repo
+* !437 【轻量级 PR】：typo fix
+* typo fix
+* !436 重构oos env命令
+* Refactor oos env command
+* !432 刷新doc， 修复typo
+* !434 Daily update - openEuler repo
+* Daily update - openEuler repo
+* Update doc
+* !433 Correct repo name for packages
+* Correct repo name for packages
+* !431 Daily update - openEuler repo
+* Daily update - openEuler repo
+* !429 feat: Improve message format of \`oos spec build\`
+* !430 Daily update - opentack release
+* Daily update - opentack release
+* !428 Daily update - openEuler repo
+* Daily update - openEuler repo
+* feat: Improve message format of \`oos spec build\`
+* !427 Support yoga release and some improvements
+* Support yoga and some improvement
+* !424 Return repo directly if it exists
+* !426 Daily update - openEuler repo
+* Daily update - openEuler repo
+* !425 Daily update - openEuler repo
+* !412 Allow reuse local working branch
+* Daily update - openEuler repo
+* Return repo directly if it exists
+* !423 Daily update - opentack release
+* Daily update - opentack release
+* Allow reuse local working branch and do commit amend
+* !422 oos dependence generate命令增强
+* Add compare-from func
+* !411 软件包依赖分析脚本刷新
+* !421 Daily update - opentack release
+* Daily update - opentack release
+* Update generate\_dependence script
+* !420 Daily update - openEuler repo
+* Daily update - openEuler repo
+* !419 Daily update - openEuler repo
+* Daily update - openEuler repo
+* !418 Daily update - openEuler repo
+* !417 Daily update - opentack release
+* Daily update - openEuler repo
+* Daily update - opentack release
+* !416 Daily update - openEuler repo
+* !415 Daily update - opentack release
+* Daily update - openEuler repo
+* Daily update - opentack release
+* !414 Daily update - openEuler repo
+* !413 Daily update - opentack release
+* Daily update - openEuler repo
+* Daily update - opentack release
+* !409 Daily update - opentack release
+* !410 Daily update - openEuler repo
+* Daily update - openEuler repo
+* Daily update - opentack release
+* !407 Add oos env manage command
+* Add oos env manage command
+* !406 Daily update - openEuler repo
+* Daily update - openEuler repo
+* !404 Daily update - openEuler repo
+* Daily update - openEuler repo
+* !402 Daily update - openEuler repo
+* Daily update - openEuler repo
+* !400 Sync update obs \_service file of master projects
+* !401 【轻量级 PR】：Priority VM: Update spec doc
+* Priority VM: Update spec doc Some update for priority VM feature
+* Modify obs \_service file of master
+* !399 Daily update - openEuler repo
+* Daily update - openEuler repo
+* !397 Fix OBS check script
+* Fix OBS check script
+* !396 Daily update - openEuler repo
+* Daily update - openEuler repo
+* !395 【轻量级 PR】：Fix: can't find python3-pyopenssl when executing \`oos spec build\`
+* Fix: can't find python3-pyopenssl when executing \`oos spec build\`
+* !394 【轻量级 PR】：Update doc locale
+* Update doc locale
+* !388 添加openstack-utils工具
+* !393 Daily update - openEuler repo
+* Daily update - openEuler repo
+* !391 Daily update - openEuler repo
+* Daily update - openEuler repo
+* !389 Daily update - openEuler repo
+* !390 Daily update - opentack release
+* Daily update - opentack release
+* !387 【轻量级 PR】：Update doc toc link
+* Daily update - openEuler repo
+* 添加openstack-utils工具
+* Update doc toc link
+* !385 Daily update - opentack release
+* !386 Daily update - openEuler repo
+* Daily update - openEuler repo
+* Daily update - opentack release
+* !381 Daily update - opentack release
+* !382 Daily update - openEuler repo
+* Daily update - openEuler repo
+* Daily update - opentack release
+* !374 刷新虚拟机高低优先级特性文档 From: @xiyuanwang Reviewed-by: @huangtianhua Signed-off-by: @huangtianhua
+* Update priority vm spec
+* !380 Daily update - openEuler repo From: @openstack-sig-bot Reviewed-by: @xiyuanwang Signed-off-by: @xiyuanwang
+* Daily update - openEuler repo
+* !377 Daily update - opentack release From: @openstack-sig-bot Reviewed-by: @xiyuanwang Signed-off-by: @xiyuanwang
+* !378 Daily update - openEuler repo From: @openstack-sig-bot Reviewed-by: @xiyuanwang Signed-off-by: @xiyuanwang
+* Daily update - openEuler repo
+* Daily update - opentack release
+* !376 刷新SIG文档 From: @xiyuanwang Reviewed-by: @zh-f Signed-off-by: @zh-f
+* Update README
+* !375 Daily update - opentack release From: @openstack-sig-bot Reviewed-by: @xiyuanwang Signed-off-by: @xiyuanwang
+* !373 Daily update - openEuler repo From: @openstack-sig-bot Reviewed-by: @xiyuanwang Signed-off-by: @xiyuanwang
+* Daily update - opentack release
+* Daily update - openEuler repo
+* !369 Refactor \`oos spec\` command From: @han-guangyu Reviewed-by: @xiyuanwang Signed-off-by: @xiyuanwang
+* !370 fix: Make \`--short-description\` option in oos work From: @han-guangyu Reviewed-by: @xiyuanwang Signed-off-by: @xiyuanwang
+* !371 fix: Add path check for \`oos repo create\` From: @han-guangyu Reviewed-by: @xiyuanwang Signed-off-by: @xiyuanwang
+* !372 Daily update - opentack release From: @openstack-sig-bot Reviewed-by: @xiyuanwang Signed-off-by: @xiyuanwang
+* Daily update - opentack release
+* fix: Add path check for \`oos repo create\`
+* Refactor \`oos spec\` command
+* fix: Make \`--short-description\` option in oos work
+* !368 Daily update - openEuler repo From: @openstack-sig-bot Reviewed-by: @xiyuanwang Signed-off-by: @xiyuanwang
+* Daily update - openEuler repo
+* !365 Daily update - opentack release From: @openstack-sig-bot Reviewed-by: @xiyuanwang Signed-off-by: @xiyuanwang
+* Daily update - opentack release
+* !364 Daily update - openEuler repo From: @openstack-sig-bot Reviewed-by: @xiyuanwang Signed-off-by: @xiyuanwang
+* Daily update - openEuler repo
+* !362 Daily update - openEuler repo From: @openstack-sig-bot Reviewed-by: @han-guangyu, @xiyuanwang Signed-off-by: @xiyuanwang
+* !363 Daily update - opentack release From: @openstack-sig-bot Reviewed-by: @xiyuanwang Signed-off-by: @xiyuanwang
+* Daily update - opentack release
+* Daily update - openEuler repo
+* !360 Daily update - opentack release From: @openstack-sig-bot Reviewed-by: @xiyuanwang Signed-off-by: @xiyuanwang
+* !361 Daily update - openEuler repo From: @openstack-sig-bot Reviewed-by: @xiyuanwang Signed-off-by: @xiyuanwang
+* Daily update - openEuler repo
+* Daily update - opentack release
+* !359 Daily update - openEuler repo From: @openstack-sig-bot Reviewed-by: @xiyuanwang Signed-off-by: @xiyuanwang
+* Daily update - openEuler repo
+* !358 Daily update - openEuler repo From: @openstack-sig-bot Reviewed-by: @huangtianhua Signed-off-by: @huangtianhua
+* !357 [WIP] Add \`oos repo create\` command From: @huangtianhua Reviewed-by: @zhangy1317 Signed-off-by: @zhangy1317
+* Daily update - openEuler repo
+* Add \`oos repo create\` command
+* !356 Daily update - openEuler repo From: @openstack-sig-bot Reviewed-by: @xiyuanwang Signed-off-by: @xiyuanwang
+* Daily update - openEuler repo
+* !354 Daily update - opentack release From: @openstack-sig-bot Reviewed-by: @xiyuanwang Signed-off-by: @xiyuanwang
+* !355 Daily update - openEuler repo From: @openstack-sig-bot Reviewed-by: @xiyuanwang Signed-off-by: @xiyuanwang
+* Daily update - openEuler repo
+* Daily update - opentack release
+* !353 Daily update - opentack release From: @openstack-sig-bot Reviewed-by: @xiyuanwang Signed-off-by: @xiyuanwang
+* Daily update - opentack release
+* !351 Daily update - opentack release From: @openstack-sig-bot Reviewed-by: @xiyuanwang Signed-off-by: @xiyuanwang
+* !352 Daily update - openEuler repo From: @openstack-sig-bot Reviewed-by: @xiyuanwang Signed-off-by: @xiyuanwang
+* Daily update - openEuler repo
+* Daily update - opentack release
+* !349 Daily update - openEuler repo From: @openstack-sig-bot Reviewed-by: @xiyuanwang Signed-off-by: @xiyuanwang
+* Daily update - openEuler repo
+* !348 docs: Update rpm-packaging-reference.md From: @han-guangyu Reviewed-by: @xiyuanwang Signed-off-by: @xiyuanwang
+* docs: Update rpm-packaging-reference.md
+* !329 docs: Add rpm packaging reference of SIG From: @han-guangyu Reviewed-by: @xiyuanwang Signed-off-by: @xiyuanwang
+* !345 Daily update - openEuler repo Merge pull request !345 from 王玺源/daily\_update\_src\_openeuler\_repo
+* !346 Daily update - opentack release From: @openstack-sig-bot Reviewed-by: @xiyuanwang Signed-off-by: @xiyuanwang
+* Daily update - opentack release
+* Daily update - openEuler repo
+* !344 Skip https verify Merge pull request !344 from 王玺源/fix\_request\_retry
+* Skip https verify
+* docs: Add rpm packaging reference of SIG
+* !343 Fix request retry Merge pull request !343 from 王玺源/fix\_request\_retry
+* Fix request retry
+* !342 Add request retry Merge pull request !342 from 王玺源/add\_request\_retry
+* Add request retry
+* !341 Add a db warning when oos runs Merge pull request !341 from 王玺源/add\_db\_warning
+* Add a db warning when oos runs
+* !339 Add a new script to fetch SIG opening PR list Merge pull request !339 from 王玺源/add\_pr\_script
+* !340 Daily update - openEuler repo From: @openstack-sig-bot Reviewed-by: @xiyuanwang Signed-off-by: @xiyuanwang
+* Daily update - openEuler repo
+* Add a new script to fetch SIG opening PR list
+* !338 Using packaging.version to check whether is upgrade From: @huangtianhua Reviewed-by: @xiyuanwang Signed-off-by: @xiyuanwang
+* Using packaging.version to check whether is upgrade
+* !337 Update oos repo pr-fetch From: @xiyuanwang Reviewed-by: @huangtianhua Signed-off-by: @huangtianhua
+* Update oos repo pr-fetch
+* Add yoga
+* !335 Daily update - openEuler repo From: @openstack-sig-bot Reviewed-by: @xiyuanwang Signed-off-by: @xiyuanwang
+* Daily update - openEuler repo
+* add LICENSE
+* !332 Daily update - openEuler repo From: @openstack-sig-bot Reviewed-by: @xiyuanwang Signed-off-by: @xiyuanwang
+* Daily update - openEuler repo
+* !330 Daily update - opentack release From: @openstack-sig-bot Reviewed-by: @xiyuanwang Signed-off-by: @xiyuanwang
+* !331 Daily update - openEuler repo From: @openstack-sig-bot Reviewed-by: @xiyuanwang Signed-off-by: @xiyuanwang
+* Daily update - openEuler repo
+* Daily update - opentack release
+* !328 Daily update - openEuler repo From: @openstack-sig-bot Reviewed-by: @xiyuanwang Signed-off-by: @xiyuanwang
+* Daily update - openEuler repo
+* !325 Daily update - opentack release From: @openstack-sig-bot Reviewed-by: @xiyuanwang Signed-off-by: @xiyuanwang
+* !326 Add gitee page support From: @lijiahui4 Reviewed-by: @xiyuanwang Signed-off-by: @xiyuanwang
+* Add gitee page support
+* Daily update - opentack release
+* !324 Daily update - openEuler repo From: @openstack-sig-bot Reviewed-by: @xiyuanwang Signed-off-by: @xiyuanwang
+* Daily update - openEuler repo
+* !323 Daily update - opentack release From: @openstack-sig-bot Reviewed-by: @xiyuanwang Signed-off-by: @xiyuanwang
+* Daily update - opentack release
+* !322 Daily update - opentack release From: @openstack-sig-bot Reviewed-by: @xiyuanwang Signed-off-by: @xiyuanwang
+* Daily update - opentack release
+* !320 Daily update - opentack release From: @openstack-sig-bot Reviewed-by: @huangtianhua Signed-off-by: @huangtianhua
+* !321 Daily update - openEuler repo From: @openstack-sig-bot Reviewed-by: @han-guangyu, @huangtianhua Signed-off-by: @han-guangyu, @huangtianhua
+* Daily update - openEuler repo
+* Daily update - opentack release
+* !318 Daily update - opentack release From: @openstack-sig-bot Reviewed-by: @xiyuanwang Signed-off-by: @xiyuanwang
+* !319 Daily update - openEuler repo From: @openstack-sig-bot Reviewed-by: @xiyuanwang Signed-off-by: @xiyuanwang
+* Daily update - openEuler repo
+* Daily update - opentack release
+* !317 update tools/oos/README.md From: @han-guangyu Reviewed-by: @xiyuanwang Signed-off-by: @xiyuanwang
+* update tools/oos/README.md Add "[optional]" in front of parameter "-rs, --reuse-spec"
+* !315 Daily update - openEuler repo From: @openstack-sig-bot Reviewed-by: @xiyuanwang Signed-off-by: @xiyuanwang
+* !316 Update README of oos From: @han-guangyu Reviewed-by: @xiyuanwang Signed-off-by: @xiyuanwang
+* Update README of oos
+* Daily update - openEuler repo
+* !314 Daily update - opentack release From: @openstack-sig-bot Reviewed-by: @xiyuanwang Signed-off-by: @xiyuanwang
+* Daily update - opentack release
+* !313 Daily update - opentack release From: @openstack-sig-bot Reviewed-by: @xiyuanwang Signed-off-by: @xiyuanwang
+* Daily update - opentack release
+* !311 Daily update - openEuler repo From: @openstack-sig-bot Reviewed-by: @xiyuanwang Signed-off-by: @xiyuanwang
+* !312 部署文档目录创建 From: @nappoo Reviewed-by: @xiyuanwang Signed-off-by: @xiyuanwang
+* 新建 openEuler-20.03-LTS-SP1
+* Daily update - openEuler repo
+* !310 【轻量级 PR】：add developer info From: @zhangy1317 Reviewed-by: @xiyuanwang Signed-off-by: @xiyuanwang
+* add developer info
+* !309 Daily update - openEuler repo From: @openstack-sig-bot Reviewed-by: @xiyuanwang Signed-off-by: @xiyuanwang
+* Daily update - openEuler repo
+* !307 Daily update - opentack release From: @openstack-sig-bot Reviewed-by: @xiyuanwang Signed-off-by: @xiyuanwang
+* !308 Daily update - openEuler repo From: @openstack-sig-bot Reviewed-by: @xiyuanwang Signed-off-by: @xiyuanwang
+* Daily update - openEuler repo
+* Daily update - opentack release
+* !305 Daily update - opentack release From: @openstack-sig-bot Reviewed-by: @xiyuanwang Signed-off-by: @xiyuanwang
+* !306 Daily update - openEuler repo From: @openstack-sig-bot Reviewed-by: @xiyuanwang Signed-off-by: @xiyuanwang
+* Daily update - openEuler repo
+* Daily update - opentack release
+* !304 Fix tempest test From: @xiyuanwang Reviewed-by: @huangtianhua Signed-off-by: @huangtianhua
+* Fix tempest test
+* !303 Daily update - openEuler repo From: @openstack-sig-bot Reviewed-by: @huangtianhua Signed-off-by: @huangtianhua
+* Daily update - openEuler repo
+* !302 Daily update - opentack release From: @openstack-sig-bot Reviewed-by: @xiyuanwang Signed-off-by: @xiyuanwang
+* !301 add mutual trust From: @ffrog Reviewed-by: @xiyuanwang Signed-off-by: @xiyuanwang
+* Daily update - opentack release
+* add mutual trust
+* !300 Fix oos env command error From: @xiyuanwang Reviewed-by: @huangtianhua Signed-off-by: @huangtianhua
+* !299 Daily update - openEuler repo From: @openstack-sig-bot Reviewed-by: @xiyuanwang Signed-off-by: @xiyuanwang
+* Fix oos env command error
+* Daily update - openEuler repo
+* !298 Daily update - opentack release From: @openstack-sig-bot Reviewed-by: @xiyuanwang Signed-off-by: @xiyuanwang
+* Daily update - opentack release
+* !297 fix oos env setup From: @xiyuanwang Reviewed-by: @huangtianhua Signed-off-by: @huangtianhua
+* Fix env setup
+* !295 Daily update - openEuler repo From: @openstack-sig-bot Reviewed-by: @huangtianhua Signed-off-by: @huangtianhua
+* !296 Update inventory From: @xiyuanwang Reviewed-by: @huangtianhua Signed-off-by: @huangtianhua
+* Update inventory
+* Daily update - openEuler repo
+* !293 Fix tempest issue From: @xiyuanwang Reviewed-by: @huangtianhua Signed-off-by: @huangtianhua
+* Fix tempest issue
+* !294 Add edk2-aarch64.json From: @huangtianhua Reviewed-by: @xiyuanwang Signed-off-by: @xiyuanwang
+* Add edk2-aarch64.json when arch is aarch64
+* !292 Set hostname mappings From: @huangtianhua Reviewed-by: @xiyuanwang Signed-off-by: @xiyuanwang
+* Set hostname mappings
+* !291 【轻量级 PR】：Set local ip correctly for linuxbridge agent From: @huangtianhua Reviewed-by: @xiyuanwang Signed-off-by: @xiyuanwang
+* !289 【轻量级 PR】：设置网络share From: @huangtianhua Reviewed-by: @xiyuanwang Signed-off-by: @xiyuanwang
+* Set local ip correctly for linuxbridge agent
+* !290 add securityGroup && mutual trust && fix init.yaml From: @ffrog Reviewed-by: @xiyuanwang Signed-off-by: @xiyuanwang
+* 设置网络share
+* !288 Add openstack ci check script From: @xiyuanwang Reviewed-by: @huangtianhua Signed-off-by: @huangtianhua
+* Add openstack ci check script
+* add securityGroup && mutual trust && fix init.yaml
+* !287 【轻量级 PR】：Update devstack doc From: @xiyuanwang Reviewed-by: @huangtianhua Signed-off-by: @huangtianhua
+* Update devstack doc
+* !285 Daily update - opentack release From: @openstack-sig-bot Reviewed-by: @xiyuanwang Signed-off-by: @xiyuanwang
+* !286 Daily update - openEuler repo From: @openstack-sig-bot Reviewed-by: @xiyuanwang Signed-off-by: @xiyuanwang
+* Daily update - openEuler repo
+* Daily update - opentack release
+* !284 【轻量级 PR】：Fix nit From: @xiyuanwang Reviewed-by: @huangtianhua Signed-off-by: @huangtianhua
+* Fix nit
+* !283 【轻量级 PR】：Update devstack doc From: @xiyuanwang Reviewed-by: @huangtianhua Signed-off-by: @huangtianhua
+* Update devstack doc
+* !281 Daily update - opentack release From: @openstack-sig-bot Reviewed-by: @xiyuanwang Signed-off-by: @xiyuanwang
+* !282 Daily update - openEuler repo From: @openstack-sig-bot Reviewed-by: @xiyuanwang Signed-off-by: @xiyuanwang
+* Daily update - openEuler repo
+* Daily update - opentack release
+* !280 高低优先级调度 From: @guolei93 Reviewed-by: @xiyuanwang Signed-off-by: @xiyuanwang
+* Add nova new feature of priority vm build
+* !278 Daily update - opentack release From: @openstack-sig-bot Reviewed-by: @xiyuanwang Signed-off-by: @xiyuanwang
+* !279 Daily update - openEuler repo From: @openstack-sig-bot Reviewed-by: @xiyuanwang Signed-off-by: @xiyuanwang
+* Daily update - openEuler repo
+* Daily update - opentack release
+* !275 Update readme From: @xiyuanwang Reviewed-by: @huangtianhua Signed-off-by: @huangtianhua
+* !277 Daily update - openEuler repo From: @openstack-sig-bot Reviewed-by: @xiyuanwang Signed-off-by: @xiyuanwang
+* Daily update - openEuler repo
+* !276 Daily update - opentack release From: @openstack-sig-bot Reviewed-by: @huangtianhua Signed-off-by: @huangtianhua
+* Daily update - opentack release
+* Update readme
+* !273 Daily update - opentack release From: @openstack-sig-bot Reviewed-by: @xiyuanwang Signed-off-by: @xiyuanwang
+* !274 Daily update - openEuler repo From: @openstack-sig-bot Reviewed-by: @xiyuanwang Signed-off-by: @xiyuanwang
+* Daily update - openEuler repo
+* Daily update - opentack release
+* !271 Daily update - opentack release From: @openstack-sig-bot Reviewed-by: @xiyuanwang Signed-off-by: @xiyuanwang
+* !272 Daily update - openEuler repo From: @openstack-sig-bot Reviewed-by: @xiyuanwang Signed-off-by: @xiyuanwang
+* Daily update - openEuler repo
+* Daily update - opentack release
+* !270 Daily update - openEuler repo From: @openstack-sig-bot Reviewed-by: @xiyuanwang Signed-off-by: @xiyuanwang
+* Daily update - openEuler repo
+* !266 Support specify openstack release when setup From: @huangtianhua Reviewed-by: @xiyuanwang Signed-off-by: @xiyuanwang
+* !269 Daily update - openEuler repo From: @openstack-sig-bot Reviewed-by: @xiyuanwang Signed-off-by: @xiyuanwang
+* Daily update - openEuler repo
+* !268 Daily update - opentack release From: @openstack-sig-bot Reviewed-by: @xiyuanwang Signed-off-by: @xiyuanwang
+* Daily update - opentack release
+* !267 Daily update - openEuler repo From: @openstack-sig-bot Reviewed-by: @xiyuanwang Signed-off-by: @xiyuanwang
+* Daily update - openEuler repo
+* Support openstack-release when setup env
+* !265 Daily update - opentack release From: @openstack-sig-bot Reviewed-by: @xiyuanwang Signed-off-by: @xiyuanwang
+* Daily update - opentack release
+* !264 Daily update - opentack release From: @openstack-sig-bot Reviewed-by: @huangtianhua Signed-off-by: @huangtianhua
+* Daily update - opentack release
+* !249 Set prioprity for Rocky/Queens yum config From: @huangtianhua Reviewed-by: @xiyuanwang Signed-off-by: @xiyuanwang
+* !261 Fix errors From: @huangtianhua Reviewed-by: @xiyuanwang Signed-off-by: @xiyuanwang
+* !262 Daily update - opentack release From: @openstack-sig-bot Reviewed-by: @xiyuanwang Signed-off-by: @xiyuanwang
+* !263 Daily update - openEuler repo From: @openstack-sig-bot Reviewed-by: @xiyuanwang Signed-off-by: @xiyuanwang
+* Daily update - openEuler repo
+* Daily update - opentack release
+* Fix errors
+* !259 Add dynamic inventory From: @xiyuanwang Reviewed-by: @huangtianhua Signed-off-by: @huangtianhua
+* Add dynamic inventory
+* !260 Daily update - opentack release From: @openstack-sig-bot Reviewed-by: @xiyuanwang Signed-off-by: @xiyuanwang
+* Daily update - opentack release
+* !256 Add obs commands From: @huangtianhua Reviewed-by: @xiyuanwang Signed-off-by: @xiyuanwang
+* Add \`oos repo obs-create\` and \`oos repo obs-delete\`
+* !257 Daily update - opentack release From: @openstack-sig-bot Reviewed-by: @xiyuanwang Signed-off-by: @xiyuanwang
+* !258 Daily update - openEuler repo From: @openstack-sig-bot Reviewed-by: @xiyuanwang Signed-off-by: @xiyuanwang
+* Daily update - openEuler repo
+* Daily update - opentack release
+* !255 Update log From: @openstack-sig-bot Reviewed-by: @huangtianhua Signed-off-by: @huangtianhua
+* !254 Daily update - openEuler repo From: @openstack-sig-bot Reviewed-by: @huangtianhua Signed-off-by: @huangtianhua
+* Update log
+* Daily update - openEuler repo
+* !252 Daily update - src openEuler repo From: @openstack-sig-bot Reviewed-by: @xiyuanwang Signed-off-by: @xiyuanwang
+* Daily update - openEuler repo
+* !251 Fix click error From: @openstack-sig-bot Reviewed-by: @huangtianhua Signed-off-by: @huangtianhua
+* Fix click error
+* Set prioprity for Rocky/Queens yum config
+* !247 Update fetch\_src\_openeuler\_repo\_name script From: @xiyuanwang Reviewed-by: @huangtianhua Signed-off-by: @huangtianhua
+* Update fetch\_src\_openeuler\_repo\_name script
+* !229 Add \`oos repo\` commands From: @huangtianhua Reviewed-by: @xiyuanwang Signed-off-by: @xiyuanwang
+* Add \`oos repo\` commands to create/delete branches for repos
+* !246 Daily update - opentack release From: @openstack-sig-bot Reviewed-by: @xiyuanwang Signed-off-by: @xiyuanwang
+* Daily update - opentack release
+* !245 docs: Add require for Ironic From: @han-guangyu Reviewed-by: @xiyuanwang Signed-off-by: @xiyuanwang
+* docs: Add require for Ironic
+* !244 Daily update - opentack release From: @openstack-sig-bot Reviewed-by: @xiyuanwang Signed-off-by: @xiyuanwang
+* Daily update - opentack release
+* !243 【轻量级 PR】：update URL of EPOL-update From: @han-guangyu Reviewed-by: @xiyuanwang Signed-off-by: @xiyuanwang
+* update URL of EPOL-update 刚刚使用中测试，目前可用的url为： http://repo.openeuler.org/openEuler-20.03-LTS-SP2/EPOL/update/main/$basearch/
+* !241 Daily update From: @openstack-sig-bot Reviewed-by: @huangtianhua Signed-off-by: @huangtianhua
+* Daily update
+* !239 Add oos env list/create/delete command From: @xiyuanwang Reviewed-by: @huangtianhua Signed-off-by: @huangtianhua
+* !236 add openEuler 22.03 LTS test report From: @ffrog Reviewed-by: @huangtianhua Signed-off-by: @huangtianhua
+* Add oos env list/create/delete command
+* add openEuler 22.03 LTS test report
+* !237 Modify install docs From: @huangtianhua Reviewed-by: @xiyuanwang Signed-off-by: @xiyuanwang
+* Modify docs
+* !235 Add oos env test command From: @xiyuanwang Reviewed-by: @huangtianhua Signed-off-by: @huangtianhua
+* Add oos env test command
+* !234 Add 22.03 LTS install doc From: @xiyuanwang Reviewed-by: @huangtianhua Signed-off-by: @huangtianhua
+* Add 22.03 LTS install doc
+* !233 Fix oos pypi require problem From: @xiyuanwang Reviewed-by: @huangtianhua Signed-off-by: @huangtianhua
+* Fix oos pypi require problem
+* !232 add httpd to uninstalled list From: @ffrog Reviewed-by: @xiyuanwang Signed-off-by: @xiyuanwang
+* add httpd to uninstalled list
+* !231 change the state to restarted from started From: @ffrog Reviewed-by: @huangtianhua Signed-off-by: @huangtianhua
+* change the state to restarted from started
+* !228 Nit fix From: @xiyuanwang Reviewed-by: @huangtianhua Signed-off-by: @huangtianhua
+* Nit fix
+* !227 Update openstack init script From: @xiyuanwang Reviewed-by: @huangtianhua Signed-off-by: @huangtianhua
+* Update openstack init script
+* !226 Update constants From: @xiyuanwang Reviewed-by: @huangtianhua Signed-off-by: @huangtianhua
+* Update constants
+* !225 【轻量级 PR】：update emali list url in README.md From: @han-guangyu Reviewed-by: @xiyuanwang Signed-off-by: @xiyuanwang
+* update README.md
+* !224 fix init.yaml From: @ffrog Reviewed-by: @xiyuanwang Signed-off-by: @xiyuanwang
+* fix init.yaml
+* !222 问题修复 From: @xiyuanwang Reviewed-by: @huangtianhua Signed-off-by: @huangtianhua
+* !223 delete the item in /etc/fstab for swift when uninstalled From: @ffrog Reviewed-by: @xiyuanwang Signed-off-by: @xiyuanwang
+* delete the item in /etc/fstab for swift when uninstalled
+* Update constants
+* !221 add all\_in\_one support and modify uninstall packages list From: @ffrog Reviewed-by: @xiyuanwang Signed-off-by: @xiyuanwang
+* add all\_in\_one support and modify uninstall packages list
+* !220 Nit fix From: @xiyuanwang Reviewed-by: @huangtianhua Signed-off-by: @huangtianhua
+* Nit fix
+* !218 Fix project version check bug From: @xiyuanwang Reviewed-by: @huangtianhua Signed-off-by: @huangtianhua
+* !219 Code improve From: @xiyuanwang Reviewed-by: @huangtianhua Signed-off-by: @huangtianhua
+* !217 Update ci failed pr command From: @xiyuanwang Reviewed-by: @huangtianhua Signed-off-by: @huangtianhua
+* Update constants file
+* Fix project version check bug
+* Update ci failed pr command
+* !216 Change --arch to flag mode From: @xiyuanwang Reviewed-by: @huangtianhua Signed-off-by: @huangtianhua
+* Change --arch to flag mode
+* !215 Add sig info for dependence genarate command From: @xiyuanwang Reviewed-by: @huangtianhua Signed-off-by: @huangtianhua
+* Add sig info for dependence genarate command
+* !214 Update setup.cfg From: @xiyuanwang Reviewed-by: @huangtianhua Signed-off-by: @huangtianhua
+* Update setup.cfg
+* !211 获取OpenStack SIG CI失败的PR 列表 From: @yangxiaoyan2 Reviewed-by: @xiyuanwang Signed-off-by: @xiyuanwang
+* Fix encoding
+* Add lxml dependency
+* !213 change maintainer email From: @zhangy1317 Reviewed-by: @xiyuanwang Signed-off-by: @xiyuanwang
+* change maintainer email
+* Add openstack sig repo fetch script
+* Minor style fixes
+* !212 新增maintainer加入与退出机制说明 From: @xiyuanwang Reviewed-by: @zh-f, @zhangy1317, @joec88, @huangtianhua, @liksh Signed-off-by: @huangtianhua
+* Fix number in README
+* Add how to be maintainer
+* Fix failed ci pr tool and move it to pr group
+* Modify README for failed ci pr tool
+* Add failed ci pr tool to oos
+* Remove standalone pr stat tool
+* Add exporting results to a csv file
+* !210 修改Dockerfile-tmp名称错误 Merge pull request !210 from zhaojf/master
+* 修改Dockerfile-tmp名称错误
+* !209 Fix contianer build nit Merge pull request !209 from 王玺源/contianer\_fix
+* Fix contianer build nit
+* !208 Update script Merge pull request !208 from 王玺源/update\_script
+* !207 Update Readme Merge pull request !207 from 王玺源/update\_readme
+* Update script
+* Update Readme
+* !206 Add env clean command and all\_in\_one inventory Merge pull request !206 from 王玺源/add\_cleanup
+* Add cleanup command for env
+* !205 Routine update Merge pull request !205 from 王玺源/routine-update-01-25
+* Routine update
+* !204 Fix env setup command Merge pull request !204 from 王玺源/fix\_env\_setup
+* Fix env setup command
+* !203 Adds mappings Merge pull request !203 from huangtianhua/add-mappings
+* Adds mappings
+* !202 Adds repo mappings Merge pull request !202 from huangtianhua/add-special-repo-mappings
+* Adds some pkg mapping
+* Add initial version
+* !199 Adds special mappings Merge pull request !199 from huangtianhua/add-special-repo-mappings
+* !201 Fix the said network issues from xiyuanwang Merge pull request !201 from 赵波/master
+* Adds some pkg mapping
+* Fix the said network issues from xiyuanwang
+* !197 Add \`env init\` command Merge pull request !197 from 王玺源/add\_test
+* !198 Fix dep command error Merge pull request !198 from 王玺源/fix\_dep
+* Fix dep
+* Add \`env init\` command
+* !196 Fix role var override issue Merge pull request !196 from 王玺源/fix\_role\_override
+* Fix role var override issue
+* !194 Add devstack doc Merge pull request !194 from 王玺源/add\_devstack
+* Add devstack doc
+* !193 Routine refresh Merge pull request !193 from 王玺源/update\_tools
+* Update tools
+* !190 add trove support Merge pull request !190 from 李佳伟/master
+* add trove support
+* !192 Add rally doc Merge pull request !192 from 王玺源/add\_rally\_doc
+* Add rally doc
+* !191 Fixes errors and adds swift playbook Merge pull request !191 from huangtianhua/add-swift-playbook
+* Fixes errors and adds swift playbook
+* !188 【轻量级 PR】：Update queens install doc Merge pull request !188 from huangtianhua/N/A
+* !189 Add version label for rocky doc Merge pull request !189 from zhangy1317/master
+* add version label for rocky doc
+* !186 fix ironic doc Merge pull request !186 from zhangy1317/master
+* fix ironic doc
+* Update queens install doc
+* !187 Routine update Merge pull request !187 from 王玺源/Routine—update
+* Routine update
+* !185 【轻量级 PR】：Update queens install doc Merge pull request !185 from huangtianhua/N/A
+* Update queens install doc
+* !184 Add cinder playbook Merge pull request !184 from 王玺源/add\_cinder\_playbook
+* Add cinder playbook
+* !183 Add neutron playbook Merge pull request !183 from 王玺源/add\_neutron\_playbook
+* Add neutron playbook
+* !182 Add placement cyborg glance heat nova and tempest playbook Merge pull request !182 from 王玺源/add\_placement\_cyborg\_tempest
+* Add placement cyborg glance heat nova and tempest playbook
+* !180 【轻量级 PR】：Update doc Merge pull request !180 from huangtianhua/N/A
+* !181 【轻量级 PR】：Update queens doc Merge pull request !181 from huangtianhua/N/A
+* !178 Add horizon kolla and rally playbook Merge pull request !178 from 王玺源/add\_horizon\_playbook
+* Update queens doc
+* Update doc
+* Add horizon kolla and rally playbook
+* !175 Adds sp3 test doc Merge pull request !175 from huangtianhua/add-sp3-test-doc
+* !177 Add aodh and ceilometer playbook Merge pull request !177 from 王玺源/add\_aodh\_ceilometer
+* Add aodh and ceilometer playbook
+* !176 Add keystone playbook From: @xiyuanwang Reviewed-by: @huangtianhua Signed-off-by: @huangtianhua
+* Add keystone playbook
+* Adds sp3 test doc
+* !171 【轻量级 PR】：fix ironic doc From: @zhangy1317 Reviewed-by: @xiyuanwang Signed-off-by: @xiyuanwang
+* !172 Sync latest docs From: @huangtianhua Reviewed-by: @xiyuanwang Signed-off-by: @xiyuanwang
+* Sync latest docs
+* !173 Add aodh playbook From: @xiyuanwang Reviewed-by: @huangtianhua Signed-off-by: @huangtianhua
+* Add aodh playbook
+* !174 【轻量级 PR】：fix ironic doc From: @zhangy1317 Reviewed-by: @huangtianhua Signed-off-by: @huangtianhua
+* fix ironic doc
+* !169 Add mariadb, rabbitmq, memcached playbook From: @xiyuanwang Reviewed-by: @huangtianhua Signed-off-by: @huangtianhua
+* fix ironic doc
+* !170 Adds Train conf examples From: @huangtianhua Reviewed-by: @xiyuanwang Signed-off-by: @xiyuanwang
+* Adds Train config examples
+* Add mariadb, rabbitmq, memcached playbook
+* !168 Init \`env setup\` command From: @xiyuanwang Reviewed-by: @huangtianhua Signed-off-by: @huangtianhua
+* Add env setup command
+* !167 Fix dep-gen command From: @xiyuanwang Reviewed-by: @huangtianhua Signed-off-by: @huangtianhua
+* Fix dep-gen command
+* !166 Update dep-gen command From: @xiyuanwang Reviewed-by: @huangtianhua Signed-off-by: @huangtianhua
+* Update dep-gen command
+* !165 Add scripts folder From: @xiyuanwang Reviewed-by: @huangtianhua Signed-off-by: @huangtianhua
+* !164 Add all openstack project version mapping From: @xiyuanwang Reviewed-by: @huangtianhua Signed-off-by: @huangtianhua
+* Add scripts folder
+* Add all openstack project version mapping
+* !163 Refactor oos From: @xiyuanwang Reviewed-by: @huangtianhua Signed-off-by: @huangtianhua
+* Refactor oos
+* !162 【轻量级 PR】：Update swift install doc From: @huangtianhua Reviewed-by: @xiyuanwang Signed-off-by: @xiyuanwang
+* Update swift install doc
+* !161 add kolla doc for OpenStack-queens/Openstack-rocky From: @ffrog Reviewed-by: @xiyuanwang Signed-off-by: @xiyuanwang
+* add kolla doc for OpenStack-queens/Openstack-rocky
+* !160 刷新SIG项目列表 From: @xiyuanwang Reviewed-by: @huangtianhua Signed-off-by: @huangtianhua
+* Update REAMDME
+* !159 Update doc structure From: @xiyuanwang Reviewed-by: @huangtianhua Signed-off-by: @huangtianhua
+* Update doc structure
+* !157 Refactor oos From: @xiyuanwang Reviewed-by: @huangtianhua Signed-off-by: @huangtianhua
+* !158 Update trove install doc From: @huangtianhua Reviewed-by: @xiyuanwang Signed-off-by: @xiyuanwang
+* Refactor oos
+* Update trove install doc
+* !156 Adds heat doc From: @huangtianhua Reviewed-by: @xiyuanwang Signed-off-by: @xiyuanwang
+* !155 Fix doc typo From: @xiyuanwang Reviewed-by: @huangtianhua Signed-off-by: @huangtianhua
+* Adds heat doc
+* Fix doc typo
+* !154 Add Ceilometer & Gnocchi doc From: @xiyuanwang Reviewed-by: @huangtianhua Signed-off-by: @huangtianhua
+* Add Ceilometer & Gnocchi doc
+* !153 【轻量级 PR】：Update doc nits From: @huangtianhua Reviewed-by: @xiyuanwang Signed-off-by: @xiyuanwang
+* Update doc nits
+* !152 Add cyborg & aodh doc From: @xiyuanwang Reviewed-by: @huangtianhua Signed-off-by: @huangtianhua
+* Add cyborg doc
+* !150 fix error in nova doc From: @zhangy1317 Reviewed-by: @huangtianhua Signed-off-by: @huangtianhua
+* !151 修改ironic创建的用户和使用的用户名称不一致的问题 From: @hu-xiujie Reviewed-by: @xiyuanwang Signed-off-by: @xiyuanwang
+* update docs/install/OpenStack-train.md. 修复ironic创建的用户和使用的用户名称不一致的问题
+* fix error
+* !147 刷新Readme和依赖分析小问题 From: @xiyuanwang Reviewed-by: @huangtianhua Signed-off-by: @huangtianhua
+* Update Readme and oss
+* !149 【轻量级 PR】：Update Neutron doc From: @xiyuanwang Reviewed-by: @huangtianhua Signed-off-by: @huangtianhua
+* Update Neutron doc
+* !148 fix train doc From: @zhangy1317 Reviewed-by: @xiyuanwang Signed-off-by: @xiyuanwang
+* fix train doc
+* !146 Init Train installation doc From: @huangtianhua Reviewed-by: @xiyuanwang Signed-off-by: @xiyuanwang
+* Init Train installation doc
+* !145 【轻量级 PR】：Add unicodecsv's description From: @sean-lau Reviewed-by: @huangtianhua Signed-off-by: @huangtianhua
+* !144 Automatically identify upgrade/downgrade in changelog From: @sean-lau Reviewed-by: @huangtianhua Signed-off-by: @huangtianhua
+* Add unicodecsv's description
+* Automatically identify upgrade/downgrade in changelog
+* !143 Fix push pacakges with no check From: @sean-lau Reviewed-by: @huangtianhua Signed-off-by: @huangtianhua
+* Fix push pacakges with no check
+* !141 Fix a description bug and add dib-utils descriptions definition From: @sean-lau Reviewed-by: @xiyuanwang Signed-off-by: @xiyuanwang
+* Fix a description bug and add dib-utils descriptions definition
+* !140 Fix a bug when email is not public in gitee From: @sean-lau Reviewed-by: @huangtianhua Signed-off-by: @huangtianhua
+* Fix a bug when email is not public in gitee
+* !139 Update black list From: @xiyuanwang Reviewed-by: @huangtianhua Signed-off-by: @huangtianhua
+* Update black list
+* !138 Add upper check From: @xiyuanwang Reviewed-by: @huangtianhua Signed-off-by: @huangtianhua
+* Add upper check
+* !137 Fix pypi mapping From: @xiyuanwang Reviewed-by: @huangtianhua Signed-off-by: @huangtianhua
+* !134 Add serveral client packages in spec constants From: @sean-lau Reviewed-by: @xiyuanwang Signed-off-by: @xiyuanwang
+* Fix pypi mapping
+* !135 【轻量级 PR】：updated the README.en.md file. From: @yanhuiling Reviewed-by: @xiyuanwang Signed-off-by: @xiyuanwang
+* updated the README.en.md file. 你好。我们评审和更新了README.en文件，修正了一些拼写错误、语法错误、中文字符、表达问题。有任何问题，请联系G11N SIG。
+* Add serveral client packages in spec constants
+* !133 Use 'latest' as version if version filed is empty in csv file From: @sean-lau Reviewed-by: @xiyuanwang Signed-off-by: @xiyuanwang
+* Use 'latest' as version if version filed is empty in csv file
+* !132 【轻量级 PR】：Get project version from tgz From: @huangtianhua Reviewed-by: @xiyuanwang Signed-off-by: @xiyuanwang
+* Get project version from tgz
+* !131 【轻量级 PR】：Revert From: @huangtianhua Reviewed-by: @xiyuanwang Signed-off-by: @xiyuanwang
+* Revert
+* !130 【轻量级 PR】：Adds code back From: @huangtianhua Reviewed-by: @sean-lau Signed-off-by: @sean-lau
+* Adds code back
+* !128 Update oos From: @xiyuanwang Reviewed-by: @sean-lau Signed-off-by: @sean-lau
+* Add rally support
+* !127 Add more projects to train release From: @xiyuanwang Reviewed-by: @huangtianhua Signed-off-by: @huangtianhua
+* Add more projects to train release
+* !126 Modify repo status to 'Need Create Branch ' , 'Need Create Repo' and 'Need Init Branch' From: @huangtianhua Reviewed-by: @xiyuanwang Signed-off-by: @xiyuanwang
+* Update dependence analysis
+* !125 【轻量级 PR】：Update README From: @xiyuanwang Reviewed-by: @huangtianhua,@sean-lau Signed-off-by: @huangtianhua,@sean-lau
+* Update README
+* !124 【轻量级 PR】：fix nit From: @huangtianhua Reviewed-by: @xiyuanwang Signed-off-by: @xiyuanwang
+* fix nit
+* !123 【轻量级 PR】：fix nit From: @huangtianhua Reviewed-by: @xiyuanwang Signed-off-by: @xiyuanwang
+* fix nit
+* !122 【轻量级 PR】：fix nit From: @huangtianhua Reviewed-by: @xiyuanwang Signed-off-by: @xiyuanwang
+* !121 【轻量级 PR】：Adds oepkg repo From: @huangtianhua Reviewed-by: @xiyuanwang Signed-off-by: @xiyuanwang
+* fix nit
+* Adds oepkg repo
+* !120 【轻量级 PR】：增加oepkg软件仓地址 From: @huangtianhua Reviewed-by: @xiyuanwang Signed-off-by: @xiyuanwang
+* 增加oepkg软件仓地址
+* !119 Fix a minor and add a to for verifying spec constants From: @sean-lau Reviewed-by: @xiyuanwang Signed-off-by: @xiyuanwang
+* Fix a minor and add a to for verifying spec constants
+* !116 Improve oos tool as discussed before From: @sean-lau Reviewed-by: @xiyuanwang Signed-off-by: @xiyuanwang
+* !117 刷新Readme From: @xiyuanwang Reviewed-by: @sean-lau Signed-off-by: @sean-lau
+* !118 w版ironic部署文档补充 From: @liksh Reviewed-by: @xiyuanwang Signed-off-by: @xiyuanwang
+* Improve oos tool as discussed before
+* add more infor about ironic deploy
+* Update readme
+* !115 update OpenStack-wallaby.md From: @ffrog Reviewed-by: @xiyuanwang Signed-off-by: @xiyuanwang
+* update OpenStack-wallaby.md
+* !114 Add Train and Ussuri support for \`oos dependence generate\` command From: @xiyuanwang Reviewed-by: @huangtianhua Signed-off-by: @huangtianhua
+* Add Train and Ussuri support for oos
+* !113 Update Readme From: @xiyuanwang Reviewed-by: @huangtianhua Signed-off-by: @huangtianhua
+* Update Readme
+* !112 Remove uesless file From: @xiyuanwang Reviewed-by: @huangtianhua Signed-off-by: @huangtianhua
+* Remove uesless file
+* !110 【轻量级 PR】：修改文档小问题并且更新Trove相关的配置 From: @sean-lau Reviewed-by: @xiyuanwang Signed-off-by: @xiyuanwang
+* 修改文档小问题并且更新Trove相关的配置
+* !109 【轻量级 PR】：去掉重复的Placement服务配置步骤 From: @sean-lau Reviewed-by: @xiyuanwang Signed-off-by: @xiyuanwang
+* 去掉重复的Placement服务配置步骤
+* !107 【轻量级 PR】：Modify doc From: @huangtianhua Reviewed-by: @xiyuanwang Signed-off-by: @xiyuanwang
+* Modify doc
+* !105 【轻量级 PR】：Modify nova installation doc From: @huangtianhua Reviewed-by: @xiyuanwang Signed-off-by: @xiyuanwang
+* Modify nova installation doc
+* !104 【轻量级 PR】：Fix nits From: @huangtianhua Reviewed-by: @xiyuanwang Signed-off-by: @xiyuanwang
+* Fix nits
+* !103 Update oos dependence generate example file From: @xiyuanwang Reviewed-by: @huangtianhua Signed-off-by: @huangtianhua
+* Update oos dependence generate example file
+* !102 刷新21.09 Wallaby 安装文件 From: @xiyuanwang Reviewed-by: @huangtianhua Signed-off-by: @huangtianhua
+* Update 21.09 doc
+* !101 添加swift安装文档 From: @li-mingzhou Reviewed-by: @xiyuanwang Signed-off-by: @xiyuanwang
+* 添加swift 安装文件
+* !100 【轻量级 PR】：修改glance安装文档 From: @huangtianhua Reviewed-by: @xiyuanwang Signed-off-by: @xiyuanwang
+* 修改glance安装文档
+* !99 Init OpenStack-Wallaby install doc From: @huangtianhua Reviewed-by: @xiyuanwang Signed-off-by: @xiyuanwang
+* Init OpenStack-wallaby install doc
+* !98 【轻量级 PR】：Fix a typo in Neutron installation doc From: @sean-lau Reviewed-by: @xiyuanwang Signed-off-by: @xiyuanwang
+* Fix a typo in Neutron installation doc
+* !96 修复依赖分析问题 From: @xiyuanwang Reviewed-by: @sean-lau Signed-off-by: @sean-lau
+* Fix dep
+* !97 Fix typo in uefi loader path From: @zh-f Reviewed-by: @sean-lau Signed-off-by: @sean-lau
+* Fix uefi loader path typo
+* !95 Modify some maps From: @huangtianhua Reviewed-by: @xiyuanwang Signed-off-by: @xiyuanwang
+* Fix errors
+* !93 Fix nits of oos tool From: @sean-lau Reviewed-by: @huangtianhua Signed-off-by: @huangtianhua
+* Make some improvements to oos tool
+* !92 Support reuse existed spec file From: @sean-lau Reviewed-by: @xiyuanwang Signed-off-by: @xiyuanwang
+* Make some improvements to oos tool
+* !91 Fix some errors From: @huangtianhua Reviewed-by: @sean-lau Signed-off-by: @sean-lau
+* Fix some errors
+* !89 Set license to 'Unlicense' for special case From: @huangtianhua Reviewed-by: @sean-lau Signed-off-by: @sean-lau
+* Set license to 'Unlicense' for special case
+* !90 Make sure cache\_path exist From: @huangtianhua Reviewed-by: @sean-lau Signed-off-by: @sean-lau
+* Make sure cache\_path exist
+* !88 update readme From: @zhangy1317 Reviewed-by: @huangtianhua Signed-off-by: @huangtianhua
+* update readme
+* !87 Improve rquires parsing From: @sean-lau Reviewed-by: @xiyuanwang Signed-off-by: @xiyuanwang
+* Improve rquires parsing
+* !86 Add mapping between pypi name and openEuler package name From: @sean-lau Reviewed-by: @xiyuanwang Signed-off-by: @xiyuanwang
+* Add mapping between pypi name and openEuler package name
+* !85 Do not add testing requires if no check stage specified From: @sean-lau Reviewed-by: @xiyuanwang Signed-off-by: @xiyuanwang
+* Do not add testing requires if no check stage specified
+* !84 Fix arch idendifying few projects has not build\_wheel From: @sean-lau Reviewed-by: @xiyuanwang Signed-off-by: @xiyuanwang
+* Fix arch idendifying few projects has not build\_wheel
+* !83 Improve oos tool for spec generation From: @sean-lau Reviewed-by: @xiyuanwang Signed-off-by: @xiyuanwang
+* Support identifying arch from pypi
+* !82 Update template and doc From: @xiyuanwang Reviewed-by: @sean-lau Signed-off-by: @sean-lau
+* Update template and doc
+* !81 Add summary for oos spec build command From: @sean-lau Reviewed-by: @xiyuanwang Signed-off-by: @xiyuanwang
+* Add summary for oos spec build command
+* !80 Nit fix From: @xiyuanwang Reviewed-by: @sean-lau Signed-off-by: @sean-lau
+* Update base build require
+* !79 Add package name transform between pypi name with openEuler package From: @sean-lau Reviewed-by: @huangtianhua Signed-off-by: @huangtianhua
+* Add package transform for pypi name with openEuler package
+* !78 Nit fix From: @xiyuanwang Reviewed-by: @sean-lau Signed-off-by: @sean-lau
+* Nit fix
+* !77 Ensure rpm build env before run oos spec commands From: @sean-lau Reviewed-by: @xiyuanwang Signed-off-by: @xiyuanwang
+* Ensure rpm build env before run oos spec commands
+* !76 Add requires to buildrequires section and verify check stage From: @sean-lau Reviewed-by: @xiyuanwang Signed-off-by: @xiyuanwang
+* Add requires to buildrequires section and verify check stage
+* !75 Fix upper version From: @xiyuanwang Reviewed-by: @huangtianhua Signed-off-by: @huangtianhua
+* Fix upper version
+* !74 Fix wrong package source directory From: @sean-lau Reviewed-by: @xiyuanwang Signed-off-by: @xiyuanwang
+* Fix issue about wrong package source directory
+* !72 Update pypi mapping From: @xiyuanwang Reviewed-by: @sean-lau Signed-off-by: @sean-lau
+* !73 Add some missed options for spec push command and fix some issues From: @sean-lau Reviewed-by: @xiyuanwang Signed-off-by: @xiyuanwang
+* Add some missed options of oos spec push command
+* Update pypi mapping
+* !71 add missed check in jinja template From: @sean-lau Reviewed-by: @xiyuanwang Signed-off-by: @xiyuanwang
+* add missed check in jinja template
+* !70 Fix some issues found in really practise From: @sean-lau Reviewed-by: @xiyuanwang Signed-off-by: @xiyuanwang
+* Fix some issues found in practice
+* !69 Fix jinja template not found error From: @xiyuanwang Reviewed-by: @sean-lau Signed-off-by: @sean-lau
+* Fix jinja template not found error
+* !68 Update readme From: @xiyuanwang Reviewed-by: @sean-lau Signed-off-by: @sean-lau
+* !67 Fix mistakes of oos tool From: @sean-lau Reviewed-by: @xiyuanwang Signed-off-by: @xiyuanwang
+* Update readme
+* Fix mistakes of oos tool
+* !66 Add example folder From: @xiyuanwang Reviewed-by: @sean-lau Signed-off-by: @sean-lau
+* Add example folder
+* !63 Add Dockerfile for running tools From: @sean-lau Reviewed-by: @xiyuanwang Signed-off-by: @xiyuanwang
+* !64 Improve batching building packages tool From: @sean-lau Reviewed-by: Signed-off-by:
+* improve batch packaging tool
+* !65 Add oss denpendence generate example From: @xiyuanwang Reviewed-by: @huangtianhua Signed-off-by: @huangtianhua
+* Add oss denpendence generate example
+* Add Dockerfile for running tools
+* !62 Fix csv generation issue From: @xiyuanwang Reviewed-by: @huangtianhua Signed-off-by: @huangtianhua
+* Fix csv generation issue
+* !59 Add openeuler check step From: @xiyuanwang Reviewed-by: @sean-lau Signed-off-by: @sean-lau
+* Add openeuler check step
+* !58 Add dependence fetch command From: @xiyuanwang Reviewed-by: @huangtianhua Signed-off-by: @huangtianhua
+* Add dependence fetch command
+* !57 Adds arg -c to enable testing From: @huangtianhua Reviewed-by: @liksh,@xiyuanwang Signed-off-by: @xiyuanwang
+* Add an arg -c to enable testing when creating spec
+* !56 Update command structure From: @xiyuanwang Reviewed-by: @sean-lau Signed-off-by: @sean-lau
+* !55 【輕量級 PR】：更新R版tempest测试结果 From: @the-moon-is-blue Reviewed-by: @xiyuanwang Signed-off-by: @xiyuanwang
+* Update command structure
+* 更新R版tempest测试结果
+* !54 Add oos cli From: @xiyuanwang Reviewed-by: @sean-lau Signed-off-by: @sean-lau
+* Add oss cli
+* !53 Adds oepkg branch introduce doc From: @huangtianhua Reviewed-by: @xiyuanwang Signed-off-by: @xiyuanwang
+* Adds OpenStack oepkg branches introduce doc
+* !52 【轻量级 PR】：Fix typo From: @zh-f Reviewed-by: @xiyuanwang Signed-off-by: @xiyuanwang
+* Fix typo
+* !50 [Lightweight PR]: Rocky tempest result update From: @the-moon-is-blue Reviewed-by: @xiyuanwang Signed-off-by: @xiyuanwang
+* Rocky tempest result update
+* !49 【轻量级 PR】：Adds tgt config From: @huangtianhua Reviewed-by: @xiyuanwang Signed-off-by: @xiyuanwang
+* Adds tgt config
+* !48 【轻量级 PR】：Add tgtd config From: @xiyuanwang Reviewed-by: @sean-lau Signed-off-by: @sean-lau
+* Add tgtd config
+* !47 【轻量级 PR】：Update docs From: @huangtianhua Reviewed-by: @xiyuanwang Signed-off-by: @xiyuanwang
+* !46 [Lightweight PR]: Update rocky docs From: @huangtianhua Reviewed-by: @xiyuanwang Signed-off-by: @xiyuanwang
+* Update docs
+* Update rocky docs
+* !45 Fix some configuration and shell scripts formatting. From: @joec88 Reviewed-by: @sean-lau,@huangtianhua Signed-off-by: @huangtianhua
+* Fix some configuration and shell scripts formatting
+* !43 Fix some wrong formatting in ironic part From: @joec88 Reviewed-by: @xiyuanwang Signed-off-by: @xiyuanwang
+* !44 【轻量级 PR】：Fix error From: @huangtianhua Reviewed-by: @xiyuanwang Signed-off-by: @xiyuanwang
+* Fix error
+* Fix some wrong formatting in ironic part
+* !42 【轻量级 PR】：Update nova installation doc From: @huangtianhua Reviewed-by: @sean-lau Signed-off-by: @sean-lau
+* Update nova installation doc
+* !41 【轻量级 PR】：Fixes errors From: @huangtianhua Reviewed-by: @xiyuanwang Signed-off-by: @xiyuanwang
+* Fixes errors
+* !40 【轻量级 PR】：Update glance installation doc From: @huangtianhua Reviewed-by: @sean-lau,@xiyuanwang Signed-off-by: @sean-lau,@xiyuanwang
+* !40 【轻量级 PR】：Update glance installation doc From: @huangtianhua Reviewed-by: @sean-lau,@xiyuanwang Signed-off-by: @sean-lau,@xiyuanwang
+* Update glance installation doc
+* !38 Fix small error in R doc From: @sean-lau Reviewed-by: @huangtianhua Signed-off-by: @huangtianhua
+* Fix small error in R doc
+* !37 Add doc index and kolla and Trove doc for OpenStack Rocky installation From: @sean-lau Reviewed-by: @huangtianhua Signed-off-by: @huangtianhua
+* Add doc index and kolla and Trove doc for OpenStack Rocky installation
+* !36 【轻量级 PR】：Fix errors From: @huangtianhua Reviewed-by: @zh-f Signed-off-by: @zh-f
+* Fix errors
+* !35 Update Q Ironic install doc From: @xiyuanwang Reviewed-by: @huangtianhua Signed-off-by: @huangtianhua
+* Update Q Ironic install doc
+* !34 Add installation doc for Trove of OpenStack Q From: @sean-lau Reviewed-by: @xiyuanwang Signed-off-by: @xiyuanwang
+* Add installation doc for Trove of OpenStack Q
+* !33 更新ironic安装文档 From: @liksh Reviewed-by: @xiyuanwang Signed-off-by: @xiyuanwang
+* upload ironic install doc
+* !32 【轻量级 PR】：Fix doc typo From: @zh-f Reviewed-by: @xiyuanwang Signed-off-by: @xiyuanwang
+* Fix doc typo
+* !30 Update test doc From: @xiyuanwang Reviewed-by: @liksh Signed-off-by: @liksh
+* !31 【轻量级 PR】：Fix doc typo From: @zh-f Reviewed-by: @huangtianhua Signed-off-by: @huangtianhua
+* Fix doc typo
+* Update test doc
+* !29 Updates OpenStack oepkg url From: @huangtianhua Reviewed-by: @xiyuanwang Signed-off-by: @xiyuanwang
+* Updates oepkg yum url
+* !28 Adds rocky test report From: @huangtianhua Reviewed-by: @xiyuanwang Signed-off-by: @xiyuanwang
+* Adds rocky test report
+* !27 update openstack-rocky horizon installation doc From: @zhangy1317 Reviewed-by: @xiyuanwang Signed-off-by: @xiyuanwang
+* update horizon install doc
+* !26 Update queens install doc From: @xiyuanwang Reviewed-by: @huangtianhua Signed-off-by: @huangtianhua
+* Update queens install doc
+* !25 fix format From: @ffrog Reviewed-by: @xiyuanwang Signed-off-by: @xiyuanwang
+* fix format
+* !24 update Openstack-queens.md From: @ffrog Reviewed-by: Signed-off-by:
+* update openstack-queens.md
+* !23 Add cinder storage node deployment for ceph rbd; Fix some typo and style issues From: @joec88 Reviewed-by: @xiyuanwang Signed-off-by: @xiyuanwang
+* Add cinder storage node deployment for ceph rbd; Fix some typo and style issues
+* !22 Add test doc From: @xiyuanwang Reviewed-by: @sean-lau,@zh-f Signed-off-by: @zh-f
+* Add test doc
+* !21 update openstack-rocky nova installation doc From: @zhangy1317 Reviewed-by: @xiyuanwang Signed-off-by: @xiyuanwang
+* update nova doc
+* !20 Update Nova installation doc for queens From: @huangtianhua Reviewed-by: @xiyuanwang Signed-off-by: @xiyuanwang
+* Update Nova installation doc
+* !19 Adds installation docs for openstack From: @huangtianhua Reviewed-by: @xiyuanwang Signed-off-by: @xiyuanwang
+* Adds installation docs
+* !18 Add pbr to build require From: @xiyuanwang Reviewed-by: @huangtianhua Signed-off-by: @huangtianhua
+* !17 Do not rm local src directory if existed From: @sean-lau Reviewed-by: @xiyuanwang Signed-off-by: @xiyuanwang
+* Add pbr
+* Do not rm local src directory if existed
+* !10 修改获取home\_url异常退出情况，调整下载条件的分支判断 From: @disnight Reviewed-by: @huangtianhua Signed-off-by: @xiyuanwang
+* !7 Add fetch\_dep tool From: @xiyuanwang Reviewed-by: @sean-lau,@sean-lau Signed-off-by: @huangtianhua
+* !16 Update README From: @xiyuanwang Reviewed-by: @sean-lau,@zhangy1317 Signed-off-by: @zhangy1317
+* Add kolla
+* !15 Add openstack trove From: @xiyuanwang Reviewed-by: @sean-lau,@sean-lau Signed-off-by:
+* Add trove project
+* !6 增加一个批量化创建spec和提交PR的工具 From: @sean-lau Reviewed-by: Signed-off-by:
+* Add tool for building spec and creating PRs in batch
+* !13 Fix pyporter provide issue From: @xiyuanwang Reviewed-by: @sean-lau,@zh-f Signed-off-by: @huangtianhua
+* !14 Update project list From: @xiyuanwang Reviewed-by: @zh-f Signed-off-by: @zh-f
+* Update project list
+* Fix pyporter provides
+* !12 优化生成spec文件中description过长的问题 From: @sean-lau Reviewed-by: @xiyuanwang Signed-off-by: @xiyuanwang
+* !11 Add sqlalchemy-migrate to License mapping From: @xiyuanwang Reviewed-by: @huangtianhua Signed-off-by: @huangtianhua
+* Optimize the long description of spec
+* Add sqlalchemy-migrate to License mapping
+* Add dependence fetch tool
+* !9 fix license issue From: @xiyuanwang Reviewed-by: @huangtianhua Signed-off-by: @huangtianhua
+* fix pyporter homeurl and download error
+* !8 update README.en.md From: @ffrog Reviewed-by: Signed-off-by:
+* update README.en.md && README.md
+* Fix license issue
+* !5 Drop -t usage From: @xiyuanwang Reviewed-by: @huangtianhua Signed-off-by: @huangtianhua
+* Drop -t function
+* !4 Fix package name bug From: @xiyuanwang Reviewed-by: @huangtianhua Signed-off-by: @huangtianhua
+* Fix package name bug
+* !3 Fix pyporter error From: @xiyuanwang Reviewed-by: @huangtianhua Signed-off-by: @huangtianhua,@huangtianhua
+* Fix pyporter error
+* !2 Add openstack rpm spec templet From: @xiyuanwang Reviewed-by: Signed-off-by:
+* Add openstack rpm spec templet
+* !1 Init README From: @xiyuanwang Reviewed-by: @huangtianhua Signed-off-by: @huangtianhua
+* Init README
+* Initial commit

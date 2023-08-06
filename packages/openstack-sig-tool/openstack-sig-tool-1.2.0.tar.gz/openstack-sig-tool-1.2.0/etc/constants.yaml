@@ -1,0 +1,249 @@
+---
+# <pypi name> : <openEuelr package name(without python prefix)>
+# This mapping is used for spec generation.
+pypi2pkgname:
+  Babel: babel
+  Django: Django
+  Flask-RESTful: flask-restful
+  Flask: flask
+  Jinja2: jinja2
+  Mako: mako
+  MarkupSafe: markupsafe
+  Paste: paste
+  PasteDeploy: paste-deploy
+  Pillow: pillow
+  Pint: pint
+  PyJWT: jwt
+  PyMySQL: PyMySQL
+  PyNaCl: pynacl
+  PySocks: pysocks
+  Pygments: pygments
+  Routes: routes
+  SQLAlchemy: sqlalchemy
+  Sphinx: sphinx
+  Tempita: tempita
+  WSME: wsme
+  WebOb: webob
+  WebTest: webtest
+  Werkzeug: werkzeug
+  alabaster: sphinx-theme-alabaster
+  dnspython: dns
+  gitdb2: gitdb
+  jaraco.packaging: jaraco.packaging
+  oslosphinx: oslo-sphinx
+  ovs: openvswitch
+  pyOpenSSL: pyOpenSSL
+  prometheus-client: prometheus_client
+  pyenchant: enchant
+  pygraphviz: graphviz
+  pyinotify: inotify
+  pykerberos: kerberos
+  python-json-logger: json_logger
+  python-qpid-proton: qpid-proton
+  python-subunit: subunit
+  repoze.lru: repoze-lru
+  rst.linker: rst.linker
+  semantic-version: semantic_version
+  smmap2: smmap
+  systemd-python: systemd
+  edgegrid-python: edgegrid
+
+# <pypi name> : <openEuelr git repo name(without python and openstack prefix)>
+# This mapping is used for dependence generation.
+pypi2reponame:
+  Babel: babel
+  Django: django
+  Flask-RESTful: flask-restful
+  Flask: flask
+  Jinja2: jinja2
+  Mako: mako
+  MarkupSafe: markupsafe
+  Paste: paste
+  PasteDeploy: paste-deploy
+  Pillow: pillow
+  Pint: pint
+  PrettyTable: prettytable
+  PyECLib: pyeclib
+  PyJWT: python-jwt
+  PyNaCl: python-pynacl
+  PySocks: pysocks
+  Pygments: python-pygments
+  Routes: routes
+  SQLAlchemy: sqlalchemy
+  Sphinx: sphinx
+  Tempita: tempita
+  WSME: wsme
+  WebOb: webob
+  WebTest: webtest
+  Werkzeug: werkzeug
+  Yappi: yappi
+  alabaster: python-sphinx-theme-alabaster
+  dfs_sdk: dfs-sdk
+  dnspython: dns
+  gitdb2: python-gitdb
+  grpcio: grpc
+  jaraco.collections: jaraco-collections
+  jaraco.functools: jaraco-functools
+  oslosphinx: python-oslo.sphinx
+  ovs: openvswitch
+  prometheus-client: python-prometheus_client
+  pycrypto: python-crypto
+  pygraphviz: python-graphviz
+  pyinotify: python-inotify
+  pykerberos: kerberos
+  pyldap: python-ldap
+  python-json-logger: python-json_logger
+  python-subunit: subunit
+  repoze.lru: repoze-lru
+  rtslib-fb: rtslib
+  ruamel.yaml: ruamel-yaml
+  semantic-version: python-semantic_version
+  setuptools-git: setuptools_git
+  smmap2: python-smmap
+  sphinx_feature_classification: sphinx-feature-classification
+  sphinx-rtd-theme: python-sphinx_rtd_theme
+  sphinxcontrib.autoprogram: sphinxcontrib-autoprogram
+  suds-community: suds2
+  systemd-python: python-systemd
+  zope.component: zope-component
+  zope.interface: zope-interface
+  flask-cors: Flask-Cors
+  psycopg2-binary: psycopg2
+  edgegrid-python: edgegrid
+  designate-dashboard: designate-ui
+  heat-dashboard: heat-ui
+  mistral-dashboard: mistral-ui
+  octavia-dashboard: octavia-ui
+  sahara-dashboard: sahara-ui
+  vitrage-dashboard: vitrage-ui
+
+# Some projects' name in pypi json file doesn't correct, this mapping fix it.
+# Wrong name : Right name(pypi name)
+pypi_name_fix:
+  BeautifulSoup4: beautifulsoup4
+  Click: click
+  IPython: ipython
+  Ipython: ipython
+  Six: six
+  Webob: WebOb
+  babel: Babel
+  cloud-sptheme: cloud_sptheme
+  couchdb: CouchDB
+  cython: Cython
+  django: Django
+  flask: Flask
+  jinja2: Jinja2
+  logbook: Logbook
+  openstack.nose-plugin: openstack.nose_plugin
+  prometheus_client: prometheus-client
+  pygments: Pygments
+  pyjwt: PyJWT
+  pympler: Pympler
+  pymysql: PyMySQL
+  pyopenssl: pyOpenSSL
+  pyyaml: PyYAML
+  requests_mock: requests-mock
+  secretstorage: SecretStorage
+  sphinx: Sphinx
+  sphinxcontrib_issuetracker: sphinxcontrib-issuetracker
+  sqlalchemy-utils: SQLAlchemy-Utils
+  sqlalchemy: SQLAlchemy
+  webob: WebOb
+  werkzeug: Werkzeug
+  importlib_metadata: importlib-metadata
+
+# Some project's version doesn't exist, this mapping correct the version.
+pypi_version_fix:
+  PrettyTable-0.7: 0.7.2
+  Sphinx-1.6.0: 1.6.1
+  aioeventlet-0.4: 0.5.1
+  alabaster-0.7: 0.7.1
+  attrs-19.0: 19.1.0
+  bitmath-1.3.0: 1.3.0.1
+  chardet-2.0: 2.2.1
+  chardet-2.2: 2.2.1
+  cloud_sptheme-1.10.1: 1.10.1.post20200504175005
+  cradox-2.0.0: 2.1.2
+  furo-2021.6.24: 2021.6.24b37
+  html5lib-0.99999999pre: 1.0
+  importlib-resources-1.6: 2.0.0
+  lazy-object-proxy-1.4.*: 1.4.3
+  msgpack-0.4.0: 0.5.0
+  nbformat-5.0: 5.0.2
+  openstackdocstheme-1.32.1: 2.0.0ß
+  pep517-0.9: 0.9.1
+  pluggy-0.7: 0.7.1
+  prompt-toolkit-2.0.0: 2.0.1
+  py-1.5.0: 1.5.1
+  pyOpenSSL-1.0.0: 16.0.0
+  pyldap-2.4: 2.4.14
+  pyngus-2.0.0: 2.0.3
+  pytz-0a: 2020.1
+  setuptools-0.6a2: 0.7.2
+  stone-2.*: 3.0.0
+  trollius-1.0: 1.0.4
+
+black_list:
+  # Some projects don't exist on pypi. We only deal them by hand, skip them in oos.
+  - infinisim
+  - pyev
+  - rados
+  - python-rados
+  - rbd
+  # Some projects are out of date.
+  - argparse
+  # Some project don't support python3
+  - anyjson
+  - mox
+  - enum34
+  - futures
+  - qpid-tools
+  - qpid-python
+  # Some projects are removed from openEuler.
+  # The projects which relies on this kind of projects should be removed as well.
+  - nose
+  - nosehtmloutput
+  - nosexcover
+  - openstack.nose_plugin
+  - django-babel
+  - CouchDB
+  - unicodecsv
+  # SOme projects are not necessary for openEuler OpenStack
+  - aws-xray-sdk
+  - pcre
+  - ibm_db_sa
+  - azure-servicebus
+  - collective.checkdocs
+  - backports.unittest-mock
+  - jaraco.classes
+  - librabbitmq
+  - elasticsearch
+
+# <pypi name> : <license>
+pypi_license:
+  django-compressor: Apache-2.0 MIT
+  django-pyscss: BSD
+  jsonpath-rw-ext: Apache-2.0
+  sqlalchemy-migrate: MIT
+  testresources: Apache-2.0
+  XStatic-Angular-FileUpload: MIT
+  XStatic-Angular-lrdragndrop: MIT
+  XStatic-Bootstrap-Datepicker: Apache-2.0
+  XStatic-Hogan: Apache-2.0
+  XStatic-Jasmine: MIT
+  XStatic-jQuery: MIT
+  XStatic-JQuery-Migrate: MIT
+  XStatic-jquery-ui: MIT
+  XStatic-JQuery.quicksearch: MIT
+  XStatic-JQuery.TableSorter: MIT
+  XStatic-mdi: SIL OFL 1.1
+  XStatic-Rickshaw: MIT
+  XStatic-smart-table: MIT
+  XStatic-Spin: MIT
+  XStatic-term.js: MIT
+  XStatic-tv4: Public Domain
+  URLObject: Unlicense
+
+# pkg_description:
+#   example: |-
+#     description
