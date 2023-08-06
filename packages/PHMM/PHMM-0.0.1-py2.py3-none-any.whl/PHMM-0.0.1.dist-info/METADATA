@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: PHMM
+Version: 0.0.1
+Summary: Inference and prediction on hidden Markov model with missing observations
+Home-page: https://github.com/lidongrong/PHMM
+Author: Dongrong Li
+Author-email: DongrongLi@link.cuhk.edu.hk
+License: MIT
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.6.0
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt.txt
+Requires-Dist: numpy
+Requires-Dist: scipy
+Requires-Dist: pandas
+Requires-Dist: pickle
+Requires-Dist: tqdm
+Requires-Dist: joblib
+
+Inference and prediction on hidden Markov model with missing observations
