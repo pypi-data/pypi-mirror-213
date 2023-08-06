@@ -1,0 +1,7 @@
+signway_sdk/__init__.py,sha256=3KHsuo6RaglhGMe3DiiVTZFgenBl7RFnPuDsGL6O9Q0,42
+signway_sdk/sign_url.py,sha256=YSiEhCrecoWIyexbykpKD0Br26ANnpMgAT_w3Wyvwcc,1471
+signway_sdk/signing_functions.py,sha256=tnyhx7Ei8Oa9h7wb34RQM4Y8oNB-5YMhdQxxCV5uKD4,3258
+signway_sdk/test_sing_url.py,sha256=wfI0R_X_NFvxDl6qNm7lV1SRH8V2BV9D2Jb9DP43Ujw,832
+signway_sdk-0.1.0.dist-info/METADATA,sha256=CDqBIS3e6BQbMKHwCV2N4Y2O_T7SGY5n_K7N7kohBvQ,560
+signway_sdk-0.1.0.dist-info/WHEEL,sha256=Zb28QaM1gQi8f4VCBhsUklF61CTlNYfs9YAZn-TOGFk,88
+signway_sdk-0.1.0.dist-info/RECORD,,
