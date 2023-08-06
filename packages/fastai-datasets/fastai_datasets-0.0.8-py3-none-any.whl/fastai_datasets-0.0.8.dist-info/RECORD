@@ -1,0 +1,17 @@
+fastai_datasets/__init__.py,sha256=SXzYbNbO2itBiOyC900eh37SDVHzysubt0O0nb5orN4,313
+fastai_datasets/_modidx.py,sha256=-NdUjgC0vVvHwow4X94BI1Fdnb0c6CLbu5ym5TxGrD8,13526
+fastai_datasets/all.py,sha256=PMIEg4-f5ybX6Lj4zrtm2m7YqmHLAZu481cmNvNBtaE,170
+fastai_datasets/cifar.py,sha256=Sz4zs6Xwt8vEFkDoa5JWDBNJ-1hRlOaIpNgV0sQOYU0,752
+fastai_datasets/imagenette.py,sha256=jH5W2w0yA2iovXfYbn1SwMG7L-GR9xRLJwjj-Kx7nxc,947
+fastai_datasets/lfw.py,sha256=DPlFznP1FYKCQiaIRHJU-24Tk2rp58wcZJI-4WI8wZ8,4698
+fastai_datasets/mnist.py,sha256=EURUv4tqo7VhzVOVMGxETi4jLKB6tIpGhJGmmw0aISk,882
+fastai_datasets/pairs.py,sha256=SU_2_XixzhVmENq87q18PUnBc0dF2IYJMuQbR5NsV_0,3800
+fastai_datasets/patches.py,sha256=TAuLjBz33MrAruTAofHKlOAVpep1Elp9H9K_Aw5RuPo,6947
+fastai_datasets/pfr.py,sha256=dWjLdTgRfpiVjzQ9-9OLOJt-c1cuM0YV0dXBsFZogIs,838
+fastai_datasets/utils.py,sha256=utWXV7Iw00qRTdyvdMgCEndIZqAdIvLMsIxMlEoFlmY,1877
+fastai_datasets-0.0.8.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+fastai_datasets-0.0.8.dist-info/METADATA,sha256=pBt-WMZJrNnCDc3ifiOjyKe55lyhtxAYdk4YEQxa98A,4178
+fastai_datasets-0.0.8.dist-info/WHEEL,sha256=EVRjI69F5qVjm_YgqcTXPnTAv3BfSUr0WVAHuSP3Xoo,92
+fastai_datasets-0.0.8.dist-info/entry_points.txt,sha256=gUCJxy44VP63jkZvoz-tQTJYXVxiFL60gdWYtpQkz3M,73
+fastai_datasets-0.0.8.dist-info/top_level.txt,sha256=XVW9YJgOF7jg7OFb8xup8ZLiplU8EWWl_eNsvnY4Gpw,16
+fastai_datasets-0.0.8.dist-info/RECORD,,
