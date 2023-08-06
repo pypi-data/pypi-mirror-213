@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: supergreen
+Version: 0.0.1
+Summary: Supergreen, the data scientist's secret sauce, analyzes production prediction problems caused by those sly tabular-trained machine learning models.
+Author: Itai Friendinger
+Author-email: itaifrenkel@live.com
+Requires-Python: >=3.8,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Description-Content-Type: text/markdown
+
+
