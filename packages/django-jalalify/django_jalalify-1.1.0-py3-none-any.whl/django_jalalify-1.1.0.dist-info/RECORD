@@ -1,0 +1,14 @@
+django_jalalify/__init__.py,sha256=nLVYSgnEDluqH-PEnt6ymqOiY2UkQb6cLfGuBLeErIg,191
+django_jalalify/apps.py,sha256=aJNSCgQCGIPrAMI-kHAZDIh_imEIKz9jVovIGr8_30I,161
+django_jalalify/fields.py,sha256=ZGqlelZLW3PfT1_-9AbuF_RQ-BHIjzqG6BP6odTolj4,2142
+django_jalalify/filters.py,sha256=4NxSRdyjRvDhPd5Y8jiW41KLqoUlnMnVQa17WQxUttU,681
+django_jalalify/functions.py,sha256=80ukk36vmp5Wa65sUF_dd62F1uX2QqnmJxg-_leH3sE,251
+django_jalalify/mixins.py,sha256=K0XsTQ4qm5VwygBfvm7sU9v-0tFEWpML9AL5J_Li6as,487
+django_jalalify/tests.py,sha256=1Lt4PLmi18eym40jBrsWcivkdW5U7hNCbV5SDMjwtgo,1483
+django_jalalify/timezone.py,sha256=loW7BPLekW9QfIFCgUdGuRJGnkh7SOYI1KxnZlB0dls,1793
+django_jalalify/utils.py,sha256=yg414hVTwCwlNUbECZwsxxwSWIcKi34ZbD4a7KXmnyU,3231
+django_jalalify/migrations/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_jalalify-1.1.0.dist-info/METADATA,sha256=HP_GScZ1spJk7v0S82xYMpd2TTz-VIduAjdsxDW4x9A,1788
+django_jalalify-1.1.0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+django_jalalify-1.1.0.dist-info/top_level.txt,sha256=q5yiTAErKr-HVejY_qE-nWGDDxOTPjKbueNRm6sv-2g,16
+django_jalalify-1.1.0.dist-info/RECORD,,
