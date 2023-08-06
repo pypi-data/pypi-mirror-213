@@ -1,0 +1,51 @@
+Metadata-Version: 2.1
+Name: mariqt-widgets
+Version: 0.2.1
+Summary: Contains widgets commonly used by MarIQT Notebooks.
+Home-page: https://codebase.helmholtz.cloud/datahub/marehub/ag-videosimages/mariqt-notebook-widgets
+Author: Karl Heger
+Author-email: kheger@geomar.de
+License: GNU General Public License v3
+Keywords: mariqt_widgets
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=3.6
+License-File: LICENSE
+License-File: AUTHORS.md
+Requires-Dist: mariqt
+Requires-Dist: ipywidgets
+Requires-Dist: ipyfilechooser
+Requires-Dist: markdown
+
+# mariqt_widgets 
+
+Contains widgets commonly used by MarIQT Notebooks.
+
+ * Free software: GNU General Public License v3 
+ * Documentation:  https://datahub.pages.hzdr.de/marehub/ag-videosimages/mariqt-notebook-widgets/
+
+
+# Features
+
+-   TODO
+
+# Credits
+
+This package was created with
+[Cookiecutter](https://github.com/audreyr/cookiecutter) and the
+[open-source/toolbox/cookiecutter-pypackage](https://git.geomar.de/open-source/toolbox/cookiecutter-pypackage)
+project template.
+
+
+# History
+
+0.1.0 (2023-05-09)
+
+
+-   First release 

@@ -1,0 +1,13 @@
+mariqt_widgets/__init__.py,sha256=t-D0lWdTPPwvD3a3HHCMBXTdvlhBGnmGhOVafsTvef4,128
+mariqt_widgets/notebook_widgets.py,sha256=w9M6fqo26M_6NwavHDlCn61FcrIFfjnwG8I1uCSdkLY,49232
+mariqt_widgets/icons/checkbox-circle-line_gray.png,sha256=RaFzsWg0opiHsSYaOP61cLgu36lVDLnwyNUsJwMhnww,1520
+mariqt_widgets/icons/checkbox-circle-line_green.png,sha256=jHZmxJJLY-7dMGDUxBYAkBCFySeS05DQPbAd7vmX49s,1525
+mariqt_widgets/icons/error-warning-line_gray.png,sha256=_ZjMCCHce_zdD9QekKubV66bHwicRIY1ncjy1O8wTmE,1502
+mariqt_widgets/icons/error-warning-line_orange.png,sha256=3Jt4GaLi-mHRPDz9lLHbwwvUaG2gttT-J90WquqXMNk,1513
+mariqt_widgets/icons/error-warning-line_red.png,sha256=gF0m6xbCcX1LQ0kwjIkPln6eLGOL9dSF2h4rqEjU0HU,1470
+mariqt_widgets-0.2.1.dist-info/AUTHORS.md,sha256=fHR702RktmLjB6uJ0FIzG-DTjVXU4tQ4mFh0jeBP-Ns,118
+mariqt_widgets-0.2.1.dist-info/LICENSE,sha256=OHxJeWWJWP1rrSwBbdFqDnWwhFn2dM_2L7mtXcqSh-c,1506
+mariqt_widgets-0.2.1.dist-info/METADATA,sha256=toPgSmE-skw3MZNUSSYHgK8_pj7zk21CuO91CMW1Mpw,1443
+mariqt_widgets-0.2.1.dist-info/WHEEL,sha256=a-zpFRIJzOq5QfuhBzbhiA1eHTzNCJn8OdRvhdNX0Rk,110
+mariqt_widgets-0.2.1.dist-info/top_level.txt,sha256=Ul1udsokY_DyTjF0ePRHxZjs46MX931t8CKpdL2oDTc,15
+mariqt_widgets-0.2.1.dist-info/RECORD,,
