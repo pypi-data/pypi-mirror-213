@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "kgclitest"
+version = "0.3.0"
+description = ""
+authors = ["Farid Seifi <faridsei@med.umich.edu>"]
+readme = "README.md"
+packages = [{include = "kgclitest", from = "src"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+typer = "^0.9.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+greetings="kgclitest.greetings:app"
