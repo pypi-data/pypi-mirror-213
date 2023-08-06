@@ -1,0 +1,11 @@
+fayadateconverter/UmalqurraArray.py,sha256=SvOdWySroRXOqUW0bPmhSIU3LrhsJ9IYkxBOxiZ_Hcs,16375
+fayadateconverter/__init__.py,sha256=gHoBqG7r-MD0jFsSwNCH9wFCRULh2xzO4o4AqScgrPM,164
+fayadateconverter/datetime.py,sha256=F4749hf79hNc7RMGQzb62tN_94snuy8QoD3sJd0OkkA,94642
+fayadateconverter/gregorian.py,sha256=9QhtO7yu4xB757ZDIZfs9bp9u5uF4kWVXKpRuC5z1Ps,7136
+fayadateconverter/hijri.py,sha256=4GsfitPatyAaVNMl0aax2un5-oz8wJ2n6c1ZnvucQcA,5762
+fayadateconverter/jalali.py,sha256=1bb2cmMLa9s__xkpCqtwEm5cm5jCewNWnoSPbhOaZjU,4726
+fayadateconverter-0.0.1.dist-info/LICENSE,sha256=yKZZ6H1V-CC2Z0a4X1_391BHjEy9oYqwxUxlh7ikGQM,1093
+fayadateconverter-0.0.1.dist-info/METADATA,sha256=AUnwDzAKVOrNS54g5nN_pVqkEGdRSJB26NpG9RR1WFc,307
+fayadateconverter-0.0.1.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+fayadateconverter-0.0.1.dist-info/top_level.txt,sha256=t3KBhuhgvF8_TmWclNrWerIxl0lJGLyHnZtcl7oMZbk,18
+fayadateconverter-0.0.1.dist-info/RECORD,,
