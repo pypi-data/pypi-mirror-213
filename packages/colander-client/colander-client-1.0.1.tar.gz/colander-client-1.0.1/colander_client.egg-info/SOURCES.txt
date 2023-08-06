@@ -1,0 +1,10 @@
+LICENSE.txt
+README.md
+setup.py
+colander_client/__init__.py
+colander_client/client.py
+colander_client.egg-info/PKG-INFO
+colander_client.egg-info/SOURCES.txt
+colander_client.egg-info/dependency_links.txt
+colander_client.egg-info/requires.txt
+colander_client.egg-info/top_level.txt
