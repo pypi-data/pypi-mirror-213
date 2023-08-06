@@ -1,0 +1,58 @@
+Metadata-Version: 2.1
+Name: talkytrend
+Version: 1.1.0
+Summary: A python package to retrieve  economic data such as Trend for any financial symbol.
+License: MIT
+Keywords: finance,crypto,bot,trend,economic
+Author: mraniki
+Author-email: 8766259+mraniki@users.noreply.github.com
+Requires-Python: >=3.10,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: asyncio
+Requires-Dist: dynaconf
+Requires-Dist: tradingview_ta
+Project-URL: Changelog, https://github.com/mraniki/talkytrend/blob/dev/CHANGELOG.rst
+Project-URL: Issues, https://github.com/mraniki/talkytrend/issues
+Project-URL: Support, https://github.com/mraniki/talkytrend/discussions
+Description-Content-Type: text/markdown
+
+# TalkyTrend 
+
+| <img width="200" alt="Logo" src="https://user-images.githubusercontent.com/8766259/226854338-e900f69e-d884-4a9a-90b1-b3dde7711b31.png"> | A python package to retrieve asset trend and economic data. |
+| ------------- | ------------- |
+|<br> [![wiki](https://img.shields.io/badge/🪙🗿-wiki-0080ff)](https://talkytrader.gitbook.io/talky/) [![Pypi](https://badgen.net/badge/icon/talkytrend?icon=pypi&label)](https://pypi.org/project/talkytrend/) ![Version](https://img.shields.io/pypi/v/talkytrend)<br>  ![Pypi](https://img.shields.io/pypi/dm/talkytrend)<br> [![Build](https://github.com/mraniki/talkytrend/actions/workflows/%E2%9C%A8Flow.yml/badge.svg)](https://github.com/mraniki/talkytrend/actions/workflows/%E2%9C%A8Flow.yml) [![codecov](https://codecov.io/gh/mraniki/TalkyTrend/branch/main/graph/badge.svg?token=WAHUEMAJN6)](https://codecov.io/gh/mraniki/TalkyTrend) | Find Asset Trend |
+
+Key features:
+
+- trading view connectivity
+
+## Install
+
+`pip install talkytrend`
+
+## How to use it
+
+```
+    trend = TalkyTrend()
+    result = await trend.fetch_analysis()
+    print(result) #BUY
+    monitor = await trend.monitor_assets() #monitor change of trend
+
+```
+
+### Example
+
+[example](https://github.com/mraniki/talkytrend/blob/main/examples/example.py)
+
+### Real use case
+
+[TalkyTrader](https://github.com/mraniki/tt)
+
+## Documentation
+
+
+[![wiki](https://img.shields.io/badge/🪙🗿-wiki-0080ff)](https://talkytrader.gitbook.io/talky/)
+
