@@ -1,0 +1,3 @@
+Redesign `WorkflowTaskBase` `read` and `write` to accept decoders and encoders. The result is that `read` and `write` are now the methods to be
+used in *all* cases of reading and writing (i.e., we no longer need different read/write functions for different data types). A library of codecs
+is also provided for all data types currently used.
