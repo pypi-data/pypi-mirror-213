@@ -1,0 +1,21 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:plone="http://namespaces.plone.org/plone"
+    i18n_domain="design.plone.ioprenoto"
+    >
+
+  <include
+      package="plone.behavior"
+      file="meta.zcml"
+      />
+
+  <plone:behavior
+      name="design.plone.ioprenoto.behaviors.additional_fields"
+      title="Campi aggiuntivi"
+      description="Campi aggiuntivi al c.t. Cartella Prenotazioni"
+      factory=".additional_fields.AdditionalFields"
+      provides=".additional_fields.IAdditionalFields"
+      marker=".additional_fields.IAdditionalFields"
+      />
+
+</configure>
