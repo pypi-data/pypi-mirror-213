@@ -1,0 +1,6 @@
+grpcio<=1.53.0,>=1.49.1
+protobuf>=3.20.0
+environs<=9.5.0
+ujson>=2.0.0
+pandas>=1.2.4
+numpy!=1.25.0rc1
