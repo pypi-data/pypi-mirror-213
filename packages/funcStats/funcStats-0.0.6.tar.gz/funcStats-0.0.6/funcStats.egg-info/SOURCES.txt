@@ -1,0 +1,10 @@
+LICENSE
+setup.py
+funcStats/__init__.py
+funcStats/log.py
+funcStats/modes.py
+funcStats.egg-info/PKG-INFO
+funcStats.egg-info/SOURCES.txt
+funcStats.egg-info/dependency_links.txt
+funcStats.egg-info/requires.txt
+funcStats.egg-info/top_level.txt
