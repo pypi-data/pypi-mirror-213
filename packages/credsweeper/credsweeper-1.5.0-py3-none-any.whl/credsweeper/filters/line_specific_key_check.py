@@ -1,0 +1,36 @@
+import re
+
+from credsweeper.config import Config
+from credsweeper.credentials import LineData
+from credsweeper.filters import Filter
+from credsweeper.utils import Util
+
+
+class LineSpecificKeyCheck(Filter):
+    """Check that values from list below is not in candidate line."""
+
+    NOT_ALLOWED = ["example", "enc\\(", "enc\\[", "true", "false"]
+    NOT_ALLOWED_PATTERN = re.compile(  #
+        Util.get_regex_combine_or(NOT_ALLOWED),  #
+        flags=re.IGNORECASE)
+
+    def __init__(self, config: Config = None) -> None:
+        pass
+
+    def run(self, line_data: LineData) -> bool:
+        """Run filter checks on received credential candidate data 'line_data'.
+
+        Args:
+            line_data: credential candidate data
+
+        Return:
+            True, if need to filter candidate and False if left
+
+        """
+        if line_data.line is None:
+            return True
+
+        if self.NOT_ALLOWED_PATTERN.search(line_data.line):
+            return True
+
+        return False
