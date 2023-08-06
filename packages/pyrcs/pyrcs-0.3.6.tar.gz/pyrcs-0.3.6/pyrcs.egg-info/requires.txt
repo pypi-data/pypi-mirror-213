@@ -1,0 +1,2 @@
+pyhelpers>=1.5.0
+beautifulsoup4
