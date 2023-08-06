@@ -1,0 +1,10 @@
+tdfextractor/__init__.py,sha256=Zxbdr-WT2uU-niVT5DumbVUz2TcU8Gh4pHDinBHMZwA,57
+tdfextractor/constants.py,sha256=O_o9xTxbt6jnDyoLw-kPpOp6QjooOgVxCHL3E3nJsaY,151
+tdfextractor/ms2_extractor.py,sha256=oGyhYoe2V4d1jAqhS756Db_zWaioDQlJe9W17wj0Y60,19327
+tdfextractor/string_templates.py,sha256=KtXXN8_OjTnxY8-G22TdsuxmpsY1fqx7b7s_OFVNu0w,1260
+tdfextractor/utils.py,sha256=Rtj51uIjJAPNZupRL02fjk9Tn3dcB_nQ_caux4y69JE,3579
+tdfextractor-0.1.8.dist-info/LICENSE,sha256=ecuHBUF1V9LjxfZnl-y6gqJblJ1Qk6p4TfdyuFl7G5U,1072
+tdfextractor-0.1.8.dist-info/METADATA,sha256=PUGYbaXRxwJJc9DLA6xMcJyN3K1Rwetkc02F3X1zru8,1844
+tdfextractor-0.1.8.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+tdfextractor-0.1.8.dist-info/top_level.txt,sha256=EZCc9uFaQ3xJLfDCZkd-nt7y8shdT3VJHY-YDpOj_2k,13
+tdfextractor-0.1.8.dist-info/RECORD,,
