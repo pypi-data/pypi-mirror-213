@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "fuzzylearn"
+version = "1.1.0"
+description = ""
+authors = ["drhosseinjavedani <h.javedani@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "3.8.5"
+wheel = "^0.40.0"
+nox = "^2023.4.22"
+
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
