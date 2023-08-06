@@ -1,0 +1,19 @@
+from __future__ import absolute_import
+
+# flake8: noqa
+
+# import apis into api package
+from diveplane.openapi.api.account_api import AccountApi
+from diveplane.openapi.api.information_api import InformationApi
+from diveplane.openapi.api.project_management_api import ProjectManagementApi
+from diveplane.openapi.api.session_management_api import SessionManagementApi
+from diveplane.openapi.api.task_operations_api import TaskOperationsApi
+from diveplane.openapi.api.trainee_case_operations_api import TraineeCaseOperationsApi
+from diveplane.openapi.api.trainee_defaults_management_api import TraineeDefaultsManagementApi
+from diveplane.openapi.api.trainee_feature_operations_api import TraineeFeatureOperationsApi
+from diveplane.openapi.api.trainee_management_api import TraineeManagementApi
+from diveplane.openapi.api.trainee_metrics_api import TraineeMetricsApi
+from diveplane.openapi.api.trainee_operations_api import TraineeOperationsApi
+from diveplane.openapi.api.trainee_optimize_operations_api import TraineeOptimizeOperationsApi
+from diveplane.openapi.api.trainee_session_management_api import TraineeSessionManagementApi
+from diveplane.openapi.api.trainee_status_api import TraineeStatusApi
