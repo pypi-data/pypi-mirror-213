@@ -1,0 +1,60 @@
+<?xml version="1.0"?>
+<!-- This file is part of Tryton.  The COPYRIGHT file at the top level of
+this repository contains the full copyright notices and license terms. -->
+<tryton>
+    <data>
+
+        <!-- views -->
+        <!-- primanota -->
+        <record model="ir.ui.view" id="primanota_view_form">
+            <field name="model">account_primanota.primanota</field>
+            <field name="type">form</field>
+            <field name="name">primanota_form</field>
+        </record>
+        <record model="ir.ui.view" id="primanota_view_list">
+            <field name="model">account_primanota.primanota</field>
+            <field name="type">tree</field>
+            <field name="name">primanota_list</field>
+        </record>
+        <!-- tax_line -->
+        <record model="ir.ui.view" id="taxline_view_list">
+            <field name="model">account.tax.line</field>
+            <field name="type">tree</field>
+            <field name="name">taxline_list</field>
+        </record>
+
+        <!-- context model -->
+        <record model="ir.ui.view" id="primanota_context_view_form">
+            <field name="model">account_primanota.primanota.context</field>
+            <field name="type">form</field>
+            <field name="name">primanota_context_form</field>
+        </record>
+
+        <!-- action view -->
+        <record model="ir.action.act_window" id="act_primanota_view">
+            <field name="name">Primanota</field>
+            <field name="res_model">account_primanota.primanota</field>
+            <field name="context_model">account_primanota.primanota.context</field>
+        </record>
+        <record model="ir.action.act_window.view" id="act_primanota_view-1">
+            <field name="sequence" eval="10"/>
+            <field name="view" ref="primanota_view_list"/>
+            <field name="act_window" ref="act_primanota_view"/>
+        </record>
+        <record model="ir.action.act_window.view" id="act_primanota_view-2">
+            <field name="sequence" eval="20"/>
+            <field name="view" ref="primanota_view_form"/>
+            <field name="act_window" ref="act_primanota_view"/>
+        </record>
+
+        <!-- readonly -->
+        <record model="ir.model.access" id="access_primanota-anon">
+            <field name="model" search="[('model', '=', 'account_primanota.primanota')]"/>
+            <field name="perm_read" eval="True"/>
+            <field name="perm_write" eval="False"/>
+            <field name="perm_create" eval="False"/>
+            <field name="perm_delete" eval="False"/>
+        </record>
+
+    </data>
+</tryton>
