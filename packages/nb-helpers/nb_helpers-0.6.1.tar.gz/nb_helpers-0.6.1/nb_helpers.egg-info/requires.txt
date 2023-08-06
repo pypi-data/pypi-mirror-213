@@ -1,0 +1,10 @@
+pip
+packaging
+rich
+fastcore
+ipython
+execnb==0.1.2
+ghapi
+GitPython
+
+[dev]
