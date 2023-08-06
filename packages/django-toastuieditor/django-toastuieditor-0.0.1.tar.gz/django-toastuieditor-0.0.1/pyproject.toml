@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "django-toastuieditor"
+version = "0.0.1"
+authors = [
+  { name="xingfuggz", email="1158920674@qq.com" },
+]
+description = "一个toastuieditor的django包"
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "http://www.bayke.shop"
+"Bug Tracker" = "http://www.bayke.shop"

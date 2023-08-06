@@ -1,0 +1,56 @@
+<div id="toastui{{ name }}" style="width:100%"></div>
+{{ value|json_script:"value-data" }}
+{{ toast|json_script:"toast-data" }}
+
+<script>
+    let content = document.querySelector("#id_{{ name }}")
+    content.setAttribute("style", "display:none")
+    // 默认回显的值
+    let v = JSON.parse(document.querySelector("#value-data").textContent)
+    // 后端配置
+    let toastConf = JSON.parse(document.querySelector("#toast-data").textContent)
+
+    const { Editor } = toastui;
+    const { uml, colorSyntax } = Editor.plugin;
+
+    // const editor = new toastui.Editor({
+    const editor = Editor.factory({
+        el: document.querySelector('#toastui{{ name }}'),
+        previewStyle: toastConf.previewStyle,
+        minHeight: toastConf.minHeight,
+        height: toastConf.height,
+        initialValue: v,
+        initialEditType: toastConf.initialEditType,
+        previewHighlight: toastConf.previewHighlight,
+        hideModeSwitch: toastConf.hideModeSwitch,
+        usageStatistics: toastConf.usageStatistics,
+        language: toastConf.language,
+        plugins: [uml, colorSyntax],
+        events:{
+            change: (initialEditType) => {
+                content.value = editor.getMarkdown()
+            }
+        },
+        hooks: {
+            // 上传图片
+            addImageBlobHook: async (blob, callback) => {
+                const sendData = new FormData();
+                sendData.append('img', blob);
+                try {
+                    const response = await fetch('{% url "toastuieditor:toast_img_upload" %}', {
+                        method: 'POST',
+                        body: sendData
+                    });
+                    const result = await response.json();
+                    callback(result.url, result.text)
+                } catch (error) {
+                    console.log(error)
+                }
+            }
+        }
+    });
+</script>
+
+<!-- 参考文档
+    https://blog.csdn.net/qq_23447231/article/details/109205872
+-->
