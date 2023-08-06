@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: network_diffusion
+Version: 0.10.0
+Summary: Package to design and run diffusion phenomena in networks.
+Home-page: https://github.com/anty-filidor/network_diffusion
+Author: Michał Czuba, Piotr Bródka
+Author-email: michal.czuba@pwr.edu.pl, piotr.brodka@pwr.edu.pl
+License: GPL
+Project-URL: Documentation, https://network-diffusion.readthedocs.io/en/latest/
+Project-URL: Code, https://github.com/anty-filidor/network_diffusion
+Keywords: disease,simulation,processes influence,network science,multilayer networks,networkx,spreading,phenomena
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: Topic :: Scientific/Engineering :: Information Analysis
+Classifier: License :: OSI Approved :: GNU General Public License (GPL)
+Classifier: Programming Language :: Python :: 3.10
+Requires-Python: >=3.7
+License-File: LICENSE
+
+Network Diffusion
