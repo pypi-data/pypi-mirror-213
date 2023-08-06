@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+chatgpt_block/__init__.py
+chatgpt_block/chatgpt_block.py
+chatgpt_block.egg-info/PKG-INFO
+chatgpt_block.egg-info/SOURCES.txt
+chatgpt_block.egg-info/dependency_links.txt
+chatgpt_block.egg-info/requires.txt
+chatgpt_block.egg-info/top_level.txt
