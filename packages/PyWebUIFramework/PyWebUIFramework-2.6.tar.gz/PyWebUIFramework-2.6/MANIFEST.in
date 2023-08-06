@@ -1,0 +1,2 @@
+recursive-include src/core/resources *
+recursive-include README.md
