@@ -1,0 +1,52 @@
+[project]
+name = "llm_generation_server"
+version = "0.0.21"
+authors = [
+  { name="Frantisek Trebuna (gortibaldik)", email="ferotre@gmail.com" },
+]
+description = "Simple full stack app for displaying distribution of next token."
+readme = "README.md"
+requires-python = ">=3.9"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "Flask>=2.3.1",
+    "Flask-Cors>=3.0.10"
+]
+
+[project.urls]
+"Homepage" = "https://github.com/gortibaldik/visualize_llm_generation"
+"Bug Tracker" = "https://github.com/gortibaldik/visualize_llm_generation/issues"
+
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+include-package-data = true
+
+[tool.setuptools.package-dir]
+llm_generation_server = "llm_generation_server"
+
+[tool.isort]
+profile = "black"
+
+[tool.bumpver]
+current_version = "0.0.21"
+version_pattern = "MAJOR.MINOR.PATCH"
+commit_message = "bump version {old_version} -> {new_version}"
+commit = true
+tag = true
+push = true
+
+[tool.bumpver.file_patterns]
+"pyproject.toml" = [
+    'current_version = "{version}"',
+    'version = "{version}"'
+]
+"README.md" = [
+    "VERSION: `{version}`",
+]
