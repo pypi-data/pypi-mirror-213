@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: panda-utils
+Version: 1.1
+Summary: PandaUtils includes multiple tools for basic Panda3D automation
+Author-email: "Toontown: Event Horizon" <development@toontowneventhorizon.com>
+Project-URL: homepage, https://github.com/toontown-event-horizon/panda-utils
+Project-URL: bugtracker, https://github.com/toontown-event-horizon/panda-utils/issues
+Classifier: Programming Language :: Python :: 3.8
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.9
+License-File: LICENSE
+Provides-Extra: autopath
+Requires-Dist: panda3d (!=1.10.13.*,~=1.10) ; extra == 'autopath'
+Provides-Extra: everything
+Requires-Dist: panda-utils[imagery] ; extra == 'everything'
+Requires-Dist: panda-utils[autopath] ; extra == 'everything'
+Requires-Dist: panda-utils[runnable] ; extra == 'everything'
+Requires-Dist: panda-utils[pipeline] ; extra == 'everything'
+Provides-Extra: imagery
+Requires-Dist: Pillow (~=9.0) ; extra == 'imagery'
+Provides-Extra: pipeline
+Requires-Dist: pyyaml (~=6.0) ; extra == 'pipeline'
+Requires-Dist: numpy (~=9.0) ; extra == 'pipeline'
+Requires-Dist: panda3d-blend2bam ; extra == 'pipeline'
+Requires-Dist: panda3d (!=1.10.13.*,~=1.10) ; extra == 'pipeline'
+Provides-Extra: runnable
+Requires-Dist: platformdirs (~=3.5) ; extra == 'runnable'
+
