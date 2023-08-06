@@ -1,0 +1,2 @@
+[console_scripts]
+lspsp = lspsp.main:main

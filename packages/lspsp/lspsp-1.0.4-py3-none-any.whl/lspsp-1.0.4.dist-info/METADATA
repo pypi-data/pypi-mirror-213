@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: lspsp
+Version: 1.0.4
+Summary: LSPSP.ME Monitor
+License: GPL
+Platform: any
+Requires-Dist: APScheduler (==3.10.1)
+Requires-Dist: beautifulsoup4 (==4.12.2)
+Requires-Dist: Jinja2 (==3.1.1)
+Requires-Dist: Requests (==2.30.0)
+Requires-Dist: setuptools (==57.4.0)
+
+LSPSP.ME Monitor Service
