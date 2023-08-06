@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en-US">
+
+<head>
+    <link rel="icon" type="image/png" href={{ url_for("static", filename="favicon.png") }}>
+    <link href={{ url_for("static", filename="css/bootstrap.v5.0.2/bootstrap.min.css") }} rel="stylesheet">
+    <script src={{ url_for("static", filename="js/bootstrap.v5.0.2/bootstrap.min.js") }}></script>
+    <script src={{ url_for("static", filename="js/FileSaver.v2.0.4/FileSaver.min.js") }}></script>
+    <script src={{ url_for("static", filename="js/jszip.min.v3.10.0.js") }}></script>
+    <!-- <script src={{ url_for("static", filename="js/socket.io.v4.0.1/socket.io.js") }}></script> -->
+    <script src="{{ url_for('static', filename='js/jquery-3.6.3.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/scitq-common.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/scitq-task.js') }}"></script>
+</head>
+
+<body>
+    <title>Tasks view</title>
+    <img src={{ url_for("static", filename="favicon.png") }} width=64px style="float:left; margin-bottom:2px;"/>
+    <h1 style="float:left;">Tasks view</h1>
+    <div class="container" style="margin-bottom: -37px; max-width: 100%">
+        <div class="row">
+            <div class="col-md-7" style="float:left;">
+                
+                <form class="row g-2">
+                    <h3 class="col-md-2 p-2">Filter</h3>
+                    <div class="p-2 col-md-2">
+                        <label for="sortby" id="sortby" class="form-label">Sort by:</label>
+                    </select>
+                    </div>
+                    <p class="col-md-2 p-2" id="filter_by_worker"></p>
+                    <p class="col-md-2 p-2" id="filter_by_batch"></p>
+
+                    <div class="align-self-center p-2 col-md-2" style="margin-top: 23px;">
+                      <button class="btn btn-primary " type="submit">Apply</button>
+                    </div>
+                  </form> 
+                </div>
+            <div class="col-md-5">
+                <div class="d-flex" role="group" aria-label="Basic mixed styles example">
+                    <h3 class=" p-2"> Action</h3>
+                    <div class="btn-group" role="group"></div>
+                    <button type="button" id="pause" onclick="pause_page()" class="btn btn-warning"> Pause </button>
+                    <button type="button" id="downloadall" onclick="downloadAll('all')"  class="btn btn-info">Download All<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-download" viewBox="0 0 16 16"><path d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z"/><path d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z"/></svg></button>
+                    <a type="button" id="downloadall" target="_blank" href="/ui/batch/"  class="btn btn-secondary d-flex align-items-center">Batch view</a>
+                    <p style='float:right; margin:0.5em;border-width: 1px;border-color: grey;background-color: lightgrey;padding:0.3em;max-height:2.5em;border-style: double;font-size:small'>v{{ package_version }} </p>
+                    </div>
+                </div>
+                </div>
+             </div>    
+        </div> 
+    </div>
+
+<br/>
+<ul class="nav nav-tabs">
+    <li class="nav-item">
+        <input  class="nav-link bg-dark text-white" href="#" id="nav_all" type="button" onclick="show_tasks('all')" id ="all_tasks" value="All">
+    </li>
+    <li class="nav-item">
+        <input  class="nav-link bg-secondary text-white" href="#" id="nav_all" type="button" onclick="show_tasks('pending')" id ="pending_tasks" value="Pending tasks">
+    </li>   
+    <li class="nav-item">
+    <input  class="nav-link bg-primary text-white" href="#" id="nav_running" type="button" onclick="show_tasks('running')" id ="running_tasks" value="Running tasks">
+    </li>  
+    <li class="nav-item">  
+    <input class="nav-link bg-info text-dark" href="#"  id="nav_terminated" type="button" onclick="show_tasks('terminated')" id ="terminated_tasks" value="Terminated tasks">
+    </li>
+    <li class="nav-item">
+    <input class="nav-link bg-success text-dark" href="#" id="nav_succeeded" type="button" onclick="show_tasks('succeeded')" id="succeeded_tasks" value="Succeeded tasks">
+    </li>
+    <li class="nav-item"> 
+    <input class="nav-link bg-danger text-dark" href="#" id="nav_failed" type="button" onclick="show_tasks('failed')" id="failed_tasks" value="Failed tasks">
+    </li>
+</ul>
+<div class="col-md-12">
+    <div class="panel panel-default">
+        <span id="tasks"> 
+            <table class="table table-responsive table-hover table-striped">
+                <thead id="task_head" class="text-center table-${color_table}">
+                    <tr>
+                        <th>#</th>
+                        <th>Name</th>
+                        <th>Command</th>
+                        <th><div onclick="">Worker</div></th>
+                        <th>Batch</th>
+                        <th>Status</th>
+                        <th>Start</th>
+                        <th>Runtime</th>
+                        <th>Output</th>
+                        <th>Error</th>
+                        <th style="width:15em">Actions</th>
+                    </tr>
+                </thead>
+                <tbody id="tasks-table-body">
+                    <tr><td>Loading please wait ...</td></tr>
+                </tbody> 
+            </table>
+        </span>
+    </div>
+  </div>
+  <div class="clearfix"></div>
+  <br /><br />
+    </div>
+</body>
+
+</html>
+
+  
+
+  
+
+
