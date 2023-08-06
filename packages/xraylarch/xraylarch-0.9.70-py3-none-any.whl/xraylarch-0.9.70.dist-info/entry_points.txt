@@ -1,0 +1,9 @@
+[console_scripts]
+feff6l = larch.apps:run_feff6l
+feff8l = larch.apps:run_feff8l
+gse_mapviewer = larch.apps:run_gse_mapviewer
+larch = larch.apps:run_larch
+larch_server = larch.apps:run_larch_server
+xas_viewer = larch.apps:run_xas_viewer
+xrfdisplay = larch.apps:run_xrfdisplay
+xrfdisplay_epics = larch.apps:run_xrfdisplay_epics
