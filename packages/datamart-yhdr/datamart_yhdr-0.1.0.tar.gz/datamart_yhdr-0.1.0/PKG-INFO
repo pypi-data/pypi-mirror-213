@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: datamart_yhdr
+Version: 0.1.0
+Summary: A data interface package developed for Galaxy Derivatives Data Mart
+Project-URL: Homepage, https://galaxyderivatives.feishu.cn/wiki/wikcn6BhNvlpE8yOCmkjmJHTWHe
+Project-URL: Documentation, https://galaxyderivatives.feishu.cn/wiki/wikcnjOa3s7OQ06v82CzXHBDqUd
+Author-email: Shihua Huang <huangshihua@galaxyderivatives.com>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+# datamart_yhdr
+
+ [模组主页]("https://galaxyderivatives.feishu.cn/wiki/wikcn6BhNvlpE8yOCmkjmJHTWHe")  
+ [模组文档]("https://galaxyderivatives.feishu.cn/wiki/wikcnjOa3s7OQ06v82CzXHBDqUd")

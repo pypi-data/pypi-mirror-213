@@ -1,0 +1,22 @@
+[build-system]
+requires = ["hatchling", "requests"]
+build-backend = "hatchling.build"
+
+[project]
+name = "datamart_yhdr"
+version = "0.1.0"
+authors = [
+  { name="Shihua Huang", email="huangshihua@galaxyderivatives.com" },
+]
+description = "A data interface package developed for Galaxy Derivatives Data Mart"
+readme = "README.md"
+requires-python = ">=3.6"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://galaxyderivatives.feishu.cn/wiki/wikcn6BhNvlpE8yOCmkjmJHTWHe"
+"Documentation" = "https://galaxyderivatives.feishu.cn/wiki/wikcnjOa3s7OQ06v82CzXHBDqUd"
