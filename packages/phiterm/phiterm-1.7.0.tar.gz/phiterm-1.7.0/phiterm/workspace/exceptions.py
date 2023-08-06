@@ -1,0 +1,2 @@
+class WorkspaceException(Exception):
+    pass
