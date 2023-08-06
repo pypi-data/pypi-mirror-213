@@ -1,0 +1,12 @@
+name: cotede
+
+dependencies:
+- python
+- numpy
+- netcdf4
+- scipy
+- matplotlib
+- pip
+- pip:
+    - oceansdb>=0.8.6
+    - cotede
