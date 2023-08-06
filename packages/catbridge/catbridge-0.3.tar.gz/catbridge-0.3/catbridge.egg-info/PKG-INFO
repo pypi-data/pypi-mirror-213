@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: catbridge
+Version: 0.3
+Summary: A package for bridging cats
+Home-page: http://example.com/catbridge
+Author: Bowen Yang
+Author-email: by172@georgetown.edu
+Classifier: License :: OSI Approved :: Python Software Foundation License
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Example Package
+
+This is a simple example package. You can use
+[Github-flavored Markdown](https://github.com/Bowen999/catbridge)
+to write your content.
