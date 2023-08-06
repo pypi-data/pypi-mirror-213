@@ -1,0 +1,5 @@
+lxml
+vollseg
+napari
+natsort
+seaborn
