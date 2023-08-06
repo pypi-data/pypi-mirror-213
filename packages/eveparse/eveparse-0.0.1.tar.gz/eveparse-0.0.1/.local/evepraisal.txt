@@ -1,0 +1,1980 @@
+Concentrated Veldspar	3464125
+Compressed Concentrated Veldspar	2439781
+Compressed Condensed Scordite	1284493
+Veldspar	1244819
+Condensed Scordite	1146175
+Compressed Scordite	711386
+Compressed Veldspar	678805
+Compressed Dense Veldspar	631319
+Scordite	597402
+Compressed Solid Pyroxeres	449415
+Dense Veldspar	421113
+Solid Pyroxeres	384119
+Pyroxeres	172016
+Massive Scordite	145247
+Compressed Pyroxeres	141199
+Viscous Pyroxeres	119312
+Compressed Massive Scordite	115150
+Compressed Viscous Pyroxeres	47138
+Corpum C-Type Medium Armor Repairer
+# http://evepraisal.com/a/173evz.raw
+Pyerite (2000 Units)
+Mexallon (400 Units)
+Silicates (65 Units)
+Pyerite (6000 Units)
+Mexallon (400 Units)
+Hydrocarbons (65 Units)
+Azure Plagioclase*	2 712
+Concentrated Veldspar*	456 074
+Condensed Scordite*	58 106
+Dense Veldspar*	591 272
+Massive Scordite*	106 021
+Plagioclase*	46 163
+Rich Plagioclase*	90 400
+Scordite*	12 188
+Power Diagnostic System II	32
+Heavy Jigoro Enduring Stasis Grappler	1
+Corpus X-Type Kinetic Armor Hardener
+Corpus X-Type Thermal Armor Hardener
+Corpus X-Type Explosive Armor Hardener
+machariel
+Federation damage booster iv
+CONCORD Rogue Analysis Beacon Blueprint*	1	Чертёж мобильного маяка анализа*	Чертеж*	КОПИЯ ЧЕРТЕЖЕЙ — Прогонов: 5 — Экономия материалов: 0 — Экономия времени: 0
+CONCORD Rogue Analysis Beacon Blueprint*	1	Чертёж мобильного маяка анализа*	Чертеж*	КОПИЯ ЧЕРТЕЖЕЙ — Прогонов: 5 — Экономия материалов: 0 — Экономия времени: 0
+CONCORD Rogue Analysis Beacon Blueprint*	1	Чертёж мобильного маяка анализа*	Чертеж*	КОПИЯ ЧЕРТЕЖЕЙ — Прогонов: 5 — Экономия материалов: 0 — Экономия времени: 0
+CONCORD Rogue Analysis Beacon Blueprint*	1	Чертёж мобильного маяка анализа*	Чертеж*	КОПИЯ ЧЕРТЕЖЕЙ — Прогонов: 5 — Экономия материалов: 0 — Экономия времени: 0
+CONCORD Rogue Analysis Beacon Blueprint*	1	Чертёж мобильного маяка анализа*	Чертеж*	КОПИЯ ЧЕРТЕЖЕЙ — Прогонов: 5 — Экономия материалов: 0 — Экономия времени: 0
+CONCORD Rogue Analysis Beacon Blueprint*	1	Чертёж мобильного маяка анализа*	Чертеж*	КОПИЯ ЧЕРТЕЖЕЙ — Прогонов: 5 — Экономия материалов: 0 — Экономия времени: 0
+CONCORD Rogue Analysis Beacon Blueprint*	1	Чертёж мобильного маяка анализа*	Чертеж*	КОПИЯ ЧЕРТЕЖЕЙ — Прогонов: 5 — Экономия материалов: 0 — Экономия времени: 0
+CONCORD Rogue Analysis Beacon Blueprint*	1	Чертёж мобильного маяка анализа*	Чертеж*	КОПИЯ ЧЕРТЕЖЕЙ — Прогонов: 5 — Экономия материалов: 0 — Экономия времени: 0
+CONCORD Rogue Analysis Beacon Blueprint*	1	Чертёж мобильного маяка анализа*	Чертеж*	КОПИЯ ЧЕРТЕЖЕЙ — Прогонов: 5 — Экономия материалов: 0 — Экономия времени: 0
+CONCORD Rogue Analysis Beacon Blueprint*	1	Чертёж мобильного маяка анализа*	Чертеж*	КОПИЯ ЧЕРТЕЖЕЙ — Прогонов: 5 — Экономия материалов: 0 — Экономия времени: 0
+CONCORD Rogue Analysis Beacon Blueprint*	1	Чертёж мобильного маяка анализа*	Чертеж*	КОПИЯ ЧЕРТЕЖЕЙ — Прогонов: 5 — Экономия материалов: 0 — Экономия времени: 0
+CONCORD Rogue Analysis Beacon Blueprint*	1	Чертёж мобильного маяка анализа*	Чертеж*	КОПИЯ ЧЕРТЕЖЕЙ — Прогонов: 5 — Экономия материалов: 0 — Экономия времени: 0
+CONCORD Rogue Analysis Beacon Blueprint*	1	Чертёж мобильного маяка анализа*	Чертеж*	КОПИЯ ЧЕРТЕЖЕЙ — Прогонов: 5 — Экономия материалов: 0 — Экономия времени: 0
+CONCORD Rogue Analysis Beacon Blueprint*	1	Чертёж мобильного маяка анализа*	Чертеж*	КОПИЯ ЧЕРТЕЖЕЙ — Прогонов: 5 — Экономия материалов: 0 — Экономия времени: 0
+CONCORD Rogue Analysis Beacon Blueprint*	1	Чертёж мобильного маяка анализа*	Чертеж*	КОПИЯ ЧЕРТЕЖЕЙ — Прогонов: 5 — Экономия материалов: 0 — Экономия времени: 0
+CONCORD Rogue Analysis Beacon Blueprint*	1	Чертёж мобильного маяка анализа*	Чертеж*	КОПИЯ ЧЕРТЕЖЕЙ — Прогонов: 5 — Экономия материалов: 0 — Экономия времени: 0
+CONCORD Rogue Analysis Beacon Blueprint*	1	Чертёж мобильного маяка анализа*	Чертеж*	КОПИЯ ЧЕРТЕЖЕЙ — Прогонов: 5 — Экономия материалов: 0 — Экономия времени: 0
+CONCORD Rogue Analysis Beacon Blueprint*	1	Чертёж мобильного маяка анализа*	Чертеж*	КОПИЯ ЧЕРТЕЖЕЙ — Прогонов: 5 — Экономия материалов: 0 — Экономия времени: 0
+CONCORD Rogue Analysis Beacon Blueprint*	1	Чертёж мобильного маяка анализа*	Чертеж*	КОПИЯ ЧЕРТЕЖЕЙ — Прогонов: 5 — Экономия материалов: 0 — Экономия времени: 0
+CONCORD Rogue Analysis Beacon Blueprint*	1	Чертёж мобильного маяка анализа*	Чертеж*	КОПИЯ ЧЕРТЕЖЕЙ — Прогонов: 5 — Экономия материалов: 0 — Экономия времени: 0
+Nergal
+Morphite (34 Units)
+R.A.M.- Starship Tech (8 Units)
+Radar Sensor Cluster (280 Units)
+Crystalline Carbonide Armor Plate (800 Units)
+Pulse Shield Emitter (50 Units)
+Radiation Absorption Thruster (42 Units)
+Singularity Radiation Convertor (16 Units)
+Zero-Point Field Manipulator (328 Units)
+Trinary State Processor (650 Units)
+Lattice Locked Dekaisogen (48 Units)
+plex
+Clone Soldier Recruiter Tag
+Minmatar Propaganda Broadcast Structure
+Minmatar Listening Outpost
+Low-grade Jackal Omega
+Low-grade Jackal Gamma
+High-grade Jackal Omega
+Vigilant
+Skill extractor
+Vermillion Mykoserocin
+'Accord' Core Compensation	1	Warp Core Stabilizer			5 m3	7,541.87 ISK
+'Arbalest' Cruise Launcher I	2	Missile Launcher Cruise			40 m3	54,196.24 ISK
+'Arbalest' Heavy Missile Launcher	1	Missile Launcher Heavy			10 m3	1,012,622.19 ISK
+'Limos' Cruise Launcher I	2	Missile Launcher Cruise			40 m3	34,403.54 ISK
+'Limos' Rapid Heavy Missile Launcher I	2	Missile Launcher Rapid Heavy			40 m3	35,643.28 ISK
+'Limos' Rocket Launcher I	2	Missile Launcher Rocket			10 m3	7,800.26 ISK
+'Malkuth' Cruise Launcher I	4	Missile Launcher Cruise			80 m3	62,700.60 ISK
+'Malkuth' Rapid Heavy Missile Launcher I	1	Missile Launcher Rapid Heavy			20 m3	21,945.04 ISK
+'Malkuth' Rocket Launcher I	2	Missile Launcher Rocket			10 m3	2,332.44 ISK
+'Stoic' Core Equalizer I	1	Warp Core Stabilizer			5 m3	9,254.96 ISK
+100MN Monopropellant Enduring Afterburner	6	Propulsion Module			30 m3	735,220.14 ISK
+100MN Y-S8 Compact Afterburner	5	Propulsion Module			25 m3	635,936.95 ISK
+10MN Monopropellant Enduring Afterburner	3	Propulsion Module			15 m3	101,923.68 ISK
+10MN Y-S8 Compact Afterburner	1	Propulsion Module			5 m3	35,735.26 ISK
+125mm 'Scout' Accelerator Cannon	1	Hybrid Weapon	Small		5 m3	10,312.11 ISK
+125mm Prototype Gauss Gun	1	Hybrid Weapon	Small		5 m3	376,828.24 ISK
+200mm 'Scout' Accelerator Cannon	1	Hybrid Weapon	Medium		10 m3	81,172.78 ISK
+425mm 'Scout' Accelerator Cannon	3	Hybrid Weapon	Large		60 m3	1,913,021.34 ISK
+425mm Carbide Railgun I	7	Hybrid Weapon	Large		140 m3	4,914,475.30 ISK
+425mm Compressed Coil Gun I	1	Hybrid Weapon	Large		20 m3	647,426.75 ISK
+425mm Prototype Gauss Gun	5	Hybrid Weapon	Large		100 m3	3,591,974.45 ISK
+500MN Cold-Gas Enduring Microwarpdrive	4	Propulsion Module			40 m3	2,925,836.16 ISK
+500MN Quad LiF Restrained Microwarpdrive	4	Propulsion Module			40 m3	2,922,421.08 ISK
+500MN Y-T8 Compact Microwarpdrive	6	Propulsion Module			60 m3	4,405,328.58 ISK
+50MN Cold-Gas Enduring Microwarpdrive	3	Propulsion Module			30 m3	34,195.59 ISK
+50MN Y-T8 Compact Microwarpdrive	2	Propulsion Module			20 m3	34,346.82 ISK
+5MN Cold-Gas Enduring Microwarpdrive	2	Propulsion Module			20 m3	29,579.78 ISK
+5MN Quad LiF Restrained Microwarpdrive	1	Propulsion Module			10 m3	61,782.60 ISK
+AE-K Compact Drone Damage Amplifier	1	Drone Damage Modules			5 m3	58,425.87 ISK
+Alfven Enduring Remote Tracking Computer	1	Remote Tracking Computer	Small		5 m3	6,429.12 ISK
+AML Compact Omnidirectional Tracking Link	1	Drone Tracking Modules	Small		5 m3	2,979.34 ISK
+Ample Conductors	43	Named Components			0.04 m3	7,055.01 ISK
+Antimatter Charge L	600	Hybrid Charge	Large		15 m3	158,862.00 ISK
+Antimatter Charge M	100	Hybrid Charge	Medium		1.25 m3	7,382.00 ISK
+Antimatter Charge S	100	Hybrid Charge	Small		0.25 m3	2,243.00 ISK
+Arbalest Compact Light Missile Launcher	2	Missile Launcher Light			10 m3	69,382.98 ISK
+Balmer Series Compact Tracking Disruptor I	1	Weapon Disruptor	Small		5 m3	7,827.33 ISK
+Compact Electronics	37	Named Components			0.04 m3	1,102,927.82 ISK
+Compact EM Shield Amplifier	1	Shield Resistance Amplifier			5 m3	63,272.68 ISK
+Compact EM Shield Hardener	1	Shield Hardener			5 m3	50,734.00 ISK
+Compact Kinetic Shield Hardener	1	Shield Hardener			5 m3	5,140.21 ISK
+Compact Thermal Shield Hardener	1	Shield Hardener			5 m3	54,747.09 ISK
+Compulsive Scoped Multispectral ECM	1	ECM			5 m3	10,272.06 ISK
+Denny Enduring Omnidirectional Tracking Link	1	Drone Tracking Modules	Small		5 m3	1,451.30 ISK
+Enduring Electronics	5	Named Components			0.01 m3	40,231.70 ISK
+Enduring Explosive Shield Hardener	1	Shield Hardener			5 m3	32,736.45 ISK
+Enduring Kinetic Shield Hardener	2	Shield Hardener			10 m3	9,151.66 ISK
+Enduring Multispectrum Shield Hardener	1	Shield Hardener			5 m3	112,525.52 ISK
+F-23 Compact Remote Sensor Booster	2	Remote Sensor Booster	Small		10 m3	22,548.06 ISK
+F-293 Scoped Remote Tracking Computer	1	Remote Tracking Computer	Small		5 m3	8,242.46 ISK
+F-89 Compact Signal Amplifier	3	Signal Amplifier			15 m3	3,160.77 ISK
+Frozen Food	10	Frozen			5 m3	965.80 ISK
+Gallente Shuttle	3	Shuttle			1,500 m3	44,743.41 ISK
+Guristas Diamond Tag	4	Criminal Tags			0.40 m3	18,342.00 ISK
+Guristas Palladium Tag	1	Criminal Tags			0.10 m3	12,332.81 ISK
+Guristas Platinum Tag	1	Criminal Tags			0.10 m3	4,873.40 ISK
+Heavy Gunnar Compact Stasis Grappler	5	Stasis Grappler			250 m3	4,804,627.30 ISK
+Heavy Jigoro Enduring Stasis Grappler	3	Stasis Grappler			150 m3	2,910,550.05 ISK
+Heavy Karelin Scoped Stasis Grappler	5	Stasis Grappler			250 m3	4,810,701.05 ISK
+Hypnos Compact Signal Distortion Amplifier I	1	ECM Stabilizer			5 m3	10,324.76 ISK
+Hypnos Scoped Magnetometric ECM	1	ECM			5 m3	14,580.22 ISK
+IFFA Compact Damage Control	1	Damage Control			5 m3	1,212,455.25 ISK
+Induced Compact Multispectral ECM	2	ECM			10 m3	48,820.54 ISK
+Inferno Auto-Targeting Cruise Missile I	300	Auto-Targeting Cruise Missile			15 m3	70,512.00 ISK
+Inferno Auto-Targeting Light Missile I	100	Auto-Targeting Light Missile			1.50 m3	1,036.00 ISK
+Inferno Cruise Missile	800	Cruise Missile			40 m3	132,072.00 ISK
+Inferno Heavy Missile	100	Heavy Missile			3 m3	7,520.00 ISK
+Inferno Light Missile	100	Light Missile			1.50 m3	1,199.00 ISK
+Inferno Rocket	100	Rocket			0.50 m3	1,397.00 ISK
+Inferno Torpedo	500	Torpedo			25 m3	196,475.00 ISK
+Initiated Compact Warp Scrambler	1	Warp Scrambler			5 m3	30,399.82 ISK
+Iridium Charge L	600	Hybrid Charge	Large		15 m3	26,322.00 ISK
+Iridium Charge M	100	Hybrid Charge	Medium		1.25 m3	3,303.00 ISK
+Iron Charge L	200	Hybrid Charge	Large		5 m3	7,654.00 ISK
+J5b Enduring Warp Scrambler	1	Warp Scrambler			5 m3	28,278.75 ISK
+Kapteyn Compact Sensor Dampener	2	Sensor Dampener	Small		10 m3	30,986.16 ISK
+Large Asymmetric Enduring Remote Shield Booster	6	Remote Shield Booster			150 m3	4,839,030.36 ISK
+Large Azeotropic Restrained Shield Extender	7	Shield Extender			140 m3	205,051.77 ISK
+Large C5-L Compact Shield Booster	3	Shield Booster			75 m3	228,992.79 ISK
+Large Clarity Ward Enduring Shield Booster	4	Shield Booster			100 m3	319,131.00 ISK
+Large F-S9 Regolith Compact Shield Extender	2	Shield Extender			40 m3	130,796.30 ISK
+Large Murky Compact Remote Shield Booster	4	Remote Shield Booster			100 m3	3,095,685.08 ISK
+Large S95a Scoped Remote Shield Booster	5	Remote Shield Booster			125 m3	3,879,499.40 ISK
+Large YF-12a Smartbomb	1	Smart Bomb			50 m3	766,024.77 ISK
+Lead Charge L	400	Hybrid Charge	Large		10 m3	13,788.00 ISK
+Lead Charge M	100	Hybrid Charge	Medium		1.25 m3	3,715.00 ISK
+Lead Charge S	200	Hybrid Charge	Small		0.50 m3	1,872.00 ISK
+Limited 'Limos' Heavy Assault Missile Launcher I	1	Missile Launcher Heavy Assault			10 m3	7,824.81 ISK
+Limited 'Limos' Rapid Light Missile Launcher	2	Missile Launcher Rapid Light			20 m3	8,951.92 ISK
+Limited 'Limos' Torpedo Launcher	6	Missile Launcher Torpedo			120 m3	38,574.24 ISK
+Linked Enduring Remote Sensor Booster	1	Remote Sensor Booster	Small		5 m3	11,997.09 ISK
+M51 Benefactor Compact Shield Recharger	1	Shield Recharger			5 m3	1,435.15 ISK
+Marines	759	Livestock			1,518 m3	2,920,738.26 ISK
+Mark I Compact Power Diagnostic System	1	Power Diagnostic System			5 m3	8,440.63 ISK
+Mark I Compact Shield Power Relay	1	Shield Power Relay			5 m3	1,358.20 ISK
+Medium Asymmetric Enduring Remote Shield Booster	3	Remote Shield Booster			30 m3	24,806.85 ISK
+Medium C5-L Compact Shield Booster	1	Shield Booster			10 m3	19,134.46 ISK
+Medium Rudimentary Concussion Bomb I	2	Smart Bomb			20 m3	1,495,970.16 ISK
+Medium S95a Scoped Remote Shield Booster	1	Remote Shield Booster			10 m3	11,821.98 ISK
+Medium YF-12a Smartbomb	1	Smart Bomb			10 m3	718,696.79 ISK
+Metal Scraps	125	Commodities			1.25 m3	116,752.50 ISK
+Mjolnir Auto-Targeting Cruise Missile I	700	Auto-Targeting Cruise Missile			35 m3	275,408.00 ISK
+Mjolnir Auto-Targeting Heavy Missile I	100	Auto-Targeting Heavy Missile			3 m3	9,793.00 ISK
+Mjolnir Cruise Missile	500	Cruise Missile			25 m3	148,370.00 ISK
+Mjolnir Heavy Assault Missile	100	Heavy Assault Missile			1.50 m3	7,933.00 ISK
+Mjolnir Rocket	200	Rocket			1 m3	3,588.00 ISK
+Mjolnir Torpedo	400	Torpedo			20 m3	177,056.00 ISK
+Mobile Tractor Unit		Heavy Assault Cruiser			115,000 m3	176,648,480.92 ISK
+Nova Auto-Targeting Cruise Missile I	300	Auto-Targeting Cruise Missile			15 m3	81,318.00 ISK
+Nova Cruise Missile	700	Cruise Missile			35 m3	127,316.00 ISK
+Nova Heavy Assault Missile	400	Heavy Assault Missile			6 m3	24,916.00 ISK
+Nova Heavy Missile	300	Heavy Missile			9 m3	21,015.00 ISK
+Nova Rocket	100	Rocket			0.50 m3	1,687.00 ISK
+Nova Torpedo	800	Torpedo			40 m3	284,424.00 ISK
+OE-5200 Rocket Launcher	2	Missile Launcher Rocket			10 m3	22,156.46 ISK
+Optical Compact Tracking Computer	1	Tracking Computer	Small		5 m3	5,274.13 ISK
+Photonic Upgraded Co-Processor	1	CPU Enhancer			5 m3	11,164.28 ISK
+Plutonium Charge L	500	Hybrid Charge	Large		12.50 m3	57,540.00 ISK
+Plutonium Charge M	400	Hybrid Charge	Medium		5 m3	22,696.00 ISK
+Plutonium Charge S	100	Hybrid Charge	Small		0.25 m3	2,247.00 ISK
+Precise Compounds	36	Named Components			0.04 m3	1,903.68 ISK
+Precise Conductors	3	Named Components			0.00 m3	476.70 ISK
+Precise Electronics	21	Named Components			0.02 m3	18,704.91 ISK
+Prototype 'Arbalest' Torpedo Launcher	1	Missile Launcher Torpedo			20 m3	27,172.06 ISK
+Rash Compact Burst Jammer	1	Burst Jammer			5 m3	4,540.60 ISK
+Reinforced Metal Scraps	2	Commodities			0.02 m3	9,829.30 ISK
+Restrained Compounds	37	Named Components			0.04 m3	7,326,351.87 ISK
+Restrained Electronics	31	Named Components			0.03 m3	31,998.82 ISK
+Scoped Compounds	25	Named Components			0.03 m3	53,664.00 ISK
+Scoped Conductors	4	Named Components			0.00 m3	17,122.96 ISK
+Scoped Electronics	16	Named Components			0.02 m3	74,906.88 ISK
+Scourge Auto-Targeting Cruise Missile I	300	Auto-Targeting Cruise Missile			15 m3	85,452.00 ISK
+Scourge Cruise Missile	1,100	Cruise Missile			55 m3	251,581.00 ISK
+Scourge Heavy Assault Missile	100	Heavy Assault Missile			1.50 m3	9,805.00 ISK
+Scourge Heavy Missile	300	Heavy Missile			9 m3	21,567.00 ISK
+Scourge Light Missile	100	Light Missile			1.50 m3	1,224.00 ISK
+Scourge Torpedo	300	Torpedo			15 m3	94,926.00 ISK
+Small Ghoul Compact Energy Nosferatu	1	Energy Nosferatu			5 m3	5,118.04 ISK
+Small Gremlin Compact Energy Neutralizer	2	Energy Neutralizer			10 m3	38,555.60 ISK
+Small Inductive Compact Remote Capacitor Transmitter	1	Remote Capacitor Transmitter			5 m3	5,723.71 ISK
+Small Infectious Scoped Energy Neutralizer	1	Energy Neutralizer			5 m3	21,466.63 ISK
+Small Knave Scoped Energy Nosferatu	1	Energy Nosferatu			5 m3	2,326.95 ISK
+Small Murky Compact Remote Shield Booster	2	Remote Shield Booster			10 m3	133,717.68 ISK
+Small Rudimentary Concussion Bomb I	1	Smart Bomb			5 m3	22,003.15 ISK
+Sun		Destroyer			55,000 m3	30,252,476.07 ISK
+T-Cygnus's Gallente Shuttle		Shuttle			5,000 m3	14,914.47 ISK
+TE-2100 Ample Light Missile Launcher	1	Missile Launcher Light			5 m3	2,962.40 ISK
+Thorium Charge L	400	Hybrid Charge	Large		10 m3	20,912.00 ISK
+Thorium Charge M	100	Hybrid Charge	Medium		1.25 m3	5,979.00 ISK
+Thorium Charge S	100	Hybrid Charge	Small		0.25 m3	919.00 ISK
+Tungsten Charge L	1,300	Hybrid Charge	Large		32.50 m3	44,044.00 ISK
+Tungsten Charge M	200	Hybrid Charge	Medium		2.50 m3	4,260.00 ISK
+Tungsten Charge S	200	Hybrid Charge	Small		0.50 m3	1,076.00 ISK
+Type-E Enduring Cargo Scanner	1	Cargo Scanner			5 m3	3,509.68 ISK
+Upgraded 'Malkuth' Heavy Assault Missile Launcher I	1	Missile Launcher Heavy Assault			10 m3	15,876.45 ISK
+Upgraded 'Malkuth' Rapid Light Missile Launcher	2	Missile Launcher Rapid Light			20 m3	12,792.28 ISK
+Upgraded 'Malkuth' Torpedo Launcher	7	Missile Launcher Torpedo			140 m3	84,598.92 ISK
+Uranium Charge L	900	Hybrid Charge	Large		22.50 m3	76,653.00 ISK
+Uranium Charge M	200	Hybrid Charge	Medium		2.50 m3	10,788.00 ISK
+X-Large Clarity Ward Enduring Shield Booster	2	Shield Booster			100 m3	598,391.16 ISK
+XR-3200 Heavy Missile Bay	2	Missile Launcher Heavy			20 m3	41,956.60 ISK
+XT-9000 Cruise Launcher	2	Missile Launcher Cruise			40 m3	31,948.14 ISK
+YO-5000 Rapid Heavy Missile Launcher	4	Missile Launcher Rapid Heavy			80 m3	63,302.04 ISK
+True Sansha Warp Disruptor
+Low-grade Jackal Delta
+Low-grade Jackal Alpha
+Republic Fleet Rapid Light Missile Launcher
+Republic Fleet 720mm Howitzer Artillery
+High-grade Jackal Alpha
+High-grade Jackal Beta
+Republic Fleet 425mm Autocannon
+Republic Fleet Torpedo Launcher
+High-grade Jackal Gamma
+Republic Fleet 1400mm Howitzer Artillery
+Naglfar Fleet Issue
+High-grade Jackal Epsilon
+Low-grade Jackal Epsilon
+Republic Fleet Heavy Missile Launcher
+Sotiyo
+'Anguis' Ice Harvester Upgrade	1	Mining Upgrade	Module
+'Augmented' Ice Harvesting Drone	1	Mining Drone	Drone
+'Augmented' Mining Drone	35	Mining Drone	Drone
+'Basic' Thermal Shield Amplifier	1	Shield Resistance Amplifier	Module
+'Deuce' Co-Processor I	1	CPU Enhancer	Module
+'Dunk' Salvage Drone	5	Salvage Drone	Drone
+'Excavator' Ice Harvesting Drone	45	Mining Drone	Drone
+'Excavator' Mining Drone	29	Mining Drone	Drone
+'Gjallarhorn' Explosive Doomsday	2	Super Weapon	Module
+'Glycerine' Shield Boost Amplifier	2	Shield Boost Amplifier	Module
+'Judgment' Electromagnetic Doomsday	1	Super Weapon	Module
+'Phalarica' Thermal Lance	1	Super Weapon	Module
+'Posse' Multispectrum Shield Hardener	14	Shield Hardener	Module
+'Prospector' EM Shield Amplifier	5	Shield Resistance Amplifier	Module
+10000MN Afterburner I	37	Propulsion Module	Module
+10000MN Afterburner II	4	Propulsion Module	Module
+10000MN Monopropellant Enduring Afterburner	8	Propulsion Module	Module
+10000MN Y-S8 Compact Afterburner	1	Propulsion Module	Module
+100MN Afterburner II	9	Propulsion Module	Module
+10MN Afterburner II	88	Propulsion Module	Module
+125mm Gatling AutoCannon II	247	Projectile Weapon	Module
+13th Tier Overseer's Personal Effects	3	Overseer Personal Effects	Commodity
+1400mm 'Scout' Artillery I	100	Projectile Weapon	Module
+1400mm Howitzer Artillery II	83	Projectile Weapon	Module
+14th Tier Overseer's Personal Effects	3	Overseer Personal Effects	Commodity
+150mm Light AutoCannon II	50	Projectile Weapon	Module
+150mm Railgun II	78	Hybrid Weapon	Module
+15th Tier Overseer's Personal Effects	2	Overseer Personal Effects	Commodity
+1600mm Steel Plates II	144	Armor Plate	Module
+16th Tier Overseer's Personal Effects	1	Overseer Personal Effects	Commodity
+1MN Afterburner II	32	Propulsion Module	Module
+200mm AutoCannon II	121	Projectile Weapon	Module
+21st Tier Overseer's Personal Effects	9	Overseer Personal Effects	Commodity
+220mm Vulcan AutoCannon II	44	Projectile Weapon	Module
+22nd Tier Overseer's Personal Effects	1	Overseer Personal Effects	Commodity
+23rd Tier Overseer's Personal Effects	10	Overseer Personal Effects	Commodity
+25000mm Crystalline Carbonide Restrained Plates	7	Armor Plate	Module
+25000mm Rolled Tungsten Compact Plates	28	Armor Plate	Module
+25000mm Steel Plates I	35	Armor Plate	Module
+25000mm Steel Plates II	12	Armor Plate	Module
+250mm Railgun II	262	Hybrid Weapon	Module
+280mm Howitzer Artillery II	126	Projectile Weapon	Module
+425mm AutoCannon II	101	Projectile Weapon	Module
+50000MN Cold-Gas Enduring Microwarpdrive	1	Propulsion Module	Module
+50000MN Microwarpdrive I	5	Propulsion Module	Module
+50000MN Microwarpdrive II	3	Propulsion Module	Module
+50000MN Quad LiF Restrained Microwarpdrive	1	Propulsion Module	Module
+500MN Cold-Gas Enduring Microwarpdrive	40	Propulsion Module	Module
+500MN Microwarpdrive II	8	Propulsion Module	Module
+50MN Microwarpdrive II	91	Propulsion Module	Module
+5MN Microwarpdrive II	27	Propulsion Module	Module
+5MN Y-T8 Compact Microwarpdrive	263	Propulsion Module	Module
+720mm Howitzer Artillery II	112	Projectile Weapon	Module
+800mm Repeating Cannon II	11	Projectile Weapon	Module
+Accelerant Decryptor	175	Generic Decryptor	Decryptors
+Acolyte II	542	Combat Drone	Drone
+Agency 'Hardshell' TB5 Dose II	12	Booster	Implant
+Agency 'Hardshell' TB7 Dose III	29	Booster	Implant
+Agency 'Hardshell' TB9 Dose IV	39	Booster	Implant
+Agency 'Overclocker' SB5 Dose II	43	Booster	Implant
+Agency 'Overclocker' SB7 Dose III	29	Booster	Implant
+Agency 'Overclocker' SB9 Dose IV	18	Booster	Implant
+Agency 'Pyrolancea' DB3 Dose I	33	Booster	Implant
+Agency 'Pyrolancea' DB5 Dose II	51	Booster	Implant
+Agency 'Pyrolancea' DB7 Dose III	40	Booster	Implant
+Agency 'Pyrolancea' DB9 Dose IV	16	Booster	Implant
+Alloyed Tritanium Bar	5 794	Salvaged Materials	Material
+Ametat I	87	Heavy Fighter	Fighter
+Ametat II	397	Heavy Fighter	Fighter
+Ancient Coordinates Database	325	Sleeper Components	Commodity
+Angel Dynamic Calibrator	2	Artifacts and Prototypes	Commodity
+Antaeus II	9	Heavy Fighter	Fighter
+Antipharmakon Aeolis	17	Booster	Implant
+Antipharmakon Iokira	17	Booster	Implant
+Antipharmakon Thureo	14	Booster	Implant
+Antipharmakon Toxot	6	Booster	Implant
+Arch Angel Depleted Uranium XL	8 301	Projectile Ammo	Charge
+Arch Angel EMP XL	22 238	Projectile Ammo	Charge
+Arch Angel Fusion XL	6 900	Projectile Ammo	Charge
+Arch Angel Phased Plasma XL	5 100	Projectile Ammo	Charge
+Arch Angel Titanium Sabot XL	6 529	Projectile Ammo	Charge
+Armor Command Burst II	23	Command Burst	Module
+Assault Damage Control II	111	Damage Control	Module
+Astro-Inertial Compact Missile Guidance Computer	7	Missile Guidance Computer	Module
+Attainment Decryptor	38	Generic Decryptor	Decryptors
+Augmentation Decryptor	250	Generic Decryptor	Decryptors
+Aurora XL	18	Advanced Beam Laser Crystal	Charge
+Ballistic Control System II	226	Ballistic Control system	Module
+Barrage XL	18 736	Advanced Autocannon Ammo	Charge
+Baryon Exotic Plasma M	50 171	Exotic Plasma Charge	Charge
+Baryon Exotic Plasma XL	6 967	Exotic Plasma Charge	Charge
+Basilisk Frontier Safeguarder SKIN	1	Permanent SKIN	SKINs
+Bastion Module I	5	Siege Module	Module
+Berserker II	27	Combat Drone	Drone
+Biocells	3 154	Refined Commodities - Tier 2	Planetary Commodities
+Blood Multifrequency XL	12	Frequency Crystal	Charge
+Bomb Launcher I	18	Missile Launcher Bomb	Module
+Bosonic Field Generator	5	Super Weapon	Module
+Bouncer II	74	Combat Drone	Drone
+Burned Logic Circuit	7 955	Salvaged Materials	Material
+C3-A 'Hivaa Saitsuo' Ballistic Control System	5	Ballistic Control system	Module
+Cadmium	3 089	Moon Materials	Material
+Caesium	25 792	Moon Materials	Material
+Caldari Navy Antimatter Charge M	125 776	Hybrid Charge	Charge
+Caldari Navy Antimatter Charge S	103 951	Hybrid Charge	Charge
+Caldari Navy Ballistic Control System	33	Ballistic Control system	Module
+Caldari Navy Cloaking Device	6	Cloaking Device	Module
+Caldari Navy Co-Processor	5	CPU Enhancer	Module
+Caldari Navy Cruise Missile Launcher	8	Missile Launcher Cruise	Module
+Caldari Navy Inferno Cruise Missile	17 500	Cruise Missile	Charge
+Caldari Navy Inferno Heavy Missile	22 784	Heavy Missile	Charge
+Caldari Navy Inferno Light Missile	76 893	Light Missile	Charge
+Caldari Navy Inferno Torpedo	20 602	Torpedo	Charge
+Caldari Navy Large Shield Extender	15	Shield Extender	Module
+Caldari Navy Mjolnir Cruise Missile	26 769	Cruise Missile	Charge
+Caldari Navy Mjolnir Heavy Assault Missile	92 869	Heavy Assault Missile	Charge
+Caldari Navy Mjolnir Heavy Missile	26 384	Heavy Missile	Charge
+Caldari Navy Mjolnir Light Missile	131 177	Light Missile	Charge
+Caldari Navy Mjolnir Torpedo	110 150	Torpedo	Charge
+Caldari Navy Multispectrum Shield Hardener	1	Shield Hardener	Module
+Caldari Navy Nova Heavy Missile	24 545	Heavy Missile	Charge
+Caldari Navy Nova Light Missile	90 182	Light Missile	Charge
+Caldari Navy Nova Torpedo	66 104	Torpedo	Charge
+Caldari Navy Power Diagnostic System	36	Power Diagnostic System	Module
+Caldari Navy Scourge Cruise Missile	31 384	Cruise Missile	Charge
+Caldari Navy Scourge Heavy Missile	35 361	Heavy Missile	Charge
+Caldari Navy Scourge Light Missile	142 059	Light Missile	Charge
+Caldari Navy Scourge Torpedo	75 424	Torpedo	Charge
+Caldari Navy Shield Power Relay	6	Shield Power Relay	Module
+Caldari Navy Stasis Webifier	3	Stasis Web	Module
+Caldari Navy Torpedo Launcher	5	Missile Launcher Torpedo	Module
+Caldari Navy Vespa	27	Combat Drone	Drone
+Caldari Navy Warp Disruptor	4	Warp Scrambler	Module
+Caldari Navy Warp Scrambler	1	Warp Scrambler	Module
+Caldari Phenomena Generator	1	Titan Phenomena Generator	Module
+Cap Booster 3200	511	Capacitor Booster Charge	Charge
+Cap Recharger II	194	Capacitor Recharger	Module
+Capacitor Flux Coil II	116	Capacitor Flux Coil	Module
+Capacitor Power Relay II	181	Capacitor Power Relay	Module
+Capital Ancillary Armor Repairer	5	Ancillary Armor Repairer	Module
+Capital Ancillary Remote Shield Booster	2	Ancillary Remote Shield Booster	Module
+Capital Ancillary Shield Booster	12	Ancillary Shield Booster	Module
+Capital Armor Repairer I	20	Armor Repair Unit	Module
+Capital Armor Repairer II	2	Armor Repair Unit	Module
+Capital Asteroid Ore Compressor I	2	Compressors	Module
+Capital Asymmetric Enduring Remote Shield Booster	23	Remote Shield Booster	Module
+Capital Azeotropic Restrained Shield Extender	6	Shield Extender	Module
+Capital C-5L Compact Shield Booster	1	Shield Booster	Module
+Capital Cap Battery II	7	Capacitor Battery	Module
+Capital Capacitor Booster I	66	Capacitor Booster	Module
+Capital Capacitor Booster II	94	Capacitor Booster	Module
+Capital Clarity Ward Enduring Shield Booster	1	Shield Booster	Module
+Capital Compact Pb-Acid Cap Battery	1	Capacitor Battery	Module
+Capital Core Defense Field Extender I	98	Rig Shield	Module
+Capital Emergency Hull Energizer I	41	Damage Control	Module
+Capital Emergency Hull Energizer II	29	Damage Control	Module
+Capital Energy Neutralizer I	41	Energy Neutralizer	Module
+Capital Energy Neutralizer II	32	Energy Neutralizer	Module
+Capital F-RX Compact Capacitor Booster	54	Capacitor Booster	Module
+Capital F-S9 Regolith Compact Shield Extender	4	Shield Extender	Module
+Capital Flex Armor Hardener II	3	Flex Armor Hardener	Module
+Capital Flex Shield Hardener II	3	Flex Shield Hardener	Module
+Capital Gremlin Compact Energy Neutralizer	32	Energy Neutralizer	Module
+Capital Hyperspatial Velocity Optimizer I	33	Rig Navigation	Module
+Capital I-a Enduring Armor Repairer	6	Armor Repair Unit	Module
+Capital I-ax Enduring Remote Armor Repairer	24	Remote Armor Repairer	Module
+Capital Ice Compressor I	8	Compressors	Module
+Capital Inductive Compact Remote Capacitor Transmitter	5	Remote Capacitor Transmitter	Module
+Capital Industrial Core I	4	Siege Module	Module
+Capital Industrial Core II	12	Siege Module	Module
+Capital Mercoxit Compressor I	1	Compressors	Module
+Capital Moon Ore Compressor I	2	Compressors	Module
+Capital Murky Compact Remote Shield Booster	3	Remote Shield Booster	Module
+Capital Radiative Scoped Remote Capacitor Transmitter	1	Remote Capacitor Transmitter	Module
+Capital Remote Armor Repairer II	19	Remote Armor Repairer	Module
+Capital Remote Capacitor Transmitter I	38	Remote Capacitor Transmitter	Module
+Capital Remote Shield Booster I	29	Remote Shield Booster	Module
+Capital Remote Shield Booster II	1	Remote Shield Booster	Module
+Capital S95a Scoped Remote Shield Booster	3	Remote Shield Booster	Module
+Capital Shield Booster I	3	Shield Booster	Module
+Capital Shield Booster II	3	Shield Booster	Module
+Capital Shield Extender I	51	Shield Extender	Module
+Capital Shield Extender II	50	Shield Extender	Module
+Capital Shield Operation	1	Shields	Skill
+Capital Solace Scoped Remote Armor Repairer	3	Remote Armor Repairer	Module
+Capital Trimark Armor Pump I	94	Rig Armor	Module
+Capsuleer Day XVI Gnosis & SKIN Crate	1	Special Edition Commodities	Special Edition Assets
+Capsuleer Day XVI Sunesis & SKIN Crate	1	Special Edition Commodities	Special Edition Assets
+Centii B-Type Small Armor Repairer	1	Armor Repair Unit	Module
+Centii C-Type Multispectrum Coating	1	Armor Coating	Module
+Centum A-Type Explosive Energized Membrane	2	Energized Armor Membrane	Module
+Centum A-Type Kinetic Energized Membrane	2	Energized Armor Membrane	Module
+Centum A-Type Medium Armor Repairer	1	Armor Repair Unit	Module
+Centum A-Type Multispectrum Energized Membrane	11	Energized Armor Membrane	Module
+Centum A-Type Thermal Energized Membrane	1	Energized Armor Membrane	Module
+Centum B-Type Medium Armor Repairer	1	Armor Repair Unit	Module
+Centum C-Type Medium Armor Repairer	1	Armor Repair Unit	Module
+Centum C-Type Multispectrum Energized Membrane	2	Energized Armor Membrane	Module
+Centus X-Type EM Armor Hardener	2	Armor Hardener	Module
+Centus X-Type Explosive Armor Hardener	3	Armor Hardener	Module
+Centus X-Type Kinetic Armor Hardener	2	Armor Hardener	Module
+Centus X-Type Thermal Armor Hardener	1	Armor Hardener	Module
+Chaotic Dark Filament	4	Abyssal Filaments	Commodity
+Chaotic Exotic Filament	2	Abyssal Filaments	Commodity
+Co-Processor II	38	CPU Enhancer	Module
+CONCORD 25000mm Steel Plates	25	Armor Plate	Module
+CONCORD Capital Armor Repairer	6	Armor Repair Unit	Module
+CONCORD Capital Remote Armor Repairer	4	Remote Armor Repairer	Module
+CONCORD Capital Remote Capacitor Transmitter	3	Remote Capacitor Transmitter	Module
+CONCORD Capital Remote Shield Booster	3	Remote Shield Booster	Module
+CONCORD Capital Shield Booster	25	Shield Booster	Module
+CONCORD Capital Shield Extender	30	Shield Extender	Module
+CONCORD Dual Giga Pulse Laser	6	Energy Weapon	Module
+CONCORD XL Torpedo Launcher	6	Missile Launcher XL Torpedo	Module
+Conflagration L	92	Advanced Pulse Laser Crystal	Charge
+Conflagration M	131	Advanced Pulse Laser Crystal	Charge
+Conflagration XL	60	Advanced Pulse Laser Crystal	Charge
+Contaminated Lorentz Fluid	226	Salvaged Materials	Material
+Coolant	6 340	Refined Commodities - Tier 2	Planetary Commodities
+Core B-Type 500MN Microwarpdrive	1	Propulsion Module	Module
+Core C-Type Large Armor Repairer	1	Armor Repair Unit	Module
+Core X-Type 500MN Microwarpdrive	1	Propulsion Module	Module
+Core X-Type EM Armor Hardener	1	Armor Hardener	Module
+Core X-Type Kinetic Armor Hardener	1	Armor Hardener	Module
+Core X-Type Thermal Armor Hardener	1	Armor Hardener	Module
+Coreli A-Type 1MN Afterburner	1	Propulsion Module	Module
+Coreli A-Type 5MN Microwarpdrive	1	Propulsion Module	Module
+Coreli A-Type Multispectrum Coating	7	Armor Coating	Module
+Coreli A-Type Small Armor Repairer	1	Armor Repair Unit	Module
+Coreli B-Type Small Remote Armor Repairer	2	Remote Armor Repairer	Module
+Corelum A-Type Explosive Energized Membrane	1	Energized Armor Membrane	Module
+Corelum A-Type Medium Remote Armor Repairer	2	Remote Armor Repairer	Module
+Corelum A-Type Thermal Energized Membrane	1	Energized Armor Membrane	Module
+Corelum B-Type 50MN Microwarpdrive	1	Propulsion Module	Module
+Corelum C-Type Medium Armor Repairer	1	Armor Repair Unit	Module
+Corelum C-Type Multispectrum Energized Membrane	3	Energized Armor Membrane	Module
+Corpii A-Type Multispectrum Coating	1	Armor Coating	Module
+Corpii A-Type Small Energy Neutralizer	1	Energy Neutralizer	Module
+Corpii B-Type Multispectrum Coating	1	Armor Coating	Module
+Corpum A-Type EM Energized Membrane	4	Energized Armor Membrane	Module
+Corpum A-Type Explosive Energized Membrane	4	Energized Armor Membrane	Module
+Corpum A-Type Kinetic Energized Membrane	2	Energized Armor Membrane	Module
+Corpum A-Type Medium Armor Repairer	1	Armor Repair Unit	Module
+Corpum A-Type Medium Energy Neutralizer	5	Energy Neutralizer	Module
+Corpum A-Type Multispectrum Energized Membrane	11	Energized Armor Membrane	Module
+Corpum A-Type Thermal Energized Membrane	5	Energized Armor Membrane	Module
+Corpum C-Type Medium Energy Neutralizer	2	Energy Neutralizer	Module
+Corpum C-Type Multispectrum Energized Membrane	2	Energized Armor Membrane	Module
+Corpus C-Type Heavy Energy Neutralizer	1	Energy Neutralizer	Module
+Corpus X-Type EM Armor Hardener	4	Armor Hardener	Module
+Corpus X-Type Explosive Armor Hardener	6	Armor Hardener	Module
+Corpus X-Type Heavy Energy Neutralizer	2	Energy Neutralizer	Module
+Corpus X-Type Kinetic Armor Hardener	9	Armor Hardener	Module
+Corpus X-Type Thermal Armor Hardener	6	Armor Hardener	Module
+Covert Cynosural Field Generator I	18	Cynosural Field Generator	Module
+Covert Jump Portal Generator I	1	Covert Jump Portal Generator	Module
+Covert Ops Cloaking Device II	74	Cloaking Device	Module
+Covert Research Tools	1 259	Miscellaneous	Commodity
+Cruise Missile Launcher II	48	Missile Launcher Cruise	Module
+Crystalline Isogen-10	1 866	Abyssal Materials	Material
+Curator II	64	Combat Drone	Drone
+Cyclops I	69	Heavy Fighter	Fighter
+Cyclops II	79	Heavy Fighter	Fighter
+Cynosural Field Generator I	102	Cynosural Field Generator	Module
+Damage Control II	1 057	Damage Control	Module
+Dark Blood Cap Recharger	5	Capacitor Recharger	Module
+Dark Blood Capacitor Power Relay	4	Capacitor Power Relay	Module
+Dark Blood Capital Capacitor Booster	1	Capacitor Booster	Module
+Dark Blood EM Armor Hardener	73	Armor Hardener	Module
+Dark Blood Explosive Armor Hardener	46	Armor Hardener	Module
+Dark Blood Large EMP Smartbomb	7	Smart Bomb	Module
+Dark Blood Medium Armor Repairer	1	Armor Repair Unit	Module
+Dark Blood Multispectrum Coating	2	Armor Coating	Module
+Dark Blood Multispectrum Energized Membrane	2	Energized Armor Membrane	Module
+Dark Blood Power Diagnostic System	11	Power Diagnostic System	Module
+Dark Blood Reactor Control Unit	5	Reactor Control Unit	Module
+Dark Blood Stasis Webifier	1	Stasis Web	Module
+Dark Blood Thermal Armor Hardener	32	Armor Hardener	Module
+Dark Blood Warp Disruptor	4	Warp Scrambler	Module
+Dark Blood Warp Scrambler	3	Warp Scrambler	Module
+Datacore - Minmatar Starship Engineering	891	Datacores	Commodity
+Datacore - Molecular Engineering	847	Datacores	Commodity
+Datacore - Nanite Engineering	459	Datacores	Commodity
+Datacore - Rocket Science	513	Datacores	Commodity
+Defender Launcher I	18	Missile Launcher Defender	Module
+Domination 100MN Afterburner	1	Propulsion Module	Module
+Domination Capital Cap Battery	1	Capacitor Battery	Module
+Domination EM Shield Amplifier	10	Shield Resistance Amplifier	Module
+Domination EMP L	500	Projectile Ammo	Charge
+Domination Heavy Stasis Grappler	2	Stasis Grappler	Module
+Domination Inertial Stabilizers	3	Inertial Stabilizer	Module
+Domination Large Proton Smartbomb	2	Smart Bomb	Module
+Domination Multispectrum Shield Hardener	3	Shield Hardener	Module
+Domination Target Painter	6	Target Painter	Module
+Domination Thermal Shield Amplifier	13	Shield Resistance Amplifier	Module
+Domination Torpedo Launcher	1	Missile Launcher Torpedo	Module
+Domination Warp Scrambler	2	Warp Scrambler	Module
+Dragonfly I	70	Light Fighter	Fighter
+Dragonfly II	40	Light Fighter	Fighter
+Dread Guristas Ballistic Control System	6	Ballistic Control system	Module
+Dread Guristas Capital Shield Booster	1	Shield Booster	Module
+Dread Guristas Cloaking Device	6	Cloaking Device	Module
+Dread Guristas Co-Processor	4	CPU Enhancer	Module
+Dread Guristas Cruise Missile Launcher	3	Missile Launcher Cruise	Module
+Dread Guristas Drone Damage Amplifier	6	Drone Damage Modules	Module
+Dread Guristas Heavy Missile Launcher	6	Missile Launcher Heavy	Module
+Dread Guristas Inferno Torpedo	500	Torpedo	Charge
+Dread Guristas Large Graviton Smartbomb	14	Smart Bomb	Module
+Dread Guristas Medium Graviton Smartbomb	5	Smart Bomb	Module
+Dread Guristas Multispectrum Shield Hardener	5	Shield Hardener	Module
+Dread Guristas Omnidirectional Tracking Enhancer	11	Drone Tracking Enhancer	Module
+Dread Guristas Rapid Heavy Missile Launcher	1	Missile Launcher Rapid Heavy	Module
+Dread Guristas Rapid Light Missile Launcher	1	Missile Launcher Rapid Light	Module
+Dread Guristas Shield Boost Amplifier	8	Shield Boost Amplifier	Module
+Dread Guristas Stasis Webifier	5	Stasis Web	Module
+Dread Guristas Torpedo Launcher	5	Missile Launcher Torpedo	Module
+Dread Guristas Warp Disruptor	6	Warp Scrambler	Module
+Dread Guristas Warp Scrambler	4	Warp Scrambler	Module
+Dread Guristas X-Large Shield Booster	1	Shield Booster	Module
+Dreadnought Systems Diagram	3	Commodities	Commodity
+Dromi II	6	Support Fighter	Fighter
+Drone Cerebral Fragment	407	Rogue Drone Components	Material
+Drone Damage Amplifier II	342	Drone Damage Modules	Module
+Drone Link Augmentor II	189	Drone Control Range Module	Module
+Drone Navigation Computer II	113	Drone Navigation Computer	Module
+Dual 1000mm Railgun II	6	Hybrid Weapon	Module
+Dual Giga Pulse Laser I	29	Energy Weapon	Module
+Dual Giga Pulse Laser II	3	Energy Weapon	Module
+Eifyr and Co. 'Gunslinger' Motion Prediction MR-703	2	Cyber Gunnery	Implant
+Eifyr and Co. 'Rogue' High Speed Maneuvering HS-903	3	Cyber Navigation	Implant
+Eifyr and Co. 'Rogue' Navigation NN-603	3	Cyber Navigation	Implant
+Einherji I	197	Light Fighter	Fighter
+Einherji II	207	Light Fighter	Fighter
+EM Armor Hardener II	40	Armor Hardener	Module
+EM Shield Amplifier II	64	Shield Resistance Amplifier	Module
+EM Shield Hardener II	149	Shield Hardener	Module
+Energy Neutralization Burst Projector	1	Burst Projectors	Module
+Enhanced Ward Console	77	Salvaged Materials	Material
+Enriched Uranium	2 715	Refined Commodities - Tier 2	Planetary Commodities
+Entosis Link I	1	Entosis Link	Module
+Entropic Radiation Sink II	64	Entropic Radiation Sink	Module
+Equite I	113	Light Fighter	Fighter
+Exigent Heavy Drone Firepower Mutaplasmid	12	Mutaplasmids	Commodity
+Exigent Heavy Drone Navigation Mutaplasmid	5	Mutaplasmids	Commodity
+Exigent Light Drone Firepower Mutaplasmid	12	Mutaplasmids	Commodity
+Exigent Medium Drone Durability Mutaplasmid	4	Mutaplasmids	Commodity
+Exigent Medium Drone Firepower Mutaplasmid	12	Mutaplasmids	Commodity
+Exigent Medium Drone Projection Mutaplasmid	5	Mutaplasmids	Commodity
+Exigent Sentry Drone Firepower Mutaplasmid	6	Mutaplasmids	Commodity
+Expanded Cargohold II	183	Expanded Cargohold	Module
+Experimental Hyperspatial Accelerator	8	Warp Accelerator	Module
+Expert Cerebral Accelerator	3	Booster	Implant
+Explosion Dampening Array	2	Shield Hardening Array	Starbase
+Explosive Armor Hardener II	46	Armor Hardener	Module
+Federation Navy 100MN Afterburner	2	Propulsion Module	Module
+Federation Navy 10MN Afterburner	3	Propulsion Module	Module
+Federation Navy 1600mm Steel Plates	5	Armor Plate	Module
+Federation Navy 50MN Microwarpdrive	1	Propulsion Module	Module
+Federation Navy Co-Processor	1	CPU Enhancer	Module
+Federation Navy Drone Damage Amplifier	10	Drone Damage Modules	Module
+Federation Navy Hammerhead	29	Combat Drone	Drone
+Federation Navy Large Plasma Smartbomb	1	Smart Bomb	Module
+Federation Navy Magnetic Field Stabilizer	2	Magnetic Field Stabilizer	Module
+Federation Navy Ogre	40	Combat Drone	Drone
+Federation Navy Omnidirectional Tracking Link	24	Drone Tracking Modules	Module
+Federation Navy Sensor Booster	1	Sensor Booster	Module
+Federation Navy Stasis Webifier	8	Stasis Web	Module
+Federation Navy Thorium Charge M	24 800	Hybrid Charge	Charge
+Federation Navy Tracking Computer	5	Tracking Computer	Module
+Fighter Support Unit I	102	Fighter Support Unit	Module
+Fighter Support Unit II	133	Fighter Support Unit	Module
+Firbolg I	11	Light Fighter	Fighter
+Firbolg II	50	Light Fighter	Fighter
+Focused Void Bomb	18	Bomb Energy	Charge
+Focused Warp Scrambling Script	343	Warp Disruption Script	Charge
+Gallente Control Tower Small	1	Control Tower	Starbase
+Gallente Phenomena Generator	1	Titan Phenomena Generator	Module
+Gecko	13	Combat Drone	Drone
+Gist A-Type Shield Boost Amplifier	2	Shield Boost Amplifier	Module
+Gist A-Type X-Large Shield Booster	2	Shield Booster	Module
+Gist C-Type 500MN Microwarpdrive	1	Propulsion Module	Module
+Gist C-Type EM Shield Hardener	1	Shield Hardener	Module
+Gist C-Type Large Shield Booster	2	Shield Booster	Module
+Gist X-Type 500MN Microwarpdrive	12	Propulsion Module	Module
+Gist X-Type EM Shield Hardener	8	Shield Hardener	Module
+Gist X-Type Kinetic Shield Hardener	3	Shield Hardener	Module
+Gist X-Type Large Shield Booster	1	Shield Booster	Module
+Gist X-Type Shield Boost Amplifier	1	Shield Boost Amplifier	Module
+Gistii A-Type 1MN Afterburner	1	Propulsion Module	Module
+Gistii A-Type 5MN Microwarpdrive	3	Propulsion Module	Module
+Gistii A-Type Small Shield Booster	2	Shield Booster	Module
+Gistii B-Type Small Shield Booster	7	Shield Booster	Module
+Gistum A-Type 10MN Afterburner	1	Propulsion Module	Module
+Gistum B-Type Multispectrum Shield Hardener	1	Shield Hardener	Module
+Gistum C-Type 10MN Afterburner	1	Propulsion Module	Module
+Gistum C-Type 50MN Microwarpdrive	1	Propulsion Module	Module
+Gistum C-Type EM Shield Amplifier	6	Shield Resistance Amplifier	Module
+Gistum C-Type Medium Remote Shield Booster	20	Remote Shield Booster	Module
+Gistum C-Type Medium Shield Booster	2	Shield Booster	Module
+Gistum C-Type Multispectrum Shield Hardener	3	Shield Hardener	Module
+Gram I	337	Light Fighter	Fighter
+Gram II	153	Light Fighter	Fighter
+Gungnir II	54	Heavy Fighter	Fighter
+Guristas Inferno XL Cruise Missile	1 000	XL Cruise Missile	Charge
+Guristas Inferno XL Torpedo	2 000	XL Torpedo	Charge
+Guristas Mjolnir XL Cruise Missile	1 000	XL Cruise Missile	Charge
+Guristas Mjolnir XL Torpedo	3 000	XL Torpedo	Charge
+Guristas Nova XL Cruise Missile	1 000	XL Cruise Missile	Charge
+Guristas Nova XL Torpedo	2 000	XL Torpedo	Charge
+Guristas Scourge XL Cruise Missile	2 078	XL Cruise Missile	Charge
+Guristas Scourge XL Torpedo	3 000	XL Torpedo	Charge
+Guristas Thorium Charge XL	2 869	Hybrid Charge	Charge
+Guristas Uranium Charge XL	8 690	Hybrid Charge	Charge
+Gyrostabilizer II	86	Gyrostabilizer	Module
+Hafnium	6 011	Moon Materials	Material
+Hail L	71 312	Advanced Autocannon Ammo	Charge
+Hammerhead II	250	Combat Drone	Drone
+Heat Sink II	39	Heat Sink	Module
+Heavy 'Moat' Energy Neutralizer	2	Energy Neutralizer	Module
+Heavy Armor Maintenance Bot II	36	Logistic Drone	Drone
+Heavy Assault Missile Launcher II	66	Missile Launcher Heavy Assault	Module
+Heavy Capacitor Booster II	132	Capacitor Booster	Module
+Heavy Energy Neutralizer II	79	Energy Neutralizer	Module
+Heavy Entropic Disintegrator II	4	Precursor Weapon	Module
+Heavy Hull Maintenance Bot II	18	Logistic Drone	Drone
+Heavy Ion Blaster II	12	Hybrid Weapon	Module
+Heavy Missile Launcher II	94	Missile Launcher Heavy	Module
+Heavy Neutron Blaster II	42	Hybrid Weapon	Module
+Heavy Pulse Laser II	55	Energy Weapon	Module
+Heavy Scoped Entropic Disintegrator	2	Precursor Weapon	Module
+Heavy Shield Maintenance Bot II	34	Logistic Drone	Drone
+Heavy Stasis Grappler II	11	Stasis Grappler	Module
+Heavy Warp Disruptor I	1	Warp Scrambler	Module
+Heavy Warp Scrambler II	4	Warp Scrambler	Module
+Hexa 2500mm Repeating Cannon I	63	Projectile Weapon	Module
+Hexa 2500mm Repeating Cannon II	40	Projectile Weapon	Module
+High-Tech Manufacturing Tools	65	Miscellaneous	Commodity
+High-Tech Scanner	73	Miscellaneous	Commodity
+Hobgoblin II	274	Combat Drone	Drone
+Hornet II	149	Combat Drone	Drone
+HyperCore	61	Commodities	Commodity
+Ice Harvester I	14	Strip Miner	Module
+Ice Harvester II	84	Strip Miner	Module
+Ice Harvester Upgrade II	125	Mining Upgrade	Module
+Ice Harvesting Drone II	15	Mining Drone	Drone
+IFFA Compact Damage Control	81	Damage Control	Module
+Imperial Navy 1600mm Steel Plates	67	Armor Plate	Module
+Imperial Navy Cap Recharger	24	Capacitor Recharger	Module
+Imperial Navy Curator	37	Combat Drone	Drone
+Imperial Navy Drone Damage Amplifier	41	Drone Damage Modules	Module
+Imperial Navy Heat Sink	13	Heat Sink	Module
+Imperial Navy Heavy Energy Neutralizer	3	Energy Neutralizer	Module
+Imperial Navy Infiltrator	79	Combat Drone	Drone
+Imperial Navy Large EMP Smartbomb	23	Smart Bomb	Module
+Imperial Navy Medium Capacitor Booster	2	Capacitor Booster	Module
+Imperial Navy Multispectrum Coating	44	Armor Coating	Module
+Imperial Navy Multispectrum Energized Membrane	57	Energized Armor Membrane	Module
+Imperial Navy Praetor	108	Combat Drone	Drone
+Impetus Console	622	Salvaged Materials	Material
+Improved Cloaking Device II	23	Cloaking Device	Module
+Improved Mindflood Booster	17	Booster	Implant
+Industrial Cynosural Field Generator	40	Cynosural Field Generator	Module
+Inertial Stabilizers II	309	Inertial Stabilizer	Module
+Inferno Fury XL Cruise Missile	6 000	Advanced XL Cruise Missile	Charge
+Inferno Javelin Torpedo	183 562	Advanced Torpedo	Charge
+Inferno Rage Torpedo	98 348	Advanced Torpedo	Charge
+Infiltrator II	313	Combat Drone	Drone
+Information Command Burst II	18	Command Burst	Module
+Information Command Mindlink	2	Cyber Leadership	Implant
+Inherent Implants 'Noble' Hull Upgrades HG-1003	2	Cyber Armor	Implant
+Inherent Implants 'Squire' Capacitor Systems Operation EO-603	3	Cyber Engineering	Implant
+Inherent Implants 'Yeti' Ice Harvesting IH-1005	3	Cyber Resource Processing	Implant
+Intact Armor Plates	27	Salvaged Materials	Material
+Intact Shield Emitter	39	Salvaged Materials	Material
+Interdiction Sphere Launcher I	52	Interdiction Sphere Launcher	Module
+Ion Siege Blaster I	32	Hybrid Weapon	Module
+Ion Siege Blaster II	6	Hybrid Weapon	Module
+Isotropic Deposition Guide	27	Commodities	Commodity
+Javelin XL	22 996	Advanced Railgun Charge	Charge
+Jump Portal Generator I	6	Jump Portal Generator	Module
+Kinetic Armor Hardener II	16	Armor Hardener	Module
+Korako's Modified Drone Control Unit	12	Named Components	Material
+Ladar ECM II	28	ECM	Module
+Large 'Vehemence' Shockwave Charge	92	Smart Bomb	Module
+Large Ancillary Remote Armor Repairer	21	Ancillary Remote Armor Repairer	Module
+Large Ancillary Remote Shield Booster	21	Ancillary Remote Shield Booster	Module
+Large Armor Repairer II	33	Armor Repair Unit	Module
+Large Asteroid Ore Compressor I	2	Compressors	Module
+Large Asymmetric Enduring Remote Shield Booster	50	Remote Shield Booster	Module
+Large Cap Battery II	66	Capacitor Battery	Module
+Large Core Defense Field Extender I	21	Rig Shield	Module
+Large Core Defense Operational Solidifier II	1	Rig Shield	Module
+Large EM Shield Reinforcer II	2	Rig Shield	Module
+Large Ice Compressor I	2	Compressors	Module
+Large Industrial Core I	1	Siege Module	Module
+Large Industrial Core II	1	Siege Module	Module
+Large Micro Jump Drive	69	Micro Jump Drive	Module
+Large Murky Compact Remote Shield Booster	59	Remote Shield Booster	Module
+Large Railgun Battery	2	Mobile Hybrid Sentry	Starbase
+Large Remote Armor Repairer II	44	Remote Armor Repairer	Module
+Large Remote Capacitor Transmitter II	24	Remote Capacitor Transmitter	Module
+Large Shield Extender II	266	Shield Extender	Module
+Large Trimark Armor Pump I	30	Rig Armor	Module
+Large Vorton Projector I	1	Vorton Projector	Module
+Large YF-12a Smartbomb	48	Smart Bomb	Module
+Legion Core - Augmented Antimatter Reactor	2	Core Subsystem	Subsystem
+Legion Defensive - Covert Reconfiguration	2	Defensive Subsystem	Subsystem
+Legion Offensive - Liquid Crystal Magnifiers	2	Offensive Subsystem	Subsystem
+Legion Propulsion - Interdiction Nullifier	1	Propulsion Subsystem	Subsystem
+Legion Propulsion - Wake Limiter	1	Propulsion Subsystem	Subsystem
+Light Entropic Disintegrator II	4	Precursor Weapon	Module
+Light Missile Launcher II	145	Missile Launcher Light	Module
+Light Neutron Blaster II	46	Hybrid Weapon	Module
+Liquid Ozone	43 780	Ice Product	Material
+Logic Circuit	713	Salvaged Materials	Material
+Loki Core - Dissolution Sequencer	1	Core Subsystem	Subsystem
+Loki Core - Immobility Drivers	1	Core Subsystem	Subsystem
+Loki Defensive - Augmented Durability	1	Defensive Subsystem	Subsystem
+Loki Offensive - Projectile Scoping Array	2	Offensive Subsystem	Subsystem
+Loki Propulsion - Interdiction Nullifier	2	Propulsion Subsystem	Subsystem
+Magnetic Field Stabilizer II	223	Magnetic Field Stabilizer	Module
+Magnetometric ECM II	28	ECM	Module
+Malleus I	54	Heavy Fighter	Fighter
+Malleus II	271	Heavy Fighter	Fighter
+Medium Ancillary Armor Repairer	34	Ancillary Armor Repairer	Module
+Medium Ancillary Current Router I	60	Rig Core	Module
+Medium Ancillary Current Router II	20	Rig Core	Module
+Medium Armor Repairer II	34	Armor Repair Unit	Module
+Medium Auxiliary Nano Pump II	6	Rig Armor	Module
+Medium Beam Laser Battery	4	Mobile Laser Sentry	Starbase
+Medium Cap Battery II	65	Capacitor Battery	Module
+Medium Capacitor Booster II	95	Capacitor Booster	Module
+Medium Capacitor Control Circuit I	66	Rig Core	Module
+Medium Cargohold Optimization II	3	Rig Navigation	Module
+Medium Core Defense Field Extender I	92	Rig Shield	Module
+Medium Core Defense Field Extender II	49	Rig Shield	Module
+Medium EM Armor Reinforcer I	33	Rig Armor	Module
+Medium EM Shield Reinforcer II	5	Rig Shield	Module
+Medium Energy Neutralizer II	31	Energy Neutralizer	Module
+Medium Explosive Armor Reinforcer I	36	Rig Armor	Module
+Medium Explosive Armor Reinforcer II	2	Rig Armor	Module
+Medium F-S9 Regolith Compact Shield Extender	69	Shield Extender	Module
+Medium Hydraulic Bay Thrusters II	3	Rig Launcher	Module
+Medium Hyperspatial Velocity Optimizer II	3	Rig Navigation	Module
+Medium Low Friction Nozzle Joints I	77	Rig Navigation	Module
+Medium Nanobot Accelerator II	4	Rig Armor	Module
+Medium Processor Overclocking Unit II	27	Rig Core	Module
+Medium Pulse Laser Battery	4	Mobile Laser Sentry	Starbase
+Medium Remote Armor Repairer II	148	Remote Armor Repairer	Module
+Medium Remote Repair Augmentor II	17	Rig Armor	Module
+Medium Remote Shield Booster II	60	Remote Shield Booster	Module
+Medium Rocket Fuel Cache Partition II	4	Rig Launcher	Module
+Medium Shield Extender II	86	Shield Extender	Module
+Medium Thermal Armor Reinforcer II	1	Rig Armor	Module
+Medium Trimark Armor Pump II	76	Rig Armor	Module
+Mega Beam Laser II	8	Energy Weapon	Module
+Mega Pulse Laser II	4	Energy Weapon	Module
+Mercoxit Asteroid Mining Crystal Type A II	17	Mercoxit Mining Crystal	Charge
+Meson Exotic Plasma M	37 460	Exotic Plasma Charge	Charge
+Meson Exotic Plasma S	50 400	Exotic Plasma Charge	Charge
+Meson Exotic Plasma XL	6 852	Exotic Plasma Charge	Charge
+Mexallon	744 465	Mineral	Material
+Micro Auxiliary Power Core II	40	Auxiliary Power Core	Module
+Mining Drone II	152	Mining Drone	Drone
+Mining Foreman Burst II	33	Command Burst	Module
+Mining Foreman Mindlink	1	Cyber Leadership	Implant
+Mining Laser Field Enhancement Charge	76 785	Mining Foreman Burst Charges	Charge
+Mining Laser Optimization Charge	77 159	Mining Foreman Burst Charges	Charge
+Mining Laser Upgrade II	110	Mining Upgrade	Module
+Missile Guidance Computer II	85	Missile Guidance Computer	Module
+Missile Guidance Enhancer II	29	Missile Guidance Enhancer	Module
+Mjolnir Fury Heavy Missile	63 594	Advanced Heavy Missile	Charge
+Mjolnir Javelin Heavy Assault Missile	198 685	Advanced Heavy Assault Missile	Charge
+Mjolnir Javelin Torpedo	155 048	Advanced Torpedo	Charge
+Mjolnir Javelin XL Torpedo	9 200	Advanced XL Torpedo	Charge
+Mjolnir Precision Cruise Missile	179 290	Advanced Cruise Missile	Charge
+Mjolnir Rage Heavy Assault Missile	293 923	Advanced Heavy Assault Missile	Charge
+Mjolnir Rage Torpedo	381 669	Advanced Torpedo	Charge
+Mjolnir Rage XL Torpedo	9 951	Advanced XL Torpedo	Charge
+Mobile Cynosural Beacon	5	Mobile Cynosural Beacon	Deployable
+Mobile Cynosural Inhibitor	10	Mobile Cyno Inhibitor	Deployable
+Mobile Large Warp Disruptor I	7	Mobile Warp Disruptor	Deployable
+Mobile Large Warp Disruptor II	4	Mobile Warp Disruptor	Deployable
+Mobile Medium Warp Disruptor I	1	Mobile Warp Disruptor	Deployable
+Mobile Micro Jump Unit	12	Mobile Micro Jump Unit	Deployable
+Mobile Scan Inhibitor	8	Mobile Scan Inhibitor	Deployable
+Mobile Small Warp Disruptor I	1	Mobile Warp Disruptor	Deployable
+Mobile Small Warp Disruptor II	1	Mobile Warp Disruptor	Deployable
+Modulated Deep Core Strip Miner II	20	Frequency Mining Laser	Module
+Modulated Strip Miner II	50	Frequency Mining Laser	Module
+Multispectrum Coating II	95	Armor Coating	Module
+Multispectrum Energized Membrane I	150	Energized Armor Membrane	Module
+Multispectrum Energized Membrane II	219	Energized Armor Membrane	Module
+Multispectrum Shield Hardener II	386	Shield Hardener	Module
+Mystic S	34 720	Advanced Exotic Plasma Charge	Charge
+Nanite Repair Paste	80 083	Nanite Repair Paste	Charge
+Nanofiber Internal Structure II	251	Nanofiber Internal Structure	Module
+Navy Cap Booster 100	1 197	Capacitor Booster Charge	Charge
+Navy Cap Booster 150	611	Capacitor Booster Charge	Charge
+Navy Cap Booster 3200	114	Capacitor Booster Charge	Charge
+Navy Cap Booster 400	661	Capacitor Booster Charge	Charge
+Navy Cap Booster 800	695	Capacitor Booster Charge	Charge
+Networked Sensor Array	56	Capital Sensor Array	Module
+Neural Boost - Basic	3	Cyber Learning	Implant
+Neural Lace 'Blackglass' Net Intrusion 920-40	1	Cyber Scanning	Implant
+Neutron Blaster Cannon II	18	Hybrid Weapon	Module
+Nocxium	33 698	Mineral	Material
+Noise-5 'Needlejack' Filament	317	Jump Filaments	Commodity
+Nova Fury Heavy Missile	33 900	Advanced Heavy Missile	Charge
+Nova Rage Torpedo	26 157	Advanced Torpedo	Charge
+Occult S	22 549	Advanced Exotic Plasma Charge	Charge
+Ogre II	90	Combat Drone	Drone
+Omnidirectional Tracking Enhancer II	33	Drone Tracking Enhancer	Module
+Omnidirectional Tracking Link II	84	Drone Tracking Modules	Module
+Oneiros Frontier Safeguarder SKIN	1	Permanent SKIN	SKINs
+Optimized Attainment Decryptor	16	Generic Decryptor	Decryptors
+Optimized Augmentation Decryptor	19	Generic Decryptor	Decryptors
+Orca Radioactives Reclamation SKIN	1	Permanent SKIN	SKINs
+ORE Expanded Cargohold	6	Expanded Cargohold	Module
+ORE Ice Harvester	18	Strip Miner	Module
+Overdrive Injector System II	70	Overdrive Injector System	Module
+Parity Decryptor	169	Generic Decryptor	Decryptors
+Personal Hangar Array	1	Personal Hangar	Starbase
+Pitfall Compact Warp Disruption Field Generator	21	Warp Disrupt Field Generator	Module
+Pith A-Type EM Shield Hardener	2	Shield Hardener	Module
+Pith A-Type Kinetic Shield Hardener	3	Shield Hardener	Module
+Pith A-Type Shield Boost Amplifier	1	Shield Boost Amplifier	Module
+Pith A-Type Thermal Shield Hardener	2	Shield Hardener	Module
+Pith A-Type X-Large Shield Booster	2	Shield Booster	Module
+Pith B-Type EM Shield Hardener	1	Shield Hardener	Module
+Pith B-Type Large Shield Booster	1	Shield Booster	Module
+Pith B-Type Shield Boost Amplifier	4	Shield Boost Amplifier	Module
+Pith B-Type X-Large Shield Booster	4	Shield Booster	Module
+Pith C-Type EM Shield Hardener	1	Shield Hardener	Module
+Pith C-Type Large Shield Booster	1	Shield Booster	Module
+Pith C-Type Shield Boost Amplifier	5	Shield Boost Amplifier	Module
+Pith C-Type X-Large Shield Booster	3	Shield Booster	Module
+Pith X-Type EM Shield Hardener	16	Shield Hardener	Module
+Pith X-Type Kinetic Shield Hardener	11	Shield Hardener	Module
+Pith X-Type Large Shield Booster	5	Shield Booster	Module
+Pith X-Type Shield Boost Amplifier	24	Shield Boost Amplifier	Module
+Pith X-Type Thermal Shield Hardener	16	Shield Hardener	Module
+Pith X-Type X-Large Shield Booster	6	Shield Booster	Module
+Pithi C-Type Small Remote Shield Booster	3	Remote Shield Booster	Module
+Pithum A-Type EM Shield Amplifier	10	Shield Resistance Amplifier	Module
+Pithum A-Type Medium Remote Shield Booster	5	Remote Shield Booster	Module
+Pithum A-Type Medium Shield Booster	3	Shield Booster	Module
+Pithum A-Type Multispectrum Shield Hardener	25	Shield Hardener	Module
+Pithum A-Type Thermal Shield Amplifier	5	Shield Resistance Amplifier	Module
+Pithum B-Type Multispectrum Shield Hardener	4	Shield Hardener	Module
+Pithum C-Type Medium Remote Shield Booster	52	Remote Shield Booster	Module
+Pithum C-Type Medium Shield Booster	1	Shield Booster	Module
+Pithum C-Type Multispectrum Shield Hardener	39	Shield Hardener	Module
+Polarized Rocket Launcher	18	Missile Launcher Rocket	Module
+Power Circuit	743	Salvaged Materials	Material
+Power Diagnostic System II	119	Power Diagnostic System	Module
+Praetor II	133	Combat Drone	Drone
+Precursor Dreadnought	1	Spaceship Command	Skill
+Proteus Core - Augmented Fusion Reactor	3	Core Subsystem	Subsystem
+Proteus Defensive - Covert Reconfiguration	3	Defensive Subsystem	Subsystem
+Proteus Offensive - Drone Synthesis Projector	2	Offensive Subsystem	Subsystem
+Proteus Offensive - Hybrid Encoding Platform	1	Offensive Subsystem	Subsystem
+Proteus Propulsion - Hyperspatial Optimization	2	Propulsion Subsystem	Subsystem
+Proteus Propulsion - Interdiction Nullifier	1	Propulsion Subsystem	Subsystem
+Proteus Propulsion - Localized Injectors	1	Propulsion Subsystem	Subsystem
+Prototype Cloaking Device I	71	Cloaking Device	Module
+Prototype Hyperspatial Accelerator	7	Warp Accelerator	Module
+Prototype Precise Hexa 2500mm Repeating Cannon	3	Projectile Weapon	Module
+Pulse Activated Nexus Invulnerability Core	13	Super Weapon	Module
+Pyerite	1 567 261	Mineral	Material
+Quad 3500mm Siege Artillery II	12	Projectile Weapon	Module
+Quad 800mm Repeating Cannon I	36	Projectile Weapon	Module
+Quad 800mm Repeating Cannon II	15	Projectile Weapon	Module
+Quad Mega Pulse Laser I	27	Energy Weapon	Module
+Quad Mega Pulse Laser II	6	Energy Weapon	Module
+Quafe Zero Classic	48	Booster	Implant
+Quafe Zero Green Apple	5	Booster	Implant
+Radar ECM II	28	ECM	Module
+Raging Electrical Filament	16	Abyssal Filaments	Commodity
+Raging Exotic Filament	15	Abyssal Filaments	Commodity
+Raging Gamma Filament	14	Abyssal Filaments	Commodity
+Rapid Heavy Missile Launcher II	87	Missile Launcher Rapid Heavy	Module
+Rapid Light Missile Launcher II	309	Missile Launcher Rapid Light	Module
+Rapid Torpedo Launcher II	12	Missile Launcher Rapid Torpedo	Module
+Reactive Armor Hardener	45	Armor Resistance Shift Hardener	Module
+Remote Sensor Booster II	51	Remote Sensor Booster	Module
+Republic Fleet 10MN Afterburner	1	Propulsion Module	Module
+Republic Fleet Berserker	37	Combat Drone	Drone
+Republic Fleet Bouncer	25	Combat Drone	Drone
+Republic Fleet Depleted Uranium M	137 048	Projectile Ammo	Charge
+Republic Fleet EMP L	49 554	Projectile Ammo	Charge
+Republic Fleet EMP M	97 647	Projectile Ammo	Charge
+Republic Fleet EMP S	153 823	Projectile Ammo	Charge
+Republic Fleet Fusion M	43 401	Projectile Ammo	Charge
+Republic Fleet Gyrostabilizer	5	Gyrostabilizer	Module
+Republic Fleet Large Cap Battery	19	Capacitor Battery	Module
+Republic Fleet Large Shield Extender	48	Shield Extender	Module
+Republic Fleet Medium Cap Battery	26	Capacitor Battery	Module
+Republic Fleet Medium Shield Extender	15	Shield Extender	Module
+Republic Fleet Phased Plasma L	45 383	Projectile Ammo	Charge
+Republic Fleet Phased Plasma M	57 535	Projectile Ammo	Charge
+Republic Fleet Proton M	59 825	Projectile Ammo	Charge
+Republic Fleet Shield Recharger	3	Shield Recharger	Module
+Republic Fleet Small Cap Battery	4	Capacitor Battery	Module
+Republic Fleet Small Shield Extender	13	Shield Extender	Module
+Republic Fleet Target Painter	17	Target Painter	Module
+Republic Fleet Titanium Sabot M	52 270	Projectile Ammo	Charge
+Republic Fleet Tracking Enhancer	2	Tracking Enhancer	Module
+Republic Fleet Valkyrie	21	Combat Drone	Drone
+Republic Fleet Warp Disruptor	5	Warp Scrambler	Module
+Republic Fleet Warp Scrambler	1	Warp Scrambler	Module
+Republic Fleet Warrior	21	Combat Drone	Drone
+Restrained Compounds	60	Named Components	Material
+Rocket Launcher II	74	Missile Launcher Rocket	Module
+Rogue Drone 42-X Nexus Chip	3	Miscellaneous	Commodity
+Rogue Drone 46-X Nexus Chip	2	Miscellaneous	Commodity
+Salvager II	45	Salvager	Module
+Sanshas Gamma XL	18	Frequency Crystal	Charge
+Sanshas Microwave XL	18	Frequency Crystal	Charge
+Sanshas Multifrequency XL	24	Frequency Crystal	Charge
+Sanshas Radio XL	27	Frequency Crystal	Charge
+Sanshas Standard M	72	Frequency Crystal	Charge
+Sanshas Standard XL	27	Frequency Crystal	Charge
+Sanshas Ultraviolet XL	18	Frequency Crystal	Charge
+Sanshas Xray XL	18	Frequency Crystal	Charge
+Satyr I	10	Light Fighter	Fighter
+Scarab I	15	Support Fighter	Fighter
+Scorch XL	61	Advanced Pulse Laser Crystal	Charge
+Scourge Fury Heavy Missile	62 849	Advanced Heavy Missile	Charge
+Scourge Fury XL Cruise Missile	2 000	Advanced XL Cruise Missile	Charge
+Scourge Javelin Heavy Assault Missile	222 304	Advanced Heavy Assault Missile	Charge
+Scourge Javelin Torpedo	31 368	Advanced Torpedo	Charge
+Scourge Javelin XL Torpedo	10 000	Advanced XL Torpedo	Charge
+Scourge Rage Heavy Assault Missile	279 151	Advanced Heavy Assault Missile	Charge
+Scourge Rage Torpedo	28 376	Advanced Torpedo	Charge
+Scourge Rage XL Torpedo	9 964	Advanced XL Torpedo	Charge
+Sensor Booster II	186	Sensor Booster	Module
+Sensor Optimization Charge	62 619	Information Command Burst Charges	Charge
+Sentient Damage Control	8	Damage Control	Module
+Sentient Drone Damage Amplifier	48	Drone Damage Modules	Module
+Sentient Drone Navigation Computer	29	Drone Navigation Computer	Module
+Sentient Omnidirectional Tracking Enhancer	12	Drone Tracking Enhancer	Module
+Sentient Omnidirectional Tracking Link	50	Drone Tracking Modules	Module
+Sentient Sensor Booster	21	Sensor Booster	Module
+Shadow Serpentis 500MN Microwarpdrive	1	Propulsion Module	Module
+Shadow Serpentis Damage Control	8	Damage Control	Module
+Shadow Serpentis Inertial Stabilizers	22	Inertial Stabilizer	Module
+Shadow Serpentis Magnetic Field Stabilizer	2	Magnetic Field Stabilizer	Module
+Shadow Serpentis Multispectrum Energized Membrane	3	Energized Armor Membrane	Module
+Shadow Serpentis Sensor Booster	24	Sensor Booster	Module
+Shadow Serpentis Tracking Computer	7	Tracking Computer	Module
+Shadow Serpentis Warp Disruptor	1	Warp Scrambler	Module
+Shield Command Burst II	66	Command Burst	Module
+Shield Command Mindlink	2	Cyber Leadership	Implant
+Shield Extension Charge	49 183	Shield Command Burst Charges	Charge
+Shield Harmonizing Charge	49 960	Shield Command Burst Charges	Charge
+Siege Module I	36	Siege Module	Module
+Siege Module II	43	Siege Module	Module
+Signal Amplifier II	40	Signal Amplifier	Module
+Signal-15 'Needlejack' Filament	1	Jump Filaments	Commodity
+Signal-25 'Needlejack' Filament	118	Jump Filaments	Commodity
+Signal-5 'Needlejack' Filament	165	Jump Filaments	Commodity
+Silicates	25 242	Moon Materials	Material
+Single-crystal Superalloy I-beam	703	Salvaged Materials	Material
+Siren I	3	Support Fighter	Fighter
+Siren II	30	Support Fighter	Fighter
+Sisters Combat Scanner Probe	483	Scanner Probe	Charge
+Sisters Core Probe Launcher	15	Scan Probe Launcher	Module
+Sisters Core Scanner Probe	902	Scanner Probe	Charge
+Sisters Expanded Probe Launcher	14	Scan Probe Launcher	Module
+Skirmish Command Burst II	46	Command Burst	Module
+Skirmish Command Mindlink	1	Cyber Leadership	Implant
+Sleeper Data Library	1 128	Sleeper Components	Commodity
+Sleeper Drone AI Nexus	165	Sleeper Components	Commodity
+Small Cap Battery II	56	Capacitor Battery	Module
+Small Capacitor Booster II	106	Capacitor Booster	Module
+Small Core Defense Field Extender II	56	Rig Shield	Module
+Small Energy Locus Coordinator II	16	Rig Energy Weapon	Module
+Small Energy Neutralizer II	18	Energy Neutralizer	Module
+Small Focused Beam Laser II	84	Energy Weapon	Module
+Small Hyperspatial Velocity Optimizer II	29	Rig Navigation	Module
+Small Tractor Beam I	14	Tractor Beam	Module
+Small Tractor Beam II	15	Tractor Beam	Module
+Smashed Trigger Unit	6 385	Salvaged Materials	Material
+Social Adaptation Chip - Standard	3	Cyber Learning	Implant
+Spike XL	22 805	Advanced Railgun Charge	Charge
+Standard Frentix Booster	8	Booster	Implant
+Standard Mindflood Booster	21	Booster	Implant
+Standup Anticapital Missile Launcher I	1	Structure XL Missile Launcher	Structure Module
+Standup Cruise Missile	2 963	Structure Anti-Subcapital Missile	Charge
+Standup Focused Warp Disruptor I	2	Structure Warp Scrambler	Structure Module
+Standup Heavy Missile	2 877	Structure Anti-Subcapital Missile	Charge
+Standup Light Missile	6 098	Structure Anti-Subcapital Missile	Charge
+Standup Multirole Missile Launcher I	2	Structure Multirole Missile Launcher	Structure Module
+Standup Target Painter I	2	Structure Disruption Battery	Structure Module
+Stasis Webification Probe	260	Interdiction Burst Probes	Charge
+Stasis Webifier II	209	Stasis Web	Module
+Strip Miner I	108	Strip Miner	Module
+Strong Blue Pill Booster	36	Booster	Implant
+Strong Crash Booster	5	Booster	Implant
+Strong Drop Booster	4	Booster	Implant
+Strong Exile Booster	5	Booster	Implant
+Strong Mindflood Booster	33	Booster	Implant
+Strong Sooth Sayer Booster	5	Booster	Implant
+Strontium Clathrates	4 665	Ice Product	Material
+Supratidal Entropic Disintegrator II	1	Precursor Weapon	Module
+Syndicate Cloaking Device	1	Cloaking Device	Module
+Syndicate Damage Control	7	Damage Control	Module
+Synth Crash Booster	15	Booster	Implant
+Synth Drop Booster	15	Booster	Implant
+Templar I	420	Light Fighter	Fighter
+Templar II	583	Light Fighter	Fighter
+Tengu Core - Augmented Graviton Reactor	5	Core Subsystem	Subsystem
+Tengu Core - Electronic Efficiency Gate	2	Core Subsystem	Subsystem
+Tengu Core - Obfuscation Manifold	2	Core Subsystem	Subsystem
+Tengu Defensive - Covert Reconfiguration	5	Defensive Subsystem	Subsystem
+Tengu Defensive - Supplemental Screening	3	Defensive Subsystem	Subsystem
+Tengu Offensive - Accelerated Ejection Bay	5	Offensive Subsystem	Subsystem
+Tengu Offensive - Magnetic Infusion Basin	1	Offensive Subsystem	Subsystem
+Tengu Offensive - Support Processor	2	Offensive Subsystem	Subsystem
+Tengu Propulsion - Chassis Optimization	3	Propulsion Subsystem	Subsystem
+Tengu Propulsion - Fuel Catalyst	2	Propulsion Subsystem	Subsystem
+Tengu Propulsion - Interdiction Nullifier	5	Propulsion Subsystem	Subsystem
+Termite I	10	Heavy Fighter	Fighter
+Termite II	30	Heavy Fighter	Fighter
+Test Cultures	2 710	Refined Commodities - Tier 2	Planetary Commodities
+Tetryon Exotic Plasma XL	7 899	Exotic Plasma Charge	Charge
+Thermal Armor Hardener II	16	Armor Hardener	Module
+Thruster Console	5 978	Salvaged Materials	Material
+Thukker Large Cap Battery	15	Capacitor Battery	Module
+Torpedo Launcher II	31	Missile Launcher Torpedo	Module
+Tracking Computer II	59	Tracking Computer	Module
+Triage Module I	26	Siege Module	Module
+Triage Module II	13	Siege Module	Module
+Trigger Unit	777	Salvaged Materials	Material
+Triglavian Survey Database	4 924	Triglavian Data	Commodity
+Triple Neutron Blaster Cannon II	3	Hybrid Weapon	Module
+True Sansha Cap Recharger	11	Capacitor Recharger	Module
+True Sansha Capacitor Power Relay	9	Capacitor Power Relay	Module
+True Sansha EM Armor Hardener	6	Armor Hardener	Module
+True Sansha Explosive Armor Hardener	36	Armor Hardener	Module
+True Sansha Heat Sink	20	Heat Sink	Module
+True Sansha Heavy Capacitor Booster	4	Capacitor Booster	Module
+True Sansha Heavy Energy Neutralizer	9	Energy Neutralizer	Module
+True Sansha Heavy Energy Nosferatu	1	Energy Nosferatu	Module
+True Sansha Large Armor Repairer	1	Armor Repair Unit	Module
+True Sansha Large EMP Smartbomb	14	Smart Bomb	Module
+True Sansha Medium Armor Repairer	1	Armor Repair Unit	Module
+True Sansha Medium Energy Neutralizer	1	Energy Neutralizer	Module
+True Sansha Mega Pulse Laser	1	Energy Weapon	Module
+True Sansha Multispectrum Energized Membrane	2	Energized Armor Membrane	Module
+True Sansha Power Diagnostic System	17	Power Diagnostic System	Module
+True Sansha Reactor Control Unit	4	Reactor Control Unit	Module
+True Sansha Stasis Webifier	1	Stasis Web	Module
+True Sansha Tachyon Beam Laser	2	Energy Weapon	Module
+True Sansha Thermal Armor Hardener	2	Armor Hardener	Module
+True Sansha Warp Disruption Field Generator	1	Warp Disrupt Field Generator	Module
+Tyrfing I	16	Heavy Fighter	Fighter
+Tyrfing II	80	Heavy Fighter	Fighter
+Ultratidal Entropic Disintegrator I	3	Precursor Weapon	Module
+Unstable Large Cap Battery Mutaplasmid	1	Mutaplasmids	Commodity
+Valkyrie II	327	Combat Drone	Drone
+Veles Entropic Radiation Sink	4	Entropic Radiation Sink	Module
+Veles Heavy Entropic Disintegrator	6	Precursor Weapon	Module
+Veles Light Entropic Disintegrator	1	Precursor Weapon	Module
+Veles Supratidal Entropic Disintegrator	1	Precursor Weapon	Module
+Vespa II	116	Combat Drone	Drone
+Void XL	25 210	Advanced Blaster Charge	Charge
+Vorton Tuning System II	4	Vorton Projector Upgrade	Module
+Ward Console	1 424	Salvaged Materials	Material
+Warden II	15	Combat Drone	Drone
+Warp Core Stabilizer II	151	Warp Core Stabilizer	Module
+Warp Disrupt Probe	1 142	Interdiction Probe	Charge
+Warp Disruption Field Generator II	4	Warp Disrupt Field Generator	Module
+Warp Disruptor II	125	Warp Scrambler	Module
+Warp Scrambler II	101	Warp Scrambler	Module
+Warrior II	820	Combat Drone	Drone
+Wasp II	154	Combat Drone	Drone
+X-Large Ancillary Shield Booster	21	Ancillary Shield Booster	Module
+XL Cruise Missile Launcher I	3	Missile Launcher XL Cruise	Module
+XL Cruise Missile Launcher II	6	Missile Launcher XL Cruise	Module
+XL Torpedo Launcher II	30	Missile Launcher XL Torpedo	Module
+Zainou 'Beancounter' Industry BX-804	3	Cyber Production	Implant
+Zero-Point Condensate	3 283	Abyssal Materials	Material
+Zeugma Integrated Analyzer	1	Data Miners	Module
+Zor's Custom Navigation Hyper-Link	3	Cyber Navigation	Implant
+Zydrine	28 635	Mineral	Material
+Station Warehouse Container	1	Audit Log Secure Container	Celestial
+Caldari Navy Small Shield Extender
+skill extractor 1000
+Silicon	14780
+Plasmoids	16500
+Biomass	21500
+Precious Metals	8280
+Biocells	535
+Chiral Structures	22620
+Industrial Fibers	20100
+Inherent Implants 'Highwall' Mining MX-1003
+Dense Veldspar	4,204,666	Veldspar			420,466.60 m3	42,803,499.88 ISK
+Biomass	21500
+Chiral Structures	22620
+Industrial Fibers	20100
+Plasmoids	16500
+Precious Metals	8280
+Silicon	14780
+Biocells	535
+Dread Guristas X-Large Shield Booster
+ Dread Guristas Multispectral ECM
+	1 x Medium Shield Extender I
+2 x Federation Navy Fleet Colonel Insignia I
+Caldari Navy Medium Shield Extender
+Republic Fleet Titanium Sabot S
+Republic Fleet Carbonized Lead M
+Republic Fleet Fusion L
+Navy Cap Booster 150
+Navy Micro Auxiliary Power Core
+Republic Fleet Nuclear S
+[Nighthawk, Alecks Kautsuo's Nighthawk]
+Ballistic Control System II
+Ballistic Control System II
+Ballistic Control System II
+Damage Control II
+50MN Quad LiF Restrained Microwarpdrive
+Federation Navy Stasis Webifier
+Pithum A-Type EM Shield Amplifier
+Pithum A-Type EM Shield Amplifier
+Republic Fleet Large Shield Extender
+Warp Scrambler II
+Medium Energy Neutralizer II
+Medium Energy Neutralizer II
+Heavy Assault Missile Launcher II,Scourge Rage Heavy Assault Missile
+Heavy Assault Missile Launcher II,Scourge Rage Heavy Assault Missile
+Heavy Assault Missile Launcher II,Scourge Rage Heavy Assault Missile
+Heavy Assault Missile Launcher II,Scourge Rage Heavy Assault Missile
+Heavy Assault Missile Launcher II,Scourge Rage Heavy Assault Missile
+Medium Core Defense Field Extender II
+Medium Explosive Shield Reinforcer II
+Hornet EC-300 x5
+425mm railgun ii
+
+
+[Moros, Moros HAW]
+Capital Ancillary Armor Repairer
+Magnetic Field Stabilizer II
+Imperial Navy Multispectrum Energized Membrane
+Reactive Armor Hardener
+Imperial Navy Multispectrum Energized Membrane
+Magnetic Field Stabilizer II
+Capital ACM Compact Armor Repairer
+Tracking Enhancer II
+
+Capital Capacitor Booster II
+Heavy Capacitor Booster II
+Republic Fleet Target Painter
+Tracking Computer II
+
+Triple Neutron Blaster Cannon II
+Siege Module II
+Triple Neutron Blaster Cannon II
+Heavy Energy Neutralizer II
+Triple Neutron Blaster Cannon II
+
+Capital Hybrid Metastasis Adjuster II
+Capital Trimark Armor Pump I
+Capital Auxiliary Nano Pump I
+
+
+
+
+Targeting Range Script x1
+Tracking Speed Script x2
+Void XL x1200
+Null XL x5000
+Cap Booster 3200 x12
+Scan Resolution Script x1
+Guristas Antimatter Charge XL x672
+Nanite Repair Paste x1128
+Guristas Lead Charge XL x1200
+Agency 'Hardshell' TB9 Dose IV x1
+Strong Exile Booster x1
+Strong Drop Booster x1
+Tracking Computer II x1
+
+
+Nanofiber Internal Structure II
+Covert Cynosural Field Generator I
+5MN Microwarpdrive II
+Small Shield Extender II
+Damage Control II
+Small Shield Extender II
+Small EM Shield Reinforcer I
+Warp Scrambler II
+Covert Ops Cloaking Device II
+Small EM Shield Reinforcer I
+Manticore
+
+
+Astero	1	Frigate	Ship
+Cheetah	2	Covert Ops	Ship
+Claw	2	Interceptor	Ship
+Dramiel	1	Frigate	Ship
+Jaguar	2	Assault Frigate	Ship
+Rapier	1	Force Recon Ship	Ship
+Republic Fleet Firetail	2	Frigate	Ship
+Rifter	3	Frigate	Ship
+Rupture	1	Cruiser	Ship
+Scythe	1	Cruiser	Ship
+Slasher	2	Frigate	Ship
+Talwar	1	Destroyer	Ship
+Tempest	1	Battleship	Ship
+Wolf	1	Assault Frigate	Ship
+
+
+Damage Control II	1	455 700,00	455 700,00
+Large Shield Extender II	2	1 236 000,00	2 472 000,00
+Ferox	1	57 800 000,00	57 800 000,00
+Power Diagnostic System II	1	938 500,00	938 500,00
+Drone Link Augmentor I	1	544 700,00	544 700,00
+Multispectrum Shield Hardener II	2	2 437 000,00	4 874 000,00
+250mm Railgun II	6	2 720 000,00	16 320 000,00
+50MN Y-T8 Compact Microwarpdrive	1	99 500,00	99 500,00
+Spike M	2740	299,10	819 534,00
+Medium Core Defense Field Extender I	2	733 900,00	1 467 800,00
+Medium Thermal Shield Reinforcer II	1	7 353 000,00	7 353 000,00
+Caldari Navy Antimatter Charge M	5000	874,00	4 370 000,00
+Javelin M	3000	225,00	675 000,00
+Magnetic Field Stabilizer II	2	863 400,00	1 726 800,00
+Warrior II	5	475 700,00	2 378 500,00
+Caldari Navy Lead Charge M	1000	-	-
+Caldari Navy Iridium Charge M	1000	800,20	800 200,00
+EM Shield Hardener II	1	2 215 000,00	2 215 000,00
+Caldari Navy Iron Charge M	1000	700,10	700 100,00
+Всего:			106 010 334,00
+
+
+ 'Halcyon' Core Equalizer I	1	Warp Core Stabilizer	Module	Low Slot
+ 1MN Y-S8 Compact Afterburner	1	Propulsion Module	Module	Medium Slot
+ 400mm Steel Plates II	1	Armor Plate	Module	Low Slot
+ 425mm AutoCannon II	1	Projectile Weapon	Module	High Slot 1% damaged
+ 425mm AutoCannon II	1	Projectile Weapon	Module	High Slot 1% damaged
+ 425mm AutoCannon II	1	Projectile Weapon	Module	High Slot 1% damaged
+ 425mm AutoCannon II	1	Projectile Weapon	Module	High Slot 1% damaged
+ 425mm AutoCannon II	1	Projectile Weapon	Module	High Slot 1% damaged
+ 50MN Y-T8 Compact Microwarpdrive	1	Propulsion Module	Module	Medium Slot
+ 5MN Cold-Gas Enduring Microwarpdrive	1	Propulsion Module	Module	Medium Slot
+ 5MN Quad LiF Restrained Microwarpdrive	1	Propulsion Module	Module	Medium Slot
+ 5MN Y-T8 Compact Microwarpdrive	1	Propulsion Module	Module	Medium Slot
+ Abyssal Damage Control	1	Damage Control	Module	Low Slot
+ Abyssal Stasis Webifier	1	Stasis Web	Module	Medium Slot
+ Arbalest Compact Light Missile Launcher	1	Missile Launcher Light	Module	High Slot
+ Arbalest Compact Light Missile Launcher	1	Missile Launcher Light	Module	High Slot
+ Arbalest Compact Light Missile Launcher	1	Missile Launcher Light	Module	High Slot
+ Ballistic Control System II	1	Ballistic Control system	Module	Low Slot
+ Barrage M	1,925	Advanced Autocannon Ammo	Charge	Cargo Hold
+ Bomb Launcher I	1	Missile Launcher Bomb	Module	High Slot
+ Burst Jammer II	1	Burst Jammer	Module	Medium Slot
+ Caldari Navy Inferno Light Missile	1,000	Light Missile	Charge	Cargo Hold
+ Caldari Navy Inferno Light Missile	964	Light Missile	Charge	Cargo Hold
+ Caldari Navy Mjolnir Light Missile	964	Light Missile	Charge	Cargo Hold
+ Caldari Navy Mjolnir Light Missile	975	Light Missile	Charge	Cargo Hold
+ Caldari Navy Nova Light Missile	1,000	Light Missile	Charge	Cargo Hold
+ Caldari Navy Nova Light Missile	1,000	Light Missile	Charge	Cargo Hold
+ Caldari Navy Nova Light Missile	102	Light Missile	Charge	Cargo Hold
+ Caldari Navy Nova Torpedo	200	Torpedo	Charge	Cargo Hold
+ Caldari Navy Scourge Light Missile	1,000	Light Missile	Charge	Cargo Hold
+ Caldari Navy Scourge Light Missile	1,000	Light Missile	Charge	Cargo Hold
+ Caldari Navy Vespa	1	Combat Drone	Drone	Cargo Hold
+ Caldari Navy Vespa	3	Combat Drone	Drone	Cargo Hold
+ Cap Booster 800	23	Capacitor Booster Charge	Charge	Cargo Hold
+ Capacitor Flux Coil II	1	Capacitor Flux Coil	Module	Cargo Hold
+ Covert Ops Cloaking Device II	1	Cloaking Device	Module	High Slot
+ Damage Control II	1	Damage Control	Module	Low Slot
+ Defender Launcher I	1	Missile Launcher Defender	Module	High Slot
+ Defender Launcher I	1	Missile Launcher Defender	Module	High Slot
+ Defender Missile I	20	Defender Missiles	Charge	Cargo Hold
+ Defender Missile I	50	Defender Missiles	Charge	Cargo Hold
+ Drone Damage Amplifier II	1	Drone Damage Modules	Module	Cargo Hold
+ Drone Damage Amplifier II	1	Drone Damage Modules	Module	Cargo Hold
+ EM Shield Amplifier II	1	Shield Resistance Amplifier	Module	Medium Slot
+ Hail M	1,915	Advanced Autocannon Ammo	Charge	Cargo Hold
+ Inertial Stabilizers II	1	Inertial Stabilizer	Module	Cargo Hold
+ Initiated Compact Warp Scrambler	1	Warp Scrambler	Module	Medium Slot
+ Interdiction Sphere Launcher I	1	Interdiction Sphere Launcher	Module	High Slot
+ Kinetic Shield Hardener II	1	Shield Hardener	Module	Cargo Hold
+ Layered Energized Membrane II	1	Energized Armor Membrane	Module	Low Slot
+ Light Missile Launcher II	1	Missile Launcher Light	Module	High Slot
+ Light Missile Launcher II	1	Missile Launcher Light	Module	High Slot
+ Light Missile Launcher II	1	Missile Launcher Light	Module	High Slot
+ Light Missile Launcher II	1	Missile Launcher Light	Module	High Slot
+ Light Missile Launcher II	1	Missile Launcher Light	Module	High Slot
+ Medium Abyssal Ancillary Armor Repairer	1	Ancillary Armor Repairer	Module	Low Slot
+ Medium Abyssal Armor Repairer	1	Armor Repair Unit	Module	Low Slot
+ Medium Abyssal Energy Neutralizer	1	Energy Neutralizer	Module	High Slot
+ Medium Ancillary Current Router I	1	Rig Core	Module	Rig Slot
+ Medium Azeotropic Restrained Shield Extender	1	Shield Extender	Module	Medium Slot
+ Medium Azeotropic Restrained Shield Extender	1	Shield Extender	Module	Medium Slot
+ Medium Capacitor Booster II	1	Capacitor Booster	Module	Medium Slot
+ Medium Micro Jump Drive	1	Micro Jump Drive	Module	Medium Slot
+ Medium Trimark Armor Pump I	1	Rig Armor	Module	Rig Slot
+ Medium Trimark Armor Pump I	1	Rig Armor	Module	Rig Slot
+ Micro Auxiliary Power Core II	1	Auxiliary Power Core	Module	Low Slot
+ Missile Guidance Computer II	1	Missile Guidance Computer	Module	Medium Slot
+ Missile Guidance Computer II	1	Missile Guidance Computer	Module	Medium Slot
+ Missile Guidance Enhancer II	1	Missile Guidance Enhancer	Module	Low Slot
+ Missile Precision Script	2	Missile Guidance Script	Charge	Cargo Hold
+ Missile Range Script	1	Missile Guidance Script	Charge	Cargo Hold
+ Missile Range Script	1	Missile Guidance Script	Charge	Cargo Hold
+ Mjolnir Fury Light Missile	998	Advanced Light Missile	Charge	Cargo Hold
+ Multispectrum Energized Membrane II	1	Energized Armor Membrane	Module	Low Slot
+ Multispectrum Energized Membrane II	1	Energized Armor Membrane	Module	Low Slot
+ Nanite Repair Paste	187	Nanite Repair Paste	Charge	Cargo Hold
+ Nanite Repair Paste	47	Nanite Repair Paste	Charge	Cargo Hold
+ Nanite Repair Paste	50	Nanite Repair Paste	Charge	Cargo Hold
+ Nanite Repair Paste	50	Nanite Repair Paste	Charge	Cargo Hold
+ Nanofiber Internal Structure II	1	Nanofiber Internal Structure	Module	Low Slot
+ Power Diagnostic System II	1	Power Diagnostic System	Module	Low Slot
+ Prototype 'Arbalest' Torpedo Launcher	1	Missile Launcher Torpedo	Module	High Slot
+ Prototype 'Arbalest' Torpedo Launcher	1	Missile Launcher Torpedo	Module	High Slot
+ Prototype 'Arbalest' Torpedo Launcher	1	Missile Launcher Torpedo	Module	High Slot
+ Prototype Cloaking Device I	1	Cloaking Device	Module	High Slot
+ Reactive Armor Hardener	1	Armor Resistance Shift Hardener	Module	Low Slot
+ Republic Fleet EMP M	674	Projectile Ammo	Charge	Cargo Hold
+ Republic Fleet Nuclear M	800	Projectile Ammo	Charge	Cargo Hold
+ Republic Fleet Phased Plasma M	1,000	Projectile Ammo	Charge	Cargo Hold
+ Scourge Fury Light Missile	1,000	Advanced Light Missile	Charge	Cargo Hold
+ Sentient Omnidirectional Tracking Enhancer	1	Drone Tracking Enhancer	Module	Cargo Hold
+ Shrapnel Bomb	3	Bomb	Charge	Cargo Hold
+ Small Core Defense Field Extender II	1	Rig Shield	Module	Rig Slot
+ Small Hydraulic Bay Thrusters II	1	Rig Launcher	Module	Rig Slot
+ Small Hyperspatial Velocity Optimizer I	1	Rig Navigation	Module	Rig Slot
+ Small Low Friction Nozzle Joints I	1	Rig Navigation	Module	Rig Slot
+ Small Rocket Fuel Cache Partition II	1	Rig Launcher	Module	Rig Slot
+ Small Trimark Armor Pump I	1	Rig Armor	Module	Rig Slot
+ Small Trimark Armor Pump I	1	Rig Armor	Module	Rig Slot
+ Stasis Webification Probe	10	Interdiction Burst Probes	Charge	Cargo Hold
+ Valkyrie II	1	Combat Drone	Drone	Drone Bay
+ Valkyrie II	1	Combat Drone	Drone	Drone Bay
+ Valkyrie II	1	Combat Drone	Drone	Drone Bay
+ Valkyrie II	1	Combat Drone	Drone	Drone Bay
+ Valkyrie II	1	Combat Drone	Drone	Drone Bay
+ Warp Disrupt Probe	47	Interdiction Probe	Charge	Cargo Hold
+ Warp Disruptor II	1	Warp Scrambler	Module	Medium Slot
+ Warp Scrambler II	1	Warp Scrambler	Module	Medium Slot
+ Warrior II	1	Combat Drone	Drone	Drone Bay
+ Warrior II	1	Combat Drone	Drone	Drone Bay
+ Warrior II	1	Combat Drone	Drone	Drone Bay
+ Warrior II	1	Combat Drone	Drone	Drone Bay
+ Warrior II	1	Combat Drone	Drone	Drone Bay
+Gnosis	1	Combat Battlecruiser	Ship
+Heretic	1	Interdictor	Ship
+Hound	1	Stealth Bomber	Ship
+Jackdaw	1	Tactical Destroyer	Ship
+
+
+Astero	1	Frigate	Ship
+Cheetah	2	Covert Ops	Ship
+Claw	2	Interceptor	Ship
+Dramiel	1	Frigate	Ship
+Jaguar	2	Assault Frigate	Ship
+Rapier	1	Force Recon Ship	Ship
+Republic Fleet Firetail	2	Frigate	Ship
+Rifter	3	Frigate	Ship
+Rupture	1	Cruiser	Ship
+Scythe	1	Cruiser	Ship
+Slasher	2	Frigate	Ship
+Talwar	1	Destroyer	Ship
+Tempest	1	Battleship	Ship
+Wolf	1	Assault Frigate	Ship
+
+
+Damage Control II	1	455 700,00	455 700,00
+Large Shield Extender II	2	1 236 000,00	2 472 000,00
+Ferox	1	57 800 000,00	57 800 000,00
+Power Diagnostic System II	1	938 500,00	938 500,00
+Drone Link Augmentor I	1	544 700,00	544 700,00
+Multispectrum Shield Hardener II	2	2 437 000,00	4 874 000,00
+250mm Railgun II	6	2 720 000,00	16 320 000,00
+50MN Y-T8 Compact Microwarpdrive	1	99 500,00	99 500,00
+Spike M	2740	299,10	819 534,00
+Medium Core Defense Field Extender I	2	733 900,00	1 467 800,00
+Medium Thermal Shield Reinforcer II	1	7 353 000,00	7 353 000,00
+Caldari Navy Antimatter Charge M	5000	874,00	4 370 000,00
+Javelin M	3000	225,00	675 000,00
+Magnetic Field Stabilizer II	2	863 400,00	1 726 800,00
+Warrior II	5	475 700,00	2 378 500,00
+Caldari Navy Lead Charge M	1000	-	-
+Caldari Navy Iridium Charge M	1000	800,20	800 200,00
+EM Shield Hardener II	1	2 215 000,00	2 215 000,00
+Caldari Navy Iron Charge M	1000	700,10	700 100,00
+Всего:			106 010 334,00
+
+Dark Ochre	11 200	89 600 m3	24 km
+Dark Ochre	12 800	102 400 m3	34 km
+Dark Ochre	6 400	51 200 m3	36 km
+Dark Ochre	7 200	57 600 m3	49 km
+Gneiss	21 200	106 000 m3	21 km
+Gneiss	5 600	28 000 m3	23 km
+Gneiss	7 200	36 000 m3	28 km
+Gneiss	14 400	72 000 m3	40 km
+Gneiss	16 800	84 000 m3	69 km
+Gneiss	12 000	60 000 m3	80 km
+Iridescent Gneiss	7 200	36 000 m3	15 km
+Iridescent Gneiss	6 000	30 000 m3	34 km
+Iridescent Gneiss	6 800	34 000 m3	53 km
+Obsidian Ochre	7 200	57 600 m3	34 km
+Onyx Ochre	3 092	24 736 m3	1 556 m
+Onyx Ochre	6 400	51 200 m3	33 km
+Prismatic Gneiss	10 400	52 000 m3	16 km
+Prismatic Gneiss	6 400	32 000 m3	19 km
+Prismatic Gneiss	7 200	36 000 m3	54 km
+Prismatic Gneiss	7 200	36 000 m3	82 km
+Prismatic Gneiss	11 200	56 000 m3	86 km
+
+
+Xray S	12	Frequency Crystal	Charge
+Xray M	12	Frequency Crystal	Charge
+Xray L	55	Frequency Crystal	Charge
+X5 Enduring Stasis Webifier	16	Stasis Web	Module
+Upgraded Thermal Coating I	3	Armor Coating	Module
+Upgraded Multispectrum Coating I	8	Armor Coating	Module
+Upgraded Layered Coating I	4	Armor Coating	Module
+Upgraded Kinetic Coating I	7	Armor Coating	Module
+Upgraded Explosive Coating I	6	Armor Coating	Module
+Upgraded EM Coating I	13	Armor Coating	Module
+Ultraviolet S	15	Frequency Crystal	Charge
+Ultraviolet M	22	Frequency Crystal	Charge
+Ultraviolet L	64	Frequency Crystal	Charge
+Type-E Enduring Cargo Scanner	21	Cargo Scanner	Module
+Type-D Restrained Reinforced Bulkheads	13	Reinforced Bulkhead	Module
+Type-D Restrained Capacitor Power Relay	36	Capacitor Power Relay	Module
+Type-D Restrained Capacitor Flux Coil	7	Capacitor Flux Coil	Module
+Tachyon Modulated Energy Beam I	20	Energy Weapon	Module
+Tachyon Modal Laser I	23	Energy Weapon	Module
+Tachyon Anode Particle Stream I	22	Energy Weapon	Module
+Tachyon Afocal Maser I	33	Energy Weapon	Module
+Ta3 Compact Ship Scanner	17	Ship Scanner	Module
+Suppressed Targeting System I	18	Passive Targeting System	Module
+Standard S	13	Frequency Crystal	Charge
+Standard M	23	Frequency Crystal	Charge
+Standard L	47	Frequency Crystal	Charge
+Small YF-12a Smartbomb	3	Smart Bomb	Module
+Small Solace Scoped Remote Armor Repairer	2	Remote Armor Repairer	Module
+Small S95a Scoped Remote Shield Booster	7	Remote Shield Booster	Module
+Small Rudimentary Concussion Bomb I	4	Smart Bomb	Module
+Small Radiative Scoped Remote Capacitor Transmitter	9	Remote Capacitor Transmitter	Module
+Small Murky Compact Remote Shield Booster	9	Remote Shield Booster	Module
+Small Knave Scoped Energy Nosferatu	6	Energy Nosferatu	Module
+Small Infectious Scoped Energy Neutralizer	8	Energy Neutralizer	Module
+Small Inefficient Hull Repair Unit	5	Hull Repair Unit	Module
+Small Inductive Compact Remote Capacitor Transmitter	7	Remote Capacitor Transmitter	Module
+Small I-b Polarized Structural Regenerator	14	Hull Repair Unit	Module
+Small I-ax Enduring Remote Armor Repairer	15	Remote Armor Repairer	Module
+Small I-a Enduring Armor Repairer	4	Armor Repair Unit	Module
+Small Gremlin Compact Energy Neutralizer	7	Energy Neutralizer	Module
+Small Ghoul Compact Energy Nosferatu	5	Energy Nosferatu	Module
+Small Focused Modulated Pulse Energy Beam I	1	Energy Weapon	Module
+Small Focused Modulated Energy Beam I	2	Energy Weapon	Module
+Small Focused Modal Pulse Laser I	3	Energy Weapon	Module
+Small Focused Modal Laser I	4	Energy Weapon	Module
+Small Focused Anode Pulse Particle Stream I	6	Energy Weapon	Module
+Small Focused Anode Particle Stream I	3	Energy Weapon	Module
+Small Focused Afocal Pulse Maser I	6	Energy Weapon	Module
+Small Focused Afocal Maser I	4	Energy Weapon	Module
+Small F-RX Compact Capacitor Booster	8	Capacitor Booster	Module
+Small Compact Pb-Acid Cap Battery	24	Capacitor Battery	Module
+Small Coaxial Compact Remote Armor Repairer	8	Remote Armor Repairer	Module
+Small Clarity Ward Enduring Shield Booster	8	Shield Booster	Module
+Small Automated Structural Restoration	8	Hull Repair Unit	Module
+Small Asymmetric Enduring Remote Shield Booster	5	Remote Shield Booster	Module
+Small ACM Compact Armor Repairer	4	Armor Repair Unit	Module
+Small 'Vehemence' Shockwave Charge	4	Smart Bomb	Module
+Small 'Notos' Explosive Charge I	4	Smart Bomb	Module
+Small 'Hope' Hull Reconstructor I	5	Hull Repair Unit	Module
+Reinforced Metal Scraps	12	Commodities	Commodity
+Radio S	11	Frequency Crystal	Charge
+Radio M	19	Frequency Crystal	Charge
+Radio L	52	Frequency Crystal	Charge
+Prototype Compact Thermal Armor Hardener I	32	Armor Hardener	Module
+Prototype Compact Kinetic Armor Hardener I	33	Armor Hardener	Module
+Prototype Compact Explosive Armor Hardener I	24	Armor Hardener	Module
+Prototype Compact EM Armor Hardener I	30	Armor Hardener	Module
+Particle Bore Compact Mining Laser	18	Mining Laser	Module
+Multifrequency S	17	Frequency Crystal	Charge
+Multifrequency M	14	Frequency Crystal	Charge
+Multifrequency L	55	Frequency Crystal	Charge
+ML-3 Scoped Survey Scanner	13	Survey Scanner	Module
+Microwave S	13	Frequency Crystal	Charge
+Microwave M	18	Frequency Crystal	Charge
+Microwave L	61	Frequency Crystal	Charge
+Metal Scraps	1 460	Commodities	Commodity
+Mega Modulated Pulse Energy Beam I	13	Energy Weapon	Module
+Mega Modal Pulse Laser I	19	Energy Weapon	Module
+Mega Anode Pulse Particle Stream I	10	Energy Weapon	Module
+Mega Afocal Pulse Maser I	22	Energy Weapon	Module
+Medium YF-12a Smartbomb	3	Smart Bomb	Module
+Medium Solace Scoped Remote Armor Repairer	4	Remote Armor Repairer	Module
+Medium Shield Extender I	1	Shield Extender	Module
+Medium S95a Scoped Remote Shield Booster	8	Remote Shield Booster	Module
+Medium Rudimentary Concussion Bomb I	2	Smart Bomb	Module
+Medium Radiative Scoped Remote Capacitor Transmitter	6	Remote Capacitor Transmitter	Module
+Medium Murky Compact Remote Shield Booster	9	Remote Shield Booster	Module
+Medium Knave Scoped Energy Nosferatu	6	Energy Nosferatu	Module
+Medium Infectious Scoped Energy Neutralizer	10	Energy Neutralizer	Module
+Medium Inefficient Hull Repair Unit	6	Hull Repair Unit	Module
+Medium Inductive Compact Remote Capacitor Transmitter	4	Remote Capacitor Transmitter	Module
+Medium I-b Polarized Structural Regenerator	5	Hull Repair Unit	Module
+Medium I-ax Enduring Remote Armor Repairer	8	Remote Armor Repairer	Module
+Medium I-a Enduring Armor Repairer	8	Armor Repair Unit	Module
+Medium Gremlin Compact Energy Neutralizer	6	Energy Neutralizer	Module
+Medium Ghoul Compact Energy Nosferatu	8	Energy Nosferatu	Module
+Medium F-RX Compact Capacitor Booster	3	Capacitor Booster	Module
+Medium Compact Pb-Acid Cap Battery	6	Capacitor Battery	Module
+Medium Coaxial Compact Remote Armor Repairer	8	Remote Armor Repairer	Module
+Medium C5-L Compact Shield Booster	8	Shield Booster	Module
+Medium Automated Structural Restoration	12	Hull Repair Unit	Module
+Medium Asymmetric Enduring Remote Shield Booster	5	Remote Shield Booster	Module
+Medium ACM Compact Armor Repairer	4	Armor Repair Unit	Module
+Medium 'Vehemence' Shockwave Charge	5	Smart Bomb	Module
+Medium 'Notos' Explosive Charge I	5	Smart Bomb	Module
+Medium 'Hope' Hull Reconstructor I	12	Hull Repair Unit	Module
+Mark I Compact Reinforced Bulkheads	6	Reinforced Bulkhead	Module
+Mark I Compact Reactor Control Unit	9	Reactor Control Unit	Module
+Mark I Compact Power Diagnostic System	8	Power Diagnostic System	Module
+Mark I Compact Capacitor Power Relay	24	Capacitor Power Relay	Module
+Mark I Compact Capacitor Flux Coil	13	Capacitor Flux Coil	Module
+M51 Benefactor Compact Shield Recharger	13	Shield Recharger	Module
+Large YF-12a Smartbomb	47	Smart Bomb	Module
+Large Rudimentary Concussion Bomb I	99	Smart Bomb	Module
+Large Radiative Scoped Remote Capacitor Transmitter	43	Remote Capacitor Transmitter	Module
+Large Inefficient Hull Repair Unit	40	Hull Repair Unit	Module
+Large Inductive Compact Remote Capacitor Transmitter	42	Remote Capacitor Transmitter	Module
+Large I-b Polarized Structural Regenerator	40	Hull Repair Unit	Module
+Large I-a Enduring Armor Repairer	41	Armor Repair Unit	Module
+Large Compact Pb-Acid Cap Battery	57	Capacitor Battery	Module
+Large Automated Structural Restoration	30	Hull Repair Unit	Module
+Large ACM Compact Armor Repairer	41	Armor Repair Unit	Module
+Large 'Vehemence' Shockwave Charge	41	Smart Bomb	Module
+Large 'Notos' Explosive Charge I	63	Smart Bomb	Module
+Large 'Hope' Hull Reconstructor I	39	Hull Repair Unit	Module
+Languid Enduring Ladar ECM	13	ECM	Module
+J5b Enduring Warp Scrambler	32	Warp Scrambler	Module
+J5 Enduring Warp Disruptor	25	Warp Scrambler	Module
+Initiated Compact Warp Scrambler	11	Warp Scrambler	Module
+Initiated Compact Warp Disruptor	10	Warp Scrambler	Module
+Infrared S	18	Frequency Crystal	Charge
+Infrared M	22	Frequency Crystal	Charge
+Infrared L	45	Frequency Crystal	Charge
+IFFA Compact Damage Control	7	Damage Control	Module
+Heavy Modulated Pulse Energy Beam I	1	Energy Weapon	Module
+Heavy Modulated Energy Beam I	4	Energy Weapon	Module
+Heavy Modal Pulse Laser I	7	Energy Weapon	Module
+Heavy Modal Laser I	4	Energy Weapon	Module
+Heavy Knave Scoped Energy Nosferatu	31	Energy Nosferatu	Module
+Heavy Karelin Scoped Stasis Grappler	33	Stasis Grappler	Module
+Heavy Jigoro Enduring Stasis Grappler	31	Stasis Grappler	Module
+Heavy Infectious Scoped Energy Neutralizer	49	Energy Neutralizer	Module
+Heavy Gunnar Compact Stasis Grappler	28	Stasis Grappler	Module
+Heavy Gremlin Compact Energy Neutralizer	43	Energy Neutralizer	Module
+Heavy Ghoul Compact Energy Nosferatu	60	Energy Nosferatu	Module
+Heavy F-RX Compact Capacitor Booster	31	Capacitor Booster	Module
+Heavy Anode Pulse Particle Stream I	2	Energy Weapon	Module
+Heavy Anode Particle Stream I	8	Energy Weapon	Module
+Heavy Afocal Pulse Maser I	6	Energy Weapon	Module
+Heavy Afocal Maser I	6	Energy Weapon	Module
+Halting Compact Ladar ECM	14	ECM	Module
+Gamma S	11	Frequency Crystal	Charge
+Gamma M	16	Frequency Crystal	Charge
+Gamma L	50	Frequency Crystal	Charge
+Fleeting Compact Stasis Webifier	27	Stasis Web	Module
+FFR Enduring Assault Damage Control	10	Damage Control	Module
+Faint Epsilon Scoped Warp Scrambler	1	Warp Scrambler	Module
+F-90 Compact Sensor Booster	31	Sensor Booster	Module
+F-89 Compact Signal Amplifier	8	Signal Amplifier	Module
+Extruded Compact Heat Sink	13	Heat Sink	Module
+Experimental Enduring Thermal Armor Hardener I	34	Armor Hardener	Module
+Experimental Enduring Kinetic Armor Hardener I	30	Armor Hardener	Module
+Experimental Enduring Explosive Armor Hardener I	19	Armor Hardener	Module
+Experimental Enduring EM Armor Hardener I	28	Armor Hardener	Module
+Eutectic Compact Cap Recharger	41	Capacitor Recharger	Module
+EP-S Gaussian Scoped Mining Laser	16	Mining Laser	Module
+Enfeebling Scoped Ladar ECM	12	ECM	Module
+EFFA Compact Assault Damage Control	7	Damage Control	Module
+Dual Modulated Light Energy Beam I	1	Energy Weapon	Module
+Dual Modulated Heavy Energy Beam I	1	Energy Weapon	Module
+Dual Modal Light Laser I	2	Energy Weapon	Module
+Dual Heavy Modulated Pulse Energy Beam I	14	Energy Weapon	Module
+Dual Heavy Modal Pulse Laser I	18	Energy Weapon	Module
+Dual Heavy Anode Pulse Particle Stream I	20	Energy Weapon	Module
+Dual Heavy Afocal Pulse Maser I	17	Energy Weapon	Module
+Dual Anode Light Particle Stream I	2	Energy Weapon	Module
+Dual Afocal Light Maser I	9	Energy Weapon	Module
+Dark Blood Crystal Tag	2	Criminal Tags	Commodity
+Compact Thermal Energized Membrane	1	Energized Armor Membrane	Module
+Compact Multispectrum Energized Membrane	3	Energized Armor Membrane	Module
+Compact Layered Energized Membrane	5	Energized Armor Membrane	Module
+Compact Kinetic Energized Membrane	5	Energized Armor Membrane	Module
+Compact Explosive Shield Amplifier	8	Shield Resistance Amplifier	Module
+Compact Explosive Energized Membrane	3	Energized Armor Membrane	Module
+Compact EM Shield Hardener	13	Shield Hardener	Module
+Compact EM Energized Membrane	5	Energized Armor Membrane	Module
+Blood Platinum Tag	9	Criminal Tags	Commodity
+Blood Palladium Tag	9	Criminal Tags	Commodity
+Blood Gold Tag	1	Criminal Tags	Commodity
+Blood Diamond Tag	50	Criminal Tags	Commodity
+800mm Rolled Tungsten Compact Plates	40	Armor Plate	Module
+800mm Crystalline Carbonide Restrained Plates	33	Armor Plate	Module
+5MN Y-T8 Compact Microwarpdrive	8	Propulsion Module	Module
+5MN Quad LiF Restrained Microwarpdrive	7	Propulsion Module	Module
+5MN Cold-Gas Enduring Microwarpdrive	10	Propulsion Module	Module
+50MN Y-T8 Compact Microwarpdrive	8	Propulsion Module	Module
+50MN Quad LiF Restrained Microwarpdrive	10	Propulsion Module	Module
+50MN Cold-Gas Enduring Microwarpdrive	8	Propulsion Module	Module
+500MN Y-T8 Compact Microwarpdrive	46	Propulsion Module	Module
+500MN Quad LiF Restrained Microwarpdrive	51	Propulsion Module	Module
+500MN Cold-Gas Enduring Microwarpdrive	45	Propulsion Module	Module
+400mm Rolled Tungsten Compact Plates	6	Armor Plate	Module
+400mm Crystalline Carbonide Restrained Plates	8	Armor Plate	Module
+200mm Rolled Tungsten Compact Plates	11	Armor Plate	Module
+200mm Crystalline Carbonide Restrained Plates	11	Armor Plate	Module
+1MN Y-S8 Compact Afterburner	7	Propulsion Module	Module
+1MN Monopropellant Enduring Afterburner	9	Propulsion Module	Module
+1600mm Rolled Tungsten Compact Plates	41	Armor Plate	Module
+1600mm Crystalline Carbonide Restrained Plates	38	Armor Plate	Module
+10MN Y-S8 Compact Afterburner	17	Propulsion Module	Module
+10MN Monopropellant Enduring Afterburner	14	Propulsion Module	Module
+100MN Y-S8 Compact Afterburner	54	Propulsion Module	Module
+100MN Monopropellant Enduring Afterburner	45	Propulsion Module	Module
+100mm Rolled Tungsten Compact Plates	11	Armor Plate	Module
+100mm Crystalline Carbonide Restrained Plates	11	Armor Plate	Module
+
+
+Meta-Operant Neurolink Enhancer	895
+Hypnagogic Neurolink Enhancer	13929
+Cogni-Emotive Neurolink Enhancer	689
+LM-Composite Molecular Condenser	234
+Axosomatic Neurolink Enhancer	509
+
+
+
+Tritanium (1500000 Units)
+Pyerite (250000 Units)
+Mexallon (75000 Units)
+Isogen (10000 Units)
+Nocxium (1000 Units)
+Zydrine (350 Units)
+Megacyte (250 Units)
+Broadcast Node (10 Units)
+Integrity Response Drones (10 Units)
+Nano-Factory (10 Units)
+Organic Mortar Applicators (10 Units)
+Recursive Computing Module (5 Units)
+Self-Harmonizing Power Core (10 Units)
+Sterile Conduits (5 Units)
+
+
+ Medium Cargohold Optimization II	1	Rig Navigation	Module	Rig Slot
+ Medium Cargohold Optimization II	1	Rig Navigation	Module	Rig Slot
+ Multispectrum Shield Hardener II	1	Shield Hardener	Module	Medium Slot
+ Medium Azeotropic Restrained Shield Extender	1	Shield Extender	Module	Medium Slot
+ Medium Azeotropic Restrained Shield Extender	1	Shield Extender	Module	Medium Slot
+ 10MN Afterburner II	1	Propulsion Module	Module	Medium Slot
+ Expanded Cargohold II	1	Expanded Cargohold	Module	Low Slot
+ Expanded Cargohold II	1	Expanded Cargohold	Module	Low Slot
+ Covert Ops Cloaking Device II	1	Cloaking Device	Module	High Slot
+ Dread Guristas Cloaking Device	1	Cloaking Device	Module	Cargo Hold 46% damaged
+ Zor's Custom Navigation Link	7	Cyber Navigation	Implant	Cargo Hold
+ Zainou 'Snapshot' Torpedoes TD-603	2	Cyber Missile	Implant	Cargo Hold
+ Zainou 'Snapshot' Rockets RD-901	16	Cyber Missile	Implant	Cargo Hold
+ Zainou 'Gypsy' CPU Management EE-603	2	Cyber Engineering	Implant	Cargo Hold
+ Zainou 'Gypsy' CPU Management EE-601	7	Cyber Engineering	Implant	Cargo Hold
+ Zainou 'Gnome' Shield Management SM-701	18	Cyber Shields	Implant	Cargo Hold
+ Zainou 'Gnome' Launcher CPU Efficiency LE-601	10	Cyber Missile	Implant	Cargo Hold
+ Zainou 'Deadeye' Small Hybrid Turret SH-601	14	Cyber Gunnery	Implant	Cargo Hold
+ Zainou 'Deadeye' Rapid Launch RL-1001	14	Cyber Missile	Implant	Cargo Hold
+ Zainou 'Deadeye' Missile Bombardment MB-701	11	Cyber Missile	Implant	Cargo Hold
+ Zainou 'Deadeye' Medium Hybrid Turret MH-801	5	Cyber Gunnery	Implant	Cargo Hold
+ Zainou 'Beancounter' Science SC-801	1	Cyber Science	Implant	Cargo Hold
+ Zainou 'Beancounter' Research RR-603	4	Cyber Science	Implant	Cargo Hold
+ Zainou 'Beancounter' Research RR-601	1	Cyber Science	Implant	Cargo Hold
+ True Sansha Warp Scrambler	1	Warp Scrambler	Module	Cargo Hold
+ True Sansha Thermal Coating	1	Armor Coating	Module	Cargo Hold
+ True Sansha Thermal Armor Hardener	1	Armor Hardener	Module	Cargo Hold
+ True Sansha Kinetic Energized Membrane	1	Energized Armor Membrane	Module	Cargo Hold
+ True Sansha Kinetic Coating	1	Armor Coating	Module	Cargo Hold
+ True Sansha Kinetic Armor Hardener	1	Armor Hardener	Module	Cargo Hold
+ True Sansha EM Armor Hardener	1	Armor Hardener	Module	Cargo Hold
+ Thukker Large Cap Battery	1	Capacitor Battery	Module	Cargo Hold
+ Thukker Large Cap Battery	1	Capacitor Battery	Module	Cargo Hold
+ Social Adaptation Chip - Basic	1	Cyber Learning	Implant	Cargo Hold
+ Sisters Expanded Probe Launcher	3	Scan Probe Launcher	Module	Cargo Hold
+ Sisters Core Probe Launcher	2	Scan Probe Launcher	Module	Cargo Hold
+ Sisters Core Probe Launcher	1	Scan Probe Launcher	Module	Cargo Hold
+ Sisters Core Probe Launcher	1	Scan Probe Launcher	Module	Cargo Hold
+ Shadow Serpentis Medium Armor Repairer	1	Armor Repair Unit	Module	Cargo Hold
+ Shadow Serpentis Kinetic Armor Hardener	1	Armor Hardener	Module	Cargo Hold
+ Shadow Serpentis Explosive Armor Hardener	1	Armor Hardener	Module	Cargo Hold
+ Shadow Serpentis EM Energized Membrane	1	Energized Armor Membrane	Module	Cargo Hold
+ Shadow Serpentis 5MN Microwarpdrive	1	Propulsion Module	Module	Cargo Hold
+ Shadow Serpentis 50MN Microwarpdrive	1	Propulsion Module	Module	Cargo Hold
+ Sentient Omnidirectional Tracking Link	1	Drone Tracking Modules	Module	Cargo Hold
+ Sentient Omnidirectional Tracking Enhancer	1	Drone Tracking Enhancer	Module	Cargo Hold
+ Republic Fleet Target Painter	3	Target Painter	Module	Cargo Hold
+ Republic Fleet Small Shield Extender	1	Shield Extender	Module	Cargo Hold
+ Republic Fleet Shield Recharger	1	Shield Recharger	Module	Cargo Hold
+ Republic Fleet Shield Recharger	1	Shield Recharger	Module	Cargo Hold
+ Republic Fleet Shield Recharger	1	Shield Recharger	Module	Cargo Hold
+ Republic Fleet Medium Shield Extender	6	Shield Extender	Module	Cargo Hold
+ Republic Fleet Medium Shield Extender	1	Shield Extender	Module	Cargo Hold
+ Republic Fleet Medium Cap Battery	3	Capacitor Battery	Module	Cargo Hold
+ Republic Fleet Large Shield Extender	7	Shield Extender	Module	Cargo Hold
+ Republic Fleet Large Cap Battery	3	Capacitor Battery	Module	Cargo Hold
+ Republic Fleet Large Cap Battery	1	Capacitor Battery	Module	Cargo Hold
+ Republic Fleet 10MN Afterburner	3	Propulsion Module	Module	Cargo Hold
+ Poteque 'Prospector' Astrometric Rangefinding AR-802	31	Cyber Scanning	Implant	Cargo Hold
+ Poteque 'Prospector' Astrometric Pinpointing AP-602	5	Cyber Scanning	Implant	Cargo Hold
+ Poteque 'Prospector' Astrometric Acquisition AQ-702	5	Cyber Scanning	Implant	Cargo Hold
+ Pithum C-Type Thermal Shield Amplifier	5	Shield Resistance Amplifier	Module	Cargo Hold
+ Pithum C-Type Kinetic Shield Amplifier	6	Shield Resistance Amplifier	Module	Cargo Hold
+ Pithum C-Type Explosive Shield Amplifier	3	Shield Resistance Amplifier	Module	Cargo Hold
+ Pithum A-Type Thermal Shield Amplifier	2	Shield Resistance Amplifier	Module	Cargo Hold
+ Pithum A-Type Kinetic Shield Amplifier	2	Shield Resistance Amplifier	Module	Cargo Hold
+ Pithum A-Type Explosive Shield Amplifier	1	Shield Resistance Amplifier	Module	Cargo Hold
+ Pith X-Type Kinetic Shield Hardener	1	Shield Hardener	Module	Cargo Hold
+ Pith X-Type Explosive Shield Hardener	2	Shield Hardener	Module	Cargo Hold
+ Pith X-Type EM Shield Hardener	2	Shield Hardener	Module	Cargo Hold
+ Pith C-Type EM Shield Hardener	3	Shield Hardener	Module	Cargo Hold
+ Pith A-Type Explosive Shield Hardener	1	Shield Hardener	Module	Cargo Hold
+ Ocular Filter - Standard	1	Cyber Learning	Implant	Cargo Hold
+ Ocular Filter - Basic	2	Cyber Learning	Implant	Cargo Hold
+ Neural Boost - Standard	1	Cyber Learning	Implant	Cargo Hold
+ Navy Micro Auxiliary Power Core	3	Auxiliary Power Core	Module	Cargo Hold
+ Mid-grade Talisman Delta	1	Cyberimplant	Implant	Cargo Hold
+ Mid-grade Talisman Beta	1	Cyberimplant	Implant	Cargo Hold
+ Mid-grade Snake Gamma	1	Cyberimplant	Implant	Cargo Hold
+ Mid-grade Snake Delta	1	Cyberimplant	Implant	Cargo Hold
+ Mid-grade Asklepian Alpha	2	Cyberimplant	Implant	Cargo Hold
+ Memory Augmentation - Standard	1	Cyber Learning	Implant	Cargo Hold
+ Memory Augmentation - Basic	1	Cyber Learning	Implant	Cargo Hold
+ Medium 'Integrative' Hull Repair Unit	2	Hull Repair Unit	Module	Cargo Hold
+ Medium 'Integrative' Hull Repair Unit	1	Hull Repair Unit	Module	Cargo Hold
+ Medium 'Integrative' Hull Repair Unit	1	Hull Repair Unit	Module	Cargo Hold
+ Low-grade Amulet Alpha	1	Cyberimplant	Implant	Cargo Hold
+ Limited Social Adaptation Chip	4	Cyber Learning	Implant	Cargo Hold
+ Limited Ocular Filter	4	Cyber Learning	Implant	Cargo Hold
+ Limited Neural Boost	1	Cyber Learning	Implant	Cargo Hold
+ Limited Memory Augmentation	1	Cyber Learning	Implant	Cargo Hold
+ Inquest 'Eros' Stasis Webifier MR-803	1	Cyber Electronic Systems	Implant	Cargo Hold
+ Inherent Implants 'Squire' Power Grid Management EG-605	1	Cyber Engineering	Implant	Cargo Hold
+ Inherent Implants 'Squire' Power Grid Management EG-604	1	Cyber Engineering	Implant	Cargo Hold
+ Inherent Implants 'Squire' Power Grid Management EG-602	3	Cyber Engineering	Implant	Cargo Hold
+ Inherent Implants 'Squire' Power Grid Management EG-601	16	Cyber Engineering	Implant	Cargo Hold
+ Inherent Implants 'Noble' Repair Proficiency RP-901	10	Cyber Armor	Implant	Cargo Hold
+ Inherent Implants 'Noble' Mechanic MC-801	10	Cyber Armor	Implant	Cargo Hold
+ Inherent Implants 'Noble' Hull Upgrades HG-1001	13	Cyber Armor	Implant	Cargo Hold
+ Inherent Implants 'Lancer' Small Energy Turret SE-601	2	Cyber Gunnery	Implant	Cargo Hold
+ Inherent Implants 'Highwall' Mining Upgrades MU-1003	1	Cyber Resource Processing	Implant	Cargo Hold
+ Inherent Implants 'Highwall' Mining Upgrades MU-1001	1	Cyber Resource Processing	Implant	Cargo Hold
+ Imperial Navy Multispectrum Coating	2	Armor Coating	Module	Cargo Hold
+ Imperial Navy Heat Sink	1	Heat Sink	Module	Cargo Hold
+ Imperial Navy Heat Sink	1	Heat Sink	Module	Cargo Hold
+ Imperial Navy 1600mm Steel Plates	2	Armor Plate	Module	Cargo Hold
+ Gistum C-Type Thermal Shield Amplifier	3	Shield Resistance Amplifier	Module	Cargo Hold
+ Gistum B-Type Thermal Shield Amplifier	1	Shield Resistance Amplifier	Module	Cargo Hold
+ Gist X-Type Thermal Shield Hardener	2	Shield Hardener	Module	Cargo Hold
+ Gist X-Type Kinetic Shield Hardener	1	Shield Hardener	Module	Cargo Hold
+ Gist B-Type EM Shield Hardener	1	Shield Hardener	Module	Cargo Hold
+ Frostline 'Clavicula' Integrated Analyzer	1	Data Miners	Module	Cargo Hold
+ Federation Navy Stasis Webifier	1	Stasis Web	Module	Cargo Hold
+ Federation Navy 200mm Steel Plates	1	Armor Plate	Module	Cargo Hold
+ Eifyr and Co. 'Rogue' Navigation NN-601	13	Cyber Navigation	Implant	Cargo Hold
+ Eifyr and Co. 'Rogue' High Speed Maneuvering HS-901	12	Cyber Navigation	Implant	Cargo Hold
+ Eifyr and Co. 'Rogue' Fuel Conservation FC-801	11	Cyber Navigation	Implant	Cargo Hold
+ Eifyr and Co. 'Rogue' Evasive Maneuvering EM-701	27	Cyber Navigation	Implant	Cargo Hold
+ Eifyr and Co. 'Rogue' Acceleration Control AC-601	31	Cyber Navigation	Implant	Cargo Hold
+ Eifyr and Co. 'Gunslinger' Surgical Strike SS-901	9	Cyber Gunnery	Implant	Cargo Hold
+ Eifyr and Co. 'Gunslinger' Small Projectile Turret SP-601	17	Cyber Gunnery	Implant	Cargo Hold
+ Eifyr and Co. 'Gunslinger' Motion Prediction MR-701	12	Cyber Gunnery	Implant	Cargo Hold
+ Eifyr and Co. 'Gunslinger' Medium Projectile Turret MP-801	14	Cyber Gunnery	Implant	Cargo Hold
+ Eifyr and Co. 'Alchemist' Neurotoxin Recovery NR-1003	4	Cyber Biology	Implant	Cargo Hold
+ Eifyr and Co. 'Alchemist' Neurotoxin Control NC-903	3	Cyber Biology	Implant	Cargo Hold
+ Dread Guristas X-Large Shield Booster	1	Shield Booster	Module	Cargo Hold
+ Dread Guristas Thermal Shield Amplifier	1	Shield Resistance Amplifier	Module	Cargo Hold
+ Dread Guristas Shield Boost Amplifier	1	Shield Boost Amplifier	Module	Cargo Hold
+ Dread Guristas Explosive Shield Hardener	1	Shield Hardener	Module	Cargo Hold
+ Dread Guristas EM Shield Amplifier	1	Shield Resistance Amplifier	Module	Cargo Hold
+ Dread Guristas Dual 250mm Railgun	8	Hybrid Weapon	Module	Cargo Hold
+ Dark Blood Warp Scrambler	1	Warp Scrambler	Module	Cargo Hold
+ Dark Blood Thermal Energized Membrane	1	Energized Armor Membrane	Module	Cargo Hold
+ Dark Blood Stasis Webifier	1	Stasis Web	Module	Cargo Hold
+ Dark Blood Multispectrum Coating	2	Armor Coating	Module	Cargo Hold
+ Dark Blood Explosive Armor Hardener	1	Armor Hardener	Module	Cargo Hold
+ Cybernetic Subprocessor - Standard	1	Cyber Learning	Implant	Cargo Hold
+ Cybernetic Subprocessor - Basic	1	Cyber Learning	Implant	Cargo Hold
+ Corpus X-Type Explosive Armor Hardener	1	Armor Hardener	Module	Cargo Hold
+ Corpus X-Type EM Armor Hardener	1	Armor Hardener	Module	Cargo Hold
+ Corpus A-Type Thermal Armor Hardener	1	Armor Hardener	Module	Cargo Hold
+ Corpum C-Type Thermal Energized Membrane	2	Energized Armor Membrane	Module	Cargo Hold
+ Corpum C-Type Medium Energy Nosferatu	1	Energy Nosferatu	Module	Cargo Hold
+ Corpii B-Type Small Armor Repairer	1	Armor Repair Unit	Module	Cargo Hold
+ Corpii A-Type Thermal Coating	1	Armor Coating	Module	Cargo Hold
+ Corpii A-Type Small Energy Nosferatu	1	Energy Nosferatu	Module	Cargo Hold
+ Corpii A-Type Small Energy Nosferatu	1	Energy Nosferatu	Module	Cargo Hold
+ Corpii A-Type Small Energy Neutralizer	1	Energy Neutralizer	Module	Cargo Hold
+ Corpii A-Type Kinetic Coating	1	Armor Coating	Module	Cargo Hold
+ Corelum C-Type 10MN Afterburner	1	Propulsion Module	Module	Cargo Hold
+ Coreli B-Type Small Remote Armor Repairer	4	Remote Armor Repairer	Module	Cargo Hold
+ Coreli A-Type Thermal Coating	1	Armor Coating	Module	Cargo Hold
+ Coreli A-Type Small Remote Armor Repairer	2	Remote Armor Repairer	Module	Cargo Hold
+ Coreli A-Type Small Armor Repairer	2	Armor Repair Unit	Module	Cargo Hold
+ Coreli A-Type Multispectrum Coating	2	Armor Coating	Module	Cargo Hold
+ Coreli A-Type 5MN Microwarpdrive	3	Propulsion Module	Module	Cargo Hold
+ Coreli A-Type 1MN Afterburner	1	Propulsion Module	Module	Cargo Hold
+ Centus B-Type Explosive Armor Hardener	1	Armor Hardener	Module	Cargo Hold
+ Centum C-Type Multispectrum Energized Membrane	1	Energized Armor Membrane	Module	Cargo Hold
+ Centum C-Type Medium Armor Repairer	2	Armor Repair Unit	Module	Cargo Hold
+ Centii A-Type Small Remote Armor Repairer	1	Remote Armor Repairer	Module	Cargo Hold
+ Centii A-Type Small Armor Repairer	1	Armor Repair Unit	Module	Cargo Hold
+ Centii A-Type Multispectrum Coating	1	Armor Coating	Module	Cargo Hold
+ Centii A-Type Explosive Coating	1	Armor Coating	Module	Cargo Hold
+ Centii A-Type EM Coating	2	Armor Coating	Module	Cargo Hold
+ Caldari Navy Shield Power Relay	1	Shield Power Relay	Module	Cargo Hold
+ Caldari Navy Shield Power Relay	1	Shield Power Relay	Module	Cargo Hold
+ Caldari Navy Shield Power Relay	1	Shield Power Relay	Module	Cargo Hold
+ Caldari Navy Shield Power Relay	1	Shield Power Relay	Module	Cargo Hold
+ Caldari Navy Power Diagnostic System	1	Power Diagnostic System	Module	Cargo Hold
+ Caldari Navy Power Diagnostic System	1	Power Diagnostic System	Module	Cargo Hold
+ Caldari Navy Large Shield Extender	1	Shield Extender	Module	Cargo Hold
+ Caldari Navy EM Shield Hardener	1	Shield Hardener	Module	Cargo Hold
+ C3-X 'Hivaa Saitsuo' Ballistic Control System	2	Ballistic Control system	Module	Cargo Hold
+ 'Hustler' Heavy Neutron Blaster I	6	Hybrid Weapon	Module	Cargo Hold
+ 'Basic' Signal Amplifier	1	Signal Amplifier	Module	Cargo Hold
+ 'Basic' Capacitor Flux Coil	2	Capacitor Flux Coil	Module	Cargo Hold
+Crane	1	Blockade Runner	Ship
+
+
+Calm Firestorm Filament	1	Abyssal Filaments			0.10 m3	1,476.83 ISK
+Calm Gamma Filament	1	Abyssal Filaments			0.10 m3	6,713.23 ISK
+Plasmoids	165,489	Basic Commodities - Tier 1			62,885.82 m3	111,794,439.06 ISK
+Reactive Metals	165,109	Basic Commodities - Tier 1			62,741.42 m3	98,030,166.57 ISK
+Fullerides	63,000	Composite			9,450 m3	43,883,280.00 ISK
+Tungsten Carbide	10,000	Composite			100 m3	1,805,600.00 ISK
+Salvage Drone I	60	Salvage Drone			300 m3	3,396,173.40 ISK
+R.A.M.- Ammunition Tech Blueprint		Tool Blueprint			0.01 m3	388,576.74 ISK
+R.A.M.- Armor/Hull Tech Blueprint		Tool Blueprint			0.01 m3	364,560.00 ISK
+R.A.M.- Energy Tech Blueprint		Tool Blueprint			0.01 m3	282,640.00 ISK
+R.A.M.- Robotics Blueprint		Tool Blueprint			0.01 m3	282,640.00 ISK
+R.A.M.- Shield Tech Blueprint		Tool Blueprint			0.01 m3	282,640.00 ISK
+R.A.M.- Starship Tech Blueprint		Tool Blueprint			0.01 m3	312,817.28 ISK
+
+
+
+Thulium 11000
+Cadmium 5000
+Titanium 10000
+Silicates 10000
+atmospheric gases 10000
+hydrocarbons 10000
+evaporite deposits 10000
+
+
+
+ 280mm Howitzer Artillery II	1	Projectile Weapon	Module	High Slot
+ 280mm Howitzer Artillery II	1	Projectile Weapon	Module	High Slot
+ 280mm Howitzer Artillery II	1	Projectile Weapon	Module	High Slot
+ 280mm Howitzer Artillery II	1	Projectile Weapon	Module	High Slot
+ 280mm Howitzer Artillery II	1	Projectile Weapon	Module	High Slot
+ 280mm Howitzer Artillery II	1	Projectile Weapon	Module	High Slot
+ 5MN Y-T8 Compact Microwarpdrive	1	Propulsion Module	Module	Medium Slot
+ Counterbalanced Compact Gyrostabilizer	1	Gyrostabilizer	Module	Low Slot
+ Fleeting Compact Stasis Webifier	1	Stasis Web	Module	Medium Slot
+ Gyrostabilizer II	1	Gyrostabilizer	Module	Low Slot
+ IFFA Compact Damage Control	1	Damage Control	Module	Low Slot
+ Initiated Compact Warp Disruptor	1	Warp Scrambler	Module	Medium Slot
+ Republic Fleet Depleted Uranium S	1.000	Projectile Ammo	Charge	Cargo Hold
+ Republic Fleet EMP S	1.000	Projectile Ammo	Charge	Cargo Hold
+ Republic Fleet Phased Plasma S	1.000	Projectile Ammo	Charge	Cargo Hold
+ Small Ancillary Current Router I	1	Rig Core	Module	Cargo Hold
+ Small Projectile Collision Accelerator I	1	Rig Projectile Weapon	Module	Cargo Hold
+ Small Transverse Bulkhead II	1	Rig Armor	Module	Cargo Hold
+Thrasher Fleet Issue	1	Destroyer	Ship
+
+
+
+
+ 50000MN Microwarpdrive I	1	Propulsion Module	Module	Medium Slot
+ Capital Capacitor Booster I	1	Capacitor Booster	Module	Medium Slot
+ Capital Gremlin Compact Energy Neutralizer	1	Energy Neutralizer	Module	High Slot
+ Capital Gremlin Compact Energy Neutralizer	1	Energy Neutralizer	Module	High Slot
+ Capital Gremlin Compact Energy Neutralizer	1	Energy Neutralizer	Module	High Slot
+ Capital Transverse Bulkhead I	1	Rig Armor	Module	Rig Slot
+ Capital Transverse Bulkhead I	1	Rig Armor	Module	Rig Slot
+ Capital Transverse Bulkhead I	1	Rig Armor	Module	Rig Slot
+ Heavy J5b Enduring Warp Scrambler	1	Warp Scrambler	Module	Medium Slot
+ Heavy J5b Enduring Warp Scrambler	1	Warp Scrambler	Module	Medium Slot
+ Heavy J5b Enduring Warp Scrambler	1	Warp Scrambler	Module	Medium Slot
+ Heavy J5b Enduring Warp Scrambler	1	Warp Scrambler	Module	Medium Slot
+ Heavy J5b Enduring Warp Scrambler	1	Warp Scrambler	Module	Medium Slot
+ Navy Cap Booster 3200	75	Capacitor Booster Charge	Charge	Cargo Hold
+ Oxygen Isotopes	150,000	Ice Product	Material	Fuel Bay
+ Reinforced Bulkheads II	1	Reinforced Bulkhead	Module	Low Slot
+ Reinforced Bulkheads II	1	Reinforced Bulkhead	Module	Low Slot
+ Reinforced Bulkheads II	1	Reinforced Bulkhead	Module	Low Slot
+ Shadow Serpentis Damage Control	1	Damage Control	Module	Low Slot
+Capital Capacitor Booster I	1	Capacitor Booster	Module
+Navy Cap Booster 3200	5	Capacitor Booster Charge	Charge
+Rorqual	1	Capital Industrial Ship	Ship
+
+
+
+Minerals
+Item	Required	Available	Est. Unit price	typeID
+Tritanium	2520000	0	3.98	34
+Pyerite	900000	0	10.35	35
+Mexallon	162000	0	51.74	36
+Isogen	18000	0	605.17	37
+Nocxium	7200	0	935.24	38
+Zydrine	1800	0	2373.3	39
+Megacyte	360	0	3629.88	40
+

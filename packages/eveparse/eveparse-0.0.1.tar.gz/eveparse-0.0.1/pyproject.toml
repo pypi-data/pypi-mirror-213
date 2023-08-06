@@ -1,0 +1,23 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "eveparse"
+version = "0.0.1"
+authors = [
+  {name="Chris Harrel", email="24297899+harrelchris@users.noreply.github.com"},
+]
+description = "Parser for Eve Online - extract item name and quantity from a string"
+readme = "README.md"
+license = {file = "LICENSE"}
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/harrelchris/eveparse"
+"Bug Tracker" = "https://github.com/harrelchris/eveparse/issues"

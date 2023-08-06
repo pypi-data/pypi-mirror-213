@@ -1,0 +1,3 @@
+2	20,000	1,802.00 ISK	4-HWWF - WinterCo. Central Station	Station	1	82d 19h 27m 7s
+2	107,781	1,342.00 ISK	4-HWWF - WinterCo. Central Station	Station	1	16d 6h 40m 48s
+2	100,000	1,804.00 ISK	4-HWWF - WinterCo. Central Station	Station	1	84d 19h 46m 31s

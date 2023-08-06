@@ -1,0 +1,97 @@
+Copious Scheelite	43,740	437,400 m3	185 km
+Copious Scheelite	43,740	437,400 m3	176 km
+Copious Scheelite	43,740	437,400 m3	173 km
+Copious Scheelite	43,740	437,400 m3	165 km
+Copious Scheelite	43,740	437,400 m3	151 km
+Copious Scheelite	43,240	432,400 m3	166 km
+Copious Scheelite	29,160	291,600 m3	180 km
+Copious Scheelite	29,160	291,600 m3	158 km
+Copious Scheelite	14,580	145,800 m3	186 km
+Copious Scheelite	14,580	145,800 m3	171 km
+Copious Scheelite	14,580	145,800 m3	154 km
+Lavish Otavite	43,740	437,400 m3	178 km
+Lavish Otavite	43,740	437,400 m3	170 km
+Lavish Otavite	43,740	437,400 m3	157 km
+Lavish Otavite	29,160	291,600 m3	162 km
+Lavish Otavite	29,160	291,600 m3	161 km
+Lavish Otavite	14,580	145,800 m3	183 km
+Lavish Otavite	14,580	145,800 m3	166 km
+Lavish Otavite	14,580	145,800 m3	152 km
+Lavish Otavite	7,617	76,170 m3	170 km
+Otavite	43,740	437,400 m3	168 km
+Otavite	43,740	437,400 m3	156 km
+Otavite	29,160	291,600 m3	183 km
+Otavite	29,160	291,600 m3	181 km
+Otavite	14,580	145,800 m3	179 km
+Otavite	14,580	145,800 m3	178 km
+Otavite	14,580	145,800 m3	176 km
+Otavite	14,580	145,800 m3	174 km
+Otavite	14,580	145,800 m3	170 km
+Otavite	14,580	145,800 m3	166 km
+Otavite	14,580	145,800 m3	159 km
+Otavite	14,580	145,800 m3	158 km
+Otavite	14,580	145,800 m3	157 km
+Scheelite	43,740	437,400 m3	183 km
+Scheelite	43,740	437,400 m3	179 km
+Scheelite	43,740	437,400 m3	177 km
+Scheelite	43,740	437,400 m3	177 km
+Scheelite	43,740	437,400 m3	169 km
+Scheelite	43,740	437,400 m3	157 km
+Scheelite	43,740	437,400 m3	156 km
+Scheelite	43,740	437,400 m3	152 km
+Scheelite	34,109	341,090 m3	164 km
+Scheelite	29,160	291,600 m3	167 km
+Scheelite	29,160	291,600 m3	165 km
+Scheelite	29,160	291,600 m3	160 km
+Scheelite	29,160	291,600 m3	159 km
+Scheelite	14,580	145,800 m3	191 km
+Scheelite	14,580	145,800 m3	184 km
+Scheelite	14,580	145,800 m3	180 km
+Scheelite	14,580	145,800 m3	179 km
+Scheelite	14,580	145,800 m3	179 km
+Scheelite	14,580	145,800 m3	179 km
+Scheelite	14,580	145,800 m3	177 km
+Scheelite	14,580	145,800 m3	177 km
+Scheelite	14,580	145,800 m3	176 km
+Scheelite	14,580	145,800 m3	176 km
+Scheelite	14,580	145,800 m3	175 km
+Scheelite	14,580	145,800 m3	175 km
+Scheelite	14,580	145,800 m3	168 km
+Scheelite	14,580	145,800 m3	167 km
+Scheelite	14,580	145,800 m3	164 km
+Scheelite	14,580	145,800 m3	162 km
+Scheelite	14,580	145,800 m3	162 km
+Scheelite	14,580	145,800 m3	161 km
+Scheelite	14,580	145,800 m3	160 km
+Ytterbite	43,740	437,400 m3	181 km
+Ytterbite	43,740	437,400 m3	173 km
+Ytterbite	43,740	437,400 m3	169 km
+Ytterbite	43,740	437,400 m3	167 km
+Ytterbite	43,740	437,400 m3	166 km
+Ytterbite	43,740	437,400 m3	162 km
+Ytterbite	43,740	437,400 m3	159 km
+Ytterbite	30,168	301,680 m3	159 km
+Ytterbite	29,160	291,600 m3	192 km
+Ytterbite	29,160	291,600 m3	174 km
+Ytterbite	29,160	291,600 m3	172 km
+Ytterbite	29,160	291,600 m3	166 km
+Ytterbite	29,160	291,600 m3	165 km
+Ytterbite	25,554	255,540 m3	173 km
+Ytterbite	23,932	239,320 m3	170 km
+Ytterbite	14,580	145,800 m3	181 km
+Ytterbite	14,580	145,800 m3	180 km
+Ytterbite	14,580	145,800 m3	180 km
+Ytterbite	14,580	145,800 m3	175 km
+Ytterbite	14,580	145,800 m3	171 km
+Ytterbite	14,580	145,800 m3	171 km
+Ytterbite	14,580	145,800 m3	170 km
+Ytterbite	14,580	145,800 m3	169 km
+Ytterbite	14,580	145,800 m3	168 km
+Ytterbite	14,580	145,800 m3	168 km
+Ytterbite	14,580	145,800 m3	165 km
+Ytterbite	14,580	145,800 m3	163 km
+Ytterbite	14,580	145,800 m3	162 km
+Ytterbite	11,390	113,900 m3	172 km
+Ytterbite	8,064	80,640 m3	168 km
+Ytterbite	7,481	74,810 m3	172 km
+Ytterbite	865	8,650 m3	167 km
