@@ -1,0 +1,10 @@
+[console_scripts]
+soapcw-cnn-make-data = soapcw.cnn.cnn_data_gen:main
+soapcw-cnn-make-data-dag = soapcw.cnn.cnn_data_dag_gen:main
+soapcw-cnn-train-model = soapcw.cnn.train_model:main
+soapcw-make-dag-files-astro = pipeline.make_dag_files_astro:main
+soapcw-make-dag-files-lines = pipeline.make_dag_files_lines:main
+soapcw-make-html-pages = pipeline.make_html_page:main
+soapcw-run-soap-astro = pipeline.run_full_soap_astro:main
+soapcw-run-soap-lines = pipeline.run_full_soap_lines:main
+

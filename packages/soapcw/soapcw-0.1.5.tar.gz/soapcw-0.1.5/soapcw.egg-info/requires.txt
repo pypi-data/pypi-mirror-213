@@ -1,0 +1,6 @@
+cython
+matplotlib
+numpy
+torch
+scipy
+lalsuite
