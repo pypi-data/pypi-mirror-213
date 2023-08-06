@@ -1,0 +1,8 @@
+setup.py
+worldnews/__init__.py
+worldnews/worldnews.py
+worldnews.egg-info/PKG-INFO
+worldnews.egg-info/SOURCES.txt
+worldnews.egg-info/dependency_links.txt
+worldnews.egg-info/requires.txt
+worldnews.egg-info/top_level.txt
