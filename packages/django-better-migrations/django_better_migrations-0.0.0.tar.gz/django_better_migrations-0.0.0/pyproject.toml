@@ -1,0 +1,44 @@
+[tool.poetry]
+name = "django-better-migrations"
+version = "0.0.0"
+description = "Adds SQL Output and a Rules system to Django Migrations"
+authors = ["Jean-Baptiste Barth <jeanbaptiste.barth@gmail.com>", "Joachim Jablon <joachim@botify.com>", "Stephane Chi <stephane.chi@botify.com>"]
+license = "MIT"
+readme = "README.md"
+packages = [{include = "django_better_migrations"}]
+repository = "http://github.com/botify-labs/django-better-migrations"
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "Topic :: Database",
+  "Framework :: Django",
+  "Framework :: Django :: 2.2",
+  "Framework :: Django :: 3.0",
+  "Framework :: Django :: 3.1",
+  "Framework :: Django :: 3.2",
+  "Framework :: Django :: 4.0",
+  "Framework :: Django :: 4.1",
+]
+
+[tool.poetry.dependencies]
+python = "^3.7"
+django = "*"
+
+
+[tool.poetry.group.dev.dependencies]
+freezegun = "*"
+pytest = "*"
+pytest-django = "*"
+sure = "*"
+black = "*"
+isort = "*"
+
+[build-system]
+requires = ["poetry-core", "poetry-dynamic-versioning"]
+build-backend = "poetry_dynamic_versioning.backend"
+
+[tool.black]
+force-exclude = '''
+(
+  tests/snapshots/.*
+)
+'''
