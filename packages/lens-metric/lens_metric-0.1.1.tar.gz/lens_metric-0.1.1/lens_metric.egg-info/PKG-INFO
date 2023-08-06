@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: lens-metric
+Version: 0.1.1
+Summary: A new metric for text simplification
+Home-page: https://github.com/Yao-Dou/LENS
+Download-URL: https://github.com/Yao-Dou/LENS/archive/refs/tags/v0.1.1.tar.gz
+Author: Mounica Maddela
+Author-email: mmaddela3@gatech.edu
+License: Apache license
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Science/Research
+License-File: LICENSE
