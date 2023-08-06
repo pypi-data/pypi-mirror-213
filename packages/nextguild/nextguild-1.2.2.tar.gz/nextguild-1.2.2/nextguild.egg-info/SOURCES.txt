@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+nextguild/__init__.py
+nextguild/classes.py
+nextguild/client.py
+nextguild/embed.py
+nextguild/events.py
+nextguild.egg-info/PKG-INFO
+nextguild.egg-info/SOURCES.txt
+nextguild.egg-info/dependency_links.txt
+nextguild.egg-info/top_level.txt
