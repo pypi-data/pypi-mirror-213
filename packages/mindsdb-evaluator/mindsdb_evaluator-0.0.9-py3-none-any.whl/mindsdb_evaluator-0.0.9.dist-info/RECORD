@@ -1,0 +1,12 @@
+mindsdb_evaluator/__init__.py,sha256=3scAJZ80W7nG_lbOxHDwVDE1oUFCqYJD-g75rO5LITE,186
+mindsdb_evaluator/accuracy/__init__.py,sha256=rcUh4HpDGD4wmKAOyA1aKsgYzXALHryUEOPGQ7mbYzw,769
+mindsdb_evaluator/accuracy/classification.py,sha256=-K4_Q0Y3flbaDJs5Tuq7UUDkOpYfKfNGtADKTg34fyk,714
+mindsdb_evaluator/accuracy/forecasting.py,sha256=rFOOjGzilKjPar6ekPCVUPYScsDhLqE716keym7h9wA,3512
+mindsdb_evaluator/accuracy/general.py,sha256=mIsu_lxKbADMgO8cepG3vmkVhSmK2Yqd9yu9ENI4Nlw,4210
+mindsdb_evaluator/accuracy/regression.py,sha256=Wg09d6iiGyQMIyOCko2iR49RU4uzjC5nhiL5ZddxARc,763
+mindsdb_evaluator/calibration/__init__.py,sha256=ZIB2tGDoUNKMQsEalT-caHXVp112D2lsNI-5YgKVaAM,69
+mindsdb_evaluator/calibration/ece.py,sha256=XcKZvoJ3egmKpppumQoLdc64xELAVWLwN623NM_CgOw,126
+mindsdb_evaluator-0.0.9.dist-info/LICENSE,sha256=8tdmlyPepqf1hnGWNpOa51UR52JE4VKBtn1xTbAYgEs,35103
+mindsdb_evaluator-0.0.9.dist-info/METADATA,sha256=wiYH1BfAwXNoUgDiNDxtJrcLxzO1jNT10-t_RN7D5xQ,777
+mindsdb_evaluator-0.0.9.dist-info/WHEEL,sha256=Zb28QaM1gQi8f4VCBhsUklF61CTlNYfs9YAZn-TOGFk,88
+mindsdb_evaluator-0.0.9.dist-info/RECORD,,
