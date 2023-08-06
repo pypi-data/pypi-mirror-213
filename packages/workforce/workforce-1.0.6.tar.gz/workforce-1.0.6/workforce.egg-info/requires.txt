@@ -1,0 +1,7 @@
+networkx
+pydot
+dash_cytoscape
+dash
+pandas
+matplotlib
+openpyxl
