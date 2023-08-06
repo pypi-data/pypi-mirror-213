@@ -1,0 +1,72 @@
+{
+  "author_full_name": "Roronoa Zoro",
+  "author_email": "zoro@one.piece",
+  "project_name": "OSL Python package",
+  "project_slug": "{{ cookiecutter.project_name.lower().replace(' ', '-') }}",
+  "package_slug": "{{ cookiecutter.project_slug.lower().replace('-', '_') }}",
+  "project_short_description": "OSL Python Package contains all the boilerplate you need to create a Python package.",
+  "project_version": "0.1.0",
+  "project_url": "https://{{ cookiecutter.project_slug }}.com",
+  "project_license": [
+    "MIT",
+    "BSD 3 Clause",
+    "ISC license",
+    "Apache Software License 2.0",
+    "GNU General Public License v3",
+    "Other"
+  ],
+  "project_layout": [
+    "src",
+    "flat"
+  ],
+  "command_line_interface": [
+    "No command-line interface",
+    "Click",
+    "Argparse"
+  ],
+  "documentation_engine":[
+    "mkdocs",
+    "sphinx",
+    "jupyter-book"
+  ],
+  "code_of_conduct": [
+    "None",
+    "contributor-covenant",
+    "citizen-code-of-conduct"
+  ],
+  "governance_document": [
+    "None",
+    "numpy-governance",
+    "sciml-governance"
+  ],
+  "roadmap_document": [
+    "None",
+    "pytorch-ignite-roadmap"
+  ],
+  "build_system": [
+    "poetry"
+  ],
+  "use_bandit": "yes",
+  "use_black": "no",
+  "use_blue": "yes",
+  "use_conda": "yes",
+  "use_coverage": "yes",
+  "use_flake8": "yes",
+  "use_isort": "yes",
+  "use_mccabe": "yes",
+  "use_mypy": "yes",
+  "use_pre_commit": "yes",
+  "use_pydocstyle": "yes",
+  "use_pytest": "yes",
+  "use_shellcheck": "yes",
+  "use_vulture": "yes",
+  "use_containers": [
+    "None",
+    "Docker",
+    "Podman"
+  ],
+  "git_username": "zoro_roronoa",
+  "git_https_origin": "",
+  "git_https_upstream": "",
+  "git_main_branch": "main"
+}
