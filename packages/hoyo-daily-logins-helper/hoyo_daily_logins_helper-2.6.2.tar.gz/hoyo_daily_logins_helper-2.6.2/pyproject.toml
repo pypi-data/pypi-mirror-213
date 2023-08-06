@@ -1,0 +1,88 @@
+[tool.poetry]
+name = "hoyo-daily-logins-helper"
+description = "Get hoyo daily login rewards automatically!"
+authors = ["Christopher Kaster <me@atomicptr.de>"]
+license = "GPL-3.0-or-later"
+homepage = "https://github.com/atomicptr/hoyo-daily-logins-helper"
+repository = "https://github.com/atomicptr/hoyo-daily-logins-helper"
+readme = "README.md"
+packages = [{include = "hoyo_daily_logins_helper"}]
+keywords = ["genshin", "genshin-impact", "starrail", "honkai-starrail", "game"]
+classifiers = [
+    "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
+]
+
+# required, but set automatically by poetry-dynamic-versioning
+version = "2.6.2"
+
+[tool.poetry.scripts]
+hoyo-daily-logins-helper = "hoyo_daily_logins_helper.main:main"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+requests = "^2.31.0"
+comboparse = "^1.0.1"
+scheduler = "^0.8.4"
+pytz = "^2023.3"
+
+[tool.poetry.group.dev.dependencies]
+ruff = "^0.0.272"
+
+[tool.poetry-dynamic-versioning]
+enable = false
+vcs = "git"
+style = "semver"
+bump = true
+strict = true
+
+[build-system]
+requires = ["poetry-core>=1.0.0", "poetry-dynamic-versioning"]
+build-backend = "poetry_dynamic_versioning.backend"
+
+[tool.ruff]
+select = [ # TODO: C90, ANN, PLR
+    "ARG",
+    "B",
+    "BLE",
+    "C4",
+    "COM",
+    "DTZ",
+    "E",
+    "EM",
+    "ERA",
+    "F",
+    "G",
+    "I",
+    "ICN",
+    "INP",
+    "ISC",
+    "N",
+    "PIE",
+    "PLC",
+    "PLE",
+    "PLW",
+    "PT",
+    "PTH",
+    "PYI",
+    "Q",
+    "Q",
+    "RET",
+    "RSE",
+    "RUF",
+    "S",
+    "SIM",
+    "SLF",
+    "T20",
+    "TCH",
+    "TID",
+    "UP",
+    "W",
+    "YTT",
+]
+ignore = ["G004", "S311"]
+
+[tool.ruff.flake8-quotes]
+docstring-quotes = "double"
+
+[tool.ruff.per-file-ignores]
+"__init__.py" = []
