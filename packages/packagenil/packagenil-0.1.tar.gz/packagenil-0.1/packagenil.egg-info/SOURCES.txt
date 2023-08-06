@@ -1,0 +1,8 @@
+LICENSE.txt
+README.md
+setup.py
+packagenil/__init__.py
+packagenil.egg-info/PKG-INFO
+packagenil.egg-info/SOURCES.txt
+packagenil.egg-info/dependency_links.txt
+packagenil.egg-info/top_level.txt
