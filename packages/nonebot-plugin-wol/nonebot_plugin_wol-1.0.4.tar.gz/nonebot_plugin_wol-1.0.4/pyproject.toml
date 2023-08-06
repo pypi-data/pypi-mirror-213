@@ -1,0 +1,20 @@
+[project]
+name = "nonebot_plugin_wol"
+version = "1.0.4"
+authors = [
+  { name="TwoOnefour", email="lys214412@gmail.com"},
+]
+description = "A WOL Nonebot plugin"
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/twoonefour/nonebot_plugin_wol"
+[build-system]
+requires = ["setuptools", "setuptools-scm"]
+build-backend = "setuptools.build_meta"
