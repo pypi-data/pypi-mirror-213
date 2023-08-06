@@ -1,0 +1,15 @@
+{
+  "jupyter.lab.shortcuts": [],
+  "title": "Chatlas Settings",
+  "description": "Voice Atlas for JupyterLab Settings.",
+  "type": "object",
+  "properties": {
+    "atlasId": {
+      "type": "string",
+      "title": "Atlas ID",
+      "description": "This is the Atlas ID Chatlas will use to provide answers.",
+      "default": ""
+    }
+  },
+  "additionalProperties": false
+}
