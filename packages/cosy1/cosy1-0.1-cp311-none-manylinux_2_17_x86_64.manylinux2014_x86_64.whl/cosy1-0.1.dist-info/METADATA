@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: cosy1
+Version: 0.1
+Summary: Library for managing coordinate systems and transformations
+Author: Florian Fervers
+Author-email: florian.fervers@gmail.com
+License: MIT
+Requires-Dist: numpy
+Requires-Dist: pyquaternion
+
