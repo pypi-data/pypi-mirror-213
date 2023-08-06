@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+litesqlite/__init__.py
+litesqlite/datatypes.py
+litesqlite/lite_sqlite.py
+litesqlite.egg-info/PKG-INFO
+litesqlite.egg-info/SOURCES.txt
+litesqlite.egg-info/dependency_links.txt
+litesqlite.egg-info/requires.txt
+litesqlite.egg-info/top_level.txt

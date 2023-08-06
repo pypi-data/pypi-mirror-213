@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: litesqlite
+Version: 1.0.0
+Summary: Convenient work with sqlite3 and aiosqlite
+Home-page: https://github.com/FREVOD/litesqlite
+Author: FREVOD
+Author-email: frevod_dev@mail.ru
+License: GPLv3
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+License-File: LICENSE
