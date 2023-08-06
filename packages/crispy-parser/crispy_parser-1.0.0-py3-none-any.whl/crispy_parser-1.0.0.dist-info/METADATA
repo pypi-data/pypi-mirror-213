@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: crispy-parser
+Version: 1.0.0
+Summary: Crispy is a simple command line argument parser, ready to be integrated to any project of any size!
+Home-page: https://github.com/fybx/crispy
+Author: fybalaban
+Author-email: fybalaban@fybx.dev
+License: GNU LGPL-v2.1
+License-File: LICENSE
+
