@@ -1,0 +1,14 @@
+rest_social_auth/__init__.py,sha256=kFBSPGW9lTb2bhSbNWhN9dU-RLEtZFL6WHq4MyQQLlU,43
+rest_social_auth/serializers.py,sha256=QpMGXNq-_GOU7Cuq1lUTvfWu6yHBIXgfqPcdFr0uSRo,4354
+rest_social_auth/strategy.py,sha256=itW6dZzhNoqJgoXvPR3eoegCB0f303r4AVyV-dZguGk,634
+rest_social_auth/urls_jwt_pair.py,sha256=bWhQE4oONImSvida7RyKtTsMjwQrodyPazohC1IiEow,476
+rest_social_auth/urls_jwt_sliding.py,sha256=8qkRHxNS5vXKPLWwAZxeNlgmH8LYuQt02afqlw_Gva0,494
+rest_social_auth/urls_knox.py,sha256=s2uxjoatCi9SOkak8-XTvmICeaBW228bZIj9MQX0ZJk,465
+rest_social_auth/urls_session.py,sha256=ouxDNcClq6UUZ-UVASLYASAopGFQkUXZ-8CabaweXIU,234
+rest_social_auth/urls_token.py,sha256=J9mKeiVuMFUvGEgk6JHtarUUgBKWz5MusUYud_qYuXM,460
+rest_social_auth/views.py,sha256=KAY4CjNVMPctTOv6rXITC8Uh_WIJFkcSrNxySTmyUg0,12139
+rest_social_auth-8.1.0.dist-info/LICENSE,sha256=LINtzQgiGycZUkmIDRWQEPN4PhI6eoVK8ZVSsNo8Tbs,1072
+rest_social_auth-8.1.0.dist-info/METADATA,sha256=zPJVmtlB1_ti4pVZ5pHnQqpQCT5WbqzhwodwajMLu0o,23823
+rest_social_auth-8.1.0.dist-info/WHEEL,sha256=a-zpFRIJzOq5QfuhBzbhiA1eHTzNCJn8OdRvhdNX0Rk,110
+rest_social_auth-8.1.0.dist-info/top_level.txt,sha256=R7zwFw2SgMt2EZXEef8Oh9BDjVI3Vjnio95oz2VlJHo,17
+rest_social_auth-8.1.0.dist-info/RECORD,,
