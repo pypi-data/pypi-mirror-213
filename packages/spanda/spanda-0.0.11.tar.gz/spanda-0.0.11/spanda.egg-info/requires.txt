@@ -1,0 +1,10 @@
+fastai
+pandas
+matplotlib
+brukeropusreader
+openpyxl
+kennard-stone
+timm
+specdal
+
+[dev]
