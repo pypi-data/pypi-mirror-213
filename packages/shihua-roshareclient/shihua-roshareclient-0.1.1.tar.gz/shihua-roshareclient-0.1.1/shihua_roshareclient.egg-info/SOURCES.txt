@@ -1,0 +1,12 @@
+MANIFEST.in
+README.md
+setup.py
+roshareclient/__init__.py
+roshareclient/client/__init__.py
+roshareclient/client/api.py
+roshareclient/client/cons.py
+roshareclient/test/test_dataapi.py
+shihua_roshareclient.egg-info/PKG-INFO
+shihua_roshareclient.egg-info/SOURCES.txt
+shihua_roshareclient.egg-info/dependency_links.txt
+shihua_roshareclient.egg-info/top_level.txt
