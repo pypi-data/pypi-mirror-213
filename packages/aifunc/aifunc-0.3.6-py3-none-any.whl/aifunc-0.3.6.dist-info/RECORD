@@ -1,0 +1,9 @@
+aifunc/__init__.py,sha256=M_8m0ZjNXq0gC-eWhoEmqfVNQ0qARSM6qPm0j3ITfvY,126
+aifunc/add_ai_function.py,sha256=qsAtP6XHdjM6yg4CPfy7-1Xg7-gAmJHEilsFnGqe99Q,725
+aifunc/evaluate_answer.py,sha256=NGSwz1PgbISxt-3f7FfBS6W9gztlnUh2fcez_K1UirU,371
+aifunc/follow_up.py,sha256=EgCPjlgElSYLccAVqr2Jhamj6BMmH_4MRmZE22BS3Gc,228
+aifunc/generate_question.py,sha256=hoWzSjO-wRhQN_ZOWOFnYYS7HX5AiEt_p8WuBQ4l8tg,126
+aifunc/utility.py,sha256=_3VCqJ2ec_6R-sHuUI-qCNKsdj3-6SZFclFPz4jIej8,3400
+aifunc-0.3.6.dist-info/METADATA,sha256=j46AojNS7_u3uLHEOai8r3Y0z3TrBfMn1dPc6O6BEJU,403
+aifunc-0.3.6.dist-info/WHEEL,sha256=Zb28QaM1gQi8f4VCBhsUklF61CTlNYfs9YAZn-TOGFk,88
+aifunc-0.3.6.dist-info/RECORD,,
