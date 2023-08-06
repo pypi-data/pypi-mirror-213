@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: GAM-chat-server
+Version: 0.1.1
+Summary: GAM_chat_server
+Author: Andrei G.
+Author-email: andrei_gosovich@mail.ru
+Requires-Dist: PyQt6
+Requires-Dist: sqlalchemy
+
