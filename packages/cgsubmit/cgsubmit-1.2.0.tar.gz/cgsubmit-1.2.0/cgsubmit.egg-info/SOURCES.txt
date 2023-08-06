@@ -1,0 +1,15 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+cgsubmit/__init__.py
+cgsubmit/__main__.py
+cgsubmit.egg-info/PKG-INFO
+cgsubmit.egg-info/SOURCES.txt
+cgsubmit.egg-info/dependency_links.txt
+cgsubmit.egg-info/requires.txt
+cgsubmit.egg-info/top_level.txt
+cgsubmit/api/__init__.py
+cgsubmit/api/api.py
+cgsubmit/games/__init__.py
+cgsubmit/games/games.py
