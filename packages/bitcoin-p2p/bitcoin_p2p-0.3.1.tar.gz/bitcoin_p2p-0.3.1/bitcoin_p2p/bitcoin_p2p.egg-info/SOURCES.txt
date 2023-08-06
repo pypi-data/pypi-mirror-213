@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+bitcoin_p2p/bitcoin_p2p.egg-info/PKG-INFO
+bitcoin_p2p/bitcoin_p2p.egg-info/SOURCES.txt
+bitcoin_p2p/bitcoin_p2p.egg-info/dependency_links.txt
+bitcoin_p2p/bitcoin_p2p.egg-info/requires.txt
+bitcoin_p2p/bitcoin_p2p.egg-info/top_level.txt
