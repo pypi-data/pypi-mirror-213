@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+src/sshsurf/__init__.py
+src/sshsurf/client.py
+src/sshsurf.py.egg-info/PKG-INFO
+src/sshsurf.py.egg-info/SOURCES.txt
+src/sshsurf.py.egg-info/dependency_links.txt
+src/sshsurf.py.egg-info/requires.txt
+src/sshsurf.py.egg-info/top_level.txt

@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: sshsurf.py
+Version: 0.0.1b0
+Summary: A wrapper for ssh.surf API
+Home-page: https://github.com/OrdinaryEnder/sshsurf.py
+Author: OrdinaryEnder
+Author-email: endergaming1458@gmail.com
+Classifier: Programming Language :: Python :: 3.8
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# sshsurf.py
+A shitty wrapper over ssh.surf API written in Python3
+
+**COMING SOON**
