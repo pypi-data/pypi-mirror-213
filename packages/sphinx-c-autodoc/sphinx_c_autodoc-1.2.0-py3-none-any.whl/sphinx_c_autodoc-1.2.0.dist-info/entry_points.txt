@@ -1,0 +1,3 @@
+[console_scripts]
+sphinx-c-apidoc=sphinx_c_autodoc.apidoc:main
+
