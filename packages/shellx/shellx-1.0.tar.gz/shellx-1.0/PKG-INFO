@@ -1,0 +1,5 @@
+Metadata-Version: 2.1
+Name: shellx
+Version: 1.0
+Summary: All in one Tool for generating reverse shells easily and automating the boring stuff like URL encoding the command and setting up a listener.
+Author: Chowdhury Faizal Ahammed

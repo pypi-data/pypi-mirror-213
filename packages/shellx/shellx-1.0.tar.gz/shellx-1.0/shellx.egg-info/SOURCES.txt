@@ -1,0 +1,6 @@
+setup.py
+shellx.egg-info/PKG-INFO
+shellx.egg-info/SOURCES.txt
+shellx.egg-info/dependency_links.txt
+shellx.egg-info/requires.txt
+shellx.egg-info/top_level.txt
