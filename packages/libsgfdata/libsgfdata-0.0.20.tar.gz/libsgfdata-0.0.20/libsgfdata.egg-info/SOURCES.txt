@@ -1,0 +1,38 @@
+.gitignore
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+examples/data/1-CPT.std
+examples/data/1059.cpt
+examples/data/31.STD
+examples/data/5 20121008 1466.TOT
+examples/data/6 20120911 1430.DTR
+examples/data/Bp.1091 20140918 10270.TOT
+examples/ipynb/20210806_Testing_SGF_import.ipynb
+libsgfdata/__init__.py
+libsgfdata/cmd.py
+libsgfdata/cmd_depth.py
+libsgfdata/cmd_depth_to_material.py
+libsgfdata/cmd_dtm.py
+libsgfdata/cmd_normalize.py
+libsgfdata/comments.csv
+libsgfdata/data-flags.csv
+libsgfdata/data.csv
+libsgfdata/dtm.py
+libsgfdata/dumper.py
+libsgfdata/main.csv
+libsgfdata/metadata.py
+libsgfdata/method.csv
+libsgfdata/methods.csv
+libsgfdata/normalizer.py
+libsgfdata/parser.py
+libsgfdata/validate.py
+libsgfdata.egg-info/PKG-INFO
+libsgfdata.egg-info/SOURCES.txt
+libsgfdata.egg-info/dependency_links.txt
+libsgfdata.egg-info/entry_points.txt
+libsgfdata.egg-info/requires.txt
+libsgfdata.egg-info/top_level.txt
+tests/integration/test_parse.py
+tests/unit/test_dates.py

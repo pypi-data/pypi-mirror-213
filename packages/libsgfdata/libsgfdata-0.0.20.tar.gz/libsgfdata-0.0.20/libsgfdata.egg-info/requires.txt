@@ -1,0 +1,14 @@
+numpy
+pandas
+python-slugify
+python-dateutil
+charset-normalizer
+
+[cmd]
+click
+
+[dtm]
+pyproj
+rasterio
+geopandas
+terrainy
