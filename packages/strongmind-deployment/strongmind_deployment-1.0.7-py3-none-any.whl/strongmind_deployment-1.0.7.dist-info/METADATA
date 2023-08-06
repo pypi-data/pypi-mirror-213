@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: strongmind_deployment
+Version: 1.0.7
+Summary: Deployment tools for Strongmind
+Project-URL: Homepage, https://github.com/strongmind/public-reusable-workflows/tree/main/deployment
+Author-email: Belding <teambelding@strongmind.com>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.9
+Requires-Dist: pulumi
+Requires-Dist: pulumi-aws
+Requires-Dist: pulumi-awsx
+Requires-Dist: pulumi-random
+Description-Content-Type: text/markdown
+
+# StrongMind Deployment
+
+## What?
+Deployment scripts for StrongMind, using Pulumi.
