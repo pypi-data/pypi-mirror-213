@@ -1,0 +1,12 @@
+mlcvzoo_mmdetection/__init__.py,sha256=lYBSLlm-cT1sUWIiFjr2THtOJ-seHgRVvdypV84tsmM,244
+mlcvzoo_mmdetection/configuration.py,sha256=ZzFC0xQ4AlSAEoZGnBgmPZMXsf51rsYeNW8WB_1DUDg,5716
+mlcvzoo_mmdetection/mlcvzoo_mmdet_dataset.py,sha256=tyOgkzwE8tpoeb_Lpa5lENm9cOV9qYhxj0DmMi5UH10,6817
+mlcvzoo_mmdetection/model.py,sha256=O27r6BmjSWeA84qbmjifc6UGT_TRrHjHyNTFLRY9OT0,13641
+mlcvzoo_mmdetection/object_detection_model.py,sha256=DGZX9JEzwRKIo1MIdHDicr8N9QFaceKTpH5FsxafvSM,7394
+mlcvzoo_mmdetection/py.typed,sha256=FOHdvFbDTf6J214EK3jKWcMS5pT7sdwYelLc852rYuY,196
+mlcvzoo_mmdetection/segmentation_model.py,sha256=YYP-gY9v07573F9EUdh41P3n6VMiCUh9scey6fJdjwk,10928
+mlcvzoo_mmdetection/utils.py,sha256=Xzcwb4GrTSwIt-U1EXaHlKaW1aiEvscSC8wHNwrlh5c,1938
+mlcvzoo_mmdetection-6.0.0.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+mlcvzoo_mmdetection-6.0.0.dist-info/LICENSE,sha256=5n7x8h2jvQ38agEyj2nda3Jw3zg18B1BKF5WPiU4rJ0,11412
+mlcvzoo_mmdetection-6.0.0.dist-info/METADATA,sha256=1_QPDkydljuv4R3Yulbs6YVOm_aAluOSD-4pRPxCou0,2081
+mlcvzoo_mmdetection-6.0.0.dist-info/RECORD,,
