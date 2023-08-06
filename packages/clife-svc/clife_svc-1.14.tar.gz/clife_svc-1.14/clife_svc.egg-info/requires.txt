@@ -1,0 +1,11 @@
+loguru>=0.7.0
+aiohttp>=3.8.4
+requests<3,>=2.22.0
+fastapi>=0.83.0
+uvicorn
+cos-python-sdk-v5
+orjson
+contextvars
+boto3
+rocketmq>=0.4.4
+gunicorn
