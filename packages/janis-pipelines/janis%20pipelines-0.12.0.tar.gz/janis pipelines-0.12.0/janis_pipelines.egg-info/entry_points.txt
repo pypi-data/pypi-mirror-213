@@ -1,0 +1,3 @@
+[console_scripts]
+janisdk = janisdk.main:process_args
+
