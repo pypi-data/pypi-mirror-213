@@ -1,0 +1,6 @@
+numpy
+requests
+pyserial
+esptool
+progressbar2
+pillow
