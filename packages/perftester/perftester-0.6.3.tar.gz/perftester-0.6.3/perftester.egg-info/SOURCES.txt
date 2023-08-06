@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+perftester/__init__.py
+perftester/__main__.py
+perftester/perftester.py
+perftester.egg-info/PKG-INFO
+perftester.egg-info/SOURCES.txt
+perftester.egg-info/dependency_links.txt
+perftester.egg-info/entry_points.txt
+perftester.egg-info/requires.txt
+perftester.egg-info/top_level.txt

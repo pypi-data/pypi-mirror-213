@@ -1,0 +1,8 @@
+easycheck
+memory_profiler
+pympler
+rounder
+
+[dev]
+black
+wheel
