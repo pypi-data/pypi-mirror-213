@@ -1,0 +1,84 @@
+Metadata-Version: 2.1
+Name: mads-datasets
+Version: 0.1.5.2
+Summary: Datasets for the master applied data science
+License: MIT
+Author: Raoul Grouls
+Author-email: Raoul.Grouls@han.nl
+Requires-Python: >=3.9.16,<4.0.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: loguru (>=0.7.0,<0.8.0)
+Requires-Dist: numpy (>=1.24.3,<2.0.0)
+Requires-Dist: pillow (>=9.5.0,<10.0.0)
+Requires-Dist: pydantic (>=1.10.8,<2.0.0)
+Requires-Dist: requests (>=2.31.0,<3.0.0)
+Requires-Dist: torch (>=2.0.1,<3.0.0)
+Requires-Dist: torchtext (>=0.15.2,<0.16.0)
+Requires-Dist: tqdm (>=4.65.0,<5.0.0)
+Project-URL: GitHub, https://github.com/raoulg/mads_datasets
+Description-Content-Type: text/markdown
+
+# MADS Datasets Library
+
+This library provides the functionality to download, process, and stream several datasets.
+
+## Installation
+This library has been published on PyPi and can be installed with pip or poetry.
+
+```bash
+# Install with pip
+pip install mads_datasets
+
+# Install with poetry
+poetry add mads_datasets
+```
+
+## Data Types
+Currently, it supports the following datasets:
+* Sunspots Time-Series data
+* IMDB Text data
+* Flowers Image data
+* Fashion MNIST Image data
+* Gestures Time-Series data
+
+## Usage
+
+After installation, import the necessary components:
+
+```python
+from mads_datasets import DatasetFactoryProvider, DatasetType
+```
+
+You can create a specific dataset factory using the `DatasetFactoryProvider`.
+
+For instance, to create a factory for the Fashion MNIST dataset:
+
+```python
+fashion_factory = DatasetFactoryProvider.create_factory(DatasetType.FASHION)
+```
+
+With the factory, you can download the data, create datasets and provide the datasets wrapped in datastreamers in one command:
+
+```python
+streamers = mnistfactory.create_datastreamer(batchsize=32)
+train = streamers["train"]
+X, y = next(train.stream())
+```
+
+The train.stream() command wil return a generator that will yield batches of data.
+
+You could also create a dataset directly:
+
+```python
+dataset = fashion_factory.create_dataset()
+```
+
+Or download the data:
+
+```python
+fashion_factory.download_data()
+```
+
