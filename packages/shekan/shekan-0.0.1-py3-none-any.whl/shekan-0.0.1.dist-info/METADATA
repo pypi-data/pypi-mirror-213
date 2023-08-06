@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: shekan
+Version: 0.0.1
+Summary: Shekan dns resolver
+Author: Moala
+Author-email: moallatakhtdar@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+SHEKAN DNS CHANGER CLI
+Author: Seyed Moala Takhtdar
+
+install:
+- pip install shekan
+
+usage:
+- shekan --help
+- shekan enable
+- shekan disable
+- shekan status

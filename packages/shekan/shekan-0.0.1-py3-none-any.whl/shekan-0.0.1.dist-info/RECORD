@@ -1,0 +1,12 @@
+shekan_cli/__init__.py,sha256=azfNAf11A4h2KMYCfy4I4GFf7iD7NC90nPLrxd-7JWY,194
+shekan_cli/cli.py,sha256=ZsbQYTQax0tXZF6WkthR-qj2JKd9W5SZ0nMiGaJO_vw,1182
+shekan_cli/config.py,sha256=0O_xHDhG-i_NVYSFI8N_0WpZ2M3IFV7e6I0BWBm55nY,109
+shekan_cli/dns.py,sha256=YyONHL2k3Ate_HcyjBXj_7RElbWi41BQOPnKEi4OulE,310
+shekan_cli/functions.py,sha256=6SfNJK9wPA2yr_ceAUeaU-mBjjyWxqv4iKaiw5TNCxw,179
+shekan_cli/linux_dns.py,sha256=nzKO81a3spujub5nnhEs-w2J0WAB0KWR90rVE2zerJ0,1303
+shekan_cli/shekan.py,sha256=DKjqeCkMEv8RfbdsPy5A400dvxL6t6LW_VnYNgoLRrE,878
+shekan-0.0.1.dist-info/METADATA,sha256=PZVU4IvYzNFoes2vAng90SeaSU4kmMmFktAzMVR79eE,498
+shekan-0.0.1.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+shekan-0.0.1.dist-info/entry_points.txt,sha256=F0pgUk-H5BNs0iTkDVViKzbzY8OzON3pKmtM8nOk2oI,47
+shekan-0.0.1.dist-info/top_level.txt,sha256=cra0-hvDMLQoNqmOnH2WXIxelUwzocLLMXDVI74Lucc,11
+shekan-0.0.1.dist-info/RECORD,,
