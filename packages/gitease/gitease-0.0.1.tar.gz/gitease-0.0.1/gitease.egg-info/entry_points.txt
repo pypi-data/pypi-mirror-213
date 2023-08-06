@@ -1,0 +1,3 @@
+[console_scripts]
+bgitllm = gitease.cli:backgroundcli
+ge = gitease.cli:cli
