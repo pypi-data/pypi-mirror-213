@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: ptydevopsapi
+Version: 1.0.6
+Summary: A python wrapper for the PIM devops API
+Home-page: http://antonandersson.se
+Author: Anton Andersson
+Author-email: anton@antonandersson.se
+License: UNKNOWN
+Download-URL: http://antonandersson.se
+Keywords: devops api wrapper
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.7
+Description-Content-Type: text/markdown
+
+UNKNOWN
+
