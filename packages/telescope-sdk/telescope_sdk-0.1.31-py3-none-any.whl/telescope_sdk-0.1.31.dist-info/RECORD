@@ -1,0 +1,15 @@
+telescope_sdk/__init__.py,sha256=t5GsOYIJSZVEUdhx7ZkC5OJOI6PaPiE4LZzMhncpaJY,2027
+telescope_sdk/campaign.py,sha256=T_KqQFRs-tVPNeAPrhu6t7YAxPexxGBTfny1AROgOJY,955
+telescope_sdk/campaign_log_event.py,sha256=8-1kmOix832En_j07jiUPdSw9SWmpTXX9vsz501IT1w,1360
+telescope_sdk/common.py,sha256=d5wJSCnV-dtqQh_myYRax4Ij3YszciRtqGGgdsLJNxQ,1691
+telescope_sdk/company.py,sha256=1mbaF-lANxetRWnnS0EeHiT6snBae7FdFGgAvVzO-6g,4085
+telescope_sdk/company_types.py,sha256=Mdf3PEHOAjpVmn45K_rTh38Wg1ww5F5CR1KendgqZwY,1077
+telescope_sdk/person.py,sha256=Prpweq5m8lcZtk5r6dWuljWJVtur49VoCQhv_5pou6U,8480
+telescope_sdk/prospect.py,sha256=Z5KiPlJP_Wc63GrTQZ46n75okqnAw-8fDzU3GToL24Y,1087
+telescope_sdk/prospect_interaction_event.py,sha256=XhK6hynFLuorT9ECs2QKJ-iemOhNX3w2GiPdYbbfVaA,793
+telescope_sdk/recommendation.py,sha256=8asEfNgKfrTPG_qJbGWiA_Gbea15TbDTlvfIoZ5u_Is,955
+telescope_sdk/sequence.py,sha256=7Idvfxk6VoVVvRS9WeXTqY0uT2FG6pCf_sUVDwDn0KM,441
+telescope_sdk/utils.py,sha256=lx3He7p_KzQ7i7iYPCEYp9H4XGCKMKQtn0bNQdTx7Xo,3982
+telescope_sdk-0.1.31.dist-info/METADATA,sha256=4CV2AlbbBrMszzrhBztq2d4d7hhkf7C36Emn0hzBJ1A,4182
+telescope_sdk-0.1.31.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+telescope_sdk-0.1.31.dist-info/RECORD,,
