@@ -1,0 +1,3 @@
+[console_scripts]
+grept = grept.__main__:main
+grept-embed = grept.embed:main

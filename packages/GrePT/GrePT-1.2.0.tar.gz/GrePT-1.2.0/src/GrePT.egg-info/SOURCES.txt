@@ -1,0 +1,17 @@
+LICENSE.md
+MANIFEST.in
+README.md
+pyproject.toml
+src/GrePT.egg-info/PKG-INFO
+src/GrePT.egg-info/SOURCES.txt
+src/GrePT.egg-info/dependency_links.txt
+src/GrePT.egg-info/entry_points.txt
+src/GrePT.egg-info/requires.txt
+src/GrePT.egg-info/top_level.txt
+src/grept/__init__.py
+src/grept/__main__.py
+src/grept/completions.py
+src/grept/config.py
+src/grept/embed.py
+src/grept/interactive.py
+src/grept/util.py
