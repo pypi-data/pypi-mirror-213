@@ -1,0 +1,30 @@
+[project]
+name = "aznt"
+version = "0.0.42"
+description = "From A to Z Number Theory"
+keywords = ["aznt", "numbers", "number theory", "primes", "prime numbers", "math"]
+authors = [
+    {name = "Adrian Zapała, MSc", email = "adrian.zapala@outlook.com"},
+]
+license = {file = "LICENSE.txt"}
+readme = "README.md"
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Education",
+    "Intended Audience :: End Users/Desktop",
+    "Intended Audience :: Information Technology",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3.11",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+    "Topic :: Scientific/Engineering",
+    "Topic :: Scientific/Engineering :: Information Analysis",
+    "Topic :: Scientific/Engineering :: Mathematics",
+    "Topic :: Security :: Cryptography",
+    "Topic :: Software Development :: Libraries :: Python Modules"
+]
+requires-python = ">=3.11"
+dependencies = [
+    'mpmath', 'matplotlib', 'numpy'
+]

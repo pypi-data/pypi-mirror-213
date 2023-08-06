@@ -1,0 +1,13 @@
+LICENCE.txt
+MANIFEST.in
+README.md
+pyproject.toml
+aznt/__init__.py
+aznt/azntnumbers.py
+aznt/azntplots.py
+aznt/azntprimality.py
+aznt.egg-info/PKG-INFO
+aznt.egg-info/SOURCES.txt
+aznt.egg-info/dependency_links.txt
+aznt.egg-info/requires.txt
+aznt.egg-info/top_level.txt

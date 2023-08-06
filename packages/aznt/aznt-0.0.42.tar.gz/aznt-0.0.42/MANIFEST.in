@@ -1,0 +1,5 @@
+exclude README.txt
+exclude .gitignore
+prune tests
+prune .git
+prune .idea
