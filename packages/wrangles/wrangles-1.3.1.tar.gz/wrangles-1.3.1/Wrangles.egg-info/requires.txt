@@ -1,0 +1,16 @@
+requests
+pyyaml
+pandas
+openpyxl
+sqlalchemy<2.0
+pymssql
+psycopg2-binary
+pymysql
+fabric==3.1.0
+apprise
+lorem
+pymongo[srv]
+simple-salesforce
+numexpr
+boto3
+jinja2
