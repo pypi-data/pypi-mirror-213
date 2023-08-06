@@ -1,0 +1,9 @@
+aiofiles
+websockets
+nest_asyncio
+httpx
+tqdm
+orjson
+
+[:platform_system != "Windows"]
+uvloop
