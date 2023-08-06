@@ -1,0 +1,15 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/tdfextractor/__init__.py
+src/tdfextractor/constants.py
+src/tdfextractor/ms2_extractor.py
+src/tdfextractor/string_templates.py
+src/tdfextractor/utils.py
+src/tdfextractor.egg-info/PKG-INFO
+src/tdfextractor.egg-info/SOURCES.txt
+src/tdfextractor.egg-info/dependency_links.txt
+src/tdfextractor.egg-info/requires.txt
+src/tdfextractor.egg-info/top_level.txt
+tests/test_ms2_extractor.py
