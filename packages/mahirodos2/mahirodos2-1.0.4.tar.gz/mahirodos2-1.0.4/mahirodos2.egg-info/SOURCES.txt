@@ -1,0 +1,7 @@
+setup.py
+mahirodos2/__init__.py
+mahirodos2.egg-info/PKG-INFO
+mahirodos2.egg-info/SOURCES.txt
+mahirodos2.egg-info/dependency_links.txt
+mahirodos2.egg-info/requires.txt
+mahirodos2.egg-info/top_level.txt

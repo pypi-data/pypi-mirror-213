@@ -1,0 +1,37 @@
+Metadata-Version: 2.1
+Name: mahirodos2
+Version: 1.0.4
+Summary: Simple but yet powerful DoS (Denial-of-Service) PIP package
+Author: Mahiro Chan
+Author-email: mahirochan493@gmail.com
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+
+mahirodos2 is a Python package that provides a simple yet powerful capability to perform DoS (Denial-of-Service) attacks. Please note that launching DoS attacks is illegal and unethical unless you have explicit permission from the target site's owner and are using it for legitimate purposes such as security testing. It's important to use such tools responsibly and within the boundaries of the law.
+
+---
+
+### How to use
+
+1. Import the `spamreq` function from the `mahirodos2` package:
+
+    ```python
+    from mahirodos2 import spamreq
+    ```
+
+2. Call the `spamreq` function with the target site URL as the argument:
+
+    ```python
+    spamreq("<TARGET SITE HERE>")
+    ```
+
+3. Replace `<TARGET SITE HERE>` with the URL of the site you want to perform the DoS attack on. Make sure you have proper authorization and follow legal and ethical guidelines.
+
+---
+
+For more information, please refer to the package documentation and guidelines on responsible use.
+
