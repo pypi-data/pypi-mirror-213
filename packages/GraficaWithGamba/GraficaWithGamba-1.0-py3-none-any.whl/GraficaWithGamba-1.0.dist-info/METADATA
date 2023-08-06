@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: GraficaWithGamba
+Version: 1.0
+Summary: Una Graficadora Y Calculadora Basicas
+Author-email: Daniel Gonzalez <danielgamba2304@gmail.com>
+Project-URL: Homepage, https://github.com/Dagam23/IntentoRepe
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+This is a simple example package. You can use
+
+No mentiras
