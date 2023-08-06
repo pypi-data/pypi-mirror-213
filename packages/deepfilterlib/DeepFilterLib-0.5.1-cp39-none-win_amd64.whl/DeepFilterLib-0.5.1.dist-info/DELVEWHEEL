@@ -1,0 +1,2 @@
+Version: 1.3.7
+Arguments: ['C:\\hostedtoolcache\\windows\\Python\\3.9.13\\x64\\Scripts\\delvewheel', 'repair', 'target/wheels/DeepFilterLib-0.5.1-cp39-none-win_amd64.whl', '-w', 'target/repaired']
