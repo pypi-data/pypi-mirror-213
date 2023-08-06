@@ -1,0 +1,2 @@
+[console_scripts]
+kafkaconnect = kafkaconnect.cli:main
