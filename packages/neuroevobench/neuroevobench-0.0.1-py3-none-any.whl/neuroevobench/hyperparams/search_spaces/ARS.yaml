@@ -1,0 +1,20 @@
+real:
+  sigma_init:
+    begin: 0.01
+    end: 0.15
+    prior: "uniform"
+  lrate_init:
+    begin: 0.005
+    end: 0.05
+    prior: "uniform"
+categorical:
+  opt_name:
+    - adam
+  fitness_trafo:
+    - centered_rank
+    - z_score
+    - raw
+  lrate_decay:
+    - 0.999
+  sigma_decay:
+    - 0.999
