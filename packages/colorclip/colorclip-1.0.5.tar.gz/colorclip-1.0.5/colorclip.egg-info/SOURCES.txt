@@ -1,0 +1,10 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+colorclip/__init__.py
+colorclip/colorclip.py
+colorclip.egg-info/PKG-INFO
+colorclip.egg-info/SOURCES.txt
+colorclip.egg-info/dependency_links.txt
+colorclip.egg-info/top_level.txt
