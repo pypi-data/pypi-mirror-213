@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/pybinary/__init__.py
+src/pybinary/binary_types.py
+src/pybinary/serializable.py
+src/pybinary.egg-info/PKG-INFO
+src/pybinary.egg-info/SOURCES.txt
+src/pybinary.egg-info/dependency_links.txt
+src/pybinary.egg-info/top_level.txt
+tests/test_serializable.py

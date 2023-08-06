@@ -1,0 +1,19 @@
+[project]
+name = "pybinary"
+version = "0.9.2"
+authors = [
+  { name="lim8en1", email="lim8en1@proton.me" },
+]
+description = "Better binary serialization for python"
+readme = "README.md"
+requires-python = ">=3.10"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = []
+
+[project.urls]
+"Homepage" = "https://github.com/lim8en1/pybinary"
+"Bug Tracker" = "https://github.com/lim8en1/pybinary/issues"
