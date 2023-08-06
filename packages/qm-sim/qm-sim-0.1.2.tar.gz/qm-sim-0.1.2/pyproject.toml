@@ -1,0 +1,65 @@
+[project]
+name = "qm_sim"
+version = "0.1.2"
+authors = [
+  { name="Viljar Femoen", email="author@example.com" },
+]
+description = "Quantum mechanics simulation library"
+readme = "README.md"
+requires-python = ">=3.10"
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Science/Research",
+    "Topic :: Scientific/Engineering :: Physics",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "numpy>=1.23",
+    "scipy>=1.10",
+    "tqdm>=4.64.1",
+    "matplotlib>=3.6"
+]
+
+[project.urls]
+"Homepage" = "https://viljarjf.github.io/QM_sim/"
+"Bug Tracker" = "https://github.com/viljarjf/QM_sim/issues"
+"Source" = "https://github.com/viljarjf/QM_sim"
+
+[project.optional-dependencies]
+test = ["pytest", "matplotlib",]
+torch = ["torch",]
+docs = ["sphinx", "sphinx-rtd-theme", "sphinx-mdinclude",]
+linting = ["black", "isort", "pylint",]
+
+[build-system]
+requires = [
+    "setuptools",
+    "scikit-build-core", 
+    "pybind11",
+]
+build-backend = "scikit_build_core.build"
+
+[tool.scikit-build]
+wheel.expand-macos-universal-tags = true
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-raP"
+
+[tool.black]
+# this is a regex, not a list
+exclude = "nature_constants.py"
+
+[tool.pylint.'Basic']
+good-names = [
+    "N", "L", "m", "x", "y", "z", "i", "j", "t", "t0", 
+    "tn", "dt", "H", "h", "l", "n", "v", "w", "psi", "E", 
+    "V",
+] 
+
+[tool.pylint.'Main']
+ignore = [
+    "nature_constants.py",
+]
