@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: PlanaPY
+Version: 0.2.4
+Summary: Anaplan RESTful API Convenience Library
+Home-page: https://github.com/hopfenspiel/PlanaPY
+Author: Erik Schau
+Author-email: hopfenspiel@gmail.com
+License: MIT
+Keywords: anaplan
+Platform: UNKNOWN
+Requires-Dist: requests
+Requires-Dist: pandas
+
+UNKNOWN
+
+
