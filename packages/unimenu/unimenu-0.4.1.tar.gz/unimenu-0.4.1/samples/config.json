@@ -1,0 +1,36 @@
+{
+   "items":
+   [
+      {
+         "label":"my menu",
+         "tooltip":"test tip",
+         "items":[
+            {
+               "label":"Hello ",
+               "command":"print(\"Hello\")",
+               "tooltip":"Prints Hello"
+            },
+            {
+               "label":"my sub menu",
+               "items":[
+                  {
+                     "label":" Hello",
+                     "command":"print(\" Hello\")",
+                     "tooltip":"Prints Hello",
+                     "icon":"unreal"
+                  },
+                  {
+                     "separator":""
+                  },
+                  {
+                     "label":" World",
+                     "command":"print(\" World\")",
+                     "tooltip":"Prints World",
+                     "icon":"MODIFIER"
+                  }
+               ]
+            }
+         ]
+      }
+   ]
+}
