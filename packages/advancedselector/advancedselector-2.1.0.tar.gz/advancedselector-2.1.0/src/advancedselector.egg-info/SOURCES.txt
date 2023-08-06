@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/advancedselector.egg-info/PKG-INFO
+src/advancedselector.egg-info/SOURCES.txt
+src/advancedselector.egg-info/dependency_links.txt
+src/advancedselector.egg-info/entry_points.txt
+src/advancedselector.egg-info/requires.txt
+src/advancedselector.egg-info/top_level.txt
+src/advancedselector.egg-info/zip-safe
+tests/test_colors.py
+tests/test_picker.py
