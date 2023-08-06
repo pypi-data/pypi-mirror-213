@@ -1,0 +1,7 @@
+pyramid<2
+mysql-connector-python
+invoke
+psycopg2
+rattail-fabric2
+Tailbone
+tailbone-corepos
