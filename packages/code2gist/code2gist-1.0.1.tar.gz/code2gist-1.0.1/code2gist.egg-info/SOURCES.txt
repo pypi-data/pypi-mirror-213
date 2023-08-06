@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+code2gist/__init__.py
+code2gist/main.py
+code2gist.egg-info/PKG-INFO
+code2gist.egg-info/SOURCES.txt
+code2gist.egg-info/dependency_links.txt
+code2gist.egg-info/entry_points.txt
+code2gist.egg-info/requires.txt
+code2gist.egg-info/top_level.txt
