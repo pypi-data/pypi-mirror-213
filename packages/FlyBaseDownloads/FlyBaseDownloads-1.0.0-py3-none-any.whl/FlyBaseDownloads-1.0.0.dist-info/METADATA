@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: FlyBaseDownloads
+Version: 1.0.0
+Summary: Package to download Flybase data in Python, easily and quickly.
+Home-page: https://github.com/JavieraQuirozO/FlyBaseDownloads
+Author: Javiera Quiroz Olave
+Author-email: javiera.quiroz@biomedica.udec.cl
+License: MIT
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Description-Content-Type: text/x-rst
+
+The non-official FlyBaseDownload Packege
