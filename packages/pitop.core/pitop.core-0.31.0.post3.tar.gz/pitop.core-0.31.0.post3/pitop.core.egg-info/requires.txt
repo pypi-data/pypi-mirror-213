@@ -1,0 +1,4 @@
+pitop.common==0.31.0-3
+Pillow<9.0,>=8.1.2
+numpy<2.0.0,>1.19.5
+opencv-python<4.6.0,>=4.5.1
