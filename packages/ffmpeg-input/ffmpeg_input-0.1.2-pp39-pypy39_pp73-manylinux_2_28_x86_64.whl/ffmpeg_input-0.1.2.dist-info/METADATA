@@ -1,0 +1,38 @@
+Metadata-Version: 2.1
+Name: ffmpeg_input
+Version: 0.1.2
+Classifier: Programming Language :: Rust
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+License-File: LICENSE
+Summary: FFMpeg Source Accessor Library
+Keywords: FFmpeg,Video
+Home-Page: https://github.com/insight-platform/FFmpeg-Input
+Author: Ivan Kudriavtsev <ivan.a.kudryavtsev@gmail.com>
+Author-email: Ivan Kudriavtsev <ivan.a.kudryavtsev@gmail.com>
+License: Apache-2.0
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown; charset=UTF-8; variant=GFM
+Project-URL: Source Code, https://github.com/insight-platform/FFmpeg-Input
+
+# FFmpeg Source Input Library
+
+FFmpeg Source Input Library is a small library that makes it possible to receive the frames from
+ffmpeg into python program. You can pass to ffmpeg required arguments and url and get the frames like
+opencv does. The library provides the direct access to the ffmpeg library without the launching of 
+the ffmpeg binary. The frames are in raw binary format and must be processed separately.
+
+### Build In Docker (Manylinux_2_28)
+
+```
+docker build -t ffmpeg_input -f docker/Dockerfile.manylinux_2_28_X64 .
+docker run --rm -it -v $(pwd)/distfiles:/tmp ffmpeg_input cp -R /opt/dist /tmp
+```
+
+### Try It
+
+```
+python3 test.py
+# or
+python3 test.py
+```
