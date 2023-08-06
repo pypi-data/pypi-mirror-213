@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+vt_ratio.egg-info/PKG-INFO
+vt_ratio.egg-info/SOURCES.txt
+vt_ratio.egg-info/dependency_links.txt
+vt_ratio.egg-info/requires.txt
+vt_ratio.egg-info/top_level.txt
