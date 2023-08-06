@@ -1,0 +1,11 @@
+Flask
+flask-jwt-extended
+flask-sqlalchemy
+flask-marshmallow
+flask-migrate
+flask-smorest
+flask-cors
+python-dotenv
+dependency-injector
+marshmallow
+marshmallow-sqlalchemy
