@@ -1,0 +1,10 @@
+basedrelativity/__init__.py,sha256=YJIVUQ6v9vQrwXzOi1LHk6e_OYhlnWxbwc8kNJe4KIo,55
+basedrelativity/constants.py,sha256=4isEg-4FC9qqmt-O_4geOcTOYt9-xKy-9wDbo1hLqgA,32
+basedrelativity/forward.py,sha256=6Il6e0W_ceSKYVDPvBHJX9M0U1LJRGZd9yqdz3l9-qQ,1832
+basedrelativity/inverse.py,sha256=6PZ-cUAuiZv2TPVFLJCYkwwEH0zkHkf_K2QbBrhyi0o,1263
+basedrelativity/observer.py,sha256=2kFeJIH3Ct8QDMh1jLYXl7vk2UfiQSrGo32RbY-LLAg,447
+basedrelativity-0.1.dist-info/LICENSE,sha256=6cp1Hqk0v7NMg1j6OXty_1vAZ4EIwZdCySIoHrCS6RI,1055
+basedrelativity-0.1.dist-info/METADATA,sha256=CN7-uo7vieQtNxZpVm59hE_RoMF7hImp3bI_FVQU8S8,1970
+basedrelativity-0.1.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+basedrelativity-0.1.dist-info/top_level.txt,sha256=600SIlUdsFJeZUqaNN9N0zvZn1wxlqXVMxj6DsRT-t0,16
+basedrelativity-0.1.dist-info/RECORD,,
