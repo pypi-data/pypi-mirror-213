@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: libprotein
+Version: 0.3.6
+Summary: This module allows to parse existing data for qualifying a protein sequence in order to assess the sequence knowledge available in various databases.
+Home-page: https://gitlab.univ-nantes.fr/teletchea-s/libprotein
+Author: Hamady BA
+Author-email: bhamadydemba@gmail.com
+License: UNKNOWN
+Project-URL: GitLab, https://gitlab.univ-nantes.fr/teletchea-s/libprotein
+Description: UNKNOWN
+Keywords: protein post-translational modification,protein domain
+Platform: UNKNOWN
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: C++
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Description-Content-Type: text/markdown
