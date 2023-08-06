@@ -1,0 +1,190 @@
+[build-system]
+requires = ["hatchling", "hatch-vcs", "hatch-fancy-pypi-readme"]
+build-backend = "hatchling.build"
+
+[project]
+name = "service-identity"
+authors = [{ name = "Hynek Schlawack", email = "hs@ox.cx" }]
+license = "MIT"
+requires-python = ">=3.8"
+description = "Service identity verification for pyOpenSSL & cryptography."
+keywords = ["cryptography", "openssl", "pyopenssl"]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: Implementation :: CPython",
+    "Programming Language :: Python :: Implementation :: PyPy",
+    "Topic :: Security :: Cryptography",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Typing :: Typed",
+]
+dependencies = [
+    # Keep in-sync with tests/constraints/*.
+    "attrs>=19.1.0",
+    "pyasn1-modules",
+    "pyasn1",
+    "cryptography",
+]
+dynamic = ["version", "readme"]
+
+[project.optional-dependencies]
+idna = ["idna"]
+tests = ["coverage[toml]>=5.0.2", "pytest"]
+docs = ["sphinx", "furo", "myst-parser", "sphinx-notfound-page", "pyOpenSSL"]
+mypy = ["mypy", "types-pyOpenSSL", "idna"]
+dev = ["service-identity[tests,mypy,docs,idna]", "pyOpenSSL"]
+
+[project.urls]
+Documentation = "https://service-identity.readthedocs.io/"
+"Bug Tracker" = "https://github.com/pyca/service-identity/issues"
+"Source Code" = "https://github.com/pyca/service-identity"
+Funding = "https://github.com/sponsors/hynek"
+Tidelift = "https://tidelift.com/subscription/pkg/pypi-service-identity?utm_source=pypi-service-identity&utm_medium=pypi"
+
+
+[tool.hatch.version]
+source = "vcs"
+raw-options = { local_scheme = "no-local-version" }
+
+[tool.hatch.metadata.hooks.fancy-pypi-readme]
+content-type = "text/markdown"
+
+[[tool.hatch.metadata.hooks.fancy-pypi-readme.fragments]]
+text = "# Service Identity Verification for pyOpenSSL & *cryptography*\n"
+
+[[tool.hatch.metadata.hooks.fancy-pypi-readme.fragments]]
+path = "README.md"
+start-after = "spiel-begin -->\n"
+
+[[tool.hatch.metadata.hooks.fancy-pypi-readme.fragments]]
+text = """
+
+
+## Release Information
+
+"""
+
+[[tool.hatch.metadata.hooks.fancy-pypi-readme.fragments]]
+path = "CHANGELOG.md"
+pattern = "\n(###.+?\n)## "
+
+[[tool.hatch.metadata.hooks.fancy-pypi-readme.fragments]]
+text = """
+----
+
+[→ Complete Changelog](https://service-identity.readthedocs.io/en/stable/changelog.html)
+"""
+
+
+[tool.pytest.ini_options]
+addopts = ["-ra", "--strict-markers", "--strict-config"]
+xfail_strict = true
+testpaths = "tests"
+filterwarnings = [
+    "once::Warning",
+    "ignore:::aiohttp[.*]",
+    "ignore:::importlib[.*]",
+    "ignore::DeprecationWarning:twisted.python.threadable",
+]
+
+
+[tool.coverage.run]
+parallel = true
+branch = true
+source = ["service_identity"]
+
+[tool.coverage.paths]
+source = ["src", ".tox/py*/**/site-packages"]
+
+[tool.coverage.report]
+show_missing = true
+skip_covered = true
+exclude_lines = [
+    # a more strict default pragma
+    "\\# pragma: no cover\\b",
+
+    # allow defensive code
+    "^\\s*raise AssertionError\\b",
+    "^\\s*raise NotImplementedError\\b",
+    "^\\s*return NotImplemented\\b",
+    "^\\s*raise$",
+
+    # typing-related code
+    "^if (False|TYPE_CHECKING):",
+    ": \\.\\.\\.(\\s*#.*)?$",
+    "^ +\\.\\.\\.$",
+    "-> ['\"]?NoReturn['\"]?:",
+]
+
+
+[tool.black]
+line-length = 79
+
+
+[tool.ruff]
+src = ["src", "tests"]
+select = [
+    "E",   # pycodestyle
+    "W",   # pycodestyle
+    "F",   # Pyflakes
+    "UP",  # pyupgrade
+    "N",   # pep8-naming
+    "YTT", # flake8-2020
+    "S",   # flake8-bandit
+    "B",   # flake8-bugbear
+    "C4",  # flake8-comprehensions
+    "T10", # flake8-debugger
+    "ISC", # flake8-implicit-str-concat
+    "RET", # flake8-return
+    "SIM", # flake8-simplify
+    "DTZ", # flake8-datetimez
+    "I",   # isort
+    "PGH", # pygrep-hooks
+    "PLC", # Pylint
+    "PIE", # flake8-pie
+    "RUF", # ruff
+]
+ignore = [
+    "RUF001", # leave my smart characters alone
+    "N801",   # some artistic freedom when naming things after RFCs
+    "N802",   # ditto
+]
+
+[tool.ruff.per-file-ignores]
+"tests/*" = [
+    "S101",    # assert
+    "S301",    # I know pickle is bad, but people use it.
+    "SIM300",  # Yoda rocks in tests
+    "PLC1901", # empty strings are falsey, but are less specific in tests
+    "B018",    # "useless" expressions can be useful in tests
+]
+
+[tool.ruff.isort]
+lines-between-types = 1
+lines-after-imports = 2
+
+
+[tool.mypy]
+strict = true
+
+show_error_codes = true
+enable_error_code = ["ignore-without-code"]
+ignore_missing_imports = true
+
+[[tool.mypy.overrides]]
+module = "tests.*"
+ignore_errors = true
+
+[[tool.mypy.overrides]]
+module = "tests.typing.*"
+ignore_errors = false
+
+[[tool.mypy.overrides]]
+module = "cryptography.*"
+follow_imports = "skip"

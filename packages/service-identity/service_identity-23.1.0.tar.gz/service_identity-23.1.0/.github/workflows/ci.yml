@@ -1,0 +1,185 @@
+---
+name: CI
+
+on:
+  push:
+    branches: ["main"]
+  pull_request:
+    branches: ["main"]
+
+permissions:
+  contents: read
+
+env:
+  FORCE_COLOR: "1"  # Make tools pretty.
+  PIP_DISABLE_PIP_VERSION_CHECK: "1"
+  PIP_NO_PYTHON_VERSION_WARNING: "1"
+
+
+jobs:
+  lint:
+    name: Run linters
+    runs-on: "ubuntu-latest"
+    steps:
+      - uses: "actions/checkout@v3"
+      - uses: "actions/setup-python@v4"
+        with:
+          python-version-file: .python-version-default
+          cache: pip
+
+      - name: Install & run tox
+        run: |
+          python -Im pip install tox
+          python -Im tox run -e lint -- --show-diff-on-failure
+
+  tests:
+    name: Tests on ${{ matrix.python-version }}
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version:
+          - "3.8"
+          - "3.9"
+          - "3.10"
+          - "3.11"
+          - "3.12"
+          - "pypy-3.8"
+          - "pypy-3.9"
+
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-python@v4
+        with:
+          python-version: ${{ matrix.python-version }}
+          allow-prereleases: true
+          cache: pip
+
+      - name: Prepare tox & run tests
+        run: |
+          V=${{ matrix.python-version }}
+
+          if [[ "$V" = pypy-* ]]; then
+            V=pypy3
+          else
+            V=py$(echo $V | tr -d .)
+          fi
+
+          python -Im pip install tox
+          python -Im tox run -f "$V"
+
+      - name: Run Mypy on API
+        run: python -Im tox run -e mypy-api
+
+      - name: Upload coverage data
+        uses: actions/upload-artifact@v3
+        with:
+          name: coverage-data
+          path: .coverage.*
+          if-no-files-found: ignore
+
+  coverage:
+    name: Combine & check coverage.
+    needs: tests
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-python@v4
+        with:
+          python-version-file: .python-version-default
+          cache: pip
+
+      - uses: actions/download-artifact@v3
+        with:
+          name: coverage-data
+
+      - name: Combine coverage & fail if it's <100%.
+        run: |
+          python -Im pip install coverage[toml]
+
+          python -Im coverage combine
+          python -Im coverage html --skip-covered --skip-empty
+
+          # Report and write to summary.
+          python -Im coverage report | sed 's/^/    /' >> $GITHUB_STEP_SUMMARY
+
+          # Report again and fail if under 100%.
+          python -Im coverage report --fail-under=100
+
+      - name: Upload HTML report if check failed.
+        uses: actions/upload-artifact@v3
+        with:
+          name: html-report
+          path: htmlcov
+        if: ${{ failure() }}
+
+  mypy-pkg:
+    name: Type-check package
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-python@v4
+        with:
+          python-version-file: .python-version-default
+          cache: pip
+
+      - name: Install & run tox
+        run: |
+          python -Im pip install tox
+          python -Im tox run -e mypy-pkg
+
+  install-dev:
+    strategy:
+      matrix:
+        os: [ubuntu-latest, windows-latest, macos-latest]
+
+    name: Verify dev env
+    runs-on: ${{ matrix.os }}
+
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-python@v4
+        with:
+          python-version-file: .python-version-default
+          cache: pip
+
+      - name: Install in dev mode & import
+        run: |
+          python -Im pip install -e .[dev]
+          python -Ic 'import service_identity; print(service_identity.__version__)'
+
+  docs:
+    name: Build docs & run doctests
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-python@v4
+        with:
+          # Keep in sync with tox.ini/docs & .readthedocs.yaml
+          python-version: "3.11"
+          cache: pip
+
+      - name: Install & run tox
+        run: |
+          python -Im pip install tox
+          python -Im tox run -e docs
+
+  # Ensure everything required is passing for branch protection.
+  required-checks-pass:
+    if: always()
+
+    needs:
+      - coverage
+      - docs
+      - install-dev
+      - lint
+      - mypy-pkg
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Decide whether the needed jobs succeeded or failed
+        uses: re-actors/alls-green@release/v1
+        with:
+          jobs: ${{ toJSON(needs) }}
