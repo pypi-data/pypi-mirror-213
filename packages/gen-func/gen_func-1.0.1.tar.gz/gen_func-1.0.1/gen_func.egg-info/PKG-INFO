@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: gen-func
+Version: 1.0.1
+Summary: The purpose of this package is to use the openai api to generate the body of a function that performs some database action
+Author: Maria Mora Rivas
+Author-email: morarivas02@gmail.com
+Keywords: relational databases,openai,LLM,python
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3

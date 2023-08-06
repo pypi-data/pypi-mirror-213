@@ -1,0 +1,13 @@
+README.md
+setup.py
+gen_func/__init__.py
+gen_func/gpt_actions.py
+gen_func/main.py
+gen_func/meta_parsing.py
+gen_func/prompts.py
+gen_func/validation.py
+gen_func.egg-info/PKG-INFO
+gen_func.egg-info/SOURCES.txt
+gen_func.egg-info/dependency_links.txt
+gen_func.egg-info/requires.txt
+gen_func.egg-info/top_level.txt
