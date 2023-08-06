@@ -1,0 +1,59 @@
+"""Scalars used in our GraphQL schemas."""
+
+from dataclasses import fields
+from enum import Enum
+from typing import Union
+
+from validio_sdk import (
+    BooleanFilter,
+    EnumFilter,
+    NullFilter,
+    StringFilter,
+    ThresholdFilter,
+)
+
+ValidioId = str
+CredentialId = ValidioId
+DestinationId = ValidioId
+SegmentationId = ValidioId
+SourceId = ValidioId
+ValidatorId = ValidioId
+WindowId = ValidioId
+
+CronExpression = str
+
+# Raw JSON, used for filters
+JsonFilterExpression = Union[
+    BooleanFilter, EnumFilter, NullFilter, StringFilter, ThresholdFilter
+]
+
+# JTD schema definition
+JsonTypeDefinition = dict
+
+# A JSONPath expression specifying a field within a datapoint.
+# Examples:
+#   user.address.street for nested structures.
+#   name to select a non-nested field called `name`.
+JsonPointer = str
+
+
+def serialize_json_filter_expression(value: JsonFilterExpression):
+    """
+    Serialize filter type to JSON.
+
+    Convert a typed filter to JSON. Since they use enums for operators the
+    operator value will be used.
+
+    :param value: The typed filter
+    :returns: A dictionary for the filter
+    """
+    data = {"__typename": f"{value._node_type}Expression"}
+
+    for field in fields(value):
+        v = getattr(value, field.name)
+        if isinstance(v, Enum):
+            data[field.name] = v.value
+        else:
+            data[field.name] = v
+
+    return data
