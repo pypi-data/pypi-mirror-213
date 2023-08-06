@@ -1,0 +1,16 @@
+setuptools>=3.0
+psutil
+
+[eventlet]
+eventlet>=0.24.1
+
+[gevent]
+gevent>=1.4.0
+
+[gthread]
+
+[setproctitle]
+setproctitle
+
+[tornado]
+tornado>=0.2

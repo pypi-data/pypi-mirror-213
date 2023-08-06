@@ -1,0 +1,7 @@
+aiohttp
+gevent
+eventlet
+coverage
+pytest
+pytest-cov
+psutil
