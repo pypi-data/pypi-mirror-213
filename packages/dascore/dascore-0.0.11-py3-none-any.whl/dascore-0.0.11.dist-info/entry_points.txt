@@ -1,0 +1,11 @@
+[dascore.fiber_io]
+DASDAE__V1 = dascore.io.dasdae.core:DASDAEV1
+PICKLE = dascore.io.pickle.core:PickleIO
+PRODML__V2_0 = dascore.io.prodml.core:ProdMLV2_0
+PRODML__V2_1 = dascore.io.prodml.core:ProdMLV2_1
+QUANTX__V2 = dascore.io.quantx.core:QuantXV2
+TDMS__V4713 = dascore.io.tdms.core:TDMSFormatterV4713
+TERRA15__V4 = dascore.io.terra15.core:Terra15FormatterV4
+TERRA15__V5 = dascore.io.terra15.core:Terra15FormatterV5
+TERRA15__V6 = dascore.io.terra15.core:Terra15FormatterV6
+WAV = dascore.io.wav.core:WavIO
