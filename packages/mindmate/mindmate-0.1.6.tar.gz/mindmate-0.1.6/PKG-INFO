@@ -1,0 +1,60 @@
+Metadata-Version: 2.1
+Name: mindmate
+Version: 0.1.6
+Summary: MindMate is a command-line tool that leverages the power of AI platforms to offer different use-cases to developers
+Home-page: https://github.com/yalattas/mindmate
+Author: Yasser Alattas
+Author-email: y.alattas@gmail.com
+License: LGPL-2.1 license
+Download-URL: https://github.com/yalattas/mindmate
+Description: # install package
+        
+        ## virtual environment
+        ```
+        pip install mindmate
+        ```
+        > It's not recommended to install in virtual environment _(except for  testing)_ try it with default `pip`
+        
+        ## operating system level
+        ```
+        sudo apt update
+        sudo apt install -y python3-pip
+        export PATH="$PATH:/home/<USER>/.local/bin"
+        pip install mindmate
+        ```
+        # usage
+        ```
+        $ mindmate [ARGUMENT] [OPTIONS] [OPTIONS] [OPTIONS] --help
+        ```
+        
+        ## examples
+        ```
+        $ mindmate configure
+        $ mindmate ai prompting list
+        
+        $ mindmate chat --platform openai \
+          --model text-davinci-003 \
+          --stream true \
+          --max-tokens 500 \
+          --prompt "Act as a professional developer, provide best file structure for fastAPI framework"
+        ```
+        
+        # compatibility
+        
+        __Not tested__ yet, but should be compatible with any Python >= 3.8
+        
+Keywords: cli,ai,nlp,ml,developers,productivity,openai,directory,manifest
+Platform: any
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Other Environment
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: Intended Audience :: Information Technology
+Classifier: Intended Audience :: System Administrators
+Classifier: Topic :: Software Development
+Classifier: Topic :: System :: System Shells
+Classifier: Topic :: Utilities
+Description-Content-Type: text/markdown
