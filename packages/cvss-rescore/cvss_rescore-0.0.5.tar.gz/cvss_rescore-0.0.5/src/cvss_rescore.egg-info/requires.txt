@@ -1,0 +1,12 @@
+
+[:python_version < "3.8"]
+importlib-metadata
+
+[:python_version >= "3.6"]
+cvss
+rule-engine
+
+[testing]
+setuptools
+pytest
+pytest-cov

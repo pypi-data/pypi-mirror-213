@@ -1,0 +1,29 @@
+name: Bump Version Action
+on:
+  workflow_dispatch:
+jobs:
+  bump_release_and_tox_build:
+    env:
+      OWNER: "bp4151"
+      REPO: "cvss-rescore"
+      CVSS_RESCORE_GH_TOKEN: ${{ secrets.CVSS_RESCORE_GH_TOKEN }}
+      GH_TOKEN: ${{ secrets.CVSS_RESCORE_GH_TOKEN }}
+    name: Bump release version
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3.3.0
+    - name: run tox build
+      run: | 
+        pip install tox setuptools
+        tox -e build
+        ls -lart dist
+        
+        RELEASE_TAG=$(git tag --sort=committerdate | tail -1)
+        if ($RELEASE_TAG == '')
+          RELEASE_TAG=v0.0.1
+        fi
+        echo "RELEASE_TAG: $RELEASE_TAG"
+        
+        FILES="dist/*"
+        echo "FILES: $FILES"
+        gh release upload $RELEASE_TAG $FILES
