@@ -1,0 +1,14 @@
+coola/__init__.py,sha256=Cxe0PPsbBd_er5olpInO3V4nZ_gdRw0VcZeV0_vKR0k,939
+coola/_numpy.py,sha256=iuxd94LA00Dth5ReUr9UaJWM8i-SFDqexM-8J6MbKQM,4361
+coola/_torch.py,sha256=RQzog5NFi1KACL0mP0SWlhLfn9-999eJ5GaloxHT2Ho,7630
+coola/_xarray.py,sha256=NHgP5mCiA1-kJjmB6qa6Pk62SlhP-e5bZE5qxT7hxUM,9046
+coola/allclose.py,sha256=Iu9YySUbvK3N5oCs4HZfaAaWqsN5AtdBK5wi6sc3ryc,18587
+coola/equality.py,sha256=q2cGQpBvBqFzYElMUb4AgPtCMmQOz7VHKAv-ufdvnEw,13282
+coola/testing.py,sha256=8W3ZLCvo0fQPYlsYQ1hk4zWbKoebuoV2RRA2flYgSrE,489
+coola/utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+coola/utils/format.py,sha256=Et9Gw7FbygaIl4T2unfT-TNqy6Q_Jhqd10Oyr1YHCrs,2490
+coola/utils/imports.py,sha256=_IlqirbdsNp-XlR5RrszuhVbK1oZUb1e4SrAEm3ARYw,1842
+coola-0.0.9.dist-info/LICENSE,sha256=nP63ZB3H79FVJ15_TZbXWvNH7XmXT2Ab1q11r-sDXkY,1501
+coola-0.0.9.dist-info/METADATA,sha256=t0wVtIMSwoeTUrUumWTEsz_PQHUWY0gyObZvuv16bAU,6237
+coola-0.0.9.dist-info/WHEEL,sha256=Zb28QaM1gQi8f4VCBhsUklF61CTlNYfs9YAZn-TOGFk,88
+coola-0.0.9.dist-info/RECORD,,
