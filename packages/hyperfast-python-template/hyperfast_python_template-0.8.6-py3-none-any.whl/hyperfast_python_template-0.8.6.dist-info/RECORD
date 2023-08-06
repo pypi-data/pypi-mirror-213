@@ -1,0 +1,12 @@
+hyperfastpy/__cli__.py,sha256=YIKGSjBlSrh3s9JmDQUHJLu12-jt5voa5wUwnAvpW-Y,323
+hyperfastpy/__init__.py,sha256=3oveGxAxnsLi7mPZCxc9NNEDqY4lUVAoLIhz0iaPSIc,135
+hyperfastpy/_version.py,sha256=VpASnrti7EGWxUfSWGgERUfe7NLJltfVXYosOzHbpPg,22
+hyperfastpy/conf/about/__init__.yaml,sha256=1bOeMDmoqrOoYtUb9M152LnWw5zHGtqg_S3-gzDrZ2g,272
+hyperfastpy/project.toml,sha256=pLjenBAW_Ky2xHXtlldNYQFK_PYqCT7GbKx-F74RCZ8,243
+hyperfastpy/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+hyperfastpy/pyproject.toml,sha256=Ss6KGGFICRraZb_D2mlSPfUL8B-w-mC1Pd_O9vuyN4Q,242
+hyperfast_python_template-0.8.6.dist-info/LICENSE,sha256=6_-z_j5TJ7bQ5RlPwAJZ0Eqo3qWC6pMDjlLjz0R4wkE,1071
+hyperfast_python_template-0.8.6.dist-info/METADATA,sha256=6Y3bfxh5gyGv9EePx3l9iFkKdnu2ypyYEjCcKYJ78aU,6184
+hyperfast_python_template-0.8.6.dist-info/WHEEL,sha256=Zb28QaM1gQi8f4VCBhsUklF61CTlNYfs9YAZn-TOGFk,88
+hyperfast_python_template-0.8.6.dist-info/entry_points.txt,sha256=Pb6cqst3w-2c7ZedhMuqablqmLTV__9mbcP0QlkVApw,56
+hyperfast_python_template-0.8.6.dist-info/RECORD,,
