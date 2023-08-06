@@ -1,0 +1,36 @@
+Metadata-Version: 2.1
+Name: spotify_lyrics_scraper
+Version: 1.0.3
+Summary: This allows you to grab Spotify lyrics from their API. You can input song names or track IDs.
+Author-email: PolyAnthi <polyanthi_pumicing@aleeas.com>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+
+# Spotify Lyrics Grabber
+This Spotify Lyrics Grabber is a tool to grab Spotify Lyrics of any song, not just the one you are listening to.
+
+**Table of Contents**
+[Installation](#installation)
+[Examples](#examples)
+
+### Installation
+To install, run `pip install spotify-lyrics-scraper` in your command prompt. To import it, I recommend `import spotify-lyrics-scraper as spotify`
+
+### Examples
+Always using: `import spotify-lyrics-scraper as spotify`
+To obtain the sp_dc, please check out https://github.com/akashrchandran/syrics/wiki/Finding-sp_dc. This is required to have access to the lyrics API.
+##### Example 1
+```
+token = spotify.getToken("SP_DC Here")
+print(spotify.getLyrics(token, songName="Song"))
+```
+
+##### Example 2 (Proxies)
+```
+token = spotify.getToken("SP_DC Here")
+print(spotify.getLyrics(token, songName="Song", proxies={"https": "https://1.1.1.1:443"}))
+```
