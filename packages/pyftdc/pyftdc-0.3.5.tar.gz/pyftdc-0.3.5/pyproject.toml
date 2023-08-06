@@ -1,0 +1,32 @@
+[build-system]
+requires = [
+    "setuptools>=45",
+    "wheel",
+    "ninja",
+    "pybind11>=2.8.0",
+    "cmake>=3.21",
+    "scikit-build>=0.12",
+]
+build-backend = "setuptools.build_meta"
+ 
+
+# Project
+[project]
+name = "pyftdc"
+version = "0.3.5"
+authors = [
+    { name="Jorge Imperial", email="jlimperial@protonmail.com" },
+]
+description = "A parser for MongoDB FTDC files, with Python bindings."
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+
+]
+
+[project.urls]
+"Homepage" = "https://gitlab.com/jimper/mongo_ftdc"
+"Bug Tracker" = "https://gitlab.com/jimper/issues"
