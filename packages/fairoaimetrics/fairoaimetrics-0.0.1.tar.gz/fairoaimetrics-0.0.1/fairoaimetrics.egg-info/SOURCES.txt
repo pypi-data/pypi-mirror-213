@@ -1,0 +1,6 @@
+setup.py
+fairo-metrics/__init__.py
+fairoaimetrics.egg-info/PKG-INFO
+fairoaimetrics.egg-info/SOURCES.txt
+fairoaimetrics.egg-info/dependency_links.txt
+fairoaimetrics.egg-info/top_level.txt
