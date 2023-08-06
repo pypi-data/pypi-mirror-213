@@ -1,0 +1,93 @@
+from .utils import ENDPOINTS, send_request
+
+
+def get_headers(api_key):
+    return {"Authorization": f"Api-Key {api_key}"}
+
+
+def tasks(api_key):
+    response = send_request(
+        {
+            "method": "GET",
+            "headers": get_headers(api_key),
+            "endpoint": ENDPOINTS["cli_tasks"],
+        }
+    )
+    print(response.json())
+
+
+def task(api_key, task_id):
+    response = send_request(
+        {
+            "method": "GET",
+            "headers": get_headers(api_key),
+            "endpoint": ENDPOINTS["cli_task"].format(task_id),
+        }
+    )
+    print(response.json())
+
+
+def task_data(api_key, task_id):
+    response = send_request(
+        {
+            "method": "GET",
+            "headers": get_headers(api_key),
+            "endpoint": ENDPOINTS["cli_task_datasources"].format(task_id),
+        }
+    )
+    print(response.json())
+
+
+def task_workers(api_key, task_id):
+    response = send_request(
+        {
+            "method": "GET",
+            "headers": get_headers(api_key),
+            "endpoint": ENDPOINTS["cli_task_workers"].format(task_id),
+        }
+    )
+    print(response.json())
+
+
+def task_statistics(api_key, task_id):
+    response = send_request(
+        {
+            "method": "GET",
+            "headers": get_headers(api_key),
+            "endpoint": ENDPOINTS["cli_task_statistics"].format(task_id),
+        }
+    )
+    print(response.json())
+
+
+def ai_models(api_key):
+    response = send_request(
+        {
+            "method": "GET",
+            "headers": get_headers(api_key),
+            "endpoint": ENDPOINTS["cli_ai_models"],
+        }
+    )
+    print(response.json())
+
+
+def ai_model(api_key, pk):
+    response = send_request(
+        {
+            "method": "GET",
+            "headers": get_headers(api_key),
+            "endpoint": ENDPOINTS["cli_ai_model"].format(pk),
+        }
+    )
+    print(response.json())
+
+
+def datasets(api_key):
+    response = send_request(
+        {
+            "method": "GET",
+            "headers": get_headers(api_key),
+            "endpoint": ENDPOINTS["cli_datasets"],
+        }
+    )
+    print(response.json())
