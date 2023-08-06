@@ -1,0 +1,25 @@
+[project]
+name = "pretix-plugin-build"
+version = "1.0.1"
+description = "Build toolchain for pretix plugins"
+readme = "README.rst"
+license = {text = "Apache License"}
+keywords = ["pretix"]
+authors = [
+    {name = "pretix team", email = "support@pretix.eu"},
+]
+maintainers = [
+    {name = "pretix team", email = "support@pretix.eu"},
+]
+
+dependencies = [
+    "django",
+]
+
+[project.urls]
+homepage = "https://github.com/pretix/pretix-plugin-build"
+repository = "https://github.com/pretix/pretix-plugin-build.git"
+
+[tool.setuptools.packages.find]
+include = ["pretix_plugin_build"]
+namespaces = false

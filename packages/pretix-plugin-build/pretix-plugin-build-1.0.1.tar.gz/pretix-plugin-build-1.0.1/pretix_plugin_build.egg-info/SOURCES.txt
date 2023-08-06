@@ -1,0 +1,10 @@
+README.rst
+pyproject.toml
+setup.py
+pretix_plugin_build/__init__.py
+pretix_plugin_build/build.py
+pretix_plugin_build.egg-info/PKG-INFO
+pretix_plugin_build.egg-info/SOURCES.txt
+pretix_plugin_build.egg-info/dependency_links.txt
+pretix_plugin_build.egg-info/requires.txt
+pretix_plugin_build.egg-info/top_level.txt
