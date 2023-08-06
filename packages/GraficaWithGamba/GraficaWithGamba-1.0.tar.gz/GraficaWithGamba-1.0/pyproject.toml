@@ -1,0 +1,17 @@
+[project]
+name = "GraficaWithGamba"
+version = "1.0"
+authors = [
+  { name="Daniel Gonzalez", email="danielgamba2304@gmail.com" },
+]
+description = "Una Graficadora Y Calculadora Basicas"
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/Dagam23/IntentoRepe"
