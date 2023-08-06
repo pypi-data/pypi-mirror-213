@@ -1,0 +1,17 @@
+#jinja2: variable_start_string: '[%', variable_end_string: '%]'
+apiVersion: unfurl/v1alpha1
+kind: Project
+[%include | default("") %]
+
+{%- if default_context | default("") %}
+default_environment: [%default_context%]
+{% endif %}
+
+environments:
+  defaults:
+    secrets:
+      vault_secrets:
+        default: # leaving secret value blank, expecting a UNFURL_VAULT_DEFAULT_PASSWORD environment variable
+    repositories:
+      types:
+        url: https://unfurl.cloud/onecommons/unfurl-types.git
