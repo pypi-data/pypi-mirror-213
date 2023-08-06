@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=61.0","numpy>=1.23","pandas>=1.5"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "jw_lensegua"
+version = "1.0.2"
+authors = [
+  { name="Jose Orlando Wannan Escobar", email="jwannan13@gmail.com" },
+]
+description = "Paquete para administracion de la informacion de datos para reconocer señales, utilizado para LENSEGUA - lenguaje de señas de Guatemala - (model-2)"
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/JoWan1998/lenguaje_senas"
+"Bug Tracker" = "https://github.com/JoWan1998/lenguaje_senas/issues"
+
+[tool.pytest.ini_options]
+addopts = [
+    "--import-mode=importlib",
+]
+pythonpath = "src"
