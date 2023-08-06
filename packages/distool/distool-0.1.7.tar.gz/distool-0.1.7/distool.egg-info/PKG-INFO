@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: distool
+Version: 0.1.7
+Summary: Disease processing tool kit
+Home-page: https://github.com/nirma-patient-intake/disease/
+Download-URL: https://github.com/NIRMA-PATIENT-INTAKE/disease/archive/refs/tags/distool.tar.gz
+Author: NIRMA Team of ITMO University
+Author-email: egorovmichil9@gmail.com
+License: MIT
+Keywords: NLP,Disease,Health Condition
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+License-File: LICENSE.txt
