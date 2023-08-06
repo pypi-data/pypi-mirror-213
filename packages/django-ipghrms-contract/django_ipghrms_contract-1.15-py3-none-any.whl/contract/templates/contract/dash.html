@@ -1,0 +1,91 @@
+{% extends "main/layout.html" %}
+{% load static %}
+{% load humanize %}
+{% block content %}
+<div class="breadcrumb-holder">
+	<div class="container-fluid">
+		<ul class="breadcrumb">
+			<li class="breadcrumb-item active">{{ legend|upper }}</li>
+		</ul>
+	</div>
+</div>
+<div class="container-fluid"><br/>
+	<div class="row">
+		<div class="col-sm-12">
+			<div class="card shadow-lg border-info rounded">
+				<div class="card-header border-primary">
+					<center>
+						<h2 class="mb-0">{{legend|upper}}</h2>
+					</center>
+				</div>
+				<div class="card-body">
+				{% if group == "hr" or group == "admin" %}
+					<div class="border-bottom p-2">	
+						<a class="btn btn-sm btn-info" href="{% url 'cont-list' %}">Lista Kontratu <i class="fa fa-users"></i></a>
+						<a class="btn btn-sm btn-success" href="{% url 'salary-list' %}">Lista Salariu <i class="fa fa-dollar"></i></a>
+						<a class="btn btn-sm btn-warning" href="{% url 'cont-chart-dash' %}" target="_blank">Grafiku <i class="fa fa-bar-chart"></i></a>
+					</div>
+				{% endif %}
+					<div class="row mt-3">
+						<div class="col-sm-12">
+							<div class="row">
+								<div class="col-sm-6">
+									<div class="card shadow-lg rounded border-secondary">
+										<div class="card-header bg-secondary" style="color: white;"> <i class="fa-solid fa-chart-column"></i> TUIR KATEGORIA</div>
+										<div class="card-body">
+											<table class="table table-sm table-bordered">
+												<thead>
+													<tr><td>Kategoria</td><td>Total</td><td align="right">Salariu</td></tr>
+												</thead>
+												<tbody>
+												{% for i in objects_i %}
+													<tr>
+														<td>{{ i.0.name }}</td>
+														<td>{{ i.1 }}</td>
+														<td align="right">$ {{ i.2|intcomma }}</td>
+													</tr>
+												{% endfor %}
+												</tbody>
+												<tfoot>
+													<tr><th>Total</th><th>{{ tot_i_a }}</th><td align="right"><b>$ {{ tot_i_b|intcomma }}</b></td></tr>
+												</tfoot>
+											</table>
+										</div> <!--end card-body-->							
+									</div> <!--end card-->
+								</div> <!--end col-->
+								<div class="col-sm-6">
+									<div class="card shadow-lg rounded border-secondary">
+										<div class="card-header bg-secondary" style="color: white;"><i class="fa-solid fa-users-gear"></i> JESTORES</div>
+										<div class="card-body">
+											<table class="table table-sm table-bordered">
+												<thead>
+													<tr><td>Pojisaun</td><td>Total</td><td align="right">Salariu</td></tr>
+												</thead>
+												<tbody>
+												{% for j in objects_j %}
+													<tr>
+														<td>{{ j.0.name }}</td>
+														<td>{{ j.1 }}</td>
+														<td align="right">$ {{ j.2|intcomma }}</td>
+													</tr>
+												{% endfor %}
+												</tbody>
+												<tfoot>
+													<tr><th>Total</th><th>{{ tot_j_a }}</th><td align="right"><b>$ {{ tot_j_b|intcomma }}</b></td></tr>
+												</tfoot>
+											</table>
+										</div> <!--end card-body-->							
+									</div> <!--end card-->
+								</div> <!--end col-->
+
+							</div><!--end row-->
+						</div> <!--end col-->	
+					</div> <!--end row-->
+				</div> <!--end card-body-->
+			</div> <!--end card-->
+		</div> <!--end col-->
+	</div> <!--end row-->
+</div>
+{% endblock %}
+{% block scripts %}
+{% endblock %}

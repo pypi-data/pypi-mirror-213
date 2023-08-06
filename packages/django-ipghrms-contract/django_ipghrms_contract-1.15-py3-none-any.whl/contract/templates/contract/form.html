@@ -1,0 +1,57 @@
+{% extends "main/layout.html" %}
+{% load crispy_forms_tags %}
+{% block content %}
+<div class="breadcrumb-holder">
+	<div class="container-fluid">
+		<ul class="breadcrumb">
+			<li class="breadcrumb-item"><a href="{% url 'emp-detail' emp.hashed %}">DETALHA FUNCIONARIU</a></li>
+			<li class="breadcrumb-item"><a href="{% url 'cont-list' %}">LISTA KONTRATU</a></li>
+			{% if page == 'update' %}
+			<li class="breadcrumb-item"><a href="{% url 'cont-detail' objects.hashed %}">DETALHA KONTRATU</a></li>
+			{% endif %}
+			<li class="breadcrumb-item active">{{ legend|upper }}</li>
+		</ul>
+	</div>
+</div>
+<div class="container-fluid"><br/>
+	<div class="row">
+		<div class="col-sm-12">
+			<div class="card shadow-lg border-info rounded">
+				<div class="card-header border-primary">
+					<center>
+						<h2>{{ legend|upper }}</h2>
+					</center>
+				</div>
+				<div class="card-body">
+					<table class="table table-sm table-bordered">
+						<tr>
+							<th>Naran</th><th>Fatin no Data Moris</th><th>Sexu</th><th>Nasaun</th>
+						</tr>
+						<tr>
+							<td>{{ emp }}</td><td>{{ emp.pob }}, {{ emp.dob }}</td><td>{{ emp.sex }}</td><td>{{ emp.country }}</td>
+						</tr>
+					</table>
+					<div class="card shadow-lg">
+						<div class="card-header border-danger">
+							<center><h5>FORMULARIO AUMENTA KONTRATO</h5></center>
+
+						</div>
+						<div class="card-body">
+							<div class="row">
+								<div class="col-md-12">
+									<div class="alert alert-info">
+										<i class="fa fa-circle-info"> </i> <small> </i> <i>Koluna sira ne'ebe iha <strong class="text-danger">*</strong> signifika Itaboot tenke prienche</i> </small>
+									</div>
+								</div>
+							</div>
+							{% crispy form %}
+						</div>
+					</div>
+				</div> <!--end card-body-->
+			</div> <!--end card-->
+		</div> <!--end col-->
+	</div> <!--end row-->
+</div>
+{% endblock %}
+{% block scripts %}
+{% endblock %}

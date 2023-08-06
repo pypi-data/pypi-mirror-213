@@ -1,0 +1,113 @@
+{% extends "main/layout.html" %}
+{% load humanize %}
+{% block content %}
+<div class="breadcrumb-holder">
+	<div class="container-fluid">
+		<ul class="breadcrumb">
+            <li class="breadcrumb-item"><a href="{% url 'cont-dash' %}">PAINEL KONTRATU</a></li>
+            <li class="breadcrumb-item"><a href="{% url 'salary-list' %}">LISTA SALARIU</a></li>
+			<li class="breadcrumb-item active">{{ legend|upper }}</li>
+		</ul>
+	</div>
+</div>
+<div class="container-fluid"><br/>
+    <div class="row">
+        <div class="col-sm-12">
+            <div class="card shadow-lg border-info rounded">
+                <div class="card-header border-primary">
+                    <div class="row">
+                        <div class="col-md-5 d-flex justify-content-start">
+                            <a href="{% url 'emp-detail' emp.hashed %}" class="btn btn-sm btn-info"><i class="fa-sharp fa-solid fa-circle-arrow-left"></i> DETALHA FUNSIONARIU</a>
+                        </div>
+                        <div class="col-md-7 d-flex justity-content-start">
+                            <h2>{{ legend|upper }}</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <table class="table table-sm table-bordered ">
+                                <thead>
+                                    <tr class="bg-secondary text-white">
+                                        <th colspan="2">INFORMASAUN PESSOAL</th>
+                                    </tr>
+                                </thead>
+                                <tr><th>Naran</th><td>{{ emp }}</td></tr>
+                                <tr><th>Sexu</th><td>{{ emp.sex }}</td></tr>
+                                <tr><th>Data & Fatin Moris</th><td>{{ emp.pob }}, {{ emp.dob }}</td></tr>
+                                <tr><th>Estado</th><td>{{ emp.marital }}</td></tr>
+                            </table>
+                            <table class="table table-sm table-bordered">
+                                <thead>
+                                    <tr>
+                                        <th colspan="2" class="bg-secondary text-white">INFORMASAUN KARGO</th>
+                                    </tr>
+                                </thead>
+                                <tr><th>Posijaun</th><td>{{ emppos.position }}</td></tr>
+                                <tr><th>Kolokasaun</th>
+                                    <td>
+                                    {% if empdiv.department %}{{ empdiv.department }}
+                                    {% elif empdiv.unit %}{{ empdiv.unit }}
+                                    {% else %}{{ empdiv.de }}{% endif %}
+                                </td></tr>
+                            </table>
+                        </div>
+
+
+                        <div class="col-sm-6">
+                            <div class="card shadow-lg pt-1 border-primary rounded">
+                                <div class="card-header border-primary">
+                                    <center>
+                                        <h3>INFORMASAUN SERVISU</h3>
+                                    </center>
+                                </div>
+                                <div class="card-body">
+                                    <table class="table table-sm">
+                                        <tr><th width="20%">Tipu Kontratu</th><td>{{ contract.contract_type }}</td></tr>
+                                        <tr><th>Data Hahu{% if contract.end_date %} & Remata{% endif %}</th><td>{{ contract.start_date|date:"d/m/Y" }}{% if contract.end_date %} - {{ contract.end_date|date:"d/m/Y" }}{% endif %}</td></tr>
+                                    </table>
+                                </div>
+                            </div>
+                            <div class="card shadow-lg pt-1 border-primary rounded">
+                                <div class="card-header border-primary">
+                                    <center>
+                                        <h4>INFORMASAUN VENCIMENTU
+                                            {% if group == "admin" or group == "hr" %}
+                                                {% if contract.is_active == True %}
+                                                    <a href="{% url 'salary-update' contract.hashed %}"><i class="fa fa-edit"></i></a>
+                                                {% endif %}
+                                            {% endif %}
+                                        </h4>
+                                    </center>
+                                </div>
+                                <div class="card-body">
+                                    
+                                        <table class="table table-sm">
+                                            <tr><th>Total Vencimentu</th><td align="right">$ <strong>{{ salary.amount|intcomma }}</strong></td></tr>
+                                        </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div> <!--end card-body-->
+            </div> <!--end card-->
+        </div> <!--end col-->
+    </div> <!--end row-->
+</div>
+{% endblock %}
+{% block scripts %}
+<style>
+    .table th, .table td {
+        border: none;
+    }
+</style>
+<script>
+    {% if page == False %}
+        $(document).ready(function(){
+            var newPageUrl = '{% url "password-val-view" hashid=emp.hashed %}';
+            window.location.href = newPageUrl;
+        });
+    {% endif %}
+</script>
+{% endblock %}

@@ -1,0 +1,77 @@
+{% extends "main/layout.html" %}
+{% load humanize %}
+{% block content %}
+<div class="breadcrumb-holder">
+	<div class="container-fluid">
+		<ul class="breadcrumb">
+			<li class="breadcrumb-item"><a href="{% url 'cont-dash' %}">PAINEL KONTRATU</a></li>
+			<li class="breadcrumb-item"><a href="{% url 'cont-detail' empcont.hashed %}">DETALHA KONTRATU</a></li>
+			<li class="breadcrumb-item active">{{ legend|upper }}</li>
+		</ul>
+	</div>
+</div>
+<div class="container-fluid"><br/>
+	<div class="row">
+			
+		<div class="col-md-12">
+			<div class="card shadow-lg border-info rounded">
+				<div class="card-header border-primary">
+					<center>
+						<h2>{{ legend|upper }}</h2>
+					</center>
+				</div>
+				<div class="card-body">
+					<div class="row">
+					<div class="col-md-4">
+						<table class="table table-sm table-bordered">
+							<thead>
+								<tr class="bg-secondary text-white">
+									<th colspan="2">INFORMASAUN PESSOAL</th>
+								</tr>
+							</thead>
+							<tr><th>Name</th><td>{{ emp }}</td></tr>
+							<tr><th>Sex</th><td>{{ emp.sex }}</td></tr>
+							<tr><th>Place & Date of birth</th><td>{{ emp.pob }}, {{ emp.dob|date:"d/m/Y" }}</td></tr>
+							<tr><th>Marital Status</th><td>{{ emp.marital }}</td></tr>
+						</table>
+					</div>
+					<div class="col-md-8">
+						<table class="table table-sm table-striped" id="example" width="100%" cellspacing="0">
+							<thead>
+								<tr>
+									<th>Nu.</th>
+									<th>Naran</th>
+									<th>Tipu Kontratu</th>
+									<th>Pojisaun</th>
+									<th>Data Hahu</th>
+									<th>Data Remata</th>
+								</tr>
+							</thead>
+							<tbody>
+							{% for obj in objects %}
+								<tr>
+									<td>{{ forloop.counter }}</td>
+									<td><a href="#" title="Employee Details">{{ obj.employee }}</a></td>
+									<td>{{ obj.contract_type }}</td>
+									<td>{% if obj.position %}{{ obj.position }}{% else %}{{ obj.category }}{% endif %}</td>
+									<td>{{obj.start_date}}</td>
+									<td>{{obj.terminate_date}}</td>
+								</tr>
+							{% endfor %}
+							</tbody>
+						</table>
+					</div>
+				</div>
+				</div> <!--end card-body-->
+			</div> <!--end card-->
+		</div> <!--end col-->
+	</div> <!--end row-->
+</div>
+{% endblock %}
+{% block scripts %}
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$('#example').DataTable();
+		} );
+	</script>
+{% endblock %}

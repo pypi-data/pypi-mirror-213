@@ -1,0 +1,104 @@
+{% extends "main/layout.html" %}
+{% block content %}
+<ol class="breadcrumb">
+    <li class="breadcrumb-item"><a href="{% url 'cont-dash' %}">CONTRACT DASH</a></li>
+    <li class="breadcrumb-item"><a href="{% url 'emp-detail' emp.hashed %}">EMPLOYEE DETAILS</a></li>
+    <li class="breadcrumb-item active">{{ legend|upper }}</li>
+</ol>
+<div class="row">
+    <div class="col-sm-12">
+        <div class="card shadow-lg pt-1 rounded">
+            <div class="card-header">{{ legend|upper }}</div>
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-sm-8">
+                        <table class="table table-sm">
+                            <tr><td>Naran</td><th>{{ emp }}</th>
+                                <td rowspan="5">{% if img.image %}<img src="{{ img.image.url }}" width="120" />{% endif %}</td>
+                            </tr>
+                            <tr><td>Sexu</td><th>{{ emp.sex }}</th></tr>
+                            <tr><td>Fatin & Data Moris</td><th>{{ emp.place_of_birth }}, {{ emp.date_of_birth }}</th></tr>
+                            <tr><td>Idade</td><th>{{ emp.age }}</th></tr>
+                            <tr><td>Nasaun</td><th>{{ emp.country }}</th></tr>
+                        </table>
+                    </div>
+                    <div class="col-sm-4">
+                        <table class="table table-sm">
+                        {% if a == 0 %}
+                            <tr><th>Pojisaun</th></tr>
+                            <tr><td>{{ koloka.position }}</td></tr> 
+                            <tr><th>Koloka Iha</th></tr>
+                            <tr><td>                               
+                            {% if koloka.section %}{{ koloka.section }}
+                            {% elif koloka.department %}{{ koloka.department }}
+                            {% elif koloka.division %}{{ koloka.division }}
+                            {% elif koloka.dg %}{{ koloka.dg }}{% endif %}
+                            </td></tr>
+                        {% elif a == 1 %}
+                            <tr><th>Pojisaun</th></tr>
+                            <tr><td>{{ nom.position }}</td></tr>
+                            <tr><th>Iha</th></tr>
+                            <tr><td>
+                            {% if nom.section %}{{ nom.section }}
+                            {% elif nom.department %}{{ nom.department }}
+                            {% elif nom.division %}{{ nom.division }}
+                            {% elif nom.dg %}{{ nom.dg }}{% endif %}
+                            </td></tr>
+                        {% elif a == 2 %}
+                            <tr><th>Pojisaun</th></tr>
+                            <tr><td>{{ nomgab.position }}</td></tr>
+                            <tr><th>Iha</th></tr>
+                            <tr><td>{{ nomgab.gabinete }}</td></tr>
+                        {% endif %}
+                        </table>
+                        <hr/>
+                {% if a == 0 %}
+                    {% if koloka.is_active == True %}
+                        {% if koloka.is_confirm == False %}
+                            <a class="btn btn-sm btn-warning" href="#" title="Konfirm"><i class="fa fa-check"></i></a>
+                            <a class="btn btn-sm btn-info" href="#">Altera <i class="fa fa-edit"></i></a>
+                            <a class="btn btn-sm btn-danger" href="#">Hapaga <i class="fa fa-close"></i></a>
+                        {% else %}
+                            <a class="btn btn-sm btn-danger" href="#">Termina <i class="fa fa-ban"></i></a>
+                        {% endif %}
+                    {% else %}
+                        <a class="btn btn-sm btn-info" href="#">Atribui <i class="fa fa-sign-in"></i></a>
+                    {% endif %}
+                    {% if koloka %}
+                        <a class="btn btn-sm btn-secondary" href="#" target="_blank">Despacho <i class="fa fa-file-pdf-o"></i></a>
+                    {% endif %}
+                {% endif %}
+                    </div>
+                </div>
+                <hr/>
+                <h5>Historia Mutasaun</h5>
+                <table class="table table-sm table-striped">
+                    <tr>
+                        <th>Nu.</th>
+                        <th>Pojisaun</th>
+                        <th>Kolokasaun</th>
+                        <th>Data Termina</th>
+                        <th>Rajaun</th>
+                    </tr>
+                {% for obj in koloka_hist %}
+                    <tr>
+                        <td>{{ forloop.counter }}</td>
+                        <td>{{ obj.position }}</td>
+                        <td>
+                        {% if obj.section %}{{ obj.section }}
+                        {% elif obj.department %}{{ obj.department }}
+                        {% elif obj.division %}{{ obj.division }}
+                        {% elif obj.dg %}{{ obj.dg }}{% endif %}
+                        </td>
+                        <td>{{ obj.end_date }}</td>
+                        <td>{{ obj.reason }}</td>
+                    </tr>
+                {% endfor %}
+                </table>
+            </div> <!--end card-body-->
+        </div> <!--end card-->
+    </div> <!--end col-->
+</div> <!--end row-->
+{% endblock %}
+{% block scripts %}
+{% endblock %}

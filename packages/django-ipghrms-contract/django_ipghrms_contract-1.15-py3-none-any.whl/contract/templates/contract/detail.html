@@ -1,0 +1,154 @@
+{% extends "main/layout.html" %}
+{% load humanize %}
+{% block content %}
+<div class="breadcrumb-holder">
+	<div class="container-fluid">
+		<ul class="breadcrumb">
+			<li class="breadcrumb-item"><a href="{% url 'cont-dash' %}">PAINEL KONTRATU</a></li>
+            <li class="breadcrumb-item"><a href="{% url 'cont-list' %}">LISTA KONTRATU</a></li>
+			<li class="breadcrumb-item active">{{ legend|upper }}</li>
+		</ul>
+	</div>
+</div>
+<div class="container-fluid"><br/>
+    <div class="row">
+        <div class="col-sm-12">
+            <div class="card shadow-lg border-info rounded">
+                <div class="card-header border-primary">
+                    <center>
+                        <h2>{{ legend|upper }}</h2>
+                    </center>
+                </div>
+                <div class="card-body">
+                    <div class="btn-group" role="group" aria-label="Basic example">
+                        <a class="btn btn-primary" href="{% url 'emp-detail' emp.hashed %}">Detalha Pessoal <i class="fa fa-user"></i></a>
+                    {% if group == "admin" or group == "hr" %}
+                        <a class="btn btn-danger" href="{% url 'cont-end' objects.hashed %}">Termina Kontratu <i class="fa fa-ban"></i></a>
+                        <a class="btn btn-info" href="{% url 'tor-list' objects.hashed emp.hashed %}">ToR <i class="fa fa-file"></i></a>
+                    {% endif %}
+                        <a class="btn btn-secondary" href="{% url 'contract-hist-emp' emp.hashed %}">Historia <i class="fa fa-file-text-o"></i></a>
+                    </div>
+                    <div class="row mt-2">
+                        <div class="col-sm-6">
+                            <table class="table table-sm table-bordered">
+                                <thead>
+                                    <tr class="bg-secondary text-white">
+                                        <th colspan="2">INFORMASAUN PESSOAL</th>
+                                    </tr>
+                                </thead>
+                                <tr><th>Name</th><td>{{ emp }}</td></tr>
+                                <tr><th>Sex</th><td>{{ emp.sex }}</td></tr>
+                                <tr><th>Place & Date of birth</th><td>{{ emp.pob }}, {{ emp.dob|date:"d/m/Y" }}</td></tr>
+                                <tr><th>Marital Status</th><td>{{ emp.marital }}</td></tr>
+                            </table>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="card shadow-lg border-primary rounded">
+                                <div class="card-header border-primary">
+                                    <h4>POJIZAUN NO KOLOKASAUN</h4>
+                                </div>
+                                <div class="card-body">
+                                {% if empdiv.position_id == 1 or empdiv.position_id == 2  %}
+                                    <h4>Position</h4>
+                                    <table class="table table-sm table-bordered">
+                                        <tr><th>Name</th><td>{{ emppos.position }}</td></tr>
+                                    </table>
+                                {% else %}  
+                                    <table class="table table-sm table-bordered">
+                                        <tr><th>Pojisaun</th><td>{{ emppos.position }}</td></tr>
+                                        <tr><th>Kolokasaun</th>
+                                            <td>
+                                            {% if empdiv.department %}{{ empdiv.department }}
+                                            {% elif empdiv.unit %}{{ empdiv.unit }}
+                                            {% else %}{{ empdiv.de }}{% endif %}
+                                        </td></tr>
+                                    </table>
+                                {% endif %}             
+                                </div>
+                            </div>
+                        </div>
+
+                              <div class="col-sm-6">
+                            <div class="card shadow-lg border-primary rounded">
+                                <div class="card-header border-primary">
+                                    <h4>INFORMASAUN POZISAUN NO KOLOKASAUN
+                                        {% if group == "admin" or group == "hr" %}
+                                            {% if objects.is_active == True %}
+                                            {% if emmplacement%}
+                                                <a href="{% url 'empplacement-update' emmplacement.hashed %}"><i class="fa fa-edit"></i></a>
+                                            {% else %}
+                                             <a class="btn btn-sm btn-info" href="{% url 'empplace-assign' objects.employee.hashed %}">Assign <i class="fa fa-plus"></i></a>
+                                            {% endif %}
+                                            {% endif %}
+                                        {% endif %}
+                                    </h4>
+                                </div>
+
+                                <div class="card-body">
+                                        <table class="table table-sm table-bordered">
+                                            <tr><th>Pozisaun</th>
+                                                <td>{% if emmplacement %}{{ objects.position }}{% endif %}</td>
+                                            </tr>
+                                            <tr><th>Ekipamentu Servisu</th><td>{{ emmplacement.department }}</td></tr>
+                                            <tr><th>Divizaun</th><td>{{ emmplacement.unit }}</td></tr>
+                                            
+                                            </tr>
+                                        </table>
+                                </div>
+                            </div>
+                        </div>
+
+                            <div class="col-sm-6">
+                            <div class="card shadow-lg border-primary rounded">
+                                <div class="card-header border-primary">
+                                    <h4>INFORMASAUN KONTRATU
+                                        {% if group == "admin" or group == "hr" %}
+                                            {% if objects.is_active == True %}
+                                                <a href="{% url 'cont-update' objects.hashed %}"><i class="fa fa-edit"></i></a>
+                                            {% endif %}
+                                        {% endif %}
+                                    </h4>
+                                </div>
+
+                                <div class="card-body">
+                                        <table class="table table-sm table-bordered">
+                                            <tr><th>Tipu</th><td>{{ objects.contract_type }}</td></tr>
+                                            <tr><th>Kategoria</th><td>{{ objects.category }}</td></tr>
+                                            {% if objects.contract_type.name == "Regime Geral" %}
+                                            <tr><th>Grau/Eskalaun</th><td>{{ objects.grade }}/{{ objects.echelon }}</td></tr>
+                                            {% endif %}
+                                            <tr><th>Vencimentu</th>
+                                                <td>
+                                                    <a href="{% url 'password-val-view' objects.employee.hashed %}" class="btn btn-sm btn-danger" title="Details">Hare Salario <i class="fa fa-eye"></i></a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th>Data Hahu{% if objects.end_date %} & Remata{% endif %}</th>
+                                                <td>{{ objects.start_date|date:"d/m/Y" }} & {{ objects.end_date|date:"d/m/Y" }}</td>
+                                            </tr>                                    
+                                            <tr>
+                                                <th>Nu. Despachu</th>
+                                                <td>
+                                                {% if objects.disp_number %}
+                                                    {{ objects.disp_number}}
+                                                {% else %}
+                                                    -
+                                                {% endif %}
+                                                </td>
+                                            </tr>
+                                        </table>
+                                        {% if objects.file %}
+                                        <!-- <a class="btn btn-info btn-sm" href="#" target="_blank">View Dispatch<i class="fa fa-file-pdf-o"></i></a> -->
+                                        {% endif %}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div> <!--end card-body-->
+            </div> <!--end card-->
+        </div> <!--end col-->
+    </div> <!--end row-->
+</div>
+{% endblock %}
+{% block scripts %}
+{% endblock %}

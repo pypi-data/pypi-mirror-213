@@ -1,0 +1,123 @@
+{% extends "main/layout.html" %}
+{% load static %}
+{% block content %}
+<div class="breadcrumb-holder">
+	<div class="container-fluid">
+		<ul class="breadcrumb">
+            <li class="breadcrumb-item"><a href="{% url 'man-dash' %}">PAINEL JESTOR</a></li>
+			<li class="breadcrumb-item active">{{ legend|upper }}</li>
+		</ul>
+	</div>
+</div>
+<div class="container-fluid"><br/>
+    <div class="row">
+        <div class="col-sm-12">
+            <div class="card shadow-lg border-info rounded">
+                <div class="card-header border-primary">
+                    <center>
+                        <h2 class="mb-0">{{legend|upper}}
+                            <i class="fa fa-arrow-right"></i>
+                            <a class="btn btn-sm btn-warning mb-1" href="{% url 'man-pr-hist' %}">Historia <i class="fa fa-file-text-o"></i></a>
+                        </h2>
+                    </center>
+                </div>
+                <div class="card-body">
+                    <div >	
+                        {% if group == "admin" or group == "hr" %}
+                            <a class="btn btn-sm btn-info mb-1" href="{% url 'man-de-add' %}">Aumenta <i class="fa fa-plus"></i></a>
+                        {% endif %}
+                        	
+                    </div>
+                    <table id="example" class="table table-sm responsive table-bordered" style="width:100%">
+                        <thead>
+                            <tr align="center">
+                                <th>Nu.</th>
+                                <th class="text-left">Naran</th>
+                                <th>Sexu</th>
+                                <th>Pojisaun</th>
+                                <th>Periodu</th>
+                                {% if group == "admin" or group == "hr" %}
+                                <th>#</th>
+                                {% endif %}
+                            </tr>
+                        </thead>
+                        <tbody>
+                        {% for obj in objects %}
+                            <tr align="center">
+                                <td>{{ forloop.counter }}</td>
+                                <td class="text-left"><a href="{% url 'emp-detail' obj.employee.hashed %}">{{ obj.employee }}</a></td>
+                                <td>{{ obj.employee.sex }}</td>
+                                <td>{{ obj.position }}</td>
+                                <td>{{ obj.start_date|date:"d/m/Y" }} - {{ obj.end_date|date:"d/m/Y" }}</td>
+                            {% if group == "admin" or group == "hr" %}
+                                <td>
+                                {% if obj.is_confirm == False %}
+                                    <a class="btn btn-sm btn-warning" href="{% url 'man-lock' obj.hashed page %}" title="Xavi"><i class="fa fa-lock"></i></a>
+                                    <a class="btn btn-sm btn-info" href="{% url 'man-de-update' obj.hashed %}" title="Altera"><i class="fa fa-edit"></i></a>
+                                    <a class="btn btn-sm btn-danger" href="{% url 'man-remove' obj.hashed page %}" title="Hapaga"><i class="fa fa-close"></i></a>
+                                {% else %}
+                                    <a class="btn btn-sm btn-warning" href="{% url 'man-unlock' obj.hashed page %}" title="Loke"><i class="fa fa-unlock"></i></a>
+                                    <a class="btn btn-sm btn-danger" href="{% url 'man-end' obj.hashed page %}" title="Termina"><i class="fa fa-ban"></i></a>
+                                {% endif %}
+                                </td>
+                            {% endif %}
+                            </tr>
+                        {% endfor %}
+                        </tbody>
+                    </table>
+                </div> <!--end card-body-->
+            </div> <!--end card-->
+        </div> <!--end col-->
+    </div> <!--end row-->
+</div>
+{% endblock %}
+{% block scripts %}
+<link href="{% static 'main/vendor/datatables/css/searchBuilder.dataTables.min.css' %}" rel="stylesheet">
+<link href="{% static 'main/vendor/datatables/css/searchBuilder.bootstrap4.min.css' %}" rel="stylesheet">
+<link href="{% static 'main/vendor/datatables/css/buttons.dataTables.min.css' %}" rel="stylesheet">
+<style type="text/css">
+    .dtsb-searchBuilder{
+        background: #b9c7e6 !important;
+        padding: 5px
+    }
+    .dt-button, .dtsb-add {
+        background: white !important;
+    }
+</style>
+<script src="{% static 'main/vendor/datatables/js/dataTables.searchBuilder.min.js' %}"></script>
+<script src="{% static 'main/vendor/datatables/js/searchBuilder.bootstrap4.min.js' %}"></script>
+<script src="{% static 'main/vendor/datatables/js/dataTables.buttons.min.js' %}"></script>
+<script src="{% static 'main/vendor/datatables/js/jszip.min.js' %}"></script>
+<script src="{% static 'main/vendor/datatables/js/pdfmake.min.js' %}"></script>
+<script src="{% static 'main/vendor/datatables/js/vfs_fonts.js' %}"></script>
+<script src="{% static 'main/vendor/datatables/js/buttons.html5.min.js' %}"></script>
+<script src="{% static 'main/vendor/datatables/js/buttons.print.min.js' %}"></script>
+<script src="{% static 'main/vendor/datatables/js/buttons.colVis.min.js' %}"></script>
+<script type="text/javascript">
+    $(document).ready( function () {
+        var table = $('#example').removeAttr('width').DataTable( {
+            "scrollY": "50vh",
+            "scrollX": true,
+            "scrollCollapse": true,
+            "paging": true,
+            searchBuilder: true,
+            buttons:[
+                {
+                    extend: 'excelHtml5', autoFilter: true, sheetName: 'Exported data'
+                },
+                {
+                    extend: 'pdfHtml5', orientation: 'landscape', pageSize: 'LEGAL', messageTop: '',
+                },
+                {
+                    extend: 'print',
+                    exportOptions: { columns: ':visible' },
+                },
+                'colvis',
+            ],
+            dom: 'Bfrtip',
+            "deferRender": true
+        });
+        table.searchBuilder.container().prependTo(table.table().container());
+    } );
+</script>
+{% endblock %}
