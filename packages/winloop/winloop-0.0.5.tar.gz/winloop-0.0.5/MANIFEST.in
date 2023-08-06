@@ -1,0 +1,5 @@
+recursive-include winloop *
+recursive-include winloop/handles *
+recursive-include winloop/vendor *
+recursive-include winloop/vendor/include *
+recursive-include winloop/includes *
