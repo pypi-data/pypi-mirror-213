@@ -1,0 +1,106 @@
+---
+- name: Create talos directories
+  ansible.builtin.file:
+    path: "{{ item }}"
+    state: directory
+    mode: '0770'
+    owner: "{{ master.user }}"
+    group: "{{ master.group }}"
+  loop:
+    - "{{ app.etcdir }}"
+    - "{{ app.etcdir }}/ansible/groups_vars"
+    - "{{ app.etcdir }}/roles"
+    - "{{ app.etcdir }}/pos"
+    - "{{ app.etcdir }}/profiles"
+    - "{{ app.etcdir }}/templates"
+    - "{{ app.etcdir }}/benchmarks"
+    - "{{ app.logdir }}"
+    - "{{ app.logdir }}/.tlist"
+    - "{{ app.repodir }}"
+    - "{{ app.etcdir }}/backup"
+    - "{{ app.webdir }}/html/obj"
+    - ~/MyPlaybooks
+    - "{{ master.home }}/.talos"
+
+- name: Copy master ssh keys
+  ansible.builtin.copy:
+    src: "{{ item.origin }}"
+    dest: "{{ item.dest }}"
+    mode: "{{ item.mode }}"
+    remote_src: true
+    force: true
+  loop:
+    - origin: "{{ master.home }}/.ssh/id_rsa"
+      dest: "{{ app.etcdir }}/backup/.master_rsa"
+      mode: '0600'
+    - origin: "{{ master.home }}/.ssh/id_rsa.pub"
+      dest: "{{ app.etcdir }}/backup/.master_rsa.pub"
+      mode: '0644'
+
+- name: Configure Talos
+  ansible.builtin.template:
+    src: talos.conf.j2
+    dest: "{{ app.etcdir }}/talos.conf"
+    mode: '0660'
+    owner: "{{ master.user }}"
+    group: "{{ master.group }}"
+  when: talos_conf.use_default == 'true'
+
+- name: Generate CUSTOMER keypair
+  community.crypto.openssh_keypair:
+    path: "{{ master.home }}/.ssh/{{ item }}"
+    size: 2048
+    type: rsa
+    force: false
+    owner: "{{ master.user }}"
+    group: "{{ master.group }}"
+  loop:
+    - CUSTOMER_CLI
+  when: talos_conf.use_default == 'true'
+
+- name: Get CUSTOMER keypair
+  ansible.builtin.fetch:
+    src: "{{ master.home }}/.ssh/{{ item }}.pub"
+    dest: "/tmp/{{ customer.name }}.{{ item }}.pub"
+    flat: true
+  loop:
+    - CUSTOMER_CLI
+  when: talos_conf.use_default == 'true'
+
+- name: Set Permissions
+  ansible.builtin.file:
+    dest: "{{ item }}"
+    owner: "{{ master.user }}"
+    group: "{{ master.group }}"
+    recurse: true
+  loop:
+    - "{{ app.dir }}"
+    - "{{ app.etcdir }}"
+    - "{{ app.logdir }}"
+
+- name: Copy templates
+  ansible.builtin.template:
+    src: "{{ item.file }}.j2"
+    dest: "{{ item.dest }}{{ item.file }}"
+    mode: "{{ item.mode }}"
+    owner: "{{ master.user }}"
+    group: "{{ master.group }}"
+  loop:
+    - file: cli.conf
+      dest: "{{ app.etcdir }}/conf/."
+      mode: '0600'
+    - file: talospass
+      dest: "{{ app.etcdir }}/conf/."
+      mode: '0600'
+
+- name: Copy ansible.cfg in to place
+  ansible.builtin.template:
+    src: "{{ item }}.j2"
+    dest: "{{ app.etcdir }}/ansible/{{ item }}"
+    owner: "{{ master.user }}"
+    group: "{{ master.group }}"
+    mode: '0770'
+  loop:
+    - globals.yaml
+    - passwords.yaml
+    - app.yaml

@@ -1,0 +1,59 @@
+---
+- name: Install Ansible pre-reqs
+  ansible.builtin.package:
+    name: "{{ item }}"
+    state: present
+    update_cache: true
+  loop: '{{ pkgreqansible }}'
+
+- name: Install Ansible
+  ansible.builtin.pip:
+    name: "{{ pkgansible }}"
+    state: present
+    extra_args: --user --upgrade
+    executable: pip3.9
+  become_user: "{{ master.user }}"
+
+- name: Ensure master Permission
+  ansible.builtin.file:
+    state: directory
+    path: "{{ item }}"
+    owner: "{{ master.user }}"
+    group: "{{ master.group }}"
+    mode: '0755'
+  loop:
+    - "{{ app.etcdir }}/ansible/inventory"
+    - "{{ app.etcdir }}/ansible/roles"
+    - "{{ app.etcdir }}/ansible/inventory_plugins"
+    - "{{ app.etcdir }}/ansible/playbook/talos_cmd"
+    - "{{ app.etcdir }}/ansible/playbook/talos_cmd/local"
+    - "{{ app.etcdir }}/ansible/playbook/talos_pb"
+    - "{{ app.etcdir }}/ansible/playbook/customer_pb"
+    - "{{ app.etcdir }}/ansible/playbook/extra_pb"
+
+- name: Ensure /var/cache/ansible
+  ansible.builtin.file:
+    state: directory
+    path: /var/cache/ansible
+    owner: root
+    group: root
+    mode: '0770'
+
+- name: Copy ansible.cfg in to place
+  ansible.builtin.template:
+    src: ansible.cfg.j2
+    dest: "{{ app.etcdir }}/ansible/ansible.cfg"
+    owner: "{{ master.user }}"
+    group: "{{ master.group }}"
+    mode: '0770'
+
+- name: Copy yamlgroup inventory in place
+  ansible.builtin.copy:
+    src: inventory_plugins/yamlgroup.py
+    dest: "{{ app.etcdir }}/ansible/inventory_plugins/yamlgroup.py"
+    mode: '0644'
+
+- name: Download required ansible collections
+  ansible.builtin.command: "sudo su -l {{ master.user }} -c 'ANSIBLE_CONFIG={{ app.etcdir }}/ansible/ansible.cfg \
+    ansible-galaxy collection install {{ item }} -i --force'"
+  loop: "{{ ansible.collections }}"

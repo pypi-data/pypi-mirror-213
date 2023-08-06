@@ -1,0 +1,552 @@
+CHANGES
+=======
+
+* Fix Home position
+* Remove SWAP\_USAGE for Talos mgmt
+* Add Init Playbook on Reload
+* Add Init Playbook on Reload
+* Add Init Playbook on Reload
+* Add Init Playbook on Reload
+* fix install options
+* Enhance talos\_install
+* fix missing dev\_keys installation
+* fix missing ansible installation
+* fix missing ansible installation
+* fix missing ansible installation
+* fix missing ansible installation
+* fix missing ansible installation
+* fix missing ansible installation
+* fix service not found
+* fix service not found
+* Add Reboot notice on bootstrap run
+* mini fix
+* add pip description
+* add pip description
+* Fix opendcim Docker
+*  Fix OpenDCIM docker
+*  Fix OpenDCIM docker
+* fix docker var
+* fix docker var
+* fix missing path
+* fix docker.tags
+* fix cli\_version
+* fix ca path
+* clear tables
+* Clean playbook
+* add licence GNU
+* Fix install path
+* fix version in tversion
+* fix package
+* add Python package
+* review data load
+* test
+* improve pre-commit
+* improve pre-commit
+* improve pre-commit
+* stop ansible-lint check
+*  try this
+*  try this
+* fix ansible-lint config files
+* fix action install
+* remove action install
+* remove action install
+* Update codereview.yaml
+* remove action install
+* remove action install
+* Update codereview.yaml
+* remove action install
+* remove action install
+* add action install
+* Update install\_talos.yaml
+* Update install\_talos.yaml
+* add action install
+* try add ansible-lint
+* all in one Review
+* test
+* all in one
+* all in one
+* all in one
+* all in one
+* all in one
+* review precommit
+* review precommit
+* review precommit
+* review precommit
+* review precommit
+* Add ansible\_os\_family
+* init poetry
+* fix completion for shellcheck validation
+* Update codereview.yaml
+* Update codereview.yaml
+* Update codereview.yaml
+* workflow github action per test del codice
+* clean commit
+* Update verify.yaml
+* Update verify.yaml
+* Update verify.yaml
+* Update verify.yaml
+* Update verify.yaml
+* Update verify.yaml
+* Update verify.yaml
+* Update verify.yaml
+* Update verify.yaml
+* use local
+* Update verify.yaml
+* try tool1
+* switch ubuntu
+* Update verify.yaml
+* Update verify.yaml
+* Update verify.yaml
+* Update verify.yaml
+* Update verify.yaml
+* Update verify.yaml
+* Update verify.yaml
+* Update verify.yaml
+* Update verify.yaml
+* Update verify.yaml
+* Update verify.yaml
+* Update verify.yaml
+* fix sequence run
+* use forked repo
+* Update verify.yaml
+* Update verify.yaml
+* Update verify.yaml
+* Update verify.yaml
+* Update verify.yaml
+* Update verify.yaml
+* fix exclusione
+* Shellcheck review
+* Update verify.yaml
+* Update verify.yaml
+* Update verify.yaml
+* add os requirement
+* remove permission
+* verify 2.0
+* shellcheck action
+* fix requirement
+* push action
+* Update verify.yaml
+* Update verify.yaml
+* Update verify.yaml
+* Update verify.yaml
+* Update verify.yaml
+* Update verify.yaml
+* Update verify.yaml
+* use docker action setup
+* try action selfhost
+* Add Action
+* fix readme for playbook
+* fix timetrack for uncompleted run
+* reorder check for delete job
+* fix typo
+* Add skip for emplty lists
+* change search order
+* fix find .sequence)
+* fix sequence reload
+* fix title for lib play
+* fix find error message
+* fix file count
+* Fix visualization
+* add break to skip errors
+* Separate folder and sequence
+* Change notification
+* fix sequence load
+* removed pre/post limit count
+* fix sequence count
+* use sequence as folder too
+* fix standard sequence as role structure
+* filter delete main rpos
+* add missing folder
+* fix error check confirmation
+* fix job add
+* Review repository position and playbook management
+* Add Support for yml files
+* Change tlist generation
+* fix passwd change
+* call talos\_cmd as source
+* add nagios libs
+* fix ansible\_log
+* fix config\_data\_download\_git
+* fix ipmi\_custom csv\_nodelist
+* change talos password on lock
+* remove check for 'talos' use yaml instead
+* add check for ssh keys
+* fix noti messages
+* typo brackets
+* fix log parser messages
+* Add  job on log parser
+* fix message
+* add update message on exit
+* add Confirm message on cli\_update
+* exit 100 from checks
+* add tlist for all completion
+* add check for CLI Version and update it on env
+* Add Github templates
+* add completion
+* add help guide
+* Clean exit message
+* add progress bar
+* first commit netdiscovery
+* fix row count
+* Update system check
+* last fix exit 100
+* test wexit 100
+* placeholder taloscheck
+* Fix Libraries
+* finally run bash completion
+* Fix completion for run
+* Improve run help
+* show file redirection
+* fix descript
+* fix get job list
+* fix load job list
+* fix overwrite
+* fix missing folder creations
+* f\_job\_name
+* review add job procedure, path and checks
+* fix linter parsing path
+* debug add job
+* fix linter
+* debug playbook
+* add load new completion in cli\_update
+* fix output
+* add output in run cmd
+* fix restore
+* fix restore Wiki docker\_name\_db
+* fix elap
+* Add EOL and clear end space
+* Fix backup save
+* fix save backup
+* fix all talos\_exit
+* z\_clear\_band
+* fix timetrack
+* test POSTER COMMAND
+* fix color
+* Add TimeTrack and add exit Code
+* fix permission
+* add local\_cmd
+* Add talosmaster for ansible inventory
+* Remove TalosAdmin
+* rollback
+* fix
+* try to force ssh pass
+* Add support for talosadmin
+* Add Capability to change CustomerName
+* Fix user level
+* enhance help guide
+* update md
+* change help guide level headers
+* btntop
+* btntop
+* merge style and css in static
+* top button
+* form reviw
+* fix guide and help file
+* back to top
+* help\_guide
+* help guide
+* talos\_cmd
+* Fix Playbook path
+* clean band row on exit
+* z\_title\_band
+* Fix missing lib
+* Clean Progression
+* hgfile\_check\_integrity
+* fix nagio hostfile creation
+* remove ansible entry
+* point to wrong file
+* Fix manager Ansible inventory
+* WIP ctl review
+* Fix1 add nodelist
+* review regenerate list
+* fix end\_group\_line parsing
+* Fix end\_group\_line counter
+* Fix inventories filename
+* Fix help for pandoc compliant html
+* fix talos-data path
+* fix helpguide
+* fix return dev\_key for 255 error on Data
+* Fix git key (pub)
+* add config\_show\_git\_keys
+* improve help guide
+* Fix Typos
+* fix git verify
+* Add git key verification to prevent invalid update
+* merge t\_setup and t\_data in t\_config
+* alternative
+* reduce ansible verbosity
+* Clean inventory check, add verbosity
+* Review Talosadmin access
+* Fix Column exclusive
+* Fix exclusive view output
+* Fix show exclusive output
+* Fix Show multiple field output
+* Fix Inventory Add (regenerate) ansible
+* fix yq syntax error
+* Add CUSTOMER\_CLI and CUSTOMER\_DATA keys for Git
+* fix update\_code
+* git pull code
+* yq -y fix
+* NAGIOS\_CONF\_PATH
+* fix parser
+* remove libgit
+* fix filename tansibook
+* fic filename
+* fix 1 libplay
+* git pull
+* fix Nagios Lib
+* fiux 1
+* add talos-debug
+* fix libdebug
+* Update Lib query
+* fix talos\_history\_highlight
+* Commit help format
+* Backup update
+* Change link to tansibook
+* Add description function, fix ctl
+* fix typo
+* Fix Update ctl
+* fix node delete ansible inventory
+* la madonna
+* try fix 3 libctl move
+* Fix Setup defalut setting
+* fix missin po null
+* typo "
+* Fix 2 libctl
+* remove echo
+* Code-review Fix 1 CTL
+* commit help
+* remove extra messages
+* Update Help in MD
+* Update Help in MD
+* Fix nagios reload
+* fix overwrite config file
+* fix 2 libctl
+* Fix 1 libctl
+* fix 6 Setup
+* fix 5 Setup
+* fix 4 setup
+* fix 3 Setup
+* fix 2 setup
+* Fix 1 Setup
+* fix invenotry search
+* fix duplicate function
+* update dev\_key
+* update JQ with YQ
+* Fix Git and awx reference
+* change inventory
+* Commit inventory list
+* ansible\_delete\_inventory
+* ANSIBLE\_INVENTORY
+* fix log path TALOS\_LOG\_PATH
+* fix run job
+* add ANSIBLE\_PLAYBOOK\_DIR
+* Fix node\_del
+* json/role.json
+* Fix children inventory
+* fix missing config file
+* export Fix
+* remove Git as repository manager
+
+0.1.0
+-----
+
+* Change awx in ansible
+* Git Pull
+* path change
+* Change file permission
+* fix . /lib/libdebug
+* add bmc default
+* add bmc default
+* add bmc default
+* Changing search bar and add a comment on js search function
+* Change some comments
+* fix paths
+* inventory, search and export upgrade + setting up a better organazed workspace
+* change debug path
+* Fix inventory
+* change Home Page
+* change Home Page
+* change Home Page
+* change Home Page
+* fix inventory excel export
+* fix inventory.html headers
+* fix inventory
+* fix inventory
+* fix duplicate entry for localhost
+* add check for localhost during queue regeneration
+* add check for localhost during queue regeneration
+* fix role
+* Fix Nagios Setup
+* fix path
+* Add NAGIOS\_ENABLE as option
+* Update README.md
+* load readme images
+* edit README
+* Delete .gitreview
+* Create LICENSE
+*  fix data
+* add target-role
+* add Talos-ssh
+* Add talos-playbook
+* fix query name
+* add bmc\_dict sel
+* fix mail
+* Fix User Check
+* fix typo
+* fix typo
+* talos-ipmi BP
+* Rollback Nagios
+* fix data reload
+* fix nagios search
+* add sudo permission
+* Chenge feature Marker
+* fix side view
+* missing template load
+* fix Add missing info
+* fix Add missing info
+* fix Add missing info
+* fix link search
+* Change Token
+* fix reload php script
+* fix reload php script
+* Change php script
+* Change php script
+* Change php script
+* Change php script
+* Change Web Format
+* check gitignore
+* fix checklist
+* fix parsing env conf
+* fix Backup
+* add wiki pull
+* fix data full reload
+* fix git push
+* fix reload
+* add Wiki reload
+* fix datapath
+* fix talos-run show
+* fix awximport
+*  fix repochange errors
+*  fix Typo
+* fixrole
+* PRepare for wiki
+* change home page
+* change Web path
+* Add msupport for multiple job template
+* Add htaccess
+* fix awxlist
+* add Clean during ctl-delete
+* Complete data Help and Fix
+* add Score table
+* fix search
+* fix update
+* Fix hostlist
+* Add Opendcim query search
+* Add show local script
+* fix multinode entry
+* Add Opendcim support
+* add inventory
+* add Search host
+* Add side view
+* Fix TopView
+* add inventory git
+* Fix projects paths
+* add playbook
+* Add talos-setup
+* Remove Data folder
+* add git master init
+* Remove Elk templates
+* fix username
+* Fix Nagios Hosts
+* Fix Nagios Hosts
+* Fix NAgios Checks
+* delete ssh key when node delete
+* fix contacts
+* Fix Template
+* Fix readme path
+* add lock access
+* fix data check
+* Fix Backup Procedure
+* Home PAge
+* fix template path
+* fix Credential load:wq
+* fix Web Error
+* Change top view
+* add php
+* Procedura per caricamento Snippet
+* talos-ctl aggiorna i ruoli su Nagios
+* Fix Infra support
+* Add infra
+* update Nagios template
+* Remove Setup
+* Romve pip files
+* Fix Git restore
+* Fix Git restore
+* Fix Online Help
+* Add Talos-setup
+* Fix run
+* Fix run
+* Fix Show Views
+* Add Talos Run
+* Fix minor bug
+* Fix Query
+* Fix restore
+* Fix Factory-default
+* Fix missing files
+* Add Range Sequence as node input
+* Remove env\_talos
+* Remove env\_talos
+* Add nexus\_upload
+* Talos-query review
+* Fix collect
+* Improve Collect Script
+* Fix backup show ID
+* fix collect script name
+* Fix Backup Code
+* Fix Code
+* Add ctl update
+* fix hostname check via SSH
+* Fix null in query
+* Fix Readme
+* Add support for multiple groups
+* Add README.md examples
+* Add README.md examples
+* Fix Library content and Readme
+* Add project run on group
+* Fix name path
+* Add more Check
+* Command talos-project
+* Commit Backup
+* Fix Checks
+* ADD talos-admin
+* Fix Parser
+* Fix ctl
+* fix init
+* fix log file
+* fix checkfile to query
+* Start Backup cli
+* Change inventory load
+* backup
+* Minor Fix
+* Minor Fix
+* Fix sshpass connection
+* fix noagios load
+* fix web page parser
+* Add miniwebpage
+* Fix log name
+* add talos-query command
+* Fix environment
+* Clean and fix
+* fix work with Talos user
+* Add config file to enable/disable features
+* talos\_ctl fix
+* User Talos
+* Add ctl\_list\_all change maintener mail clear extra space add query help entry
+* Add ctl\_list\_all
+* Add talos-cli command
+* [ review.cloud.e4lab ==> review.cloud.e4.lan ] Migration Commit
+* Add update function
+* Change options checks
+* First commit
+* Added .gitreview

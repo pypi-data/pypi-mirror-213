@@ -1,0 +1,72 @@
+---
+### Python
+pkgmgr: yum
+
+pkgpython:
+  - epel-release
+  - python39-pip
+  - python39-setuptools
+  - python3-libselinux
+  - python3-virtualenv
+  - python3-passlib
+
+### Docker
+pkgreq:
+  - gcc
+  - python3-docker
+  - python3-dockerpty
+
+pkgdocker:
+  - docker-ce
+  - docker-ce-cli
+  - containerd.io
+
+### User
+sudogroups: 'wheel,adm'
+### Ansible
+pkgreqansible:
+  - python3-argcomplete
+  - rust
+  - cargo
+  - curl
+  - sshpass
+
+pkgansible:
+  - ansible>=7,<8
+
+### Certificate
+certdir: /etc/pki/ca-trust/source/anchors/
+
+certcmd: update-ca-trust
+
+### Common
+pkg_cli:
+  - git
+  - colordiff
+  - vim
+  - mtr
+  - nmap
+  - htop
+  - jq
+  - yamllint
+  - dos2unix
+  - wget
+  - bash-completion
+  - cmake
+  - gcc-c++
+  - sysstat
+  - pssh
+  - ipmitool
+  - dnf-plugins-core
+  - nfs-utils
+  - arp-scan
+
+pkgpowertools:
+  - pandoc
+
+
+venvcmd: virtualenv-3
+http_service: httpd
+php_service: php
+http_config: /etc/httpd/conf/httpd.conf
+serverroot: /etc/httpd

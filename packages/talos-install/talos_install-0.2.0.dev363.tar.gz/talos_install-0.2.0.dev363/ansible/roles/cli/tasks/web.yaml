@@ -1,0 +1,78 @@
+---
+- name: Web install requirement
+  ansible.builtin.package:
+    name:
+      - "{{ http_service }}"
+      - "{{ php_service }}"
+    state: present
+  become: true
+
+- name: Copy Web interface
+  ansible.builtin.copy:
+    src: "{{ app.clidir }}/web/"
+    dest: "{{ app.webdir }}"
+    remote_src: true
+    force: true
+    follow: true
+    mode: '0644'
+
+- name: Copy config files
+  ansible.builtin.copy:
+    src: "{{ app.etcdir }}/html/htpasswd"
+    dest: "{{ app.webdir }}/html/htpasswd"
+    remote_src: true
+    force: true
+    follow: true
+    mode: '0755'
+
+- name: Backup config files
+  ansible.builtin.copy:
+    src: "{{ http_config }}"
+    dest: "{{ http_config }}.old"
+    remote_src: true
+    force: true
+    follow: true
+    mode: '0755'
+
+- name: Copy templates
+  ansible.builtin.template:
+    src: "{{ item.file }}.j2"
+    dest: "{{ item.dest }}"
+    mode: "{{ item.mode }}"
+  loop:
+    - file: agent.sh
+      dest: "{{ app.webdir }}/html/agent.sh"
+      mode: '0770'
+    - file: my-httpd.conf
+      dest: "{{ http_config }}"
+      mode: '0755'
+
+
+- name: Set Owner webdir
+  ansible.builtin.file:
+    dest: "{{ app.webdir }}"
+    owner: apache
+    group: apache
+    mode: '+x'
+    recurse: true
+  become: true
+
+- name: Copy config files
+  ansible.builtin.copy:
+    src: "{{ app.etcdir }}/html/htpasswd"
+    dest: "{{ app.webdir }}/html/htpasswd"
+    remote_src: true
+    force: true
+    mode: '0755'
+
+- name: Add the user talos-master to group 'apache'
+  ansible.builtin.user:
+    name: "{{ master.user }}"
+    groups: "apache"
+    append: true
+
+- name: Restart WebService
+  ansible.builtin.service:
+    name: "{{ http_service }}"
+    enabled: true
+    state: restarted

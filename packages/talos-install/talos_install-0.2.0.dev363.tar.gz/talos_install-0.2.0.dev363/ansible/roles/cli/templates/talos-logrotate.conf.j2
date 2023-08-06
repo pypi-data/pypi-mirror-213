@@ -1,0 +1,35 @@
+{{ app.logdir }}/* {
+    su {{ master.user }} {{ master.user }}
+	rotate 5
+	weekly
+	minsize 5M
+	size 10M
+	notifempty
+	extension .log
+	dateext
+	dateformat -%Y%m%d
+}
+
+{{ app.logdir }}/nagios/* {
+    su {{ master.user }} {{ master.user }}
+	rotate 5
+	weekly
+	minsize 5M
+	size 10M
+	notifempty
+	extension .log
+	dateext
+	dateformat -%Y%m%d
+}
+
+{{ app.logdir }}/ansible/* {
+    su {{ master.user }} {{ master.user }}
+	rotate 5
+	weekly
+	minsize 5M
+	size 10M
+	notifempty
+	extension .log
+	dateext
+	dateformat -%Y%m%d
+}

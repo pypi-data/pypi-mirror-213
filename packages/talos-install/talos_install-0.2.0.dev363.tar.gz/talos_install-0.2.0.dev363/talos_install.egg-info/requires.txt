@@ -1,0 +1,6 @@
+pbr!=2.1.0,>=2.0.0
+oslo.config>=5.2.0
+PyYAML>=3.12
+Jinja2>=2.10
+jmespath>=0.9.3
+ansible<8,>=7

@@ -1,0 +1,17 @@
+---
+- name: Remove user talos
+  ansible.builtin.user:
+    name: "{{ master.user }}"
+    state: absent
+    remove: true
+    force: true
+
+- name: Remove sudoers.d files
+  ansible.builtin.file:
+    path: /etc/sudoers.d/talos
+    state: absent
+
+- name: Delete talos home
+  ansible.builtin.file:
+    path: "{{ master.home }}"
+    state: absent

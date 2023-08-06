@@ -1,0 +1,13 @@
+#!/bin/bash
+
+sed -i "s@CUSTOMERNAME@{{ customer.name }}@g" /root/default.sql
+
+/etc/init.d/mysql start
+mysqladmin -u root password '{{ mgm_password }}'
+mysqladmin -u root -p'{{ mgm_password }}' reload
+mysqladmin -u root -p'{{ mgm_password }}' create dcim
+echo "CREATE USER 'dcim'@'localhost' IDENTIFIED BY 'dcim'; " | mysql -uroot -p'{{ mgm_password }}'
+echo "GRANT ALL ON dcim.* TO dcim@localhost IDENTIFIED BY 'dcim'; flush privileges; " | mysql -uroot -p'{{ mgm_password }}'
+echo "SET GLOBAL sql_mode = '';" | mysql -u root -p'{{ mgm_password }}'
+mysql -u root -p'{{ mgm_password }}' dcim < /root/default.sql
+rm -f /root/default.sql

@@ -1,0 +1,41 @@
+---
+- name: Create nagios directory
+  ansible.builtin.file:
+    path: '{{ item }}'
+    state: directory
+    mode: '0775'
+    owner: "{{ master.user }}"
+    group: "{{ master.group }}"
+  loop:
+    - '{{ app.etcdir }}/nagios/objects'
+    - '{{ app.etcdir }}/nagios/conf'
+    - '{{ app.logdir }}/nagios'
+
+- name: Copy config files
+  ansible.builtin.copy:
+    src: "etc/nagios"
+    dest: "{{ app.etcdir }}/nagios"
+    mode: '0775'
+    owner: "{{ master.user }}"
+    group: "{{ master.group }}"
+
+- name: Copy nagios template
+  ansible.builtin.template:
+    src: "{{ item.file }}.j2"
+    dest: "{{ item.dest }}/{{ item.file }}"
+    owner: "{{ master.user }}"
+    group: "{{ master.group }}"
+    mode: "{{ item.mode }}"
+  loop:
+    - file: localhost.cfg
+      dest: "{{ app.etcdir }}/nagios/objects/"
+      mode: '0755'
+    - file: contacts.cfg
+      dest: "{{ app.etcdir }}/nagios/objects/"
+      mode: '0755'
+    - file: cgi.cfg
+      dest: "{{ app.etcdir }}/nagios/"
+      mode: '0755'
+    - file: nagios.conf
+      dest: "{{ app.etcdir }}/nagios/conf/."
+      mode: '0755'

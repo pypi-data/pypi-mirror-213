@@ -1,0 +1,30 @@
+### Customer settings
+customer:
+  name: '{{ customer.name }}'
+  timezone: '{{ customer.timezone }}'
+
+### IDM
+ca_idm:
+  enable: '{{ ca_idm.enable }}'
+  ipa: '{{ ca_idm.ipa }}'
+  ip: '{{ ca_idm.ip }}'
+  force_resolve: '{{ ca_idm.force_resolve }}'
+  url: '{{ ca_idm.url }}'
+  dest: '{{ ca_idm.dest }}'
+
+### Talos configuration
+# Set use_default to enable the default setting, if 'false' on client you'll need to run talos-setup config
+# ansible_inventory_enable: set to true to add/remove nodes on Ansible inventory (Default = true)
+# ansible_init_mode: set to true to run init sequence on node added. (Default = false)
+# dcim_inventory_enable: set to true to add/remove nodes on DCIM inventory (Default = false)
+# nagios_enable: set to true to add/remove nodes Monitoring (Default = true)
+# default_domain: set to true to use a fixed domain for host resolution (Default = true)
+# talos_domain: set extension, dont forget dot! (Default = .e4red)
+talos_conf:
+  use_default: '{{ talos_conf.use_default }}'
+  ansible_inventory_enable: '{{ talos_conf.ansible_inventory_enable }}'
+  ansible_init_mode: '{{ talos_conf.ansible_init_mode }}'
+  dcim_inventory_enable: '{{ talos_conf.dcim_inventory_enable }}'
+  nagios_enable: '{{ talos_conf.nagios_enable }}'
+  default_domain: '{{ talos_conf.default_domain }}'
+  talos_domain: '{{ talos_conf.talos_domain }}'

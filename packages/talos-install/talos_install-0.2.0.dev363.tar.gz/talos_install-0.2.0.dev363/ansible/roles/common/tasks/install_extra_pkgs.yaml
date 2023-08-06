@@ -1,0 +1,16 @@
+---
+- name: Install packages for CLI
+  ansible.builtin.package:
+    name: '{{ item }}'
+    state: present
+    update_cache: true
+  loop: '{{ pkg_cli }}'
+
+
+- name: Install extra packages for CLI
+  ansible.builtin.dnf:
+    name: '{{ item }}'
+    enablerepo: devel
+    state: present
+  loop: '{{ pkgpowertools }}'
+  when: ansible_facts['distribution'] == "Rocky"

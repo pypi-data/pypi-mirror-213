@@ -1,0 +1,26 @@
+---
+- name: Check that the MASTER id_rsa exists
+  ansible.builtin.stat:
+    path: "{{ master.home }}/.ssh/id_rsa"
+  register: stat_result
+
+- name: Add the user talos-master
+  ansible.builtin.user:
+    name: "{{ master.user }}"
+    ansible.builtin.shell: /bin/bash
+    uid: "{{ master.uid }}"
+    password: "{{ master.password | password_hash('sha512') }}"
+    home: "{{ master.home }}"
+    move_home: true
+    generate_ssh_key: true
+    force: false
+  when: not stat_result.stat.exists
+
+- name: Create sudoers.d files
+  ansible.builtin.copy:
+    src: talos
+    dest: /etc/sudoers.d
+    owner: root
+    group: root
+    mode: ug+rwX,o=
+    force: true

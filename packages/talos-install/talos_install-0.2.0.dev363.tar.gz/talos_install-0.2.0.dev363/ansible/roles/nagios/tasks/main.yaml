@@ -1,0 +1,14 @@
+---
+- name: Misc operation
+  ansible.builtin.include_tasks: misc.yaml
+  when: cli_action in ['deploy']
+
+- name: Build container
+  ansible.builtin.include_tasks: build.yaml
+  tags: nagios-build
+  when: cli_action in ['build']
+
+- name: Run container
+  ansible.builtin.include_tasks: run.yaml
+  tags: nagios-run
+  when: cli_action in ['deploy','stop']

@@ -1,0 +1,27 @@
+---
+- name: Install pip and virtualenv packages
+  ansible.builtin.package:
+    name: '{{ item }}'
+    state: present
+    update_cache: true
+  loop: '{{ pkgpython }}'
+
+- name: Alternatives for Python
+  community.general.alternatives:
+    name: python
+    path: /usr/bin/python3.9
+    link: /usr/bin/python
+
+- name: Alternatives for pip
+  community.general.alternatives:
+    name: pip
+    path: /usr/bin/pip3.9
+    link: /usr/bin/pip
+
+- name: Upgrade pip
+  ansible.builtin.pip:
+    name: pip
+    state: present
+    extra_args: --user
+    executable: pip3.9
+  become_user: "{{ master.user }}"

@@ -1,0 +1,9 @@
+#!/bin/bash
+
+dumpfile=$1
+
+docker stop {{ wiki_container_name }}
+docker exec -it {{ wiki_db_container_name }} dropdb -U {{ wiki_pg_admin_user }} {{ wiki_pg_database }}
+docker exec -it {{ wiki_db_container_name }} createdb -U {{ wiki_pg_admin_user }} {{ wiki_pg_database }}
+cat $dumpfile | docker exec -i {{ wiki_db_container_name }} pg_restore -U {{ wiki_pg_admin_user }} -d {{ wiki_pg_database }}
+docker start {{ wiki_container_name }}

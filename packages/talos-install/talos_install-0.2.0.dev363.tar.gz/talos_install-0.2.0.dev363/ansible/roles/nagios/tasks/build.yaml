@@ -1,0 +1,30 @@
+---
+- name: Ensure build dir exists
+  ansible.builtin.file:
+    path: "{{ app.dir }}/build/nagios"
+    state: directory
+    mode: '0755'
+
+- name: Copy nagios Dockerfile to builder
+  ansible.builtin.template:
+    src: Dockerfile.j2
+    dest: "{{ app.dir }}/build/nagios/Dockerfile"
+    mode: '0755'
+
+- name: Copy overlay dir
+  ansible.builtin.copy:
+    src: "overlay"
+    dest: "{{ app.dir }}/build/nagios/"
+    mode: '0755'
+
+- name: Build nagios image and push it to a private repo
+  tags: nagios-build
+  community.general.docker_image:
+    build:
+      path: "{{ app.dir }}/build/nagios"
+      nocache: true
+    name: "{{ docker.namespace }}/talos-nagios"
+    tag: "{{ docker.nagios_tag }}"
+    push: true
+    source: build
+    force_source: true

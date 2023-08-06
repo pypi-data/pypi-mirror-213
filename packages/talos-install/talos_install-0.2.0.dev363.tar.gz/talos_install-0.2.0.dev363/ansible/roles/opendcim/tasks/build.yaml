@@ -1,0 +1,47 @@
+---
+- name: Ensure build dir exists
+  ansible.builtin.file:
+    path: "{{ app.dir }}/build/opendcim"
+    state: directory
+    mode: '0755'
+
+- name: Copy opendcim Dockerfile to builder
+  ansible.builtin.template:
+    src: "{{ item }}.j2"
+    dest: "{{ app.dir }}/build/opendcim/{{ item }}"
+    mode: '0755'
+  loop:
+    - first-run.sh
+    - Dockerfile
+
+- name: Copy overlay dir
+  ansible.builtin.copy:
+    src: "overlay"
+    dest: "{{ app.dir }}/build/opendcim/"
+    mode: preserve
+
+
+- name: Copy opendcim script to builder
+  ansible.builtin.copy:
+    src: "{{ item }}"
+    dest: "{{ app.dir }}/build/opendcim"
+    mode: '0755'
+  loop:
+    - apache2.conf
+    - apache2.sh
+    - default.sql
+    - mysqld.sh
+    - pre-conf.sh
+    - startup.sh
+
+- name: Build opendcim image and push
+  tags: opendcim-build
+  community.general.docker_image:
+    build:
+      path: "{{ app.dir }}/build/opendcim"
+      nocache: true
+    name: "{{ docker.namespace }}/talos-opendcim"
+    tag: "{{ docker.opendcim_tag }}"
+    push: true
+    source: build
+    force_source: true

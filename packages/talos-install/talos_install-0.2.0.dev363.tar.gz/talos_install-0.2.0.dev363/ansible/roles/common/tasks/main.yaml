@@ -1,0 +1,6 @@
+---
+- name: Misc operation
+  ansible.builtin.include_tasks: misc.yaml
+
+- name: Install extra pkgs
+  ansible.builtin.include_tasks: install_extra_pkgs.yaml

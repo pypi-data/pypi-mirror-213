@@ -1,0 +1,20 @@
+[defaults]
+inventory={{ app.etcdir }}/ansible/inventory/hosts_cli
+log_path={{ app.logdir }}/ansible.log
+retry_files_enabled=False
+retry_files_save_path=
+gathering=explicit
+force_valid_group_names=ignore
+#collections_path={{ app.etcdir }}/ansible/collections
+roles_path={{ app.etcdir }}/ansible/roles
+playbook_dir={{ app.etcdir }}/ansible/playbook/
+allow_world_readable_tmpfiles=True
+force_color=True
+
+[inventory]
+enable_plugins=yaml,ini
+any_unparsed_is_failed=True
+
+[ssh_connection]
+retries=3
+pipelining = False

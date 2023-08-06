@@ -1,0 +1,13 @@
+---
+- name: Logrotate install requirement
+  ansible.builtin.package:
+    name: logrotate
+    state: present
+  become: true
+
+- name: Copy logrotate template
+  ansible.builtin.template:
+    src: "talos-logrotate.conf.j2"
+    dest: "/etc/logrotate.d/talos-logrotate.conf"
+    mode: '0770'
+  become: true

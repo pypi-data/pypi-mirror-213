@@ -1,0 +1,31 @@
+---
+- name: Create opendcim conf directory
+  ansible.builtin.file:
+    path: '{{ item }}'
+    state: directory
+    mode: '0775'
+    owner: "{{ master.user }}"
+    group: "{{ master.group }}"
+  loop:
+    - '{{ app.etcdir }}/opendcim'
+    - '{{ app.logdir }}/opendcim'
+
+- name: Opendcim - copy pictures
+  ansible.builtin.copy:
+    src: "{{ item }}"
+    dest: "{{ app.etcdir }}/opendcim"
+    mode: '0775'
+    group: 33
+  loop:
+    - etc/opendcim/pictures
+    - etc/opendcim/drawings
+
+- name: Copy opendcim.conf templates
+  ansible.builtin.template:
+    src: "{{ item }}.j2"
+    dest: "{{ app.etcdir }}/conf/.{{ item }}"
+    mode: '0600'
+    owner: "{{ master.user }}"
+    group: "{{ master.group }}"
+  loop:
+    - opendcim.conf

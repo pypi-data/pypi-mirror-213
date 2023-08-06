@@ -1,0 +1,17 @@
+---
+wiki_image: "{{ docker.namespace }}/talos_wiki:1.0"
+wiki_postgresql_image: "{{ docker.namespace }}/talos-postgres:11"
+wiki_compose_start_containers: true
+
+wiki_hostname: wiki
+wiki_db_hostname: wikidb
+wiki_docker_compose_dir: "{{ app.dir }}/build/wiki"
+docker_registry_repository: "{{ docker.namespace }}"
+wiki_pg_admin_user: wikijs
+wiki_pg_database: wiki
+pg_port: 5432
+create_preload_data: true
+wiki_docker_compose_subnet: "192.0.0.16/28"
+wiki_db_container_name: wiki_db_talos
+wiki_container_name: wiki_talos
+wiki_expose_port: 8004

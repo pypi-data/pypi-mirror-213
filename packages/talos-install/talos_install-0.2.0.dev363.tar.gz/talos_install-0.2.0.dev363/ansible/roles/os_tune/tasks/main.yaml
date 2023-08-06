@@ -1,0 +1,56 @@
+---
+- name: Set a hostname
+  ansible.builtin.hostname:
+    name: "{{ inventory_hostname }}"
+    use: systemd
+
+- name: Stop Firewall
+  ansible.builtin.service:
+    name: firewalld
+    enabled: false
+    state: stopped
+  register: os_tune_stop_firewalld
+  failed_when: >-
+    os_tune_stop_firewalld is failed and
+    "Could not find the requested service" not in os_tune_stop_firewalld.msg|default('')
+
+- name: Set timezone
+  community.general.timezone:
+    name: "{{ customer.timezone }}"
+
+- name: Change StrictHostKeyChecking
+  ansible.builtin.lineinfile:
+    dest: /etc/ssh/ssh_config
+    state: present
+    regexp: 'StrictHostKeyChecking'
+    line: 'StrictHostKeyChecking no'
+
+- name: Change StrictModes
+  ansible.builtin.lineinfile:
+    dest: /etc/ssh/sshd_config
+    state: present
+    regexp: 'StrictModes'
+    line: 'StrictModes no'
+  register: ssh_strict
+
+- name: Restart sshd
+  ansible.builtin.service:
+    name: sshd
+    enabled: true
+    state: restarted
+  when: ssh_strict is changed
+
+- name: Disabling SELinux
+  ansible.posix.selinux:
+    state: disabled
+  register: os_tune_disable_selinux
+
+- name: System will be rebooted for Selinux Changes
+  ansible.builtin.pause:
+    prompt: "!!! System will reboot in 10 seconds. !!!"
+    seconds: 10
+  when: os_tune_disable_selinux is changed
+
+- name: Wait for 5 Second and Reboot
+  ansible.builtin.reboot:
+  when: os_tune_disable_selinux is changed

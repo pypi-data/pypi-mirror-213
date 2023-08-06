@@ -1,0 +1,35 @@
+###############
+# Talos Configuration File
+###############
+# Talos VPD Information, Don't change these values
+TALOS_NAME = {{ inventory_hostname }}
+TALOS_IP = {{ ssh_ip }}
+###############
+
+# Set Ansible inventory to true to add/remove nodes on Ansible inventory
+# Default = true
+ANSIBLE_INVENTORY_ENABLE = {{ talos_conf.ansible_inventory_enable }}
+
+# Set Ansible init_mode to true to configure node during add node
+# Default = false
+ANSIBLE_INIT_MODE = {{ talos_conf.ansible_init_mode }}
+
+# Set DCIM invetory to true to add/remove nodes on DCIM inventory
+# Default = true
+DCIM_INVENTORY_ENABLE = {{ talos_conf.dcim_inventory_enable }}
+
+# Set NAGIOS to true to add/remove nodes Monitoring
+# Default = true
+NAGIOS_ENABLE = {{ talos_conf.nagios_enable }}
+
+# Set Default domain to true to use a fixed domain for host resolution
+# Default = false
+DEFAULT_DOMAIN = {{ talos_conf.default_domain }}
+
+# Set Talos Domain extension (i.e .example)
+# Default = null
+TALOS_DOMAIN = {{ talos_conf.talos_domain }}
+
+# Set Default Talos Verbosity Level (0-2)
+# Default = 0 (no Verbose)
+TALOS_VERBOSITY = 0

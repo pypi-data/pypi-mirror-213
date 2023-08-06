@@ -1,0 +1,4 @@
+---
+dependencies:
+  - role: gather_facts
+  - role: os_tune
