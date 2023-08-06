@@ -1,0 +1,11 @@
+COPYING.LESSER
+README.md
+setup.cfg
+setup.py
+versioneer.py
+rtc_tools_diagnostics.egg-info/PKG-INFO
+rtc_tools_diagnostics.egg-info/SOURCES.txt
+rtc_tools_diagnostics.egg-info/dependency_links.txt
+rtc_tools_diagnostics.egg-info/requires.txt
+rtc_tools_diagnostics.egg-info/top_level.txt
+rtctools_diagnostics/_version.py
