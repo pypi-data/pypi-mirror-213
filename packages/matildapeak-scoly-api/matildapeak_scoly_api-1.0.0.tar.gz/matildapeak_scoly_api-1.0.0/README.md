@@ -1,0 +1,102 @@
+# Scoly API
+
+[![Latest Release](https://gitlab.com/matilda.peak/scoly-api/-/badges/release.svg)](https://gitlab.com/matilda.peak/scoly-api/-/releases)
+
+[![pipeline status](https://gitlab.com/matilda.peak/scoly-api/badges/main/pipeline.svg)](https://gitlab.com/matilda.peak/scoly-api/-/commits/main)
+[![coverage report](https://gitlab.com/matilda.peak/scoly-api/badges/main/coverage.svg)](https://gitlab.com/matilda.peak/scoly-api/-/commits/main)
+
+[![pre-commit](https://img.shields.io/badge/pre--commit-enabled-brightgreen?logo=pre-commit)](https://github.com/pre-commit/pre-commit)
+[![Conventional Commits](https://img.shields.io/badge/Conventional%20Commits-1.0.0-%23FE5196?logo=conventionalcommits&logoColor=white)](https://conventionalcommits.org)
+[![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
+[![Packaged with Poetry](https://img.shields.io/badge/packaging-poetry-cyan.svg)](https://python-poetry.org)
+
+A Python 3 API package for the [Scoly] framework.
+
+## Usage
+Create a `ScolyAPI` instance for each **Location** you're dealing with: -
+
+    from scoly_api.client import Scoly
+    from datetime import datetime
+    client = Scoly(
+        scoly_url="127.0.0.1:8000",
+        location="Red Dwarf",
+        location_api_access_code="033589a1-c17d-45e0-bbaa-a5122300c9f3",
+    )
+
+And then add sensor events, which will be transmitted to **Scoly** when the
+cache is full: -
+
+    client.add_sensor_data(
+        sensor="Rimmer",
+        timestamp_utc=datetime.now(),
+        data={"battery": 67, "presence": False, "celsius": 23.4, "lux": 45.6}
+    )
+
+By default the cache will be flushed when it contains 50 events or if the
+cache contents are older than 6 minutes. You can set your own
+values when you initialise the `ScolyAPI` instance with some extra parameters.
+To set a cache size of 10 and maximum age of 2 minutes initialise the ScolyAPI
+instance like this: -
+
+    client = Scoly(
+        [...],
+        sensor_event_cache_size = 10,
+        sensor_event_cache_period = 120,
+    )
+
+If either value is zero sensor data will be transmitted on each call to
+`add_sensor_data()`.
+
+There is no background task. After 6 minutes events will not be transmitted,
+instead they will b e transmitted on the next call to `add_sensor_data()`.
+Alternatively, you can also flush cached data immediately by calling `flush()`: -
+
+    client.flush()
+
+## Building
+The project is managed by [Poetry], so you can build and install the project
+forcing version 1.0.0 with: -
+
+    rm -rf dist
+    poetry version 1.0.0
+    poetry build
+
+And then install locally with `pip`: -
+
+    pip install dist/*.whl
+
+When you're done you can uninstall the API package with pip: -
+
+    pip uninstall -y matildapeak_scoly_api
+
+## Contributing
+The project uses: -
+
+- [Poetry] for dependency management and packaging
+- [Pre-commit] to enforce linting of files prior to committing them to the
+  upstream repository
+- [Conventional Commits] commit message format
+- [Black] as a code formatter
+
+You **MUST** comply with these choices in order to  contribute to the project.
+
+To get started review the pre-commit utility and the conventional commit style
+and then set-up your local clone by following the **Installation** and
+**Quick Start** sections: -
+
+    poetry shell
+    poetry install --with dev
+    pre-commit install -t commit-msg -t pre-commit
+
+Now the project's rules will run on every commit, and you can check the
+current health of your clone with: -
+
+    pre-commit run --all-files
+
+---
+
+[black]: https://black.readthedocs.io/en/stable
+[conventional commits]: https://www.conventionalcommits.org/en/v1.0.0/
+[poetry]: https://python-poetry.org
+[pre-commit]: https://pre-commit.com
+[scoly]: https://gitlab.com/matilda.peak/scoly

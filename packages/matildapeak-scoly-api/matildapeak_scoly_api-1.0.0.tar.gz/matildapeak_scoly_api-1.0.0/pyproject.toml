@@ -1,0 +1,51 @@
+[tool.poetry]
+name = "matildapeak-scoly-api"
+version = "1.0.0"
+description = "The Scoly API Package"
+authors = ["Alan Christie <alan.christie@matildapeak.com>"]
+readme = "README.md"
+packages = [{include = "scoly_api"}]
+
+[tool.poetry.dependencies]
+python = ">=3.8"
+requests = ">=2"
+
+[tool.poetry.group.dev]
+optional = true
+
+[tool.poetry.group.dev.dependencies]
+black = "^23.3.0"
+coverage = "^7.2.7"
+pre-commit = "^3.3.2"
+pylint = "^2.17.4"
+pytest = "^7.3.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.pylint.main]
+ignore-patterns = ["^\\.#"]
+py-version = "3.11"
+
+[tool.pylint.basic]
+no-docstring-rgx = "^_"
+
+[tool.pylint."master"]
+ignore-patterns = ["test_.*?py", ".*-example.py"]
+
+[tool.pylint."messages control"]
+disable = ["too-many-instance-attributes",
+    "too-few-public-methods"]
+enable = ["c-extension-no-member"]
+
+[tool.pylint.variables]
+ignored-argument-names = "_.*|^ignored_|^unused_"
+
+[tool.pytest.ini_options]
+testpaths = ["scoly_api", "tests"]
+
+[tool.coverage.report]
+omit = ["*/site-packages/*",
+    "*/distutils/*",
+    "tests/*"]
