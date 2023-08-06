@@ -1,0 +1,66 @@
+[
+  {
+    "name": "AmBank",
+    "identifiers": ["03- 2178 8888"],
+    "headers": ["date", "transaction", "cheque no.", "debit", "credit", "balance"],
+    "order": "ascending",
+    "date_format": "ddmmm"
+  },
+  {
+    "name": "CIMB",
+    "identifiers": ["CIMB"],
+    "headers": ["date", "description", "cheque / ref no", "withdrawal", "deposits", "balance"],
+    "order": "descending",
+    "date_format": "dd/mm/yyyy"
+  },
+  {
+    "name": "Maybank",
+    "identifiers": ["Malayan Banking Berhad"],
+    "headers": ["entry date", "value date", "transaction description", "transaction amount", "statement balance"],
+    "order": "ascending",
+    "date_format": "dd/mm"
+  },
+  {
+    "name": "Maybank Islamic",
+    "identifiers": ["Maybank Islamic Berhad"],
+    "headers": ["entry date", "transaction description", "transaction amount", "statement balance"],
+    "order": "ascending",
+    "date_format": "dd/mm/yy"
+  },
+  {
+    "name": "Alliance",
+    "identifiers": ["Alliance Bank Malaysia"],
+    "headers": ["date", "transaction details", "cheque no", "debit", "credit", "balance"],
+    "order": "ascending",
+    "date_format": "ddmmyy"
+  },
+  {
+    "name": "Hong Leong",
+    "identifiers": ["Hong Leong"],
+    "headers": ["date", "transaction description", "deposit", "withdrawal", "balance"],
+    "order": "ascending",
+    "date_format": "dd-mm-yyyy"
+  },
+  {
+    "name": "RHB",
+    "identifiers": ["rhbgroup.com.my"],
+    "headers": ["date", "branch", "description", "sender''s beneficiary''s name", "reference 1 / recipient''s reference",
+            "reference 2 / other payment details", "refnum", "amount (dr)", "amount (cr)", "balance"],
+    "order": "ascending",
+    "date_format": "dd-mm-yyyy"
+  },
+  {
+    "name": "RHB Islamic",
+    "identifiers": ["RHB Islamic"],
+    "headers": ["date", "description", "cheque/serial no", "debit", "credit", "balance"],
+    "order": "ascending",
+    "date_format": "mmm dd"
+  },
+  {
+    "name": "Public Bank",
+    "identifiers": ["pbebank"],
+    "headers": ["date", "transaction", "debit", "credit", "balance"],
+    "order": "ascending",
+    "date_format": "dd/mm"
+  }
+]
