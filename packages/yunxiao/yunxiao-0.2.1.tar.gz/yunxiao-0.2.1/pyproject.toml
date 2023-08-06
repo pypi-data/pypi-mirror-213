@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+
+[project]
+name = "yunxiao"
+version = "0.2.1"
+description = "An API SDK tool for Cloud School Education Institution Management System."
+readme = "README.md"
+authors = [
+    {name = "YiZixuan", email = "admin@sqkkyzx.com"},
+]
+license.text = "GPL-3.0-only"
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
+    "Programming Language :: Python :: 3.11",
+]
+dependencies = [
+    "requests"
+]
+[tool.poetry.dependencies]
+python = "^3.11"
+
+[tool.poetry.publish]
+repository = "pypi"
+
+[tool.poetry.changelog]
+"0.2.1" = "web 端请求 BUG 修复"
+"0.2.0" = "BUG修复"
+"0.1.9" = "更改鉴权方式，保存鉴权到系统环境变量。当因鉴权失效导致请求失败时，自动更新鉴权并重新发起请求。意图减少更新鉴权的次数。"
