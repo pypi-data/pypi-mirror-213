@@ -1,0 +1,2 @@
+[console_scripts]
+NNFAL = NNFAL.source.NNFAL:main
