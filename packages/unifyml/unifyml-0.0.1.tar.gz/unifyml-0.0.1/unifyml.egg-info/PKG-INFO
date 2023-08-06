@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: unifyml
+Version: 0.0.1
+Summary: Unified API for machine learning
+Home-page: https://github.com/holl-/UnifyML
+Author: Philipp Holl
+Author-email: philipp.holl@tum.de
+License: MIT
+Download-URL: https://github.com/holl-/UnifyML/archive/0.0.1.tar.gz
+Description: # UnifyML
+        
+        [**Homepage**](https://github.com/holl-/UnifyML)
+        &nbsp;&nbsp;&nbsp; [**Documentation**](https://holl-.github.io/UnifyML/)
+        &nbsp;&nbsp;&nbsp; [**API**](https://holl-.github.io/UnifyML/unifyml)
+        
+        UnifyML provides a unified math and neural network API for Jax, PyTorch, TensorFlow and NumPy.
+        
+        See the [installation Instructions](https://holl-.github.io/UnifyML/Installation_Instructions.html) on how to compile the optional custom CUDA operations.
+        
+Keywords: Machine Learning,Deep Learning,Math,Linear systems,Sparse,Tensor,Named dimensions
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Description-Content-Type: text/markdown
