@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: remla23-team10-preprocessing
+Version: 1.1.2
+Summary: Preprocessing for the REMLA project
+Author-email: REMLA23 Team 10 <author@example.com>
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy (>=1.24.0)
+Requires-Dist: nltk (>=3.8.1)
+Requires-Dist: scikit-learn (>=1.2.2)
+Provides-Extra: dev
+Requires-Dist: pylint (==2.12.2) ; extra == 'dev'
+Requires-Dist: dslinter (==2.0.9) ; extra == 'dev'
+Requires-Dist: mllint (==0.12.2) ; extra == 'dev'
+
+# lib2
