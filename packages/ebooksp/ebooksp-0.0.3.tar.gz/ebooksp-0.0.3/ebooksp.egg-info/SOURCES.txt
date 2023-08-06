@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+ebooksp/__init__.py
+ebooksp/ebook_convert_format.py
+ebooksp/ebook_to_text.py
+ebooksp.egg-info/PKG-INFO
+ebooksp.egg-info/SOURCES.txt
+ebooksp.egg-info/dependency_links.txt
+ebooksp.egg-info/requires.txt
+ebooksp.egg-info/top_level.txt
