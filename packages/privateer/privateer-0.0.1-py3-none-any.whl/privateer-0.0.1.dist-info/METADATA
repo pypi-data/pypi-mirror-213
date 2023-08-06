@@ -1,0 +1,70 @@
+Metadata-Version: 2.1
+Name: privateer
+Version: 0.0.1
+Summary: Tool to backup docker volumes
+Project-URL: Documentation, https://github.com/reside-ic/privateer#readme
+Project-URL: Issues, https://github.com/reside-ic/privateer/issues
+Project-URL: Source, https://github.com/reside-ic/privateer
+Author-email: Alex <alex.hill@gmail.com>
+License-Expression: MIT
+License-File: LICENSE.txt
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.7
+Requires-Dist: docopt
+Description-Content-Type: text/markdown
+
+# privateer
+
+[![PyPI - Version](https://img.shields.io/pypi/v/privateer.svg)](https://pypi.org/project/privateer)
+[![PyPI - Python Version](https://img.shields.io/pypi/pyversions/privateer.svg)](https://pypi.org/project/privateer)
+
+-----
+
+**Table of Contents**
+
+- [Usage](#usage)
+- [Test](#test-and-lint)
+- [Installation](#installation)
+- [License](#license)
+
+## Usage
+
+```Usage:
+  privateer --version
+  privateer backup <path> --to=HOST [--exclude=TARGETS] [--include=INCLUDE]
+  privateer restore <path> --from=HOST [--exclude=TARGETS] [--include=INCLUDE]
+
+Options:
+  --exclude=TARGETS  Comma separated string of target names to exclude (default is to include all)
+  --include=TARGETS  Comma separated string of target names to include (default is to include all)
+```
+
+`<path>` is the path to a directory containing a `privateer.json` file. This file should contain at least one target 
+and at least one host. See `./config/privateer.json` for an example. By default all targets in the config file are used, 
+but this can be overridden by explicitly including or excluding targets by name.
+
+## Test and lint
+
+1. `hatch run test`
+2. `hatch run lint:fmt`
+
+To get coverage reported locally in the console, use `hatch run cov`. 
+On CI, use `hatch run cov-ci` to generate an xml report.
+
+## Installation
+
+```console
+pip install privateer
+```
+
+## License
+
+`privateer` is distributed under the terms of the [MIT](https://spdx.org/licenses/MIT.html) license.

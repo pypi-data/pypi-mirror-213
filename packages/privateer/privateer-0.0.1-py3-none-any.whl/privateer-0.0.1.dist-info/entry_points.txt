@@ -1,0 +1,2 @@
+[console_scripts]
+privateer = privateer.cli:main
