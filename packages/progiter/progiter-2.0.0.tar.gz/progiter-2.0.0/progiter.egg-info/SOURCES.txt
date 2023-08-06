@@ -1,0 +1,12 @@
+LICENSE
+README.rst
+pyproject.toml
+setup.py
+progiter/__init__.py
+progiter/manager.py
+progiter/progiter.py
+progiter.egg-info/PKG-INFO
+progiter.egg-info/SOURCES.txt
+progiter.egg-info/dependency_links.txt
+progiter.egg-info/requires.txt
+progiter.egg-info/top_level.txt
