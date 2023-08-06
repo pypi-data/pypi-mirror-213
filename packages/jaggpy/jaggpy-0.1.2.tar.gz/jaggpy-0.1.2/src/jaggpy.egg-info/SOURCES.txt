@@ -1,0 +1,17 @@
+LICENSE
+README.md
+pyproject.toml
+src/jaggpy/__init__.py
+src/jaggpy/asp_solver.py
+src/jaggpy/bf_solver.py
+src/jaggpy/classes.py
+src/jaggpy/parser.py
+src/jaggpy.egg-info/PKG-INFO
+src/jaggpy.egg-info/SOURCES.txt
+src/jaggpy.egg-info/dependency_links.txt
+src/jaggpy.egg-info/requires.txt
+src/jaggpy.egg-info/top_level.txt
+src/jaggpy/tests/__init__.py
+src/jaggpy/tests/test_asp.py
+src/jaggpy/tests/test_bf.py
+src/jaggpy/tests/files/scenario1.jagg
