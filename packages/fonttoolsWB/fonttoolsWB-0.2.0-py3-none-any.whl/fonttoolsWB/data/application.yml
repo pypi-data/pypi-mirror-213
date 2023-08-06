@@ -1,0 +1,24 @@
+AppName: FontToolsWB
+AppDisplayName: FontTools WorkBench
+VendorName: WorkBench
+VendorDisplayName: Andreas Eigendorf
+Copyright: (c) 2013-2023 by Andreas Eigendorf
+Description: FontTools WorkBench GUI Application
+URL: https://www.alphabet-type.com
+Plugins:
+- Name: fonttools
+  Installation: required
+- Name: output
+  Installation: default
+- Name: shell
+  Installation: default
+- Name: loglist
+  Installation: default
+- Name: textedit
+  Installation: default
+- Name: uitools
+  Installation: default
+- Name: widgetinspector
+  Installation: optional
+- Name: namespace
+  Installation: optional
