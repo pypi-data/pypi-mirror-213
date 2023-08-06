@@ -1,0 +1,60 @@
+Metadata-Version: 2.1
+Name: filtro
+Version: 0.1.1
+Summary: The official filtro python package.
+Author: Andrea Pinto
+Author-email: andrea@filtro.ai
+Requires-Python: >=3.9,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: pydantic (>=1.10.9,<2.0.0)
+Requires-Dist: requests (>=2.31.0,<3.0.0)
+Description-Content-Type: text/markdown
+
+# filtro-python
+
+The official Python API package for [filtro.ai](https://www.filtro.ai/). Empowering your applications with AI, while safeguarding sensitive data across all third-party models, in just a few lines of Python code. 
+
+## ⚙️ Install
+
+```bash
+pip install filtro
+```
+
+## 🗣️ Usage
+
+```py
+from filtro import mask, clear
+
+masked, mapping = mask(
+    "Hi my name is Giovanni, I work at Google. What's up?"
+)
+
+from langchain.llms import OpenAI
+llm = OpenAI(temperature=0.9)
+response = llm(masked)
+
+cleared = clear(response, mapping)
+```
+
+## 🥽 Examples
+
+```py
+python examples/basic.py
+````
+
+
+<details> <summary> Show output </summary>
+
+[YOUR INPUT] Hi my name is Gianmarco Rengucci! I am a Software Engineer at Apple, here in Milan. Whats up?
+
+[FILTRO.AI] Hi my name is Terri Clark! I am a Software Engineer at Compton-Krueger, here in Lake Erin. Whats up?
+
+[OPENAI] Hey there Terri, nice to meet you! Im doing great, but Im curious to learn more about what you do at Compton-Krueger. Could you tell me a little bit about your role at the company?
+
+[FILTRO.AI] Hey there Gianmarco, nice to meet you! Im doing great, but Im curious to learn more about what you do at Apple. Could you tell me a little bit about your role at the company?
+
+</details>
+
