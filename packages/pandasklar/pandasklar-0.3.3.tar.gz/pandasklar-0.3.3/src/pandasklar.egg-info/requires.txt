@@ -1,0 +1,6 @@
+pandas
+numpy
+perlin_noise
+termcolor
+bpyth
+blab
