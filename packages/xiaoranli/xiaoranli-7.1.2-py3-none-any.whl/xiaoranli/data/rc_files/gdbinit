@@ -1,0 +1,11 @@
+set print demangle on
+# enhance pretty-print to print stl value
+python
+import sys
+sys.path.insert(0, '/usr/share/gcc/python')
+from libstdcxx.v6.printers import register_libstdcxx_printers
+register_libstdcxx_printers (None)
+end
+# enable py-bt commands in gdb, so user can get python stack info
+source /usr/share/gdb/auto-load/usr/bin/python3.8-gdb.py
+echo \033[32m finish to init gdb\n \033[0m
