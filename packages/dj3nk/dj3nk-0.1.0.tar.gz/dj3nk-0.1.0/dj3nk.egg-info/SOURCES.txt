@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+dj3nk/__init__.py
+dj3nk/natural_key_generator.py
+dj3nk/nk_model.py
+dj3nk.egg-info/PKG-INFO
+dj3nk.egg-info/SOURCES.txt
+dj3nk.egg-info/dependency_links.txt
+dj3nk.egg-info/not-zip-safe
+dj3nk.egg-info/requires.txt
+dj3nk.egg-info/top_level.txt

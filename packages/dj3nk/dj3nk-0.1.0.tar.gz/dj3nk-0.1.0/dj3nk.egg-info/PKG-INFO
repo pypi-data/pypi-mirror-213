@@ -1,0 +1,59 @@
+Metadata-Version: 2.1
+Name: dj3nk
+Version: 0.1.0
+Summary: A simple natural key generator base on redis.
+Home-page: https://gitee.com/three-kinds/dj3nk
+Author: three-kinds
+Author-email: 3179158552@qq.com
+License: Apache 2.0
+Project-URL: Documentation, https://gitee.com/three-kinds/dj3nk
+Project-URL: Source, https://gitee.com/three-kinds/dj3nk
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Framework :: Django
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# dj3nk
+
+A simple natural key generator base on redis.
+
+[History.](HISTORY.md)
+
+## Install
+
+```shell script
+pip install dj3nk
+
+```
+
+## Examples
+
+```python
+# settings.py
+NATURAL_KEY = {
+    "increment_main_key": "a3:dj:nk",
+    "random_bit_length": 16,
+    "puzzle_count": 1000000,
+    "rdb_conf_name": "default"
+}
+
+# models
+from dj3nk import NKModel
+
+
+class XXX(NKModel):
+    ...
+
+```
