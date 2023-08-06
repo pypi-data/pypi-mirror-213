@@ -1,0 +1,38 @@
+Metadata-Version: 2.1
+Name: restbl
+Version: 0.1.1
+Classifier: Operating System :: OS Independent
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Rust
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Summary: Tears of the Kingdom RSTB/RESTBL parser and editing library
+Home-Page: https://github.com/NiceneNerd/restbl-py/
+Author: Caleb Smith <c.smith@tuta.io>
+Author-email: Caleb Smith <c.smith@tuta.io>
+License: GPL-3.0-or-later
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown; charset=UTF-8; variant=GFM
+Project-URL: Source Code, https://github.com/NiceneNerd/restbl-py/
+
+# restbl
+
+Library to manipulate the resource size table (RSTB/RESTBL) in *The Legend of
+Zelda: Tears of the Kingdom*
+
+## Example Usage
+
+```python
+from restbl import ResourceSizeTable
+
+with open("ResourceSizeTable.product.112.rsizetable.zs", "rb") as file:
+    table = ResourceSizeTable.from_binary(file.read())
+    assert table.get_size("Actor/TwnObj_HatenoObj_A_12.engine__actor__ActorParam.bgyml") == 6184
+    table.set_size("Actor/TwnObj_HatenoObj_A_12.engine__actor__ActorParam.bgyml", 666)
+    assert table.get_size("Actor/TwnObj_HatenoObj_A_12.engine__actor__ActorParam.bgyml") == 666
+```
+
+## License
+
+This project is licensed under the GPLv3+ license.
+
