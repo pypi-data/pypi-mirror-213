@@ -1,0 +1,8 @@
+chatstack>=0.1.2
+prompt_toolkit>=3.0.36
+bs4==0.0.1
+requests==2.28.2
+readability-lxml==0.8.1
+pdfminer.six==20221105
+markdown==3.4.1
+loguru==0.6.0
