@@ -1,0 +1,74 @@
+Metadata-Version: 2.1
+Name: finance-enums
+Version: 0.2.0
+Classifier: Development Status :: 3 - Alpha
+Classifier: Programming Language :: Rust
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: pandas >=0.22
+Requires-Dist: black >=23 ; extra == 'develop'
+Requires-Dist: bump2version ; extra == 'develop'
+Requires-Dist: check-manifest ; extra == 'develop'
+Requires-Dist: maturin >=1, <2 ; extra == 'develop'
+Requires-Dist: pytest ; extra == 'develop'
+Requires-Dist: pytest-cov ; extra == 'develop'
+Requires-Dist: ruff ; extra == 'develop'
+Requires-Dist: twine ; extra == 'develop'
+Requires-Dist: wheel ; extra == 'develop'
+Requires-Dist: pytest ; extra == 'test'
+Requires-Dist: pytest-cov ; extra == 'test'
+Provides-Extra: develop
+Provides-Extra: test
+License-File: LICENSE
+Summary: Standard Financial Enumerations
+Keywords: 
+Author-email: Tim Paine <t.paine154@gmail.com>
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown; charset=UTF-8; variant=GFM
+Project-URL: Repository, https://github.com/timkpaine/finance-enums
+Project-URL: Homepage, https://github.com/timkpaine/finance-enums
+
+# finance-enums
+Standard Financial Enumerations
+
+[![Build Status](https://github.com/timkpaine/finance_enums/workflows/Build%20Status/badge.svg?branch=main)](https://github.com/timkpaine/finance_enums/actions?query=workflow%3A%22Build+Status%22)
+[![Coverage](https://codecov.io/gh/timkpaine/finance_enums/branch/main/graph/badge.svg?token=ag2j2TV2wE)](https://codecov.io/gh/timkpaine/finance_enums)
+[![License](https://img.shields.io/github/license/timkpaine/finance_enums.svg)](https://pypi.python.org/pypi/finance_enums/)
+[![PyPI](https://img.shields.io/pypi/v/finance_enums.svg)](https://pypi.python.org/pypi/finance_enums/)
+
+
+## Categories
+
+- `CountryCode` (`ISO 3166-1 alpha-2`)
+    - `Country` in Python
+- `CountryCode3` (`ISO 3166-1 alpha-3`)
+- `CountryCode.name`
+- `CountryCode.flag` (`base64` encoded `png` of flag)
+- `Currency` (`ISO 4217`)
+- `Currency.name`
+- `Exchange` (`ISO 10383`)
+    - Note: NMS US Equities only for now
+- `Sector`
+- `IndustryGroup`
+- `Industry`
+- `SubIndustry`
+- `SecurityType`
+    - `EquityType`
+    - `OptionType`
+        - `OptionExerciseType`
+    - `BondType`
+    - `CommodityType`
+    - `FundType`
+        - `FundSubType`
+        - `MutualFundEndedness`
+- `OrderType`
+- `Side`
+- `TimeInForce`
+- `OrderFlag`
+
