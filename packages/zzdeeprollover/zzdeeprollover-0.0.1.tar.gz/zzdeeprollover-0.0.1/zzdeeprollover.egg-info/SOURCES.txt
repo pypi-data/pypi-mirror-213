@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+zzdeeprollover/version.txt
+zzdeeprollover.egg-info/PKG-INFO
+zzdeeprollover.egg-info/SOURCES.txt
+zzdeeprollover.egg-info/dependency_links.txt
+zzdeeprollover.egg-info/requires.txt
+zzdeeprollover.egg-info/top_level.txt
