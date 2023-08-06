@@ -1,0 +1,8 @@
+README.md
+setup.py
+src/gtempco2.py
+src/gtempco2.egg-info/PKG-INFO
+src/gtempco2.egg-info/SOURCES.txt
+src/gtempco2.egg-info/dependency_links.txt
+src/gtempco2.egg-info/entry_points.txt
+src/gtempco2.egg-info/top_level.txt
