@@ -1,0 +1,9 @@
+README.md
+pyproject.toml
+setup.py
+m_run_script_test.egg-info/PKG-INFO
+m_run_script_test.egg-info/SOURCES.txt
+m_run_script_test.egg-info/dependency_links.txt
+m_run_script_test.egg-info/requires.txt
+m_run_script_test.egg-info/top_level.txt
+mobio/libs/run_script/__init__.py
