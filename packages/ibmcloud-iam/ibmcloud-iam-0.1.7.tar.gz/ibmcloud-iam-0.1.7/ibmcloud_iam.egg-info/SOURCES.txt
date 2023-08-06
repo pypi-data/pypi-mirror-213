@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+ibmcloud_iam/__init__.py
+ibmcloud_iam/pdp.py
+ibmcloud_iam/token.py
+ibmcloud_iam.egg-info/PKG-INFO
+ibmcloud_iam.egg-info/SOURCES.txt
+ibmcloud_iam.egg-info/dependency_links.txt
+ibmcloud_iam.egg-info/not-zip-safe
+ibmcloud_iam.egg-info/requires.txt
+ibmcloud_iam.egg-info/top_level.txt

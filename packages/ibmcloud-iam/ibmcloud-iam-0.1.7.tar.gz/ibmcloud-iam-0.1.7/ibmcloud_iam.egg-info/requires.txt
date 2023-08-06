@@ -1,0 +1,7 @@
+requests[security]
+pyjwt<2.5,>=2.1.0
+redstone
+
+[docs]
+sphinx>=3.1
+sphinx_rtd_theme
