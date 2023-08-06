@@ -1,0 +1,9 @@
+
+[:python_version < "3.0"]
+pyparsing~=2.0
+
+[:python_version >= "3.0"]
+pyparsing<4,>=2
+
+[Duration]
+python-dateutil>=2.8.0
