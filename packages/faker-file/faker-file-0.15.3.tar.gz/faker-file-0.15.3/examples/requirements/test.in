@@ -1,0 +1,13 @@
+Faker
+coverage
+factory_boy
+fuzzywuzzy[speedup]
+py
+parametrize
+pytest-cov
+pytest-django
+pytest-ordering
+pytest-parallel
+pytest-rerunfailures
+pytest>=7.0.1
+tox
