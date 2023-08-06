@@ -1,0 +1,5 @@
+include requirements.txt   #esto es para meter los requerimientos del archivo donde esten
+
+include README.md  # incluye la descripción de readme
+
+include LICENSE
