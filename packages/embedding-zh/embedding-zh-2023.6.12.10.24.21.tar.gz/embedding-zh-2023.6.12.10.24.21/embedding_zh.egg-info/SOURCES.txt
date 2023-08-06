@@ -1,0 +1,16 @@
+LICENSE
+MANIFEST.in
+setup.py
+embedding_m3e_small/__init__.py
+embedding_m3e_small/m3e-small/.gitattributes
+embedding_m3e_small/m3e-small/README.md
+embedding_m3e_small/m3e-small/config.json
+embedding_m3e_small/m3e-small/pytorch_model.bin
+embedding_m3e_small/m3e-small/special_tokens_map.json
+embedding_m3e_small/m3e-small/tokenizer.json
+embedding_m3e_small/m3e-small/tokenizer_config.json
+embedding_zh.egg-info/PKG-INFO
+embedding_zh.egg-info/SOURCES.txt
+embedding_zh.egg-info/dependency_links.txt
+embedding_zh.egg-info/requires.txt
+embedding_zh.egg-info/top_level.txt
