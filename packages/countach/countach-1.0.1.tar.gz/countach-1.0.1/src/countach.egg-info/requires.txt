@@ -1,0 +1,5 @@
+
+[testing]
+pytest>=7.0
+tox>=4.4.0
+mypy>=1.0.0
