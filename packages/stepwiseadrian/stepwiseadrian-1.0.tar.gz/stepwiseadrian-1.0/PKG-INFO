@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: stepwiseadrian
+Version: 1.0
+Summary: This package is make for selecting best attribute to build multiple linear regression using stepwise selection
+Author: Adrian Glazer
+Author-email: adrianbadjideh01@gmail.com
+License-File: LICENSE

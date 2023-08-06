@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+lib/StepWise.py
+lib/__init__.py
+stepwiseadrian.egg-info/PKG-INFO
+stepwiseadrian.egg-info/SOURCES.txt
+stepwiseadrian.egg-info/dependency_links.txt
+stepwiseadrian.egg-info/requires.txt
+stepwiseadrian.egg-info/top_level.txt
