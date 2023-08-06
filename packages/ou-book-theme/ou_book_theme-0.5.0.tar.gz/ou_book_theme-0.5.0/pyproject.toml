@@ -1,0 +1,95 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "ou-book-theme"
+description = ''
+readme = "README.md"
+requires-python = ">=3.7"
+keywords = []
+authors = [
+  { name = "Mark Hall", email = "mark.hall@open.ac.uk" },
+]
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "Programming Language :: Python",
+  "Programming Language :: Python :: 3.7",
+  "Programming Language :: Python :: 3.8",
+  "Programming Language :: Python :: 3.9",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: Implementation :: CPython",
+  "Programming Language :: Python :: Implementation :: PyPy",
+]
+dependencies = [
+  "lxml",
+  "pyyaml",
+  "rich",
+  "sphinx_book_theme>=1.0.1,<2.0.0",
+  "sphinx_design",
+  "sphinxcontrib-mermaid>=0.8.1,<1.0.0",
+  "typer[all]",
+]
+dynamic = ["version"]
+
+[project.scripts]
+obt = "ou_book_theme.cli:main"
+"open-book-theme" = "ou_book_theme.cli:main"
+
+[project.urls]
+Documentation = "https://github.com/unknown/ou-book-theme#readme"
+Issues = "https://github.com/unknown/ou-book-theme/issues"
+Source = "https://github.com/unknown/ou-book-theme"
+
+[tool.hatch.version]
+path = "ou_book_theme/__about__.py"
+
+[tool.hatch.envs.dev]
+extra-dependencies = [
+  "livereload",
+  "jupyter-book<1.0.0",
+]
+[tool.hatch.envs.dev.scripts]
+server = "python dev-server.py"
+
+[tool.hatch.envs.test]
+extra-dependencies = [
+  "pytest",
+  "pytest-cov",
+]
+[tool.hatch.envs.test.scripts]
+cov = "pytest --cov-report=term-missing --cov-config=pyproject.toml --cov=ou_book_theme --cov=tests {args}"
+no-cov = "cov --no-cov {args}"
+
+[[tool.hatch.envs.test.matrix]]
+python = ["37", "38", "39", "310", "311"]
+
+[tool.hatch.build]
+exclude = [
+  "docs",
+  "tests",
+  "dev-server.py",
+  ".gitignore",
+]
+artifacts = [
+  "ou_book_theme/theme/ou_book_theme/static/scripts/ou-book-theme.js",
+  "ou_book_theme/theme/ou_book_theme/static/styles/ou-book-theme.css",
+]
+[tool.hatch.build.hooks.jupyter-builder]
+dependencies = ["hatch-jupyter-builder"]
+build-function = "hatch_jupyter_builder.npm_builder"
+
+[tool.coverage.run]
+branch = true
+parallel = true
+omit = [
+  "ou_book_theme/__about__.py",
+]
+
+[tool.coverage.report]
+exclude_lines = [
+  "no cov",
+  "if __name__ == .__main__.:",
+  "if TYPE_CHECKING:",
+]

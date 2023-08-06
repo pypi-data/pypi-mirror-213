@@ -1,0 +1,8 @@
+a.reference.external::after {
+    padding-left: 0.3rem;
+    color: currentColor;
+    font-family: 'Font Awesome 6 Free';
+    font-style: normal;
+    font-weight: 900;
+    content: var(--ou-icon-external-link);
+}
