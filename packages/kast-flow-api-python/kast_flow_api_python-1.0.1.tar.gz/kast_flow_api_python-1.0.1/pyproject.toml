@@ -1,0 +1,28 @@
+[tool.poetry]
+name = "kast-flow-api-python"
+version = "1.0.1"
+description = "kast python api unified processing engine"
+authors = ["kast"]
+packages = [
+    { include = "kast_flow_api" }
+]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+dacite = "^1.8"
+
+[tool.poetry.group.test]
+[tool.poetry.group.test.dependencies]
+pytest = "^7.3"
+pytest-cov = "^4.1"
+pytest-html = "^3.2"
+
+[tool.isort]
+profile = "black"
+
+[pytest]
+pythonpath = "kast_flow"
+
+[build-system]
+requires = ["poetry_core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
