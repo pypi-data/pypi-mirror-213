@@ -1,0 +1,5 @@
+setuptools
+flightdata
+pfc-geometry
+scipy
+fastdtw
