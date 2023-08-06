@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "cheb3"
+version = "0.7.5"
+authors = [{name = "YanhuiJessica",email = "y4nhv1@gmail.com"}]
+description = "Web3 CTF tool based on web3.py"
+readme = "README.md"
+requires-python = ">=3.8"
+dependencies = [
+  "web3>=6.0.0",
+  "py-solc-x",
+  "loguru",
+]
+classifiers = [
+  "Development Status :: 3 - Alpha",
+
+  "License :: OSI Approved :: MIT License",
+
+  "Programming Language :: Python",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/YanhuiJessica/cheb3"
+"Documentation" = "https://cheb3.readthedocs.io/en/latest/"
+"Source" = "https://github.com/YanhuiJessica/cheb3"
+"Bug Reports" = "https://github.com/YanhuiJessica/cheb3/issues"
