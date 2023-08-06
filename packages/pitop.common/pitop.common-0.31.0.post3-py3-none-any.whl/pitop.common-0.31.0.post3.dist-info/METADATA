@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: pitop.common
+Version: 0.31.0.post3
+Summary: pi-top Python SDK.
+Home-page: https://github.com/pi-top/pi-top-Python-SDK
+Author: pi-top
+Author-email: deb-maintainers@pi-top.com
+License: Apache Software License
+Keywords: pi-top,raspberrypi,battery
+Platform: ALL
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Education
+Classifier: Topic :: System :: Hardware
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Dist: isc-dhcp-leases (<1.0.0,>=0.9.1)
+Requires-Dist: netifaces (<1.0.0,>=0.10.4)
+Requires-Dist: systemd-python (<235,>=234)
+Requires-Dist: smbus2 (<1.0.0,>=0.4.0)
+Requires-Dist: pyzmq (<21.0.0,>=20.0.0)
+
+===========================
+pi-top Common
+===========================
+
+A set of python helpers used by pi-top.
+
+
