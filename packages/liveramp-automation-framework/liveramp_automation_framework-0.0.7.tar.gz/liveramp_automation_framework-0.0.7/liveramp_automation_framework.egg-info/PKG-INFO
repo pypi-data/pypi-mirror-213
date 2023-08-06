@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: liveramp-automation-framework
+Version: 0.0.7
+Summary: This is the base liveramp_automation_framework
+Home-page: https://github.com/LiveRamp/qe_api_framework
+Author: Jasmine Qian
+Author-email: jasmine.qian@liveramp.com
+Description-Content-Type: text/markdown
+
+### 1. Descprition of the repository
+        This repository is to build a base autoamtion framework. 
+        We would like to integrate the common helpers and libraries here and then build a lib.
+        Later the only thing is to add the cases according to the features. 
+        Since most of the common helpers and libraries have been integrated to the lib, you only need to import that lib and methods.
+
+### 2. How to use?
+        python setup.py sdist bdist_wheel
+   
+
+### 3. Things need to follow:  
+         
+
+
+
+
