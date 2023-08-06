@@ -1,0 +1,16 @@
+chima/__init__.py,sha256=zL8zOjzPsEBjQrlTGK-Y4HqZSGGyWsuMwvftncC4K7c,275
+chima/client.py,sha256=ZPjSgRSOoP8-eZPIM4BxRi8vq93xr0ZPn1K3SRPP3fg,11927
+chima/core/__init__.py,sha256=qQP1ec3_wC4q9KA3hqDEqyllC-z5Bza2NPQbADBq5f8,348
+chima/core/api_error.py,sha256=RE8LELok2QCjABadECTvtDp7qejA1VmINCh6TbqPwSE,426
+chima/core/datetime_utils.py,sha256=nBys2IsYrhPdszxGKCNRPSOCwa-5DWOHG95FB8G9PKo,1047
+chima/core/jsonable_encoder.py,sha256=yHrx0C19n1H77G-GanO-HsFyBPVMlsJz7WffsHwXEVI,3710
+chima/core/remove_none_from_headers.py,sha256=paKMgUVWJW133a_5y5lV00bhOuZOgZqWrON_oGNuzCA,385
+chima/environment.py,sha256=2WRcptH-uRYqMcgD5sXBkXApOWJv67c2Z_jki9JLArQ,159
+chima/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+chima/types/__init__.py,sha256=elIRiXS-wytlf8mQnsO7EQK15AMTnJfuk6ftmLe9CXc,288
+chima/types/converse_response.py,sha256=9gKRXwXjdBbKvQQs_nTaTsZFFfGn9iLsoxT9PuBBZmA,754
+chima/types/generate_text_response.py,sha256=tELpK78SsbvBwkPc2k8AvwzMBdhxsbKROMocPZULP1M,757
+chima/types/search_response.py,sha256=VcCR_bDgEj7_LgtXvf_zgENlbTT8dRNADPdox1yBm1I,920
+chima-0.0.9.dist-info/METADATA,sha256=RwVGX5CYqD1ZLC2wr_CKL87Bg60XNjBO5BHLsCbijow,2683
+chima-0.0.9.dist-info/WHEEL,sha256=Zb28QaM1gQi8f4VCBhsUklF61CTlNYfs9YAZn-TOGFk,88
+chima-0.0.9.dist-info/RECORD,,
