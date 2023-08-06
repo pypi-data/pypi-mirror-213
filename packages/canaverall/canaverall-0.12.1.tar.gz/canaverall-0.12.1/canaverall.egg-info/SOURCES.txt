@@ -1,0 +1,7 @@
+LICENSE
+README.md
+setup.py
+canaverall.egg-info/PKG-INFO
+canaverall.egg-info/SOURCES.txt
+canaverall.egg-info/dependency_links.txt
+canaverall.egg-info/top_level.txt
