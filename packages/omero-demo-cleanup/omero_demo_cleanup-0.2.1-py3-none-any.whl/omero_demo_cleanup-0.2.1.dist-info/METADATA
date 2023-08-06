@@ -1,0 +1,60 @@
+Metadata-Version: 2.1
+Name: omero-demo-cleanup
+Version: 0.2.1
+Summary: Plugin for managing the disk space on the demo server.
+Home-page: https://github.com/ome/omero-demo-cleanup/
+Author: The Open Microscopy Team
+Author-email: 
+Keywords: OMERO.CLI,plugin
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Plugins
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: Intended Audience :: Information Technology
+Classifier: License :: OSI Approved :: GNU General Public License v2 or later (GPLv2+)
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.6
+License-File: LICENSE.txt
+Requires-Dist: omero-py (>=5.6.0)
+
+.. image:: https://github.com/ome/omero-demo-cleanup/workflows/OMERO/badge.svg
+   :target: https://github.com/ome/omero-demo-cleanup/actions
+
+.. image:: https://badge.fury.io/py/omero-demo-cleanup.svg
+    :target: https://badge.fury.io/py/omero-demo-cleanup
+
+OMERO demo cleanup
+==================
+
+This OMERO command-line plugin allows you to compute the space per user, find
+the users with the biggest amount of data and free disk space on a server
+
+To generate the list of users which data must be deleted to free 300GB on the
+system without running the deletion::
+
+    $ omero demo-cleanup --gigabytes 300
+
+To ignore users who's data whose data must not be deleted, you can Tag those users
+and specify the `Tag` or parent `Tag Group` by `Name` or `ID`.
+This is enabled by default using a Tag named "NO DELETE".
+So it is preferable to Tag users on the server with a `Tag` named "NO DELETE" or create
+a `Tag Group` named "NO DELETE" containing Tags linked to users.
+
+    # Add a Tag to a User via CLI (not possible to see this in the clients)
+    $ omero obj new ExperimenterAnnotationLink child=TagAnnotation:123 parent=Experimenter:52
+
+    # Choose a non-default Tag or Tag Group (by ID or Name) to ignore the tagged users
+    $ omero demo-cleanup --gigabytes 300 --ignore-tag "Tag Name"
+
+You can also specify individual users by ID or user name, e.g:
+
+    --ignore-users 123,user-1,ben,234
+
+To generate the list of users which data must be deleted to free 300GB on the
+system and running the deletion (WARNING: data belonging to these users will
+be removed permanently)::
+
+    $ omero demo-cleanup --gigabytes 300 --force
