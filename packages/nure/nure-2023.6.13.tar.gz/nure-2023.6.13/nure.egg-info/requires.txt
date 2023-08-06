@@ -1,0 +1,16 @@
+more-itertools
+numpy
+pandas
+pyarrow
+
+[aws]
+boto3
+
+[image]
+pillow
+opencv-python-headless
+
+[sql]
+mysql-connector-python
+sqlalchemy-bigquery
+psycopg2-binary
