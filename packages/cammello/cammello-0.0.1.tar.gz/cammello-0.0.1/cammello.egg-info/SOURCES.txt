@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+cammello/__about__.py
+cammello/__init__.py
+cammello/cammello.py
+cammello.egg-info/PKG-INFO
+cammello.egg-info/SOURCES.txt
+cammello.egg-info/dependency_links.txt
+cammello.egg-info/top_level.txt
+cammello/res/616532.png
