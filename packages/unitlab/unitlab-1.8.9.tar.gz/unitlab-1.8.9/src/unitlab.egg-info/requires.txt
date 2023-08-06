@@ -1,0 +1,7 @@
+Pillow
+aiohttp
+numpy
+opencv-python
+requests
+tqdm
+typer
