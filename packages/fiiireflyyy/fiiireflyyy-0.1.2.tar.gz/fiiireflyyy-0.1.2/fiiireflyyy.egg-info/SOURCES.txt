@@ -1,0 +1,14 @@
+README.txt
+setup.cfg
+setup.py
+fiiireflyyy/__init__.py
+fiiireflyyy/firefiles.py
+fiiireflyyy/firelearn.py
+fiiireflyyy/fireprocess.py
+fiiireflyyy/flimage.py
+fiiireflyyy/logic_gates.py
+fiiireflyyy.egg-info/PKG-INFO
+fiiireflyyy.egg-info/SOURCES.txt
+fiiireflyyy.egg-info/dependency_links.txt
+fiiireflyyy.egg-info/requires.txt
+fiiireflyyy.egg-info/top_level.txt
