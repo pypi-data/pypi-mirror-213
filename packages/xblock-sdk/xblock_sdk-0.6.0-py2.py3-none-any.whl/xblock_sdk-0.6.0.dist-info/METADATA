@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: xblock-sdk
+Version: 0.6.0
+Summary: XBlock SDK
+Classifier: Development Status :: 3 - Alpha
+Classifier: Framework :: Django
+Classifier: Framework :: Django :: 3.2
+Classifier: Framework :: Django :: 4.0
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU Affero General Public License v3 or later (AGPLv3+)
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+License-File: LICENSE.TXT
+Requires-Dist: lxml
+Requires-Dist: requests
+Requires-Dist: web-fragments
+Requires-Dist: webob
+Requires-Dist: XBlock[django]
+Requires-Dist: Django
+Requires-Dist: pypng
+Requires-Dist: fs-s3fs
+Requires-Dist: cookiecutter
+Requires-Dist: simplejson
+
+XBlock SDK
