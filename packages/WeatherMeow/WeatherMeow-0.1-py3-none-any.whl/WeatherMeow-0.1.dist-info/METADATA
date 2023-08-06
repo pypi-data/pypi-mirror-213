@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: WeatherMeow
+Version: 0.1
+Summary: A Python package in a form of a CLI for retrieving weather information with ease
+Home-page: https://github.com/elucidator8918/CoPilot_Hackathon_Weather_CLI
+Author: Siddhant Dutta
+Author-email: forsomethingnewsid@gmail.com
+License: MIT
+Platform: UNKNOWN
+Requires-Python: >=3.6
+License-File: LICENSE
+Requires-Dist: Click
+Requires-Dist: Sphinx-Click
+Requires-Dist: sphinx-autodoc-annotation
+Requires-Dist: pytz
+Requires-Dist: requests
+Requires-Dist: getpass4
+
+UNKNOWN
+
