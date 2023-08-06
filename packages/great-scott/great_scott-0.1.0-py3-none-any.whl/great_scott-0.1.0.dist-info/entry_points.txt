@@ -1,0 +1,3 @@
+[console_scripts]
+great-scott=great_scott.__main__:main
+
