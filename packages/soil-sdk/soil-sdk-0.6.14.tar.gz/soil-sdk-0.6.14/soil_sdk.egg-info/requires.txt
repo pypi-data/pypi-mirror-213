@@ -1,0 +1,15 @@
+requests>=2.28.2
+pyyaml>=5.3.0
+PyJWT>=2.6.0
+numpy>=1.24.2
+pandas>=1.5.3
+
+[dev]
+pylint>=2.16
+coverage>=7
+pre-commit>=3
+pydoc-markdown>=4.6.4
+types-PyYAML>=4.6.4
+types-requests>=2.28.11.15
+pbr>=5.11.1
+pyright>=1.1.298
