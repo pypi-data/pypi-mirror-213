@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: opendata-kr
+Version: 0.0.8
+Summary: Sample Datasets for Beginners
+Home-page: https://github.com/teddylee777/opendata-kr
+Author: Teddy Lee
+Author-email: teddylee777@gmail.com
+Keywords: opendata-kr,opendata,teddynote,datasets,sample-datasets,python,pandas,sample,data
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3
+License-File: LICENSE
+Requires-Dist: tqdm
+Requires-Dist: pandas
+Requires-Dist: ipywidgets
+Requires-Dist: requests
+
