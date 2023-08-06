@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: subtr-actor-py
+Version: 0.1.0
+Summary: Python bindings for the Rocket League replay processing library subtr-actor.
+Home-page: https://github.com/rlrml/subtr-actor-py
+License: MIT
+Author: Ivan Malison
+Author-email: ivanmalison@gmail.com
+Requires-Python: >=3.6,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Project-URL: Repository, https://github.com/rlrml/subtr-actor-py
+Description-Content-Type: text/markdown
+
+# subtr-actor
+
+Python bindings for the [subtr-actor](https://github.com/rlrml/subtr-actor) library.
+
