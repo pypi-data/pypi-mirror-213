@@ -1,0 +1,152 @@
+Metadata-Version: 2.1
+Name: galaxy-app
+Version: 23.0.2
+Summary: Galaxy application (backend)
+Home-page: https://github.com/galaxyproject/galaxy
+Author: Galaxy Project and Community
+Author-email: galaxy-committers@lists.galaxyproject.org
+License: AFL
+Keywords: Galaxy
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Academic Free License (AFL)
+Classifier: Natural Language :: English
+Classifier: Operating System :: POSIX
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Topic :: Software Development
+Classifier: Topic :: Software Development :: Code Generators
+Classifier: Topic :: Software Development :: Testing
+Requires-Python: >=3.7
+Description-Content-Type: text/x-rst
+License-File: LICENSE
+Requires-Dist: galaxy-auth
+Requires-Dist: galaxy-config
+Requires-Dist: galaxy-data
+Requires-Dist: galaxy-files
+Requires-Dist: galaxy-job-execution
+Requires-Dist: galaxy-job-metrics
+Requires-Dist: galaxy-objectstore
+Requires-Dist: galaxy-tool-util[cwl,edam]
+Requires-Dist: galaxy-tours
+Requires-Dist: galaxy-util
+Requires-Dist: galaxy-web-framework
+Requires-Dist: galaxy-web-stack
+Requires-Dist: Beaker
+Requires-Dist: boltons
+Requires-Dist: bx-python
+Requires-Dist: celery
+Requires-Dist: cloudauthz (==0.6.0)
+Requires-Dist: gxformat2
+Requires-Dist: importlib-metadata (<5)
+Requires-Dist: kombu
+Requires-Dist: lagom
+Requires-Dist: lxml
+Requires-Dist: Mako
+Requires-Dist: Markdown
+Requires-Dist: MarkupSafe
+Requires-Dist: packaging (<22)
+Requires-Dist: paramiko (!=2.9.0,!=2.9.1)
+Requires-Dist: pebble
+Requires-Dist: pulsar-galaxy-lib (>=0.15.0.dev0)
+Requires-Dist: pydantic
+Requires-Dist: pysam (>=0.20)
+Requires-Dist: PyJWT
+Requires-Dist: PyYAML
+Requires-Dist: refgenconf (>=0.12.0)
+Requires-Dist: requests
+Requires-Dist: SQLAlchemy (<2,>=1.4.25)
+Requires-Dist: sqlitedict
+Requires-Dist: starlette
+Requires-Dist: svgwrite
+Requires-Dist: typing-extensions
+Requires-Dist: WebOb
+Requires-Dist: Whoosh
+
+
+.. image:: https://badge.fury.io/py/galaxy-app.svg
+   :target: https://pypi.org/project/galaxy-app/
+
+
+Overview
+--------
+
+The Galaxy_ application logic (backend).
+
+* Code: https://github.com/galaxyproject/galaxy
+
+.. _Galaxy: http://galaxyproject.org/
+
+History
+-------
+
+.. to_doc
+
+-------------------
+23.0.2 (2023-06-13)
+-------------------
+
+
+=========
+Bug fixes
+=========
+
+* Fix ``Text File Busy`` errors at the source by `@mvdbeek <https://github.com/mvdbeek>`_ in `#16212 <https://github.com/galaxyproject/galaxy/pull/16212>`_
+
+============
+Enhancements
+============
+
+* Point release deps fixes and docs by `@mvdbeek <https://github.com/mvdbeek>`_ in `#16214 <https://github.com/galaxyproject/galaxy/pull/16214>`_
+* Use galaxy-release-util to upload python packages by `@mvdbeek <https://github.com/mvdbeek>`_ in `#16240 <https://github.com/galaxyproject/galaxy/pull/16240>`_
+
+-------------------
+23.0.1 (2023-06-08)
+-------------------
+
+
+=========
+Bug fixes
+=========
+
+* Display DCE in job parameter component, allow rerunning with DCE input by `@mvdbeek <https://github.com/mvdbeek>`_ in `#15744 <https://github.com/galaxyproject/galaxy/pull/15744>`_
+* Fix mixed outputs_to_working_directory pulsar destinations by `@mvdbeek <https://github.com/mvdbeek>`_ in `#15927 <https://github.com/galaxyproject/galaxy/pull/15927>`_
+* Update Gravity to 1.0.3 by `@natefoo <https://github.com/natefoo>`_ in `#15939 <https://github.com/galaxyproject/galaxy/pull/15939>`_
+* Various fixes to path prefix handling by `@mvdbeek <https://github.com/mvdbeek>`_ in `#16033 <https://github.com/galaxyproject/galaxy/pull/16033>`_
+* Fix case sensitive filtering by name in histories by `@davelopez <https://github.com/davelopez>`_ in `#16036 <https://github.com/galaxyproject/galaxy/pull/16036>`_
+* Fix gcsfs test discovery by `@mvdbeek <https://github.com/mvdbeek>`_ in `#16039 <https://github.com/galaxyproject/galaxy/pull/16039>`_
+* Replace httpbin service with pytest-httpserver by `@mvdbeek <https://github.com/mvdbeek>`_ in `#16042 <https://github.com/galaxyproject/galaxy/pull/16042>`_
+* Update pulsar to 0.15.2 by `@mvdbeek <https://github.com/mvdbeek>`_ in `#16050 <https://github.com/galaxyproject/galaxy/pull/16050>`_
+* Anonymous User tool link bug fix by `@ahmedhamidawan <https://github.com/ahmedhamidawan>`_ in `#16065 <https://github.com/galaxyproject/galaxy/pull/16065>`_
+* Fix BCO export by updating gxformat2 by `@mvdbeek <https://github.com/mvdbeek>`_ in `#16081 <https://github.com/galaxyproject/galaxy/pull/16081>`_
+* Fix job failure handling when condor indicates job failure by `@mvdbeek <https://github.com/mvdbeek>`_ in `#16096 <https://github.com/galaxyproject/galaxy/pull/16096>`_
+* Fix dataype_change not updating HDCA update_time by `@mvdbeek <https://github.com/mvdbeek>`_ in `#16099 <https://github.com/galaxyproject/galaxy/pull/16099>`_
+* Extract HDA for code_file validate_input hook by `@mvdbeek <https://github.com/mvdbeek>`_ in `#16120 <https://github.com/galaxyproject/galaxy/pull/16120>`_
+* Fix sort error when re-running job with DCE collection input by `@mvdbeek <https://github.com/mvdbeek>`_ in `#16126 <https://github.com/galaxyproject/galaxy/pull/16126>`_
+* Fix related-hid in bulk contents API by `@mvdbeek <https://github.com/mvdbeek>`_ in `#16128 <https://github.com/galaxyproject/galaxy/pull/16128>`_
+* Fix rank calculation for jobs waiting to be run by anonymous users by `@jdavcs <https://github.com/jdavcs>`_ in `#16137 <https://github.com/galaxyproject/galaxy/pull/16137>`_
+* Tool warnings can either be None or a Dictionary but not a String by `@guerler <https://github.com/guerler>`_ in `#16183 <https://github.com/galaxyproject/galaxy/pull/16183>`_
+* Pin minimum tpv version by `@mvdbeek <https://github.com/mvdbeek>`_ in `#16201 <https://github.com/galaxyproject/galaxy/pull/16201>`_
+
+=============
+Other changes
+=============
+
+* Startup fix when tool removed between reboot by `@mvdbeek <https://github.com/mvdbeek>`_ in `#16175 <https://github.com/galaxyproject/galaxy/pull/16175>`_
+
+-------------------
+20.9.0 (2020-10-15)
+-------------------
+
+* First release from the 20.09 branch of Galaxy.
+
+-------------------
+20.5.0 (2020-07-04)
+-------------------
+
+* First release from the 20.05 branch of Galaxy.
