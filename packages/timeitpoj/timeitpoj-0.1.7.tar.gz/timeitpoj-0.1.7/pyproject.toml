@@ -1,0 +1,33 @@
+[tool.poetry]
+name = "timeitpoj"
+version = "0.1.7"
+description = "yet another random library for measuring python performance"
+authors = ["Jari Van Melckebeke <jarivanmelckebeke@gmail.com>"]
+maintainers = ["Jari Van Melckebeke <jarivanmelckebeke@gmail.com>"]
+repository = "https://github.com/jvanmelckebeke/timeitpoj"
+homepage = "https://github.com/jvanmelckebeke/timeitpoj"
+
+
+
+readme = "README.md"
+keywords = ["timeit", "performance", "benchmark", "time", "measure"]
+license = "MIT"
+classifiers = [
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.8",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Topic :: System :: Logging",
+    "Topic :: System :: Networking :: Monitoring",
+    "Topic :: Utilities"
+]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
