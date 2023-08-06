@@ -1,0 +1,11 @@
+Click>=7.0
+Flask>=2.2
+flask-jwt-extended
+marshmallow
+marshmallow-sqlalchemy
+flask-sqlalchemy
+flask-marshmallow
+flask-migrate
+flask-smorest
+flask-cors
+python-dotenv

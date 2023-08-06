@@ -1,0 +1,39 @@
+[tool.poetry]
+name = "fullask-rest-framework"
+version = "0.1.0"
+description = ""
+authors = ["tgoddessana <twicegoddessana1229@gmail.com>"]
+readme = "README.md"
+packages = [{ include = "fullask_rest_framework" }]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+flask = "^2.2.3"
+flask-jwt-extended = "*"
+marshmallow = "^3.19.0"
+marshmallow-sqlalchemy = "^0.29.0"
+flask-sqlalchemy = "^3.0.3"
+flask-marshmallow = "^0.15.0"
+flask-migrate = "^4.0.4"
+flask-smorest = "^0.42.0"
+python-dotenv = "^1.0.0"
+flask-cors = "^3.0.10"
+
+[tool.poetry.group.dev.dependencies]
+black = "^23.3.0"
+isort = "^5.12.0"
+flake8 = "^6.0.0"
+pip = "*"
+wheel = "^0.40.0"
+twine = "^4.0.2"
+dependency_injector = "*"
+tox = "*"
+coverage = "*"
+sphinx = "*"
+sphinx-rtd-theme = "^1.2.0"
+pre-commit = "^3.3.2"
+pytest = "^7.3.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
