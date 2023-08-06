@@ -1,0 +1,98 @@
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry]
+name = "kraken-std"
+version = "0.24.0"
+description = "The Kraken standard library."
+authors = ["Niklas Rosenstein <rosensteinniklas@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+packages = [{ include = "kraken/std", from = "src" }]
+classifiers = []
+keywords = []
+
+[tool.poetry.urls]
+"Bug Tracker" = "https://github.com/kraken-build/kraken-build/issues"
+Documentation = "https://kraken-build.github.io/kraken-build/"
+Homepage = "https://kraken-build.github.io/kraken-build/"
+Repository = "https://github.com/kraken-build/kraken-build/"
+
+[tool.poetry.dependencies]
+pyaddlicense = "^0.2.1"
+python = "^3.7"
+databind-json = "^4.2.5"
+deprecated = "^1.2.13"
+httpx = "^0.23.0"
+kraken-common = "^0.24.0"
+kraken-core = "^0.24.0"
+termcolor = "^1.1.0"
+tomli = "^2.0.1"
+tomli-w = "^1.0.0"
+twine = "^4.0.1"
+
+# NOTE(@NiklasRosenstein): Need to pin transitive dependency markdown-it under 3.0 because it dropped Python 3.9
+#       support after that version. Technically this shouldn't be a big issue for runtime, but Mypy checks site
+#       packages and complains about the walrus operator used in it when it checks site-packages.
+#       See also https://github.com/python/mypy/issues/12162
+markdown-it-py = "<3.0.0"
+
+[tool.poetry.dev-dependencies]
+black = "*"
+flake8 = "*"
+isort = "*"
+mypy = "*"
+pycln = "*"
+pytest = "*"
+pyupgrade = "*"
+pyartifactory = "^1.10.0"
+cloudsmith-api = "^1.61.3"
+types-requests = "^2.28.0"
+types-termcolor = "^1.1.5"
+types-Deprecated = "^1.2.9"
+"proxy.py" = "^2.4.3"
+
+[tool.poetry.group.docs]
+optional = true
+
+[tool.poetry.group.docs.dependencies]
+mkdocs = "*"
+mkdocs-material = "*"
+novella = "0.2.3"
+pydoc-markdown = "4.6.0"
+
+[tool.slap]
+typed = true
+
+[tool.slap.test]
+check = "slap check"
+kraken-lint = "krakenw -vv run lint"
+kraken-test = "krakenw -vv run test"
+# kraken-integrationTest = "kraken run integrationTest"
+
+[tool.slap.run]
+fmt = "krakenw -vv run fmt"
+
+[tool.mypy]
+python_version = "3.7"
+exclude = ["src/tests/integration/.*/data/.*"]
+explicit_package_bases = true
+mypy_path = ["src"]
+namespace_packages = true
+pretty = true
+show_error_codes = true
+show_error_context = true
+strict = true
+warn_no_return = true
+warn_redundant_casts = true
+warn_unreachable = true
+warn_unused_ignores = true
+
+[tool.isort]
+profile = "black"
+line_length = 120
+combine_as_imports = true
+
+[tool.black]
+line-length = 120
