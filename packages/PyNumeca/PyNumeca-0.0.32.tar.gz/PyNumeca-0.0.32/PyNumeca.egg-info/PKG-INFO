@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: PyNumeca
+Version: 0.0.32
+Summary: PyNumeca
+Home-page: https://github.com/GitMarco27/PyNumeca.git
+Download-URL: https://github.com/GitMarco27/PyNumeca/archive/refs/tags/v0.0.32.zip
+Author: Marco Sanguineti
+Author-email: marco.sanguineti.info@gmail.com
+License: MIT
+Keywords: PyNumeca,Numeca,Python
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+License-File: LICENSE
