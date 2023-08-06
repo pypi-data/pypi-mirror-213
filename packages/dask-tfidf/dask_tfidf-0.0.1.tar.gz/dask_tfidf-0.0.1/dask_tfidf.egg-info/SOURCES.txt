@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+dask_tfidf/__init__.py
+dask_tfidf/dask_tf_idf.py
+dask_tfidf.egg-info/PKG-INFO
+dask_tfidf.egg-info/SOURCES.txt
+dask_tfidf.egg-info/dependency_links.txt
+dask_tfidf.egg-info/requires.txt
+dask_tfidf.egg-info/top_level.txt

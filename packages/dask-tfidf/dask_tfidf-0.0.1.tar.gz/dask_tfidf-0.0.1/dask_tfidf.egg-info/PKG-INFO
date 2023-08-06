@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: dask-tfidf
+Version: 0.0.1
+Summary: A Dask native implementation of 'Term Frequency Inverse Document Frequency' for dask-ml and scikit-learn
+Home-page: https://github.com/pr38/dask_tfidf
+Author: Pouya Rezvanipour
+Author-email: pouyar3@yahoo.com
+License: BSD
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Development Status :: 3 - Alpha
+License-File: LICENSE
+
+UNKNOWN
+
