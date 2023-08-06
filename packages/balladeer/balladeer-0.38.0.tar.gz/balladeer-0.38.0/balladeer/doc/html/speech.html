@@ -1,0 +1,346 @@
+
+
+<!DOCTYPE html>
+<head>
+  <meta charset="utf-8">
+  <meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Speech &mdash; Balladeer 0.37.0</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  <link rel="stylesheet" href="_static/css/theme.min.css" type="text/css" />
+  <link rel="stylesheet" href="_static/css/custom.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/css/theme.min.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Drama" href="drama.html" />
+    <link rel="prev" title="Map" href="map.html" /> 
+
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <a class="site-nav-toggle hidden-lg-up"><i class="icon-menu"></i></a>
+            <a class="site-title" href="index.html">
+                Balladeer
+            </a>
+        </div>
+    </header>
+
+
+<div class="breadcrumbs-outer hidden-xs-down">
+    <div class="container">
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="breadcrumbs">
+    
+      <li><a href="index.html">Docs</a></li>
+        
+      <li>Speech</li>
+    
+    
+      <li class="breadcrumbs-aside">
+        
+            
+            <a href="_sources/speech.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+</div>
+    </div>
+</div>
+    <div class="main-outer">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-lg-3 site-nav">
+                    
+<div role="search">
+    <form class="search" action="search.html" method="get">
+        <div class="icon-input">
+            <input type="text" name="q" placeholder="Search" />
+            <span class="icon-search"></span>
+        </div>
+        <input type="submit" value="Go" class="d-hidden" />
+        <input type="hidden" name="check_keywords" value="yes" />
+        <input type="hidden" name="area" value="default" />
+    </form>
+</div>
+                    <div class="site-nav-tree">
+                        
+                            
+                            
+                                <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="intro.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="types.html">Basics</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="types.html#states">States</a></li>
+<li class="toctree-l2"><a class="reference internal" href="types.html#grouping">Grouping</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="entity.html">Entities</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="entity.html#entity-objects">Entity objects</a></li>
+<li class="toctree-l2"><a class="reference internal" href="entity.html#entity-state">Entity state</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="world.html">World</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="world.html#worldbuilder">WorldBuilder</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="map.html">Map</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="map.html#compass">Compass</a></li>
+<li class="toctree-l2"><a class="reference internal" href="map.html#traffic-and-transits">Traffic and Transits</a></li>
+<li class="toctree-l2"><a class="reference internal" href="map.html#mapbuilder">MapBuilder</a></li>
+</ul>
+</li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Speech</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#modelling">Modelling</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#markup">Markup</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="drama.html">Drama</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="drama.html#Drama"><code class="docutils literal notranslate"><span class="pre">Drama</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="drama.html#interlude">Interlude</a></li>
+<li class="toctree-l2"><a class="reference internal" href="drama.html#directive-handler">Directive handler</a></li>
+<li class="toctree-l2"><a class="reference internal" href="drama.html#dialogue-generator">Dialogue generator</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="story.html">Story</a></li>
+<li class="toctree-l1"><a class="reference internal" href="scene.html">Scenes</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="scene.html#specifications">Specifications</a></li>
+<li class="toctree-l2"><a class="reference internal" href="scene.html#shots">Shots</a></li>
+<li class="toctree-l2"><a class="reference internal" href="scene.html#conditions">Conditions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="scene.html#model">Model</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="pages.html">Pages</a></li>
+<li class="toctree-l1"><a class="reference internal" href="style.html">Styles</a></li>
+<li class="toctree-l1"><a class="reference internal" href="web.html">Web</a></li>
+<li class="toctree-l1"><a class="reference internal" href="changes.html">Change Log</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="changes.html#id1">0.38.0</a></li>
+<li class="toctree-l2"><a class="reference internal" href="changes.html#id2">0.37.0</a></li>
+<li class="toctree-l2"><a class="reference internal" href="changes.html#id3">0.36.0</a></li>
+<li class="toctree-l2"><a class="reference internal" href="changes.html#id4">0.35.0</a></li>
+<li class="toctree-l2"><a class="reference internal" href="changes.html#id5">0.34.0</a></li>
+<li class="toctree-l2"><a class="reference internal" href="changes.html#id6">0.33.0</a></li>
+<li class="toctree-l2"><a class="reference internal" href="changes.html#id7">0.32.0</a></li>
+<li class="toctree-l2"><a class="reference internal" href="changes.html#id8">0.31.0</a></li>
+<li class="toctree-l2"><a class="reference internal" href="changes.html#id9">0.30.0</a></li>
+<li class="toctree-l2"><a class="reference internal" href="changes.html#id10">0.29.0</a></li>
+<li class="toctree-l2"><a class="reference internal" href="changes.html#id11">0.28.0</a></li>
+<li class="toctree-l2"><a class="reference internal" href="changes.html#id12">0.27.0</a></li>
+<li class="toctree-l2"><a class="reference internal" href="changes.html#id13">0.26.0</a></li>
+<li class="toctree-l2"><a class="reference internal" href="changes.html#id14">0.25.0</a></li>
+<li class="toctree-l2"><a class="reference internal" href="changes.html#id15">0.24.0</a></li>
+<li class="toctree-l2"><a class="reference internal" href="changes.html#id16">0.23.0</a></li>
+<li class="toctree-l2"><a class="reference internal" href="changes.html#id17">0.22.0</a></li>
+<li class="toctree-l2"><a class="reference internal" href="changes.html#id18">0.21.0</a></li>
+<li class="toctree-l2"><a class="reference internal" href="changes.html#id19">0.20.0</a></li>
+<li class="toctree-l2"><a class="reference internal" href="changes.html#id20">0.19.0</a></li>
+<li class="toctree-l2"><a class="reference internal" href="changes.html#id21">0.18.0</a></li>
+<li class="toctree-l2"><a class="reference internal" href="changes.html#id22">0.17.0</a></li>
+<li class="toctree-l2"><a class="reference internal" href="changes.html#id23">0.16.0</a></li>
+<li class="toctree-l2"><a class="reference internal" href="changes.html#id24">0.15.0</a></li>
+<li class="toctree-l2"><a class="reference internal" href="changes.html#id25">0.14.0</a></li>
+<li class="toctree-l2"><a class="reference internal" href="changes.html#id26">0.13.0</a></li>
+<li class="toctree-l2"><a class="reference internal" href="changes.html#id27">0.12.0</a></li>
+<li class="toctree-l2"><a class="reference internal" href="changes.html#id28">0.11.0</a></li>
+<li class="toctree-l2"><a class="reference internal" href="changes.html#id29">0.10.0</a></li>
+<li class="toctree-l2"><a class="reference internal" href="changes.html#id30">0.9.0</a></li>
+<li class="toctree-l2"><a class="reference internal" href="changes.html#id31">0.8.0</a></li>
+<li class="toctree-l2"><a class="reference internal" href="changes.html#id32">0.7.0</a></li>
+</ul>
+</li>
+</ul>
+
+                            
+                        
+                    </div>
+                </div>
+                <div class="col-12 col-lg-9">
+                    <div class="document">
+                        
+                            
+  <section id="speech">
+<h1>Speech<a class="headerlink" href="#speech" title="Permalink to this heading">¶</a></h1>
+<p>The role of most of our literature is, it seems, to destroy the world.</p>
+<p>– Jean Paul Gustave Ricoeur</p>
+<section id="modelling">
+<h2>Modelling<a class="headerlink" href="#modelling" title="Permalink to this heading">¶</a></h2>
+<p>In the previous sections we saw how a few simple principles provide the potential for an extremely
+detailed world model.</p>
+<p>Python is such a powerful language. We could generate thousands of entities with which to populate
+our story. Perhaps we might automate the process in clever ways. Maybe ingest some real-world data
+sets and synthesize an analogue of our home town or city.</p>
+<p>Would that be a good approach? I shouldn’t think so. It doesn’t really help tell your story.</p>
+<p>If you forget to create an Entity for the knife which kills Caesar, what does it matter?
+During the scene of the murder, Brutus always comes up with one anyway.
+Whether it is mentioned in the script or not, that knife exists in the mind of the reader.
+It’s there when it needs to be, otherwise no dead Emperor.</p>
+<p>It’s true that text adventures have a tradition of progressing the story via the manipulation of objects.
+But there are other ways, and Balladeer encourages you to try them.</p>
+<p>Here are some suggestions for a good Entity:</p>
+<ul class="simple">
+<li><p>A newspaper which prints articles from a parallel reality.</p></li>
+<li><p>A kettle that whistles tunes.</p></li>
+<li><p>A statue which comes alive and murders people.</p></li>
+<li><p>A bulletproof car with the calm authority of an English Butler.</p></li>
+</ul>
+<p>In other words; <em>characters</em>. And the primary medium for your characters is Speech.</p>
+</section>
+<section id="markup">
+<h2>Markup<a class="headerlink" href="#markup" title="Permalink to this heading">¶</a></h2>
+<p>So we need a way of defining Speech.
+It’s more than a string of words. We want to remember who says the words and why.
+We want the words to have an effect on the story.</p>
+<p>Enter SpeechMark.</p>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p>Please read the <a class="reference external" href="https://github.com/tundish/speechmark">documentation for SpeechMark</a>.
+Take a few minutes to become familiar with its syntax.</p>
+</div>
+<dl class="py class">
+<dt class="sig sig-object py" id="balladeer.lite.speech.Speech">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">balladeer.lite.speech.</span></span><span class="sig-name descname"><span class="pre">Speech</span></span><a class="headerlink" href="#balladeer.lite.speech.Speech" title="Permalink to this definition">¶</a></dt>
+<dd><p>This is a lightweight class for objects which
+represent marked-up speech.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">speech</span> <span class="o">=</span> <span class="n">Speech</span><span class="p">(</span><span class="s1">&#39;&#39;&#39;</span>
+<span class="s1">&lt;STAFF.proposing#3&gt; What will you have, sir? The special is fish today.</span>
+<span class="s1">    1. Order the Beef Wellington</span>
+<span class="s1">    2. Go for the Shepherd&#39;s Pie</span>
+<span class="s1">    3. Try the Dover Sole</span>
+<span class="s1">&#39;&#39;&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<dl class="py method">
+<dt class="sig sig-object py" id="balladeer.lite.speech.Speech.trim">
+<span class="sig-name descname"><span class="pre">trim</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">str</span></span></span><a class="headerlink" href="#balladeer.lite.speech.Speech.trim" title="Permalink to this definition">¶</a></dt>
+<dd><p>Eliminates indentation and other leading whitespace.
+This method is used internally, so you won’t need to call it explicitly.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="balladeer.lite.speech.Speech.tags">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">tags</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><a class="headerlink" href="#balladeer.lite.speech.Speech.tags" title="Permalink to this definition">¶</a></dt>
+<dd><p>Render the markup as HTML5.</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">speech</span><span class="o">.</span><span class="n">tags</span>
+</pre></div>
+</div>
+<div class="highlight-html notranslate"><div class="highlight"><pre><span></span><span class="p">&lt;</span><span class="nt">cite</span> <span class="na">data-role</span><span class="o">=</span><span class="s">&quot;STAFF&quot;</span> <span class="na">data-directives</span><span class="o">=</span><span class="s">&quot;.proposing&quot;</span> <span class="na">data-fragments</span><span class="o">=</span><span class="s">&quot;#3&quot;</span><span class="p">&gt;</span>STAFF<span class="p">&lt;/</span><span class="nt">cite</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>
+ What will you have, sir? The special is fish today.
+<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">ol</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">li</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;1&quot;</span><span class="p">&gt;&lt;</span><span class="nt">p</span><span class="p">&gt;</span>
+Order the Beef Wellington
+<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">li</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;2&quot;</span><span class="p">&gt;&lt;</span><span class="nt">p</span><span class="p">&gt;</span>
+Go for the Shepherd&#39;s Pie
+<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">li</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;3&quot;</span><span class="p">&gt;&lt;</span><span class="nt">p</span><span class="p">&gt;</span>
+Try the Dover Sole
+<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">ol</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">blockquote</span><span class="p">&gt;</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="balladeer.lite.speech.Speech.lines">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">lines</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">list</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#balladeer.lite.speech.Speech.lines" title="Permalink to this definition">¶</a></dt>
+<dd><p>Render the markup into lines of plain text.</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">speech</span><span class="o">.</span><span class="n">lines</span>
+<span class="go">[&#39;STAFF&#39;, &#39;What will you have, sir? The special is fish today.&#39;, &#39;Order the Beef Wellington&#39;,</span>
+<span class="go">&quot;Go for the Shepherd&#39;s Pie&quot;, &#39;Try the Dover Sole&#39;]</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="balladeer.lite.speech.Speech.words">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">words</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">list</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#balladeer.lite.speech.Speech.words" title="Permalink to this definition">¶</a></dt>
+<dd><p>Render the markup into constituent words.</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">speech</span><span class="o">.</span><span class="n">words</span>
+<span class="go">[&#39;STAFF&#39;, &#39;What&#39;, &#39;will&#39;, &#39;you&#39;, &#39;have,&#39;, &#39;sir?&#39;, &#39;The&#39;, &#39;special&#39;, &#39;is&#39;, &#39;fish&#39;, &#39;today.&#39;,</span>
+<span class="go">&#39;Order&#39;, &#39;the&#39;, &#39;Beef&#39;, &#39;Wellington&#39;, &#39;Go&#39;, &#39;for&#39;, &#39;the&#39;, &quot;Shepherd&#39;s&quot;, &#39;Pie&#39;,</span>
+<span class="go">&#39;Try&#39;, &#39;the&#39;, &#39;Dover&#39;, &#39;Sole&#39;]</span>
+</pre></div>
+</div>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+</section>
+
+
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>    
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'./',
+            VERSION:'0.37.0',
+            LANGUAGE:'en',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+    <script type="text/javascript" src="_static/documentation_options.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="_static/sphinx_highlight.js"></script>
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+  
+    <div class="footer" role="contentinfo">
+        <div class="container">
+            &#169; Copyright 2023, D E Haynes.
+        Created using <a href="http://sphinx-doc.org/">Sphinx</a> 6.2.1.
+        </div>
+    </div>  
+
+</body>
+</html>

@@ -1,0 +1,357 @@
+
+
+<!DOCTYPE html>
+<head>
+  <meta charset="utf-8">
+  <meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Basics &mdash; Balladeer 0.37.0</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  <link rel="stylesheet" href="_static/css/theme.min.css" type="text/css" />
+  <link rel="stylesheet" href="_static/css/custom.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/css/theme.min.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Entities" href="entity.html" />
+    <link rel="prev" title="Introduction" href="intro.html" /> 
+
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <a class="site-nav-toggle hidden-lg-up"><i class="icon-menu"></i></a>
+            <a class="site-title" href="index.html">
+                Balladeer
+            </a>
+        </div>
+    </header>
+
+
+<div class="breadcrumbs-outer hidden-xs-down">
+    <div class="container">
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="breadcrumbs">
+    
+      <li><a href="index.html">Docs</a></li>
+        
+      <li>Basics</li>
+    
+    
+      <li class="breadcrumbs-aside">
+        
+            
+            <a href="_sources/types.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+</div>
+    </div>
+</div>
+    <div class="main-outer">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-lg-3 site-nav">
+                    
+<div role="search">
+    <form class="search" action="search.html" method="get">
+        <div class="icon-input">
+            <input type="text" name="q" placeholder="Search" />
+            <span class="icon-search"></span>
+        </div>
+        <input type="submit" value="Go" class="d-hidden" />
+        <input type="hidden" name="check_keywords" value="yes" />
+        <input type="hidden" name="area" value="default" />
+    </form>
+</div>
+                    <div class="site-nav-tree">
+                        
+                            
+                            
+                                <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="intro.html">Introduction</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Basics</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#states">States</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#grouping">Grouping</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="entity.html">Entities</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="entity.html#entity-objects">Entity objects</a></li>
+<li class="toctree-l2"><a class="reference internal" href="entity.html#entity-state">Entity state</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="world.html">World</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="world.html#worldbuilder">WorldBuilder</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="map.html">Map</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="map.html#compass">Compass</a></li>
+<li class="toctree-l2"><a class="reference internal" href="map.html#traffic-and-transits">Traffic and Transits</a></li>
+<li class="toctree-l2"><a class="reference internal" href="map.html#mapbuilder">MapBuilder</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="speech.html">Speech</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="speech.html#modelling">Modelling</a></li>
+<li class="toctree-l2"><a class="reference internal" href="speech.html#markup">Markup</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="drama.html">Drama</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="drama.html#Drama"><code class="docutils literal notranslate"><span class="pre">Drama</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="drama.html#interlude">Interlude</a></li>
+<li class="toctree-l2"><a class="reference internal" href="drama.html#directive-handler">Directive handler</a></li>
+<li class="toctree-l2"><a class="reference internal" href="drama.html#dialogue-generator">Dialogue generator</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="story.html">Story</a></li>
+<li class="toctree-l1"><a class="reference internal" href="scene.html">Scenes</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="scene.html#specifications">Specifications</a></li>
+<li class="toctree-l2"><a class="reference internal" href="scene.html#shots">Shots</a></li>
+<li class="toctree-l2"><a class="reference internal" href="scene.html#conditions">Conditions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="scene.html#model">Model</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="pages.html">Pages</a></li>
+<li class="toctree-l1"><a class="reference internal" href="style.html">Styles</a></li>
+<li class="toctree-l1"><a class="reference internal" href="web.html">Web</a></li>
+<li class="toctree-l1"><a class="reference internal" href="changes.html">Change Log</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="changes.html#id1">0.38.0</a></li>
+<li class="toctree-l2"><a class="reference internal" href="changes.html#id2">0.37.0</a></li>
+<li class="toctree-l2"><a class="reference internal" href="changes.html#id3">0.36.0</a></li>
+<li class="toctree-l2"><a class="reference internal" href="changes.html#id4">0.35.0</a></li>
+<li class="toctree-l2"><a class="reference internal" href="changes.html#id5">0.34.0</a></li>
+<li class="toctree-l2"><a class="reference internal" href="changes.html#id6">0.33.0</a></li>
+<li class="toctree-l2"><a class="reference internal" href="changes.html#id7">0.32.0</a></li>
+<li class="toctree-l2"><a class="reference internal" href="changes.html#id8">0.31.0</a></li>
+<li class="toctree-l2"><a class="reference internal" href="changes.html#id9">0.30.0</a></li>
+<li class="toctree-l2"><a class="reference internal" href="changes.html#id10">0.29.0</a></li>
+<li class="toctree-l2"><a class="reference internal" href="changes.html#id11">0.28.0</a></li>
+<li class="toctree-l2"><a class="reference internal" href="changes.html#id12">0.27.0</a></li>
+<li class="toctree-l2"><a class="reference internal" href="changes.html#id13">0.26.0</a></li>
+<li class="toctree-l2"><a class="reference internal" href="changes.html#id14">0.25.0</a></li>
+<li class="toctree-l2"><a class="reference internal" href="changes.html#id15">0.24.0</a></li>
+<li class="toctree-l2"><a class="reference internal" href="changes.html#id16">0.23.0</a></li>
+<li class="toctree-l2"><a class="reference internal" href="changes.html#id17">0.22.0</a></li>
+<li class="toctree-l2"><a class="reference internal" href="changes.html#id18">0.21.0</a></li>
+<li class="toctree-l2"><a class="reference internal" href="changes.html#id19">0.20.0</a></li>
+<li class="toctree-l2"><a class="reference internal" href="changes.html#id20">0.19.0</a></li>
+<li class="toctree-l2"><a class="reference internal" href="changes.html#id21">0.18.0</a></li>
+<li class="toctree-l2"><a class="reference internal" href="changes.html#id22">0.17.0</a></li>
+<li class="toctree-l2"><a class="reference internal" href="changes.html#id23">0.16.0</a></li>
+<li class="toctree-l2"><a class="reference internal" href="changes.html#id24">0.15.0</a></li>
+<li class="toctree-l2"><a class="reference internal" href="changes.html#id25">0.14.0</a></li>
+<li class="toctree-l2"><a class="reference internal" href="changes.html#id26">0.13.0</a></li>
+<li class="toctree-l2"><a class="reference internal" href="changes.html#id27">0.12.0</a></li>
+<li class="toctree-l2"><a class="reference internal" href="changes.html#id28">0.11.0</a></li>
+<li class="toctree-l2"><a class="reference internal" href="changes.html#id29">0.10.0</a></li>
+<li class="toctree-l2"><a class="reference internal" href="changes.html#id30">0.9.0</a></li>
+<li class="toctree-l2"><a class="reference internal" href="changes.html#id31">0.8.0</a></li>
+<li class="toctree-l2"><a class="reference internal" href="changes.html#id32">0.7.0</a></li>
+</ul>
+</li>
+</ul>
+
+                            
+                        
+                    </div>
+                </div>
+                <div class="col-12 col-lg-9">
+                    <div class="document">
+                        
+                            
+  <section id="basics">
+<h1>Basics<a class="headerlink" href="#basics" title="Permalink to this heading">¶</a></h1>
+<p>Python is a very flexible language. It supports object
+oriented design, but at the same time its standard data
+types are extremely powerful and often sufficient just by
+themselves.</p>
+<p>Balladeer tries to minimize the number of classes you
+need to learn. It’s less than a dozen in total.</p>
+<p>Here are two which are fundamental to the Balladeer
+philosophy. We will see them in use soon. So let’s get some
+detail on them before we proceed further.</p>
+<section id="states">
+<h2>States<a class="headerlink" href="#states" title="Permalink to this heading">¶</a></h2>
+<p>Whatever the genre of your narrative, it’s a safe bet that
+the characters you create will undergo change.</p>
+<p>They may advance in their profession, lose weight, take up sewing, get drenched in a rainstorm, or disappear never to be seen again.</p>
+<p>In Balladeer, you can model all these by defining and allocating <a class="reference internal" href="#balladeer.lite.types.State" title="balladeer.lite.types.State"><code class="xref py py-class docutils literal notranslate"><span class="pre">State</span></code></a>.</p>
+<dl class="py class">
+<dt class="sig sig-object py" id="balladeer.lite.types.State">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">balladeer.lite.types.</span></span><span class="sig-name descname"><span class="pre">State</span></span><a class="headerlink" href="#balladeer.lite.types.State" title="Permalink to this definition">¶</a></dt>
+<dd><p>A mix-in for Python’s standard
+<a class="reference external" href="https://docs.python.org/3/library/enum.html#module-enum">enum.Enum</a>.</p>
+<p>Adds some convenient properties to help
+formatting state values as strings.</p>
+<dl class="py property">
+<dt class="sig sig-object py" id="balladeer.lite.types.State.label">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">label</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><a class="headerlink" href="#balladeer.lite.types.State.label" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gives a consistent string to be used as a label
+even when the class defines multiple synonyms
+for each state value.</p>
+</dd></dl>
+
+</dd></dl>
+
+<p id="state-example">By way of example, here’s how you might create a state
+for political affiliation in the UK.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>    <span class="k">class</span> <span class="nc">Politics</span><span class="p">(</span><span class="n">State</span><span class="p">,</span> <span class="n">enum</span><span class="o">.</span><span class="n">Enum</span><span class="p">):</span>
+        <span class="n">con</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;Conservative&quot;</span><span class="p">,</span> <span class="s2">&quot;Tory&quot;</span><span class="p">]</span>
+        <span class="n">dem</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;Liberal Democrat&quot;</span><span class="p">,</span> <span class="s2">&quot;LibDem&quot;</span><span class="p">]</span>
+        <span class="n">grn</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;Green Party&quot;</span><span class="p">,</span> <span class="s2">&quot;Green&quot;</span><span class="p">]</span>
+        <span class="n">ind</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;Independent&quot;</span><span class="p">]</span>
+        <span class="n">lab</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;Labour&quot;</span><span class="p">,</span> <span class="s2">&quot;New Labour&quot;</span><span class="p">]</span>
+        <span class="n">lib</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;Liberal&quot;</span><span class="p">]</span>
+        <span class="n">ref</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;Reform Party&quot;</span><span class="p">]</span>
+        <span class="n">res</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;Residents&#39; Party&quot;</span><span class="p">]</span>
+        <span class="n">ukp</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;UKIP&quot;</span><span class="p">,</span> <span class="s2">&quot;UK Independence Party&quot;</span><span class="p">]</span>
+</pre></div>
+</div>
+<p>Note how this class captures synonyms for the various parties. The <cite>label</cite> property gives you a preferred term for
+each one:</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">Politics</span><span class="o">.</span><span class="n">ukp</span><span class="o">.</span><span class="n">label</span>
+<span class="go">&#39;UKIP&#39;</span>
+</pre></div>
+</div>
+</section>
+<section id="grouping">
+<h2>Grouping<a class="headerlink" href="#grouping" title="Permalink to this heading">¶</a></h2>
+<p>Whether you are modelling a forest glade, a castle dungeon, or an alien space fleet,
+you will need to create objects for that model.</p>
+<p>The next challenge is to organize those objects, sorting and
+filtering them so that you can isolate the ones you need
+to operate on (ie: modify their <a class="reference internal" href="#states">states</a>).</p>
+<p>This is what <a class="reference internal" href="#balladeer.lite.types.Grouping" title="balladeer.lite.types.Grouping"><code class="xref py py-class docutils literal notranslate"><span class="pre">Grouping</span></code></a>
+is for.</p>
+<dl class="py class">
+<dt class="sig sig-object py" id="balladeer.lite.types.Grouping">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">balladeer.lite.types.</span></span><span class="sig-name descname"><span class="pre">Grouping</span></span><a class="headerlink" href="#balladeer.lite.types.Grouping" title="Permalink to this definition">¶</a></dt>
+<dd><p>A subclass of Python’s standard
+<a class="reference external" href="https://docs.python.org/3/library/collections.html#collections.defaultdict">defaultdict</a>.</p>
+<p>This data structure is used to return objects
+filtered, sorted, and grouped in a particular
+fashion, eg: by state or type.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="balladeer.lite.types.Grouping.typewise">
+<em class="property"><span class="pre">classmethod</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">typewise</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">items</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">list</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">defaultdict</span></span></span><a class="headerlink" href="#balladeer.lite.types.Grouping.typewise" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create a Grouping of <em>items</em> according to their type.</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">pprint</span><span class="o">.</span><span class="n">pprint</span><span class="p">(</span><span class="n">Grouping</span><span class="o">.</span><span class="n">typewise</span><span class="p">([</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mf">0.0</span><span class="p">,</span> <span class="mf">1.0</span><span class="p">,</span> <span class="kc">True</span><span class="p">,</span> <span class="kc">False</span><span class="p">,</span> <span class="kc">None</span><span class="p">]))</span>
+<span class="go">Grouping(</span>
+<span class="go">    &lt;class &#39;list&#39;&gt;,</span>
+<span class="go">    {</span>
+<span class="go">        &lt;class &#39;bool&#39;&gt;: [True, False],</span>
+<span class="go">        &lt;class &#39;float&#39;&gt;: [0.0, 1.0],</span>
+<span class="go">        &lt;class &#39;int&#39;&gt;: [0, 1],</span>
+<span class="go">        &lt;class &#39;NoneType&#39;&gt;: [None]</span>
+<span class="go">    }</span>
+<span class="go">)</span>
+</pre></div>
+</div>
+<p>Objects will be grouped against their class, as
+well as by any <em>declared type</em> (attributes <cite>type</cite> and <cite>types</cite>).</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">pprint</span><span class="o">.</span><span class="n">pprint</span><span class="p">(</span><span class="n">Grouping</span><span class="o">.</span><span class="n">typewise</span><span class="p">([</span><span class="n">namespace</span><span class="p">(</span><span class="nb">type</span><span class="o">=</span><span class="s1">&#39;Cat&#39;</span><span class="p">),</span> <span class="n">namespace</span><span class="p">(</span><span class="n">types</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;Feline&#39;</span><span class="p">,</span> <span class="s1">&#39;Leopard&#39;</span><span class="p">])))</span>
+<span class="go">Grouping(</span>
+<span class="go">    &lt;class &#39;list&#39;&gt;,</span>
+<span class="go">    {</span>
+<span class="go">        &#39;Cat&#39;: [namespace(type=&#39;Cat&#39;)],</span>
+<span class="go">        &#39;Feline&#39;: [namespace(types=[&#39;Feline&#39;, &#39;Leopard&#39;])],</span>
+<span class="go">        &#39;Leopard&#39;: [namespace(types=[&#39;Feline&#39;, &#39;Leopard&#39;])],</span>
+<span class="go">         &lt;class &#39;types.SimpleNamespace&#39;&gt;: [</span>
+<span class="go">            namespace(type=&#39;Cat&#39;),</span>
+<span class="go">            namespace(types=[&#39;Feline&#39;, &#39;Leopard&#39;])</span>
+<span class="go">         ]</span>
+<span class="go">    }</span>
+<span class="go">)</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="balladeer.lite.types.Grouping.all">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">all</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">list</span></em><a class="headerlink" href="#balladeer.lite.types.Grouping.all" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns every entry in the grouping.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="balladeer.lite.types.Grouping.each">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">each</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">list</span></em><a class="headerlink" href="#balladeer.lite.types.Grouping.each" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns one of each entry in the grouping.</p>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+</section>
+
+
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>    
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'./',
+            VERSION:'0.37.0',
+            LANGUAGE:'en',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+    <script type="text/javascript" src="_static/documentation_options.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="_static/sphinx_highlight.js"></script>
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+  
+    <div class="footer" role="contentinfo">
+        <div class="container">
+            &#169; Copyright 2023, D E Haynes.
+        Created using <a href="http://sphinx-doc.org/">Sphinx</a> 6.2.1.
+        </div>
+    </div>  
+
+</body>
+</html>
