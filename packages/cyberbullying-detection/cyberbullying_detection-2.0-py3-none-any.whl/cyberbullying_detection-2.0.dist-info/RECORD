@@ -1,0 +1,9 @@
+cyberbullying_detection/__init__.py,sha256=QRRNSMUm_P2VbD4FW0NaGKoQbiw2Drd6K2v5WTH4aJs,50
+cyberbullying_detection/cyberbullying_detection.py,sha256=rUwO-LRd0b492jZktoelHZ1_PweXpAK2Q9LgJKNYVog,4834
+cyberbullying_detection/data/count.pkl,sha256=1V6SRRj6kanPR2BKjFonWCudvJU7AnAhKSMPI3YvcKo,735008
+cyberbullying_detection/data/lg.pkl,sha256=dDCLw2sdV1jUWjqozFOND17f6Yv7wxvDPXQoRwcQA3M,2322843
+cyberbullying_detection-2.0.dist-info/LICENSE,sha256=RxKafqTx9wzjQ_ZCIgxljdwDATZNDX4rQ9Zv3NBiYjI,1094
+cyberbullying_detection-2.0.dist-info/METADATA,sha256=qadzb1gMrWURToMGW-7pymdVHYsfihkViTvzljE0sm0,1724
+cyberbullying_detection-2.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+cyberbullying_detection-2.0.dist-info/top_level.txt,sha256=9Zy4p1YyV8FUKagi8v8xJdbl9BMzJ2KRhAabNGC5mCo,24
+cyberbullying_detection-2.0.dist-info/RECORD,,

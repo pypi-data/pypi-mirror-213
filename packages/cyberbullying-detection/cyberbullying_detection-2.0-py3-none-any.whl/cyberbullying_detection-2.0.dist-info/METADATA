@@ -1,0 +1,57 @@
+Metadata-Version: 2.1
+Name: cyberbullying-detection
+Version: 2.0
+Summary: An package to detect the cyberbullying content in the text
+Home-page: https://github.com/omprakashselvaraj/cyberbullying-0.0.1
+Author: Omprakash Selvaraj
+Author-email: omprakash.sr2410@gmail.com
+Classifier: Programming Language :: Python :: 3.9
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: nltk
+Requires-Dist: num2words
+Requires-Dist: bs4
+Requires-Dist: regex
+Requires-Dist: unidecode
+
+# CYBERBULLYING TEXT CONTENT DETECTOR
+
+[![forthebadge made-with-python](http://ForTheBadge.com/images/badges/made-with-python.svg)](https://www.python.org/)                 
+[![Python 3.9](https://img.shields.io/badge/python-3.9-blue.svg)](https://www.python.org/downloads/release/python-390/)   
+
+
+## Functionality of the CyberBullying detector
+
+- Used to detect cyberbullying content in the text.
+- Helpful for social media platforms to detect cyberbullying content.
+- If the text is cyberbullying content, it will return the kind of cyberbullying as age, gender, religion, ethinicity and others
+- If the text is not cyberbullying return not cyberbullying.
+
+## Usage
+
+- Make sure you have Python installed in your system.
+- Run Following command in the CMD.
+ ```
+  pip install cyberbullying-detction
+  ```
+  ```
+  import nltk
+  nltk.download('stopwords')
+  nltk.download('punkt')
+  nltk.download('wordnet')
+  ```
+## Example
+
+ ```
+
+import cyberbullying_detection as cd
+x = "confronting the primary school bully and then breaking his arm with my pencilcase"
+cb = cd.cyberbullying(x)
+cb.find()
+
+The content belongs to age type
+  ```
+
+
