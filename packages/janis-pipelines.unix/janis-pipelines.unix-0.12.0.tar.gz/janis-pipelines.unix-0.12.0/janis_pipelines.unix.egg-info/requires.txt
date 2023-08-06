@@ -1,0 +1,7 @@
+janis-pipelines.core>=0.10.7
+
+[ci]
+keyring==21.4.0
+setuptools
+wheel
+twine
