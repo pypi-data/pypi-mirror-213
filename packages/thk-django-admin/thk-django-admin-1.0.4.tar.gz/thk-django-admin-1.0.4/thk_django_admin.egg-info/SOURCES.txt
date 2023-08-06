@@ -1,0 +1,7 @@
+LICENSE
+README.md
+setup.py
+thk_django_admin.egg-info/PKG-INFO
+thk_django_admin.egg-info/SOURCES.txt
+thk_django_admin.egg-info/dependency_links.txt
+thk_django_admin.egg-info/top_level.txt
