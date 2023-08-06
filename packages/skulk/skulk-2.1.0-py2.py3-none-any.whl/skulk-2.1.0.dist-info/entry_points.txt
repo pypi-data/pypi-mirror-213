@@ -1,0 +1,2 @@
+[console_scripts]
+skulk = skulk.skulk:main
