@@ -1,0 +1,13 @@
+README.md
+pyproject.toml
+setup.cfg
+src/airstack/__init__.py
+src/airstack/constant.py
+src/airstack/execute_query.py
+src/airstack/generic.py
+src/airstack/send_request.py
+src/test_graphql_sdk.egg-info/PKG-INFO
+src/test_graphql_sdk.egg-info/SOURCES.txt
+src/test_graphql_sdk.egg-info/dependency_links.txt
+src/test_graphql_sdk.egg-info/requires.txt
+src/test_graphql_sdk.egg-info/top_level.txt
