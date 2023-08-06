@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "VelesResearch"
+version = "0.0.4.post1"
+description = "Veles is a free and open source python survey tool for researchers."
+license = "GPL-3.0-or-later"
+authors = ["Jakub Jędrusiak <kuba23031999@gmail.com>"]
+readme = "README.md"
+packages = [{include = "VelesResearch"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+numpy = "^1.24.3"
+
+
+[tool.poetry.group.dev.dependencies]
+pre-commit = "^3.3.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
