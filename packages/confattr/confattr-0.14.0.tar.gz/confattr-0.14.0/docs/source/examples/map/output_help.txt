@@ -1,0 +1,7 @@
+usage: map key cmd
+
+bind a command to a key
+
+positional arguments:
+  key  http://urwid.org/manual/userinput.html#keyboard-input
+  cmd  any urwid command

@@ -1,0 +1,2 @@
+xdgappdirs >= 1.4.4.3
+platformdirs >= 2.0.0

@@ -1,0 +1,43 @@
+# =========================
+# Application wide settings
+# =========================
+
+# Data types
+# ----------
+# int:
+#   An integer number in python 3 syntax, as decimal (e.g. 42),
+#   hexadecimal (e.g. 0x2a), octal (e.g. 0o52) or binary (e.g.
+#   0b101010). Leading zeroes are not permitted to avoid confusion
+#   with python 2's syntax for octal numbers. It is permissible to
+#   group digits with underscores for better readability, e.g.
+#   1_000_000.
+
+# answer
+# ------
+# an int
+# 42: The answer to everything
+# 23: The natural number following 22 and preceding 24
+set answer = 42
+
+# color
+# -----
+# one of red, green, blue
+set color.background = green
+set color.foreground = red
+
+
+# ==============================================================
+# Settings which can have different values for different objects
+# ==============================================================
+
+# Data types
+# ----------
+# str:
+#   A text. If it contains spaces it must be wrapped in single or
+#   double quotes.
+
+# greeting
+# --------
+# a str
+# A text that may be displayed if your computer is in a good mood.
+set greeting = 'hello world'

@@ -1,0 +1,3 @@
+missing : between key and value in line 4 'include config2'
+sky blue
+computer science

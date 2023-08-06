@@ -1,0 +1,14 @@
+[documents]
+set path.src = ~/documents
+set path.dst = /media/usb1/documents
+include mirror
+
+[music]
+set path.src = ~/music
+set path.dst = /media/usb1/music
+include mirror
+
+[pictures]
+set path.src = ~/pictures
+set path.dst = /media/usb1/pictures
+include two-way

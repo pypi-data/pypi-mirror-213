@@ -1,0 +1,10 @@
+# libraries which need to be downloaded separately for py36
+# because they have no binary release
+pudb
+pytest-pudb
+
+# required for docs/source/examples/map/example.py
+urwid
+
+# py36/py37 backport required by pudb
+dataclasses

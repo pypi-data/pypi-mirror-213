@@ -1,0 +1,4 @@
+color of general: Color.WHITE
+color of alices-car: Color.RED
+color of bobs-car: Color.BLUE
+color of another-car: Color.WHITE

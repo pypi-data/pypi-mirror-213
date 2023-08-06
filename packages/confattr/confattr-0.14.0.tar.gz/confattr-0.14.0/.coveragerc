@@ -1,0 +1,23 @@
+#https://coverage.readthedocs.io/en/stable/config.html
+
+[report]
+exclude_lines =
+    # keep default pragma
+    \# pragma: no cover\b
+
+    # not implemented
+    ^\s*raise NotImplementedError\b
+    ^\s*return NotImplemented\b
+    ^\s*@(abc\.)?abstractmethod
+    :\s*def 
+    :\spass
+
+    # assert False
+    ^\s*assert False
+
+    # typing-related code
+    ^\s*if (False|(typing\.)?TYPE_CHECKING):
+    :\s+$
+    ^\s*@(typing\.)?overload
+    :\s*def
+    :\s+pass

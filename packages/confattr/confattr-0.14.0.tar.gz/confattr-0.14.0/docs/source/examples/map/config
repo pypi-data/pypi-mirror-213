@@ -1,0 +1,3 @@
+map j 'cursor down'
+map k 'cursor up'
+map q 'confirm'

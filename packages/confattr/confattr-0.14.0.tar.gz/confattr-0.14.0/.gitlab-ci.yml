@@ -1,0 +1,8 @@
+pages:
+  script:
+    - python3 prepare_for_gitlab_pages.py
+  artifacts:
+    paths:
+      - public
+  only:
+    - master

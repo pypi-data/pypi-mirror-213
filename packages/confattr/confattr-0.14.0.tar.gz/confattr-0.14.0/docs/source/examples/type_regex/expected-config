@@ -1,0 +1,12 @@
+# Data types
+# ----------
+# regular expression:
+#   A regular expression in python syntax. You can specify flags by
+#   starting the regular expression with `(?aiLmsux)`.
+#   https://docs.python.org/3/library/re.html#regular-expression-syntax
+
+# greeting
+# --------
+# a regular expression
+# determine whether the user is polite or not
+set greeting = '(?i)(hello|hi)\b'
