@@ -1,0 +1,9 @@
+LICENSE,sha256=niWttjv-fJgf2MfOw167MU8XPxzCdgguFqWqERn1fX8,1322
+README.md,sha256=2Hzpsh8pm91LwwbFHdtRdVVvfp_2y_h3fCyFFDpnNgM,253
+getise/__init__.py,sha256=LcfkASQBLJYSIUXWrKwn_0ZxXfBMuwjL-wILgHvCAec,262
+getise/cli.py,sha256=ZETDW4PzwwiqxkUL63BQRG-dqeOhQRotJgyttFqHGPM,9547
+getise-1.0.0.dist-info/LICENSE,sha256=niWttjv-fJgf2MfOw167MU8XPxzCdgguFqWqERn1fX8,1322
+getise-1.0.0.dist-info/METADATA,sha256=eGm8tY7r4L9MSP5mKVWhRU0YzbISqSWxBoJkZAKyBQk,996
+getise-1.0.0.dist-info/WHEEL,sha256=7Z8_27uaHI_UZAc4Uox4PpBhQ9Y5_modZXWMxtUi4NU,88
+getise-1.0.0.dist-info/entry_points.txt,sha256=GFRD9uCvjx81cHc06g5TMgzj-kp6dapk9wR7WP4iT3Q,41
+getise-1.0.0.dist-info/RECORD,,
