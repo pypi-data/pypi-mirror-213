@@ -1,0 +1,9 @@
+charred/__init__.py,sha256=p6e8uzjCpU-HL8CoSMIeteQOYzcNzwyxfLymmlu1fMc,90
+charred/charred.py,sha256=QkQqomZm8ssBnzcAundrGVX36KTcDriQIiQAYyR3rTU,740
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_char.py,sha256=3-eXnUdgzH5Pa5HVz3m45grrG_iin4f-Dpq-FcJPrs8,824
+charred-0.1.11.dist-info/LICENSE,sha256=Ixfm46ZuVN97ycNGt-IZtDCf47URc4xOSQ_15REGZEk,1064
+charred-0.1.11.dist-info/METADATA,sha256=dTVUUArjgp51vpMPXZQI8AL3V1zYYzpsh4kd2Q5FNLE,1010
+charred-0.1.11.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+charred-0.1.11.dist-info/top_level.txt,sha256=IDulU9gUAad9tBD7Ye2cbJOX37KqXUIrzTUBGkyzxyY,14
+charred-0.1.11.dist-info/RECORD,,

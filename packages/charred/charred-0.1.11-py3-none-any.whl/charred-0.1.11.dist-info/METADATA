@@ -1,0 +1,59 @@
+Metadata-Version: 2.1
+Name: charred
+Version: 0.1.11
+Summary: Very simple char functions
+Home-page: https://github.com/endormi
+Author: Endormi
+Author-email: contactendormi@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3
+Description-Content-Type: text/markdown
+
+# Charred
+
+Very simple package with `is_ascii_char`, `is_same_char`, `is_string`, `is_unicode_char` and `repeat_char` methods.
+
+I will probably add more later.
+
+Install package:
+
+```
+pip install charred
+
+# or pip3
+```
+
+Usage:
+
+```
+from charred import is_ascii_char, is_same_char, is_string, is_unicode_char, repeat_char
+
+>>> is_ascii_char('$')
+True
+>>> is_ascii_char('£')
+False
+
+>>> is_same_char('FF')
+True
+>>> is_same_char('FD')
+False
+
+>>> is_string('F')
+True
+>>> is_string(1)
+False
+
+>>> is_unicode_char('£')
+True
+>>> is_unicode_char('F')
+False
+
+>>> repeat_char('F', 6)
+FFFFFF
+```
+
+
