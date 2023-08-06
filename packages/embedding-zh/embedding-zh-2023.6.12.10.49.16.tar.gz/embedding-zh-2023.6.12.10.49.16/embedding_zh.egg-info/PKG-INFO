@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: embedding-zh
+Version: 2023.6.12.10.49.16
+Summary: description
+Home-page: https://github.com/yuanjie-ai/embedding-zh
+Author: yuanjie
+Author-email: 313303303@qq.com
+Maintainer: yuanjie
+Maintainer-email: 313303303@qq.com
+License: MIT License
+Keywords: utils
+Platform: all
+Classifier: Operating System :: OS Independent
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: Implementation
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Provides-Extra: all
+License-File: LICENSE
