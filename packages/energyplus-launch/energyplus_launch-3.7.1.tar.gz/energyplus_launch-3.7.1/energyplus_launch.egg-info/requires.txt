@@ -1,0 +1,2 @@
+PLAN-Tools>=0.7
+tkmacosx
