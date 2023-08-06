@@ -1,0 +1,7 @@
+setup.py
+Digital_Forming_Solution/Select_Operations.py
+Digital_Forming_Solution/__init__.py
+Digital_Forming_Solution.egg-info/PKG-INFO
+Digital_Forming_Solution.egg-info/SOURCES.txt
+Digital_Forming_Solution.egg-info/dependency_links.txt
+Digital_Forming_Solution.egg-info/top_level.txt
