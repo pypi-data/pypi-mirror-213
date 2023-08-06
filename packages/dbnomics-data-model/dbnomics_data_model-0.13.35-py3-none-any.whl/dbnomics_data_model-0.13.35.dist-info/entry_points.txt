@@ -1,0 +1,4 @@
+[console_scripts]
+dbnomics-update-storage=dbnomics_data_model.scripts.update_storage:app
+dbnomics-validate-storage=dbnomics_data_model.scripts.validate_storage:app
+
