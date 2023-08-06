@@ -1,0 +1,13 @@
+target_bigquery/__init__.py,sha256=WUYpcSYjlLeMShpDiJ6riPpSpBdF_HFEHjoQm1RdXUU,17389
+target_bigquery/db_sync.py,sha256=4OiFgJXa6UAYik1JVj4SlfswAtv9BebNrCTzvhQU6AI,28181
+target_bigquery/exceptions.py,sha256=7Tg3ixRoS6ETls9PR7eP0QPRVUJuvRCUBHC2iACVI38,783
+target_bigquery/flattening.py,sha256=03JDm5MxHhyV_aCzP477P9j5feebxGK404LZRAnoYrI,2904
+target_bigquery/sql_utils.py,sha256=ONbUJOYb3skMy3jjR0VKkJ5C84HQcgMjMOYEtcVfZ68,2581
+target_bigquery/stream_ref_helper.py,sha256=g9_TdVkbRLjxl9FbFbv_WCwQO0VnZgnwEPlRNJA8f9s,1444
+target_bigquery/stream_utils.py,sha256=HsCoTW0WNcDwjBDTlmpv1Mt--t_u_jAK7yK2h18IZv4,5292
+pipelinewise_target_bigquery-1.5.0.dist-info/LICENSE,sha256=jIxGZfKZZKmzBWbYAj3iSoFNi7o87Hp3aowDsnkr0Pw,10409
+pipelinewise_target_bigquery-1.5.0.dist-info/METADATA,sha256=uNnS1p37Jhl4mYvwGkxJuStdjLpektNIRDJxp5cyXzg,24791
+pipelinewise_target_bigquery-1.5.0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+pipelinewise_target_bigquery-1.5.0.dist-info/entry_points.txt,sha256=R1EBsRnqsyf4zzL1cBTj0yb14Es7OKH8eF88NIFzsoY,57
+pipelinewise_target_bigquery-1.5.0.dist-info/top_level.txt,sha256=28UyIAPswiBKqnK4kn8vtGUofV7eamKJK5Hk9zC9a3E,16
+pipelinewise_target_bigquery-1.5.0.dist-info/RECORD,,
