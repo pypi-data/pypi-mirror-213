@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: ShuaiToolBox
+Version: 1.1.2.1
+Summary: packages for experiments process
+Home-page: UNKNOWN
+Author: ShuaiZ
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.6
+Requires-Dist: numpy
+Requires-Dist: matplotlib
+Requires-Dist: natsort
+Requires-Dist: opencv-python
+
+UNKNOWN
+
+
