@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: odoo-addons-oca-currency
+Version: 16.0.20230609.0
+Summary: Meta package for oca-currency Odoo addons
+Home-page: UNKNOWN
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: Framework :: Odoo
+Classifier: Framework :: Odoo :: 16.0
+Requires-Dist: odoo-addon-currency-old-rate-notify (<16.1dev,>=16.0dev)
+Requires-Dist: odoo-addon-currency-rate-update (<16.1dev,>=16.0dev)
+
+UNKNOWN
+
