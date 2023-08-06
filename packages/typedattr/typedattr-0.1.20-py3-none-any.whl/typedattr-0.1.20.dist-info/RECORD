@@ -1,0 +1,15 @@
+typedattr/__init__.py,sha256=-oX8tZ8AZNxnQ807f7j7bcOlidlhXXJUCMuQaN6uxuo,212
+typedattr/_typedattr.py,sha256=uEBRGVFOXvcNHLa2U_lj-bm2-egnWlnpoZtZkh1jmdg,12179
+typedattr/attrutils.py,sha256=CSHoJFAgZdalT0CiGypEiaiotjFmp2363QHzhfpK4T8,251
+typedattr/cacheutils.py,sha256=ffdJDzlkFvLNuBj2L6J2rdl5FT9_Oc2_nLU1UZZnJK8,3090
+typedattr/const.py,sha256=WEGNAVtrHIRadxHNOk1E64I9UP_QD_5JzEtc0bJrF3Q,5821
+typedattr/logutils.py,sha256=Qu7vP2r62AmFMuo6KOW-L5m8Wn6S7-4JeMQLM0-xwzQ,4229
+typedattr/objutils.py,sha256=hUMx0TjDzAPxwerMeMyXtAve85SNpexCcGhXE6Ils3U,9292
+typedattr/typeutils.py,sha256=rYV7j5eJjOUO1iJpf3nd8ANwLfimoX5KN-LpgIcNGto,540
+typedattr/utils.py,sha256=W-biyxM_Mm353p_oF_EeTHAq486B9DytWbYVOLP1GAo,394
+typedattr-0.1.20.dist-info/LICENSE,sha256=LYghLc_68nnra4mdQKJWTd0oum3TyGMXM8RkDTPOVUo,11336
+typedattr-0.1.20.dist-info/METADATA,sha256=_9FhiRd3bp6h744B6-vj7l7dAIzr3sphTwfoHENoxcY,5022
+typedattr-0.1.20.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+typedattr-0.1.20.dist-info/top_level.txt,sha256=cNjMdakeJ1LOe4m9FBv-zffHUbvqnep4jGOyBHWI1C0,10
+typedattr-0.1.20.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+typedattr-0.1.20.dist-info/RECORD,,
