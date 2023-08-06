@@ -1,0 +1,16 @@
+owlml/__init__.py,sha256=3AoUd1qKxeOLACETyNtWQ10L1WKVfdpkTRikpgUSLG4,474
+owlml/__main__.py,sha256=bjDiDEBj2fdlhxxeVnpTmgpoLy5nrjDnvhFGVZJ5hkI,857
+owlml/annotations.py,sha256=v8_Ytn51ctLHOW3fTiQCJ-GbpuJt722orBimEYItf00,935
+owlml/api.py,sha256=iKMg8m4_0ZJPHoflk3GTwpUvai35MK5EQuDhw12bC8g,1768
+owlml/auth.py,sha256=E39iWBAIuRYk28WYlLOtQ59jygYMMsfglkGAtJRVshY,1109
+owlml/dataset_versions.py,sha256=VphMkA_MN5ZBY6Sp-knXErj56M3yrwe_nGdOfoC1tYc,1093
+owlml/datasets.py,sha256=LAvf7iEXeG5OJWnYSSsE22fkIDy3QzUNKz3WG5UAA74,2540
+owlml/experiments.py,sha256=gz3jamdtgnSyA3SZIYOqJArYGlAzMVtLSBuJFCltpTY,189
+owlml/images.py,sha256=h-SBhBHeZc3wQsCTeqJSGbAmSkkTbdzaCegTkEXecG4,2749
+owlml/utils.py,sha256=LWpqqlpFzIA1rgZ3fLo90_36Uo22AtE9NcyvQ4up_cw,459
+owlml-0.2.0.dist-info/LICENSE,sha256=OKyi0o795lk0-CfbkSnvPe_VJ9VZFKirhNzXoYxcIjQ,1074
+owlml-0.2.0.dist-info/METADATA,sha256=Ue0Aa9kfRcXmRgp-7pnQeLGI8maj5gJTQCUec0p5MDA,540
+owlml-0.2.0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+owlml-0.2.0.dist-info/entry_points.txt,sha256=fjGPdEjPzB-Pi6_s-dh08vXCwtWl8IDTg4jvYdGfsOM,46
+owlml-0.2.0.dist-info/top_level.txt,sha256=u1SsU0wYzu46z0Q0cECNYM4_SXSEB-hqKEddS6E7HDE,6
+owlml-0.2.0.dist-info/RECORD,,
