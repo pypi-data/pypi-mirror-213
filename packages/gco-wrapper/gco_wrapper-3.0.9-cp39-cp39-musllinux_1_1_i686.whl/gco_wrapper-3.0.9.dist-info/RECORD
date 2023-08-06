@@ -1,0 +1,13 @@
+gco_wrapper-3.0.9.dist-info/METADATA,sha256=F41EfnOgBKHVIHYmAn6e101xaYrpEQHAyHKiami6CYk,5474
+gco_wrapper-3.0.9.dist-info/top_level.txt,sha256=ymid2Xi0Hk8Uvl7EdxL56Zvz92vfKkM-c7OZFN43Kw8,4
+gco_wrapper-3.0.9.dist-info/RECORD,,
+gco_wrapper-3.0.9.dist-info/WHEEL,sha256=RUlL-_fOiLH-t2rrPZDFYtpfK6Vhs4a6bfN4K0dX3_A,109
+gco/cgco.py,sha256=HZqnQwFI0WJSU1YzB7y3nvhnutgY2TQbWwtQTPF7K3o,4238
+gco/libcgco.cpython-39-i386-linux-gnu.so,sha256=UslOq0j4TPRBQoDF4T_AP9hKQd7aT-19f585WOkIOLE,604573
+gco/pygco.py,sha256=uuQ01wSqc05F1MjHU3bupIfbvGIF8R5AlLVjXhLkpmE,22785
+gco/__about__.py,sha256=SAAYDtgly-0TcK4DvVJWnj_VonCZLQfCW-0yXRiCNws,136
+gco/cgco.h,sha256=ASWKQFqAg_EuqWWpLczAZ5Y9nAHWdyi6sv9wcNn_N2A,4174
+gco/cgco.cpp,sha256=5LzXfvoKktPHbv7ii8nz7PVhpXDBNTS-F-TDW4iZGuA,5300
+gco/__init__.py,sha256=GzHgBBJF22qCTuIk2EyCmGbJiKDYllUxMw8ZoVvlmfc,326
+gco_wrapper.libs/libgcc_s-8b50eaaa.so.1,sha256=WXj_FYQE1MDIyb-nN8siUALdxit6NHma0p9UxemQV8o,101649
+gco_wrapper.libs/libstdc++-8baf04f9.so.6.0.28,sha256=yrzOxg1heyJ9Y-43YCLLn04Cpl_A68FN0D2Q1iBTMcY,2428961
