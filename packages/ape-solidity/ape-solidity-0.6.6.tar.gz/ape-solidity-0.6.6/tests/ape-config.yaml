@@ -1,0 +1,41 @@
+dependencies:
+  - name: TestDependency
+    local: ./Dependency
+
+  # Make sure can use a Brownie project as a dependency
+  - name: BrownieDependency
+    local: ./BrownieProject
+
+  # Make sure can use a Brownie-style dependency.
+  # Brownie-style dependencies don't compile on their own, necessarily
+  # and are more a collection of contract types you can use.
+  - name: BrownieStyleDependency
+    local: ./BrownieStyleDependency
+
+  # Ensure we can build a realistic-brownie project with dependencies.
+  - name: vault
+    github: yearn/yearn-vaults
+    version: 0.4.5
+
+  # Ensure dependencies using GitHub references work.
+  - name: vault
+    github: yearn/yearn-vaults
+    ref: master
+
+solidity:
+  import_remapping:
+    - "@remapping/contracts=TestDependency"
+    - "@remapping_2=TestDependency"
+    - "@remapping_2_brownie=BrownieDependency"
+
+    # Remapping for showing we can import a contract type from a brownie-style dependency
+    # (provided the _single_ contract type compiles in the project).
+    - "@styleofbrownie=BrownieStyleDependency"
+
+    # Ensure yearn-vaults works as a remapping
+    - "@vault=vault/v0.4.5"
+    - "@vaultmain=vault/master"
+
+
+  # Using evm_version compatible with older and newer solidity versions.
+  evm_version: constantinople
