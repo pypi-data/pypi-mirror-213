@@ -1,0 +1,65 @@
+Metadata-Version: 2.1
+Name: icpp-free
+Version: 2.7.0
+Summary: A development platform for C++ smart contracts of the Internet Computer
+Home-page: https://docs.icpp.world/
+Author: icppWorld
+Author-email: icpp@icpp.world
+License: Freemium
+Keywords: Internet Computer,C++,Smart Contracts,blockchain
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3 :: Only
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: typer[all] (>=0.9.0)
+Requires-Dist: tomli
+Requires-Dist: requests
+Requires-Dist: enlighten
+Requires-Dist: pytest
+Provides-Extra: dev
+Requires-Dist: black ; extra == 'dev'
+Requires-Dist: pylint (==2.13.9) ; extra == 'dev'
+Requires-Dist: mypy ; extra == 'dev'
+Requires-Dist: build ; extra == 'dev'
+Requires-Dist: twine ; extra == 'dev'
+Requires-Dist: mkdocs ; extra == 'dev'
+Requires-Dist: types-requests ; extra == 'dev'
+
+[![icpp-free](https://github.com/icppWorld/icpp-pro/actions/workflows/cicd.yml/badge.svg)](https://github.com/icppWorld/icpp-pro/actions/workflows/cicd.yml)
+# icpp-free
+
+A development platform for C++ smart contracts of the  [Internet Computer](https://internetcomputer.org/):
+
+- Develop, debug, test, deploy & smoke-test
+- Full Candid support. 
+- Linux, Mac and Windows.
+
+You can develop & deploy any C++ Smart Contracts with `icpp-free` since it supports compilation to WebAssembly for the IC and it includes the full Candid API.
+
+To speed up your development velocity or establish a world-class testing environment, get `icpp-pro`.
+
+For licensing, support contracts or consulting services, contact us at [icpp@icpp.world](mailto:icpp@icpp.world).
+
+## Compare icpp-free with icpp-pro
+See [docs: capability table](https://docs.icpp.world).
+
+## Installation
+
+
+```bash
+pip install icpp-free
+
+# verify
+$ icpp --version
+icpp-free version: x.y.z
+wasi-sdk  version: wasi-sdk-X.Y
+```
+
+See [docs: Installation Instructions](https://docs.icpp.world/installation.html)
