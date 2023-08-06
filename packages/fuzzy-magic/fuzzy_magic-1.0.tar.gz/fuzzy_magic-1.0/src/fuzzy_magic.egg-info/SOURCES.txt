@@ -1,0 +1,12 @@
+LICENSE.txt
+README.md
+pyproject.toml
+setup.py
+src/fuzzy_magic.egg-info/PKG-INFO
+src/fuzzy_magic.egg-info/SOURCES.txt
+src/fuzzy_magic.egg-info/dependency_links.txt
+src/fuzzy_magic.egg-info/requires.txt
+src/fuzzy_magic.egg-info/top_level.txt
+test/test_fuzzy.py
+test/test_memberships.py
+test/test_rules.py

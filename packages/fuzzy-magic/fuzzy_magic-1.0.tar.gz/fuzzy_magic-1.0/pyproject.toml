@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=61.0","numpy==1.23.5","simpful==2.10.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "fuzzy_magic"
+version = "1.0"
+authors = [
+  { name="Pedro López", email="p.lopez@exus.ai" },
+]
+description = "A Fuzzy Logic library to create Mamdani Fuzzy Systems the easiest way possible"
+readme = "README.md"
+requires-python = ">=3.6"
+dependencies=["numpy==1.23.5","simpful==2.10.0"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
