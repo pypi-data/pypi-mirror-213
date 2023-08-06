@@ -1,0 +1,3 @@
+[console_scripts]
+dbc-editor=dbc_editor.main:main
+
