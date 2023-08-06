@@ -1,0 +1,3 @@
+[console_scripts]
+dev=examples.dynamic_list_app:main
+
