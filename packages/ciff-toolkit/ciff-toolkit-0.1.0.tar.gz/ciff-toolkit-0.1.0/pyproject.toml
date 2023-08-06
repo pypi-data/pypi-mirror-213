@@ -1,0 +1,35 @@
+[tool.poetry]
+name = "ciff-toolkit"
+version = "0.1.0"
+description = "Toolkit for working with Common Index File Format (CIFF) files."
+authors = ["Gijs Hendriksen <g.hendriksen@cs.ru.nl>"]
+license = "MIT"
+readme = "README.md"
+homepage = "https://opencode.it4i.eu/openwebsearcheu-public/ciff-toolkit/"
+repository = "https://opencode.it4i.eu/openwebsearcheu-public/ciff-toolkit/"
+keywords = ["ciff"]
+classifiers = [
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+protobuf = "^4.21.12"
+tqdm = "^4.64.1"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+mypy-protobuf = "^3.4.0"
+types-protobuf = "^4.21.0"
+
+[tool.poetry.scripts]
+ciff_merge = "ciff_toolkit.cli:merge"
+ciff_swap = "ciff_toolkit.cli:swap"
+ciff_zero_index = "ciff_toolkit.cli:zero_index"
+ciff_dump = "ciff_toolkit.cli:dump"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
