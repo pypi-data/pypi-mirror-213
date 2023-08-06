@@ -1,0 +1,13 @@
+LICENSE.txt
+pyproject.toml
+setup.py
+example_package_priya2.egg-info/PKG-INFO
+example_package_priya2.egg-info/SOURCES.txt
+example_package_priya2.egg-info/dependency_links.txt
+example_package_priya2.egg-info/not-zip-safe
+example_package_priya2.egg-info/requires.txt
+example_package_priya2.egg-info/top_level.txt
+src/example_package_priya2/__init__.py
+src/example_package_priya2/dataset.py
+src/example_package_priya2/scores.py
+src/example_package_priya2/train.py
