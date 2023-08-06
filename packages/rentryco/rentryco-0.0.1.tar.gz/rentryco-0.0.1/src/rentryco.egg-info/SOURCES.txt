@@ -1,0 +1,8 @@
+README.md
+pyproject.toml
+setup.py
+src/rentryco/__init__.py
+src/rentryco.egg-info/PKG-INFO
+src/rentryco.egg-info/SOURCES.txt
+src/rentryco.egg-info/dependency_links.txt
+src/rentryco.egg-info/top_level.txt

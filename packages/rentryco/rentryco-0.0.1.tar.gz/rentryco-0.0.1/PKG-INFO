@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: rentryco
+Version: 0.0.1
+Summary: let anyone share text on the internet
+Author: wyene
+Project-URL: Homepage, https://github.com/F-r-o-i-d/rentryco
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+# example
+
+'''
+import rentryco
+a = rentryco.rentry()
+a.set_body("hi")
+print(a.share) # -> (True / False, url)
+'''
+
