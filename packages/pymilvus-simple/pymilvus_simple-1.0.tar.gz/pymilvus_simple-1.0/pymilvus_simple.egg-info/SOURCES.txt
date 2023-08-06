@@ -1,0 +1,12 @@
+README.md
+pyproject.toml
+setup.py
+pymilvus_simple/__init__.py
+pymilvus_simple/simple_api.py
+pymilvus_simple/simple_api_exceptions.py
+pymilvus_simple.egg-info/PKG-INFO
+pymilvus_simple.egg-info/SOURCES.txt
+pymilvus_simple.egg-info/dependency_links.txt
+pymilvus_simple.egg-info/requires.txt
+pymilvus_simple.egg-info/top_level.txt
+tests/test.py

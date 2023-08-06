@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: pymilvus-simple
+Version: 1.0
+Summary: Simple wrapper of pymilvus.
+Home-page: https://github.com/filip-halt/pymilvus_simple
+Author: Filip Haltmayer
+Author-email: filip@zilliz.com
+License: Apache-2.0
+Requires-Python: >=3.7
