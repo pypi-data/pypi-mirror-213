@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: ugrad
+Version: 0.0.1
+Summary: μGrad is a lightweight automatic differentiation engine.
+Home-page: https://github.com/conscell/ugrad
+Author: conscell
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+μGrad is a lightweight automatic differentiation engine inspired by Andrej Karpathy's micrograd. It offers an API
+similar to PyTorch and is built on top of NumPy / CuPy.
+
