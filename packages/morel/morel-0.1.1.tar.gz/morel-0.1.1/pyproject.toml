@@ -1,0 +1,29 @@
+[project]
+name = "morel"
+version = "0.1.1"
+authors = [
+  { name="Francesco Basile", email="basile1fr@gmail.com" },
+]
+description = "morel helps you write and test your A/D exploits, built with Milkman compatibility in mind"
+readme = "README.md"
+requires-python = ">=3.10"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "loguru",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/parmigggiana/morel"
+"Bug Tracker" = "https://github.com/parmigggiana/morel/issues"
+
+
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]
