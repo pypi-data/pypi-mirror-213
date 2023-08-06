@@ -1,0 +1,9 @@
+roshareclient/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+roshareclient/client/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+roshareclient/client/api.py,sha256=flFzG3XyjhM-dWYN8CKsZHEDmVuc1VL30riYjxWebVo,6666
+roshareclient/client/cons.py,sha256=owADqyr1Km8g13kGOPwsecBhs1ZWgcj-1QSieMIGjeQ,11554
+roshareclient/test/test_dataapi.py,sha256=TBtkjKYDeBSuBaa0uyNp7f_PSmDTwMYwUii-wwtXjhg,10948
+shihua_roshareclient-0.1.2.dist-info/METADATA,sha256=c0z7CrIWB9kkxgT7d287lEi6FVsEz3kL8oocfMwDc6M,2151
+shihua_roshareclient-0.1.2.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+shihua_roshareclient-0.1.2.dist-info/top_level.txt,sha256=xOnBYSTrO7sTqSPBybQGxiRt2GVIEylyOKYFYICD1HU,14
+shihua_roshareclient-0.1.2.dist-info/RECORD,,
