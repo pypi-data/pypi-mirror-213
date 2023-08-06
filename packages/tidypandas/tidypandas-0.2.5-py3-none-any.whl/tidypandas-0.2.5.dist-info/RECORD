@@ -1,0 +1,11 @@
+tidypandas/__init__.py,sha256=acAnv9Z9YZFP_NrT3aWaeXFmuxXF174ec3YCN-mqsD8,156
+tidypandas/_unexported_utils.py,sha256=Tm63LcfBfwGJKkwIT2aJWmNqgmRSGnMeQd9ghoJotLg,6485
+tidypandas/format.py,sha256=H-zbkltxmVP23Y6Y8XFmMV1t68DapBoyFOUzWsBLWzU,8284
+tidypandas/series_utils.py,sha256=t8GqWLR7d-rFA_fQ3d0Qu03ZH-VMe5B2o85k7tXaO2g,18139
+tidypandas/tidy_accessor.py,sha256=jujwqmmBC5HMZS9YlSq8NrMmZNQFfBmcSfpFgz9cmTs,22204
+tidypandas/tidy_utils.py,sha256=GWKmD7MlDcmvsfT7-_x7tY--n5434AZblgALkq9bQsk,10583
+tidypandas/tidyframe_class.py,sha256=iSg8VDPlsXxTvY66fmcSDyPMPc3k-HanMFzpeqDdtr0,235601
+tidypandas-0.2.5.dist-info/LICENSE,sha256=Yu6ff7SqwNwOaJliBKj_RJ9YTx6RR_o_RtZ6Ur5DkdE,1098
+tidypandas-0.2.5.dist-info/WHEEL,sha256=DA86_h4QwwzGeRoz62o1svYt5kGEXpoUTuTtwzoTb30,83
+tidypandas-0.2.5.dist-info/METADATA,sha256=tajs4W-3RjpPH727LqxK8iV5NWypsyzwk9-NkqFenSM,3960
+tidypandas-0.2.5.dist-info/RECORD,,
