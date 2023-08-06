@@ -1,0 +1,17 @@
+mapbot_frontend/__init__.py,sha256=B67XMMufVU-DaeGTCNDzWuhd48ku8lpG4wbtliWLAWo,621
+mapbot_frontend/frontend/build/asset-manifest.json,sha256=4bQo00dDCgo8WFKnvzHs1p7YLjdfED8IE9AH61R2uEs,890
+mapbot_frontend/frontend/build/bootstrap.min.css,sha256=hTwg6axJ8dAPmGVJmYTrsQS3JhKWA0skJ-td54UbEOk,197459
+mapbot_frontend/frontend/build/index.html,sha256=XociiUg_8zUHxDznRMxpIvvbddtQ_GAIxmjbf21pRUY,2987
+mapbot_frontend/frontend/build/static/css/2.19230d7e.chunk.css,sha256=smf0v1xaytA5WwN9jszpUdBpSi3roJ5SxKvdF-sFYuI,34063
+mapbot_frontend/frontend/build/static/css/2.19230d7e.chunk.css.map,sha256=3af3g87qdpaQ0J99o4GGJHgBJruLowkRFMisOGyOCJw,40516
+mapbot_frontend/frontend/build/static/js/2.f3b63c48.chunk.js,sha256=F-6-o9tJlZJdciWXinf7lzh7cDSW0ZT-RULvqINiTHs,1317864
+mapbot_frontend/frontend/build/static/js/2.f3b63c48.chunk.js.LICENSE.txt,sha256=YEJH-SCaNueYUwaPfm7mw2mQkauTpW2oPZXLZckS_PQ,1249
+mapbot_frontend/frontend/build/static/js/2.f3b63c48.chunk.js.map,sha256=8RvGiG8cfLD7J4rTOIIq2kvDm870KWIDvjBS2owQ9uQ,5974368
+mapbot_frontend/frontend/build/static/js/main.7a377bd9.chunk.js,sha256=eTYQV_pl_LT0whVHuP8m7bRaYRyx2qrVaf4fUn9oa5c,13839
+mapbot_frontend/frontend/build/static/js/main.7a377bd9.chunk.js.map,sha256=u4CpXLY1pTAXJuCA2mZykchGJuvhghJwgyhGjBAzqQg,41305
+mapbot_frontend/frontend/build/static/js/runtime-main.48f3c07e.js,sha256=uscSCQcv2Vr6O0bZYASZcalttCbeDcqD9Xkj1MnMUeE,1566
+mapbot_frontend/frontend/build/static/js/runtime-main.48f3c07e.js.map,sha256=tXnP4x3sfZgUh9085rR-BKgEhmIzcZMXjX5Lf5hQhww,8351
+mapbot_frontend-0.1.18.dist-info/METADATA,sha256=3KDL1ZuFq1u-yetYsMHFqRQbPXd_kJl9d6hxLECi7yk,330
+mapbot_frontend-0.1.18.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+mapbot_frontend-0.1.18.dist-info/top_level.txt,sha256=prXb1msBnPPtuxnTeiY9wq05Ah2fsBKJmOx7QOLBZIo,16
+mapbot_frontend-0.1.18.dist-info/RECORD,,
