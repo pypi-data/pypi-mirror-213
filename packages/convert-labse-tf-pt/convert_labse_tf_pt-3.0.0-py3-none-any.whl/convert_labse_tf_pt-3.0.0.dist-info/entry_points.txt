@@ -1,0 +1,4 @@
+[console_scripts]
+convert_labse=convert_labse_tf_pt.convert:convert_labse
+convert_lealla=convert_labse_tf_pt.convert:convert_lealla
+
