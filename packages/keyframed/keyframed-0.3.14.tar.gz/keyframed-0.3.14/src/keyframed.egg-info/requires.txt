@@ -1,0 +1,7 @@
+sortedcontainers
+omegaconf
+matplotlib
+
+[dev]
+pytest
+loguru
