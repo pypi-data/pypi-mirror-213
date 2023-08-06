@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+src/csvm/__init__.py
+src/csvm/models.py
+src/csvm/reader.py
+src/csvm.egg-info/PKG-INFO
+src/csvm.egg-info/SOURCES.txt
+src/csvm.egg-info/dependency_links.txt
+src/csvm.egg-info/top_level.txt
+tests/test_reader.py
