@@ -1,0 +1,9 @@
+setup.cfg
+setup.py
+econometricc_test/__init__.py
+econometricc_test/test.py
+econometricc_test.egg-info/PKG-INFO
+econometricc_test.egg-info/SOURCES.txt
+econometricc_test.egg-info/dependency_links.txt
+econometricc_test.egg-info/not-zip-safe
+econometricc_test.egg-info/top_level.txt
