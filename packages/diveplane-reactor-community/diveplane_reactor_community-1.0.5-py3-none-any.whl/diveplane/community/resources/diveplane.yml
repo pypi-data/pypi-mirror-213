@@ -1,0 +1,8 @@
+Diveplane:
+  client: diveplane.community.client.DiveplaneCommunityClient
+  client_extra_params:
+     amalgam:
+        library_postfix: -mt
+        embedded: diveplane.community.lib.amlg
+     core:
+        embedded: diveplane.community.lib.core 

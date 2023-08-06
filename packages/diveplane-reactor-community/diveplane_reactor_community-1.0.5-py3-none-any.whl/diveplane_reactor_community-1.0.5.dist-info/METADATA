@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: diveplane-reactor-community
+Version: 1.0.5
+Summary: Diveplane Reactor and Scikit Estimator for the interpretable Machine Learning and Artificial Intelligence API Diveplane.
+Home-page: https://www.diveplane.com
+Author: Diveplane Corp
+Author-email: support@diveplane.com
+License: Diveplane Corporation Free Software License
+Keywords: machine learning artificial intelligence
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+Requires-Dist: diveplane-reactor-api (==2.5.3)
+Requires-Dist: certifi
+
+# Diveplane Reactor Community
+
