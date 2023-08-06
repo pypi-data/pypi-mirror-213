@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "OpenCVR"
+version = "0.0.1"
+authors = [
+  { name="Kent Madsen", email="kent.vejrup.madsen@cloud.iojaegers.com" },
+]
+maintainers = [
+    { email="maintenance@cloud.iojaegers.com" }
+]
+
+description = "A small example package"
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/IO-Jaegers/FetchCVR"
+"Issues" = "https://github.com/IO-Jaegers/FetchCVR/issues"
+

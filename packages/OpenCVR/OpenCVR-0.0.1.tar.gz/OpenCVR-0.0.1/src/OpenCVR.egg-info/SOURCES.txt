@@ -1,0 +1,10 @@
+pyproject.toml
+src/__init__.py
+src/FetchCVR/FetchCVRAPI.py
+src/FetchCVR/__init__.py
+src/FetchCVR/Labels/__init__.py
+src/FetchCVR/Labels/acronyms.py
+src/OpenCVR.egg-info/PKG-INFO
+src/OpenCVR.egg-info/SOURCES.txt
+src/OpenCVR.egg-info/dependency_links.txt
+src/OpenCVR.egg-info/top_level.txt
