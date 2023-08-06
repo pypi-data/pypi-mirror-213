@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "compactify"
+version = "2"
+description = "Make Python code more compact"
+readme = "README.md"
+requires-python = ">=3.8"
+license = {file = "LICENSE"}
+authors = [
+    {email = "olle.ln@outlook.com"},
+    {name = "Olle Lindgren"}
+]
+classifiers = ["Programming Language :: Python :: 3"]
+
+[project.urls]
+repository="https://github.com/OlleLindgren/compactify"
+
+[project.scripts]
+compactify = "compactify.__main__:main"
+
+[tool.setuptools.packages.find]
+include = ["compactify*"]
+
+[tool.black]
+skip_magic_trailing_comma = true

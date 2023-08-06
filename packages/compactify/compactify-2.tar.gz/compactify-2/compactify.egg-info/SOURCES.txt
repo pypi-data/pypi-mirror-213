@@ -1,0 +1,14 @@
+LICENSE
+README.md
+pyproject.toml
+compactify/__init__.py
+compactify/__main__.py
+compactify/core.py
+compactify/logs.py
+compactify/main.py
+compactify.egg-info/PKG-INFO
+compactify.egg-info/SOURCES.txt
+compactify.egg-info/dependency_links.txt
+compactify.egg-info/entry_points.txt
+compactify.egg-info/top_level.txt
+tests/testing_infra.py
