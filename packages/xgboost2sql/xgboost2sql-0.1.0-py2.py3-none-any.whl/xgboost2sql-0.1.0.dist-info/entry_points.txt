@@ -1,0 +1,2 @@
+[console_scripts]
+xgboost2sql = xgboost2sql.cli:main
