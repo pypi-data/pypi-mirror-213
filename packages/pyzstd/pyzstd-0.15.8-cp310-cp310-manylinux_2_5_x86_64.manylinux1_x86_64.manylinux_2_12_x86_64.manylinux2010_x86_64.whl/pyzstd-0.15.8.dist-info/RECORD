@@ -1,0 +1,13 @@
+pyzstd/seekable_zstdfile.py,sha256=2d7pnCXZ7so4HvaZ5PZ6M31Pz_j9_w4dKwtcA8foJX8,26229
+pyzstd/zstdfile.py,sha256=E2FUo0YtL_Wjtcrorv4f1E2YrO5-qurWgn0r1NqNoyg,16993
+pyzstd/__init__.py,sha256=lCl26UD1io3FH6NlSnjWCH7zB2js0bq4Py0jUnkRIck,6888
+pyzstd/__main__.py,sha256=1GBXeTbOtMji6t6dmGproR_GNXKV-BOZAlBFMtRMbVs,18351
+pyzstd/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pyzstd/__init__.pyi,sha256=1IAzRk58PyU79zv_5383rrh7WbiFKp5vYTHykJInG_k,8744
+pyzstd/c/_zstd.cpython-310-x86_64-linux-gnu.so,sha256=8z1OQjaPi6QXNjjZnSqoMGgWC5CeI0ovgrfeRcxzMd4,897384
+pyzstd/c/c_pyzstd.py,sha256=LqTgrsXMmsSM9uKcyB-yYeF18msrjP697HVxaT738HA,4408
+pyzstd-0.15.8.dist-info/METADATA,sha256=nSgWF34r4uVUYdRbDIQ-stIK1vbaH1sBzU8YztESj0A,7431
+pyzstd-0.15.8.dist-info/LICENSE,sha256=r6TvF8FMw89VT3cuWrdOkD-R-TkED6_H-aW8o-2Vg80,1522
+pyzstd-0.15.8.dist-info/RECORD,,
+pyzstd-0.15.8.dist-info/top_level.txt,sha256=9Sl3x1CXrPdyG5muunGLOQpJEbiwW6WW8Y46nZMgWsE,7
+pyzstd-0.15.8.dist-info/WHEEL,sha256=H-1pODMambJbMKaAY6gTfauaOrtLbo-g8w3vOQnp4Es,225
