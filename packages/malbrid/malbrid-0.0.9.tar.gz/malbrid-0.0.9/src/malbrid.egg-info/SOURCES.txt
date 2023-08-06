@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+README.rst
+setup.cfg
+setup.py
+src/__pycache__/__init__.cpython-310.pyc
+src/malbrid/__init__.py
+src/malbrid/malbrid.py
+src/malbrid.egg-info/PKG-INFO
+src/malbrid.egg-info/SOURCES.txt
+src/malbrid.egg-info/dependency_links.txt
+src/malbrid.egg-info/top_level.txt
+src/malbrid/__pycache__/__init__.cpython-310.pyc
+src/malbrid/__pycache__/malbrid.cpython-310.pyc
+tests/malbrid_tests.py
