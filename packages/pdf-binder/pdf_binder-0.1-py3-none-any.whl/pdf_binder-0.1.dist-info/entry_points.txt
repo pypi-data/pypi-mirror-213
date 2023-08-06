@@ -1,0 +1,3 @@
+[console_scripts]
+create-signatures = pdf_binder.pdf_to_signatures:main
+

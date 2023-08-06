@@ -1,0 +1,59 @@
+Metadata-Version: 2.1
+Name: pdf-binder
+Version: 0.1
+Summary: A tool for preparing PDFs for bookbinding
+Home-page: https://github.com/Peter-Herrmann/pdf_binder
+Author: Peter Herrmann
+Author-email: herrmannp7@gmail.com
+License: MIT
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: Pillow
+Requires-Dist: PyPDF2
+Requires-Dist: pdf2image
+Requires-Dist: tqdm
+
+## Contents
+- [Terminology](#terminology)
+    - [Page](#page)
+    - [Sheet](#sheet)
+    - [Paper](#paper)
+    - [Signature](#signature)
+    - [Text Block](#text-block)
+- [Papers Per Signature](#papers-per-signature)
+- [Stitching](#stitching)
+
+This is a very simple tool for converting any in-order, on-page-per-sheet PDF into signatures for the purpose of book binding. The output pdf (bound_book.pdf by default) can be printed using default printer settings (printing on both sides).
+
+# Terminology
+
+### Page
+- A page is used to refer to a single page of an input PDF file
+- Example: A 10-page input PDF file has 10 pages.
+
+### Sheet
+- In the output PDF file, each output page has 2 pages on it. These output pages are called sheets, as in "2 pages per sheet"
+- Example: If we have a 12-page input PDF, the output PDF would have 6 sheets
+
+### Paper
+- Definition: A paper is the physical medium on which the content is printed. It has two sheets, one front and back.
+- Example: If we have a 12-page input PDF, the output PDF would have 6 sheets printed on 3 papers.
+
+### Signature
+- Definition: A signature is a group of papers that are printed in such a way that when folded, they form a small booklet. Signatures are crucial in bookbinding because they allow the binding to be more durable and enable the book to open more flatly and easily.
+- Example: If you have a 40-page document, you could create signatures of 5 papers each (10 sheets, or 20 pages). You would end up with 2 signatures, each containing 20 pages.
+
+### Text Block
+- Definition: A text block is the complete collection of signatures that are bound together to form the main body of the book. The text block does not include the cover of the book.
+- Example: Using the example above, the 2 signatures (each with 20 pages) would be bound together to form a single text block of 40 pages.
+
+# Papers Per Signature
+
+One of the key arguments to change based on your application is the number of papers per signature. Typically, you would choose 4-7 papers (default 4), but you might do more for very thin paper.
+
+# Stitching
+
+To aid with aligning stitches between signatures, marks are added to the front of the first paper and the back of the last paper in ever signature. This is where you would thread the needle when stitching the signatures together. You can choose how many stitches you want to add by altering the num_stitches argument (default 7).
+
+
