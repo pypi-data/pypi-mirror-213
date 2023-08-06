@@ -1,0 +1,2 @@
+[console_scripts]
+fullask-manager = fullask_rest_framework.cli:main
