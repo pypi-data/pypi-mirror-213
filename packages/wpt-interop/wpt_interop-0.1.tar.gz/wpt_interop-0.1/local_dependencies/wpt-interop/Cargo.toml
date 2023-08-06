@@ -1,0 +1,11 @@
+[package]
+name = "wpt-interop"
+version = "0.1.0"
+edition = "2021"
+authors = ["James Graham <james@hoppipolla.co.uk>"]
+description="web-platform-tests Interop helpers"
+readme = "README.md"
+license = "BSD-3-Clause"
+
+[lib]
+name = "wpt_interop"
