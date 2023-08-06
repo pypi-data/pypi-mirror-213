@@ -1,0 +1,36 @@
+Metadata-Version: 2.1
+Name: dysweep
+Version: 0.0.8
+Summary: A toolset for dynamic python code manipulations
+Home-page: https://github.com/HamidrezaKmK/dysweep
+Author: Hamid Kamkari
+Author-email: hamidrezakamkari@gmail.com
+License: Apache License 2.0
+Description: # DySweep: Use W&B Sweep for Everything!
+        
+        ## Installation
+        
+        ```bash
+        pip install dysweep
+        ```
+        
+        ## Usage
+        
+Keywords: dynamic configurations,deep learning,sweeps,hyperparameter tuning,lazy evaluation
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: Intended Audience :: Education
+Classifier: Programming Language :: Python :: Implementation
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Utilities
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
