@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: sqla-inspect
+Version: 0.7.6
+Summary: Usefull tools for setting/getting datas from SQLAlchemy models
+Home-page: https://github.com/majerteam/sqla_inspect
+Author: Gaston Tjebbes - Majerti
+Author-email: tech@majerti.fr
+License: GPLv3
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Database
+License-File: LICENSE.txt
+Requires-Dist: colanderalchemy
+Requires-Dist: SQLAlchemy
+Requires-Dist: py3o.template
+Requires-Dist: openpyxl (>=3.0.7)
+Requires-Dist: odswriter
+Requires-Dist: unidecode
+
