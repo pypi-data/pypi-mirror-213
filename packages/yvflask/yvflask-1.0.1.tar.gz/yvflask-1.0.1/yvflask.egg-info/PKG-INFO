@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: yvflask
+Version: 1.0.1
+Summary: This is a sample package
+Author: YveRadvir
+Author-email: Yveradvirr@example.com
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
