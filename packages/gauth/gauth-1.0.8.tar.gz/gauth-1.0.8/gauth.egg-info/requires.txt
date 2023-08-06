@@ -1,0 +1,19 @@
+colorama>=0.4.6
+Pillow
+protobuf
+pyzbar
+qrcode
+qreader<2.0.0
+argparse==1.4.0
+pyotp==2.8.0
+pyyaml==6.0
+
+[:python_version <= "3.7"]
+importlib_metadata
+typing_extensions
+
+[:sys_platform != "darwin"]
+opencv-contrib-python
+
+[:sys_platform == "darwin"]
+opencv-contrib-python<=4.7.0
