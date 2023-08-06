@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: sportsml
+Version: 0.1.2
+Summary: ML for sports
+License: MIT license
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+
+# SportsML
+
+ML for sports
