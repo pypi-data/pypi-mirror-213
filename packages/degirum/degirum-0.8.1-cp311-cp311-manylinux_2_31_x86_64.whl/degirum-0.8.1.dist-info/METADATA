@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: degirum
+Version: 0.8.1
+Summary: DeGirum AI Inference Software Package
+Home-page: https://github.com/degirum
+Author: DeGirum Corp.
+Author-email: support@degirum.com
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: License :: Freeware
+Classifier: Development Status :: 3 - Alpha
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: Other/Proprietary License
+Classifier: Operating System :: POSIX :: Linux
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: requests (>=2.27)
+Requires-Dist: pyyaml (>=6.0)
+Requires-Dist: numpy (>=1.22)
+Requires-Dist: pillow (>=9.2)
+Requires-Dist: opencv-python (>=4.6)
+Requires-Dist: python-socketio[client] (>=5.7)
+Requires-Dist: websocket-client (>=1.5.1)
+Requires-Dist: python-dotenv (>=0.20)
+Requires-Dist: msgpack (>=1.0.4)
+Requires-Dist: msgpack-numpy (==0.4.7.1)
+Requires-Dist: pyaudio (>=0.2) ; sys_platform == "win32"
+
+# PySDK - DeGirum AI Inference Software Development Kit
+
+***Version 0.8.1***
+
+*Copyright DeGirum Corp. 2022-2023*
