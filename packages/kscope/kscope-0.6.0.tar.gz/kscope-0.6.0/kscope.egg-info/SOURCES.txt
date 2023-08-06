@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+kscope/__init__.py
+kscope/hooks.py
+kscope/kaleidoscope_sdk.py
+kscope/utils.py
+kscope.egg-info/PKG-INFO
+kscope.egg-info/SOURCES.txt
+kscope.egg-info/dependency_links.txt
+kscope.egg-info/requires.txt
+kscope.egg-info/top_level.txt
