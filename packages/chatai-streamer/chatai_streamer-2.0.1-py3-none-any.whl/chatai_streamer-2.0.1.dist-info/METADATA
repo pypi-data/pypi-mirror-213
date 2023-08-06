@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: chatai-streamer
+Version: 2.0.1
+Summary: ChatGPT answer aloud YouTube chat messages.
+Home-page: https://github.com/GeneralYadoc/ChatAIStreamer
+Author: General Yadoc
+Author-email: 133023047+GeneralYadoc@users.noreply.github.com
+License: MIT
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: License :: OSI Approved :: MIT License
+License-File: LICENSE
+Requires-Dist: chatai-stream (==1.0.0)
+Requires-Dist: deep-translator (==1.11.1)
+Requires-Dist: gTTS (==2.3.2)
+Requires-Dist: noisereduce (==2.0.1)
+Requires-Dist: pydub (==0.25.1)
+Requires-Dist: scipy (==1.10.1)
+
+UNKNOWN
+
