@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: lodestone-python-sdk
+Version: 1.0.5
+Summary: Auth to tuyoo's Lodestone
+Home-page: UNKNOWN
+Author: bocai
+Author-email: peijianbo@tuyoogame.com
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >3.2
+Description-Content-Type: text/markdown
+Requires-Dist: requests
+Requires-Dist: urllib3 (<2.0)
+
+## 玄石系统Token签发 Python SDK
+
+### Installation
+
+```
+pip install lodestone-python-sdk
+```
+
+### Usages
+
+```
+client = AuthClient(auth_host, your_app_key, your_app_secret)
+token = client.get_token()
+```
+
+### Tips
+
+```
+token有效期7天！
+```
+
