@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: pythonce
+Version: 0.0.2
+Summary: Python Library writen in C 
+Home-page: 
+Author: carlinhoshk
+Author-email: carlosmdohk@gmail.com
+License: MIT
+Keywords: c
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Classifier: Programming Language :: Python :: 3
+
+This is a hello world c into python library 
+
+
+Change Log
+==========
+0.0.2 (09/06/2023)
+- Second Release
+- C path fix 
+------------------
+0.0.1 (07/06/2023)
+------------------
+- First Release
+
