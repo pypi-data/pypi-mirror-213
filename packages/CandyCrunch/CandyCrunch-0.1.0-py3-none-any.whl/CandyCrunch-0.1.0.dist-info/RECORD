@@ -1,0 +1,12 @@
+CandyCrunch/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+CandyCrunch/analysis.py,sha256=9_uwJq4icX1T2q33RpXjMhHdMu2x26RwIlYg4vErciQ,71438
+CandyCrunch/candycrunch.pt,sha256=YhUf5ji3qFHSPgGLKpMu95c1TAGQVuVmIJr25l_4S4o,49536930
+CandyCrunch/glycans.pkl,sha256=o6u4fWoyT29gDx7JTRv6aWHf2zdkBxjKRZLD5NwzwR0,324139
+CandyCrunch/model.py,sha256=9xP7Q9MReyM7LwdhA-O9RtnJd1fGt5R6qCB9rrzmFPY,7651
+CandyCrunch/prediction.py,sha256=WQ6LsYkZU6rHD0xQIhipgEM3DYfoxGe38_yafkiVVs8,50436
+CandyCrunch-0.1.0.dist-info/LICENSE,sha256=imHoK6Dc7fRIRa-f-aa5f91YzPhszaOxj3GkRJ9kzO8,1086
+CandyCrunch-0.1.0.dist-info/LICENSE.txt,sha256=6kbiFSfobTZ7beWiKnHpN902HgBx-Jzgcme0SvKqhKY,1091
+CandyCrunch-0.1.0.dist-info/METADATA,sha256=oe-TTFJDvLrj6E48m8fLsjhLTVX9tt7uQ97oAjR8V1A,5761
+CandyCrunch-0.1.0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+CandyCrunch-0.1.0.dist-info/top_level.txt,sha256=JetWkLFhqnjXSqXTrEDhCoWKeIRYb2LYBxE-Ury32Ck,12
+CandyCrunch-0.1.0.dist-info/RECORD,,
