@@ -1,0 +1,10 @@
+python-negar>=1.2.2
+PyQt5
+pyperclip
+pyuca
+regex
+requests
+qrcode
+docopt
+Image
+pyqtdarktheme
