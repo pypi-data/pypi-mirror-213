@@ -1,0 +1,15 @@
+pyproject.toml
+readme.md
+comserde/__init__.py
+comserde/composite.py
+comserde/decoding.py
+comserde/decorator.py
+comserde/entry.py
+comserde/error.py
+comserde/primitive.py
+comserde/types.py
+comserde/vlq.py
+comserde.egg-info/PKG-INFO
+comserde.egg-info/SOURCES.txt
+comserde.egg-info/dependency_links.txt
+comserde.egg-info/top_level.txt
