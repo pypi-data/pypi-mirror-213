@@ -1,0 +1,7 @@
+LICENSE
+README.md
+setup.py
+KcDobot.egg-info/PKG-INFO
+KcDobot.egg-info/SOURCES.txt
+KcDobot.egg-info/dependency_links.txt
+KcDobot.egg-info/top_level.txt
