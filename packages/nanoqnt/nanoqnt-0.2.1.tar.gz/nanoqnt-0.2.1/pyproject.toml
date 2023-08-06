@@ -1,0 +1,47 @@
+[tool.poetry]
+name = "nanoqnt"
+version = "0.2.1"
+description = "Software for analysing the data generated with the nanoQNT device. It includes a practical GUI as well as a module that can be extended and used in custom scripts. "
+authors = ["Aquiles Carattino <carattino@dispertech.com>"]
+maintainers = ["Aron Opheij <opheij@dispertech.com>"]
+readme = "README.md"
+license = "GPL-3.0"
+homepage = "https://www.dispertech.com"
+repository = "https://www.github.com/dispertech/NanoQNTPy"
+keywords = ["extracellular vesicles", "light-sheet microscopy", "data analysis"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Environment :: MacOS X",
+    "Environment :: Win32 (MS Windows)",
+    "Environment :: X11 Applications :: Qt",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)",
+    "Operating System :: Microsoft :: Windows :: Windows 11",
+    "Operating System :: MacOS :: MacOS X",
+
+
+]
+[tool.poetry.dependencies]
+python = ">3.9, <3.12"
+pyqtgraph = "^0.13.3"
+numpy = "~1.24"
+scipy = "~1.10.1"
+scikit-image = "^0.21"
+PIMS = "^0.6.1"
+trackpy = "^0.6"
+h5py = "^3.8.0"
+matplotlib = "^3.7.1"
+pyqt5 = "^5.15"
+pyyaml = "^6.0"
+numba = "^0.57.0"
+pandas = "^2.0.2"
+
+[tool.poetry.scripts]
+nanoqnt = 'nanoqnt.main:start_nanoqnt'
+
+[tool.poetry.group.dev.dependencies]
+pyinstaller = "^5.10.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
