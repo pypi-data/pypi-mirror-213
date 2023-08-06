@@ -1,0 +1,22 @@
+pyop>=v3.4.0
+pysaml2>=6.5.1
+pycryptodomex
+requests
+PyYAML
+gunicorn
+Werkzeug
+click
+chevron
+cookies-samesite-compat
+
+[:python_version <= "3.8"]
+importlib-metadata>=1.7.0
+
+[ldap]
+ldap3
+
+[pyop_mongo]
+pyop[mongo]
+
+[pyop_redis]
+pyop[redis]
