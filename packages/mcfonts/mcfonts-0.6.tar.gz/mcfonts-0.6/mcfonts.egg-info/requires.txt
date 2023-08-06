@@ -1,0 +1,12 @@
+fontTools>=4.35.0
+Pillow>=9.3.0
+lxml>=4.9.0
+tinyunicodeblock>=1.1.0
+jsonschema>=4.17.3
+unirange>=1.0
+
+[docs]
+Sphinx>=5.3.0
+sphinx-autoapi>=2.0.0
+sphinxext-opengraph>=0.8.2
+sphinx-immaterial>=0.11.3
