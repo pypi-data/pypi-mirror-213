@@ -1,0 +1,32 @@
+[tool.poetry]
+name = "django-singleton2"
+version = "0.1.1"
+description = ""
+authors = ["Allyn Treshansky <allyn.treshansky@gmail.com>"]
+readme = "README.md"
+packages = [{include = "singleton2"}]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+django = "^3.2 || ^4.0"
+django-appconf = "^1.0.5"
+django-environ = "^0.9.0"
+
+[tool.poetry.group.dev.dependencies]
+tox = "*"
+pytest = "*"
+pytest-django = "*"
+pytest-cov = "*"
+pytest-html-reporter = "*"
+factory-boy = "*"
+black = "*"
+
+[tool.poetry.group.docs.dependencies]
+sphinx = "*"
+sphinx-rtd-theme = "*"
+myst-parser = "*"
+
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
