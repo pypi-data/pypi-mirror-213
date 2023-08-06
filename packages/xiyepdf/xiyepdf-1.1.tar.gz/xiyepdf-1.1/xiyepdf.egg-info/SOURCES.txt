@@ -1,0 +1,7 @@
+LICENSE
+README.md
+setup.py
+xiyepdf.egg-info/PKG-INFO
+xiyepdf.egg-info/SOURCES.txt
+xiyepdf.egg-info/dependency_links.txt
+xiyepdf.egg-info/top_level.txt
