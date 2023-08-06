@@ -1,0 +1,63 @@
+# details on TOML format can be found here: https://toml.io/en/
+[citation]
+# comment out this section (prepend lines with #)
+# to prevent writing of citation information
+doi = "10.1000/182"
+url = "https://www.doi.org/hb.html"
+biblatex = '''
+@online{knuthwebsite,
+    author    = "Donald Knuth",
+    title     = "Knuth: Computers and Typesetting",
+    url       = "http://www-cs-faculty.stanford.edu/~uno/abcde.html",
+    keywords  = "latex,knuth"
+}
+'''
+
+[project]
+server_url = "https://url.to/my/instance"
+project_id = 1
+units = "nm"
+# credentials should be stored in a separate TOML file,
+# with keys api_token, http_user, and http_password,
+# whose path is passed to the catmaid_publish command,
+# or passed with environment variables
+# CATMAID_API_TOKEN, CATMAID_HTTP_USER and CATMAID_HTTP_PASSWORD
+
+readme_footer = ""
+
+[annotations]
+all = false
+annotated = []
+names = []
+rename = {}
+readme_footer = ""
+
+[neurons]
+all = false
+annotated = []
+names = []
+rename = {}
+readme_footer = ""
+
+[neurons.tags]
+all = false
+names = []
+rename = {}
+
+[volumes]
+all = false
+annotated = []
+names = []
+rename = {}
+readme_footer = ""
+
+[landmarks]
+all = false
+names = []
+rename = {}
+readme_footer = ""
+
+[landmarks.groups]
+all = false
+names = []
+rename = {}
