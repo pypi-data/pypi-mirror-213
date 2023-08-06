@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: rlviser-py
+Version: 0.2.0
+Classifier: Programming Language :: Rust
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+License-File: LICENSE
+Summary: Python implementation that manages a UDP connection to RLViser
+Keywords: rlviser,rocket-league,udp,python,rlbot
+License: MIT
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown; charset=UTF-8; variant=GFM
+Project-URL: Source Code, https://github.com/VirxEC/rlviser-py
+
+## rlviser-py
+
+[![forthebadge](https://forthebadge.com/images/badges/made-with-rust.svg)](https://forthebadge.com)
+
+Python implementation that manages a UDP connection to RLViser, it launches the [RLViser binary](https://github.com/VirxEC/rlviser) from the current working directory upon first calling any render function.   
+
+Currently able to visualize RLGym GameState objects, but requires the boost pad locations to be sent first.
+
+The backbone of RLGym's `env.render()` functionality.
+
