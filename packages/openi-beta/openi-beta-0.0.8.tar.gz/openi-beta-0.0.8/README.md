@@ -1,0 +1,39 @@
+# OpenI PyPi
+
+> PYPI package for 启智AI协作平台。
+
+启智平台提供的Python工具包，使用户能在本地上传数据集。
+
+## 安装
+
+*适配python3.6及以上版本*
+```bash
+pip install openi
+```
+
+## 使用说明
+- 使用前请在平台个人设置中获取token：[点击跳转token获取界面](https://openi.pcl.ac.cn/user/settings/applications)
+- 当前版本为了解决用户上传数据集的需求，建议在本地使用。后续版本将适配代码仓配置、隐藏token及云脑任务。
+
+## 本地上传数据集示例
+**dataset.upload_file(file, username, repository, token, cluster = "NPU")** 
+
+*上传本地单个文件到启智平台数据集，支持断点续传*
+
+- `file`        **str, 必填**：文件路径(包含文件名，支持linux与mac路径，也支持windows文件路径如d:\\xxx)
+- `username`    **str, 必填**：上传数据集所属项目owner用户名，可以是用户或组织
+- `repository`  **str, 必填**：数据集所属项目路径，此为仓库地址中的名字，更改过名称的项目需填写仓库地址中的路径
+- `token`       **str, 必填**：用户启智上获取的令牌token，并对该数据集有权限
+- `cluster`     **str, 选填, 默认"NPU"**：可填入GPU或NPU，上传至不同的存储集群
+```python
+from openi.dataset import upload_file
+
+upload_file(
+    file = "", 
+    username = "", 
+    repository = "", 
+    token = "", 
+    cluster = ""
+    )
+```
+![alt](./media/4.png)
