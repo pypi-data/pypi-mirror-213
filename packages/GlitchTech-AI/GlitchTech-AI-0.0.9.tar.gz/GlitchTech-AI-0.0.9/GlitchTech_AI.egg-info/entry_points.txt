@@ -1,0 +1,2 @@
+[console_scripts]
+glitchtech-ai = src:cli
