@@ -1,0 +1,4 @@
+volmdlr/bspline_compiled.cpython-39-x86_64-linux-gnu.so
+volmdlr/bspline_evaluators.cpython-39-x86_64-linux-gnu.so
+volmdlr/bspline_fitting.cpython-39-x86_64-linux-gnu.so
+volmdlr/core_compiled.cpython-39-x86_64-linux-gnu.so
