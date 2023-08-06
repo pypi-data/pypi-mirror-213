@@ -1,0 +1,15 @@
+configuraptor/__about__.py,sha256=sUL10KsOOiG06xRtlZ84JDh9xnfBh3dzz0h1XvbJP2g,191
+configuraptor/__init__.py,sha256=60lP4soCOpYjudpw-9PWcsD9AnXohr7gY_07-RdrZXE,429
+configuraptor/cls.py,sha256=dfqy0QeLOUE7QY_7et61jk98M03OEpiN6ikpURCecqo,556
+configuraptor/core.py,sha256=AuGkyQEVe6fdvnFDpiN6im4wEdEdu9eOUIFK49G_U6M,13785
+configuraptor/errors.py,sha256=dI6tmcQJViw8pd6TUq1n5WxRUU6pjTPgZgIOHRZPFJ8,1883
+configuraptor/helpers.py,sha256=Mu02hA--DhiwMtj4bKM8gZ6n59nQPkS5f2w6ff1RM-U,344
+configuraptor/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+configuraptor/singleton.py,sha256=s2KpJU7uNys37EG0zt2caSYf_CDZTaSUAtRawI5CGJM,1254
+configuraptor/loaders/__init__.py,sha256=seiQhSguPDZhFsqS-99ROm4asO3KmW_JC-HEnH-6TaU,205
+configuraptor/loaders/loaders_310.py,sha256=lWl5pAtmf54qMOpSvcbnqd90tZDrtGqAvS6Yc5Len4I,392
+configuraptor/loaders/loaders_311.py,sha256=wn1Ee9NJbF1PvpZU4UdvK2tAB4Z6u698cFEC_OFPHwQ,350
+configuraptor-1.0.2.dist-info/METADATA,sha256=J1chxgCXi-ylnyszWc5QO1Xrmbhw8YPUS7JOXBibsKs,2889
+configuraptor-1.0.2.dist-info/WHEEL,sha256=9QBuHhg6FNW7lppboF2vKVbCGTVzsFykgRQjjlajrhA,87
+configuraptor-1.0.2.dist-info/licenses/LICENSE.txt,sha256=phAZvZvcwqxTXoegIDmLeu-qzAS8KrasXQ5zpY9bmMA,1113
+configuraptor-1.0.2.dist-info/RECORD,,
