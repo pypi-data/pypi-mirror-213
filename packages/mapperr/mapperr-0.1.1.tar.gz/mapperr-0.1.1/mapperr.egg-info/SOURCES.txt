@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+mapperr/__init__.py
+mapperr/mapr.py
+mapperr.egg-info/PKG-INFO
+mapperr.egg-info/SOURCES.txt
+mapperr.egg-info/dependency_links.txt
+mapperr.egg-info/top_level.txt
+test/test_nested_objects.py
+test/test_op_required.py
+test/test_unmatched_types.py
