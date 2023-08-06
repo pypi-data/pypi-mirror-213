@@ -1,0 +1,113 @@
+Metadata-Version: 2.1
+Name: jVMC
+Version: 1.2.1
+Summary: jVMC: Versatile and performant variational Monte Carlo
+Home-page: https://jvmc.readthedocs.io/en/latest/#
+Author: Markus Schmitt, Moritz Reh
+Author-email: markus.schmitt@uni-koeln.de
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: setuptools
+Requires-Dist: wheel
+Requires-Dist: numpy
+Requires-Dist: jax (<=0.4.11,>=0.4.1)
+Requires-Dist: jaxlib (<=0.4.11,>=0.4.1)
+Requires-Dist: flax (>=0.6.4)
+Requires-Dist: mpi4py
+Requires-Dist: h5py
+Requires-Dist: PyYAML
+Requires-Dist: matplotlib
+Provides-Extra: dev
+Requires-Dist: setuptools ; extra == 'dev'
+Requires-Dist: wheel ; extra == 'dev'
+Requires-Dist: numpy ; extra == 'dev'
+Requires-Dist: jax (<=0.4.11,>=0.4.1) ; extra == 'dev'
+Requires-Dist: jaxlib (<=0.4.11,>=0.4.1) ; extra == 'dev'
+Requires-Dist: flax (>=0.6.4) ; extra == 'dev'
+Requires-Dist: mpi4py ; extra == 'dev'
+Requires-Dist: h5py ; extra == 'dev'
+Requires-Dist: PyYAML ; extra == 'dev'
+Requires-Dist: matplotlib ; extra == 'dev'
+Requires-Dist: sphinx ; extra == 'dev'
+Requires-Dist: mock ; extra == 'dev'
+Requires-Dist: sphinx-rtd-theme ; extra == 'dev'
+Requires-Dist: pytest ; extra == 'dev'
+Requires-Dist: pytest-mpi ; extra == 'dev'
+
+[![Documentation Status](https://readthedocs.org/projects/jvmc/badge/?version=latest)](https://jvmc.readthedocs.io/en/latest/?badge=latest)
+[![PyPi version](https://badgen.net/pypi/v/jVMC/)](https://pypi.org/project/jVMC/)
+[![arXiv](https://img.shields.io/badge/arXiv-2108.03409-b31b1b.svg)](https://arxiv.org/abs/2108.03409)
+
+# jVMC
+This is an impementation of Variational Monte Carlo (VMC) for quantum many-body dynamics using the [JAX library](https://jax.readthedocs.io "JAX library") (and [Flax](https://flax.readthedocs.io "FLAX library") on top) to exploit the blessings of automatic differentiation for easy model composition and just-in-time compilation for execution on accelerators.
+
+1. [Documentation](#documentation)
+2. [Installation](#installation)
+3. [Online example](#online-example)
+4. [Important gotchas](#important-gotchas)
+5. [Citing jVMC](#citing-jvmc)
+
+Please report bugs as well as other issues or suggestions on our [issues page](https://github.com/markusschmitt/vmc_jax/issues).
+
+## Documentation
+
+Documentation is available [here](https://jvmc.readthedocs.io/en/latest/ "Documentation").
+
+## Installation
+
+### Option 1: ``pip``-install
+
+1. We recommend you create a new conda environment to work with jVMC:
+
+        conda create -n jvmc python=3.8
+        conda activate jvmc
+
+2. ``pip``-install the package
+
+        pip install jVMC
+
+
+### Option 2: Clone and ``pip``-install
+
+1. Clone the jVMC repository and check out the development branch:
+
+        git clone https://github.com/markusschmitt/vmc_jax.git
+        cd vmc_jax
+
+2. We recommend you create a new conda environment to work with jVMC:
+
+        conda create -n jvmc python=3.8
+        conda activate jvmc
+
+
+3. ``pip``-install the package  
+
+        pip install .  
+
+    Alternatively, for development:
+
+        pip install -e .[dev]
+
+Test that everything worked, e.g. run 'python -c "import jVMC"' from a place different than ``vmc_jax``.
+
+### Compiling JAX
+
+[How to compile JAX on a supercomputing cluster](documentation/readme/compile_jax_on_cluster.md)
+
+
+## Online example
+
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/markusschmitt/vmc_jax/blob/master/examples/ex0_ground_state_search.ipynb)
+
+Click on the badge above to open a notebook that implements an exemplary ground state search in Google Colab.
+
+## Important gotchas
+### Out-of-memory issues and batching
+Memory requirements grow with increasing network sizes. To avoid out-of-memory issues, the ``batchSize`` parameter of the ``NQS`` class has to be adjusted. The ``batchSize`` indicates on how many input configurations the network is evaluated concurrently. Out-of-memory issues are usually resolved by reducing this number. The ``numChains`` parameter of the ``Sampler`` class for Markov Chain Monte Carlo sampling plays a similar role, but its optimal values in terms of computational speed are typically not memory critical.
+
+## Citing jVMC
+
+If you use the jVMC package for your research, please cite our reference paper [SciPost Phys. Codebases 2 (2022)](https://scipost.org/10.21468/SciPostPhysCodeb.2).
