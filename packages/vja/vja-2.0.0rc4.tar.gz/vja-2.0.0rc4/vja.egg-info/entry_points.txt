@@ -1,0 +1,3 @@
+[console_scripts]
+vja = vja.cli:cli
+
