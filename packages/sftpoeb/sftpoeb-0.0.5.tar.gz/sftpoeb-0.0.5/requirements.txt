@@ -1,0 +1,4 @@
+paramiko==2.11.0
+Requests==2.31.0
+requests_toolbelt==0.9.1
+urllib3==1.26.5
