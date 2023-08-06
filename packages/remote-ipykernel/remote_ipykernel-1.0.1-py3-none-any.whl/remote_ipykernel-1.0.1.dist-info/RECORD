@@ -1,0 +1,11 @@
+remote_ipykernel/__init__.py,sha256=YEuLt1BSLZdFmsoKi3viRU6OAP5gra584Qp6mascUPE,129
+remote_ipykernel/__version.py,sha256=ZKUo60M-bcMdhVkubq9WcwR80yxTf0zHa0B8lVIo9us,215
+remote_ipykernel/compat.py,sha256=4oIarOhthOlwZfjED9xTmgEedVQB0hRiE6Qpdehpw1Y,890
+remote_ipykernel/kernel.py,sha256=tEKrfn5xnxl3RqwBVlXPWfrrruuk_zGZ_r644NL2Lgg,25047
+remote_ipykernel/manage.py,sha256=OvRYakk8JdQKai4c3NHQR9KEBL6C94oo70p0nYhP_Y4,15527
+remote_ipykernel-1.0.1.dist-info/LICENSE.txt,sha256=-1YWkfQxAQmLq9eBZyO9CLI170VfyqgRyKCai-XNH3M,1331
+remote_ipykernel-1.0.1.dist-info/METADATA,sha256=6a7zRmTevMM7Cvj5omwjGd4XGvX_OemWNqTi4NxNpJs,6968
+remote_ipykernel-1.0.1.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+remote_ipykernel-1.0.1.dist-info/entry_points.txt,sha256=ivgatxpL8RQ39g_pnF_6Ld7hgE5UOQK65Vx3vR67s54,105
+remote_ipykernel-1.0.1.dist-info/top_level.txt,sha256=SscYmIWGGxETo3EpY3eaf4t3L7Kxe3eyplEHZGcs8Sw,17
+remote_ipykernel-1.0.1.dist-info/RECORD,,
