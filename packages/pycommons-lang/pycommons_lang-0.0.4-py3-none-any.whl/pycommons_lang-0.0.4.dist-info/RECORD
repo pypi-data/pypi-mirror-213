@@ -1,0 +1,11 @@
+LICENSE,sha256=gHRtpjO9azMn2X3ENpKHIBNCwTltJ6L9LSjpIA3D35g,11346
+pycommons/lang/__init__.py,sha256=WZBcMH5V_fqU5esOfzoFhCyAo1WLcOOnJDd0x-yn2_w,431
+pycommons/lang/utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pycommons/lang/utils/arrayutils.py,sha256=Gcs9wqHVoKuL4A0-Zi5i-T7SWUUDCimyPzKMFJSzUi0,399
+pycommons/lang/utils/charutils.py,sha256=_-UNoF2vKZW_iGmJO_QuCbtK93zzbysxfv2PTO7_iAM,2380
+pycommons/lang/utils/stringutils.py,sha256=PR6S4Ps4I0lkW-2cR3PBmEKw0cefnnPsTwctePz0bj8,11143
+pycommons/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pycommons_lang-0.0.4.dist-info/LICENSE,sha256=gHRtpjO9azMn2X3ENpKHIBNCwTltJ6L9LSjpIA3D35g,11346
+pycommons_lang-0.0.4.dist-info/METADATA,sha256=vuYna4wNbWJggWvJam0N53jF5QzXMTN-SNddWIgrZx4,2118
+pycommons_lang-0.0.4.dist-info/WHEEL,sha256=Zb28QaM1gQi8f4VCBhsUklF61CTlNYfs9YAZn-TOGFk,88
+pycommons_lang-0.0.4.dist-info/RECORD,,
