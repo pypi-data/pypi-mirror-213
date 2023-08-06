@@ -1,0 +1,9 @@
+aiogateway/__init__.py,sha256=qTgFr6GiTiOtUndWBY2Hjf2kyHRGPv11ZlG6ndlEQMk,163
+aiogateway/api.py,sha256=FGDK3rlJRg1BTfscZUYHk-scUCOjDHSn2Y1O57TWItM,8856
+aiogateway/asgi.py,sha256=6j96-V6chL7rAwoQuBwcpTMqsTCu_cJ6xRceK_q9q38,2924
+aiogateway/client.py,sha256=WFcODFO2G6h4y2K6GI1fMa5ZvwjwTMVDkdiuvC6j-Co,3154
+aiogateway/docs.py,sha256=HDEQ6IlcELuOO6022ZGqdenMZ2RNY9M80CwGmouGPWQ,7690
+aiogateway/helpers.py,sha256=FjJqz14l-W448lfcVTxHL1MKEENyqSgP5Poh8lOEMfs,5174
+aiogateway-0.0.1.dist-info/METADATA,sha256=jddXtaZLRfnl4zpuqYdiXXArZGpt087q_Tg9ZJyV18g,716
+aiogateway-0.0.1.dist-info/WHEEL,sha256=Zb28QaM1gQi8f4VCBhsUklF61CTlNYfs9YAZn-TOGFk,88
+aiogateway-0.0.1.dist-info/RECORD,,
