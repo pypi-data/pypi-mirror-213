@@ -1,0 +1,10 @@
+npe2
+qtpy
+superqt
+pip
+
+[testing]
+pytest
+virtualenv
+pytest-cov
+pytest-qt
