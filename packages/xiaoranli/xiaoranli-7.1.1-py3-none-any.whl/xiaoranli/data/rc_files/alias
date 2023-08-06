@@ -1,0 +1,48 @@
+alias ls='exa --group-directories-first'
+alias ll="exa -abghHliS"
+alias cat="batcat"
+alias grep='grep --color=auto'
+alias less='less -i' # ignore case when searching
+alias ps='ps auxf|peco' # process tree
+alias top='top c'
+alias sudo="sudo env \"PATH=$PATH\""
+alias j='autojump'
+alias gdb='gdb -q'
+alias df='duf'
+alias pre-commit='pre-commit run --all-files'
+alias py-spy="sudo py-spy dump --nonblocking --full-filenames"
+
+plugins=(z extract git zsh-syntax-highlighting zsh-autosuggestions)
+
+eval "$(mcfly init zsh)"
+
+# fzf config
+# Default command to use when input is tty
+#export FZF_DEFAULT_COMMAND="fd --type f --color=always"
+# Use ctrl+o to open selected file(s) in VS Code
+export FZF_DEFAULT_OPTS="--bind='ctrl-o:execute(code {})+abort'"
+export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
+# Using bat as previewer
+export FZF_CTRL_T_OPTS="--preview-window 'right:60%' --preview 'batcat --color=always --style=header,grid --line-range :300 {}'"
+# Changing from ** to ~~ the trigger for autocompletion in shell
+export FZF_COMPLETION_TRIGGER='~~'
+
+export SKIM_DEFAULT_COMMAND="rg --files || fdfind || find ."
+
+# modified from mitsuhiko dotfiles to use bat as a previewer
+alias skvi='f(){ x="$(sk --bind "ctrl-p:toggle-preview" --ansi --preview="batcat {} --color=always" --preview-window=right:60%:hidden)"; [[ $? -eq 0 ]] && vim "$x" || true }; f'
+# doing the same for VSCode
+alias skvs='f(){ x="$(sk --bind "ctrl-p:toggle-preview" --ansi --preview="batcat {} --color=always" --preview-window=right:60%:hidden)"; [[ $? -eq 0 ]] && code :w "$x" || true }; f'
+
+# Use fd (https://github.com/sharkdp/fd) instead of the default find
+# command for listing path candidates.
+_fzf_compgen_path() {
+  fdfind --hidden --follow --exclude ".git" . "$1"
+}
+
+# Use fd to generate the list for directory completion
+_fzf_compgen_dir() {
+  fdfind --type d --hidden --follow --exclude ".git" . "$1"
+}
+
+export PATH=$PATH:/usr/local/go/bin
