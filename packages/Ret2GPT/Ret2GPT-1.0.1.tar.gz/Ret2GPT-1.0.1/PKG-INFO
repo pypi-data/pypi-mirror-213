@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: Ret2GPT
+Version: 1.0.1
+Summary: Ret2GPT: Advanced AI-powered binary analysis tool leveraging OpenAI's LangChain technology, revolutionizing CTF Pwners' experience in binary file interpretation and vulnerability detection.
+Home-page: https://github.com/DDizzzy79/Ret2GPT
+Author: Retr0
+Author-email: retr0@retr0.blog
+License: MIT
+Requires-Python: >=3
