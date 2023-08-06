@@ -1,0 +1,2 @@
+toxicbuild-core>=0.10.0
+toxiccommon>=0.10.0

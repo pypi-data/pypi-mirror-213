@@ -1,0 +1,2 @@
+[console_scripts]
+toxicpoller = toxicpoller.cmds:main

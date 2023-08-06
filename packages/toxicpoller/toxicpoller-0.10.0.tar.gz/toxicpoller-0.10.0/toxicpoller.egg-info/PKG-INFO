@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: toxicpoller
+Version: 0.10.0
+Summary: toxicpoller: fetch changes from repositories for toxicbuild
+Author: me@myself.com
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU General Public License (GPL)
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Description-Content-Type: text/markdown
+
+Toxicpoller: Fetches changes on remote repositories
+===================================================
+
+Toxicpoller is part of toxicbuild.
+
+Check the toxicpoller documentation [here](https://docs.poraodojuca.dev/toxicpoller/index.html).
+
+Check the toxicbuild full documentation [here](https://toxicbuild.poraodojuca.dev)
