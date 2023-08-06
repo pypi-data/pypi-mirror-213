@@ -1,0 +1,9 @@
+numpy>=1.17.3
+pandas>=1.2.0
+EMD-signal>=1.2.3
+optuna>=3.0.0
+vmdpy
+sampen
+matplotlib
+sklearn
+tensorflow>=2.5.0
