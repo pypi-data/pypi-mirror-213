@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: ctidb
+Version: 0.0.1
+Summary: criminalip.ctidb reader
+Home-page: https://github.com/aispera/ctidb
+Author: aispera
+Author-email: infra@aispera.com
+License: UNKNOWN
+Keywords: aispera,ctidb,criminalip
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Python: >=3.6
+Requires-Dist: Crypto
+Requires-Dist: mmap
+Requires-Dist: ipaddress
+Requires-Dist: struct
+
+UNKNOWN
+
+
