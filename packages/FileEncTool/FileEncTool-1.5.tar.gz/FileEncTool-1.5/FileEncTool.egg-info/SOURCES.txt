@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+FileEncTool.egg-info/PKG-INFO
+FileEncTool.egg-info/SOURCES.txt
+FileEncTool.egg-info/dependency_links.txt
+FileEncTool.egg-info/requires.txt
+FileEncTool.egg-info/top_level.txt
+encfile/__init__.py
