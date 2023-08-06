@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "poetry-issue-test"
+version = "v0.1.6"
+description = ""
+authors = []
+readme = "README.md"
+packages = [{include = "poetry_test"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+requests = "^2.31.0"
+ibis-framework = [
+    { version = "^5.1.0", extras = [ "duckdb" ] },
+    { version = "^5.1.0", extras = [ "postgres" ], optional = true },
+]
+httpx = {version = "^0.24.1", optional = true}
+
+[tool.poetry.extras]
+postgres = ["ibis-framework"]
+http = ['httpx']
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
