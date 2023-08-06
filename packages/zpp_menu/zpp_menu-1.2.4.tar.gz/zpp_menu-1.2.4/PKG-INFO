@@ -1,0 +1,43 @@
+Metadata-Version: 2.1
+Name: zpp_menu
+Version: 1.2.4
+Summary: Générateur d'un menu à touches fléchées
+Home-page: https://github.com/ZephyrOff/py-zpp_menu
+Author: 
+License: MIT License
+Project-URL: Documentation, https://github.com/ZephyrOff/py-zpp_menu
+Keywords: menu terminal zephyroff
+Platform: ALL
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Console
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# py-menu
+## Informations
+GÃ©nÃ©rateur d'un menu Ã  touches flÃ©chÃ©es.<br>
+Le choix dans le menu se fait Ã  partir des touches flÃ©chÃ©es pour la navigation et de la touche Enter pour la validation.<br>
+Customisation des couleurs du menu et du curseur possibles.<br>
+Retourne l'indice du choix sÃ©lectionnÃ©
+### PrÃ©requis
+- Python 3
+<br>
+
+## Installation
+```console
+pip install zpp_menu
+```
+
+## Utilisation
+```python
+choice = zpp_menu.Menu(Title, OptionList)
+```
+>En paramÃ¨tre supplÃ©mentaire, nous pouvons mettre:<br/>
+>- Background = Choisir la couleur de font du choix selectionnÃ©
+>- Foreground = Choisir la couleur du texte du choix selectionnÃ©
+>- Pointer = Choisir un pointeur Ã  afficher avant le choix
+>- Padding = Choisir la taille du dÃ©calage entre le titre et les choix
+>- Selected = Choisir la position du curseur
+
