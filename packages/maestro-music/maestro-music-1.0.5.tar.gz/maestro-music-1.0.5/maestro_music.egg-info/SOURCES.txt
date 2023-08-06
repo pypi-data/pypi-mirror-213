@@ -1,0 +1,12 @@
+LICENSE
+helpers.py
+icon.py
+mac_presence.py
+maestro.py
+setup.py
+maestro_music.egg-info/PKG-INFO
+maestro_music.egg-info/SOURCES.txt
+maestro_music.egg-info/dependency_links.txt
+maestro_music.egg-info/entry_points.txt
+maestro_music.egg-info/requires.txt
+maestro_music.egg-info/top_level.txt
