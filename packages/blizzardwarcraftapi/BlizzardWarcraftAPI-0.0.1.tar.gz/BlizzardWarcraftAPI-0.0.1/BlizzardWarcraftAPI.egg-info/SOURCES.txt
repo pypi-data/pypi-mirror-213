@@ -1,0 +1,14 @@
+LICENSE
+README.md
+pyproject.toml
+BlizzardWarcraftAPI/BlizzardAuthToken.py
+BlizzardWarcraftAPI/BlizzardWarcraftAPI.py
+BlizzardWarcraftAPI/__init__.py
+BlizzardWarcraftAPI/data.py
+BlizzardWarcraftAPI/exceptions.py
+BlizzardWarcraftAPI/urls.py
+BlizzardWarcraftAPI.egg-info/PKG-INFO
+BlizzardWarcraftAPI.egg-info/SOURCES.txt
+BlizzardWarcraftAPI.egg-info/dependency_links.txt
+BlizzardWarcraftAPI.egg-info/requires.txt
+BlizzardWarcraftAPI.egg-info/top_level.txt
