@@ -1,0 +1,11 @@
+dcrx
+fastapi[all]
+docker
+psutil
+python-jose[cryptography]
+passlib[bcrypt]
+python-dotenv
+click
+uvicorn[standard]
+fs
+python-multipart
