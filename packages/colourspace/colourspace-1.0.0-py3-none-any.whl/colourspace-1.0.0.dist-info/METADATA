@@ -1,0 +1,73 @@
+Metadata-Version: 2.1
+Name: colourspace
+Version: 1.0.0
+Summary: Render frames from videos and images applying the correct colourspace conversion.
+Author-email: Svetlin Ankov <svetlin.ankov@live.com>, Simona Dimitrova <nimeria1308@gmail.com>
+License: BSD 3-Clause License
+        
+        Copyright (C) 2023, Svetlin Ankov, Simona Dimitrova
+        
+        Redistribution and use in source and binary forms, with or without
+        modification, are permitted provided that the following conditions are met:
+        
+        1. Redistributions of source code must retain the above copyright notice, this
+           list of conditions and the following disclaimer.
+        
+        2. Redistributions in binary form must reproduce the above copyright notice,
+           this list of conditions and the following disclaimer in the documentation
+           and/or other materials provided with the distribution.
+        
+        3. Neither the name of the copyright holder nor the names of its
+           contributors may be used to endorse or promote products derived from
+           this software without specific prior written permission.
+        
+        THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
+        AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+        IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+        DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE
+        FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
+        DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR
+        SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER
+        CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,
+        OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+        OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+        
+Project-URL: Homepage, https://github.com/dumbledore/colourspace
+Keywords: colourspace,colorspace,video,render
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Desktop Environment
+Classifier: Topic :: Multimedia :: Video :: Display
+Classifier: Topic :: Scientific/Engineering :: Image Processing
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: av (>=10.0.0)
+Requires-Dist: pymediainfo (>=6.0.1)
+Requires-Dist: wxPython (>=4.2.0)
+Requires-Dist: Pillow (>=9.0.1)
+Requires-Dist: pylru (>=1.2.1)
+Provides-Extra: dev
+Requires-Dist: autopep8 ; extra == 'dev'
+Requires-Dist: pytest ; extra == 'dev'
+
+# Colourspace
+_Colourspace_ is a Python library and viewer tool used to render videos and
+images in the proper colourspace using the _colorspace_ _FFmpeg_ filter.
+
+It uses the _av_ package to access _FFmpeg_ functionality, and _pymediainfo_
+to obtain file and stream metadata, that is not yet available through _av_
+(even though it _is_ available in _FFmpeg_).
+
+Note: _PyAV_ uses a (rather) outdated version of FFmpeg: 5.1.2, which may lack bug fixes
+and support for newer functionality. Check the [FFmpeg build script][1] for PyAV.
+
+## License
+Licensed under BSD 3-Clause.
+
+## Copyright
+Copyright (C) 2023, Svetlin Ankov, Simona Dimitrova
+
+  [1]: https://github.com/PyAV-Org/pyav-ffmpeg/blob/61a5e7dcaa0df41c1b6b20fd290dcc8fbc1a9ded/scripts/build-ffmpeg.py#L323
