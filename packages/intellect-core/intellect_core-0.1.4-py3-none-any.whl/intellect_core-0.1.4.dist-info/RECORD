@@ -1,0 +1,9 @@
+intellect_core/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+intellect_core/dto/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+intellect_core/dto/dto.py,sha256=lt9qY9r-ST7Q0BYe5tUBqVj1AsEwz51sJl79V-_U7gY,2335
+intellect_core/handler.py,sha256=yCrPyQVISPpHIzdN9Kg69ZiDk6pe_RlveLPXWO8jyu8,1023
+intellect_core/intelletct_server.py,sha256=zunhgPJdwvqXoMzlprWf7UoLVs5k2saP9rGNib_xy4c,5342
+intellect_core-0.1.4.dist-info/LICENSE,sha256=8SMF8WkKP2p6MV2JlLYKLA-Hzo6FFGlOz7KtDJJQJNo,186
+intellect_core-0.1.4.dist-info/METADATA,sha256=ARjc24eFZekNtH49NlR0u7by3vMCd2cXPs5BWMiuPf0,533
+intellect_core-0.1.4.dist-info/WHEEL,sha256=Zb28QaM1gQi8f4VCBhsUklF61CTlNYfs9YAZn-TOGFk,88
+intellect_core-0.1.4.dist-info/RECORD,,
