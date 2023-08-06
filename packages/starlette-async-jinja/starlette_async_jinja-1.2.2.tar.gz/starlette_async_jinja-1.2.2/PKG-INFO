@@ -1,0 +1,36 @@
+Metadata-Version: 2.1
+Name: starlette-async-jinja
+Version: 1.2.2
+Author-Email: lesleslie <les@wedgwoodwebworks.com>
+License: BSD-3-Clause
+Project-URL: Homepage, https://github.com/lesleslie/starlette-async-jinja
+Project-URL: Documentation, https://github.com/lesleslie/starlette-async-jinja
+Project-URL: Repository, https://github.com/lesleslie/starlette-async-jinja
+Requires-Python: >=3.11
+Requires-Dist: starlette>=0.28.0
+Requires-Dist: jinja2>=3.1.2
+Requires-Dist: jinja2-async-environment>=0.1.6
+Description-Content-Type: text/markdown
+
+# starlette-async-jinja
+
+[![Code style: crackerjack](https://img.shields.io/badge/code%20style-crackerjack-000042)](https://github.com/lesleslie/crackerjack)
+
+### Jinja2 is_async template support for Starlette +
+
+## About
+
+- Provides AsyncJinja2Templates class which enables use of the is_async Jinja environment flag with
+Startlette and Starlette based applications like FastAPI.
+- Integrated [Jinja Partials](https://github.com/mikeckennedy/jinja_partials)
+  and [Jinja Fragments](https://github.com/sponsfreixes/jinja2-fragments)
+
+## Usage
+
+
+## Acknowledgements
+
+
+## License
+
+BSD-3-Clause
