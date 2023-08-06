@@ -1,0 +1,11 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+ko_re/__init__.py
+ko_re/ko_re.py
+korean_regex.egg-info/PKG-INFO
+korean_regex.egg-info/SOURCES.txt
+korean_regex.egg-info/dependency_links.txt
+korean_regex.egg-info/not-zip-safe
+korean_regex.egg-info/top_level.txt
