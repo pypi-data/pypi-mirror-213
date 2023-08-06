@@ -1,0 +1,6 @@
+demtk.py
+setup.py
+demtk.egg-info/PKG-INFO
+demtk.egg-info/SOURCES.txt
+demtk.egg-info/dependency_links.txt
+demtk.egg-info/top_level.txt
