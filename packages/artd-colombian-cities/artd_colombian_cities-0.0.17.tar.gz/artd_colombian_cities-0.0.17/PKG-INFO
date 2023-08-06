@@ -1,0 +1,43 @@
+Metadata-Version: 2.1
+Name: artd_colombian_cities
+Version: 0.0.17
+Summary: A Django app to create Colombian cities
+Home-page: https://www.artd.com.co/
+Author: Jonathan Urzola Maladonado
+Author-email: jonathan@artd.com.co
+Keywords: pypi,cicd,python
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Django
+Classifier: Framework :: Django :: 4.2
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Internet :: WWW/HTTP
+Classifier: Topic :: Internet :: WWW/HTTP :: Dynamic Content
+Description-Content-Type: text/markdown
+
+=================
+Colombian cities
+=================
+
+A Django app to create Colombian cities.
+
+Quick start
+-----------
+
+1. Add "colombian_cities" to your INSTALLED_APPS setting like this:
+
+2. Run ``python manage.py migrate`` to create the polls models.
+
+3. run ``python manage.py create_countries`` to create the countries.
+
+4. run ``python manage.py create_regions`` to create the regions.
+
+5. run ``python manage.py create_cities`` to create the cities.
+
+6. Start the development server and visit http://127.0.0.1:8000/admin/
