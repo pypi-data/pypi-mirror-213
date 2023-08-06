@@ -1,0 +1,17 @@
+wbpFonttools/__init__.py,sha256=wGd6CfHFdtrcalvVsQXsrc9Bu5BauRqTnOaEFC-Mfy0,1658
+wbpFonttools/config.py,sha256=sPA49fP6_O1e5dr881_DCJ1BM-mU366ZT3LQ6BMz2gk,4895
+wbpFonttools/control.py,sha256=V3mv_PQn4gaf9nc-jVye0p39fZvrvgMRXjmB4voFiPc,6779
+wbpFonttools/dialog.py,sha256=HQdusfLcCyKzhiTDDgD8d0grDjBXq920MREUrkBfrHM,1544
+wbpFonttools/document.py,sha256=WtdfCf1IfCMCwIiT5RAGDDuXZUI9gvfqEvChe4Fo-h0,3730
+wbpFonttools/selectFontsDialogUI.py,sha256=1BRKehiUZjA3As_IibfQSg3MsOYxcKxdFksiQjsWTkM,1991
+wbpFonttools/template.py,sha256=_bLsjaxd7MhZRwuOgAIGHGcNroRyVDTIixiC2nxfjLQ,3277
+wbpFonttools/tools.py,sha256=W7nyQqdM1vpxhBTZRc8AuzwoFqGeyJnij4Ddh4Pc78M,2071
+wbpFonttools/view.py,sha256=TUAdXOFLpIZ6MkgHvjgdOn_YnyrOyho7pm2VvELRn3I,2332
+wbpFonttools/window.py,sha256=b-jHhNeA4moR-5uMviFtWkKI3Cvg7NglQrVhNYGxfF0,12103
+wbpFonttools/windowUI.py,sha256=XNommcN5axUTacaTgwekkievPm1JoKm3VL77J2l1V7E,4362
+wbpFonttools-0.2.0.dist-info/LICENSE,sha256=nJPclg17OaFzVfSOF2LMbHpypEd0EEGNYTZzYp1qwv4,1080
+wbpFonttools-0.2.0.dist-info/METADATA,sha256=gZ5zlsynMf6k72O6yNn6Ij9MclNc5J1tTCmKUj7SwbE,2484
+wbpFonttools-0.2.0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+wbpFonttools-0.2.0.dist-info/entry_points.txt,sha256=j_IewyQquGH3iC3NNCWFd1LsxQIJxJ9XBg69DAKUM8U,41
+wbpFonttools-0.2.0.dist-info/top_level.txt,sha256=yZ9Ox77uLGY02tT0IWzo0y89guvs-3vL-_yymd8YIP4,13
+wbpFonttools-0.2.0.dist-info/RECORD,,
