@@ -1,0 +1,68 @@
+[tool.poetry]
+name = "bboxconverter"
+version = "0.1.9"
+description = "Converting bounding box annotations to popular formats like a breeze."
+readme = "README.md"
+license = "GLP-3.0"
+keywords = [
+    "bbox converter",
+    "bbox",
+    "converter",
+    "bounding box",
+    "annotation",
+    "coco",
+    "yolo",
+    "voc",
+    "object detection",
+    "bboxtools",
+    "bboxutils",
+    "train",
+    "test",
+    "split"
+]
+authors = ["Olivier D'Ancona <olivier_dancona@hotmail.com>"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Science/Research",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+]
+
+[tool.poetry.urls]
+repository = "https://github.com/ODAncona/bboxconverter.git"
+documentation = "https://bboxconverter.readthedocs.io/en/latest/index.html"
+[tool.poetry.dependencies]
+python = ">=3.8"
+pandas = "^1.5.2"
+scikit-learn = "^1.2.1"
+lxml = "^4.9.2"
+
+[tool.poetry.dev-dependencies]
+
+[tool.poetry.group.dev.dependencies]
+pytest-cov = "^4.0.0"
+myst-nb = {version = "^0.17.1", python = "^3.8"}
+sphinx-autoapi = "^2.0.1"
+sphinx-rtd-theme = "^1.2.0"
+scikit-image = "^0.21.0"
+
+
+[tool.semantic_release]
+version_variable = "pyproject.toml:version" # version location
+branch = "main"                             # branch to make releases of
+changelog_file = "CHANGELOG.md"             # changelog file
+build_command = "poetry build"              # build dists
+dist_path = "dist/"                         # where to put dists
+upload_to_release = false                   # auto-create GitHub release
+upload_to_pypi = false                      # don't auto-upload to PyPI
+remove_dist = false                         # don't remove dists
+patch_without_tag = true                    # patch release by default
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
