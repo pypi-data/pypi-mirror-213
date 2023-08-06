@@ -1,0 +1,11 @@
+README.md
+py_mciwnd.cpp
+py_mciwnd_unicode.cpp
+setup.py
+mciplayer/__init__.py
+mciplayer/tool.py
+mciplayer.egg-info/PKG-INFO
+mciplayer.egg-info/SOURCES.txt
+mciplayer.egg-info/dependency_links.txt
+mciplayer.egg-info/entry_points.txt
+mciplayer.egg-info/top_level.txt
