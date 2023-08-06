@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+src/visioncar/__init__.py
+src/visioncar/__main__.py
+src/visioncar/visioncar.py
+src/visioncar.egg-info/PKG-INFO
+src/visioncar.egg-info/SOURCES.txt
+src/visioncar.egg-info/dependency_links.txt
+src/visioncar.egg-info/entry_points.txt
+src/visioncar.egg-info/requires.txt
+src/visioncar.egg-info/top_level.txt
