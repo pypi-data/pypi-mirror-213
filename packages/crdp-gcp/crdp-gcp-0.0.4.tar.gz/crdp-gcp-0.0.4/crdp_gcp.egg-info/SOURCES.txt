@@ -1,0 +1,11 @@
+LICENSE.txt
+MANIFEST.in
+README.md
+crdp.c
+crdp.pyx
+setup.py
+crdp_gcp.egg-info/PKG-INFO
+crdp_gcp.egg-info/SOURCES.txt
+crdp_gcp.egg-info/dependency_links.txt
+crdp_gcp.egg-info/requires.txt
+crdp_gcp.egg-info/top_level.txt

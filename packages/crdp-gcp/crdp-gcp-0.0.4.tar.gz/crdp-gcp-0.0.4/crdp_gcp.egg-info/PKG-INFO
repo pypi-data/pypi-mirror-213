@@ -1,0 +1,36 @@
+Metadata-Version: 2.1
+Name: crdp-gcp
+Version: 0.0.4
+Summary: A fast Ramer-Douglas-Peucker algorithm implementation. Updated for GCP cloud function
+Home-page: https://github.com/vtecftwy/crdp-gcp
+Author: Ran Bi
+Author-email: biran0079@gmail.com
+License: MIT
+Keywords: rdp ramer douglas peucker line simplification cython
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Provides-Extra: dev
+License-File: LICENSE.txt
+
+# crdp-gcp
+
+Cython implementation of Ramer-Douglas-Peucker algorithm, identical to [crdp](https://pypi.org/project/crdp/0.0.2/) but modified to run as a google cloud function.
+
+## Usage
+```
+pip install crdp-gcp
+```
+
+```python
+In [1]: from crdp import rdp
+
+In [2]: rdp([[1,1],[2,3],[3,3],[4,4]], 0.8)
+Out[2]: [[1, 1], [4, 4]]
+
+In [3]: rdp([[1,1],[2,3],[3,3],[4,4]], 0.7)
+Out[3]: [[1, 1], [2, 3], [4, 4]]
+```
+
+All credit to [Bi Ran](https://github.com/biran0079), author of the original code
