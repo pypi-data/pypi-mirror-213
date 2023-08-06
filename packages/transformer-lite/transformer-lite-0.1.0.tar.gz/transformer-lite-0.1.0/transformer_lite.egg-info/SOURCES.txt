@@ -1,0 +1,9 @@
+README.md
+setup.py
+transformer_lite/__init__.py
+transformer_lite/core.py
+transformer_lite.egg-info/PKG-INFO
+transformer_lite.egg-info/SOURCES.txt
+transformer_lite.egg-info/dependency_links.txt
+transformer_lite.egg-info/requires.txt
+transformer_lite.egg-info/top_level.txt
