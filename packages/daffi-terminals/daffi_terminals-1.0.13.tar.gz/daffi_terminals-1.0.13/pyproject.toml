@@ -1,0 +1,92 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "daffi-terminals"
+description = "Remote terminal control"
+readme = "README.md"
+requires-python = ">=3.8"
+license = "MIT"
+keywords = [
+    "rpc",
+    "remote",
+    "debug",
+    "debugging",
+    "remote control",
+    "ssh",
+    "webssh",
+    "python",
+    "distributed",
+    "stream",
+    "iot",
+    "embedded",
+    "async"
+]
+authors = [
+  { name = "Volodymyr Boiko", email = "600apples@gmail.com" },
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "Intended Audience :: System Administrators",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Topic :: Internet",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Topic :: Software Development :: Object Brokering",
+    "Topic :: Software Development :: Testing",
+    "Topic :: System :: Clustering",
+    "Topic :: System :: Monitoring",
+    "Topic :: System :: Networking",
+    "Topic :: System :: Systems Administration",
+]
+dependencies = [
+    "fastapi>=0.95.0",
+    "uvicorn[standard]>=0.21.1",
+    "daffi>=2.2.1",
+]
+dynamic = [
+    "version",
+]
+[project.scripts]
+dterm = "daffi_terminals.main:main"
+
+[project.urls]
+Source = "https://github.com/600apples/dafi-terminals"
+
+[tool.hatch.version]
+path = "daffi_terminals/__about__.py"
+
+[tool.hatch.build]
+include = [
+  "docs/*.*",
+  "daffi_terminals/router/static/*.*",
+  "daffi_terminals/router/static/js/*.*",
+  "daffi_terminals/router/static/css/*.*",
+  "**/*.py",
+]
+
+[tool.hatch.envs.default.overrides]
+env.GITHUB_ACTIONS.env-vars = "COVERAGE_REPORT="
+
+[tool.hatch.envs.default]
+fmt = [
+  "black {args:.}",
+  "ruff --fix {args:.}",
+  "style",
+]
+all = [
+  "style",
+  "typing",
+]
+
+[[tool.hatch.envs.test.matrix]]
+python = ["38", "39", "310", "311"]
+
+[tool.black]
+line-length = 120
