@@ -1,0 +1,58 @@
+Metadata-Version: 1.1
+Name: mds_account_primanota
+Version: 6.0.4
+Summary: Tryton module to add a primanota-view.
+Home-page: https://www.m-ds.de/
+Author: martin-data services
+Author-email: service@m-ds.de
+License: GPL-3
+Description: mds-account-primanota
+        =====================
+        Tryton module to add a primanota-view.
+        
+        Install
+        =======
+        
+        pip install mds-account-primanota
+        
+        Requires
+        ========
+        - Tryton 6.0
+        
+        Changes
+        =======
+        
+        *6.0.4 - 14.06.2023*
+        
+        - add: column 'analytic lines' - to search for existing/missing analytic-lines
+        
+        *6.0.2 - 03.05.2022*
+        
+        - add: search in 'origin' and 'line_origin'
+        
+        *6.0.1 - 02.05.2022*
+        
+        - add: context search
+        
+        *6.0.0 - 01.05.2022*
+        
+        - init
+        
+        
+Keywords: tryton account primanota
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Plugins
+Classifier: Framework :: Tryton
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Customer Service
+Classifier: Intended Audience :: Information Technology
+Classifier: Intended Audience :: Financial and Insurance Industry
+Classifier: Topic :: Office/Business
+Classifier: Topic :: Office/Business :: Financial :: Accounting
+Classifier: Natural Language :: German
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: License :: OSI Approved :: GNU General Public License (GPL)
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
