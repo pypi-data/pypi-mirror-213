@@ -1,0 +1,14 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/markapp/__init__.py
+src/markapp/cli.py
+src/markapp/markapp.py
+src/markapp/watcher.py
+src/markapp.egg-info/PKG-INFO
+src/markapp.egg-info/SOURCES.txt
+src/markapp.egg-info/dependency_links.txt
+src/markapp.egg-info/entry_points.txt
+src/markapp.egg-info/requires.txt
+src/markapp.egg-info/top_level.txt
