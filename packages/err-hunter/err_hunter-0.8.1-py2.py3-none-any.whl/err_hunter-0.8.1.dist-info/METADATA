@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: err-hunter
+Version: 0.8.1
+Summary: Enhanced traceback and logging utils
+Home-page: https://github.com/aploium/my_utils/tree/master/err_hunter
+Author: ap
+Author-email: meow@meow.cat
+Platform: any
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+
