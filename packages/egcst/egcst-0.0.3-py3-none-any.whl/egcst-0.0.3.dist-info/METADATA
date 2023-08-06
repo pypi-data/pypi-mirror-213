@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: egcst
+Version: 0.0.3
+Summary: This package performs triangulation for engineering geological cross-sections
+Home-page: https://github.com/yuryatin/egcst
+Download-URL: https://github.com/yuryatin/egcst/archive/refs/tags/v0.0.3.tar.gz
+License: MIT
+Keywords: engineering,geological,cross,sections,mapping,triangulation,delaunay
+Requires-Dist: numpy
+Requires-Dist: matplotlib
+Requires-Dist: shapely
+Requires-Dist: ground
+Requires-Dist: sect
+
