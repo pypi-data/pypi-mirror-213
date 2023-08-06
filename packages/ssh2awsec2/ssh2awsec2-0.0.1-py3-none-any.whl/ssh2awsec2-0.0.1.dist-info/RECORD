@@ -1,0 +1,15 @@
+ssh2awsec2/__init__.py,sha256=FmmontVLUlsI56lSRwdwzRzNexqS9jedqX-vcjI6MPE,331
+ssh2awsec2/_version.py,sha256=cW-ZWkvI8hd2WB45U48UUY3NqYDy4rPf0etHg29ZU5s,93
+ssh2awsec2/api.py,sha256=O9CT1B2F-cVB8elT0EoCJbgkcffjvlmqteqavs4giDg,25
+ssh2awsec2/paths.py,sha256=AhZk9vx1Z09dhgIZbS5yt3_A4-15qbqJNyybEYiccsM,657
+ssh2awsec2/docs/__init__.py,sha256=f-E2GGaAOnea7U51BKWcRtFHZ6p2iPnvGoXR6VvBtGg,43
+ssh2awsec2/tests/__init__.py,sha256=2nfXkz9TigdtVWm0YAeP8qD83i0KvM74AWag9WJMw4Q,58
+ssh2awsec2/tests/helper.py,sha256=p_oZhY0NE1HTQ50ftj1y4sJ6nVOLxQrPwseOlX0AD4s,447
+ssh2awsec2/vendor/__init__.py,sha256=O9CT1B2F-cVB8elT0EoCJbgkcffjvlmqteqavs4giDg,25
+ssh2awsec2/vendor/pytest_cov_helper.py,sha256=nR-I6d8j0P1JQy6dxIiZtG9Gz0DkfJFpk6EPCCpfnm8,3572
+ssh2awsec2-0.0.1.dist-info/AUTHORS.rst,sha256=SP3-CIUjfe7WJ7FTPvXuQAkBHk2kyhKOiUYkmQ6IrfA,484
+ssh2awsec2-0.0.1.dist-info/LICENSE.txt,sha256=SENPgF_TZDwzLRIVwUdiyHmAdd7Mx31uX07wGuEyDgc,1120
+ssh2awsec2-0.0.1.dist-info/METADATA,sha256=PDmxLf2rePFXFQS9aIM969l2n7YG8lROndtRdJ0zeyc,4106
+ssh2awsec2-0.0.1.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+ssh2awsec2-0.0.1.dist-info/top_level.txt,sha256=-FAaI0xAMHzVLK0xlQtxrfooYCqeC_1_1nlsWOJEx7U,11
+ssh2awsec2-0.0.1.dist-info/RECORD,,
