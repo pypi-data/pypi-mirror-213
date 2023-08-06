@@ -1,0 +1,42 @@
+Metadata-Version: 2.1
+Name: odoo14-addon-shopinvader-sale-coupon
+Version: 14.0.1.2.1
+Summary: Manage Promotion and Coupon programs in Shopinvader
+Home-page: https://github.com/shopinvader/odoo-shopinvader
+Author: Camptocamp
+License: AGPL-3
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: Framework :: Odoo
+Classifier: Framework :: Odoo :: 14.0
+Classifier: License :: OSI Approved :: GNU Affero General Public License v3
+Requires-Python: >=3.6
+Requires-Dist: odoo14-addon-shopinvader
+Requires-Dist: odoo (<14.1dev,>=14.0a)
+
+.. image:: https://img.shields.io/badge/licence-AGPL--3-blue.svg
+   :target: http://www.gnu.org/licenses/agpl-3.0-standalone.html
+   :alt: License: AGPL-3
+
+=======================
+Shopinvader Sale Coupon
+=======================
+
+This module extends the functionality of shopinvader to support Coupons
+and Promotions from `sale_coupon` core module.
+
+Not to be confused with `shopinvader_promotion_rule`, that implements
+promotion programs from OCA module `sale_promotion_rule`, an alternative
+to the core `sale_coupon` module.
+
+Credits
+=======
+
+Contributors
+------------
+
+* `Camptocamp <https://www.camptocamp.com>`_
+
+  * Iván Todorovich <ivan.todorovich@gmail.com>
+
+
