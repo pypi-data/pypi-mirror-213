@@ -1,0 +1,7 @@
+pymilvus_simple/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pymilvus_simple/simple_api.py,sha256=9Aa0I9KRywUytc9TEMBHbJ5z03uEsEVHHeY1P_92u9Y,31129
+pymilvus_simple/simple_api_exceptions.py,sha256=53_Uh9lLoCbwnqDO7GKEENXrzKvVgMCFfjtGNUERIbo,572
+pymilvus_simple-1.0.dist-info/METADATA,sha256=9A7YQznAgzxG6ADW8OlCMz7okE6rWe6LY654l9q-EGc,284
+pymilvus_simple-1.0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+pymilvus_simple-1.0.dist-info/top_level.txt,sha256=jrXKA59Pj7UxXOAHYnDJuRbgwaTyZNEfjS3Fy41ywfA,16
+pymilvus_simple-1.0.dist-info/RECORD,,
