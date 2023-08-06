@@ -1,0 +1,11 @@
+LICENSE.md
+README.md
+setup.cfg
+setup.py
+argbind/__init__.py
+argbind/argbind.py
+argbind.egg-info/PKG-INFO
+argbind.egg-info/SOURCES.txt
+argbind.egg-info/dependency_links.txt
+argbind.egg-info/requires.txt
+argbind.egg-info/top_level.txt

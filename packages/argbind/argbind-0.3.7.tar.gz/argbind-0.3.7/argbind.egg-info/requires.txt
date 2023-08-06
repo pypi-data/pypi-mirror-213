@@ -1,0 +1,12 @@
+pyyaml
+docstring-parser
+
+[examples]
+torch
+torchvision
+
+[tests]
+pytest
+pytest-cov
+torch
+torchvision
