@@ -1,0 +1,2 @@
+[console_scripts]
+rkr = remote_ipykernel.manage:manage
