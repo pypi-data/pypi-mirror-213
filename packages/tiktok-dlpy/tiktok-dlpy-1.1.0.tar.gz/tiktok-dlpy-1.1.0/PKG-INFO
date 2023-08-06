@@ -1,0 +1,51 @@
+Metadata-Version: 2.1
+Name: tiktok-dlpy
+Version: 1.1.0
+Summary: A package to dowload TikTok videos via URL
+Home-page: https://github.com/Fluxticks/TikTokDL
+Download-URL: https://github.com/Fluxticks/TikTokDL/archive/v1.1.0.tar.gz
+Author: Fluxticks
+Keywords: tiktok,playwright,async
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# TikTokDL
+
+A python package that downloads TikTok videos by URL
+
+## Usage
+
+1. Install the package
+
+```bash
+$ pip install tiktokdl
+```
+
+2. Ensure that playwright has been installed
+
+```bash
+$ python -m playwright install
+$ python -m playwright install-deps
+```
+
+2. Import the package
+
+```python
+from tiktokdl.download_video import get_video
+```
+
+3. Run the function in an async context
+
+```python
+video_url = ""
+
+video_info = asyncio.run(
+    get_video(
+        video_url
+    )
+)
+```
