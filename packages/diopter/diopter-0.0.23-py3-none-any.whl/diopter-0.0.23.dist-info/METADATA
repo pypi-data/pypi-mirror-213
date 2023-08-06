@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: diopter
+Version: 0.0.23
+Summary: A library for building differential tests
+Home-page: https://github.com/DeadCodeProductions/diopter
+Author: Theodoros Theodoridis, Yann Girsberger
+Author-email: theodort@inf.ethz.ch
+License: Apache License 2.0
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Diopter: Differential Optimization Tester
