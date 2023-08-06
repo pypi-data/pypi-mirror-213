@@ -1,0 +1,140 @@
+Metadata-Version: 2.1
+Name: attridict
+Version: 0.0.7
+Summary: A dict implementation with support for easy and clean access of its values through attributes
+Home-page: https://github.com/alvinshaita/attridict
+Author: Alvin Shaita
+Author-email: alvinshaita@gmail.com
+License: MIT License
+Keywords: attridict,attrdict,struct,dict,dot,attribute,attributes,dictionary,attr
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# attridict
+![Build Status](https://github.com/alvinshaita/attridict/actions/workflows/attridict.yml/badge.svg?branch=main)
+![GitHub](https://img.shields.io/github/license/alvinshaita/attridict.svg)
+
+
+A Python package implementing atrribute dictionary.
+
+This provides an easier and cleaner way to access dict values using their keys as attributes. It is typically a dict child, maintaining all the dict functionalities, but including some extra features.
+
+
+
+## Installation
+To install the package from PyPI, use:
+```
+pip install attridict
+```
+
+
+
+
+## Usage
+
+Creating an attridict object
+```python
+>>> import attridict
+>>> att = attridict()
+>>> att
+{}
+>>> att.foo = "bar"
+>>> att.foo
+'bar'
+>>> att
+{'foo': 'bar'}
+```
+<br/>
+
+A dict can be converted into an attridict object by passing it as an argument
+```python
+>>> import attridict
+
+>>> data = {'red': 'hot', 'blue': 'cold'}
+
+>>> colors = attridict(data)
+>>> colors
+{'red': 'hot', 'blue': 'cold'}
+
+>>> colors.red
+'hot'
+```
+<br/>
+
+Modifying attridict object
+```python
+>>> import attridict
+
+>>> data = {'red': 'hot', 'blue': 'cold'}
+
+>>> colors = attridict(data)
+>>> colors
+{'red': 'hot', 'blue': 'cold'}
+
+>>> colors.blue
+'cold'
+
+>>> colors.blue = "sky"
+>>> colors.red = "rose"
+>>> colors.blue
+'sky'
+>>> colors.red
+'rose'
+>>> colors
+{'red': 'rose', 'blue': 'sky'}
+
+>>> colors.green = "grass"
+>>> colors
+{'red': 'rose', 'blue': 'sky', 'green': 'grass'}
+```
+<br/>
+
+Typical `dict` operations work on attridict objects
+```python
+>>> import attridict
+
+>>> data = {'red': 'rose', 'blue': 'sky'}
+
+>>> colors = attridict(data)
+>>> colors
+{'red': 'rose', 'blue': 'sky'}
+
+>>> colors.red
+'rose'
+>>> colors["red"]
+'rose'
+
+>>> colors["red"] = "tomato"
+>>> colors["red"]
+'tomato'
+>>> colors.red
+'tomato'
+```
+<br/>
+
+Nested attribute access
+```python
+>>> import attridict
+
+>>> data = {'foo': {}}
+>>> att = attridict(data)
+
+>>> att
+{'foo': {}}
+
+>>> att.foo.bar = 'baz'
+
+>>> att.foo.bar
+'baz'
+
+>>> att
+{'foo': {'bar': 'baz'}}
+```
+## License
+The project is MIT licensed
