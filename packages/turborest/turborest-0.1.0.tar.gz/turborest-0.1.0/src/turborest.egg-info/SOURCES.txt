@@ -1,0 +1,8 @@
+README.md
+setup.cfg
+setup.py
+src/turborest.egg-info/PKG-INFO
+src/turborest.egg-info/SOURCES.txt
+src/turborest.egg-info/dependency_links.txt
+src/turborest.egg-info/requires.txt
+src/turborest.egg-info/top_level.txt
