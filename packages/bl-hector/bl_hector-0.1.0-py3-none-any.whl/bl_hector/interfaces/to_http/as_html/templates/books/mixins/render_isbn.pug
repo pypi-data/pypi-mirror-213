@@ -1,0 +1,66 @@
+//- Hector --- A collection manager.
+//- Copyright © 2023 Bioneland
+//-
+//- This program is free software: you can redistribute it and/or modify
+//- it under the terms of the GNU Affero General Public License as
+//- published by the Free Software Foundation, either version 3 of the
+//- License, or (at your option) any later version.
+//-
+//- This program is distributed in the hope that it will be useful,
+//- but WITHOUT ANY WARRANTY; without even the implied warranty of
+//- MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+//- GNU Affero General Public License for more details.
+//-
+//- You should have received a copy of the GNU Affero General Public License
+//- along with this program. If not, see <http://www.gnu.org/licenses/>.
+
+include mixins/form
+
+mixin isbn_field(value, error, required="")
+  .field
+    p.control.has-icons-left.has-icons-right
+      if error
+        - var classes = "is-danger"
+      elif value
+        - var classes = "is-success"
+      else
+        - var classes = ""
+
+      //- Find a better way to set required!
+      if required
+        input.input(
+          type="text"
+          id="isbn"
+          name="isbn"
+          class=classes
+          value=value
+          required
+          placeholder=_("book-isbn")
+          hx-post=url_for("books.validate_isbn")
+          hx-trigger="search, blur"
+          hx-target="closest .field"
+          hx-swap="outerHTML"
+        )
+      else
+        input.input(
+          type="text"
+          id="isbn"
+          name="isbn"
+          class=classes
+          value=value
+          placeholder=_("book-isbn")
+          hx-post=url_for("books.validate_isbn")
+          hx-trigger="search, blur"
+          hx-target="closest .field"
+          hx-swap="outerHTML"
+        )
+      span.icon.is-small.is-left: i.fas.fa-book
+      if value
+        span.icon.is-small.is-right
+          if error
+            i.fas.fa-exclamation-triangle
+          else
+            i.fas.fa-check
+
+    +error_message(error)
+    +help_message(_("book-isbn-description"))
