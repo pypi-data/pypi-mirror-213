@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: sqlite-url
+Version: 0.1.0a7
+Home-page: https://github.com/asg017/sqlite-url
+Author: Alex Garcia
+License: MIT License, Apache License, Version 2.0
+Project-URL: Issues, https://github.com/asg017/sqlite-url/issues
+Project-URL: CI, https://github.com/asg017/sqlite-url/actions
+Project-URL: Changelog, https://github.com/asg017/sqlite-url/releases
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Provides-Extra: test
+Requires-Dist: pytest ; extra == 'test'
+
