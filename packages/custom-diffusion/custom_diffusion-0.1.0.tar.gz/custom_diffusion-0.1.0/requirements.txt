@@ -1,0 +1,11 @@
+controlnet_aux
+diffusers==0.17.0
+moviepy
+numpy
+opencv_python
+Pillow
+pytube
+setuptools
+torch
+transformers
+xformers
