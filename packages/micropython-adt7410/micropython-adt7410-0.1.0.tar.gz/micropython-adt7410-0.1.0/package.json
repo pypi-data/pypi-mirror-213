@@ -1,0 +1,8 @@
+{
+  "urls": [
+    ["micropython_adt7410/__init__.py", "github:jposada202020/MicroPython_ADT7410/micropython_adt7410/__init__.py"],
+    ["micropython_adt7410/i2c_helpers.py", "github:jposada202020/MicroPython_ADT7410/micropython_adt7410/i2c_helpers.py"],
+    ["micropython_adt7410/adt7410.py", "github:jposada202020/MicroPython_ADT7410/micropython_adt7410/adt7410.py"]
+  ],
+  "version": "0.1"
+}
