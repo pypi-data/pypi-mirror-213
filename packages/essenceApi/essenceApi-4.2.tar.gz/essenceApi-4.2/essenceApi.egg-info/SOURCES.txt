@@ -1,0 +1,7 @@
+setup.py
+apiessence/__init__.py
+essenceApi.egg-info/PKG-INFO
+essenceApi.egg-info/SOURCES.txt
+essenceApi.egg-info/dependency_links.txt
+essenceApi.egg-info/requires.txt
+essenceApi.egg-info/top_level.txt
