@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+micropython_captive_dns_server.egg-info/PKG-INFO
+micropython_captive_dns_server.egg-info/SOURCES.txt
+micropython_captive_dns_server.egg-info/dependency_links.txt
+micropython_captive_dns_server.egg-info/not-zip-safe
+micropython_captive_dns_server.egg-info/top_level.txt
