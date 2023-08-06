@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: Spanve
+Version: 0.1.2
+Summary: Spatial Neighbourhood Variably Expressed (Spanve) is a method for detecting spatially expressed genes in spatial transcriptomics data.
+Home-page: https://github.com/gx-Cai/Spanve
+Author: gx.Cai
+License-File: LICENSE
