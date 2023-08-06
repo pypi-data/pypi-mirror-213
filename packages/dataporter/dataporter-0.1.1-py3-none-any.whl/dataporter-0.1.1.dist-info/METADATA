@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: dataporter
+Version: 0.1.1
+Summary: 
+Author: AuthorPlaceholder
+Requires-Python: >=3.10,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: cryptography (>=40.0.2,<41.0.0)
+Requires-Dist: fire (>=0.5.0,<0.6.0)
+Requires-Dist: loguru (>=0.7.0,<0.8.0)
+Requires-Dist: pandas (>=2.0.1,<2.1.0)
+Requires-Dist: pymysql (>=1.0.3,<2.0.0)
+Requires-Dist: sqlalchemy (>=2.0.13,<3.0.0)
+Description-Content-Type: text/markdown
+
+# dataporter
+dataporter is a lightweight migration tool. It migrate data between multiple infrastructure
+## current support
+- sql -> csv
+- csv -> sql
+# will support
+- kafka -> csv
+- csv -> kafka
+

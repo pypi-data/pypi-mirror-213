@@ -1,0 +1,4 @@
+[console_scripts]
+csv2sql=dataporter:csv2sql
+sql2csv=dataporter:sql2csv
+
