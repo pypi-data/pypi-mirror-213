@@ -1,0 +1,29 @@
+---
+name: Validate configuration
+
+"on":
+  push:
+    paths:
+      - .github/workflows/validate-configuration.yml
+      - etc/images/*.yml
+      - etc/schema.yaml
+    branches:
+      - main
+  pull_request:
+    paths:
+      - .github/workflows/validate-configuration.yml
+      - etc/images/*.yml
+      - etc/schema.yaml
+
+jobs:
+  validate-configuration:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-python@v4
+        with:
+          python-version: '3.x'
+      - run: pip3 install tox
+      - run: tox -- --check
+        env:
+          OS_CLIENT_CONFIG_FILE: .github/clouds.yml

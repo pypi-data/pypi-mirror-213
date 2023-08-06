@@ -1,0 +1,59 @@
+---
+- secret:
+    name: CLOUDS
+    data:
+      clouds: !encrypted/pkcs1-oaep
+        - LffnVb8+3O07qmDvnLP2fvzuTwHBg++m2mfw6YJZNAXiFiHzsKEXWGxAknY3Vmzhb2mvY
+          Isp//o5gdwZ/mWRoQjrP1hyTX2INPgruwOwC67YACkAKUqAaaYsuHl9oCVCxKlbcP7k1m
+          416ANG3+l91kC9xuOAEJb1jOqvLsFl9RbKzBgb0QfWcZ5phAherZfaJN0dFz7X4DnTVyy
+          6H7Cglpedw8nN6QG0umFzWABqxW2wPPupLd77dLtXU2m2Wm0NIpdMx2R9+mSdh370I1ue
+          lPuVf/qTSBvPI19YHI3ve9PuAi2Vr4sgLU3uf6+M1KOaHaCMNq/v0qTsPfn4TIPLW1MDZ
+          R1RSOD+Uo4cCfekGsaRhagA2j77B1ERjqdnGI9aoMbVwMVnKzKlAJfPxMPsmCNXtkCDSH
+          Q+w7nP32E7olDYr6ahN/XDSdGJquq/UDyz/J2m/89nj9KXIQRTcr4hjvaQb34l7qk1wH3
+          cZ5nX/UmBYd5+e8y48jKKAHZMV81PGbyE9Az+MKJLMaKO4DT5P4kEGMEPmGEveTzcG2nh
+          yAU/TbgmxtRUmOr9YZUoXr1bT5BPd3h+QLpQBG2OTBhNH7LNT3IJ6Ce1Tjbh7nzupDXEE
+          V4+C8M1SyCIJsoudTUSuqFRqOrN4cNVVEgHVo8JOhp0q/rv15wYuDzM42lMUXw=
+
+- job:
+    name: integration-test
+    pre-run: playbooks/pre-integration-test.yml
+    run: playbooks/integration-test.yml
+    roles:
+      - zuul: osism/zuul-jobs
+        name: devstack
+
+- job:
+    name: real-world
+    pre-run: playbooks/pre-real-world.yml
+    run: playbooks/real-world.yml
+    secrets:
+      - name: clouds
+        secret: CLOUDS
+
+- project:
+    merge-mode: squash-merge
+    default-branch: main
+    check:
+      jobs:
+        - flake8
+        - hadolint
+        - markdownlint
+        - integration-test
+        - yamllint
+    gate:
+      jobs:
+        - flake8
+        - hadolint
+        - markdownlint
+        - integration-test
+        - yamllint
+    post:
+      jobs:
+        - real-world
+    periodic-daily:
+      jobs:
+        - flake8
+        - hadolint
+        - markdownlint
+        - integration-test
+        - yamllint
