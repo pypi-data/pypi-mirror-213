@@ -1,0 +1,17 @@
+serde/__init__.py,sha256=zGmkD0rsafHOD-bPlHThSDXuLetjCLtSMf5U7KT5lWY,3269
+serde/compat.py,sha256=ZS5Tbf3pxTlecuX1u-QTW6bzPYI2AhmzSJiUR3K9Be8,24204
+serde/core.py,sha256=pK6AboV2L1swocFfL3C9k9C_GPtA8tS2JPdTSk0dix4,22117
+serde/de.py,sha256=dRinDyUYGKhEB607LA9p9BclLkfl1_JXOQ60teTQCBU,37011
+serde/inspect.py,sha256=6E1XySDJQtQSH1RaLhbCBsw1jB9lLIpoQXZ8ANHYuRI,1458
+serde/json.py,sha256=RDi5UvemHzkyJJVROs9FRTO4MtaADGKYyW6MEu7Up0k,2991
+serde/msgpack.py,sha256=MMtoHYxP8w3_WmbzoF05fMNFkYpFv82ILQhTOeim7tU,4035
+serde/numpy.py,sha256=5dwBrW1iTvqFtjgvTdrgAL9FQGPxOgvGePtaaSsSqus,3254
+serde/pickle.py,sha256=r42mKAvQA_dgnrOuT1Rq7PQROaJ7b3nLyUYndmN0NBw,1214
+serde/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+serde/se.py,sha256=-emQZL9FVdeEjaZfgzZuyyJFJIs179PTj-yrnMy6VqA,25426
+serde/toml.py,sha256=gmba6Z5pCnit3dXljg8rnccYuGkz24J3q0hTi1YPY8c,2030
+serde/yaml.py,sha256=Qikk-1ds0PcJA4K74pReKC2nKae2U6W_qpXgGsF0dRg,1838
+pyserde-0.11.0.dist-info/LICENSE,sha256=d3NFl0MtOPpZoOglcxiMsP99A-tkZCXrwTHZWyaYyN8,1066
+pyserde-0.11.0.dist-info/METADATA,sha256=tdogpk4ypmen5hponyVxorX--N8SfCJtVZkskqUbrL8,16054
+pyserde-0.11.0.dist-info/WHEEL,sha256=Zb28QaM1gQi8f4VCBhsUklF61CTlNYfs9YAZn-TOGFk,88
+pyserde-0.11.0.dist-info/RECORD,,
