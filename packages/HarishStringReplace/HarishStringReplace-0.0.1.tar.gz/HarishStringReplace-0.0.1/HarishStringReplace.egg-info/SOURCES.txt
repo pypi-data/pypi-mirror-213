@@ -1,0 +1,10 @@
+CHANGELOG.txt
+LICENCE.txt
+MANIFEST.in
+README.txt
+setup.py
+HarishStringReplace/__init__.py
+HarishStringReplace.egg-info/PKG-INFO
+HarishStringReplace.egg-info/SOURCES.txt
+HarishStringReplace.egg-info/dependency_links.txt
+HarishStringReplace.egg-info/top_level.txt
