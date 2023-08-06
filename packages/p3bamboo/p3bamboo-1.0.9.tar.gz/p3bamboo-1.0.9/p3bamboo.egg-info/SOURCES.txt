@@ -1,0 +1,13 @@
+LICENSE
+README.md
+setup.py
+p3bamboo/BamFactory.py
+p3bamboo/BamFile.py
+p3bamboo/BamGlobals.py
+p3bamboo/BamObject.py
+p3bamboo/StructDatagram.py
+p3bamboo/__init__.py
+p3bamboo.egg-info/PKG-INFO
+p3bamboo.egg-info/SOURCES.txt
+p3bamboo.egg-info/dependency_links.txt
+p3bamboo.egg-info/top_level.txt
