@@ -1,0 +1,8 @@
+LICENSE
+README.md
+impmagic/__init__.py
+impmagic/impmagic.py
+impmagic.egg-info/PKG-INFO
+impmagic.egg-info/SOURCES.txt
+impmagic.egg-info/dependency_links.txt
+impmagic.egg-info/top_level.txt
