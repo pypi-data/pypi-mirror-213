@@ -1,0 +1,42 @@
+Metadata-Version: 2.1
+Name: dsm_django_masterdata
+Version: 0.0.2
+Summary: A simple way to use Master Data in django project.
+Home-page: https://github.com/storemesh/masterdata/tree/django-app
+Author: DigitalStoreMesh Co.,Ltd
+Author-email: contact@storemesh.com
+License: MIT License
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Description-Content-Type: text/markdown
+
+# Django Master data
+0. install dsm_master
+```
+pip install dsm_master
+```
+1. install django app in `settings.py`
+```python
+INSTALLED_APPS = [
+    ...
+    'dsm_django_masterdata.hscode',
+    ...
+]
+```
+
+2. migrate database
+```
+python manage.py migrate
+```
+
+3. check data in admin page
+
+## How to use
+```python
+from dsm_master.hscode.models import HScode
+hs_code = HScode.objects.all()
+```
