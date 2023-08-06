@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: selfbotclient
+Version: 1.0.0
+Summary: Library that will allow you to manage selfbots
+Home-page: UNKNOWN
+Author: xXenvy
+Author-email: <xpimepk01@gmail.com>
+License: UNKNOWN
+Keywords: python,requests,discord selfbot,selfbot,discord.py,aiohttp
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
+
+
+# Self Bot Client
+## ⚡ Fastest selfbotting client
+- Token Checker | `1` token / `140`ms
+- Delay between command and execution - `16ms`
+## 🔧 Full control
+- A separate method for making your own commands
+- Ability to perform a specific action only on selected users
+
+
