@@ -1,0 +1,2 @@
+bmw-lobster-core>=0.9.4
+requests>=2.22
