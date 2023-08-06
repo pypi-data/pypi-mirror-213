@@ -1,0 +1,2 @@
+[console_scripts]
+rdf-doctor = doctor.doctor:doctor
