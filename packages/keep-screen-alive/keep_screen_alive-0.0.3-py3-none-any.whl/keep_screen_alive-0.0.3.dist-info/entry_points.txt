@@ -1,0 +1,3 @@
+[console_scripts]
+keep-alive=keep_alive.run:main
+
