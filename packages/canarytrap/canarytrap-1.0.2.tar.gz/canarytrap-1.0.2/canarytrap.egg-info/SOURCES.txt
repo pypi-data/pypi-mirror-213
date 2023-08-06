@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+canarytrap/__init__.py
+canarytrap/text.py
+canarytrap.egg-info/PKG-INFO
+canarytrap.egg-info/SOURCES.txt
+canarytrap.egg-info/dependency_links.txt
+canarytrap.egg-info/top_level.txt
+tests/__init__.py
+tests/test_text.py
