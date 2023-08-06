@@ -1,0 +1,76 @@
+[project]
+name = "metapensiero.sqlalchemy.proxy"
+description = "Expose SQLAlchemy's queries and their metadata to a webservice"
+version = "6.0.dev5"
+authors = [
+    { name = "Lele Gaifax", email = "lele@metapensiero.it" },
+]
+readme = "README.rst"
+classifiers = [
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3 :: Only",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Development Status :: 5 - Production/Stable",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)",
+    "Topic :: Database",
+]
+requires-python = ">=3.9"
+dependencies = [
+    "sqlalchemy",
+]
+
+[project.license]
+text = "GPL-3.0-or-later"
+
+[project.urls]
+Changelog = "https://gitlab.com/metapensiero/metapensiero.sqlalchemy.proxy/-/blob/master/CHANGES.rst"
+Documentation = "https://metapensierosqlalchemyproxy.readthedocs.io/en/latest/"
+Source = "https://gitlab.com/metapensiero/metapensiero.sqlalchemy.proxy"
+
+[project.optional-dependencies]
+dev = [
+    "build",
+    "bump2version",
+    "tomli",
+    "twine",
+]
+docs = [
+    "tomli",
+]
+
+[build-system]
+requires = [
+    "pdm-pep517",
+]
+build-backend = "pdm.pep517.api"
+
+[tool.pdm.build]
+package-dir = "src"
+includes = [
+    "src/metapensiero",
+]
+source-includes = [
+    "flake.*",
+    "*.rst",
+    "Justfile",
+    "doc/",
+    "tests/",
+]
+excludes = [
+    "doc/_build",
+]
+
+[tool.coverage.report]
+show_missing = true
+skip_covered = true
+
+[tool.pytest.ini_options]
+addopts = "--cov=metapensiero.sqlalchemy.proxy --cov-report term-missing"
+testpaths = "./tests"
+filterwarnings = [
+    "ignore:.*sqlite\\+pysqlite does \\*not\\* support Decimal objects natively.*:Warning",
+]
