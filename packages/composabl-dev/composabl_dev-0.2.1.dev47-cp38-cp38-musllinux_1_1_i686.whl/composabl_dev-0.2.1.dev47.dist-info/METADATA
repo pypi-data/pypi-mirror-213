@@ -1,0 +1,124 @@
+Metadata-Version: 2.1
+Name: composabl-dev
+Version: 0.2.1.dev47
+Summary: Composabl is a framework for building composable AI systems.
+Author-email: Xavier Geerinck <xavier@composabl.ai>, Hunter Park <hunter@composabl.ai>
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Requires-Dist: networkx (==3.1)
+Requires-Dist: torch (==2.0.0)
+Requires-Dist: dapr (==1.10.0)
+Requires-Dist: dill (==0.3.6)
+Requires-Dist: docker (==6.0.1)
+Requires-Dist: grpcio (==1.49.1)
+Requires-Dist: grpcio-tools (==1.49.1)
+Requires-Dist: grpcio-reflection (==1.49.1)
+Requires-Dist: kubernetes (==26.1.0)
+Requires-Dist: pytest-asyncio (==0.21.0)
+Requires-Dist: autorom[accept-rom-license] (==0.4.2)
+Requires-Dist: gymnasium[atari,box2d] (==0.26.3)
+Requires-Dist: ray[rllib] (==2.4.0)
+
+# Composabl
+
+Composabl helps you build Autonomous Agents! Through an easy SDK you get access to outscaled simulator training tools.
+
+## Getting Started
+
+To get started and run your experiments, let's follow these steps
+
+### Prerequisites
+
+- Python 3.8
+- Composabl SDK (`pip install composabl`)
+- [Acquire a License](mailto:sales@composabl.ai?subject=TRIAL_LICENSE_REQUEST&body=Dear,%0A%0AI%20would%20like%20to%20request%20a%20trial%20license%20for%20the%20Composabl%20SDK.%20Could%20you%20please%20help%20me%3F%0A%0AKind%20Regards,)
+
+### Development
+
+```bash
+# Install the package as editable package
+pip install -e .
+```
+
+### Demo
+
+```bash
+python -m composabl.main
+```
+
+### Training your first Agent
+
+Save the below as **main.py** and run it with `python main.py`
+
+```python
+from composabl.agent import Agent, Scenario, Skill
+
+stabilize_scenarios = [
+    {
+        "angle": 0,
+        "horizontal_position": [-0.2, 0.2],
+        "vertical_position": [-0.5, -0.5],
+        "velocity": [-0.2, 0.2],
+    },
+    {
+        "angle": -.17,
+        "horizontal_position": [-0.5, 0.5],
+        "vertical_position": [-0.5, -0.25],
+        "velocity": 0
+    },
+    {
+        "angle": 0.12,
+        "horizontal_position": [-0.7, 0.7],
+        "vertical_position": [-.65, -0.1],
+        "velocity": 0
+    }
+]
+
+def stabilize_reward():
+    """
+    if {{{prev_state}}} is None:
+        reward = 0
+    VIEWPORT_W = 600
+    VIEWPORT_H = 400
+    SCALE = 30.0
+
+    reward = 0
+    # has the angle moved closer to 0?
+    if abs({{prev_state[4]}}) >= abs({{state[4]}}) + 0.1 * 180 / math.pi:
+        reward += 1
+    # has the x position remained stable?
+    if abs({{prev_state[0]}} - {{state[0]}}) <= 0.01 * (VIEWPORT_W / SCALE / 2):
+        reward += 1
+    else:
+        reward -= 1
+    # has the y position remained stable?
+    if abs({{prev_state[1]}} - {{state[1]}}) <= 0.01 * (VIEWPORT_W / SCALE / 2):
+        reward += 1
+    else:
+        reward -= 1
+    """
+
+
+def main():
+    stabilize_skill = Actor(Skill, "stabilize", stabilize_reward(), trainable=True)
+    for scenario_dict in stabilize_scenarios:
+        scenario = Scenario(scenario_dict)
+        stabilize_skill.add_scenario(scenario)
+
+    agent = Agent({
+        "license": "<LICENSE_KEY>",
+        "env": {
+            "compute": "local",  # "docker", "kubernetes", "local"
+            "config": {
+                "address": "localhost:1337",
+                # "image": "composabl.ai/sim-gymnasium:latest"
+            }
+        }
+    })
+    agent.add_skill(stabilize_skill)
+    agent.train(train_iters=5000)
+
+
+if __name__ == "__main__":
+    main()
+```
