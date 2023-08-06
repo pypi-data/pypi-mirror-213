@@ -1,0 +1,3 @@
+[console_scripts]
+scrapeghost=scrapeghost.cli:main
+
