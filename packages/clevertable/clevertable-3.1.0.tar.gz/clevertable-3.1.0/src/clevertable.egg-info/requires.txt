@@ -1,0 +1,9 @@
+numpy
+pandas
+openpyxl
+
+[dev]
+bumpver
+build
+twine
+pytest
