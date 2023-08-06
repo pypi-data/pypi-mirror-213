@@ -1,0 +1,7 @@
+MANIFEST.in
+README.md
+setup.py
+speaknlisten.egg-info/PKG-INFO
+speaknlisten.egg-info/SOURCES.txt
+speaknlisten.egg-info/dependency_links.txt
+speaknlisten.egg-info/top_level.txt

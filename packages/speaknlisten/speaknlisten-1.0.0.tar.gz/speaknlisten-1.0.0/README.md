@@ -1,0 +1,1 @@
+Just a basic module to speak and listen using pyttsx3 and speech_recognition.
