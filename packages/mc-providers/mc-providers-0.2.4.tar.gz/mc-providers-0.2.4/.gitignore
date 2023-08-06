@@ -1,0 +1,7 @@
+*.bin
+*.pyc
+venv/*
+dist/*
+.idea
+build
+mc_providers.egg-info
