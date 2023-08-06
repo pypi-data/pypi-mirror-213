@@ -1,0 +1,11 @@
+LICENSE
+README.md
+dead.py
+setup.cfg
+setup.py
+dead.egg-info/PKG-INFO
+dead.egg-info/SOURCES.txt
+dead.egg-info/dependency_links.txt
+dead.egg-info/entry_points.txt
+dead.egg-info/requires.txt
+dead.egg-info/top_level.txt
