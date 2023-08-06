@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+jloader.egg-info/PKG-INFO
+jloader.egg-info/SOURCES.txt
+jloader.egg-info/dependency_links.txt
+jloader.egg-info/requires.txt
+jloader.egg-info/top_level.txt
