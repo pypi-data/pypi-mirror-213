@@ -1,0 +1,16 @@
+legendhpges/__init__.py,sha256=Vbt0MhZVp-XE8U-biw9RVzhToNu8zMWMTZ-G8_HEPXk,270
+legendhpges/_version.py,sha256=jP37PbzC7u30hqoKJZ41NW3TgoVzxjYdLU5M0drm_y4,160
+legendhpges/base.py,sha256=Mw5IBjdT1CYvrOQfPpdBg-DGQcv_GLM0zJ5bSagwmnc,3047
+legendhpges/bege.py,sha256=Tu2qnTbO3XLd_1VsJtpiMyNuKY-WK50pRAa5S7X3gOA,1598
+legendhpges/draw.py,sha256=KRAQCGm386FHlLdhwcyB6Bm5P-QilIDYAXTT_9txhl8,1566
+legendhpges/invcoax.py,sha256=kg2gHzOqP0s37GW7YEGo1-7P3KqxWmAzKNKSHRlfSxU,2572
+legendhpges/make_hpge.py,sha256=NWws9OIQAFU9joCbJkSjb75gu4iQKJmRB4NhEzLeHcw,2023
+legendhpges/materials.py,sha256=s4XbYYSZwZpku7DIX2p1m9rlTgsnagNtyk8Aq778958,1215
+legendhpges/ppc.py,sha256=FVfK0pVjkw_xUjqjA_xrS1F1nu_plSalXtkn1mOFM1M,1350
+legendhpges/registry.py,sha256=QeEq-psczhmZwQG-aAKUM_97psamxxvSa47zjSGU-vE,303
+legendhpges/semicoax.py,sha256=iHqtLXTDy5yZrhqXg457um8QBlE7dukK0iUx9Sa7gWI,1840
+legend_pygeom_hpges-0.3.0.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+legend_pygeom_hpges-0.3.0.dist-info/METADATA,sha256=g0AjGiFpAIlnRxnQA8nncRhByriUkKlZswZ6SNkkCyU,3212
+legend_pygeom_hpges-0.3.0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+legend_pygeom_hpges-0.3.0.dist-info/top_level.txt,sha256=VJiEsByq6Hjp9JuEgCNKMkIWL_BSnxB9nVmUDivTvZQ,12
+legend_pygeom_hpges-0.3.0.dist-info/RECORD,,
