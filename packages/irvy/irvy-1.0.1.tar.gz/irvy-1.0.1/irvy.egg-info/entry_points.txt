@@ -1,0 +1,2 @@
+[console_scripts]
+irvy = irvy.irvy:main
