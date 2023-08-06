@@ -1,0 +1,88 @@
+=== meta
+name: mavenTest
+author: PNG
+artifactId: mavenTest
+groupId: com.mavenTest
+version: 1.0-SNAPSHOT
+
+=== tree
+
+src/
+    main/
+        java/
+            com/
+                mavenTest/
+                    App.java
+        resources/
+    test/
+        java/
+            com/
+                mavenTest/
+                    AppTest.java
+        resources/
+pom.xml
+
+=== pom.xml
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project xmlns="http://maven.apache.org/POM/4.0.0"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>{{groupId}}</groupId>
+    <artifactId>{{artifactId}}</artifactId>
+    <version>{{version}}</version>
+    <name>{{name}}</name>
+
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <maven.compiler.source>1.8</maven.compiler.source>
+        <maven.compiler.target>1.8</maven.compiler.target>
+    </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>RELEASE</version>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>RELEASE</version>
+                <configuration>
+                    <source>1.8</source>
+                    <target>1.8</target>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+</project>
+
+=== src/test/java/com/mavenTest/AppTest.java
+package com.mavenTest;
+
+import org.junit.Test;
+import static org.junit.Assert.*;
+
+public class AppTest {
+    @Test public void testAppHasAGreeting() {
+        App classUnderTest = new App();
+        assertNotNull("app should have a greeting", classUnderTest.getGreeting());
+    }
+}
+
+=== src/main/java/com/mavenTest/App.java
+package com.mavenTest;
+
+public class App {
+    public String getGreeting() {
+        return "Hello world.";
+    }
+
+    public static void main(String[] args) {
+        System.out.println(new App().getGreeting());
+    }
+}
