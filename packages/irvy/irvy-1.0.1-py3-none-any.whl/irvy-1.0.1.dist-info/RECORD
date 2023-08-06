@@ -1,0 +1,12 @@
+irvy/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+irvy/irvy.py,sha256=zrPiwjDmTomlaI12ZtTCRhQsZPTA8SXUtmqI9f1j3To,2653
+irvy/generators/PlaywrightGenerator.py,sha256=TFLpFHEcvSNkx_wV6JleOnuUZ0s-D9STiqItjF-QG8E,11993
+irvy/generators/SeleniumGenerator.py,sha256=SgGJ1dwGFizLUH6OTiGDxN1PRSuBb4ch3anfNqOm3CU,15177
+irvy/generators/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+irvy/utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+irvy/utils/configuration.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+irvy-1.0.1.dist-info/METADATA,sha256=4Ju5I7qv6EtFB1P2oqsoCuLrov1dhJOI0pTIf-8fgfA,3203
+irvy-1.0.1.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+irvy-1.0.1.dist-info/entry_points.txt,sha256=vprSqQZty3WTkITuyPcm9p-O9Lz8OLoT7ks0CrC0_kI,40
+irvy-1.0.1.dist-info/top_level.txt,sha256=qsqv8VOky9Okmgw56lt4Ya6kLW1-dEhvYuOqDSEm6T4,5
+irvy-1.0.1.dist-info/RECORD,,
