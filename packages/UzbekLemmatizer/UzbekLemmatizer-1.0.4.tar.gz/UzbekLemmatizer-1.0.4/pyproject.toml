@@ -1,0 +1,17 @@
+[project]
+name = "UzbekLemmatizer"
+version = "1.0.4"
+authors = [
+  { name="Maksud Sharipov, Ollabergan Yuldashov", email="maqsbek72@gmail.com" },
+]
+description = "Uzbek Lemmatizer for Python. A Python package to lemmatize Uzbek words."
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/MaksudSharipov/UzbekLemmatizer"
