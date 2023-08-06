@@ -1,0 +1,20 @@
+from pydantic import Field
+
+from .base_model import BaseModel
+from .fragments import ValidatorCreation
+
+
+class CreateNumericDistributionValidatorWithMonotonicThreshold(BaseModel):
+    numeric_distribution_validator_with_monotonic_threshold_create: "CreateNumericDistributionValidatorWithMonotonicThresholdNumericDistributionValidatorWithMonotonicThresholdCreate" = Field(
+        alias="numericDistributionValidatorWithMonotonicThresholdCreate"
+    )
+
+
+class CreateNumericDistributionValidatorWithMonotonicThresholdNumericDistributionValidatorWithMonotonicThresholdCreate(
+    ValidatorCreation
+):
+    pass
+
+
+CreateNumericDistributionValidatorWithMonotonicThreshold.update_forward_refs()
+CreateNumericDistributionValidatorWithMonotonicThresholdNumericDistributionValidatorWithMonotonicThresholdCreate.update_forward_refs()

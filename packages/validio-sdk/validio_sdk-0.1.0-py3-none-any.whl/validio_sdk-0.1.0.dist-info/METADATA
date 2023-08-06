@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: validio-sdk
+Version: 0.1.0
+Summary: SDK to interact with the Validio platform
+Home-page: https://validio.io/
+License: Apache-2.0
+Author: Validio
+Author-email: support@validio.io
+Requires-Python: >=3.10,<4.0
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: camel-converter (>=3.0.0,<4.0.0)
+Requires-Dist: httpx (>=0.24.0,<0.25.0)
+Requires-Dist: platformdirs (>=3.5.0,<4.0.0)
+Requires-Dist: pydantic (>=1.10.7,<2.0.0)
+Requires-Dist: pytest (>=7.3.1,<8.0.0)
+Requires-Dist: pytest-asyncio (>=0.21.0,<0.22.0)
+Requires-Dist: python-dotenv (>=1.0.0,<2.0.0)
+Requires-Dist: tqdm (>=4.65.0,<5.0.0)
+Requires-Dist: types-tqdm (>=4.65.0.1,<5.0.0.0)
+Project-URL: Documentation, https://docs.validio.io/
