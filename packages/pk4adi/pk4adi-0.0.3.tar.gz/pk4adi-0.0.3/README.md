@@ -1,0 +1,63 @@
+# pk4adi
+
+### Using PK to Measure the Performance of Anesthetic Depth Indicators.
+
+## Project Information
+
+
+## Requirements;
+> Python 3.8 or greater
+
+## Install
+To install run the following in the command prompt;
+```
+pip install pk4adi
+```
+If that doesn't work then please contact author(silencejiang@zju.edu.cn) or [report an issue](https://github.com/xfz329/pk/issues)
+
+To use, create a new Python script containing the following:
+
+# Examples
+
+## calculate PK
+
+```python
+from pk4adi import PK,PkError
+
+x = [ 0, 0, 0, 0, 0, 0]
+y = [ 1, 1, 1, 1, 1, 2]
+
+pk = PK()
+pk.calculate_pk(x_in=x, y_in=y)
+```
+## compare results of PK
+
+```python
+from pk4adi import PK,PKC
+
+x1 = [ 1, 1, 2, 2, 2, 2, 3, 3, 3, 3, 4, 4, 4, 4, 4, 5, 5, 5, 5, 6, 6, 6, 6, 6 ]
+y1 = [ 1, 1, 1, 1, 1, 2, 1, 1, 3, 3, 2, 2, 2, 2, 2, 1, 3, 3, 3, 3, 3, 3, 3, 3 ]
+
+pk1 = PK()
+pk1.calculate_pk(x_in = x1, y_in = y1)
+
+x2 = [ 1, 1, 2, 2, 2, 2, 3, 3, 3, 3, 4, 4, 4, 4, 4, 5, 5, 5, 5, 6, 6, 6, 6, 6 ]
+y2 = [ 1, 1, 2, 1, 1, 2, 1, 2, 3, 3, 2, 2, 1, 2, 2, 2, 3, 3, 3, 3, 2, 3, 3, 2 ]
+
+pk2 = PK()
+pk2.calculate_pk(x_in = x2, y_in = y2)
+
+pkc = PKCompare()
+pkc.compare(pk_in_1 = pk1, pk_in_2 = pk2)
+```
+
+
+# Development
+
+## Wanna contribute?
+Any feedback is apprecaited.
+- Report an issue
+- Check out the wiki for development info (coming soon!)
+- Fork us.
+
+Forked from @xfz329's [master](https://github.com/xfz329/pk).
