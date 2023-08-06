@@ -1,0 +1,9 @@
+setup.py
+fastapi_elasticsearch/__init__.py
+fastapi_elasticsearch/api.py
+fastapi_elasticsearch/utils.py
+fastapi_elasticsearch.egg-info/PKG-INFO
+fastapi_elasticsearch.egg-info/SOURCES.txt
+fastapi_elasticsearch.egg-info/dependency_links.txt
+fastapi_elasticsearch.egg-info/requires.txt
+fastapi_elasticsearch.egg-info/top_level.txt
