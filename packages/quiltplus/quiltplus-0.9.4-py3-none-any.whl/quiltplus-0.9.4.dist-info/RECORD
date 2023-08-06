@@ -1,0 +1,17 @@
+quiltplus/__init__.py,sha256=kbbSYqfUHugPeSEVY6Vjdc80wiyp-FZg8vbQBzWYKj0,468
+quiltplus/ignore.py,sha256=I4Z4NtUCt1BkRIxxFMXGGXDYPU_wA2jAMoi4Btv8XIM,716
+quiltplus/local.py,sha256=ssDOE-qHjgSBXiE9sY-ST56A686z0fU86BidqxyD0E0,3794
+quiltplus/package.py,sha256=R3IVVrirA2Crd3vzizvbui8unKjn2VhIBznKM5KXPBM,4287
+quiltplus/path.py,sha256=ou7RTIJ8Fjj7CaFt9v3ArEabYT1dwuoAuhlGMPfH0bA,495
+quiltplus/property.py,sha256=rAGhczoWEhrfq1ssB2DAFEPijSekSNXCrGKKujnbVDo,80
+quiltplus/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+quiltplus/registry.py,sha256=diWETaa83D-zpqm6vraIfaBNik_zB2xBUWfVX-bRb-c,609
+quiltplus/resource.py,sha256=_lLyk11o_RRDHMCG245bL144ANiUB4pGAa8wxeHhBCo,708
+quiltplus/root.py,sha256=d8R55F1rQpKC_fWFSqeNX6fZmpqNLPbJ2Iy-2FtQJtg,376
+quiltplus/type.py,sha256=qGlXQmTCpNBjz3gW1PNZK2lggpN7eDO39ysLgBHnR6Y,1298
+quiltplus/uri.py,sha256=xZWrpUQIp-YKUIkgKfAoQL15jW1GGqJS_BIaYjpC7X4,1724
+quiltplus/versions.py,sha256=b0jXBihqPeI6gOfeYxdNIkN9FZuun5DkIeo8aJyyLcc,598
+quiltplus-0.9.4.dist-info/LICENSE.md,sha256=Z7y6q9NDzS9UrxEqw5tXGzte1d_OJud3qstVp99kNt8,1069
+quiltplus-0.9.4.dist-info/METADATA,sha256=La5z6riFeav6rUoPHsl38H_j3XCoQ9SOW9meq16o160,1589
+quiltplus-0.9.4.dist-info/WHEEL,sha256=WGfLGfLX43Ei_YORXSnT54hxFygu34kMpcQdmgmEwCQ,88
+quiltplus-0.9.4.dist-info/RECORD,,
