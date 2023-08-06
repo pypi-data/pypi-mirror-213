@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ngql_gen"
+version = "0.0.6"
+description = "Nebula Graph Query Language Generator"
+authors = [{name = "东南dnf", email = "zjy2414@outlook.com"}]
+readme = "README.md"
+license = {file = "LICENSE"}
+classifiers = ["License :: OSI Approved :: Apache Software License"]
+dependencies = [
+    "pyyaml",
+    "nebula3_python",
+]
+
+[project.urls]
+Home = "https://github.com/zjy2414"
