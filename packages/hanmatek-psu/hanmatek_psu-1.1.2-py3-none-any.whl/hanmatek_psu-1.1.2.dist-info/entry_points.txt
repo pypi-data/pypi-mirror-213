@@ -1,0 +1,3 @@
+[console_scripts]
+hanmatek-cli=hanmatek.__main__:main
+
