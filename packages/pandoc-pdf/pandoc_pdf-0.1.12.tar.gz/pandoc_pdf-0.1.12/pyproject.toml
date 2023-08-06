@@ -1,0 +1,28 @@
+[tool.poetry]
+authors = ["rai"]
+description = "Command to generate pdf easily with pandoc."
+license = "MIT"
+name = "pandoc_pdf"
+packages = [
+  {include = "pandoc_pdf", from = "src"},
+  {include = "pandoc_pdf_utils", from = "src"},
+]
+version = "0.1.12"
+
+[tool.poetry.dependencies]
+PyYAML = "^6.0"
+click = "^8.1.3"
+python = "^3.10"
+
+[tool.poetry.group.dev.dependencies]
+autopep8 = "^1.7.0"
+black = {version = "^22.12.0", allow-prereleases = true}
+tomlkit = "^0.11.8"
+pytest = "^7.3.2"
+
+[build-system]
+build-backend = "poetry.core.masonry.api"
+requires = ["poetry-core>=1.5.0"]
+
+[tool.poetry.scripts]
+pandoc_pdf = 'pandoc_pdf.main:pandoc_pdf'
