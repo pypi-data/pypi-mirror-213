@@ -1,0 +1,42 @@
+Metadata-Version: 2.1
+Name: Envoy-ChatGPT
+Version: 0.1.5
+Summary: A command-line interface to ChatGPT
+Home-page: https://github.com/Einic/envoy
+Author: Einic Yeo
+Author-email: einicyeo@gmail.com
+License: UNKNOWN
+Project-URL: Source, https://github.com/Einic/envoy
+Project-URL: Tracker, https://github.com/Einic/envoy/issues
+Description: # Envoy
+        
+        Envoy，一个让你呼吸顺畅的 ChatGPT。即实现了网页版 ChatGPT 的主要操作。后端优化，绕过 Cloudflare，速度喜人。
+        
+        
+Keywords: OpenAI ChatGPT ChatGPT-Plus gpt-3.5-turbo gpt-3.5-turbo-0301
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Console
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Flask
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: License :: OSI Approved :: GNU General Public License v2 (GPLv2)
+Classifier: Natural Language :: English
+Classifier: Natural Language :: Chinese (Simplified)
+Classifier: Operating System :: MacOS
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: SQL
+Classifier: Programming Language :: JavaScript
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Topic :: Communications :: Chat
+Classifier: Topic :: Internet :: WWW/HTTP
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Provides-Extra: api
+Provides-Extra: cloud

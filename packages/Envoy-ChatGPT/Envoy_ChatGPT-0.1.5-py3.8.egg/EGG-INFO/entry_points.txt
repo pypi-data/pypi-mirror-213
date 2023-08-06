@@ -1,0 +1,4 @@
+[console_scripts]
+envoy = envoy.launcher:run
+envoy-cloud = envoy.cloud_launcher:run
+
