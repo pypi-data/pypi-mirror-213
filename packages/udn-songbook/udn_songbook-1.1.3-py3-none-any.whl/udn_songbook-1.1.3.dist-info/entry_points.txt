@@ -1,0 +1,3 @@
+[console_scripts]
+udn_transpose=udn_songbook.transpose.main
+
