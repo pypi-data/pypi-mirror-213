@@ -1,0 +1,15 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+tests/test_interceptor.py
+tests/test_plugin.py
+vedro_jj/__init__.py
+vedro_jj/_interceptor.py
+vedro_jj/_vedro_jj.py
+vedro_jj/py.typed
+vedro_jj.egg-info/PKG-INFO
+vedro_jj.egg-info/SOURCES.txt
+vedro_jj.egg-info/dependency_links.txt
+vedro_jj.egg-info/requires.txt
+vedro_jj.egg-info/top_level.txt
