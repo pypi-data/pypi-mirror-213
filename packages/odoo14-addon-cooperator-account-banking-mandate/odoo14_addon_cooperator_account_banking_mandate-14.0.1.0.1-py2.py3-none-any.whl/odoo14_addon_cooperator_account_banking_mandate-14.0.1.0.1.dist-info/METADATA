@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: odoo14-addon-cooperator-account-banking-mandate
+Version: 14.0.1.0.1
+Summary: This module adds mandate selection to cooperator subscription request.
+Author: Som IT Cooperatiu SCCL
+License: AGPL-3
+Classifier: Programming Language :: Python
+Classifier: Framework :: Odoo
+Classifier: Framework :: Odoo :: 14.0
+Classifier: License :: OSI Approved :: GNU Affero General Public License v3
+Requires-Python: >=3.6
+Requires-Dist: odoo14-addon-account-banking-mandate
+Requires-Dist: odoo14-addon-account-banking-sepa-direct-debit
+Requires-Dist: odoo14-addon-account-payment-cooperator
+Requires-Dist: odoo14-addon-cooperator
+Requires-Dist: odoo (<14.1dev,>=14.0a)
+
