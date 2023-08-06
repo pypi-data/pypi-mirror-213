@@ -1,0 +1,2 @@
+[datasette]
+sqlite_jsonschema = datasette_sqlite_jsonschema
