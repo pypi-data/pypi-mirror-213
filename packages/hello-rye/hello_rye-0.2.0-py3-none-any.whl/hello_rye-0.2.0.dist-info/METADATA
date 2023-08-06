@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: hello-rye
+Version: 0.2.0
+Summary: A simple hello world example for rye.
+Author-email: mancuoj <1337381768@qq.com>
+Requires-Python: >=3.8
+Requires-Dist: flask~=2.3.2
+Description-Content-Type: text/markdown
+
+# hello-rye
