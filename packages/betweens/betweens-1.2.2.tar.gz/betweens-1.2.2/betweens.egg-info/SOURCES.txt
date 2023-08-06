@@ -1,0 +1,12 @@
+LICENSE
+MANIFEST.in
+README.md
+new.txt
+setup.py
+betweens/__init__.py
+betweens/betweens.py
+betweens/version.py
+betweens.egg-info/PKG-INFO
+betweens.egg-info/SOURCES.txt
+betweens.egg-info/dependency_links.txt
+betweens.egg-info/top_level.txt

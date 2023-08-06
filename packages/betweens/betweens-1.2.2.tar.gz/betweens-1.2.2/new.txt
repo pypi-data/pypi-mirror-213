@@ -1,0 +1,59 @@
+0.0.1:
+The first version.
+
+0.1.0:
+Optimized running speed.
+
+0.1.1.dev1:
+Added new.txt
+
+0.1.1：
+Optimized setup.py
+
+0.1.1.1:
+Optimized running speed.
+
+0.1.2:
+Fixed serious errors. (Must Install! )
+
+0.2.0:
+between1 and between2 can from large to small.
+
+0.2.1:
+Nothing.
+
+0.2.2:
+Nothing.
+
+0.2.3:
+between3 can from large to small.
+
+0.2.4：
+Nothing.
+
+0.3.0:
+between3 can use units of mass and volume.(Suggested installation)
+
+1.0.0:
+Nothing.
+
+1.1.0:
+UpDate file.
+
+1.1.1:
+Upload Package for Pypi (1.1.0).
+
+1.1.2:
+UpDate File.
+
+1.2.0:
+Optimized setup.py
+
+1.2.1rc1-1.2.1rc3:
+Optimized setup.py and README.md
+
+1.2.1:
+UpDate File.
+
+1.2.2:
+Nothing.
