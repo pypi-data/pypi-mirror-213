@@ -1,0 +1,12 @@
+rwkv/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+rwkv/model.py,sha256=t4quwb1xSHcEKPyHxGlyRwtRZ6b-TsfC_vQABevTWgY,33248
+rwkv/rwkv_tokenizer.py,sha256=lj7Sd9Hw06EQzLnMq-1SlZXKQJAR_2dsjw1YpLAE3t0,3201
+rwkv/rwkv_vocab_v20230424.txt,sha256=5t7j1OMbTVxArJlQisbHAc7vS-1oG_IWfOmpCFUryok,1093733
+rwkv/utils.py,sha256=DezJ5VPo61sL-HLTXZVcz48acf2SuESxE_Z5kh23MgE,5141
+rwkv/cuda/operators.cu,sha256=3imLjCf8zCk7ed3Q6wdbkrHXtobGaqwiWHX8fP0hjAo,8677
+rwkv/cuda/wrapper.cpp,sha256=vVGFYHO2IHff37Bazw3eC5rXI2HUylT-WhOpv5XuNy8,4702
+rwkv-0.7.5.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+rwkv-0.7.5.dist-info/METADATA,sha256=pMS0e5sVsxmFEvonnQq_lELeKViVtZQtQbZi-HSEo5g,4807
+rwkv-0.7.5.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+rwkv-0.7.5.dist-info/top_level.txt,sha256=R3sNQvS-0u24IXqMU2AqWpJx-Ynx4Up1Nz5CI64voUg,5
+rwkv-0.7.5.dist-info/RECORD,,
