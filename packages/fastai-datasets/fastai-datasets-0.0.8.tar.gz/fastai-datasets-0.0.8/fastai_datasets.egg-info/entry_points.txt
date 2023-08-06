@@ -1,0 +1,6 @@
+[console_scripts]
+
+
+[nbdev]
+fastai_datasets = fastai_datasets._modidx:d
+
