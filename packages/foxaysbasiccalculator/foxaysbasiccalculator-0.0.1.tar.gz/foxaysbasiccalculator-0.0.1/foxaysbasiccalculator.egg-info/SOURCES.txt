@@ -1,0 +1,10 @@
+LICENCE.txt
+MANIFEST.in
+README.txt
+setup.py
+foxaysbasiccalculator/__init__.py
+foxaysbasiccalculator.egg-info/PKG-INFO
+foxaysbasiccalculator.egg-info/SOURCES.txt
+foxaysbasiccalculator.egg-info/dependency_links.txt
+foxaysbasiccalculator.egg-info/not-zip-safe
+foxaysbasiccalculator.egg-info/top_level.txt
