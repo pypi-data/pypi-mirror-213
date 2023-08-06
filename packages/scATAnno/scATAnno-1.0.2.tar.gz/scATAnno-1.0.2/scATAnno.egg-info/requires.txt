@@ -1,0 +1,10 @@
+pandas
+scanpy
+anndata
+matplotlib
+adjustText
+leidenalg
+harmonypy
+scipy
+seaborn
+snapatac2

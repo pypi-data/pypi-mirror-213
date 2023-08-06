@@ -1,0 +1,17 @@
+README.md
+pyproject.toml
+setup.py
+scATAnno/SnapATAC2_spectral.py
+scATAnno/SnapATAC2_tools.py
+scATAnno/SnapATAC2_utils.py
+scATAnno/__init__.py
+scATAnno/scATAnno_assignment.py
+scATAnno/scATAnno_evaluation.py
+scATAnno/scATAnno_integration.py
+scATAnno/scATAnno_plotting.py
+scATAnno/scATAnno_preprocess.py
+scATAnno.egg-info/PKG-INFO
+scATAnno.egg-info/SOURCES.txt
+scATAnno.egg-info/dependency_links.txt
+scATAnno.egg-info/requires.txt
+scATAnno.egg-info/top_level.txt
