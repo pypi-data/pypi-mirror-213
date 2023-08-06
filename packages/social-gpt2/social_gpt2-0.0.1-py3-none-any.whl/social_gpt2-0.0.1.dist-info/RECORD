@@ -1,0 +1,15 @@
+social-gpt2/__init__.py,sha256=15-VB70yvPfFO8lFe0KGPtqjxa6nK8AWAyWHWIqAOT8,21
+social-gpt2/ingestion/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+social-gpt2/ingestion/indexer.py,sha256=2QW0V6u_GqWEjxiOd6KuDKyjfZ-teuvn8GcP1XpLYDk,1650
+social-gpt2/ingestion/ingestion.py,sha256=HJtgYk9k6nFg5UI5tLCxnfphQpKqbKl9lBpqf0loLio,515
+social-gpt2/ingestion/scraper/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+social-gpt2/ingestion/scraper/scraper_factory.py,sha256=v7asuZzroTkm7iYShUsAAGRIcwYczRHrhh1Q2v5aC1k,306
+social-gpt2/ingestion/scraper/social_scraper.py,sha256=nJbyACWrekU5N3YBP_Y1iWrPKcJF4iGsapZW2nEO8YM,258
+social-gpt2/ingestion/scraper/youtube_scraper.py,sha256=VF_xdEBLVP-i6BWwraF8skBFygB482PUyC7zZJdG74o,1708
+social-gpt2/query/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+social-gpt2/query/query_helper.py,sha256=3IpFA34TvNYO-rko7y_IvV_bcRkkjAsNguZtZKU-9bQ,586
+social_gpt2-0.0.1.dist-info/LICENSE,sha256=xooe5Uj78KUC5wdiihMtJyIn1vdc_CNslBrlmulhR60,1072
+social_gpt2-0.0.1.dist-info/METADATA,sha256=NJlS-pUIQwJEf7MGiknDDIa0ZJ1P_uZlpkfwG1h2bpE,401
+social_gpt2-0.0.1.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+social_gpt2-0.0.1.dist-info/top_level.txt,sha256=FGI6q4_27u1cmumm3u2OPFyh7OgQPZEs4A6kUnlXNkU,12
+social_gpt2-0.0.1.dist-info/RECORD,,
