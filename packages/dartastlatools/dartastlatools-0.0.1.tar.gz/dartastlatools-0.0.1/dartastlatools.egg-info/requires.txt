@@ -1,0 +1,6 @@
+pandas
+numpy
+glob
+os
+re
+praat-textgrids==1.0.2
