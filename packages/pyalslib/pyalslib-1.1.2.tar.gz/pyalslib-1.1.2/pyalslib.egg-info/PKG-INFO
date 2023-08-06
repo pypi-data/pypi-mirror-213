@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: pyalslib
+Version: 1.1.2
+Summary: Python implementation of the Catalog-based Aig-rewriting Approximate Logic Synthesis approximation technique
+Home-page: https://github.com/SalvatoreBarone/pyALSlib
+Author: Salvatore Barone
+Author-email: salvatore.barone@unina.it
+Project-URL: Bug Reports, https://github.com/SalvatoreBarone/pyALSlib/issues
+Project-URL: Source, https://github.com/SalvatoreBarone/pyALSlib
+Keywords: Catalog-based Aig-rewriting Approximate Logic Synthesis approximation technique
+Classifier: Intended Audience :: Information Technology
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Scientific/Engineering :: Electronic Design Automation (EDA)
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Embedded Systems
+Classifier: Topic :: System :: Hardware
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Programming Language :: Python :: 3.9
+License-File: LICENSE
+
+Python implementation of the Catalog-based Aig-rewriting Approximate Logic Synthesis approximation technique. Please visit https://github.com/SalvatoreBarone/pyALSlib
