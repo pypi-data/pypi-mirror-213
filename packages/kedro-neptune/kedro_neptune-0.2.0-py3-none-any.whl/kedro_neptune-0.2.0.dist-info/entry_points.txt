@@ -1,0 +1,6 @@
+[kedro.hooks]
+neptune_hooks=kedro_neptune:neptune_hooks
+
+[kedro.project_commands]
+neptune=kedro_neptune:commands
+
