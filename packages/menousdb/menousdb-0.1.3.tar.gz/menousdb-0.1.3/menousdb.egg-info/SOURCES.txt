@@ -1,0 +1,8 @@
+README.md
+setup.py
+menousdb/__init__.py
+menousdb.egg-info/PKG-INFO
+menousdb.egg-info/SOURCES.txt
+menousdb.egg-info/dependency_links.txt
+menousdb.egg-info/requires.txt
+menousdb.egg-info/top_level.txt
