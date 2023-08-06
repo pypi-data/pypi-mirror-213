@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: dev-star
+Version: 1.2.0
+Summary: Dev tools CLI for performing common development tasks.
+Home-page: https://dev.terrytm.com
+Author: Terry Zheng
+Author-email: contact@terrytm.com
+Maintainer: Terry Zheng
+Maintainer-email: contact@terrytm.com
+License: Apache 2.0
+Project-URL: Bug Reports, https://dev.terrytm.com/issues
+Project-URL: Documentation, https://dev.terrytm.com
+Project-URL: Source Code, https://github.com/TerrayTM/dev
+Keywords: developer tools
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# dev
+Dev tools CLI for performing common development tasks.
+
+<a href="https://pypi.org/project/dev-star/"><img alt="PyPI" src="https://img.shields.io/pypi/v/dev-star?color=green&label=PyPI%20Package"></a>
+<a href="https://opensource.org/licenses/Apache-2.0"><img alt="Apache" src="https://img.shields.io/badge/License-Apache%202.0-blue.svg"></a>
+<img alt="Build" src="https://terrytm.com/api/wain.php?route=badge&name=dev">
+
+
