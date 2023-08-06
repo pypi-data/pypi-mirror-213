@@ -1,0 +1,1 @@
+import{_ as o,o as r,c as s,b as t,r as a}from"./index-79650f1a.js";const l={},c={class:"overflow-hidden w-full h-full relative"};function n(e,d){return r(),s("main",null,[t("div",c,[a(e.$slots,"default")])])}const _=o(l,[["render",n]]);export{_ as default};
