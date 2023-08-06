@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: GraficaWithGamba
+Version: 1.0.1
+Summary: Una Graficadora Y Calculadora Basicas
+Author-email: Daniel Gonzalez <danielgamba2304@gmail.com>
+Project-URL: Homepage, https://github.com/Dagam23/Calculadora-Y-Graficadora-B-sica
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+This is a simple example package. You can use
+
+from GraficaWithGamba import grafica
+from tkinter import *
+
+
+if __name__ == "__main__" # Aqui Se Crea La istancia y la ventana donde ve la graficadora
+    root = Tk()
+    root.configure(bg = "#17202A")
+    root.title("Calculadora/Graficadora")
+    root = grafica.App(root)
+    root.mainloop()

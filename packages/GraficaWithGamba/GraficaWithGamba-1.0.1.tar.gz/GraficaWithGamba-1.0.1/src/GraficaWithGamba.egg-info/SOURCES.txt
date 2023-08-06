@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+src/GraficaWithGamba/__init__.py
+src/GraficaWithGamba/grafica.py
+src/GraficaWithGamba.egg-info/PKG-INFO
+src/GraficaWithGamba.egg-info/SOURCES.txt
+src/GraficaWithGamba.egg-info/dependency_links.txt
+src/GraficaWithGamba.egg-info/top_level.txt
