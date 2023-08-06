@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: BLACKFORGE2
+Version: 0.1.1
+Summary: A Framework For Building 2d Games With Python+Pygame.
+Home-page: https://github.com/setoyuma/BLACKFORGE
+Author: Setoichi
+Author-email: setoichi.dev@gmail.com
+License: MIT
+Classifier: Development Status :: 3 - Alpha
+License-File: LICENSE
