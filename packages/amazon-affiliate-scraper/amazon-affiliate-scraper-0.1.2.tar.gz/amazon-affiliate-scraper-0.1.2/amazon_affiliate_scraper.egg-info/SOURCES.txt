@@ -1,0 +1,8 @@
+README.md
+setup.py
+amazon_affiliate/__init__.py
+amazon_affiliate/client.py
+amazon_affiliate_scraper.egg-info/PKG-INFO
+amazon_affiliate_scraper.egg-info/SOURCES.txt
+amazon_affiliate_scraper.egg-info/dependency_links.txt
+amazon_affiliate_scraper.egg-info/top_level.txt
