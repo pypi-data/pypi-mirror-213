@@ -1,0 +1,72 @@
+Metadata-Version: 2.1
+Name: stocktopus
+Version: 0.1
+Summary: automatically fill-in tax forms
+Home-page: https://gitlab.com/martizih/stocktopus.git
+Author: Martin Zihlmann
+Author-email: martizih@outlook.com
+License: MIT
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: Other/Proprietary License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+Requires-Dist: pyaml
+Requires-Dist: selenium
+Requires-Dist: tipsy
+Requires-Dist: typer
+Requires-Dist: xmltodict
+
+# stocktopus
+
+stocktopus is a cli utility that automatically fills in the portfolio section of the Zurich tax form for you. It can consume data from various brokers and turns a 2h+ task into minutes.
+
+## Installation
+
+stocktopus can be simply installed via pip
+
+```bash
+python -m pip install stocktopus
+```
+
+
+## Usage
+
+We assume you already created a Flex Query report in Interactive Brokers following (this guide)[#interactive-brokers-preparation].
+First we want to convert the report into a common format:
+
+```bash
+stocktopus ib --input=tax-report.xml --output=taxes.yml
+```
+
+next its time to actually start stocktopus and let it fill-in the form for you in lightning speed with its 8 arms.
+```bash
+stocktopus process --input=taxes.yml
+```
+
+now firefox browser will open and start to populate your tax form.
+In some situations it might halt and give you the option to intervene in the process, after you finished simple press enter on the console and stocktopus will pick up from there.
+
+## Interactive Brokers Preparation
+In interactive brokers we leverage flex queries to generate a xml with all tax relevant information. this requires some initial setup:
+
+1. in the "Performance & Reports" section, select "Flex Queries", then create a new one by clicking on the "+" icon.
+
+2. we need both "Open Positions" and "Trades":
+
+![Alt text](doc/flex-query.png)
+
+3. in "Open Positions" select at least "ISIN", "Quantity" and "Position Value". Feel free to add more.
+![Alt text](doc/open-positions.png)
+
+4. In "Trades" select at least "ISIN", "Date/Time", "Buy/Sell", "Quantity" and "TradePrice"
+![Alt text](doc/trades.png)
+
+5. You can now save the report type, all other options can be left in default state.
+
+6. next we can generate the report by clicking clicking on the "->" icon
+
+7. for period, select "Custom Date Range" and fill in the tax year you're interested in
+![Alt text](doc/period.png)
+
+8. now the report is generated and you can start using stocktopus.

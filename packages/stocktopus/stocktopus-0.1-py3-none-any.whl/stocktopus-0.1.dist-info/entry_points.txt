@@ -1,0 +1,2 @@
+[console_scripts]
+stocktopus = stocktopus.main:main
