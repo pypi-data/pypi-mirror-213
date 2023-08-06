@@ -1,0 +1,9 @@
+PySide6==6.4.1
+shiboken6==6.4.1
+jsonschema>=3.2.0
+h5py>=2.10.0
+setuptools>=41.0.0
+pip-licenses
+
+[:python_version < "3.8"]
+importlib-metadata>=1.0
