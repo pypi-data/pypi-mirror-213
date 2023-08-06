@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: wildered
+Version: 0.1.3
+Summary: 
+License: MIT
+Author: engkheng
+Author-email: ongengkheng929@gmail.com
+Requires-Python: >=3.10,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: libcst (>=1.0.0,<2.0.0)
+Requires-Dist: pydantic (>=1.10.8,<2.0.0)
+Description-Content-Type: text/markdown
+
+# Wildered
+
+`wildered` is an utility library for my ongoing personal project. It is used for tagging and modifying your source code through Python `ast` and `libcst`. 
+
+## Installation
+
+You can install `wildered` with `pip`.  You need to have Python version of 3.10 or above to use `wildered`.
+
+```
+pip install wildered
+```
+
+## Basic usage
+
+Under development.
+
+
