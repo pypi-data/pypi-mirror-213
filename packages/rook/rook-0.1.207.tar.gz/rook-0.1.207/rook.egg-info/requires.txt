@@ -1,0 +1,20 @@
+six>=1.13
+websocket-client!=0.58,!=0.59,!=1.0,!=1.1,>=0.56
+psutil
+certifi
+funcsigs
+distro
+
+[:python_version < "3.0"]
+protobuf<3.18,>=3.7.1
+
+[:python_version < "3.7"]
+protobuf<3.19.4,>=3.7.1
+
+[:python_version >= "3.7"]
+protobuf>=3.8.0
+
+[ssl_backport]
+backports.ssl
+backports.ssl_match_hostname
+PyOpenSSL
