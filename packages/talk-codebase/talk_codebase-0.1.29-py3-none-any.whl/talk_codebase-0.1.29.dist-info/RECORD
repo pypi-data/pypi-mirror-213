@@ -1,0 +1,9 @@
+talk_codebase/LLM.py,sha256=leED5vhmVA3fTu27DJm-Qa1OG9AipgHqCmMPPxSqifQ,4442
+talk_codebase/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+talk_codebase/cli.py,sha256=JhpV57HI-EezcEJg6OsCfUemzCM79Ulkbc4pq-F0Dk8,2898
+talk_codebase/consts.py,sha256=M6Sfdp18TXLLJgOsHUW3wL3PVcnb5tSemgMDZeOp6n8,1722
+talk_codebase/utils.py,sha256=yjZ3VrUiYTR6UOv3ULkbQnAkdr3w8X1azXwvmQai8GI,2474
+talk_codebase-0.1.29.dist-info/METADATA,sha256=Eopd592txd478462AO8GrdUYxP08JCXNg9Wuq3yAvxo,3870
+talk_codebase-0.1.29.dist-info/WHEEL,sha256=Zb28QaM1gQi8f4VCBhsUklF61CTlNYfs9YAZn-TOGFk,88
+talk_codebase-0.1.29.dist-info/entry_points.txt,sha256=NRhEPxt9JoBfxQJhSbGAl0GH7PQ-PnarWMSM375O9vQ,56
+talk_codebase-0.1.29.dist-info/RECORD,,
