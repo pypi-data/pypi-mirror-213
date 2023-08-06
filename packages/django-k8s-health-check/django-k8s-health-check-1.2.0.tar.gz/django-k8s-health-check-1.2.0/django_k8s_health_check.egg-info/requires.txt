@@ -1,0 +1,10 @@
+django
+djangorestframework
+
+[code-quality]
+isort
+bandit
+xenon
+
+[dev]
+autopep8
