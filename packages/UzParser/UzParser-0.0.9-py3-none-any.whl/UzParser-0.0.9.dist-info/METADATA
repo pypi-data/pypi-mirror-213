@@ -1,0 +1,78 @@
+Metadata-Version: 2.1
+Name: UzParser
+Version: 0.0.9
+Summary: uzparser | Uzbek Syntax Parser on Python
+Home-page: https://github.com/MardonaKarimova/uzparser
+Author: Mardona Karimova
+Author-email: karimovaam@gmail.com
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/MardonaKarimova/uzparser/issues
+Keywords: syntax analysis,parser,uzbek-language,tree,pos tagging,morphological tagging
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: UzMorphAnalyser
+Requires-Dist: pandas
+
+# UzParser
+
+https://pypi.org/project/uzparser <br>
+https://github.com/MardonaKarimova/uzparser
+
+UzParser is focused to make syntactical analysis of tagged sentence with morphological Part of Speech (POS) tagset of Uzbek sentences based on Context Free Grammar. The tool includes list of CFG rules, tagged sentencce. 
+It is created as a python library and uploaded to [PyPI](https://pypi.org/). It is simply easy to use in your python project or other programming language projects via the API. 
+
+## About project
+The tool is focused to make sysntactical analysing of  sentence according based on morphological Part of Speech (POS) tagset of Uzbek sentence.
+
+## Quick links
+
+- [Github](https://github.com/MardonaKarimova/uzparser)
+- [PyPI](https://pypi.org/project/uzparser/)
+
+## Features
+
+- Syntactic analysis 
+- Tree parser
+
+## Usage
+
+Three options to run uztagger:
+
+- pip
+
+### pip installation
+
+To install UzParser, simply run:
+
+```code
+pip install UzParser
+```
+
+### POS tag list
+Tagger using following options as POS tag:<br>
+    `N`      Noun<br>
+    `VERB`  Verb<br>
+    `ADJ `  Adjective<br>
+    `NUM `  Numeric<br>
+    `ADV `  Adverb<br>
+    `PRN `  Pronoun<br>
+    `CNJ `  Conjunction<br>
+    `ADP `  Adposition<br>
+    `PRT `  Particle<br>
+    `INTJ`  Interjection<br>
+    `MOD `  Modal<br>
+    `IMIT`  Imitation<br>
+    `AUX `  Auxiliary verb<br>
+    `PPN `  Proper noun<br>
+    `PUNC`  Punctuation<br>
+    `SYM `  Symbol<br>
+
+## Documentation
+
+See [here](https://github.com/MardonaKarimova/uzparser).
+
