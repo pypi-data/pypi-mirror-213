@@ -1,0 +1,2 @@
+https://download.pytorch.org/whl/cu113
+git+https://github.com/Goosang-Yu/genet-models.git@main#egg=genet-models
