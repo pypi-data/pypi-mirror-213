@@ -1,0 +1,19 @@
+/**
+ * File              : {{ tmpl.name }}_defines.sv
+ * License           : MIT license <Check LICENSE>
+ * Author            : IPSoCGen
+ * Date              : {{ tmpl.date }}
+ * Description       : {{ tmpl.desc }}
+ * -------------------------------------------
+ * -- Design AUTO-GENERATED using IPSoC Gen --
+ * -------------------------------------------
+ **/
+/* verilator lint_off REDEFMACRO */
+{%- for dict_item in tmpl.defines %}
+  {%- if dict_item|length > 0  %}
+    {%- for key, value in dict_item.items() %}
+`define {{key.upper()}} {{value}}
+    {%- endfor -%}
+  {%- endif %}
+{%- endfor %}
+/* verilator lint_on REDEFMACRO */
