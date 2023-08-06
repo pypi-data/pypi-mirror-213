@@ -1,0 +1,63 @@
+Metadata-Version: 2.1
+Name: aws-ecs-exec
+Version: 0.1.0rc2
+Summary: A cli tool to conveniently execute commands in AWS ECS Tasks
+License: MIT
+Author: Nat Gordon
+Author-email: nat@nattyg93.com.au
+Requires-Python: >=3.10,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: boto3 (>=1.26,<2.0)
+Requires-Dist: botocore (>=1.26,<2.0)
+Requires-Dist: readchar (>=4.0.5,<5.0.0)
+Requires-Dist: termcolor (>=2.3.0,<3.0.0)
+Description-Content-Type: text/markdown
+
+# aws-ecs-exec
+
+[![pypi-version]][pypi]
+
+A cli tool to conveniently execute commands in AWS ECS Tasks.
+
+## Requirements
+
+- Python 3.10+
+- AWS CLI
+
+The tool assumes that the `aws` command is installed on your path.
+
+## Installation
+
+Install using `pip`
+
+```sh
+pip install aws-ecs-exec
+```
+
+## Usage
+
+Quickstart:
+
+```sh
+$ ecs-exec
+```
+
+For help:
+
+```sh
+$ ecs-exec --help
+```
+
+## Known issues
+
+- This has been developed and only tested on MacOS.
+- No pagination is used with boto3 calls, so there will likely be errors
+  if page limits are exceeded.
+- Does not support tasks with multiple containers.
+
+[pypi-version]: https://img.shields.io/pypi/v/aws-ecs-exec.svg
+[pypi]: https://pypi.org/project/aws-ecs-exec/
+
