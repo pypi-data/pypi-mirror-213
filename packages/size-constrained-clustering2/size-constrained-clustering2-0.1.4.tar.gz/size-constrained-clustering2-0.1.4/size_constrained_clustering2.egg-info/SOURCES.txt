@@ -1,0 +1,7 @@
+LICENSE
+README.md
+setup.py
+size_constrained_clustering2.egg-info/PKG-INFO
+size_constrained_clustering2.egg-info/SOURCES.txt
+size_constrained_clustering2.egg-info/dependency_links.txt
+size_constrained_clustering2.egg-info/top_level.txt
