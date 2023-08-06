@@ -1,0 +1,16 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+xflow/__init__.py
+xflow/seed.py
+xflow/visualization.py
+xflow/dataset/__init__.py
+xflow/dataset/nx.py
+xflow/dataset/pyg.py
+xflow_net.egg-info/PKG-INFO
+xflow_net.egg-info/SOURCES.txt
+xflow_net.egg-info/dependency_links.txt
+xflow_net.egg-info/requires.txt
+xflow_net.egg-info/top_level.txt
