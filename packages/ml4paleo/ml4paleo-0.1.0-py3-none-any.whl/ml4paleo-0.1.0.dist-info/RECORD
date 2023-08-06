@@ -1,0 +1,16 @@
+ml4paleo/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ml4paleo/meshing/__init__.py,sha256=j_6P0i8wQaMoY7cBeay1pIBl_EVviJ6tPb60zi0bpU4,4103
+ml4paleo/segmentation/__init__.py,sha256=uIwdYBOhg4hnInAWhDhZ_rLHD-Zw8D9mtZjlOnTRSS4,2562
+ml4paleo/segmentation/rf.py,sha256=_5ZN82W_nWnB68Lgj-6hctguxTQ8bFFl_6s6wmie9xI,4412
+ml4paleo/segmentation/segmenter.py,sha256=nbkmsSS57UnnxkdlByAhqbusDBnSk8oQdJPtyVms31Q,1067
+ml4paleo/volume_providers/__init__.py,sha256=aNEUmbwGzPf0u5rWpeYGv0Tco0faJf2pu4iCyG4i2IM,629
+ml4paleo/volume_providers/dicomvp.py,sha256=a66ib84-_1oOcmq0PScGXv2GoXDMf0W4zkcdwWTzxnM,2036
+ml4paleo/volume_providers/imagevp.py,sha256=sJoi3Ig42CbR6SXmnwUimAM8MGUpRguabtNdJavop8M,4371
+ml4paleo/volume_providers/io.py,sha256=H-5Qg0NEUSfZCGQJlDT97cFVjEEi2ogLaJcJgYrgicU,7486
+ml4paleo/volume_providers/numpyvp.py,sha256=BYyTMx0cqxVgpjnmqmlOpZfGjMJy7JSnB431G0btvtg,830
+ml4paleo/volume_providers/volprov.ipynb,sha256=UYGadVrER_OH0LZWzYOjg6JqFPcXKp8AkNzOPiPF1QY,3469
+ml4paleo/volume_providers/volume_provider.py,sha256=5GFDLm_CHnSamdjAynPpJEB5vCw4xX7qfUASVdb8Xyg,4904
+ml4paleo/volume_providers/zarrvp.py,sha256=Amd3VgE7EvLGgm9jGecGnbgcbZwaL3KtmuGtWdjWiys,745
+ml4paleo-0.1.0.dist-info/METADATA,sha256=GjBM3sx8WMd_vbZh8KPseCG2AyUhpQJUpTifmGakrbE,1168
+ml4paleo-0.1.0.dist-info/WHEEL,sha256=WGfLGfLX43Ei_YORXSnT54hxFygu34kMpcQdmgmEwCQ,88
+ml4paleo-0.1.0.dist-info/RECORD,,
