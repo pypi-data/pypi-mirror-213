@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: cloudservices
+Version: 0.0.1
+Summary: A sample Python project for rach pack
+Home-page: https://gitlab.com/bobble-public/backend/python-utils
+Author: Rac
+Author-email: rachitmahajan6399@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: google-auth (==2.17.3)
+Requires-Dist: google-cloud-pubsub (==2.13.0)
+Requires-Dist: boto3 (==1.14.60)
+Requires-Dist: botocore (==1.17.60)
+Requires-Dist: apache-libcloud (==3.7.0)
+Requires-Dist: PyPubSub (==4.0.3)
+Requires-Dist: pyparsing (==3.0.9)
+
+UNKNOWN
+

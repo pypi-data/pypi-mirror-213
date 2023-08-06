@@ -1,0 +1,13 @@
+cloudservices/__init__.py,sha256=GZ5bxq1BEk8K-EKXBMYJZYn2Yovp43Elrv_hLv326Wo,107
+cloudservices/config/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+cloudservices/config/cloud_config.py,sha256=UU-9uJoy8RuEEXdPpDqtnp0Ky4FbOxySp5LO1jJ6EKY,548
+cloudservices/queueservice/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+cloudservices/queueservice/pubsub.py,sha256=Z6ls4dq5PUDt2RUCu1aqTTbN1YRsaOxCMut3YNKMozc,5284
+cloudservices/queueservice/queue.py,sha256=d7wD1jqZr_68JcOp7IpPwf-99J6ndkVvDkfCruAH7Ho,4320
+cloudservices/queueservice/sqs.py,sha256=53H1fBU_ZokFFwtXbIi8BQLkDgcgGtagaki4wLqNLN0,4516
+cloudservices/storageservice/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+cloudservices/storageservice/storage.py,sha256=zYOyfZBWZcez5q8V6QpfDrGtTIcs4gH03OxhjihyqUw,5155
+cloudservices-0.0.1.dist-info/METADATA,sha256=Q5d5mfmnEA1Wbr3ZHyFM4heU-TPWGzoaMkrGELeAlDc,868
+cloudservices-0.0.1.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+cloudservices-0.0.1.dist-info/top_level.txt,sha256=GYepxUen0oUT2kcYSTfax-nTc8EmZkwHpGkwNVGzxxo,14
+cloudservices-0.0.1.dist-info/RECORD,,
