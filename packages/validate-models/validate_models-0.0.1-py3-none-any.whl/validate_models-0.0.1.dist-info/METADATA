@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: validate-models
+Version: 0.0.1
+Summary: Tools and Instructions for Validation of Classical Models
+Home-page: http://github.com/Alexandre-Papandrea/validate_models
+Author: Alexandre Papandrea
+Author-email: alexandre@dadosinteligentes.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+License-File: LICENSE.txt
+Requires-Dist: ipywidgets
+Requires-Dist: pandas
+Requires-Dist: numpy
+Requires-Dist: plotly
+Requires-Dist: scikit-learn
+Requires-Dist: scipy
+Requires-Dist: statsmodels
+Requires-Dist: matplotlib
+Requires-Dist: seaborn
+Requires-Dist: ipython
+
