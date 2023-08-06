@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: dfkv
+Version: 0.0.9
+Summary: a expand for dict
+Home-page: https://gitee.com/hifong45/dkv.git
+Author: fred deng
+Author-email: dfgeoff@qq.com
+License: Apache License 2.0
+Download-URL: https://gitee.com/hifong45/dkv/master.zip
+Platform: UNKNOWN
+License-File: LICENSE
+
+expand dict, can use a.b, can set value more than 1-level a.b.c.d="xyz"
+
