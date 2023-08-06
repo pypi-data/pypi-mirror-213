@@ -1,0 +1,13 @@
+LICENSE
+README.md
+setup.py
+pyuptobox/__init__.py
+pyuptobox/client.py
+pyuptobox/exceptions.py
+pyuptobox/utils.py
+pyuptobox.egg-info/PKG-INFO
+pyuptobox.egg-info/SOURCES.txt
+pyuptobox.egg-info/dependency_links.txt
+pyuptobox.egg-info/requires.txt
+pyuptobox.egg-info/top_level.txt
+test/test.py
