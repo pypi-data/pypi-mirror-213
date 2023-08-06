@@ -1,0 +1,42 @@
+[package]
+name = "css-inline"
+version = "0.9.0"
+authors = ["Dmitry Dygalo <dadygalo@gmail.com>"]
+edition = "2021"
+license = "MIT"
+readme = "../README.md"
+description = "A crate for inlining CSS into 'style' HTML attributes."
+repository = "https://github.com/Stranger6667/css-inline"
+keywords = ["html", "css", "css-inline", "email"]
+exclude = [".github", ".pre-commit-config.yaml", ".yamllint", ".gitignore", "tests"]
+categories = ["web-programming"]
+rust-version = "1.60"
+
+[[bin]]
+name = "css-inline"
+
+[features]
+default = ["cli", "http", "file"]
+cli = ["pico-args", "rayon"]
+http = ["attohttpc"]
+file = []
+
+[dependencies]
+cssparser = "0.29"
+html5ever = "0.26.0"
+memchr = "2.4"
+attohttpc = { version = "0", default-features = false, features = ["compress", "tls-rustls"], optional = true }
+url = "2"
+smallvec = "1"
+indexmap = "1.8.1"
+pico-args = { version = "0.3", optional = true }
+rayon = { version = "1.5", optional = true }
+selectors = "0.24.0"
+
+[[bench]]
+name = "inliner"
+harness = false
+
+[profile.release]
+lto = "fat"
+codegen-units = 1
