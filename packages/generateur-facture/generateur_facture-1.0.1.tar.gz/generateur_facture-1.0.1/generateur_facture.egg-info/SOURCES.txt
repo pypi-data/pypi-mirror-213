@@ -1,0 +1,17 @@
+CHANGES.rst
+CONTRIBUTORS.rst
+MANIFEST.in
+README.rst
+setup.cfg
+setup.py
+GenerateurFacture/__init__.py
+GenerateurFacture/api.py
+GenerateurFacture/conf.py
+GenerateurFacture/generator.py
+GenerateurFacture/pdf.py
+GenerateurFacture/pohoda.py
+generateur_facture.egg-info/PKG-INFO
+generateur_facture.egg-info/SOURCES.txt
+generateur_facture.egg-info/dependency_links.txt
+generateur_facture.egg-info/requires.txt
+generateur_facture.egg-info/top_level.txt
