@@ -1,0 +1,9 @@
+audible_series/__init__.py,sha256=IMjkMO3twhQzluVTo8Z6rE7Eg-9U79_LGKMcsWLKBkY,22
+audible_series/cmd_series.py,sha256=f89_NIzShFkVpB3cNtuxmaZNIGmW-dwvP7m-5Rt-1wk,2892
+audible_series/configfile.py,sha256=2253oMxhHc_jvaJUE44HVTIM-gWuA08Re9umc4Gn3wc,1542
+audible_series/seriesutil.py,sha256=fNGSpE0REUxf_t_HP4BbbsRXZQR5Ip-oiOxXydJQwDo,6372
+audible_series-1.0.3.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+audible_series-1.0.3.dist-info/METADATA,sha256=JiiDmXTGQUB_ubGnqYFzuPtBb7aDnOPdL9af6Y8mvHs,1947
+audible_series-1.0.3.dist-info/WHEEL,sha256=Zb28QaM1gQi8f4VCBhsUklF61CTlNYfs9YAZn-TOGFk,88
+audible_series-1.0.3.dist-info/entry_points.txt,sha256=SbcBgZ5q5O-iWqWaSM99YQrQsWA3-VSqlpRWQv9UrlA,60
+audible_series-1.0.3.dist-info/RECORD,,

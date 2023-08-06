@@ -1,0 +1,3 @@
+[audible.cli_plugins]
+series=audible_series.cmd_series:cli
+
