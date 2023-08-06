@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: pyunix
+Version: 0.0.1
+Summary: Python based Unix
+Home-page: https://www.example.com
+Author: pyunix
+Author-email: me@example.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+
+A Unix environment running completly on Python
+
