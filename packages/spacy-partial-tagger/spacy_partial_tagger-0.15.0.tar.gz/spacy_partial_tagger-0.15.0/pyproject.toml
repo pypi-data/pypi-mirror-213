@@ -1,0 +1,94 @@
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[project]
+name = "spacy-partial-tagger"
+requires-python = ">=3.8"
+
+[tool.poetry]
+name = "spacy-partial-tagger"
+version = "0.15.0"
+description = "Sequence Tagger for Partially Annotated Dataset in spaCy"
+authors = ["yasufumi <yasufumi.taniguchi@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+repository = "https://github.com/tech-sketch/spacy-partial-tagger"
+classifiers = [
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9"
+]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+thinc = "^8.0.15"
+transformers = {extras = ["ja"], version = "^4.25.1"}
+torch = "^2.0.1"
+spacy = {extras = ["transformers"], version = "^3.3.1"}
+spacy-alignments = "^0.8.5"
+pytorch-partial-tagger = "^0.1.7"
+
+[tool.poetry.group.dev.dependencies]
+mypy = "^1.3.0"
+black = "^22.3.0"
+pytest = "^7.1.1"
+isort = "^5.10.1"
+flake8 = "^4.0.1"
+pytest-cov = "^3.0.0"
+ruff = "^0.0.270"
+
+[tool.poetry.plugins.spacy_factories]
+partial_ner = "spacy_partial_tagger.pipeline:make_partial_ner"
+
+[tool.poetry.plugins.spacy_architectures]
+"spacy-partial-tagger.PartialTagger.v1" = "spacy_partial_tagger.tagger:build_partial_tagger_v1"
+
+[tool.mypy]
+ignore_missing_imports = true
+disallow_untyped_defs = true
+show_error_codes = true
+
+[tool.isort]
+profile = "black"
+include_trailing_comma = true
+multi_line_output = 3
+
+[tool.black]
+exclude = '''
+/(
+    .eggs
+  | .git
+  | .hg
+  | .pytest_cache
+  | .mypy_cache
+  | .tox
+  | .venv
+  | build
+  | dist
+)/
+'''
+
+[tool.ruff]
+line-length = 88
+select = [
+  "E",  # pycodestyle errors
+  "W",  # pycodestyle warnings
+  "F",  # pyflakes
+  "I",  # isort
+  "C",  # flake8-comprehensions
+  "B",  # flake8-bugbear
+]
+ignore = ["E501"]
+
+[tool.ruff.mccabe]
+max-complexity = 18
+
+[tool.pytest.ini_options]
+testpaths = [
+    "tests",
+]
+addopts = "--strict-markers -m 'not local'"
+markers = [
+    "local"
+]
