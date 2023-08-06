@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+anova_analysis/ANOVA_RBD.py
+anova_analysis/__init__.py
+anova_analysis/example.py
+anova_analysis.egg-info/PKG-INFO
+anova_analysis.egg-info/SOURCES.txt
+anova_analysis.egg-info/dependency_links.txt
+anova_analysis.egg-info/requires.txt
+anova_analysis.egg-info/top_level.txt
