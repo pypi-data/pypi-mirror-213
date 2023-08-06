@@ -1,0 +1,8 @@
+dataporter/__init__.py,sha256=nGal54CkqPj_wmrJBP1lmjmmi-BKwfR3uyUNBvtX-Bk,177
+dataporter/csv2sql.py,sha256=l9bo-bQiQdz06WPqtYr-WnM1FhkrwHP56BcstLq28XM,6360
+dataporter/sql2csv.py,sha256=A7_WdeXNrk0jfgJXWTmPY3IF99oG4igynIz1kdNIzVA,3532
+dataporter/sql_schema2txt.py,sha256=rBKNUkUdL0w59lBkRR3t4MJKJGdewtJAMwLemItOyi0,1828
+dataporter-0.1.3.dist-info/METADATA,sha256=oK0uvLmn4RMxYLO0Z7C2QpkfWIWh0RdzUn6eVav5UGo,911
+dataporter-0.1.3.dist-info/WHEEL,sha256=Zb28QaM1gQi8f4VCBhsUklF61CTlNYfs9YAZn-TOGFk,88
+dataporter-0.1.3.dist-info/entry_points.txt,sha256=2DuE_91Z8kjnQ4abxl0A0Vs2abaJQqmpDaOIsw1b-Fc,114
+dataporter-0.1.3.dist-info/RECORD,,
