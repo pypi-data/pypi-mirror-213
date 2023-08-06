@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: nure
+Version: 2023.6.13
+Summary: Data Science Utilities
+Home-page: https://github.com/tranduytrung/nure
+Author: Trung Tran
+Author-email: tranduytrung@outlook.com
+Project-URL: Bug Tracker, https://github.com/tranduytrung/nure/issues
+Classifier: Programming Language :: Python :: 3.8
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: more-itertools
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: pyarrow
+Provides-Extra: aws
+Requires-Dist: boto3 ; extra == 'aws'
+Provides-Extra: image
+Requires-Dist: pillow ; extra == 'image'
+Requires-Dist: opencv-python-headless ; extra == 'image'
+Provides-Extra: sql
+Requires-Dist: mysql-connector-python ; extra == 'sql'
+Requires-Dist: sqlalchemy-bigquery ; extra == 'sql'
+Requires-Dist: psycopg2-binary ; extra == 'sql'
+
+# nure
+data science utilities
