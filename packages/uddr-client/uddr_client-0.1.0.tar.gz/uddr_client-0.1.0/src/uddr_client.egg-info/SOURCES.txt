@@ -1,0 +1,12 @@
+LICENSE.md
+README.md
+setup.py
+src/uddr_client/__init__.py
+src/uddr_client/client.py
+src/uddr_client/connection.py
+src/uddr_client/response.py
+src/uddr_client.egg-info/PKG-INFO
+src/uddr_client.egg-info/SOURCES.txt
+src/uddr_client.egg-info/dependency_links.txt
+src/uddr_client.egg-info/requires.txt
+src/uddr_client.egg-info/top_level.txt
