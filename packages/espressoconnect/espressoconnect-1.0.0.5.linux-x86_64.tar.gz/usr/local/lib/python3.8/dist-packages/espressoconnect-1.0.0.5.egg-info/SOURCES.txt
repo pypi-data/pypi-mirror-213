@@ -1,0 +1,13 @@
+README.md
+setup.py
+espressoApi/__init__.py
+espressoApi/espressoApiWebsocket.py
+espressoApi/espressoConnect.py
+espressoApi/espressoExceptions.py
+espressoconnect.egg-info/PKG-INFO
+espressoconnect.egg-info/SOURCES.txt
+espressoconnect.egg-info/dependency_links.txt
+espressoconnect.egg-info/requires.txt
+espressoconnect.egg-info/top_level.txt
+test/__init__.py
+test/test_espresso.py
