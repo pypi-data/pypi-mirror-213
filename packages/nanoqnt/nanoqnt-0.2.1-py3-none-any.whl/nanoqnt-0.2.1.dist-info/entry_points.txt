@@ -1,0 +1,3 @@
+[console_scripts]
+nanoqnt=nanoqnt.main:start_nanoqnt
+
