@@ -1,0 +1,77 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:browser="http://namespaces.zope.org/browser"
+    xmlns:genericsetup="http://namespaces.zope.org/genericsetup"
+    xmlns:i18n="http://namespaces.zope.org/i18n"
+    xmlns:plone="http://namespaces.plone.org/plone"
+    i18n_domain="collective.immediatecreate"
+    >
+
+  <i18n:registerTranslations directory="locales" />
+
+  <include package="Products.CMFCore" />
+
+  <include file="upgrades.zcml" />
+
+  <genericsetup:registerProfile
+      name="default"
+      title="Immediate Create"
+      description="Installs the collective.immediatecreate add-on."
+      provides="Products.GenericSetup.interfaces.EXTENSION"
+      directory="profiles/default"
+      post_handler=".setuphandlers.post_install"
+      />
+
+  <genericsetup:registerProfile
+      name="uninstall"
+      title="Immediate Create (uninstall)"
+      description="Uninstalls the collective.immediatecreate add-on."
+      provides="Products.GenericSetup.interfaces.EXTENSION"
+      directory="profiles/uninstall"
+      post_handler=".setuphandlers.uninstall"
+      />
+
+  <utility
+      factory=".setuphandlers.HiddenProfiles"
+      name="collective.immediatecreate-hiddenprofiles"
+      />
+
+  <!-- behavior and indexer -->
+  <plone:behavior
+      name="collective.immediatecreate"
+      title="Immediate Create"
+      description="Creates item immediatly and skip add form. Needs changes in Factory Type Information (ZMI) for this type too!"
+      provides=".behaviors.ICollectiveImmediateCreate"
+      />
+  <adapter
+      factory=".indexer.index_in_immediate_creation"
+      name="in_immediate_creation"
+      />
+
+  <!-- traverser -->
+  <adapter
+      factory=".adding.ImmediateAddViewTraverser"
+      for="Products.CMFCore.interfaces.IFolderish
+           .interfaces.ICollectiveImmediatecreateLayer"
+      name="addimmediate"
+      />
+
+  <!-- edit immediate -->
+  <browser:page
+      name="editimmediate"
+      for="plone.dexterity.interfaces.IDexterityContent"
+      class=".editing.ImmediateEditView"
+      permission="cmf.AddPortalContent"
+      layer=".interfaces.ICollectiveImmediatecreateLayer"
+      />
+
+  <!-- cleanup -->
+  <browser:page
+      name="immediatecreate-cleanup-leftovers"
+      for="*"
+      class=".cleanup.CleanupImmediateLeftovers"
+      permission="cmf.ManagePortal"
+      layer=".interfaces.ICollectiveImmediatecreateLayer"
+      />
+
+</configure>
