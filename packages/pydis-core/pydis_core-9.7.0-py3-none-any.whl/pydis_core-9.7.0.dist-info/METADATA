@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: pydis-core
+Version: 9.7.0
+Summary: PyDis core provides core functionality and utility to the bots of the Python Discord community.
+Home-page: https://pythondiscord.com/
+License: MIT
+Keywords: bot,discord,discord.py
+Author: Python Discord
+Author-email: info@pythondiscord.com
+Requires-Python: >=3.10.dev0,<3.12.dev0
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Provides-Extra: async-rediscache
+Requires-Dist: aiodns (==3.0.0)
+Requires-Dist: async-rediscache[fakeredis] (==1.0.0rc2) ; extra == "async-rediscache"
+Requires-Dist: discord.py (==2.2.3)
+Requires-Dist: statsd (==4.0.1)
+Project-URL: Documentation, https://bot-core.pythondiscord.com/
+Project-URL: Repository, https://github.com/python-discord/bot-core
+Description-Content-Type: text/markdown
+
+# bot-core ![Version]
+
+[Version]: https://img.shields.io/github/v/tag/python-discord/bot-core?label=latest&logo=version
+
