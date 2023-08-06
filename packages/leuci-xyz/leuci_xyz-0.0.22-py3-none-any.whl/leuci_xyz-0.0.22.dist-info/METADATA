@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: leuci-xyz
+Version: 0.0.22
+Summary: objects in 3d space library
+Home-page: https://github.com/pypa/sampleproject
+Author: Rachel Alcraft
+Author-email: rachelalcraft@gmail.com
+Project-URL: Bug Tracker, https://github.com/pypa/sampleproject/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+# leuci-xyz Package
+
+A library for manipulation and transformation of objects in 3d space
+
+
+# Some instructions
+### Activate/install virtual environment
+```
+python3 -m venv .venv
+
+source ./.venv/bin/activate
+(deactivate)
+```
+### Install the requirements
+```
+pip install -r requirements.txt
+```
+
+
