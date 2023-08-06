@@ -1,0 +1,7 @@
+LICENSE
+README.md
+setup.py
+pydos2.egg-info/PKG-INFO
+pydos2.egg-info/SOURCES.txt
+pydos2.egg-info/dependency_links.txt
+pydos2.egg-info/top_level.txt
