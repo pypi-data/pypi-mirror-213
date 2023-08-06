@@ -1,0 +1,65 @@
+Metadata-Version: 2.1
+Name: pyrestack
+Version: 0.0.24
+Summary: Simple Python wrapper for ReStack
+Home-page: https://github.com/elentriek/restack-integration
+Author: Floris Heyvaert
+Author-email: floris.heyvaert@gmail.com
+License: MIT License
+Keywords: pyrestack,setuptools
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8.0
+Description-Content-Type: text/markdown
+Requires-Dist: aiohttp (<4.0,>=3.8.2)
+Requires-Dist: prometheus-client (>=0.14.1)
+Requires-Dist: aiodns (>=3.0.0)
+Provides-Extra: dev
+Requires-Dist: black (==22.3.0) ; extra == 'dev'
+Requires-Dist: isort (==5.10.1) ; extra == 'dev'
+
+# pyuptimekuma
+Simple Python wrapper for ReStack
+
+## Installation
+
+```shell
+python3 -m pip install pyrestack
+```
+
+## Example
+
+```python
+import asyncio
+
+import aiohttp
+
+from pyrestack import ReStack
+
+URL = ""
+USERNAME = ""
+PASSWORD = ""
+VERIFY_SSL = True
+
+
+async def main():
+
+    async with aiohttp.ClientSession() as session:
+        restack_api = ReStack(session, URL, USERNAME, PASSWORD, VERIFY_SSL)
+        response = await restack_api.async_get_stacks()
+        print(response.data)
+
+
+loop = asyncio.get_event_loop()
+loop.run_until_complete(main())
+
+```
+
+## Credit
+
+I would like to give a special thanks to these repositories since a lot of code has been inspired by them.
+
+- [ludeeus/pyuptimerobot](https://github.com/ludeeus/pyuptimerobot)
+- [meichthys/utptime_kuma_monitor](https://github.com/meichthys/utptime_kuma_monitor)
+- [jayakornk/pyuptimekuma](https://github.com/meichthys/utptime_kuma_monitor)
