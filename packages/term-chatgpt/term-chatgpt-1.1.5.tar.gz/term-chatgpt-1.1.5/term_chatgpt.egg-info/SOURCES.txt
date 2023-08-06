@@ -1,0 +1,14 @@
+LICENSE
+README.md
+setup.py
+term_chatgpt.egg-info/PKG-INFO
+term_chatgpt.egg-info/SOURCES.txt
+term_chatgpt.egg-info/dependency_links.txt
+term_chatgpt.egg-info/entry_points.txt
+term_chatgpt.egg-info/requires.txt
+term_chatgpt.egg-info/top_level.txt
+termgpt/__main__.py
+termgpt/cmd.py
+termgpt/copilot.py
+termgpt/main.py
+termgpt/term.py
