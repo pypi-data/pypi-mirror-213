@@ -1,0 +1,42 @@
+Metadata-Version: 2.1
+Name: libmultilabel
+Version: 0.3.0
+Summary: A library for multi-label text classification
+Home-page: https://github.com/ASUS-AICS/LibMultiLabel
+Author: LibMultiLabel Team
+License: MIT License
+Project-URL: Bug Tracker, https://github.com/ASUS-AICS/LibMultiLabel/issues
+Project-URL: Documentation, https://www.csie.ntu.edu.tw/~cjlin/libmultilabel
+Project-URL: Source Code, https://github.com/ASUS-AICS/LibMultiLabel/
+Classifier: Environment :: GPU :: NVIDIA CUDA :: 11.6
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=3.8
+License-File: LICENSE
+Requires-Dist: nltk
+Requires-Dist: pandas (>1.3.0)
+Requires-Dist: PyYAML
+Requires-Dist: scikit-learn
+Requires-Dist: torch (>=1.13.1)
+Requires-Dist: torchmetrics (==0.10.3)
+Requires-Dist: torchtext (>=0.13.0)
+Requires-Dist: pytorch-lightning (==1.7.7)
+Requires-Dist: tqdm
+Requires-Dist: liblinear-multicore
+Requires-Dist: numba
+Requires-Dist: scipy
+Requires-Dist: transformers
+Provides-Extra: linear
+Requires-Dist: liblinear-multicore ; extra == 'linear'
+Requires-Dist: numba ; extra == 'linear'
+Requires-Dist: pandas ; extra == 'linear'
+Requires-Dist: scikit-learn ; extra == 'linear'
+Requires-Dist: scipy ; extra == 'linear'
+Requires-Dist: tqdm ; extra == 'linear'
+
+See documentation here: https://www.csie.ntu.edu.tw/~cjlin/libmultilabel
