@@ -1,0 +1,63 @@
+Metadata-Version: 2.1
+Name: rotspectools
+Version: 0.1.0
+Summary: Project used to automate the data analysis and presentation of rotational spectroscopy datasets.
+Keywords: rotspectools
+Author-Email: Dairen Jean <djean032@gmail.com>
+License: MIT license
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Project-URL: Homepage, https://github.com/djean032/rotspectools
+Requires-Python: >=3.6
+Requires-Dist: Click>=7.0
+Requires-Dist: pathlib>=1.0.1
+Requires-Dist: matplotlib>=3.3.4
+Requires-Dist: numpy>=1.19.5
+Requires-Dist: pandas>=0.25.3
+Requires-Dist: scienceplots>=2.1.0
+Requires-Dist: typing>=3.7.4.3
+Description-Content-Type: text/x-rst
+
+=====================
+Rotational Spec Tools
+=====================
+
+
+.. image:: https://img.shields.io/pypi/v/rotspectools.svg
+        :target: https://pypi.python.org/pypi/rotspectools
+
+.. image:: https://img.shields.io/travis/djean032/rotspectools.svg
+        :target: https://travis-ci.com/djean032/rotspectools
+
+.. image:: https://readthedocs.org/projects/rotspectools/badge/?version=latest
+        :target: https://rotspectools.readthedocs.io/en/latest/?version=latest
+        :alt: Documentation Status
+
+
+
+
+Project used to automate the data analysis and presentation of rotational spectroscopy datasets.
+
+
+* Free software: MIT license
+* Documentation: https://rotspectools.readthedocs.io.
+
+
+Features
+--------
+
+* TODO
+
+Credits
+-------
+
+This package was created with Cookiecutter_ and the `audreyr/cookiecutter-pypackage`_ project template.
+
+.. _Cookiecutter: https://github.com/audreyr/cookiecutter
+.. _`audreyr/cookiecutter-pypackage`: https://github.com/audreyr/cookiecutter-pypackage
