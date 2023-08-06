@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: django-synkroni
+Version: 0.4.9
+Summary: Django/Javascript-synkronointirajapinta
+Home-page: https://github.com/an7oine/django-synkroni.git
+Author: Antti Hautaniemi
+Author-email: antti.hautaniemi@me.com
+License: MIT
