@@ -1,0 +1,25 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "zmemory"
+version = "0.1.2"
+authors = [
+  { name="inspirare6", email="inspirare6@163.com" },
+]
+description = "zen memory library"
+readme = "README.md"
+requires-python = ">=3.7"
+dependencies = [
+  "redis",
+]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/inspirare6/zmemory"
+"Bug Tracker" = "https://github.com/inspirare6/zmemory/issues"
