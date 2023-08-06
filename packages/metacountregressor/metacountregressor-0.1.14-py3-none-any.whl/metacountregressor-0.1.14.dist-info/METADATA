@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: metacountregressor
+Version: 0.1.14
+Summary: A python package for count regression of rare events assisted by metaheuristics
+Author: zahern
+Author-email: zeke.ahern@hdr.qut.edu.au
+Requires-Python: >=3.10,<3.11
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Requires-Dist: latextable (>=1.0.0,<2.0.0)
+Requires-Dist: matplotlib (>=3.7.1,<4.0.0)
+Requires-Dist: numpy (>=1.24.3,<2.0.0)
+Requires-Dist: pandas (>=2.0.2,<3.0.0)
+Requires-Dist: psutil (>=5.9.5,<6.0.0)
+Requires-Dist: scikit-learn (>=1.2.2,<2.0.0)
+Requires-Dist: scipy (>=1.10.1,<2.0.0)
+Requires-Dist: statsmodels (>=0.14.0,<0.15.0)
+Requires-Dist: tabulate (>=0.9.0,<0.10.0)
+Description-Content-Type: text/markdown
+
+Please Cite Me if Planning to Use
