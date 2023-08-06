@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: h2o-mlops
+Version: 0.61.1a1
+Summary: Python client for H2O.ai MLOps.
+Author: H2O.ai
+Author-email: support@h2o.ai
+License: Proprietary License
+Classifier: Development Status :: 3 - Alpha
+Requires-Python: >=3.7
+Requires-Dist: h2o-authn
+Requires-Dist: httpx
+

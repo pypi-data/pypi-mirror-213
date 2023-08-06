@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: h2o-mlops-client
+Version: 0.61.1
+Summary: Client for H2O.ai MLOps
+Home-page: UNKNOWN
+Author: H2O.ai
+Author-email: team@h2o.ai
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.8
+Description-Content-Type: text/plain
+Requires-Dist: yarl (>=1.4.2)
+Requires-Dist: urllib3 (>=1.15)
+Requires-Dist: six (>=1.10)
+Requires-Dist: certifi
+Requires-Dist: python-dateutil
+
+Client for H2O.ai MLOps gateway
+
+
