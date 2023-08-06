@@ -1,0 +1,13 @@
+[package]
+name = "tcfetch"
+version = "0.3.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+[lib]
+name = "tcfetch"
+crate-type = ["cdylib"]
+
+[dependencies]
+pyo3 = "0.18.3"
+tc-fetch = {path = "local_dependencies/tc-fetch" }

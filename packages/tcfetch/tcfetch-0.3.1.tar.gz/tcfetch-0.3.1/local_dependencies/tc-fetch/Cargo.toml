@@ -1,0 +1,26 @@
+[package]
+name = "tc-fetch"
+version = "0.3.1"
+authors = ["James Graham <james@hoppipolla.co.uk>"]
+description="Download taskcluster artifacts"
+readme = "README.md"
+edition = "2021"
+license = "BSD-3-Clause"
+
+[lib]
+name = "tcfetch"
+path = "src/lib.rs"
+
+[[bin]]
+name = "tcfetch"
+path = "src/main.rs"
+
+[dependencies]
+clap = "4"
+regex = "1"
+reqwest = {version="0.11", default-features=false, features=["blocking", "gzip", "rustls-tls"]}
+thiserror = "1"
+scoped_threadpool = "0.1"
+serde = "1"
+serde_derive = "1"
+serde_json = "1"
