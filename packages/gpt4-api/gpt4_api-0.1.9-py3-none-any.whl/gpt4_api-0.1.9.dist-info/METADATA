@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: gpt4-api
+Version: 0.1.9
+Summary: gpt4 api engine
+Author: changjun.yuan
+Author-email: 455255111@qq.com
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.9
+Requires-Python: >=3.7.0
+Requires-Dist: openai
+
