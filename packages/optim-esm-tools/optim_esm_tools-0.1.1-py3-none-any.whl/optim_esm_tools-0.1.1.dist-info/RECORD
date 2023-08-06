@@ -1,0 +1,16 @@
+extra_requirements/requirements-tests.txt,sha256=3ePQyDMty9ycs-iqAj1h1OjUOckuSVZwbM97U3SFMUg,12
+optim_esm_tools/__init__.py,sha256=jp5Wdp44PnPb-E2U-1WRj-eL1k1fFTINFbscqWK3IjE,175
+optim_esm_tools/_test_utils.py,sha256=Y9X-iBixhLfT4GMBxfZ3BPImTk-m4uwzLYmsAXM02XM,1373
+optim_esm_tools/utils.py,sha256=fg2rx57R-uLst43dtKjWcuK5CtWXoYDXEPalVGpDI9g,7143
+optim_esm_tools/analyze/__init__.py,sha256=17iSB5Uv2jvjd8iSxCWNtEGyNR3HHDrXc-8uQy4mnuI,126
+optim_esm_tools/analyze/analyze.py,sha256=SZinIiNOCMTBju2o6wG5UIMs7uSp2xcunakmdqL2zMg,6043
+optim_esm_tools/analyze/clustering.py,sha256=KYNfTOX6R3NnOi9smueegxa49tciIg9edH0lbc09m8o,3641
+optim_esm_tools/analyze/cmip_handler.py,sha256=YrSuOe3Bj7o_Em5VQSWyrktgYkQq8Vwi0jFjMaaGlxo,25487
+optim_esm_tools/analyze/xarray_tools.py,sha256=yTheaVnvOxEim5YU3nTO_-s71o6MGX5oqdAjsTFwza8,1081
+optim_esm_tools/synda_files/__init__.py,sha256=EtIyqJFzSh37FtZTVtIrnRBKXrJSFvQzFAizimKuLws,77
+optim_esm_tools/synda_files/format_synda.py,sha256=tjaFzctRKbG4QezsDcvP2ZqvryLmKxYHnVjuj7HY3HI,4802
+optim_esm_tools/synda_files/synda_files.py,sha256=QPU0lNgVTeqUBpaiITvMLZXuwedeiAs6fjbGYKlNQLE,3028
+optim_esm_tools-0.1.1.dist-info/METADATA,sha256=o9a1pOxfgCkTMlDjg6nVtsX8anAT7UbIVtYmlhu2Kds,2621
+optim_esm_tools-0.1.1.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+optim_esm_tools-0.1.1.dist-info/top_level.txt,sha256=W-citSdNaxjaxs86U7r_VBbdPUd0Q8eZ3iATXsLJ4wE,35
+optim_esm_tools-0.1.1.dist-info/RECORD,,
