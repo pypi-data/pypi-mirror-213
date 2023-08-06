@@ -1,0 +1,9 @@
+setuptools_scm
+pyserial
+pc_ble_driver_py
+nrfutil
+pandas
+numpy
+PySimpleGUI
+appdirs
+pycryptodome==3.14.1
