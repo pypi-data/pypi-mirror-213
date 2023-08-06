@@ -1,0 +1,8 @@
+setup.py
+gpu_control/gpu_control.cpp
+gpu_control/gpu_control_wrapper.cpp
+gpu_control.egg-info/PKG-INFO
+gpu_control.egg-info/SOURCES.txt
+gpu_control.egg-info/dependency_links.txt
+gpu_control.egg-info/requires.txt
+gpu_control.egg-info/top_level.txt
