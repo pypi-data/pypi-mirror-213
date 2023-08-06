@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+spellcaster.py
+spellcaster.egg-info/PKG-INFO
+spellcaster.egg-info/SOURCES.txt
+spellcaster.egg-info/dependency_links.txt
+spellcaster.egg-info/requires.txt
+spellcaster.egg-info/top_level.txt
