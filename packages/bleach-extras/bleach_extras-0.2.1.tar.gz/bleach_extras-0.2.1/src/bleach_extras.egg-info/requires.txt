@@ -1,0 +1,10 @@
+bleach<5,>=3.2.1
+
+[testing]
+bleach<5,>=3.2.1
+pytest>=3.0.0
+pytest-wholenodeid
+flake8
+mypy
+tox
+types-bleach<5

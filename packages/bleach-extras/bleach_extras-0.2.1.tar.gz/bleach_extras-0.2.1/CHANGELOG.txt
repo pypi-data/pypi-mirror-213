@@ -1,0 +1,36 @@
+0.2.1 | 20230609
+    - added py.typed
+
+0.2.0 | 20230608
+    - drop python 2.6
+    - mpy
+
+0.1.3 | 20220519
+	- version pinning against bleach <5 because of incompatibilities
+	- adjusted github test matrix
+
+0.1.2 | 20210325
+	- packaging fix
+
+0.1.1 | 2021.03.05
+	- removed empty list item from setup.py [fixes #3]
+
+0.1.0 | 2020.10.20
+	- packaging fix
+
+0.0.4 | 2020.10.13
+	- black formatting
+	- replaced outdated terms with more inclusive language
+	- upgraded black
+	- using pre-commit
+	- bleach requires 3.2.1 to deal with security issues and regressions/changes affecting the test cases
+	- dropped 3.5 support; supports python 2.7; 3.6/3.7/3.8
+
+0.0.3 | 2019.04.24
+	packaging fix: adding python3 classifier
+
+0.0.2 | 2018.10.17
+	adjusting the API
+
+0.0.1 | 2018.10.17
+	initial import
