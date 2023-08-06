@@ -1,0 +1,22 @@
+invoke==2.1.2
+twine==4.0.2
+zest.releaser==8.0.0
+
+wheel==0.40.0
+django-model-utils==4.3.1
+
+Werkzeug==2.3.6  # https://github.com/pallets/werkzeug
+ipdb==0.13.13  # https://github.com/gotcha/ipdb
+
+# Code quality
+# ------------------------------------------------------------------------------
+flake8==6.0.0  # https://github.com/PyCQA/flake8
+coverage==7.2.7  # https://github.com/nedbat/coveragepy
+
+# Django
+# ------------------------------------------------------------------------------
+factory-boy==3.2.1  # https://github.com/FactoryBoy/factory_boy
+django-test-plus==2.2.1  # https://github.com/revsys/django-test-plus
+
+django-debug-toolbar==4.1.0  # https://github.com/jazzband/django-debug-toolbar
+pytest-django==4.5.2  # https://github.com/pytest-dev/pytest-django
