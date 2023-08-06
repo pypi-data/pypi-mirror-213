@@ -1,0 +1,22 @@
+name: pyrfu-docs
+channels:
+  - conda-forge
+dependencies:
+  - python
+  - pip
+  - sphinx
+  - pip:
+    - cdflib
+    - ipykernel
+    - ipython
+    - matplotlib
+    - nbsphinx
+    - numpy
+    - pandas
+    - pydata-sphinx-theme
+    - scipy
+    - sphinx
+    - sphinxcontrib-apidoc
+    - sphinx_rtd_theme
+    - tqdm
+    - xarray
