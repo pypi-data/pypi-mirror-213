@@ -1,0 +1,10 @@
+setup.py
+../src/bgdiscovery/__init__.py
+../src/bgdiscovery/_version.py
+../src/bgdiscovery/bgdiscovery.py
+bgdiscovery.egg-info/PKG-INFO
+bgdiscovery.egg-info/SOURCES.txt
+bgdiscovery.egg-info/dependency_links.txt
+bgdiscovery.egg-info/entry_points.txt
+bgdiscovery.egg-info/requires.txt
+bgdiscovery.egg-info/top_level.txt

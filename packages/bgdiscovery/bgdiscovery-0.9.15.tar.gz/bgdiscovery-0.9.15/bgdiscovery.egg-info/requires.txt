@@ -1,0 +1,6 @@
+pyodbc==4.0.35
+pyyaml
+art==5.8
+coloredlogs
+colorama
+acryl-datahub==0.10.2.2
