@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+InfixToPostfix/__init__.py
+InfixToPostfix/infix_to_postfix.py
+InfixToPostfix/ui.py
+InfixToPostfix.egg-info/PKG-INFO
+InfixToPostfix.egg-info/SOURCES.txt
+InfixToPostfix.egg-info/dependency_links.txt
+InfixToPostfix.egg-info/top_level.txt
