@@ -1,0 +1,1 @@
+bmw-lobster-core>=0.9.4
