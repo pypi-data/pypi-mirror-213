@@ -1,0 +1,39 @@
+[build-system]
+requires = ["setuptools>=40.8.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "Mirrorstr"
+version = "0.0.6"
+authors = [
+  { name="pleblira", email="pleblira@gmail.com" },
+]
+description = "An application to mirror Nostr posts on twitter, and vice-versa"
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent"]
+
+dependencies = [
+"moviepy==1.0.3",
+"nostr==0.0.2",
+"numpy==1.24.3",
+"Pillow==9.5.0",
+"Requests==2.31.0",
+"APScheduler==3.10.1"
+]
+
+[project.urls]
+"Homepage" = "https://github.com/pleblira/mirrorstr"
+"Bug Tracker" = "https://github.com/pleblira/mirrorstr/issues"
+
+[project.scripts]
+mirrorstr = "mirrorstr.mirrorstr:mirrorstr"
+
+[tool.setuptools.package-data]
+myModule = ["*.txt"]
+
+[tool.setuptools.packages.find]
+where = ["src"]

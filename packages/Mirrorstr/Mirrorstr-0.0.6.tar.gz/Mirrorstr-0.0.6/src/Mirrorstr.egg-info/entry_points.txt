@@ -1,0 +1,2 @@
+[console_scripts]
+mirrorstr = mirrorstr.mirrorstr:mirrorstr

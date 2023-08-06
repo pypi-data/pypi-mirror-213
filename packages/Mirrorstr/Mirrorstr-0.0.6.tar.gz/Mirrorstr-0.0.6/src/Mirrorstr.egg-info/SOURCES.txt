@@ -1,0 +1,16 @@
+LICENSE
+README.md
+pyproject.toml
+src/Mirrorstr.egg-info/PKG-INFO
+src/Mirrorstr.egg-info/SOURCES.txt
+src/Mirrorstr.egg-info/dependency_links.txt
+src/Mirrorstr.egg-info/entry_points.txt
+src/Mirrorstr.egg-info/requires.txt
+src/Mirrorstr.egg-info/top_level.txt
+src/mirrorstr/__init__.py
+src/mirrorstr/hello_world.py
+src/mirrorstr/mirrorstr.py
+src/mirrorstr/mp4_to_gif.py
+src/mirrorstr/post_note.py
+src/mirrorstr/relay_list.txt
+src/mirrorstr/upload_to_voidcat_and_return_url.py
