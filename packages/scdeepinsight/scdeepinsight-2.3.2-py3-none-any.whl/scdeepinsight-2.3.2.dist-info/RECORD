@@ -1,0 +1,9 @@
+scdeepinsight/__init__.py,sha256=8xeVoxctph5fh5ZLzluFvnwUn4fWgUVfssYE25EScWo,20
+scdeepinsight/pbmc.py,sha256=mLp0995Ep2VyZec7LEj6ZvVXquA3bkAYz2DYAjFtKpk,5049
+scdeepinsight/pretrained_files_pbmc/checkpoint_model_pbmc.pth,sha256=vMs6vxzkc5KsPDUJBGazowlaNfH3gxS7OIv8Hxi0cHk,43527749
+scdeepinsight/pretrained_files_pbmc/img_transformer_pbmc.obj,sha256=KeA0AD96Gccu8-fa8W-p_0bWukppGF0O6kPtvLlDZJI,3470968
+scdeepinsight/pretrained_files_pbmc/label_encoder_pbmc.obj,sha256=YpZnPeG0vFPw4A2m2vTJK8xJuMmiN4OaQP6-hXwin4U,567
+scdeepinsight/pretrained_files_pbmc/pretrained_genes_pbmc.csv,sha256=MqiNdQ9rrqQZUWyfLOyOkhY8_W4rmbIrOhxM_WBCsz4,379633
+scdeepinsight-2.3.2.dist-info/METADATA,sha256=OJSQBBn_jspBDuSghX7r2oA1DmqGvOz8c86mStfNXOA,3764
+scdeepinsight-2.3.2.dist-info/WHEEL,sha256=Zb28QaM1gQi8f4VCBhsUklF61CTlNYfs9YAZn-TOGFk,88
+scdeepinsight-2.3.2.dist-info/RECORD,,
