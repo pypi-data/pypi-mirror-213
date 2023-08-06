@@ -1,0 +1,8 @@
+pyproject.toml
+setup.cfg
+analysetool.egg-info/PKG-INFO
+analysetool.egg-info/SOURCES.txt
+analysetool.egg-info/dependency_links.txt
+analysetool.egg-info/requires.txt
+analysetool.egg-info/top_level.txt
+test/test.py
