@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: PRauto
+Version: 0.212
+Summary: PRauto is a package for collecting and preprocessing protein and ligand data. 
+Home-page: https://github.com/KimJisanER/PRauto
+Author: Ji San Kim
+Author-email: jisan1233@gmail.com
+License: MIT license
+Keywords: PDB,FASTA,sdf,Automation
+Requires-Python: >=3
+License-File: LICENSE
+Requires-Dist: biopython (>=1.79)
+Requires-Dist: chembl-webresource-client (>=0.10.8)
+Requires-Dist: matplotlib (>=3.0.0)
+Requires-Dist: pandas (>=1.5.3)
+Requires-Dist: pymol (>=2.5.0)
+Requires-Dist: requests (>=2.28.1)
+Requires-Dist: tqdm (>=4.00.0)
+
