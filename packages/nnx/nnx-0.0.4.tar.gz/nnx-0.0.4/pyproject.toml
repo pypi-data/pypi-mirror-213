@@ -1,0 +1,42 @@
+[tool.poetry]
+name = "nnx"
+version = "0.0.4"
+description = ""
+authors = ["Cristian Garcia <cgarcia.e88@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = ">=3.8,<3.12"
+jax = "*"
+jaxlib = "*"
+optax = "*"
+typing-extensions = "*"
+
+
+[tool.poetry.group.test.dependencies]
+pytest = ">=7.2.2"
+pytest-cov = ">=4.0.0"
+flax = ">=0.6.10"
+
+
+[tool.poetry.group.dev.dependencies]
+black = "23.3.0"
+isort = "5.12.0"
+ipykernel = "^6.22.0"
+pre-commit = ">=3.3.2"
+
+[tool.poetry.group.examples.dependencies]
+matplotlib = "^3.7.1"
+datasets = "^2.12.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.coverage.report]
+exclude_lines = [
+    "pragma: no cover",
+    "@overload",
+    "@tp.overload",
+    "@abstractmethod",
+]
