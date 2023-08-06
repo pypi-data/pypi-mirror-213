@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+LoopPdf/__init__.py
+LoopPdf/pdf2image.py
+LoopPdf/pdf2text.py
+LoopPdf.egg-info/PKG-INFO
+LoopPdf.egg-info/SOURCES.txt
+LoopPdf.egg-info/dependency_links.txt
+LoopPdf.egg-info/top_level.txt
