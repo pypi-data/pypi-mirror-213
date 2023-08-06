@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "airflow-data-validation"
+version = "4.0.3"
+description = ""
+authors = ["sapir.krespil <sapir.krespil@guesty.com>"]
+readme = "README.md"
+homepage = "https://github.com/guestyorg/airflow_data_validation"
+repository = "https://github.com/guestyorg/airflow_data_validation"
+packages = [{include = "airflow_data_validation"}]
+
+[tool.poetry.dependencies]
+python = "^3.7"
+google-cloud-bigquery = "^2.4.0"
+requests = "^2.31.0"
+
+[build-system]
+requires = ["poetry-core>=1.0.0", "setuptools>=61.1.1"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.dev-dependencies]
+pytest = "^7.1.2"
