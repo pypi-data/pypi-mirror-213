@@ -1,0 +1,34 @@
+Metadata-Version: 2.1
+Name: csv-scavenger
+Version: 1.0.5
+Summary: CSV reader and parser with automatic detection of delimiter and start/end of data.
+Author: Gustave Coulombe
+Author-email: magikgus@gmail.com
+Requires-Python: >=3.11,<3.12
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: pandas (>=2.0.0,<3.0.0)
+Requires-Dist: tssplit (>=1.0.6,<2.0.0)
+Description-Content-Type: text/markdown
+
+# CSV-Scavenger
+
+CSV-Scavenger is a simple CSV parser for Python which can detect the delimiter automatically and can parse CSV files with quoted fields. It can also detect the header row and the start and end of the data rows automatically. For most use cases, you can simply call ```sv.read_csv(filename)``` and get a pandas DataFrame back.
+
+See the ```csv-scavenger/example_csvs``` directory for some example CSV files which are parsed correctly by CSV-Scavenger.
+
+## Installation
+
+```text
+pip install csv-scavenger
+```
+
+## Usage
+
+```python
+import scavenger as sv
+
+# Read a CSV file into a pandas DataFrame
+df = sv.read_csv('data.csv')
+```
+
