@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: django-virtual-fields
+Version: 0.0.1
+Summary: Virtual `django` fields.
+License: MIT
+Author: David Kyalo
+Author-email: davidmkyalo@gmail.com
+Requires-Python: >=3.10,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: Django (>=3.2.0)
+Requires-Dist: typing-extensions (>=4.4.0)
+Requires-Dist: zana (>=0.2.0a4,<0.3.0)
