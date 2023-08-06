@@ -1,0 +1,67 @@
+Metadata-Version: 2.1
+Name: django-short-links
+Version: 0.1.1
+Summary: URL shortener Django app
+Home-page: https://github.com/youzarsiph/django-links/
+License: MIT
+Author: Yousef Abu Shanab
+Author-email: josephyousef249@gmail.com
+Requires-Python: >=3.9,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: django (>=4.2,<5.0)
+Project-URL: Repository, https://github.com/youzarsiph/django-links/
+Description-Content-Type: text/markdown
+
+# django-short-links
+
+URL / Link shortener web app.
+
+## Getting Started
+
+Install `links`:
+
+```shell
+pip install django-short-links
+```
+
+Add `links` to `INSTALLED_APPS` and add a new setting `LINKS_SITE_NAME`, in `settings.py`:
+
+```python
+# settings.py
+
+INSTALLED_APPS = [
+    ...
+    'links',
+    ...
+]
+
+# Your server's IP address with route of 'links.urls' appended to the end without trailing slash
+LINKS_SITE_URL = 'https://your.domain.com/l'
+```
+
+Include `links` URLConf, in project's `urls.py`:
+
+```python
+# urls.py
+
+urlpatterns = [
+    ...
+    path('l/', include('links.urls')),
+    ...
+]
+```
+
+Run `migrate`:
+
+```shell
+python manage.py migrate
+```
+
+Now, you can open your browser at `https://your.domain.com/l/`.
+
+I hope that you find this useful.
+
