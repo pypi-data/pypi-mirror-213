@@ -1,0 +1,84 @@
+Metadata-Version: 2.1
+Name: stadiamaps
+Version: 1.0.1
+Summary: Stadia Maps Geospatial APIs
+Home-page: https://github.com/stadiamaps/stadiamaps-api-py
+Author: Stadia Maps Support
+Author-email: support@stadiamaps.com
+Keywords: OpenAPI,OpenAPI-Generator,Stadia Maps Geospatial APIs
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+Requires-Dist: urllib3 (>=1.25.3)
+Requires-Dist: python-dateutil
+Requires-Dist: pydantic (<2,>=1.10.5)
+Requires-Dist: aenum
+
+
+# Stadia Maps Python API Client
+
+The Stadia Maps Geospatial APIs provide you with the data you need to build awesome applications.
+
+For more information about the API, please visit [https://docs.stadiamaps.com](https://docs.stadiamaps.com)
+
+## Installation & Usage
+### pip install
+
+```shell
+pip install stadiamaps
+```
+
+### Setuptools
+
+Install via [Setuptools](http://pypi.python.org/pypi/setuptools).
+
+```shell
+python setup.py install --user
+```
+(or `sudo python setup.py install` to install the package for all users)
+
+### Tests
+
+Execute `pytest` to run the tests. These are run automatically via CI.
+
+## Getting Started
+
+Please follow the [installation procedure](#installation--usage) and then run the following:
+
+```python
+import os
+import stadiamaps
+from stadiamaps.rest import ApiException
+from pprint import pprint
+
+# Defining the host is optional and defaults to https://api.stadiamaps.com
+# You can also use our EU endpoint to keep traffic within the EU by setting
+# host to https://api-eu.stadiamaps.com.
+# See configuration.py for a list of all supported configuration parameters.
+configuration = stadiamaps.Configuration()
+
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure API key authorization. This example assumes it is injected via an environment
+# variable, but you can provide it in other ways as well.
+configuration.api_key['ApiKeyAuth'] = os.environ["API_KEY"]
+
+# Enter a context with an instance of the API client
+with stadiamaps.ApiClient(configuration) as api_client:
+    # Create an instance of the API class
+    api_instance = stadiamaps.GeocodingApi(api_client)
+    text = 'Põhja pst 27a' # str | The place name (address, venue name, etc.) to search for.
+
+    try:
+        # Search and geocode quickly based on partial input.
+        api_response = api_instance.autocomplete(text)
+        print("The response of GeocodingApi->autocomplete:
+")
+        pprint(api_response)
+    except ApiException as e:
+        print("Exception when calling GeocodingApi->autocomplete: %s
+" % e)
+```
+    
