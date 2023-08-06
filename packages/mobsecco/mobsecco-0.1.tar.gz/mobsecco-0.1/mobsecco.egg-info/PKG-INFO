@@ -1,0 +1,65 @@
+Metadata-Version: 2.1
+Name: mobsecco
+Version: 0.1
+Summary: Clone Cordova application for fun and bypassing security restrictions for pentesting
+Home-page: https://github.com/Anof-cyber/MobSecco
+Author: Sourav Kalal
+Author-email: kalalsourav20@gmail.com
+License: MIT license
+Keywords: mobsecco,bug bounty,android,pentesting,security
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Information Technology
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Security
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.4
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# MobSecco
+
+<img src="https://i.ibb.co/Ldc788L/carbon.png" alt="MobSecco">
+
+
+This Python script enables the cloning of Cordova-based mobile applications to create a new debug APK using the source code, purely for recreational purposes and to bypass security checks. Additionally, the script verifies the presence of outdated versions of Cordova libraries.
+
+## Prerequisites
+
+- Python 3
+- NodeJS with NPM
+- Java JDK
+- Android SDK + Android Studio
+- Gradle
+- Cordova 
+
+> **Note**:
+> The system environment should contain the necessary requirements. The build process relies heavily on specific versions of Cordova and Gradle. It is not possible to determine the exact version used in the original application. To ensure a successful build process, it is important to use compatible or closely related versions.
+
+
+
+## Installation
+Manual Installation
+
+```bash
+  git clone https://github.com/Anof-cyber/MobSecco
+  cd MobSecco
+  pip install -r requirements.txt
+```
+
+Install with PIP
+```
+pip install mobsecco
+```
+
+
+## Usage
+
+```bash
+mobsecco -f ~/path/to/file.apk
+```
+
+## Reference
+
+[Recreating Cordova Mobile Apps to Bypass Security Implementations](https://medium.com/@Ano_F_/recreating-cordova-mobile-apps-to-bypass-security-implementations-8845ff7bdc58 "Recreating Cordova Mobile Apps to Bypass Security Implementations")

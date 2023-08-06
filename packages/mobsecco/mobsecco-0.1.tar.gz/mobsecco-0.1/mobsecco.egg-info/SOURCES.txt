@@ -1,0 +1,14 @@
+LICENSE
+README.md
+setup.py
+MobSecco/MobSecco.py
+MobSecco/__init__.py
+MobSecco/cli.py
+MobSecco/colors.py
+mobsecco.egg-info/PKG-INFO
+mobsecco.egg-info/SOURCES.txt
+mobsecco.egg-info/dependency_links.txt
+mobsecco.egg-info/entry_points.txt
+mobsecco.egg-info/not-zip-safe
+mobsecco.egg-info/requires.txt
+mobsecco.egg-info/top_level.txt
