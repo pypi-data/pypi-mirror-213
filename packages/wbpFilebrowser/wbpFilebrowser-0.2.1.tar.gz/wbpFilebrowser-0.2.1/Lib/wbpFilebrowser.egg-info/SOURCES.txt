@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+Lib/wbpFilebrowser/__init__.py
+Lib/wbpFilebrowser/dirtreewindow.py
+Lib/wbpFilebrowser.egg-info/PKG-INFO
+Lib/wbpFilebrowser.egg-info/SOURCES.txt
+Lib/wbpFilebrowser.egg-info/dependency_links.txt
+Lib/wbpFilebrowser.egg-info/entry_points.txt
+Lib/wbpFilebrowser.egg-info/requires.txt
+Lib/wbpFilebrowser.egg-info/top_level.txt
