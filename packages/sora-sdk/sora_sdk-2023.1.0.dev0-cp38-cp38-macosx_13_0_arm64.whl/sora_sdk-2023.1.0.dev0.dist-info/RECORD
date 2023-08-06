@@ -1,0 +1,13 @@
+sora_sdk-2023.1.0.dev0.data/purelib/sora_sdk/__init__.py,sha256=Sqs2RtlKV23tZML867y7InTiYgiTFJ0tFJ_y1kDfEhM,889
+sora_sdk-2023.1.0.dev0.data/purelib/sora_sdk/sora_sdk_ext.cpython-38-darwin.so,sha256=5lrQq8KObUyCDzzz1a0iPMN7XNSRdGwhKKZb0DpWL18,19253998
+sora_sdk-2023.1.0.dev0.data/purelib/sora_sdk/model_coeffs/lyra_config.binarypb,sha256=LYiXLpU2ulTe7TfbOAcos8WOq5vKHRc65SMJiwd0zfU,2
+sora_sdk-2023.1.0.dev0.data/purelib/sora_sdk/model_coeffs/lyragan.tflite,sha256=UOeDnNpPMFmaOjTPrdzZyYRJsEnu6IThp0KVeARIrQY,1475160
+sora_sdk-2023.1.0.dev0.data/purelib/sora_sdk/model_coeffs/quantizer.tflite,sha256=hB7gWYlofTLR9haorRQZ_H7aN1mdPAXHz1oNYMz4rFw,329012
+sora_sdk-2023.1.0.dev0.data/purelib/sora_sdk/model_coeffs/soundstream_encoder.tflite,sha256=I32gsWIm-wpo1JVRyBvr9hTkIUKvcnZESDWfaFgeiPE,1779200
+sora_sdk-2023.1.0.dev0.data/purelib/sora_sdk/model_coeffs/test_playback.wav,sha256=ulhKN4sR2enJhzb9jCVv4UU6hO5BOUFtJLB6z_Qk8Ps,44
+sora_sdk-2023.1.0.dev0.dist-info/LICENSE,sha256=DVQuDIgE45qn836wDaWnYhSdxoLXgpRRKH4RuTjpRZQ,10174
+sora_sdk-2023.1.0.dev0.dist-info/METADATA,sha256=7pg175RNMMfrsbREJXTnOPSBg6bkuCKqzj4gPA9VG18,16806
+sora_sdk-2023.1.0.dev0.dist-info/NOTICE.md,sha256=76v9uphRkQjzgnT1TU2U6GTPWyzM8ombwXYHPr4q9PY,31505
+sora_sdk-2023.1.0.dev0.dist-info/WHEEL,sha256=Ly3Etn219k3CPJw_u_O2JJStO3-SwhzjwofZN3Au6Uw,108
+sora_sdk-2023.1.0.dev0.dist-info/top_level.txt,sha256=edTg20cFFAjWfRrB0APD_SXho5Qq24PwLESbyPoCVko,9
+sora_sdk-2023.1.0.dev0.dist-info/RECORD,,
