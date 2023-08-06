@@ -1,0 +1,16 @@
+chemcrow/__init__.py,sha256=8oJkFL4lzSeZAnzO0jAfieVtnNccgeHMiloXioacHcY,108
+chemcrow/utils.py,sha256=UgyVqD4qqDXfWkrSNy19aZGw_VsPw4yVwsBo4RNUfGU,588
+chemcrow/version.py,sha256=Zn1KFblwuFHiDRdRAiRnDBRkbPttWh44jKa5zG2ov0E,22
+chemcrow/agents/__init__.py,sha256=SOjBafbAsJdz8YKAY4HA_MDZ4TOSRflfRvX01JvLDIY,60
+chemcrow/agents/chemcrow.py,sha256=O3xDUgecbDYaMXhDOmsBXWnO6Y-bHazsIsTMzTGLdOc,2312
+chemcrow/agents/prompts.py,sha256=SbpvcTqwssHZn9qXtxEx-ZlJNFykIuwvWXpuMXLElms,2750
+chemcrow/agents/tools.py,sha256=PegmFarx5MdtPEfe129ua8kGub2w1Rg-pq-cucncbvk,996
+chemcrow/tools/__init__.py,sha256=2Kqg0ZDHAfBSptPS-9gHDwTlmfUlj4UU-WPQGVdKHgU,68
+chemcrow/tools/databases.py,sha256=7ClcK_PMEK9ofLjXF3lx7OWba35ahDmLVNKT2HlS4qs,3808
+chemcrow/tools/rdkit.py,sha256=oA8GwzbTPDWd6q4fWBDAU5u7fFpH896QoSSUPC7aR-Y,5940
+chemcrow/tools/search.py,sha256=wDIIq23WI8lWQNtIfI7o0RMU7FgqtK7dUgAPhpHvCTQ,3092
+chemcrow-0.2.0.dist-info/LICENSE,sha256=gHYf_dFQ9--61tgMmMGxreSqB_1OsJHKo7wuwrs3TtM,1073
+chemcrow-0.2.0.dist-info/METADATA,sha256=grksoHmW5RanHybbVlGiOomZtAJD_BRQ1v5sS1d30vs,2349
+chemcrow-0.2.0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+chemcrow-0.2.0.dist-info/top_level.txt,sha256=NNg8jLbxl-Eui4jF5Bez9lC7PgZYlMv1VQE3cUFAw_Y,9
+chemcrow-0.2.0.dist-info/RECORD,,
