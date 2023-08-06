@@ -1,0 +1,16 @@
+LICENSE.txt
+README.md
+setup.py
+Space_Weather_Interface_P/__init__.py
+Space_Weather_Interface_P/main.py
+Space_Weather_Interface_P/makem.py
+Space_Weather_Interface_P/sdo_image_getter.py
+Space_Weather_Interface_P/sdo_movie.py
+Space_Weather_Interface_P/soho_image_getter.py
+Space_Weather_Interface_P/soho_movie.py
+Space_Weather_Interface_P.egg-info/PKG-INFO
+Space_Weather_Interface_P.egg-info/SOURCES.txt
+Space_Weather_Interface_P.egg-info/dependency_links.txt
+Space_Weather_Interface_P.egg-info/entry_points.txt
+Space_Weather_Interface_P.egg-info/requires.txt
+Space_Weather_Interface_P.egg-info/top_level.txt
