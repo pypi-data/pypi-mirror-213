@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "mdx_noop"
+version = "0.0.2"
+authors = [
+	{ name="Fabian Geiselhart", email = "me@f4814n.de" },
+]
+description = "Markdown extension to add \"noop\" formatting directives"
+readme = "README.md"
+license = { file = "LICENSE.txt" }
+requires-python = ">=3.7"
+classifiers = [
+	"Programming Language :: Python",
+	"Intended Audience :: Developers",
+	"License :: OSI Approved :: MIT License",
+	"Operating System :: OS Independent",
+]
+dependencies = [
+	"markdown"
+]
+
+[project.urls]
+"Homepage" = "https://github.com/f4814/mdx_noop"
+"Bug Tracker" = "https://github.com/f4814/mdx_noop/issues"

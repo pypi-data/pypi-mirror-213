@@ -1,0 +1,9 @@
+LICENSE.txt
+README.md
+mdx_noop.py
+pyproject.toml
+mdx_noop.egg-info/PKG-INFO
+mdx_noop.egg-info/SOURCES.txt
+mdx_noop.egg-info/dependency_links.txt
+mdx_noop.egg-info/requires.txt
+mdx_noop.egg-info/top_level.txt
