@@ -1,0 +1,11 @@
+cs.deco>=20230331
+cs.fileutils>=20230421
+cs.lex>=20230401
+cs.logutils>=20230212
+cs.pfx>=20230604
+cs.py.func>=20230331
+cs.resources>=20230503
+cs.threads>=20230331
+icontract
+sqlalchemy>=2.0
+typeguard
