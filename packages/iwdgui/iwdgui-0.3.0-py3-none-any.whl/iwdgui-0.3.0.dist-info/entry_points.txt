@@ -1,0 +1,2 @@
+[console_scripts]
+iwdgui = iwdgui.iwdgui:main

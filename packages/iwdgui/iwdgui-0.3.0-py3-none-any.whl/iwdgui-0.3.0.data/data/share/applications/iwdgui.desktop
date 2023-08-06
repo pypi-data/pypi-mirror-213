@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=Iwdgui
+StartupWMClass=Iwdgui
+Comment=Graphical frontend for the iwd wireless deamon
+GenericName=Iwd frontend
+Exec=/usr/bin/iwdgui
+Icon=iwdgui
+Type=Application
+StartupNotify=true
+Categories=Utility;System;GTK;
