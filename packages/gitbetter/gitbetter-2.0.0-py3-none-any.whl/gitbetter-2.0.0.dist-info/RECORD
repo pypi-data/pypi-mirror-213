@@ -1,0 +1,9 @@
+gitbetter/__init__.py,sha256=MVqWHLviuWQj6scWNUhO0BSpMw1kQFdYLYcVyet2sK8,31
+gitbetter/git.py,sha256=1eLvfUt_Lla2pR_cMksEbpyQmN9vgfqW2bsOWox7XAk,19360
+gitbetter/gitbetter.py,sha256=N22GTuZUIXJE87JkqvIhvDSSu4N-Zy1mTZ65D5hJJdU,17224
+gitbetter/parsers.py,sha256=2Un0Kma-CdF1tzbV44E5dS_xRAgATfNX6eXkYuvEhos,1464
+gitbetter-2.0.0.dist-info/METADATA,sha256=mJvIwKKfr6V1AyrKrsFmpyeGeN0F3sQDb3egQXXG2oI,7057
+gitbetter-2.0.0.dist-info/WHEEL,sha256=9QBuHhg6FNW7lppboF2vKVbCGTVzsFykgRQjjlajrhA,87
+gitbetter-2.0.0.dist-info/entry_points.txt,sha256=gl4X1gzZQLVzY2Ulo7EYEXZFN-X0p86OrTD7nm0soe8,55
+gitbetter-2.0.0.dist-info/licenses/LICENSE.txt,sha256=GA4k0f8zyJsPeXl_v_6h0BQT4BnMtK-NX8QSGL0JbCQ,1086
+gitbetter-2.0.0.dist-info/RECORD,,
