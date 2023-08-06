@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: Space-Weather-Interface-P
+Version: 1.0.12
+Summary: Displays Space Weather Data, and downloads and compiles images of the sun into videos.
+Author: Stefan Randow
+Author-email: mail@example.com
+Keywords: python,video
+License-File: LICENSE.txt
+Requires-Dist: opencv-python
+

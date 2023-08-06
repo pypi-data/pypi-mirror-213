@@ -1,0 +1,13 @@
+Space_Weather_Interface_P/__init__.py,sha256=Z_oyyrqp-5NGySPk_Iq897KBsbpzAhX8L1L83M6Mf4c,31
+Space_Weather_Interface_P/main.py,sha256=bcKO3ySql45t1ZFub7UPdZklgzIca4buPbEZWfgULYg,6713
+Space_Weather_Interface_P/makem.py,sha256=k5p6RXXQzkaTNNZcwQihI3aXGtYRnVt303zmpJtlWTg,535
+Space_Weather_Interface_P/sdo_image_getter.py,sha256=mEoVATd_yrzSAkfDftfRRcU-mOidB6h4ZpIWRFZ3lQ0,1825
+Space_Weather_Interface_P/sdo_movie.py,sha256=V--eNcJpXTw_0IbuZMY8uAv4yQZqo1MU6BlSQhBNHHM,1475
+Space_Weather_Interface_P/soho_image_getter.py,sha256=hE7IilJakBzVmfHLK020IknsTaHKumXlri4tfPjn8nw,1530
+Space_Weather_Interface_P/soho_movie.py,sha256=35AIcmJ6gNN6duWWH4wwQQK167T_qbW_Uc0M7QpIEhk,1480
+Space_Weather_Interface_P-1.0.12.dist-info/LICENSE.txt,sha256=AifqTkB7jY4F6SgNNW5tPKs2ykgOFaIaRXCh0FpZV5E,1105
+Space_Weather_Interface_P-1.0.12.dist-info/METADATA,sha256=ncTOizNS_ty1r1o4Jv76XEyyTqnt2fKipl-Y3P8MHS8,308
+Space_Weather_Interface_P-1.0.12.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+Space_Weather_Interface_P-1.0.12.dist-info/entry_points.txt,sha256=FDVWDum_r9KNQWzw_7IIBBSPxUP2910dZTKJ74JZcvo,69
+Space_Weather_Interface_P-1.0.12.dist-info/top_level.txt,sha256=SvKXv2lSRgsL45MiFeC1szNArm0Bukh-cm24g8L0gbo,26
+Space_Weather_Interface_P-1.0.12.dist-info/RECORD,,

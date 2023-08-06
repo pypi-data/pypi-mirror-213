@@ -1,0 +1,2 @@
+[console_scripts]
+SpaceWeather = Space_Weather_Interface_P.main:main
