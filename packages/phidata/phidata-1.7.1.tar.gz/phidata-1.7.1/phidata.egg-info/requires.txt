@@ -1,0 +1,14 @@
+boto3<1.26.77,>=1.26.76
+botocore<1.29.77,>=1.29.76
+phiterm==1.7.1
+pyarrow
+pydantic
+
+[aws]
+boto3
+
+[dev]
+mypy
+black
+pytest
+types-PyYAML
