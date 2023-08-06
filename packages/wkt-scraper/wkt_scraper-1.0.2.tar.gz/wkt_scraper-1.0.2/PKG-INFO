@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: wkt_scraper
+Version: 1.0.2
+Summary: Parse word information from Wiktionary. Currently only English, Spanish and Turkish are supported.
+Home-page: https://github.com/fatih-akgul/wkt_scraper
+Author: Fatih Akgul
+Author-email: akguls@gmail.com
+License: MIT
+Keywords: wiktionary scraper parser
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Wiktionary Scraper
+Wiktionary Scraper is a basic scraper implementation to get word data from Wiktionary for a given word and language.  
+
+## Installation
+You can install the Wiktionary Scraper from [PyPI](https://pypi.org/project/wkt_scraper/):
+    
+    pip install wkt_scraper
+
+In python code, to look up the word "street" from English to Spanish:
+
+    from scraper import Scraper
+    response = Scraper('en', 'es').scrape('street')
+
+Currently only English, Spanish and Turkish are supported. 
+Supporting more languages will require additional work and testing. 

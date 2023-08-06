@@ -1,0 +1,12 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+scraper/__init__.py
+scraper/language.py
+scraper/scraper.py
+wkt_scraper.egg-info/PKG-INFO
+wkt_scraper.egg-info/SOURCES.txt
+wkt_scraper.egg-info/dependency_links.txt
+wkt_scraper.egg-info/requires.txt
+wkt_scraper.egg-info/top_level.txt
