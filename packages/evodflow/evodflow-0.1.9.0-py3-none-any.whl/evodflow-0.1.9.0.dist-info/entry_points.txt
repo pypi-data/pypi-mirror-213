@@ -1,0 +1,2 @@
+[console_scripts]
+evoflow = evoflow.__main__:main
