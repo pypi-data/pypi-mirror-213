@@ -1,0 +1,12 @@
+README.md
+setup.py
+src/model_tracker_framework/MTFSupporting.py
+src/model_tracker_framework/ModelExperimentBase.py
+src/model_tracker_framework/ModelTracker.py
+src/model_tracker_framework/SupervisedModelExperiment.py
+src/model_tracker_framework/__init__.py
+src/model_tracker_framework.egg-info/PKG-INFO
+src/model_tracker_framework.egg-info/SOURCES.txt
+src/model_tracker_framework.egg-info/dependency_links.txt
+src/model_tracker_framework.egg-info/requires.txt
+src/model_tracker_framework.egg-info/top_level.txt
