@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: aifrenz
+Version: 0.0.1
+Summary: AiFrenz - An open source machine learning library.
+Home-page: https://github.com/aifrenz/aifrenz
+Author: Young-Mook Kang
+Author-email: hi@ymkang.pro
+License: MIT
+Classifier: Development Status :: 1 - Planning
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# AI Frenz
+An open-source machine learning library 

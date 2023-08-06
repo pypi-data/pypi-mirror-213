@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+aifrenz/__init__.py
+aifrenz.egg-info/PKG-INFO
+aifrenz.egg-info/SOURCES.txt
+aifrenz.egg-info/dependency_links.txt
+aifrenz.egg-info/requires.txt
+aifrenz.egg-info/top_level.txt
