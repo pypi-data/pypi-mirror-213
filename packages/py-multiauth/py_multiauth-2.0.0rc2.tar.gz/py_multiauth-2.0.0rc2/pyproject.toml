@@ -1,0 +1,69 @@
+[tool.poetry]
+name = "py-multiauth"
+version = "2.0.0-rc.2"
+description = "Python package to interact with multiple authentication services"
+authors = ["Escape Technologies SAS <ping@escape.tech>"]
+maintainers = [
+    "Antoine Carossio <antoine@escape.tech>",
+    "Swan <swan@escape.tech>"
+]
+license = "MIT"
+packages = [
+    { include = "multiauth" }
+]
+readme = "README.md"
+"homepage" = "https://escape.tech/"
+"repository" = "https://github.com/Escape-Technologies/py-multiauth"
+
+[tool.poetry.urls]
+"Bug Tracker" = "https://github.com/Escape-Technologies/py-multiauth/issues"
+
+[tool.poetry.scripts]
+multiauth = 'multiauth:cli'
+
+[tool.coverage.run]
+omit = [
+    'tests/*',
+    'examples/*',
+]
+
+[tool.pytest.ini_options]
+asyncio_mode = 'strict'
+
+[tool.mypy]
+files = ["multiauth", "tests"]
+
+[tool.poetry.dependencies]
+Authlib = "^1.2.0"
+graphql-core = "^3.2.3"
+pycognito = "^2022.12.0"
+pydash = "^6.0.0"
+PyJWT = "^2.6.0"
+python = ">=3.8,<4.0"
+jsonschema = "^4.17.3"
+urllib3 = "<1.27"
+
+[tool.poetry.dev-dependencies]
+autoflake = "^2.0.1"
+docformatter = "^1.5.1"
+isort = "^5.10.1"
+mypy = "^1.0.1"
+poetryup = "^0.12.7"
+pylint = "^2.15.0"
+pylint-quotes = "^0.2.3"
+pytest = "^7.2.1"
+pytest-asyncio = "^0.20.3"
+pytest-cov = "^4.0.0"
+pytest-mock = "^3.10.0"
+setuptools = "^67.3.2"
+types-boto3 = "^1.0.2"
+types-requests = "^2.28.11.13"
+types-setuptools = "^67.3.0.1"
+unify = "^0.5"
+vulture = "^2.7"
+yapf = "^0.32.0"
+Jinja2 = "^3.1.2"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
