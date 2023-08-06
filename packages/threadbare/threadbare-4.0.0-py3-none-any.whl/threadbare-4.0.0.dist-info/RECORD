@@ -1,0 +1,10 @@
+threadbare/__init__.py,sha256=DdSIDjdAuLBmxHA0pXxYq6VJIZ_N4uTmhRhRZK3n8W8,847
+threadbare/common.py,sha256=bCSUMGlvGf-8RhuMsuMJSHl-wOhlo3PZIZ_ehFNg4mA,3274
+threadbare/execute.py,sha256=8kyxwGrQ2L3ca8H1Zk9YLhK-XlTJPpWQIDeYj-OVkJA,10351
+threadbare/operations.py,sha256=mEsFztivjZVJYpdJsvgWhCCm28J9X91Z6B9OCblcW9E,36754
+threadbare/state.py,sha256=l9SKfZbGEALVR-WExES0yW3Ut7Hf6gZmHFvGyqXswDI,3953
+threadbare-4.0.0.dist-info/LICENCE.txt,sha256=DZak_2itbUtvHzD3E7GNUYSRK6jdOJ-GqncQ2weavLA,34523
+threadbare-4.0.0.dist-info/METADATA,sha256=YKa18X8MQ8dq3sxxsUXjRlJhcPi5chouATcU7NAjaJI,643
+threadbare-4.0.0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+threadbare-4.0.0.dist-info/top_level.txt,sha256=-cF6keAnvzCcZaY50MsGgamVPHoRFiFS0RApNfDPD0k,11
+threadbare-4.0.0.dist-info/RECORD,,
