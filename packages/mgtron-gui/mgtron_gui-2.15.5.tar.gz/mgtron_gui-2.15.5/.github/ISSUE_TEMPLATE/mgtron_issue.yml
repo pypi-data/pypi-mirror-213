@@ -1,0 +1,58 @@
+name: Feature Request
+description: Notes regarding a needed/wanted feature
+title: "[Feature]: "
+labels: ["wanted", "needed"]
+assignees:
+  - djhunter67
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Creating this ticket is immensely helpful. Thank you!
+  - type: textarea
+    id: request
+    attributes:
+      label: What is needed/wanted?
+      description: Also tell us, what do you want to happen?
+      placeholder: Tell us what you want!
+      value: "I'm submitting a ..."
+    validations:
+      required: true
+  - type: dropdown
+    id: version
+    attributes:
+      label: Version
+      description: What version of our software are you running?
+      options:
+        - "<= 2.0.0"
+        - ">= 2.1.0"
+
+    validations:
+      required: true
+  - type: dropdown
+    id: boards
+    attributes:
+      label: How many MGtron's are connected to your system?
+      multiple: true
+      options:
+        - "1"
+        - "2"
+        - "3"
+        - "4 or more"
+  - type: textarea
+    id: logs
+    attributes:
+      label: Relevant log output
+      description: Please copy and paste any relevant log output. This will be automatically formatted into code, so no need for backticks.
+      render: Shell
+  - type: dropdown
+    id: terms
+    attributes:
+      label: In-House Team
+      description: Are you a member of the CellAntenna team?
+      options:
+        - "Yes, I am a member of the CellAntenna team."
+        - "No, I am not a member of the CellAntenna team."
+    validations:
+      required: true
+

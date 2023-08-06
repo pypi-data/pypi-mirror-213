@@ -1,0 +1,420 @@
+{
+   "data": [
+      {
+         "save_name": "amp_init_test_config",
+         "Power": 63,
+         "Bandwidth": 0,
+         "Frequency": 650.0,
+         "Date": "15/06/2022 10:25:56",
+         "id": 243650236713052889
+      },
+      {
+         "save_name": "amp_init_test_config",
+         "Power": 63,
+         "Bandwidth": 0,
+         "Frequency": 850.0,
+         "Date": "15/06/2022 10:25:56",
+         "id": 255693561567044159
+      },
+      {
+         "save_name": "amp_init_test_config",
+         "Power": 63,
+         "Bandwidth": 0,
+         "Frequency": 1960.0,
+         "Date": "15/06/2022 10:25:56",
+         "id": 220157095804513760
+      },
+      {
+         "save_name": "amp_init_test_config",
+         "Power": 63,
+         "Bandwidth": 0,
+         "Frequency": 2140.0,
+         "Date": "15/06/2022 10:25:56",
+         "id": 307247977858613804
+      },
+      {
+         "save_name": "amp_init_test_config",
+         "Power": 63,
+         "Bandwidth": 0,
+         "Frequency": 2350.0,
+         "Date": "15/06/2022 10:25:56",
+         "id": 221257141033347834
+      },
+      {
+         "save_name": "amp_init_test_config",
+         "Power": 63,
+         "Bandwidth": 0,
+         "Frequency": 2650.0,
+         "Date": "15/06/2022 10:25:56",
+         "id": 334346727612773471
+      },
+      {
+         "save_name": "wide band detector test",
+         "Power": 31,
+         "Bandwidth": 0,
+         "Frequency": 650.0,
+         "Date": "15/06/2022 11:35:53",
+         "id": 292515983931650498
+      },
+      {
+         "save_name": "wide band detector test",
+         "Power": 63,
+         "Bandwidth": 0,
+         "Frequency": 850.0,
+         "Date": "15/06/2022 11:35:53",
+         "id": 288559704136371574
+      },
+      {
+         "save_name": "wide band detector test",
+         "Power": 35,
+         "Bandwidth": 0,
+         "Frequency": 1960.0,
+         "Date": "15/06/2022 11:35:53",
+         "id": 172777754589125205
+      },
+      {
+         "save_name": "wide band detector test",
+         "Power": 43,
+         "Bandwidth": 0,
+         "Frequency": 2350.0,
+         "Date": "15/06/2022 11:35:53",
+         "id": 118135276359386198
+      },
+      {
+         "save_name": "wide band detector test",
+         "Power": 40,
+         "Bandwidth": 0,
+         "Frequency": 2650.0,
+         "Date": "15/06/2022 11:35:53",
+         "id": 582414105800211327
+      },
+      {
+         "save_name": "wide band detector test",
+         "Power": 0,
+         "Bandwidth": 0,
+         "Frequency": 50.0,
+         "Date": "15/06/2022 11:35:53",
+         "id": 130762585400050366
+      },
+      {
+         "save_name": "random assortment",
+         "Power": 3,
+         "Bandwidth": 33,
+         "Frequency": 650.0,
+         "Date": "17/06/2022 13:34:12",
+         "id": 240966951921603902
+      },
+      {
+         "save_name": "random assortment",
+         "Power": 3,
+         "Bandwidth": 33,
+         "Frequency": 756.6539916992188,
+         "Date": "17/06/2022 13:34:12",
+         "id": 169486652056843023
+      },
+      {
+         "save_name": "random assortment",
+         "Power": 3,
+         "Bandwidth": 19,
+         "Frequency": 863.3079833984375,
+         "Date": "17/06/2022 13:34:12",
+         "id": 838119804787481728
+      },
+      {
+         "save_name": "random assortment",
+         "Power": 3,
+         "Bandwidth": 33,
+         "Frequency": 969.9619750976562,
+         "Date": "17/06/2022 13:34:12",
+         "id": 792542770535360342
+      },
+      {
+         "save_name": "random assortment",
+         "Power": 3,
+         "Bandwidth": 33,
+         "Frequency": 1076.615966796875,
+         "Date": "17/06/2022 13:34:12",
+         "id": 104042023908183860
+      },
+      {
+         "save_name": "random assortment",
+         "Power": 3,
+         "Bandwidth": 33,
+         "Frequency": 1183.27001953125,
+         "Date": "17/06/2022 13:34:12",
+         "id": 106155563176838980
+      },
+      {
+         "save_name": "random assortment",
+         "Power": 3,
+         "Bandwidth": 33,
+         "Frequency": 1289.924072265625,
+         "Date": "17/06/2022 13:34:12",
+         "id": 339764830161696201
+      },
+      {
+         "save_name": "random assortment",
+         "Power": 3,
+         "Bandwidth": 33,
+         "Frequency": 1396.578125,
+         "Date": "17/06/2022 13:34:12",
+         "id": 183847003874977669
+      },
+      {
+         "save_name": "test_config",
+         "Power": 30,
+         "Bandwidth": 10,
+         "Frequency": 5600.0,
+         "Date": "29/11/2022 09:33:19",
+         "id": 235770581275280943
+      },
+      {
+         "save_name": "test_config",
+         "Power": 32,
+         "Bandwidth": 10,
+         "Frequency": 5650.0,
+         "Date": "29/11/2022 09:33:19",
+         "id": 201918989263596899
+      },
+      {
+         "save_name": "test_config",
+         "Power": 34,
+         "Bandwidth": 10,
+         "Frequency": 5800.0,
+         "Date": "29/11/2022 09:33:19",
+         "id": 201765183480373363
+      },
+      {
+         "save_name": "test_config",
+         "Power": 36,
+         "Bandwidth": 10,
+         "Frequency": 5850.0,
+         "Date": "29/11/2022 09:33:19",
+         "id": 915948822314826536
+      },
+      {
+         "save_name": "test_config",
+         "Power": 36,
+         "Bandwidth": 10,
+         "Frequency": 6000.0,
+         "Date": "29/11/2022 09:33:19",
+         "id": 301611033831697224
+      },
+      {
+         "save_name": "test_config",
+         "Power": 38,
+         "Bandwidth": 10,
+         "Frequency": 6250.0,
+         "Date": "29/11/2022 09:33:19",
+         "id": 271998392362345001
+      },
+      {
+         "save_name": "test_config",
+         "Power": 28,
+         "Bandwidth": 10,
+         "Frequency": 6300.0,
+         "Date": "29/11/2022 09:33:19",
+         "id": 132973384165530163
+      },
+      {
+         "save_name": "test_config",
+         "Power": 17,
+         "Bandwidth": 10,
+         "Frequency": 6359.5400390625,
+         "Date": "29/11/2022 09:33:19",
+         "id": 138409479735809247
+      },
+      {
+         "save_name": "test save 0",
+         "Power": 0,
+         "Bandwidth": 0,
+         "Frequency": 650.0,
+         "Date": "07/04/2023 08:57:30",
+         "id": 172972849539009127
+      },
+      {
+         "save_name": "test save 0",
+         "Power": 0,
+         "Bandwidth": 0,
+         "Frequency": 1300.0,
+         "Date": "07/04/2023 08:57:30",
+         "id": 974497426606813272
+      },
+      {
+         "save_name": "test save 0",
+         "Power": 0,
+         "Bandwidth": 0,
+         "Frequency": 1950.0,
+         "Date": "07/04/2023 08:57:30",
+         "id": 288506257247480469
+      },
+      {
+         "save_name": "test save 0",
+         "Power": 0,
+         "Bandwidth": 0,
+         "Frequency": 2600.0,
+         "Date": "07/04/2023 08:57:30",
+         "id": 249031834642968892
+      },
+      {
+         "save_name": "test save 0",
+         "Power": 0,
+         "Bandwidth": 0,
+         "Frequency": 3250.0,
+         "Date": "07/04/2023 08:57:30",
+         "id": 122398269389982591
+      },
+      {
+         "save_name": "test save 0",
+         "Power": 0,
+         "Bandwidth": 0,
+         "Frequency": 3900.0,
+         "Date": "07/04/2023 08:57:30",
+         "id": 145281748471892916
+      },
+      {
+         "save_name": "test save 0",
+         "Power": 0,
+         "Bandwidth": 0,
+         "Frequency": 4550.0,
+         "Date": "07/04/2023 08:57:30",
+         "id": 113938612464808461
+      },
+      {
+         "save_name": "test save 0",
+         "Power": 0,
+         "Bandwidth": 0,
+         "Frequency": 5200.0,
+         "Date": "07/04/2023 08:57:30",
+         "id": 290918404976062633
+      },
+      {
+         "save_name": "test save 1",
+         "Power": 0,
+         "Bandwidth": 0,
+         "Frequency": 650.0,
+         "Date": "07/04/2023 09:28:24",
+         "id": 199421114873089989
+      },
+      {
+         "save_name": "test save 1",
+         "Power": 0,
+         "Bandwidth": 0,
+         "Frequency": 1300.0,
+         "Date": "07/04/2023 09:28:24",
+         "id": 247033176600282935
+      },
+      {
+         "save_name": "test save 1",
+         "Power": 0,
+         "Bandwidth": 0,
+         "Frequency": 1950.0,
+         "Date": "07/04/2023 09:28:24",
+         "id": 722015993343262537
+      },
+      {
+         "save_name": "test save 1",
+         "Power": 0,
+         "Bandwidth": 0,
+         "Frequency": 2600.0,
+         "Date": "07/04/2023 09:28:24",
+         "id": 712197924718341818
+      },
+      {
+         "save_name": "test save 1",
+         "Power": 0,
+         "Bandwidth": 0,
+         "Frequency": 3250.0,
+         "Date": "07/04/2023 09:28:24",
+         "id": 141135495176208795
+      },
+      {
+         "save_name": "test save 1",
+         "Power": 0,
+         "Bandwidth": 0,
+         "Frequency": 3900.0,
+         "Date": "07/04/2023 09:28:24",
+         "id": 269153981475476953
+      },
+      {
+         "save_name": "test save 1",
+         "Power": 0,
+         "Bandwidth": 0,
+         "Frequency": 4550.0,
+         "Date": "07/04/2023 09:28:24",
+         "id": 129379087900950517
+      },
+      {
+         "save_name": "test save 1",
+         "Power": 0,
+         "Bandwidth": 0,
+         "Frequency": 5200.0,
+         "Date": "07/04/2023 09:28:24",
+         "id": 972921501906273003
+      },
+      {
+         "save_name": "test save 2",
+         "Power": 0,
+         "Bandwidth": 0,
+         "Frequency": 650.0,
+         "Date": "07/04/2023 09:29:17",
+         "id": 264409798950146728
+      },
+      {
+         "save_name": "test save 2",
+         "Power": 0,
+         "Bandwidth": 0,
+         "Frequency": 1300.0,
+         "Date": "07/04/2023 09:29:17",
+         "id": 989693599028291352
+      },
+      {
+         "save_name": "test save 2",
+         "Power": 0,
+         "Bandwidth": 0,
+         "Frequency": 1950.0,
+         "Date": "07/04/2023 09:29:17",
+         "id": 634504149042887242
+      },
+      {
+         "save_name": "test save 2",
+         "Power": 0,
+         "Bandwidth": 0,
+         "Frequency": 2600.0,
+         "Date": "07/04/2023 09:29:17",
+         "id": 226808435019856290
+      },
+      {
+         "save_name": "test save 2",
+         "Power": 0,
+         "Bandwidth": 0,
+         "Frequency": 3250.0,
+         "Date": "07/04/2023 09:29:17",
+         "id": 238307855467488221
+      },
+      {
+         "save_name": "test save 2",
+         "Power": 0,
+         "Bandwidth": 0,
+         "Frequency": 3900.0,
+         "Date": "07/04/2023 09:29:17",
+         "id": 869360836644817327
+      },
+      {
+         "save_name": "test save 2",
+         "Power": 0,
+         "Bandwidth": 0,
+         "Frequency": 4550.0,
+         "Date": "07/04/2023 09:29:17",
+         "id": 908217839564212642
+      },
+      {
+         "save_name": "test save 2",
+         "Power": 0,
+         "Bandwidth": 0,
+         "Frequency": 5200.0,
+         "Date": "07/04/2023 09:29:17",
+         "id": 199678240087464342
+      }
+   ]
+}

@@ -1,0 +1,20 @@
+---
+name: "Test the project w/ pytest"
+on:
+    push
+
+jobs:
+    Pytesting:
+        runs-on: self-hosted
+        steps:
+          - uses: actions/checkout@v2
+          - uses: actions/setup-python@v2
+            with:
+              python-version: '3.11.3' # Define your project python version
+          - id: run-tests
+            uses: dima-engineer/pytest-reporter@v2.1.0
+            with:
+               async-tests: false
+                  
+
+           

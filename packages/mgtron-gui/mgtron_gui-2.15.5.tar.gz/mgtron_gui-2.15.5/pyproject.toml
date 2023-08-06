@@ -1,0 +1,21 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "mgtron_gui"
+version = "2.15.5"
+authors = [
+  { name="Christerpher Hunter", email="chunter@cellantenna.com" },
+]
+description = "Package for MGTron GUI, a user interface for signal generation"
+readme = "README.md"
+requires-python = ">=3.10"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: Other/Proprietary License",
+    "Operating System :: POSIX :: Linux",
+]
+
+[project.urls]
+"Source" = "https://github.com/cellantenna/mg_tron"

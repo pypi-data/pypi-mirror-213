@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.0
+Terminal=false
+Icon=/home/${USER}/Documents/mg_tron/src/assets/mgtron.svg
+Type=Application
+Categories=Office;
+Exec=/home/${USER}/Documents/mg_tron/venv/bin/python /home/${user}/Documents/mg_tron/main.py
+Name=MGTron
+GenericName=Signal Generator
+StartupNotify=true
