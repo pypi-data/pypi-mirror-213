@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "edumud"
+version = "0.0.6"
+authors = [
+  { name="Paul J.M. van Kan", email="p.j.m.vankan@tudelft.nl" },
+]
+description = "Educational MUDNET software in Python"
+readme = "README.rst"
+
+requires-python = ">=3.10"
+classifiers = [
+    "Programming Language :: Python :: 3",
+	"License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)",
+	"Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://bitbucket.org/deltares/edumud/"
+
+
