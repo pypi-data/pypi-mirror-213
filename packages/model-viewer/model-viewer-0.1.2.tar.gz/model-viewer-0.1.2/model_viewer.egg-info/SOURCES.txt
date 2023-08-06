@@ -1,0 +1,13 @@
+MANIFEST.in
+README.md
+setup.py
+ModelViewer/__init__.py
+ModelViewer/_comm_api.py
+ModelViewer/_demodata.py
+ModelViewer/_plot_temporal_viewer.py
+ModelViewer/build/temporalViewer.js
+model_viewer.egg-info/PKG-INFO
+model_viewer.egg-info/SOURCES.txt
+model_viewer.egg-info/dependency_links.txt
+model_viewer.egg-info/requires.txt
+model_viewer.egg-info/top_level.txt

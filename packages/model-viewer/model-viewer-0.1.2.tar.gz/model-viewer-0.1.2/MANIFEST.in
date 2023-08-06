@@ -1,0 +1,2 @@
+include ModelViewer/build/temporalViewer.js
+include ModelViewer/data/taxi_full_metadata_and_scatterplot_coordinates.csv
