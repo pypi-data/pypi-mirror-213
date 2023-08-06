@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+Lib/wbpWidgetinspector/__init__.py
+Lib/wbpWidgetinspector.egg-info/PKG-INFO
+Lib/wbpWidgetinspector.egg-info/SOURCES.txt
+Lib/wbpWidgetinspector.egg-info/dependency_links.txt
+Lib/wbpWidgetinspector.egg-info/entry_points.txt
+Lib/wbpWidgetinspector.egg-info/requires.txt
+Lib/wbpWidgetinspector.egg-info/top_level.txt

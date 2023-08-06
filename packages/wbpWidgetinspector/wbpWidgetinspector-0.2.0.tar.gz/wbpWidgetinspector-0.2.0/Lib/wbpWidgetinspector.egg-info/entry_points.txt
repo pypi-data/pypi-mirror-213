@@ -1,0 +1,2 @@
+[wbbase.plugin]
+widgetinspector = wbpWidgetinspector

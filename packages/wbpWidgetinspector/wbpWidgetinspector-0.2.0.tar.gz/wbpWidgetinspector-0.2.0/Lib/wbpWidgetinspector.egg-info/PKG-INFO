@@ -1,0 +1,49 @@
+Metadata-Version: 2.1
+Name: wbpWidgetinspector
+Version: 0.2.0
+Summary: Itegrate Widgetinspector in Workbench applications.
+Home-page: https://gitlab.com/workbench2/workbench-plugins/wbpwidgetinspector
+Author: Andreas Eigendorf
+License: MIT
+Project-URL: Source, https://gitlab.com/workbench2/workbench-plugins/wbpwidgetinspector
+Project-URL: Documentation, https://workbench2.gitlab.io/workbench-plugins/wbpwidgetinspector/
+Project-URL: Tracker, https://gitlab.com/workbench2/workbench-plugins/wbpwidgetinspector/-/issues
+Keywords: workbench,wxPython,GUI
+Platform: WIN32
+Platform: WIN64
+Platform: OSX
+Platform: POSIX
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: MacOS
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: POSIX
+Classifier: Environment :: MacOS X :: Cocoa
+Classifier: Environment :: Win32 (MS Windows)
+Classifier: Environment :: X11 Applications :: GTK
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: User Interfaces
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# wbpWidgetinspector
+
+Widgetinspector plugin for Workbench applications. This plugin allows you to 
+launch the wx Widgetinspector from within your running application.
+
+## Installation
+
+```shell
+pip install wbpWidgetinspector
+```
+
+## Documentation
+
+For details read the [Documentation](https://workbench2.gitlab.io/workbench-plugins/wbpwidgetinspector/).
