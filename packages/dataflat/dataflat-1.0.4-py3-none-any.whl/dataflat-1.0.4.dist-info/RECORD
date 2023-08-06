@@ -1,0 +1,15 @@
+dataflat/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dataflat/commons.py,sha256=dsRSHClz4yDuJeBaAjf5bkLl6KorZ4-sr_lbTr4h-xg,958
+dataflat/exceptions.py,sha256=MvaGdgsXEiEqvoAlzQPHR30kYjuIPCux2x4mFd-W7aE,1030
+dataflat/flattener_handler.py,sha256=KfyHDdk-iy8RZTpkfOjTkOGM9ktu0E1eC6Cssf9l83c,1566
+dataflat/dictionary/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dataflat/dictionary/flattener.py,sha256=37ZowGfbjTp4mzFIZel5ac29w8mF3p0_Mlz5K2GRv0M,11851
+dataflat/pandas_df/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dataflat/pandas_df/flattener.py,sha256=lh7jkPLcmUM8M7Hq_YLcnO1yzDXmsMVP_kXLpa7D9Gs,4238
+dataflat/spark_df/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dataflat/spark_df/flattener.py,sha256=OwF_FNiaKW9a1vZ4OnZvzBU5ytTvswjdNhYMUu2kaYU,9108
+dataflat-1.0.4.dist-info/LICENSE,sha256=-b9AQaAwlfCxlqoyHq8GWzHNelRbdCmrFcnCpztWkQk,11340
+dataflat-1.0.4.dist-info/METADATA,sha256=mE5DcF_iqxFRZG50JLacoJnoHSFs4du3KVvZKL2xsek,2153
+dataflat-1.0.4.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+dataflat-1.0.4.dist-info/top_level.txt,sha256=fNdLUHlZOj9ZT9iA0yQZXeraIjreptz-WbcaYXSmxek,9
+dataflat-1.0.4.dist-info/RECORD,,
