@@ -1,0 +1,4 @@
+docker>=6.0.1
+boto3>=1.26.143
+colorama>=0.4.6
+flask>=2.2.5
