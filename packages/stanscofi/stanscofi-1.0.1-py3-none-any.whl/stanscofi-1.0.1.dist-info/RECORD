@@ -1,0 +1,11 @@
+stanscofi/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+stanscofi/datasets.py,sha256=cqTM5b1BuMDwMWEc1GOxBtDBL2JE7kukfyHFA2osFCw,25010
+stanscofi/models.py,sha256=a2OI-tDQuPUQbUHUxQ4V7f41pTTNM7chwjVvJNRPZgk,10847
+stanscofi/preprocessing.py,sha256=hEuJJCFrJTZusYuLdrZfeN2lQU8b4GxF4vqAokCtWXk,15943
+stanscofi/training_testing.py,sha256=RNl-3EkKdp70WH9qjoGzxx76X5tJ_BlI46OhquZ1c2E,19144
+stanscofi/utils.py,sha256=Suz-kJL2SUmy-JQDVDYx422UybWglx4njOCZgvFjBW4,19709
+stanscofi/validation.py,sha256=EWdbKpF2Yrb4peCB41x2WO-V4JMPYLamO1HgTuIVkXU,10162
+stanscofi-1.0.1.dist-info/METADATA,sha256=JdOBM1sqW4oa_kV2aKc1_Lp4BQMGKynDCFr9RAytu2w,5641
+stanscofi-1.0.1.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+stanscofi-1.0.1.dist-info/top_level.txt,sha256=MvqJdIctoP38vl_ojMPI-3dJ4MJKc1lOBIDk8Nxj_H8,10
+stanscofi-1.0.1.dist-info/RECORD,,
