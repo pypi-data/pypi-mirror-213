@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+src/manylabels/__init__.py
+src/manylabels/_manylabels.py
+src/manylabels/py.typed
+src/manylabels.egg-info/PKG-INFO
+src/manylabels.egg-info/SOURCES.txt
+src/manylabels.egg-info/dependency_links.txt
+src/manylabels.egg-info/top_level.txt
+test/test_manylabels.py
