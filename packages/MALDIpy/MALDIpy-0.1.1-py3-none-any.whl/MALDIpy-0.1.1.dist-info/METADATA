@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: MALDIpy
+Version: 0.1.1
+Summary: MALDI-MS data analysis at the single-cell level
+Home-page: https://github.com/TheHumphreysLab
+Author: Haikuo Li; Dian Li; Qiao Xuanyuan; Benjamin Humphreys
+Author-email: haikuolibio@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+Updates in MALDIpy v0.1.1; compared to v0.0.2:
+
+(1) New function: MALDIpy.projection.umap_projection_subset
+
+(2) New function: MALDIpy.featureplot, which includes four subfunctions (plot1feature,plot1feature_subset,twofeatureplot,twofeatureplot_subset)
+
