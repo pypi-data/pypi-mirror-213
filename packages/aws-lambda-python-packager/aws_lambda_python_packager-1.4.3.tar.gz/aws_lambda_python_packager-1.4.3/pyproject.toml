@@ -1,0 +1,198 @@
+[tool.poetry]
+name = "aws-lambda-python-packager"
+version = "1.4.3"
+description = "Description"
+authors = ["Daniel Sullivan <mumblepins@users.noreply.github.com>"]
+license = "LGPL-3.0-or-later"
+repository = "https://github.com/mumblepins/aws-lambda-python-packager/"
+documentation = "https://mumblepins.github.io/aws-lambda-python-packager/"
+readme = "README.md"
+packages = [{ include = "aws_lambda_python_packager", from = "src" }]
+
+[tool.poetry.scripts]
+lambda-packager = "aws_lambda_python_packager.__main__:main"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+requests = "*"
+python-certifi-win32 = { version = "*", markers = "platform_system == 'Windows'" }
+fsspec = ">=2020.0, != 2022.10.0"
+appdirs = "*"
+aiohttp = "*"
+toml = ">=0.10"
+click = ">=7"
+click-option-group = "*"
+click-log = "*"
+wheel = "*"
+
+[tool.poetry.group.dev.dependencies]
+# region pre-commit hooks and linting
+pylint = "*"
+pytest = "*"
+coverage = { extras = ["toml"], version = "*" }
+Sphinx = "*"
+sphinx-immaterial = "*"
+pytest-cov = "*"
+gitchangelog = { version = ">=3.0" }
+pylint-pytest = "*"
+pytest-xdist = "*"
+pytest-rerunfailures = "*"
+pytest-randomly = "*"
+myst-parser = "*"
+bump2version = "*"
+pystache = "*"
+toml = "*"
+# endregion
+importlib-resources = { version = ">=5.7.1", python = "<3.9" }
+sphinx-click = ">=4.3.0"
+setuptools = "*"
+
+[tool.poetry.extras]
+
+[build-system]
+requires = ["poetry-core>=1.2.0"]
+build-backend = "poetry.core.masonry.api"
+
+# region pytest
+[tool.pytest.ini_options]
+log_cli = true
+log_cli_level = "DEBUG"
+log_cli_format = "%(asctime)s [%(levelname)8s] %(message)s (%(filename)s:%(lineno)s)"
+log_cli_date_format = "%Y-%m-%d %H:%M:%S"
+
+# endregion
+# region ISort
+[tool.isort]
+profile = "black"
+skip_gitignore = true
+line_length = 88
+indent = '    '
+multi_line_output = 3
+skip = 'env'
+include_trailing_comma = true
+combine_as_imports = true
+force_grid_wrap = 0
+known_first_party = ["template_python_library"]
+
+# endregion
+# region Black
+[tool.black]
+line-length = 100
+include = '\.pyi?$'
+target-version = ['py38', 'py39', 'py310']
+exclude = '''
+/(
+      \.eggs         # exclude a few common directories in the
+    | \.git          # root of the project
+  | \.hg
+  | \.mypy_cache
+  | \.tox
+  | \.venv
+  | \.cache
+  | env
+  | venv
+  | \.aws-sam
+  | _build
+  | buck-out
+  | build
+  | dist
+)/
+'''
+# endregion
+# region Mypy
+[tool.mypy]
+files = 'src/**/*.py'
+exclude = '''(?x)(
+      \.eggs
+    | \.git          # root of the project
+  | \.hg
+  | \.mypy_cache
+  | \.tox
+  | \.venv
+  | \.cache
+  | env
+  | venv
+  | \.aws-sam
+  | _build
+  | buck-out
+  | build
+  | dist
+  | package_
+)'''
+overrides = [
+    { module = 'awacs.*', ignore_missing_imports = true },
+    { module = 'inflection.*', ignore_missing_imports = true },
+    { module = 'troposphere.*', ignore_missing_imports = true },
+    { module = 'pystache.*', ignore_missing_imports = true },
+    { module = 'wheel.cli.*', ignore_missing_imports = true },
+    { module = 'fsspec.*', ignore_missing_imports = true },
+    { module = 'appdirs.*', ignore_missing_imports = true },
+    { module = 'packaging.*', ignore_missing_imports = true },
+    { module = 'click_log.*', ignore_missing_imports = true },
+]
+
+# endregion
+# region DepChecker
+[tool.dep_checker]
+allowed_unused = ["python_certifi_win32", 'aiohttp']
+
+[tool.dep_checker.name_mapping]
+gitpython = "git"
+python-dateutil = "dateutil"
+python-dotenv = "dotenv"
+setuptools = "pkg_resources"
+
+# endregion
+#region Coverage
+[tool.coverage.run]
+branch = true
+concurrency = ["multiprocessing", "thread"]
+parallel = true
+
+[tool.coverage.report]
+show_missing = true
+skip_empty = true
+precision = 1
+fail_under = 75
+exclude_lines = [
+    "pragma: no cover",
+    "def __repr__",
+    "if self.debug:",
+    "if settings.DEBUG",
+    "if .*? == .DEBUG.",
+    "if .*? == .INFO.",
+    "raise AssertionError",
+    "raise NotImplementedError",
+    "if 0:",
+    "if __name__ == .__main__.:"
+]
+
+# endregion
+# region Bandit
+[tool.bandit]
+skips = []
+
+# endregion
+# region Tox
+[tool.tox]
+# language=ini
+legacy_tox_ini = """
+
+[tox]
+env_list =
+    py310
+minversion = 4.3.5
+
+[testenv]
+description = run the tests with pytest
+package = wheel
+wheel_build_env = .pkg
+deps =
+    pytest>=6
+commands =
+    pytest {tty:--color=yes} {posargs}
+"""
+
+# endregion
+[tool.nitpick]
+style = ["https://raw.githubusercontent.com/mumblepins/style-repo/main/nitpick-python.toml"]
