@@ -1,0 +1,13 @@
+.gitignore
+LICENSE
+README.md
+pyproject.toml
+.github/dependabot.yml
+.github/workflows/lint.yaml
+.github/workflows/release.yaml
+myl_discovery.egg-info/PKG-INFO
+myl_discovery.egg-info/SOURCES.txt
+myl_discovery.egg-info/dependency_links.txt
+myl_discovery.egg-info/requires.txt
+myl_discovery.egg-info/top_level.txt
+myldiscovery/__init__.py
