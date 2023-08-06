@@ -1,0 +1,163 @@
+from __future__ import annotations
+
+from dataclasses import asdict, dataclass, field
+from typing import ClassVar, Literal, Optional, Sequence, Tuple, Type, TypeVar, Union, cast
+
+from cognite.client.utils._auxiliary import rename_and_exclude_keys
+from cognite.client.utils._identifier import DataModelingIdentifier, DataModelingIdentifierSequence
+from cognite.client.utils._text import convert_all_keys_recursive, convert_all_keys_to_snake_case
+
+
+@dataclass
+class DataModelingId:
+    _type: ClassVar[str] = field(init=False)
+    space: str
+    external_id: str
+
+    def as_tuple(self) -> tuple[str, str]:
+        return self.space, self.external_id
+
+    def dump(self, camel_case: bool = False, include_type: bool = True) -> dict[str, str]:
+        output = asdict(self)
+        if include_type:
+            output["type"] = self._type
+        return convert_all_keys_recursive(output, camel_case)
+
+    @classmethod
+    def load(cls: Type[T_DataModelingId], data: dict | T_DataModelingId | tuple[str, str]) -> T_DataModelingId:
+        if isinstance(data, cls):
+            return data
+        elif isinstance(data, tuple):
+            return cls(*data)
+        elif isinstance(data, dict):
+            return cls(**convert_all_keys_to_snake_case(rename_and_exclude_keys(data, exclude={"type"})))
+        raise ValueError(f"Cannot load {data} into {cls}, invalid type={type(data)}")
+
+
+T_DataModelingId = TypeVar("T_DataModelingId", bound=DataModelingId)
+
+
+@dataclass
+class VersionedDataModelingId:
+    _type: ClassVar[str] = field(init=False)
+    space: str
+    external_id: str
+    version: Optional[str] = None
+
+    def as_tuple(self) -> tuple[str, str, Optional[str]]:
+        return self.space, self.external_id, self.version
+
+    def dump(self, camel_case: bool = False, include_type: bool = True) -> dict[str, str]:
+        output = asdict(self)
+        if include_type:
+            output["type"] = self._type
+        return convert_all_keys_recursive(output, camel_case)
+
+    @classmethod
+    def load(
+        cls: Type[T_Versioned_DataModeling_Id], data: dict | T_Versioned_DataModeling_Id | tuple[str, str, str]
+    ) -> T_Versioned_DataModeling_Id:
+        if isinstance(data, cls):
+            return data
+        elif isinstance(data, tuple):
+            return cls(*data)
+        elif isinstance(data, dict):
+            return cls(**convert_all_keys_to_snake_case(rename_and_exclude_keys(data, exclude={"type"})))
+        raise ValueError(f"Cannot load {data} into {cls}, invalid type={type(data)}")
+
+
+T_Versioned_DataModeling_Id = TypeVar("T_Versioned_DataModeling_Id", bound=VersionedDataModelingId)
+
+
+@dataclass
+class InstanceId:
+    _instance_type: ClassVar[Literal["node", "edge"]]
+    space: str
+    external_id: str
+
+    def dump(self, camel_case: bool = False, include_instance_type: bool = True) -> dict[str, str]:
+        output = asdict(self)
+        if include_instance_type:
+            output["instanceType" if camel_case else "instance_type"] = self._instance_type
+        return convert_all_keys_recursive(output, camel_case)
+
+    @classmethod
+    def load(cls: Type[T_InstanceId], data: dict) -> T_InstanceId:
+        return cls(
+            **convert_all_keys_to_snake_case(rename_and_exclude_keys(data, exclude={"instanceType", "instance_type"}))
+        )
+
+    @property
+    def instance_type(self) -> Literal["node", "edge"]:
+        return self._instance_type
+
+
+T_InstanceId = TypeVar("T_InstanceId", bound=InstanceId)
+
+
+@dataclass
+class NodeId(InstanceId):
+    _instance_type = "node"  # type: ignore[assignment]
+
+
+@dataclass
+class EdgeId(InstanceId):
+    _instance_type = "edge"  # type: ignore[assignment]
+
+
+@dataclass
+class ContainerId(DataModelingId):
+    _type = "container"
+
+    def as_source_identifier(self) -> str:
+        return self.external_id
+
+
+@dataclass
+class ViewId(VersionedDataModelingId):
+    _type = "view"
+
+    def as_source_identifier(self) -> str:
+        return f"{self.external_id}/{self.version}"
+
+
+@dataclass
+class DataModelId(VersionedDataModelingId):
+    _type = "datamodel"
+
+
+ContainerIdentifier = Union[ContainerId, Tuple[str, str]]
+ViewIdentifier = Union[ViewId, Tuple[str, str], Tuple[str, str, str]]
+DataModelIdentifier = Union[DataModelId, Tuple[str, str], Tuple[str, str, str]]
+NodeIdentifier = Union[NodeId, Tuple[str, str, str]]
+EdgeIdentifier = Union[EdgeId, Tuple[str, str, str]]
+
+Id = Union[Tuple[str, str], Tuple[str, str, str], DataModelingId, VersionedDataModelingId, NodeId, EdgeId, InstanceId]
+
+
+def _load_identifier(
+    ids: Id | Sequence[Id], id_type: Literal["container", "view", "data_model", "node", "edge", "all"]
+) -> DataModelingIdentifierSequence:
+    is_sequence = isinstance(ids, Sequence) and not (isinstance(ids, tuple) and isinstance(ids[0], str))
+    is_view_or_data_model = id_type in {"view", "data_model"}
+    is_instance = id_type in {"node", "edge", "all"}
+    id_list = cast(Sequence, ids)
+    if not is_sequence:
+        id_list = [ids]
+
+    def create_args(id_: Id) -> tuple[str, str, Optional[str], Optional[Literal["node", "edge"]]]:
+        if isinstance(id_, tuple) and is_instance:
+            if len(id_) == 3:
+                return id_[1], id_[2], None, id_type  # type: ignore[misc, return-value]
+            raise ValueError("Instance given as a tuple must have three elements, (instanceType, space, externalId)")
+        if isinstance(id_, tuple):
+            return id_[0], id_[1], id_[2] if len(id_) == 3 else None, None  # type: ignore[misc]
+        instance_type = None
+        if is_instance:
+            instance_type = "node" if isinstance(id_, NodeId) else "edge"
+        return id_.space, id_.external_id, getattr(id_, "version", None), instance_type  # type: ignore[return-value]
+
+    return DataModelingIdentifierSequence(
+        identifiers=[DataModelingIdentifier(*create_args(id_)) for id_ in id_list],
+        is_singleton=not is_sequence and not is_view_or_data_model,
+    )
