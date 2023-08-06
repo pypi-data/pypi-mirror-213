@@ -1,0 +1,8 @@
+setup.py
+dartastlatools.egg-info/PKG-INFO
+dartastlatools.egg-info/SOURCES.txt
+dartastlatools.egg-info/dependency_links.txt
+dartastlatools.egg-info/requires.txt
+dartastlatools.egg-info/top_level.txt
+extras/__init__.py
+extras/add.py

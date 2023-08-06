@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: dartastlatools
+Version: 0.0.4
+Summary: Tools for DART and ASTLA project
+Author: Wieke Harmsen
+Author-email: <wiekeharmsen@gmail.com>
+Keywords: python,child speech
+
+Several scripts about preprocessing and postprocessing (child) speech ASR input and output.
