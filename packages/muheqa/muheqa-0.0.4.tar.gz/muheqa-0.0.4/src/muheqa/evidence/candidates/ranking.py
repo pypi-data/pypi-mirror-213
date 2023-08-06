@@ -1,0 +1,27 @@
+import logging
+import requests
+import muheqa.summary.texts.verbalizer as vb
+import muheqa.summary.resources.wikipedia as kg_wikipedia
+import muheqa.summary.resources.dbpedia as kg_dbpedia
+import muheqa.summary.resources.d4c as db_d4c
+
+class Ranking:
+	
+	def __init__(self):
+		self.logger = logging.getLogger('muheqa')
+		self.logger.debug("initializing Ranking ...")
+
+	def get_top_evidences(self,evidences,n=1):
+		self.logger.debug("top " + str(n) + " evidences from " + str(len(evidences)) + " evidences")
+		self.logger.debug(str(evidences))
+		if (len(evidences)<2):
+			return evidences
+		evidences.sort(key=lambda x: x.get('score'),reverse=True)
+		best_score = evidences[0]['score']
+		top_evidences = []
+		for index, c in enumerate(evidences):
+			if (n < 0) or (index < n) or (c['score'] == best_score):
+				#if (c['score'] > 0):
+				top_evidences.append(c)
+		return top_evidences
+		

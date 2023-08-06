@@ -1,0 +1,4 @@
+sparqlwrapper
+flair
+unidecode
+sentence-transformers
