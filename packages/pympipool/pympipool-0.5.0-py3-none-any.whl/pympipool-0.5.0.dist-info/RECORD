@@ -1,0 +1,16 @@
+pympipool/__init__.py,sha256=qk485M1d2X4KSJghFAIuVous1mZoImbe5GLaeRIegi0,264
+pympipool/_version.py,sha256=YiXSWEU6DIjTtRV1pfMmRERjfnT7Hj1zxdJa6bEqGKk,18489
+pympipool/executor/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pympipool/executor/mpiexec.py,sha256=2hrrPja-Ai5KwOENbwtZDv-8yIE8bWPeKCKm71oeCig,2353
+pympipool/executor/mpipool.py,sha256=nb6UviYoAvtXarDQMZWUEOAEZwFFaY1AUl4pxufLU4E,1312
+pympipool/share/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pympipool/share/communication.py,sha256=ke-C0XLvrdPCesDktenLrk8SewVJgezwPgcJgDWukWc,1817
+pympipool/share/executor.py,sha256=sGJZ3EF5bWHzSvKdqknOB4S6E70s409K-RForw_5Q8I,4512
+pympipool/share/parallel.py,sha256=JsG9hy2uXHgPyAL-yz89T4ARVrDmt_QdzDhPdzTh0uI,5100
+pympipool/share/pool.py,sha256=leyrF-NEER-6qm4nXSNGM61AwsnXkZpngENIG9u9a_0,7318
+pympipool/share/serial.py,sha256=Xb0ruf-YoX-edU0ini6My12rhsHvGddUBqlO55Z1VRo,5919
+pympipool-0.5.0.dist-info/LICENSE,sha256=NkrhccIxPXCbbvp_upyVojt7DNTwZIco3z9wsYpSLqU,1511
+pympipool-0.5.0.dist-info/METADATA,sha256=X6y2-xZvhFZa_n72v27QjztJJLBXlhbLAh3C-4b-BjU,10418
+pympipool-0.5.0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+pympipool-0.5.0.dist-info/top_level.txt,sha256=nX5nd16SsitnpJsbwWpabSbGtVgmE4NtLIvx8fW3aoA,10
+pympipool-0.5.0.dist-info/RECORD,,
