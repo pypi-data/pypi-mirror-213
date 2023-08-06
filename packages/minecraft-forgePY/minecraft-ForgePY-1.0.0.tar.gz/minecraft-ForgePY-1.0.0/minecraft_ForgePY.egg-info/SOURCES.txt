@@ -1,0 +1,9 @@
+README.md
+setup.py
+forgepy/__init__.py
+forgepy/forgepy.py
+minecraft_ForgePY.egg-info/PKG-INFO
+minecraft_ForgePY.egg-info/SOURCES.txt
+minecraft_ForgePY.egg-info/dependency_links.txt
+minecraft_ForgePY.egg-info/requires.txt
+minecraft_ForgePY.egg-info/top_level.txt
