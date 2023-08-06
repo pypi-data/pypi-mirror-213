@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: six-python
+Version: 0.0.1
+Summary: Six offical python ackage
+Home-page: UNKNOWN
+Author: 6thSense
+Author-email: tech@withsix.co
+License: UNKNOWN
+Description: Six is a package that helps you automate pen testing and also helps you protect your API from cybersecurity threats. Visit https://withsix.co to get started.
+Keywords: python,cybersecurity,pentesting,encryption,rate limiting,xss prevention
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
