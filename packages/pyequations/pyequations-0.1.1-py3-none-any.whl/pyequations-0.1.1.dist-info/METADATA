@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: pyequations
+Version: 0.1.1
+Summary: A Python package for solving a bunch of equations with a bunch of unknowns.
+Author: Michael Bryant
+Author-email: mbryant2025@gmail.com
+Requires-Python: >=3.10,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: sympy (>=1.12,<2.0)
