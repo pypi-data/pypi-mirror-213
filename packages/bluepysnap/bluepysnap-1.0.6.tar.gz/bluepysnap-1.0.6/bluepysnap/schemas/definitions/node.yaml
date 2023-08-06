@@ -1,0 +1,124 @@
+title: Node file definitions
+description: schema definitions that apply to all node files
+$node_file_defs:
+  nodes_file_root:
+    required:
+      - nodes
+    properties:
+      nodes:
+        minProperties: 1
+        type: object
+        patternProperties:
+          # "" is used as a wild card for population name
+          "":
+            type: object
+            required:
+              - "0"
+              - node_type_id
+            properties:
+              node_type_id:
+                $ref: "#/$typedefs/int64"
+              "0":
+                type: object
+                properties:
+                  dynamics_params:
+                    type: object
+                    required:
+                      - threshold_current
+                      - holding_current
+                    properties:
+                      AIS_scaler:
+                        $ref: "#/$typedefs/float32"
+                      holding_current:
+                        $ref: "#/$typedefs/float32"
+                      input_resistance:
+                        $ref: "#/$typedefs/float32"
+                      threshold_current:
+                        $ref: "#/$typedefs/float32"
+
+                  x:
+                    $ref: "#/$typedefs/float32"
+                  y:
+                    $ref: "#/$typedefs/float32"
+                  z:
+                    $ref: "#/$typedefs/float32"
+
+                  orientation_w:
+                    $ref: "#/$typedefs/float32"
+                  orientation_x:
+                    $ref: "#/$typedefs/float32"
+                  orientation_y:
+                    $ref: "#/$typedefs/float32"
+                  orientation_z:
+                    $ref: "#/$typedefs/float32"
+
+                  rotation_angle_xaxis:
+                    $ref: "#/$typedefs/float32"
+                  rotation_angle_yaxis:
+                    $ref: "#/$typedefs/float32"
+                  rotation_angle_zaxis:
+                    $ref: "#/$typedefs/float32"
+
+                  etype:
+                    $ref: "#/$typedefs/utf8"
+                  exc-mini_frequency:
+                    $ref: "#/$typedefs/float32"
+                  hemisphere:
+                    $ref: "#/$typedefs/utf8"
+                  inh-mini_frequency:
+                    $ref: "#/$typedefs/float32"
+                  layer:
+                    $ref: "#/$typedefs/utf8"
+                  me_combo:
+                    $ref: "#/$typedefs/utf8"
+                  model_template:
+                    $ref: "#/$typedefs/utf8"
+                  model_type:
+                    $ref: "#/$typedefs/utf8"
+                  morphology:
+                    $ref: "#/$typedefs/utf8"
+                  morph_class:
+                    $ref: "#/$typedefs/utf8"
+                  mtype:
+                    $ref: "#/$typedefs/utf8"
+                  radius:
+                    $ref: "#/$typedefs/float32"
+                  region:
+                    $ref: "#/$typedefs/utf8"
+                  section_id:
+                    $ref: "#/$typedefs/uint32"
+                  segment_id:
+                    $ref: "#/$typedefs/uint32"
+                  synapse_class:
+                    $ref: "#/$typedefs/utf8"
+                  type:
+                    $ref: "#/$typedefs/int32"
+
+                  "@library":
+                    type: object
+                    patternProperties:
+                      # "" is used as a wild card for field name
+                      "":
+                        $ref: "#/$typedefs/utf8"
+
+                  # model_type: vasculature
+                  start_x:
+                    $ref: "#/$typedefs/float32"
+                  start_y:
+                    $ref: "#/$typedefs/float32"
+                  start_z:
+                    $ref: "#/$typedefs/float32"
+                  end_x:
+                    $ref: "#/$typedefs/float32"
+                  end_y:
+                    $ref: "#/$typedefs/float32"
+                  end_z:
+                    $ref: "#/$typedefs/float32"
+                  start_diameter:
+                    $ref: "#/$typedefs/float32"
+                  end_diameter:
+                    $ref: "#/$typedefs/float32"
+                  start_node:
+                    $ref: "#/$typedefs/uint64"
+                  end_node:
+                    $ref: "#/$typedefs/uint64"
