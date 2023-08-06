@@ -1,0 +1,12 @@
+.navbar-nav > li {
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+  
+.navbar-nav > li > a {
+  padding-top: auto;
+  padding-bottom: auto;
+  padding-left: 1rem;
+}
