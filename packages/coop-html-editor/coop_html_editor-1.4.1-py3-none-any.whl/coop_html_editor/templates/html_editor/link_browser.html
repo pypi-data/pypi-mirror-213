@@ -1,0 +1,122 @@
+<!DOCTYPE html>{% load i18n %}
+<html lang="{{ LANGUAGE_CODE }}">
+<head>
+	{% load i18n static coop_navigation coop_utils coop_bar_tags coop_bs coop_edition thumbnail %}
+    <meta charset="UTF-8">
+    <title>{% trans "Select link" %}</title>
+	<script src="{% static 'js/jquery-1.7.2.js' %}" type="text/javascript"></script>
+	<link rel="stylesheet" href="{% versioned_static_file 'bs/css/bootstrap.css' %}" type="text/css" />
+    <script>
+        // Helper function to get parameters from the query string.
+        function getUrlParam( paramName ) {
+            var reParam = new RegExp( '(?:[\?&]|&)' + paramName + '=([^&]+)', 'i' );
+            var match = window.location.search.match( reParam );
+
+            return ( match && match.length > 1 ) ? match[1] : null;
+        }
+        // Simulate user action of selecting a file to be returned to CKEditor.
+        function returnFileUrl() {
+
+            var funcNum = getUrlParam('CKEditorFuncNum');
+            var fileUrl = document.getElementById('link-display').getAttribute("class");
+            window.opener.CKEDITOR.tools.callFunction(funcNum, fileUrl);
+            window.close();
+        }
+    </script>
+    <style>
+      body {
+        font-family: Arial, Sans-Serif, sans-serif;
+        font-size: 14px;
+      }
+
+      .container {
+        margin: 0 auto;
+        width: 80%;
+      }
+
+      .btn {
+        padding: 4px;
+        border-radius: 4px;
+        margin: 0 5px;
+        border: solid 1px #cccccc;
+      }
+      .row {
+        padding: 20px 0;
+      }
+
+      .btn-primary {
+        color: #fff;
+        background: #5b9acf;
+      }
+	.selected
+	{
+		border: 2px solid orange;
+	}
+
+	.disable:focus
+	{
+		text-decoration: none;
+		outline: none;
+	}
+	.pagination
+	{
+		margin-left: -15px;
+	}
+		.div-selected
+		{
+			height: 250px;
+			background-color: #cacaca;
+			margin: 10px 10px;
+			border-radius: 5px;
+			text-align: center;
+		}
+		.lien
+		{
+			color: #333;
+		}
+		h1, h2, span
+		{
+			font-size: large !important;
+		}
+    </style>
+</head>
+<body>
+    <div class="container">
+      <div class="row">
+        <h3>{% trans "List of links" %}</h3>
+          {% for link in page_links %}
+			  <a class="disable lien" href>
+
+				  <div class="col-md-3 div-selected">
+				  	<h1>{{ link.title|safe }}</h1>
+					<p id="link-display" class="{{ link.get_absolute_url }}">{{ link.get_absolute_url }}</p>
+					  {% if link.logo %}
+					  	{% thumbnail link.logo '100x100' crop='center' as im %}
+					  		<img class="img-responsive" src="{{ im.url }}" style="border-radius: 5px; display: inline;"/>
+					  	{% endthumbnail %}
+					  {% endif %}
+				  	<p>{{ link.publication_date }}</p>
+				  </div>
+
+			  </a>
+		  {% endfor %}
+	  </div>
+		<script type="text/javascript">
+			$('a.disable').click(function(){
+				return false;
+			});
+
+			$('div.div-selected').on("click", function() {
+				$('div.div-selected').removeClass('selected').removeAttr('id');
+				$(this).addClass('selected').attr('id', 'div-selected');
+			})
+		</script>
+	{% include "coop_cms/_pagination.html" with page=links pages=pages %}
+  	</div>
+      <div class="row">
+        <button class="btn" onclick="window.close()">{% trans "Close" %}</button>
+        <button class="btn btn-primary" onclick="returnFileUrl()">{% trans "Select link" %}</button>
+      </div>
+    </div>
+</body>
+</html>
