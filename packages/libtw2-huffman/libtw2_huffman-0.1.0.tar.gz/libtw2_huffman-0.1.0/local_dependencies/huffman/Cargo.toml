@@ -1,0 +1,15 @@
+[package]
+name = "huffman"
+version = "0.0.1"
+authors = ["heinrich5991 <heinrich5991@gmail.com>"]
+license = "MIT/Apache-2.0"
+
+[dependencies]
+arrayvec = "0.5.2"
+buffer = "0.1.9"
+common = { path = "../common" }
+itertools = ">=0.3.0,<0.5.0"
+
+[[bench]]
+name = "compression"
+harness = false
