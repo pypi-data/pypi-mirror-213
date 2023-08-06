@@ -1,0 +1,13 @@
+.DS_Store
+*.pyc
+.tox
+miepython/__pycache__
+dist
+docs/.ipynb_checkpoints
+docs/_build
+docs/api
+miepython.egg-info
+.vscode/*
+venv/
+04_plot.png
+tests/.ipynb_checkpoints

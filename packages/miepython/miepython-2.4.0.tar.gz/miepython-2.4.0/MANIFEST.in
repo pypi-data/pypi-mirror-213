@@ -1,0 +1,9 @@
+include CHANGELOG.rst
+include CITATION.cff
+include LICENSE.txt
+include README.rst
+include miepython/examples/*.py
+include miepython/data/*.txt
+
+exclude tests/*
+

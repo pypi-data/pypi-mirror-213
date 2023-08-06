@@ -1,0 +1,27 @@
+Releasing a new version
+
+# run sanity checks
+  tox
+  make rcheck
+
+# update the version in miepython/__init__.py
+  git commit miepython/__init__.py -m 'update version' 
+  git push
+
+# update CHANGELOG.rst
+  git shortlog v2.1.0..HEAD
+  git commit CHANGELOG.rst -m 'update recent changes'
+  git push
+
+# create release tag on github
+  git tag v2.1.0
+  git push origin v2.1.0
+
+# upload source to pypi
+  python3 -m build
+  python3 -m twine upload dist/*
+
+# update/check releases
+  open https://github.com/scottprahl/miepython
+  open https://pypi.org/project/miepython/
+  open https://miepython.readthedocs.io
