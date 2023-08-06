@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: Andreani-QA-Parameters
+Version: 0.0.2
+Summary: Parametros + Encriptor para ejecución de casos automatizados
+Home-page: UNKNOWN
+Author: AndreaniTesting
+Author-email: user_appglatest@andreani.com
+License: MIT
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+Requires-Dist: cryptography
+
+UNKNOWN
+
