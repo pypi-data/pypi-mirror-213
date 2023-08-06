@@ -1,0 +1,19 @@
+torch
+
+[ctransformers]
+ctransformers@ git+https://git.mysymphony.jp.net/nana/ctransformers.git@efe0b31b65311f2ce4555bbd41616eddfb90d04d
+
+[embeddings]
+faiss-cpu
+
+[llama_cpp]
+llama-cpp-python
+
+[rwkv_cpp]
+tokenizers
+
+[sentence_transformers]
+sentence_transformers
+
+[transformers]
+transformers
