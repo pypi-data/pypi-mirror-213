@@ -1,0 +1,8 @@
+README.md
+ncdu-compare
+setup.py
+ncdu_compare.egg-info/PKG-INFO
+ncdu_compare.egg-info/SOURCES.txt
+ncdu_compare.egg-info/dependency_links.txt
+ncdu_compare.egg-info/not-zip-safe
+ncdu_compare.egg-info/top_level.txt
