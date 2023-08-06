@@ -1,0 +1,5 @@
+requests
+PyYAML
+netaddr
+requests_toolbelt
+wheel
