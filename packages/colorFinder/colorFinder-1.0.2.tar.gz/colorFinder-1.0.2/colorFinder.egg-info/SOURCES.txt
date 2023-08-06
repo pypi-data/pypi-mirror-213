@@ -1,0 +1,10 @@
+LICENSE.txt
+README.md
+setup.py
+colorFinder/__init__.py
+colorFinder/colorFinder.py
+colorFinder.egg-info/PKG-INFO
+colorFinder.egg-info/SOURCES.txt
+colorFinder.egg-info/dependency_links.txt
+colorFinder.egg-info/requires.txt
+colorFinder.egg-info/top_level.txt
