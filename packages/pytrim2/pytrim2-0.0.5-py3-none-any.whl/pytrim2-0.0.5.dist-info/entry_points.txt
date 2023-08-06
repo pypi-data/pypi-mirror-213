@@ -1,0 +1,2 @@
+[nbdev]
+pytrim2 = pytrim2._modidx:d
