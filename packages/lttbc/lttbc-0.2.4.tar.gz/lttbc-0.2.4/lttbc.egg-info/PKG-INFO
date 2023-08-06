@@ -1,0 +1,69 @@
+Metadata-Version: 2.1
+Name: lttbc
+Version: 0.2.4
+Summary: Largest triangle three buckets module for Python written in C
+Author-email: European XFEL GmbH <dennis.goeries@xfel.eu>
+Maintainer-email: Dennis Goeries <dennis.goeries@xfel.eu>
+License: MIT
+Project-URL: git, https://github.com/dgoeries/lttbc
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Topic :: Scientific/Engineering :: Information Analysis
+Classifier: Topic :: Scientific/Engineering :: Physics
+Classifier: Topic :: Scientific/Engineering :: Visualization
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
+# lttbc: Largest-Triangle-Three-Buckets (Python using a c implementation)
+This is a low-level implementation of the `Largest-Triangle-Three-Buckets` (LTTB) downsampling algorithm written in Python.
+
+The code has been translated from the work of Sveinn Steinarsson (https://github.com/sveinn-steinarsson/flot-downsample/).
+
+Known features and requirements:
+
+- The algorithm requires monotonically increasing x data (finite)
+- The algorithm requires finite y data (otherwise problems might occur)
+- x and y data have to be of same length (of course)
+- The algorithm returns arrays of **dtype** **double**
+
+## How to use on the field
+
+The module ``lttbc`` differs in the standard input from other largest triangle three buckets implementations.
+The ``downsample`` function takes an input for ``x`` and ``y`` in addition to the ``threshold``:
+
+    import lttbc
+    import numpy as np
+
+    ARRAY_SIZE = 10000
+    THRESHOLD = 1000
+
+    x = np.arange(ARRAY_SIZE, dtype=np.int32)
+    y = np.random.randint(1000, size=ARRAY_SIZE, dtype=np.uint64)
+
+    nx, ny = lttbc.downsample(x, y, THRESHOLD)
+
+    assert len(nx) == THRESHOLD
+    assert len(ny) == THRESHOLD
+    assert nx.dtype == np.double
+    assert ny.dtype == np.double
+
+    # List data or a mixture is accepted as well ...
+    x = list(range(ARRAY_SIZE))
+    y = [np.random.uniform(0, 1000) for _ in range(ARRAY_SIZE)]
+
+    assert isinstance(x, list)
+    assert isinstance(y, list)
+
+    nx, ny = lttbc.downsample(x, y, THRESHOLD)
+
+    assert len(nx) == THRESHOLD
+    assert len(ny) == THRESHOLD
+    assert nx.dtype == np.double
+    assert ny.dtype == np.double

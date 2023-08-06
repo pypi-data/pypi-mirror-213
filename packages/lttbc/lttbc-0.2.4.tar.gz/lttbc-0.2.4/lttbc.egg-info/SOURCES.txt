@@ -1,0 +1,17 @@
+.gitignore
+LICENSE.txt
+README.md
+README.txt
+lttbc.c
+pyproject.toml
+requirements.txt
+setup.py
+test_downsample.py
+tox.ini
+.github/workflows/python-app.yml
+images/demo.png
+lttbc.egg-info/PKG-INFO
+lttbc.egg-info/SOURCES.txt
+lttbc.egg-info/dependency_links.txt
+lttbc.egg-info/requires.txt
+lttbc.egg-info/top_level.txt
