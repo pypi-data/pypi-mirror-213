@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+midjourney/midjourney_unofficial_api.egg-info/PKG-INFO
+midjourney/midjourney_unofficial_api.egg-info/SOURCES.txt
+midjourney/midjourney_unofficial_api.egg-info/dependency_links.txt
+midjourney/midjourney_unofficial_api.egg-info/requires.txt
+midjourney/midjourney_unofficial_api.egg-info/top_level.txt

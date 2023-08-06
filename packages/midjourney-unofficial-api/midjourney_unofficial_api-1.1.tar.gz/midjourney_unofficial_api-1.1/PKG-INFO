@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: midjourney_unofficial_api
+Version: 1.1
+Home-page: https://github.com/va1ngvarr/midjourney_api
+Author: Igor Vasilev
+Author-email: va1ngvarr@gmail.com
+License: MIT
+Keywords: midjourney neuronetwork ml ml_python
+License-File: LICENSE
