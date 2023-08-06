@@ -1,0 +1,15 @@
+<link rel="stylesheet" href="{{ toastuiedtior_css }}">
+<script src="{{ toastuiedtior_js }}"></script>
+<div id="viewer">
+    {{ value|json_script:"toast-value-data" }}
+</div>
+
+<script>
+    let content = JSON.parse(document.querySelector("#toast-value-data").textContent)
+    const viewer = toastui.Editor.factory({
+        el: document.querySelector('#viewer'),
+        viewer: true,
+        initialValue: content
+    });
+</script>
+
