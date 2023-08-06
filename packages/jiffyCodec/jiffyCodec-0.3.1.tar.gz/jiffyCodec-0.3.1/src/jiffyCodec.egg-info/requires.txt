@@ -1,0 +1,5 @@
+zstandard
+numpy
+
+[:platform_machine == "x86_64" and sys_platform != "darwin"]
+pyfastpfor
