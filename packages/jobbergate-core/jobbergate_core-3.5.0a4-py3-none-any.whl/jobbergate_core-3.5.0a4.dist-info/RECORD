@@ -1,0 +1,10 @@
+jobbergate_core/__init__.py,sha256=ygDDKegX4eJ4PilzXs4-K_I_XO0b72aLgjoF5L2VPS0,329
+jobbergate_core/auth/__init__.py,sha256=HADj-te9KptCgc4aLe9Wn72ts4R-0sKxd5EJLkfJ4vE,366
+jobbergate_core/auth/exceptions.py,sha256=bhvk94gnEYaTetSC_oKi0mc_1LYjaJvBR9Q71lZxYVw,279
+jobbergate_core/auth/handler.py,sha256=dxWql3Ft2aAlFDLpMJZPndfFFzxO8duEV1GVpAXV_Sk,11813
+jobbergate_core/auth/token.py,sha256=Ep_QPuYw-q91M3eOkVfRrOsj5cr2fMuoC3b5wce7LlI,5534
+jobbergate_core/version.py,sha256=OV1EIx6kH1EkbYwdGUNuCQTshsENkSxB-b0sXXoGYWY,133
+jobbergate_core-3.5.0a4.dist-info/LICENSE,sha256=ug6McRWkvn7BOvMA-jb_AKeble4xqZGZwPWOmKJNUJY,1082
+jobbergate_core-3.5.0a4.dist-info/METADATA,sha256=p39uMhiQeT80tVi-rk_mPLdBYjnDfnOMbtXds76W-70,1733
+jobbergate_core-3.5.0a4.dist-info/WHEEL,sha256=7Z8_27uaHI_UZAc4Uox4PpBhQ9Y5_modZXWMxtUi4NU,88
+jobbergate_core-3.5.0a4.dist-info/RECORD,,
