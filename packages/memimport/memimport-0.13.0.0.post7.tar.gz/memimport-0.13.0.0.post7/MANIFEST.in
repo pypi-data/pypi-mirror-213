@@ -1,0 +1,7 @@
+include source/*.c
+include source/*.h
+include *.py
+include *LICENSE*
+include *README*
+include *TODO*
+include VERSION
