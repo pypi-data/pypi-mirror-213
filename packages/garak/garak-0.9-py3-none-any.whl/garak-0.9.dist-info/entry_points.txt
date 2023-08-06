@@ -1,0 +1,3 @@
+[console_scripts]
+realpython=garak.__main__:main
+
