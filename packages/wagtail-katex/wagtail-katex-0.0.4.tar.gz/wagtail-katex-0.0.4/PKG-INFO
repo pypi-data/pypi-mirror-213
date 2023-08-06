@@ -1,0 +1,61 @@
+Metadata-Version: 2.1
+Name: wagtail-katex
+Version: 0.0.4
+Summary: KaTex for Wagtail CMS Draftail editor
+Home-page: https://github.com/ongchi/wagtail-katex
+Author: ongchi
+Author-email: ongchi@users.noreply.github.com
+Project-URL: Bug Tracker, https://github.com/ongchi/wagtail-katex/issues
+Classifier: Environment :: Web Environment
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Framework :: Django
+Classifier: Framework :: Wagtail
+Classifier: Framework :: Wagtail :: 3
+Classifier: Framework :: Wagtail :: 4
+Classifier: Framework :: Wagtail :: 5
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# wagtail-katex ![Wagtail 2.x](https://img.shields.io/badge/wagtail-2.x-g.svg) ![Wagtail 3.x](https://img.shields.io/badge/wagtail-3.x-g.svg)
+
+> This package is modified from [gatensj/wagtail-draftail-katex](https://github.com/gatensj/wagtail-draftail-katex)
+
+**[KaTex](https://katex.org)** support for Wagtail RichTextField.
+
+![Inserting an Images](https://raw.githubusercontent.com/gatensj/wagtail-draftail-katex/master/images/screenshot06152018-1.png)
+
+![Image Editor](https://raw.githubusercontent.com/gatensj/wagtail-draftail-katex/master/images/screenshot06152018-2.png)
+
+## Quick Start
+
+Install the package with
+
+```sh
+pip install wagtail-katex
+```
+
+Add `wagtailkatex` to your `settings.py` in the `INSTALLED_APPS` section:
+
+```python
+INSTALLED_APPS = [
+    ...
+    "wagtailkatex",
+    ...
+]
+```
+
+Add `katex-embed` to `RichTextField` features:
+
+```python
+body = RichTextField(features=[..., "katex-embed"])
+```

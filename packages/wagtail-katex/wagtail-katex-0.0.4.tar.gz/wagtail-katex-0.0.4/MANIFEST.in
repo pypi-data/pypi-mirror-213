@@ -1,0 +1,4 @@
+include LICENSE
+
+recursive-include wagtailkatex/static *
+recursive-include wagtailkatex/templates *
