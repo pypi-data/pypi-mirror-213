@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: alltime-athletics-python
+Version: 1.0.20230612
+Summary: Scrapes and post-processes data from Alltime Athletics (website by Peter Larsson)
+Home-page: https://github.com/thomascamminady/alltime_athletics_python
+Author: Thomas Camminady
+Author-email: 0milieux_member@icloud.com
+Requires-Python: >=3.10,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: html5lib (>=1.1,<2.0)
+Requires-Dist: ipywidgets (>=8.0.6,<9.0.0)
+Requires-Dist: lxml (>=4.9.2,<5.0.0)
+Requires-Dist: pandas (>=2.0.2,<3.0.0)
+Requires-Dist: polars (>=0.18.0,<0.19.0)
+Requires-Dist: pyarrow (>=12.0.0,<13.0.0)
+Requires-Dist: rich (>=13.4.1,<14.0.0)
+Requires-Dist: tabulate (>=0.9.0,<0.10.0)
