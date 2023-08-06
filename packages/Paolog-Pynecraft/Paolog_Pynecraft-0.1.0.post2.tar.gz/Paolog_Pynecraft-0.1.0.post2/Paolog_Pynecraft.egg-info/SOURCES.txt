@@ -1,0 +1,8 @@
+LICENSE.txt
+README.md
+setup.py
+Paolog_Pynecraft/__init__.py
+Paolog_Pynecraft.egg-info/PKG-INFO
+Paolog_Pynecraft.egg-info/SOURCES.txt
+Paolog_Pynecraft.egg-info/dependency_links.txt
+Paolog_Pynecraft.egg-info/top_level.txt
