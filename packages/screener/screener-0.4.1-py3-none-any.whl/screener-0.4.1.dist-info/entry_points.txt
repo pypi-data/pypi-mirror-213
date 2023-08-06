@@ -1,0 +1,3 @@
+[console_scripts]
+screener=screener.__main__:main
+
