@@ -1,0 +1,12 @@
+README.md
+setup.py
+./bkapi_component/__init__.py
+./bkapi_component/open/__init__.py
+./bkapi_component/open/client.py
+./bkapi_component/open/shortcuts.py
+bkapi_component_open.egg-info/PKG-INFO
+bkapi_component_open.egg-info/SOURCES.txt
+bkapi_component_open.egg-info/dependency_links.txt
+bkapi_component_open.egg-info/namespace_packages.txt
+bkapi_component_open.egg-info/requires.txt
+bkapi_component_open.egg-info/top_level.txt
