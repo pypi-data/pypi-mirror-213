@@ -1,0 +1,14 @@
+setuptools==63.2.0
+numpy
+open3d
+cupy
+matplotlib
+numba
+solidpython
+scipy
+lyceanem
+sphinx
+sphinxcontrib-bibtex
+sphinx_rtd_theme
+sphinx_gallery
+importlib_metadata
