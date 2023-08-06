@@ -1,0 +1,2 @@
+[console_scripts]
+hwc = hardyweinbergcalculator.__main__:main
