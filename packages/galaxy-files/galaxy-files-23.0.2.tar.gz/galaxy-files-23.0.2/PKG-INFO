@@ -1,0 +1,69 @@
+Metadata-Version: 2.1
+Name: galaxy-files
+Version: 23.0.2
+Summary: Galaxy file source framework and default plugins
+Home-page: https://github.com/galaxyproject/galaxy
+Author: Galaxy Project and Community
+Author-email: galaxy-committers@lists.galaxyproject.org
+License: AFL
+Keywords: Galaxy
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Academic Free License (AFL)
+Classifier: Natural Language :: English
+Classifier: Operating System :: POSIX
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Topic :: Software Development
+Classifier: Topic :: Software Development :: Code Generators
+Classifier: Topic :: Software Development :: Testing
+Requires-Python: >=3.7
+Description-Content-Type: text/x-rst
+
+
+.. image:: https://badge.fury.io/py/galaxy-files.svg
+   :target: https://pypi.org/project/galaxy-files/
+
+
+
+Overview
+--------
+
+The Galaxy_ file sources framework and default plugins.
+
+* Code: https://github.com/galaxyproject/galaxy
+
+.. _Galaxy: http://galaxyproject.org/
+
+History
+-------
+
+.. to_doc
+
+-------------------
+23.0.2 (2023-06-13)
+-------------------
+
+
+=========
+Bug fixes
+=========
+
+* Fix dropbox import to support newer versions by `@nuwang <https://github.com/nuwang>`_ in `#16239 <https://github.com/galaxyproject/galaxy/pull/16239>`_
+
+-------------------
+23.0.1 (2023-06-08)
+-------------------
+
+No recorded changes since last release
+
+-------------------
+22.1.1 (2022-08-22)
+-------------------
+
+* Initial standalone release of this package.
