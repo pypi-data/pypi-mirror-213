@@ -1,0 +1,52 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "sqscraper"
+version = "0.2.0"
+description = "Web scraper for various stock quote websites."
+readme = "README.md"
+authors = [ { name = "Jacob Lee", email = "Jacob.J.Lee@outlook.com" } ]
+license = { file = "LICENSE" }
+classifiers = [
+    "Development Status :: 1 - Planning",
+    "Intended Audience :: Financial and Insurance Industry",
+    "License :: OSI Approved :: MIT License",
+    "Natural Language :: English",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.6",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Topic :: Software Development"
+]
+requires-python = ">=3.6"
+dependencies = [
+    "beautifulsoup4==4.12.2",
+    "certifi==2023.5.7 ; python_version >= '3.6'",
+    "charset-normalizer==3.1.0 ; python_full_version >= '3.7.0'",
+    "idna==3.4 ; python_version >= '3.5'",
+    "lxml==4.9.2",
+    "numpy==1.24.3",
+    "requests==2.31.0",
+    "soupsieve==2.4.1; python_version >= '3.7'",
+    "urllib3==2.0.3 ; python_version >= '3.7'"
+]
+
+[project.urls]
+homepage = "https://github.com/JacobLee23/SQScraper"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = [
+    "sqscraper",
+    "sqscraper.*"
+]
+exclude = [
+    "sqscraper.tests*"
+]
