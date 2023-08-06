@@ -1,0 +1,4 @@
+/* Extend Sidebar Width */
+.bd-sidebar-primary {
+  flex-basis: 25%;
+}
