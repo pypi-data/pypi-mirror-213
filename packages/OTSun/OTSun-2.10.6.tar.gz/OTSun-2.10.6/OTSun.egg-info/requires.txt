@@ -1,0 +1,4 @@
+numpy
+autologging
+scipy
+pandas
