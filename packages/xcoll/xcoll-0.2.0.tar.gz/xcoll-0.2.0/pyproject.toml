@@ -1,0 +1,34 @@
+[tool.poetry]
+name = "xcoll"
+version = "0.2.0"
+description = "Xsuite collimation package"
+homepage = "https://github.com/xsuite/xcoll"
+repository = "https://github.com/xsuite/xcoll"
+authors = [
+           "Frederik F. Van der Veken <frederik@cern.ch>",
+           "Despina Demetriadou <despina.demetriadou@cern.ch>",
+           "Andrey Abramov <andrey.abramov@cern.ch>",
+           "Giovanni Iadorala <giovanni.iadorala@cern.ch>"
+]
+readme = "README.md"
+license = "Apache 2.0"
+include = [ "LICENSE", "NOTICE" ]
+
+
+[tool.poetry.dependencies]
+python = ">=3.8"
+#numpy
+#pandas
+#scipy
+#xobjects
+#xdeps
+#xpart
+#xtrack
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+
+[build-system]
+# Needed for pip install -e (BTW: need pip version 22)
+requires = ["poetry-core>=1.0.8"]
+build-backend = "poetry.core.masonry.api"
