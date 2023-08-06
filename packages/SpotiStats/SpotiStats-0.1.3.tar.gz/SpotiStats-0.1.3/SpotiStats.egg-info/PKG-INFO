@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: SpotiStats
+Version: 0.1.3
+Author-email: jaypyles <jpylesbusiness@gmail.com>
+License: MIT
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+
+# SpotiStats
+
+A simple command line application used for interacting with the Spotify api. Currently it can search for songs, artists, and tracks on Spotify.
+
+# Todo
+
+- [ ] Reconfigure project to instead being an installable package that is used in a CLI tool
+- [ ] Configure installation for pypi
+- [ ] Add to PATH when installed
