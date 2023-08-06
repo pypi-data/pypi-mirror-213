@@ -1,0 +1,4 @@
+prompt-toolkit>=3.0.38
+robotframework>=5.0
+pygments>=2.14.0
+pyperclip>=1.8.2
