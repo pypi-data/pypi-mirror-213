@@ -1,0 +1,13 @@
+purpleair_data_logger/PurpleAirCSVDataLogger.py,sha256=JAXSmUtfa-gIWFwJ6p1Ez9-LPz4yydEsMROgDKWdqLU,20652
+purpleair_data_logger/PurpleAirCSVDataLoggerConstants.py,sha256=inJhz0OEHKFOC7rsJmzL-3XMSRfFDzujnWfnX5iFvOQ,4138
+purpleair_data_logger/PurpleAirDataLogger.py,sha256=47-ma8N1jw4emIv3la4tJnqG2S-HUgKm65TeDvIGHak,23354
+purpleair_data_logger/PurpleAirPSQLDataLogger.py,sha256=LMO2EGwNs8JL02nnFA_CcPomqMJzSblLuOfWL0GLOE4,23174
+purpleair_data_logger/PurpleAirPSQLQueryStatements.py,sha256=8Z3q-ja4HrcElvWV1TiGj5XlSIydP3k61Z1WzLj1o4M,19714
+purpleair_data_logger/PurpleAirSQLiteDataLogger.py,sha256=29HetW5TlJluD1hcA_PqkgzHQj2Z8CN90AfxBjm60XQ,13706
+purpleair_data_logger/PurpleAirSQLiteQueryStatements.py,sha256=rS5Iz7yqBEF7uhNe03PDJ0QCrgueOEO2MXtLTUlSztY,14086
+purpleair_data_logger/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+purpleair_data_logger-1.2.1.dist-info/LICENSE,sha256=-LeEU_dnbAmFc0mYlvXx8dWxTLRNnYAzIXl0_v_f0II,1070
+purpleair_data_logger-1.2.1.dist-info/METADATA,sha256=V-vH_SKro2isz6KkKaDHN_de4a5hWJ40RGMV3Ts8bb0,17190
+purpleair_data_logger-1.2.1.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+purpleair_data_logger-1.2.1.dist-info/top_level.txt,sha256=4wPsqlZnViXTvrrRcSSsgR4H3rB_h8U1MIJbYxagHHY,22
+purpleair_data_logger-1.2.1.dist-info/RECORD,,
