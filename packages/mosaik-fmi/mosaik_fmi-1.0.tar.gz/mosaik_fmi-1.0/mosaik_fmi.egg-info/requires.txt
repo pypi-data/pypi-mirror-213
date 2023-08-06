@@ -1,0 +1,4 @@
+mosaik-api>=2.0
+fmipp
+mosaik
+pytest

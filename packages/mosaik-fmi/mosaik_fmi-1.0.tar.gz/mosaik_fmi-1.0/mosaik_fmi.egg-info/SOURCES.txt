@@ -1,0 +1,12 @@
+AUTHORS.txt
+LICENSE
+README.rst
+setup.py
+mosaik_fmi/__init__.py
+mosaik_fmi/mosaik_fmi.py
+mosaik_fmi/parse_xml.py
+mosaik_fmi.egg-info/PKG-INFO
+mosaik_fmi.egg-info/SOURCES.txt
+mosaik_fmi.egg-info/dependency_links.txt
+mosaik_fmi.egg-info/requires.txt
+mosaik_fmi.egg-info/top_level.txt
