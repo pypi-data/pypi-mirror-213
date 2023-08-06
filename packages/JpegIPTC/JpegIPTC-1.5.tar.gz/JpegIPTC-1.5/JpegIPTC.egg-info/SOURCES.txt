@@ -1,0 +1,9 @@
+JpegIPTC.py
+LICENSE
+README.md
+setup.cfg
+setup.py
+JpegIPTC.egg-info/PKG-INFO
+JpegIPTC.egg-info/SOURCES.txt
+JpegIPTC.egg-info/dependency_links.txt
+JpegIPTC.egg-info/top_level.txt
