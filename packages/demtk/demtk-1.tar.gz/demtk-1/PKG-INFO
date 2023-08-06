@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: demtk
+Version: 1
+Summary: The Definitive Interface for Image Processing Practitioners
+Home-page: https://github.com/centreborelli/demtk
+Author: Enric Meinhardt-Llopis
+Author-email: enric.meinhardt@ens-paris-saclay.fr
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Operating System :: OS Independent
+Classifier: License :: OSI Approved :: GNU Affero General Public License v3
+Classifier: Topic :: Scientific/Engineering :: Image Processing
+Classifier: Topic :: Scientific/Engineering :: Mathematics
+
+UNKNOWN
+
