@@ -1,0 +1,3 @@
+example_1 = ["from translator import *","init('<language code>')"]
+example_2 = ['from translator import *', '', 'your_message = "Hello world"', '', 'translated_message = TRnslte(your_message,"<language code>")', '', 'print(translated_message)']
+example_3 = ['from translator import *', '', 'filecontent = []', 'with open("<your_file>.txt", "r",encoding="utf-8") as file: ', '    for line in file:', '        line = line.strip()', '        if line:', '            filecontent.append(line)', '', 'with open("<output_file>.txt","w",encoding="utf-8") as file: ', '    for line in filecontent:', '        translated_line = TRnslte(line,"<language_code>")', '        file.write(translated_line + "\")']
