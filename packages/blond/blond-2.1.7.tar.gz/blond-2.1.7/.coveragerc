@@ -1,0 +1,17 @@
+[run]
+branch = True
+
+# a list of packages or directories, the source to measure during execution.
+source = 
+    blond/
+
+# a list of file name patterns, the files to include in measurement or reporting.
+# include = 
+
+# a list of file name patterns, the files to leave out of measurement or reporting.
+omit = 
+    *.cpp
+    *.h
+    *.cu
+    blond/compile.py
+    blond/sanity_check.py
