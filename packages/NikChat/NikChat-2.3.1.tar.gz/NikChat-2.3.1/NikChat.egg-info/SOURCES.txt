@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+NikChat/__init__.py
+NikChat/results.py
+NikChat/training.py
+NikChat.egg-info/PKG-INFO
+NikChat.egg-info/SOURCES.txt
+NikChat.egg-info/dependency_links.txt
+NikChat.egg-info/top_level.txt
