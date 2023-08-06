@@ -1,0 +1,122 @@
+[tool.poetry]
+name = "pydude"
+version = "0.26.0"
+repository = "https://github.com/roniemartinez/dude"
+description = "dude uncomplicated data extraction"
+authors = ["Ronie Martinez <ronmarti18@gmail.com>"]
+license = "AGPL-3.0-or-later"
+readme = "README.md"
+documentation = "https://roniemartinez.github.io/dude/"
+keywords = [
+    "scraping"
+]
+classifiers = [
+    "Development Status :: 2 - Pre-Alpha",
+    "License :: OSI Approved :: GNU Affero General Public License v3 or later (AGPLv3+)",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: Implementation :: CPython",
+]
+packages = [
+    { include = "dude" },
+]
+
+[tool.poetry.urls]
+"Donate" = "https://github.com/sponsors/roniemartinez"
+
+[tool.poetry.scripts]
+dude = "dude:cli"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+braveblock = "^0.5.0"
+playwright = "^1.30.0"
+PyYAML = "^6.0"
+beautifulsoup4 = {version = "^4.11.2", optional = true}
+cssselect = { version = "^1.1.0", optional = true }
+httpx = {version = ">=0.23.3,<0.25.0", optional = true}
+lxml = {version = "^4.9.2", optional = true}
+parsel = {version = "^1.6.0,<1.7.0", optional = true}
+pybrowsers = {version = ">=0.4.1,<0.6.0", optional = true}
+selenium-wire = {version = ">=4.6.2,<6.0.0", optional = true}
+webdriver-manager = { version = "^3.7.0", optional = true }
+
+[tool.poetry.extras]
+bs4 = ["beautifulsoup4", "httpx"]
+lxml = ["lxml", "cssselect", "httpx"]
+parsel = ["parsel", "httpx"]
+selenium = ["selenium-wire", "webdriver-manager", "pybrowsers"]
+
+[tool.poetry.group.dev.dependencies]
+autoflake = "^1.7.8"
+black = "^23.1"
+isort = "^5.11.5"
+mkdocs-material = "^9.0.11"
+mkdocstrings = { version = ">=0.20,<0.23", extras = ["python-legacy"] }
+mypy = ">=0.982,<1.4"
+pyproject-flake8 = "^3.9.2"
+pytest = "^7.2.0"
+pytest-clarity = "^1.0.1"
+pytest-cov = "^4.0.0"
+respx = "^0.20.0"
+tabulate = "^0.9.0"
+types-PyYAML = "^6.0.12"
+
+[tool.isort]
+line_length = 120
+multi_line_output = 3
+force_grid_wrap = 0
+use_parentheses = true
+include_trailing_comma = true
+ensure_newline_before_comments = true
+atomic = true
+
+[tool.black]
+line-length = 120
+target-version = ['py39']
+include = '\.pyi?$'
+extend-exclude = """
+# A regex preceded with ^/ will apply only to files and directories
+# in the root of the project.
+^/setup.py
+"""
+
+[tool.mypy]
+disallow_untyped_defs = true
+ignore_missing_imports = true
+
+[[tool.mypy.overrides]]
+module = [
+    "pkg_resources",
+]
+ignore_missing_imports = true
+
+[tool.flake8]
+max-line-length = 120
+extend-ignore = "E203"
+extend-exclude = """
+setup.py,
+"""
+
+[tool.pytest.ini_options]
+norecursedirs = ["examples"]
+addopts = """\
+    --cov=dude \
+    --cov-report=term-missing \
+    --cov-report=xml \
+    --cov-report=html \
+    -vv \
+    -x \
+    -s \
+"""
+
+[tool.poetry-sort]
+move-optionals-to-bottom = true
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
