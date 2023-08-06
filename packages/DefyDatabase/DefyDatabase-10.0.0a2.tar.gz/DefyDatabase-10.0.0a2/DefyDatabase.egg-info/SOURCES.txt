@@ -1,0 +1,7 @@
+README.md
+defy.py
+setup.py
+DefyDatabase.egg-info/PKG-INFO
+DefyDatabase.egg-info/SOURCES.txt
+DefyDatabase.egg-info/dependency_links.txt
+DefyDatabase.egg-info/top_level.txt

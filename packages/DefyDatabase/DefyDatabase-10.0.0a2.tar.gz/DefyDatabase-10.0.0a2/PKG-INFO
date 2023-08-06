@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: DefyDatabase
+Version: 10.0.0a2
+Summary: Database for personal data based on SQLite
+Author: Defymen
+Author-email: vmuonline@126.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+ [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+Not wrote yet
