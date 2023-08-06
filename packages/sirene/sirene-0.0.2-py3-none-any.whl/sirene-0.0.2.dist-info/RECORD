@@ -1,0 +1,13 @@
+sirene/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sirene/srn.py,sha256=juEtyOIg8rLKiUDFISVw3ZV6mh6DKOySVY3uTtMDj8c,1054
+sirene/MCTI/sexta_edicao/estim_6a_ed_1990-2020_agropecuaria.xlsx,sha256=8LYr4n68bdoA1mwImEEVjQ1KDf2dih1nUTbYHpw-nys,154072
+sirene/MCTI/sexta_edicao/estim_6a_ed_1990-2020_energia.xlsx,sha256=hM7dVyTlk0Shr-ojw97QibBkCGflAFSO6FJWRsJMmbo,106995
+sirene/MCTI/sexta_edicao/estim_6a_ed_1990-2020_ippu.xlsx,sha256=SIk5dwA4JKdyR2gjKD8-3Ow3BSsoqedDJjLbIFlOslE,117053
+sirene/MCTI/sexta_edicao/estim_6a_ed_1990-2020_lulucf.xlsx,sha256=qfwd7EjrtABzLOYBYoM33sJTlc40JrPS7u1GH7qMX5I,45115
+sirene/MCTI/sexta_edicao/estim_6a_ed_1990-2020_residuos.xlsx,sha256=EPP6e6h0FRXw-_6EyYQe6nfwDNQGirMle0fJTOjjNl0,45235
+sirene/MCTI/sexta_edicao/estim_6a_ed_1990-2020_total-brasil-1.xlsx,sha256=LsL_iaHO8NUiyuxpAqW0ubn4Flp2Nmnxzfdi3gomWYk,28706
+sirene-0.0.2.dist-info/LICENSE,sha256=5SRtt_9FQE19m3do659hW1W-W48USLt7NO-FZ3UUvcw,1080
+sirene-0.0.2.dist-info/METADATA,sha256=ziv98rbVWkmh651YcfhJziY8l4ywE1rS6VFlin8_bxU,574
+sirene-0.0.2.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+sirene-0.0.2.dist-info/top_level.txt,sha256=kL0l-9CzCQCF-3neXj7JFLhJJhNCrEsScfs86xVQzwc,7
+sirene-0.0.2.dist-info/RECORD,,

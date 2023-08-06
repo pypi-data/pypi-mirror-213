@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: sirene
+Version: 0.0.2
+Summary: Import data from the 'Sistema de Registro Nacional de Emissões' (SIRENE) from MCTI
+Home-page: https://github.com/fms-1988
+Author: Felipe Morelli Da Silva
+Author-email: fms.morelli@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: xlrd
+
+#Import data from: *Sistema de Registro Nacional de Emissões (SIRENE)*
