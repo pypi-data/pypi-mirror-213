@@ -1,0 +1,13 @@
+wand_client/__init__.py,sha256=ICOxGt7ta-t2F9uXLMXVo-4VDYGM0IEvKPStCf0y8Rk,21
+wand_client/jupyter.py,sha256=XCgjXL3YSwdbC9gIs0r6vqY85ZSTYSlbDJa9HkZwRt8,2773
+wand_client/cli/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+wand_client/cli/config.py,sha256=0Iq1Y0m75mjLPnmOcWJymcyzdSplifHatIW-bjGezqs,1161
+wand_client/cli/formatters.py,sha256=mQ9cxP8Bf7iQ5GToXFmBIdmXPJWv23_pp7Iamm7cCSs,3043
+wand_client/cli/main.py,sha256=NaSf4qmxZvNVBaxrFK2iWwHyc-pXNBSMYzVkrAFlxRs,5512
+wand_client/sdk/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+wand_client/sdk/core.py,sha256=LFopIpSOhZQEG-aoaASKeS_pF83QfiQguk-8GhvwN_E,5795
+wand_ai_client-0.0.8.dist-info/METADATA,sha256=1rCIVZA6LdVsmIWMakDUsJzwZybbSVwRQ6hbdPQkGA4,1412
+wand_ai_client-0.0.8.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+wand_ai_client-0.0.8.dist-info/entry_points.txt,sha256=Ia7OmwdbuDkwfZJ24PfMTOikh8xdqHPqUoXkjzrDyzI,54
+wand_ai_client-0.0.8.dist-info/top_level.txt,sha256=qzJIGR5xDdq9F6t8B1zzRF3WDVARD1hZm0fnBVTZQpk,12
+wand_ai_client-0.0.8.dist-info/RECORD,,
