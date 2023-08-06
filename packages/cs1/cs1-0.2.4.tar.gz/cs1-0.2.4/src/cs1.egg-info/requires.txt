@@ -1,0 +1,10 @@
+scikit-learn
+matplotlib
+numpy
+PyWavelets
+statsmodels
+pydub
+opencv-python
+torch
+torchvision
+scipy
