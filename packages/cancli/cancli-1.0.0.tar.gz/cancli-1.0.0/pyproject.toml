@@ -1,0 +1,29 @@
+[build-system]
+requires = ["flit_core >=3.2,<4"]
+build-backend = "flit_core.buildapi"
+
+[project]
+name = "cancli"
+authors = [{name = "erzo", email = "erzo@posteo.de"}]
+readme = "README.md"
+dynamic = ["version", "description"]
+requires-python = ">=3.7"
+dependencies = [
+	"prompt_toolkit",
+	"confattr >= 0.13",
+	"python-can >= 4.0",
+	"cantools",
+]
+classifiers = [
+	"Environment :: Console",
+	"License :: OSI Approved :: BSD License",
+]
+
+[project.urls]
+Documentation = "https://gitlab.com/erzo/cancli/-/blob/master/README.md"
+"Source code" = "https://gitlab.com/erzo/cancli"
+"Bug tracker" = "https://gitlab.com/erzo/cancli/-/issues"
+"Change log" = "https://gitlab.com/erzo/cancli/-/tags"
+
+[project.scripts]
+cancli = "cancli.main:main"
