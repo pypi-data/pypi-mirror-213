@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "vader_umpt"
+version = "0.1.2"
+description = ""
+authors = ["Alexandre Flores <pg50165@alunos.uminho.pt>", "Matilde Bravo <pg50651@alunos.uminho.pt>",  "Pedro Alves <a93272@alunos.uminho.pt>"]
+readme = "README.md"
+packages = [{include = "vader_umpt"}]
+scripts = {vader-umpt = "vader_umpt.__init__:main"}
+
+[tool.poetry.dependencies]
+python = "^3.10"
+streamlit = "^1.23.1"
+pandas = "^2.0.2"
+typing-extensions = "^4.6.3"
+spacy = "^3.5.3"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
