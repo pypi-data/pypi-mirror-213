@@ -1,0 +1,68 @@
+Metadata-Version: 2.1
+Name: configration
+Version: 2.0.3
+Summary: """A collection of modules that supports workbooks with openpyxl."""
+Home-page: https://psionman@bitbucket.org/psionman/bfgdealer.git
+Author: jeff watkins
+Author-email: support@bidforgame.com
+License: MIT
+Download-URL: https://pypi.org/project/bfgdealer/
+Keywords: cli,input
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
+# configration
+
+A module to validate and load config files.
+
+## Installation
+
+```bash
+pip install configration
+```
+
+
+# Version History
+
+Version 2.0.3 9 June 2023
+
+1. Implement create()
+2. Implement save()
+3. Consolidated testing into one file
+
+------
+
+Version 1.0.2 29 May 2023
+
+1. Provide __repr__
+
+------
+
+
+Version 1.0.1 29 May 2023
+
+1. Expose TomlConfig
+
+------
+
+Version 1.0.0 29 May 2023
+
+1. Implement Toml configs
+2. Test suit introduced
+
+------
+
+Version 0.0.1 11 May 2023
+
+1. Better error message if config file is missing
+
+------
+
+Version 0.0.0 10 May 2023
+
+1. Initial version
+
+------
+
+
