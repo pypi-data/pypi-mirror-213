@@ -1,0 +1,54 @@
+# === Poetry ===
+[tool.poetry]
+name = "alteia-cli-dataflow-management"
+version = "1.0.0"  # must match the version in alteia_cli/plugins/dataflow_management/__init__.py
+license = "MIT"
+readme = "README.md"
+description = "Alteia CLI extension for dataflow management"
+authors = ["Alteia Backend Team <backend-team@alteia.com>"]
+keywords = ["cli",
+            "alteia"]
+packages = [{ include = "alteia_cli" },]
+exclude = ["tests*",]
+
+[tool.poetry.dependencies]
+python = "^3.7.0"
+alteia-cli = "1.3"
+alteia = ">=2.5.0"
+tabulate = "^0.8.7"
+types-pyyaml = "^6.0.12"
+types-cachetools = "^5.2.1"
+types-python-dateutil = "^2.8.19.2"
+pydantic = "^1.10.2"
+python-dateutil = "^2.8.2"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.4"
+pycodestyle = "*"
+flake8 = ">=4 <5"
+pylint = "2.13.9"
+mypy = "^0.931"
+pre-commit = "^2.21.0"
+
+[[tool.poetry.source]]
+name = "delair-devpi"
+url = "https://alteia-183650284468.d.codeartifact.us-east-1.amazonaws.com/pypi/pypi-store/simple/"
+default = true
+
+# === Build ===
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"
+
+[tool.mypy]
+ignore_missing_imports = true
+namespace_packages = true
+explicit_package_bases = true
+
+[[tool.mypy.overrides]]
+module = "tabulate"
+ignore_missing_imports = true
+
+[[tool.mypy.overrides]]
+module = "alteia_cli"
+ignore_missing_imports = true
