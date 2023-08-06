@@ -1,0 +1,15 @@
+docker_run/__init__.py,sha256=eybIUiMOmcHbUPRXmVCOPqbD_-5-AxhRThEdl9oubUI,45
+docker_run/__main__.py,sha256=qJqliCwhyoio-ZeAKbrGUVPUMjZg_B1H9E_aWdaGKjw,107
+docker_run/core.py,sha256=5hdsIArSSM4KIoB1YBfwg6Edh2HEq8vbD7d9cYbbS64,6110
+docker_run/utils.py,sha256=UHQQtXnPGZeT24GroDrEc9yWf4AC-xyYP9c5gYYHMWU,758
+docker_run/bash_completion.d/docker-run,sha256=MBDWnatgBmjtghsew0c_CXqq-ioTkIBOHfrRr61toss,2886
+docker_run/plugins/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+docker_run/plugins/core.py,sha256=0oCdZworHaMWsOuBIKENF1iny9L0yFefxm0aYh0dBpA,4566
+docker_run/plugins/plugin.py,sha256=7E8VW1oMkRIbIxrvtrxT0de7Opw92Qug0_v9fCHxQ6c,520
+docker_run_cli-0.9.2.data/scripts/activate-python-docker-run-shell-completion,sha256=n8nL73BKuX2rI3nkm1wSRtogzLlxnOIbeYPk3qDhN9g,1607
+docker_run_cli-0.9.2.data/scripts/docker-run,sha256=Lpo8UTjcFSy3a1A2rKm2Ki6-eqM5fEDQ9J53DN2caHo,1091
+docker_run_cli-0.9.2.dist-info/LICENSE,sha256=7vJKrMG_2c-JPme24P26ME_b0zY_gv8olsNrX9d5pnA,1123
+docker_run_cli-0.9.2.dist-info/METADATA,sha256=oVJbf0-yXhQEJkbhd9S6TlpDqTyJApJ6eDchiKvKaQc,8117
+docker_run_cli-0.9.2.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+docker_run_cli-0.9.2.dist-info/top_level.txt,sha256=CWsR8qdedeqawS4mkhwtQxtV67aphq7MMp1-dmkZyg0,11
+docker_run_cli-0.9.2.dist-info/RECORD,,
