@@ -1,0 +1,67 @@
+[build-system]
+build-backend = "hatchling.build"
+requires = [
+  "hatch-vcs",
+  "hatchling",
+]
+
+[project]
+name = "em-keyboard"
+description = "The CLI Emoji Keyboard"
+readme = "README.md"
+keywords = [
+  "CLI",
+  "emoji",
+  "keyboard",
+  "search",
+]
+license = {text = "ISC"}
+maintainers = [{name = "Hugo van Kemenade"}]
+authors = [{name = "Kenneth Reitz", email = "me@kennethreitz.org"}]
+requires-python = ">=3.8"
+classifiers = [
+  "Development Status :: 5 - Production/Stable",
+  "Intended Audience :: Developers",
+  "License :: OSI Approved :: ISC License (ISCL)",
+  "Natural Language :: English",
+  "Programming Language :: Python",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3 :: Only",
+  "Programming Language :: Python :: 3.8",
+  "Programming Language :: Python :: 3.9",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Programming Language :: Python :: Implementation :: CPython",
+  "Programming Language :: Python :: Implementation :: PyPy",
+]
+dynamic = [
+  "version",
+]
+dependencies = [
+  'pyperclip; platform_system == "Darwin"',
+  'pyperclip; platform_system == "Windows"',
+]
+[project.optional-dependencies]
+tests = [
+  "pytest",
+  "pytest-cov",
+]
+[project.urls]
+Changelog = "https://github.com/hugovk/em-keyboard/releases"
+Homepage = "https://github.com/hugovk/em-keyboard"
+Source = "https://github.com/hugovk/em-keyboard"
+[project.scripts]
+em = "em_keyboard:cli"
+
+[tool.hatch]
+version.source = "vcs"
+
+[tool.hatch.version.raw-options]
+local_scheme = "no-local-version"
+
+[tool.isort]
+profile = "black"
+
+[tool.pytest.ini_options]
+addopts = "--color=yes"
