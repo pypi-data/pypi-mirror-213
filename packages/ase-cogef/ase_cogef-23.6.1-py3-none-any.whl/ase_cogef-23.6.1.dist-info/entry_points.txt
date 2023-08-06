@@ -1,0 +1,2 @@
+[console_scripts]
+cogef = cogef.cli.main:main
