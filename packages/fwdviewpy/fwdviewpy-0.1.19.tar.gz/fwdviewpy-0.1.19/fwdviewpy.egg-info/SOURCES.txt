@@ -1,0 +1,8 @@
+setup.py
+fwdviewpy/__init__.py
+fwdviewpy/main.py
+fwdviewpy.egg-info/PKG-INFO
+fwdviewpy.egg-info/SOURCES.txt
+fwdviewpy.egg-info/dependency_links.txt
+fwdviewpy.egg-info/requires.txt
+fwdviewpy.egg-info/top_level.txt

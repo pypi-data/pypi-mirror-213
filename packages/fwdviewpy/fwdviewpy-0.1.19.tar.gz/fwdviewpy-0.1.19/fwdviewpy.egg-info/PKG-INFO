@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: fwdviewpy
+Version: 0.1.19
+Summary: Python package developed by FWD View - The Data Transformation Specialists.
+Author: Cameron Bose & Ryan Springett
+Author-email: cameron.bose@fwdview.com
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Scientific/Engineering :: Mathematics
+Classifier: License :: OSI Approved :: MIT License
+
+Python package developed by FWD View to automate actions on both the Delphix Virtualization engine and Delphix Continuous Compliance engine.
