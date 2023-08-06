@@ -1,0 +1,87 @@
+Metadata-Version: 2.1
+Name: opengraph-writer
+Version: 0.4.0
+Summary: Lightweight OpenGraph support for writing and validating objects.
+Home-page: https://github.com/jvanasco/opengraph_writer
+Author: Jonathan Vanasco
+Author-email: jonathan@findmeon.com
+License: MIT
+Keywords: facebook opengraph open graph web pyramid
+Classifier: Intended Audience :: Developers
+Classifier: Framework :: Pyramid
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: License :: OSI Approved :: MIT License
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Provides-Extra: testing
+License-File: LICENSE.txt
+
+opengraph_writer
+================
+
+![Python package](https://github.com/jvanasco/opengraph_writer/workflows/Python%20package/badge.svg)
+
+About
+=====
+
+This library was created to both manage writing OpenGraph data, and perform
+lightweight verifications for offline debugging.
+
+This library does the following:
+
+- CREATE an object to stash OGP data
+- VALIDATE the data, offering debug information on the object
+- RENDER the object as html, and optionally include debug data on incorrect elements
+
+This is currently aimed at "single object page data". It is not necessarily
+with multi-value items yet (such as multiple profiles or tracks on a single page).
+
+Most of the validation routines were derived from regexing the `https://ogp.me`
+site into a Python dict, and researching what they are supposed to do.
+The validation routes themselves are super trivial.
+
+At the time of initially writing this library, and several checks ever since, the
+specification on  the `https://ogp.me` seems out of date. 
+
+In practice, Facebook's "premier" partners seem to all be using URLs which point 
+to certain data , however there aren't any guidelines for this within the
+public OGP spec.
+
+An example would be on the Spotify integration: when looking at a `SONG`, the
+`ARTIST` and `ALBUM` refer to URLs which contain the relevant data.
+
+Documentation
+=============
+
+The Python file contains extensive inline documentation.
+
+
+Contributions Welcome!
+======================
+
+If anyone wants to fork and tackle the multiple value problem, please do.
+
+
+Framework Support: Pyramid
+==========================
+
+This package offers an includeme for Pyramid to set up an `opengraph_item`
+as a `@reify` request method.
+
+Simply update your application:
+
+	config.include("opengraph_writer.pyramid_helpers")
+
+And your `Request` objects will be extended as such:
+
+    request.opengraph_item
+    
+    
+    
+
