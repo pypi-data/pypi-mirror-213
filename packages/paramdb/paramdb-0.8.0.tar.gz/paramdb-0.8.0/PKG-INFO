@@ -1,0 +1,73 @@
+Metadata-Version: 2.1
+Name: paramdb
+Version: 0.8.0
+Summary: Python package for storing and retrieving experiment parameters.
+Home-page: https://github.com/PainterQubits/paramdb
+License: BSD-3-Clause
+Author: Alex Hadley
+Author-email: alexhad6@gmail.com
+Requires-Python: >=3.10,<4.0
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Provides-Extra: astropy
+Requires-Dist: astropy (>=5.3,<6.0) ; extra == "astropy"
+Requires-Dist: sqlalchemy (>=2.0.15,<3.0.0)
+Requires-Dist: typing-extensions (>=4.6.3,<5.0.0)
+Requires-Dist: zstandard (>=0.21.0,<0.22.0)
+Project-URL: Repository, https://github.com/PainterQubits/paramdb
+Description-Content-Type: text/markdown
+
+# ParamDB
+
+[![PyPI Latest Release](https://img.shields.io/pypi/v/paramdb)](https://pypi.org/project/paramdb/)
+[![License](https://img.shields.io/pypi/l/paramdb)](https://github.com/PainterQubits/paramdb/blob/main/LICENSE)
+[![CI](https://github.com/PainterQubits/paramdb/actions/workflows/ci.yml/badge.svg)](https://github.com/PainterQubits/paramdb/actions/workflows/ci.yml)
+[![Codecov](https://codecov.io/github/PainterQubits/paramdb/branch/main/graph/badge.svg?token=PQEJWLBTBK)](https://codecov.io/github/PainterQubits/paramdb)
+[![Documentation Status](https://readthedocs.org/projects/paramdb/badge/?version=stable)](https://paramdb.readthedocs.io/en/stable/?badge=stable)
+
+<!-- start intro -->
+
+Python package for storing and retrieving experiment parameters.
+
+<!-- end intro -->
+
+## Installation
+
+<!-- start installation -->
+
+Install the latest version of ParamDB using pip:
+
+```
+pip install -U paramdb
+```
+
+To install along with [Astropy] for support for storing scalar [`astropy.units.Quantity`]
+objects in the database, ParamDB can be installed with the `astropy` extra:
+
+```
+pip install -U paramdb[astropy]
+```
+
+[astropy]: https://docs.astropy.org/en/stable/index.html
+[`astropy.units.quantity`]: https://docs.astropy.org/en/stable/api/astropy.units.Quantity.html#astropy.units.Quantity
+
+<!-- end installation -->
+
+## Usage
+
+ParamDB has two main components:
+
+- [**Parameter Data**]: Base classes that are used to defined the structure and
+  functionality of parameter data.
+
+- [**Database**]: A database object that commits and loads parameter data to a persistent
+  file.
+
+See the [api reference] for more information.
+
+[**parameter data**]: https://paramdb.readthedocs.io/en/stable/parameter-data.html
+[**database**]: https://paramdb.readthedocs.io/en/stable/database.html
+[api reference]: https://paramdb.readthedocs.io/en/stable/api-reference.html
+
