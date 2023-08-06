@@ -1,0 +1,2 @@
+[console_scripts]
+aioworkers = aioworkers.cli:main
