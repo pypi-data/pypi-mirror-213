@@ -1,0 +1,11 @@
+persian_gender_detection/__init__.py,sha256=C8ipe2HhyAL8fWY02qKfZy0OtYTC9t3VV9tyIwLt3IA,40
+persian_gender_detection/persian_gender_detection.py,sha256=a0-Fab2kjj9kKuceEOR2CFzTSZ0qtOe2pB_fprDRjeY,923
+persian_gender_detection/gender/iranianNamesDataset.csv,sha256=QiqXZf5c5baNbrpPZqoBy-LBXFi62tdFhYGNY66cEQA,410371
+persian_gender_detection/gender/iranianNamesDataset.py,sha256=16t50Ek26gBL6MgQqa1F-Mpr8N8E6o9YStHMlmwOk2o,436494
+persian_gender_detection-1.1.0.data/data/iranianNamesDataset.csv,sha256=QiqXZf5c5baNbrpPZqoBy-LBXFi62tdFhYGNY66cEQA,410371
+persian_gender_detection-1.1.0.data/data/iranianNamesDataset.py,sha256=16t50Ek26gBL6MgQqa1F-Mpr8N8E6o9YStHMlmwOk2o,436494
+persian_gender_detection-1.1.0.dist-info/LICENSE,sha256=YHT6cwg22je73e-dgH0Kes03Ok8cP627Zg-M_wqCZ2s,1068
+persian_gender_detection-1.1.0.dist-info/METADATA,sha256=hggnn-glX-MOa0jlvMBbvblfrDMCpeFrCG3CQNIj4K0,2251
+persian_gender_detection-1.1.0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+persian_gender_detection-1.1.0.dist-info/top_level.txt,sha256=q7iZJogEDr1m6ofArswlIpu0lGwF0J0rHPvTqo8bJN8,25
+persian_gender_detection-1.1.0.dist-info/RECORD,,
