@@ -1,0 +1,8 @@
+README.md
+setup.py
+src/py2toolbox.egg-info/PKG-INFO
+src/py2toolbox.egg-info/SOURCES.txt
+src/py2toolbox.egg-info/dependency_links.txt
+src/py2toolbox.egg-info/entry_points.txt
+src/py2toolbox.egg-info/requires.txt
+src/py2toolbox.egg-info/top_level.txt
