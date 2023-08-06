@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: pypaz
+Version: 0.2.4
+Summary: Perception for Autonomous Systems
+Home-page: https://github.com/oarriaga/paz/
+Author: Octavio Arriaga
+Author-email: octavio.arriaga@dfki.de
+License: MIT
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: Topic :: Scientific/Engineering :: Image Recognition
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+License-File: LICENSE
+Requires-Dist: opencv-python
+Requires-Dist: tensorflow
+Requires-Dist: numpy
+
+Perception for Autonomous Systems
