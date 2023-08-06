@@ -1,0 +1,66 @@
+import time
+import json
+import requests
+import pkg_resources
+from functools import wraps
+from fastapi import Request, Response, FastAPI
+import importlib
+from fleet_sdk.base import BaseTracker
+from fleet_sdk.adapters.flask_adapter import FlaskAdapter
+from flask import request as FlaskRequest, Flask, Response as FlaskResponse
+import os
+import sys
+
+# Add the parent directory of 'sdk' to the system path
+sdk_dir = os.path.dirname(os.path.abspath(__file__))
+parent_dir = os.path.dirname(sdk_dir)
+if parent_dir not in sys.path:
+  sys.path.insert(0, parent_dir)
+
+class Tracker(BaseTracker):
+  DEFAULT_HOST = 'middleware.usefleet.ai'
+  DEFAULT_DEBUG = True
+
+  def __init__(self, token, app, host=BaseTracker.DEFAULT_HOST, debug=BaseTracker.DEFAULT_DEBUG):
+    """
+        Initialize the Tracker with the provided token, host, and debug flag.
+    """
+    super().__init__(token, app, host, debug)
+    self.adapter = FlaskAdapter()
+
+  def log_event(self, func):
+    """
+    Decorator function for logging events. This function wraps around the endpoint functions,
+    logging the request, response, and latency of each call to the endpoint.
+    """
+
+    @wraps(func)
+    async def wrapper(*args, **kwargs):
+      start_time = time.time()
+      event_name = func.__name__  # extract the event_name
+      print(f"appname: {self.app}")
+      try:
+        if isinstance(self.app, Flask):
+          print(f"Request: {FlaskRequest}")
+          request_data = FlaskRequest.get_json()
+          response = func(
+            *args, **
+            kwargs)  # Call the function and use its return value as the response
+          end_time = time.time()
+          latency = end_time - start_time
+          data = await self.adapter.extract_data(event_name, FlaskRequest,
+                                                 response, latency)
+        else: 
+          #Throw error
+          print("Error: app is not a Flask app")
+          raise Exception("Error: app is not a Flask app")
+      except Exception as e:
+        print(f"Error extracting data in log_event: {e}")
+        return
+      try:
+        await self.log_event_post(data)
+      except Exception as e:
+        print(f"Error posting log event: {e}")
+      return response
+
+    return wrapper
