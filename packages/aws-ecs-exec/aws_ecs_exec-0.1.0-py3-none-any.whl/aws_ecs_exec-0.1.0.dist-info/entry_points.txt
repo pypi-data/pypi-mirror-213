@@ -1,0 +1,3 @@
+[console_scripts]
+ecs-exec=aws_ecs_exec.cli:entrypoint
+
