@@ -1,0 +1,10 @@
+reqto/__init__.py,sha256=RL5A-fuBNQfFnrEGP4Luuh9T0xPbea7bSFfz7xapLJc,115
+reqto/example.py,sha256=QAjV4Kn0X1O5Se5I005FYJCzvwV9_drU8rYlr7D-who,471
+reqto/reqto.py,sha256=L1_IYOm7U5SGfKZEFN8fmXqXZUAM5IGJlxlJSzbPVW8,4240
+reqto/core/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+reqto/core/reqto.py,sha256=yk4WQSwo94a2DQ5-Bhtrc9RQfGsTXZuz_2SL-h5gCDk,4206
+reqto-0.1.7.dist-info/LICENSE,sha256=lZ5ro6JJTKfWu-z5-yOYi7ShCYKqwTe02KPD11va7es,1090
+reqto-0.1.7.dist-info/METADATA,sha256=bZ9BtTLFMFs_XOZxEBFGn7J4p5EJwPTQt1tsW-0a5Gc,1615
+reqto-0.1.7.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+reqto-0.1.7.dist-info/top_level.txt,sha256=4xXYX7ypL--Y80ICcFjUYjmindDQ3xqAflL5k4TjzZU,6
+reqto-0.1.7.dist-info/RECORD,,
