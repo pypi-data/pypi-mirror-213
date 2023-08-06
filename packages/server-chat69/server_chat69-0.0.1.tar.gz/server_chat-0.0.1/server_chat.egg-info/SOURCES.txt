@@ -1,0 +1,11 @@
+setup.py
+server/__init__.py
+server/const.py
+server/jim.py
+server/server.py
+server/server_db.py
+server_chat.egg-info/PKG-INFO
+server_chat.egg-info/SOURCES.txt
+server_chat.egg-info/dependency_links.txt
+server_chat.egg-info/requires.txt
+server_chat.egg-info/top_level.txt
