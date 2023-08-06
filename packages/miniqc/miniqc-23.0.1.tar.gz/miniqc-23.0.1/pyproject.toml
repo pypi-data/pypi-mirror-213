@@ -1,0 +1,83 @@
+[build-system]
+requires = ["hatchling", "hatch-vcs", "nipreps-versions"]
+build-backend = "hatchling.build"
+
+[project]
+name = "miniqc"
+description = 'A BIDS app for performing minimal QC beyond validation'
+readme = "README.md"
+requires-python = ">=3.9"
+license = "MIT"
+keywords = []
+authors = [
+  { name = "Chris Markiewicz", email = "markiewicz@stanford.edu" },
+]
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "Programming Language :: Python",
+  "Programming Language :: Python :: 3.9",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+]
+dependencies = [
+  "nibabel",
+  "typer",
+  "typing_extensions",
+]
+dynamic = ["version"]
+
+[project.urls]
+Documentation = "https://github.com/effigies/miniqc#readme"
+Issues = "https://github.com/effigies/miniqc/issues"
+Source = "https://github.com/effigies/miniqc"
+
+[project.scripts]
+miniqc = "miniqc.__main__:app"
+
+[tool.hatch.version]
+source = "vcs"
+raw-options = { version_scheme = "nipreps-calver" }
+
+[tool.hatch.build.hooks.vcs]
+version-file = "miniqc/_version.py"
+
+[tool.hatch.build.targets.sdist]
+exclude = [".git_archival.txt"]  # No longer needed in sdist
+
+[tool.hatch.envs.default]
+dependencies = [
+  "pytest",
+  "pytest-cov",
+]
+[tool.hatch.envs.default.scripts]
+cov = "pytest --cov-report=term-missing --cov-fail-under=100 --cov-config=pyproject.toml --cov=miniqc --cov=tests {args}"
+no-cov = "cov --no-cov {args}"
+
+[tool.hatch.envs.type]
+detached = true
+dependencies = [
+  "mypy",
+  "nibabel",
+  "typer",
+  "pytest",
+]
+
+[tool.hatch.envs.type.scripts]
+check = "mypy . {args}"
+
+[[tool.hatch.envs.test.matrix]]
+python = ["39", "310", "311"]
+
+[tool.coverage.run]
+branch = true
+parallel = true
+omit = [
+  "miniqc/_version.py",
+]
+
+[tool.coverage.report]
+exclude_lines = [
+  "no cov",
+  "if __name__ == .__main__.:",
+  "if TYPE_CHECKING:",
+]
