@@ -1,0 +1,69 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "hardyweinbergcalculator"
+version = "0.2.2"
+description = 'Hardy-Weinberg Equilibrium Calculator. Calculates the expected genotype frequencies based on the allele frequencies of a population in Hardy-Weinberg equilibrium.'
+readme = {file = "README.md", content-type = "text/markdown"}
+requires-python = ">=3.7"
+license = {file = "LICENSE", content-type = "text/plain"}
+keywords = ["FastAPI", "Hardy Weinberg", "Python"]
+authors = [
+  { name="Dellius Alexander",  email="info@hyfisolutions.com" },
+]
+
+maintainers = [
+    { name="Dellius Alexander", email="info@hyfisolutions.com"}
+]
+
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Topic :: Internet :: WWW/HTTP :: HTTP Servers",
+    "Topic :: Internet :: WWW/HTTP :: WSGI :: Server",
+    "Topic :: Internet :: WWW/HTTP :: Dynamic Content",
+]
+
+dependencies = [
+    "sympy",
+    "numpy",
+    "matplotlib",
+    "pandas",
+]
+
+[project.scripts]
+hwc = "hardyweinbergcalculator.__main__:app"
+
+
+[project.urls]
+"Homepage" = "https://github.com/dellius-alexander/Hardy-Weinberg.git"
+"Bug_Tracker" = "https://github.com/dellius-alexander/Hardy-Weinberg/issues"
+
+[requires]
+files=["requirements.txt"]
+
+
+[tool.black]
+line-length = 88
+target-version = ['py38', 'py39', 'py310']
+
+
+[tool.pytest.ini_options]
+minversion = "6.0"
+addopts = "--verbose --color=yes --trace"
+testpaths = [
+    "tests",
+    "tests/integration",
+]
+
+[tool.setuptools.packages.find]
+where = ["hardyweinbergcalculator"]  # list of folders that contain the packages (["."] by default)
+include = ["*"]  # package names should match these glob patterns (["*"] by default)
+#exclude = ["my_package.tests*"]  # exclude packages matching these glob patterns (empty by default)
+namespaces = false  # to disable scanning PEP 420 namespaces (true by default)
