@@ -1,0 +1,16 @@
+pycarl>=2.2.0
+
+[doc]
+Sphinx
+sphinx-bootstrap-theme
+nbsphinx
+ipython
+ipykernel
+
+[numpy]
+numpy
+
+[plot]
+matplotlib
+numpy
+scipy
