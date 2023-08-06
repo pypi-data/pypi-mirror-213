@@ -1,0 +1,8 @@
+autodistill_sam_clip/__init__.py,sha256=m5hxwygxShRqeVBdjXbZtEvxBcN9WWV1m7gVr1NALxk,73
+autodistill_sam_clip/helpers.py,sha256=eFZUiDiM63BoggmzqBrrztws8z33kN3Sf_O-YUo0IwU,2798
+autodistill_sam_clip/sam_clip.py,sha256=i8_j1EpQlG8Eh3lQ6q11ONpprb8V8KiJV8sbON1JUMc,5206
+autodistill_sam_clip-0.1.1.dist-info/LICENSE,sha256=QwcOLU5TJoTeUhuIXzhdCEEDDvorGiC6-3YTOl4TecE,11356
+autodistill_sam_clip-0.1.1.dist-info/METADATA,sha256=V2AWya-Vcc07ur8jXJ-L9KF5oRfIns3ttZKswWFPcrI,902
+autodistill_sam_clip-0.1.1.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+autodistill_sam_clip-0.1.1.dist-info/top_level.txt,sha256=6fDlVcXyrqquDQytBkIeqfd6SgJx5Of0LGFOkrK_HP4,21
+autodistill_sam_clip-0.1.1.dist-info/RECORD,,
