@@ -1,0 +1,7 @@
+LICENSE
+README.md
+setup.py
+qbfetcher.egg-info/PKG-INFO
+qbfetcher.egg-info/SOURCES.txt
+qbfetcher.egg-info/dependency_links.txt
+qbfetcher.egg-info/top_level.txt
