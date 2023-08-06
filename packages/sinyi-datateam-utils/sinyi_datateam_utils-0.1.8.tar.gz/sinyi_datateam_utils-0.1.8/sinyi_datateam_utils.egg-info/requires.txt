@@ -1,0 +1,5 @@
+pycryptodome
+pandas-gbq
+google-cloud-storage
+azure-identity
+azure-keyvault-secrets
