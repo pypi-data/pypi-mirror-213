@@ -1,0 +1,15 @@
+README.md
+setup.py
+smash/__init__.py
+smash/__main__.py
+smash/cli.py
+smash/config.py
+smash/smash.py
+smash/version.py
+smash/xbar.py
+smash_clients.egg-info/PKG-INFO
+smash_clients.egg-info/SOURCES.txt
+smash_clients.egg-info/dependency_links.txt
+smash_clients.egg-info/entry_points.txt
+smash_clients.egg-info/requires.txt
+smash_clients.egg-info/top_level.txt
