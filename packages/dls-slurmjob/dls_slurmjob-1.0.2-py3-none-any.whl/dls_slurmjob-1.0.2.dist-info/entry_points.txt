@@ -1,0 +1,2 @@
+[console_scripts]
+dls-slurmjob = dls_slurmjob_lib.__main__:main
