@@ -1,0 +1,9 @@
+django_translatemessages/__init__.py,sha256=4GZKi13lDTD25YBkGakhZyEQZWTER_OWQMNPoH_UM2c,22
+django_translatemessages/management/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_translatemessages/management/commands/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_translatemessages/management/commands/translatemessages.py,sha256=A5g2NRt72NEtcvseMHS7oFhnALZQBVwIdpNFH18u3Bg,11506
+django_translatemessages-0.0.3.dist-info/LICENSE,sha256=znT-DKMU3jrCAJtPxN7baDcTpOd73qpCVZmwbN94cww,1071
+django_translatemessages-0.0.3.dist-info/METADATA,sha256=MUCeGiXDuASlleLxWs3b0bNPezOjw0TSsbTL1zKSHvU,4287
+django_translatemessages-0.0.3.dist-info/WHEEL,sha256=bb2Ot9scclHKMOLDEHY6B2sicWOgugjFKaJsT7vwMQo,110
+django_translatemessages-0.0.3.dist-info/top_level.txt,sha256=Aof9_9Pm9xA4tKENPh5cPFOksVVdJCNwB8M8VSnEl5I,25
+django_translatemessages-0.0.3.dist-info/RECORD,,
