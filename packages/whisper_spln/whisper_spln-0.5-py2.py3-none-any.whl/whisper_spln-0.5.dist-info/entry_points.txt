@@ -1,0 +1,3 @@
+[console_scripts]
+whisper_spln=whisper_spln.main:main
+
