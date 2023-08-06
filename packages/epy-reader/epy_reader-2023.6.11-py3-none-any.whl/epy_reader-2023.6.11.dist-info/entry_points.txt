@@ -1,0 +1,3 @@
+[console_scripts]
+epy=epy_reader.__main__:main
+
