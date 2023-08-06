@@ -1,0 +1,2 @@
+[console_scripts]
+test = yulain_test_project.__main__:main

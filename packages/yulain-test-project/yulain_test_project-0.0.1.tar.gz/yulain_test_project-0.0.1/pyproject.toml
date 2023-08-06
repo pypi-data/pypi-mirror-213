@@ -1,0 +1,18 @@
+[project]
+name = "yulain_test_project"
+version = "0.0.1"
+description = "Just a demo project"
+readme = "README.md"
+requires-python = ">=3.8"
+keywords = ["sample", "project"]
+dependencies = [
+    "requests",
+    "psutil"
+]
+
+[project.scripts]
+test = "yulain_test_project.__main__:main"
+
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
