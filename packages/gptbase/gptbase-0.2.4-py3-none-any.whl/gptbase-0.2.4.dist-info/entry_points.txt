@@ -1,0 +1,2 @@
+[console_scripts]
+gptbase-chat = gptbase.chat:chat
