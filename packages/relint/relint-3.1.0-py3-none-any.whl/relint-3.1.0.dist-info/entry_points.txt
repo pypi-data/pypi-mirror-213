@@ -1,0 +1,3 @@
+[console_scripts]
+relint=relint.__main__:main
+
