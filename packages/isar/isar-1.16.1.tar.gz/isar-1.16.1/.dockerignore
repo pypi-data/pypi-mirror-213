@@ -1,0 +1,8 @@
+*
+!src/isar
+!src/robot_interface
+!main.py
+!setup.py
+!LICENSE
+!README.md
+**/__pycache__
