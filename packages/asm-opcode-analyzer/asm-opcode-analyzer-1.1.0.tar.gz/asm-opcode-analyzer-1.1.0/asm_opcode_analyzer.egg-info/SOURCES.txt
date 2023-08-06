@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+asm_opcode_analyzer/__init__.py
+asm_opcode_analyzer.egg-info/PKG-INFO
+asm_opcode_analyzer.egg-info/SOURCES.txt
+asm_opcode_analyzer.egg-info/dependency_links.txt
+asm_opcode_analyzer.egg-info/top_level.txt
