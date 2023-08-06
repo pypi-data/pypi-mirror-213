@@ -1,0 +1,3 @@
+[console_scripts]
+yatracker-linker=yatracker_linker.__main__:main
+
