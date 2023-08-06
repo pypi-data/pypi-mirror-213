@@ -1,0 +1,113 @@
+version: 2.1
+orbs:
+  docker: circleci/docker@2.2.0
+  codecov: codecov/codecov@3.2.4
+
+jobs:
+  test_pytest:
+    docker: # executor type
+      - image: nipreps/miniconda:py39_2209.01
+        auth:
+          username: $DOCKER_USER
+          password: $DOCKER_PAT
+
+    environment:
+      - TEST_DIR: /tmp/tests
+      - TEMPLATEFLOW_HOME: /tmp/templateflow
+    steps:
+      - checkout
+
+      - restore_cache:
+          keys:
+            - tf-v0-{{ .Branch }}-{{ .Revision }}
+            - tf-v0--{{ .Revision }}
+            - tf-v0-{{ .Branch }}-
+            - tf-v0-master-
+            - tf-v0-
+          paths:
+            - /tmp/templateflow
+
+      - run:
+          name: Get some templates
+          command: |
+            python -c "from templateflow.api import get; get('Fischer344', desc=None, suffix='T2w')"
+            python -c "from templateflow.api import get; get('MNI152NLin6Asym', resolution=2, desc='LR', suffix='T1w')"
+
+      - save_cache:
+         key: tf-v0-{{ .Branch }}-{{ .Revision }}
+         paths:
+            - /tmp/templateflow
+
+      - run:
+          name: Run unit tests
+          no_output_timeout: 2h
+          command: |
+            export TEST_OUTPUT_DIR=${TEST_DIR}/output
+            mkdir -p ${TEST_OUTPUT_DIR} ${TEST_DIR}/summary ${TEST_DIR}/coverage
+            python -m pytest -n 6 --junit-xml=${TEST_DIR}/summary/pytest.xml \
+                   --cov nireports --cov-report xml:${TEST_DIR}/coverage/unittests.xml \
+                   nireports/
+
+      - store_artifacts:
+          path: /tmp/tests/output
+
+      - store_test_results:
+          path: /tmp/tests/summary/
+
+      - codecov/upload:
+          file: /tmp/tests/coverage/unittests.xml
+          flags: unittests
+
+
+  build_docs:
+    docker: # executor type
+      - image: nipreps/miniconda:py39_2209.01
+        auth:
+          username: $DOCKER_USER
+          password: $DOCKER_PAT
+
+    environment:
+      - FSLOUTPUTTYPE: NIFTI
+      - SUBJECTS_DIR: /tmp/subjects
+    steps:
+      - checkout
+      - run:
+          name: Create subjects folder
+          command: mkdir -p $SUBJECTS_DIR
+      - run:
+          name: Install deps
+          command: |
+            python -m pip install --no-cache-dir -U "pip>=20.3"
+      - run:
+          name: Install Nireports
+          command: |
+            python -m pip install .[docs]
+      - run:
+          name: Build only this commit
+          command: |
+            BRANCH=$( echo $CIRCLE_BRANCH | sed 's+/+_+g' )
+            make -C docs SPHINXOPTS="-W" BUILDDIR="/tmp/docs" OUTDIR=${CIRCLE_TAG:-$BRANCH} html
+      - store_artifacts:
+          path: /tmp/docs
+
+workflows:
+  version: 2
+  build_test_deploy:
+    jobs:
+      - test_pytest:
+          context:
+            - nipreps-common
+          filters:
+            tags:
+              only: /.*/
+            branches:
+              ignore:
+                - /docs?\/.*/
+
+      - build_docs:
+          filters:
+            branches:
+              ignore:
+                - /tests?\/.*/
+            tags:
+              only: /.*/
