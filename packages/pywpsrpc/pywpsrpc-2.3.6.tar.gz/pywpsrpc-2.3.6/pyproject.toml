@@ -1,0 +1,22 @@
+[build-system]
+requires = ["sip >=6"]
+build-backend = "sipbuild.api"
+
+[tool.sip.metadata]
+name = "pywpsrpc"
+version = "2.3.6"
+summary = "Python bindings for the WPS Office RPC"
+home-page = "https://github.com/timxx/pywpsrpc"
+author = "Weitian Leung"
+author-email = "weitianleung@gmail.com"
+license = "MIT"
+description-file = "README.md"
+description-content-type = "text/markdown"
+platform = "Linux"
+
+[tool.sip.project]
+sdist-excludes = [".gitignore", ".travis.yml", "*.tar.gz",
+    ".git/*", ".git/*/*", ".git/*/*/*", ".git/*/*/*/*",
+    ".git/*/*/*/*/*", ".git/*/*/*/*/*/*", ".git/*/*/*/*/*/*/*",
+    ".github/*/*", ".vscode/*", ".gitmodules", "wpsrpc-sdk/.git",
+    "build/*", "build/*/*", "build/*/*/*", "build/.*"]
