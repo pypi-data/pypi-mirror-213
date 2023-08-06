@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: pyketra
+Version: 0.0.5
+Summary: Python library for Ketra Controller
+Home-page: http://github.com/gjbadros/pyketra
+Author: Greg J. Badros
+Author-email: badros@gmail.com
+License: MIT
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Topic :: Home Automation
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+License-File: LICENSE
