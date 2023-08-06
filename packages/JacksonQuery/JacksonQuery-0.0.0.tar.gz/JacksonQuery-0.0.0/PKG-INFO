@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: JacksonQuery
+Version: 0.0.0
+Summary: Automated interaction and data extraction tool for Jackson National Life Insurance website
+Home-page: https://github.com/username/JacksonQuery
+Author: Nathan Ramos, CFA®
+Author-email: info@nrcapitalmanagement.com
+Keywords: automation,jackson,scraping,selenium
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.11
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
