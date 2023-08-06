@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: composabl-ray-dev
+Version: 0.2.1.dev85
+Summary: This package contains the Ray orchestration layer for the Composabl SDK
+Author-email: Xavier Geerinck <xavier@composabl.ai>, Hunter Park <hunter@composabl.ai>
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Requires-Dist: networkx (==3.1)
+Requires-Dist: dapr (==1.10.0)
+Requires-Dist: docker (==6.0.1)
+Requires-Dist: kubernetes (==26.1.0)
+Requires-Dist: composabl (>=0.0.0)
+Requires-Dist: pytest-asyncio (==0.21.0)
+Requires-Dist: autorom[accept-rom-license] (==0.4.2)
+Requires-Dist: gymnasium[atari,box2d] (==0.26.3)
+Requires-Dist: ray[rllib] (==2.5.0)
+Requires-Dist: torch (==2.0.0)
+
+# Composabl - gRPC
