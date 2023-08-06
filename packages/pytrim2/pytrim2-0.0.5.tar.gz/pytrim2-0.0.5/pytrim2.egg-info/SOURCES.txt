@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+README.md
+settings.ini
+setup.py
+pytrim2/__init__.py
+pytrim2/_modidx.py
+pytrim2/demultiplex.py
+pytrim2.egg-info/PKG-INFO
+pytrim2.egg-info/SOURCES.txt
+pytrim2.egg-info/dependency_links.txt
+pytrim2.egg-info/entry_points.txt
+pytrim2.egg-info/not-zip-safe
+pytrim2.egg-info/requires.txt
+pytrim2.egg-info/top_level.txt
