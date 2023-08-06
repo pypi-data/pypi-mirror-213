@@ -1,0 +1,8 @@
+gen_aws_federated_signin_url/__init__.py,sha256=ybLbOl6r8qen-IzRS5nE3PI--tiC3GZyYvi6KpmABE8,105
+gen_aws_federated_signin_url/_version.py,sha256=aDfNBQh0vsVL7CSgYEMdMUbrxVw92raLxMivH20w2A4,160
+gen_aws_federated_signin_url/gen_aws_federated_signin_url.py,sha256=bysCciPHj5h2zmUEG9R0veFtsPHEpxzSGXfkhRmnHCM,2084
+gen_aws_federated_signin_url-0.1.1.dist-info/LICENSE.txt,sha256=KjxYtJ4kBJqEdrbAZOUFlw0rGFIK3TNAbiXq52-yonU,1090
+gen_aws_federated_signin_url-0.1.1.dist-info/METADATA,sha256=yBwGZHZ9Ksx5xzF024mJpGDUQwidWp7_16UORckiYM8,691
+gen_aws_federated_signin_url-0.1.1.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+gen_aws_federated_signin_url-0.1.1.dist-info/top_level.txt,sha256=qEBc6DJyz0vnTwR_kjC88w5WqICby83B4sJnWMsuIDw,29
+gen_aws_federated_signin_url-0.1.1.dist-info/RECORD,,
