@@ -1,0 +1,16 @@
+License.txt
+Readme.rst
+Requirements.txt
+setup.py
+Sources/decoratory/__init__.py
+Sources/decoratory/__main__.py
+Sources/decoratory/banner.py
+Sources/decoratory/basic.py
+Sources/decoratory/multiton.py
+Sources/decoratory/observer.py
+Sources/decoratory/singleton.py
+Sources/decoratory/wrapper.py
+Sources/decoratory.egg-info/PKG-INFO
+Sources/decoratory.egg-info/SOURCES.txt
+Sources/decoratory.egg-info/dependency_links.txt
+Sources/decoratory.egg-info/top_level.txt
