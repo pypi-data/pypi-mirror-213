@@ -1,0 +1,482 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>768</width>
+    <height>641</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>NanoQNT Data Analysis</string>
+  </property>
+  <property name="unifiedTitleAndToolBarOnMac">
+   <bool>true</bool>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QHBoxLayout" name="horizontalLayout">
+    <item>
+     <widget class="QWidget" name="settings_widget" native="true">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>225</width>
+        <height>16777215</height>
+       </size>
+      </property>
+      <layout class="QFormLayout" name="formLayout">
+       <property name="leftMargin">
+        <number>0</number>
+       </property>
+       <property name="topMargin">
+        <number>0</number>
+       </property>
+       <property name="rightMargin">
+        <number>0</number>
+       </property>
+       <property name="bottomMargin">
+        <number>0</number>
+       </property>
+       <item row="0" column="0" colspan="2">
+        <widget class="QCheckBox" name="find_particles_check">
+         <property name="toolTip">
+          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Whether to mark the particles on the images&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+         </property>
+         <property name="text">
+          <string>Find Particles</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="0">
+        <widget class="QLabel" name="label_9">
+         <property name="text">
+          <string>Frame Range</string>
+         </property>
+         <property name="buddy">
+          <cstring>start_frame_line</cstring>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="1">
+        <widget class="QLineEdit" name="start_frame_line">
+         <property name="toolTip">
+          <string>Start Frame</string>
+         </property>
+         <property name="text">
+          <string>0</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="1">
+        <widget class="QLineEdit" name="end_frame_line">
+         <property name="toolTip">
+          <string>End Frame</string>
+         </property>
+         <property name="text">
+          <string>-1</string>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="0">
+        <widget class="QLabel" name="label_3">
+         <property name="text">
+          <string>Engine</string>
+         </property>
+         <property name="buddy">
+          <cstring>engine_box</cstring>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="1">
+        <widget class="QComboBox" name="engine_box">
+         <property name="toolTip">
+          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;If installed, numba is preferred&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+         </property>
+         <item>
+          <property name="text">
+           <string>mask</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>numba</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>python</string>
+          </property>
+         </item>
+        </widget>
+       </item>
+       <item row="5" column="0">
+        <widget class="QLabel" name="label_4">
+         <property name="text">
+          <string>Search radius</string>
+         </property>
+         <property name="buddy">
+          <cstring>search_radius_line</cstring>
+         </property>
+        </widget>
+       </item>
+       <item row="5" column="1">
+        <widget class="QLineEdit" name="search_radius_line">
+         <property name="toolTip">
+          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Search radius for the linking procedure&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+         </property>
+         <property name="text">
+          <string>5</string>
+         </property>
+        </widget>
+       </item>
+       <item row="6" column="0">
+        <widget class="QLabel" name="label_6">
+         <property name="text">
+          <string>Min Frames</string>
+         </property>
+         <property name="buddy">
+          <cstring>min_frames_line</cstring>
+         </property>
+        </widget>
+       </item>
+       <item row="6" column="1">
+        <widget class="QLineEdit" name="min_frames_line">
+         <property name="toolTip">
+          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Minimum number of frames to consider it a particle&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+         </property>
+         <property name="text">
+          <string>3</string>
+         </property>
+        </widget>
+       </item>
+       <item row="7" column="1">
+        <widget class="QPushButton" name="calculate_button">
+         <property name="toolTip">
+          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Find the locations of all the particles in the range of frames&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+         </property>
+         <property name="text">
+          <string>Calculate all</string>
+         </property>
+        </widget>
+       </item>
+       <item row="9" column="0" colspan="2">
+        <widget class="Line" name="line">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+        </widget>
+       </item>
+       <item row="10" column="0">
+        <widget class="QLabel" name="label_8">
+         <property name="text">
+          <string>Step Size (µm)</string>
+         </property>
+         <property name="buddy">
+          <cstring>step_size_line</cstring>
+         </property>
+        </widget>
+       </item>
+       <item row="10" column="1">
+        <widget class="QLineEdit" name="step_size_line">
+         <property name="toolTip">
+          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Step size during the scan&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+         </property>
+         <property name="text">
+          <string>5</string>
+         </property>
+        </widget>
+       </item>
+       <item row="11" column="1">
+        <spacer name="verticalSpacer">
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>20</width>
+           <height>40</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item>
+     <widget class="QWidget" name="widget" native="true">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout">
+       <item>
+        <widget class="QWidget" name="slider_widget" native="true">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Preferred" vsizetype="Minimum">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>16777215</width>
+           <height>50</height>
+          </size>
+         </property>
+         <layout class="QHBoxLayout" name="horizontalLayout_3">
+          <property name="topMargin">
+           <number>0</number>
+          </property>
+          <property name="bottomMargin">
+           <number>0</number>
+          </property>
+          <item>
+           <widget class="QLabel" name="frame_num">
+            <property name="text">
+             <string>0</string>
+            </property>
+            <property name="buddy">
+             <cstring>frame_slider</cstring>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QSlider" name="frame_slider">
+            <property name="enabled">
+             <bool>false</bool>
+            </property>
+            <property name="mouseTracking">
+             <bool>true</bool>
+            </property>
+            <property name="focusPolicy">
+             <enum>Qt::WheelFocus</enum>
+            </property>
+            <property name="statusTip">
+             <string>Status tip</string>
+            </property>
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="tickPosition">
+             <enum>QSlider::TicksAbove</enum>
+            </property>
+            <property name="tickInterval">
+             <number>20</number>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QWidget" name="video_widget" native="true">
+         <layout class="QGridLayout" name="gridLayout">
+          <property name="leftMargin">
+           <number>0</number>
+          </property>
+          <property name="topMargin">
+           <number>0</number>
+          </property>
+          <property name="rightMargin">
+           <number>0</number>
+          </property>
+          <property name="bottomMargin">
+           <number>0</number>
+          </property>
+         </layout>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <widget class="QToolBar" name="toolBar">
+   <property name="windowTitle">
+    <string>toolBar</string>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="action_open"/>
+   <addaction name="action_mass_histogram"/>
+   <addaction name="action_data_plots"/>
+   <addaction name="action_save_data"/>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>768</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFile">
+    <property name="title">
+     <string>File</string>
+    </property>
+    <addaction name="action_open"/>
+    <addaction name="action_save_data"/>
+    <addaction name="action_export_all_data"/>
+   </widget>
+   <widget class="QMenu" name="menuAnaysis">
+    <property name="title">
+     <string>Anaysis</string>
+    </property>
+    <addaction name="action_calculate_bkg"/>
+    <addaction name="action_show_bkg"/>
+    <addaction name="action_data_frame"/>
+   </widget>
+   <widget class="QMenu" name="menuHelp">
+    <property name="title">
+     <string>Help</string>
+    </property>
+    <addaction name="action_about"/>
+    <addaction name="actionGo_to_documentation"/>
+   </widget>
+   <addaction name="menuFile"/>
+   <addaction name="menuAnaysis"/>
+   <addaction name="menuHelp"/>
+  </widget>
+  <action name="action_open">
+   <property name="icon">
+    <iconset>
+     <normaloff>Icons/Open Folder.svg</normaloff>Icons/Open Folder.svg</iconset>
+   </property>
+   <property name="text">
+    <string>Open</string>
+   </property>
+   <property name="toolTip">
+    <string>Open data file</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+O</string>
+   </property>
+  </action>
+  <action name="action_mass_histogram">
+   <property name="icon">
+    <iconset>
+     <normaloff>Icons/11837 - Histogram.svg</normaloff>Icons/11837 - Histogram.svg</iconset>
+   </property>
+   <property name="text">
+    <string>Mass Histogram</string>
+   </property>
+   <property name="toolTip">
+    <string>Histogram of Intensities for the current frame</string>
+   </property>
+  </action>
+  <action name="action_data_frame">
+   <property name="icon">
+    <iconset>
+     <normaloff>Icons/11831 - Fluid Mechanics.svg</normaloff>Icons/11831 - Fluid Mechanics.svg</iconset>
+   </property>
+   <property name="text">
+    <string>Trends</string>
+   </property>
+   <property name="toolTip">
+    <string>Show trends over frames</string>
+   </property>
+  </action>
+  <action name="action_data_plots">
+   <property name="icon">
+    <iconset>
+     <normaloff>Icons/11862 - Weight Scale.svg</normaloff>Icons/11862 - Weight Scale.svg</iconset>
+   </property>
+   <property name="text">
+    <string>Mass</string>
+   </property>
+   <property name="toolTip">
+    <string>Show intensities of all the calculated particles</string>
+   </property>
+  </action>
+  <action name="action_save_data">
+   <property name="icon">
+    <iconset>
+     <normaloff>Icons/Save.svg</normaloff>Icons/Save.svg</iconset>
+   </property>
+   <property name="text">
+    <string>Export</string>
+   </property>
+   <property name="toolTip">
+    <string>Export data to CSV</string>
+   </property>
+  </action>
+  <action name="actionAdvance_Frame">
+   <property name="text">
+    <string>Increase Frame</string>
+   </property>
+   <property name="shortcut">
+    <string>Meta+Alt+Right</string>
+   </property>
+  </action>
+  <action name="actionDecrease_Frame">
+   <property name="text">
+    <string>Decrease Frame</string>
+   </property>
+   <property name="shortcut">
+    <string>Meta+Alt+Left</string>
+   </property>
+  </action>
+  <action name="actionGo_to_documentation">
+   <property name="text">
+    <string>Open Documentation</string>
+   </property>
+  </action>
+  <action name="action_export_all_data">
+   <property name="text">
+    <string>Export All Data</string>
+   </property>
+   <property name="toolTip">
+    <string>Export all the information gathered on particles</string>
+   </property>
+  </action>
+  <action name="action_about">
+   <property name="text">
+    <string>About</string>
+   </property>
+   <property name="toolTip">
+    <string>About NanoQNTPy</string>
+   </property>
+  </action>
+  <action name="action_calculate_bkg">
+   <property name="text">
+    <string>Calculate Background</string>
+   </property>
+  </action>
+  <action name="action_show_bkg">
+   <property name="text">
+    <string>Show Background</string>
+   </property>
+  </action>
+ </widget>
+ <tabstops>
+  <tabstop>find_particles_check</tabstop>
+  <tabstop>start_frame_line</tabstop>
+  <tabstop>end_frame_line</tabstop>
+  <tabstop>engine_box</tabstop>
+  <tabstop>search_radius_line</tabstop>
+  <tabstop>min_frames_line</tabstop>
+  <tabstop>calculate_button</tabstop>
+  <tabstop>step_size_line</tabstop>
+  <tabstop>frame_slider</tabstop>
+ </tabstops>
+ <resources>
+  <include location="Icons/Icons.qrc"/>
+ </resources>
+ <connections/>
+</ui>
