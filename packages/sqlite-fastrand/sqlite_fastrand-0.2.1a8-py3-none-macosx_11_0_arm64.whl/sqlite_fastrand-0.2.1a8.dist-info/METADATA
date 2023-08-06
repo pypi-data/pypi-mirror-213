@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: sqlite-fastrand
+Version: 0.2.1a8
+Home-page: https://github.com/asg017/sqlite-fastrand
+Author: Alex Garcia
+License: MIT License, Apache License, Version 2.0
+Project-URL: Issues, https://github.com/asg017/sqlite-fastrand/issues
+Project-URL: CI, https://github.com/asg017/sqlite-fastrand/actions
+Project-URL: Changelog, https://github.com/asg017/sqlite-fastrand/releases
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Provides-Extra: test
+Requires-Dist: pytest ; extra == 'test'
+
