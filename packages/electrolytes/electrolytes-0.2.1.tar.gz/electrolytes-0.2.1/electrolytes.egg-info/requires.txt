@@ -1,0 +1,12 @@
+typer<0.8,>=0.4.2
+pydantic<2,>=1.8.2
+
+[lint]
+pytest<8,>=6.2.4
+pytest-cov
+mypy
+check-manifest
+
+[test]
+pytest<8,>=6.2.4
+pytest-cov
