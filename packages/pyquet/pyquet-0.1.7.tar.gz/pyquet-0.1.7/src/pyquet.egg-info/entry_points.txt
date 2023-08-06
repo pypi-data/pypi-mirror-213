@@ -1,0 +1,2 @@
+[console_scripts]
+pyquet-editor = pyquet.editor_ui:main
