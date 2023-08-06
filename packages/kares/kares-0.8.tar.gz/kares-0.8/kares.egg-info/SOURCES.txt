@@ -1,0 +1,16 @@
+MANIFEST.in
+setup.py
+kares/__init__.py
+kares.egg-info/PKG-INFO
+kares.egg-info/SOURCES.txt
+kares.egg-info/dependency_links.txt
+kares.egg-info/top_level.txt
+kares/pracs/Practical_1.txt
+kares/pracs/Practical_2.txt
+kares/pracs/Practical_3.txt
+kares/pracs/Practical_4.txt
+kares/pracs/Practical_5.txt
+kares/pracs/Practical_6.txt
+kares/pracs/Practical_7.txt
+kares/pracs/Practical_8.txt
+kares/pracs/Practical_9.txt
