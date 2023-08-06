@@ -1,0 +1,9 @@
+cross_process_bridge/__init__.py,sha256=Us_yyNsZeZyeVdF9_0snw2vj22FNip_VWyXCCPGY4HI,113
+cross_process_bridge/child_process_bridge.py,sha256=4eI1Diofm0HHuag2GLNtEuyseOKQ8HqvPajld5BCE0c,2202
+cross_process_bridge/cross_process_bridge.py,sha256=sCt9ruU3FImNUOVNY9NgY5UQ22TiEZZPQxzCGCndqJg,2822
+cross_process_bridge/instance_creator.py,sha256=35kZrEETF2IL-u59vFaVuAHFsP8zA4bagW1dDldEFNA,388
+cross_process_bridge/models.py,sha256=mSQs1WsY043PstWzQzzaUO-AxHqY6GCUniTT1IF9iUc,287
+cross_process_bridge-1.0.0.dist-info/METADATA,sha256=hhIqukC6vVRbEgFaQf2u8dmORe-PPBrNVFcK_bsVtWw,3707
+cross_process_bridge-1.0.0.dist-info/WHEEL,sha256=KGYbc1zXlYddvwxnNty23BeaKzh7YuoSIvIMO4jEhvw,87
+cross_process_bridge-1.0.0.dist-info/licenses/LICENSE,sha256=2bm9uFabQZ3Ykb_SaSU_uUbAj2-htc6WJQmS_65qD00,1073
+cross_process_bridge-1.0.0.dist-info/RECORD,,
