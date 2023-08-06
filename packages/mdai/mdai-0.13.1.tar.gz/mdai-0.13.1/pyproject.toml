@@ -1,0 +1,68 @@
+[tool.black]
+line-length = 100
+
+[tool.ruff]
+line-length = 100
+# Enable Pyflakes and pycodestyle rules.
+select = ["E", "F"]
+# E501 is the "Line too long" error. We disable it because we use Black for
+# code formatting. Black makes a best effort to keep lines under the max
+# length, but can go over in some cases.
+# E203: Whitespace before ':'. Conflicts with black formatting.
+# E231: Missing whitespace after ',', ';', or ':'. Conflicts with black formatting.
+# W503: Line break occurred before a binary operator. Conflicts with black formatting.
+ignore = ["E501", "E203", "E231", "W503"]
+
+[tool.poetry]
+name = "mdai"
+version = "0.13.1"
+description = "MD.ai Python client library"
+license = "Apache-2.0"
+authors = ["MD.ai <github@md.ai>"]
+readme = "README.md"
+homepage = "https://github.com/mdai/mdai-client-py"
+repository = "https://github.com/mdai/mdai-client-py"
+documentation = "https://docs.md.ai/libraries/python/"
+classifiers = [
+    "Development Status :: 2 - Pre-Alpha",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Education",
+    "Intended Audience :: Healthcare Industry",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: Apache Software License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.6",
+    "Programming Language :: Python :: 3.7",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+    "Topic :: Scientific/Engineering :: Medical Science Apps.",
+    "Topic :: Software Development :: Libraries",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+]
+
+[tool.poetry.dependencies]
+python = ">=3.8"
+arrow = "*"
+matplotlib = "*"
+nibabel = "*"
+numpy = "*"
+opencv-python ="*"
+pandas = "*"
+pillow = "*"
+pydicom = "*"
+requests = "*"
+retrying = "*"
+scikit-image = "*"
+tqdm = "*"
+dicom2nifti = "*"
+PyYAML = "*"
+
+[tool.poetry.group.dev.dependencies]
+black = "23.3.0"
+ruff = "0.0.272"
+pytest = "*"
+sphinx = "*"
+recommonmark = "*"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.masonry.api"
