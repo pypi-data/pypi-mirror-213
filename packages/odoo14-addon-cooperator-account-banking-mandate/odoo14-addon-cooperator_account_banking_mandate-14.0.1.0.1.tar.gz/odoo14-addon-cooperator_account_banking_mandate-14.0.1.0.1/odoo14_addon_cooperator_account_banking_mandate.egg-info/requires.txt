@@ -1,0 +1,5 @@
+odoo14-addon-account_banking_mandate
+odoo14-addon-account_banking_sepa_direct_debit
+odoo14-addon-account_payment_cooperator
+odoo14-addon-cooperator
+odoo<14.1dev,>=14.0a
