@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: DtoLib
+Version: 0.0.1
+Summary: Python Dto Library
+Author: Lucas Alves
+Author-email: lucasal072@gmail.com
+License: MIT License
+Keywords: Dto
+Description-Content-Type: text/markdown
+License-File: LICENSE
