@@ -1,0 +1,4 @@
+[console_scripts]
+play_demo = mciplayer:_play_demo
+record_demo = mciplayer:_record_demo
+
