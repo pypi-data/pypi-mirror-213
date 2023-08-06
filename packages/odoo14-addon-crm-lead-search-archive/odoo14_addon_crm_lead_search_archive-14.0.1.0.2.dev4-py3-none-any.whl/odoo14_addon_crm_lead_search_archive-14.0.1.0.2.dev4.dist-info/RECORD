@@ -1,0 +1,16 @@
+odoo/addons/crm_lead_search_archive/README.rst,sha256=Ntx4cCwbcCbLUTyxdGTJRo43z8MDwYx7bxQeb56505w,2843
+odoo/addons/crm_lead_search_archive/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+odoo/addons/crm_lead_search_archive/__manifest__.py,sha256=jXb9O5gkrJa6_J4K9WHph_xRgp7beLdB7b4FE3UpLnc,493
+odoo/addons/crm_lead_search_archive/i18n/crm_lead_search_archive.pot,sha256=dq8aavCo6PendQqqzb1hgOs31VCE4cYt2pSroYQPSEs,533
+odoo/addons/crm_lead_search_archive/i18n/es.po,sha256=yAbSgRWsLcoW4pykz8be3HeBRGgKIexKu5NMzd0RDpQ,696
+odoo/addons/crm_lead_search_archive/i18n/fr.po,sha256=nRhEsGuDN57G7W7AknNRdyZhehJQr-YFsb3lg_6tin8,676
+odoo/addons/crm_lead_search_archive/i18n/it.po,sha256=fBWsn27TgZQbGu5_cJikOZf9UjNnUm4ANrDeV_Za59o,707
+odoo/addons/crm_lead_search_archive/readme/CONTRIBUTORS.rst,sha256=aAGswkyoIgLZcVSaqsfg1THxIlX9w3cahJrJk7vmGHs,55
+odoo/addons/crm_lead_search_archive/readme/DESCRIPTION.rst,sha256=XSQsfGjEJWJwq4Znii9dtCMuKORaxB3kyvMMu2PsLu8,51
+odoo/addons/crm_lead_search_archive/static/description/icon.png,sha256=6xBPJauaFOF0KDHfHgQopSc28kKvxMaeoQFQWZtfZDo,9455
+odoo/addons/crm_lead_search_archive/static/description/index.html,sha256=g8sdl2TKP1sGR8ZJ_ucbKOA5lBRVzsV6ygVFqhiGptE,12073
+odoo/addons/crm_lead_search_archive/views/crm_lead_view.xml,sha256=GrVc2KlF5Rqv2PQI5fLBuWLVMDBHwgrxTxd6tCOzeMA,556
+odoo14_addon_crm_lead_search_archive-14.0.1.0.2.dev4.dist-info/METADATA,sha256=VkYoUr4xtccmYtgRfW4S7uAuZKBXFg3TrgPvacAeaOU,3409
+odoo14_addon_crm_lead_search_archive-14.0.1.0.2.dev4.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+odoo14_addon_crm_lead_search_archive-14.0.1.0.2.dev4.dist-info/top_level.txt,sha256=qBj40grFkGOfDZ2WDSw3y1RnDlgG0u8rP8pvGNdbz4w,5
+odoo14_addon_crm_lead_search_archive-14.0.1.0.2.dev4.dist-info/RECORD,,
