@@ -1,0 +1,497 @@
+Metadata-Version: 2.1
+Name: leggedsnake
+Version: 0.3.1
+Summary: Simulate and optimize planar leg mechanisms using PSO and GA
+Home-page: https://hugofara.github.io/leggedsnake/
+Author: Hugo Farajallah
+License: MIT License
+Project-URL: Changelog, https://hugofara.github.io/leggedsnake/changeloglink.html
+Project-URL: Source, https://github.com/HugoFara/leggedsnake
+Keywords: linkage,leg mechanism,optimization,leggedsnake,walking linkage
+Classifier: Development Status :: 3 - Alpha
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Scientific/Engineering :: Artificial Life
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Science/Research
+Classifier: Intended Audience :: Legal Industry
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE.rst
+Requires-Dist: numpy
+Requires-Dist: tqdm
+Requires-Dist: matplotlib
+Requires-Dist: pylinkage
+
+# leggedsnake
+
+[![PyPI version fury.io](https://badge.fury.io/py/leggedsnake.svg)](https://pypi.python.org/pypi/leggedsnake/)
+[![Downloads](https://static.pepy.tech/personalized-badge/leggedsnake?period=total&units=international_system&left_color=grey&right_color=green&left_text=downloads)](https://pepy.tech/project/leggedsnake)
+[![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg )](https://raw.githubusercontent.com/HugoFara/leggedsnake/master/LICENSE.rst)
+
+LeggedSnake is a project intended to make the simulation of walking linkages fast and easy. 
+We believe that building walking linkages is fun and could be useful.
+Our philosophy is to provide a quick way of building, optimizing and testing walking linkages.
+
+We handle planar [leg mechanisms](https://en.wikipedia.org/wiki/Leg_mechanism) in three main parts:
+
+* Linkage conception in simple Python relying on [pylinkage](https://github.com/HugoFara/pylinkage).
+* Kinematic optimization with ``Walker`` class, inheriting from pylinkage's ``Linkage`` class.
+* Dynamic simulation and its optimization using genetic algorithms.
+
+## Quick links
+
+* For the documentation, check the docs at [hugofara.github.io/leggedsnake](https://hugofara.github.io/leggedsnake/)!
+* Source code is hosted on GitHub as [HugoFara/leggedsnake](https://github.com/HugoFara/leggedsnake)
+* We also provide a Python package on PyPi, test [leggedsnake](https://pypi.org/project/leggedsnake/).
+* If you just want to chill out looking at walking linkages striving to survive, join the [discussions](https://github.com/HugoFara/leggedsnake/discussions).
+
+Contributors are welcome!
+
+## Installation
+
+### Using pip
+
+The package is hosted on PyPi as [leggedsnake](https://pypi.org/project/leggedsnake/), use:
+
+```bash
+pip install leggedsnake
+```
+
+### Setting up Virtual Environment
+
+We provide an [environment.yml](https://github.com/HugoFara/leggedsnake/blob/master/environment.yml) file for conda. 
+Use ``conda env update --file environment.yml --name leggedsnake-env`` to install the requirements in a separate environment.
+
+If you are looking for a development version, check the GitHub repo under 
+[HugoFara/leggedsnake](https://github.com/HugoFara/leggedsnake).
+
+
+## Contribute
+
+Download the latest GitHub version, then install the dev requirements in ``requirements-dev.txt``.
+
+In a nutshell
+
+```bash
+git clone https://github.com/HugoFara/leggedsnake.git
+cd leggedsnake
+pip install -r requirements-dev.txt
+```
+
+### Testing
+
+We use unittest. Just run ``python3 -m unittest discover .`` from the main folder.
+
+### Release
+
+This section is mainly intended for maintainers. 
+Fell free to use the tools described here, but they are not necessary in any way.
+
+* To publish a new version, use ``bump2version``. For instance ``bump2version minor``.
+* Regenerate the documentation with ``make html`` (uses Sphinx).
+
+## Usage
+
+The demo script is [strider.py](https://github.com/HugoFara/leggedsnake/blob/master/docs/examples/strider.py), which
+demonstrates all the techniques about the [Strider linkage](https://www.diywalkers.com/strider-linkage-plans.html).
+
+### Defining a ``Walker``
+
+First, you need to define joints for your ``Walker`` as described in [pylinkage](https://github.com/HugoFara/pylinkage)
+documentation. Once your joints (let's say they are in a joint object), you should have something like that:
+
+```python3
+import leggedsnake as ls
+
+# Center of the Walker
+linkage = {
+    "A": ls.Static(x=0, y=0, name="A"),
+    "B": ls.Crank(1, 0, distance=1, angle=0.31, name="Crank")
+    # etc...
+}
+my_walker = ls.Walker(
+    joints=linkage.values(),
+    name="My Walker"
+)
+```
+
+``Walker`` is just an inherited class of ``Linkage``, with some useful methods, and behaves quite the same way.
+
+### Kinematic optimization using Particle Swarm Optimization (PSO)
+
+No change compared to a classic linkage optimization. You should use the ``step`` and ``stride`` method from the 
+[utility module](https://github.com/HugoFara/leggedsnake/blob/master/leggedsnake/utility.py) as fitness functions.
+This set of rules should work well for a stride **maximisation** problem:
+
+1. Rebuild the Walker with the provided set of dimensions, and do a complete turn.
+2. If the Walker raises an UnbuildableError, its score is 0 (or ``-float('inf')`` if you use other evaluation functions).
+3. Verify if it can pass a certain obstacle using ``step`` function. If not, its score is 0.
+4. Eventually measure the length of its stride with the ``stride`` function. Return this length as its score.
+
+### Dynamic Optimization using Genetic Algorithm (GA)
+
+Kinematic optimization is fast, but it can return weird results, and it has no sense of gravity while walking heavily
+relies on gravity. This is why you may need to use dynamic optimization thanks to
+[Pymunk](http://www.pymunk.org/en/latest/index.html). However, the calculation is much slower, and you can no
+longer test millions of linkages as in PSO (or you will need time). This is why we
+use [genetic algorithm](https://en.wikipedia.org/wiki/Genetic_algorithm), because it can provide good results with
+fewer parents.
+
+We handle everything almost everything world definition to linkage conversion. Apart from the GA parameters, you just
+have to define a fitness function. Here are the main steps for a **maximisation problem**:
+
+1. Create a function of two arguments, the first one should be the parameters of the linkage, the second the initial positions for the joints.
+2. Try to do a revolution in **kinematic simulation**. If the Walker raises an ``UnbuildableError`` set its score to ``-float('inf')``.
+3. Otherwise, use the following procedure:
+
+```python3
+import leggedsnake as ls
+
+def dynamic_linkage_fitness(walker):
+    """
+    Make the dynamic evaluation of a Walker.
+    
+    Return yield and initial position of joints.
+    """
+    world = ls.World()
+    # We handle all the conversions
+    world.add_linkage(walker)
+    # Simulation duration (in seconds)
+    duration = 40
+    # Somme of yields
+    tot = 0
+    # Motor turned on duration
+    dur = 0
+    n = duration * ls.params["camera"]["fps"]
+    n /= ls.params["simul"]["time_coef"]
+    pos = tuple(walker.step())[-1]
+    for j in range(int(n)):
+        efficiency, energy = world.update(j)
+        tot += efficiency
+        dur += energy
+    if dur == 0:
+        return - float('inf'), list()
+    print("Score:", tot / dur)
+    # Return 100 times average yield, and initial positions as the final score
+    return tot / dur, pos
+```
+
+And now, relax while your computer creates a civilization of walking machines!
+
+### Visualization
+
+For this part we will focus on the [Strider linkage](https://www.diywalkers.com/strider-linkage-plans.html), 
+an example file is provided at ``docs/examples/strider.py``.
+
+The linkage looks like this:
+![A Kinematic representation of Strider linkage](https://github.com/HugoFara/leggedsnake/raw/master/docs/examples/images/Kinematic%20unoptimized%20Strider.gif)
+
+Looks cool? Let's simulate it dynamically!
+
+![Dynamic one-leg-pair Strider being tested](https://github.com/HugoFara/leggedsnake/raw/master/docs/examples/images/Dynamic%20unoptimized%20one-legged%20Strider.gif)
+
+Oops! Here is what you get when you forget to add more legs! There is **real danger here**, because your walker crawls
+well, you will be able to optimize efficiently the "crawler", *which may be not your goal*.
+
+Let's add three more leg pairs. Why three? Many legs mean more mass and constraints, so less yield and more intensive
+computations. On the other hand, we always want the center of mass over the
+[support line](https://en.wikipedia.org/wiki/Support_polygon), which means that if the walker begins to lift a foot
+(let's say a front foot), and another doesn't come on the ground ahead of it, the linkage will fall nose to the
+ground. With more feet, we make the "snooping" time shorter, and a total of four leg pairs is a minimum for this
+*unoptimized* version.
+
+A simple way to do it is:
+
+```python
+my_linkage.add_legs(3) # Replace "my_linkage" with your Walker object
+```
+
+Let's have a look at the artist:
+
+![Dynamic four-leg-pair unoptimized Strider](https://github.com/HugoFara/leggedsnake/raw/master/docs/examples/images/Dynamic%20unoptimized%20strider.gif)
+
+## Advice
+
+Use the visualisation tools provided! The optimization tools should always give you a score with a better fitness,
+but it might not be what you expected. Tailor your optimization and *then* go for a long run will make you save a lot
+of time.
+
+**Do not** use optimized linkages from the start! The risk is to fall to quickly into a suboptimal solution. They are
+several mechanisms to prevent that (starting from random position), but it can always have an impact on the rest of
+the optimization.
+
+Try to minimize the number of elements in the optimizations! You can often use some linkage properties to reduce the
+number of simulation parameters. For instance, the Strider linkage has axial symmetry. While it is irrelevant to use
+this property in dynamic simulation, you can use "half" your Strider in a kinematic optimization, which is much faster.
+
+![A Kinematic half Strider](https://github.com/HugoFara/leggedsnake/raw/master/docs/examples/images/Kinematic%20half-Strider.gif)
+
+## Requirements
+
+Python 3, numpy for calculation, matplotlib for drawing, and standard libraries.
+
+For kinematic optimization, you can either use the built-in algorithm, or
+[PySwarms](https://pyswarms.readthedocs.io/en/latest/), under MIT license. 
+PySwarms is a much more complex package which provides quick calculations, 
+however, with modern laptops the built-in swarm optimization should be quick enough
+to fit your needs.
+
+Dynamic optimization relies on multiple packages.
+First of all, it uses [Pymunk](http://www.pymunk.org/en/latest/index.html),
+made by Victor Blomqvist, as its physics engine. 
+The genetic algorithm optimizer is home-made, 
+but feel free to use any external tool suiting your needs!
+# Changelog
+
+All notable changes to the LeggedSnake will be documented in this file.
+
+The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
+and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
+
+## [0.3.1] - 2023-06-14
+
+Starting from 0.3.1, we won't include "-alpha" or "-beta" in the naming scheme,
+as it is considered irrelevant.
+
+### Added in 0.3.1
+
+- ``requirements-dev.txt`` that contain dev requirements. It makes contribution easier.
+- PyCharm configuration files.
+
+### Changed in 0.3.1
+
+- Animations are now all stored in local variables, and no longer in an "ani"
+global list of animations.
+
+### Fixed in 0.3.1
+
+- The main example file ``strider.py`` was launching animations for each subprocess.
+This file is now considered an executable.
+- ``evolutionary_optimization_builtin`` was during the last evaluation of linkages.
+- ``data_descriptors`` were not save for the first line of data only in
+  ``geneticoptimizer``.
+- Multiple grammar corrections.
+- The ``video`` function of ``physicsengine.py`` now effectively launches the video (no call to plt.show required).
+- The ``video`` function of ``physicsengine.py`` using ``debug=True`` was crashing.
+
+## [0.3.0-beta] - 2021-07-21
+
+### Added in 0.3.0
+
+- Multiprocessing is here! The genetic optimization can now be run in parallel!
+  Performances got improved by 65 % using 4 processes only.
+
+### Changed in 0.3.0
+
+- We now save data using JSON! Slow computer users, you can relax and stop
+  computing when you want.
+- The sidebar in the documentation is a bit more useful.
+- Not having tqdm will cause an exception.
+
+### Fixed in 0.3.0
+
+- Corrected the example, the genetic optimization is now properly fixed but
+slower.
+
+### Removed in 0.3.0
+
+- Native support for PyGAD is no longer present.
+- ``evolutionnary_optimization`` (replaced by ``evolutionary_optimization``).
+- Data saved in the old txt format are no longer readable (were they readable?)
+
+## [0.2.0-alpha] - 2021-07-14
+
+### Added in 0.2.0
+
+- Dependency to [tqdm](https://tqdm.github.io/) and matplotlib.
+- The ``evolutionary_optimization`` replaces ``evolutionnary_optimization``.
+  - The ``ite`` parameter renamed ``iters`` for consistency with pylinkage.
+  - The new parameter ``verbose`` let you display a nice progress bar, more
+    information on optimization state, or nothing.
+- The best solution can be displayed with PyGAD as well.
+
+### Changed in 0.2.0
+
+- Typos and cleans-up in ``docs/examples/strider.py``.
+- ``evolutionnary_optimization_legacy`` renamed to
+  ``evolutionary_optimization_builtin``.
+
+### Deprecated in 0.2.0
+
+- ``evolutionnary_optimization`` is now deprecated. Please use
+  ``evolutionary_optimization``.
+
+### Removed in 0.2.0
+
+- Explicit dependency to PyGAD. There is no longer an annoying message when
+  PyGAD is not installed.
+
+## [0.1.4-alpha] - 2021-07-12
+
+### Added in 0.1.4
+
+- It is now possible and advised to import class and functions using quick
+  paths, for instance ``from leggedsnake import Walker`` instead of
+  ``from leggedsnake.walker import Walker``.
+- You do no longer have to manually import
+  [pylinkage](https://hugofara.github.io/pylinkage/), we silently import the
+  useful stuff for you.
+- We now use [bump2version](https://pypi.org/project/bump2version/) for version
+  maintenance.
+- This is fixed by the ``road_y`` parameter in ``World`` let you define a
+  custom height for the base ground.
+
+### Changed in 0.1.4
+
+- ``docs/examples/strider.py`` has been updated to the latest version of
+  leggedsnake 0.1.4.
+
+### Fixed in 0.1.4
+
+- The full swarm representation in polar graph has been repaired in
+  ``docs/examples/strider.py``.
+- During a dynamic simulation, linkages with long legs could appear through the
+  road.
+- The documentation was not properly rendered because Napoleon (NumPy coding
+  style) was not integrated.
+
+## [0.1.3-alpha] - 2021-07-10
+
+This package was lacking real documentation, it is fixed in this version.
+
+### Added in 0.1.3
+
+- Sphinx documentation!
+- Website hosted on GitHub pages, check
+  [hugofara.github.io/leggedsnake](https://hugofara.github.io/leggedsnake/)!
+- Expanded README with the quick links section.
+
+### Changed in 0.1.3
+
+- Tests moved from ``leggedsnake/tests`` to ``tests/``.
+- Examples moved from ``leggedsnake/examples/`` to ``docs/examples/``.
+- I was testing my code on ``leggedsnake/examples/strider.py``  (the old path) and
+  that's why it was a big mess. I cleaned up that all. Sorry for the
+  inconvenience!
+
+### Fixed in 0.1.3
+
+- A lot of outdated code in the ``leggedsnake/examples/strider.py``
+- Changelog URL was broken in ``setup.cfg``.
+
+## [0.1.2-alpha] - 2021-07-07
+
+### Added in 0.1.2
+
+- Security: tests with ``tox.ini`` now include Python 3.9 and Flake 8.
+
+### Changed in 0.1.2
+
+- The ``step`` function execution speed has been increased by 25% when
+  ``return_res`` is ``True``! Small performance improvement when ``return_res``
+  is ``False``.
+- The ``size`` argument of ``step`` function is now known as ``witdh``.
+- We now require pylinkage>=0.4.0.
+
+### Fixed in 0.1.2
+
+- Files in ``leggedsnake/examples/`` were not included in the PyPi package.
+- The example was incompatible with pylinkage 0.4.0.
+- Test suite was unusable by tox.
+- Tests fixed.
+- Incompatible argument between PyGAD init_pop and built-in GA.
+
+## [0.1.1-alpha] - 2021-06-26
+
+### Added in 0.1.1
+
+- The example file ``examples/strider.py`` is now shipped with the Python
+  package.
+- ``leggedsnake/geneticoptimizer.py`` can now automatically switch to the
+  built-in GA algorithm if PyGAD is not installed.
+
+### Changed in 0.1.1
+
+- ``setup.cfg`` metadata
+
+## [0.1.0-alpha] - 2021-06-25
+
+### Added in 0.1.0
+
+- Code vulnerabilities automatic checks
+- Example videos in ``examples/images/``
+
+### Changed in 0.1.0
+
+- Many reforms in code style in order to make the dynamic part of naming conventions
+  consistent with Pymunk.
+- Images in the ``README.md``!
+
+### Fixed in 0.1.0
+
+- You can now define linkages with an enormous number of legs. Systems with
+  many should no longer break physics but your CPU instead :)
+
+## [0.0.3-alpha] - 2021-06-23
+
+### Added in 0.0.3
+
+- Started walkthrough demo in ``README.md``
+- Automatic release to PyPi
+
+### Fixed in 0.0.3
+
+- Pymunk version should be at least 6.0.0 in requirement files.
+- Some URLs typos in ``README.md``
+- Versioning tests not executing (GitHub action)
+
+## [0.0.2-alpha] - 2021-06-22
+
+### Added in 0.0.2
+
+- ``requirement.txt`` was absent due to ``.gitignore`` misconfiguration.
+
+### Changed in 0.0.2
+
+- ``.gitignore`` now ignores .txt files only in the leggedsnake folder.
+- ``environment.yml`` more flexible (versions can be superior to the selected).
+  pymunk>5.0.0 and pylinkage added.
+- ``leggedsnake/utility.py`` not having zipfile or xml modules error
+  encapsulation.
+
+### Fixed in 0.0.2
+
+- ``setup.cfg`` was not PyPi compatible. Removed mail (use GitHub!), we now
+  explicitly say that ``README.md`` is markdown (PyPi is conservative)
+
+## [0.0.1-alpha] - 2021-06-22
+
+Basic version, supporting Genetic Algorithm optimization, but with various
+problems.
+
+### Added in 0.0.1
+
+- ``CODE_OF_CONDUCT.md`` to help community.
+- ``LICENSE`` MIT License.
+- ``MANIFEST.in`` to include more files.
+- ``README.md`` as a very minimal version.
+- ``environment.yml`` with matplotlib, numpy, and pygad requirement.
+- ``examples/strider.py`` a complete demo with Strider linkage.
+- ``leggedsnake/__init__.py``.
+- ``leggedsnake/dynamiclinkage.py``.
+- ``leggedsnake/geneticoptimizer.py``.
+- ``leggedsnake/physicsengine.py``.
+- ``leggedsnake/show_evolution.py`` just a legacy package, no utility.
+- ``leggedsnake/tests/test_utility.py`` untested test case
+- ``leggedsnake/utility.py`` contain some useful evaluation function (``step``
+  and ``stride``) and a broken GeoGebra interface.
+- ``walker.py`` defines the ``Walker`` object.
+- ``pyproject.toml``.
+- ``setup.cfg``.
+- ``setup.py`` empty, for compatibility purposes only.
+- ``tox.ini`` tox with Python 3.7 and 3.8.
