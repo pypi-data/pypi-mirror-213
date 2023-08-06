@@ -1,0 +1,7 @@
+dogpile.cache>=1.0
+redis
+
+[testing]
+flake8
+mypy
+tox
