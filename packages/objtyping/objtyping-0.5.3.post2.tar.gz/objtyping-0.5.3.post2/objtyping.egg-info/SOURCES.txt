@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+objtyping/__init__.py
+objtyping/objtyping.py
+objtyping.egg-info/PKG-INFO
+objtyping.egg-info/SOURCES.txt
+objtyping.egg-info/dependency_links.txt
+objtyping.egg-info/top_level.txt
+test/test_objtyping.py
