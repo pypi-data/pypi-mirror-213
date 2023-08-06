@@ -1,0 +1,7 @@
+LICENSE
+README.md
+setup.py
+myokit_beta.egg-info/PKG-INFO
+myokit_beta.egg-info/SOURCES.txt
+myokit_beta.egg-info/dependency_links.txt
+myokit_beta.egg-info/top_level.txt
