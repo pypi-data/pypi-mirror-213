@@ -1,0 +1,6 @@
+{
+  "test_pytest.py": true,
+  "test_ast_parsing.py": true,
+  "test_detectors.py": true,
+  "test_read_storage.py": true
+}
