@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+src/py_scrapo.egg-info/PKG-INFO
+src/py_scrapo.egg-info/SOURCES.txt
+src/py_scrapo.egg-info/dependency_links.txt
+src/py_scrapo.egg-info/requires.txt
+src/py_scrapo.egg-info/top_level.txt
