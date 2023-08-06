@@ -1,0 +1,8 @@
+httpx[socks]>=0.24.0
+aiohttp
+websockets
+rich
+certifi
+prompt_toolkit
+requests
+BingImageCreator>=0.3.0
