@@ -1,0 +1,5 @@
+measurement_id	person_id	measurement_concept_id	measurement_date	measurement_datetime	measurement_type_concept_id	operator_concept_id	value_as_number	value_as_concept_id	unit_concept_id	range_low	range_high	provider_id	visit_occurrence_id	measurement_source_value	measurement_source_concept_id	unit_source_value	value_source_value
+4	4	4022977	2020-02-05	2020-02-05 00:00:00.000000			0.7							0.7	4022977		
+5	5	4022977	2020-02-05	2020-02-05 00:00:00.000000			0.2							0.2	4022977		
+6	6	4022977	2020-03-05	2020-03-05 00:00:00.000000			0.1							0.1	4022977		
+7	7	4022977	2020-04-05	2020-04-05 00:00:00.000000			0.6							0.6	4022977		

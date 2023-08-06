@@ -1,0 +1,19 @@
+source	tablename	name	column name	before	after content check	pct reject content check	after date format check	pct reject date format
+demo	person	person	gender_concept_id	4	4	0.000	4	0.000
+demo	person	person	birth_datetime	4	4	0.000	4	0.000
+questions	condition_occurrence	headache	person_id	12	12	0.000	NA	NA
+questions	condition_occurrence	headache	condition_concept_id	12	8	33.333	8	0.000
+questions	condition_occurrence	headache	condition_start_datetime	8	8	0.000	8	0.000
+NA	condition_occurrence	headache	valid_person_id	8	8	0.000	NA	NA
+questions	condition_occurrence	sore_throat	person_id	12	12	0.000	NA	NA
+questions	condition_occurrence	sore_throat	condition_concept_id	12	7	41.667	7	0.000
+questions	condition_occurrence	sore_throat	condition_start_datetime	7	7	0.000	7	0.000
+NA	condition_occurrence	sore_throat	valid_person_id	7	7	0.000	NA	NA
+demo	observation	smoker	person_id	4	4	0.000	NA	NA
+demo	observation	smoker	observation_concept_id	4	2	50.000	2	0.000
+demo	observation	smoker	observation_datetime	2	2	0.000	2	0.000
+NA	observation	smoker	valid_person_id	2	2	0.000	NA	NA
+demo	measurement	antibodies	person_id	4	4	0.000	NA	NA
+demo	measurement	antibodies	measurement_concept_id	4	4	0.000	4	0.000
+demo	measurement	antibodies	measurement_datetime	4	4	0.000	4	0.000
+NA	measurement	antibodies	valid_person_id	4	4	0.000	NA	NA
