@@ -1,0 +1,7 @@
+LICENSE
+README.md
+setup.py
+autolabeling.egg-info/PKG-INFO
+autolabeling.egg-info/SOURCES.txt
+autolabeling.egg-info/dependency_links.txt
+autolabeling.egg-info/top_level.txt
