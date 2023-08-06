@@ -1,0 +1,49 @@
+# run travis on these branches (and all PRs)
+branches:
+  only:
+  - master
+  - develop
+
+# use the minimal travis environment since we test in conda
+language: minimal
+dist: focal
+os:
+  - osx
+  - linux
+
+env:
+  global:
+    - CC_TEST_REPORTER_ID=951f438ac8a0fa93801ff0bf69922df59fe03800bf7ea8ab77a3c26cda444979
+
+before_install:
+  # setup mambaforge
+  - wget -q -O Mambaforge.sh "https://github.com/conda-forge/miniforge/releases/latest/download/Mambaforge-$(uname)-$(uname -m).sh"
+  - bash Mambaforge.sh -b -p "${HOME}/conda" > /dev/null
+  - source "${HOME}/conda/etc/profile.d/conda.sh"
+  - source "${HOME}/conda/etc/profile.d/mamba.sh"
+  - mamba activate
+
+install:
+  # install genomepy
+  - mamba env create --name genomepy --file environment.yml
+  - mamba activate genomepy
+  - pip install . --no-deps --ignore-installed
+
+before_script:
+  # install codeclimate test coverage
+  - if [[ "$TRAVIS_OS_NAME" == "osx" ]]; then
+      wget -O cc-test-reporter https://codeclimate.com/downloads/test-reporter/test-reporter-latest-darwin-amd64;
+      chmod +x ./cc-test-reporter;
+      ./cc-test-reporter before-build;
+    fi
+
+script:
+  - pytest -vvv
+    --reruns 1 --reruns-delay 10
+    --cov=genomepy --cov-config=tests/.coveragerc --cov-report=xml
+
+after_script:
+  # send the coverage data to Code Climate
+  - if [ -f ./cc-test-reporter ]; then
+      ./cc-test-reporter after-build -t coverage.py --exit-code $TRAVIS_TEST_RESULT;
+    fi

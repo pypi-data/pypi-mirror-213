@@ -1,0 +1,49 @@
+name: Build and Deploy
+on:
+  push:
+    branches:
+      - master
+      - docs # backdoor branch to update docs
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout 🛎️
+        uses: actions/checkout@v3
+
+      - name: Install & Build 📜
+        run: |
+          # for spinx autosummary feature, we need to install genomepy
+        
+          # setup mambaforge
+          wget -q -O Mambaforge.sh  "https://github.com/conda-forge/miniforge/releases/latest/download/Mambaforge-$(uname)-$(uname -m).sh"
+          bash Mambaforge.sh -b -p "${HOME}/conda" > /dev/null
+          source "${HOME}/conda/etc/profile.d/conda.sh"
+          source "${HOME}/conda/etc/profile.d/mamba.sh"
+          mamba activate
+          
+          # create a yaml with only docs requirements
+          n="$(( $(grep -n '# Plugins' environment.yml | cut -d ':' -f1) - 1 ))"
+          head environment.yml -n $n > requirements.yaml
+          
+          n="$(( $(wc -l docs/requirements.yaml | cut -d ' ' -f1) - $(grep -n 'dependencies:' environment.yml | cut -d ':' -f1) + 1 ))"
+          tail docs/requirements.yaml -n $n >> requirements.yaml
+          
+          # install requirements
+          mamba env create --name genomepy --file requirements.yaml
+          
+          # install genomepy
+          mamba activate genomepy
+          pip install . --no-deps --ignore-installed
+
+          # build docs
+          sphinx-build docs build
+          touch build/.nojekyll
+
+      - name: Deploy 🚀
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          branch: gh-pages # The branch the action should deploy to.
+          folder: build # The folder the action should deploy.
+          clean: true
