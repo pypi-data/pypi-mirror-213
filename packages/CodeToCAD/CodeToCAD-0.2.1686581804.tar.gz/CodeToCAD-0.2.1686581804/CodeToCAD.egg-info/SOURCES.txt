@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+version.txt
+CodeToCAD/CodeToCADInterface.py
+CodeToCAD/CodeToCADProvider.py
+CodeToCAD/TestCodeToCADProvider.py
+CodeToCAD/__init__.py
+CodeToCAD/utilities.py
+CodeToCAD.egg-info/PKG-INFO
+CodeToCAD.egg-info/SOURCES.txt
+CodeToCAD.egg-info/dependency_links.txt
+CodeToCAD.egg-info/top_level.txt
