@@ -1,0 +1,10 @@
+urllib3
+pybedtools
+gff2bed
+seaborn
+pyfaidx
+psutil
+gputil
+tabulate
+nvsmi
+pod5
