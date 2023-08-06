@@ -1,0 +1,65 @@
+Metadata-Version: 2.1
+Name: jwtlib
+Version: 0.3.3
+Summary: A little helper library to streamline working with JWT in python
+Home-page: http://novopl.github.com/jwtlib
+License: Apache 2.0
+Author: Mateusz Klos
+Author-email: novopl@gmail.com
+Requires-Python: >=3.8.1,<4.0
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Utilities
+Requires-Dist: pyjwt (>=2.4.0)
+Project-URL: Documentation, http://novopl.github.com/jwtlib
+Project-URL: Repository, http://github.com/novopl/jwtlib
+Description-Content-Type: text/x-rst
+
+###########
+jwtlib
+###########
+
+.. readme_inclusion_marker
+
+
+Dev setup
+~~~~~~~~~
+
+Initialize local repository
+---------------------------
+
+.. code-block:: bash
+
+    $ pipenv install -d                     # Install all dependencies
+    $ pipenv run python setup.py develop    # Setup the pkg for local development
+    $ pipenv shell                          # Open shell within the virtualenv
+
+
+Available commands
+------------------
+
+.. code-block:: bash
+
+    $ peltak --help     # Show the list of available commands
+    $ peltak test       # Run tests
+    $ peltak lint       # Run code checks
+    $ peltak docs       # Build documentation using Sphinx
+
+
+Release new version
+-------------------
+
+.. note:: Before releasing, make sure your changes are part of the develop branch.
+
+.. code-block:: bash
+
+    $ peltak release start
+    $ peltak git push
+    [ Create PR on GitHub and merge it ]
+    $ peltak release merged
+
