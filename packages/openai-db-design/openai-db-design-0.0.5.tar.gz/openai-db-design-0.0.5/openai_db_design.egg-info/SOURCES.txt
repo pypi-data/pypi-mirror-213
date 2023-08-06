@@ -1,0 +1,7 @@
+LICENSE
+README.md
+setup.py
+openai_db_design.egg-info/PKG-INFO
+openai_db_design.egg-info/SOURCES.txt
+openai_db_design.egg-info/dependency_links.txt
+openai_db_design.egg-info/top_level.txt
