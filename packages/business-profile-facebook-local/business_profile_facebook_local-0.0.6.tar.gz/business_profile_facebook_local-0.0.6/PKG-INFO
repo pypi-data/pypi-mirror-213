@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: business_profile_facebook_local
+Version: 0.0.6
+Summary: PyPI Package for Circles get facebook Profiles Python
+Home-page: https://github.com/circles-zone/profile-facebook-graphql-imp-local-python-package
+Author: Circles
+Author-email: info@circles.life
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: Other/Proprietary License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+
+This is a package for getting facebook profiles data for circles future application
