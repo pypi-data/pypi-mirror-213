@@ -1,0 +1,11 @@
+restsession/__init__.py,sha256=_TigVDHbML4HTyWBtw9Klxaby7C2CUmYWoQrLiwEupA,244
+restsession/defaults.py,sha256=wayn9lUKvgZpIPSThclsHdPH8LmuAAm3Hbn7BOFhY8A,1273
+restsession/metaclass.py,sha256=KS0wLczlYhsrcaiykOffCjkMD_EjtC7Ywokr12USvns,549
+restsession/models.py,sha256=AUSkxL_6byuxAH3zrIp_4L9nqqCySPDbZ4JNjOoYGxk,14591
+restsession/session.py,sha256=6vUnIYe5aNaxSPGm6w-38HmSnUCFaT12R7sPRbIK6h0,30872
+restsession/session_singleton.py,sha256=GzN2nabIPAcRmY994EtU5uYv9__usY5boS4-R0wsyoM,1144
+restsession-0.0.1.dist-info/LICENSE,sha256=R-wqv45T-jEk6WpXFcB_SF2Rjs1xrRLRYHNetiSp2Ow,1070
+restsession-0.0.1.dist-info/METADATA,sha256=AlTzttIaW_KQy4ZLxMcuacfNsyap8KsPykpSN-fkdUY,619
+restsession-0.0.1.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+restsession-0.0.1.dist-info/top_level.txt,sha256=CCYJJP35woGw9J8wS9vDBs6yzp7jLUZfI20Vy_WN64U,12
+restsession-0.0.1.dist-info/RECORD,,
