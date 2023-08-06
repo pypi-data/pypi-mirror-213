@@ -1,0 +1,16 @@
+postnormalism/VERSION,sha256=HUY_4TUbpjsqBz2Y9juRlgnHwOgnGKAQ7iGXf4mQ9tg,5
+postnormalism/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+postnormalism/core.py,sha256=FGZZiBD6RKHhyttKoam2tlt2_f3B_v2ISzvnUpOtPvM,2105
+postnormalism/utils.py,sha256=N2VWMQ9zfhw9uepRN7O1tST0Kiy-1-UlSFb7z6V2-qs,689
+postnormalism/schema/__init__.py,sha256=MH1w4TTQ6ID0F22DCm7JP-_C-LWWwklAwfgDzhhhyl8,202
+postnormalism/schema/database.py,sha256=BWrzTJNWgIJ6foCMuf6bDzOoMosvvFGPRp4SNZV7CrQ,4631
+postnormalism/schema/database_item.py,sha256=bF0hO-OADJBzKYWIgH1d-iUDmKn-lClbBZ8RLEMtbCI,1487
+postnormalism/schema/function.py,sha256=n0_FRJ_2PJnq0_WOUmVc38RjarZwe4U3RfuOd_2_ZTQ,327
+postnormalism/schema/migrations.py,sha256=FvA27RyhTBS458nh3NpRodu_IFypMUn7y42hkZpjnFc,390
+postnormalism/schema/schema.py,sha256=bkYlVSsxcWTufywHZrUJ22c5vM9OFXLhLXF7bFqd87k,637
+postnormalism/schema/table.py,sha256=f63tNsvFQl0Srh4ZYB9lt19pD17MQi8_x8mWUSkpLbY,777
+postnormalism-0.0.4.dist-info/LICENSE,sha256=xWDJD-v3Q0ZBU0zV_L2RprptFdQTzw056kck2v9aQbs,1099
+postnormalism-0.0.4.dist-info/METADATA,sha256=O-qCRIFUFRlfo28gs4IOeO6fv4W2TqxGWAzOwJF5h4Y,7564
+postnormalism-0.0.4.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+postnormalism-0.0.4.dist-info/top_level.txt,sha256=8PlDDjIwhux6miWbB7ScfrF48OgUMF6mqMJQB7gH8jM,14
+postnormalism-0.0.4.dist-info/RECORD,,
