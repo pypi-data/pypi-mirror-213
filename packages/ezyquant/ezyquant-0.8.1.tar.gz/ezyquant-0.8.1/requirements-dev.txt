@@ -1,0 +1,25 @@
+pandas~=1.5
+sqlalchemy~=2.0
+psycopg2-binary~=2.9
+ta~=0.10
+XlsxWriter~=3.0
+typing_extensions~=4.4
+quantstats~=0.0
+
+# Sytle
+black[jupyter]~=23.0
+docformatter[tomli]~=1.0
+ruff~=0.0
+
+# Test
+pytest~=7.0
+pytest-kwparametrize~=0.0
+pytest-xdist[psutil]~=3.0
+
+# Doc
+sphinx~=6.2
+sphinx-book-theme~=1.0
+ezyquant-execution
+
+# Build
+hatch
