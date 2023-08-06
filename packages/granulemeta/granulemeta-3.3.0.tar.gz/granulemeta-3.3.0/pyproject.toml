@@ -1,0 +1,29 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "granulemeta"
+version = "3.3.0"
+authors = [
+    {name="Kent B. Campbell", email="campbellkb@ornl.gov"},
+]
+description = "A package designed to generate low-level metadata in a specified/supported format (i.e. gmout) for a file or set of files."
+readme = "README.md"
+license = {file = "LICENSE"}
+requires-python = ">=3.6"
+dependencies = [
+    "numpy>=1.18.1",
+    "pandas>=1.0.0",
+    "netCDF4>=1.5.3",
+    "tinytag>=1.4.0",
+    "GDAL>=3.0.4",
+]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: POSIX :: Linux",
+    "Operating System :: Unix",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/ornldaac/granulemeta"

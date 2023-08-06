@@ -1,0 +1,47 @@
+FROM osgeo/gdal:ubuntu-full-latest
+
+# Add Python3 and pip3
+RUN apt-get update && apt-get install -y \
+    apt-utils \
+    python3-pip \
+    --reinstall coreutils
+
+# Make a tmp directory in /opt.
+RUN mkdir /opt/tmp
+RUN mkdir /opt/scripts
+RUN mkdir /opt/config
+
+# Copy the Python requirements file into tmp directory.
+COPY ./requirements.txt /opt/tmp/requirements.txt
+
+# Install Python requirements.
+RUN pip3 install -r /opt/tmp/requirements.txt
+
+# Copy granulemeta module to /opt/granulemeta directory.
+COPY ./src/granulemeta/granulemeta.py /opt/granulemeta.py
+
+COPY ./src/granulemeta/scripts/gmout.py /opt/scripts/gmout.py
+COPY ./src/granulemeta/scripts/parse_arguments.py /opt/scripts/parse_arguments.py
+COPY ./src/granulemeta/scripts/parse_archive.py /opt/scripts/parse_archive.py
+COPY ./src/granulemeta/scripts/parse_audio.py /opt/scripts/parse_audio.py
+COPY ./src/granulemeta/scripts/parse_envi.py /opt/scripts/parse_envi.py
+COPY ./src/granulemeta/scripts/parse_mdim.py /opt/scripts/parse_mdim.py
+COPY ./src/granulemeta/scripts/parse_raster.py /opt/scripts/parse_raster.py
+COPY ./src/granulemeta/scripts/parse_table.py /opt/scripts/parse_table.py
+COPY ./src/granulemeta/scripts/parse_vector.py /opt/scripts/parse_vector.py
+COPY ./src/granulemeta/scripts/utilities.py /opt/scripts/utilities.py
+
+COPY ./src/granulemeta/config/configuration_parser.py /opt/config/configuration_parser.py
+COPY ./src/granulemeta/config/default.cfg /opt/config/default.cfg
+
+# Make the module executable.
+RUN chmod +x /opt/granulemeta.py
+
+# Create symlink to module script in the /usr/bin directory.
+RUN ln -s /opt/granulemeta.py /usr/bin/granulemeta
+
+# Create data mount points.
+VOLUME /data /code
+
+# Set the working directory to the output folder.
+WORKDIR /code/src/granulemeta/

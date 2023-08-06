@@ -1,0 +1,9 @@
+version: "3"
+
+services:
+    v3_gm_dev:
+        build:
+          context: .
+          dockerfile: Dockerfile-dev
+        image: v3_gm_dev
+        container_name: v3_gm_dev
