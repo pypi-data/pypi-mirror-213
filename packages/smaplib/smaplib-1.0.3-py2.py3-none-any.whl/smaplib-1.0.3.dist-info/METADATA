@@ -1,0 +1,64 @@
+Metadata-Version: 2.1
+Name: smaplib
+Version: 1.0.3
+Summary: The `smaplib` package provides some useful similarity mapping related modeling functions
+Home-page: https://github.com/braibaud/smaplib
+Author: Benjamin Raibaud
+Author-email: braibaud@gmail.com
+Maintainer: Benjamin Raibaud
+Maintainer-email: braibaud@gmail.com
+License: MIT
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pinecone-client (>=2.0)
+Requires-Dist: tensorflow-hub (>=0.12)
+Requires-Dist: tensorflow (>=2.5)
+Requires-Dist: matplotlib (>=3.0)
+Requires-Dist: pillow (>=9.0)
+Requires-Dist: pandas (>=1.4)
+Requires-Dist: tqdm (>=4.0)
+Requires-Dist: dataiku-api-client (>=11.0)
+Requires-Dist: scikit-learn (>=1.2)
+
+# The `smaplib` Python Package
+
+[![Open in Remote Containers](https://img.shields.io/static/v1?label=remote%20containers&message=open&color=blue&logo=visualstudiocode)](https://vscode.dev/redirect?url=vscode://ms-vscode-remote.remote-containers/cloneInVolume?url=https://github.com/braibaud/smaplib)
+[![pre-commit.ci status](https://results.pre-commit.ci/badge/github/braibaud/smaplib/master.svg)](https://results.pre-commit.ci/latest/github/braibaud/smaplib/master)
+
+The `smaplib` package provides some useful similarity mapping related modeling functions.
+
+
+## Commands
+
+### Update pre-commit checks to their latest version
+
+```
+pre-commit autoupdate
+````
+
+### Run all pre-commit checks
+
+```
+pre-commit run --all-files
+```
+
+## Configuration
+
+Main configuration files for the project:
+
+* Black: `.black`
+* Flake8: `.flake8`
+* Pre-Commit: `.pre-commit-config.yaml`
+* Package requirements: `requirements.txt`
+* Package requirements for the development environment: `requirements-dev.txt`
+* Git ignore list: `.gitignore`
