@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: omnata-plugin-runtime
+Version: 0.1.42
+Summary: A development kit to assist with building, testing and publishing Omnata Plugins
+Author: James Weakley
+Author-email: james.weakley@omnata.com
+Requires-Python: >=3.10,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: jinja2 (>=3,<4)
+Requires-Dist: pandas
+Requires-Dist: pydantic (>=1,<2)
+Requires-Dist: requests (>=2,<3)
+Description-Content-Type: text/markdown
+
+# omnata-plugin-runtime
+Data classes, interfaces and application logic specifically used to interface with plugins.
+
+This repo is published on PyPi as omnata-plugin-runtime.
+
+Note: To use the Airbyte wrapper, you must manually install `pip install airbyte_cdk` as it's not an explicit dependency.
