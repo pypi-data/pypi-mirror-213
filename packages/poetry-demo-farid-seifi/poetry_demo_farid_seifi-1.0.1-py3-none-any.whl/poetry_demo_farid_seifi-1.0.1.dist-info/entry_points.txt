@@ -1,0 +1,3 @@
+[console_scripts]
+hello=poetry_demo.main:start
+
