@@ -1,0 +1,50 @@
+Metadata-Version: 2.1
+Name: betweens
+Version: 1.2.1rc1
+Summary: 0.0.1:
+Author: yuanbaoge
+Author-email: yuanbaoge@outlook.com
+Keywords: pimm source manager
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Classifier: License :: OSI Approved :: Common Public License
+Classifier: License :: OSI Approved :: W3C License
+Classifier: License :: OSI Approved :: Academic Free License (AFL)
+Classifier: License :: OSI Approved :: GNU Lesser General Public License v3 or later (LGPLv3+)
+Classifier: License :: OSI Approved :: GNU Affero General Public License v3 or later (AGPLv3+)
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows :: Windows 8.1
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Classifier: Operating System :: Microsoft :: Windows :: Windows 11
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Environment :: Console
+Classifier: Environment :: Console :: Curses
+Classifier: Environment :: X11 Applications
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Betweens
+
+This is a package named betweens.
+There are 3 between mode.
+
+## Between 1
+
+two intergers.
+
+## Between 2
+
+two lists, tuples or dicts.
+And two indexes.
+
+## Between 3
+
+two length, area, volume or mass units
