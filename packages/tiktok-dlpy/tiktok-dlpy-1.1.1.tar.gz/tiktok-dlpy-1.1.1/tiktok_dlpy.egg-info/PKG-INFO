@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: tiktok-dlpy
+Version: 1.1.1
+Summary: A package to dowload TikTok videos via URL
+Home-page: https://github.com/Fluxticks/TikTokDL
+Download-URL: https://github.com/Fluxticks/TikTokDL/archive/v1.1.1.tar.gz
+Author: Fluxticks
+Keywords: tiktok,playwright,async
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.10
+License-File: LICENSE
