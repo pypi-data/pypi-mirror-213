@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: dartastlatools
+Version: 0.0.5
+Summary: Tools for DART and ASTLA project
+Author: Wieke Harmsen
+Author-email: <wiekeharmsen@gmail.com>
+Keywords: python,child speech
+Requires-Dist: pandas
+Requires-Dist: numpy
+Requires-Dist: glob2 (==0.7)
+Requires-Dist: praat-textgrids (==1.0.2)
+
+Several scripts about preprocessing and postprocessing (child) speech ASR input and output.
