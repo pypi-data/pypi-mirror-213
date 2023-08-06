@@ -1,0 +1,7 @@
+- title: Quanturf
+  description: Quanturf Strategies
+  source: ./quanturf.ipynb
+  cwd: ./
+  type: notebook
+  catalog: Notebook
+  icon: ./assets/quanturf.svg
