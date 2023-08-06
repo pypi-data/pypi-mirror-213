@@ -1,0 +1,2 @@
+[console_scripts]
+kqc = console_scripts.run:run

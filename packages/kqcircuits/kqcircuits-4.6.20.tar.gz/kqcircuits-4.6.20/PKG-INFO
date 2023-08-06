@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: kqcircuits
+Version: 4.6.20
+Summary: KQCircuits is a KLayout/Python-based superconducting quantum circuit library developed by IQM.
+Home-page: https://iqm-finland.github.io/KQCircuits/
+Author: IQM Finland Oy
+Author-email: kqcircuits@meetiqm.com
+Requires-Python: >=3.6.9
+Description-Content-Type: text/markdown
+Provides-Extra: docs
+Provides-Extra: tests
+Provides-Extra: notebooks
+Provides-Extra: graphs
+Provides-Extra: simulations
+
+See https://iqm-finland.github.io/KQCircuits/developer/standalone.html#klayout-standalone-usage
