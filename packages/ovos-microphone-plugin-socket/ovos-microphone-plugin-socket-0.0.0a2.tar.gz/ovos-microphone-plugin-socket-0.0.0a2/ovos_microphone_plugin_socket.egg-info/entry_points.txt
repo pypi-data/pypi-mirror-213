@@ -1,0 +1,3 @@
+[ovos.plugin.microphone]
+ovos-microphone-plugin-socket = ovos_microphone_plugin_socket:socketMicrophone
+

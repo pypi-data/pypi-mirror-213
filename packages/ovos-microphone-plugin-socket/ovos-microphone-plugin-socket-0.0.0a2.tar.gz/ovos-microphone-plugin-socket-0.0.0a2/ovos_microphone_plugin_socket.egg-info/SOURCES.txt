@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+ovos_microphone_plugin_socket/__init__.py
+ovos_microphone_plugin_socket/version.py
+ovos_microphone_plugin_socket.egg-info/PKG-INFO
+ovos_microphone_plugin_socket.egg-info/SOURCES.txt
+ovos_microphone_plugin_socket.egg-info/dependency_links.txt
+ovos_microphone_plugin_socket.egg-info/entry_points.txt
+ovos_microphone_plugin_socket.egg-info/requires.txt
+ovos_microphone_plugin_socket.egg-info/top_level.txt
+ovos_microphone_plugin_socket.egg-info/zip-safe
