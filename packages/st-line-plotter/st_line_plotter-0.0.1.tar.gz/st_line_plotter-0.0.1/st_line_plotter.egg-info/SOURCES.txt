@@ -1,0 +1,9 @@
+LICENSE
+MANIFEST.in
+setup.py
+st_line_plotter/__init__.py
+st_line_plotter.egg-info/PKG-INFO
+st_line_plotter.egg-info/SOURCES.txt
+st_line_plotter.egg-info/dependency_links.txt
+st_line_plotter.egg-info/requires.txt
+st_line_plotter.egg-info/top_level.txt
