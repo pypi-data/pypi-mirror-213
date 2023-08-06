@@ -1,0 +1,8 @@
+caraml_auth/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+caraml_auth/id_token_credentials.py,sha256=v9coBqFtZRXI48zA4O09KVl7J0M3hMGkayNqaNJJvUY,8610
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_id_token_credentials.py,sha256=f_O0FuaN8l_44M3LKiCDO1lQPmcG-eIRrbSTLnLIURk,6967
+caraml_auth_google-0.0.0.post6.dist-info/METADATA,sha256=mc1jtr_7d-MuPFMPDf4xOyrhLhPO9Zjh1HJqbgr6EGU,926
+caraml_auth_google-0.0.0.post6.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+caraml_auth_google-0.0.0.post6.dist-info/top_level.txt,sha256=hyjGModJocHsZMfpa9VYzCRwgad8TZv1a8mMSPq2_o0,18
+caraml_auth_google-0.0.0.post6.dist-info/RECORD,,
