@@ -1,0 +1,9 @@
+LICENSE
+MANIFEST.in
+setup.py
+line_placement_plot/__init__.py
+st_line_placement_plot_v1.egg-info/PKG-INFO
+st_line_placement_plot_v1.egg-info/SOURCES.txt
+st_line_placement_plot_v1.egg-info/dependency_links.txt
+st_line_placement_plot_v1.egg-info/requires.txt
+st_line_placement_plot_v1.egg-info/top_level.txt
