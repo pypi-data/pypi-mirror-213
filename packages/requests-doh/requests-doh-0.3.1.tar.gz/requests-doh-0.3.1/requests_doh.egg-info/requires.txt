@@ -1,0 +1,7 @@
+requests==2.31.0
+dnspython[doh]==2.3.0
+
+[docs]
+sphinx<5
+furo
+myst-parser[linkify]
