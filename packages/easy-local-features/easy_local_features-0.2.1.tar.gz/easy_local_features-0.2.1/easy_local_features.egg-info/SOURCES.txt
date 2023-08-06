@@ -1,0 +1,17 @@
+README.md
+setup.py
+easy_local_features/__init__.py
+easy_local_features/baseline_dalf.py
+easy_local_features/baseline_deal.py
+easy_local_features/baseline_disk.py
+easy_local_features/baseline_r2d2.py
+easy_local_features/baseline_superglue.py
+easy_local_features/baseline_superpoint.py
+easy_local_features.egg-info/PKG-INFO
+easy_local_features.egg-info/SOURCES.txt
+easy_local_features.egg-info/dependency_links.txt
+easy_local_features.egg-info/top_level.txt
+easy_local_features/datasets/__init__.py
+easy_local_features/datasets/download.py
+tests/test_dalf.py
+tests/test_deal.py
