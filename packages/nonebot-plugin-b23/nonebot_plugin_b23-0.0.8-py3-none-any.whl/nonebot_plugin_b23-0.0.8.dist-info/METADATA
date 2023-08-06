@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: nonebot-plugin-b23
+Version: 0.0.8
+Summary: nonebot2 plugin B站热搜
+Home-page: https://github.com/eya46/nonebot_plugin_b23
+Author: eya46
+Author-email: eya46@qq.com
+Classifier: Programming Language :: Python :: 3.8
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+Requires-Dist: httpx (~=0.23.0)
+Requires-Dist: nonebot2 (~=2.0.0)
+Requires-Dist: pydantic (~=1.10.4)
+
