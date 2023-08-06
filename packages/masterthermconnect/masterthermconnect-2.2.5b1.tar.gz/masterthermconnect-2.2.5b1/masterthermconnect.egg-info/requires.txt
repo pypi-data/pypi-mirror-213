@@ -1,0 +1,9 @@
+aiohttp>=3.8.1
+natsort>=8.0.0
+
+[dev]
+black
+bumpver
+isort
+pip-tools
+pytest
