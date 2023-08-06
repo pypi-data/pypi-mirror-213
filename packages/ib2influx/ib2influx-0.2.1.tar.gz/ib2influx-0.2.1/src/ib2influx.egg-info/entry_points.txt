@@ -1,0 +1,2 @@
+[console_scripts]
+ib2influx = ib2influx:run
