@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: kgclitest
+Version: 0.3.0
+Summary: 
+Author: Farid Seifi
+Author-email: faridsei@med.umich.edu
+Requires-Python: >=3.10,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: typer (>=0.9.0,<0.10.0)
+Description-Content-Type: text/markdown
+
+This is cli test.
