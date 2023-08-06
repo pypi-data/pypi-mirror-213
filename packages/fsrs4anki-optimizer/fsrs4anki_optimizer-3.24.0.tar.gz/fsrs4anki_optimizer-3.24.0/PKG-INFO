@@ -1,0 +1,6 @@
+Metadata-Version: 2.1
+Name: fsrs4anki_optimizer
+Version: 3.24.0
+Project-URL: Homepage, https://github.com/open-spaced-repetition/fsrs4anki
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
