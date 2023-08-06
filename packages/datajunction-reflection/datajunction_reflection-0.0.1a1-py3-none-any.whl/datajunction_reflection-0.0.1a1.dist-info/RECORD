@@ -1,0 +1,11 @@
+djrs/__about__.py,sha256=mlybO8bzNO9GojXJH7D8hqtzoQxcupTM5lXnSjq6_f8,50
+djrs/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+djrs/config.py,sha256=ImLCyAULcoNFmKSmNXuGlP6tw4J6AHKI4ultb6qGiho,613
+djrs/worker/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+djrs/worker/app.py,sha256=XdaZshykwg2CypN10XefPhBPaYSRkzdXeB1cRzQpjDk,174
+djrs/worker/tasks.py,sha256=MyKita0jeJpL1h6lNJYOQzUZzht1azw4n72ZGSKmgsg,3871
+djrs/worker/utils.py,sha256=VEfVEPmrGc86j2GY7Bal5NTQQSAfiuszf90xf-vDLZ8,1276
+datajunction_reflection-0.0.1a1.dist-info/METADATA,sha256=nC-K4XdFR29AWRK9ywsUCI7LKdo6h6nq4ZUsPD7-CgU,1555
+datajunction_reflection-0.0.1a1.dist-info/WHEEL,sha256=KGYbc1zXlYddvwxnNty23BeaKzh7YuoSIvIMO4jEhvw,87
+datajunction_reflection-0.0.1a1.dist-info/licenses/LICENSE,sha256=Q5EUOoPvfa4k1Az3B6y-bddOppd_h7sa30WgFDZOxsU,1059
+datajunction_reflection-0.0.1a1.dist-info/RECORD,,
