@@ -1,0 +1,12 @@
+LICENSE
+README.md
+_version.py
+gpush
+gpush.py
+pyproject.toml
+setup.py
+gpush.egg-info/PKG-INFO
+gpush.egg-info/SOURCES.txt
+gpush.egg-info/dependency_links.txt
+gpush.egg-info/requires.txt
+gpush.egg-info/top_level.txt
