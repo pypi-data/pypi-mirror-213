@@ -1,0 +1,15 @@
+CHANGELOG.md
+LICENSE
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+telepath/__init__.py
+telepath/test_settings.py
+telepath/tests.py
+telepath.egg-info/PKG-INFO
+telepath.egg-info/SOURCES.txt
+telepath.egg-info/dependency_links.txt
+telepath.egg-info/requires.txt
+telepath.egg-info/top_level.txt
+telepath/static/telepath/js/telepath.js
