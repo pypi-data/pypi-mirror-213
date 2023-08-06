@@ -1,0 +1,3 @@
+[console_scripts]
+gtempco2 = gtempco2:main
+
