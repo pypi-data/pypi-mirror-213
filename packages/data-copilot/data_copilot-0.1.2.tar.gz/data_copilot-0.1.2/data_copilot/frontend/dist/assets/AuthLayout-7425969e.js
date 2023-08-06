@@ -1,0 +1,1 @@
+import{d as a,o,c as t,r as s,a as r,M as n,F as l}from"./index-79650f1a.js";const d=a({__name:"AuthLayout",setup(c){return(e,u)=>(o(),t(l,null,[s(e.$slots,"default"),r(n,{class:"w-full relative !max-w-none"})],64))}});export{d as default};
