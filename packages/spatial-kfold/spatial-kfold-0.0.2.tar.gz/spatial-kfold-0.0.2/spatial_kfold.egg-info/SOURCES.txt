@@ -1,0 +1,15 @@
+LICENSE
+README.md
+setup.py
+spatial_kfold.egg-info/PKG-INFO
+spatial_kfold.egg-info/SOURCES.txt
+spatial_kfold.egg-info/dependency_links.txt
+spatial_kfold.egg-info/requires.txt
+spatial_kfold.egg-info/top_level.txt
+spatialkfold/__init__.py
+spatialkfold/blocks.py
+spatialkfold/clusters.py
+spatialkfold/datasets.py
+spatialkfold/plotting.py
+spatialkfold/stats.py
+spatialkfold/data/ames.geojson
