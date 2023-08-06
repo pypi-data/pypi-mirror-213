@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: doublecloud
+Version: 0.6.0
+Summary: The Double.Cloud official SDK
+Home-page: https://github.com/doublecloud/python-sdk
+Author: DoubleCloud GmbH
+Author-email: support@double.cloud
+License: Apache License 2.0
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+License-File: LICENSE
