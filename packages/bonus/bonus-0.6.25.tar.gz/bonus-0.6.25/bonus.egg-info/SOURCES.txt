@@ -1,0 +1,8 @@
+README.rst
+setup.cfg
+setup.py
+bonus/bonus.py
+bonus.egg-info/PKG-INFO
+bonus.egg-info/SOURCES.txt
+bonus.egg-info/dependency_links.txt
+bonus.egg-info/top_level.txt
