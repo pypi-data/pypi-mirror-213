@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "python-osenv"
+version = "0.0.1"
+description = "osenv"
+authors = ["wayfaring-stranger <zw6p226m@duck.com>"]
+packages = [
+    { include = "osenv" }
+]
+
+
+license = "mit"
+readme = "README.md"
+[tool.poetry.dependencies]
+python = "^3.8"
+python-dotenv = "1.0.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
