@@ -1,0 +1,11 @@
+findJobs/FindJobs.py,sha256=lhV8Lz4DEoQoNwsZKJ5dynueYvrlTE9zR0mQVbpciUk,17529
+findJobs/__init__.py,sha256=4uQYJLovELwxaBuOaRS6bwThkk8s5vwsYFim40lvO3I,133
+findJobs/app.py,sha256=Ve5YpK7IEsoGLue_aMfOjrehb1CZozZbvW5oJqS3TPk,4783
+findJobs/url.py,sha256=ZUl-ZtAOHDDOyK5dpq3d46OXFyPwaaE8vDY_ZtsGQoU,4908
+findJobs/static/styles.css,sha256=Q4NkudpBRp3F3KrLVyMHBWk3VakOmiJKe56wo66hNJg,382
+findJobs/templates/index.html,sha256=80DBczAw6RESN6HZRi-gQD7J2FAbZl9BUHGYP--kO0c,28017
+FindJobsTW-1.0.1.dist-info/LICENSE,sha256=bDvf4iH1K9IvsKhSFGiWfmxx39Iy60Iid61W5v_REiQ,1086
+FindJobsTW-1.0.1.dist-info/METADATA,sha256=z70nvpVHhZ9oNfXJOIKHSzwGnMNn90vzxXVIn_jfA4A,841
+FindJobsTW-1.0.1.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+FindJobsTW-1.0.1.dist-info/top_level.txt,sha256=s4IuhKd823co8Jb_YhHXNI-ctPfVGLLOJ_LYC3Mldyw,9
+FindJobsTW-1.0.1.dist-info/RECORD,,

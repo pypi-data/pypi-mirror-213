@@ -1,0 +1,11 @@
+table.data {
+    width: 100%;  /* 將表格寬度設為 100% */
+}
+
+table.data th, table.data td {
+    text-align: left;
+    width: auto;  /* 自動調整表頭和資料欄位的寬度 */
+    white-space: nowrap;  /* 防止文字換行 */
+    overflow: hidden;  /* 隱藏超出欄位的文字 */
+    text-overflow: ellipsis;  /* 將超出的文字顯示為省略符號 */
+}
