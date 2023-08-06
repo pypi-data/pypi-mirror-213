@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: metasnek
+Version: 0.0.1
+Summary: Misc functions for metagenomics pipelines
+Home-page: https://github.com/beardymcjohnface/metasnek
+Author: Michael Roach
+Author-email: beardymcjohnface@gmail.com
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# metasnek
+Misc functions for metagenomic pipelines
