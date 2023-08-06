@@ -1,0 +1,11 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+astromy_ds9/__init__.py
+astromy_ds9/__version__.py
+astromy_ds9.egg-info/PKG-INFO
+astromy_ds9.egg-info/SOURCES.txt
+astromy_ds9.egg-info/dependency_links.txt
+astromy_ds9.egg-info/requires.txt
+astromy_ds9.egg-info/top_level.txt
