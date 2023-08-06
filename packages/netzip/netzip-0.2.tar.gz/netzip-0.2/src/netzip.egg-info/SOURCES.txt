@@ -1,0 +1,14 @@
+.editorconfig
+.gitignore
+LICENSE.txt
+README.md
+noxfile.py
+pyproject.toml
+.github/workflows/release.yml
+.github/workflows/test.yml
+src/netzip.py
+src/netzip.egg-info/PKG-INFO
+src/netzip.egg-info/SOURCES.txt
+src/netzip.egg-info/dependency_links.txt
+src/netzip.egg-info/top_level.txt
+tests/test_netzip.py
