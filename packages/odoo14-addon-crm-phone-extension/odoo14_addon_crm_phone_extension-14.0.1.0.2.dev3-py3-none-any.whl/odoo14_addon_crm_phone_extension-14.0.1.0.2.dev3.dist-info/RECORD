@@ -1,0 +1,16 @@
+odoo/addons/crm_phone_extension/README.rst,sha256=hjGfABZh2VLdIxFsPFQY7wU-q8bzFidzceVIbw_7oqA,2849
+odoo/addons/crm_phone_extension/__init__.py,sha256=QXl_U5mKDJfzIWJDZpUzH9Rf4Zda8Ko8Q1Df6Lc0MF8,92
+odoo/addons/crm_phone_extension/__manifest__.py,sha256=kNq-C8zDRUsKamvLA7PksBUIfSFCx1Bk2DaAqjpQQfw,527
+odoo/addons/crm_phone_extension/i18n/crm_phone_extension.pot,sha256=ph0D3mF5gr5LphDOC8xk70qlt6aSDi6PlxBJF-wBHl0,1387
+odoo/addons/crm_phone_extension/i18n/it.po,sha256=9FoY_VXXo4GutK-X7LNdjmCs71kAw5vPBC7XBKdHAQg,1457
+odoo/addons/crm_phone_extension/models/__init__.py,sha256=FaJ_bgHmW5yYh63zHq6wemN640Pddf7MAARMEROGdwE,94
+odoo/addons/crm_phone_extension/models/crm_lead.py,sha256=ZERtPPkZhBtB0NKRMnooHR6at4HhP-XlQNiFO3aKLsY,246
+odoo/addons/crm_phone_extension/readme/CONTRIBUTORS.rst,sha256=62N2XfDuSsPXr3ogORwVn2UjMlfiAYSPEgzBe2Zorww,40
+odoo/addons/crm_phone_extension/readme/DESCRIPTION.rst,sha256=0d0C4ttqval_kOCUyrYJ4KzZPCJvkvOM96O7DDQGLLc,71
+odoo/addons/crm_phone_extension/static/description/icon.png,sha256=6xBPJauaFOF0KDHfHgQopSc28kKvxMaeoQFQWZtfZDo,9455
+odoo/addons/crm_phone_extension/static/description/index.html,sha256=rAC4DMhR_SQjRNB4JgCGzbNglcm0j6xX1xwxd5blVNA,11984
+odoo/addons/crm_phone_extension/views/crm_lead_view.xml,sha256=TYC12DUnrqZufbO5Hjo_T3Wonzhbc33oBLTWTfQAFcE,916
+odoo14_addon_crm_phone_extension-14.0.1.0.2.dev3.dist-info/METADATA,sha256=oV2XAPZOApNmvu5LDCJaJd2Vygbh7gbh_cRMYLr2ztw,3389
+odoo14_addon_crm_phone_extension-14.0.1.0.2.dev3.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+odoo14_addon_crm_phone_extension-14.0.1.0.2.dev3.dist-info/top_level.txt,sha256=qBj40grFkGOfDZ2WDSw3y1RnDlgG0u8rP8pvGNdbz4w,5
+odoo14_addon_crm_phone_extension-14.0.1.0.2.dev3.dist-info/RECORD,,
