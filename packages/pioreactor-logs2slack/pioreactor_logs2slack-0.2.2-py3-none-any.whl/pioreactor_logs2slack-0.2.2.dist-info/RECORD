@@ -1,0 +1,10 @@
+pioreactor_logs2slack/__init__.py,sha256=qS8CN7I5GsbNZvVZW0KqNtYP9sSZVgbYmc4c4kt6aIc,2112
+pioreactor_logs2slack/additional_config.ini,sha256=hYPydNTGRaNSupgPBS-trxtLDHTDvaLbi0k_eZ93dhA,47
+pioreactor_logs2slack/post_install.sh,sha256=eUGpyQLN_Ib04DG2ILkGleD9T-Wj28IbEPiZm3bumEc,172
+pioreactor_logs2slack/pre_uninstall.sh,sha256=6L6JdXqYipQKyJO4C8BB5F5_B2AfvizNZUfG6jHTKAM,172
+pioreactor_logs2slack-0.2.2.dist-info/LICENSE,sha256=RTnFva3sXKEPtRcFEvpWgg6NqscwpXrZ0ckNz9x2tlo,1079
+pioreactor_logs2slack-0.2.2.dist-info/METADATA,sha256=7piLxcixEAnRYtcj_s_Klz2M9Wg0v6PZOqo4MC0igBI,2165
+pioreactor_logs2slack-0.2.2.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+pioreactor_logs2slack-0.2.2.dist-info/entry_points.txt,sha256=UGc-TQ_kF5mFe9hPOtoJl-Nc-14P99vkQtdLVEkuocQ,67
+pioreactor_logs2slack-0.2.2.dist-info/top_level.txt,sha256=2QWckvgdEg9ZQN1M279uoBBHPt582EgfduegCyBid44,22
+pioreactor_logs2slack-0.2.2.dist-info/RECORD,,
