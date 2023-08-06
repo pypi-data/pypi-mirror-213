@@ -1,0 +1,16 @@
+LICENSE
+MANIFEST.in
+README.md
+VERSION
+pyproject.toml
+requirements.txt
+setup.py
+src/mongoengine_jsonschema/__init__.py
+src/mongoengine_jsonschema/mixin.py
+src/mongoengine_jsonschema.egg-info/PKG-INFO
+src/mongoengine_jsonschema.egg-info/SOURCES.txt
+src/mongoengine_jsonschema.egg-info/dependency_links.txt
+src/mongoengine_jsonschema.egg-info/not-zip-safe
+src/mongoengine_jsonschema.egg-info/requires.txt
+src/mongoengine_jsonschema.egg-info/top_level.txt
+tests/test_json_schema.py
