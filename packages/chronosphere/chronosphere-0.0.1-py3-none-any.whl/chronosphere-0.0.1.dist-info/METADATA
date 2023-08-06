@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: chronosphere
+Version: 0.0.1
+Summary: This will be the Python client of the chronosphere data service.
+Author-email: "Adam T. Kocsis" <adam.t.kocsis@gmail.com>
+Project-URL: Homepage, https://github.com/chronosphere-portal/python_client/
+Project-URL: Bug Tracker, https://github.com/chronosphere-portal/python_client/issues
+Classifier: Development Status :: 1 - Planning
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Python client for the chronosphere 
+
+This package is planned to be written in the coming months. Until it is finished, please use the R client instead.
+
