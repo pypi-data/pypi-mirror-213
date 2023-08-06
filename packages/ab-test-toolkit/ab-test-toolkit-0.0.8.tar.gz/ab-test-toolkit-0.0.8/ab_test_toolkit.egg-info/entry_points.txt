@@ -1,0 +1,6 @@
+[console_scripts]
+
+
+[nbdev]
+ab_test_toolkit = ab_test_toolkit._modidx:d
+
