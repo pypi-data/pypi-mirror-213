@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: mystmd
+Version: 0.0.1
+Summary: MyST Markdown
+Home-page: https://myst-tools.org
+Author: Steve Purves
+Author-email: stevejpurves@gmail.com
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Text Processing :: Markup
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Science/Research
+Classifier: Intended Audience :: Information Technology
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# mystmd
+
+Markedly Restructured Text - [myst.tools](https://myst.tools)
