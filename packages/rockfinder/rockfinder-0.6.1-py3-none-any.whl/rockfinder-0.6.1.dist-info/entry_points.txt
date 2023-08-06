@@ -1,0 +1,2 @@
+[console_scripts]
+rockfinder = rockfinder.cl_utils:main
