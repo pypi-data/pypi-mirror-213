@@ -1,0 +1,50 @@
+Metadata-Version: 2.1
+Name: eAsistentPY
+Version: 2.1.0
+Summary: Scrapes data from easistent.com/urniki/... and returns it as Python dictionary
+Home-page: https://github.com/PingIsFun/eAsistentAPI
+Author: PingIsFun
+Author-email: pingisfun@protonmail.com
+License: MIT License
+Project-URL: Bug Tracker, https://github.com/PingIsFun/eAsistentAPI/issues
+Project-URL: Help, https://github.com/PingIsFun/eAsistentAPI/discussions/categories/general
+Platform: any
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: beautifulsoup4 (>=4.10.0)
+Requires-Dist: bs4 (>=0.0.1)
+Requires-Dist: certifi (>=2021.10.8)
+Requires-Dist: charset-normalizer (>=2.0.12)
+Requires-Dist: html5lib (>=1.1)
+Requires-Dist: idna (>=3.3)
+Requires-Dist: requests (>=2.27.1)
+Requires-Dist: six (>=1.16.0)
+Requires-Dist: soupsieve (>=2.3.1)
+Requires-Dist: urllib3 (>=1.26.8)
+Requires-Dist: webencodings (>=0.5.1)
+
+# eAsistentPY
+
+## EN
+To install it run:
+
+    pip install eAsistent-scraper
+
+***
+Example usage:
+
+```python
+import eAsistentPY
+
+data = eAsistentPY.get_schedule(school_id="SCHOOL_ID", class_id=CLASS_ID)
+```
+***
+For support and feature requests ask on [GitHub discussions](https://github.com/PingWasFun/eAsistentAPI/discussions/categories/general)
+
+## SLO
+
+// TODO
