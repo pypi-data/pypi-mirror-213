@@ -1,0 +1,8 @@
+MANIFEST.in
+setup.cfg
+setup.py
+pyucrop/__init__.py
+pyucrop.egg-info/PKG-INFO
+pyucrop.egg-info/SOURCES.txt
+pyucrop.egg-info/dependency_links.txt
+pyucrop.egg-info/top_level.txt
