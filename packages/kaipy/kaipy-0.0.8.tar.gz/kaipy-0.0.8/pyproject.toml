@@ -1,0 +1,43 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "kaipy"
+version = "0.0.8"
+authors = [
+  { name="Eric Winter", email="eric.winter@jhuapl.edu" },
+]
+description = "Python tools for the kaiju software"
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "setuptools==65.0.2",
+    "ai.cdas==1.2.3",
+    "alive_progress==3.1.4",
+    "astropy==4.3.1",
+    "cdasws==1.7.40",
+    "cdflib==0.4.4",
+    "configparser==5.2.0",
+    "dataclasses_json==0.5.7",
+    "h5py==3.7.0",
+    "matplotlib==3.5.2",
+    "netCDF4==1.6.0",
+    "numpy==1.21.6",
+    "progressbar==2.5",
+    "pyhdf==0.10.5",
+    "pytest==7.1.2",
+    "scipy==1.7.3",
+    "spacepy==0.3.0",
+    "sunpy==3.1.8",
+    "xarray==0.20.2",
+]
+
+[project.urls]
+"Homepage" = "https://bitbucket.org/aplkaiju/kaiju/wiki/Home"
+"Bug Tracker" = "https://bitbucket.org/aplkaiju/kaiju/src/master/"
