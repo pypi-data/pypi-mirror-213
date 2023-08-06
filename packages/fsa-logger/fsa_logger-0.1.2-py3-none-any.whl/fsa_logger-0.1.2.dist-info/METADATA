@@ -1,0 +1,578 @@
+Metadata-Version: 2.1
+Name: fsa-logger
+Version: 0.1.2
+Summary: 
+Author: amarco2
+Author-email: amarco@unizar.es
+Requires-Python: >=3.9,<3.11
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Requires-Dist: blatann (>=0.4.0,<0.5.0)
+Requires-Dist: install (>=1.3.5,<2.0.0)
+Requires-Dist: openpyxl (>=3.1.2,<4.0.0)
+Requires-Dist: pandas (>=2.0.1,<3.0.0)
+Requires-Dist: plotly (>=5.13.0,<6.0.0)
+Requires-Dist: pyarrow (>=12.0.0,<13.0.0)
+Requires-Dist: pydantic[dotenv] (>=1.10.7,<2.0.0)
+Requires-Dist: pyfiglet (>=0.8.post1,<0.9)
+Requires-Dist: pyserial (>=3.5,<4.0)
+Requires-Dist: questionary (>=1.10.0,<2.0.0)
+Requires-Dist: scipy (>=1.10.1,<2.0.0)
+Requires-Dist: simplepyble (>=0.6.1,<0.7.0)
+Requires-Dist: typer[all] (>=0.9.0,<0.10.0)
+Requires-Dist: uvicorn (>=0.22.0,<0.23.0)
+Description-Content-Type: text/markdown
+
+# FSA Loggger
+
+## Configuration
+
+### Prerequisites
+
+1. Install git
+
+````shell
+sudo apt-get install git
+````
+
+2. Install pip3
+
+````shell
+sudo apt-get install python3-pip
+````
+
+3. Install poetry
+
+````shell
+sudo curl -sSL https://install.python-poetry.org | python3 -
+````
+
+4. Add poetry to path
+   Add `export PATH="/home/howlab/.local/bin:$PATH"` to your shell configuration file.
+
+````shell
+nano .profile
+````
+
+### USB BLE Dongle
+
+The application has been developed using BLE drivers to operate USB dongles based on nRF52840 SoC, such as the
+https://es.farnell.com/nordic-semiconductor/nrf52840-dongle/m-dulo-bluetooth-v5-2mbps/dp/2902521
+
+Similar dongles with plastic encapsulation can be acquired from Minew, which can be found on Aliexpress:
+https://es.aliexpress.com/i/1005001908490775.html
+
+The dongles needs to be flashed with a connectivity firmare, that can be made automatically with the nordic application
+nRF Connect for Desktop Bluetooth Low Energy
+Standalone (https://github.com/NordicPlayground/pc-nrfconnect-ble-standalone) upon dongle connection.
+
+## Installation
+
+Enter the directory where the source code is downloaded and create a python virtual environment with the required
+dependencies, which are set in `pyproject.toml`, with:
+
+````shell
+poetry install
+````
+
+Once installed the required dependencies, the application must be launched from within the poetry environment just
+created with:
+
+````shell
+python main.py cli # for launching the main interface
+python main.py capture --duration 60 # for launching an unattended quick capture of 60 seconds
+````
+
+When using the application after the initial installation, only activation of the poetry virtual environment is
+required, which is done with:
+
+````shell
+poetry shell
+````
+
+or just:
+
+````shell
+poetry run python main.py cli
+````
+
+# Usage
+
+Once we launch application with the `cli` command:
+
+````shell
+$ poetry run python main.py cli
+````
+
+the following interface will be shown:
+
+````shell
+ _____ ____    _      _
+|  ___/ ___|  / \    | |    ___   __ _  __ _  ___ _ __
+| |_  \___ \ / _ \   | |   / _ \ / _` |/ _` |/ _ \ '__|
+|  _|  ___) / ___ \  | |__| (_) | (_| | (_| |  __/ |
+|_|   |____/_/   \_\ |_____\___/ \__, |\__, |\___|_|
+                                 |___/ |___/
+
+INFO:     | 2023-06-09 10:42:59 | [fsa_logger] Starting sensor controller...
+INFO:     | 2023-06-09 10:42:59 | [fsa_logger] Enabling adapter BlatannImuSensorService at port COM7...
+INFO:     | 2023-06-09 10:43:00 | [fsa_logger] Enabling adapter BlatannImuSensorService at port COM7... Done
+INFO:     | 2023-06-09 10:43:00 | [fsa_logger] Enabling adapter BlatannImuSensorService at port COM11...
+INFO:     | 2023-06-09 10:43:02 | [fsa_logger] Enabling adapter BlatannImuSensorService at port COM11... Done
+INFO:     | 2023-06-09 10:43:02 | [fsa_logger] Starting sensor controller... Done.
+INFO:     | 2023-06-09 10:43:02 | [fsa_logger] Available adapters: ['COM7', 'COM11']
+? Select an option: (Use arrow keys)
+ » Sensors
+   Collect available sensors
+   ---------------
+   Quick capture session
+   Create session
+   Select session
+   ---------------
+   List sessions
+   Delete sessions
+   Clear sessions data
+   Merge sessions
+   Restore session
+   Exit
+````
+
+The application first initializes the usb dongles used to connect with the sensors, and presents available adapters and
+the main menu interface.
+
+If the `logger_config_collect_sensors_on_startup` variable on the `.env` is set to `True`, the application will perform
+an initial sensor recruitment and connect those sensors in range. The `Collect available sensors` in the main menu
+launch this same operation.
+
+## Sessions
+
+The application uses the concept of `LoggerSession` to handle data captured from sensors. Sessions comprises a
+`session_name` and a `session_type`, thus captures can be organized, while main session identification includes the
+session creation timestamp.
+
+- `Quick capture session` launch a quick capture process with the sensors already connected under a new session with no
+  user intervention. The duration of the capture process is set with the `logger_config_default_session_duration`
+  variable on the `.env` file.
+- `Create session` ask for the new `session_name` and `session_type`, and navigates to the session menu.
+- `Select session` shows the existing saved sessions to select from and navigates to the session menu.
+- `List sessions` shows information about the saved sessions.
+- `Delete sessions` allows deleting existing sessions.
+- `Merge sessions` allows selecting several existing sessions and merge them into a single session. This is useful in
+  case of capture process launched in parallel on different os processes.
+- `Restore session` allows selecting sensor capture data cache files and building a capture session from them. This is
+  useful in case of long-running capture processes that may force application gets killed by the os prior gathering
+  sensor data files.
+- `Clear sessions data` allows deleting existing sessions data, without deleting sessions itself.
+
+## Session
+
+Creating a new session or selecting an existing one leads to the **Session menu**:
+
+````shell
+Session 2023-06-09 13.13.09_New session selected
+********************************************************************************************************************************************
+*                                                                                                                                          *
+*                                                                 SESSION                                                                  *
+*                                                                                                                                          *
+********************************************************************************************************************************************
+============================================================================================================================================
+=                                 Name: New session - Type: Test - Created at: 2023-06-09 13:13:09.893348                                  =
+============================================================================================================================================
+Last capture duration: 10.2 seconds
+Sensors: 1
+- 00:80:E1:21:8E:0A - 6400.0 Hz ['acc_y', 'acc_z']
+--------------------------------------------------------------------------------------------------------------------------------------------
+Sensor 00:80:E1:21:8E:0A received 1087 packets [24962:26048] in 10.2 sec. (107.0 packets/sec.). Missed packets: 0 (0.0 per sec.) - 0.0%
+--------------------------------------------------------------------------------------------------------------------------------------------
+Sensor 00:80:E1:21:8E:0A received 65220 samples on axis ['acc_y', 'acc_z'] in 10.2 sec. (6422.2 samples/sec.)
+--------------------------------------------------------------------------------------------------------------------------------------------
+Sensor 00:80:E1:21:8E:0A has 1 continuous streams with 65220.0 samples in avg (min: 65220, max: 65220)
+--------------------------------------------------------------------------------------------------------------------------------------------
+============================================================================================================================================
+=                                                           2 sensors connected                                                            =
+============================================================================================================================================
+Address                 Alias           Location        Connected       Configuration
+--------------------------------------------------------------------------------------------------------------------------------------------
+00:80:E1:21:8E:0A       S1              POSITION_UP     COM7            Two axis (Y, Z), 6400Hz (HF), 16G
+00:80:E1:21:7A:4F       S2              POSITION_DOWN   COM11           Two axis (Y, Z), 6400Hz (HF), 16G
+--------------------------------------------------------------------------------------------------------------------------------------------
+? Select an option: (Use arrow keys)
+ » Show session data
+   Start capture
+   Analyze session
+   Export session data
+   ---------------
+   Edit session
+   Delete current session
+   Clear current session data
+   Back
+````
+
+A summary of the session selected and the currently connected sensors is presented, and session menu options are
+displayed:
+
+- `Show session data` displays a summary of the session and information about the data captured and analyzed (if so),
+  plus allows generating a plot of the data, that will open a page in a browser (depending on the amount of data, it
+  may take a while). Note that browser cannot be opened if the gateway is operated over an ssh connection.
+- `Start capture` launches a capture process, allowing indicating the sensors to use and the duration of the capture
+  process.
+- `Analyze session data` performs an FFT analysis of the captured data by each sensor. This is accomplished also after a
+  capture process if the `logger_config_analyze_data_on_capture` variable on the `.env` file is set to `True`.
+- `Export session data` allows saving session data on a custom location, including the generation of the html reports.
+- `Delete current session` eliminates current session and navigates back to the sessions' menu.
+- `Edit session` allows modifying `session_name` and `session_type`, plus entering additional `session_notes`.
+- `Clear current session data` deletes session data, without deleting the session itself.
+
+## Sensors
+
+Main menu option `Sensors` navigates to the **Sensors menu**, where we can manage the sensors used by the application.
+
+````shell
+********************************************************************************************************************************************
+*                                                                                                                                          *
+*                                                                 SENSORS                                                                  *
+*                                                                                                                                          *
+********************************************************************************************************************************************
+============================================================================================================================================
+=                                                             5 sensors known                                                              =
+============================================================================================================================================
+Address                 Alias           Location        Connected       Configuration
+--------------------------------------------------------------------------------------------------------------------------------------------
+00:80:E1:21:8E:0A       S1              POSITION_UP     ---             Three axis (X, Y, Z), 1600Hz (HF), 8G
+00:80:E1:21:7A:4F       S2              POSITION_DOWN   ---             Three axis (X, Y, Z), 1600Hz (HF), 8G
+00:80:E1:21:8B:F2       S3              POSITION_LEFT   ---             Three axis (X, Y, Z), 1600Hz (HF), 8G
+00:80:E1:21:B5:F5       S3              POSITION_EXTRA  ---             Three axis (X, Y, Z), 1600Hz (HF), 8G
+00:80:E1:21:89:3A       S4              POSITION_LEFT   ---             Three axis (X, Y, Z), 1600Hz (HF), 8G
+--------------------------------------------------------------------------------------------------------------------------------------------
+? Select an option: (Use arrow keys)
+ » Collect available sensors
+   Show sensors
+   Edit sensors
+   Config sensors
+   Search sensors
+   Connect sensors
+   Disconnect sensors
+   Test sensors
+   Back
+````
+
+First, a list with the currently known sensors and its configuration is presented, and then a menu with
+the available operations is shown:
+
+- `Collect available sensors` will perform a BLE search for the sensors in range, and will connect them automatically.
+- `Show sensors` will print the list of sensors, and will ask for connecting them.
+- `Edit sensors` allows defining sensor alias and predefined location (preset locations can be established on the `.env`
+  file).
+- `Config sensors` allows configuring sensor behaviour (axis configuration, sample rate and scale).
+- `Search sensors` launch a BLE scan and allows connecting found sensors  (similar to `collect available sensors`, but
+  does not connect automatically).
+- `Connect sensors` allows connect already known sensors.
+- `Disconnect sensors` disconnect already connected sensors.
+- `Test sensors` enables sensor capture and display packets received on real time, without storing data.
+
+When connecting previously known sensors, sensor configuration is set through BLE. A sensor configuration can be
+overridden by the default configuration on the `.env` file if the `logger_config_sensor_use_default_configuration`
+variable is set to `True`.
+
+The application manages the connection procedure to distribute connections among available adapters. Best performance
+is achieved when each sensor is connected with a different adapter. In case several sensors are connected to the same
+adapter, that will affect the capture process, leading to missing packets if higher sample rate is selected (thus, 4
+adapters are required to maximize throughput). Maximum achievable rate for a sensor connected to a single adapter is
+6.k kHz with two axis or 3.2 kHz with three axis, while selecting 6.4 kHz and three axis leads to missing ~10-15% of the
+packets.
+
+## Unattended capture
+
+It's possible to launch an unattended capture from the command line with:
+
+````shell
+python main.py capture --duration 15 --export-path export
+````
+
+where `--duration` states the capture duration in seconds and `--export-path` indicates a directory where captured data
+will be saved (in addition to the default application data location). If the `--duration` option is not provided, the
+default duration configured on the `.env` file with the `logger_config_default_session_duration` variable will be used.
+If the `--export-path` option is not provided, data will be stored only on the default application data location.
+
+````shell
+ _____ ____    _      _                                
+|  ___/ ___|  / \    | |    ___   __ _  __ _  ___ _ __
+| |_  \___ \ / _ \   | |   / _ \ / _` |/ _` |/ _ \ '__|
+|  _|  ___) / ___ \  | |__| (_) | (_| | (_| |  __/ |
+|_|   |____/_/   \_\ |_____\___/ \__, |\__, |\___|_|
+                                 |___/ |___/
+
+INFO:     | 2023-06-09 14:19:21 | [fsa_logger] Starting sensor controller...
+INFO:     | 2023-06-09 14:19:21 | [fsa_logger] Enabling adapter BlatannImuSensorService at port COM7...
+INFO:     | 2023-06-09 14:19:23 | [fsa_logger] Enabling adapter BlatannImuSensorService at port COM7... Done
+INFO:     | 2023-06-09 14:19:23 | [fsa_logger] Enabling adapter BlatannImuSensorService at port COM11...
+INFO:     | 2023-06-09 14:19:24 | [fsa_logger] Enabling adapter BlatannImuSensorService at port COM11... Done
+INFO:     | 2023-06-09 14:19:24 | [fsa_logger] Starting sensor controller... Done.
+INFO:     | 2023-06-09 14:19:24 | [fsa_logger] Available adapters: ['COM7', 'COM11']
+********************************************************************************************************************************************
+*                                                                                                                                          *
+*                                                 UNATTENDED SENSOR CAPTURE FOR 15 SECONDS                                                 *
+*                                                                                                                                          *
+********************************************************************************************************************************************
+INFO:     | 2023-06-09 14:19:24 | [fsa_logger] Collecting sensors...
+INFO:     | 2023-06-09 14:19:24 | [fsa_logger.imu_sensor_service] searching imu sensors, please wait...
+INFO:     | 2023-06-09 14:19:27 | [fsa_logger] Connecting sensor 00:80:E1:21:89:3A with adapter at COM7
+DEBUG:    | 2023-06-09 14:19:28 | [fsa_logger.imu_sensor_service] Connected to 00:80:E1:21:89:3A. Discovering services...
+DEBUG:    | 2023-06-09 14:19:28 | [fsa_logger.imu_sensor_service] Done
+INFO:     | 2023-06-09 14:19:28 | [fsa_logger.imu_sensor_service] Sensor 00:80:E1:21:89:3A configuration set: SensorSampleRate.SAMPLE_RATE_6400HZ_HF, SensorScale.SCALE_16G, SensorAxis.AXIS_ONLY_YZ
+DEBUG:    | 2023-06-09 14:19:28 | [fsa_logger] Adapter COM7 has 1 sensor(s) connected (limit=1), skipping
+INFO:     | 2023-06-09 14:19:28 | [fsa_logger] Connecting sensor 00:80:E1:21:8B:F2 with adapter at COM11
+DEBUG:    | 2023-06-09 14:19:29 | [fsa_logger.imu_sensor_service] Connected to 00:80:E1:21:8B:F2. Discovering services...
+DEBUG:    | 2023-06-09 14:19:29 | [fsa_logger.imu_sensor_service] Done
+INFO:     | 2023-06-09 14:19:29 | [fsa_logger.imu_sensor_service] Sensor 00:80:E1:21:8B:F2 configuration set: SensorSampleRate.SAMPLE_RATE_6400HZ_HF, SensorScale.SCALE_16G, SensorAxis.AXIS_ONLY_YZ
+DEBUG:    | 2023-06-09 14:19:29 | [fsa_logger] Adapter COM7 has 1 sensor(s) connected (limit=1), skipping
+DEBUG:    | 2023-06-09 14:19:29 | [fsa_logger] Adapter COM11 has 1 sensor(s) connected (limit=1), skipping
+INFO:     | 2023-06-09 14:19:29 | [fsa_logger] Cannot connect with sensor 00:80:E1:21:8E:0A, no available adapters
+DEBUG:    | 2023-06-09 14:19:29 | [fsa_logger] Adapter COM7 has 1 sensor(s) connected (limit=1), skipping
+DEBUG:    | 2023-06-09 14:19:29 | [fsa_logger] Adapter COM11 has 1 sensor(s) connected (limit=1), skipping
+INFO:     | 2023-06-09 14:19:29 | [fsa_logger] Cannot connect with sensor 00:80:E1:21:B5:F5, no available adapters
+DEBUG:    | 2023-06-09 14:19:29 | [fsa_logger] Adapter COM7 has 1 sensor(s) connected (limit=1), skipping
+DEBUG:    | 2023-06-09 14:19:29 | [fsa_logger] Adapter COM11 has 1 sensor(s) connected (limit=1), skipping
+INFO:     | 2023-06-09 14:19:29 | [fsa_logger] Cannot connect with sensor 00:80:E1:21:7A:4F, no available adapters
+INFO:     | 2023-06-09 14:19:29 | [fsa_logger] Collecting sensors... Done
+INFO:     | 2023-06-09 14:19:29 | [fsa_logger] Capturing data...
+INFO:     | 2023-06-09 14:19:29 | [fsa_logger] launch_capture: no session provided, creating session with default parameters
+INFO:     | 2023-06-09 14:19:29 | [fsa_logger] Launching capture with sensors ['00:80:E1:21:89:3A - S4', '00:80:E1:21:8B:F2 - S3'] for 15 seconds...
+INFO:     | 2023-06-09 14:19:29 | [fsa_logger] Enabling capture on sensor 00:80:E1:21:89:3A...
+INFO:     | 2023-06-09 14:19:29 | [fsa_logger] Enabling capture on sensor 00:80:E1:21:89:3A... Done
+INFO:     | 2023-06-09 14:19:29 | [fsa_logger] Enabling capture on sensor 00:80:E1:21:8B:F2...
+INFO:     | 2023-06-09 14:19:29 | [fsa_logger.imu_sensor_service] Received a first packet from 00:80:E1:21:89:3A with num_packet=22675
+INFO:     | 2023-06-09 14:19:29 | [fsa_logger] Enabling capture on sensor 00:80:E1:21:8B:F2... Done
+INFO:     | 2023-06-09 14:19:29 | [fsa_logger] Capture with sensors ['00:80:E1:21:89:3A - S4', '00:80:E1:21:8B:F2 - S3'] started, receiving data...
+INFO:     | 2023-06-09 14:19:29 | [fsa_logger.imu_sensor_service] Received a first packet from 00:80:E1:21:8B:F2 with num_packet=7571
+INFO:     | 2023-06-09 14:19:39 | [fsa_logger] Background saving packets...
+INFO:     | 2023-06-09 14:19:39 | [fsa_logger] Sensor 00:80:E1:21:89:3A received 1066 packets [22675:23740] in 10.0 sec. (106.4 packets/sec.). Missed packets: 0 (0.0 per sec.) - 0.0%
+INFO:     | 2023-06-09 14:19:39 | [fsa_logger] Sensor 00:80:E1:21:8B:F2 received 1064 packets [7571:8634] in 10.0 sec. (106.4 packets/sec.). Missed packets: 0 (0.0 per sec.) - 0.0%
+INFO:     | 2023-06-09 14:19:39 | [fsa_logger] Background saving packets... Done.
+INFO:     | 2023-06-09 14:19:44 | [fsa_logger] Disabling capture on sensor 00:80:E1:21:89:3A...
+INFO:     | 2023-06-09 14:19:44 | [fsa_logger] Disabling capture on sensor 00:80:E1:21:89:3A... Done
+INFO:     | 2023-06-09 14:19:44 | [fsa_logger] Disabling capture on sensor 00:80:E1:21:8B:F2...
+INFO:     | 2023-06-09 14:19:44 | [fsa_logger] Disabling capture on sensor 00:80:E1:21:8B:F2... Done
+INFO:     | 2023-06-09 14:19:44 | [fsa_logger] Awaiting data collection...
+INFO:     | 2023-06-09 14:19:44 | [fsa_logger] Background saving last packets...
+INFO:     | 2023-06-09 14:19:44 | [fsa_logger] Sensor 00:80:E1:21:89:3A received 551 packets [23741:24291] in 5.1 sec. (107.1 packets/sec.). Missed packets: 0 (0.0 per sec.) - 0.0%
+INFO:     | 2023-06-09 14:19:44 | [fsa_logger] Sensor 00:80:E1:21:8B:F2 received 550 packets [8635:9184] in 5.2 sec. (106.5 packets/sec.). Missed packets: 0 (0.0 per sec.) - 0.0%
+INFO:     | 2023-06-09 14:19:44 | [fsa_logger] Background saving last packets... Done.
+INFO:     | 2023-06-09 14:19:44 | [fsa_logger] Merging background saved data...
+INFO:     | 2023-06-09 14:19:45 | [fsa_logger] Merging background saved data... Done.
+INFO:     | 2023-06-09 14:19:45 | [fsa_logger] Awaiting data collection... Done.
+INFO:     | 2023-06-09 14:19:45 | [fsa_logger] ********************************************************************************************************************************************
+INFO:     | 2023-06-09 14:19:45 | [fsa_logger] *                                                          Packet summary report                                                           *
+INFO:     | 2023-06-09 14:19:45 | [fsa_logger] ********************************************************************************************************************************************
+INFO:     | 2023-06-09 14:19:45 | [fsa_logger] Received packets from 2 sensors
+INFO:     | 2023-06-09 14:19:45 | [fsa_logger] --------------------------------------------------------------------------------------------------------------------------------------------
+INFO:     | 2023-06-09 14:19:45 | [fsa_logger] Sensor 00:80:E1:21:89:3A received 1617 packets [22675:24291] in 15.2 sec. (106.6 packets/sec.). Missed packets: 0 (0.0 per sec.) - 0.0%
+INFO:     | 2023-06-09 14:19:45 | [fsa_logger] Sensor 00:80:E1:21:8B:F2 received 1614 packets [7571:9184] in 15.2 sec. (106.4 packets/sec.). Missed packets: 0 (0.0 per sec.) - 0.0%
+INFO:     | 2023-06-09 14:19:45 | [fsa_logger] --------------------------------------------------------------------------------------------------------------------------------------------
+INFO:     | 2023-06-09 14:19:45 | [fsa_logger] ********************************************************************************************************************************************
+INFO:     | 2023-06-09 14:19:45 | [fsa_logger] *                                                           Data summary report                                                            *
+INFO:     | 2023-06-09 14:19:45 | [fsa_logger] ********************************************************************************************************************************************
+INFO:     | 2023-06-09 14:19:45 | [fsa_logger] Received data from 2 sensors
+INFO:     | 2023-06-09 14:19:45 | [fsa_logger] --------------------------------------------------------------------------------------------------------------------------------------------
+INFO:     | 2023-06-09 14:19:45 | [fsa_logger] Sensor 00:80:E1:21:89:3A received 97020 samples on axis ['acc_y', 'acc_z'] in 15.2 sec. (6393.1 samples/sec.)
+INFO:     | 2023-06-09 14:19:45 | [fsa_logger] Sensor 00:80:E1:21:8B:F2 received 96840 samples on axis ['acc_y', 'acc_z'] in 15.2 sec. (6382.5 samples/sec.)
+INFO:     | 2023-06-09 14:19:45 | [fsa_logger] --------------------------------------------------------------------------------------------------------------------------------------------
+INFO:     | 2023-06-09 14:19:45 | [fsa_logger] ********************************************************************************************************************************************
+INFO:     | 2023-06-09 14:19:45 | [fsa_logger] *                                                          Streams summary report                                                          *
+INFO:     | 2023-06-09 14:19:45 | [fsa_logger] ********************************************************************************************************************************************
+INFO:     | 2023-06-09 14:19:45 | [fsa_logger] Received data from 2 sensors
+INFO:     | 2023-06-09 14:19:45 | [fsa_logger] --------------------------------------------------------------------------------------------------------------------------------------------
+INFO:     | 2023-06-09 14:19:45 | [fsa_logger] Sensor 00:80:E1:21:89:3A has 1 continuous streams with 97020.0 samples in avg (min: 97020, max: 97020)
+INFO:     | 2023-06-09 14:19:45 | [fsa_logger] Sensor 00:80:E1:21:8B:F2 has 1 continuous streams with 96840.0 samples in avg (min: 96840, max: 96840)
+INFO:     | 2023-06-09 14:19:45 | [fsa_logger] --------------------------------------------------------------------------------------------------------------------------------------------
+INFO:     | 2023-06-09 14:19:45 | [fsa_logger] ============================================================================================================================================
+INFO:     | 2023-06-09 14:19:45 | [fsa_logger] =                                 Name: New session - Type: Test - Created at: 2023-06-09 14:19:29.627150                                  =
+INFO:     | 2023-06-09 14:19:45 | [fsa_logger] ============================================================================================================================================
+INFO:     | 2023-06-09 14:19:45 | [fsa_logger] Last capture duration: 15.5 seconds
+INFO:     | 2023-06-09 14:19:45 | [fsa_logger] Sensors: 2
+INFO:     | 2023-06-09 14:19:45 | [fsa_logger] - 00:80:E1:21:89:3A - 6400.0 Hz ['acc_y', 'acc_z']
+INFO:     | 2023-06-09 14:19:45 | [fsa_logger] - 00:80:E1:21:8B:F2 - 6400.0 Hz ['acc_y', 'acc_z']
+INFO:     | 2023-06-09 14:19:45 | [fsa_logger] --------------------------------------------------------------------------------------------------------------------------------------------
+INFO:     | 2023-06-09 14:19:45 | [fsa_logger] Sensor 00:80:E1:21:89:3A received 1617 packets [22675:24291] in 15.2 sec. (106.6 packets/sec.). Missed packets: 0 (0.0 per sec.) - 0.0%
+INFO:     | 2023-06-09 14:19:45 | [fsa_logger] Sensor 00:80:E1:21:8B:F2 received 1614 packets [7571:9184] in 15.2 sec. (106.4 packets/sec.). Missed packets: 0 (0.0 per sec.) - 0.0%
+INFO:     | 2023-06-09 14:19:45 | [fsa_logger] --------------------------------------------------------------------------------------------------------------------------------------------
+INFO:     | 2023-06-09 14:19:45 | [fsa_logger] Sensor 00:80:E1:21:89:3A received 97020 samples on axis ['acc_y', 'acc_z'] in 15.2 sec. (6393.1 samples/sec.)
+INFO:     | 2023-06-09 14:19:45 | [fsa_logger] Sensor 00:80:E1:21:8B:F2 received 96840 samples on axis ['acc_y', 'acc_z'] in 15.2 sec. (6382.5 samples/sec.)
+INFO:     | 2023-06-09 14:19:45 | [fsa_logger] --------------------------------------------------------------------------------------------------------------------------------------------
+INFO:     | 2023-06-09 14:19:45 | [fsa_logger] Sensor 00:80:E1:21:89:3A has 1 continuous streams with 97020.0 samples in avg (min: 97020, max: 97020)
+INFO:     | 2023-06-09 14:19:45 | [fsa_logger] Sensor 00:80:E1:21:8B:F2 has 1 continuous streams with 96840.0 samples in avg (min: 96840, max: 96840)
+INFO:     | 2023-06-09 14:19:45 | [fsa_logger] --------------------------------------------------------------------------------------------------------------------------------------------
+INFO:     | 2023-06-09 14:19:45 | [fsa_logger] Saving session data...
+INFO:     | 2023-06-09 14:19:45 | [fsa_logger] Saving session data... Done.
+INFO:     | 2023-06-09 14:19:45 | [fsa_logger] Capturing data... Done.
+INFO:     | 2023-06-09 14:19:45 | [fsa_logger] Saving session data to unattended\2023-06-09 14.19.29_New session...
+INFO:     | 2023-06-09 14:19:45 | [fsa_logger] Saving session data to csv...
+INFO:     | 2023-06-09 14:19:47 | [fsa_logger] Generating html reports...
+INFO:     | 2023-06-09 14:19:47 | [fsa_logger] Generating chart unattended\2023-06-09 14.19.29_New session\2023-06-09 14.19.29_New session_raw_data.html...
+INFO:     | 2023-06-09 14:19:48 | [fsa_logger] Session 2023-06-09 14.19.29_New session has no data
+INFO:     | 2023-06-09 14:19:48 | [fsa_logger] Saving session data to unattended\2023-06-09 14.19.29_New session... Done.
+INFO:     | 2023-06-09 14:19:48 | [fsa_logger] Stopping sensor controller...
+INFO:     | 2023-06-09 14:19:48 | [fsa_logger] Disabling adapter BlatannImuSensorService at port COM7...
+INFO:     | 2023-06-09 14:19:48 | [fsa_logger] Disabling adapter BlatannImuSensorService at port COM7... Done.
+INFO:     | 2023-06-09 14:19:48 | [fsa_logger] Disabling adapter BlatannImuSensorService at port COM11...
+INFO:     | 2023-06-09 14:19:48 | [fsa_logger] Disabling adapter BlatannImuSensorService at port COM11... Done.
+INFO:     | 2023-06-09 14:19:48 | [fsa_logger] Stopping sensor controller... Done.
+````
+
+The command will search and connect all the available sensors (considering the constraints imposed on the `.env` file),
+generates a new session and launches a data capture of the intended duration. Sensor configuration, as well as alias and
+location will be retrieved from the last saved data (although configuration can be overriden with the
+`logger_config_sensor_use_default_configuration` variable), and data will be stored on the default location and the
+provided export path.
+
+## Environment configuration
+
+The application behaviour can be tuned by using environment variables. The application can handle environment variables
+defined in a `.env` file with the following content (purpose of each variable is described inplace):
+
+```dotenv
+# Logger configuration
+# ====================
+# Path to store the logger data
+logger_config_data_path=data
+
+# Wether to use partitioning when saving parquet data (split files among sensors' address)
+logger_config_use_parquet_partition=False
+
+# Wether to save raw sensor data
+logger_config_save_raw_acc=False
+
+# Main menu interface language (ES, EN). Note that remainder application messages will be presented in EN 
+# regardless this configuration
+logger_config_language=EN
+
+# Wether to show sensors' menu at first level
+logger_config_sensor_menu_up=False
+
+# List of expected sensor locations to select when edit sensors
+logger_config_known_locations=["POSITION_UP", "POSITION_DOWN", "POSITION_LEFT", "POSITION_RIGHT", "POSITION_EXTRA"]
+
+# Sensors connection configuration
+# ================================
+# Max number of adapters to use by the application. Set to 0 to use all the available adapters.
+# Setting max adapters to 1 uses only one adapter, useful when using the unattended capture mode and
+# launching several process in paralel
+logger_config_max_adapters=4
+
+# Max number of sensors connected by adapter. Set to 0 to allow connecting all the sensors with the same adapter
+# (note that BLE adapter impose additional restrictions on the number of simultaneous connections)
+# Setting max sensors to 1 limits one sensor for adapter, useful when using the unattended capture mode and
+# launching several process in paralel
+logger_config_max_sensors_per_adapter=2
+
+# Max number of sensors connected. Set to 0 to allow connecting all the sensors in range
+# Setting max sensors to 1 limits one sensor for application, useful when using the unattended capture mode 
+# and launching several process in paralel
+logger_config_max_sensors_connected=0
+
+# Wether to search and connect sensors on startup on the CLI mode (does not affect the capture mode).
+logger_config_collect_sensors_on_startup=False
+
+# Session capture configuration
+# =============================
+# Period in seconds for saving sensor data while receiving packets
+logger_config_background_save_period=10
+
+# Whether to keep sensor capture cache files prior merging session data (useful in case application 
+# may be killed by low memory...)
+logger_config_keep_sensor_cache_files=True
+
+# Default session name / session type for unattended capture sessions
+logger_config_default_session_name=New session
+logger_config_default_session_type=Test
+
+# Default session duration for unattended capture sessions
+logger_config_default_session_duration=10
+
+# Performs a raw data FFT analysis upon data capture
+logger_config_analyze_data_on_capture=False
+
+# Sensors capture configuration
+# =============================
+# Wether to use sensors configuration set or force default sensor configuration
+logger_config_sensor_use_default_configuration=False
+
+# Default sensor capture configuration
+# Sample rate:
+#    SAMPLE_RATE_1HZ_LP = 0x08
+#    SAMPLE_RATE_12HZ5_LP = 0x09
+#    SAMPLE_RATE_25HZ_LP = 0x0A
+#    SAMPLE_RATE_50HZ_LP = 0x0B
+#    SAMPLE_RATE_100HZ_LP = 0x0C
+#    SAMPLE_RATE_200HZ_LP = 0x0D
+#    SAMPLE_RATE_400HZ_LP = 0x0E
+#    SAMPLE_RATE_800HZ_LP = 0x0F
+#    SAMPLE_RATE_12HZ5_HR = 0x01
+#    SAMPLE_RATE_25HZ_HR = 0x02
+#    SAMPLE_RATE_50HZ_HR = 0x03
+#    SAMPLE_RATE_100HZ_HR = 0x04
+#    SAMPLE_RATE_200HZ_HR = 0x05
+#    SAMPLE_RATE_400HZ_HR = 0x06
+#    SAMPLE_RATE_800HZ_HR = 0x07
+#    SAMPLE_RATE_1600HZ_HF = 0x15
+#    SAMPLE_RATE_3200HZ_HF = 0x16
+#    SAMPLE_RATE_6400HZ_HF = 0x17
+logger_config_default_sensor_sample_rate=SAMPLE_RATE_3200HZ_HF
+
+# Scale:
+#    SCALE_2G = 0x00
+#    SCALE_16G = 0x01
+#    SCALE_4G = 0x02
+#    SCALE_8G = 0x03
+logger_config_default_sensor_scale=SCALE_8G
+
+# Axis:
+#    AXIS_XYZ = 0x10
+#    AXIS_ONLY_YZ = 0x11
+#    AXIS_ONLY_X = 0x12
+#    AXIS_ONLY_Y = 0x13
+#    AXIS_ONLY_Z = 0x11
+logger_config_default_sensor_axis=AXIS_ONLY_YZ
+
+
+# Session data configuration
+# ==========================
+# Max duration in seconds for plotting raw data (graphic generation is slow and produce heavy files when too much data)
+logger_config_plot_max_seconds=60
+
+# Min number of consecutive stream samples to compute FFT
+logger_config_analyze_min_stream_samples=4096 # 2^12
+
+# Max number of consecutive stream samples to compute FFT
+logger_config_analyze_max_stream_samples=16384 # 2^14
+```
+
+## Troubleshooting
+
+### Cannot enable usb adapters
+
+Solution:
+Add user to dialout group
+
+````shell
+sudo adduser username dialout
+````
+
+### "Failed to unlock the collection on poetry install"
+
+Solution:
+
+````shell
+export PYTHON_KEYRING_BACKEND=keyring.backends.null.Keyring
+````
+
+https://stackoverflow.com/questions/74438817/poetry-failed-to-unlock-the-collection
+
+### Disable Suspend and Hibernation in Linux
+
+````shell
+sudo systemctl mask sleep.target suspend.target hibernate.target hybrid-sleep.target
+````
+
+https://www.tecmint.com/disable-suspend-and-hibernation-in-linux/

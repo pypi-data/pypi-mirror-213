@@ -1,0 +1,3 @@
+[console_scripts]
+fsa_logger=main:app
+
