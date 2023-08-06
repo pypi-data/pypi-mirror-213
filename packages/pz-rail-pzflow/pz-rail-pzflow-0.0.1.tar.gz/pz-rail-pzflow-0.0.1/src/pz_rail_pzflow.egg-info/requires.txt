@@ -1,0 +1,10 @@
+deprecated
+pz-rail-base
+pzflow
+
+[dev]
+qp-prob[full]
+pytest
+pytest-cov
+pre-commit
+pylint
