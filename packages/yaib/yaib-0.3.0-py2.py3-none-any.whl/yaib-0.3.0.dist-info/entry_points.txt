@@ -1,0 +1,2 @@
+[console_scripts]
+icu-benchmarks = icu_benchmarks.run:main
