@@ -1,0 +1,10 @@
+lxml
+requests
+web-fragments
+webob
+XBlock[django]
+Django
+pypng
+fs-s3fs
+cookiecutter
+simplejson
