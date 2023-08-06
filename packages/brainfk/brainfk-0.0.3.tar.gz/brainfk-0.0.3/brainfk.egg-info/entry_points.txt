@@ -1,0 +1,2 @@
+[console_scripts]
+brainfk = brainfk.interpreter:main
