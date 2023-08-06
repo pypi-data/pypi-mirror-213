@@ -1,0 +1,3 @@
+[console_scripts]
+ttt=terminal_typing_tutor.main:main
+
