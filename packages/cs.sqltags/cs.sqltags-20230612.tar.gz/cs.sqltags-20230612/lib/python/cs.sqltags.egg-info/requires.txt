@@ -1,0 +1,16 @@
+cs.cmdutils>=20210404
+cs.context>=20230331
+cs.dateutils>=20230210
+cs.deco>=20230331
+cs.fileutils>=20230421
+cs.lex>=20230401
+cs.logutils>=20230212
+cs.obj>=20220918
+cs.pfx>=20230604
+cs.sqlalchemy_utils>=20210420
+cs.tagset>=20211212
+cs.threads>=20201025
+cs.upd>=20230401
+icontract
+sqlalchemy
+typeguard
