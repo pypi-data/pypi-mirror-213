@@ -1,0 +1,26 @@
+[tool.poetry]
+name = "audible-series"
+version = "1.0.3"
+description = "Adds a command to audible-cli that looks for new series releases in a user's library."
+authors = ["Alex Lusco <alex.lusco@gmail.com>"]
+homepage = "https://github.com/luscoma/audible-series"
+repository = "https://github.com/luscoma/audible-series"
+readme="README.md"
+keywords = ["audible"]
+
+[tool.poetry.dependencies]
+python = ">=3"
+audible = ">=0.5.4, <1"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+autopep8 = "^1.5.7"
+pylint = "^2.9.3"
+parameterized = "^0.8.1"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.plugins."audible.cli_plugins"]
+"series" = "audible_series.cmd_series:cli"
