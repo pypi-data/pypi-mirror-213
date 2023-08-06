@@ -1,0 +1,13 @@
+pyllamacpp
+fastapi
+uvicorn[standard]
+sse-starlette
+click
+
+[dev]
+httpx
+pre-commit
+pytest
+pytest-cov
+pytest-xdist
+numpy

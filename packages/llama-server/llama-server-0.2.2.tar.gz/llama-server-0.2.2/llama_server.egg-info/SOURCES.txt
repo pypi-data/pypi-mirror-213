@@ -1,0 +1,16 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+llama_server/__init__.py
+llama_server/server.py
+llama_server.egg-info/PKG-INFO
+llama_server.egg-info/SOURCES.txt
+llama_server.egg-info/dependency_links.txt
+llama_server.egg-info/entry_points.txt
+llama_server.egg-info/requires.txt
+llama_server.egg-info/top_level.txt
+llama_server/prompts/alpaca.txt
+llama_server/prompts/chat-with-bob.txt
+llama_server/prompts/dan.txt
+llama_server/prompts/reason-act.txt

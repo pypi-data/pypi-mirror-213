@@ -1,0 +1,2 @@
+[console_scripts]
+llama-server = llama_server.server:main
