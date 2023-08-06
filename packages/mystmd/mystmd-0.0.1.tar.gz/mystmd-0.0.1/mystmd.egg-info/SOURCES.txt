@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+mystmd/__init__.py
+mystmd/version.py
+mystmd.egg-info/PKG-INFO
+mystmd.egg-info/SOURCES.txt
+mystmd.egg-info/dependency_links.txt
+mystmd.egg-info/top_level.txt
