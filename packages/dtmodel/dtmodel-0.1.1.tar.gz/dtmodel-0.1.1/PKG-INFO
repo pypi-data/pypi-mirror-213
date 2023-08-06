@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: dtmodel
+Version: 0.1.1
+Summary: 
+Author: Daniel Arantes
+Author-email: arantesdv@me.com
+Requires-Python: >=3.9,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: bcrypt (>=4.0.1,<5.0.0)
+Requires-Dist: dtfield (>=0.2.0,<0.3.0)
