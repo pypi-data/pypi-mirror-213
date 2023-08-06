@@ -1,0 +1,36 @@
+[tool.poetry]
+name = "oxalis"
+version = "0.6.2"
+description = "Distributed async task/job queue"
+authors = ["strongbugman <strongbugman@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+classifiers=[
+    "Environment :: Console",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Topic :: Software Development :: Libraries :: Application Frameworks",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+]
+packages = [
+    { include = "oxalis" },
+]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+aio-pika = ">=8.0.3"
+croniter = ">=1.3.5"
+redis = ">=4.5.1"
+aiokafka = ">=0.8.0"
+
+[tool.poetry.dev-dependencies]
+pytest = ">=4.6"
+pytest-asyncio = ">=0.8.0"
+pytest-cov = ">=2.5.1"
+mypy = ">=0.910"
+flake8 = ">=3.9.2"
+isort = ">=5.9.2"
+black = ">=21.8b0"
+mkdocs-material = ">=8.2.3"
+codecov = ">=2.1.12"
+types-croniter = "^1.3.0"
