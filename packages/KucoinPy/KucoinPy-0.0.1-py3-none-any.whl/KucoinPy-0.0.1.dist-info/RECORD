@@ -1,0 +1,10 @@
+KucoinPy/__init__.py,sha256=ZJQmDb5ggT4oCPJlivEH2DWISUH2gO1QFsQ5W0wsCPQ,117
+KucoinPy/classes.py,sha256=z21Y4YFLg-WAxvi-PvabOiYppQnxbOZQy9e0eJiVZPM,860
+KucoinPy/http.py,sha256=9n6nPSXOMl4bKERMuXPR9KGZ9nOxaiw0J2JAljIixac,3314
+KucoinPy/wrapper.py,sha256=kSvmhbPtbqV-f9rGTynPecodkuhKtS6-XLnImF1K7wQ,19353
+KucoinPy/ws.py,sha256=L1xHI3cKZM4aonzEVoQjjSzBLXYsZ21i8mnTBtEcuNk,1937
+KucoinPy-0.0.1.dist-info/LICENSE,sha256=gXf5dRMhNSbfLPYYTY_5hsZ1r7UU1OaKQEAQUhuIBkM,18092
+KucoinPy-0.0.1.dist-info/METADATA,sha256=P3atx_KW4OByLEd5BW944Zez6ZI87g9YUVfPDoC-igY,4853
+KucoinPy-0.0.1.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+KucoinPy-0.0.1.dist-info/top_level.txt,sha256=O2AANrREjBZGkDy9iJQE51-qFXJuDeowcHvOOOdAT40,9
+KucoinPy-0.0.1.dist-info/RECORD,,
