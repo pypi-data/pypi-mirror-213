@@ -1,0 +1,6 @@
+fastapi_throttling/__init__.py,sha256=neFIgMadn5nn6Yk4D-2C-eitFzAwnLrnS4V35NylzWs,79
+fastapi_throttling/throttle.py,sha256=hJhzkkjDR3Nf-rlqyt9ghJXj8IgfvS4LZYKy91hDtPA,3068
+fastapi_throttling-0.1.3.dist-info/LICENSE,sha256=IMF9i4xIpgCADf0U-V1cuf9HBmqWQd3qtI3FSuyW4zE,26526
+fastapi_throttling-0.1.3.dist-info/METADATA,sha256=Ii4Jxe1u2tMIRav3dXOWQEjTotkRSaDidn2hVSem3vQ,1822
+fastapi_throttling-0.1.3.dist-info/WHEEL,sha256=Zb28QaM1gQi8f4VCBhsUklF61CTlNYfs9YAZn-TOGFk,88
+fastapi_throttling-0.1.3.dist-info/RECORD,,
