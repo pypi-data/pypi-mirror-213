@@ -1,0 +1,3 @@
+[console_scripts]
+contact-magic=scripts.agency:app
+

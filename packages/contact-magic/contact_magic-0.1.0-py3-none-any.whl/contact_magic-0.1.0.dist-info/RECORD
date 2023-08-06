@@ -1,0 +1,13 @@
+contact_magic/__init__.py,sha256=H_KX7fzFPRvmmhrXs2n5e5QPCLNNEmUGmFqPwQvD3eY,104
+contact_magic/helpers.py,sha256=UCneuGxl4GubgwixoLRzpIcY7oscg5Zbg2w9qb4_9B4,3340
+contact_magic/integrations/__init__.py,sha256=FH1SB-eZlxHRy0QNs55L02PwtZbZ6fX6zxYWfORQ05E,121
+contact_magic/integrations/copyfactory.py,sha256=pncEx8_Ft6DrmwYJlsIAylQIdg2ZVW5rEUM3HKwh2L0,2132
+contact_magic/integrations/sales_scrapers.py,sha256=qfNKbUtOWvo_aVhm73oRiSeg3FUls8t0Y13C_Jte6JA,1309
+contact_magic/integrations/sheets.py,sha256=wP02Se-T4SasCVWyhzPgY9RVXVdS7I1qplRbVyzMLX8,1428
+contact_magic/logger.py,sha256=hnjA5TrxPBA5fAM8C8kcRQApepyTg4NdCs3WCq5h4ug,65
+contact_magic/models.py,sha256=qXTXDl31oCDTGV70DFUN1ME_kcHxTdTtsj7qL8EZ8CQ,11252
+contact_magic/utils.py,sha256=2R_1VKe_r9O-y6E-LarOG1P7xW4FBlL8eapy8hpGLb4,2773
+contact_magic-0.1.0.dist-info/METADATA,sha256=_v145RHWvBLdhtSPHUePEf8t6ldC5Qqzlar4aztvUIs,6107
+contact_magic-0.1.0.dist-info/WHEEL,sha256=Zb28QaM1gQi8f4VCBhsUklF61CTlNYfs9YAZn-TOGFk,88
+contact_magic-0.1.0.dist-info/entry_points.txt,sha256=CHZCMNeGR1iJ4ZNIdBxXv51XqiEniQ9p2et9_yqJh-8,52
+contact_magic-0.1.0.dist-info/RECORD,,
