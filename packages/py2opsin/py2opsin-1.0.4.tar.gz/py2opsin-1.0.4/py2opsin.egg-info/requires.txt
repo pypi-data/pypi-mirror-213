@@ -1,0 +1,6 @@
+
+[dev]
+pubchempy
+black
+pytest
+isort

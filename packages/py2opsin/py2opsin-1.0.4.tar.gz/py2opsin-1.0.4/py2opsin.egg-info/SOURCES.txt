@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+py2opsin/__init__.py
+py2opsin/opsin-cli-2.7.0-jar-with-dependencies.jar
+py2opsin/py2opsin.py
+py2opsin.egg-info/PKG-INFO
+py2opsin.egg-info/SOURCES.txt
+py2opsin.egg-info/dependency_links.txt
+py2opsin.egg-info/requires.txt
+py2opsin.egg-info/top_level.txt
+test/test_performance.py
+test/test_py2opsin.py
