@@ -1,0 +1,2 @@
+[console_scripts]
+mle-search = mle_hyperopt.cli:search

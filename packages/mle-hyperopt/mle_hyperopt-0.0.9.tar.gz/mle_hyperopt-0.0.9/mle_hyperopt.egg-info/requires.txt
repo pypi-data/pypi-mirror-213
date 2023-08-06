@@ -1,0 +1,24 @@
+numpy<=1.23.0
+pandas
+rich
+dotmap
+pyyaml>=5.1
+
+[:python_version < "3.8"]
+pickle5
+
+[examples]
+torch
+nevergrad
+scikit-optimize
+scikit-learn==0.24.2
+matplotlib
+seaborn
+mle-scheduler
+mle-logging
+
+[full]
+nevergrad
+scikit-optimize
+matplotlib
+seaborn
