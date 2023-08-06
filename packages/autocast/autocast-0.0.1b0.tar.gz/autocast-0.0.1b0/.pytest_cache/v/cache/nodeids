@@ -1,0 +1,4 @@
+[
+  "tests/test_autocast.py::test_noop",
+  "tests/test_autocast.py::test_simple_coercion"
+]
