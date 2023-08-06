@@ -1,0 +1,11 @@
+tomli
+ruamel.yaml
+tomlkit
+rich-click
+packaging
+
+[test]
+pytest
+pytest-cov
+pytest-xdist
+pytest-sugar
