@@ -1,0 +1,15 @@
+MANIFEST.in
+README.md
+setup.py
+pylibffm/__init__.py
+pylibffm/api.py
+pylibffm/wrapper.cpython-310-x86_64-linux-gnu.so
+pylibffm/wrapper.cpython-311-x86_64-linux-gnu.so
+pylibffm/wrapper.cpython-37m-x86_64-linux-gnu.so
+pylibffm/wrapper.cpython-38-x86_64-linux-gnu.so
+pylibffm/wrapper.cpython-39-x86_64-linux-gnu.so
+pylibffm.egg-info/PKG-INFO
+pylibffm.egg-info/SOURCES.txt
+pylibffm.egg-info/dependency_links.txt
+pylibffm.egg-info/requires.txt
+pylibffm.egg-info/top_level.txt
