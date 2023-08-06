@@ -1,0 +1,38 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "ChatGLM6Bpkg"
+version = "0.0.1"
+authors = [
+  { name="Yilin Niu", email="niuyl14@tsinghua.org.cn"},
+]
+description = "ChatGLM6Bpkg is a package for ChatGLM-6B (https://github.com/THUDM/ChatGLM-6B/tree/main)."
+readme = "README.md"
+license = { file="LICENSE" }
+requires-python = ">=3.9"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+        "protobuf",
+        "transformers==4.27.1",
+        "cpm_kernels",
+        "torch>=1.10",
+        "gradio",
+        "mdtex2html",
+        "sentencepiece",
+        "accelerate",
+        "fastapi",
+        "uvicorn",
+        "rouge_chinese",
+        "nltk",
+        "jieba",
+        "datasets"
+    ]
+
+[project.urls]
+"Homepage" = "https://github.com/thu-coai/ChatGLM6Bpkg/tree/main"
