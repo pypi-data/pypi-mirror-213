@@ -1,0 +1,9 @@
+README.md
+setup.py
+dowg/__init__.py
+dowg/dowg.py
+dowgopt.egg-info/PKG-INFO
+dowgopt.egg-info/SOURCES.txt
+dowgopt.egg-info/dependency_links.txt
+dowgopt.egg-info/requires.txt
+dowgopt.egg-info/top_level.txt

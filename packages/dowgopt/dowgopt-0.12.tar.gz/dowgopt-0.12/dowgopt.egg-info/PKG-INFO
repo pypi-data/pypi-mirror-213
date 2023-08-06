@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: dowgopt
+Version: 0.12
+Summary: DoWG parameter-free optimizer for PyTorch
+Home-page: https://github.com/rka97/dowg
+Author: Ahmed Khaled
+Author-email: akregeb@gmail.com
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Description-Content-Type: text/markdown
+
+# DoWG optimizer
+
+This repo contains the code for the DoWG optimizer. See the following paper for more details: https://arxiv.org/abs/2305.16284
