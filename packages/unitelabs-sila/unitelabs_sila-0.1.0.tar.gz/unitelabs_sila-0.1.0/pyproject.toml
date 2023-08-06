@@ -1,0 +1,70 @@
+[tool.poetry]
+name = "unitelabs-sila"
+version = "0.1.0"
+description = "An un-opinionated SiLA 2 library."
+license = "MIT"
+authors = ["UniteLabs AG <developers+sila@unitelabs.ch>"]
+readme = "README.md"
+homepage = "https://sila-standard.com"
+repository = "https://gitlab.com/unitelabs/integrations/sila2/sila-python"
+documentation = "https://gitlab.com/unitelabs/integrations/sila2/sila-python/-/tree/main/docs/"
+keywords = ["SiLA 2", "laboratory", "automation", "connectivity"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Healthcare Industry",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3 :: Only",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Topic :: Software Development :: Libraries",
+]
+packages = [{ include = "sila", from = "src" }]
+
+[tool.poetry.urls]
+"Bug Tracker" = "https://gitlab.com/unitelabs/integrations/sila2/sila-python/-/issues"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+grpcio = "1.54.2"
+pure-protobuf = "3.0.0a5"
+zeroconf = "0.64.1"
+
+[tool.poetry.group.dev.dependencies]
+black = "23.3.0"
+isort = "5.12.0"
+pylint = "2.17.4"
+pytest = "7.3.1"
+pytest-asyncio = "0.21.0"
+pytest-cov = "4.1.0"
+
+[tool.black]
+line-length = 120
+target-version = ['py39']
+
+[tool.isort]
+line_length = 120
+profile = "black"
+
+[tool.pylint.format]
+max-line-length = "120"
+
+[tool.pylint.messages_control]
+disable = ["missing-module-docstring"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]
+addopts = [
+    "--import-mode=importlib",
+]
+asyncio_mode = "auto"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
