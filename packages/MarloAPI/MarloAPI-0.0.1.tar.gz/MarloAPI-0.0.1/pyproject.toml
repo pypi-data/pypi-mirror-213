@@ -1,0 +1,13 @@
+[project]
+name = "MarloAPI"
+version = "0.0.1"
+authors = [
+  { name="2Milan", email="4lish.net@gmail.com" },
+]
+description = "A library for working witch Marlo"
+requires-python = ">=3.6"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
