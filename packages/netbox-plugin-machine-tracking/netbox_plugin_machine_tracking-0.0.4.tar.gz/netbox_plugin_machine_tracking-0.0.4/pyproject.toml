@@ -1,0 +1,28 @@
+[project]
+name = "netbox-plugin-machine-tracking"
+version = "0.0.4"
+authors = [
+  { name="Lisa Guo", email="lisguo@cisco.com" },
+]
+description = "A Netbox plugin tracking failures and other state changes in devices."
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[tool.hatch.build]
+include = [
+  "machine_tracking",
+  "/templates",
+  "*.html",
+]
+exclude = [
+  "*.pyc"
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
