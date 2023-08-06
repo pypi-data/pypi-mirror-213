@@ -1,0 +1,6 @@
+opencv-python>=4.5.1.48
+numpy<=1.23.5,>=1.22
+scipy>=1.7.0
+image>=1.5.33
+matplotlib>=3.4.2
+rawpy>=0.16.0
