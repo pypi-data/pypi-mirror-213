@@ -1,0 +1,10 @@
+pandas
+search4file
+faker
+tqdm
+xlrd
+xlwt
+poprogress
+xlwings
+pofile
+requests
