@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: tiledwebmaps
+Version: 0.1
+Summary: A small library for retrieving map images from a tile provider with arbitrary resolution, location and bearing.
+Author: Florian Fervers
+Author-email: florian.fervers@gmail.com
+License: MIT
+Requires-Dist: numpy
+Requires-Dist: cosy1
+Requires-Dist: pyyaml
+
