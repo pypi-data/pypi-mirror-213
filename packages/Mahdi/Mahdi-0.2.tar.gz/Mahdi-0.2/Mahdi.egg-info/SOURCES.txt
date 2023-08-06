@@ -1,0 +1,7 @@
+LICENSE
+README.md
+setup.py
+Mahdi.egg-info/PKG-INFO
+Mahdi.egg-info/SOURCES.txt
+Mahdi.egg-info/dependency_links.txt
+Mahdi.egg-info/top_level.txt
