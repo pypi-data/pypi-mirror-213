@@ -1,0 +1,32 @@
+aliyun_python_sdk_core>=2.13.30
+aliyun_python_sdk_kms>=2.14.0
+cryptography>=3.2.1
+apscheduler>=3.5.2
+bytebuffer>=0.1.0
+pyopenssl>=16.2.0
+apscheduler<=3.8.0
+
+[:python_version < "3"]
+alibabacloud-dkms-gcs-python2>=0.0.5
+alibabacloud-dkms-transfer-python2>=0.0.3
+
+[:python_version <= "3.6"]
+protobuf<=3.17.0
+
+[:python_version == "2.7"]
+futures
+cryptography<=3.3.2
+pyopenssl<=21.0.0
+typing_extensions<=3.10.0.2
+
+[:python_version > "3"]
+alibabacloud-dkms-transfer-python>=0.0.3
+
+[:python_version >= "3"]
+alibabacloud-dkms-gcs>=0.0.3
+cryptography<=38.0.3
+multidict<=5.1.0
+typing_extensions<=4.1.1
+
+[:python_version >= "3.7"]
+protobuf<=3.20.2
