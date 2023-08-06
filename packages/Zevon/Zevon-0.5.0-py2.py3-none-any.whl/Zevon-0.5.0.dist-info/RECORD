@@ -1,0 +1,9 @@
+zevon/__init__.py,sha256=nEYcv6aAVTDnsV61QgXUEPzpDmaCC9meQemIYJg0iLc,121
+zevon/flask_lambda.py,sha256=uJQ-5B3EyDY2lXmj9yPsJUS14FL_080jAs8chg6li8o,5641
+zevon/sample_event.py,sha256=BE0O7DNOhB0Z0VbT2rXX-k0sHWy87VRHNM8kxfZJfnI,3468
+zevon/welcome.py,sha256=lbzuCCQSKKr7ARsvj9UxsE5ivEeuz-If9Givx04RE9E,1106
+Zevon-0.5.0.dist-info/LICENSE,sha256=AIaVvqSDJWc31aPfgafjXPhz9kZC2t8dAJ2M_xxs5jw,1070
+Zevon-0.5.0.dist-info/METADATA,sha256=gghC9ObZD4kLaU5OnhfylETg3fp2HVa-QCRe5jmB0xY,333
+Zevon-0.5.0.dist-info/WHEEL,sha256=a-zpFRIJzOq5QfuhBzbhiA1eHTzNCJn8OdRvhdNX0Rk,110
+Zevon-0.5.0.dist-info/top_level.txt,sha256=dwb7hOassEcRVlJQBuPVRoTCKef0wHkeGEOEspQhtxg,6
+Zevon-0.5.0.dist-info/RECORD,,
