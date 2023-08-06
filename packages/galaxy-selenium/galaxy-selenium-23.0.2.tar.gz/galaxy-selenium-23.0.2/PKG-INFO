@@ -1,0 +1,81 @@
+Metadata-Version: 2.1
+Name: galaxy-selenium
+Version: 23.0.2
+Summary: Galaxy Selenium interaction framework
+Home-page: https://github.com/galaxyproject/galaxy
+Author: Galaxy Project and Community
+Author-email: galaxy-committers@lists.galaxyproject.org
+License: AFL
+Keywords: Galaxy
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Academic Free License (AFL)
+Classifier: Natural Language :: English
+Classifier: Operating System :: POSIX
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Topic :: Software Development
+Classifier: Topic :: Software Development :: Code Generators
+Classifier: Topic :: Software Development :: Testing
+Requires-Python: >=3.7
+Description-Content-Type: text/x-rst
+License-File: LICENSE
+
+
+.. image:: https://badge.fury.io/py/galaxy-selenium.svg
+   :target: https://pypi.org/project/galaxy-selenium/
+
+
+
+Overview
+--------
+
+The Galaxy_ selenium framework.
+
+* Code: https://github.com/galaxyproject/galaxy
+
+.. _Galaxy: http://galaxyproject.org/
+
+History
+-------
+
+.. to_doc
+
+-------------------
+23.0.2 (2023-06-13)
+-------------------
+
+
+============
+Enhancements
+============
+
+* Port selenium setup to non-deprecated selenium options by `@mvdbeek <https://github.com/mvdbeek>`_ in `#16215 <https://github.com/galaxyproject/galaxy/pull/16215>`_
+
+-------------------
+23.0.1 (2023-06-08)
+-------------------
+
+
+============
+Enhancements
+============
+
+* Add support for launching workflows via Tutorial Mode by `@hexylena <https://github.com/hexylena>`_ in `#15684 <https://github.com/galaxyproject/galaxy/pull/15684>`_
+
+-------------------
+20.9.0 (2020-10-15)
+-------------------
+
+* First release from the 20.09 branch of Galaxy.
+
+-------------------
+20.5.0 (2020-07-04)
+-------------------
+
+* First release from the 20.05 branch of Galaxy.

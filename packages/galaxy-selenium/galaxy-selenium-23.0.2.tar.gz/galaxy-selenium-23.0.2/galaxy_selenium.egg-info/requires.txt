@@ -1,0 +1,5 @@
+galaxy-navigation
+galaxy-util
+PyYAML
+requests
+selenium
