@@ -1,0 +1,4 @@
+
+ENABLE_JAX = False
+ENABLE_EINSUM = True
+ENABLE_AUTORAY = False
