@@ -1,0 +1,9 @@
+detect/__init__.py,sha256=mqg58aTtrAXK57LijXbKRhl-hg3tThzyC3FzUGPXNxA,34
+detect/generate_voc.py,sha256=EjDlZ2vx_YTi9scfgV1JMGCJsmWon4RApD23YREMTbw,3623
+labeltransform2/__init__.py,sha256=mqg58aTtrAXK57LijXbKRhl-hg3tThzyC3FzUGPXNxA,34
+labeltransform2/generate_voc.py,sha256=Z9mz6nzxkcXwDYGaJUIuANErDxZNldKj0UlLqJHZWEY,3622
+labeltransform2-1.2.dist-info/LICENSE,sha256=HrhfyXIkWY2tGFK11kg7vPCqhgh5DcxleloqdhrpyMY,11558
+labeltransform2-1.2.dist-info/METADATA,sha256=txX9QZZu9mDe7sdapsuqNQt-UL36LAT7lIqOfvHIsjs,234
+labeltransform2-1.2.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+labeltransform2-1.2.dist-info/top_level.txt,sha256=jxxfLpnK7TAwAB-_Tmg4YI1dVbscb_NFpjFCG27VIxc,16
+labeltransform2-1.2.dist-info/RECORD,,
