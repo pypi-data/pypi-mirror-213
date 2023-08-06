@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+[brainfk]
+name = "brainfk"
+version = "0.0.2"
+authors = [{ name = "Estifanose Sahilu", email = "estifanoswork@gmail.com" }]
+description = "A Brainfuck interpreter package"
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[brainfk.urls]
+Homepage = "https://github.com/estif0/brainfk"

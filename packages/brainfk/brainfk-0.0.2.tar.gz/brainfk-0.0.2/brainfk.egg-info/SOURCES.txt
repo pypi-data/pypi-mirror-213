@@ -1,0 +1,12 @@
+README.md
+README.txt
+pyproject.toml
+setup.py
+brainfk/__init__.py
+brainfk/interpreter.py
+brainfk.egg-info/PKG-INFO
+brainfk.egg-info/SOURCES.txt
+brainfk.egg-info/dependency_links.txt
+brainfk.egg-info/entry_points.txt
+brainfk.egg-info/requires.txt
+brainfk.egg-info/top_level.txt
