@@ -1,0 +1,8 @@
+geojson
+numpy
+pyproj
+rasterio[s3]>=1.2
+srtm4>=1.0.2
+
+[test]
+pytest
