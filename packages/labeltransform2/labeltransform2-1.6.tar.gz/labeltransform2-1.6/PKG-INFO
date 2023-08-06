@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: labeltransform2
+Version: 1.6
+Summary: dataset label style transform tool
+Home-page: https://gitee.com/free_bigD/labeltransform.git
+Author: victor
+Requires-Python: >=3
+License-File: LICENSE
