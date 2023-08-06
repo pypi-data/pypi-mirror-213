@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: sparta-pubsub
+Version: 0.0.2
+Summary: Sparta pubsub library
+Home-page: https://github.com/Spartan-Approach/sparta-pubsub
+Author: Spartan Approach
+Author-email: sparta@spartanapproach.com
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+Provides-Extra: test
+License-File: LICENSE
+
+# sparta-pubsub
+
+Sparta pubsub library.
+
+## Usage
+
+```python
+import sparta.pubsub
+
+greeter = sparta.pubsub.Greeter()
+
+assert greeter.greet() == "pubsub"
+```

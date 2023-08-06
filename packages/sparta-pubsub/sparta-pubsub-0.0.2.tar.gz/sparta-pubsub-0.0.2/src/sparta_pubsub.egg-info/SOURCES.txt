@@ -1,0 +1,13 @@
+LICENSE
+README.md
+setup.py
+src/sparta/__init__.py
+src/sparta/pubsub/__init__.py
+src/sparta/pubsub/consumer.py
+src/sparta/pubsub/publisher.py
+src/sparta_pubsub.egg-info/PKG-INFO
+src/sparta_pubsub.egg-info/SOURCES.txt
+src/sparta_pubsub.egg-info/dependency_links.txt
+src/sparta_pubsub.egg-info/namespace_packages.txt
+src/sparta_pubsub.egg-info/requires.txt
+src/sparta_pubsub.egg-info/top_level.txt
