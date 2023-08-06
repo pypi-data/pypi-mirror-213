@@ -1,0 +1,15 @@
+bluebox_auth_client/__init__.py,sha256=6IgaX4NrS9Y5VPOVXccL2zCqTLQkNjoHz2bPdjrZ9mI,23
+bluebox_auth_client/api_keys/__init__.py,sha256=049D4FEZFp28vU1U_DFWEjDGCyAi6_CJujkswv5APbQ,153
+bluebox_auth_client/api_keys/data_mappers.py,sha256=FKIFgiTOWHT8uB2hT-DO9PdVuElpw47L-_XrDAJInkA,557
+bluebox_auth_client/api_keys/entities.py,sha256=xdsXO8GcgYKXK-5T-iSshK_5d_xZhJ6Qa1uWDwiphtA,167
+bluebox_auth_client/api_keys/errors.py,sha256=1nuJfpvpCVUwrRyiaLTFtQVzyGlB_Pdz8sFVIbYjPec,160
+bluebox_auth_client/api_keys/proto/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+bluebox_auth_client/api_keys/proto/api_keys_objects_pb2.py,sha256=vUAT1YVAH6SpozaPDd_iQacdA67yeN0EjZ6GoeEhfCU,1455
+bluebox_auth_client/api_keys/proto/api_keys_objects_pb2_grpc.py,sha256=1oboBPFxaTEXt9Aw7EAj8gXHDCNMhZD2VXqocC9l_gk,159
+bluebox_auth_client/api_keys/proto/api_keys_services_pb2.py,sha256=JCtzpTAfcvYJ9_SZNesqIf8X0krm-HdmCaG38jfAqsU,3978
+bluebox_auth_client/api_keys/proto/api_keys_services_pb2_grpc.py,sha256=rK0sEyzUMWJg5ZfUPYu-VJNj1hb4l2y6lIs-jRDkIrY,9350
+bluebox_auth_client/api_keys/services.py,sha256=KxQSvn_nGeYbgVIIMYD1kWft0lxlmhS_yrwujnYiPIY,3619
+bluebox_auth_client/errors.py,sha256=V0t4z3HOEEaZ_h1UfHzqTU9s4mN8jQGWwYLbufIrmt4,71
+bluebox_auth_client-0.1.0.dev1.dist-info/METADATA,sha256=QeLCu6NgO0q-a6qLrwcbakN_L4p0hHEm03u4Fqa3Dds,359
+bluebox_auth_client-0.1.0.dev1.dist-info/WHEEL,sha256=Zb28QaM1gQi8f4VCBhsUklF61CTlNYfs9YAZn-TOGFk,88
+bluebox_auth_client-0.1.0.dev1.dist-info/RECORD,,
