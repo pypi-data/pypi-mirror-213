@@ -1,0 +1,10 @@
+README.md
+setup.py
+src/indexed_png_stats/__init__.py
+src/indexed_png_stats/generate.py
+src/indexed_png_stats.egg-info/PKG-INFO
+src/indexed_png_stats.egg-info/SOURCES.txt
+src/indexed_png_stats.egg-info/dependency_links.txt
+src/indexed_png_stats.egg-info/entry_points.txt
+src/indexed_png_stats.egg-info/requires.txt
+src/indexed_png_stats.egg-info/top_level.txt

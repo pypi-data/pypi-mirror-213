@@ -1,0 +1,3 @@
+[console_scripts]
+indexed-png-stats = indexed_png_stats.generate:sys_main
+
