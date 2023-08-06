@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "WebScrapeX"
+version = "0.0.1"
+description = "A unified collection of web data premises eg Apartment for sale, apartment for rent, house for sale, house for rent"
+authors = ["Lisa Yvette INYANGE <linyange@andrew.cmu.edu>"]
+license = "MIT"
+readme = "README.md"
+homepage = "https://github.com/ILisa250/WebScrapeX"
+repository = "https://github.com/ILisa250/WebScrapeX"
+keywords = ["WebScrapeX", "web-data-extraction", "web-scraping", "web data collection",
+    "web data integration", "web data aggregation", "automated data extraction",
+    "Lisa Yvette INYANGE"]
+
+packages = [{include = "WebScrapeX"}]
+
+[tool.poetry.dependencies]
+python = "^3"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
