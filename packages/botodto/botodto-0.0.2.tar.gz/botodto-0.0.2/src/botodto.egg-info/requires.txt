@@ -1,0 +1,11 @@
+defopt
+pydantic[email]
+
+[dev]
+coverage[toml]>=5.5
+pytest
+pre-commit
+
+[tests]
+coverage[toml]>=5.5
+pytest
