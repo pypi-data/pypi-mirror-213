@@ -1,0 +1,15 @@
+MANIFEST.in
+README.md
+requirements.txt
+setup.cfg
+setup.py
+bgapi/__init__.py
+bgapi/api.py
+bgapi/cmd_def.py
+bgapi/module.py
+bgapi2.egg-info/PKG-INFO
+bgapi2.egg-info/SOURCES.txt
+bgapi2.egg-info/dependency_links.txt
+bgapi2.egg-info/requires.txt
+bgapi2.egg-info/top_level.txt
+test/test_client_server.py
