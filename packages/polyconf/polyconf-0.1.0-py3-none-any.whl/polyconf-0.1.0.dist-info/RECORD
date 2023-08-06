@@ -1,0 +1,14 @@
+polyconf/core/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+polyconf/core/deepmerge.py,sha256=x1viKmxOatSa3RKEciUT177yg1Eq0OtYIKSI4FSk0FA,1097
+polyconf/core/model/__init__.py,sha256=HJdIlQQQmUKd9nCTKUYxO7Hi-n8ThtBYB5RPdE6Zk6E,7629
+polyconf/core/model/context.py,sha256=r62BdjSkGvoZC2VJLolppoJH633s7GtvBiMy24dxTc8,788
+polyconf/core/model/datum.py,sha256=IKSA6KXvumZ5kY-WsW2HLhq5_wJ5M0fv9YNKwQiEo18,11219
+polyconf/core/model/plugin.py,sha256=28m5psH--_f-yo8HAY76B1JWP-fcxckebrFk3jB23uk,4295
+polyconf/core/model/status.py,sha256=v0iDBKbGhd0Fxtt0OqQakrE8XDj9aTiEggtPHaNmPvA,686
+polyconf/core/registry.py,sha256=da2vEVw_kUe68Ox4pY8zwQFydDEQe8Iy4jtTKzAY3uU,3941
+polyconf/core/typing_.py,sha256=QJS7f1-3Jmg6_hLOLc7GEe0flC6Zv7vc2tYWca5ymvg,3238
+polyconf/core/utils.py,sha256=q7FFYzBP1ioxU8cSEzUQdsIOl6tosls71fUbXWvhI0E,1422
+polyconf-0.1.0.dist-info/LICENSE,sha256=ExSmkFTcG8SaPddzqm0Ea-6hFh2R5eeEASiU7G4J66U,1070
+polyconf-0.1.0.dist-info/METADATA,sha256=Rk49cMGWWTGi1R0W7wYCaRusoTB8Zket2_Ugw_Ijsn4,1945
+polyconf-0.1.0.dist-info/WHEEL,sha256=Zb28QaM1gQi8f4VCBhsUklF61CTlNYfs9YAZn-TOGFk,88
+polyconf-0.1.0.dist-info/RECORD,,
