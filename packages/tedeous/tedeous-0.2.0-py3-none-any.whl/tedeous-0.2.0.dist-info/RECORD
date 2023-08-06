@@ -1,0 +1,16 @@
+tedeous/__init__.py,sha256=_2uXOm4KiT6iZVh4mSiG7G2eSNuMAOOWwNB8zMxnlQk,21
+tedeous/cache.py,sha256=3zR51ET4RWB5DsF2NtUIc5hrD71N4ZCzP5KkrwVv0eo,15995
+tedeous/config.py,sha256=tfVCpkBjjYc0T0R2ODS0heYnBFyjJ17Ue5aiVN-Vt70,4167
+tedeous/derivative.py,sha256=wkEBtSaWiLDfPZ8L2tw8oMfD6PZbv6iZBSZTxNGAZAc,11410
+tedeous/device.py,sha256=DHjrd93a1edbYnLRrB9ROUO-W0sntQOOtNQ-qYNIhbw,758
+tedeous/finite_diffs.py,sha256=IsU2S5VnVvqQsoxor4nCNY-a87C6psFE8N0KD5fvRO4,9417
+tedeous/input_preprocessing.py,sha256=_qefsvLfmZdhkFBDTHbAl8v1bTKCS5KGIwv863hkwcU,24639
+tedeous/metrics.py,sha256=U7Dz0u6o66XK_f2lb90ZpCXt3Lf7lN_Yyt47_mq5LVc,15481
+tedeous/models.py,sha256=Z9ahuUHWMtXGjhEiUUYoNWon3Qg--9MERRZVBbSlFAs,3448
+tedeous/points_type.py,sha256=8fYX6_gjzC0C_hrgnuzYsnQhw2j9c0xGjJOo8lijr1Y,5690
+tedeous/solver.py,sha256=aztrhSeJZ_YxO0dxceVbu7NsOq-6N8jfo7Doxy7Ks54,16472
+tedeous-0.2.0.dist-info/LICENCE,sha256=te1VD1F1lqwgI8MZlSlQ0PphgDsjXu4Ft9g8LqEeXw0,1531
+tedeous-0.2.0.dist-info/METADATA,sha256=sy9Hj09tTLfbj3T3JvJEFmL0z6VxkfOQhnTP88y0AFo,640
+tedeous-0.2.0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+tedeous-0.2.0.dist-info/top_level.txt,sha256=yupL81JFgc3IYva5htX8LC0uXt4NDKjsliPKnr0SI3Q,8
+tedeous-0.2.0.dist-info/RECORD,,

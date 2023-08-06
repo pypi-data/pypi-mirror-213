@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: tedeous
+Version: 0.2.0
+Summary: TEDEouS - Torch Exhaustive Differential Equations Solver. Differential equation solver, based on pytorch library
+Author: Alexander Hvatov
+Author-email: itmo.nss.team@gmail.com
+Classifier: Development Status :: 3 - Alpha
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+License-File: LICENCE
+
+Combine power of pytorch, numerical methods and math overall to conquer and solve ALL {O,P}DEs. There are some examples to provide a little insight to an operator form
