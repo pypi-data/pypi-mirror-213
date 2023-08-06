@@ -1,0 +1,10 @@
+numpy
+py3DMol
+rdkit
+pytest
+jupyter
+Pillow
+pandas
+pystow
+seaborn
+click
