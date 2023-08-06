@@ -1,0 +1,14 @@
+astroid==2.11.6
+attrs==21.2.0
+isort==5.6.4
+opencv-python~=4.5
+pylint==2.14.3
+
+[debug]
+Jinja2==3.0.3
+
+[keyboard]
+networkx==2.4
+
+[ocr]
+lxml==4.8.0
