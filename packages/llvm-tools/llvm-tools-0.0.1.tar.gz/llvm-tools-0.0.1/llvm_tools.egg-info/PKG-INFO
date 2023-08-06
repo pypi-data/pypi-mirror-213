@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: llvm-tools
+Version: 0.0.1
+Summary: LLVMTools is a python module that makes it easy to use llvm tools in python.
+Home-page: https://github.com/Aermoss/LLVMTools
+Author: Yusuf Rençber
+Author-email: aermoss.0@gmail.com
+License: MIT
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# LLVMTools
+LLVMTools is a python module that makes it easy to use llvm tools in python.

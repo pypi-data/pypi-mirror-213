@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+llvm_tools.egg-info/PKG-INFO
+llvm_tools.egg-info/SOURCES.txt
+llvm_tools.egg-info/dependency_links.txt
+llvm_tools.egg-info/entry_points.txt
+llvm_tools.egg-info/top_level.txt
+llvmtools/__init__.py
+llvmtools/tools.py
+llvmtools/bin/llc.exe
+llvmtools/bin/llvm-dis.exe
+llvmtools/bin/opt.exe

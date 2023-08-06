@@ -1,0 +1,4 @@
+[console_scripts]
+dis = llvmtools.tools:dis
+llc = llvmtools.tools:llc
+opt = llvmtools.tools:opt
