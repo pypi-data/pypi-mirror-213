@@ -1,0 +1,14 @@
+CONTRIBUTING.rst
+LICENSE
+MANIFEST.in
+README.rst
+setup.py
+sheet_df/__init__.py
+sheet_df/sheet_df.py
+sheet_df.egg-info/PKG-INFO
+sheet_df.egg-info/SOURCES.txt
+sheet_df.egg-info/dependency_links.txt
+sheet_df.egg-info/not-zip-safe
+sheet_df.egg-info/requires.txt
+sheet_df.egg-info/top_level.txt
+tests/__init__.py

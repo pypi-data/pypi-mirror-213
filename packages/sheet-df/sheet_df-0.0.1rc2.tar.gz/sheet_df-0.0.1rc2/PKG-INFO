@@ -1,0 +1,99 @@
+Metadata-Version: 2.1
+Name: sheet_df
+Version: 0.0.1rc2
+Summary: Google sheet to dataframe
+Home-page: https://github.com/neo-andrew-moss/sheet_df
+Author: Andrew Moss
+Author-email: andrew.moss@neofinancial.com
+License: MIT license
+Keywords: sheet_df
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=3.6
+License-File: LICENSE
+
+============
+sheet_df
+============
+
+Google sheet to dataframe
+
+.. image:: https://img.shields.io/pypi/v/sheet_df?style=for-the-badge
+   :target: https://pypi.org/project/sheet_df/
+
+Overview
+----------
+
+This Python program connects to the google sheets api and creates a pandas dataframe from the target sheet.
+
+Usage
+-----
+
+.. code-block:: python
+
+   df = read_google_sheet_into_dataframe(sheet_id, range_name, credentials_path)
+
+Config
+------
+
+You must have `SHEET_ID`` and `RANGE_NAME`` env vars. You will also need a `credentials.json` from google. The `credentials_path`
+arg defaults to "credentials.json"
+
+DEV
+---
+
+Create venv
+~~~~~~~~~~~~
+
+.. code-block:: bash
+
+   python -m venv env
+
+Activate venv
+~~~~~~~~~~~~~~~
+
+unix
+
+.. code-block:: bash
+
+   source env/bin/activate
+
+windows
+
+.. code-block:: bash
+
+   env\Scripts\activate.bat
+
+Install Packages
+~~~~~~~~~~~~~~~~
+
+.. code-block:: bash
+
+   pip install -r requirements.txt
+
+Test
+~~~~~
+
+.. code-block:: bash
+
+   make test
+
+Format
+~~~~~~
+
+.. code-block:: bash
+
+   make format
+
+.. code-block:: bash
+
+   make lint
+
+
