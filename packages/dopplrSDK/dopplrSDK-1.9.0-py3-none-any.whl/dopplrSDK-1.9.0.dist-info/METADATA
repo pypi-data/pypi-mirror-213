@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: dopplrSDK
+Version: 1.9.0
+Summary: UNKNOWN
+Home-page: UNKNOWN
+Author: Anand
+Author-email: anandt@systechusa.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Dist: psycopg2-binary (==2.9.6)
+Requires-Dist: pandas (==2.0.1)
+Requires-Dist: boto3 (==1.26.136)
+
+UNKNOWN
+
+
