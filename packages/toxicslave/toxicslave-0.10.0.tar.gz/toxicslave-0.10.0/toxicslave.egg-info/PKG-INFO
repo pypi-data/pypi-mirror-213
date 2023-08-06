@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: toxicslave
+Version: 0.10.0
+Summary: toxicslave: build server for toxicbuild
+Author: me@myself.com
+Project-URL: Homepage, https://docs.poraodjuca.dev/toxiccore/index.html
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU General Public License (GPL)
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Description-Content-Type: text/markdown
+
+Toxicslave: Builder server for toxicbuild
+=========================================
+
+Toxiccore is part of toxicbuild.
+
+Check toxicslave documentation [here](https://docs.poraodojuca.dev/toxicslave/index.html).
+
+Check toxicbuild full documentation [here](https://toxicbuild.poraodojuca.dev)
