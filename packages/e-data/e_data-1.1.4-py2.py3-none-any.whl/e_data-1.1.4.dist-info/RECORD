@@ -1,0 +1,17 @@
+edata/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+edata/definitions.py,sha256=iybLuleHEqM4L5ftPNiIv_VMgGPqEyNXBXpXGt5aGc8,3828
+edata/helpers.py,sha256=nWFQl3PfoyEzpNW_HOsDE93cjtxZ-e4oXrFRTsQx6U0,22473
+edata/connectors/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+edata/connectors/datadis.py,sha256=HdCueOwzV91j1ExtiI04NiuB5NipSULyPcz_6OdMScM,15204
+edata/connectors/redata.py,sha256=uAmp2wvzMZmIbNqGHXbMdAhYoeSIGaxxRl03dDacQt4,1990
+edata/processors/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+edata/processors/base.py,sha256=oPNk6VkA0MmLo0p2mx-1MMvYKy1HgrS1XZ7Bc6o3ygw,624
+edata/processors/billing.py,sha256=-4pRiAVnb0DLrgnidIg87zkf_znWS2sn1HqxnPCyjSI,6287
+edata/processors/consumption.py,sha256=Z_6JQuqK6RvD7fjaj9-QBp7tM4CH8zWGnrX8UkjPBv4,2385
+edata/processors/maximeter.py,sha256=q32LhEbtGvcEuMR5Vbesz2QQZVBWV0WeHG83wZfHiXk,1334
+edata/processors/utils.py,sha256=G4O082XM_fWvn506p4a2_SddgTMI3fNC61kod7MQDgo,5155
+e_data-1.1.4.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+e_data-1.1.4.dist-info/METADATA,sha256=PfgZU5xF6JJiQYlS9Mj6iMcUoE-WXRYUHORZD2_868U,5949
+e_data-1.1.4.dist-info/WHEEL,sha256=a-zpFRIJzOq5QfuhBzbhiA1eHTzNCJn8OdRvhdNX0Rk,110
+e_data-1.1.4.dist-info/top_level.txt,sha256=Ez-fReWtUVTMcFuH0dzCnoKIgMBHgjLaBuba8QiKC7g,6
+e_data-1.1.4.dist-info/RECORD,,
