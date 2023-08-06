@@ -1,0 +1,14 @@
+searchlogit/__init__.py,sha256=z1ybt_jp930JHKbMBL78l6soO0bnKq85vOIK-xQpO6I,248
+searchlogit/_choice_model.py,sha256=gc5AitIdZaslbFMhkRhYzKwX5egFbv5YTaQGdl2BPcU,29825
+searchlogit/_device.py,sha256=djXs6Pc2GAsF5puq_SfNw2LlUXrOt3-k9-oiVRNfNac,1921
+searchlogit/boxcox_functions.py,sha256=2WPFibk59WgfmkgYIP6EZ2tzRCgf2WCYyMgXtr9U7Qc,4662
+searchlogit/latent_class_mixed_model.py,sha256=FJ7qLazYbL3NhipecVW_M6c0QPVLucWn65OwHIzMwWQ,57274
+searchlogit/latent_class_model.py,sha256=PBX6-hJ2fAPb2tqGAHU3fsjpsL5PnYzCSBECxzvJwoE,39724
+searchlogit/mixed_logit.py,sha256=mxNtnAtXpz_slkBO1YiCVuSTVbjV5k1QwvSqPNZAKTU,55329
+searchlogit/multinomial_logit.py,sha256=LX0jpz4iAX8JJr6jQgXLx0eJ_ZeHo0QOMQIku-k19L8,14028
+searchlogit/search.py,sha256=Al720QP3TEk_NbwdKnaIG5a_qvdnt4lZa0yfAkOTExI,180699
+searchlogit-0.3.34.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+searchlogit-0.3.34.dist-info/METADATA,sha256=tX4XKLbJqTOJRb0nzag19LwNMqJ3TAD7cowV5ju0luw,10957
+searchlogit-0.3.34.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+searchlogit-0.3.34.dist-info/top_level.txt,sha256=TMHYdiE3j21SgWKFg4UVSOdERgMvaWYjHQ89WQLF2Bc,12
+searchlogit-0.3.34.dist-info/RECORD,,
