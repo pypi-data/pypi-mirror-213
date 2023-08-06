@@ -1,0 +1,55 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "evox"
+version = "0.2.0"
+authors = [
+  { name = "Bill Huang", email = "bill.huang2001@gmail.com" },
+  { name = "Christina Lee", email = "1315552992@qq.com" },
+  { name = "Zhenyu Liang", email = "zhenyuliang97@gmail.com" },
+]
+description = "evox"
+readme = "README.md"
+license = { file = "LICENSE" }
+requires-python = ">=3.8"
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "License :: OSI Approved :: BSD License",
+  "Intended Audience :: Science/Research",
+  "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+
+dependencies = [
+  "jax >= 0.3.0",
+  "jaxlib >= 0.3.0",
+  "optax >= 0.1.0",
+]
+
+[project.optional-dependencies]
+test = [
+  "chex >= 0.1.0",
+  "flax >= 0.5.0",
+  "pytest >= 6.0.0",
+]
+
+gym = ["gym >= 0.26.0"]
+
+neuroevolution = [
+  "torch >= 1.0.0",
+  "torchvision >= 0.1.0",
+]
+
+distributed = ["ray >= 2.0.0"]
+
+full = [
+  "gym >= 0.26.0",
+  "ray >= 2.0.0",
+  "torch >= 1.0.0",
+  "torchvision >= 0.1.0",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/EMI-Group/evox"
+"Bug Tracker" = "https://github.com/EMI-Group/evox/issues"
