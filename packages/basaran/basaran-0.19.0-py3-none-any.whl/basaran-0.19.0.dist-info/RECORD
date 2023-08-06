@@ -1,0 +1,17 @@
+basaran/__init__.py,sha256=Tq6rwS_q8RYyZcROzbK4kZP3_v7SWkhXo5NAQiPH7h0,2182
+basaran/__main__.py,sha256=txjEX4HCcmEPBO1lqJ8RDvHEilIx2pUdItVT14VwU5I,8302
+basaran/choice.py,sha256=Ba5G5OD84Yhcm0qSm827KPaW6qp_eEAsY7k9UP6TpMg,2011
+basaran/model.py,sha256=T_cK7MpvbXPYgF6wBo5cH32EdGhWFYeNbZvdhPvsBpU,12455
+basaran/tokenizer.py,sha256=HhGKCwqfhxGUu_ZqS8TN7UjL4s_zkQVojLvD0g78Nug,1850
+basaran/static/playground.css,sha256=T9PUdKiYNwIK6fKJTxyponEwkmMg_z3brJiTw__jUkI,6051
+basaran/static/playground.js,sha256=xVaQnUN10VlpzE_II0F7HEYIUcYuYNC99CWa97kyiKQ,14008
+basaran/static/presets.json,sha256=lGvv0n3k8FER8WNXSmEtppW0l0dP1mdvrf5oSVf0lCY,714
+basaran/templates/default.chat.jinja,sha256=dwtlRpYz7etps4Zg1rXsakuffTCyh6u1Db1hsrTscwQ,183
+basaran/templates/playground.html,sha256=B_IDObxWyz32SYUPacX4fqWgkHr75tpDZQyNZwOu-V4,1262
+basaran-0.19.0.data/scripts/download.py,sha256=du3q8Z06JuHjtNnWEW1KWitJZEn27qQbz2_zhraW3Yo,1238
+basaran-0.19.0.data/scripts/render.py,sha256=D_8j_jJqdWSdtegBwtXM71rYuGiPypPVniFSc-fLHiU,595
+basaran-0.19.0.dist-info/LICENSE,sha256=DXjVLmv7tEnjtW7o3zI3_kVpabc4NWpNQmV5fJU_s0E,1061
+basaran-0.19.0.dist-info/METADATA,sha256=v7LpMLmaclhQnmT6d2DLg1mMw4RB2kQ39x71zHee0ok,1176
+basaran-0.19.0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+basaran-0.19.0.dist-info/top_level.txt,sha256=hWZWlhbAA27uRa6AuudVSPoZojJtKGPHqrWFW2c56pI,8
+basaran-0.19.0.dist-info/RECORD,,
