@@ -1,0 +1,9 @@
+LICENSE
+README.md
+api_gateway_v2_to_wsgi.py
+setup.cfg
+setup.py
+api_gateway_v2_to_wsgi.egg-info/PKG-INFO
+api_gateway_v2_to_wsgi.egg-info/SOURCES.txt
+api_gateway_v2_to_wsgi.egg-info/dependency_links.txt
+api_gateway_v2_to_wsgi.egg-info/top_level.txt
