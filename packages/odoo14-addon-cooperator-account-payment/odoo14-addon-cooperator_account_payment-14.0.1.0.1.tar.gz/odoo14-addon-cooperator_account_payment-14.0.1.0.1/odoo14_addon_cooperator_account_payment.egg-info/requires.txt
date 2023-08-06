@@ -1,0 +1,3 @@
+odoo14-addon-account_payment_partner
+odoo14-addon-cooperator
+odoo<14.1dev,>=14.0a
