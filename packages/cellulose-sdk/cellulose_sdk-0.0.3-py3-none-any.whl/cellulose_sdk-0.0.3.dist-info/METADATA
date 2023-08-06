@@ -1,0 +1,49 @@
+Metadata-Version: 2.1
+Name: cellulose-sdk
+Version: 0.0.3
+Summary: Cellulose Python SDK
+Home-page: https://www.cellulose.ai
+Author: Cellulose engineering team
+Author-email: zheng@cellulose.ai
+Project-URL: Homepage, https://www.cellulose.ai
+Project-URL: Documentation, http://docs.cellulose.ai
+Keywords: artificial intelligence,benchmarking,debugging,development,onnx,profiler,profiling,pytorch,tensorflow
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: Topic :: Software Development :: Compilers
+Classifier: Topic :: Software Development :: Debuggers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3 :: Only
+Requires-Python: >=3.10, <4
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: black (<24,>=22)
+Requires-Dist: click (<9,>=8)
+Requires-Dist: colorama (==0.4.6)
+Requires-Dist: flake8 (>=6.0.0)
+Requires-Dist: isort (>=5.12.0)
+Requires-Dist: numpy (<2,>=1.24.3)
+Requires-Dist: onnx (>=1.13.0)
+Requires-Dist: onnxruntime (>=1.15.0)
+Requires-Dist: pydantic (==1.10.4)
+Requires-Dist: tf2onnx (==1.13.0)
+Requires-Dist: tomlkit (==0.11.6)
+Requires-Dist: torch (<=2.0.1,>=1.13.1)
+
+# Cellulose Python SDK
+
+Welcome to Cellulose!
+We build tools designed to help ML engineers understand, fine tune and improve
+inference performance of their models.
+
+By using this Python SDK, you can upload and visualize your PyTorch models in
+our dashboard.
+
+Please refer to our official documentation [here](https://docs.cellulose.ai)
+for installation and more usage details.
