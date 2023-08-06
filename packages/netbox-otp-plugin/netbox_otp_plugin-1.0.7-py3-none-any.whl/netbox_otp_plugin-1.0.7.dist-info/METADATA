@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: netbox-otp-plugin
+Version: 1.0.7
+Summary: OTP Login NetBox plugin
+Home-page: https://github.com/k1nky/netbox-otp-plugin
+Author: Andrey Shalashov
+Author-email: avshalashov@yandex.ru
+License: Apache 2.0
+Keywords: netbox otp login plugin
+Requires-Dist: qrcode
+Requires-Dist: django-otp
+
