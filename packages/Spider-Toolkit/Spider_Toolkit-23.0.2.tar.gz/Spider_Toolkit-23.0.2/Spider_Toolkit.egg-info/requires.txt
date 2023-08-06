@@ -1,0 +1,6 @@
+requests
+pandas
+execjs
+pymysql
+redis
+pymongo
