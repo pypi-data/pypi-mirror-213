@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+
+[project]
+name = "dict_unpack"
+version = "0.0.2"
+description = "A specialized dictionary unpacking tool that allows you to expand a dictionary by unpacking internal arrays or list values, generating a list of dictionaries. Each dictionary in the list will contain a copy of all key-value pairs. This tool is designed to split arrays within JSON data into multiple records, making it easier to insert into a database."
+readme = "README.md"
+authors = [
+    {name = "YiZixuan", email = "admin@sqkkyzx.com"},
+]
+license.text = "GPL-3.0-only"
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
+    "Programming Language :: Python :: 3.11",
+]
+dependencies = []
+
+[tool.poetry.dependencies]
+python = "^3.11"
+
+[tool.poetry.publish]
+repository = "pypi"

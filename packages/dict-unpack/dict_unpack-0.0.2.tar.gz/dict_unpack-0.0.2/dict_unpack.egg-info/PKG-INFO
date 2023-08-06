@@ -1,0 +1,120 @@
+Metadata-Version: 2.1
+Name: dict-unpack
+Version: 0.0.2
+Summary: A specialized dictionary unpacking tool that allows you to expand a dictionary by unpacking internal arrays or list values, generating a list of dictionaries. Each dictionary in the list will contain a copy of all key-value pairs. This tool is designed to split arrays within JSON data into multiple records, making it easier to insert into a database.
+Author-email: YiZixuan <admin@sqkkyzx.com>
+License: GPL-3.0-only
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python :: 3.11
+Description-Content-Type: text/markdown
+
+
+# What does this tool do?
+A specialized dictionary splitting tool that allows you to unpack a dictionary from its internal array or list values and generate a list. Each list will have a complete copy of all key-value pairs. 
+It's somewhat similar to a matrix.
+This tool is designed to split arrays within JSON data into multiple records, making it easier to insert into a database.
+
+# Example
+
+## for list
+```
+data = {
+    "id": 1, 
+    "name": "John", 
+    "subject": [{"id": 22, "des": "math"}, {"id": 23, "des": "art"}]
+}
+```
+Allow overriding parent's same-named key-value pairs by default.
+```
+unpack(data, ["subject"])
+
+Output:
+[{'id': 22, 'name': 'John', 'des': 'math'},
+{'id': 23, 'name': 'John', 'des': 'art'}]
+```
+Forbid overriding parent's same-named key-value pairs.
+```
+unpack(data, ["subject"], ".")
+
+Output:
+[{'id': 1, 'name': 'John', 'subject.id': 1, 'subject.name': 'John'},
+{'id': 1, 'name': 'John', 'subject.id': 1, 'subject.name': 'John'}]
+```
+An empty list will be returned when a non-existent path is passed in.
+```
+unpack(data, ["subject", "name"], ".")
+
+Output:
+[]
+```
+
+
+## For double-layer or multi-layer nesting
+```
+data = {
+    "id": 1,
+    "name": "John",
+    "subject": [{
+        "subjectid": 22,
+        "des": [{"key": "a"},
+                {"key": "b"}]
+    }, {"subjectid": 23,
+        "des": [{"key": "a"},
+                {"key": "e"}]
+        }]
+}
+```
+
+```
+unpack(data, ["subject"])
+
+Output:
+[
+{'id': 1, 'name': 'John', 'subjectid': 22, 'des': [{'key': 'a'}, {'key': 'b'}]}, 
+{'id': 1, 'name': 'John', 'subjectid': 23, 'des': [{'key': 'a'}, {'key': 'e'}]}
+]
+```
+
+```
+unpack(data, ["subject", "des"])
+
+Output:
+[
+{'id': 1, 'name': 'John', 'subjectid': 22, 'key': 'a'}, 
+{'id': 1, 'name': 'John', 'subjectid': 22, 'key': 'b'}, 
+{'id': 1, 'name': 'John', 'subjectid': 23, 'key': 'a'}, 
+{'id': 1, 'name': 'John', 'subjectid': 23, 'key': 'e'}
+]
+```
+If it is empty, override the same-named key-value pairs in the parent. If it is not empty, use the provided string as the delimiter to connect with the parent key.
+```
+unpack(data, ["subject", "des"], "_")
+
+Output:
+[
+{'id': 1, 'name': 'John', 'subject_subjectid': 22, 'subject_des_key': 'a'},
+{'id': 1, 'name': 'John', 'subject_subjectid': 22, 'subject_des_key': 'b'},
+{'id': 1, 'name': 'John', 'subject_subjectid': 23, 'subject_des_key': 'a'},
+{'id': 1, 'name': 'John', 'subject_subjectid': 23, 'subject_des_key': 'e'}
+]
+```
+
+## for array
+```
+unpack(
+dictionary = {"id": 1, "name": "John", "grades": [85, 92, 78]},
+index      = ["grades"],
+delimiter  = None
+)
+```
+Array-type fields only allow single-level unpacking.
+```
+Output:
+[
+{"id": 1, "name": "John", "grade": 85},
+{"id": 1, "name": "John", "grade": 92},
+{"id": 1, "name": "John", "grade": 78}
+]
+```
