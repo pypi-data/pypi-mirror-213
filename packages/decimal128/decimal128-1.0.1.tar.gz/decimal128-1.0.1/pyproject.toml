@@ -1,0 +1,62 @@
+[tool.poetry]
+authors = ["Jon Connell <python@figsandfudge.com>"]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "Operating System :: OS Independent",
+]
+description = ""
+documentation = "https://github.com/masaccio/decimal128/blob/main/README.md"
+license = "Apache-2.0"
+name = "decimal128"
+packages = [{include = "decimal128"}]
+readme = "README.md"
+version = "1.0.1"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+
+[tool.poetry.group.dev.dependencies]
+black = {version = "^22.10.0", allow-prereleases = true}
+pylama = "^8.4.1"
+pytest = "^7.2.0"
+pytest-cov = "^4.0.0"
+
+[build-system]
+build-backend = "poetry.core.masonry.api"
+requires = ["poetry-core"]
+
+[tool.coverage.run]
+branch = true
+
+[tool.coverage.html]
+directory = "coverage_html_report"
+
+[tool.pytest.ini_options]
+addopts = "--cov=decimal128 --cov-report=term-missing"
+
+
+[tool.tox]
+legacy_tox_ini = """
+[tox]
+isolated_build = true
+envlist = py38, py39, py310, py311
+[testenv]
+allowlist_externals = poetry
+commands_pre = poetry install --no-root --sync
+commands = poetry run -vvv pytest --import-mode importlib
+"""
+
+# linter settings
+[tool.pylama]
+linters = "pylint,mccabe,pyflakes"
+max_line_length = 100
+skip = ".tox/*"
+
+[tool.pylama.linter.pycodestyle]
+format = "pylint"
+
+[tool.pylama.linter.mccabe]
+max-complexity = 15
+
+[tool.pylama.linter.pyflakes]
+builtins = "_"
