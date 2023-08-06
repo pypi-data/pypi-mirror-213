@@ -1,0 +1,34 @@
+{
+  "fields": [
+    {
+      "name": "id",
+      "type": "INTEGER",
+      "mode": "REQUIRED"
+    },
+    {
+      "name": "first_name",
+      "type": "STRING",
+      "mode": "REQUIRED"
+    },
+    {
+      "name": "last_name",
+      "type": "STRING",
+      "mode": "REQUIRED"
+    },
+    {
+      "name": "login",
+      "type": "STRING",
+      "mode": "REQUIRED"
+    },
+    {
+      "name": "email",
+      "type": "STRING",
+      "mode": "REQUIRED"
+    },
+    {
+      "name": "registration_date",
+      "type": "INTEGER",
+      "mode": "REQUIRED"
+    }
+  ]
+}
