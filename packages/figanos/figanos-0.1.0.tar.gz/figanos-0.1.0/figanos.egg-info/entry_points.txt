@@ -1,0 +1,2 @@
+[console_scripts]
+figanos = figanos.cli:main
