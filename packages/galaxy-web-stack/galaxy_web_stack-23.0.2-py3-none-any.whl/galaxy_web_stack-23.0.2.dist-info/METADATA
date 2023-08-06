@@ -1,0 +1,66 @@
+Metadata-Version: 2.1
+Name: galaxy-web-stack
+Version: 23.0.2
+Summary: Galaxy web stack abstraction
+Home-page: https://github.com/galaxyproject/galaxy
+Author: Galaxy Project and Community
+Author-email: galaxy-committers@lists.galaxyproject.org
+License: AFL
+Keywords: Galaxy
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Academic Free License (AFL)
+Classifier: Natural Language :: English
+Classifier: Operating System :: POSIX
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Topic :: Software Development
+Classifier: Topic :: Software Development :: Code Generators
+Classifier: Topic :: Software Development :: Testing
+Requires-Python: >=3.7
+Description-Content-Type: text/x-rst
+License-File: LICENSE
+Requires-Dist: galaxy-util
+Requires-Dist: SQLAlchemy (<2,>=1.4.25)
+
+
+.. image:: https://badge.fury.io/py/galaxy-web-stack.svg
+   :target: https://pypi.python.org/pypi/galaxy-web-stack/
+
+
+Overview
+--------
+
+The Galaxy_ web strack abstraction.
+
+* Code: https://github.com/galaxyproject/galaxy
+
+.. _Galaxy: http://galaxyproject.org/
+
+History
+-------
+
+.. to_doc
+
+-------------------
+23.0.2 (2023-06-13)
+-------------------
+
+No recorded changes since last release
+
+-------------------
+23.0.1 (2023-06-08)
+-------------------
+
+No recorded changes since last release
+
+-------------------
+20.5.0 (2020-07-04)
+-------------------
+
+* First release from the 20.05 branch of Galaxy.
