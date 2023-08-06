@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: pitop.system
+Version: 0.31.0.post3
+Summary: pi-top Python SDK.
+Home-page: https://github.com/pi-top/pi-top-Python-SDK
+Author: pi-top
+Author-email: deb-maintainers@pi-top.com
+License: Apache Software License
+Keywords: pi-top,raspberrypi,battery
+Platform: ALL
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Education
+Classifier: Topic :: System :: Hardware
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Dist: pitop.common (==0.31.0-3)
+Requires-Dist: pitop.core (==0.31.0-3)
+Requires-Dist: RPi.GPIO (<1.0.0,>=0.7.0)
+
+===========================
+pi-top Python System
+===========================
+
+A set of utilities for interacting with a pi-top's core hardware and
+peripherals.
+
+
