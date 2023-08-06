@@ -1,0 +1,11 @@
+pitop.common==0.31.0-4
+pitop.battery==0.31.0-4
+pitop.system==0.31.0-4
+pitop.display==0.31.0-4
+pitop.pma==0.31.0-4
+pitop.miniscreen==0.31.0-4
+netifaces<1.0.0,>=0.10.4
+numpy<2.0.0,>1.19.5
+numpy<2.0.0,>1.19.5
+matplotlib<4.0.0,>=3.3.4
+scipy<2.0,>=1.6.0
