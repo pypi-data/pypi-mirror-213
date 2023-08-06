@@ -1,0 +1,4 @@
+keyvault
+pre-commit
+pytest
+setuptools>=61.0.0
