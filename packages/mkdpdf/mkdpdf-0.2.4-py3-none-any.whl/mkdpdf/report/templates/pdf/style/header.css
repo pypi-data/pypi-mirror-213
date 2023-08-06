@@ -1,0 +1,100 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/******************************* BANNER *******************************/
+
+/* banner */
+header .report-banner {
+
+  font-size: 0.8em;
+  letter-spacing: 3px;
+  margin-top: 5px;
+  text-align: center;
+  text-transform: uppercase;
+
+}
+
+/******************************* MASTEHEAD *******************************/
+
+/* masthead */
+header .report-masthead {
+
+  align-items: baseline;
+  border-bottom: 0.1em;
+  border-bottom-style: solid;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 25px;
+
+}
+
+/* branding title */
+header .report-branding-name {
+
+  font-family: var(--serif);
+  font-weight: 700;
+  font-size: 2em;
+
+}
+
+/* edition wrap */
+header .report-edition {
+
+  font-family: var(--sans-serif);
+  margin: 0;
+
+}
+
+/* edition */
+header .report-edition-timestamp {
+
+  font-weight: 700;
+  margin-left: 1em;
+  text-transform: uppercase;
+
+}
+
+/******************************* REPORT *******************************/
+
+/* tile wrap */
+header .report-name {
+
+  border-left: 1em;
+  border-left-style: solid;
+  border-left-color: var(--branding-color);
+  margin-top: 20px;
+  padding-left: 10px;
+
+}
+
+header .report-name > * {
+
+  line-height: 1;
+
+}
+
+/* report title */
+header .report-title {
+
+  font-style: italic;
+  font-size: 2.65em;
+  font-weight: 700;
+
+}
+
+/* project name */
+header .report-title-project {
+
+  display: block;
+  margin-bottom: 0.35em;
+
+}
+
+/* project functional name */
+header .report-title-description {
+
+  display: block;
+  font-size: 0.7em;
+  font-weight: 400;
+
+}
