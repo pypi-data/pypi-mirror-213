@@ -1,0 +1,3 @@
+include requirements.txt
+include docs/flask_signing/index.html
+include README.md
