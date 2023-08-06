@@ -1,0 +1,3 @@
+[console_scripts]
+imount = imagemounter_mitre.cli.imount:main
+
