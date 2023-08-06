@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: drizzutojr-vapi
+Version: 0.0.2
+Summary: A simple Library for working with Vault
+Author: drizzutojr
+License: MIT
+License-File: LICENSE.md
+Requires-Dist: requests (>=2.0.0)
+
