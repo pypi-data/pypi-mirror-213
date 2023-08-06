@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: Talayserializer
+Version: 0.1.1
+Summary: JSON&XML serialization
+Author: Talay Artem
+Author-email: arteeemka.31@gmail.com
+License: MIT
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+
+MY SERIALIZER & DESERIALIZER in python 

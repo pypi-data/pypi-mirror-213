@@ -1,0 +1,13 @@
+README.md
+setup.py
+Talayserializer/__init__.py
+Talayserializer/constants.py
+Talayserializer/json_serializer.py
+Talayserializer/serialiser.py
+Talayserializer/serializer_zavod.py
+Talayserializer/xml_serializer.py
+Talayserializer.egg-info/PKG-INFO
+Talayserializer.egg-info/SOURCES.txt
+Talayserializer.egg-info/dependency_links.txt
+Talayserializer.egg-info/requires.txt
+Talayserializer.egg-info/top_level.txt
