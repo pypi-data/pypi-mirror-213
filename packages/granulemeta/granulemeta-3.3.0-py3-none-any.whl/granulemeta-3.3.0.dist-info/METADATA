@@ -1,0 +1,109 @@
+Metadata-Version: 2.1
+Name: granulemeta
+Version: 3.3.0
+Summary: A package designed to generate low-level metadata in a specified/supported format (i.e. gmout) for a file or set of files.
+Project-URL: Homepage, https://github.com/ornldaac/granulemeta
+Author-email: "Kent B. Campbell" <campbellkb@ornl.gov>
+License: Open Source License
+        
+        Copyright (c) 2019 UT-Battelle, LLC
+        
+        Subject to the conditions of this License, UT-Battelle, LLC (the “Licensor”)
+        hereby grants, free of charge, to any person (the “Licensee”) obtaining a copy
+        of this software and associated documentation files (the "Software"), a 
+        perpetual, worldwide, non-exclusive, no-charge, royalty-free, irrevocable 
+        copyright license to use, copy, modify, merge, publish, distribute, and/or 
+        sublicense copies of the Software.
+        
+        1. Redistributions of Software must retain the above open source license grant, 
+           copyright and license notices, this list of conditions, and the disclaimer 
+           listed below.  Changes or modifications to, or derivative works of the 
+           Software must be noted with comments and the contributor and organization’s
+           name.
+        
+        2. Neither the names of Licensor, the Department of Energy, or their employees
+           may be used to endorse or promote products derived from this Software 
+           without their specific prior written permission.
+        
+        3. If the Software is protected by a proprietary trademark owned by Licensor
+           or the Department of Energy, then derivative works of the Software may not
+           be distributed using the trademark without the prior written approval of
+           the trademark owner.
+        
+        UT-Battelle, LLC AND THE GOVERNMENT MAKE NO REPRESENTATIONS AND DISCLAIM ALL 
+        WARRANTIES, BOTH EXPRESSED AND IMPLIED. THERE ARE NO EXPRESS OR IMPLIED 
+        WARRANTIES OF MERCHANTABILITY OR FITNESS FOR A PARTICULAR PURPOSE, OR THAT
+        THE USE OF THE SOFTWARE WILL NOT INFRINGE ANY PATENT, COPYRIGHT, TRADEMARK,
+        OR OTHER PROPRIETARY RIGHTS, OR THAT THE SOFTWARE WILL ACCOMPLISH THE INTENDED
+        RESULTS OR THAT THE SOFTWARE OR ITS USE WILL NOT RESULT IN INJURY OR DAMAGE. 
+        The user assumes responsibility for all liabilities, penalties, fines, claims,
+        causes of action, and costs and expenses, caused by, resulting from or arising
+        out of, in whole or in part the use, storage or disposal of the SOFTWARE.
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Operating System :: Unix
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.6
+Requires-Dist: gdal>=3.0.4
+Requires-Dist: netcdf4>=1.5.3
+Requires-Dist: numpy>=1.18.1
+Requires-Dist: pandas>=1.0.0
+Requires-Dist: tinytag>=1.4.0
+Description-Content-Type: text/markdown
+
+# granulemeta
+
+
+This code was orginally created as a file-level metadata extraction tool for use by the ORNL DAAC. The update to version 3 represents a complete refactoring in the approach taken by the prior version of ORNL DAAC's file level metadata extraction tool. The refactoring of the code put an emphasis on making the codebase more maintainable and extensible while making the code's execution more consistently stable and yet more flexible in how the code could be utilized by the end-user.  
+
+The default output for granulemeta-v3 is a csv in **gmout** format (as is necessary for ORNL DAAC's ingest process), however the code can easily be extended to accomodate other output formats. 
+
+## install
+
+```
+pip install granulemeta
+```
+
+## usage
+
+### Run from the command line:
+
+```
+granulemeta.py -o [OUTPUT_FILE].csv [PATH: directory or file or glob]
+```
+
+### Run from docker container for local development:
+```
+./run-docker-dev.sh [PATH TO DATA DIRECTORY] [PATH TO GRANULEMETA CODE DIRECTORY]
+```
+
+This will give you a command line environment to run granulemeta in. The first path argument provided will be mounted as `/data` and the second path argument as `/code`. Within the dev container, granulemeta can be run using the following syntax:
+```
+granulemeta -o [OUTPUT_FILE].csv [PATH: directory or file or glob]
+```
+
+## requirements
+This script was developed on Python 3. It relies on **five** packages not in Python's standard library:
+
+* `numpy`: https://numpy.org/
+* `pandas`: https://pandas.pydata.org/
+* `netCDF4`: https://unidata.github.io/netcdf4-python/netCDF4/index.html
+* `tinytag`: https://pypi.org/project/tinytag/
+* `gdal`: https://gdal.org/python/
+
+[`requirements.txt`](requirements.txt) was last generated on 2022-06-09.
+
+## notes
+Notable features added since the creation of version 3:
+* Lines are written to the output file as it processes each granule instead of waiting until all granules have been processed to write the output file.
+* Unless the `--overwrite` option is given, the script will skip granules already present in the output file. This (coupled with the feature directly above) will allow the script to pick up where it left off if it crashes partway through processing a dataset.
+* There is a `--nfiles` (or `-n`) option that allows the script to automatically stop execution after processing a specified number of granules.
+* [Glob syntax](https://en.wikipedia.org/wiki/Glob_(programming)) can now be used for the input `path` argument to allow a user to restrict the files that a given execution of the script processes (i.e. using `/path/*.nc` as your input path would only process granules with the `.nc` file extension).
+* Behind the scenes, the code is better organized to better facilitate redability, maintainability, and extensibility. This has been accomplished by breaking the code up into several modules.
+
+## authorship
+The following authors have contributed to the granulemeta development process:
+
+Kent Campbell, Jack McNelis, Vinny Palandro, Yaxing Wei, Tammy Walker, Matt Donovan, Jessica Welch, Daine Wright, Bruce Wilson, Chris Lindsley, Ketan Patel, Scott Pearson, Rupesh Shrestha, Tom Ruggles
+
+## contacts
+author: campbellkb@ornl.gov
