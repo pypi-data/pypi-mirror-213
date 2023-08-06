@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: poetry-issue-test
+Version: 0.1.4
+Summary: 
+Requires-Python: >=3.11,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Provides-Extra: postgres
+Requires-Dist: Ibis-framework[postgres] (>=5.1.0,<6.0.0) ; extra == "postgres"
+Requires-Dist: ibis-framework[duckdb] (>=5.1.0,<6.0.0) ; extra == "postgres"
+Requires-Dist: requests (>=2.31.0,<3.0.0)
+Description-Content-Type: text/markdown
+
+
