@@ -1,0 +1,9 @@
+LICENCE
+README.md
+pyproject.toml
+websocket_tools/__init__.py
+websocket_tools/websocket_loop.py
+websocket_tools.egg-info/PKG-INFO
+websocket_tools.egg-info/SOURCES.txt
+websocket_tools.egg-info/dependency_links.txt
+websocket_tools.egg-info/top_level.txt
