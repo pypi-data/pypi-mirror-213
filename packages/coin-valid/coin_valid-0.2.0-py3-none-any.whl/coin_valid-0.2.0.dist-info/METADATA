@@ -1,0 +1,112 @@
+Metadata-Version: 2.1
+Name: coin-valid
+Version: 0.2.0
+Summary: Crypto Currency address validation library
+Home-page: https://notmtth.codeberg.page/coin-valid
+License: GPL-3
+Keywords: cryptocurrency,validation,bitcoin,etherum,monero
+Author: NotMtth
+Author-email: notmtth@xmpp.is
+Requires-Python: >=3.10,<4.0
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: mkdocs (>=1.4.3,<2.0.0)
+Requires-Dist: mkdocs-material (>=9.1.15,<10.0.0)
+Project-URL: Repository, https://codeberg.org/NotMtth/coin-valid
+Description-Content-Type: text/markdown
+
+# coin-valid
+
+<a href="https://www.python.org/downloads/"><img src="https://img.shields.io/pypi/pyversions/coin-valid"></img></a> <a href="https://pypistats.org/packages/coin-valid"><img src="https://img.shields.io/pypi/dm/coin-valid"></img></a> <a href="https://pypi.org/project/coin-valid/"><img src="https://img.shields.io/pypi/v/coin-valid"></img></a> <a href="https://www.gnu.org/licenses/gpl-3.0.en.html"><img src="https://img.shields.io/pypi/l/coin-valid"></img></a>
+
+Crypto Currency address validation library.
+
+## Installation
+
+### Recommended
+
+```
+pip install coin-valid
+```
+
+### Manual
+
+Git clone repo:
+```
+git clone https://codeberg.org/NotMtth/coin-valid.git && cd coin-valid
+```
+
+Install **Poetry** and all the dependencies:
+```
+pip install poetry && poetry install
+```
+
+Build using **Poetry**:
+```
+poetry build && cd dist
+```
+
+Install the build locally:
+```
+pip install --user coin_valid<...>.whl
+```
+
+### Viewing docs locally (also for offline use)
+
+Run with **mkdocs**:
+```
+cd docs/coin-valid/ && mkdocs serve
+```
+
+For offline use make sure to change remove `[ OFFLINE, false ]` from **mkdocs.yml**
+```
+plugins:
+  - search:
+      lang:
+        - en
+  - offline:
+      enabled: !ENV [ OFFLINE, false ]
+```
+
+## Features
+
+- Light and compact 
+- Easily extensible
+- No dependencies
+- Pycharm auto-completion ready
+- Address validation
+- Coin / network detection based on address
+- Convert coin names to acronyms and vice-versa
+
+## Coins supported 
+
+- Bitcoin ₿
+- Ethereum ⟠
+- Litecoin Ł
+- Wownero ຝ
+- Bitcoincash Ƀ
+- Firo
+
+## Donations
+
+Monero:
+```
+4ASpDUymEkgcBBDoqp7HFs2xqiTuddJzbhvHmSVQWdt51mbbtxjMWP4LwvbYk6xqTDNnj9FyvSRGqMvRYxWuKyALJbf8265
+```
+
+Wownero:
+```
+WW2jekePGc7UoK7wqvJPUs9fBW6ocUwzCTymuedUr47rFVJ18yERWT7M4Sn35QQae94TT2TvpCydYLgsAHVLftNa2nr73rtmS
+```
+
+## TODO
+
+- [x] Create docs, add shield readthedocs build
+- [x] Utils get_acronym from coin, and the opposite
+- [ ] Add testnet and stagenet regex strings for currently supported coins
+- [ ] Add full support for more coins
+- [ ] More...
+
+Suggestions and prs are welcome :D
