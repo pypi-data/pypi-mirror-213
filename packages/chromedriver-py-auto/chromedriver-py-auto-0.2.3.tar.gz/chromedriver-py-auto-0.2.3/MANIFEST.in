@@ -1,0 +1,5 @@
+graft chromedriver_py_auto
+include LICENSE README.md
+prune venv
+global-exclude __pycache__
+global-exclude *.py[co]
