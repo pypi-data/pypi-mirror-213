@@ -1,0 +1,17 @@
+LICENSE
+README.md
+pyproject.toml
+src/morel/__init__.py
+src/morel/app.py
+src/morel/exploit_template.py
+src/morel/exploits.py
+src/morel/logger.py
+src/morel/singleton.py
+src/morel/target.py
+src/morel/target_template.py
+src/morel.egg-info/PKG-INFO
+src/morel.egg-info/SOURCES.txt
+src/morel.egg-info/dependency_links.txt
+src/morel.egg-info/entry_points.txt
+src/morel.egg-info/requires.txt
+src/morel.egg-info/top_level.txt
