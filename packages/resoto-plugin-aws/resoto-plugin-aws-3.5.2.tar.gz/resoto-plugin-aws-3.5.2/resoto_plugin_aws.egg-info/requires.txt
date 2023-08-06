@@ -1,0 +1,4 @@
+resotolib==3.5.2
+retrying
+boto3
+botocore
