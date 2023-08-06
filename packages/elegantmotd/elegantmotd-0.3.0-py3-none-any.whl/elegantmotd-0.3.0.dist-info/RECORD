@@ -1,0 +1,16 @@
+elegantmotd/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+elegantmotd/constants.py,sha256=TqBbrPANg3_jIpgoMmtSQfvokMeaAFNedvDD77KG8-M,200
+elegantmotd/cpu.py,sha256=_UT7yiwqAjfrxZagQ3yZr7iZnfeI68yEtOJTQwbe9Bg,819
+elegantmotd/disk.py,sha256=zGh856qNWiQCGE388bkuew2pea3Xndk2czPY5IO70DA,1036
+elegantmotd/load.py,sha256=wESC7HD8uCWC5_C_g-DMHETN3aySV3XldkBmuWxwXwY,294
+elegantmotd/loggedinusers.py,sha256=-cg6vgE9kjHmB5ui7ik8ts76OIwFpTNFDxTR30FZUDU,365
+elegantmotd/memory.py,sha256=dHZx0zBMpAUdYvjLAUOyCtkrt7bG1ouUfKvpn3sH0zo,1429
+elegantmotd/motd.py,sha256=4nqtLbirvl7b5lb6R2u74zWq8pebPKZL3PjGmwdd2lo,2953
+elegantmotd/network.py,sha256=WOc97LkY9hh1jwKBbd-yzTUdNz_r3mgoZ3lYKheOVGA,500
+elegantmotd/process.py,sha256=wD7RQCOepkufWicOQgxZADQcZqchp9r1UvuufD5jtk0,279
+elegantmotd/sysinfo.py,sha256=0KqtW8ZXM5SNieJ8_kbVqz-p8BPt4y5bGfaGooRdztk,286
+elegantmotd/temperature.py,sha256=OjKEXrAcs1cjlWPaMXNncOcESLrkmh__7y-c6-AgcsE,1414
+elegantmotd-0.3.0.dist-info/METADATA,sha256=ps_ED1RTlizaqPHvBmvXcDq7hyc-qOhO71Av2OdMDdM,2745
+elegantmotd-0.3.0.dist-info/WHEEL,sha256=7Z8_27uaHI_UZAc4Uox4PpBhQ9Y5_modZXWMxtUi4NU,88
+elegantmotd-0.3.0.dist-info/entry_points.txt,sha256=XtLAXda7dskLvczepNyXG4o0JmkaIkfQ9Mjh0OW7b9M,56
+elegantmotd-0.3.0.dist-info/RECORD,,
