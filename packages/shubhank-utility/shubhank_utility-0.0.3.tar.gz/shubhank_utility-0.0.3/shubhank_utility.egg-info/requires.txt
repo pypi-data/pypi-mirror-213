@@ -1,0 +1,16 @@
+pymongo
+requests
+tldextract
+fuzzywuzzy
+bs4
+beautifulsoup4
+html5lib
+lxml
+pymssql
+python-Levenshtein
+pandas
+numpy
+nltk
+country-converter
+selenium
+user-agent
