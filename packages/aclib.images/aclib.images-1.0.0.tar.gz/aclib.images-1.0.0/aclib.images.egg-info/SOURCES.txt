@@ -1,0 +1,16 @@
+LICENSE
+README.md
+setup.py
+aclib.images.egg-info/PKG-INFO
+aclib.images.egg-info/SOURCES.txt
+aclib.images.egg-info/dependency_links.txt
+aclib.images.egg-info/requires.txt
+aclib.images.egg-info/top_level.txt
+aclib/images/__init__.py
+aclib/images/__API__/color.py
+aclib/images/__API__/dotset.py
+aclib/images/__API__/dotsetlib.py
+aclib/images/__API__/dsetsimmat.py
+aclib/images/__API__/image.py
+aclib/images/__API__/target.py
+tests/test.py
