@@ -1,0 +1,54 @@
+Metadata-Version: 2.1
+Name: lampe
+Version: 0.8.0
+Summary: Likelihood-free AMortized Posterior Estimation with PyTorch
+Author: François Rozet
+Author-email: francois.rozet@outlook.com
+Project-URL: Documentation, https://lampe.readthedocs.io
+Project-URL: Source, https://github.com/francois-rozet/lampe
+Project-URL: Tracker, https://github.com/francois-rozet/lampe/issues
+Keywords: torch,simulation-based,inference,amortized,bayesian,posterior,likelihood,mcmc
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: h5py (>=3.0.0)
+Requires-Dist: matplotlib (>=3.4.0)
+Requires-Dist: numpy (>=1.20.0)
+Requires-Dist: torch (>=1.12.0)
+Requires-Dist: tqdm (>=4.52.0)
+Requires-Dist: zuko (>=0.2.1)
+
+![LAMPE's banner](https://raw.githubusercontent.com/francois-rozet/lampe/master/docs/images/banner.svg)
+
+# LAMPE
+
+LAMPE is a simulation-based inference (SBI) package that focuses on amortized estimation of posterior distributions, without relying on explicit likelihood functions; hence the name *Likelihood-free AMortized Posterior Estimation* (LAMPE). The package provides [PyTorch](https://pytorch.org) implementations of modern amortized simulation-based inference algorithms like neural ratio estimation (NRE), neural posterior estimation (NPE) and more. Similar to PyTorch, the philosophy of LAMPE is to avoid obfuscation and expose all components, from network architecture to optimizer, to the user such that they are free to modify or replace anything they like.
+
+As part of the inference pipeline, `lampe` provides components to efficiently [store and load data](lampe/data.py) from disk, [diagnose predictions](lampe/diagnostics.py) and [display results](lampe/plots.py) graphically.
+
+## Installation
+
+The `lampe` package is available on [PyPI](https://pypi.org/project/lampe), which means it is installable via `pip`.
+
+```
+pip install lampe
+```
+
+Alternatively, if you need the latest features, you can install it from the repository.
+
+```
+pip install git+https://github.com/francois-rozet/lampe
+```
+
+## Documentation
+
+The documentation is made with [Sphinx](https://www.sphinx-doc.org) and [Furo](https://github.com/pradyunsg/furo) and is hosted at [lampe.readthedocs.io](https://lampe.readthedocs.io).
+
+## Contributing
+
+If you have a question, an issue or would like to contribute, please read our [contributing guidelines](https://github.com/francois-rozet/lampe/blob/master/CONTRIBUTING.md).
