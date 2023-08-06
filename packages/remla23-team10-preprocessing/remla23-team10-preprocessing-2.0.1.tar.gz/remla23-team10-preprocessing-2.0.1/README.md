@@ -1,0 +1,2 @@
+# lib2
+Python library that contains common preprocessing code for `model-training` and `model-service` repositories. When a new tag is created, the version is automatically uploaded to the PyPi package registry.
