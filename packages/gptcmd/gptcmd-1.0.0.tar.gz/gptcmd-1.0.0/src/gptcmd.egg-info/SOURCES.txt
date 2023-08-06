@@ -1,0 +1,13 @@
+COPYING.txt
+README.md
+pyproject.toml
+src/gptcmd/__init__.py
+src/gptcmd/cli.py
+src/gptcmd/message.py
+src/gptcmd.egg-info/PKG-INFO
+src/gptcmd.egg-info/SOURCES.txt
+src/gptcmd.egg-info/dependency_links.txt
+src/gptcmd.egg-info/entry_points.txt
+src/gptcmd.egg-info/requires.txt
+src/gptcmd.egg-info/top_level.txt
+tests/test_message.py
