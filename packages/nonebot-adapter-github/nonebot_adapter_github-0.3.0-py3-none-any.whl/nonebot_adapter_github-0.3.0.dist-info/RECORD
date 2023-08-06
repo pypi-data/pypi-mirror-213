@@ -1,0 +1,12 @@
+nonebot/adapters/github/__init__.py,sha256=j1tSRFRy5j7emr7tBP3yNZK5bTWBPrk2aCgWudF6TUs,543
+nonebot/adapters/github/adapter.py,sha256=LSi3eNFKy6QCCOlsoM9Rn7hymnBLJnqKFU7C8RYObHg,5322
+nonebot/adapters/github/bot.py,sha256=TODiHejniOiFuS1Vp8Z9AMD9uQVa2BKq4cxm9P1yJqA,9653
+nonebot/adapters/github/config.py,sha256=r2Yf_oK7gv7ozLeZ6OVKUyeMw6KbfqUt6UK01hfH_BY,1025
+nonebot/adapters/github/event.py,sha256=nEZxmOPfrgCywL-hkSjf7-ieYPwOODC5sSnZbQBKq1M,51515
+nonebot/adapters/github/exception.py,sha256=H1neZGjI8KjKRSy2v-H36bRSNZ9yT3G2kjaXCcjeJgM,1026
+nonebot/adapters/github/message.py,sha256=-YVT598edCUxgtYnI1QziE9eYN8bM9IPUDjZ7vpMTbA,1153
+nonebot/adapters/github/utils.py,sha256=paN1-w4DRLLnpC5y9_S9F0ueth7eFuZxj9u8oEe1ga8,861
+nonebot_adapter_github-0.3.0.dist-info/LICENSE,sha256=KXnzaRRWb9r8W0IP1PmP8L3C_AFIPcc61gu850ZHz2I,1064
+nonebot_adapter_github-0.3.0.dist-info/METADATA,sha256=7gmDLqAS1uRTyRj2jd6qSw4tx09dpXWkIhjwnUpKfKI,4925
+nonebot_adapter_github-0.3.0.dist-info/WHEEL,sha256=Zb28QaM1gQi8f4VCBhsUklF61CTlNYfs9YAZn-TOGFk,88
+nonebot_adapter_github-0.3.0.dist-info/RECORD,,
