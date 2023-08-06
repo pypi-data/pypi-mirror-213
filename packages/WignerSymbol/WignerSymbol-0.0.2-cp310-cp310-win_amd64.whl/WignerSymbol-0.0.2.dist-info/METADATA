@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: WignerSymbol
+Version: 0.0.2
+Summary: Python port of 0382/WignerSymbol
+Home-page: https://github.com/0382/WignerSymbol-pybind11
+Author: 0382
+Author-email: 18322825326@163.com
+License-File: LICENSE
+
