@@ -1,0 +1,8 @@
+robotframework>=4.0.2
+docutils
+Pygments
+
+[xls]
+pandas
+xlrd>=1.2.0
+openpyxl
