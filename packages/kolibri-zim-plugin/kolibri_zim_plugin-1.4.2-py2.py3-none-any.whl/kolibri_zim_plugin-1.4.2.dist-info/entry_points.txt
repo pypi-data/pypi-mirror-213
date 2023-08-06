@@ -1,0 +1,2 @@
+[kolibri.plugins]
+kolibri_zim_plugin = kolibri_zim_plugin
