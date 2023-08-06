@@ -1,0 +1,5 @@
+[console_scripts]
+symchat = symai.chat:run
+symclient = symai.nesy_client:run
+symsh = symai.shell:run
+symsvr = symai.nesy_server:run
