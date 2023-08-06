@@ -1,0 +1,8 @@
+taskiq_memphis/__init__.py,sha256=ttncBNuoVUGeuW1yhJbRSVGtMHsciRh5RGFirtvSxjc,119
+taskiq_memphis/broker.py,sha256=iAb8Q3_tXGZl3E_pfogUiq1P_oXjo_jcr74JIxIZ-go,15565
+taskiq_memphis/exceptions.py,sha256=u68dkhhqEhaJ0xQIa4rYOaTFK8GqZ-WPMEFgaEPTqjk,366
+taskiq_memphis/models.py,sha256=aUzc74YLitdumi6uraLjqH6wt3g7_0wGYji8EnoRV_A,1397
+taskiq_memphis-0.2.0.dist-info/LICENSE,sha256=2kUMHEmi_K6SV43YoqXTygA6Tt37oHEGyi-NSflSQvw,1073
+taskiq_memphis-0.2.0.dist-info/METADATA,sha256=8_mPnhnpbcTkjOctghbqajCUQTvvgMxk4FZhzoJlu6s,4812
+taskiq_memphis-0.2.0.dist-info/WHEEL,sha256=Zb28QaM1gQi8f4VCBhsUklF61CTlNYfs9YAZn-TOGFk,88
+taskiq_memphis-0.2.0.dist-info/RECORD,,
