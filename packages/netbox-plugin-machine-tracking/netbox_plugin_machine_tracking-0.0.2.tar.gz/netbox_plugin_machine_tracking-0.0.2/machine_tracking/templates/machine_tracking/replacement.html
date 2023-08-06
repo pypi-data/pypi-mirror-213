@@ -1,0 +1,40 @@
+{% extends 'generic/object.html' %}
+
+{% block content %}
+  <div class="row mb-3">
+    <div class="col col-md-6">
+      <div class="card">
+        <h5 class="card-header">Replacement</h5>
+        <div class="card-body">
+          <table class="table table-hover attr-table">
+            <tr>
+              <th scope="row">Machine</th>
+              <td><a href="{{ object.machine.get_absolute_url }}">{{ object.machine }}</a></td>
+            </tr>
+            <tr>
+              <th scope="row">Part Type</th>
+              <td>{{ object.part_type }}</td>
+            </tr>
+            <tr>
+              <th scope="row">Serial Number</th>
+              <td>{{ object.serial_no }}</td>
+            </tr>
+            <tr>
+                <th scope="row">Part Model</th>
+                <td>{{ object.part_model }}</td>
+            </tr>
+            <tr>
+                <th scope="row">Event Details</th>
+                <td><a href="{{ object.event.get_absolute_url }}">{{ object.event }}</a></td>
+            </tr>
+          </table>
+        </div>
+      </div>
+      {% include 'inc/panels/custom_fields.html' %}
+    </div>
+    <div class="col col-md-6">
+      {% include 'inc/panels/tags.html' %}
+      {% include 'inc/panels/comments.html' %}
+    </div>
+  </div>
+{% endblock content %}
