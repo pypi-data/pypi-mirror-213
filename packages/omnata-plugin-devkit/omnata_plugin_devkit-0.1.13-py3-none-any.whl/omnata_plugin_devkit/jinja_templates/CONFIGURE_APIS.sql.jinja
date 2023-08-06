@@ -1,0 +1,80 @@
+-- For now, we can't store in the proc schema because of the callout objects issue
+create or replace procedure PLUGIN.CONFIGURE_APIS()
+   returns object
+   language javascript
+   execute as owner
+as
+$$
+// snowflake object automatically injected by Snowpark
+
+try{
+    var appsResults = snowflake.createStatement( {
+        sqlText: `select 
+                    EXTERNAL_ACCESS_INTEGRATION_NAMES ARRAY,
+                    SECRETS ARRAY
+                from DATA.OMNATA_REGISTRATION`,
+        binds:[]
+    } ).execute();
+    let integrationNames;
+    let secrets;
+    if (!appsResults.next())  {
+        integrationNames = []
+        secrets = []
+    }else{
+        integrationNames = appsResults.getColumnValue(1);
+        secrets = appsResults.getColumnValue(2);
+    }
+    var currentSecretsResult = snowflake.createStatement( {
+        sqlText: `show secrets in schema data`,
+        binds:[]
+    } ).execute();
+
+    // remove secret names which do not exist in the schema
+    var secretsWhichExist = []
+    while (currentSecretsResult.next()){
+        secretsWhichExist.push(currentSecretsResult.getColumnValue(2));
+    }
+    secrets = secrets.filter(x => secretsWhichExist.includes(x))
+    // format of function/proc binding is SECRETS = ('cred' = oauth_token )
+    secrets = secrets.map(x => `'${x}' = DATA.${x}`)
+
+    const procsToAlter = [
+        'APPLY(OBJECT)',
+        `CONFIGURATION_FORM(VARCHAR,
+                            OBJECT,
+                            VARCHAR,
+                            VARCHAR,
+                            VARCHAR,
+                            OBJECT,
+                            VARCHAR,
+                            OBJECT,
+                            OBJECT)`,
+        `CONNECTION_TEST(VARCHAR, 
+                        OBJECT, 
+                        VARCHAR,
+                        VARCHAR,
+                        VARCHAR)`
+            ];
+    procsToAlter.forEach(function(expectedField) {
+        var appsResults = snowflake.createStatement( {
+            sqlText: `alter procedure ${expectedField}
+                    set EXTERNAL_ACCESS_INTEGRATIONS = (${integrationNames.join(',')}),
+                        SECRETS = (${secrets.join(',')})`,
+            binds:[]
+        } ).execute();
+    });
+    return {
+        "success": true,
+        "data": null
+    }
+}
+catch(e){
+   return {
+      "success": false,
+      "error": `CONFIGURE_APIS: ${String(e)}`
+   }
+}
+
+$$
+;
+
