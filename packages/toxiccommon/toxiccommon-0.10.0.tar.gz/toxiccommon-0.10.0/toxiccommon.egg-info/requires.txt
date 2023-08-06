@@ -1,0 +1,4 @@
+toxicbuild-core>=0.10.0
+aiozk>=0.30.0
+pytz>=2023.3
+asyncamqp>=0.1.7

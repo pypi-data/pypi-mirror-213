@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: toxiccommon
+Version: 0.10.0
+Summary: toxiccommon: My super cool project
+Author: me@myself.com
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU General Public License (GPL)
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+Toxiccommon is part of toxicbuild.
+
+Check toxiccommon documentation [here](https://docs.poraodojuca.dev/toxiccommon/index.html).
+
+Check toxicbuild full documentation [here](https://toxicbuild.poraodojuca.dev)
