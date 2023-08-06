@@ -1,0 +1,129 @@
+Metadata-Version: 2.1
+Name: bgdiscovery
+Version: 0.9.15
+Summary: biGENIUS Discovery App.
+Home-page: https://www.bigenius.info/
+Author: biGENIUS AG
+Author-email: gergely.szecsenyi@bigenius.info
+Classifier: Programming Language :: Python :: 3.8
+Description-Content-Type: text/markdown
+Requires-Dist: pyodbc (==4.0.35)
+Requires-Dist: pyyaml
+Requires-Dist: art (==5.8)
+Requires-Dist: coloredlogs
+Requires-Dist: colorama
+Requires-Dist: acryl-datahub (==0.10.2.2)
+
+# BiGenius Discovery App
+
+The BGD application is used to create discovery data for BG X. It is a Python module that automatically installs the necessary python packages. 
+
+As a parameter, you need to specify a source file with the necessary attributes defined, and the output will be a BGX-compatible discovery file. 
+
+## Installation
+
+To install, run the following command:
+
+    pip install bgdiscovery
+
+## Usage
+
+```bash
+bgdiscovery -f sample_source_file.yaml
+```
+## Sources
+
+The following sources are supported:
+
+### CSV
+
+Example source yaml file:
+
+```yaml
+source:
+  type: s3
+  config:
+    path_specs:
+      -
+        include: "sample.csv"
+sink:
+  type: file
+  config:
+    filename: ./csv_discovery_output.json
+```
+
+### Parquet
+
+Example source yaml file:
+
+```yaml
+source:
+  type: s3
+  config:
+    path_specs:
+      -
+        include: "/tmp/parquet_folder/"
+sink:
+  type: file
+  config:
+    filename: ./parquet_discovery_output.json
+```
+
+### Microsoft SQL Server
+
+Example source yaml file with secure connection over ODBC:
+```yaml
+source:
+  type: mssql
+  config:
+    # Coordinates
+    host_port: hostname:1433
+    database: f1
+    # Credentials
+    username: sa
+    password: Password
+    use_odbc: "True"
+    uri_args:
+      driver: "ODBC Driver 17 for SQL Server"
+      Encrypt: "yes"
+      TrustServerCertificate: "yes"
+      ssl: "True"
+sink:
+  type: file
+  config:
+    filename: ./mssql_f1_output.json
+```
+
+Example source yaml file without secure connection:
+```yaml
+source:
+  type: mssql
+  config:
+    # Coordinates
+    host_port: hostname:1433
+    database: f1
+    # Credentials
+    username: sa
+    password: Password
+sink:
+  type: file
+  config:
+    filename: ./mssql_f1_output.json
+```
+
+### Parquet
+
+Example source yaml file:
+
+```yaml
+source:
+  type: s3
+  config:
+    path_specs:
+      -
+        include: "/tmp/parquet_folder/"
+sink:
+  type: file
+  config:
+    filename: ./parquet_discovery_output.json
+```
