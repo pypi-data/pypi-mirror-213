@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: gtnet
+Version: 0.0.2
+Summary: A package for running Genome Taxonomy Network predictions
+Author-email: Andrew Tritt <ajtritt@lbl.gov>, Ryan Ly <rly@lbl.gov>
+License: BSD-3-Clause
+Project-URL: Homepage, https://github.com/exabiome/gtnet
+Project-URL: Bug Tracker, https://github.com/exabiome/gtnet/issues
+Keywords: python,microbiome,microbial-taxonomy,cross-platform,open-data,data-format,open-source,open-science,reproducible-research,machine-learning
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Operating System :: OS Independent
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering :: Medical Science Apps.
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Requires-Dist: numpy (>=1.24.3)
+Requires-Dist: pandas (>=2.0.1)
+Requires-Dist: torch (>=2.0.1)
+
