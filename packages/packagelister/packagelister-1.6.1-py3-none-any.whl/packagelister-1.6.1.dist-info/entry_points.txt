@@ -1,0 +1,3 @@
+[console_scripts]
+packagelister = packagelister.packagelister_cli:main
+whouses = packagelister.whouses:main
