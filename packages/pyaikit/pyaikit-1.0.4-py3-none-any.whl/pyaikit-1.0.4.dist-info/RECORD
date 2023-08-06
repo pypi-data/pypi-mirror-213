@@ -1,0 +1,12 @@
+pyaikit/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pyaikit/authentication.py,sha256=7F8gyo3k3Ali5FIW7S0YwcPUaETpQSxaqiAM8RHkg1E,750
+pyaikit/example.py,sha256=YmhjVTDwvoxJF6KyoUUuAkFWY0f3RRBpCMUmBFCO30c,1155
+pyaikit/setup.py,sha256=x0xq1NaqECkHd4ATa6eQAJ3mkBoEjpIt6ycNFAHGnNg,1177
+pyaikit/sentiment_analysis/sentiment_analyzer.py,sha256=2G7QpUcCkyJ0YZzwtSTgUaSsOlbGM6Uc1oX7efT95L0,6743
+pyaikit/text_generation/text_generator.py,sha256=iAyD9dN5pvlCECPIAlyWsUA1OirrdpNDY8bNDO1KLUw,1574
+pyaikit/text_summerization/text_summerizer.py,sha256=AEH5LKai9JVn_dSWw4_WPQX3bHJm-uxR5-YD8y4iOMM,4761
+pyaikit/translation/translator.py,sha256=tOWASWAOd9wVTDnTPvEmGeHIEYbFWfZrgjLCCeslnrk,1546
+pyaikit-1.0.4.dist-info/METADATA,sha256=BsP25M7LhzY9EO6sEdiLEwP0nYeZUtnRC9rY3AB6ueM,5534
+pyaikit-1.0.4.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+pyaikit-1.0.4.dist-info/top_level.txt,sha256=JSw6mgc62VfISlBFK5SCHdaoTlb1hq0ONDvNQV7znkw,106
+pyaikit-1.0.4.dist-info/RECORD,,
