@@ -1,0 +1,37 @@
+Metadata-Version: 2.1
+Name: pylovens
+Version: 0.2.0
+Summary: Python client for the Lovens API.
+Author-email: Rogier van der Geer <rogier@vander-geer.nl>
+License: MIT
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: requests (>=2.31.0)
+Provides-Extra: dev
+Requires-Dist: black (==23.3.0) ; extra == 'dev'
+Requires-Dist: pytest (>=7.3.1) ; extra == 'dev'
+
+# pylovens
+
+Python client for the Lovens API.
+
+![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/rogiervandergeer/pylovens/test.yaml) 
+![PyPI](https://img.shields.io/pypi/v/pylovens)
+![PyPI - License](https://img.shields.io/pypi/l/pylovens)
+![PyPI - Downloads](https://img.shields.io/pypi/dm/pylovens) 
+
+## Usage
+
+Using the client is as simple as:
+```python
+from pylovens import LovensClient
+
+client = LovensClient()
+client.login("your_username", "your_secret_password")
+
+bikes = client.get_bikes()
+```
+
+_Note:_ only authentication with email/password is supported. 
