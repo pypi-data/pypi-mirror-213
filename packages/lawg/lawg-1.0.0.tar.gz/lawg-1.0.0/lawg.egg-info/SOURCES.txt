@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+lawg.egg-info/PKG-INFO
+lawg.egg-info/SOURCES.txt
+lawg.egg-info/dependency_links.txt
+lawg.egg-info/top_level.txt
+lawg.egg-info/zip-safe
