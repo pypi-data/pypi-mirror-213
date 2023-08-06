@@ -1,0 +1,7 @@
+psutil>=5.9.0
+
+[dev]
+tox
+
+[dev:python_version < "3.8"]
+importlib-metadata
