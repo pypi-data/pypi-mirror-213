@@ -1,0 +1,8 @@
+README.md
+setup.py
+pySSRSapi/__init__.py
+pySSRSapi.egg-info/PKG-INFO
+pySSRSapi.egg-info/SOURCES.txt
+pySSRSapi.egg-info/dependency_links.txt
+pySSRSapi.egg-info/requires.txt
+pySSRSapi.egg-info/top_level.txt
