@@ -1,0 +1,5 @@
+gx1convert-0.1.0.dist-info/METADATA,sha256=2j4JJbZ1v3KEGkKcND-9xCCWjGkwSrEwwhIcdMqXeNw,259
+gx1convert-0.1.0.dist-info/WHEEL,sha256=v44QVAtQrLpVmcAVvaNFU_SHB3TuFAJKOMZxIuRUe4w,95
+gx1convert/__init__.py,sha256=q8uKQ3RpQxhiacAX58seLAEx6uqJBAkuJ0RIcDh2UUU,123
+gx1convert/gx1convert.cp310-win_amd64.pyd,sha256=KNy__nKqCQ3gXqWJBZy00zyim1LOP-WXn-uh_TWyomc,222208
+gx1convert-0.1.0.dist-info/RECORD,,
