@@ -1,0 +1,2 @@
+[console_scripts]
+archbuilder = archbuilder.__main__:main
