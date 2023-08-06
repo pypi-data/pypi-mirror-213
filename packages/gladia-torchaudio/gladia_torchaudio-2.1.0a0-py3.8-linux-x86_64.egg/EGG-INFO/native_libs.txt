@@ -1,0 +1,6 @@
+torchaudio/lib/_torchaudio.so
+torchaudio/lib/_torchaudio_sox.so
+torchaudio/lib/libctc_prefix_decoder.so
+torchaudio/lib/libtorchaudio.so
+torchaudio/lib/libtorchaudio_sox.so
+torchaudio/lib/pybind11_prefixctc.so
