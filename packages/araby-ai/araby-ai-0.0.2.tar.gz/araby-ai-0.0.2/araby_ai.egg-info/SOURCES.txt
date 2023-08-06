@@ -1,0 +1,8 @@
+LICENSE.txt
+setup.py
+araby_ai/__init__.py
+araby_ai/writenow.py
+araby_ai.egg-info/PKG-INFO
+araby_ai.egg-info/SOURCES.txt
+araby_ai.egg-info/dependency_links.txt
+araby_ai.egg-info/top_level.txt
