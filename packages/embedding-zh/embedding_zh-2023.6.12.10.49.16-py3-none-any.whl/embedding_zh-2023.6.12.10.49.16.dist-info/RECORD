@@ -1,0 +1,13 @@
+embedding/__init__.py,sha256=czsCDpJ6tyS_L-8aQqkJjvldkb_xuFgC5IMubju_Xvg,447
+embedding/m3e-small/.gitattributes,sha256=pdc8ERzHQnDInEXTek97qrMXwJZl2bDhI3j-fw6mVzs,1531
+embedding/m3e-small/README.md,sha256=2QOkRHc6fIMvGKN5F0SXVmO24zpFhcvNXLOsGaBM19g,24129
+embedding/m3e-small/config.json,sha256=oDlV1h-BNQHFLv2eakqgTlvqNiWvKH-08eW7vCbVhL8,711
+embedding/m3e-small/pytorch_model.bin,sha256=ePu-Itm8MaWald_Rsc60-bZc9N31TZSKIJUnicnsSXM,95843657
+embedding/m3e-small/special_tokens_map.json,sha256=ttNGvjZqfR1IMy28n987-JYLXYeVIrd5ndulnnYjfuM,125
+embedding/m3e-small/tokenizer.json,sha256=SM6l1EQkkSpv0epke_T-ULVauLHlh5wydfgOM56PriY,439125
+embedding/m3e-small/tokenizer_config.json,sha256=5vO5bbkmo31AOZlfv1rRfeFY37j2ND1gfk26rRjXX1o,367
+embedding_zh-2023.6.12.10.49.16.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+embedding_zh-2023.6.12.10.49.16.dist-info/METADATA,sha256=9CrCwQJrDN80e9Cx4mf_fkPXBEoDXPQImPj_PZldgG0,709
+embedding_zh-2023.6.12.10.49.16.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+embedding_zh-2023.6.12.10.49.16.dist-info/top_level.txt,sha256=Q10g3IOEbFEK6dLPABwB1FFw7u5FdURLTUc56j5WEP0,10
+embedding_zh-2023.6.12.10.49.16.dist-info/RECORD,,
