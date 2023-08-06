@@ -1,0 +1,37 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+[project]
+name = "cached-file-fetcher"
+version = "0.0.4"
+authors = [{ name = "TuneFlow", email = "contact@info.tuneflow.com" }]
+description = "Fetches files from s3, and caches them on local disk while maintaining a size-limited LRU cache."
+readme = "README.md"
+requires-python = ">=3.7"
+keywords = [
+    'file',
+    'fetcher'
+]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: OS Independent",
+]
+dependencies = [
+  'boto3 >= 1.26.151',
+  'lru-dict >= 1.2.0'
+]
+
+[project.urls]
+"Homepage" = "https://github.com/andantei/file-fetcher"
+"Bug Tracker" = "https://github.com/andantei/file-fetcher/issues"
+
+[tool.pyright]
+include = ["src"]
+exclude = ["**/__pycache__", "src/experimental", "src/typestubs"]
+
+reportTypedDictNotRequiredAccess = "warning"
+reportGeneralTypeIssues = "warning"
+
+[tool.autopep8]
+max_line_length = 120
