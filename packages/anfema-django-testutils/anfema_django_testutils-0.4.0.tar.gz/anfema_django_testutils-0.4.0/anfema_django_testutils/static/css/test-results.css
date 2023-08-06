@@ -1,0 +1,142 @@
+:root {
+    --skipped: #868c86;
+    --passed: #6CB83E;
+    --precondition_failure: #F59F73;
+    --failure: #D37647;
+    --expected_failure: #D37647;
+    --unexpected_success: #D37647;
+    --error: #B54F26;
+}
+
+.container {
+    text-align: left;
+    margin: 5pt;
+}
+
+.test-report-summary {
+    background: none;
+}
+.test-report-summary div {
+    padding: 5pt;
+    text-align: left;
+}
+.test-report-summary h1 {
+    padding: 5pt;
+    text-align: center;
+}
+.test-report-summary table {
+    width: 25%;
+    padding: 5pt;
+    text-align: left;
+}
+.test-report-summary tr, th, td {
+    background: none;
+    width: 50%;
+    padding-right: 5pt;
+    padding-left: 5pt;
+}
+.test-report-summary td {
+    text-align: right;
+}
+
+.testcase {
+    background: none;
+}
+.testcase div {
+}
+.testcase thead > tr:first-child {
+    height: 20pt;
+}
+.testcase table {
+    table-layout: fixed;
+    width: 100%;
+    border-style: double;
+    border-color: black;
+    margin: 5px;
+}
+.testcase td {
+    padding-right: 5pt;
+    padding-left: 5pt;
+}
+.testcase th {
+    background: #91ABAB;
+    padding-right: 5pt;
+    padding-left: 5pt;
+    text-align: center;
+}
+/* testcase name */
+.testcase th:nth-child(1) {
+    width: 80%;
+    text-align: left;
+}
+/* duration */
+.testcase th:nth-child(2) {
+    width: 7%;
+}
+/* result */
+.testcase th:nth-child(3) {
+    width: 10%;
+}
+/* detail button */
+.testcase th:nth-child(4) {
+    width: 3%;
+    alignment: center;
+}
+.testcase tbody {
+    display: none;
+}
+.testcase button {
+    width: 30pt;
+    font-size: x-small;
+}
+
+.testrun td {
+    padding-right: 5pt;
+    padding-left: 5pt;
+}
+.testrun tr {
+    height: 25pt;
+}
+.testrun-outcome {
+    color: var(--error);
+    column-span: 4;
+}
+.testrun button {
+    width: 30pt;
+    font-size: x-small;
+    align: center;
+}
+
+.color-bar {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.color-bar div {
+    height:10px;
+    float:left;
+    display:inline-block;
+    font-size: 0;
+    margin: 0px;
+    padding: 0px;
+}
+.passed {
+    background: var(--passed);
+}
+.skipped {
+    background: var(--skipped);
+}
+.error {
+    background: var(--error);
+}
+.failure {
+    background: var(--failure);
+}
+.unexpected_success {
+    background: var(--unexpected_success);
+}
+.expected_failure {
+    background: var(--expected_failure);
+}
+.precondition_failure {
+    background: var(--precondition_failure);
+}
