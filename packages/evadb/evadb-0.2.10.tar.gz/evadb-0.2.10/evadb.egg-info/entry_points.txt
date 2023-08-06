@@ -1,0 +1,3 @@
+[console_scripts]
+eva_client = evadb.evadb_cmd_client:main
+eva_server = evadb.evadb_server:main
