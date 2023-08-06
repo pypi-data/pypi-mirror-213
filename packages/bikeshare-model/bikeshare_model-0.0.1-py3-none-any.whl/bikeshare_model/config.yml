@@ -1,0 +1,138 @@
+# Package Overview
+package_name: bikeshare_model
+
+# Data Files
+training_data_file: bike-sharing-dataset.csv
+test_data_file: test.csv
+
+# Variables
+# The variable we are attempting to predict (cnt)
+target: cnt
+
+pipeline_name: bikeshare_model
+pipeline_save_file: bikeshare__model_output_v
+
+features:      # final features to be use
+  - season
+  - hr 
+  - holiday 
+  - weekday
+  - workingday  # generated  by  Sibsp + Parch <--Before pipeline alongwith loading the data
+  - weathersit   # generated cabin              <--Before pipeline alongwith loading the data
+  - temp       # generated from name          <--Before pipeline alongwith loading the data
+  - atemp
+  - hum
+  - windspeed
+  - yr
+  - mnth
+
+
+unused_fields:  # Features to drop before pipeline
+  - dteday
+  - casual
+  - registered  
+
+
+# Features inside processing pipeline
+
+hr_var: hr  # first imputatation , then --> Mappeing
+yr_var: yr
+mnth_var: mnth
+season_var: season
+weekday_var: weekday
+holiday_var: holiday
+weathersit_var: weathersit
+workingday_var: workingday
+
+
+
+season_mappings:
+  spring: 0
+  winter: 1
+  summer: 2
+  fall: 3
+
+weekday_mappings:
+  Mon: 0
+  Tue: 1
+  Wed: 2
+  Thu: 3
+  Fri: 4
+  Sat: 5
+  Sun: 6
+
+weathersit_mappings:
+  Clear: 0
+  Mist: 1
+  Light Rain: 2
+  Heavy Rain: 3
+
+
+holiday_mappings:
+  No: 0
+  Yes: 1
+
+workingday_mappings:
+  No: 0
+  Yes: 1
+
+hr_mappings:
+  12am: 0
+  1am: 1
+  2am: 2
+  3am: 3
+  4am: 4
+  5am: 5
+  6am: 6
+  7am: 7
+  8am: 8
+  9am: 9
+  10am: 10
+  11am: 11
+  12pm: 12
+  1pm: 13
+  2pm: 14
+  3pm: 15
+  4pm: 16
+  5pm: 17
+  6pm: 18
+  7pm: 19
+  8pm: 20
+  9pm: 21
+  10pm: 22
+  11pm: 23
+ 
+yr_mappings:
+  2011: 0
+  2012: 1
+
+mnth_mappings:
+  January: 1
+  February: 2
+  March: 3
+  April: 4
+  May: 5 
+  June: 6
+  July: 7
+  August: 8
+  September: 9
+  October: 10
+  November: 11
+  December: 12
+
+# set train/test split
+test_size: 0.20
+
+# to set the random seed
+random_state: 42
+# alogrithm parameters
+n_estimators: 100
+max_depth: 10
+
+
+
+
+
+
+
+
