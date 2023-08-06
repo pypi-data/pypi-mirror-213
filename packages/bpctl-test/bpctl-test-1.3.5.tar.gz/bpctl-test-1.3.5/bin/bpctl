@@ -1,0 +1,3 @@
+#!/bin/bash
+p=$(python -c "import lib;import os; print(os.path.dirname(lib.__file__))")
+python3 $p/bpctl/bpctl.py "$@"
