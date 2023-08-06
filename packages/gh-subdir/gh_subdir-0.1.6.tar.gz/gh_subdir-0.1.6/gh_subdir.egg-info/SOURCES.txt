@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+gh_subdir.egg-info/PKG-INFO
+gh_subdir.egg-info/SOURCES.txt
+gh_subdir.egg-info/dependency_links.txt
+gh_subdir.egg-info/requires.txt
+gh_subdir.egg-info/top_level.txt
+src/__init__.py
+src/gh_subdir.py
