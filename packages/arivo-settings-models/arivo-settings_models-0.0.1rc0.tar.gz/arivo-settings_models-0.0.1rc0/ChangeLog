@@ -1,0 +1,46 @@
+CHANGES
+=======
+
+v0.0.1rc0
+---------
+
+* push package on pypi
+
+v0.0.0rc5
+---------
+
+* Wrapped settings models in class for custom documentation of str/dict type settings
+
+v0.0.0rc4
+---------
+
+* marked string as regex
+* Full test coverage, extracted SettingsModel import, custom types are not validated, using Type[T] instead of Type to match pydantic.parse\_obj\_as, created validator for account\_id, validate rate\_id as uuid, validating support email and phone number
+
+v0.0.0rc3
+---------
+
+* unicode escape in dump better custom\_type parameter
+
+v0.0.0rc2
+---------
+
+* string length constraints charset constraints for technical name of garage and gate added parse\_setting\_from\_obj
+
+v0.0.0rc1
+---------
+
+* moved payment\_deadline\_hours to enforcement
+
+v0.0.0rc0
+---------
+
+* added testcase for refs
+* coverage fix
+* removing pages stage because no documentation yet
+* settings models and parsing/serializing
+* committing before weekend [skip ci]
+* test something
+* npm version check
+* trying ci and pages and first part of implementation
+* Initial commit
