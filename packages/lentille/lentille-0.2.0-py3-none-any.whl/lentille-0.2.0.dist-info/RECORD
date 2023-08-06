@@ -1,0 +1,7 @@
+lentille/__init__.py,sha256=eRR3zqBwEptFAhIkb_P_G3ugoXnm8FxiovpNXk6nT9o,64
+lentille/base_embedder.py,sha256=E8rkN-nZ4wNwFuN1mB5ccrcP0_BmhZ10M2LJbf4Bf08,384
+lentille/embedders/vision/Resnet50Embedder.py,sha256=n3xDJ_XHGnSlr5SlSuL-zKYGrhi7VBiOe1cYlgHKon8,908
+lentille/utils/resnet50_preprocess.py,sha256=RWglQfaYnd14-JHEvtoE5lwK_F3u0U0n1JuQHxj9BaY,1707
+lentille-0.2.0.dist-info/METADATA,sha256=SLYPwudDX4zycJxqdiTzx9DNPbzUHeeNfJgj9Q-dGsk,938
+lentille-0.2.0.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+lentille-0.2.0.dist-info/RECORD,,
