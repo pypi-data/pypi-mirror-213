@@ -1,0 +1,12 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.cfg
+src/lib_dzne_analyze_seq_further/__init__.py
+src/lib_dzne_analyze_seq_further/regions.py
+src/lib_dzne_analyze_seq_further.egg-info/PKG-INFO
+src/lib_dzne_analyze_seq_further.egg-info/SOURCES.txt
+src/lib_dzne_analyze_seq_further.egg-info/dependency_links.txt
+src/lib_dzne_analyze_seq_further.egg-info/requires.txt
+src/lib_dzne_analyze_seq_further.egg-info/top_level.txt
