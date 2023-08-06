@@ -1,0 +1,49 @@
+Metadata-Version: 2.1
+Name: optim_esm_tools
+Version: 0.1.1
+Summary: Tools for OptimESM
+Home-page: https://github.com/JoranAngevaare/optim_esm_tools
+Author: Joran R. Angevaare
+License: UNKNOWN
+Description: # OptimESM
+        [![Coverage Status](https://coveralls.io/repos/github/JoranAngevaare/optim_esm_tools/badge.svg)](https://coveralls.io/github/JoranAngevaare/optim_esm_tools)
+        
+        
+        Getting started with OptimESM
+        
+        Selection of tools and tricks for [OptimESM](https://cordis.europa.eu/project/id/101081193) project.
+        
+        J.R. Angevaare (KNMI)
+        
+        
+        0.1.0  / 2023-06-02
+        ------------------
+        ## What's Changed
+        * Add first blobs by @JoranAngevaare in https://github.com/JoranAngevaare/optim_esm_tools/pull/1
+        * Debug synda files by @JoranAngevaare in https://github.com/JoranAngevaare/optim_esm_tools/pull/11
+        * rename time field by @JoranAngevaare in https://github.com/JoranAngevaare/optim_esm_tools/pull/12
+        * more tools by @JoranAngevaare in https://github.com/JoranAngevaare/optim_esm_tools/pull/13
+        * Fix setting kws in loading files by @JoranAngevaare in https://github.com/JoranAngevaare/optim_esm_tools/pull/14
+        * Tools and tests by @JoranAngevaare in https://github.com/JoranAngevaare/optim_esm_tools/pull/15
+        * Use mamba by @JoranAngevaare in https://github.com/JoranAngevaare/optim_esm_tools/pull/17
+        * Upgrade CI/CD by @JoranAngevaare in https://github.com/JoranAngevaare/optim_esm_tools/pull/19
+        * Flexible loading by @JoranAngevaare in https://github.com/JoranAngevaare/optim_esm_tools/pull/16
+        * Initialize testing by @JoranAngevaare in https://github.com/JoranAngevaare/optim_esm_tools/pull/20
+        * Add test for synda viewer by @JoranAngevaare in https://github.com/JoranAngevaare/optim_esm_tools/pull/28
+        * fix lat lon handling by @JoranAngevaare in https://github.com/JoranAngevaare/optim_esm_tools/pull/29
+        
+        **Full Changelog**: https://github.com/JoranAngevaare/optim_esm_tools/commits/v0.1.0
+        
+Platform: UNKNOWN
+Classifier: Intended Audience :: Science/Research
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Intended Audience :: Science/Research
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Topic :: Scientific/Engineering :: Physics
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
