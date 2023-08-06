@@ -1,0 +1,12 @@
+macrometa_source_mssql/__init__.py,sha256=kYI4_LN5ahbIF8QzeGQ_wrCDSaBjQdnrTb_X7Vpj8iU,37400
+macrometa_source_mssql/connection.py,sha256=9F0aOv5O8sdvxLbSU930Fs2RpJwJHe9pGY8cKi-Wirc,1476
+macrometa_source_mssql/sample_data.py,sha256=-yxxda7X6ZXRWgfyLHO7mrd06JZ-UM41Q0XCP68DyR0,2287
+macrometa_source_mssql/sync_strategies/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+macrometa_source_mssql/sync_strategies/common.py,sha256=mJsIT2xx_sAoe7XDhee5kMeQguBr1_n7TUW_TDmFA80,7927
+macrometa_source_mssql/sync_strategies/full_table.py,sha256=AIKHYHbZtK3fwIN190LHkOAEeryExsCi_J__BUgq4fU,2203
+macrometa_source_mssql/sync_strategies/log_based.py,sha256=ksxoXe7zeW6UfZ7zKEikpMmEfxw-XcHiCZQ1XzDkQ3E,16103
+macrometa_source_mssql-0.0.12.dist-info/entry_points.txt,sha256=MQeh6qVp9MJ5fIv9YkqFEPoufrAPpp_oqMK9SL7r0BI,70
+macrometa_source_mssql-0.0.12.dist-info/LICENSE,sha256=CMmn0X5B7NYBp2tOuzHP4NkoXJG8YicVLigQPF60EFc,11899
+macrometa_source_mssql-0.0.12.dist-info/WHEEL,sha256=bbU3AyvhQ312rVm7zzRQjs6axI1UYWC3nmFA2E6FFSI,88
+macrometa_source_mssql-0.0.12.dist-info/METADATA,sha256=tCp7PT7CG7c77HPW5TiTTqqkK6aUYv03kkkvLn5BCb4,917
+macrometa_source_mssql-0.0.12.dist-info/RECORD,,
