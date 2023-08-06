@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: Zevon
+Version: 0.5.0
+Summary: Zevon - turn a API Gateway / Lambda event to a Flask thing
+Home-page: https://github.com/cmrsol/zevon
+Author: Chuck Muckamuck (obviously a pseudonym)
+Author-email: Chuck.Muckamuck@gmail.com
+License-File: LICENSE
