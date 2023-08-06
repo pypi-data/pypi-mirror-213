@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: djangolazy
+Version: 0.4.0
+Summary: Script for initial django project setup
+Home-page: https://github.com/IshuSinghSE
+Download-URL: https://github.com/IshuSinghSE/djangolazy/archive/refs/tags/v.0.4.0.tar.gz
+Author:  Ishu Singh
+Author-email: ishu.111636@gmail.com
+License: MIT
+Keywords: django,setup,autosetup,setupscript
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
+# scripts
+
+Script for initial django project setup
