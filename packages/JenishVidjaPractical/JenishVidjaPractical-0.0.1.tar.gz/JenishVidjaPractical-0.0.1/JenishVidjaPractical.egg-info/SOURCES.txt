@@ -1,0 +1,10 @@
+CHANGELOG.txt
+LINCENSE.txt
+MANIFEST.in
+README.txt
+__init__.py
+setup.py
+JenishVidjaPractical.egg-info/PKG-INFO
+JenishVidjaPractical.egg-info/SOURCES.txt
+JenishVidjaPractical.egg-info/dependency_links.txt
+JenishVidjaPractical.egg-info/top_level.txt
