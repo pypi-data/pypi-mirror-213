@@ -1,0 +1,11 @@
+pandas
+keyring
+cryptography
+black
+isort
+pylint
+pre-commit
+jupyter
+backoff
+pydantic
+wintertoo>=0.3.6

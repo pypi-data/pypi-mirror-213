@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: winterapi
+Version: 0.1.0
+Author-email: Robert Stein <rdstein@caltech.edu>
+License: MIT
+Project-URL: Homepage, https://github.com/winter-telescope/winterapi
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Intended Audience :: Science/Research
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Scientific/Engineering :: Astronomy
+Classifier: Topic :: Scientific/Engineering :: Physics
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# winterapi
+API interactions for WINTER
+
+[![Coverage Status](https://coveralls.io/repos/github/winter-telescope/winterapi/badge.svg?branch=tests)](https://coveralls.io/github/winter-telescope/winterapi?branch=tests)
+[![CI](https://github.com/winter-telescope/winterapi/actions/workflows/continuous_integration.yml/badge.svg)](https://github.com/winter-telescope/winterapi/actions/workflows/continuous_integration.yml) 
+[![PyPI version](https://badge.fury.io/py/winterapi.svg)](https://badge.fury.io/py/winterapi)
