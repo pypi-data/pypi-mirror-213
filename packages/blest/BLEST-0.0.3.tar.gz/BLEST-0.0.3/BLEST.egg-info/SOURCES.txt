@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+BLEST.egg-info/PKG-INFO
+BLEST.egg-info/SOURCES.txt
+BLEST.egg-info/dependency_links.txt
+BLEST.egg-info/requires.txt
+BLEST.egg-info/top_level.txt
