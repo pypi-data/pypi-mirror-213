@@ -1,0 +1,194 @@
+Metadata-Version: 2.1
+Name: comdexpy
+Version: 0.3
+Summary: Python SDK for interacting with comdex node
+Author: Comdex
+Author-email: <dheeraj@comdex.one>
+Keywords: python,comdex,comdex sdk,comdexpy,pycomdex,comdex python sdk
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: asn1crypto (==1.5.1)
+Requires-Dist: base58 (==2.1.1)
+Requires-Dist: bech32 (==1.2.0)
+Requires-Dist: betterproto (==2.0.0b5)
+Requires-Dist: bip32 (==3.4)
+Requires-Dist: certifi (==2022.12.7)
+Requires-Dist: cffi (==1.15.1)
+Requires-Dist: charset-normalizer (==3.1.0)
+Requires-Dist: coincurve (==18.0.0)
+Requires-Dist: ecdsa (==0.18.0)
+Requires-Dist: ECPy (==1.2.5)
+Requires-Dist: future (==0.18.3)
+Requires-Dist: grpcio (==1.53.0)
+Requires-Dist: grpcio-tools (==1.53.0)
+Requires-Dist: grpclib (==0.4.3)
+Requires-Dist: h2 (==4.1.0)
+Requires-Dist: hidapi (==0.13.1)
+Requires-Dist: hpack (==4.0.0)
+Requires-Dist: hyperframe (==6.0.1)
+Requires-Dist: idna (==3.4)
+Requires-Dist: ledgerblue (==0.1.46)
+Requires-Dist: libusb1 (==3.0.0)
+Requires-Dist: mnemonic (==0.20)
+Requires-Dist: multidict (==6.0.4)
+Requires-Dist: ndeflib (==0.3.3)
+Requires-Dist: nfcpy (==1.0.4)
+Requires-Dist: Pillow (==9.5.0)
+Requires-Dist: protobuf (==4.22.3)
+Requires-Dist: pycparser (==2.21)
+Requires-Dist: pycryptodomex (==3.17)
+Requires-Dist: pyDes (==2.0.1)
+Requires-Dist: pyelftools (==0.29)
+Requires-Dist: pyserial (==3.5)
+Requires-Dist: python-dateutil (==2.8.2)
+Requires-Dist: python-u2flib-host (==3.0.3)
+Requires-Dist: requests (==2.28.2)
+Requires-Dist: six (==1.16.0)
+Requires-Dist: stringcase (==1.2.0)
+Requires-Dist: urllib3 (==1.26.15)
+Requires-Dist: websocket-client (==1.5.1)
+
+
+
+![](comdexpy/docs/images/imgcomdex.png)
+
+
+
+# comdexpy
+
+
+The comdexpy is a comprehensive Python library designed to provide developers with easy access to the Comdex blockchain and its ecosystem. 
+This library enables developers to interact with the blockchain, query data, and perform various operations within the Comdex ecosystem.
+
+
+
+
+## Installation
+
+
+```bash
+  pip3 install comdexpy
+```
+    
+
+## Usage
+
+### Creating a connection
+
+```python
+
+import asyncio
+from comdexpy.client import Client
+
+async def get_connection():
+    grpc_url = "comdex-grpc.lavenderfive.com"
+    return Client.from_endpoint(grpc_url, 443)
+
+async def main():
+    connection = await get_connection()
+    connection.close()
+
+if __name__ == "__main__":
+    asyncio.run(main())
+
+```
+
+### Querying on comdex node using connection
+
+```python
+
+import asyncio
+from comdexpy.client import Client
+from comdexpy.queries.comdex.liquidity import Query as LiquidityQueries
+
+async def get_connection():
+    grpc_url = "comdex-grpc.lavenderfive.com"
+    return Client.from_endpoint(grpc_url, 443)
+
+async def sample_query(channel):
+    liquidity = LiquidityQueries(channel)
+    params = await liquidity.get_generic_params(1)
+    print(params.to_dict())
+
+async def main():
+    connection = await get_connection()
+    await sample_query(connection.channel())
+    connection.close()
+
+if __name__ == "__main__":
+    asyncio.run(main())
+
+```
+
+### Sending transaction on comdex node
+
+```python
+import asyncio
+from comdexpy.client import Client
+from comdexpy.wallet import Wallet
+
+from comdexpy.messages.cosmos.bank import MsgSend
+from comdexpy.proto.cosmos.base.v1beta1 import Coin
+
+from comdexpy.send_tx import SignAndBroadcastMessage
+
+async def get_connection():
+    grpc_url = "comdex-grpc.lavenderfive.com"
+    return Client.from_endpoint(grpc_url, 443)
+
+async def sample_tx(connection):
+    wallet = Wallet.from_mnemonic("seeds here")
+    sender = wallet.get_address().to_acc_bech32()
+    msg_send = MsgSend(
+        from_address=sender,
+        to_address="comdex",
+        amount=[Coin(amount="1000000", denom="ucmdx")],
+    )
+    response = await SignAndBroadcastMessage.send_tx(connection, wallet, msg_send)
+    print(response)
+
+async def main():
+    connection = await get_connection()
+    await sample_tx(connection)
+    connection.close()
+
+
+if __name__ == "__main__":
+    asyncio.run(main())
+
+```
+
+### Complete Usage
+
+![](https://github-production-user-asset-6210df.s3.amazonaws.com/43311385/245070505-bd499173-2d64-4ab5-8b60-e5254affeec1.png)
+
+## Documentation
+
+You can read the documentation [here.](https://linktodocumentation)
+
+
+## Feedback
+
+If you have any feedback, please reach out to us at https://forum.comdex.one/
+
+
+## License
+
+This software is licensed under the GPL-3.0 license. See [LICENSE](comdexpy/docs/license) for full disclosure.
+
+
+
+[![GPLv3 License](https://img.shields.io/badge/License-GPL%20v3-yellow.svg)](https://opensource.org/licenses/)
+
+
+
+
+
+
+
