@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: openai-kernel
+Version: 0.0.3
+Summary: OpenAI jupyter kernel
+Home-page: https://github.com/OakCityLabs/openai_kernel
+Author: Oak City Labs
+Author-email: team@oakcity.io
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3
+Description-Content-Type: text/markdown
+
+A jupyter kernel that uses the OpenAI API to interface with OpenAI models. You can talk to chat GPT or generate images with DALL·E.
+
+Install:
+`pip install openai_kernel`
+
+Install kernel:
+`python -m openai_kernel install`
+
+To get started run `??` in a cell to see the help docs.
