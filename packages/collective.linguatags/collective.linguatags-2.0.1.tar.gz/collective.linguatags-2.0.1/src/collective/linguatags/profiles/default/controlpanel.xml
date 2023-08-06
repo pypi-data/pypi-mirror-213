@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<object
+    i18n:domain="plone"
+    meta_type="Plone Control Panel Tool"
+    name="portal_controlpanel"
+    xmlns:i18n="http://xml.zope.org/namespaces/i18n">
+  <configlet
+      action_id="LinguaTagsSettings"
+      appId="Plone"
+      category="plone-content"
+      condition_expr=""
+      i18n:attributes="title"
+      title="Multilingual Tags"
+      url_expr="string:${portal_url}/@@linguatags-controlpanel"
+      visible="True">
+    <permission>Manage portal</permission>
+  </configlet>
+</object>

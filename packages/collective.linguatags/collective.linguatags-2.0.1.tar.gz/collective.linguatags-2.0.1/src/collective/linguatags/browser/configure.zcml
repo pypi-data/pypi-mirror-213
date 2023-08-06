@@ -1,0 +1,26 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:browser="http://namespaces.zope.org/browser"
+    xmlns:plone="http://namespaces.plone.org/plone"
+    i18n_domain="collective.linguatags">
+
+  <browser:page
+      name="linguatags-controlpanel"
+      for="Products.CMFPlone.interfaces.IPloneSiteRoot"
+      class=".controlpanel.LinguaTagsControlPanel"
+      permission="cmf.ManagePortal"
+      />
+
+  <!-- Render the keywords -->
+  <browser:viewlet
+      name="plone.belowcontenttitle.keywords"
+      manager="plone.app.layout.viewlets.interfaces.IBelowContent"
+      view="plone.app.layout.globals.interfaces.IViewView"
+      class=".keywords.KeywordsViewlet"
+      template="keywords.pt"
+      layer="collective.linguatags.interfaces.ICollectiveLinguatagsLayer"
+      permission="zope2.View"
+      />
+
+
+</configure>

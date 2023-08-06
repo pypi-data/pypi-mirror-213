@@ -1,0 +1,48 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+      xmlns:tal="http://xml.zope.org/namespaces/tal"
+      xmlns:metal="http://xml.zope.org/namespaces/metal"
+      xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+      lang="en"
+      metal:use-macro="context/prefs_main_template/macros/master">
+
+<body>
+
+<metal:main metal:fill-slot="prefs_configlet_main" i18n:domain="collective.linguatags">
+
+    <h1 class="documentFirstHeading"
+        i18n:translate="linguatags_controlpanel_header">Multilingual Tags</h1>
+
+    <div class="documentDescription"
+       i18n:translate="portal_actions_controlpanel_description">
+      This is the multilingual tags configuration section, you can manage the
+      translations of the tags used in the portal.
+    </div>
+
+    <div id="content-core">
+      <form method="post" action="${context/absolute_url}/@@linguatags-controlpanel">
+        <input type="hidden" name="submitted" value="1" />
+        <table class="listing">
+            <thead>
+               <tr>
+                <td i18n:translate="">Language</td>
+                <td tal:repeat="language view/available_languages"
+                    tal:content="language">
+                    language code
+                </td>
+              </tr>
+            </thead>
+            <tbody>
+              <tr tal:repeat="tag python:view.tags()">
+                <td>${tag}</td>
+                <td tal:repeat="language view/available_languages">
+                    <input type="text" value="${python:view.translation(tag, language)}" name="${tag}.${language}:record:ignore_empty"/>
+                </td>
+              </tr>
+            </tbody>
+        </table>
+        <input type="submit" value="Save" i18n:translate="" />
+      </form>
+    </div>
+</metal:main>
+</body>
+</html>

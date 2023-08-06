@@ -1,0 +1,5 @@
+====================
+collective.linguatags
+====================
+
+User documentation

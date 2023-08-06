@@ -1,0 +1,7 @@
+graft docs
+graft src/collective
+include *.rst
+include *.sh
+global-exclude *.pyc
+exclude style.sh
+exclude *.txt
