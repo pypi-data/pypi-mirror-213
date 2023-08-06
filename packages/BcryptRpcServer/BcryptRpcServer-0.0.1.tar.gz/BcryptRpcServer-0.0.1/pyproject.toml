@@ -1,0 +1,18 @@
+[project]
+name = "BcryptRpcServer"
+version = "0.0.1"
+authors = [
+  { name="cyal1"},
+]
+description = "The rpc server api of https://github.com/cyal1/BcryptMontoya"
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/cyal1/BcryptRpcServer/tree/main/python"
+"Bug Tracker" = "https://github.com/cyal1/BcryptRpcServer/issues"
