@@ -1,0 +1,7 @@
+facenet_pytorch
+fastai
+fastai_datasets
+matplotlib
+
+[dev]
+nbdev
