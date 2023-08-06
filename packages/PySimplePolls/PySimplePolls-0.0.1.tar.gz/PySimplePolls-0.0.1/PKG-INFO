@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: PySimplePolls
+Version: 0.0.1
+Summary: Seamless integration with SimplePolls API for easy poll management
+Home-page: https://github.com/mvishok/PySimplePolls
+Author: Vishok M
+Author-email: hello@vishok.tech
+Project-URL: Bug Tracker, https://github.com/mvishok/PySimplePolls/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+##PySimplePolls
+
+The `pysimplepolls` package is a Python library for interacting with the SimplePolls API, providing convenient methods for creating, retrieving, updating, and deleting polls programmatically.
