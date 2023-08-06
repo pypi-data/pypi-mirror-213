@@ -1,0 +1,2 @@
+[console_scripts]
+my-client = garmin_ace.convert:main
