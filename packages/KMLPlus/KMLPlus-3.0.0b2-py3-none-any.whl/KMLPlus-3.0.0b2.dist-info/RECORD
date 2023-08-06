@@ -1,0 +1,15 @@
+kmlplus/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+kmlplus/geo.py,sha256=z_xbYqJvUFBnjjuN1je1JyFJndN_j6TimAHjjvnMuAI,23511
+kmlplus/interface.py,sha256=F8Kt7pTudmcY9wHN4KPvnD1yioohVtpXNWkl4ajxll4,2967
+kmlplus/kml.py,sha256=xWTHJgJWmkVpivmsnrurzMGnNQMYmguQ4sZnr4H6rO0,10515
+kmlplus/shapes.py,sha256=W7u2R1Z8odHWrfgVzEIPR2XvB7zHD1DaEfFuhmFojRw,20811
+kmlplus/util.py,sha256=M_oH55cHJjVWWoe7MynspRmuMNeYJW1CEgd9enBr6Zg,3833
+test/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+test/test_geo.py,sha256=-zL9RV7MQEXcXnMh67YwhK18ppuqA0adu-GUSoWxt5w,10681
+test/test_shapes.py,sha256=DmK7_0xNELPusNB7nJBzK-1RwLtjGD8CIPRlPSBqjxg,5370
+test/test_util.py,sha256=s77WVFvK_uYGSWnOJwnnOlI3aogb2t3wU32A3SPDzyA,3871
+KMLPlus-3.0.0b2.dist-info/LICENSE,sha256=eFVpRrTvn6uhVHS9WBc2HyJKwrXwSgMPoV16Gka-SaU,1071
+KMLPlus-3.0.0b2.dist-info/METADATA,sha256=RYZqI-6n3HWx8oDY9AgcHDtVJLTBEtjzp3Kmktx6qtg,11208
+KMLPlus-3.0.0b2.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+KMLPlus-3.0.0b2.dist-info/top_level.txt,sha256=AihjRIVoHtFB6MV0ES9r9JJXLIYBXtlJy2hs9ZLpaMA,13
+KMLPlus-3.0.0b2.dist-info/RECORD,,
