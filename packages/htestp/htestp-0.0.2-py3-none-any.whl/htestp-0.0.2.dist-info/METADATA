@@ -1,0 +1,43 @@
+Metadata-Version: 2.1
+Name: htestp
+Version: 0.0.2
+Project-URL: Documentation, https://github.com/unknown/htestp#readme
+Project-URL: Issues, https://github.com/unknown/htestp/issues
+Project-URL: Source, https://github.com/unknown/htestp
+Author-email: NioTheFirst <bzhangprogramming@gmail.com>
+License-Expression: MIT
+License-File: LICENSE.txt
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.7
+Requires-Dist: solc-select
+Description-Content-Type: text/markdown
+
+# htestp
+
+[![PyPI - Version](https://img.shields.io/pypi/v/htestp.svg)](https://pypi.org/project/htestp)
+[![PyPI - Python Version](https://img.shields.io/pypi/pyversions/htestp.svg)](https://pypi.org/project/htestp)
+
+-----
+
+**Table of Contents**
+
+- [Installation](#installation)
+- [License](#license)
+
+## Installation
+
+```console
+pip install htestp
+```
+
+## License
+
+`htestp` is distributed under the terms of the [MIT](https://spdx.org/licenses/MIT.html) license.
