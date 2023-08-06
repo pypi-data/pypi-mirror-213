@@ -1,0 +1,63 @@
+Metadata-Version: 2.1
+Name: PgsFile
+Version: 0.0.8
+Summary: To make file operations and wordlist coding easier for literary students
+Home-page: 
+Author: Pan Guisheng
+Author-email: 895284504@qq.com
+License: Educational free
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: Free For Educational Use
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: chardet
+
+Purpose: This module is to facilitate Python beginners, especially instructors and students of foreign languages and literature, for the convenience of easily operating txt, xlsx and json files as well as making word list. 
+
+Function 1: Useful for getting data from the files directly and saving processing results in the files. Either task can be done with a single line of code.
+
+Function 2: The functions of "FilePath" and "FileName" imported from the py file can effectively help you get all the absolute file paths in any folder (containing all the files of any sub-folder in the folder) of your PC disk and obtain the file names. This will be also realized within one line of code.
+
+Function 3: You can make a word list of a certain file or a batch of files, showing their word frequency sorted in reverse order, easily with the function of "word_list" and "batch_word_list" in PgsFile.
+
+Function 4: The Pgs-Corpora was designed in this library, which includes a monolingual corpus of native and translational Chinese as well as native and non-native English, a bi-directional parallel corpus of Chinese and English texts covering financial, legal, political, academic topics and sports news. Besides, the 8774 English idioms, stopwords of 28 languages and the termbank of Chinese thought and culture are also available in here.
+
+Table 1: The directory and size of Pgs-Corpora
+├── Idioms (1, 171.78 KB)
+├── Monolingual (2197, 63.65 MB)
+│   ├── Chinese (456, 15.27 MB)
+│   │   ├── People's Daily 20130605 (396, 1.38 MB)
+│   │   │   ├── Raw (132, 261.73 KB)
+│   │   │   ├── Seg_only (132, 471.47 KB)
+│   │   │   └── Tagged (132, 675.30 KB)
+│   │   └── Translational Fictions (60, 13.89 MB)
+│   └── English (1741, 48.38 MB)
+│       ├── Native (65, 44.14 MB)
+│       │   ├── A Short Collection of British Fiction (27, 33.90 MB)
+│       │   └── Preschoolers- and Teenagers-oriented Texts in English (36, 10.24 MB)
+│       ├── Non-native (1675, 3.63 MB)
+│       │   └── Shanghai Daily (1675, 3.63 MB)
+│       │       └── Business_2019 (1675, 3.63 MB)
+│       │           ├── 2019-01-01 (1, 3.35 KB)
+│       │           ├── 2019-01-02 (1, 3.65 KB)
+│       │           ├── 2019-01-03 (7, 10.90 KB)
+│       │           ├── 2019-01-04 (5, 9.63 KB)
+│       │           └── 2019-01-07 (4, 9.50 KB)
+│       │           └── ... (and 245 more directories)
+│       └── Translational (1, 622.57 KB)
+├── Parallel (371, 24.67 MB)
+│   ├── HK Financial and Legal EC Parallel Corpora (5, 19.17 MB)
+│   ├── New Year Address_CE_2006-2021 (15, 147.49 KB)
+│   ├── Sports News_CE_2010 (20, 66.42 KB)
+│   ├── TED_EC_2017-2020 (330, 5.24 MB)
+│   └── Xi's Speech_CE_2021 (1, 53.01 KB)
+├── Stopwords (28, 88.09 KB)
+└── Terminology (1, 2.20 MB)
+
+
+Author: Pan Guisheng, a PhD student at the Graduate Institute of Interpretation and Translation of Shanghai International Studies University
+E-mail: 895284504@qq.com
+
