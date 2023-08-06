@@ -1,0 +1,115 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+# minimal required information
+
+[project]
+name = "wezel"
+version = "0.1.2"
+dependencies = [
+  "PySide2",
+  "dbdicom",
+  "matplotlib", # for plotting curves and creating colormaps
+  "numpy",
+  "pandas",
+  "openpyxl", # required for pandas export to excel
+  "importlib-resources>=1.1.0", # for icon inventory
+
+  # Using only dilate and erode functions - replace by skimage
+  # "opencv-python<=4.5.3.56", # previous hack to fix a bug in building executable
+  # Consider removing limit on open-cvversion number 
+  # -> creates installation issues (wheel no longer up to date)
+  "opencv-python",
+
+  # restricting to the latest stable release for now due to a bug
+  # introduced in 0.20.0 that causes executables to crash. The bug is known
+  # and a fix will presumably be included in upcoming releases
+  # in which case this restriction can be removed.
+  # https://github.com/scikit-image/scikit-image/issues/6784
+  # https://github.com/scientific-python/lazy_loader/pull/39
+  # Note on pyton 3.11 scikit image must be installed as
+  # pip install --pre scikit-image<=0.19.0 
+  # until a new version is released (0.21.0)
+  "scikit-image<=0.19.0",
+  
+  # This has become part of wezel - package includes api's to create executables
+  # package manager module needs extending though
+  'pyinstaller', 
+
+  "scipy", # currently only used in surface display and the shift function in mask_filter (can be replaced)
+]
+
+# optional information
+
+description = "Prototyping medical imaging applications"
+readme = "README.md"
+authors = [
+  { name = "Steven Sourbron", email = "s.sourbron@sheffield.ac.uk" },
+  { name = "Steve Shillitoe", email = "s.shillitoe@sheffield.ac.uk" },
+  { name = "Joao Almeida e Sousa", email = "j.g.sousa@sheffield.ac.uk" }, 
+  ]
+license = { file = "LICENSE" }
+classifiers = [
+  # How mature is this project? Common values are
+  #   3 - Alpha
+  #   4 - Beta
+  #   5 - Production/Stable
+  'Development Status :: 3 - Alpha',
+
+  # Indicate who your project is intended for
+  'Intended Audience :: Developers',
+  'Intended Audience :: Science/Research',
+  'Topic :: Scientific/Engineering',
+  'Environment :: Console',
+  'Operating System :: OS Independent',
+
+  'License :: OSI Approved :: Apache Software License',
+  "Programming Language :: Python",
+  "Programming Language :: Python :: 3"
+]
+keywords = ['python', "medical imaging", "Graphical User Interface"]
+
+# Excluding 3.11 for now as some packages don't have wheels yet
+# Example scikit-image (coming in the next version)
+requires-python = ">=3.7, <3.11" 
+
+[project.urls]
+"Homepage" = "https://github.com/QIB-Sheffield/wezel"
+
+
+[tool.setuptools]
+# ...
+# By default, include-package-data is true in pyproject.toml, so you do
+# NOT have to specify this line.
+include-package-data = true
+
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[project.optional-dependencies]
+
+docs = [
+    "sphinx",
+    "sphinx_rtd_theme",
+    "myst-parser", 
+    "sphinx-copybutton",
+    "sphinx-remove-toctrees",
+]
+plugins = [
+  "dipy",
+  "SimpleITK",
+  "itk-elastix",
+  "scikit-learn",
+  "pyvista", 
+  "pyvistaqt", 
+]
+
+
+
+
+
+
+
+
