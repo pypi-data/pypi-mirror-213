@@ -1,0 +1,14 @@
+LICENSE.txt
+README.md
+setup.py
+pyB12SPS/__init__.py
+pyB12SPS/pyB12SPS.py
+pyB12SPS/pyB12SPSGUI.py
+pyB12SPS/pyB12SPSGUI.ui
+pyB12SPS/version.py
+pyB12SPS.egg-info/PKG-INFO
+pyB12SPS.egg-info/SOURCES.txt
+pyB12SPS.egg-info/dependency_links.txt
+pyB12SPS.egg-info/entry_points.txt
+pyB12SPS.egg-info/requires.txt
+pyB12SPS.egg-info/top_level.txt
