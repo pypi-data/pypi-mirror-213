@@ -1,0 +1,12 @@
+presentpy/__init__.py,sha256=VrXpHDu3erkzwl_WXrqINBm9xWkcyUy53IQOj042dOs,22
+presentpy/__main__.py,sha256=PI_5tuA45X7FOLzPcWjSyqLjl5nLxxpG6shGk0D41eA,644
+presentpy/code_slide.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+presentpy/code_slide_source.py,sha256=GwU05ihRx7o29yFFpCtRQ0W4C3S1-5gJ07qBrjBt0NQ,1855
+presentpy/notebook_processor.py,sha256=SfMBTYYuXqWoJ40wCLnlzu-OUL0pI_sOOnB_sDcf2Ug,564
+presentpy/slide_templates/Template-Light.pptx,sha256=L628hJLzHJgxTyzTfMTzljd71xLe8ig35ap8VISw1Kk,131544
+presentpy/writers/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+presentpy/writers/pptx_writer.py,sha256=KNKcJJCDaTaz-DVVSJaQegwYge5SYvoqvzHSxdjuMI0,3673
+presentpy-0.3.0.dist-info/METADATA,sha256=hP0hQVeMAhIrGu4NiGAdJqxUAj4GD_EJt1ey90jux8I,776
+presentpy-0.3.0.dist-info/WHEEL,sha256=Zb28QaM1gQi8f4VCBhsUklF61CTlNYfs9YAZn-TOGFk,88
+presentpy-0.3.0.dist-info/entry_points.txt,sha256=phuzv6icM9nv4ouPr_uhOQcXTtd3-TFnJQuCiikh5Ow,62
+presentpy-0.3.0.dist-info/RECORD,,
