@@ -1,0 +1,10 @@
+README.md
+setup.cfg
+setup.py
+egcst/__init__.py
+egcst/core.py
+egcst.egg-info/PKG-INFO
+egcst.egg-info/SOURCES.txt
+egcst.egg-info/dependency_links.txt
+egcst.egg-info/requires.txt
+egcst.egg-info/top_level.txt
