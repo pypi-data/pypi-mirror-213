@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: codegenpt
+Version: 0.1.0
+Summary: Autogenerate files and folders using ChatGPT API
+License: MIT
+Author: Diego Quinteiro
+Author-email: diegoquinteiro@gmail.com
+Requires-Python: >=3.10
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: click (>=8.1.3,<9.0.0)
+Requires-Dist: openai (>=0.27.8,<0.28.0)
+Requires-Dist: pytest (>=7.3.2,<8.0.0)
+Description-Content-Type: text/markdown
+
+# codegenpt
+Autogenerate files and folders using ChatGPT API
+
