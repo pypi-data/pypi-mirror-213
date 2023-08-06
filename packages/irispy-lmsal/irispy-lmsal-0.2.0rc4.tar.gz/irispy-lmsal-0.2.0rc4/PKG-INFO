@@ -1,0 +1,47 @@
+Metadata-Version: 2.1
+Name: irispy-lmsal
+Version: 0.2.0rc4
+Summary: Provides tools to read and analyze data from the IRIS solar-observing satellite.
+Author: Nabil Freij
+Author-email: freij@baeri.org
+Project-URL: changelog, https://irispy-lmsal.readthedocs.io/en/stable/changelog
+Project-URL: documentation, https://irispy-lmsal.readthedocs.io/en/stable/
+Project-URL: homepage, https://iris.lmsal.com/
+Project-URL: issue_tracker, https://github.com/LM-SAL/irispy-lmsal/issues
+Project-URL: repository, https://github.com/LM-SAL/irispy-lmsal
+Keywords: solar physics,solar,science,NASA,iris,spectra,lmsal
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Topic :: Scientific/Engineering :: Physics
+Requires-Python: >=3.9
+Description-Content-Type: text/x-rst
+Provides-Extra: all
+Provides-Extra: tests
+Provides-Extra: docs
+Provides-Extra: dev
+License-File: LICENSE.rst
+
+****************
+``irispy-lmsal``
+****************
+
+.. image:: http://iris.lmsal.com/images/iris_full.jpg
+  :width: 400
+  :alt: Image of the IRIS spacecraft
+
+``irispy-lmsal`` is a library that provides the tools to read in and analyze data from Interface Region Imaging Spectrograph (IRIS).
+
+IRIS is a NASA-funded Small Explorer which uses a high-frame-rate ultraviolet imaging spectrometer to make observations of the Sun.
+For more information see the mission/instrument paper which is available `online for free <https://www.lmsal.com/iris_science/doc?cmd=dcur&proj_num=IS0196&file_type=pdf>`__.
+
+`The data is publicly available <https://iris.lmsal.com/data.html>`__.
+
+`Documentation is hosted on RTD <https://irispy-lmsal.readthedocs.io/en/stable/>`__
