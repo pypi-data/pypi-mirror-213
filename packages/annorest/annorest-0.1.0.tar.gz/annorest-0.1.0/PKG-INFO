@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: annorest
+Version: 0.1.0
+Summary: A simple Python package
+Home-page: https://github.com/neverleave0916/annorest
+Author: K. H. Chiang
+Author-email: neverleave0916@email.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+conda create --name dataprocess python "mamba>=0.22.1"
+conda activate dataprocess
+mamba install ipywidgets
+pip install opencc
+mamba install pymongo
+pip install -e .
+pip install twine
+
+python setup.py sdist bdist_wheel
+
+pip install wheel
+
+
