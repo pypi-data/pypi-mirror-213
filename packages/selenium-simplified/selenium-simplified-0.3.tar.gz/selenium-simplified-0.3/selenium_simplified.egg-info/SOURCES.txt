@@ -1,0 +1,10 @@
+README.md
+pyproject.toml
+setup.py
+selenium_simplified.egg-info/PKG-INFO
+selenium_simplified.egg-info/SOURCES.txt
+selenium_simplified.egg-info/dependency_links.txt
+selenium_simplified.egg-info/requires.txt
+selenium_simplified.egg-info/top_level.txt
+simplified/UserActivities.py
+simplified/__init__.py
