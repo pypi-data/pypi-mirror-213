@@ -1,0 +1,10 @@
+statsd/__init__.py,sha256=HyW1LyfVJwVnEewT9vbh8NfgB-4pIS5xbkNmwtKdMqQ,365
+statsd/client.py,sha256=AB9GjktlR8j2nnMbCLLuSjcY69Mg960nCUQjanM3TVc,19332
+statsd/formats.py,sha256=y20lzL1V-JtUU8aoJz5L5mo5RNB_BNahlUZ1QwsUcE0,5883
+statsd/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+statsd/version.py,sha256=baAcEjLSYFIeNZF51tOMmA_zAMhN8HvKael-UU-Ruec,22
+statsd_python-0.6.1.dist-info/LICENSE,sha256=pgFckKupVSJnXQAg-NSrBwqhfeWkmrI41opWmql2pxs,1071
+statsd_python-0.6.1.dist-info/METADATA,sha256=iCz5GIxoQG9w4mcRLii_oZ8txiev_HzyjyXVvHJgE3Q,2990
+statsd_python-0.6.1.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+statsd_python-0.6.1.dist-info/top_level.txt,sha256=IQE1P6N4N8m2iJv6igS3tHrrwGpGvpylkpbIafNNkiU,7
+statsd_python-0.6.1.dist-info/RECORD,,
