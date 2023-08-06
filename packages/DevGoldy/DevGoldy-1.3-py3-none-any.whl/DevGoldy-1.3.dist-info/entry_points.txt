@@ -1,0 +1,3 @@
+[console_scripts]
+dev_goldy = DevGoldy.cli:dev_goldy
+devgoldy = DevGoldy.cli:dev_goldy
