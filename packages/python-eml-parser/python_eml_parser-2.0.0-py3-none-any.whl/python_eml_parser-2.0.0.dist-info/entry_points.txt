@@ -1,0 +1,2 @@
+[console_scripts]
+eml-parser = eml_parser.__main__:main
