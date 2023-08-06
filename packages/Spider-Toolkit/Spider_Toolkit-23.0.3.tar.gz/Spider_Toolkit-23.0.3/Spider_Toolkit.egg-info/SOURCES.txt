@@ -1,0 +1,17 @@
+LICENSE.txt
+README.md
+setup.cfg
+setup.py
+Spider_Toolkit/__init__.py
+Spider_Toolkit/spidertools.py
+Spider_Toolkit.egg-info/PKG-INFO
+Spider_Toolkit.egg-info/SOURCES.txt
+Spider_Toolkit.egg-info/dependency_links.txt
+Spider_Toolkit.egg-info/requires.txt
+Spider_Toolkit.egg-info/top_level.txt
+Spider_Toolkit/engine/Parameter_filtering_engine.py
+Spider_Toolkit/engine/__init__.py
+Spider_Toolkit/tools/Download_byte.py
+Spider_Toolkit/tools/Open_js.py
+Spider_Toolkit/tools/Save.py
+Spider_Toolkit/tools/__init__.py
