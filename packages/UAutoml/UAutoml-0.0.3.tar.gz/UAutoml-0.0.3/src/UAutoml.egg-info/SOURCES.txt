@@ -1,0 +1,9 @@
+LICENSE.txt
+README.md
+setup.py
+src/UAutoml.py
+src/UAutoml.egg-info/PKG-INFO
+src/UAutoml.egg-info/SOURCES.txt
+src/UAutoml.egg-info/dependency_links.txt
+src/UAutoml.egg-info/requires.txt
+src/UAutoml.egg-info/top_level.txt
