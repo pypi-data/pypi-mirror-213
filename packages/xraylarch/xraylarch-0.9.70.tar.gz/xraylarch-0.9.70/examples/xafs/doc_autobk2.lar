@@ -1,0 +1,12 @@
+## examples/xafs/doc_autobk2.lar
+
+fname = '../xafsdata/scorodite_as_xafs.001'
+title = 'FeAsSO4  (scorodite)'
+dat = read_ascii(fname)
+dat.mu = ln(dat.i0/dat.i1)
+
+autobk(dat.energy, dat.mu, rbkg=1.0, group=dat)
+plot_bkg(dat, emin=-150)
+plot_chik(dat, kweight=2, win=2)
+
+## end of examples/xafs/doc_autobk2.lar

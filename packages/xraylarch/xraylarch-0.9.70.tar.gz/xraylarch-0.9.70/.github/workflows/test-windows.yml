@@ -1,0 +1,42 @@
+name: Test with Windows, Miniconda
+
+on: [push]
+
+jobs:
+  build:
+    runs-on: windows-latest
+    strategy:
+      max-parallel: 5
+      fail-fast: false
+      matrix:
+        python-version: ['3.9', '3.10']
+    steps:
+    - uses: actions/checkout@v2
+    - name: Set up Python from Miniconda
+      uses: conda-incubator/setup-miniconda@v2
+      with:
+          auto-update-conda: true
+          python-version: ${{ matrix.python-version }}
+    - name: Install conda dependencies
+      run: |
+        printenv
+        conda config --set always_yes yes --set changeps1 no
+        conda config --add channels conda-forge
+        conda install python=${{ matrix.python-version }} numpy=>1.21 scipy=>1.9 matplotlib=>3.3 pillow>=7.3
+        conda install scikit-learn pandas h5py==3.6
+        conda install imageio sqlalchemy psutil pyyaml
+        conda install psycopg2-binary numdifftools emcee cython
+        conda install pyparsing pytest pytest-cov coverage
+        conda install pip setuptools pandas sqlalchemy psutil pyyaml pymatgen tomopy wxpython importlib_metadata pycifrw
+        conda update --all
+        conda info -a
+        conda list
+    - name: Install xraylarch and other dependencies with pip
+      run: |
+        printenv
+        pip install lmfit peakutils pyepics pyshortcuts termcolor sphinx dill xraydb wxmplot wxutils fabio silx imageio charset-normalizer
+        pip install .
+    - name: Run test suite
+      run: |
+        cd tests
+        python -m pytest

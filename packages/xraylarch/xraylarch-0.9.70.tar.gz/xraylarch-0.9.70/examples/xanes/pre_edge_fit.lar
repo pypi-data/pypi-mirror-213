@@ -1,0 +1,42 @@
+from lmfit.models import GaussianModel, StepModel
+
+fname = '../xafsdata/fe2o3_rt1.xmu'
+dat = read_ascii(fname, labels='energy xmu i0')
+
+pre_edge(dat.energy, dat.xmu, group=dat)
+
+i1, i2 = index_of(dat.energy, 7105), index_of(dat.energy, 7125)
+dat.e = dat.energy[i1:i2+1]
+dat.y = dat.norm[i1:i2+1]
+
+model = (GaussianModel(prefix='p1_') + GaussianModel(prefix='p2_') +
+         GaussianModel(prefix='p3_') + StepModel(prefix='erf_', form='erf') +
+         ConstantModel())
+
+# create Parameters
+
+params = model.make_params(p1_center=7113.2, p1_amplitude=0.2, p1_sigma=1.0,
+                           p2_center=7116.0, p2_amplitude=0.2, p2_sigma=1.0,
+                           p3_center=7123.5, p3_amplitude=0.2, p3_sigma=1.0,
+                           erf_amplitude=0.5, erf_center=7123.5, erf_sigma=0.5,
+                           c=0.5)
+
+init = model.eval(params, x=dat.e)
+plot(dat.e, dat.y, new=True)
+plot(dat.e, init)
+
+out = model.fit(dat.y, params, x=dat.e)
+comps = out.eval_components()
+
+plot(dat.e, dat.y,  label='data', show_legend=True, new=True)
+plot(dat.e, out.best_fit,  label='fit')
+plot(dat.e, (out.best_fit-dat.y)*10, label='resid(10x)')
+
+plot(dat.e, dat.y, label='data', show_legend=True, win=2, new=True)
+plot(dat.e, comps['p1_'], label='gauss1', win=2)
+plot(dat.e, comps['p2_'], label='gauss2', win=2)
+plot(dat.e, comps['p3_'], label='gauss3', win=2)
+plot(dat.e, comps['erf_'], label='erf +offset', win=2)
+
+print( out.fit_report())
+#

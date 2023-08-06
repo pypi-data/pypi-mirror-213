@@ -1,0 +1,38 @@
+#import matplotlib.pyplot as plt
+from mpl_toolkits.mplot3d import Axes3D
+from matplotlib import cm
+
+data = read_ascii('../xafsdata/mn_cpmnco3.dat', labels='energy, mu')
+
+autobk(data, rbkg=0.9, e0=6540)
+
+cauchy_wavelet(data, kweight=2, rmax_out=6)
+
+nr, nk =  data.wcauchy_re.shape
+xk = arange(nk)*0.05
+xr = arange(nr)*pi*20/2048
+
+print( nk, nr, xk.shape, xr.shape)
+
+_ka, _ra = meshgrid(xk, xr)
+
+print(data.wcauchy_mag.shape, data.wcauchy_mag.dtype)
+
+imshow(data.wcauchy_mag) # , x=xk, y=xr, win=2)
+
+plot = get_display(1)
+plot.panel.fig.clear()
+plot.panel.cursor_modes['zoom']['motion'] = None
+
+plot.panel.cursor_modes['zoom']['leftup'] = None
+plot.panel.cursor_modes['zoom']['leftdown'] = None
+plot.panel.axes = plot.panel.fig.add_subplot(111, projection='3d')
+
+surf = plot.panel.axes.plot_surface(_ka, _ra, data.wcauchy_mag,
+                                   cmap=cm.inferno_r,
+                                   rstride=2, cstride=2,
+                                   linewidth=0,
+                                   antialiased=True) # , shade=False)
+#
+
+

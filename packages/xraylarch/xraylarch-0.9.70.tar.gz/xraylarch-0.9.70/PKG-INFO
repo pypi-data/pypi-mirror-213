@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: xraylarch
+Version: 0.9.70
+Summary: Synchrotron X-ray data analysis in python
+Home-page: http://xraypy.github.io/xraylarch/
+Download-URL: http://xraypy.github.io/xraylarch/
+Author: Matthew Newville and the X-rayLarch Development Team
+Author-email: newville@cars.uchicago.edu
+License: BSD
+Platform: Windows
+Platform: Linux
+Platform: Mac OS X
+Classifier: Intended Audience :: Science/Research
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Topic :: Scientific/Engineering
+Requires-Python: >=3.6
+License-File: LICENSE
