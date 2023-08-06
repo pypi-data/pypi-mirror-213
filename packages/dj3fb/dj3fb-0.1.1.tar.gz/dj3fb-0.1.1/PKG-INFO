@@ -1,0 +1,56 @@
+Metadata-Version: 2.1
+Name: dj3fb
+Version: 0.1.1
+Summary: It is just a thin wrapper of factory_boy.
+Home-page: https://gitee.com/three-kinds/dj3fb
+Author: three-kinds
+Author-email: 3179158552@qq.com
+License: Apache 2.0
+Project-URL: Documentation, https://gitee.com/three-kinds/dj3fb
+Project-URL: Source, https://gitee.com/three-kinds/dj3fb
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Framework :: Django
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# dj3fb
+
+It's just a thin wrapper of factory_boy.
+
+[History.](HISTORY.md)
+
+## Install
+
+```shell script
+pip install dj3fb
+
+```
+
+## Examples
+
+```python
+# In settings.py
+INSTALLED_APPS = [
+    '...',
+    'dj3fb',
+    '...'
+]
+
+```
+
+```shell
+python manage.py generate_factories
+
+```
