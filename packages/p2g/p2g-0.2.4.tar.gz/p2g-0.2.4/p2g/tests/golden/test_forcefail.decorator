@@ -1,0 +1,9 @@
+@p2g.must_be(
+"( PROBE.x = 9                   )",
+"  #5061= 9.",
+'(  "quote escape" )',
+)
+
+def test_forcefail():
+    PROBE.x = 9
+    p2g.com(' "quote escape"')
