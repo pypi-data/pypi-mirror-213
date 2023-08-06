@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "unittest-gpt"
+version = "0.1.1"
+description = "Auto generate unit test using PyTest and Gpt"
+authors = ["Akshay Lingamaneni"]
+license = "MIT License"
+readme = "README.md"
+packages = [{include = "src"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+autopep8 = "^2.0.2"
+python-dotenv = "^1.0.0"
+langchain = "^0.0.199"
+openai = "^0.27.8"
+pytest = "^7.3.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
