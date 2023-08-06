@@ -1,0 +1,9 @@
+dill>=0.3.5.1
+python-forge==18.6.0
+uvicorn
+fastapi
+pyrepresent
+sockets-communication
+
+[dev]
+pdoc3
