@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: openai-dbd
+Version: 0.0.8
+Summary: Using openai for db design
+Author: Vivek Panchal
+Author-email: <vivekdp0910@gmail.com>
+Keywords: python,django,openai,db design
+Description-Content-Type: text/markdown
+Requires-Dist: django
+Requires-Dist: openpyxl
+Requires-Dist: requests
+
