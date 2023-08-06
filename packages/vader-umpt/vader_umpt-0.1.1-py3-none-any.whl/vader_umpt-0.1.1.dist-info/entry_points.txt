@@ -1,0 +1,3 @@
+[console_scripts]
+vader-umpt=vader_umpt.__init__:main
+
