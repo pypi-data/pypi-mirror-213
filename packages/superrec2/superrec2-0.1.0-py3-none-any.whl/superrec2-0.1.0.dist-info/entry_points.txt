@@ -1,0 +1,2 @@
+[console_scripts]
+superrec2 = superrec2.cli.__main__:run
