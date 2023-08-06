@@ -1,0 +1,15 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+src/SydneyGPT/SydneyGPT.py
+src/SydneyGPT/SydneyGPTUtils.py
+src/SydneyGPT/__init__.py
+src/SydneyGPT/conversation_style.py
+src/SydneyGPT/main.py
+src/SydneyGPT.egg-info/PKG-INFO
+src/SydneyGPT.egg-info/SOURCES.txt
+src/SydneyGPT.egg-info/dependency_links.txt
+src/SydneyGPT.egg-info/entry_points.txt
+src/SydneyGPT.egg-info/requires.txt
+src/SydneyGPT.egg-info/top_level.txt
