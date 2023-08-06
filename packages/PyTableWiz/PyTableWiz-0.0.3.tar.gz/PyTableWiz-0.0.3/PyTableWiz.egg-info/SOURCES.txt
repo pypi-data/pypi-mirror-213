@@ -1,0 +1,9 @@
+LICENSE.txt
+README.md
+setup.py
+PyTableWiz/PythonTableWizard.py
+PyTableWiz/__init__.py
+PyTableWiz.egg-info/PKG-INFO
+PyTableWiz.egg-info/SOURCES.txt
+PyTableWiz.egg-info/dependency_links.txt
+PyTableWiz.egg-info/top_level.txt

@@ -1,0 +1,1 @@
+from .PythonTableWizard import *
