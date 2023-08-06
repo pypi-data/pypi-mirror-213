@@ -1,0 +1,17 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/tdfpy/__init__.py
+src/tdfpy/constants.py
+src/tdfpy/libtimsdata.so
+src/tdfpy/pandas_tdf.py
+src/tdfpy/timsdata.dll
+src/tdfpy/timsdata.py
+src/tdfpy.egg-info/PKG-INFO
+src/tdfpy.egg-info/SOURCES.txt
+src/tdfpy.egg-info/dependency_links.txt
+src/tdfpy.egg-info/requires.txt
+src/tdfpy.egg-info/top_level.txt
+tests/test_pandas_tdf.py
+tests/test_timsdata.py
