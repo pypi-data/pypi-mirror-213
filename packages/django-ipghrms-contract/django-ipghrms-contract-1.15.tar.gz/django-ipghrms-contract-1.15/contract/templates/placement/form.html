@@ -1,0 +1,49 @@
+{% extends "main/layout.html" %}
+{% load crispy_forms_tags %}
+{% block content %}
+<div class="breadcrumb-holder">
+	<div class="container-fluid">
+		<ul class="breadcrumb">
+			<li class="breadcrumb-item"><a href="{% url 'emp-no-div' %}"> LISTA FUNSIONARIO LAIHA DIVIZAUN </a></li>
+			<li class="breadcrumb-item active">{{ legend|upper }}</li>
+		</ul>
+	</div>
+</div>
+<div class="container-fluid"><br/>
+	
+	<div class="row">
+		<div class="col-sm-12">
+			<div class="card shadow-lg border-info rounded">
+				<div class="card-header border-primary">
+					<center>
+						<h2>{{ legend|upper }}</h2>
+					</center>
+				</div>
+				<div class="card-body">
+					<table class="table table-sm table-bordered">
+						<tr>
+							<th>Employee Name</th><th>Place & Date of birth</th><th>Sex</th><th>Country</th>
+						</tr>
+						<tr>
+							<td>{{ emp }}</td><td>{{ emp.pob }}, {{ emp.dob }}</td><td>{{ emp.sex }}</td><td>{{ emp.country }}</td>
+						</tr>
+					</table>
+
+					<div class="card shadow-lg">
+						<div class="card-header border-danger">
+							<center>
+								<h4>FORMULARIO ASSIGN EMPLOYEE</h4>
+							</center>
+						</div>
+						<div class="card-body">
+							{% crispy form %}
+						</div>
+					</div>
+				</div> <!--end card-body-->
+			</div> <!--end card-->
+		</div> <!--end col-->
+	</div> <!--end row-->
+</div>
+{% endblock %}
+{% block scripts %}
+{% endblock %}

@@ -1,0 +1,40 @@
+{% extends "main/layout.html" %}
+{% load crispy_forms_tags %}
+{% block content %}
+<div class="breadcrumb-holder">
+	<div class="container-fluid">
+		<ul class="breadcrumb">
+            <li class="breadcrumb-item"><a href="{% url 'man-dash' %}">MANAGER DASH</a></li>
+        {% if page == "dep" %}
+            <li class="breadcrumb-item"><a href="{% url 'man-dep-list' %}">CHEFE DEPARTAMENTO</a></li>
+        {% elif page == "unit" %}
+            <li class="breadcrumb-item"><a href="{% url 'man-unit-list' %}">COORDENADOR</a></li>
+        {% else %}
+            <li class="breadcrumb-item"><a href="{% url 'man-de-list' %}">DIRECTOR EXECUTIVU</a></li>
+        {% endif %}
+		</ul>
+	</div>
+</div>
+<div class="container-fluid"><br/>
+    <div class="row">
+        <div class="col-sm-12">
+            <div class="card shadow-lg border-info rounded">
+                <div class="card-header bg-steel">{{ legend|upper }}</div>
+                <div class="card-body">
+                    {% crispy form %}
+                </div> <!--end card-body-->
+            </div> <!--end card-->
+        </div> <!--end col-->
+    </div> <!--end row-->
+</div>
+{% endblock %}
+{% block scripts %}
+<style>
+	#id_employee { width: 100%; }
+</style>
+<script>
+	$(document).ready(function() {
+    $('#id_employee').select2();
+});
+</script>
+{% endblock %}

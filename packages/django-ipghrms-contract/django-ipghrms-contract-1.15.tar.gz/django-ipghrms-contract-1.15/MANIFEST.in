@@ -1,0 +1,7 @@
+include LICENSE
+include README.rst
+recursive-include contract/templates *
+recursive-include contract/migrations *
+recursive-include contract/views *
+recursive-include contract/api *
+recursive-include contract/forms *

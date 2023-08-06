@@ -1,0 +1,60 @@
+{% extends "main/layout.html" %}
+{% block content %}
+<uo class="breadcrumb">
+	<li class="breadcrumb-item active">{{ legend|upper }}</li>
+</ol>
+<div class="row">
+    <div class="col-sm-12">
+        <div class="card shadow-lg pt-1 border-primary rounded">
+            <div class="card-header bg-steel">{{ legend|upper }}
+            </div>
+            <div class="card-body">
+                <a class="btn btn-sm btn-info" href="#">Historia <i class="fa fa-file-text-o"></i></a>
+                <a class="btn btn-sm btn-danger" href="#" target="_blank">Print <i class="fa fa-print"></i></a>
+                Total: {{ total }}, Mane: {{ total_m }}, Feto: {{ total_f }}
+                <hr/>
+                <table class="table table-sm table-striped" id="example" width="100%" cellspacing="0">
+                    <thead>
+                        <tr>
+                            <th>Nu.</th>
+                            <th>Naran</th>
+                            <th>Sexu</th>
+                            <th>Pojisaun</th>
+                            <th>Seksaun</th>
+                            <th>#</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    {% for obj in objects %}
+                        <tr>
+                            <td>{{ forloop.counter }}</td>
+                            <td><a href="#">{{ obj.employee }}</a></td>
+                            <td>{% if obj.employee.sex == "Male" %} Mane {% else %} Feto{% endif %}</td>
+                            <td>{{ obj.position }}</td>
+                            <td>{{ obj.department }}</td>
+                            <td>
+                            {% if obj.is_lock == False %}
+                                <a class="btn btn-sm btn-warning" href="#" title="Xavi"><i class="fa fa-lock"></i></a>
+                                <a class="btn btn-sm btn-info" href="#">Altera <i class="fa fa-edit"></i></a>
+                                <a class="btn btn-sm btn-danger" href="#">Hapaga <i class="fa fa-close"></i></a>
+                            {% else %}
+                                <a class="btn btn-sm btn-warning" href="#" title="Loke"><i class="fa fa-unlock"></i></a>
+                                <a class="btn btn-sm btn-primary" href="#">Termina <i class="fa fa-ban"></i></a>
+                            {% endif %}
+                            </td>
+                        </tr>
+                    {% endfor %}
+                    </tbody>
+                </table>
+            </div> <!--end card-body-->
+        </div> <!--end card-->
+    </div> <!--end col-->
+</div> <!--end row-->
+{% endblock %}
+{% block scripts %}
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$('#example').DataTable();
+		} );
+	</script>
+{% endblock %}

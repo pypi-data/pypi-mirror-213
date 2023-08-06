@@ -1,0 +1,35 @@
+{% extends "main/layout.html" %}
+{% load crispy_forms_tags %}
+{% block content %}
+<ul class="breadcrumb">
+    <li class="breadcrumb-item"><a href="{% url 'cont-list' %}">CONTRACT LIST</a></li>
+    <li class="breadcrumb-item"><a href="{% url 'cont-detail' emp.hashed %}">DETAILS</a></li>
+    <li class="breadcrumb-item active">{{ legend|upper }}</li>
+</ul>
+<div class="row">
+    <div class="col-sm-12">
+        <div class="card shadow-lg border-info rounded">
+            <div class="card-header bg-steel">{{ legend|upper }}</div>
+            <div class="card-body">
+                <h5 align="center">LAST CONTRACT</h5>
+                <table class="table table-sm">
+                    <tr>
+                        <th>Type</th>
+                        <th>Status</th>
+                        <th>Date</th>
+                    </tr>
+                    <tr>
+                        <td>{{ cont.contract_type }}</td>
+                        <td>{{ cont.status }}</td>
+                        <td>{{ cont.start_date }}</td>
+                    </tr>
+                </table>
+                <hr/>
+                {% crispy form %}
+            </div> <!--end card-body-->
+        </div> <!--end card-->
+    </div> <!--end col-->
+</div> <!--end row-->
+{% endblock %}
+{% block scripts %}
+{% endblock %}
