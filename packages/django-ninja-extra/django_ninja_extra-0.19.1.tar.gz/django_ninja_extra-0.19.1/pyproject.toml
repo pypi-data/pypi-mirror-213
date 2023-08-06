@@ -1,0 +1,83 @@
+[build-system]
+requires = ["flit_core >=2,<4"]
+build-backend = "flit_core.buildapi"
+
+[tool.flit.metadata]
+module = "ninja_extra"
+dist-name = "django-ninja-extra"
+author = "Ezeudoh Tochukwu"
+author-email = "tochukwu.ezeudoh@gmail.com"
+home-page = "https://github.com/eadwinCode/django-ninja-extra"
+classifiers = [
+    "Intended Audience :: Information Technology",
+    "Intended Audience :: System Administrators",
+    "Operating System :: OS Independent",
+    "Topic :: Internet",
+    "Topic :: Software Development :: Libraries :: Application Frameworks",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Topic :: Software Development :: Libraries",
+    "Topic :: Software Development",
+    "Typing :: Typed",
+    "Environment :: Web Environment",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.6",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3 :: Only",
+    "Framework :: Django",
+    "Framework :: Django :: 2.1",
+    "Framework :: Django :: 2.2",
+    "Framework :: Django :: 3.0",
+    "Framework :: Django :: 3.1",
+    "Framework :: Django :: 3.2",
+    "Framework :: Django :: 4.0",
+    "Framework :: Django :: 4.1",
+    "Framework :: AsyncIO",
+    "Topic :: Internet :: WWW/HTTP :: HTTP Servers",
+    "Topic :: Internet :: WWW/HTTP",
+]
+
+requires = [
+    "Django >= 2.2",
+    "django-ninja == 0.22.2",
+    "injector >= 0.19.0",
+    "asgiref",
+    "contextlib2"
+]
+description-file = "README.md"
+requires-python = ">=3.6"
+
+
+[tool.flit.metadata.urls]
+Documentation = "https://eadwincode.github.io/django-ninja-extra/"
+
+[tool.flit.metadata.requires-extra]
+test = [
+    "pytest",
+    "pytest-cov",
+    "pytest-django",
+    "pytest-asyncio",
+    "mypy ==0.971",
+    "flake8 >=3.8.3,<4.0.0",
+    "black ==22.12.0",
+    "isort >=5.0.6,<6.0.0",
+    "injector >= 0.19.0",
+    "django-stubs",
+]
+doc = [
+    "mkdocs >=1.1.2,<2.0.0",
+    "mkdocs-material >=7.1.9,<8.0.0",
+    "mdx-include >=1.4.1,<2.0.0",
+    "mkdocs-markdownextradata-plugin >=0.1.7,<0.3.0",
+    "markdown-include",
+    "mkdocstrings"
+]
+
+dev = [
+    "pre-commit"
+]
