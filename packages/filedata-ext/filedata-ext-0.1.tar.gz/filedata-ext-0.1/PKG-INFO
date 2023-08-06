@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: filedata-ext
+Version: 0.1
+Summary: Extensions of filedata for guniflask
+Home-page: UNKNOWN
+Author: jadbin
+Author-email: jadbin.com@hotmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.6
+
+filedata-ext
+============
+
+Extensions of filedata for guniflask.
+
+
