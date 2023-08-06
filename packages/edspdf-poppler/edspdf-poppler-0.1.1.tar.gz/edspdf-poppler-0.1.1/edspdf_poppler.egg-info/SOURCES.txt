@@ -1,0 +1,14 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+edspdf_poppler/__init__.py
+edspdf_poppler/bindings.cpp
+edspdf_poppler.egg-info/PKG-INFO
+edspdf_poppler.egg-info/SOURCES.txt
+edspdf_poppler.egg-info/dependency_links.txt
+edspdf_poppler.egg-info/entry_points.txt
+edspdf_poppler.egg-info/requires.txt
+edspdf_poppler.egg-info/top_level.txt
+tests/test_poppler_extractor.py
+tests/test_styled_aggregation.py
