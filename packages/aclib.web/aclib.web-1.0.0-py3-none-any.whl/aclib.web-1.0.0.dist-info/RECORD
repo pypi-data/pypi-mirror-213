@@ -1,0 +1,10 @@
+aclib/web/__init__.py,sha256=J8Mi01-qJo2XltJrSFPU_qEXkmgGWqcFeYRekVl2vIA,192
+aclib/web/__API__/const.py,sha256=WSvWYd_2gG-NxoSWFhqAsIXXbXTtsGPAgM6wSQ9F2Hk,448
+aclib/web/__API__/gitee.py,sha256=p48R-46z9RTpNuurroF4vppWwXUd40LS-NjkYRJzBdI,2162
+aclib/web/__API__/request.py,sha256=9CysHjC3KbvcUjxQcRgHRDRaW9Uf-WgQQePo9GbbzeM,1606
+aclib/web/__API__/webtime.py,sha256=aOVq1M6764yreiweObjGl_gXxDoVn7Ye16dfjtA9wtQ,779
+aclib.web-1.0.0.dist-info/LICENSE,sha256=bXHfyJIO-YrYduFdOrf22pRCLqWSptELWVkyDnOO0sI,1087
+aclib.web-1.0.0.dist-info/METADATA,sha256=z9oM3lRqatGFRQGCqh14wXKKvlQkXOExU0ptvo2J-lQ,1193
+aclib.web-1.0.0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+aclib.web-1.0.0.dist-info/top_level.txt,sha256=4p3w-82zX4lxXZrjR9Ws2bqRHCpcTLqoEUJaYmT3uyo,6
+aclib.web-1.0.0.dist-info/RECORD,,
