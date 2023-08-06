@@ -1,0 +1,2 @@
+[console_scripts]
+mykit123foo = mykit.__main__:main
