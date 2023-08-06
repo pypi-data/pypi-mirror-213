@@ -1,0 +1,4 @@
+pdk
+reveda
+revedaEditor
+revinit
