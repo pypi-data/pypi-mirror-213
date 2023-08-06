@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: torchcs
+Version: 1.1.9
+Summary: Compressed Sensing in PyTorch.
+Home-page: https://ai.iridescent.ink/torchcs/
+Author: Zhi Liu
+Author-email: zhiliu.mind@gmail.com
+License: MIT
+Download-URL: https://github.com/metai/torchcs/
+Keywords: PyTorch,Machine Learning,Signal Processing,Compressed Sensing
+Platform: UNKNOWN
+License-File: LICENSE
+
+UNKNOWN
+

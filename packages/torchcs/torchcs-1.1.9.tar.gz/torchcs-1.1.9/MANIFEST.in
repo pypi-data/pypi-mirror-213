@@ -1,0 +1,22 @@
+include *.in
+include *.ini
+include *.rst
+include *.txt
+global-include *.c
+global-include *.py
+global-include *.pyi
+
+include LICENSE
+
+
+global-exclude __pycache__ *.py[cod]
+
+exclude torchcs/signal/pulses.py
+exclude torchcs/dictionary/dcts.py
+exclude torchcs/dictionary/dfts.py
+exclude torchcs/sensing/binary.py
+exclude torchcs/sensing/bernoullis.py
+exclude torchcs/sensing/gaussians.py
+exclude torchcs/recovery/ista_fista.py
+exclude torchcs/recovery/matching_pursuit.py
+exclude torchcs/recovery/dlmlcs.py
