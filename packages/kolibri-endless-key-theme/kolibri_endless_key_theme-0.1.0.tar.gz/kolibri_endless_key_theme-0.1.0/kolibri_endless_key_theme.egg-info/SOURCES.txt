@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+README.rst
+setup.py
+kolibri_endless_key_theme/__init__.py
+kolibri_endless_key_theme/kolibri_plugin.py
+kolibri_endless_key_theme.egg-info/PKG-INFO
+kolibri_endless_key_theme.egg-info/SOURCES.txt
+kolibri_endless_key_theme.egg-info/dependency_links.txt
+kolibri_endless_key_theme.egg-info/entry_points.txt
+kolibri_endless_key_theme.egg-info/not-zip-safe
+kolibri_endless_key_theme.egg-info/top_level.txt
+kolibri_endless_key_theme/static/android-chrome-192x192.png
+kolibri_endless_key_theme/static/android-chrome-256x256.png
+kolibri_endless_key_theme/static/favicon.ico

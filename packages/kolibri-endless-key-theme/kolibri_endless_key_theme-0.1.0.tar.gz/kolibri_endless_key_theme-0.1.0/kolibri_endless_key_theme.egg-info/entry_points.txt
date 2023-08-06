@@ -1,0 +1,2 @@
+[kolibri.plugins]
+kolibri_endless_key_theme = kolibri_endless_key_theme

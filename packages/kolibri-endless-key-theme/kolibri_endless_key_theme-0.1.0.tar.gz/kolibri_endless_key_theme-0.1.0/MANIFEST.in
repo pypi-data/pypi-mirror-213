@@ -1,0 +1,12 @@
+# Copyright 2023 Endless OS Foundation, LLC
+# SPDX-License-Identifier: MIT
+include LICENSE
+include README.rst
+include requirements.txt
+recursive-exclude kolibri_endless_key_theme/* *pyc
+recursive-include kolibri_endless_key_theme/static *.*
+recursive-include kolibri_endless_key_theme/templates *.*
+
+recursive-include kolibri_endless_key_theme/build *.json
+recursive-exclude kolibri_endless_key_theme/assets *
+
