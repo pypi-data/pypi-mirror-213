@@ -1,0 +1,11 @@
+LICENSE
+README.md
+VERSION
+requirements.txt
+setup.py
+texta_lexicon_matcher/lexicon_matcher.py
+texta_lexicon_matcher.egg-info/PKG-INFO
+texta_lexicon_matcher.egg-info/SOURCES.txt
+texta_lexicon_matcher.egg-info/dependency_links.txt
+texta_lexicon_matcher.egg-info/requires.txt
+texta_lexicon_matcher.egg-info/top_level.txt

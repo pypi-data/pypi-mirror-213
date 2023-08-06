@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: texta-lexicon-matcher
+Version: 2.0.0
+Summary: texta-lexicon-matcher
+Home-page: https://git.texta.ee/texta/texta-lexicon-matcher-python
+Author: TEXTA
+Author-email: info@texta.ee
+License: GPLv3
+Description: # Texta Lexicon Matcher
+        
+        For matching and extracting entities from texts based on given regex patterns.
+        
+        
+        ## Installation
+        
+        `pip install texta-lexicon-matcher`
+        
+        ### Testing
+        
+        `python -m pytest -v tests`
+        
+        ### Documentation
+        
+        Documentation is available [here](https://git.texta.ee/texta/texta-lexicon-matcher-python/-/wikis/Documentation).
+        
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
