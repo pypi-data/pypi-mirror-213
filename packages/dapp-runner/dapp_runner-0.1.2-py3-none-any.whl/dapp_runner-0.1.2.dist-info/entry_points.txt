@@ -1,0 +1,3 @@
+[console_scripts]
+dapp-runner=dapp_runner.__main__:_cli
+
