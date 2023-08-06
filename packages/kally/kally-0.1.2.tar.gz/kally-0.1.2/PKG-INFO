@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: kally
+Version: 0.1.2
+Summary: This is a clustering algorithm created based on the philosophy of competition for alliances, against the backdrop of the events of struggle for allies between warring countries. Especially the Russian-Ukrainian war.
+Home-page: https://github.com/elangbijak4/k-ally.1.0/blob/main/k-ally.1.0
+Author: Aslan Alwi and Munirah
+Author-email: elangbijak4@email.com
+License: MIT
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
+Kally Project
+===============
+This is an alternative algorithm test project for clustering besides kmean and others. This project is funded by the Muhammadiyah University of Ponorogo, Indonesia. This algorithm is based on the philosophy of competence looking for allies.
+Complete research results on this algorithm can be seen at https://github.com/elangbijak4/k-ally.1.0
+
+Installing
+============
+
+.. code-block:: bash
+
+    pip install kally
+
+Usage
+=====
+
+.. code-block:: bash
+
+    >>> import kally
+    >>> result=kally(data,columns,k=3,min_index_data=0,iteration=10,treshold=0.05)

@@ -1,0 +1,8 @@
+LICENSE.txt
+README.md
+setup.py
+src/kally.egg-info/PKG-INFO
+src/kally.egg-info/SOURCES.txt
+src/kally.egg-info/dependency_links.txt
+src/kally.egg-info/requires.txt
+src/kally.egg-info/top_level.txt
