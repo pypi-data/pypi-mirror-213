@@ -1,0 +1,12 @@
+aclib/images/__init__.py,sha256=Z6hhmNwxn2ikg6tHUvYK5ETUmY--aSB2OszU6xjt7TA,169
+aclib/images/__API__/color.py,sha256=HmPrYecKNKhPGET62WDvg7NW-CVBu-0dVyaOXUTNmSE,3253
+aclib/images/__API__/dotset.py,sha256=R117m5ASFlZlcm-b5aFr2aZsE23ADkbvcjlB3_TEoZ0,5558
+aclib/images/__API__/dotsetlib.py,sha256=y3XhGUx-p4Wxnbn-jjVIngvGjF5IUAS2kYBpW6SZIAQ,3791
+aclib/images/__API__/dsetsimmat.py,sha256=tICYRRisA_iD-vSA-DXwe496l5s2Xhc6LvH6IgolmfU,4525
+aclib/images/__API__/image.py,sha256=Jw6YP4uPvsDcV0XuI_8MV7fvpZgLsQJQLRSYNn4g8rg,20443
+aclib/images/__API__/target.py,sha256=s9aeWRvEEarKMhVGFO7zyExbfQW77qGw2CSIzkHZD_U,3856
+aclib.images-1.0.0.dist-info/LICENSE,sha256=bXHfyJIO-YrYduFdOrf22pRCLqWSptELWVkyDnOO0sI,1087
+aclib.images-1.0.0.dist-info/METADATA,sha256=-5uzEnuzF6azkie3qE5cPkWDzTCU3v0IlLLtfybzgn0,1224
+aclib.images-1.0.0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+aclib.images-1.0.0.dist-info/top_level.txt,sha256=4p3w-82zX4lxXZrjR9Ws2bqRHCpcTLqoEUJaYmT3uyo,6
+aclib.images-1.0.0.dist-info/RECORD,,
