@@ -1,0 +1,138 @@
+name: CI
+
+on:
+  push:
+    branches:
+      - main
+    tags:
+      - "*"
+  pull_request:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  test:
+    runs-on: ${{ matrix.os }}
+    strategy:
+      matrix:
+        include:
+          - os: windows-latest
+            rust: stable
+          - os: macos-latest
+            rust: stable
+            args: --exclude windows-redirector
+          - os: ubuntu-latest
+            rust: stable
+            args: --exclude windows-redirector
+          - os: windows-latest
+            rust: 1.65.0  # MSRV
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/cache@v3
+        with:
+          path: |
+            ~/.cargo/bin/
+            ~/.cargo/registry/index/
+            ~/.cargo/registry/cache/
+            ~/.cargo/git/db/
+            target/
+          key: ${{ runner.os }}-cargo-${{ hashFiles('**/Cargo.lock') }}
+      - name: Set up Rust toolchain
+        run: rustup toolchain install ${{ matrix.rust }} --profile minimal
+      - uses: actions/setup-python@v4
+        with:
+          python-version-file: .github/python-version.txt
+
+      - if: runner.os == 'Windows'
+        # workaround for https://github.com/rust-lang/cargo/issues/9096
+        run: cargo build --package windows-redirector
+
+      - name: Run "cargo check"
+        # the action-rs/cargo action adds inline annotations for "cargo check" output
+        uses: actions-rs/cargo@9e120dd99b0fbad1c065f686657e914e76bd7b72
+        with:
+          toolchain: ${{ matrix.rust }}
+          command: check
+          args: --workspace --verbose ${{ matrix.args }}
+      - name: Run "cargo test"
+        # the action-rs/cargo action adds inline annotations for "cargo test" output
+        uses: actions-rs/cargo@9e120dd99b0fbad1c065f686657e914e76bd7b72
+        with:
+          toolchain: ${{ matrix.rust }}
+          command: test
+          args: --workspace --verbose ${{ matrix.args }}
+
+  build:
+    strategy:
+      matrix:
+        include:
+          - os: windows-latest
+          - os: ubuntu-latest
+            args: --compatibility manylinux2014 --zig --sdist
+          - os: ubuntu-latest
+            target: aarch64-unknown-linux-gnu
+            args: --compatibility manylinux2014 --zig --target aarch64-unknown-linux-gnu
+          - os: macos-latest
+          - os: macos-latest
+            target: aarch64-apple-darwin
+            args: --target universal2-apple-darwin
+    runs-on: ${{ matrix.os }}
+    name: build-wheel (${{ matrix.os }}, ${{ matrix.target || 'x64' }})
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/cache@v3
+        with:
+          path: |
+            ~/.cargo/bin/
+            ~/.cargo/registry/index/
+            ~/.cargo/registry/cache/
+            ~/.cargo/git/db/
+            target/
+          key: ${{ runner.os }}-cargo-${{ hashFiles('**/Cargo.lock') }}
+      - run: rustup toolchain install stable --profile minimal
+      - run: rustup default stable
+      - if: matrix.target
+        run: rustup target add ${{ matrix.target }}
+      - run: rustup show
+      - uses: actions/setup-python@v4
+        with:
+          python-version-file: .github/python-version.txt
+
+      - name: Install maturin[zig] from PyPI
+        uses: install-pinned/maturin-with-zig@59341946682d2f69df7150f6941f53e026e344fd
+
+      - if: runner.os == 'Windows'
+        # workaround for https://github.com/rust-lang/cargo/issues/9096
+        run: cargo build --release --package windows-redirector
+
+      - run: maturin build --release ${{ matrix.args }}
+        working-directory: ./ffi
+      - uses: actions/upload-artifact@v3
+        with:
+          name: wheels
+          path: target/wheels
+
+  deploy:
+    uses: mhils/workflows/.github/workflows/python-deploy.yml@main
+    needs: [test, build]
+    if: github.event_name == 'push' && startsWith(github.ref, 'refs/tags')
+    with:
+      artifact: wheels
+      # repository: testpypi
+      # environment: deploy-testpypi
+    secrets:
+      password: ${{ secrets.PYPI_TOKEN }}
+
+  check:
+    if: always()
+    needs:
+    - test
+    - build
+    uses: mhils/workflows/.github/workflows/alls-green.yml@main
+    with:
+      jobs: ${{ toJSON(needs) }}

@@ -1,0 +1,7 @@
+/.idea/
+/dist/
+/out/
+/target/
+/venv/
+/docs/
+__pycache__/
