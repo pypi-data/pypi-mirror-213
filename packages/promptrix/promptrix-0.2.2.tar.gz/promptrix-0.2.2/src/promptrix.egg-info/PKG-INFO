@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: promptrix
+Version: 0.2.2
+Summary: Promptrix. A prompt layout manager for LLMs
+Author-email: Steven Ickman <author@example.com>, Bruce DAmbrosio <bruce.dambrosio@gmail.com>
+Project-URL: Homepage, https://github.com/Stevenic/promptrix-py
+Project-URL: Bug Tracker, https://github.com/Stevenic/promptrix-py/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# promptrix-py
+Promptrix is a prompt layout engine for Large Language Models.
