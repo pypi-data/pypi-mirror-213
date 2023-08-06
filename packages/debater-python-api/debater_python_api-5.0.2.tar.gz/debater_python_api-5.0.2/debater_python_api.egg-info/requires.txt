@@ -1,0 +1,9 @@
+requests
+prettytable
+scikit-learn
+matplotlib
+numpy
+pandas
+spacy
+PyHamcrest
+python-docx
