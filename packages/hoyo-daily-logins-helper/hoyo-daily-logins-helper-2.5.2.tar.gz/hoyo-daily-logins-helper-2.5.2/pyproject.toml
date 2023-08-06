@@ -1,0 +1,80 @@
+[build-system]
+requires = ["setuptools", "setuptools_scm"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "hoyo-daily-logins-helper"
+authors = [
+    { name = "Christopher Kaster", email = "me@atomicptr.de" },
+]
+description = "Get hoyo daily login rewards automatically!"
+readme = "README.md"
+requires-python = ">=3.11"
+keywords = ["genshin", "genshin-impact", "starrail", "honkai-starrail", "game"]
+classifiers = [
+    "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
+]
+dependencies = [
+    "requests",
+    "comboparse",
+    "scheduler",
+    "pytz",
+]
+dynamic = ["version"]
+
+[project.scripts]
+hoyo-daily-logins-helper = "hoyo_daily_logins_helper.main:main"
+
+[tool.setuptools]
+packages = { find = { exclude = ["tests*"] } }
+
+[tool.setuptools_scm]
+write_to = "hoyo_daily_logins_helper/_version.py"
+
+[tool.ruff]
+select = [ # TODO: C90, ANN, PLR
+    "ARG",
+    "B",
+    "BLE",
+    "C4",
+    "COM",
+    "DTZ",
+    "E",
+    "EM",
+    "ERA",
+    "F",
+    "G",
+    "I",
+    "ICN",
+    "INP",
+    "ISC",
+    "N",
+    "PIE",
+    "PLC",
+    "PLE",
+    "PLW",
+    "PT",
+    "PTH",
+    "PYI",
+    "Q",
+    "Q",
+    "RET",
+    "RSE",
+    "RUF",
+    "S",
+    "SIM",
+    "SLF",
+    "T20",
+    "TCH",
+    "TID",
+    "UP",
+    "W",
+    "YTT",
+]
+ignore = ["G004", "S311"]
+
+[tool.ruff.flake8-quotes]
+docstring-quotes = "double"
+
+[tool.ruff.per-file-ignores]
+"__init__.py" = []
