@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: conversion-units
+Version: 0.0.1
+Summary: unified package contening collection of method to convert values from one unit to another. It can be a Distance, a Time, a Temperature, a Mass . . .etc
+Home-page: https://github.com/Brice-KENGNI-ZANGUIM/conversion-units
+Author: Brice KENGNI ZANGUIM
+Author-email: kenzabri2@yahoo.com
+License: MIT License
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# conversion-units
+unified package contening collection of method to **convert values from one unit to another.** It can be a Distance, a Time, a Temperature, a Mass . . .etc
+
+## 1. Install
+
+. . .
+pip install conversion_units
+. . .
+
+## 2. Availables dimensions
+<ul>
+    <li> Mass   </li>
+    <li> Distance   </li>
+    <li> Time   </li>
+    <li> Temperature   </li>
+</ul>
+
