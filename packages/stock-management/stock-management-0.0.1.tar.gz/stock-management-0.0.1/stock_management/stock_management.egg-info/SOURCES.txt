@@ -1,0 +1,7 @@
+LICENSE
+setup.py
+stock_management/stock_management.egg-info/PKG-INFO
+stock_management/stock_management.egg-info/SOURCES.txt
+stock_management/stock_management.egg-info/dependency_links.txt
+stock_management/stock_management.egg-info/top_level.txt
+test/test_version.py
