@@ -1,0 +1,170 @@
+LICENSE
+MANIFEST.in
+pyproject.toml
+requirements.txt
+setup.py
+agixt/Agent.py
+agixt/Chain.py
+agixt/Embedding.py
+agixt/Extensions.py
+agixt/Interactions.py
+agixt/Memories.py
+agixt/Prompts.py
+agixt/__init__.py
+agixt/app.py
+agixt/example.ipynb
+agixt/version
+agixt.egg-info/PKG-INFO
+agixt.egg-info/SOURCES.txt
+agixt.egg-info/dependency_links.txt
+agixt.egg-info/requires.txt
+agixt.egg-info/top_level.txt
+agixt/WORKSPACE/example.txt
+agixt/agents/gpt4free/config.json
+agixt/chains/Smart Chat.json
+agixt/chains/Smart Instruct.json
+agixt/chains/Task.json
+agixt/chains/Test_Commands.json
+agixt/chains/Write a Poem.json
+agixt/extensions/agixt_agent.py
+agixt/extensions/briantts.py
+agixt/extensions/dalle.py
+agixt/extensions/discord.py
+agixt/extensions/elevenlabs.py
+agixt/extensions/file_system.py
+agixt/extensions/github.py
+agixt/extensions/google.py
+agixt/extensions/gtts.py
+agixt/extensions/huggingface.py
+agixt/extensions/macostts.py
+agixt/extensions/microsoft_365.py
+agixt/extensions/searxng.py
+agixt/extensions/sendgrid_email.py
+agixt/extensions/times.py
+agixt/extensions/twitter.py
+agixt/extensions/web_playwright.py
+agixt/prompts/Chat.txt
+agixt/prompts/Check-Instruction.txt
+agixt/prompts/Create New Command.txt
+agixt/prompts/Custom Input.txt
+agixt/prompts/Execution.txt
+agixt/prompts/Get Task List.txt
+agixt/prompts/Instruction.txt
+agixt/prompts/JSONFormatter.txt
+agixt/prompts/Pick a Poem Subject.txt
+agixt/prompts/Pick-a-Link.txt
+agixt/prompts/Prioritize.txt
+agixt/prompts/Pseudo Code.txt
+agixt/prompts/Score Response.txt
+agixt/prompts/SmartChat-CleanResponse.txt
+agixt/prompts/SmartChat-Researcher.txt
+agixt/prompts/SmartChat-Resolver.txt
+agixt/prompts/SmartChat-StepByStep.txt
+agixt/prompts/SmartInstruct-CleanResponse.txt
+agixt/prompts/SmartInstruct-Execution.txt
+agixt/prompts/SmartInstruct-Researcher.txt
+agixt/prompts/SmartInstruct-Resolver.txt
+agixt/prompts/SmartInstruct-StepByStep.txt
+agixt/prompts/SmartTask-CleanResponse.txt
+agixt/prompts/SmartTask-Execution.txt
+agixt/prompts/SmartTask-StepByStep.txt
+agixt/prompts/Task Execution.txt
+agixt/prompts/Tell Me How.txt
+agixt/prompts/Title a Poem.txt
+agixt/prompts/Validation.txt
+agixt/prompts/ValidationFailed.txt
+agixt/prompts/WebSearch.txt
+agixt/prompts/Write a Haiku.txt
+agixt/prompts/Write a Poem.txt
+agixt/prompts/instruct.txt
+agixt/prompts/gpt-3.5-turbo/instruct.txt
+agixt/prompts/gpt-4/instruct.txt
+agixt/prompts/starchat/instruct.txt
+agixt/prompts/vicuna/instruct.txt
+agixt/provider/__init__.py
+agixt/provider/azure.py
+agixt/provider/bard.py
+agixt/provider/bing.py
+agixt/provider/chatgpt.py
+agixt/provider/claude.py
+agixt/provider/fastchat.py
+agixt/provider/gpt4all.py
+agixt/provider/gpt4free.py
+agixt/provider/gpugpt4all.py
+agixt/provider/huggingchat.py
+agixt/provider/huggingface.py
+agixt/provider/kobold.py
+agixt/provider/llamacpp.py
+agixt/provider/llamacppapi.py
+agixt/provider/oobabooga.py
+agixt/provider/openai.py
+agixt/provider/palm.py
+agixt/provider/runpod.py
+agixt/provider/transformer.py
+docs/.gitignore
+docs/README.md
+docs/1-Getting started/Quick Start.md
+docs/1-Getting started/Support.md
+docs/2-Concepts/0-Core Concepts.md
+docs/2-Concepts/Agents.md
+docs/2-Concepts/Chains.md
+docs/2-Concepts/Chat.md
+docs/2-Concepts/Commands.md
+docs/2-Concepts/Instructions.md
+docs/2-Concepts/Prompts.md
+docs/2-Concepts/Providers.md
+docs/2-Concepts/Smart Chat.md
+docs/2-Concepts/Smart Instruct.md
+docs/2-Concepts/Smart Task.md
+docs/2-Concepts/Tasks.md
+docs/3-Providers/Anthropic Claude.md
+docs/3-Providers/Azure OpenAI.md
+docs/3-Providers/ChatGPT.md
+docs/3-Providers/FastChat.md
+docs/3-Providers/GPT4ALL-GPU.md
+docs/3-Providers/GPT4ALL.md
+docs/3-Providers/GPT4Free.md
+docs/3-Providers/Google Bard.md
+docs/3-Providers/Google Palm.md
+docs/3-Providers/Hugging Face Transformers.md
+docs/3-Providers/HuggingChat.md
+docs/3-Providers/Kobold.md
+docs/3-Providers/Microsoft Bing.md
+docs/3-Providers/Oobabooga Text Generation Web UI.md
+docs/3-Providers/OpenAI.md
+docs/3-Providers/llamacpp API.md
+docs/3-Providers/llamacpp.md
+docs/images/AGiXT-gradient-flat.svg
+docs/images/AGiXT-gradient-light.svg
+docs/images/AGiXT.png
+docs/images/AGiXT.svg
+docs/images/AGiXT_Original_PSD.psd
+docs/images/AGiXTwhiteborder.svg
+docs/images/Docker-desktop-win-setting-streamlit.png
+docs/images/Smart Instruct.drawio
+docs/images/Smart Instruct.drawio.svg
+docs/images/Smart Tasks.drawio
+docs/images/Smart Tasks.drawio.svg
+docs/images/Untitled Diagram.drawio
+streamlit/ApiClient.py
+streamlit/Main.py
+streamlit/config.yaml
+streamlit/.streamlit/config.toml
+streamlit/auth_libs/Cfig.py
+streamlit/auth_libs/Redirect.py
+streamlit/auth_libs/Users.py
+streamlit/auth_libs/pages/Login.py
+streamlit/auth_libs/pages/Profile.py
+streamlit/auth_libs/pages/Register.py
+streamlit/components/agent_selector.py
+streamlit/components/docs.py
+streamlit/components/history.py
+streamlit/components/learning.py
+streamlit/components/verify_backend.py
+streamlit/pages/0-Agent_Settings.py
+streamlit/pages/1-Prompt_Templates.py
+streamlit/pages/2-Chain_Management.py
+streamlit/pages/3-Interact.py
+tests/ApiClient.py
+tests/test-commands.ipynb
+tests/tests.ipynb
