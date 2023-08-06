@@ -1,0 +1,8 @@
+setup.py
+dbnomics_json_errors/__init__.py
+dbnomics_json_errors/errors.py
+dbnomics_json_errors.egg-info/PKG-INFO
+dbnomics_json_errors.egg-info/SOURCES.txt
+dbnomics_json_errors.egg-info/dependency_links.txt
+dbnomics_json_errors.egg-info/requires.txt
+dbnomics_json_errors.egg-info/top_level.txt

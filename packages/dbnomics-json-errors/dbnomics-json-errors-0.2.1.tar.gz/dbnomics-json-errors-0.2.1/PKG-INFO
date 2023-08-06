@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: dbnomics-json-errors
+Version: 0.2.1
+Summary: Store errors and generate errors.json file
+Author: Bruno Duyé
+Author-email: bruno.duye@cepremap.org
+License: MIT
