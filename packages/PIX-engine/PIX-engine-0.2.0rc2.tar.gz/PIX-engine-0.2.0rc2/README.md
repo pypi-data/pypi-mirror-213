@@ -1,0 +1,25 @@
+# PIX
+
+[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/TVRework/PIX?quickstart=1)
+
+PIX is a **python terminal game engine** that is community supported and open source. Develop **games 🎮** _(and applications)_ with **ease.**
+
+## Installation
+
+We offer two different versions. **Production Release** is the currently supported version while **Canary** is all RCs, alphas, and betas.
+
+### Release
+
+```shell
+pip install PIX-engine
+```
+
+### Canary
+
+Warning! This version may be unstable, not working as intented, and more. Please leave any feedback you have on our issues board.
+
+```shell
+pip install PIX-engine==0.2.0rc1
+```
+
+**Or,** clone this repoisitory to edit and contribute towards PIX's development and open source.
