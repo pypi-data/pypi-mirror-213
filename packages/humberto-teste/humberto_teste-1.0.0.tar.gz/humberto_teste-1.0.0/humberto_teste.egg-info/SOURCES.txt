@@ -1,0 +1,7 @@
+setup.py
+humberto_teste/Logic_Circuits_Evolution.py
+humberto_teste/__init__.py
+humberto_teste.egg-info/PKG-INFO
+humberto_teste.egg-info/SOURCES.txt
+humberto_teste.egg-info/dependency_links.txt
+humberto_teste.egg-info/top_level.txt
