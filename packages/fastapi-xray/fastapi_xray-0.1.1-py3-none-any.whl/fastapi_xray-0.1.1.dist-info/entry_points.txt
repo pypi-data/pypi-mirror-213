@@ -1,0 +1,2 @@
+[console_scripts]
+fastapi_xray = fastapi_xray.cli:app
