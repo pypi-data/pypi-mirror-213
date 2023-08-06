@@ -1,0 +1,10 @@
+README.md
+VERSION
+pyproject.toml
+setup.cfg
+aichopen_tools/json_loader.py
+aichopen_tools/logger.py
+aichopen_tools.egg-info/PKG-INFO
+aichopen_tools.egg-info/SOURCES.txt
+aichopen_tools.egg-info/dependency_links.txt
+aichopen_tools.egg-info/top_level.txt
