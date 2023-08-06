@@ -1,0 +1,100 @@
+Metadata-Version: 2.1
+Name: fast-model-server
+Version: 1.0.0.1
+Summary: python基础服务框架
+Home-page: https://codeup.aliyun.com/64650c96168f0a5963451dec/lib/fast-model-server/blob/master/README.md
+Author: yes_bobo
+Author-email: fb_linux@163.com
+License: MIT
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Description-Content-Type: text/markdown
+Requires-Dist: fastapi (==0.63.0)
+Requires-Dist: uvicorn (==0.15.0)
+Requires-Dist: pydantic (==1.8.2)
+Requires-Dist: typing (==3.7.4.3)
+Requires-Dist: aiofiles (==0.8.0)
+Requires-Dist: rule-engine (==3.5.0)
+Requires-Dist: dash (==2.7.1)
+Requires-Dist: bce-python-sdk
+Requires-Dist: httpx
+Requires-Dist: tqdm
+Requires-Dist: redis
+Requires-Dist: networkx
+Requires-Dist: jieba
+
+Fast[API] Model Server
+===
+python服务框架
+
+快速开始
+---
+【安装】  
+pip install fast-model-server -U
+---
+
+【概念】  
+server---服务代码库整体框架  
+router---服务中的某个具体应用
+---
+
+【自动创建代码库】  
+完成fast-model-server安装后。可以使用python -m fast_model_server.main进行代码库自动构建  
+1、构建整个代码框架  
+python -m fast_model_server.main  
+开发者的邮箱前缀：fubo
+需要创建的模块类型[server, router]：server  
+创建服务的路径：/Users/fubo/tmp  
+服务名称：nlp_parse  
+服务Host：0.0.0.0  
+服务端口：8000  
+服务进程数：3  
+成功创建服务  
+是否创建demo router[y/n]：n  
+
+2、在代码框架中添加新的router  
+python -m fast_model_server.main  
+开发者的邮箱前缀：fubo
+需要创建的模块类型[server, router]：router  
+创建路由的路径：/Users/fubo/tmp/nlp_parse/routers  
+路由名称：demo  
+
+./nlp_parse  
+├── __init__.py  
+├── configs //配置文件夹  
+│   └── config.json  
+├── routers //不同任务的router  
+│   ├── __init__.py  
+│   └── demo //demo名称的router  
+│       ├── __init__.py  
+│       ├── common.py  //demo router的数据字段定义  
+│       ├── configs  //demo router的配置文件  
+│       │   └── config.json  
+│       ├── resources  //demo router的资源文件  
+│       │   └── resources.placeholder  
+│       ├── router.py  //demo router的接口定义  
+│       └── service.py  //demo router的业务逻辑实现  
+├── server.py  //服务入口  
+└── start.sh  //服务启动脚本
+
+
+测试
+---
+如何执行自动化测试
+
+如何贡献
+---
+贡献patch流程及质量要求
+
+维护者
+---
+### owners
+* fubo
+
+### committers
+* fubo
+
+
+

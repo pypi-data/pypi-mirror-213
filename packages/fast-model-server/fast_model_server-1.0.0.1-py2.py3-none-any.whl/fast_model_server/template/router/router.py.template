@@ -1,0 +1,88 @@
+# !/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""
+Router
+
+Authors: [email_prefix]
+Date: [date]
+"""
+import os
+from fastapi import APIRouter, Header
+from fastapi import Request as NativeRequest
+from fastapi import Response as NativeResponse
+from fastapi.logger import logger
+
+from fast_model_server.common import Native
+from routers.[router_name].service import Service
+from routers.[router_name].common import [camel_router_name]ErrorMessage
+from routers.[router_name].common import [camel_router_name]Request, [camel_router_name]Response
+
+
+class Router(object):
+    router = APIRouter()
+    name = "[router_name]"
+    service: Service = None
+    error_message: [camel_router_name]ErrorMessage = None
+
+    @staticmethod
+    @router.on_event("startup")
+    async def initialize():
+        """
+        router服务启动
+        """
+        Router.service = Service(os.path.dirname(os.path.abspath(__file__)) + "/../../configs/run_config.json")
+        Router.error_message = [camel_router_name]ErrorMessage()
+
+    @staticmethod
+    @router.on_event("shutdown")
+    async def destroy():
+        """
+        router服务停止
+        """
+        del Router.service
+
+    @staticmethod
+    @router.post("/[router_name]/run", tags=["[camel_router_name] run"])
+    async def run(
+        request: [camel_router_name]Request,
+        native_request: NativeRequest,
+        trace_id: str = Header("")
+    ) -> NativeResponse:
+        """
+        run接口<br/>
+        :param request: 请求的数据内容<br/>
+        :param native_request: 完整的请求信息<br/>
+        :param trace_id: 定位唯一ID（Header中）<br/>
+        :return:<br/>
+        """
+        # 以下内容可替换
+        logger.info("Got request header Trace-Id: %s", trace_id)
+        logger.info("Got request from Request-Source-Ip: %s", native_request.url.hostname)
+        logger.info("Got request %s", request)
+        if request.name == "":
+            return Native.to_json_native_response(
+                [camel_router_name]Response(
+                    code=10000, message=Router.error_message.get_message(10000)
+                ), headers={"Trace-Id": trace_id}
+            )
+
+        if request.name == "111":
+            return Native.to_json_native_response(
+                [camel_router_name]Response(
+                    code=30000, message=Router.error_message.get_message(30000)
+                ), headers={"Trace-Id": trace_id}
+            )
+
+        if request.name == "11":
+            return Native.to_json_native_response(
+                [camel_router_name]Response(
+                    code=20000, message=Router.error_message.get_message(20000)
+                ), headers={"Trace-Id": trace_id}
+            )
+
+        response = [camel_router_name]Response(
+            code=0,
+            message=Router.error_message.get_message(0),
+            data=Router.service.run()
+        )
+        return Native.to_json_native_response(response=response, headers={"Trace-Id": trace_id})

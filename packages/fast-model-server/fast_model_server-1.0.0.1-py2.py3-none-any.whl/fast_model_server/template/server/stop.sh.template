@@ -1,0 +1,3 @@
+#!/bin/bash
+pids=`ps aux | grep "uvicorn" | grep -v "grep" | awk -F " " '{line=line" "$2}END{print line}'`
+kill -9 $pids

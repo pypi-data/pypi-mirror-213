@@ -1,0 +1,47 @@
+# !/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""
+数据定义
+
+Authors: [email_prefix]
+Date: [date]
+"""
+from typing import Dict
+from pydantic import BaseModel
+from fast_model_server.common import ErrorMessage, Request, Response, ServerConfig
+
+class RouterConfig(BaseModel):
+    """
+    Router配置
+    """
+    pass
+
+
+class [camel_router_name]RouterConfig(ServerConfig):
+    """
+    系统配置([router_name])
+    """
+    [router_name]: RouterConfig = RouterConfig()
+
+
+class [camel_router_name]Request(Request):
+    """
+    请求参数
+    """
+    # 以下内容根据需要替换
+    name: str
+
+
+class [camel_router_name]Response(Response):
+    """
+    返回结果
+    """
+    # 以下内容根据需要替换
+    data: str = ""
+
+
+class [camel_router_name]ErrorMessage(ErrorMessage):
+    def __init__(self):
+        # messages内容根据需要添加新的出错信息
+        messages = {30000: "[camel_router_name] service error"}
+        super().__init__(messages)

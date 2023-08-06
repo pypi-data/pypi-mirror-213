@@ -1,0 +1,8 @@
+FROM yesbobo/ubuntu:18.04_python38_sync_crontab
+ADD output/[server_name].tar.gz /
+RUN mv [server_name] /.tmp
+RUN mkdir /[server_name_hbar]
+RUN cp -rf /.tmp/* /[server_name_hbar]/
+RUN /root/miniconda3/bin/pip install -i https://pypi.tuna.tsinghua.edu.cn/simple -r /[server_name_hbar]/requirements.txt
+WORKDIR /[server_name_hbar]
+CMD ["/bin/bash", "start.sh"]

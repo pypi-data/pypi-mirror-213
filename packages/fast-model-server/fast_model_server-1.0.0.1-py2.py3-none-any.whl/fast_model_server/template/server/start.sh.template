@@ -1,0 +1,20 @@
+#!/bin/bash
+root_path=`pwd`
+if [ $# == 0 ] ; then
+    env="dev"
+else
+    env=$1
+fi
+
+config_file_name=${root_path}/configs/${env}.config.json
+running_config_file_name=${root_path}/configs/run_config.json
+
+if [ ! -f "${config_file_name}" ];then
+    echo "No such config file ${config_file_name}"
+    exit
+else
+    cp ${config_file_name} ${running_config_file_name}
+fi
+
+cd $root_path
+/root/miniconda3/bin/uvicorn server:app --host=[host] --port=[port] --workers=[worker_num] --lifespan on
