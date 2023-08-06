@@ -1,0 +1,11 @@
+LICENSE.txt
+README.md
+setup.py
+license_tools/__init__.py
+license_tools/__main__.py
+license_tools/scancode_tools.py
+license_tools.egg-info/PKG-INFO
+license_tools.egg-info/SOURCES.txt
+license_tools.egg-info/dependency_links.txt
+license_tools.egg-info/requires.txt
+license_tools.egg-info/top_level.txt
