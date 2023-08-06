@@ -1,0 +1,2 @@
+[console_scripts]
+protoc-gen-pyhttp = protoc_gen_pyhttp.main:main
