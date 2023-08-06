@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: hmmer-tables
+Version: 0.1.1
+Summary: Read tables produced by HMMER software.
+License: MIT
+Author: Danilo Horta
+Author-email: horta@ebi.ac.uk
+Requires-Python: >=3.9,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: pydantic (>=1.10.9)
+Description-Content-Type: text/markdown
+
+# hmmer-tables
+
