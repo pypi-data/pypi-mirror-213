@@ -1,0 +1,2 @@
+[console_scripts]
+ashendb = ashendb.__main__:main
