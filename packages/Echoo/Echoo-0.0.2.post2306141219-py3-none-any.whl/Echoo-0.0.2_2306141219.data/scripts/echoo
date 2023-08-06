@@ -1,0 +1,6 @@
+#!python
+
+from Echoo import echoo
+
+if __name__ == '__main__':
+    echoo.run()
