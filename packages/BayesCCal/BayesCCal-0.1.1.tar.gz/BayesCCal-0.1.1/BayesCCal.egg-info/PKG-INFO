@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: BayesCCal
+Version: 0.1.1
+Summary: Bayesian calibration of classifiers
+Author: Marco Puts
+Author-email: mputs@acm.org
+License-File: LICENSE
+
+Bayesian calibration of classifiers

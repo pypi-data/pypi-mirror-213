@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+BayesCCal/BayesCCal.py
+BayesCCal/__init__.py
+BayesCCal.egg-info/PKG-INFO
+BayesCCal.egg-info/SOURCES.txt
+BayesCCal.egg-info/dependency_links.txt
+BayesCCal.egg-info/requires.txt
+BayesCCal.egg-info/top_level.txt
