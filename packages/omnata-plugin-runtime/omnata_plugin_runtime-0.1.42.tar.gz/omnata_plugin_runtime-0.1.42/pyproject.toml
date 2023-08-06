@@ -1,0 +1,29 @@
+[tool.poetry]
+name = "omnata-plugin-runtime"
+version = "0.1.42"
+description = "A development kit to assist with building, testing and publishing Omnata Plugins"
+authors = ["James Weakley <james.weakley@omnata.com>"]
+readme = "README.md"
+packages = [{include = "omnata_plugin_runtime", from = "src"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+#snowflake-connector-python = "^3"
+#snowflake-snowpark-python = "^1.4"
+#snowflake-snowpark-python = { file = "snowflake_snowpark_python-1.4.0-py3-none-any.whl" } # just during 1.4 PrPr
+pandas = "*"
+pydantic = "^1"
+jinja2 = "^3"
+requests = "^2"
+
+[tool.poetry.dev-dependencies]
+pytest = "^6.2.4"
+deepdiff = "^6"
+
+[tool.pytest.ini_options]
+addopts = ["--import-mode=importlib"]
+testpaths = ["tests"]
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
