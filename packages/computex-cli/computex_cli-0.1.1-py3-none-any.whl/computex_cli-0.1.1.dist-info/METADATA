@@ -1,0 +1,59 @@
+Metadata-Version: 2.1
+Name: computex-cli
+Version: 0.1.1
+Summary: ComputeX CLI tool
+Author: Abate De Mey
+Author-email: abate@computex.ai
+Requires-Python: >=3.8.1,<4.0.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: click (>=8.1.3,<9.0.0)
+Requires-Dist: cryptography (>=41.0.1,<42.0.0)
+Requires-Dist: docker (>=6.1.3,<7.0.0)
+Requires-Dist: pydantic (>=1.10.9,<2.0.0)
+Requires-Dist: pyjwt (>=2.7.0,<3.0.0)
+Requires-Dist: python-dotenv (>=1.0.0,<2.0.0)
+Requires-Dist: requests (>=2.31.0,<3.0.0)
+Description-Content-Type: text/markdown
+
+# cx
+The ComputeX Python CLI lets you interact with ComputeX REST APIs and push images for your models to the ComputeX container registry.
+
+## Installation
+
+### Requirements
+- Python >= 3.8
+
+Run `pip install cx`.
+
+## Command Line Interface
+At any time, you can utilize the `--help` flag with any command or subcommand:
+
+```shell
+$ cx --help
+Usage: cx [OPTIONS] COMMAND [ARGS]...
+
+Options:
+  --help  Show this message and exit.
+
+Commands:
+  login
+  ...
+```
+
+### Logging In
+```shell
+$ cx login --username {username} --password {password}
+```
+
+### Building an Image
+WIP
+
+### Pushing an Image
+WIP
+
+## Development
+WIP
+
