@@ -1,0 +1,8 @@
+liqpay/__init__.py,sha256=v7JzKk1rHtn_n8R7VzRJwSuGQKCaSAlY_thrpbEgysc,24
+liqpay/liqpay3.py,sha256=iyIKJWMN-bQBdGu6nHBnj8IOBncHuQLu0WTic1C8eCc,6790
+liqpay/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+liqpay/tests/test_pay_simple.py,sha256=FcuFOdQuhGUqC5K7785FejVGVMP5cxtakW356Qdctvg,1137
+liqpay_sdk_python3-1.0.4.dist-info/METADATA,sha256=UzZGfcefykTNN8csfPiBG0w9-0_VNvN5mAZBL-AASJo,5586
+liqpay_sdk_python3-1.0.4.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+liqpay_sdk_python3-1.0.4.dist-info/top_level.txt,sha256=1ASgWFXUUnwnMjedh820PuSZu5funtsLtS6hwjAHCZE,7
+liqpay_sdk_python3-1.0.4.dist-info/RECORD,,
