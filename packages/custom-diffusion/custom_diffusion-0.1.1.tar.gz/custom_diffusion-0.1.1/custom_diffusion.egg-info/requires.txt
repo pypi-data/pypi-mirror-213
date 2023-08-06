@@ -1,0 +1,17 @@
+controlnet_aux
+diffusers==0.17.0
+moviepy
+numpy
+opencv_python
+Pillow
+pytube
+setuptools
+torch
+transformers
+xformers
+
+[dev]
+black==21.7b0
+flake8==3.9.2
+isort==5.9.2
+click==8.0.4
