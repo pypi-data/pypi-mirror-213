@@ -1,0 +1,9 @@
+discord
+
+[all]
+parse
+pydantic
+
+[embedModel]
+pydantic
+parse

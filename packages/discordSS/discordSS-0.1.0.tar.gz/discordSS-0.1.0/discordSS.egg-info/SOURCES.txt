@@ -1,0 +1,17 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+discordSS/__init__.py
+discordSS/enums.py
+discordSS/utils.py
+discordSS.egg-info/PKG-INFO
+discordSS.egg-info/SOURCES.txt
+discordSS.egg-info/dependency_links.txt
+discordSS.egg-info/requires.txt
+discordSS.egg-info/top_level.txt
+discordSS_ext/__init__.py
+discordSS_ext/embedModel/__init__.py
+discordSS_ext/embedModel/cacheFlag.py
+discordSS_ext/embedModel/format.py
+discordSS_ext/embedModel/model.py

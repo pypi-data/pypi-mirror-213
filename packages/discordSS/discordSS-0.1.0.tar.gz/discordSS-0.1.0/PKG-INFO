@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: discordSS
+Version: 0.1.0
+Summary: discordSS is a discord.py superset
+Home-page: https://github.com/ZackaryW/discordSS
+Author: ZackaryW
+License: MIT
+Keywords: discord discord.py
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Provides-Extra: embedModel
+Provides-Extra: all
+License-File: LICENSE
+
+# discordSS
+
+> **discordSS** is a superset of [discord.py](https://github.com/Rapptz/discord.py)
+
+it has two components core (discordSS) and set of extensions (discordSS_ext)
+
+## Installation
+
+```sh
+pip install discordSS[all]
+```
+
+## Extensions
+[embedModel](./docs/embedModel.md)
