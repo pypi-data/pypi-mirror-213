@@ -1,0 +1,14 @@
+Click>=7.0
+
+[develop]
+sphinx
+sphinx_autodoc_typehints
+sphinx-pydantic
+sphinx-autoapi
+sphinx-autobuild
+sphinx_rtd_theme
+sphinx-gallery
+nbsphinx
+myst_parser
+pandoc
+flake8
