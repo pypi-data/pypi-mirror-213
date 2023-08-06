@@ -1,0 +1,28 @@
+{% load humanize %}
+
+<div class="card">
+    <h5 class="card-header">Last 60 Days</h5>
+    <div class="card-body">
+        <div class="table table-hover attr-table">
+            <table class="table">
+                <tbody>
+                <tr>
+                    <th scope="row">No. of failures</th>
+                    <td>
+                        <span class="text-muted">{{ fail_count }}</span>
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">Average time between failures</th>
+                    <td>
+                        <span class="text-muted">{{ fail_time }}</span>
+                    </td>
+                </tr>
+                <tr>
+                    <p scope="row"><a href="/plugins/machine-tracking/event/?machine={{object.id}}&new_state=failed">See failures</a></p>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

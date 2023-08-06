@@ -1,0 +1,43 @@
+{% extends 'generic/object.html' %}
+
+{% block content %}
+  <div class="row mb-3">
+    <div class="col col-md-6">
+      <div class="card">
+        <h5 class="card-header">Event</h5>
+        <div class="card-body">
+          <table class="table table-hover attr-table">
+            <tr>
+              <th scope="row">Machine</th>
+              <td><a href="{{ object.machine.get_absolute_url }}">{{ object.machine }}</a></td>
+            </tr>
+            <tr>
+              <th scope="row">Ticket Number</th>
+              <td><a href="https://jira.ikarem.io/browse/{{object.ticket_no}}">{{ object.ticket_no }}</a></td>
+            </tr>
+            <tr>
+                <th scope="row">New State</th>
+                <td>{{ object.new_state }}</td>
+            </tr>
+            <th scope="row">Part Type</th>
+                <td>{{ object.part_type }}</td>
+            </tr>
+            <tr>
+                <th scope="row">Replacement Link</th>
+                <td><a href="{{ object.replacement.get_absolute_url }}">{{ object.replacement }}</a></td>
+            </tr>
+            <tr>
+                <th scope="row">Event Details</th>
+                <td>{{ object.event_details }}</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+      {% include 'inc/panels/custom_fields.html' %}
+    </div>
+    <div class="col col-md-6">
+      {% include 'inc/panels/tags.html' %}
+      {% include 'inc/panels/comments.html' %}
+    </div>
+  </div>
+{% endblock content %}
