@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "fleet-sdk"
+version = "0.5.5"
+description = "Fleet SDK for building and managing chatGPT plugins"
+authors = ["fleet_team <fleet.ai.team@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.6"
+fastapi = "^0.95.0"
+
+[tool.poetry.dev-dependencies]
+debugpy = "^1.6.2"
+replit-python-lsp-server = {extras = ["yapf", "rope", "pyflakes"], version = "^1.5.9"}
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[project.urls]
+"Homepage" = "https://usefleet.ai/"
