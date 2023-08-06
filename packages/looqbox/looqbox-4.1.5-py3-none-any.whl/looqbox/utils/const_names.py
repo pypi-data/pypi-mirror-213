@@ -1,0 +1,1 @@
+DEFAULT_RANK_NAME = "Rank"
