@@ -1,0 +1,10 @@
+beautifulsoup4
+bibtexparser
+lxml
+pylatexenc
+requests
+requests_oauthlib
+rich
+ruamel.yaml
+textual>=0.14
+typing_extensions

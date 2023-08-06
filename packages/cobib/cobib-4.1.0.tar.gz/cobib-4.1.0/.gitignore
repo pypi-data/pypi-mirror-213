@@ -1,0 +1,30 @@
+# Python data
+build
+dist
+*.egg-info
+__pycache__
+
+# Test data
+.tox
+.coverage
+.coverage.*
+*.xml
+.mypy_cache
+htmlcov
+htmlmypy
+
+# Logging data
+textual.log
+
+# Documentation data
+docs
+
+# literature data (debugging)
+*.bib
+*.yaml
+
+# Other stuff
+tags
+.direnv
+.envrc
+*.afdesign
