@@ -1,0 +1,16 @@
+librarian/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+librarian/actor.py,sha256=gDQnCXgADXD4BSdkOh9vHjZ7N9Qt8Q-eHPmdMp6mPqw,2779
+librarian/catalog.py,sha256=w3QFlFgVHu4AaaG6Dmir9q8oGc-9XQG6PexJ2DUPnrg,29958
+librarian/librarian.py,sha256=jKhu_LPMPzE1gidnMFyTp9zfMgRYKT2IUwWkHqFX22g,7379
+librarian/actors/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+librarian/actors/plotter.py,sha256=dCv27n0cMPKOg8xzbNZgS-rPqwsZZC9uPR2iN3raIM0,12444
+librarian/actors/reader.py,sha256=uNjblAAF79cKo3DCQNbTeHMtuRj5GFLpWk00CwRtsrI,3619
+librarian/actors/writer.py,sha256=nxA1yXOiVO3rI3zum7vQxphLIyYVCZSBFrbUuOt5QJo,4783
+librarian/plotters/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+librarian/plotters/errorbarplotter.py,sha256=be3WCKh6cCHaJQNPccRpn3o45AExCB1OuRUtSxKjOcc,791
+librarian/plotters/histplotter.py,sha256=VQHsz77N00Zpq88dl771iOtO5Jsme7WBqBeAEA5ll7c,1009
+LibrarianFileManager-0.0.1.dist-info/LICENSE,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+LibrarianFileManager-0.0.1.dist-info/METADATA,sha256=wXQbFj6365jZ4tdkWpB4yiJAmO65qG9KOM3Qgh4CLHM,1404
+LibrarianFileManager-0.0.1.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+LibrarianFileManager-0.0.1.dist-info/top_level.txt,sha256=5bE0hxDOFl7tGnf0r3VtKmU0s-2dYiEBTF3nxu1xdPk,10
+LibrarianFileManager-0.0.1.dist-info/RECORD,,

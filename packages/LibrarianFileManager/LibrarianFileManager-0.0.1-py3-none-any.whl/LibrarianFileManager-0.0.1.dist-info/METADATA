@@ -1,0 +1,38 @@
+Metadata-Version: 2.1
+Name: LibrarianFileManager
+Version: 0.0.1
+Summary: A librarian for managing your files: General purpose file management tools for initializing, keeping track of, and interacting with file structures e.g. for cataloging data, plotting of figures, etc.).
+Home-page: https://github.com/samcaf/LibrarianFileManager
+Author: Samuel Alipour-fard
+Author-email: Samuel Alipour-fard <samuelaf@mit.edu>
+Project-URL: Homepage, https://github.com/samcaf/LibrarianFileManager
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: dill (>=0.3.0)
+Requires-Dist: pathlib (>=1.0.0)
+Requires-Dist: PyYAML (>=6.0)
+Requires-Dist: uuid (>=1.30)
+Requires-Dist: datetime (>=5.0)
+Requires-Dist: pytimedinput (>=2.0.0)
+Requires-Dist: matplotlib (>=3.0.0)
+
+# LibrarianFileManager (LFM)
+
+A Librarian for managing your files. General purpose file management tools for initializing, keeping track of, and interacting with file structures e.g. for cataloging data, plotting of figures, etc.).
+
+Also located at
+https://pypi.org/project/LibrarianFileManager/0.0.0/
+
+
+## Setup
+Set up LFM with pip via
+```
+pip install LibrarianFileManager
+```
+
+## Usage
+For now, take a look at the example folder `test_librarian/` for usage.
