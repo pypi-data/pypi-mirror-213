@@ -1,0 +1,3 @@
+[console_scripts]
+onto_tool = onto_tool.onto_tool:run_tool
+
