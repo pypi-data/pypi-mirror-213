@@ -1,0 +1,9 @@
+setup.py
+myokit_beta/__init__.py
+myokit_beta.egg-info/PKG-INFO
+myokit_beta.egg-info/SOURCES.txt
+myokit_beta.egg-info/dependency_links.txt
+myokit_beta.egg-info/requires.txt
+myokit_beta.egg-info/top_level.txt
+src/sim1.c
+test/test.py
