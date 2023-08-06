@@ -1,0 +1,7 @@
+pytest_runtime_yoyo/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pytest_runtime_yoyo/plugin.py,sha256=9ExPrIHCv4vmFlpbAJ0e6zgT5Jd_tLmS1BAEX8xDIOk,1629
+pytest_runtime_yoyo-1.0.1.dist-info/METADATA,sha256=szxSoUjlR-2Xnpsv0xYyRae3yRr6YUY1sheRl8XJXmg,4412
+pytest_runtime_yoyo-1.0.1.dist-info/WHEEL,sha256=a-zpFRIJzOq5QfuhBzbhiA1eHTzNCJn8OdRvhdNX0Rk,110
+pytest_runtime_yoyo-1.0.1.dist-info/entry_points.txt,sha256=8Z-NP1cJl8D6JM90jajMJwqaJMyGPXmsxC6v3VChNoE,60
+pytest_runtime_yoyo-1.0.1.dist-info/top_level.txt,sha256=ieyfqQxb2ajgOI-5aX6YK8hvDBgF1rNhdulJKxYn2FY,20
+pytest_runtime_yoyo-1.0.1.dist-info/RECORD,,
