@@ -1,0 +1,17 @@
+dtorch/__init__.py,sha256=FMgtupa7ISup9Vu7GxoFLVy7KdE4dmAhcyO-lTJvc4g,203
+dtorch/dataset.py,sha256=UIxRJzT7vfgOlemo9VnUtlZWwWx0EnLKgjBOGEdOkJ8,1146
+dtorch/derivatives.py,sha256=KlUVJ4cbS1vD__6rvDPnpEMWHoL_I5pJU1pM2THeUBI,16603
+dtorch/einops.py,sha256=L4W_cDKtQ76-eXfTutW_FQNRhVVo_ma6c7jka-VEcp4,2096
+dtorch/functionnal.py,sha256=Jde7wwwGQdCvd4bcjx_-2Ae9FNuem7Srfc4am1zoEIQ,17143
+dtorch/jtensors.py,sha256=d91HaI3D6oVQz0hkv_VrxzTqSsP4H6Hkoc9EjuU7IEI,12424
+dtorch/loss.py,sha256=oBfbuKeCKlnvky4sh03d757dAFAhZqcNVKNsTPFcp04,2679
+dtorch/nn.py,sha256=299G7zQHIeQMGA7sBhreJ9iFh2-1dmB8NjbC3RB__6E,13038
+dtorch/operation_class.py,sha256=NhokycvA8_g1MToD0kj4ki62Ve6oNxSo-7F9-vAFXBo,218
+dtorch/operations.py,sha256=kuTfS_aoyzOiqn4WpOhpe0zmsYtAUTbrd8V5VqxkLWo,940
+dtorch/optim.py,sha256=AhPbSv8pn-zwG-uDu9FEl9TbqVKmjK3DKvPyNsoUojE,7914
+dtorch/typing.py,sha256=7yBJCJq9rS49vH0IOiZzEbcDGvAZz_rbBSurCULxxeY,1606
+dtorch-0.0.4.dist-info/LICENSE,sha256=E1UD6iFj1CeGxyRanAkO-3B36aR84UlBP0OiYGv2ADU,1067
+dtorch-0.0.4.dist-info/METADATA,sha256=Hff0sel9grIHLlsLDoNauEfDITqmh3QKK2DzlOYQaOE,2642
+dtorch-0.0.4.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+dtorch-0.0.4.dist-info/top_level.txt,sha256=P-dZJDnPJJz-kAiPWOAjA0sxTWvVdcoMCim6-KYvpUs,7
+dtorch-0.0.4.dist-info/RECORD,,
