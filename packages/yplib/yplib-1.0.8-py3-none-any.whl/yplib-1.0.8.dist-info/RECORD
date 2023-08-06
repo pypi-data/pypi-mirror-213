@@ -1,0 +1,10 @@
+yplib/__init__.py,sha256=ZCfvHdD_HmAdwmjpS8-Xgdw8vpMkAIUI-ybfYFc-tj0,87
+yplib/file.py,sha256=knXA5CwkeT1ajiwxMbiGm9xyP9pRRvC76vO9jbP7yGA,3555
+yplib/index.py,sha256=GSIQEcYRBWnhNmkwEgpPgXVerFxSJbbZ3wu2ih0PQRo,12648
+yplib/line_stack_temp.py,sha256=01bIZc6lvN-22XkyzTxYRh1gp708gKkxaf5XEFqJonQ,2609
+yplib/test_my_fun.py,sha256=BPwcyGdosilokhSd4lGA2vUCMf2WybGOepTVilAHRiI,3495
+yplib-1.0.8.dist-info/LICENSE,sha256=vR2z3eUszyli3pNE5DdS2gRzEwCRuQTwhfjfPkGTXpk,1091
+yplib-1.0.8.dist-info/METADATA,sha256=qi013AScZQ8ilWwHS22C2z1WwvF9SmXOMw3K8hkBGCo,567
+yplib-1.0.8.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+yplib-1.0.8.dist-info/top_level.txt,sha256=xdC2uP44C0STsmZJI1ade3wDCSi4cKLv1YFSPI0fKQs,6
+yplib-1.0.8.dist-info/RECORD,,
