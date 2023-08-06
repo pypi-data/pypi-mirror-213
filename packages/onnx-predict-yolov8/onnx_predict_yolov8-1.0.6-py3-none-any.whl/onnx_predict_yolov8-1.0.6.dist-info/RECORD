@@ -1,0 +1,9 @@
+opyv8/__init__.py,sha256=UxNdHsvtxBSO3EhxsM_031H8RhfRw9ChFfwK4zzNwp0,61
+opyv8/model.py,sha256=WA330jCPFGE8ImiiQSlXotaEh_eIN-GBFzNdynGK8Tk,1185
+opyv8/predictor.py,sha256=ZSUCOUsCBsvT_eGoVUNf6Nd7-Hk8RP1wS73jICEHE7c,2501
+opyv8/utils.py,sha256=z3W3WxYszyi2RtZ9aM3-HnqBSmEM1TCB00ngiW6jZoI,2366
+onnx_predict_yolov8-1.0.6.dist-info/LICENSE,sha256=J-YXHyrIl_ZNIscVsWZEvzVbNRbfeeo6pM9C3e73d7U,1096
+onnx_predict_yolov8-1.0.6.dist-info/METADATA,sha256=7xLN8_cYDU6KCvGWETjbv7Fki838jANuq8l1mfZIkGM,2531
+onnx_predict_yolov8-1.0.6.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+onnx_predict_yolov8-1.0.6.dist-info/top_level.txt,sha256=2s2OBt-MAyepa5OHNM4PQ6LuiNLEwxY4YtKfptVf2JQ,6
+onnx_predict_yolov8-1.0.6.dist-info/RECORD,,
