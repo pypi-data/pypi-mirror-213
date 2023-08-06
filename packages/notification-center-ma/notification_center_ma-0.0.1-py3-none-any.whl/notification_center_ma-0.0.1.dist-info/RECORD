@@ -1,0 +1,10 @@
+src/notification_center/__init__.py,sha256=w5jck1g1AkPcwJ6kUf7hpHNI34Uv17lMZcQtvOx1dkM,28
+src/notification_center/__main__.py,sha256=Dvc4zxT9MpN-6ygBaqfe9vpWNW41TxWNlvzWAiuRIOo,224
+src/notification_center/notification_center.py,sha256=pl5OxPOcPxxYdcQmFnht7SSYLhWEzKCcNiEhh7H5Wec,4485
+src/notification_center/sqs_services.py,sha256=ZQiF64JoUkb8-9kk3gR2EtDLYqS5wifznBAFPseu2pQ,1078
+notification_center_ma-0.0.1.dist-info/LICENSE,sha256=nrb2nUih3XZOijPxSlhPRg087GU0d8E2qV3W35wkkhE,1055
+notification_center_ma-0.0.1.dist-info/METADATA,sha256=1P5KVwG6_y0MlWYzrbfnaRj_gTnOMQYTK4EpU5ks3lg,2779
+notification_center_ma-0.0.1.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+notification_center_ma-0.0.1.dist-info/entry_points.txt,sha256=ONhjl8kA6PzSEkMf5O41w3X2oj7s1SFNkRu6c5DLhJ8,74
+notification_center_ma-0.0.1.dist-info/top_level.txt,sha256=74rtVfumQlgAPzR5_2CgYN24MB0XARCg0t-gzk6gTrM,4
+notification_center_ma-0.0.1.dist-info/RECORD,,

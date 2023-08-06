@@ -1,0 +1,91 @@
+Metadata-Version: 2.1
+Name: notification-center-ma
+Version: 0.0.1
+Summary: A package for sending notifications internally for MobileArts
+Author: Fatima Medlij
+Author-email: Fatima Medlij <medlijfatima@gmail.com>
+License: MIT License
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+        
+Keywords: notification,messaging,communication
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: email-validator
+Requires-Dist: sqs-services
+Requires-Dist: boto3
+Requires-Dist: urllib3
+Requires-Dist: botocore
+Requires-Dist: python-dotenv
+
+# notification-center-ma
+## Functions
+
+- send_email()
+- send_telegram()
+- send_sms()
+- send_telegram_photo()
+- send_telegram_document()
+
+## Installation
+Install the dependencies.
+```sh
+pip install notification-center-ma
+pip install -r requirements.txt
+```
+
+## Usage
+After installation add requirement to your code
+```sh
+import notification_center
+```
+
+
+For Email (up to 2GB messages)
+```sh
+notification_center.send_email(to_emails,cc_emails,bcc_emails,subject,text_body,text_html)
+```
+
+
+For Telegram
+```sh
+notification_center.send_telegram(chat_ids,text)
+```
+
+
+For Telegram Photos
+```sh
+notification_center.send_telegram_photo(chat_ids, imageurl, caption)
+```
+
+
+For Telegram Documents
+```sh
+notification_center.send_telegram_document(chat_ids, documenturl, caption)
+```
+
+
+For SMS
+```sh
+notification_center.send_sms(source, phonenumbers, text)
+```
