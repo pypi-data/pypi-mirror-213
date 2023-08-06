@@ -1,0 +1,103 @@
+Metadata-Version: 2.1
+Name: multitrackpro
+Version: 0.1.1
+Summary: A multi-camera multi-object tracking library with its own labelling tool to annotate datasets.
+Home-page: https://github.com/saurabheights/multitrackpro
+Author: Saurabh Khanduja
+Author-email: pixelperceive@gmail.com
+License: GNU General Public License v3
+Keywords: multitrackpro,annotation,labelling,machine-learning,deep-learning,vision,ML,DL,AI,YOLO
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Topic :: Software Development
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: Topic :: Scientific/Engineering :: Image Recognition
+Classifier: Topic :: Scientific/Engineering :: Image Processing
+Requires-Python: >=3.6
+Description-Content-Type: text/x-rst
+License-File: LICENSE
+License-File: AUTHORS.rst
+
+=============
+MultiTrackPro
+=============
+
+
+.. image:: https://img.shields.io/pypi/v/multitrackpro.svg
+        :target: https://pypi.python.org/pypi/multitrackpro
+
+.. image:: https://readthedocs.org/projects/multitrackpro/badge/?version=latest
+        :target: https://multitrackpro.readthedocs.io/en/latest/?version=latest
+        :alt: Documentation Status
+
+
+
+
+A multi-camera multi-object tracking library with its own labelling tool to annotate datasets.
+
+
+* Free software: GNU General Public License v3
+* Documentation: https://multitrackpro.readthedocs.io.
+
+
+Features
+--------
+
+* QT based media player that can play four videos at the same time.
+
+.. code-block:: shell
+
+   auto-annotate-pro
+
+Pending Tasks
+-------------
+
+* Integrate object detection and tracker.
+    * Store annotations of each frame in mem.
+    * Add display of bounding boxes as drawables.
+    * Save/Load Annotations.
+    * Save dataset-specific configuration.
+* Add object detection correction
+* Add tracking correction
+* Add mouse event capture to rearrange videos.
+* Add track integration between two frames.
+* Add play pause icons to UI.
+* Set play pause next fram, prev frame etc buttons to disabled stage when no video.
+* Add speed change option for playback.
+* Make frame number text label and slider work.
+* Integrate github action/circleci
+* Implement play of N number of video files (N != 4).
+
+Credits
+-------
+
+This package was created with Cookiecutter_ and the `audreyr/cookiecutter-pypackage`_ project template.
+
+.. _Cookiecutter: https://github.com/audreyr/cookiecutter
+.. _`audreyr/cookiecutter-pypackage`: https://github.com/audreyr/cookiecutter-pypackage
+
+
+=======
+History
+=======
+
+0.1.0 (2023-06-09)
+------------------
+
+* First release on PyPI.
+
+0.1.1 (2023-06-09)
+------------------
+
+* Added video player that plays exactly 4 videos.
