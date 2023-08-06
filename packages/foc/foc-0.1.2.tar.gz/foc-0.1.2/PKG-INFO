@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: foc
+Version: 0.1.2
+Summary: A collection of python functions for somebody's sanity
+Home-page: https://github.com/thyeem/foc
+Author: Francis Lim
+Author-email: thyeem@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.6
+License-File: LICENSE
