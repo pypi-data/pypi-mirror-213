@@ -1,0 +1,122 @@
+Metadata-Version: 2.1
+Name: galaxy-util
+Version: 23.0.2
+Summary: Galaxy generic utilities
+Home-page: https://github.com/galaxyproject/galaxy
+Author: Galaxy Project and Community
+Author-email: galaxy-committers@lists.galaxyproject.org
+License: AFL
+Keywords: Galaxy
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Academic Free License (AFL)
+Classifier: Natural Language :: English
+Classifier: Operating System :: POSIX
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Topic :: Software Development
+Classifier: Topic :: Software Development :: Code Generators
+Classifier: Topic :: Software Development :: Testing
+Requires-Python: >=3.7
+Description-Content-Type: text/x-rst
+License-File: LICENSE
+Requires-Dist: bleach
+Requires-Dist: boltons
+Requires-Dist: docutils
+Requires-Dist: importlib-resources
+Requires-Dist: packaging (<22)
+Requires-Dist: pyparsing
+Requires-Dist: PyYAML
+Requires-Dist: requests
+Requires-Dist: Routes
+Requires-Dist: typing-extensions
+Requires-Dist: zipstream-new
+Provides-Extra: jstree
+Requires-Dist: dictobj ; extra == 'jstree'
+Provides-Extra: template
+Requires-Dist: Cheetah3 ; extra == 'template'
+Requires-Dist: future ; extra == 'template'
+
+
+.. image:: https://badge.fury.io/py/galaxy-util.svg
+   :target: https://pypi.org/project/galaxy-util/
+
+
+Overview
+--------
+
+The Galaxy_ utilities module.
+
+* Code: https://github.com/galaxyproject/galaxy
+
+.. _Galaxy: http://galaxyproject.org/
+
+History
+-------
+
+.. to_doc
+
+-------------------
+23.0.2 (2023-06-13)
+-------------------
+
+No recorded changes since last release
+
+-------------------
+23.0.1 (2023-06-08)
+-------------------
+
+
+=========
+Bug fixes
+=========
+
+* Replace httpbin service with pytest-httpserver by `@mvdbeek <https://github.com/mvdbeek>`_ in `#16042 <https://github.com/galaxyproject/galaxy/pull/16042>`_
+
+-------------------
+22.1.2 (2022-12-08)
+-------------------
+
+* Pin packaging dependency to < 22, fixes ``LegacyVersion`` import errors
+* Add missing pyparsing dependency
+
+-------------------
+22.1.1 (2022-08-22)
+-------------------
+
+* First release from the 22.01 branch of Galaxy
+
+-------------------
+21.1.0 (2021-03-19)
+-------------------
+
+* First release from the 21.01 branch of Galaxy.
+
+-------------------
+20.9.1 (2020-10-28)
+-------------------
+
+
+
+-------------------
+20.9.0 (2020-10-15)
+-------------------
+
+* First release from the 20.09 branch of Galaxy.
+
+-------------------
+20.5.0 (2020-07-03)
+-------------------
+
+* First release from 20.05 branch of Galaxy.
+
+-------------------
+19.9.0 (2019-11-21)
+-------------------
+
+* Initial import from dev branch of Galaxy during 19.09 development cycle.
