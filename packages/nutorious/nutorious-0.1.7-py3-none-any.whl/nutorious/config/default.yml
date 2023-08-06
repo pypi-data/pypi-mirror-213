@@ -1,0 +1,23 @@
+meals:
+  - breakfast
+  - lunch
+  - snack
+  - dinner
+
+ui:
+  daily:
+    title: Nutrition report on {dt}
+    columns:
+      - data: title
+        style: cyan
+        justify: left
+      - data: amount
+        style: green
+      - data: kcal
+        style: blue
+      - data: prot
+        style: white
+      - data: carb
+        style: yellow
+      - data: fat
+        style: red

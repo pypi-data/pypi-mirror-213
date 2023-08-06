@@ -1,0 +1,3 @@
+[console_scripts]
+nutorious=nutorious:main
+
