@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: kares
+Version: 0.8
+Summary: A Python module for kares
+Home-page: https://nobody.com/
+Author: NoBody
+Author-email: your@nobody.com
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: Implementation
+
