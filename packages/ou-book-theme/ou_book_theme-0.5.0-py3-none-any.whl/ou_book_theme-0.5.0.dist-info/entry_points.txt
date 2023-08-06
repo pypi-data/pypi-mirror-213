@@ -1,0 +1,3 @@
+[console_scripts]
+obt = ou_book_theme.cli:main
+open-book-theme = ou_book_theme.cli:main

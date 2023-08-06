@@ -1,0 +1,19 @@
+.ou-time {
+    position: relative;
+    margin: 0 -.3rem;
+    padding: .4rem .3rem .4rem 2rem;
+    font-style: italic;
+    font-size: 90%;
+
+    &::before {
+        position: absolute;
+        left: .3rem;
+        width: 1rem;
+        height: 1rem;
+        color: currentColor;
+        font-family: 'Font Awesome 6 Free';
+        font-weight: 400;
+        font-style: normal;
+        content: var(--ou-icon-time);
+    }
+}
