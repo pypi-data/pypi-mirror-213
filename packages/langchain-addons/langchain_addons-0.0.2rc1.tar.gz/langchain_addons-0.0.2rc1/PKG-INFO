@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: langchain_addons
+Version: 0.0.2rc1
+Summary: ...
+Home-page: UNKNOWN
+Author: Eduardo M. de Morais
+Author-email: emdemor415@gmail.com
+License: MIT License
+Description: # Langchain Addons
+        
+        Extensions to Langchain
+        
+Keywords: preprocessing
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
