@@ -1,0 +1,101 @@
+Metadata-Version: 2.1
+Name: optool
+Version: 0.6.0
+Summary: Optimization tools
+Author: Andreas Ritter
+Author-email: anritter@idsc.mavt.ethz.ch
+License: MIT
+Project-URL: Source, https://gitlab.com/ocsept/optool
+Project-URL: Documentation, https://ocsept.gitlab.io/optool
+Project-URL: API, https://ocsept.gitlab.io/optool/api.html
+Keywords: Serialization,Numerical optimization,Units of measurement,JSON,Pydantic,Pint,CasADi
+Platform: any
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python
+Requires-Python: >=3.9.10
+Description-Content-Type: text/markdown; charset=UTF-8; variant=GFM
+License-File: LICENSE.txt
+Requires-Dist: casadi
+Requires-Dist: humanize
+Requires-Dist: loguru
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: pint
+Requires-Dist: pint-pandas
+Requires-Dist: pydantic
+Provides-Extra: testing
+Requires-Dist: setuptools ; extra == 'testing'
+Requires-Dist: pytest ; extra == 'testing'
+Requires-Dist: pytest-cov ; extra == 'testing'
+
+[![PyPI-Server](https://img.shields.io/pypi/v/optool.svg)](https://pypi.org/project/optool/)
+[![Built Status](https://gitlab.com/ocsept/optool/badges/main/pipeline.svg)](https://gitlab.com/ocsept/optool/)
+[![Coverage](https://gitlab.com/ocsept/optool/badges/main/coverage.svg)](https://gitlab.com/ocsept/optool/)
+[![ReadTheDocs](https://readthedocs.org/projects/optool/badge/?version=latest)](https://ocsept.gitlab.io/optool)
+
+# Optool - Optimization tools
+
+Generally usable utilities related to optimization problems.
+
+Optool is a comprehensive Python package that simplifies the formulation of numerical optimization problems by
+supporting the use of units of measurements and parallel execution of optimizations.
+In addition, the package includes advanced data validation capabilities and provides out of the box serialization of a
+variety of well-known data types.
+
+## Highlights
+
+- Easy to use optimization framework built around [CasADi], allowing to specify the problem with units of measurements.
+- Integrated data validation using [Pydantic].
+- Additional Pydantic-compatible fields for a variety of well-known data types such as [Numpy] arrays, [Pandas] Series
+  and DataFrame objects, unit and quantity objects of [Pint].
+- Out of the box serialization to JSON of a variety of well-known data types within data models.
+- Parallelization of optimizations with convenient redirection of logging statements.
+
+## Installation
+
+`optool` can be installed from PyPI:
+
+```shell
+python -m pip install optool
+```
+
+## Dependencies
+
+The following libraries are necessary to run the program code.
+
+- [CasADi] is a symbolic framework for numeric optimization implementing automatic differentiation.
+- [Humanize] provides various common string-related utilities like turning a number into a fuzzy human-readable
+  duration (e.g. *3 minutes ago*).
+- [Loguru] intends to make Python logging less painful by adding a bunch of useful functionalities that solve caveats of
+  the standard loggers.
+- [Numpy] is the fundamental package for scientific computing with Python.
+- [Pandas] provides fast, powerful, flexible and easy to use features for data analysis and manipulation.
+- [Pint] allows to define, operate and manipulate physical quantities.
+  It allows arithmetic operations between them and conversions from and to different units.
+- [Pint-pandas] provides an extension to Pandas, which allows Pandas to recognize the quantities and store them in
+  Pandas data frames and series.
+- [Pydantic] provides extensive data validation features and serialization capabilities using Python type hints.
+
+Extra dependencies are needed for development.
+However, all processes are automated using [Tox], which automatically installs the
+required dependencies.
+Hence, [Tox] is the only Python package stringently necessary.
+
+
+[CasADi]: https://pypi.org/project/casadi
+
+[Humanize]: https://pypi.org/project/humanize
+
+[Loguru]: https://pypi.org/project/loguru
+
+[Numpy]: https://pypi.org/project/numpy
+
+[Pandas]: https://pypi.org/project/pandas
+
+[Pint-pandas]: https://pypi.org/project/pint-pandas
+
+[Pint]: https://pypi.org/project/Pint
+
+[Pydantic]: https://pypi.org/project/pydantic
+
+[Tox]: https://pypi.org/project/tox
