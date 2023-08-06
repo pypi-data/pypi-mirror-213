@@ -1,0 +1,3 @@
+[console_scripts]
+git-dummy = git_dummy.__main__:app
+git-sim = git_sim.__main__:app
