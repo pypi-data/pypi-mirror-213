@@ -1,0 +1,144 @@
+[tool.poetry]
+name = "dapp-runner"
+version = "0.1.2"
+description = "Golem dapp-runner - a high-level interface for running decentralized applications using the Golem Network."
+authors = ["Golem Factory <contact@golem.network>"]
+license = "LGPL-3.0"
+classifiers = [
+  "Development Status :: 2 - Pre-Alpha",
+  "Environment :: Console",
+  "Intended Audience :: Developers",
+  "License :: OSI Approved :: GNU Lesser General Public License v3 (LGPLv3)",
+  "Natural Language :: English",
+  "Programming Language :: Python :: 3.8",
+  "Topic :: Software Development",
+  "Topic :: System :: Distributed Computing",
+]
+repository = "https://github.com/golemfactory/dapp-runner"
+readme = "README.md"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[[tool.poetry.source]]
+name = "testpypi"
+url = "https://test.pypi.org/simple/"
+default = false
+secondary = true
+
+[tool.poetry.dependencies]
+python = "^3.8"
+
+appdirs = "^1.4"
+click = "^7.0"  # requires bump to goth's dependencies https://github.com/golemfactory/goth/issues/605
+dpath = "~2.0.8"
+pyyaml = "^5.0"  # requires bump to goth's dependencies https://github.com/golemfactory/goth/issues/605
+shortuuid = "^1.0"
+ansicolors = "^1.1.8"
+networkx = "^2.8"
+yapapi = "^0.10.1"
+
+[tool.poetry.group.dev.dependencies]
+setuptools = "*"  # implicitly required by liccehck
+pip = "*"  # implicitly required by liccehck
+
+autoflake = "^1"
+black = "^21.0b0"  # requires bump to goth's dependencies https://github.com/golemfactory/goth/issues/605
+flake8 = "^5"
+flake8-docstrings = "^1.6"
+Flake8-pyproject = "^1.2.2"
+mypy = "^0.942"
+poethepoet = "^0.13"
+pytest = "^7.1"
+pytest-asyncio = "^0.18.3"
+pytest-cov = "^3.0.0"
+liccheck = "^0.7.2"
+pytest-mock = "^3.10.0"
+factory-boy = "^3.2.1"
+isort = "^5.11.4"
+
+[tool.poetry.group.tests_integration]
+optional = true
+
+[tool.poetry.group.tests_integration.dependencies]
+goth = "^0.14.0"
+requests = "^2.28.2"
+
+[tool.poetry.scripts]
+dapp-runner = "dapp_runner.__main__:_cli"
+
+[tool.poe.tasks]
+checks = {sequence = ["checks_codestyle", "checks_typing", "checks_license"], help = "Run all available code checks"}
+checks_codestyle = {sequence = ["_checks_codestyle_flake8", "_checks_codestyle_isort", "_checks_codestyle_black"], help = "Run only code style checks"}
+_checks_codestyle_flake8 = "flake8 dapp_runner tests"
+_checks_codestyle_isort = "isort --check-only --diff ."
+_checks_codestyle_black = "black --check --diff ."
+checks_typing  = {cmd = "mypy --install-types --non-interactive --ignore-missing-imports --check-untyped-defs --warn-unused-ignores --show-error-codes .", help = "Run only code typing checks" }
+checks_license = {sequence = ["_checks_license_export", "_checks_license_verify"], help = "Run only license compatibility checks"}
+_checks_license_export = "poetry export -f requirements.txt -o .requirements.txt"
+_checks_license_verify = "liccheck -r .requirements.txt"
+format = {sequence = ["_format_autoflake", "_format_isort", "_format_black"], help = "Run code auto formatting"}
+_format_autoflake = "autoflake ."
+_format_isort = "isort ."
+_format_black = "black ."
+tests = {sequence = ["tests_unit"], help = "Run all available tests"}
+tests_unit = {cmd = "pytest --cov --cov-report html --cov-report term -sv tests/unit", help = "Run only unit tests"}
+tests_integration_assets = "python -m goth create-assets tests/goth_tests/assets"
+tests_integration = "pytest -svx tests/goth_tests --disable-pytest-warnings --config-override docker-compose.build-environment.use-prerelease=true --config-path tests/goth_tests/assets/goth-config-testing.yml"
+
+[tool.liccheck]
+authorized_licenses = [
+  "bsd",
+  "new bsd",
+  "bsd license",
+  "apache 2",
+  "apache",
+  "Apache Software",
+  "Apache Software License",
+  "MPL-2.0",
+  "Mozilla Public License 2.0 (MPL 2.0)",
+  "MIT",
+  "LGPL",
+  "LGPL-3.0-or-later",
+  "GNU Lesser General Public License v3 or later (LGPLv3+)",
+  "GNU Lesser General Public License v3 (LGPLv3)",
+  "GNU Library or Lesser General Public License (LGPL)",
+  "Python Software Foundation",
+  "ISC",
+  "ISC License (ISCL)",
+]
+unauthorized_licenses = [
+  "gpl v3"
+]
+
+[tool.autoflake]
+recursive = true
+in-place = true
+remove-all-unused-imports = true
+ignore-init-module-imports = true
+
+[tool.flake8]
+max-line-length = 100
+extend-ignore = [
+    "E203", # See https://github.com/PyCQA/pycodestyle/issues/373
+    "E231", # black ignores this rule when formatting
+    "D105", # No docs for magic method
+    "D104", # No docs for public package
+    "D107", # No docs for __init__
+    "D202", # We prefer whitelines after docstrings
+]
+
+[tool.isort]
+profile = "black"
+py_version = 38
+known_golem = "goth, yapapi, ya_activity, ya_market, ya_net, ya_payment"
+sections = ["FUTURE", "STDLIB", "THIRDPARTY", "GOLEM", "FIRSTPARTY", "LOCALFOLDER"]
+line_length = 100
+
+[tool.black]
+line-length = 100
+target-version = ['py38']
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
