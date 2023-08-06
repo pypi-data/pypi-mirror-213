@@ -1,0 +1,175 @@
+CHANGES
+=======
+
+v11.1.0.rc6
+-----------
+
+* file like object for csv\_exporter
+
+v11.1.0.rc5
+-----------
+
+* again no language set in testing
+
+v11.1.0.rc4
+-----------
+
+* arivo-schedule in public pip
+* use temporary arivo-schedule package
+
+v11.1.0.rc3
+-----------
+
+* changed docs and requirements for schedule library until its a pip package
+
+v11.1.0.rc2
+-----------
+
+* added fork of schedule package
+
+v11.1.0.rc1
+-----------
+
+* databox upload now can have dst as folder (endswith "/")
+
+v11.1.0.rc0
+-----------
+
+* fixed testcase
+* small changes in csv export and databox upload adding more testcases docs
+* move files instead of copy
+* readme
+* util for databox upload
+* removing language dependency
+* removing ="asdf" for strings
+* added decimal separator support for english
+* some testcases for csv exporter, incorrect default value + static missing [skip ci]
+* fixed comment
+* added csv\_export library (no testcases)
+* removed mock rpcs from schema
+
+v11.0.3
+-------
+
+* Fixed typo, added compute\_id as label to all metrics, convert all label values to string
+* touch to get rid of skip ci on my commit
+* docs update [skip ci]
+* main test function deprecated and documentation for main tests added
+
+v11.0.2
+-------
+
+* fixed get\_no\_exception in SettingsMocker
+* Update database.md [skip ci]
+* Update database.md [skip ci]
+* Update database.md [skip ci]
+* Update database.md [skip ci]
+* Major Refactoring and many new functionality (v2 parking system refactor and redesign)
+
+v10.0.5
+-------
+
+* fixed problem in presence listener
+* README for settings + backend
+
+v10.0.4
+-------
+
+* Improvements for backend and package reader
+
+v10.0.3
+-------
+
+* added freezegun and fakeredis to openmodule requirements
+
+v10.0.2
+-------
+
+* touching a filer, since the tag's job is skipped because the commit mentioned 'sk\_ip ci'
+
+v10.0.2.rc2
+-----------
+
+* added more documentation [skip ci]
+* fixes an issue in the multiprocessing\_logging package in testcases
+
+v10.0.2.rc1
+-----------
+
+* Refactor for backend class for controller v2
+
+v10.0.1
+-------
+
+* fix for ondelete=CASCADE database migration problem
+
+v10.0.0
+-------
+
+* v10
+* README Update for creation of dist structure [skip ci]
+* don't schedule any more rpc's if we are already shutdown
+* Update README.md
+* Update README.md
+* PackageReader config
+
+v9.1.0
+------
+
+* Feature/privacy
+
+v9.0.0
+------
+
+* Version 9 Release
+
+v8.1.3
+------
+
+* Additions to Vehicle and Presence messages
+
+v8.1.2
+------
+
+* dont register schemas for mock handlers
+* fixes a race condition in the io tests
+* update known issues
+
+v8.1.1
+------
+
+* adds multiprocessing logging to openmodule requirements
+
+v8.1.0
+------
+
+* changelog and breaking changes updated
+* \* Adds an IO Listener \* Adds a SigTERM interrupt handler which converts to KeyboardInterrupt so shutdown in Docker containers is easier \* The main Test Mixin was refactored to start a separate process and raise a Interrupt. The other test methods were removed due to being hacky and crashing tox/pytest from time to time. Since this only breaks test code we don't bump the major version. \* The openmodule now waits for a connection with the message broker on startup \* Fixes an issue in the RPCServerTestMixin
+* RPCServerTestMixin now only registers one random channel instead of all channels on the server. (Author: Philipp Reitter)
+* add infos to CountMessage
+* Moved the event to the subprocess. Changed the error for process not shutting down to TimeoutError. Added a signal\_in\_function testcase that calls a function that raises an uncaught exception
+* optional vehicle id in CountMessage
+* Added multiprocessing\_loggging to test-requirements.txt. This allows for easy piping of logs from child process to parent. Removed exception\_in\_function and custom\_action\_in\_function methods. interrupt\_mixin only allows signal\_in\_function now! Testcases cannot raise a normal Exception anymore! Any signal can be sent to the child. signal\_in\_function raises an AssertionError if the process did not finish gracefully. Removed TestCases calling a normal Exception
+* Added line to exception\_in\_function to call new \_signal\_in\_function if exception is a signal or KeyboardInterrupt
+* Added signal handler removal to shutdown\_openmodule()
+* Reverted changes. Added signal\_in\_function test to interrupt.py. It starts a process that then receives the given singal. Moved docker\_shutdown tests to test\_interrupt.py. Added condition in init\_openmodule, that only the main thread can start the signalhandler
+* Initial move over to multiprocessing for interrupt tests
+* known issues and migrations written
+* do not write default Legacy-0 matching scheme to disk if not existing but use StringIO instead
+* Fixed get\_gateway\_states returning an empty IoState if the given Gateway was offline for 5 seconds. Added method descriptions to all callable IoListener methods
+* Added last\_timestamp to IoState. Renamed get\_state in IoListener to get\_io\_state. it now returns an IoState with all values 0. Added is\_pin\_valid, get\_gateway\_states and is\_gateway\_valid to IoListener. Added testcases for changes/new additions
+* Added Test case for SigTERM signal
+* Added a SigTERM interrupt handler, that simply raises a KeyboardInterrupt(). The handler is set in init\_openmodule and can be told not to start by setting catch\_sigterm=False at method call. The two arguments the signal hanlder receives (signal number, frame stack) are ignored (using \*\_)
+
+v8.0.1
+------
+
+* fixed loading empty yamls fixes rpc server not logging info in debug log
+
+v8.0.0
+------
+
+* fix in ci job
+* drop support for python 3.7
+* cleanup and docs
+* testcases for the new test method
