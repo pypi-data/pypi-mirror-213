@@ -1,0 +1,8 @@
+mcai_worker_sdk-2.0.0rc11.dist-info/METADATA,sha256=EqslgmFPaCrSm3dR6p9fqKbRj_ELXUGbv9sNVKB6HtM,3719
+mcai_worker_sdk-2.0.0rc11.dist-info/WHEEL,sha256=aOv3Y81nCRIU3owYvO0I9XNSTnupyIzHFAto5YFMoxc,109
+mcai_worker_sdk-2.0.0rc11.dist-info/license_files/LICENSE,sha256=GIljLyUArJrb14F4B7BYtZ66xcE05UeLySnim84TnwQ,1083
+mcai_worker_sdk.libs/libssl-9ad06800.so.1.1,sha256=b1Rjjt5uZHQ5YaOA5yrAWgqfrrzQ7WqRCeCvk0NHL2A,662760
+mcai_worker_sdk.libs/libcrypto-d9af65bd.so.1.1,sha256=y7ZAGB-N7rO_rjcuctdaEXgdTPgwyNmG_OQcYygtE0s,3207736
+mcai_worker_sdk/__init__.py,sha256=e60faz-rFRMKDztEleE8Pyh4HmBTNXFtmzms8lPASGM,143
+mcai_worker_sdk/mcai_worker_sdk.cpython-310-x86_64-linux-gnu.so,sha256=jZqUNZPfmYqEPUXz4Xi30qxlkX69lMpmFQ4ucE4vf5Y,24392488
+mcai_worker_sdk-2.0.0rc11.dist-info/RECORD,,
