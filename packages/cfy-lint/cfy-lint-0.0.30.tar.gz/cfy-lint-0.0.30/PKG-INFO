@@ -1,0 +1,5 @@
+Metadata-Version: 2.1
+Name: cfy-lint
+Version: 0.0.30
+Summary: Linter for Cloudify Blueprints
+License: LICENSE
