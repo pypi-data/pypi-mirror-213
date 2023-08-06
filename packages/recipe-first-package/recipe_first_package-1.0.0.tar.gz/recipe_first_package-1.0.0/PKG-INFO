@@ -1,0 +1,6 @@
+Metadata-Version: 2.1
+Name: recipe_first_package
+Version: 1.0.0
+Summary: this package contains some sample recipe codes
+Author: Dustin Baek
+Author-email: dustinbaek@deloitte.co.uk
