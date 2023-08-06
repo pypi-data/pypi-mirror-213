@@ -1,0 +1,9 @@
+client/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+client/client.py,sha256=kNlg9xCSFGmPZUFGZnBNMYtvnbz4g2dZNOolWTtWXEc,4032
+client/client_gui.py,sha256=D3fsYR1_3oHJGfRPe_H5A230r2FbBpaTH-w6NZUfXx8,7919
+client/const.py,sha256=HinZQkJB07UK3xRgUDLwwh9ybGe-0DHtYN_m_yjoYkQ,1472
+client/jim.py,sha256=_kZW4xri2nO4UwbGFjIBACYal6EVMiMTCr-XVfn-NkU,7815
+client_chat69-0.0.1.dist-info/METADATA,sha256=59hbq83p9FoGR4O7-ZhtaEum0eAmSDZTeYdjobTCf18,227
+client_chat69-0.0.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+client_chat69-0.0.1.dist-info/top_level.txt,sha256=DJiuN0ty6vOMYewH87cxtQ0LWVaJpE0bZ1Blm0e3RCE,7
+client_chat69-0.0.1.dist-info/RECORD,,
