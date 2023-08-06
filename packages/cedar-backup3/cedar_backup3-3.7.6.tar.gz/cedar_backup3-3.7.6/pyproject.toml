@@ -1,0 +1,92 @@
+[tool.poetry]
+name = "cedar-backup3"
+version = "3.7.6" # published version is managed using Git tags (see below)
+description = "Implements local and remote backups to CD/DVD and Amazon S3"
+keywords = [ 'local', 'remote', 'backup', 'scp' ]
+authors = ["Kenneth J. Pronovici <pronovic@ieee.org>"]
+license = "GPL-2.0-only"
+readme = "PyPI.md"
+homepage = "https://pypi.org/project/cedar-backup3/"
+repository = "https://github.com/pronovic/cedar-backup3"
+include = [
+   { path = 'Changelog', format = 'sdist' },
+   { path = 'NOTICE', format = 'sdist' },
+   { path = 'LICENSE', format = 'sdist' },
+   { path = 'README.md', format = 'sdist' },
+   { path = 'docs', format = 'sdist' },
+   { path = 'manpages', format = 'sdist' },
+   { path = 'samples', format = 'sdist' },
+   { path = 'tests', format = 'sdist' },
+]
+packages = [ { include = "CedarBackup3", from = "src" } ]
+classifiers=[
+   "Programming Language :: Python :: 3",
+   "Development Status :: 5 - Production/Stable",
+   "License :: OSI Approved :: GNU General Public License v2 (GPLv2)",
+   "Operating System :: OS Independent",
+   "Environment :: Console",
+   "Intended Audience :: System Administrators",
+   "Natural Language :: English",
+   "Topic :: Software Development :: Libraries",
+   "Topic :: System :: Archiving :: Backup",
+   "Topic :: Utilities",
+]
+
+# Published version is managed using Git tags
+# We get either the tag (like "0.24.1") or a snapshot-type version (like "0.24.1+3.e8319c4")
+# If the plugin is not installed, then the version is always "0.0.0", taken from above
+[tool.poetry-dynamic-versioning]
+enable = false
+pattern = '^[vV](?P<base>\d+\.\d+\.\d+)'  # this extracts the version from our vX.Y.Z tag format
+format-jinja = "{% if distance == 0 and not dirty %}{{ base }}{% else %}{{ base }}+{{ distance }}.{{ commit }}{% endif %}"
+
+[tool.poetry.scripts]
+cback3 = 'CedarBackup3.scripts:cback3' 
+cback3-amazons3-sync = 'CedarBackup3.scripts:amazons3' 
+cback3-span = 'CedarBackup3.scripts:span' 
+
+[tool.poetry.dependencies]
+python = ">=3.8,<4"
+chardet = "^5.1.0,<6"               # Debian bookworm only has 5.1.0
+importlib-metadata = "^4.12.0,<5"   # Debian bookworm only has 4.12.0
+sphinx = { version="^6.1.3", optional=true }
+sphinx-autoapi = { version="^2.0.1", optional=true }
+
+[tool.poetry.extras]
+docs = [ "sphinx", "sphinx-autoapi" ]
+
+[tool.poetry.group.dev.dependencies]
+coverage = "^6.5.0"
+pylint = "^2.16.2"
+pre-commit = "^3.1.0"
+black = "^23.1.0"
+isort = "^5.12.0"
+coveralls = "^3.3.1"
+colorama = "~0, >=0.4.6"
+
+[tool.black]
+line-length = 132
+target-version = ['py38', 'py39', 'py310', 'py311' ]
+include = '\.pyi?$'
+exclude = '''
+/(
+    \.git
+  | __pycache__
+  | \.tox
+  | \.venv
+  | \.poetry
+  | build
+  | dist
+  | docs
+  | notes
+)/
+'''
+
+[tool.isort]
+profile = "black"
+line_length = 132
+skip_glob = [ "docs", "notes" ]
+
+[build-system]
+requires = ["poetry-core>=1.0.0", "poetry-dynamic-versioning"]
+build-backend = "poetry_dynamic_versioning.backend"
