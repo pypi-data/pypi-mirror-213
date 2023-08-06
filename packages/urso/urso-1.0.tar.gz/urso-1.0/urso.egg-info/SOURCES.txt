@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+urso/__init__.py
+urso/__main__.py
+urso/base.py
+urso.egg-info/PKG-INFO
+urso.egg-info/SOURCES.txt
+urso.egg-info/dependency_links.txt
+urso.egg-info/requires.txt
+urso.egg-info/top_level.txt
