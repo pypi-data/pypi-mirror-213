@@ -1,0 +1,6 @@
+setup.py
+Logic_Circuits_Evolution/__init__.py
+Logic_Circuits_Evolution.egg-info/PKG-INFO
+Logic_Circuits_Evolution.egg-info/SOURCES.txt
+Logic_Circuits_Evolution.egg-info/dependency_links.txt
+Logic_Circuits_Evolution.egg-info/top_level.txt
