@@ -1,0 +1,12 @@
+miniqc/__init__.py,sha256=ltEC7OvrGtOkWXnatkoagr98mf4EOKbNM3_KBNdhm4A,110
+miniqc/__main__.py,sha256=5PG3-mQN0cPg2FuIyjt7cwX91DgHAaVgvnXRWlUxZpI,2373
+miniqc/_version.py,sha256=a6GtwCFNA7qNNekwFzFS80ZyICoJB45e-n2U_ZLaVB0,162
+miniqc/_version.pyi,sha256=_KrIYj3_s0sXcBhl_WIQrYZUP2PwYJRhD9HwaO1tnio,96
+miniqc/nifti.py,sha256=G8GGsiVeJNGYptbGPeV8sJ1K3hbw0aRHwWOcSbiDbn8,926
+miniqc/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+miniqc/types.py,sha256=-TU2_nKnUHOgpcp_ggNS8Ln-K_8pM7qU1o73r7c4BAA,394
+miniqc-23.0.1.dist-info/METADATA,sha256=LHFfdL9SmDfLr_FfhIBEmn9bKwIKBs7KnYSzYZ7uF9c,2638
+miniqc-23.0.1.dist-info/WHEEL,sha256=KGYbc1zXlYddvwxnNty23BeaKzh7YuoSIvIMO4jEhvw,87
+miniqc-23.0.1.dist-info/entry_points.txt,sha256=pRFSA2AIZlzosio3paqKfdGUZyWNNsoggUWLK8oWlHU,47
+miniqc-23.0.1.dist-info/licenses/LICENSE.txt,sha256=GkDqNSQAzdXBsE2YGuAVFM0qKDbHgIjybHU1jum1aeY,1102
+miniqc-23.0.1.dist-info/RECORD,,
