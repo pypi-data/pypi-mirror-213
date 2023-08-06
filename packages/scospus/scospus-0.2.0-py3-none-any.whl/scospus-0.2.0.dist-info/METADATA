@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: scospus
+Version: 0.2.0
+Summary: PUS packet parsing with SCOS backing
+Home-page: https://gitlab.irf.se/irf/scospus
+Author: Robert Labudda
+Author-email: robert.labudda@irf.se
+License: MIT
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pyscos2000
+Provides-Extra: docs
+Requires-Dist: sphinx ; extra == 'docs'
+Requires-Dist: numpydoc ; extra == 'docs'
+Requires-Dist: m2r2 ; extra == 'docs'
+
+README.md
