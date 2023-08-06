@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: selenium-leo
+Version: 1.0
+Summary: Funciones utiles de selenium para uso personal
+Home-page: https://github.com/silverxd20/selenium_functions
+Author: Leo
+Author-email: amazongalindo@gmail.com
+
+# Este modulo contiene funciones Ãºtiles para trabajar con selenium en python
+
+"""Funciones:
+
+- send_key_as_human: Envia una cadena de texto una a una con un tiempo random entre 0.15 a 0.40 segundos
+
+- doble_selector_xpath: Se le pasa 2 direcciÃ³n de selectores y el tiempo de espera, si el primero falla usa el segundo.
+
+y otros mas de doble selector...
+"""
+
