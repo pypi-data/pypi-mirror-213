@@ -1,0 +1,2 @@
+[console_scripts]
+med = med.__main__:main
