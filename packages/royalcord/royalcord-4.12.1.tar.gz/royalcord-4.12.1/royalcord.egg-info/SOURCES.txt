@@ -1,0 +1,7 @@
+LICENSE
+README.md
+setup.py
+royalcord.egg-info/PKG-INFO
+royalcord.egg-info/SOURCES.txt
+royalcord.egg-info/dependency_links.txt
+royalcord.egg-info/top_level.txt
