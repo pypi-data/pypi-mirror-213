@@ -1,0 +1,6 @@
+Metadata-Version: 2.1
+Name: libcythonconst
+Version: 1.0.1
+Summary: An example library with const in Cython
+Requires-Python: >=3.11
+

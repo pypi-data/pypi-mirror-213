@@ -1,0 +1,10 @@
+libcythonconst/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+libcythonconst/lsum.c,sha256=5G3aiBsx7S5glAuxswMaDp24F1Yvcj1ml502ULy-LDw,111018
+libcythonconst/lsum.cpython-311-darwin.so,sha256=IaFNTnIdYPTtfGfSNEtx97BlQb7enymshIPJ4h0ON6A,55175
+libcythonconst/lsum.h,sha256=9WtU5nW15uk6w5x30oJkdl6P5UzU5KFSD9AGOu8I_kI,827
+libcythonconst/lsum.pxd,sha256=8GEESt6hBP3cIjRTuc_tu6WMN-8G22Of2IhwXGg-zTc,43
+libcythonconst/lsum.pyx,sha256=6OUirIM4JC9odji-fZB0el3BXfpV5OVZQT-ZYGv7SEc,61
+libcythonconst-1.0.1.dist-info/METADATA,sha256=8JwVwXedSo2NTfc_pdnLHOAAmYcErGZxqjztSgCEsJA,132
+libcythonconst-1.0.1.dist-info/WHEEL,sha256=9u5azgharjYBfdIrZMb7YtYWGPqS21BRmRBngkXCmzk,110
+libcythonconst-1.0.1.dist-info/top_level.txt,sha256=1T_qcct-I8ZKiIpIJGivn7lGUinhIxorDrOhzbFA_eQ,15
+libcythonconst-1.0.1.dist-info/RECORD,,
