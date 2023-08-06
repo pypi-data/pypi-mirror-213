@@ -1,0 +1,7 @@
+LICENSE
+README.md
+setup.py
+dmPython8.egg-info/PKG-INFO
+dmPython8.egg-info/SOURCES.txt
+dmPython8.egg-info/dependency_links.txt
+dmPython8.egg-info/top_level.txt
