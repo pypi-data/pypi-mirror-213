@@ -1,0 +1,3 @@
+[console_scripts]
+hin=hin.__main__:main
+
