@@ -1,0 +1,9 @@
+mosaik_fmi/__init__.py,sha256=dTaMG_cL1ZhDIskmq1gg2YRVlKLYe3add4hcaOgkj98,19
+mosaik_fmi/mosaik_fmi.py,sha256=QdwIItSMKbhmZnKfRFFaUgZQAU3oLvN2Yyy17zPdQr0,10572
+mosaik_fmi/parse_xml.py,sha256=k--5GwluDoOcZQyZRKX-q0Nqhk4-KS5dkP3Ykg6umVE,2685
+mosaik_fmi-1.0.dist-info/AUTHORS.txt,sha256=isqpbxpWK0SObJR_MofSY1Is4iyFYPn6kf2J0zZPOHk,175
+mosaik_fmi-1.0.dist-info/LICENSE,sha256=D5xGfjaZ9n4SzfIVDhPfM-2gkQYLfAHHCI60AFr3Cgk,1080
+mosaik_fmi-1.0.dist-info/METADATA,sha256=bNYQvNEsHBvoP0IRwJtlMH3zD_PR7dNkOzJXKUqgre0,3601
+mosaik_fmi-1.0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+mosaik_fmi-1.0.dist-info/top_level.txt,sha256=T4Cg8HNiku8iPpCtdwmCBcZTY1kwDUT3sKjVRvP5Hv4,11
+mosaik_fmi-1.0.dist-info/RECORD,,
