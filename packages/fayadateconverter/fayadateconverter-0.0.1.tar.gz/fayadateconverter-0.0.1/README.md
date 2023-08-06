@@ -1,0 +1,1 @@
+This package helps you to convert Gregorian, Jalali, Hijri dates to each other, calculate today's date, get today's date, get the time difference from before to today.
