@@ -1,0 +1,4 @@
+[console_scripts]
+dapp-manager=dapp_manager.__main__:main
+dapp-stats=dapp_stats.__main__:main
+
