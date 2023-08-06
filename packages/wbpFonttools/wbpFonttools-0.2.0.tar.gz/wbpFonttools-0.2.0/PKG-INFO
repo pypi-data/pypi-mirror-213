@@ -1,0 +1,71 @@
+Metadata-Version: 2.1
+Name: wbpFonttools
+Version: 0.2.0
+Summary: FontTools font editor for Workbench applications.
+Home-page: https://gitlab.com/workbench2/workbench-plugins/wbpfonttools
+Author: Andreas Eigendorf
+License: MIT
+Project-URL: Source, https://gitlab.com/workbench2/workbench-plugins/wbpfonttools
+Project-URL: Documentation, https://workbench2.gitlab.io/workbench-plugins/wbpfonttools
+Project-URL: Tracker, https://gitlab.com/workbench2/workbench-plugins/wbpfonttools/-/issues
+Keywords: workbench,wxPython,GUI
+Platform: WIN32
+Platform: WIN64
+Platform: OSX
+Platform: POSIX
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: MacOS
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: POSIX
+Classifier: Environment :: MacOS X :: Cocoa
+Classifier: Environment :: Win32 (MS Windows)
+Classifier: Environment :: X11 Applications :: GTK
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: User Interfaces
+Classifier: Topic :: Text Processing :: Fonts
+Classifier: Topic :: Multimedia :: Graphics
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# wbpFonttools
+
+FontTools plugin for [Workbench](https://pypi.org/project/wbBase/) applications.
+
+This plugin provides Workbench document templates for the following font formats:
+- OpenType-TTF Font
+- OpenType-OTF Font
+- OpenType-WOFF WebFont
+- OpenType-WOFF-2 WebFont
+
+As well as a document view to view and edit fonts in these formats. 
+
+
+## Installation
+
+```shell
+pip install wbpFonttools
+```
+
+Installing this plugin registers an entry point 
+in the group "*wbbase.plugin*" named "*fonttools*".
+
+To use the plugin in your application, 
+add it to your *application.yml* file as follows:
+```yaml
+AppName: myApp
+Plugins:
+- Name: fonttools
+```
+
+## Documentation
+
+For details read the [Documentation](https://workbench2.gitlab.io/workbench-plugins/wbpfonttools).
