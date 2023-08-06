@@ -1,0 +1,8 @@
+bisnet/__init__.py,sha256=evbrh2mhLFV79lHenFJ8fJ4rFlYFdvexy6d0l2e0H1c,283
+bisnet/model.py,sha256=bEB1DQBch_6DSLpHZq-sSqleDssCES22fIum0NU3fH0,11124
+bisnet/resnet.py,sha256=6G8NnACUhyppSxSQrY65oTp1-SwPGJdv5-KfjEE8UDg,3879
+bisnet-1.0.0.dist-info/LICENSE,sha256=0Lo6wXJqZkmPxUu23F1SMX5nsxK-jq4BqjopL15Py5A,1073
+bisnet-1.0.0.dist-info/METADATA,sha256=SamhsbXCKlyXrBH7kxE_JKa4JbeC-jZpBNLLHKcFNk0,925
+bisnet-1.0.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+bisnet-1.0.0.dist-info/top_level.txt,sha256=Jsw00DUxO0EQTklS5ZN3_0sIMI57l2ebZXpBACNvg8g,7
+bisnet-1.0.0.dist-info/RECORD,,
