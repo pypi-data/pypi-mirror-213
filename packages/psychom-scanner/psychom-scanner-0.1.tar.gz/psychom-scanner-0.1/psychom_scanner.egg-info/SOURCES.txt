@@ -1,0 +1,7 @@
+README.md
+setup.py
+psychom_scanner/__init__.py
+psychom_scanner.egg-info/PKG-INFO
+psychom_scanner.egg-info/SOURCES.txt
+psychom_scanner.egg-info/dependency_links.txt
+psychom_scanner.egg-info/top_level.txt
