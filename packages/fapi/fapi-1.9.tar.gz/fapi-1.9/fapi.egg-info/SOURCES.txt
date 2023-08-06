@@ -1,0 +1,7 @@
+LICENSE
+README.md
+setup.py
+fapi.egg-info/PKG-INFO
+fapi.egg-info/SOURCES.txt
+fapi.egg-info/dependency_links.txt
+fapi.egg-info/top_level.txt
