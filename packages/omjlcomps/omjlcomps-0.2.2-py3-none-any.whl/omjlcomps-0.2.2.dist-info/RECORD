@@ -1,0 +1,13 @@
+omjlcomps/__init__.py,sha256=qoCkGQ0bDwAPZJXnh7KX8KGzmMAnMIRBGQaCeqTy7Go,12319
+omjlcomps/juliapkg.json,sha256=jUBZJHcGEx1F5IdWNHvPGZldmljwdboswqVip40MvOY,308
+omjlcomps/test/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+omjlcomps/test/test_ecomp.jl,sha256=47lK6AfzSgyjHlRIUMu2SzD_kqKpK-pVse29bHPCFp8,8146
+omjlcomps/test/test_icomp.jl,sha256=WbuHNwD3E6G-uqP0bwIjocm5J_C4bh8oaej7ZmxaNug,15739
+omjlcomps/test/test_julia_explicit_comp.py,sha256=tCQiXzHP2bjEPQ9UNRMu2tbCs0zfu4uzfyG1jKz8TYU,15620
+omjlcomps/test/test_julia_implicit_comp.py,sha256=yahP9KPjJRLAfdkHzcqkxaKuhQS02FeeuBgFpbLpXkI,23773
+omjlcomps-0.2.2.dist-info/LICENSE,sha256=XL-fz_DjkSn2jBHIUQmdZBcE1aPYIkJBgy6umY5N0EU,1115
+omjlcomps-0.2.2.dist-info/METADATA,sha256=1wKlqOPmQxX1RptvDq9SXrmvph_yposyGy4a7Px_R0E,1436
+omjlcomps-0.2.2.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+omjlcomps-0.2.2.dist-info/entry_points.txt,sha256=iCGvsN2hO-fA_JLetX8CahC087-K_skjBfZKuhkMibg,117
+omjlcomps-0.2.2.dist-info/top_level.txt,sha256=-wClspGCcmsmA6guJZzl2A_Ln-6tIkul72i0PeSYSQw,10
+omjlcomps-0.2.2.dist-info/RECORD,,
