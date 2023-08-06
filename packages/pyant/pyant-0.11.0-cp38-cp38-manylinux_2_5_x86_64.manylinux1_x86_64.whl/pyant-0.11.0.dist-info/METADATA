@@ -1,0 +1,110 @@
+Metadata-Version: 2.1
+Name: pyant
+Version: 0.11.0
+Summary: Radar antenna models in python
+Author-email: Daniel Kastinen <daniel.kastinen@irf.se>, Tom Grydeland <tgry@norceresearch.no>, Juha Vierinen <juha-pekka.vierinen@uit.no>
+Maintainer-email: Daniel Kastinen <daniel.kastinen@irf.se>
+License: MIT License
+        
+        Copyright (c) [2019] [Daniel Kastinen, Juha Vierinen, Tom Grydeland]
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+Project-URL: Documentation, https://danielk.developer.irf.se/pyant/
+Project-URL: Repository, https://github.com/danielk333/pyant
+Classifier: Intended Audience :: Science/Research
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Scientific/Engineering :: Physics
+Classifier: Operating System :: OS Independent
+Classifier: License :: OSI Approved :: MIT License
+Requires-Python: >=3.5
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy (>=1.14.3)
+Requires-Dist: scipy (>=1.1.0)
+Requires-Dist: matplotlib (>=3.2.0)
+Provides-Extra: develop
+Requires-Dist: pytest (>=6.2.5) ; extra == 'develop'
+Requires-Dist: sphinx (>=4.2.0) ; extra == 'develop'
+Requires-Dist: flake8 (>=6.0.0) ; extra == 'develop'
+Requires-Dist: wheel (>=0.37.0) ; extra == 'develop'
+Requires-Dist: build (>=0.7.0) ; extra == 'develop'
+Requires-Dist: twine (>=3.4.2) ; extra == 'develop'
+Requires-Dist: pytest-cov (>=4.1.0) ; extra == 'develop'
+Requires-Dist: sphinx-gallery (>=0.3.1) ; extra == 'develop'
+Requires-Dist: matplotlib (>=3.5.1) ; extra == 'develop'
+Requires-Dist: myst-nb (>=0.17.2) ; extra == 'develop'
+Requires-Dist: ipykernel (>=6.9.1) ; extra == 'develop'
+Requires-Dist: radon (>=5.1.0) ; extra == 'develop'
+Requires-Dist: numpydoc (>=1.2) ; extra == 'develop'
+Requires-Dist: pre-commit (>3.0.0) ; extra == 'develop'
+Requires-Dist: black (>=23.3.0) ; extra == 'develop'
+Requires-Dist: auditwheel (>=5.4.0) ; extra == 'develop'
+Requires-Dist: patchelf (>=0.14) ; extra == 'develop'
+Provides-Extra: notebooks
+Requires-Dist: notebook (>=6.5.4) ; extra == 'notebooks'
+Requires-Dist: jupytext (>=1.14.5) ; extra == 'notebooks'
+Provides-Extra: profiling
+Requires-Dist: yappi (>=1.4.0) ; extra == 'profiling'
+
+# PyAnt
+
+PyAnt is a standardization for implementing radar gain pattern in Python. Nothing more, nothing less.
+
+## Getting started
+
+To install
+
+```bash
+    pip install pyant
+```
+
+or for the nightly build
+
+```bash
+    git clone git@github.com:danielk333/pyant.git
+    cd pyant
+    git checkout develop
+    pip install .
+```
+
+Alternatively, if you are following updates closely you can install using ``pip install -e .`` so that in the future a ``git pull`` will update the library.
+
+Then get started by looking at the examples gallery and API in the Documentation.
+
+## Example
+
+Plot the gain pattern of a dish radar modeled using the Cassegrain model.
+
+```python
+import matplotlib.pyplot as plt
+import pyant
+
+ant = pyant.Cassegrain(
+    azimuth=0,
+    elevation=90.0,
+    frequency=930e6,
+    I0=10**4.81,
+    a0=23.0,
+    a1=40.0,
+    degrees=True,
+)
+
+pyant.plotting.gain_heatmap(ant, resolution=301, min_elevation=80.0)
+plt.show()
+```
