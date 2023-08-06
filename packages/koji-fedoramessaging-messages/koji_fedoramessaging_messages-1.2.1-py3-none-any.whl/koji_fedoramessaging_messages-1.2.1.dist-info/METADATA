@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: koji-fedoramessaging-messages
+Version: 1.2.1
+Summary: A schema package for messages sent by the koji-fedoramessaging plugin
+Home-page: https://github.com/fedora-infra/koji-fedoramessaging-messages
+License: GPL-3.0-or-later
+Keywords: fedora
+Author: Fedora Infrastructure Team
+Author-email: infrastructure@lists.fedoraproject.org
+Requires-Python: >=3.10,<4.0
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Requires-Dist: fedora-messaging (>=3.0.1)
+Project-URL: Repository, https://github.com/fedora-infra/koji-fedoramessaging-messages
+Description-Content-Type: text/markdown
+
+# koji-fedoramessaging messages
+
+A schema package for [koji-fedoramessaging](http://github.com/fedora-infra/koji-fedoramessaging).
+
+See the [detailed documentation](https://fedora-messaging.readthedocs.io/en/latest/messages.html) on packaging your schemas.
+
