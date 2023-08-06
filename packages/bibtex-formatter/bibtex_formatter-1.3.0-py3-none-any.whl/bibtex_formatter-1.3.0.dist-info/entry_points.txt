@@ -1,0 +1,2 @@
+[console_scripts]
+bfm = bfm:main
