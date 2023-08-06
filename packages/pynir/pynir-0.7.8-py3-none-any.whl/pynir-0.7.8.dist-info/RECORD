@@ -1,0 +1,11 @@
+pynir/Calibration.py,sha256=teHXndgECxKHhLiLnUrtgziFOgPMIa4cCfzTuNZveCk,20004
+pynir/CalibrationTransfer.py,sha256=v4LLNv4lMbHgNnwzVihh6jEdjuBYd9Jf_gu-rjE39-A,11020
+pynir/FeatureSelection.py,sha256=-3wt949Po6ertW2FIy-3gYeBqknmia5M0KBoOCZGyZ0,8536
+pynir/OutlierDetection.py,sha256=i7yQTxTDdjREL9A6hfqmUe_8mVtgZDt6PK4nSChddL4,3221
+pynir/Preprocessing.py,sha256=_67anJAvl6hfoJLjVCvVMLChLsE4gYgoa49LvpUtZDg,3742
+pynir/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pynir/utils.py,sha256=yWlqy2zf_52DjPMiHZKqU28Hw-aoaM8QM0NbLkFqTg4,4621
+pynir-0.7.8.dist-info/METADATA,sha256=bGDLwOf--MWIHRssPFqHoaHkHx0qj9PMzsGT2aZ4n74,9025
+pynir-0.7.8.dist-info/WHEEL,sha256=KGYbc1zXlYddvwxnNty23BeaKzh7YuoSIvIMO4jEhvw,87
+pynir-0.7.8.dist-info/licenses/LICENSE.txt,sha256=gOApZxIh2UKkpNgoih9NizxShBDi5oi9IRQrb5SWiL8,1079
+pynir-0.7.8.dist-info/RECORD,,
