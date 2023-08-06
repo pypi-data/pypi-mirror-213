@@ -1,0 +1,7 @@
+scipy
+altair
+trueskill
+openskill
+numpy
+orion
+typing_extensions
