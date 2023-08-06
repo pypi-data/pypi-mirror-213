@@ -1,0 +1,16 @@
+altgraph
+docutils
+future
+macholib
+numpy
+pefile
+PyQt5~=5.15
+PyQt5-sip~=12.12
+PyQt5-stubs~=5.15
+pywin32-ctypes~=0.2
+six
+requests
+gemmi
+gunicorn
+xlsxwriter
+qtawesome

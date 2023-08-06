@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: structurefinder
+Version: 74
+Project-URL: Homepage, https://dkratzert.de/structurefinder.html
+Project-URL: Bug Tracker, https://github.com/dkratzert/StructureFinder/issues
+License-File: LICENSE
+Requires-Dist: altgraph
+Requires-Dist: docutils
+Requires-Dist: future
+Requires-Dist: gemmi
+Requires-Dist: gunicorn
+Requires-Dist: macholib
+Requires-Dist: numpy
+Requires-Dist: pefile
+Requires-Dist: pyqt5-sip~=12.12
+Requires-Dist: pyqt5-stubs~=5.15
+Requires-Dist: pyqt5~=5.15
+Requires-Dist: pywin32-ctypes~=0.2
+Requires-Dist: qtawesome
+Requires-Dist: requests
+Requires-Dist: six
+Requires-Dist: xlsxwriter

@@ -1,0 +1,52 @@
+[build-system]
+requires = ["hatchling", "hatch-requirements-txt"]
+build-backend = "hatchling.build"
+
+[project]
+name = "structurefinder"
+dynamic = ["version", "dependencies"]
+
+[tool.hatch.metadata.hooks.requirements_txt]
+files = ["requirements.txt"]
+
+authors = [
+    { name = "Daniel Kratzert", email = "dkratzert@gmx.de" },
+]
+description = "Search X-ray structures on your hard drive"
+readme = "README.md"
+requires-python = ">=3.9"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Topic :: Scientific/Engineering :: Chemistry",
+    "Development Status :: 5 - Production/Stable",
+    "Programming Language :: Python :: 3",
+]
+
+[project.urls]
+"Homepage" = "https://dkratzert.de/structurefinder.html"
+"Bug Tracker" = "https://github.com/dkratzert/StructureFinder/issues"
+
+[tool.hatch.version]
+path = "src/structurefinder/misc/version.py"
+pattern = "VERSION\\s*=\\s*(?P<version>\\d+)"
+
+[tool.hatch.build.targets.sdist]
+exclude = [
+    "/.github",
+    "/pictures",
+    "/scripts",
+    "/setup",
+    "/tests",
+    "/manuals",
+    "/requirements-devel.txt",
+    "/requirements-cmd.txt",
+    "/make_release.sh",
+    "/venv*",
+]
+
+[project.scripts]
+strf = "structurefinder.strf:main"
+strf_cmd = "structurefinder.strf_cmd:main"
+strf_web = "structurefinder.cgi_ui.strf_web:run"
