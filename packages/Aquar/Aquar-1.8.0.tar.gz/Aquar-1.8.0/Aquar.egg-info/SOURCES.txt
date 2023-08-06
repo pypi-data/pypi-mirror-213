@@ -1,0 +1,7 @@
+LICENSE
+README.md
+setup.py
+Aquar.egg-info/PKG-INFO
+Aquar.egg-info/SOURCES.txt
+Aquar.egg-info/dependency_links.txt
+Aquar.egg-info/top_level.txt
