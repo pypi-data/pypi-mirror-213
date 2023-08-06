@@ -1,0 +1,10 @@
+pyproject2conda/__init__.py,sha256=JTe7cnNKufxHZqN1ok4HPSWU-RyzCTIlx-w45Ne4edc,622
+pyproject2conda/cli.py,sha256=4mTc-n3Br4g61FG-nwIM5AuTQBs5GHu9IyLs_3mQQPQ,8567
+pyproject2conda/parser.py,sha256=b4GGre1eL3CT9mAWJQ6MBy9hFRccDz4C1UvyNZVpyYg,18073
+pyproject2conda-0.4.0.dist-info/LICENSE,sha256=j_sUyRmuUbF_c9KR7g_uTdRv-cBn65wjYQpmusAzyT0,1645
+pyproject2conda-0.4.0.dist-info/METADATA,sha256=NXNmOZgaz9PycfXoI4Tcct1JKr7CoH7CehtltZ7vW98,23478
+pyproject2conda-0.4.0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+pyproject2conda-0.4.0.dist-info/entry_points.txt,sha256=PNoLiKVdI5OPXALm5My9VjdZXnDWVfefsge6aagB72U,60
+pyproject2conda-0.4.0.dist-info/top_level.txt,sha256=AmB_4c1RDQD-dEYqMNDtbW40cjmaySTySq07Puvbktw,16
+pyproject2conda-0.4.0.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+pyproject2conda-0.4.0.dist-info/RECORD,,
