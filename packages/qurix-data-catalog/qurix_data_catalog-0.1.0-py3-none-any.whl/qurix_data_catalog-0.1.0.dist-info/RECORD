@@ -1,0 +1,10 @@
+qurix/data/catalog/__init__.py,sha256=o1niz6z8Mt5gtiaG-2pqJFJZNnVupJqJTuaJzMmLq6Q,128
+qurix/data/catalog/__version__.py,sha256=jD3KZWW0xM7gmZhOVNaMcRa_jtsBLP55sq4D4EAKcjw,115
+qurix/data/catalog/client.py,sha256=c4AtXNOHxDV8_fCr4wq1yJVrL09P73Mq1TLIjr2bqd0,156
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_client.py,sha256=8cdmtTwMGCB98WkVl3HgvGH-hGRaXLqUG5djwJVwe6g,273
+qurix_data_catalog-0.1.0.dist-info/LICENCE,sha256=CsIBH2V17X3BCWeVIar_M4azxQsebH440A0dVF3BDNA,10945
+qurix_data_catalog-0.1.0.dist-info/METADATA,sha256=e0ObrYX9FrDzh9qs4QBtPxIhqbsQiiRgnmvctal4Cgk,695
+qurix_data_catalog-0.1.0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+qurix_data_catalog-0.1.0.dist-info/top_level.txt,sha256=acLHlyBAATa3UEocOOIT3oDZpOZGVgZNzLibUIU21OE,12
+qurix_data_catalog-0.1.0.dist-info/RECORD,,
