@@ -1,0 +1,47 @@
+Metadata-Version: 2.1
+Name: gli99
+Version: 1.1.6
+Summary: Web scraper for gifcities.org
+Home-page: https://github.com/TomTkacz/gli99
+Author: Tom Tkacz
+Author-email: thomasatkacz@gmail.com
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.10
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >3.10.0
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+Requires-Dist: selenium
+Requires-Dist: requests
+Requires-Dist: webdriver-manager
+
+***Do NOT use this repo for professional use, this was a personal project to practice version control, web scraping, and readme design. The correct way to access GifCities.org is through its (admittedly slow) [API](https://gifcities.archive.org/api/v1/gifsearch?q=hamster).***
+
+---
+
+
+
+## Installation
+
+Run the following to install:
+
+```python
+pip install gli99
+```
+
+## Usage
+
+```python
+from gli99.tools import GifScraper
+
+gs = GifScraper(browser="firefox")
+gs.load(query="brazil",amount=5)
+gs.download()
+```
+
+currently supported browsers:
+
+* Edge
+* Chrome
+* Firefox
