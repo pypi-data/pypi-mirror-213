@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "dsdiagram"
+version = "0.0.3"
+description = "data structure diagram generator"
+authors = [
+  { name="David Chen" },
+]
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = ["graphviz"]
+
+[project.urls]
+"Homepage" = "https://github.com/David0922/gen-data-structure-diagram"

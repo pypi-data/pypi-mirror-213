@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+dsdiagram/__init__.py
+dsdiagram/dsdiagram.py
+dsdiagram.egg-info/PKG-INFO
+dsdiagram.egg-info/SOURCES.txt
+dsdiagram.egg-info/dependency_links.txt
+dsdiagram.egg-info/requires.txt
+dsdiagram.egg-info/top_level.txt
