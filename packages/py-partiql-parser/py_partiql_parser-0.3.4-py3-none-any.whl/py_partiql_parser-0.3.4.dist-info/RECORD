@@ -1,0 +1,17 @@
+tests/__init__.py,sha256=p5lWtzChykkl04bTCXzgVktF_acrGjh8YoJmvebwR8o,1547
+tests/test_csv_converter.py,sha256=mTDhBZpzQHjqpzmSzcGQRfzWB32fo7-bLg60yhTbDXw,1046
+tests/test_dynamodb_examples.py,sha256=cJ1F9ahgVnqluMP4LYZg7aJmR3IEhHRKRc5BteKbmiM,2183
+tests/test_from_parser.py,sha256=bDQG92z0pD70H8sEnwXZMjvxWo5ogznHpBB0HxBe3jw,1304
+tests/test_json_encoder.py,sha256=owa8yIDxU7ezFB9QCfc9SHeCbEchlAAa4suXC4kFW7o,830
+tests/test_json_parser.py,sha256=Mkd3S5Yx8VC6pu1v_1XBO2tJcUmcXdx4SKdCQTTgZHI,3231
+tests/test_query_metadata.py,sha256=_QaOVnsIQypMBb2alj6DCh3fnS7dneJ_LMlFI9pyYvc,1314
+tests/test_s3_examples.py,sha256=V68KOSJV12P3wvsJv9xtmFh7rDpT4BUpqjcfbU8vCyk,6494
+tests/test_select_functions.py,sha256=zawAamQRfIaIpQWLtqiYVS_r0L-oGyt6JOAD3Mq280U,972
+tests/test_select_parser.py,sha256=EuhxXDA9iU_tnj1fS3cUSYgV2NgqasskRW8O6S9LiE0,1446
+tests/test_utils.py,sha256=f98O7HFsJ_xl_2b0M4EgvRzoiBhfeKU9GYb7hgviC7E,615
+tests/test_where_parser.py,sha256=kg6QZsGqKfGJbz5eNauQMA1gjeADDl-TWFyUdKEnnRc,3704
+py_partiql_parser-0.3.4.dist-info/LICENSE,sha256=-Ugddul9kGCJlynIRFbrJPqeRgpe9pp7YZr6GydEBNc,1070
+py_partiql_parser-0.3.4.dist-info/METADATA,sha256=JXeipQsKNi1vQcHDFRUDsH4o7QcYPxI3zoQu45xuREg,2256
+py_partiql_parser-0.3.4.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+py_partiql_parser-0.3.4.dist-info/top_level.txt,sha256=EdW7283x-lr_cbuivW8Ij7ANAP-ZJ9sLtILQseEPxXg,6
+py_partiql_parser-0.3.4.dist-info/RECORD,,
