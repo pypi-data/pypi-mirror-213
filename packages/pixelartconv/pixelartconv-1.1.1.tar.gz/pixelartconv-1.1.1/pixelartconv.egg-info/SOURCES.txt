@@ -1,0 +1,13 @@
+README.md
+pyproject.toml
+setup.cfg
+pixelartconv/__init__.py
+pixelartconv/__main__.py
+pixelartconv/file_management.py
+pixelartconv/logic.py
+pixelartconv/script.py
+pixelartconv.egg-info/PKG-INFO
+pixelartconv.egg-info/SOURCES.txt
+pixelartconv.egg-info/dependency_links.txt
+pixelartconv.egg-info/requires.txt
+pixelartconv.egg-info/top_level.txt
