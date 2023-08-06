@@ -1,0 +1,44 @@
+Metadata-Version: 2.1
+Name: onion-server
+Version: 0.0.1
+Summary: Dot-Onion Services Manager Client
+Author: Erasmus A. Junior
+Author-email: eirasmx@pm.me
+License: MIT
+Keywords: tor,hosting,onion,hidden,services,server
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Console
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: Unix
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENCE.txt
+Requires-Dist: colorama
+
+## **Onion-Server - Dot-Onion and hidden services manager and client** 
+---
+Onion-Server provides a client for fast and easy Hidden services management. Helps in controlling services in one session.
+<br>    
+
+### **Installation**
+```bash
+sudo su
+python -m pip install onion-server
+```
+
+<br>
+
+### **OS Support**
+- Linux
+
+---
+### **SORRY😥, DOCUMENTATION NOT AVAILABLE YET❗*
+
+
+
+# **:- Change Log -:**
+
+> **0.0.1** -- [ 13 JUNE 2023 ]  
+> [ NOTICE ]  
+> [ ! ] - Initial Release

@@ -1,0 +1,2 @@
+[console_scripts]
+onion = onion_server:main
