@@ -1,0 +1,9 @@
+django_join_unrelated/__init__.py,sha256=pNLRnP_lsY91W1mY1jrlXuLoe-OARHKFdr9KhPA1nH8,65
+django_join_unrelated/compiler.py,sha256=XQPNx39iHXmi_ES-pMwYHKO3DmeE8v0d3ty10s2MSxI,1510
+django_join_unrelated/exception.py,sha256=eTueCACOGcAm7GvtRC9okNyCgnIu3SsSlaQpIfaGxrw,37
+django_join_unrelated/manager.py,sha256=3u3fQASmBB8OGFqJMd7Fu9sCLN0jei42J54iB46NNi4,186
+django_join_unrelated/query.py,sha256=iYB3xs9Fl2s9If2X8xxhR7uySm8UC0xvgL7cS_DLd4U,1726
+django_join_unrelated-0.1.0.dist-info/LICENSE,sha256=zdS3Lem9oCWV8rDDkzoy6CNqIRSywhk36n7mfy12aJg,1070
+django_join_unrelated-0.1.0.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+django_join_unrelated-0.1.0.dist-info/METADATA,sha256=m7zfI7nfe-zqhST4oVqOku3QswDOlIFYgmrOdOFdNro,3156
+django_join_unrelated-0.1.0.dist-info/RECORD,,
