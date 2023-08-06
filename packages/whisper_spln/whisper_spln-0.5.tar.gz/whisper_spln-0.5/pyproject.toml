@@ -1,0 +1,23 @@
+[build-system]
+requires = ["flit_core >=3.2,<4"]
+build-backend = "flit_core.buildapi"
+
+[project]
+name = "whisper_spln"
+authors = [
+    { name = "João", email = "joaoandre210@gmail.com" },
+    { name = "Jorge", email = "jorge.lima.ne@gmail.com" },
+    { name = "Cristiano", email = "pg5034@alunos.uminho.pt" },
+]
+readme = "README.md"
+license = { file = "LICENSE" }
+classifiers = ["License :: OSI Approved :: MIT License"]
+dynamic = ["version", "description"]
+
+dependencies = ["whisper", "googletrans==4.0.0-rc1"]
+
+[tool.flit.module]
+name = "whisper_spln"
+
+[project.scripts]
+whisper_spln = "whisper_spln.main:main"
