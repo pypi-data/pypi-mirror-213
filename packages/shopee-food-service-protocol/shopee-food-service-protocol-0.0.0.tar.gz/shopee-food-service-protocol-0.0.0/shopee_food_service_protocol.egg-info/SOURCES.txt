@@ -1,0 +1,6 @@
+README.md
+setup.py
+shopee_food_service_protocol.egg-info/PKG-INFO
+shopee_food_service_protocol.egg-info/SOURCES.txt
+shopee_food_service_protocol.egg-info/dependency_links.txt
+shopee_food_service_protocol.egg-info/top_level.txt
