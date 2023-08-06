@@ -1,0 +1,8 @@
+LICENSE.txt.txt
+README.rst
+setup.py
+PHMM.egg-info/PKG-INFO
+PHMM.egg-info/SOURCES.txt
+PHMM.egg-info/dependency_links.txt
+PHMM.egg-info/requires.txt
+PHMM.egg-info/top_level.txt
