@@ -1,0 +1,5 @@
+~/documents              >  /media/usb1/documents  
+~/music                  >  /media/usb1/music      
+~/pictures              <-> /media/usb1/pictures   
+                                                   
+                                                   

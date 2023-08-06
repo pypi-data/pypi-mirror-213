@@ -1,0 +1,151 @@
+The first existing file of the following paths is loaded:
+- /home/username/.config/exampleapp/config
+- /etc/xdg/exampleapp/config
+
+This can be influenced with the following environment variables:
+- XDG_CONFIG_HOME
+- XDG_CONFIG_DIRS
+- EXAMPLEAPP_CONFIG_PATH
+- EXAMPLEAPP_CONFIG_DIRECTORY
+- EXAMPLEAPP_CONFIG_NAME
+
+You can also use environment variables to change the values of the
+settings listed under `set` command. The corresponding environment
+variable name is the name of the setting in all upper case letters
+with dots, hypens and spaces replaced by underscores and prefixed with
+"EXAMPLEAPP_".
+
+Lines in the config file which start with a `"` or `#` are ignored.
+
+The config file may contain the following commands:
+
+set
+===
+usage: set [--raw] key1=val1 [key2=val2 ...]
+       set [--raw] key [=] val
+
+Change the value of a setting.
+
+In the first form set takes an arbitrary number of arguments, each
+argument sets one setting. This has the advantage that several
+settings can be changed at once. That is useful if you want to bind a
+set command to a key and process that command with
+ConfigFile.parse_line() if the key is pressed.
+
+In the second form set takes two arguments, the key and the value.
+Optionally a single equals character may be added in between as third
+argument. This has the advantage that key and value are separated by
+one or more spaces which can improve the readability of a config file.
+
+You can use the value of another setting with %other.key% or an
+environment variable with ${ENV_VAR}. If you want to insert a literal
+percent character use two of them: %%. You can disable expansion of
+settings and environment variables with the --raw flag.
+
+data types:
+
+  int:
+    An integer number in python 3 syntax, as decimal (e.g. 42),
+    hexadecimal (e.g. 0x2a), octal (e.g. 0o52) or binary (e.g.
+    0b101010). Leading zeroes are not permitted to avoid confusion
+    with python 2's syntax for octal numbers. It is permissible to
+    group digits with underscores for better readability, e.g.
+    1_000_000.
+
+  str:
+    A text. If it contains spaces it must be wrapped in single or
+    double quotes.
+
+application wide settings:
+
+  answer:
+    an int
+
+    42: The answer to everything
+    23: The natural number following 22 and preceding 24
+
+  color.background:
+    one of red, green, blue
+
+  color.foreground:
+    one of red, green, blue
+
+settings which can have different values for different objects:
+  You can specify the object that a value shall refer to by
+  inserting the line `[config-id]` above. `config-id` must be
+  replaced by the corresponding identifier for the object.
+
+  greeting:
+    a str
+
+    A text that may be displayed if your computer is in a good
+    mood.
+
+include
+=======
+usage: include [--reset-config-id-before | --no-reset-config-id-after]
+               path
+
+Load another config file.
+
+This is useful if a config file is getting so big that you want to
+split it up or if you want to have different config files for
+different use cases which all include the same standard config file to
+avoid redundancy or if you want to bind several commands to one key
+which executes one command with ConfigFile.parse_line().
+
+By default the loaded config file starts with which ever config id is
+currently active. This is useful if you want to use the same values
+for several config ids: Write the set commands without a config id to
+a separate config file and include this file for every config id where
+these settings shall apply.
+
+After the include the config id is reset to the config id which was
+active at the beginning of the include because otherwise it might lead
+to confusion if the config id is changed in the included config file.
+
+positional arguments:
+  path                  The config file to load. Slashes are replaced
+                        with the directory separator appropriate for
+                        the current operating system. If the path
+                        contains a space it must be wrapped in single
+                        or double quotes.
+
+options:
+  --reset-config-id-before
+                        Ignore any config id which might be active
+                        when starting the include
+  --no-reset-config-id-after
+                        Treat the included lines as if they were
+                        written in the same config file instead of the
+                        include command
+
+echo
+====
+usage: echo [-l {info,error}] [-r] msg [msg ...]
+
+Display a message.
+
+Settings and environment variables are expanded like in the value of a
+set command.
+
+positional arguments:
+  msg                   The message to display
+
+options:
+  -l {info,error}, --level {info,error}
+                        The notification level may influence the
+                        formatting but messages printed with echo are
+                        always displayed regardless of the
+                        notification level.
+  -r, --raw             Do not expand settings and environment
+                        variables.
+
+help
+====
+usage: help [cmd]
+
+Display help.
+
+positional arguments:
+  cmd  The command for which you want help

@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: confattr
+Version: 0.13.0
+Summary: Config Attributes
+Author-email: erzo <erzo@posteo.de>
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Intended Audience :: Developers
+Classifier: Typing :: Typed
+Requires-Dist: appdirs >= 1.4.0
+Requires-Dist: platformdirs >= 2.0.0 ; extra == "platformdirs"
+Requires-Dist: xdgappdirs >= 1.4.4.3 ; extra == "xdgappdirs"
+Project-URL: Bug tracker, https://gitlab.com/erzo/confattr/-/issues
+Project-URL: Change log, https://gitlab.com/erzo/confattr/-/tags
+Project-URL: Documentation, https://erzo.gitlab.io/confattr/latest
+Project-URL: Source code, https://gitlab.com/erzo/confattr
+Provides-Extra: platformdirs
+Provides-Extra: xdgappdirs
+
+Config Attributes
+
+A python library to read and write config files
+with a syntax inspired by vimrc and ranger config.
+
+Documentation: https://erzo.gitlab.io/confattr/latest
+

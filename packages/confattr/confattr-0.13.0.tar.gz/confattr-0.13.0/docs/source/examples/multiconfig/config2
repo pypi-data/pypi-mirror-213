@@ -1,0 +1,8 @@
+set traffic-law.speed-limit = 30
+set car.color = white
+
+[alices-car]
+set car.color = red
+
+[bobs-car]
+set car.color = blue

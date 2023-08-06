@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>confattr.utils module &mdash; confattr v0.13.0 documentation</title>
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="_static/sphinx_paramlinks.css" type="text/css" />
+      <link rel="stylesheet" href="_static/no-ligatures-in-code.css" type="text/css" />
+      <link rel="stylesheet" href="_static/tab-size.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="_static/jquery.js"></script>
+        <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/sphinx_highlight.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="confattr.formatters module" href="confattr.formatters.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            confattr
+          </a>
+              <div class="version">
+                v0.13.0
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="intro.html">Introduction and examples</a></li>
+</ul>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="confattr.html">confattr package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="confattr.config.html">confattr.config module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="confattr.configfile.html">confattr.configfile module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="confattr.formatters.html">confattr.formatters module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="confattr.subprocess_pipe.html">confattr.subprocess_pipe module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="confattr.types.html">confattr.types module</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">confattr.utils module</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#confattr.utils.HelpFormatter"><code class="docutils literal notranslate"><span class="pre">HelpFormatter</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#confattr.utils.HelpFormatter.break_long_words"><code class="docutils literal notranslate"><span class="pre">HelpFormatter.break_long_words</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#confattr.utils.HelpFormatter.break_on_hyphens"><code class="docutils literal notranslate"><span class="pre">HelpFormatter.break_on_hyphens</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#confattr.utils.HelpFormatter.max_width"><code class="docutils literal notranslate"><span class="pre">HelpFormatter.max_width</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#confattr.utils.HelpFormatter.regex_linebreak"><code class="docutils literal notranslate"><span class="pre">HelpFormatter.regex_linebreak</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#confattr.utils.HelpFormatter.regex_list_item"><code class="docutils literal notranslate"><span class="pre">HelpFormatter.regex_list_item</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#confattr.utils.HelpFormatterWrapper"><code class="docutils literal notranslate"><span class="pre">HelpFormatterWrapper</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#confattr.utils.HelpFormatterWrapper.add_end_list"><code class="docutils literal notranslate"><span class="pre">HelpFormatterWrapper.add_end_list()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#confattr.utils.HelpFormatterWrapper.add_end_section"><code class="docutils literal notranslate"><span class="pre">HelpFormatterWrapper.add_end_section()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#confattr.utils.HelpFormatterWrapper.add_item"><code class="docutils literal notranslate"><span class="pre">HelpFormatterWrapper.add_item()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#confattr.utils.HelpFormatterWrapper.add_start_list"><code class="docutils literal notranslate"><span class="pre">HelpFormatterWrapper.add_start_list()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#confattr.utils.HelpFormatterWrapper.add_start_section"><code class="docutils literal notranslate"><span class="pre">HelpFormatterWrapper.add_start_section()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#confattr.utils.HelpFormatterWrapper.add_text"><code class="docutils literal notranslate"><span class="pre">HelpFormatterWrapper.add_text()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#confattr.utils.HelpFormatterWrapper.format_help"><code class="docutils literal notranslate"><span class="pre">HelpFormatterWrapper.format_help()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#confattr.utils.HelpFormatterWrapper.format_item"><code class="docutils literal notranslate"><span class="pre">HelpFormatterWrapper.format_item()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#confattr.utils.HelpFormatterWrapper.format_text"><code class="docutils literal notranslate"><span class="pre">HelpFormatterWrapper.format_text()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#confattr.utils.SortedEnum"><code class="docutils literal notranslate"><span class="pre">SortedEnum</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#confattr.utils.SortedEnum.descending"><code class="docutils literal notranslate"><span class="pre">SortedEnum.descending</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#confattr.utils.readable_quote"><code class="docutils literal notranslate"><span class="pre">readable_quote()</span></code></a></li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">confattr</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">confattr.utils module</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/confattr.utils.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="module-confattr.utils">
+<span id="confattr-utils-module"></span><h1>confattr.utils module<a class="headerlink" href="#module-confattr.utils" title="Permalink to this heading"></a></h1>
+<p>This module contains classes and functions that <a class="reference internal" href="confattr.html#module-confattr" title="confattr"><code class="xref py py-mod docutils literal notranslate"><span class="pre">confattr</span></code></a> uses internally but which might be useful for other python projects, too.</p>
+<dl class="py class">
+<dt class="sig sig-object py" id="confattr.utils.HelpFormatter">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">confattr.utils.</span></span><span class="sig-name descname"><span class="pre">HelpFormatter</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">prog</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.11)"><span class="pre">str</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">indent_increment</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.11)"><span class="pre">int</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">2</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">max_help_position</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.11)"><span class="pre">int</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">24</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">width</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.11)"><span class="pre">int</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.11)"><span class="pre">None</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#confattr.utils.HelpFormatter" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/argparse.html#argparse.RawDescriptionHelpFormatter" title="(in Python v3.11)"><code class="xref py py-class docutils literal notranslate"><span class="pre">RawDescriptionHelpFormatter</span></code></a></p>
+<p>A subclass of <code class="xref py py-class docutils literal notranslate"><span class="pre">argparse.HelpFormatter</span></code> which keeps paragraphs
+separated by an empty line as separate paragraphs and
+and which does <em>not</em> merge different list items to a single line.</p>
+<p>Lines are wrapped to not exceed a length of <a class="reference internal" href="#confattr.utils.HelpFormatter.max_width" title="confattr.utils.HelpFormatter.max_width"><code class="xref py py-attr docutils literal notranslate"><span class="pre">max_width</span></code></a> characters,
+although not strictly to prevent URLs from breaking.</p>
+<p>If a line ends with a double backslash this line will not be merged with the following line
+and the double backslash (and spaces directly before it) will be removed.</p>
+<p>As the doc string of <code class="xref py py-class docutils literal notranslate"><span class="pre">argparse.HelpFormatter</span></code> states</p>
+<blockquote>
+<div><p>Only the name of this class is considered a public API.
+All the methods provided by the class are considered an implementation detail.</p>
+</div></blockquote>
+<p>Therefore I may be forced to change the methods’ signatures if <code class="xref py py-class docutils literal notranslate"><span class="pre">argparse.HelpFormatter</span></code> is changed.
+But I hope that I can keep the class attributes backward compatible so that you can create your own formatter class
+by subclassing this class and changing the values of the class variables.</p>
+<p>If you want to use this class pass it to the constructor of <a class="reference internal" href="#confattr.utils.HelpFormatterWrapper" title="confattr.utils.HelpFormatterWrapper"><code class="xref py py-class docutils literal notranslate"><span class="pre">HelpFormatterWrapper</span></code></a> and use that instead.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><span class="target" id="confattr.utils.HelpFormatter.params.prog"></span><strong>prog</strong><a class="paramlink headerlink reference internal" href="#confattr.utils.HelpFormatter.params.prog">¶</a> – The name of the program</p></li>
+<li><p><span class="target" id="confattr.utils.HelpFormatter.params.width"></span><strong>width</strong><a class="paramlink headerlink reference internal" href="#confattr.utils.HelpFormatter.params.width">¶</a> – Wrap lines so that they are no longer than this number of characters. If this value is None or bigger than <a class="reference internal" href="#confattr.utils.HelpFormatter.max_width" title="confattr.utils.HelpFormatter.max_width"><code class="xref py py-attr docutils literal notranslate"><span class="pre">max_width</span></code></a> then <a class="reference internal" href="#confattr.utils.HelpFormatter.max_width" title="confattr.utils.HelpFormatter.max_width"><code class="xref py py-attr docutils literal notranslate"><span class="pre">max_width</span></code></a> is used instead.</p></li>
+</ul>
+</dd>
+</dl>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="confattr.utils.HelpFormatter.break_long_words">
+<span class="sig-name descname"><span class="pre">break_long_words</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">False</span></em><a class="headerlink" href="#confattr.utils.HelpFormatter.break_long_words" title="Permalink to this definition"></a></dt>
+<dd><p>This value is assigned to <a class="reference external" href="https://docs.python.org/3/library/textwrap.html#textwrap.TextWrapper.break_long_words" title="(in Python v3.11)"><code class="xref py py-attr docutils literal notranslate"><span class="pre">textwrap.TextWrapper.break_long_words</span></code></a>. This defaults to False to prevent URLs from breaking.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="confattr.utils.HelpFormatter.break_on_hyphens">
+<span class="sig-name descname"><span class="pre">break_on_hyphens</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">False</span></em><a class="headerlink" href="#confattr.utils.HelpFormatter.break_on_hyphens" title="Permalink to this definition"></a></dt>
+<dd><p>This value is assigned to <a class="reference external" href="https://docs.python.org/3/library/textwrap.html#textwrap.TextWrapper.break_on_hyphens" title="(in Python v3.11)"><code class="xref py py-attr docutils literal notranslate"><span class="pre">textwrap.TextWrapper.break_on_hyphens</span></code></a>. This defaults to False to prevent URLs from breaking.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="confattr.utils.HelpFormatter.max_width">
+<span class="sig-name descname"><span class="pre">max_width</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">70</span></em><a class="headerlink" href="#confattr.utils.HelpFormatter.max_width" title="Permalink to this definition"></a></dt>
+<dd><p>Wrap lines so that they are no longer than this number of characters.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="confattr.utils.HelpFormatter.regex_linebreak">
+<span class="sig-name descname"><span class="pre">regex_linebreak</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'\\\\\\\\(?:\n|$)'</span></em><a class="headerlink" href="#confattr.utils.HelpFormatter.regex_linebreak" title="Permalink to this definition"></a></dt>
+<dd><p>If a match is found this line is not merged with the following and the match is removed. This may <em>not</em> contain any capturing groups.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="confattr.utils.HelpFormatter.regex_list_item">
+<span class="sig-name descname"><span class="pre">regex_list_item</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'(?:^|\n)(\\s*(?:[-+*!/.]|[0-9]+[.)])(?:</span> <span class="pre">\\[[</span> <span class="pre">x~]\\])?</span> <span class="pre">)'</span></em><a class="headerlink" href="#confattr.utils.HelpFormatter.regex_list_item" title="Permalink to this definition"></a></dt>
+<dd><p>If a match is found this line is not merged with the preceeding line. This regular expression must contain exactly one capturing group. This group defines the indentation. Everything that is matched but not part of that group is removed.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="confattr.utils.HelpFormatterWrapper">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">confattr.utils.</span></span><span class="sig-name descname"><span class="pre">HelpFormatterWrapper</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">formatter_class</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/functions.html#type" title="(in Python v3.11)"><span class="pre">type</span></a><span class="p"><span class="pre">[</span></span><span class="pre">argparse.HelpFormatter</span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kw</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Unpack</span><span class="p"><span class="pre">[</span></span><span class="pre">HelpFormatterKwargs</span><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#confattr.utils.HelpFormatterWrapper" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.11)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<p>The doc string of <code class="xref py py-class docutils literal notranslate"><span class="pre">argparse.HelpFormatter</span></code> states:</p>
+<blockquote>
+<div><p>Only the name of this class is considered a public API.
+All the methods provided by the class are considered an implementation detail.</p>
+</div></blockquote>
+<p>This is a wrapper which tries to stay backward compatible even if <code class="xref py py-class docutils literal notranslate"><span class="pre">argparse.HelpFormatter</span></code> changes.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><span class="target" id="confattr.utils.HelpFormatterWrapper.params.formatter_class"></span><strong>formatter_class</strong><a class="paramlink headerlink reference internal" href="#confattr.utils.HelpFormatterWrapper.params.formatter_class">¶</a> – <code class="xref py py-class docutils literal notranslate"><span class="pre">argparse.HelpFormatter</span></code> or any of it’s subclasses (<a class="reference external" href="https://docs.python.org/3/library/argparse.html#argparse.RawDescriptionHelpFormatter" title="(in Python v3.11)"><code class="xref py py-class docutils literal notranslate"><span class="pre">argparse.RawDescriptionHelpFormatter</span></code></a>, <a class="reference external" href="https://docs.python.org/3/library/argparse.html#argparse.RawTextHelpFormatter" title="(in Python v3.11)"><code class="xref py py-class docutils literal notranslate"><span class="pre">argparse.RawTextHelpFormatter</span></code></a>, <a class="reference external" href="https://docs.python.org/3/library/argparse.html#argparse.ArgumentDefaultsHelpFormatter" title="(in Python v3.11)"><code class="xref py py-class docutils literal notranslate"><span class="pre">argparse.ArgumentDefaultsHelpFormatter</span></code></a>, <a class="reference external" href="https://docs.python.org/3/library/argparse.html#argparse.MetavarTypeHelpFormatter" title="(in Python v3.11)"><code class="xref py py-class docutils literal notranslate"><span class="pre">argparse.MetavarTypeHelpFormatter</span></code></a> or <a class="reference internal" href="#confattr.utils.HelpFormatter" title="confattr.utils.HelpFormatter"><code class="xref py py-class docutils literal notranslate"><span class="pre">HelpFormatter</span></code></a>)</p></li>
+<li><p><span class="target" id="confattr.utils.HelpFormatterWrapper.params.prog"></span><strong>prog</strong><a class="paramlink headerlink reference internal" href="#confattr.utils.HelpFormatterWrapper.params.prog">¶</a> – The name of the program</p></li>
+<li><p><span class="target" id="confattr.utils.HelpFormatterWrapper.params.indent_increment"></span><strong>indent_increment</strong><a class="paramlink headerlink reference internal" href="#confattr.utils.HelpFormatterWrapper.params.indent_increment">¶</a> – The number of spaces by which to indent the contents of a section</p></li>
+<li><p><span class="target" id="confattr.utils.HelpFormatterWrapper.params.max_help_position"></span><strong>max_help_position</strong><a class="paramlink headerlink reference internal" href="#confattr.utils.HelpFormatterWrapper.params.max_help_position">¶</a> – The maximal indentation of the help of arguments. If argument names + meta vars + separators are longer than this the help starts on the next line.</p></li>
+<li><p><span class="target" id="confattr.utils.HelpFormatterWrapper.params.width"></span><strong>width</strong><a class="paramlink headerlink reference internal" href="#confattr.utils.HelpFormatterWrapper.params.width">¶</a> – Maximal number of characters per line</p></li>
+</ul>
+</dd>
+</dl>
+<dl class="py method">
+<dt class="sig sig-object py" id="confattr.utils.HelpFormatterWrapper.add_end_list">
+<span class="sig-name descname"><span class="pre">add_end_list</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.11)"><span class="pre">None</span></a></span></span><a class="headerlink" href="#confattr.utils.HelpFormatterWrapper.add_end_list" title="Permalink to this definition"></a></dt>
+<dd><p>End a list. This must be called after the last <a class="reference internal" href="#confattr.utils.HelpFormatterWrapper.add_item" title="confattr.utils.HelpFormatterWrapper.add_item"><code class="xref py py-meth docutils literal notranslate"><span class="pre">add_item()</span></code></a>.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="confattr.utils.HelpFormatterWrapper.add_end_section">
+<span class="sig-name descname"><span class="pre">add_end_section</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.11)"><span class="pre">None</span></a></span></span><a class="headerlink" href="#confattr.utils.HelpFormatterWrapper.add_end_section" title="Permalink to this definition"></a></dt>
+<dd><p>End the last section which has been started with <a class="reference internal" href="#confattr.utils.HelpFormatterWrapper.add_start_section" title="confattr.utils.HelpFormatterWrapper.add_start_section"><code class="xref py py-meth docutils literal notranslate"><span class="pre">add_start_section()</span></code></a>.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="confattr.utils.HelpFormatterWrapper.add_item">
+<span class="sig-name descname"><span class="pre">add_item</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">text</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.11)"><span class="pre">str</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">bullet</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.11)"><span class="pre">str</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'-</span> <span class="pre">'</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.11)"><span class="pre">None</span></a></span></span><a class="headerlink" href="#confattr.utils.HelpFormatterWrapper.add_item" title="Permalink to this definition"></a></dt>
+<dd><p>Add a list item which will be formatted when calling <a class="reference internal" href="#confattr.utils.HelpFormatterWrapper.format_help" title="confattr.utils.HelpFormatterWrapper.format_help"><code class="xref py py-meth docutils literal notranslate"><span class="pre">format_help()</span></code></a>.
+A list must be started with <a class="reference internal" href="#confattr.utils.HelpFormatterWrapper.add_start_list" title="confattr.utils.HelpFormatterWrapper.add_start_list"><code class="xref py py-meth docutils literal notranslate"><span class="pre">add_start_list()</span></code></a> and ended with <a class="reference internal" href="#confattr.utils.HelpFormatterWrapper.add_end_list" title="confattr.utils.HelpFormatterWrapper.add_end_list"><code class="xref py py-meth docutils literal notranslate"><span class="pre">add_end_list()</span></code></a>.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="confattr.utils.HelpFormatterWrapper.add_start_list">
+<span class="sig-name descname"><span class="pre">add_start_list</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.11)"><span class="pre">None</span></a></span></span><a class="headerlink" href="#confattr.utils.HelpFormatterWrapper.add_start_list" title="Permalink to this definition"></a></dt>
+<dd><p>Start a new list which can be filled with <a class="reference internal" href="#confattr.utils.HelpFormatterWrapper.add_item" title="confattr.utils.HelpFormatterWrapper.add_item"><code class="xref py py-meth docutils literal notranslate"><span class="pre">add_item()</span></code></a>.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="confattr.utils.HelpFormatterWrapper.add_start_section">
+<span class="sig-name descname"><span class="pre">add_start_section</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">heading</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.11)"><span class="pre">str</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.11)"><span class="pre">None</span></a></span></span><a class="headerlink" href="#confattr.utils.HelpFormatterWrapper.add_start_section" title="Permalink to this definition"></a></dt>
+<dd><p>Start a new section.</p>
+<p>This influences the formatting of following calls to <a class="reference internal" href="#confattr.utils.HelpFormatterWrapper.add_text" title="confattr.utils.HelpFormatterWrapper.add_text"><code class="xref py py-meth docutils literal notranslate"><span class="pre">add_text()</span></code></a> and <a class="reference internal" href="#confattr.utils.HelpFormatterWrapper.add_item" title="confattr.utils.HelpFormatterWrapper.add_item"><code class="xref py py-meth docutils literal notranslate"><span class="pre">add_item()</span></code></a>.</p>
+<p>You can call this method again before calling <a class="reference internal" href="#confattr.utils.HelpFormatterWrapper.add_end_section" title="confattr.utils.HelpFormatterWrapper.add_end_section"><code class="xref py py-meth docutils literal notranslate"><span class="pre">add_end_section()</span></code></a> to create a subsection.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="confattr.utils.HelpFormatterWrapper.add_text">
+<span class="sig-name descname"><span class="pre">add_text</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">text</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.11)"><span class="pre">str</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.11)"><span class="pre">None</span></a></span></span><a class="headerlink" href="#confattr.utils.HelpFormatterWrapper.add_text" title="Permalink to this definition"></a></dt>
+<dd><p>Add some text which will be formatted when calling <a class="reference internal" href="#confattr.utils.HelpFormatterWrapper.format_help" title="confattr.utils.HelpFormatterWrapper.format_help"><code class="xref py py-meth docutils literal notranslate"><span class="pre">format_help()</span></code></a>.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="confattr.utils.HelpFormatterWrapper.format_help">
+<span class="sig-name descname"><span class="pre">format_help</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.11)"><span class="pre">str</span></a></span></span><a class="headerlink" href="#confattr.utils.HelpFormatterWrapper.format_help" title="Permalink to this definition"></a></dt>
+<dd><p>Format everything that has been added with <a class="reference internal" href="#confattr.utils.HelpFormatterWrapper.add_start_section" title="confattr.utils.HelpFormatterWrapper.add_start_section"><code class="xref py py-meth docutils literal notranslate"><span class="pre">add_start_section()</span></code></a>, <a class="reference internal" href="#confattr.utils.HelpFormatterWrapper.add_text" title="confattr.utils.HelpFormatterWrapper.add_text"><code class="xref py py-meth docutils literal notranslate"><span class="pre">add_text()</span></code></a> and <a class="reference internal" href="#confattr.utils.HelpFormatterWrapper.add_item" title="confattr.utils.HelpFormatterWrapper.add_item"><code class="xref py py-meth docutils literal notranslate"><span class="pre">add_item()</span></code></a>.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="confattr.utils.HelpFormatterWrapper.format_item">
+<span class="sig-name descname"><span class="pre">format_item</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">bullet</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.11)"><span class="pre">str</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">text</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.11)"><span class="pre">str</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.11)"><span class="pre">str</span></a></span></span><a class="headerlink" href="#confattr.utils.HelpFormatterWrapper.format_item" title="Permalink to this definition"></a></dt>
+<dd><p>Format a list item and return it immediately without adding it to <a class="reference internal" href="#confattr.utils.HelpFormatterWrapper.format_help" title="confattr.utils.HelpFormatterWrapper.format_help"><code class="xref py py-meth docutils literal notranslate"><span class="pre">format_help()</span></code></a>.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="confattr.utils.HelpFormatterWrapper.format_text">
+<span class="sig-name descname"><span class="pre">format_text</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">text</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.11)"><span class="pre">str</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.11)"><span class="pre">str</span></a></span></span><a class="headerlink" href="#confattr.utils.HelpFormatterWrapper.format_text" title="Permalink to this definition"></a></dt>
+<dd><p>Format a text and return it immediately without adding it to <a class="reference internal" href="#confattr.utils.HelpFormatterWrapper.format_help" title="confattr.utils.HelpFormatterWrapper.format_help"><code class="xref py py-meth docutils literal notranslate"><span class="pre">format_help()</span></code></a>.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="confattr.utils.SortedEnum">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">confattr.utils.</span></span><span class="sig-name descname"><span class="pre">SortedEnum</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">names</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">*</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">module</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">qualname</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">type</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">start</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">boundary</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#confattr.utils.SortedEnum" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/enum.html#enum.Enum" title="(in Python v3.11)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Enum</span></code></a></p>
+<p>By default it is assumed that the values are defined in ascending order <code class="docutils literal notranslate"><span class="pre">ONE='one';</span> <span class="pre">TWO='two';</span> <span class="pre">THREE='three'</span></code>.
+If you want to define them in descending order <code class="docutils literal notranslate"><span class="pre">THREE='three';</span> <span class="pre">TWO='two';</span> <span class="pre">ONE='one'</span></code> you can pass <code class="docutils literal notranslate"><span class="pre">descending</span> <span class="pre">=</span> <span class="pre">True</span></code> to the subclass.
+This requires Python 3.10.0a4 or newer.
+On older versions it causes a <code class="docutils literal notranslate"><span class="pre">TypeError:</span> <span class="pre">__prepare__()</span> <span class="pre">got</span> <span class="pre">an</span> <span class="pre">unexpected</span> <span class="pre">keyword</span> <span class="pre">argument</span> <span class="pre">'descending'</span></code>.
+This was fixed in <a class="reference external" href="https://github.com/python/cpython/commit/6ec0adefad60ec7cdec61c44baecf1dccc1461ab">commit 6ec0adefad</a>.</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="confattr.utils.SortedEnum.descending">
+<span class="sig-name descname"><span class="pre">descending</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.11)"><span class="pre">bool</span></a></em><a class="headerlink" href="#confattr.utils.SortedEnum.descending" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="confattr.utils.readable_quote">
+<span class="sig-prename descclassname"><span class="pre">confattr.utils.</span></span><span class="sig-name descname"><span class="pre">readable_quote</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.11)"><span class="pre">str</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.11)"><span class="pre">str</span></a></span></span><a class="headerlink" href="#confattr.utils.readable_quote" title="Permalink to this definition"></a></dt>
+<dd><p>This function has the same goal like <a class="reference external" href="https://docs.python.org/3/library/shlex.html#shlex.quote" title="(in Python v3.11)"><code class="xref py py-func docutils literal notranslate"><span class="pre">shlex.quote()</span></code></a> but tries to generate better readable output.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><span class="target" id="confattr.utils.readable_quote.params.value"></span><strong>value</strong><a class="paramlink headerlink reference internal" href="#confattr.utils.readable_quote.params.value">¶</a> – A value which is intended to be used as a command line argument</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>A POSIX compliant quoted version of <a class="reference internal" href="#confattr.utils.readable_quote.params.value" title="confattr.utils.readable_quote"><code class="xref py py-paramref docutils literal notranslate"><span class="pre">value</span></code></a></p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="confattr.formatters.html" class="btn btn-neutral float-left" title="confattr.formatters module" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2022, erzo.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

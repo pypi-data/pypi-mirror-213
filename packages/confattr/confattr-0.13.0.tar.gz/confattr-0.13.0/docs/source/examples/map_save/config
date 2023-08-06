@@ -1,0 +1,7 @@
+# ============
+# Key bindings
+# ============
+map up 'cursor up'
+map down 'cursor down'
+map ' ' activate
+map enter activate

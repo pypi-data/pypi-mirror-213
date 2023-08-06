@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Welcome to confattr’s documentation &mdash; confattr v0.13.0 documentation</title>
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="_static/sphinx_paramlinks.css" type="text/css" />
+      <link rel="stylesheet" href="_static/no-ligatures-in-code.css" type="text/css" />
+      <link rel="stylesheet" href="_static/tab-size.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="_static/jquery.js"></script>
+        <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/sphinx_highlight.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Introduction and examples" href="intro.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="#" class="icon icon-home">
+            confattr
+          </a>
+              <div class="version">
+                v0.13.0
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="intro.html">Introduction and examples</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="confattr.html">confattr package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="confattr.config.html">confattr.config module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="confattr.configfile.html">confattr.configfile module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="confattr.formatters.html">confattr.formatters module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="confattr.subprocess_pipe.html">confattr.subprocess_pipe module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="confattr.types.html">confattr.types module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="confattr.utils.html">confattr.utils module</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="#">confattr</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="#" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Welcome to confattr’s documentation</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/index.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="welcome-to-confattr-s-documentation">
+<h1>Welcome to confattr’s documentation<a class="headerlink" href="#welcome-to-confattr-s-documentation" title="Permalink to this heading"></a></h1>
+<p><a class="reference internal" href="confattr.html#module-confattr" title="confattr"><code class="xref py py-mod docutils literal notranslate"><span class="pre">confattr</span></code></a> (config attributes) is a python library which has the primary use case to read and write config files [<a class="reference internal" href="intro.html#exp-config"><span class="std std-ref">example</span></a>]
+but it can also be used to parse the input from a command line and provide auto completion for it [<a class="reference internal" href="intro.html#exp-auto-completion-with-prompt-toolkit"><span class="std std-ref">example for prompt_toolkit</span></a>/<a class="reference internal" href="intro.html#exp-auto-completion-with-urwid"><span class="std std-ref">example for urwid</span></a>].
+This library has the following features:</p>
+<ul class="simple">
+<li><p>Static type checking of the code is possible with e.g. <a class="reference external" href="https://mypy-lang.org/">mypy</a>.</p></li>
+<li><p>Values are checked and if the config file contains invalid syntax, unknown keys or invalid values a useful error messages is given to the user via a callback registered with <a class="reference internal" href="confattr.configfile.html#confattr.configfile.ConfigFile.set_ui_callback" title="confattr.configfile.ConfigFile.set_ui_callback"><code class="xref py py-meth docutils literal notranslate"><span class="pre">ConfigFile.set_ui_callback()</span></code></a>.</p></li>
+<li><p>It is possible to create a default config file with comments giving help and allowed values via <a class="reference internal" href="confattr.configfile.html#confattr.configfile.ConfigFile.save" title="confattr.configfile.ConfigFile.save"><code class="xref py py-meth docutils literal notranslate"><span class="pre">ConfigFile.save()</span></code></a>. <a class="reference internal" href="intro.html#exp-save"><span class="std std-ref">[example]</span></a></p></li>
+<li><p>It is possible to generate a help via <a class="reference internal" href="confattr.configfile.html#confattr.configfile.ConfigFile.write_help" title="confattr.configfile.ConfigFile.write_help"><code class="xref py py-meth docutils literal notranslate"><span class="pre">ConfigFile.write_help()</span></code></a> and <a class="reference internal" href="confattr.configfile.html#confattr.configfile.ConfigFile.get_help" title="confattr.configfile.ConfigFile.get_help"><code class="xref py py-meth docutils literal notranslate"><span class="pre">ConfigFile.get_help()</span></code></a>. <a class="reference internal" href="intro.html#exp-generating-help"><span class="std std-ref">[example]</span></a></p></li>
+<li><p>Settings can be changed via environment variables, too. <a class="reference internal" href="intro.html#exp-env"><span class="std std-ref">[example]</span></a></p></li>
+<li><p>It is possible to use the values of settings and environment variables when assigning a new value to a setting. <a class="reference internal" href="intro.html#exp-expansion"><span class="std std-ref">[example]</span></a></p></li>
+<li><p>It is easy to integrate into existing projects, just replace an existing attribute with a <a class="reference internal" href="confattr.config.html#confattr.config.Config" title="confattr.config.Config"><code class="xref py py-class docutils literal notranslate"><span class="pre">Config</span></code></a> instance.
+For example, assume a class has the attribute <code class="code highlight python docutils literal highlight-python"><span class="n">color</span> <span class="o">=</span> <span class="s1">&#39;red&#39;</span></code>.
+Replace it with <code class="code highlight python docutils literal highlight-python"><span class="n">color</span> <span class="o">=</span> <span class="n">Config</span><span class="p">(</span><span class="s1">&#39;color&#39;</span><span class="p">,</span> <span class="s1">&#39;red&#39;</span><span class="p">,</span> <span class="n">allowed_values</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;red&#39;</span><span class="p">,</span> <span class="s1">&#39;green&#39;</span><span class="p">,</span> <span class="s1">&#39;blue&#39;</span><span class="p">])</span></code> and call <a class="reference internal" href="confattr.configfile.html#confattr.configfile.ConfigFile.load" title="confattr.configfile.ConfigFile.load"><code class="xref py py-meth docutils literal notranslate"><span class="pre">ConfigFile.load()</span></code></a> (after the attribute has been created but before it’s value is used).
+Then a user can create a config file in the <a class="reference internal" href="confattr.configfile.html#confattr.configfile.ConfigFile.iter_config_paths" title="confattr.configfile.ConfigFile.iter_config_paths"><code class="xref py py-meth docutils literal notranslate"><span class="pre">expected</span> <span class="pre">location()</span></code></a> and can change the attribute with <code class="docutils literal notranslate"><span class="pre">set</span> <span class="pre">color=green</span></code>.
+You don’t need to change the usage of the attribute because <a class="reference internal" href="confattr.config.html#confattr.config.Config" title="confattr.config.Config"><code class="xref py py-class docutils literal notranslate"><span class="pre">Config</span></code></a> implements the <a class="reference external" href="https://docs.python.org/3/reference/datamodel.html#implementing-descriptors">descriptor protocol</a>.</p></li>
+<li><p>It is easy to add custom commands by subclassing <a class="reference internal" href="confattr.configfile.html#confattr.configfile.ConfigFileCommand" title="confattr.configfile.ConfigFileCommand"><code class="xref py py-class docutils literal notranslate"><span class="pre">ConfigFileCommand</span></code></a>. <a class="reference internal" href="intro.html#exp-extend"><span class="std std-ref">[example]</span></a></p></li>
+<li><p>It is well documented.</p></li>
+<li><p>Includes an example for test automation. <a class="reference internal" href="intro.html#exp-pytest"><span class="std std-ref">[example]</span></a></p></li>
+<li><p><a class="reference external" href="coverage/index.html">Test coverage: 100% branch coverage</a>  (tested on Python 3.11.3 and Python 3.6.15)</p></li>
+</ul>
+<section id="introduction-and-examples">
+<h2>Introduction and examples<a class="headerlink" href="#introduction-and-examples" title="Permalink to this heading"></a></h2>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="intro.html">Introduction and examples</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="intro.html#config-and-configfile">Config and ConfigFile</a></li>
+<li class="toctree-l2"><a class="reference internal" href="intro.html#using-the-values-of-settings-or-environment-variables">Using the values of settings or environment variables</a></li>
+<li class="toctree-l2"><a class="reference internal" href="intro.html#config-file-syntax">Config file syntax</a></li>
+<li class="toctree-l2"><a class="reference internal" href="intro.html#allowed-key-names">Allowed key names</a></li>
+<li class="toctree-l2"><a class="reference internal" href="intro.html#different-values-for-different-objects">Different values for different objects</a></li>
+<li class="toctree-l2"><a class="reference internal" href="intro.html#multiconfig-reset">MultiConfig.reset</a></li>
+<li class="toctree-l2"><a class="reference internal" href="intro.html#include">Include</a></li>
+<li class="toctree-l2"><a class="reference internal" href="intro.html#generating-help">Generating help</a></li>
+<li class="toctree-l2"><a class="reference internal" href="intro.html#custom-data-type-for-regular-expressions">Custom data type for regular expressions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="intro.html#custom-data-type-for-paths">Custom data type for paths</a></li>
+<li class="toctree-l2"><a class="reference internal" href="intro.html#adding-new-commands-to-the-config-file-syntax">Adding new commands to the config file syntax</a></li>
+<li class="toctree-l2"><a class="reference internal" href="intro.html#writing-custom-commands-to-the-config-file">Writing custom commands to the config file</a></li>
+<li class="toctree-l2"><a class="reference internal" href="intro.html#customizing-the-config-file-syntax">Customizing the config file syntax</a></li>
+<li class="toctree-l2"><a class="reference internal" href="intro.html#auto-completion-with-prompt-toolkit">Auto completion with prompt_toolkit</a></li>
+<li class="toctree-l2"><a class="reference internal" href="intro.html#auto-completion-with-urwid">Auto completion with urwid</a></li>
+<li class="toctree-l2"><a class="reference internal" href="intro.html#opening-the-config-file-in-a-text-editor">Opening the config file in a text editor</a></li>
+<li class="toctree-l2"><a class="reference internal" href="intro.html#config-without-classes">Config without classes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="intro.html#testing-your-application">Testing your application</a></li>
+<li class="toctree-l2"><a class="reference internal" href="intro.html#environment-variables">Environment variables</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</section>
+<section id="installation">
+<h2>Installation<a class="headerlink" href="#installation" title="Permalink to this heading"></a></h2>
+<p>You can install this library manually with <a class="reference external" href="https://pip.pypa.io/en/stable/">pip</a></p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$<span class="w"> </span>pip<span class="w"> </span>install<span class="w"> </span>confattr
+</pre></div>
+</div>
+<p>or, if you intend to use it in an installable package, just add it to the <a class="reference external" href="https://packaging.python.org/en/latest/specifications/declaring-project-metadata/#dependencies-optional-dependencies">dependencies</a> of <a class="reference external" href="https://packaging.python.org/en/latest/specifications/declaring-project-metadata/">pyproject.toml</a></p>
+<div class="highlight-toml notranslate"><div class="highlight"><pre><span></span><span class="k">[project]</span>
+<span class="n">dependencies</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span>
+<span class="w">    </span><span class="s">&quot;confattr &gt;= 0.10.0&quot;</span><span class="p">,</span>
+<span class="p">]</span>
+</pre></div>
+</div>
+</section>
+<section id="reference">
+<h2>Reference<a class="headerlink" href="#reference" title="Permalink to this heading"></a></h2>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="confattr.html">confattr package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="confattr.html#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="confattr.html#module-confattr">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="confattr.config.html">confattr.config module</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="confattr.config.html#confattr.config.Config"><code class="docutils literal notranslate"><span class="pre">Config</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="confattr.config.html#confattr.config.ConfigId"><code class="docutils literal notranslate"><span class="pre">ConfigId</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="confattr.config.html#confattr.config.DictConfig"><code class="docutils literal notranslate"><span class="pre">DictConfig</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="confattr.config.html#confattr.config.InstanceSpecificDictMultiConfig"><code class="docutils literal notranslate"><span class="pre">InstanceSpecificDictMultiConfig</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="confattr.config.html#confattr.config.MultiConfig"><code class="docutils literal notranslate"><span class="pre">MultiConfig</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="confattr.config.html#confattr.config.MultiDictConfig"><code class="docutils literal notranslate"><span class="pre">MultiDictConfig</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="confattr.configfile.html">confattr.configfile module</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="confattr.configfile.html#confattr.configfile.ArgPos"><code class="docutils literal notranslate"><span class="pre">ArgPos</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="confattr.configfile.html#confattr.configfile.ArgumentParser"><code class="docutils literal notranslate"><span class="pre">ArgumentParser</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="confattr.configfile.html#confattr.configfile.ConfigFile"><code class="docutils literal notranslate"><span class="pre">ConfigFile</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="confattr.configfile.html#confattr.configfile.ConfigFileArgparseCommand"><code class="docutils literal notranslate"><span class="pre">ConfigFileArgparseCommand</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="confattr.configfile.html#confattr.configfile.ConfigFileCommand"><code class="docutils literal notranslate"><span class="pre">ConfigFileCommand</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="confattr.configfile.html#confattr.configfile.ConfigFileWriter"><code class="docutils literal notranslate"><span class="pre">ConfigFileWriter</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="confattr.configfile.html#confattr.configfile.DEFAULT_COMMAND"><code class="docutils literal notranslate"><span class="pre">DEFAULT_COMMAND</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="confattr.configfile.html#confattr.configfile.Echo"><code class="docutils literal notranslate"><span class="pre">Echo</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="confattr.configfile.html#confattr.configfile.FormattedWriter"><code class="docutils literal notranslate"><span class="pre">FormattedWriter</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="confattr.configfile.html#confattr.configfile.Help"><code class="docutils literal notranslate"><span class="pre">Help</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="confattr.configfile.html#confattr.configfile.HelpWriter"><code class="docutils literal notranslate"><span class="pre">HelpWriter</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="confattr.configfile.html#confattr.configfile.Include"><code class="docutils literal notranslate"><span class="pre">Include</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="confattr.configfile.html#confattr.configfile.Message"><code class="docutils literal notranslate"><span class="pre">Message</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="confattr.configfile.html#confattr.configfile.MultipleParseExceptions"><code class="docutils literal notranslate"><span class="pre">MultipleParseExceptions</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="confattr.configfile.html#confattr.configfile.NotificationLevel"><code class="docutils literal notranslate"><span class="pre">NotificationLevel</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="confattr.configfile.html#confattr.configfile.ParseException"><code class="docutils literal notranslate"><span class="pre">ParseException</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="confattr.configfile.html#confattr.configfile.SaveKwargs"><code class="docutils literal notranslate"><span class="pre">SaveKwargs</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="confattr.configfile.html#confattr.configfile.SectionLevel"><code class="docutils literal notranslate"><span class="pre">SectionLevel</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="confattr.configfile.html#confattr.configfile.Set"><code class="docutils literal notranslate"><span class="pre">Set</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="confattr.configfile.html#confattr.configfile.TextIOWriter"><code class="docutils literal notranslate"><span class="pre">TextIOWriter</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="confattr.configfile.html#confattr.configfile.UiNotifier"><code class="docutils literal notranslate"><span class="pre">UiNotifier</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="confattr.configfile.html#confattr.configfile.UnknownCommand"><code class="docutils literal notranslate"><span class="pre">UnknownCommand</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="confattr.formatters.html">confattr.formatters module</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="confattr.formatters.html#confattr.formatters.AbstractCollection"><code class="docutils literal notranslate"><span class="pre">AbstractCollection</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="confattr.formatters.html#confattr.formatters.AbstractFormatter"><code class="docutils literal notranslate"><span class="pre">AbstractFormatter</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="confattr.formatters.html#confattr.formatters.CopyableAbstractFormatter"><code class="docutils literal notranslate"><span class="pre">CopyableAbstractFormatter</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="confattr.formatters.html#confattr.formatters.Dict"><code class="docutils literal notranslate"><span class="pre">Dict</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="confattr.formatters.html#confattr.formatters.Hex"><code class="docutils literal notranslate"><span class="pre">Hex</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="confattr.formatters.html#confattr.formatters.List"><code class="docutils literal notranslate"><span class="pre">List</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="confattr.formatters.html#confattr.formatters.Primitive"><code class="docutils literal notranslate"><span class="pre">Primitive</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="confattr.formatters.html#confattr.formatters.Set"><code class="docutils literal notranslate"><span class="pre">Set</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="confattr.formatters.html#confattr.formatters.format_primitive_value"><code class="docutils literal notranslate"><span class="pre">format_primitive_value()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="confattr.subprocess_pipe.html">confattr.subprocess_pipe module</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="confattr.subprocess_pipe.html#confattr.subprocess_pipe.run_and_pipe"><code class="docutils literal notranslate"><span class="pre">run_and_pipe()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="confattr.subprocess_pipe.html#confattr.subprocess_pipe.split_list"><code class="docutils literal notranslate"><span class="pre">split_list()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="confattr.types.html">confattr.types module</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="confattr.types.html#confattr.types.AbstractType"><code class="docutils literal notranslate"><span class="pre">AbstractType</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="confattr.types.html#confattr.types.CaseInsensitiveRegex"><code class="docutils literal notranslate"><span class="pre">CaseInsensitiveRegex</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="confattr.types.html#confattr.types.Regex"><code class="docutils literal notranslate"><span class="pre">Regex</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="confattr.types.html#confattr.types.SubprocessCommand"><code class="docutils literal notranslate"><span class="pre">SubprocessCommand</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="confattr.types.html#confattr.types.SubprocessCommandWithAlternatives"><code class="docutils literal notranslate"><span class="pre">SubprocessCommandWithAlternatives</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="confattr.types.html#confattr.types.TYPE_CONTEXT"><code class="docutils literal notranslate"><span class="pre">TYPE_CONTEXT</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="confattr.utils.html">confattr.utils module</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="confattr.utils.html#confattr.utils.HelpFormatter"><code class="docutils literal notranslate"><span class="pre">HelpFormatter</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="confattr.utils.html#confattr.utils.HelpFormatterWrapper"><code class="docutils literal notranslate"><span class="pre">HelpFormatterWrapper</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="confattr.utils.html#confattr.utils.SortedEnum"><code class="docutils literal notranslate"><span class="pre">SortedEnum</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="confattr.utils.html#confattr.utils.readable_quote"><code class="docutils literal notranslate"><span class="pre">readable_quote()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</div>
+</section>
+<section id="indices-and-tables">
+<h2>Indices and tables<a class="headerlink" href="#indices-and-tables" title="Permalink to this heading"></a></h2>
+<ul class="simple">
+<li><p><a class="reference internal" href="genindex.html"><span class="std std-ref">Index</span></a></p></li>
+<li><p><a class="reference internal" href="py-modindex.html"><span class="std std-ref">Module Index</span></a></p></li>
+<li><p><a class="reference internal" href="search.html"><span class="std std-ref">Search Page</span></a></p></li>
+</ul>
+</section>
+<section id="links">
+<h2>Links<a class="headerlink" href="#links" title="Permalink to this heading"></a></h2>
+<ul class="simple">
+<li><p><a class="reference external" href="https://gitlab.com/erzo/confattr">Source code</a></p></li>
+<li><p><a class="reference external" href="https://gitlab.com/erzo/confattr/-/issues">Bug tracker</a></p></li>
+<li><p><a class="reference external" href="https://gitlab.com/erzo/confattr/-/tags">Change log</a></p></li>
+<li><p><a class="reference external" href="https://pypi.org/project/confattr/">PyPI</a></p></li>
+</ul>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="intro.html" class="btn btn-neutral float-right" title="Introduction and examples" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2022, erzo.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

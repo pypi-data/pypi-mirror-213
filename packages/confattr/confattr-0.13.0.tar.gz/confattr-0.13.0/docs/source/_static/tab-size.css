@@ -1,0 +1,3 @@
+/* https://www.w3schools.com/cssref/css3_pr_tab-size.php */
+pre {-moz-tab-size: 4;} /* Firefox */
+pre {tab-size: 4;}

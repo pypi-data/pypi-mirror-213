@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>confattr package &mdash; confattr v0.13.0 documentation</title>
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="_static/sphinx_paramlinks.css" type="text/css" />
+      <link rel="stylesheet" href="_static/no-ligatures-in-code.css" type="text/css" />
+      <link rel="stylesheet" href="_static/tab-size.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="_static/jquery.js"></script>
+        <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/sphinx_highlight.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="confattr.config module" href="confattr.config.html" />
+    <link rel="prev" title="Introduction and examples" href="intro.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            confattr
+          </a>
+              <div class="version">
+                v0.13.0
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="intro.html">Introduction and examples</a></li>
+</ul>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">confattr package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#submodules">Submodules</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="confattr.config.html">confattr.config module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="confattr.configfile.html">confattr.configfile module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="confattr.subprocess_pipe.html">confattr.subprocess_pipe module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="confattr.types.html">confattr.types module</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#module-confattr">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="confattr.config.html">confattr.config module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="confattr.configfile.html">confattr.configfile module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="confattr.formatters.html">confattr.formatters module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="confattr.subprocess_pipe.html">confattr.subprocess_pipe module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="confattr.types.html">confattr.types module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="confattr.utils.html">confattr.utils module</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">confattr</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">confattr package</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/confattr.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="confattr-package">
+<h1>confattr package<a class="headerlink" href="#confattr-package" title="Permalink to this heading"></a></h1>
+<section id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this heading"></a></h2>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="confattr.config.html">confattr.config module</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="confattr.config.html#confattr.config.Config"><code class="docutils literal notranslate"><span class="pre">Config</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="confattr.config.html#confattr.config.Config.default_config_id"><code class="docutils literal notranslate"><span class="pre">Config.default_config_id</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="confattr.config.html#confattr.config.Config.get_value"><code class="docutils literal notranslate"><span class="pre">Config.get_value()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="confattr.config.html#confattr.config.Config.help"><code class="docutils literal notranslate"><span class="pre">Config.help</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="confattr.config.html#confattr.config.Config.instances"><code class="docutils literal notranslate"><span class="pre">Config.instances</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="confattr.config.html#confattr.config.Config.key"><code class="docutils literal notranslate"><span class="pre">Config.key</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="confattr.config.html#confattr.config.Config.set_value"><code class="docutils literal notranslate"><span class="pre">Config.set_value()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="confattr.config.html#confattr.config.Config.type"><code class="docutils literal notranslate"><span class="pre">Config.type</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="confattr.config.html#confattr.config.Config.value"><code class="docutils literal notranslate"><span class="pre">Config.value</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="confattr.config.html#confattr.config.Config.wants_to_be_exported"><code class="docutils literal notranslate"><span class="pre">Config.wants_to_be_exported()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="confattr.config.html#confattr.config.ConfigId"><code class="docutils literal notranslate"><span class="pre">ConfigId</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="confattr.config.html#confattr.config.DictConfig"><code class="docutils literal notranslate"><span class="pre">DictConfig</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="confattr.config.html#confattr.config.DictConfig.format_key"><code class="docutils literal notranslate"><span class="pre">DictConfig.format_key()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="confattr.config.html#confattr.config.DictConfig.get"><code class="docutils literal notranslate"><span class="pre">DictConfig.get()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="confattr.config.html#confattr.config.DictConfig.iter_keys"><code class="docutils literal notranslate"><span class="pre">DictConfig.iter_keys()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="confattr.config.html#confattr.config.DictConfig.new_config"><code class="docutils literal notranslate"><span class="pre">DictConfig.new_config()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="confattr.config.html#confattr.config.InstanceSpecificDictMultiConfig"><code class="docutils literal notranslate"><span class="pre">InstanceSpecificDictMultiConfig</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="confattr.config.html#confattr.config.MultiConfig"><code class="docutils literal notranslate"><span class="pre">MultiConfig</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="confattr.config.html#confattr.config.MultiConfig.check_config_id"><code class="docutils literal notranslate"><span class="pre">MultiConfig.check_config_id</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="confattr.config.html#confattr.config.MultiConfig.config_ids"><code class="docutils literal notranslate"><span class="pre">MultiConfig.config_ids</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="confattr.config.html#confattr.config.MultiConfig.get_value"><code class="docutils literal notranslate"><span class="pre">MultiConfig.get_value()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="confattr.config.html#confattr.config.MultiConfig.reset"><code class="docutils literal notranslate"><span class="pre">MultiConfig.reset()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="confattr.config.html#confattr.config.MultiConfig.set_value"><code class="docutils literal notranslate"><span class="pre">MultiConfig.set_value()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="confattr.config.html#confattr.config.MultiConfig.value"><code class="docutils literal notranslate"><span class="pre">MultiConfig.value</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="confattr.config.html#confattr.config.MultiConfig.values"><code class="docutils literal notranslate"><span class="pre">MultiConfig.values</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="confattr.config.html#confattr.config.MultiDictConfig"><code class="docutils literal notranslate"><span class="pre">MultiDictConfig</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="confattr.config.html#confattr.config.MultiDictConfig.new_config"><code class="docutils literal notranslate"><span class="pre">MultiDictConfig.new_config()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="confattr.configfile.html">confattr.configfile module</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="confattr.configfile.html#confattr.configfile.ArgPos"><code class="docutils literal notranslate"><span class="pre">ArgPos</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="confattr.configfile.html#confattr.configfile.ArgPos.argument_pos"><code class="docutils literal notranslate"><span class="pre">ArgPos.argument_pos</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="confattr.configfile.html#confattr.configfile.ArgPos.i0"><code class="docutils literal notranslate"><span class="pre">ArgPos.i0</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="confattr.configfile.html#confattr.configfile.ArgPos.i1"><code class="docutils literal notranslate"><span class="pre">ArgPos.i1</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="confattr.configfile.html#confattr.configfile.ArgPos.in_between"><code class="docutils literal notranslate"><span class="pre">ArgPos.in_between</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="confattr.configfile.html#confattr.configfile.ArgumentParser"><code class="docutils literal notranslate"><span class="pre">ArgumentParser</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="confattr.configfile.html#confattr.configfile.ArgumentParser.error"><code class="docutils literal notranslate"><span class="pre">ArgumentParser.error()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="confattr.configfile.html#confattr.configfile.ConfigFile"><code class="docutils literal notranslate"><span class="pre">ConfigFile</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="confattr.configfile.html#confattr.configfile.ConfigFile.COMMENT"><code class="docutils literal notranslate"><span class="pre">ConfigFile.COMMENT</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="confattr.configfile.html#confattr.configfile.ConfigFile.COMMENT_PREFIXES"><code class="docutils literal notranslate"><span class="pre">ConfigFile.COMMENT_PREFIXES</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="confattr.configfile.html#confattr.configfile.ConfigFile.ENTER_GROUP_PREFIX"><code class="docutils literal notranslate"><span class="pre">ConfigFile.ENTER_GROUP_PREFIX</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="confattr.configfile.html#confattr.configfile.ConfigFile.ENTER_GROUP_SUFFIX"><code class="docutils literal notranslate"><span class="pre">ConfigFile.ENTER_GROUP_SUFFIX</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="confattr.configfile.html#confattr.configfile.ConfigFile.ITEM_SEP"><code class="docutils literal notranslate"><span class="pre">ConfigFile.ITEM_SEP</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="confattr.configfile.html#confattr.configfile.ConfigFile.KEY_SEP"><code class="docutils literal notranslate"><span class="pre">ConfigFile.KEY_SEP</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="confattr.configfile.html#confattr.configfile.ConfigFile.check_config_id"><code class="docutils literal notranslate"><span class="pre">ConfigFile.check_config_id</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="confattr.configfile.html#confattr.configfile.ConfigFile.command_dict"><code class="docutils literal notranslate"><span class="pre">ConfigFile.command_dict</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="confattr.configfile.html#confattr.configfile.ConfigFile.commands"><code class="docutils literal notranslate"><span class="pre">ConfigFile.commands</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="confattr.configfile.html#confattr.configfile.ConfigFile.config_directory"><code class="docutils literal notranslate"><span class="pre">ConfigFile.config_directory</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="confattr.configfile.html#confattr.configfile.ConfigFile.config_id"><code class="docutils literal notranslate"><span class="pre">ConfigFile.config_id</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="confattr.configfile.html#confattr.configfile.ConfigFile.config_instances"><code class="docutils literal notranslate"><span class="pre">ConfigFile.config_instances</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="confattr.configfile.html#confattr.configfile.ConfigFile.config_name"><code class="docutils literal notranslate"><span class="pre">ConfigFile.config_name</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="confattr.configfile.html#confattr.configfile.ConfigFile.config_path"><code class="docutils literal notranslate"><span class="pre">ConfigFile.config_path</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="confattr.configfile.html#confattr.configfile.ConfigFile.context_file_name"><code class="docutils literal notranslate"><span class="pre">ConfigFile.context_file_name</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="confattr.configfile.html#confattr.configfile.ConfigFile.context_line"><code class="docutils literal notranslate"><span class="pre">ConfigFile.context_line</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="confattr.configfile.html#confattr.configfile.ConfigFile.context_line_number"><code class="docutils literal notranslate"><span class="pre">ConfigFile.context_line_number</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="confattr.configfile.html#confattr.configfile.ConfigFile.create_formatter"><code class="docutils literal notranslate"><span class="pre">ConfigFile.create_formatter()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="confattr.configfile.html#confattr.configfile.ConfigFile.enable_config_ids"><code class="docutils literal notranslate"><span class="pre">ConfigFile.enable_config_ids</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="confattr.configfile.html#confattr.configfile.ConfigFile.enter_group"><code class="docutils literal notranslate"><span class="pre">ConfigFile.enter_group()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="confattr.configfile.html#confattr.configfile.ConfigFile.env_variables"><code class="docutils literal notranslate"><span class="pre">ConfigFile.env_variables</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="confattr.configfile.html#confattr.configfile.ConfigFile.envprefix"><code class="docutils literal notranslate"><span class="pre">ConfigFile.envprefix</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="confattr.configfile.html#confattr.configfile.ConfigFile.expand"><code class="docutils literal notranslate"><span class="pre">ConfigFile.expand()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="confattr.configfile.html#confattr.configfile.ConfigFile.expand_config"><code class="docutils literal notranslate"><span class="pre">ConfigFile.expand_config()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="confattr.configfile.html#confattr.configfile.ConfigFile.expand_config_match"><code class="docutils literal notranslate"><span class="pre">ConfigFile.expand_config_match()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="confattr.configfile.html#confattr.configfile.ConfigFile.expand_env"><code class="docutils literal notranslate"><span class="pre">ConfigFile.expand_env()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="confattr.configfile.html#confattr.configfile.ConfigFile.expand_env_match"><code class="docutils literal notranslate"><span class="pre">ConfigFile.expand_env_match()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="confattr.configfile.html#confattr.configfile.ConfigFile.find_arg"><code class="docutils literal notranslate"><span class="pre">ConfigFile.find_arg()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="confattr.configfile.html#confattr.configfile.ConfigFile.format_any_value"><code class="docutils literal notranslate"><span class="pre">ConfigFile.format_any_value()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="confattr.configfile.html#confattr.configfile.ConfigFile.format_value"><code class="docutils literal notranslate"><span class="pre">ConfigFile.format_value()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="confattr.configfile.html#confattr.configfile.ConfigFile.get_app_dirs"><code class="docutils literal notranslate"><span class="pre">ConfigFile.get_app_dirs()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="confattr.configfile.html#confattr.configfile.ConfigFile.get_command"><code class="docutils literal notranslate"><span class="pre">ConfigFile.get_command()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="confattr.configfile.html#confattr.configfile.ConfigFile.get_completions"><code class="docutils literal notranslate"><span class="pre">ConfigFile.get_completions()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="confattr.configfile.html#confattr.configfile.ConfigFile.get_completions_command"><code class="docutils literal notranslate"><span class="pre">ConfigFile.get_completions_command()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="confattr.configfile.html#confattr.configfile.ConfigFile.get_completions_command_name"><code class="docutils literal notranslate"><span class="pre">ConfigFile.get_completions_command_name()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="confattr.configfile.html#confattr.configfile.ConfigFile.get_completions_enter_group"><code class="docutils literal notranslate"><span class="pre">ConfigFile.get_completions_enter_group()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="confattr.configfile.html#confattr.configfile.ConfigFile.get_completions_for_expand"><code class="docutils literal notranslate"><span class="pre">ConfigFile.get_completions_for_expand()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="confattr.configfile.html#confattr.configfile.ConfigFile.get_completions_for_expand_config"><code class="docutils literal notranslate"><span class="pre">ConfigFile.get_completions_for_expand_config()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="confattr.configfile.html#confattr.configfile.ConfigFile.get_completions_for_expand_env"><code class="docutils literal notranslate"><span class="pre">ConfigFile.get_completions_for_expand_env()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="confattr.configfile.html#confattr.configfile.ConfigFile.get_completions_for_file_name"><code class="docutils literal notranslate"><span class="pre">ConfigFile.get_completions_for_file_name()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="confattr.configfile.html#confattr.configfile.ConfigFile.get_env_name"><code class="docutils literal notranslate"><span class="pre">ConfigFile.get_env_name()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="confattr.configfile.html#confattr.configfile.ConfigFile.get_help"><code class="docutils literal notranslate"><span class="pre">ConfigFile.get_help()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="confattr.configfile.html#confattr.configfile.ConfigFile.get_help_config_id"><code class="docutils literal notranslate"><span class="pre">ConfigFile.get_help_config_id()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="confattr.configfile.html#confattr.configfile.ConfigFile.get_save_path"><code class="docutils literal notranslate"><span class="pre">ConfigFile.get_save_path()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="confattr.configfile.html#confattr.configfile.ConfigFile.is_comment"><code class="docutils literal notranslate"><span class="pre">ConfigFile.is_comment()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="confattr.configfile.html#confattr.configfile.ConfigFile.iter_config_paths"><code class="docutils literal notranslate"><span class="pre">ConfigFile.iter_config_paths()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="confattr.configfile.html#confattr.configfile.ConfigFile.iter_user_site_config_paths"><code class="docutils literal notranslate"><span class="pre">ConfigFile.iter_user_site_config_paths()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="confattr.configfile.html#confattr.configfile.ConfigFile.load"><code class="docutils literal notranslate"><span class="pre">ConfigFile.load()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="confattr.configfile.html#confattr.configfile.ConfigFile.load_env"><code class="docutils literal notranslate"><span class="pre">ConfigFile.load_env()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="confattr.configfile.html#confattr.configfile.ConfigFile.load_file"><code class="docutils literal notranslate"><span class="pre">ConfigFile.load_file()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="confattr.configfile.html#confattr.configfile.ConfigFile.load_without_resetting_config_id"><code class="docutils literal notranslate"><span class="pre">ConfigFile.load_without_resetting_config_id()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="confattr.configfile.html#confattr.configfile.ConfigFile.parse_error"><code class="docutils literal notranslate"><span class="pre">ConfigFile.parse_error()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="confattr.configfile.html#confattr.configfile.ConfigFile.parse_line"><code class="docutils literal notranslate"><span class="pre">ConfigFile.parse_line()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="confattr.configfile.html#confattr.configfile.ConfigFile.parse_split_line"><code class="docutils literal notranslate"><span class="pre">ConfigFile.parse_split_line()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="confattr.configfile.html#confattr.configfile.ConfigFile.parse_value"><code class="docutils literal notranslate"><span class="pre">ConfigFile.parse_value()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="confattr.configfile.html#confattr.configfile.ConfigFile.parse_value_part"><code class="docutils literal notranslate"><span class="pre">ConfigFile.parse_value_part()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="confattr.configfile.html#confattr.configfile.ConfigFile.quote"><code class="docutils literal notranslate"><span class="pre">ConfigFile.quote()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="confattr.configfile.html#confattr.configfile.ConfigFile.quote_path"><code class="docutils literal notranslate"><span class="pre">ConfigFile.quote_path()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="confattr.configfile.html#confattr.configfile.ConfigFile.reo_config"><code class="docutils literal notranslate"><span class="pre">ConfigFile.reo_config</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="confattr.configfile.html#confattr.configfile.ConfigFile.reo_env"><code class="docutils literal notranslate"><span class="pre">ConfigFile.reo_env</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="confattr.configfile.html#confattr.configfile.ConfigFile.save"><code class="docutils literal notranslate"><span class="pre">ConfigFile.save()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="confattr.configfile.html#confattr.configfile.ConfigFile.save_file"><code class="docutils literal notranslate"><span class="pre">ConfigFile.save_file()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="confattr.configfile.html#confattr.configfile.ConfigFile.save_to_open_file"><code class="docutils literal notranslate"><span class="pre">ConfigFile.save_to_open_file()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="confattr.configfile.html#confattr.configfile.ConfigFile.save_to_writer"><code class="docutils literal notranslate"><span class="pre">ConfigFile.save_to_writer()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="confattr.configfile.html#confattr.configfile.ConfigFile.set_save_default_arguments"><code class="docutils literal notranslate"><span class="pre">ConfigFile.set_save_default_arguments()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="confattr.configfile.html#confattr.configfile.ConfigFile.set_ui_callback"><code class="docutils literal notranslate"><span class="pre">ConfigFile.set_ui_callback()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="confattr.configfile.html#confattr.configfile.ConfigFile.show_line_always"><code class="docutils literal notranslate"><span class="pre">ConfigFile.show_line_always</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="confattr.configfile.html#confattr.configfile.ConfigFile.split_line"><code class="docutils literal notranslate"><span class="pre">ConfigFile.split_line()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="confattr.configfile.html#confattr.configfile.ConfigFile.split_line_ignore_errors"><code class="docutils literal notranslate"><span class="pre">ConfigFile.split_line_ignore_errors()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="confattr.configfile.html#confattr.configfile.ConfigFile.split_one_symbol_command"><code class="docutils literal notranslate"><span class="pre">ConfigFile.split_one_symbol_command()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="confattr.configfile.html#confattr.configfile.ConfigFile.write_config_id"><code class="docutils literal notranslate"><span class="pre">ConfigFile.write_config_id()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="confattr.configfile.html#confattr.configfile.ConfigFile.write_help"><code class="docutils literal notranslate"><span class="pre">ConfigFile.write_help()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="confattr.configfile.html#confattr.configfile.ConfigFileArgparseCommand"><code class="docutils literal notranslate"><span class="pre">ConfigFileArgparseCommand</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="confattr.configfile.html#confattr.configfile.ConfigFileArgparseCommand.after_positional_argument_marker"><code class="docutils literal notranslate"><span class="pre">ConfigFileArgparseCommand.after_positional_argument_marker()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="confattr.configfile.html#confattr.configfile.ConfigFileArgparseCommand.get_action_for_option"><code class="docutils literal notranslate"><span class="pre">ConfigFileArgparseCommand.get_action_for_option()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="confattr.configfile.html#confattr.configfile.ConfigFileArgparseCommand.get_action_for_positional_argument"><code class="docutils literal notranslate"><span class="pre">ConfigFileArgparseCommand.get_action_for_positional_argument()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="confattr.configfile.html#confattr.configfile.ConfigFileArgparseCommand.get_completions"><code class="docutils literal notranslate"><span class="pre">ConfigFileArgparseCommand.get_completions()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="confattr.configfile.html#confattr.configfile.ConfigFileArgparseCommand.get_completions_for_action"><code class="docutils literal notranslate"><span class="pre">ConfigFileArgparseCommand.get_completions_for_action()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="confattr.configfile.html#confattr.configfile.ConfigFileArgparseCommand.get_completions_for_option_argument"><code class="docutils literal notranslate"><span class="pre">ConfigFileArgparseCommand.get_completions_for_option_argument()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="confattr.configfile.html#confattr.configfile.ConfigFileArgparseCommand.get_completions_for_option_name"><code class="docutils literal notranslate"><span class="pre">ConfigFileArgparseCommand.get_completions_for_option_name()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="confattr.configfile.html#confattr.configfile.ConfigFileArgparseCommand.get_completions_for_positional_argument"><code class="docutils literal notranslate"><span class="pre">ConfigFileArgparseCommand.get_completions_for_positional_argument()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="confattr.configfile.html#confattr.configfile.ConfigFileArgparseCommand.get_help"><code class="docutils literal notranslate"><span class="pre">ConfigFileArgparseCommand.get_help()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="confattr.configfile.html#confattr.configfile.ConfigFileArgparseCommand.get_option_name_if_it_takes_an_argument"><code class="docutils literal notranslate"><span class="pre">ConfigFileArgparseCommand.get_option_name_if_it_takes_an_argument()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="confattr.configfile.html#confattr.configfile.ConfigFileArgparseCommand.get_position"><code class="docutils literal notranslate"><span class="pre">ConfigFileArgparseCommand.get_position()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="confattr.configfile.html#confattr.configfile.ConfigFileArgparseCommand.init_parser"><code class="docutils literal notranslate"><span class="pre">ConfigFileArgparseCommand.init_parser()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="confattr.configfile.html#confattr.configfile.ConfigFileArgparseCommand.is_option_start"><code class="docutils literal notranslate"><span class="pre">ConfigFileArgparseCommand.is_option_start()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="confattr.configfile.html#confattr.configfile.ConfigFileArgparseCommand.parser"><code class="docutils literal notranslate"><span class="pre">ConfigFileArgparseCommand.parser</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="confattr.configfile.html#confattr.configfile.ConfigFileArgparseCommand.run"><code class="docutils literal notranslate"><span class="pre">ConfigFileArgparseCommand.run()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="confattr.configfile.html#confattr.configfile.ConfigFileArgparseCommand.run_parsed"><code class="docutils literal notranslate"><span class="pre">ConfigFileArgparseCommand.run_parsed()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="confattr.configfile.html#confattr.configfile.ConfigFileCommand"><code class="docutils literal notranslate"><span class="pre">ConfigFileCommand</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="confattr.configfile.html#confattr.configfile.ConfigFileCommand.add_help_to"><code class="docutils literal notranslate"><span class="pre">ConfigFileCommand.add_help_to()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="confattr.configfile.html#confattr.configfile.ConfigFileCommand.aliases"><code class="docutils literal notranslate"><span class="pre">ConfigFileCommand.aliases</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="confattr.configfile.html#confattr.configfile.ConfigFileCommand.config_file"><code class="docutils literal notranslate"><span class="pre">ConfigFileCommand.config_file</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="confattr.configfile.html#confattr.configfile.ConfigFileCommand.create_formatter"><code class="docutils literal notranslate"><span class="pre">ConfigFileCommand.create_formatter()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="confattr.configfile.html#confattr.configfile.ConfigFileCommand.delete_command_type"><code class="docutils literal notranslate"><span class="pre">ConfigFileCommand.delete_command_type()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="confattr.configfile.html#confattr.configfile.ConfigFileCommand.get_command_types"><code class="docutils literal notranslate"><span class="pre">ConfigFileCommand.get_command_types()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="confattr.configfile.html#confattr.configfile.ConfigFileCommand.get_completions"><code class="docutils literal notranslate"><span class="pre">ConfigFileCommand.get_completions()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="confattr.configfile.html#confattr.configfile.ConfigFileCommand.get_help"><code class="docutils literal notranslate"><span class="pre">ConfigFileCommand.get_help()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="confattr.configfile.html#confattr.configfile.ConfigFileCommand.get_help_attr_or_doc_str"><code class="docutils literal notranslate"><span class="pre">ConfigFileCommand.get_help_attr_or_doc_str()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="confattr.configfile.html#confattr.configfile.ConfigFileCommand.get_name"><code class="docutils literal notranslate"><span class="pre">ConfigFileCommand.get_name()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="confattr.configfile.html#confattr.configfile.ConfigFileCommand.get_names"><code class="docutils literal notranslate"><span class="pre">ConfigFileCommand.get_names()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="confattr.configfile.html#confattr.configfile.ConfigFileCommand.help"><code class="docutils literal notranslate"><span class="pre">ConfigFileCommand.help</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="confattr.configfile.html#confattr.configfile.ConfigFileCommand.name"><code class="docutils literal notranslate"><span class="pre">ConfigFileCommand.name</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="confattr.configfile.html#confattr.configfile.ConfigFileCommand.run"><code class="docutils literal notranslate"><span class="pre">ConfigFileCommand.run()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="confattr.configfile.html#confattr.configfile.ConfigFileCommand.save"><code class="docutils literal notranslate"><span class="pre">ConfigFileCommand.save()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="confattr.configfile.html#confattr.configfile.ConfigFileCommand.should_write_heading"><code class="docutils literal notranslate"><span class="pre">ConfigFileCommand.should_write_heading</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="confattr.configfile.html#confattr.configfile.ConfigFileCommand.ui_notifier"><code class="docutils literal notranslate"><span class="pre">ConfigFileCommand.ui_notifier</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="confattr.configfile.html#confattr.configfile.ConfigFileWriter"><code class="docutils literal notranslate"><span class="pre">ConfigFileWriter</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="confattr.configfile.html#confattr.configfile.ConfigFileWriter.write_command"><code class="docutils literal notranslate"><span class="pre">ConfigFileWriter.write_command()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="confattr.configfile.html#confattr.configfile.ConfigFileWriter.write_heading"><code class="docutils literal notranslate"><span class="pre">ConfigFileWriter.write_heading()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="confattr.configfile.html#confattr.configfile.ConfigFileWriter.write_line"><code class="docutils literal notranslate"><span class="pre">ConfigFileWriter.write_line()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="confattr.configfile.html#confattr.configfile.DEFAULT_COMMAND"><code class="docutils literal notranslate"><span class="pre">DEFAULT_COMMAND</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="confattr.configfile.html#confattr.configfile.Echo"><code class="docutils literal notranslate"><span class="pre">Echo</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="confattr.configfile.html#confattr.configfile.Echo.get_completions"><code class="docutils literal notranslate"><span class="pre">Echo.get_completions()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="confattr.configfile.html#confattr.configfile.Echo.init_parser"><code class="docutils literal notranslate"><span class="pre">Echo.init_parser()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="confattr.configfile.html#confattr.configfile.Echo.run_parsed"><code class="docutils literal notranslate"><span class="pre">Echo.run_parsed()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="confattr.configfile.html#confattr.configfile.FormattedWriter"><code class="docutils literal notranslate"><span class="pre">FormattedWriter</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="confattr.configfile.html#confattr.configfile.FormattedWriter.write_command"><code class="docutils literal notranslate"><span class="pre">FormattedWriter.write_command()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="confattr.configfile.html#confattr.configfile.FormattedWriter.write_heading"><code class="docutils literal notranslate"><span class="pre">FormattedWriter.write_heading()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="confattr.configfile.html#confattr.configfile.FormattedWriter.write_line"><code class="docutils literal notranslate"><span class="pre">FormattedWriter.write_line()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="confattr.configfile.html#confattr.configfile.FormattedWriter.write_lines"><code class="docutils literal notranslate"><span class="pre">FormattedWriter.write_lines()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="confattr.configfile.html#confattr.configfile.Help"><code class="docutils literal notranslate"><span class="pre">Help</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="confattr.configfile.html#confattr.configfile.Help.get_completions_for_action"><code class="docutils literal notranslate"><span class="pre">Help.get_completions_for_action()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="confattr.configfile.html#confattr.configfile.Help.init_parser"><code class="docutils literal notranslate"><span class="pre">Help.init_parser()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="confattr.configfile.html#confattr.configfile.Help.run_parsed"><code class="docutils literal notranslate"><span class="pre">Help.run_parsed()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="confattr.configfile.html#confattr.configfile.HelpWriter"><code class="docutils literal notranslate"><span class="pre">HelpWriter</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="confattr.configfile.html#confattr.configfile.HelpWriter.write_command"><code class="docutils literal notranslate"><span class="pre">HelpWriter.write_command()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="confattr.configfile.html#confattr.configfile.HelpWriter.write_heading"><code class="docutils literal notranslate"><span class="pre">HelpWriter.write_heading()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="confattr.configfile.html#confattr.configfile.HelpWriter.write_line"><code class="docutils literal notranslate"><span class="pre">HelpWriter.write_line()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="confattr.configfile.html#confattr.configfile.Include"><code class="docutils literal notranslate"><span class="pre">Include</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="confattr.configfile.html#confattr.configfile.Include.get_completions_for_action"><code class="docutils literal notranslate"><span class="pre">Include.get_completions_for_action()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="confattr.configfile.html#confattr.configfile.Include.help_config_id"><code class="docutils literal notranslate"><span class="pre">Include.help_config_id</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="confattr.configfile.html#confattr.configfile.Include.init_parser"><code class="docutils literal notranslate"><span class="pre">Include.init_parser()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="confattr.configfile.html#confattr.configfile.Include.run_parsed"><code class="docutils literal notranslate"><span class="pre">Include.run_parsed()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="confattr.configfile.html#confattr.configfile.Message"><code class="docutils literal notranslate"><span class="pre">Message</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="confattr.configfile.html#confattr.configfile.Message.ENVIRONMENT_VARIABLES"><code class="docutils literal notranslate"><span class="pre">Message.ENVIRONMENT_VARIABLES</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="confattr.configfile.html#confattr.configfile.Message.file_name"><code class="docutils literal notranslate"><span class="pre">Message.file_name</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="confattr.configfile.html#confattr.configfile.Message.format_file_name"><code class="docutils literal notranslate"><span class="pre">Message.format_file_name()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="confattr.configfile.html#confattr.configfile.Message.format_file_name_msg_line"><code class="docutils literal notranslate"><span class="pre">Message.format_file_name_msg_line()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="confattr.configfile.html#confattr.configfile.Message.format_msg_line"><code class="docutils literal notranslate"><span class="pre">Message.format_msg_line()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="confattr.configfile.html#confattr.configfile.Message.line"><code class="docutils literal notranslate"><span class="pre">Message.line</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="confattr.configfile.html#confattr.configfile.Message.line_number"><code class="docutils literal notranslate"><span class="pre">Message.line_number</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="confattr.configfile.html#confattr.configfile.Message.lvl"><code class="docutils literal notranslate"><span class="pre">Message.lvl</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="confattr.configfile.html#confattr.configfile.Message.message"><code class="docutils literal notranslate"><span class="pre">Message.message</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="confattr.configfile.html#confattr.configfile.Message.no_context"><code class="docutils literal notranslate"><span class="pre">Message.no_context</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="confattr.configfile.html#confattr.configfile.Message.notification_level"><code class="docutils literal notranslate"><span class="pre">Message.notification_level</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="confattr.configfile.html#confattr.configfile.Message.reset"><code class="docutils literal notranslate"><span class="pre">Message.reset()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="confattr.configfile.html#confattr.configfile.MultipleParseExceptions"><code class="docutils literal notranslate"><span class="pre">MultipleParseExceptions</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="confattr.configfile.html#confattr.configfile.NotificationLevel"><code class="docutils literal notranslate"><span class="pre">NotificationLevel</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="confattr.configfile.html#confattr.configfile.NotificationLevel.ERROR"><code class="docutils literal notranslate"><span class="pre">NotificationLevel.ERROR</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="confattr.configfile.html#confattr.configfile.NotificationLevel.INFO"><code class="docutils literal notranslate"><span class="pre">NotificationLevel.INFO</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="confattr.configfile.html#confattr.configfile.NotificationLevel.descending"><code class="docutils literal notranslate"><span class="pre">NotificationLevel.descending</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="confattr.configfile.html#confattr.configfile.ParseException"><code class="docutils literal notranslate"><span class="pre">ParseException</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="confattr.configfile.html#confattr.configfile.SaveKwargs"><code class="docutils literal notranslate"><span class="pre">SaveKwargs</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="confattr.configfile.html#confattr.configfile.SaveKwargs.comments"><code class="docutils literal notranslate"><span class="pre">SaveKwargs.comments</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="confattr.configfile.html#confattr.configfile.SaveKwargs.config_instances"><code class="docutils literal notranslate"><span class="pre">SaveKwargs.config_instances</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="confattr.configfile.html#confattr.configfile.SaveKwargs.ignore"><code class="docutils literal notranslate"><span class="pre">SaveKwargs.ignore</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="confattr.configfile.html#confattr.configfile.SaveKwargs.no_multi"><code class="docutils literal notranslate"><span class="pre">SaveKwargs.no_multi</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="confattr.configfile.html#confattr.configfile.SectionLevel"><code class="docutils literal notranslate"><span class="pre">SectionLevel</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="confattr.configfile.html#confattr.configfile.SectionLevel.SECTION"><code class="docutils literal notranslate"><span class="pre">SectionLevel.SECTION</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="confattr.configfile.html#confattr.configfile.SectionLevel.SUB_SECTION"><code class="docutils literal notranslate"><span class="pre">SectionLevel.SUB_SECTION</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="confattr.configfile.html#confattr.configfile.SectionLevel.descending"><code class="docutils literal notranslate"><span class="pre">SectionLevel.descending</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="confattr.configfile.html#confattr.configfile.Set"><code class="docutils literal notranslate"><span class="pre">Set</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="confattr.configfile.html#confattr.configfile.Set.FLAGS_RAW"><code class="docutils literal notranslate"><span class="pre">Set.FLAGS_RAW</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="confattr.configfile.html#confattr.configfile.Set.KEY_VAL_SEP"><code class="docutils literal notranslate"><span class="pre">Set.KEY_VAL_SEP</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="confattr.configfile.html#confattr.configfile.Set.add_config_help"><code class="docutils literal notranslate"><span class="pre">Set.add_config_help()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="confattr.configfile.html#confattr.configfile.Set.add_help_for_data_types"><code class="docutils literal notranslate"><span class="pre">Set.add_help_for_data_types()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="confattr.configfile.html#confattr.configfile.Set.add_help_to"><code class="docutils literal notranslate"><span class="pre">Set.add_help_to()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="confattr.configfile.html#confattr.configfile.Set.get_completions"><code class="docutils literal notranslate"><span class="pre">Set.get_completions()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="confattr.configfile.html#confattr.configfile.Set.get_completions_for_key"><code class="docutils literal notranslate"><span class="pre">Set.get_completions_for_key()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="confattr.configfile.html#confattr.configfile.Set.get_completions_for_ranger_style_arg"><code class="docutils literal notranslate"><span class="pre">Set.get_completions_for_ranger_style_arg()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="confattr.configfile.html#confattr.configfile.Set.get_completions_for_value"><code class="docutils literal notranslate"><span class="pre">Set.get_completions_for_value()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="confattr.configfile.html#confattr.configfile.Set.get_completions_for_vim_style_arg"><code class="docutils literal notranslate"><span class="pre">Set.get_completions_for_vim_style_arg()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="confattr.configfile.html#confattr.configfile.Set.get_data_type_name_to_help_map"><code class="docutils literal notranslate"><span class="pre">Set.get_data_type_name_to_help_map()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="confattr.configfile.html#confattr.configfile.Set.get_help_for_data_types"><code class="docutils literal notranslate"><span class="pre">Set.get_help_for_data_types()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="confattr.configfile.html#confattr.configfile.Set.is_vim_style"><code class="docutils literal notranslate"><span class="pre">Set.is_vim_style()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="confattr.configfile.html#confattr.configfile.Set.iter_config_instances_to_be_saved"><code class="docutils literal notranslate"><span class="pre">Set.iter_config_instances_to_be_saved()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="confattr.configfile.html#confattr.configfile.Set.last_name"><code class="docutils literal notranslate"><span class="pre">Set.last_name</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="confattr.configfile.html#confattr.configfile.Set.parse_key_and_set_value"><code class="docutils literal notranslate"><span class="pre">Set.parse_key_and_set_value()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="confattr.configfile.html#confattr.configfile.Set.raw"><code class="docutils literal notranslate"><span class="pre">Set.raw</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="confattr.configfile.html#confattr.configfile.Set.run"><code class="docutils literal notranslate"><span class="pre">Set.run()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="confattr.configfile.html#confattr.configfile.Set.save"><code class="docutils literal notranslate"><span class="pre">Set.save()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="confattr.configfile.html#confattr.configfile.Set.save_config_instance"><code class="docutils literal notranslate"><span class="pre">Set.save_config_instance()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="confattr.configfile.html#confattr.configfile.Set.set_multiple"><code class="docutils literal notranslate"><span class="pre">Set.set_multiple()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="confattr.configfile.html#confattr.configfile.Set.set_value"><code class="docutils literal notranslate"><span class="pre">Set.set_value()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="confattr.configfile.html#confattr.configfile.Set.set_with_spaces"><code class="docutils literal notranslate"><span class="pre">Set.set_with_spaces()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="confattr.configfile.html#confattr.configfile.Set.write_config_help"><code class="docutils literal notranslate"><span class="pre">Set.write_config_help()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="confattr.configfile.html#confattr.configfile.TextIOWriter"><code class="docutils literal notranslate"><span class="pre">TextIOWriter</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="confattr.configfile.html#confattr.configfile.TextIOWriter.write_line_raw"><code class="docutils literal notranslate"><span class="pre">TextIOWriter.write_line_raw()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="confattr.configfile.html#confattr.configfile.UiNotifier"><code class="docutils literal notranslate"><span class="pre">UiNotifier</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="confattr.configfile.html#confattr.configfile.UiNotifier.notification_level"><code class="docutils literal notranslate"><span class="pre">UiNotifier.notification_level</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="confattr.configfile.html#confattr.configfile.UiNotifier.set_ui_callback"><code class="docutils literal notranslate"><span class="pre">UiNotifier.set_ui_callback()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="confattr.configfile.html#confattr.configfile.UiNotifier.show"><code class="docutils literal notranslate"><span class="pre">UiNotifier.show()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="confattr.configfile.html#confattr.configfile.UiNotifier.show_error"><code class="docutils literal notranslate"><span class="pre">UiNotifier.show_error()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="confattr.configfile.html#confattr.configfile.UiNotifier.show_info"><code class="docutils literal notranslate"><span class="pre">UiNotifier.show_info()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="confattr.configfile.html#confattr.configfile.UnknownCommand"><code class="docutils literal notranslate"><span class="pre">UnknownCommand</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="confattr.configfile.html#confattr.configfile.UnknownCommand.name"><code class="docutils literal notranslate"><span class="pre">UnknownCommand.name</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="confattr.configfile.html#confattr.configfile.UnknownCommand.run"><code class="docutils literal notranslate"><span class="pre">UnknownCommand.run()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="confattr.subprocess_pipe.html">confattr.subprocess_pipe module</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="confattr.subprocess_pipe.html#confattr.subprocess_pipe.run_and_pipe"><code class="docutils literal notranslate"><span class="pre">run_and_pipe()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="confattr.subprocess_pipe.html#confattr.subprocess_pipe.split_list"><code class="docutils literal notranslate"><span class="pre">split_list()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="confattr.types.html">confattr.types module</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="confattr.types.html#confattr.types.AbstractType"><code class="docutils literal notranslate"><span class="pre">AbstractType</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="confattr.types.html#confattr.types.AbstractType.__str__"><code class="docutils literal notranslate"><span class="pre">AbstractType.__str__()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="confattr.types.html#confattr.types.AbstractType.help"><code class="docutils literal notranslate"><span class="pre">AbstractType.help</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="confattr.types.html#confattr.types.AbstractType.type_name"><code class="docutils literal notranslate"><span class="pre">AbstractType.type_name</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="confattr.types.html#confattr.types.CaseInsensitiveRegex"><code class="docutils literal notranslate"><span class="pre">CaseInsensitiveRegex</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="confattr.types.html#confattr.types.CaseInsensitiveRegex.help"><code class="docutils literal notranslate"><span class="pre">CaseInsensitiveRegex.help</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="confattr.types.html#confattr.types.Regex"><code class="docutils literal notranslate"><span class="pre">Regex</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="confattr.types.html#confattr.types.Regex.help"><code class="docutils literal notranslate"><span class="pre">Regex.help</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="confattr.types.html#confattr.types.Regex.type_name"><code class="docutils literal notranslate"><span class="pre">Regex.type_name</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="confattr.types.html#confattr.types.SubprocessCommand"><code class="docutils literal notranslate"><span class="pre">SubprocessCommand</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="confattr.types.html#confattr.types.SubprocessCommand.has_python_callback"><code class="docutils literal notranslate"><span class="pre">SubprocessCommand.has_python_callback()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="confattr.types.html#confattr.types.SubprocessCommand.help"><code class="docutils literal notranslate"><span class="pre">SubprocessCommand.help</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="confattr.types.html#confattr.types.SubprocessCommand.is_installed"><code class="docutils literal notranslate"><span class="pre">SubprocessCommand.is_installed()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="confattr.types.html#confattr.types.SubprocessCommand.parse_str"><code class="docutils literal notranslate"><span class="pre">SubprocessCommand.parse_str()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="confattr.types.html#confattr.types.SubprocessCommand.python_callbacks"><code class="docutils literal notranslate"><span class="pre">SubprocessCommand.python_callbacks</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="confattr.types.html#confattr.types.SubprocessCommand.register_python_callback"><code class="docutils literal notranslate"><span class="pre">SubprocessCommand.register_python_callback()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="confattr.types.html#confattr.types.SubprocessCommand.replace"><code class="docutils literal notranslate"><span class="pre">SubprocessCommand.replace()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="confattr.types.html#confattr.types.SubprocessCommand.run"><code class="docutils literal notranslate"><span class="pre">SubprocessCommand.run()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="confattr.types.html#confattr.types.SubprocessCommand.type_name"><code class="docutils literal notranslate"><span class="pre">SubprocessCommand.type_name</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="confattr.types.html#confattr.types.SubprocessCommand.unregister_python_callback"><code class="docutils literal notranslate"><span class="pre">SubprocessCommand.unregister_python_callback()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="confattr.types.html#confattr.types.SubprocessCommandWithAlternatives"><code class="docutils literal notranslate"><span class="pre">SubprocessCommandWithAlternatives</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="confattr.types.html#confattr.types.SubprocessCommandWithAlternatives.SEP"><code class="docutils literal notranslate"><span class="pre">SubprocessCommandWithAlternatives.SEP</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="confattr.types.html#confattr.types.SubprocessCommandWithAlternatives.WC_FILE_NAME"><code class="docutils literal notranslate"><span class="pre">SubprocessCommandWithAlternatives.WC_FILE_NAME</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="confattr.types.html#confattr.types.SubprocessCommandWithAlternatives.editor"><code class="docutils literal notranslate"><span class="pre">SubprocessCommandWithAlternatives.editor()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="confattr.types.html#confattr.types.SubprocessCommandWithAlternatives.get_preferred_command"><code class="docutils literal notranslate"><span class="pre">SubprocessCommandWithAlternatives.get_preferred_command()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="confattr.types.html#confattr.types.SubprocessCommandWithAlternatives.help"><code class="docutils literal notranslate"><span class="pre">SubprocessCommandWithAlternatives.help</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="confattr.types.html#confattr.types.SubprocessCommandWithAlternatives.replace"><code class="docutils literal notranslate"><span class="pre">SubprocessCommandWithAlternatives.replace()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="confattr.types.html#confattr.types.SubprocessCommandWithAlternatives.run"><code class="docutils literal notranslate"><span class="pre">SubprocessCommandWithAlternatives.run()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="confattr.types.html#confattr.types.SubprocessCommandWithAlternatives.type_name"><code class="docutils literal notranslate"><span class="pre">SubprocessCommandWithAlternatives.type_name</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="confattr.types.html#confattr.types.TYPE_CONTEXT"><code class="docutils literal notranslate"><span class="pre">TYPE_CONTEXT</span></code></a></li>
+</ul>
+</li>
+</ul>
+</div>
+</section>
+<section id="module-confattr">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-confattr" title="Permalink to this heading"></a></h2>
+<p>Config Attributes</p>
+<p>A python library to read and write config files
+with a syntax inspired by vimrc and ranger config.</p>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="intro.html" class="btn btn-neutral float-left" title="Introduction and examples" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="confattr.config.html" class="btn btn-neutral float-right" title="confattr.config module" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2022, erzo.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
