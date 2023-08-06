@@ -1,0 +1,9 @@
+# SPDX-FileCopyrightText: Peter Pentchev <roam@ringlet.net>
+# SPDX-License-Identifier: BSD-2-Clause
+
+**/__pycache__
+
+.tox
+
+site
+src/*.egg-info

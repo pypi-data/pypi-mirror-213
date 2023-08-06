@@ -1,0 +1,63 @@
+# SPDX-FileCopyrightText: Peter Pentchev <roam@ringlet.net>
+# SPDX-License-Identifier: BSD-2-Clause
+
+[build-system]
+requires = [
+  "hatchling >= 1.8, < 2",
+  "hatch-requirements-txt >= 0.3, < 0.5",
+]
+build-backend = "hatchling.build"
+
+[project]
+name = "trivver"
+description = "A library for comparing version strings"
+readme = "README.md"
+license = {"text" = "BSD-2-Clause"}
+requires-python = ">= 3.7"
+classifiers = [
+  "Development Status :: 5 - Production/Stable",
+  "Intended Audience :: Developers",
+  "License :: DFSG approved",
+  "License :: Freely Distributable",
+  "License :: OSI Approved :: BSD License",
+  "Operating System :: OS Independent",
+  "Programming Language :: Python",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3 :: Only",
+  "Programming Language :: Python :: 3.7",
+  "Programming Language :: Python :: 3.8",
+  "Programming Language :: Python :: 3.9",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Topic :: Software Development :: Libraries",
+  "Topic :: Software Development :: Libraries :: Python Modules",
+  "Typing :: Typed",
+]
+dynamic = ["version"]
+
+[[project.authors]]
+name = "Peter Pentchev"
+email = "roam@ringlet.net"
+
+[project.scripts]
+trivver = "trivver.__main__:main"
+
+[project.urls]
+Homepage = "https://devel.ringlet.net/devel/trivver/"
+Changelog = "https://devel.ringlet.net/devel/trivver/changes/"
+Repository = "https://gitlab.com/ppentchev/python-trivver"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/trivver"]
+
+[tool.hatch.version]
+path = "src/trivver/__init__.py"
+
+[tool.black]
+line-length = 100
+
+[tool.mypy]
+strict = true
+
+[tool.test-stages]
+stages = ["ruff and not @manual", "@check and not @manual", "@tests and not @manual"]

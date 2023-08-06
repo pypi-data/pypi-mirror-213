@@ -1,0 +1,39 @@
+# https://editorconfig.org/
+#
+# SPDX-FileCopyrightText: Peter Pentchev <roam@ringlet.net>
+# SPDX-License-Identifier: BSD-2-Clause
+
+root = true
+
+[*]
+end_of_line = lf
+insert_final_newline = true
+charset = utf-8
+
+[*.1]
+indent_style = tab
+tab_size = 8
+
+[*.md]
+indent_style = space
+indent_size = 2
+
+[*.py]
+indent_style = space
+indent_size = 4
+
+[*.scd]
+indent_style = tab
+tab_size = 8
+
+[*.sh]
+indent_style = tab
+tab_size = 8
+
+[setup.cfg]
+indent_style = space
+indent_size = 4
+
+[tox.ini]
+indent_style = space
+indent_size = 2

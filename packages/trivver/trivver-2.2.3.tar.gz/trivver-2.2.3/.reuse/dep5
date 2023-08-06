@@ -1,0 +1,9 @@
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: trivver
+Upstream-Contact: Peter Pentchev <roam@ringlet.net>
+Source: https://gitlab.com/ppentchev/python-trivver
+
+Files:
+  src/trivver/trivver.1
+Copyright: 2021  Peter Pentchev <roam@ringlet.net>
+License: BSD-2-Clause

@@ -1,0 +1,36 @@
+# SPDX-FileCopyrightText: Peter Pentchev <roam@ringlet.net>
+# SPDX-License-Identifier: BSD-2-Clause
+
+[tool.ruff]
+target-version = "py37"
+line-length = 100
+select = []
+ignore = [
+  # We know what "self" is... I hope
+  "ANN101",
+
+  # We leave most of the formatting to the `black` tool
+  "COM812",
+
+  # No blank lines before the class docstring, TYVM
+  "D203",
+
+  # The multi-line docstring summary starts on the same line
+  "D213",
+]
+
+[tool.ruff.isort]
+force-single-line = true
+known-first-party = ["test_cargo", "trivver", "unit_tests"]
+lines-after-imports = 2
+single-line-exclusions = ["typing"]
+
+[tool.ruff.per-file-ignores]
+# This is a console application, output is part of its job.
+"src/trivver/__main__.py" = ["T201"]
+
+# This is a console application that runs programs, and we are careful.
+"src/test_cargo/__main__.py" = ["S603", "S607", "T201"]
+
+# This is a test suite.
+"unit_tests/**.py" = ["S101"]
