@@ -1,0 +1,17 @@
+README.md
+setup.py
+plateNumOCR/__init__.py
+plateNumOCR/_core.py
+plateNumOCR/correct_pic.py
+plateNumOCR.egg-info/PKG-INFO
+plateNumOCR.egg-info/SOURCES.txt
+plateNumOCR.egg-info/dependency_links.txt
+plateNumOCR.egg-info/top_level.txt
+plateNumOCR/ppocr/__init__.py
+plateNumOCR/ppocr/data/__init__.py
+plateNumOCR/ppocr/data/imaug/__init__.py
+plateNumOCR/ppocr/data/imaug/operators.py
+plateNumOCR/ppocr/postprocess/__init__.py
+plateNumOCR/ppocr/postprocess/cls_postprocess.py
+plateNumOCR/ppocr/postprocess/db_postprocess.py
+plateNumOCR/ppocr/postprocess/rec_postprocess.py
