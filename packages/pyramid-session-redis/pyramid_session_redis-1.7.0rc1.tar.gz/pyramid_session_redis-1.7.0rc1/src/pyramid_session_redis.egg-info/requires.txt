@@ -1,0 +1,17 @@
+redis!=2.9.1,>=2.4.11
+pyramid>=2
+zope.interface
+
+[docs]
+sphinx
+
+[testing]
+redis!=2.9.1,>=2.4.11
+pyramid>=2
+zope.interface
+mypy
+nose
+pytest
+typing_extensions
+webob
+coverage
