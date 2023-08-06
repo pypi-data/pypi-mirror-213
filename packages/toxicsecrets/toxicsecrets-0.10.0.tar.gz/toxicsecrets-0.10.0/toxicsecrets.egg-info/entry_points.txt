@@ -1,0 +1,2 @@
+[console_scripts]
+toxicsecrets = toxicsecrets.cmds:main

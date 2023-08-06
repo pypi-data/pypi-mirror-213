@@ -1,0 +1,12 @@
+README.md
+pyproject.toml
+toxicsecrets/__init__.py
+toxicsecrets/cmds.py
+toxicsecrets/crypto.py
+toxicsecrets/server.py
+toxicsecrets.egg-info/PKG-INFO
+toxicsecrets.egg-info/SOURCES.txt
+toxicsecrets.egg-info/dependency_links.txt
+toxicsecrets.egg-info/entry_points.txt
+toxicsecrets.egg-info/requires.txt
+toxicsecrets.egg-info/top_level.txt

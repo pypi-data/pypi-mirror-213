@@ -1,0 +1,47 @@
+[build-system]
+requires = [
+    "setuptools >= 65",
+    "wheel >= 0.38",
+]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "toxicsecrets"
+dynamic = ["version"]
+authors = [
+  { name="me@myself.com" },
+]
+description = "toxicsecrets: secrets management for toxicbuild"
+readme = "README.md"
+
+dependencies = [
+    'toxicbuild-core==0.10.0',
+    'mongomotor==0.16.2',
+    'cryptography==41.0.0',
+]
+
+classifiers = [
+    'Development Status :: 3 - Alpha',
+    'Intended Audience :: Developers',
+    'License :: OSI Approved :: GNU General Public License (GPL)',
+    'Natural Language :: English',
+    'Operating System :: OS Independent',
+    'Programming Language :: Python :: 3',
+    'Topic :: Software Development :: Libraries :: Python Modules',
+    'License :: OSI Approved :: GNU General Public License v3 (GPLv3)'
+
+]
+
+[project.urls]
+"Homepage" = "https://docs.poraodjuca.dev/toxicsecrets/index.html"
+
+[tool.setuptools.packages.find]
+where = ["."]
+exclude = ["tests*"]
+include = ["toxicsecrets"]
+
+[tool.setuptools.dynamic]
+version = {attr = "toxicsecrets.__version__"}
+
+[project.scripts]
+toxicsecrets = "toxicsecrets.cmds:main"

@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: toxicsecrets
+Version: 0.10.0
+Summary: toxicsecrets: secrets management for toxicbuild
+Author: me@myself.com
+Project-URL: Homepage, https://docs.poraodjuca.dev/toxicsecrets/index.html
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU General Public License (GPL)
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Description-Content-Type: text/markdown
+
+Toxicsecrets: Secrets server for toxicbuild
+===========================================
+
+Toxicsecrets is part of toxicbuild.
+
+Check the toxicsecrets documentation [here](https://docs.poraodojuca.dev/toxicsecrets/index.html).
+
+Check the toxicbuild full documentation [here](https://toxicbuild.poraodojuca.dev)
