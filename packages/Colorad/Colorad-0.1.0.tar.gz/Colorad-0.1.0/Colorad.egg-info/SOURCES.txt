@@ -1,0 +1,7 @@
+LICENSE
+README.md
+setup.py
+Colorad.egg-info/PKG-INFO
+Colorad.egg-info/SOURCES.txt
+Colorad.egg-info/dependency_links.txt
+Colorad.egg-info/top_level.txt
