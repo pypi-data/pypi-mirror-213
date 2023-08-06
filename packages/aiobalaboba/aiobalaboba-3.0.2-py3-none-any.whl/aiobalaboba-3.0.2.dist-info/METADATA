@@ -1,0 +1,77 @@
+Metadata-Version: 2.1
+Name: aiobalaboba
+Version: 3.0.2
+Summary: Asynchronous wrapper for Yandex Balaboba
+Home-page: https://github.com/monosans/aiobalaboba
+License: MIT
+Keywords: yalm
+Author: monosans
+Author-email: hsyqixco@protonmail.com
+Requires-Python: >=3.7,<4.0
+Classifier: Environment :: Web Environment
+Classifier: Framework :: AsyncIO
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Information Technology
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Natural Language :: Russian
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Topic :: Internet
+Classifier: Topic :: Internet :: WWW/HTTP
+Classifier: Topic :: Software Development
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Typing :: Typed
+Requires-Dist: aiohttp (>=3.8,<4.0)
+Requires-Dist: typing-extensions (>=3.7.4.3,<5) ; python_version < "3.8"
+Project-URL: Repository, https://github.com/monosans/aiobalaboba
+Description-Content-Type: text/markdown
+
+# aiobalaboba
+
+[![CI](https://github.com/monosans/aiobalaboba/actions/workflows/ci.yml/badge.svg)](https://github.com/monosans/aiobalaboba/actions/workflows/ci.yml)
+[![Downloads](https://static.pepy.tech/badge/aiobalaboba)](https://pepy.tech/project/aiobalaboba)
+
+Asynchronous wrapper for [Yandex Balaboba](https://yandex.com/lab/yalm-en) ([Яндекс Балабоба](https://yandex.ru/lab/yalm)).
+
+Synchronous version [here](https://github.com/monosans/balaboba).
+
+## Disclaimer
+
+The neural network doesn’t really know what it’s saying, so it can say absolutely anything. Don’t get offended if it says something that hurts your feelings. When sharing the texts, make sure they’re not offensive or violate the law.
+
+## Installation
+
+```bash
+python -m pip install -U aiobalaboba
+```
+
+## Usage example
+
+```python
+import asyncio
+
+from aiobalaboba import Balaboba
+
+
+async def main():
+    bb = Balaboba()
+    text_types = await bb.get_text_types(language="en")
+    response = await bb.balaboba("Hello", text_type=text_types[0])
+    print(response)
+
+asyncio.run(main())
+```
+
+## License
+
+[MIT](https://github.com/monosans/aiobalaboba/blob/main/LICENSE)
+
