@@ -1,0 +1,13 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+Lib/wbpNamespace/__init__.py
+Lib/wbpNamespace/config.py
+Lib/wbpNamespace/control.py
+Lib/wbpNamespace.egg-info/PKG-INFO
+Lib/wbpNamespace.egg-info/SOURCES.txt
+Lib/wbpNamespace.egg-info/dependency_links.txt
+Lib/wbpNamespace.egg-info/entry_points.txt
+Lib/wbpNamespace.egg-info/requires.txt
+Lib/wbpNamespace.egg-info/top_level.txt
