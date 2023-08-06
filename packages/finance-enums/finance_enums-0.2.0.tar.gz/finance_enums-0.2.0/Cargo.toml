@@ -1,0 +1,24 @@
+[package]
+# Name this finance_enums_rs so as to not conflict with the rust library
+name = "finance_enums_rs"
+version = "0.1.0"
+edition = "2021"
+publish = false
+
+[lib]
+# Name this finance_enums to match the python library
+name = "finance_enums"
+path = "src/lib.rs"
+crate-type = ["cdylib"]
+
+[dependencies]
+finance_enums = { path = "local_dependencies/finance_enums", version = "*" }
+pyo3 = { version = "0.16", features = ["abi3-py37", "extension-module", "multiple-pymethods"] }
+strum = "0.24.1"
+
+[profile.release]
+panic = 'abort'
+lto = true
+
+[package.metadata.maturin]
+# python-source = "python" 

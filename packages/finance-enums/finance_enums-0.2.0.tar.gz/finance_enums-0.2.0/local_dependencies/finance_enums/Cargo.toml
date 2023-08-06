@@ -1,0 +1,23 @@
+[package]
+name = "finance_enums"
+version = "0.2.0"
+authors = ["timkpaine <t.paine154@gmail.com>"]
+edition = "2021"
+license = "Apache-2.0"
+readme = "../README.md"
+repository = "https://github.com/timkpaine/finance-enums"
+description = "Standard Financial Enumerations"
+
+[lib]
+name = "finance_enums"
+path = "src/lib.rs"
+crate-type = ["rlib"]
+
+[dependencies]
+casey = "0.4.0"
+chrono = { version = "0.4", features = ["serde"] }
+num = "0.4"
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1"
+strum = "0.24.1"
+strum_macros = "0.24.3"
