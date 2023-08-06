@@ -1,0 +1,102 @@
+Metadata-Version: 2.1
+Name: django-cookie-consent
+Version: 0.4.0
+Summary: Django cookie consent application
+Home-page: https://github.com/jazzband/django-cookie-consent
+Author: Informatika Mihelac
+Author-email: bmihelac@mihelac.org
+License: BSD
+Project-URL: Documentation, https://django-cookie-consent.readthedocs.io/en/latest/
+Project-URL: Changelog, https://github.com/jazzband/django-cookie-consent/blob/master/docs/changelog.rst
+Project-URL: Bug Tracker, https://github.com/jazzband/django-cookie-consent/issues
+Project-URL: Source Code, https://github.com/jazzband/django-cookie-consent
+Keywords: cookies,cookie-consent,cookie bar
+Classifier: Development Status :: 3 - Alpha
+Classifier: Framework :: Django
+Classifier: Framework :: Django :: 3.2
+Classifier: Framework :: Django :: 4.1
+Classifier: Framework :: Django :: 4.2
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Description-Content-Type: text/markdown
+License-File: LICENSE
+License-File: AUTHORS
+Requires-Dist: django (>=3.2)
+Requires-Dist: django-appconf
+Provides-Extra: coverage
+Requires-Dist: pytest-cov ; extra == 'coverage'
+Provides-Extra: docs
+Requires-Dist: sphinx ; extra == 'docs'
+Requires-Dist: sphinx-rtd-theme ; extra == 'docs'
+Provides-Extra: pep8
+Requires-Dist: flake8 ; extra == 'pep8'
+Provides-Extra: release
+Requires-Dist: tbump ; extra == 'release'
+Requires-Dist: twine ; extra == 'release'
+Provides-Extra: tests
+Requires-Dist: pytest ; extra == 'tests'
+Requires-Dist: pytest-django ; extra == 'tests'
+Requires-Dist: tox ; extra == 'tests'
+Requires-Dist: isort ; extra == 'tests'
+Requires-Dist: black ; extra == 'tests'
+Requires-Dist: flake8 ; extra == 'tests'
+
+Django cookie consent
+=====================
+
+Manage cookie information and let visitors give or reject consent for them.
+
+[![Jazzband][badge:jazzband]][jazzband]
+
+![License](https://img.shields.io/pypi/l/django-cookie-consent)
+[![Build status][badge:GithubActions:CI]][GithubActions:CI]
+[![Code Quality][badge:GithubActions:CQ]][GithubActions:CQ]
+[![Code style: black][badge:black]][black]
+[![Test coverage][badge:codecov]][codecov]
+[![Documentation][badge:docs]][docs]
+
+![Supported python versions](https://img.shields.io/pypi/pyversions/django-cookie-consent)
+![Supported Django versions](https://img.shields.io/pypi/djversions/django-cookie-consent)
+[![PyPI version][badge:pypi]][pypi]
+
+**Features**
+
+* cookies and cookie groups are stored in models for easy management
+  through Django admin interface
+* support for both opt-in and opt-out cookie consent schemes
+* removing declined cookies (or non accepted when opt-in scheme is used)
+* logging user actions when they accept and decline various cookies
+* easy adding new cookies and seamlessly re-asking for consent for new cookies
+
+Documentation
+-------------
+
+The documentation is hosted on [readthedocs][docs] and contains all instructions
+to get started.
+
+Alternatively, if the documentation is not available, you can consult or build the docs
+from the `docs` directory in this repository.
+
+[jazzband]: https://jazzband.co/
+[badge:jazzband]: https://jazzband.co/static/img/badge.svg
+[GithubActions:CI]: https://github.com/jazzband/django-cookie-consent/actions?query=workflow%3A%22Run+CI%22
+[badge:GithubActions:CI]: https://github.com/jazzband/django-cookie-consent/workflows/Run%20CI/badge.svg
+[GithubActions:CQ]: https://github.com/jazzband/django-cookie-consent/actions?query=workflow%3A%22Code+quality+checks%22
+[badge:GithubActions:CQ]: https://github.com/jazzband/django-cookie-consent/workflows/Code%20quality%20checks/badge.svg
+[black]: https://github.com/psf/black
+[badge:black]: https://img.shields.io/badge/code%20style-black-000000.svg
+[codecov]: https://codecov.io/gh/jazzband/django-cookie-consent
+[badge:codecov]: https://codecov.io/gh/jazzband/django-cookie-consent/branch/master/graph/badge.svg
+[docs]: https://django-cookie-consent.readthedocs.io/en/latest/?badge=latest
+[badge:docs]: https://readthedocs.org/projects/django-cookie-consent/badge/?version=latest
+[pypi]: https://pypi.org/project/django-cookie-consent/
+[badge:pypi]: https://img.shields.io/pypi/v/django-cookie-consent.svg
