@@ -1,0 +1,14 @@
+rdkit
+synspace
+molbloom
+paper-qa==1.1.1
+rxn4chemistry
+google-search-results
+pandas
+langchain==0.0.173
+nest_asyncio
+ipywidgets
+ipykernel
+tiktoken
+rmrkl
+python-dotenv
