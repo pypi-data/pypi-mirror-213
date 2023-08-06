@@ -1,0 +1,28 @@
+{% load i18n static %}
+
+{% if not request.websocket %}
+  <script>
+    alert("{% trans "Ei Websocket-yhteyttä!" %}");
+  </script>
+{% endif %}
+
+{% if view.kaksisuuntainen %}
+  {# Kaksisuuntainen tiedonsiirto edellyttää JSON-patcherproxy-komentosarjan käyttöä. #}
+  <script
+    src="https://cdn.jsdelivr.net/gh/Palindrom/JSONPatcherProxy@0.0.10/dist/jsonpatcherproxy.min.js"
+    ></script>
+{% endif %}
+
+<script
+  src="https://cdn.jsdelivr.net/gh/bruth/jsonpatch-js@0.7.0/jsonpatch.js"
+  ></script>
+
+{{ view.data_alkutilanne|json_script:"synkroni-alkutilanne" }}
+
+<script
+  src="{% static "synkroni/js/synkroni.js" %}"
+  {# Websocket-yhteysosoite. #}
+  data-websocket="{{ request.websocket }}{{ request.path }}"
+  data-protokolla="{{ view.websocket_protokolla_json }}"
+  data-kattely='{"csrfmiddlewaretoken": "{{ csrf_token }}", "uusi": true}'
+  ></script>

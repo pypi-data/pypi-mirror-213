@@ -1,0 +1,197 @@
+[
+  {
+    "revisio": "058f3de1f888379881e82044d569970a3c884381",
+    "versio": "0.5",
+    "kuvaus": "Muutettu `toiminnot.muuttaa_tietoja` asynkroniseksi kontekstink\u00e4sittelij\u00e4ksi"
+  },
+  {
+    "revisio": "a3c6dfc33ea6c98b28f8b5a3929e27e70055e3c0",
+    "versio": "0.4.9",
+    "kuvaus": "P\u00e4ivitetty versiointij\u00e4rjestelm\u00e4"
+  },
+  {
+    "revisio": "51fab908f6db02be338eceda5f18acb195df77f7",
+    "versio": "0.4.8",
+    "kuvaus": "Lis\u00e4tty `Toiminnot.mittaa_toiminnon_kesto`-metodi"
+  },
+  {
+    "revisio": "714853518997b43cf06476748b3ba035e4f844d2",
+    "versio": "0.4.7",
+    "kuvaus": "Django-pistoke 0.8 -yhteensopivuus"
+  },
+  {
+    "revisio": "09092c56648be319f77cb001f5789b862656e543",
+    "versio": "0.4.6",
+    "kuvaus": "Tulostetaan toiminnolla nouseva poikkeus heti"
+  },
+  {
+    "revisio": "c7c687e437baa5387a2dcd43b185dae50693bebd",
+    "versio": "0.4.5",
+    "kuvaus": "Peitet\u00e4\u00e4n poikkeus toiminnon paluusanoman muodostuksessa"
+  },
+  {
+    "revisio": "d9996afffb86334cb32a5b5c0b0e51de0b72119f",
+    "versio": "0.4.4",
+    "kuvaus": "Lis\u00e4tietoa virheellisen toiminnon yhteydess\u00e4"
+  },
+  {
+    "revisio": "bbf063c36923d929c04ee4cc31b09900b14cc90a",
+    "versio": "0.4.3",
+    "kuvaus": "Lis\u00e4tty `toiminto{Suoritettu,Epaonnistui}`-metodit"
+  },
+  {
+    "revisio": "5251642eaff3ff8f0d4f28755341391110214e81",
+    "versio": "0.4.2",
+    "kuvaus": "L\u00e4hetet\u00e4\u00e4n \"yhteys-virhe\", kun WS-yhteyden kautta palautuu HTTP-tilakoodi"
+  },
+  {
+    "revisio": "4985fa91b6776310bf2b8b7da39d55f698e69ce2",
+    "versio": "0.4.1",
+    "kuvaus": "Korjattu vierasavainm\u00e4\u00e4re: `configurable: true`"
+  },
+  {
+    "revisio": "fd95ec3c55d9fa8c066d8fb1f8c7ce4700e90086",
+    "versio": "0.4",
+    "kuvaus": "Annetaan \"yhteys-epaonnistui\", jos WS-yhteyden muodostus nostaa poikkeuksen"
+  },
+  {
+    "revisio": "a616d4cdb2f08eb8df33e353f68d18cd910df1c5",
+    "versio": "0.3.9",
+    "kuvaus": "L\u00e4hetet\u00e4\u00e4n \"yhteys-epaonnistui\", kun WS-yhteytt\u00e4 ei voida yritt\u00e4\u00e4 uudelleen"
+  },
+  {
+    "revisio": "d51176a3dd037950dac1415aee5835141de92a66",
+    "versio": "0.3.8",
+    "kuvaus": "Haetaan viitattu vierasavain vasta get-kutsun yhteydess\u00e4"
+  },
+  {
+    "revisio": "e48bd684e4511e04a2111e3cd9f0e6d952ed20eb",
+    "versio": "0.3.7",
+    "kuvaus": "Korjattu vierasavainten k\u00e4sittely viennin/tuonnin yhteydess\u00e4: erillinen `__vietavaData`"
+  },
+  {
+    "revisio": "0a51ab21b333419634f3a3f941d36a8995824c11",
+    "versio": "0.3.6",
+    "kuvaus": "Yhdist\u00e4 uudelleen automaattisesti vain, kun yhteys on kerran alustettu onnistuneesti"
+  },
+  {
+    "revisio": "864998e29eb65c84bc77cfdc462502238443a711",
+    "versio": "0.3.5",
+    "kuvaus": "P\u00e4ivitetty k\u00e4ytt\u00f6oikeusasiakirja"
+  },
+  {
+    "revisio": "12fcb7aee937cd5c57fe84727a3cdc43309d7788",
+    "versio": "0.3.4",
+    "kuvaus": "V\u00e4litet\u00e4\u00e4n `alkutilanne` selaimelle omana `<script>`-elementtin\u00e4\u00e4n"
+  },
+  {
+    "revisio": "e77dc9ad3f797abee5d9e5d74fd7c651cf84f330",
+    "versio": "0.3.3",
+    "kuvaus": "Lis\u00e4tty oikotie `document.toiminto.X(...) -> document.toiminto({X: ...})`"
+  },
+  {
+    "revisio": "5c75bc759e8501e684ac9b17d9ce7af1c5dacb08",
+    "versio": "0.3.2",
+    "kuvaus": "Toteutetaan datan mukana m\u00e4\u00e4ritellyt `__vierasavaimet__`"
+  },
+  {
+    "revisio": "a1f4b3cad0de658bfe3ff42e267cb4cfe6c72606",
+    "versio": "0.3.1",
+    "kuvaus": "Lukitaan (`asyncio.Lock`) `self.data` p\u00e4ivityksen ajaksi"
+  },
+  {
+    "revisio": "5801b3cff791cbc1313b97948becccb26b41b98c",
+    "versio": "0.3",
+    "kuvaus": "K\u00e4yt\u00e4 `data_alkutilannetta` alkutilanteen datana"
+  },
+  {
+    "revisio": "56846d32ac2c23a1289065d2b4bb0524439931e3",
+    "versio": "0.2.14",
+    "kuvaus": "Lis\u00e4tty `document.synkroni.yhdistaUudelleen()`-funktio"
+  },
+  {
+    "revisio": "2f5c08baf2a2d3273afa2acbd52862f45e257a42",
+    "versio": "0.2.13",
+    "kuvaus": "Nostetaan mahdolliset toimintojen nostamat poikkeukset `_websocket`-metodissa"
+  },
+  {
+    "revisio": "ab75d6511c217a55aeac555f94bb5a17eea3ce38",
+    "versio": "0.2.12",
+    "kuvaus": "Muutettu `document.synkroni.toiminto`-metodi `Promise`-pohjaiseksi"
+  },
+  {
+    "revisio": "2f17fcaa0e2bd1748c491272482616138578067d",
+    "versio": "0.2.11",
+    "kuvaus": "Lis\u00e4tty `vieData`- ja `tuoData`-metodit"
+  },
+  {
+    "revisio": "34cebee37b00e8eed15985452d1685ada31dbd32",
+    "versio": "0.2.10",
+    "kuvaus": "Annetaan alkuper\u00e4inen WS-katkaisutapahtuma \"yhteys-katkaistu\"-tapahtuman mukana"
+  },
+  {
+    "revisio": "03e0343b709a10798b6d4b0f9fc3daafe215a074",
+    "versio": "0.2.9",
+    "kuvaus": "P\u00e4ivitetty ja yksinkertaistettu dokumenttiin liittyvien symboleiden nimet\n\n* document.synkroni.data -> document.data\n* document.synkroni.komento -> document.toiminto\n* komento, komennot -> toiminto, toiminnot"
+  },
+  {
+    "revisio": "61c4ca1f2a308a3d73ba3647dbf093d34f344d50",
+    "versio": "0.2.8",
+    "kuvaus": "Tarkemmat poikkeusviestit toimintojen k\u00e4sittelyn yhteydess\u00e4"
+  },
+  {
+    "revisio": "048a4d79cef9538a8303a176033e29b8587e1309",
+    "versio": "0.2.7",
+    "kuvaus": "K\u00e4sitell\u00e4\u00e4n selaimeen saapuva WS-sanoma tilakoodilla (`status`)"
+  },
+  {
+    "revisio": "33053d22615cf074315581eec69e9d0a25f30b0b",
+    "versio": "0.2.6",
+    "kuvaus": "Ei aseteta WS-protokollaa selaimen p\u00e4\u00e4ss\u00e4, mik\u00e4li sit\u00e4 ei ole asetettu `websocket`-metodille"
+  },
+  {
+    "revisio": "dc028f0755d276149b01ea2c297eb8946e3703df",
+    "versio": "0.2.5",
+    "kuvaus": "K\u00e4sitell\u00e4\u00e4n synkronimallin dataa sellaisenaan datayhteyden kautta"
+  },
+  {
+    "revisio": "98516bfebe84de8801c9e513d7ca0a738692dfcc",
+    "versio": "0.2.4",
+    "kuvaus": "Websocket-(ali-)protokollam\u00e4\u00e4ritys"
+  },
+  {
+    "revisio": "4e98ca440ad81c44e8db8f0faeeef25b36011845",
+    "versio": "0.2.3",
+    "kuvaus": "Tulkitaan komentosarjalle ojennettu `kattely` JSON-sanakirjamuodossa"
+  },
+  {
+    "revisio": "5b9d28438a126a8c4e08a839e162a8c2b898b3e1",
+    "versio": "0.2.2",
+    "kuvaus": "Suoritetaan selaimen antamat komennot taustalla"
+  },
+  {
+    "revisio": "cd11b383a5e51f3a959de5af7dd632e599e5c2b2",
+    "versio": "0.2.1",
+    "kuvaus": "Annetaan `yhteys_alustettu`-komento kunkin uuden WS-yhteyden avaamisen j\u00e4lkeen"
+  },
+  {
+    "revisio": "37a75842a20aec0273e4b9a6616ba18ff92cedcb",
+    "versio": "0.2",
+    "kuvaus": "Pilkottu Websocket-yhteystoteutus omaan saateluokkaansa"
+  },
+  {
+    "revisio": "99f568ccc36cad41eef5439271c680806d0f4d7b",
+    "versio": "0.1.1",
+    "kuvaus": "Lis\u00e4tty PEP 517 -pakettim\u00e4\u00e4ritys"
+  },
+  {
+    "revisio": "f37572debb3308dfa4b53a9f65795f6475c55a1c",
+    "versio": "0.1",
+    "kuvaus": "Pilko selaimelta l\u00e4htev\u00e4 data megatavun paketteihin"
+  },
+  {
+    "revisio": "9d325295140157a7efc661acebbe026830177648",
+    "versio": "0.0.1",
+    "kuvaus": "Alustava toteutus"
+  }
+]
