@@ -1,0 +1,80 @@
+Metadata-Version: 2.1
+Name: aiomql
+Version: 2.0.0
+Summary: Asynchronous MetaTrader5 library and Bot Builder
+Author-email: Ichinga Samuel <ichingasamuel@gmail.com>
+Project-URL: Homepage, https://github.com/Ichinga-Samuel/aiomql
+Project-URL: Bug Tracker, https://github.com/Ichinga-Samuel/aiomql/issues
+Keywords: MetaTrader5,Asynchronous,Algorithmic Trading,Trading Bot
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: MetaTrader5 (>=5.0.37)
+Requires-Dist: pandas (>=1.5.0)
+Requires-Dist: pandas-ta (>=0.3.14b0)
+
+# aiomql
+![GitHub](https://img.shields.io/github/license/ichinga-samuel/aiomql?style=plastic)
+![GitHub issues](https://img.shields.io/github/issues/ichinga-samuel/aiomql?style=plastic)
+![PyPI](https://img.shields.io/pypi/v/aiomql)
+
+
+## Installation
+```bash
+pip install aiomql
+```
+
+## Key Features
+- Asynchronous Python Library For MetaTrader 5
+- Build bots for trading in different financial markets using a bot factory
+- Use threadpool executors to run multiple strategies on multiple instruments concurrently
+- Record and keep track of trades and strategies in csv files.
+- Utility classes for using the MetaTrader 5 Library
+- Sample Pre-Built strategies
+
+## Simple Usage as an asynchronous MetaTrader5 Libray
+```python
+import asyncio
+
+# import the class
+from aiomql import MetaTrader, Account, TimeFrame, OrderType
+
+
+async def main():
+    # Assuming your login details are already defined in the aiomql.json somewhere in your project directory. 
+    acc = Account()
+    
+    # if this is unsuccessful the program exits
+    await acc.initialize()
+    
+    # print all available symbols
+    print(acc.symbols)
+
+asyncio.run(main())
+```
+## As a Bot Building FrameWork using a Sample Strategy
+```python
+from aiomql import Bot
+from aiomql import ForexSymbol
+from aiomql.lib import FingerTrap
+
+# Create a bot instance
+bot = Bot()
+
+# Choose a Symbol to trade
+symbol = ForexSymbol(name='EURUSD')
+
+# Create a strategy
+ft_eur_usd = FingerTrap(symbol=symbol)
+
+# Add strategy to Bot
+bot.add_strategy(ft_eur_usd)
+
+# run the bot
+bot.execute()
+```
+
+see [docs](https://github.com/Ichinga-Samuel/aiomql/tree/master/docs)
