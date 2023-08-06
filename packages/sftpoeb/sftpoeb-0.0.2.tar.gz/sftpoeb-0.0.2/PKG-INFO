@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: sftpoeb
+Version: 0.0.2
+Summary: To Easy create sftp for e-tax invoice & e-receive of Oneeletronicbilling
+Home-page: UNKNOWN
+Author: Natthawut Thawisombat
+Author-email: natthawut.th@inet.co.th
+License: MIT
+Keywords: sftp
+Platform: UNKNOWN
+License-File: LICENSE.txt
+
+About Repository
+This Repository for Developer Etax Solution SFTP
+
+Installation
+must be use python3.6 ++ 
+
+Change Log
+==========
+
+0.0.1 (13/06/2023)
+------------------
+- First Release
+
