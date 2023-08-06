@@ -1,0 +1,10 @@
+resotoappbundler/__init__.py,sha256=XMdIr3VSgKdxxJd9ofBzvzchCVgsguDjsKw6nXXg1_o,455
+resotoappbundler/__main__.py,sha256=afHb8nMns8C9IDqJDbEyGHLeh8vtgBBlK1eSNhmgcX8,2060
+resotoappbundler/bundler.py,sha256=8siuocwfrqV9XeUr_70Vp5p8EzdscFPW6wytpuE5HYU,1574
+resotoappbundler/runner.py,sha256=lZhCanzOZisHc7BUCV2lmuhqaQVBiaipOm_Z4dzWNNA,3836
+resotoappbundler-0.4.0.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+resotoappbundler-0.4.0.dist-info/METADATA,sha256=mQ-5ASd8zypNF_edGvKADgkmfSf7cPcMhHs5Tr3Oh5s,4448
+resotoappbundler-0.4.0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+resotoappbundler-0.4.0.dist-info/entry_points.txt,sha256=OmSbtDAx8od0OsRoBm2Ijk827C7SrLOWnFbAS0EpueE,118
+resotoappbundler-0.4.0.dist-info/top_level.txt,sha256=264CpoVhFrEwIR_hY7dtcm1hH4ZcWqxxtzO5TFTR5v0,17
+resotoappbundler-0.4.0.dist-info/RECORD,,
