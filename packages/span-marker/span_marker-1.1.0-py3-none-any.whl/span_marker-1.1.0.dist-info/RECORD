@@ -1,0 +1,15 @@
+span_marker/__init__.py,sha256=GPT1So-pd4J6TnyprWz14in69ivKxQbshZVH1qHhK14,446
+span_marker/configuration.py,sha256=xdUAUWZIVprFJYc4IcvJHG-fPgnzC_3bQWNIaUVza5A,7018
+span_marker/data_collator.py,sha256=ihmpNOhPpYPt_Pft6UZcfB1VdO8YS6JPD1PyxaBAAxg,6630
+span_marker/evaluation.py,sha256=cAs1E9NpJizmYLCt_2fBEZVI37nPVHKzlIdS_v2O0XA,5066
+span_marker/label_normalizer.py,sha256=PRWXR9SQ9Trp6otURPt4MZTcbqs_Q8j1XkvCOGhTwC0,5230
+span_marker/model_card.py,sha256=umEOvN6K-WcLrHEzC3HLfRt9Pti0ip9NcpizxOyZmUs,2471
+span_marker/modeling.py,sha256=vYFySF6gcevMfjXT56bYqp5Qd89e9CVeuJTbs_sv6JU,30144
+span_marker/output.py,sha256=szztCoHuNH1vLqz3a8IeJ-lhB6AaDT0xXK3mJ-bAlic,2221
+span_marker/tokenizer.py,sha256=nVfTTcoEwr7bitxS06LtABM8q-cZ9FcRyTDLqCjUEa4,11885
+span_marker/trainer.py,sha256=lQuReTjMSEe8X-VLSuPC9YjKhSZIi96cakE4EZ96zZ0,19774
+span_marker-1.1.0.dist-info/LICENSE,sha256=HrhfyXIkWY2tGFK11kg7vPCqhgh5DcxleloqdhrpyMY,11558
+span_marker-1.1.0.dist-info/METADATA,sha256=iGeBBGKHvKDy3dardGRDWfzuAFIm1LzZq-Z0sSh5RQA,8737
+span_marker-1.1.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+span_marker-1.1.0.dist-info/top_level.txt,sha256=UuiWsRwHq2Z0cx7gXDsa28hA4_nm7EEr-opps6rx-Dw,12
+span_marker-1.1.0.dist-info/RECORD,,
