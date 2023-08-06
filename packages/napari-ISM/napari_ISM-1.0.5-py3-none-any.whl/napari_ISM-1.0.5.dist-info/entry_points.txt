@@ -1,0 +1,2 @@
+[napari.manifest]
+napari-ISM = napari_ism:napari.yaml
