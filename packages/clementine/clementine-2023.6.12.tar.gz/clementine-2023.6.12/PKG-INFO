@@ -1,0 +1,85 @@
+Metadata-Version: 2.1
+Name: clementine
+Version: 2023.6.12
+Summary: 🍊 A sweet little Python package
+Author-email: Suzen Fylke <codesue@users.noreply.github.com>
+License: MIT License
+        
+        Copyright (c) 2023 Suzen Fylke
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+        
+Project-URL: Documentation, https://codesue.github.io/clementine
+Project-URL: Source Code, https://github.com/codesue/clementine
+Project-URL: Bug Tracker, https://github.com/codesue/clementine/issues
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Utilities
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Provides-Extra: blossom
+Provides-Extra: fruit
+Provides-Extra: leaves
+Provides-Extra: rind
+Provides-Extra: seeds
+Provides-Extra: sprout
+Provides-Extra: tree
+License-File: LICENSE
+
+# clementine
+
+[![License][license_badge]][license_link]
+[![PyPI][pypi_badge]][pypi_link]
+[![Repo Size][repo_size_badge]][repo_size_link]
+[![Docs][docs_badge]][docs_link]
+[![Release][release_badge]][release_link]
+
+Clementine is a sweet little Python package.
+
+## Installation
+
+Installing with pip:
+
+```sh
+pip install clementine
+```
+
+## License
+
+Copyright &copy; 2023 [Suzen Fylke](https://suzenfylke.com). Distributed under the MIT License.
+
+
+[docs_badge]: https://img.shields.io/github/actions/workflow/status/codesue/clementine/publish-docs.yml?label=docs&colorA=363a4f&colorB=b7bdf8&style=flat
+[docs_link]: https://github.com/codesue/clementine/actions/workflows/publish-docs.yml
+
+[license_badge]: https://img.shields.io/github/license/codesue/clementine?colorA=363a4f&colorB=b7bdf8&style=flat
+[license_link]: https://github.com/codesue/clementine/tree/main/LICENSE
+
+[pypi_badge]: https://img.shields.io/pypi/v/clementine?colorA=363a4f&colorB=b7bdf8&style=flat
+[pypi_link]: https://pypi.org/project/clementine
+
+[release_badge]: https://img.shields.io/github/actions/workflow/status/codesue/clementine/publish-pypi.yml?label=release&colorA=363a4f&colorB=b7bdf8&style=flat
+[release_link]: https://github.com/codesue/clementine/actions/workflows/publish-pypi.yml
+
+[repo_size_badge]: https://img.shields.io/github/repo-size/codesue/clementine?colorA=363a4f&colorB=b7bdf8&style=flat
+[repo_size_link]: https://github.com/codesue/clementine

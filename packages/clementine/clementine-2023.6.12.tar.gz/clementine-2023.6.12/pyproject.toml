@@ -1,0 +1,48 @@
+[build-system]
+requires = ["setuptools>=61.0.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "clementine"
+dynamic = ["version"]
+description = "🍊 A sweet little Python package"
+authors = [{name = "Suzen Fylke", email = "codesue@users.noreply.github.com"}]
+readme = "README.md"
+license = {file = "LICENSE"}
+classifiers = [
+    "Development Status :: 1 - Planning",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Natural Language :: English",
+    "Programming Language :: Python :: 3",
+    "Topic :: Software Development :: Libraries",
+    "Topic :: Utilities",
+]
+dependencies = ["click"]
+requires-python = ">=3.8"
+
+[project.optional-dependencies]
+blossom = ["bokeh", "gradio", "playwright"]
+fruit = ["catppuccin-matplotlib", "numpy", "pandas", "scikit-learn", "torch"]
+leaves = ["mkdocs-walt", "mkdocstrings[python]"]
+rind = ["build", "twine"]
+seeds = ["isort", "pip-tools", "pre-commit", "pytest", "ruff", "yapf"]
+sprout = ["notebook", "rich"]
+tree = ["clementine[blossom,fruit,leaves,rind,seeds,sprout]"]
+
+[project.urls]
+"Documentation" = "https://codesue.github.io/clementine"
+"Source Code" = "https://github.com/codesue/clementine"
+"Bug Tracker" = "https://github.com/codesue/clementine/issues"
+
+[project.scripts]
+clementine = "clementine.cli:main"
+
+[tool.setuptools.dynamic]
+version = {attr = "clementine.__version__"}
+
+[tool.yapf]
+based_on_style = "pep8"
+indent_width = 2
+split_before_first_argument = true
+dedent_closing_brackets = true
