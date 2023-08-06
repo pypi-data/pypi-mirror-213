@@ -1,0 +1,8 @@
+semantic_split/SentenceSimilarity.py,sha256=G2OkyT41fPZJfo-GKLolUZNN7Qb5O0utCk2ojBZyLaE,697
+semantic_split/__init__.py,sha256=vXVfvBsoZ7sknNx8SRjMA2ciXqEJTp4Z93bwvYot0HQ,277
+semantic_split/splitters/SimilarSentenceSplitter.py,sha256=b61FDmU-fdsfeKZBdRBcSLOyBv-WJLt10HktQpqvOYA,1185
+semantic_split/splitters/SpacySentenceSplitter.py,sha256=lFUNwwTn779OeTdQZnXUV-KoYXa6WgyVF_eeDAwI2gQ,292
+semantic_split/splitters/Splitter.py,sha256=BfHh5i8Wrx-h83fSzfNcokHr9zuZpQhBk7Otg9_Dn5k,176
+semantic_split-0.1.0.dist-info/METADATA,sha256=DEHFqMIi-uDC11eWuuz6LfLR_jlSmVauG6NclyeYp9c,3738
+semantic_split-0.1.0.dist-info/WHEEL,sha256=7Z8_27uaHI_UZAc4Uox4PpBhQ9Y5_modZXWMxtUi4NU,88
+semantic_split-0.1.0.dist-info/RECORD,,
