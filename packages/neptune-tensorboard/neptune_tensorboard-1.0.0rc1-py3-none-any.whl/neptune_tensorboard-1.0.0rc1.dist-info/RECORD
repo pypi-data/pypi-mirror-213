@@ -1,0 +1,11 @@
+CHANGELOG.md,sha256=g84cxwY-fMrJBvqSfi90Sw8IA7_rhEYqL_1rHIZM2vM,589
+neptune_tensorboard/__init__.py,sha256=pQq9NiiitShuB9Pg6w-6uETPV4FlwedbOHIOdque3Wg,820
+neptune_tensorboard/integration/__init__.py,sha256=4bQ6jwnA2t947tMAwiL8SctLL4ctAc_cirdEFMphiy0,3557
+neptune_tensorboard/integration/pytorch_integration.py,sha256=q3Al96Bwck6BwpbM_gpSdcLlp98jqhnk4O9Vuvk8FIE,5605
+neptune_tensorboard/integration/tensorflow_integration.py,sha256=ADvFvr4_IYdXIUNh5-OywZTIAPEl0NI3ODrbEQXtV7g,3563
+neptune_tensorboard/integration/utils.py,sha256=CbSzoh0OERS1IE9L_kmDxghDmZXKhFEwJ_88JHh3VqI,292
+neptune_tensorboard/integration/version.py,sha256=5bqia3PyWIfN6vtJaHP53IhIb0peHG2q1J2GhbnoxlA,742
+neptune_tensorboard-1.0.0rc1.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+neptune_tensorboard-1.0.0rc1.dist-info/METADATA,sha256=0AMABBtBU7F1LbjKmIa3SUWl6p7LHEzTe2K7pz9zmw4,5456
+neptune_tensorboard-1.0.0rc1.dist-info/WHEEL,sha256=Zb28QaM1gQi8f4VCBhsUklF61CTlNYfs9YAZn-TOGFk,88
+neptune_tensorboard-1.0.0rc1.dist-info/RECORD,,
