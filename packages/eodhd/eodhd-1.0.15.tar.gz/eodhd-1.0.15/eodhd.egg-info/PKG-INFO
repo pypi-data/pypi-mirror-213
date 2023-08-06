@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: eodhd
+Version: 1.0.15
+Summary: Official EODHD API Python Library
+Home-page: https://whittle.medium.com
+Author: Michael Whittle
+Author-email: michael@lifecycle-ps.com
+License: MIT
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Official EODHD APIs Python Library
+https://eodhistoricaldata.com
+
+## Installation
+
+    python3 -m pip install eodhd
+
+## Note
+
+Demo API key below is provided by EOD Historial Data for testing purposes
+<https://eodhistoricaldata.com/financial-apis/new-real-time-data-api-websockets?utm_source=github&utm_medium=eod&utm_campaign=python_lib>
+
+## Sample code and examples
+
+* example_api.py
+* example_scanner.py
+* example_websockets.py
