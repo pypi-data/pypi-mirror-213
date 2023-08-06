@@ -1,0 +1,13 @@
+adv_ml/__init__.py,sha256=1mptEzQihbdyqqzMgdns_j5ZGK9gz7hR2bsgA_TnjO4,22
+adv_ml/_modidx.py,sha256=94U1B8HpF2-PUfOolP1Co2KqMYyftjPG41tEQt07IEM,9691
+adv_ml/all.py,sha256=Q7jsFLqTZ2cK7hPPObiMODAYwp73O7WOu3T7_AkeuTk,175
+adv_ml/backdoor.py,sha256=tNbynWY7_Nz67kQINaa6nX2Hb0ZuCKiFTOzfvziNkOc,2146
+adv_ml/badnets.py,sha256=SfC6_Jihankwub3gbxdJx1XLKklZyLoQtk1j9IwtJaY,1097
+adv_ml/evasion.py,sha256=8WlCj93_0N3YhTljzLktFid_w80btwnezKnVJJ3V1e8,3059
+adv_ml/input_optimization.py,sha256=ikvQv49duT5bBj-vbXLUB5CV9s8bKIJrUEUs6ePhiws,3406
+adv_ml-0.0.4.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+adv_ml-0.0.4.dist-info/METADATA,sha256=e0OhuLitCnC0jX0oze_3E0CJdq1zswRV7q54RPCnUhU,4257
+adv_ml-0.0.4.dist-info/WHEEL,sha256=EVRjI69F5qVjm_YgqcTXPnTAv3BfSUr0WVAHuSP3Xoo,92
+adv_ml-0.0.4.dist-info/entry_points.txt,sha256=UjSuaD89sIMHeFXGcq1VL_Dqqq34_W7IFpJWuBwZEtE,55
+adv_ml-0.0.4.dist-info/top_level.txt,sha256=-yIh7vUbCLJAOOG_TRR50y1SaP94KzDhK_TZMMlJm30,7
+adv_ml-0.0.4.dist-info/RECORD,,

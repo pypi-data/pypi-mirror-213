@@ -1,0 +1,6 @@
+[console_scripts]
+
+
+[nbdev]
+adv_ml = adv_ml._modidx:d
+
