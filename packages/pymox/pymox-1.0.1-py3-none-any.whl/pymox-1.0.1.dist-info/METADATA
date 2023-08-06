@@ -1,0 +1,80 @@
+Metadata-Version: 2.1
+Name: pymox
+Version: 1.0.1
+Summary: Mock object framework
+Home-page: http://pymox.rtfd.io
+License: Apache License, Version 2.0
+Keywords: mox,mock,test,mocking,unittest,pymox
+Author: Ivan Neto
+Author-email: ivan.cr.neto@gmail.com
+Requires-Python: >=3.3,<4
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Console
+Classifier: Framework :: Pytest
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: License :: Other/Proprietary License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Classifier: Topic :: Software Development :: Quality Assurance
+Classifier: Topic :: Software Development :: Testing
+Classifier: Topic :: Utilities
+Project-URL: Repository, https://github.com/ivancrneto/pymox
+Description-Content-Type: text/x-rst
+
+|package-version|
+|python-versions|
+|Documentation Status|
+
+Pymox is an open source mock object framework for Python.
+
+First Steps
+-----------
+
+`Installation <http://pymox.readthedocs.io/en/latest/install.html>`__
+`Tutorial <http://pymox.readthedocs.io/en/latest/tutorial.html>`__
+
+Documentation
+-------------
+
+http://pymox.readthedocs.io/en/latest/index.html
+
+Community
+---------
+
+User and developer discussion group:
+
+http://groups.google.com/group/mox-discuss
+
+Disclaimer
+----------
+
+Pymox is a fork of Mox. Mox is Copyright 2008 Google Inc, and licensed
+under the Apache License, Version 2.0; see the file COPYING for details.
+If you would like to help us improve Mox, join the group.
+
+.. |package-version| image:: https://badge.fury.io/py/pymox.svg
+.. |python-versions| image:: https://img.shields.io/pypi/pyversions/pymox.svg
+.. |Documentation Status| image:: https://readthedocs.org/projects/pymox/badge/?version=latest
+   :target: http://pymox.readthedocs.io/en/latest/?badge=latest
+
