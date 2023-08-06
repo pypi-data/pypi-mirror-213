@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: life4safe-commons
+Version: 0.0.13
+Summary: Common functions to liveliness algorithms
+Home-page: https://TITBrasil@dev.azure.com/TITBrasil/TITCS%20-%20Live4Safe/_git/Live4Safe_Common
+Author: TIT CS
+Author-email: contato@titcs.com.br
+License: MIT
+Project-URL: Código fonte, https://TITBrasil@dev.azure.com/TITBrasil/TITCS%20-%20Live4Safe/_git/Live4Safe_Common
+Project-URL: Download, https://dev.azure.com/TITBrasil/TITCS%20-%20Live4Safe/_git/Live4Safe_Common
+Keywords: live4safe
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: Portuguese (Brazilian)
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Software Development :: Internationalization
+Classifier: Topic :: Scientific/Engineering :: Physics
+License-File: LICENSE.txt
+
+Common functions to liveliness algorithms
+
