@@ -1,0 +1,46 @@
+[tool.poetry]
+name = "convert-labse-tf-pt"
+version = "3.0.0"
+description = "Convert LaBSE model from TensorFlow to PyTorch."
+license = "MIT"
+authors = ["Setu Shah <setu+labse@setu.me>"]
+readme = "README.md"
+homepage = "https://github.com/setu4993/convert-labse-tf-pt"
+repository = "https://github.com/setu4993/convert-labse-tf-pt"
+keywords = ["transformers", "bert", "labse", "pytorch", "tensorflow"]
+packages = [{ include = "convert_labse_tf_pt", from = "src" }]
+include = ["LICENSE"]
+
+[tool.poetry.dependencies]
+python = "^3.8,<3.11"
+transformers = { extras = ["flax", "sentencepiece", "torch", "tf"], version = "^4.29.2,<4.30.0" }
+tensorflow-hub = "^0.12.0"
+ipywidgets = "^7.6.3"
+loguru = "^0.6.0"
+tensorflow-text = "<2.9.0"
+safetensors = "^0.3.1"
+
+[tool.poetry.scripts]
+convert_labse = "convert_labse_tf_pt.convert:convert_labse"
+convert_lealla = "convert_labse_tf_pt.convert:convert_lealla"
+
+[tool.poetry.group.test.dependencies]
+pytest = "^7.2.0"
+bert-for-tf2 = "^0.14.9"
+
+[tool.poetry.group.dev.dependencies]
+pre-commit = "^2.21.0"
+ipython = "^8.7.0"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.black]
+line-length = 120
+
+[tool.isort]
+profile = "black"
+
+[tool.pytest.ini_options]
+pythonpath = ["./src/"]
