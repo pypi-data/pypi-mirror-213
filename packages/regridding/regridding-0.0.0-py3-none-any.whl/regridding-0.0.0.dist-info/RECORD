@@ -1,0 +1,8 @@
+regridding/__init__.py,sha256=G4OwyZIfa9NLp3_0h00pVxsXT1NMyJZf-rGAPJebQLM,31
+regridding/_interp_ndarray.py,sha256=wNW7RGwQ_LU14yIqM6oOMTlm_J0Wh3yo2198GqQIVaw,3942
+regridding/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+regridding/tests/test_interp_ndarray.py,sha256=hc1S66ICez0bpB7NSXeZxn-civK14zexgJ5OIIQXwRI,1788
+regridding-0.0.0.dist-info/METADATA,sha256=-VLKNKSbYJafwQmnmRGov9OxzinkWF-79kkyQaTaRzA,1446
+regridding-0.0.0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+regridding-0.0.0.dist-info/top_level.txt,sha256=YJSjOJShg216BJg-XdsurYn6yewqYW5kRqNZV5LR88I,11
+regridding-0.0.0.dist-info/RECORD,,
