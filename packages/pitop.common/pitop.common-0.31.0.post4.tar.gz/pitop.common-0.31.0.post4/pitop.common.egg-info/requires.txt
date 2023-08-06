@@ -1,0 +1,5 @@
+isc_dhcp_leases<1.0.0,>=0.9.1
+netifaces<1.0.0,>=0.10.4
+systemd-python<235,>=234
+smbus2<1.0.0,>=0.4.0
+pyzmq<21.0.0,>=20.0.0
