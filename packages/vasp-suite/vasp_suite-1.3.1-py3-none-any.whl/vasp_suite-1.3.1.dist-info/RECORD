@@ -1,0 +1,14 @@
+vasp_suite/__init__.py,sha256=G7127otZcVhy4TFo2eI3EhiVAwfpgzo3NP_Jle76d_k,119
+vasp_suite/__version__.py,sha256=XRu8tfIThjoxmOILta-tSvZtmdXvETtWJX3-hndk_jw,105
+vasp_suite/cli.py,sha256=ZWPkrR_Jusehwv3w0Y4AugaPfanohFcMS9S96M_Lld0,16153
+vasp_suite/core.py,sha256=S3iXRu83_Kf7OHa8S37fLdi6dD1ZxDt49e7tyZiqReI,5158
+vasp_suite/ewald.py,sha256=khwvkdJfuuZOa1uaVM9J4qa32z3IDjVOv571HOU4L34,19084
+vasp_suite/input.py,sha256=WyF1vgY2OK5B5ZgKmqyi6HgMqLtqmrHrvkexDdkFS_E,3714
+vasp_suite/structure.py,sha256=Gl0aadSiyTQTopQ1RL9pKUigw2xkSIasoatMpz95rTA,20919
+vasp_suite/submission.py,sha256=DFlieosstU2dxDJjWd6V6sJyXe7j-Bugy7fvz3riLq4,1711
+vasp_suite-1.3.1.dist-info/LICENSE,sha256=gbyvbJ4GABAfTf0fSY7hI3Pyhr1Nxu5_WRGalZ_g7VQ,35079
+vasp_suite-1.3.1.dist-info/METADATA,sha256=BI3IntbPT-8dXiKjdoIe-qa6BXDZkenlhEQs5vydPc0,3489
+vasp_suite-1.3.1.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+vasp_suite-1.3.1.dist-info/entry_points.txt,sha256=PJdRYZDPKCjOYZdmgeezEH5e4j1sr2u8K5tIu-dq2X0,51
+vasp_suite-1.3.1.dist-info/top_level.txt,sha256=BBaODSBEaSxB8o2wQ7SJaLedDgA42ikkQf08xQLyqAs,11
+vasp_suite-1.3.1.dist-info/RECORD,,
