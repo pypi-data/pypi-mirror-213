@@ -1,0 +1,21 @@
+body {
+  font-size: 150%;
+}
+
+.row {
+  display: flex;
+  align-items: baseline;
+  margin-right: 3%;
+}
+
+.left,
+.right {
+  flex-shrink: 0;
+}
+
+.ellipsis {
+  flex-grow: 1;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
