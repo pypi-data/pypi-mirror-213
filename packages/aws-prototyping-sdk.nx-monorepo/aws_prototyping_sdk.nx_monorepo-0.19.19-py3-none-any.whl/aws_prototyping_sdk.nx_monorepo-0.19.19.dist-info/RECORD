@@ -1,0 +1,12 @@
+aws_prototyping_sdk/nx_monorepo/__init__.py,sha256=RnsnboEoFHMr-NHLtXl1bpteUx7vtqhv-7DzJlNHH24,282554
+aws_prototyping_sdk/nx_monorepo/py.typed,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+aws_prototyping_sdk/nx_monorepo/_jsii/__init__.py,sha256=OLqXsqCA_6WF38-cRwqy2ehPyFUwLgW7vsAnZq8xl0w,402
+aws_prototyping_sdk/nx_monorepo/_jsii/nx-monorepo@0.19.19.jsii.tgz,sha256=eC1W8Ojruke7cv6Jc6qZ7F1ERNU7Uen89KBFDZlG3Cw,1025413
+aws_prototyping_sdk/nx_monorepo/nx/__init__.py,sha256=Ujifuql7WY1RijpWXjKaQxEhh-t4HR_HqoJnY3XbUYU,48585
+aws_prototyping_sdk.nx_monorepo-0.19.19.data/scripts/pdk-nx-dir-hasher,sha256=4BlMy44uczwDydXHfaqwh3NRUQJU0eP8IRUpJ5HY7Vo,350
+aws_prototyping_sdk.nx_monorepo-0.19.19.data/scripts/pdk-pnpm-link-bundled-transitive-deps,sha256=TzoCUFbIQlkn1AyM9uhFDaxCi9IMk0V4scwolPijQNk,379
+aws_prototyping_sdk.nx_monorepo-0.19.19.dist-info/LICENSE,sha256=z8d0m5b2O9McPEK1xHG_dWgUBT6EfBDz6wA0F7xSPTA,11358
+aws_prototyping_sdk.nx_monorepo-0.19.19.dist-info/METADATA,sha256=qUVqKrTCvToqeiQEY_oqc2v5mXWSXaF43jM1CjITbXA,9186
+aws_prototyping_sdk.nx_monorepo-0.19.19.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+aws_prototyping_sdk.nx_monorepo-0.19.19.dist-info/top_level.txt,sha256=GI4X33MSLMhT7o3n6FDj9jqf2xWUdJ3qEo1cWYKXylw,20
+aws_prototyping_sdk.nx_monorepo-0.19.19.dist-info/RECORD,,
