@@ -1,0 +1,9 @@
+boto3
+pandas==1.5.3
+scipy
+xlsxwriter
+
+[dev]
+pytest
+flake8
+black
