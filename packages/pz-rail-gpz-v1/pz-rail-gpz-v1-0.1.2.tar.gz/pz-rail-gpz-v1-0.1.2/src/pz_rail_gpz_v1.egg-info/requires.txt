@@ -1,0 +1,12 @@
+scikit-learn
+pz-rail-base
+qp-prob[full]
+
+[dev]
+qp-prob[full]
+matplotlib
+coverage
+pylint
+pytest
+pytest-cov
+yamllint
