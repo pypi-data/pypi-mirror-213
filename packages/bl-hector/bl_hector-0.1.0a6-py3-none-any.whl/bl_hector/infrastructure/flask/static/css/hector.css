@@ -1,0 +1,53 @@
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin:0;
+}
+
+form {
+    margin-bottom: 1em;
+}
+
+dt {
+    font-size: small;
+    color: grey;
+}
+
+dd {
+    margin-bottom: 1rem;
+}
+
+.page {
+    flex: 1;
+}
+
+.footer {
+    padding: 1.5em;
+}
+
+.books {
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-around;
+}
+
+.book {
+    width: 30%;
+    min-width: 20em;
+    margin: 0.2em;
+}
+.book:hover {
+    box-shadow: 0 0.5em 1em -0.125em rgba(10,10,10,.2), 0 0 0 1px rgba(10,10,10,.02);
+}
+
+.cover {
+    border: 1px solid lightgrey;
+}
+
+/* Medium screens */
+@media all and (max-width: 800px) {
+    .book {
+        width: 100%;
+    }
+}
