@@ -1,0 +1,16 @@
+LICENSE
+README.rst
+pyproject.toml
+setup.py
+src/edumud/__init__.py
+src/edumud/cells.py
+src/edumud/colloids.py
+src/edumud/constants.py
+src/edumud/electrolytes.py
+src/edumud/file_utils.py
+src/edumud/particles.py
+src/edumud.egg-info/PKG-INFO
+src/edumud.egg-info/SOURCES.txt
+src/edumud.egg-info/dependency_links.txt
+src/edumud.egg-info/top_level.txt
+tests/test_module_demo.py
