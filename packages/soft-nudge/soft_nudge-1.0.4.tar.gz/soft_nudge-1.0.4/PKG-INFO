@@ -1,0 +1,48 @@
+Metadata-Version: 2.1
+Name: soft_nudge
+Version: 1.0.4
+Summary: A non invasive timer to give you a soft nudge in the right direction.
+Project-URL: Homepage, https://github.com/80sVectorz/soft_nudge
+Project-URL: Bug Tracker, https://github.com/80sVectorz/soft_nudge/issues
+Author: 80sVectorz
+License-File: LICENSE
+Classifier: Environment :: GPU :: NVIDIA CUDA :: 11.0
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+
+# Soft nudge
+
+![Example](https://github.com/80sVectorz/soft_nudge/blob/master/images/Example.gif?raw=true)
+
+Soft nudge is a module with the goal to provide a reminder without the invasive beeps of conventional timers. I made it to solve a personal issue, but the code is free to use under the GPL-3.0 license.
+
+# Original problem & usage example
+
+Soft nudge was made to serve as a non-invasive reminder that would trigger every 20 minutes. In my case to remind me to look outside and give my eyes a break.
+
+# Basic usage
+You can find a simple overview of how to use this package [here](https://github.com/80sVectorz/soft_nudge/blob/master/BasicUsage.md).
+
+
+# Disclaimer
+**Soft nudge only supports windows.**
+**The current version of Soft nudge requires a GPU and Cuda using Numba Cuda**
+
+**The animation does not overlay on full screen programs that claim the screen and don't use the windowing system E.G. full-screen minecraft.**
+
+As this project was made for personal purposes first, it's probably not the cleanest code base.
+Pull requests are welcome if you're willing to spend the time. If anyone wants to write a non GPU method to show the animation feel free to do so.
+
+# Dependencies
+* wxPython
+* pywin32
+* CTypes
+* Numba Cuda
+* time
+
+## Animation graphs (Desmos)
+* Wave animation: https://www.desmos.com/calculator/gnj2fjlpll
+* Pop in time curve: https://www.desmos.com/calculator/zw8dlswf2j
