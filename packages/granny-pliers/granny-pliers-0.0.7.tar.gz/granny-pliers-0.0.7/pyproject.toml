@@ -1,0 +1,90 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "granny-pliers"
+version = "0.0.7"
+
+authors = [
+    { name = "Dmytro Stepanenko", email = "dmitrijstepanenko@gmail.com" },
+]
+
+license = { file = "LICENSE" }
+
+keywords = [
+    "logging",
+    "configuration",
+    "tools",
+    "tool-belt"
+]
+description = "Set of tools"
+
+readme = "README.md"
+
+requires-python = ">=3.8"
+
+classifiers = [
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: Apache Software License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+]
+dependencies = [
+    "structlog>=23.1.0; python_version>='3.8'",
+    "colorama>=0.4.6; python_version>='3.8'",
+    "jsonplus>=0.8.0; python_version>='3.8'",
+    "cryptography>=41.0.1; python_version>='3.8'",
+    "aiohttp>=3.8.4; python_version>='3.8'",
+    "aiofiles>=23.1.0; python_version>='3.8'",
+    "dateparser>=1.1.8; python_version>='3.8'",
+    "PyYAML>=6.0; python_version>='3.8'",
+]
+
+[project.optional-dependencies]
+# Dev dependencies.
+dev = [
+    "black>=22.3.0",
+    "pylint>=2.17.4",
+]
+
+# Test dependencies.
+test = [
+    "coverage>=7.2.7",
+    "pytest>=7.3.1",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/dimastepanenko/granny-pliers.git"
+
+[tool.black]
+line-length = 120
+include = '\.pyi?$' # All Python files
+exclude = '''
+/(
+    \.git
+  | build
+  | dist
+  | tool-belt
+)/
+'''
+
+[tool.pylint.format]
+max-line-length = 120
+
+[tool.pylint.DESIGN]
+max-args = 6
+max-attributes = 7
+max-bool-expr = 5
+max-branches = 12
+max-locals = 15
+max-parents = 7
+max-public-methods = 20
+max-returns = 6
+max-statements = 50
+min-public-methods = 1
