@@ -1,0 +1,3 @@
+include flightanalysis/data/p23.json
+include flightanalysis/data/p25.json
+include flightanalysis/data/f25.json
