@@ -1,0 +1,5 @@
+ladybug-core==0.41.25
+ladybug-geometry-polyskel==1.4.18
+
+[:python_version >= "3.7"]
+honeybee-schema==1.53.2
