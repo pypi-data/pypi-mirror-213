@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+KucoinOBM/OBM.py
+KucoinOBM/__init__.py
+KucoinOBM.egg-info/PKG-INFO
+KucoinOBM.egg-info/SOURCES.txt
+KucoinOBM.egg-info/dependency_links.txt
+KucoinOBM.egg-info/requires.txt
+KucoinOBM.egg-info/top_level.txt
