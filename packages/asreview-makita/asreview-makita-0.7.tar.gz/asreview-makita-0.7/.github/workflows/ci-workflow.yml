@@ -1,0 +1,54 @@
+name: test-suite
+on: [push, pull_request]
+jobs:
+  test-template-and-lint:
+    strategy:
+      matrix:
+        os: [macos-latest, windows-latest, ubuntu-latest]
+    runs-on: ${{ matrix.os }}
+    steps:
+    - uses: actions/checkout@master
+    - uses: actions/setup-python@v4
+      with:
+        python-version: '3.8'
+        architecture: 'x64'
+    - name: Install makita
+      run: |
+        pip install .
+    - name: Install ruff
+      run: |
+        pip install ruff
+    - name: set up environment
+      run: |
+        mkdir tmp
+        cd tmp
+        mkdir -p basic/data
+        mkdir -p arfi/data
+        mkdir -p multiple_models/data
+        cp ../.github/workflows/test_data/labels.csv basic/data/labels.csv
+        cp ../.github/workflows/test_data/labels.csv arfi/data/labels.csv
+        cp ../.github/workflows/test_data/labels.csv multiple_models/data/labels.csv
+    - name: Test makita templates
+      run: |
+        cd tmp/basic
+        asreview makita template basic | tee output.txt
+        grep -q "ERROR" output.txt && exit 1 || true
+        cd ../arfi
+        asreview makita template arfi | tee output.txt
+        grep -q "ERROR" output.txt && exit 1 || true
+        cd ../multiple_models
+        asreview makita template multiple_models | tee output.txt
+        grep -q "ERROR" output.txt && exit 1 || true
+    - name: Run ShellCheck
+      if: ${{ matrix.os != 'windows-latest' }}
+      uses: ludeeus/action-shellcheck@master
+      with:
+        scandir: './tmp'
+      env:
+        SHELLCHECK_OPTS: -e SC2148
+    - name: Generate makita scripts
+      run: |
+        asreview makita add-script --all
+    - name: Lint python with ruff
+      run: |
+        ruff .
