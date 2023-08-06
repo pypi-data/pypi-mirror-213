@@ -1,0 +1,7 @@
+LICENSE
+README.md
+setup.py
+xprogress.egg-info/PKG-INFO
+xprogress.egg-info/SOURCES.txt
+xprogress.egg-info/dependency_links.txt
+xprogress.egg-info/top_level.txt
