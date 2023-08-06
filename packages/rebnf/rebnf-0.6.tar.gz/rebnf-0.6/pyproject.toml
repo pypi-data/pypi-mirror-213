@@ -1,0 +1,57 @@
+[build-system]
+requires = ["flit_core"]
+build-backend = "flit_core.buildapi"
+
+[project]
+name = "rebnf"
+authors = [{ name = "opsocket", email = "opsocket@pm.me" }]
+readme = "README.md"
+license = { file = "LICENSE.md" }
+dynamic = [ "version", "description" ]
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "Intended Audience :: Developers",
+  "License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)",
+  "Operating System :: OS Independent",
+  "Programming Language :: Python :: 3",
+  "Topic :: Software Development :: Libraries",
+  "Topic :: Software Development",
+  "Topic :: Text Processing",
+]
+keywords = [
+  "backus-naur form",
+  "bnf", 
+  "context-free grammar",
+  "ebnf", 
+  "extended backus-naur form",
+  "formal language",
+  "grammar", 
+  "language", 
+  "lexer", 
+  "metasyntax",
+  "parser", 
+  "parsing", 
+  "rebnf", 
+  "regex", 
+  "regexes", 
+  "syntax", 
+  "text processing", 
+]
+dependencies = [ "ply" ]
+
+[project.optional-dependencies]
+docs = [
+
+]
+dev = [
+  "black",
+  "flake8",
+  "flit",
+  "twine"
+]
+
+[project.urls]
+Repository = "https://gitlab.com/opsocket/rebnf.git"
+
+[project.scripts]
+tokenize = "rebnf.__main__:main"
