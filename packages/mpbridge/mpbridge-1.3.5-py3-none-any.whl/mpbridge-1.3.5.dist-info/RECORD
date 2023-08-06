@@ -1,0 +1,13 @@
+mpbridge/__init__.py,sha256=tdqvkGH0OryRjjXzO3HS5DyYol-VTO9fC8m43nB2PgI,22
+mpbridge/bridge.py,sha256=FpvnibWfslTitZbIfCvTUWmgbihIod0SiNQo8plD2Ss,4366
+mpbridge/handler.py,sha256=9ZqhCwX7YMvnMMfua4vXDDwiaferuLRyuhCseAENS48,2304
+mpbridge/ignore.py,sha256=T5_96hTSNnEP20iPhe1-SuZq66VydZClcxqVMqu7HrU,1696
+mpbridge/pyboard.py,sha256=xjmSvd9hxqhUGg-zNR9itfMjzWWrs91cl57xPory5EE,7362
+mpbridge/shell.py,sha256=2Q6nEGuHlADTTaMg_1XNs8Rpk72ftiV2LABaIo-jYUs,4783
+mpbridge/utils.py,sha256=HhAiykULgYUh2UMXCMFCJKv1YFi4EjYiF-SAKKvP8oY,2624
+mpbridge-1.3.5.dist-info/LICENSE,sha256=nEnm1nvGEoC_-4aiNbmZ-zjGdr8P1jnaSrHJqPJU1ng,1073
+mpbridge-1.3.5.dist-info/METADATA,sha256=_zx9fLrVU5a-1kLbLfjwI7chQxNBRsuA1RSF08QnyJs,6029
+mpbridge-1.3.5.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+mpbridge-1.3.5.dist-info/entry_points.txt,sha256=bm8gCb6bvaN3_kKt0wIUM8Le55l2qcCdch1E49j2kWk,49
+mpbridge-1.3.5.dist-info/top_level.txt,sha256=-zlQYPG5tY8GVJc8hmTdtaafP6knLfwAs0_yXAISSOM,9
+mpbridge-1.3.5.dist-info/RECORD,,
