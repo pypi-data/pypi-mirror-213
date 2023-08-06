@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: CAL-B
+Version: 0.0.1
+Summary: basiCALC- A basic Calculator python package
+Home-page: 
+Author: Swastik Sharma
+Author-email: swastkk@gmail.com
+License: MIT
+Keywords: calculators
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: POSIX :: Linux
+License-File: LICENCE.txt
+
+This is a verys simple calculator which we have named as `basiCAL` that takes 2 numbers which user can Add, Subtract, Multiply or divide.
+
+CHANGELOG
+=========
+
+0.0.1(13/06/2023)
+-----------------
+- First Release
