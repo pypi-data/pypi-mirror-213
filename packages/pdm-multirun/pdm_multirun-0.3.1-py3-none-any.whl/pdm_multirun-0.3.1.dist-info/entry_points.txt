@@ -1,0 +1,3 @@
+[pdm]
+multirun = pdm_multirun.plugin:multirun
+
