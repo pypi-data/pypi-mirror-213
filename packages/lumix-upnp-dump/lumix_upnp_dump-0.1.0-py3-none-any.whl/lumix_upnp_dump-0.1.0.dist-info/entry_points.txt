@@ -1,0 +1,3 @@
+[console_scripts]
+lumix-upnp-dump=lumix_upnp_dump:main
+
