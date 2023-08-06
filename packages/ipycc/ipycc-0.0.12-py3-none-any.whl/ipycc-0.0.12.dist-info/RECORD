@@ -1,0 +1,9 @@
+ipycc/__init__.py,sha256=c9v2fDNhgzyTpNOaTNOfssSUDUNsHjMKZOOYSLTacCo,62
+ipycc/api/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ipycc/api/sketch.py,sha256=V3A0yeyfrQKmdRzQbBRQa_EFYSJvvMIXzUxjrRE039U,17524
+ipycc/api/turtle.py,sha256=uzPz5s0TsCyIfvwIw0uf1KzTFyv9y2EHlYj7F54nEhc,24652
+ipycc-0.0.12.dist-info/LICENSE,sha256=46mU2C5kSwOnkqkw9XQAJlhBL2JAf1_uCD8lVcXyMRg,7652
+ipycc-0.0.12.dist-info/METADATA,sha256=PTSz0RpG1YEFmsNV73WuK4asK1Bi7SD8wd_s1PEshxI,3240
+ipycc-0.0.12.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+ipycc-0.0.12.dist-info/top_level.txt,sha256=RqwgEr78GWaAyLjF-ArFW6XG0Tvw7Ej7RW17niKniG8,6
+ipycc-0.0.12.dist-info/RECORD,,
