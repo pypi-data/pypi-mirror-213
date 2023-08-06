@@ -1,0 +1,4 @@
+[console_scripts]
+SVM_import = cmaclp.SVM_prediction:importpars
+SVM_performance = cmaclp.SVM_prediction:performpars
+SVM_prediction = cmaclp.SVM_prediction:predpars

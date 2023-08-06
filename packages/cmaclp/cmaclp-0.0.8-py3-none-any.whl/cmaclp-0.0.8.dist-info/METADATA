@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: cmaclp
+Version: 0.0.8
+Summary: Corneal meta-atlas command line predictor
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: setuptools (<=57.5.0)
+Requires-Dist: wheel
+Requires-Dist: python-build
+Requires-Dist: pytest-cov
+Requires-Dist: rpy2
+Requires-Dist: h5py
+Requires-Dist: numpy (<1.24,>=1.23.3)
+Requires-Dist: pandas (>=1.4.4)
+Requires-Dist: scikit-learn
+Requires-Dist: scanpy (>=1.9.1)
+Requires-Dist: importlib-resources
+
+[![CI/CD](https://github.com/Arts-of-coding/cma/actions/workflows/ci-cd.yml/badge.svg)](https://github.com/Arts-of-coding/cma/actions/workflows/ci-cd.yml)
+# cma
+This repository defines a command-line tool to predict datasets according to the human corneal meta-atlas (cma).
