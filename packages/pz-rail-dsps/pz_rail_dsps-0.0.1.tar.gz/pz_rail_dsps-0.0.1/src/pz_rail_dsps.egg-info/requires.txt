@@ -1,0 +1,11 @@
+deprecated
+pz-rail-base
+jaxlib
+dsps
+
+[dev]
+qp-prob[full]
+pytest
+pytest-cov
+pre-commit
+pylint
