@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+src/__init__.py
+src/dblp_parser.py
+src/dblp_sax_parser.egg-info/PKG-INFO
+src/dblp_sax_parser.egg-info/SOURCES.txt
+src/dblp_sax_parser.egg-info/dependency_links.txt
+src/dblp_sax_parser.egg-info/top_level.txt
+test/test_dblp_parser.py
