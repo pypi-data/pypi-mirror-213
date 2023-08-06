@@ -1,0 +1,16 @@
+LICENSE
+README.md
+setup.py
+src/MLScript_2.py
+src/main.py
+src/mainView.py
+src/modelTestingView.py
+src/myDataSetsView.py
+src/myGesturesView.py
+src/myModelsView.py
+src/HandGestureRec.egg-info/PKG-INFO
+src/HandGestureRec.egg-info/SOURCES.txt
+src/HandGestureRec.egg-info/dependency_links.txt
+src/HandGestureRec.egg-info/entry_points.txt
+src/HandGestureRec.egg-info/requires.txt
+src/HandGestureRec.egg-info/top_level.txt
