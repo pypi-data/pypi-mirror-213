@@ -1,0 +1,31 @@
+[tool.poetry]
+name = "bunkatopics"
+version = "0.38"
+description = "Topic Modeling using Transformers and advanced visualization"
+authors = ["Charles De Dampierre <charlesdedampierre@gmail.com>"]
+readme = "README.md"
+packages = [{include = "bunkatopics"}]
+
+[tool.poetry.dependencies]
+python =">=3.9,<4.0"
+jupyterlab = "^4.0.1"
+pandas = "^2.0.2"
+langchain = "^0.0.188"
+sentence-transformers = "^2.2.2"
+ipywidgets = "^8.0.6"
+instructorembedding = "^1.0.1"
+umap-learn = "^0.5.3"
+plotly = "^5.14.1"
+textacy = "^0.13.0"
+loguru = "^0.7.0"
+matplotlib = "^3.7.1"
+kneed = "^0.8.3"
+hdbscan = "^0.8.29"
+statsmodels = "^0.14.0"
+gensim = "^4.3.1"
+black = "^23.3.0"
+pytest = "^7.3.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
