@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: salome-c3po
+Version: 2.2
+Summary: Collaborative Code Coupling PlatfOrm
+Home-page: https://sourceforge.net/projects/cea-c3po/
+Author: CEA
+Author-email: cyril.patricot@cea.fr
+Maintainer: Cyril Patricot
+Maintainer-email: cyril.patricot@cea.fr
+License: 3-Clause BSD
+Platform: UNKNOWN
+Requires-Python: >=2.7, !=3.0.*, !=3.1.*
+Provides-Extra: pytest
+Requires-Dist: pytest ; extra == 'pytest'
+Requires-Dist: pytest-cov ; extra == 'pytest'
+Requires-Dist: pytest-html ; extra == 'pytest'
+
+UNKNOWN
+
