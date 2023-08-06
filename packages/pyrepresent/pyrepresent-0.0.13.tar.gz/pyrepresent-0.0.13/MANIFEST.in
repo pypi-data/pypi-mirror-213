@@ -1,0 +1,5 @@
+include test.py
+include build.py
+include requirements-dev.txt
+include requirements.txt
+include pyproject.toml
