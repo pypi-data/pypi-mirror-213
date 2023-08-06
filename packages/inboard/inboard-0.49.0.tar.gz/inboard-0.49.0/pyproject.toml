@@ -1,0 +1,149 @@
+[build-system]
+build-backend = "hatchling.build"
+requires = ["hatchling"]
+
+[project]
+authors = [{email = "bws@bws.bio", name = "Brendon Smith"}]
+classifiers = [
+  "Framework :: FastAPI",
+  "Natural Language :: English",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.8",
+  "Programming Language :: Python :: 3.9",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Topic :: Internet :: Log Analysis",
+  "Topic :: Internet :: WWW/HTTP :: HTTP Servers",
+  "Topic :: Internet :: WWW/HTTP :: WSGI",
+  "Topic :: Software Development :: Libraries :: Application Frameworks",
+  "Topic :: System :: Software Distribution",
+  "Topic :: Utilities",
+  "Typing :: Typed",
+]
+dependencies = [
+  "gunicorn==20.1.0",
+  "uvicorn==0.22.0",
+]
+description = "Docker images and utilities to power your Python APIs and help you ship faster."
+dynamic = ["version"]
+keywords = ["asgi", "docker", "fastapi", "gunicorn", "uvicorn"]
+license = "MIT"
+name = "inboard"
+readme = "README.md"
+requires-python = ">=3.8.1,<4"
+
+[project.optional-dependencies]
+checks = [
+  "asgiref==3.6.0",
+  "black>=23,<24",
+  "flake8>=6,<7",
+  "isort>=5,<6",
+  "mypy==1.3.0",
+  "pre-commit>=2,<3",
+]
+docs = [
+  "mkdocs-material>=8,<9",
+]
+fastapi = [
+  "fastapi>=0.97,<0.98",
+]
+starlette = [
+  "starlette>=0.27,<0.28",
+]
+tests = [
+  "coverage[toml]>=7,<8",
+  "httpx>=0.23,<0.24",
+  "pytest>=7,<8",
+  "pytest-mock>=3,<4",
+  "pytest-timeout>=2,<3",
+]
+uvicorn-fast = [
+  "httptools>=0.5.0",
+  "uvloop>=0.14.0,!=0.15.0,!=0.15.1; sys_platform != 'win32' and (sys_platform != 'cygwin' and platform_python_implementation != 'PyPy')",
+  "websockets>=10.4",
+]
+uvicorn-standard = [
+  "uvicorn[standard]==0.22.0",
+]
+
+[project.urls]
+Docker = "https://github.com/br3ndonland/inboard/pkgs/container/inboard"
+Documentation = "https://inboard.bws.bio"
+Homepage = "https://github.com/br3ndonland/inboard"
+Repository = "https://github.com/br3ndonland/inboard"
+
+[tool.coverage.report]
+exclude_lines = ["if TYPE_CHECKING:", "pragma: no cover"]
+fail_under = 100
+show_missing = true
+
+[tool.coverage.run]
+command_line = "-m pytest"
+source = ["inboard", "tests"]
+
+[tool.hatch.build.targets.sdist]
+include = ["/inboard"]
+
+[tool.hatch.envs.base]
+dev-mode = false
+features = []
+path = ".venv"
+
+[tool.hatch.envs.ci]
+dev-mode = false
+features = [
+  "checks",
+  "fastapi",
+  "tests",
+  "uvicorn-fast",
+]
+path = ".venv"
+
+[tool.hatch.envs.default]
+dev-mode = true
+features = [
+  "checks",
+  "docs",
+  "fastapi",
+  "tests",
+  "uvicorn-fast",
+]
+path = ".venv"
+
+[tool.hatch.envs.docs]
+dev-mode = false
+features = [
+  "docs",
+]
+
+[tool.hatch.envs.fastapi]
+dev-mode = false
+features = [
+  "fastapi",
+]
+path = ".venv"
+
+[tool.hatch.envs.starlette]
+dev-mode = false
+features = [
+  "starlette",
+]
+path = ".venv"
+
+[tool.hatch.version]
+path = "inboard/__init__.py"
+
+[tool.isort]
+profile = "black"
+src_paths = ["inboard", "tests"]
+
+[tool.mypy]
+files = ["**/*.py"]
+plugins = "pydantic.mypy"
+show_error_codes = true
+strict = true
+
+[tool.pytest.ini_options]
+addopts = "-q"
+minversion = "6.0"
+testpaths = ["tests"]
