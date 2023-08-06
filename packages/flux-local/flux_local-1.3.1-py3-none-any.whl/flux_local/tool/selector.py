@@ -1,0 +1,193 @@
+"""Library for common selectors."""
+
+from argparse import (
+    ArgumentParser,
+    BooleanOptionalAction,
+    Action,
+    ArgumentError,
+    Namespace,
+)
+import logging
+import pathlib
+import shlex
+from typing import Any
+
+from flux_local import git_repo
+
+_LOGGER = logging.getLogger(__name__)
+
+DEFAULT_NAMESPACE = "flux-system"
+
+
+class SourceAppendAction(Action):
+    """Append a key=value pair to the argument list."""
+
+    def __call__(
+        self,
+        parser: ArgumentParser,
+        namespace: Namespace,
+        values: Any,
+        option_string: str | None = None,
+    ) -> None:
+        values = values.split(",")
+        if not values[0]:
+            return
+        try:
+            source = git_repo.Source.from_str(values[0])
+        except ValueError:
+            raise ArgumentError(self, f"Expected key=value format from '{values[0]}'")
+        result = getattr(namespace, self.dest) or []
+        result.append(source)
+        setattr(namespace, self.dest, result)
+
+
+def add_selector_flags(args: ArgumentParser) -> None:
+    """Add common selector flags to the arguments object."""
+    args.add_argument(
+        "--path",
+        help="Optional path with flux Kustomization resources (multi-cluster ok)",
+        type=pathlib.Path,
+        default=None,
+        nargs="?",
+    )
+    args.add_argument(
+        "--sources",
+        help="Optional map of repository source to relative path e.g. cluster=./k8s/",
+        action=SourceAppendAction,
+    )
+    args.add_argument(
+        "--all-namespaces",
+        "-A",
+        type=bool,
+        default=False,
+        action=BooleanOptionalAction,
+        help="List the requested objects across all namespaces.",
+    )
+    args.add_argument(
+        "--namespace",
+        "-n",
+        type=str,
+        default=DEFAULT_NAMESPACE,
+        help="If present, the namespace scope for this request",
+    )
+    args.add_argument(
+        "--skip-crds",
+        type=str,
+        default=True,
+        action=BooleanOptionalAction,
+        help="When true do not include CRDs to reduce output size",
+    )
+    args.add_argument(
+        "--skip-secrets",
+        type=str,
+        default=True,
+        action=BooleanOptionalAction,
+        help="When true do not include Secrets to reduce output size and randomness",
+    )
+    args.add_argument(
+        "--kustomize-build-flags",
+        type=str,
+        default="",
+        help="If present, additional flags to pass to `kustomize build`",
+    )
+
+
+def add_ks_selector_flags(args: ArgumentParser) -> None:
+    """Add common kustomization selector flags to the arguments object."""
+    args.add_argument(
+        "kustomization",
+        help="The name of the flux Kustomization",
+        type=str,
+        default=None,
+        nargs="?",
+    )
+    add_selector_flags(args)
+
+
+def options(  # type: ignore[no-untyped-def]
+    kustomize_build_flags: str | None, **kwargs
+) -> git_repo.Options:
+    """Create an Options object based on flags."""
+    options = git_repo.Options()
+    options.kustomize_flags = shlex.split(kustomize_build_flags or "")
+    return options
+
+
+def build_ks_selector(  # type: ignore[no-untyped-def]
+    **kwargs,
+) -> git_repo.ResourceSelector:
+    """Build a selector object form the specified flags."""
+    selector = git_repo.ResourceSelector()
+    selector.path = git_repo.PathSelector(
+        kwargs.get("path"), sources=kwargs.get("sources")
+    )
+    selector.kustomization.name = kwargs["kustomization"]
+    selector.kustomization.namespace = kwargs["namespace"]
+    if kwargs["all_namespaces"]:
+        selector.kustomization.namespace = None
+    selector.kustomization.skip_crds = kwargs["skip_crds"]
+    selector.kustomization.skip_secrets = kwargs["skip_secrets"]
+    selector.cluster_policy.enabled = False
+    return selector
+
+
+def add_hr_selector_flags(args: ArgumentParser) -> None:
+    """Add common HelmRelease selector flags to the arguments object."""
+    args.add_argument(
+        "helmrelease",
+        help="The name of the flux Kustomization",
+        type=str,
+        default=None,
+        nargs="?",
+    )
+    add_selector_flags(args)
+
+
+def build_hr_selector(  # type: ignore[no-untyped-def]
+    **kwargs,
+) -> git_repo.ResourceSelector:
+    """Build a selector object form the specified flags."""
+    _LOGGER.debug("Building HelmRelease selector from args: %s", kwargs)
+    selector = git_repo.ResourceSelector()
+    selector.path = git_repo.PathSelector(
+        kwargs.get("path"), sources=kwargs.get("sources")
+    )
+    selector.helm_release.name = kwargs.get("helmrelease")
+    selector.helm_release.namespace = kwargs["namespace"]
+    if kwargs["all_namespaces"]:
+        selector.helm_release.namespace = None
+    selector.helm_release.skip_crds = kwargs["skip_crds"]
+    selector.helm_release.skip_secrets = kwargs["skip_secrets"]
+    selector.cluster_policy.enabled = False
+    return selector
+
+
+def add_cluster_selector_flags(args: ArgumentParser) -> None:
+    """Add common flux cluster selector flags to the arguments object."""
+    add_selector_flags(args)
+
+
+def build_cluster_selector(  # type: ignore[no-untyped-def]
+    **kwargs,
+) -> git_repo.ResourceSelector:
+    """Build a selector object form the specified flags."""
+    _LOGGER.debug("Building flux cluster Kustomization selector from args: %s", kwargs)
+    selector = git_repo.ResourceSelector()
+    selector.path = git_repo.PathSelector(
+        kwargs.get("path"), sources=kwargs.get("sources")
+    )
+    selector.cluster.namespace = kwargs.get("namespace")
+    if kwargs.get("all_namespaces"):
+        selector.cluster.namespace = None
+    return selector
+
+
+def not_found(resource: str, mds: git_repo.MetadataSelector) -> str:
+    """Return a not found error message for the given resource type and query."""
+    if mds.name:
+        return (
+            f"{resource} object '{mds.name}' not found in '{mds.namespace}' namespace"
+        )
+    if mds.namespace:
+        return f"no {resource} objects found in '{mds.namespace}' namespace"
+    return f"no {resource} objects found in cluster"
