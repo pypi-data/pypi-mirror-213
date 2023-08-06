@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: pair-ai
+Version: 0.5.15
+License-File: LICENSE
+Requires-Dist: chatstack (>=0.1.2)
+Requires-Dist: prompt-toolkit (>=3.0.36)
+Requires-Dist: bs4 (==0.0.1)
+Requires-Dist: requests (==2.28.2)
+Requires-Dist: readability-lxml (==0.8.1)
+Requires-Dist: pdfminer.six (==20221105)
+Requires-Dist: markdown (==3.4.1)
+Requires-Dist: loguru (==0.6.0)
+

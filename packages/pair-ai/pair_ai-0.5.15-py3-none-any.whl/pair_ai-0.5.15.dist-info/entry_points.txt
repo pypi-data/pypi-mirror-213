@@ -1,0 +1,2 @@
+[console_scripts]
+pair = pair_ai.pair:repl
