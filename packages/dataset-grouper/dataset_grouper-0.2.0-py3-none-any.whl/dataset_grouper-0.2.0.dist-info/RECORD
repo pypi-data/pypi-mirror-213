@@ -1,0 +1,17 @@
+dataset_grouper/__init__.py,sha256=1zUQPrrW3SgfKFTGvh2HqOBL8fyehZDg5yxx9_v60iI,1092
+dataset_grouper/core/beam_transforms.py,sha256=7BkQ4zFd5H8fuDh0W9yOLz5srP9ODqSVXLSV_hdjnZg,4509
+dataset_grouper/core/beam_transforms_test.py,sha256=_sZRNZblmINtue5ntKwaF3F2WvB46nHdTc3YxWt810o,8461
+dataset_grouper/core/count_utils.py,sha256=gs1k_Ckt-dgqlv0IzXiEDiHvv8Ux9bXIM_mdbWuiOxo,2323
+dataset_grouper/core/count_utils_test.py,sha256=b4_yJb2rrfT4HUSGF9Fvn2ozZ-Px9J37LpgD-X1ntCE,2979
+dataset_grouper/core/data_loaders.py,sha256=C5PGgNzXv7daSQgjypwVnFoqLRrVH0kXdOmyKo41Rc8,5171
+dataset_grouper/core/serialization.py,sha256=S-lPKysD7GSFP29gqBFE-51xqDqBsjvlct0ZYOME4wo,2082
+dataset_grouper/core/serialization_test.py,sha256=upbsKG1u60tc95r_jMoS-96teoYb9iRivmavIW8WDao,2427
+dataset_grouper/core/tf_utils.py,sha256=kXf4YI4Xnv1FBE0yJ-MAnnm4zCONBPnefLKZ-JndpJQ,2137
+dataset_grouper/core/tf_utils_test.py,sha256=2i_NgaBJHyq4yyvL3h4XiKyfHobVD3jG8Qef1b4kxho,4222
+dataset_grouper/core/tfds_pipelines.py,sha256=0VfmgyxEW_r614reHgC8ep4ofQ-3a88iYkH2K7DV6qo,5440
+dataset_grouper/core/types.py,sha256=dOncuWjaeYwEGFFnFrlM7WaixZzMNsbsy6RzUbl2iIA,1039
+dataset_grouper-0.2.0.dist-info/LICENSE,sha256=WNHhf_5RCaeuKWyq_K39vmp9F28LxKsB4SpomwSZ2L0,11357
+dataset_grouper-0.2.0.dist-info/METADATA,sha256=yR9Twf4dtJfCjM6-7dnboxwgVJdaB_FW9P4i2vGTMJM,14871
+dataset_grouper-0.2.0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+dataset_grouper-0.2.0.dist-info/top_level.txt,sha256=Zn0e9Yrm-XV410bSsAT8lBmoAAAjF4weGll9cQDYi-E,16
+dataset_grouper-0.2.0.dist-info/RECORD,,
