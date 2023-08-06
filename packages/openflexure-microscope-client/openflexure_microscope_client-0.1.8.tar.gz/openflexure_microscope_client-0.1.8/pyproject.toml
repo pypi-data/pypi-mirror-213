@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "openflexure-microscope-client"
+version = "0.1.8"
+license = "LGPL-3.0-or-later"
+readme = "README.md"
+homepage = "https://gitlab.com/openflexure/openflexure-microscope-pyclient/"
+description = "Python client code for the OpenFlexure Microscope"
+authors = ["Richard Bowman <richard.bowman@cantab.net>"]
+
+[tool.poetry.dependencies]
+python = "^3.7"
+requests = "^2.28"
+Pillow = "^9.0"
+numpy = "^1.21"
+zeroconf = "^0.39"
+
+[tool.poetry.dev-dependencies]
+pytest = "^7.1"
