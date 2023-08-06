@@ -1,0 +1,6 @@
+openeo_executor_bindings/__init__.py,sha256=gcokVC1EQAVwjFi2Xm9E1lTHNNBfSkFY-oASujuUw3I,107
+openeo_executor_bindings/model.py,sha256=xvTIcICwrXytq84uCcCnyPiAxf_zmfsKnX13r7G60fk,272
+openeo_executor_bindings/workflow.py,sha256=IRbOOITWPlkW5iRShLn8RKGg3kVwiZ4EmmIpZKpU7QY,4827
+eodc_faas_openeo-2023.6.5rc1.dist-info/METADATA,sha256=cR7kwqIILRPCLv9PjMN3P1sYIfNFA4mLc-sGtkN6ubk,676
+eodc_faas_openeo-2023.6.5rc1.dist-info/WHEEL,sha256=7Z8_27uaHI_UZAc4Uox4PpBhQ9Y5_modZXWMxtUi4NU,88
+eodc_faas_openeo-2023.6.5rc1.dist-info/RECORD,,
