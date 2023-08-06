@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<!-- This file is part of Tryton.  The COPYRIGHT file at the top level of
+this repository contains the full copyright notices and license terms. -->
+<tryton>
+    <data>
+
+        <menuitem parent="account.menu_reporting" id="menu_primanota"
+            action="act_primanota_view" icon="tryton-list"/>
+        <record model="ir.ui.menu-res.group"
+            id="menu_primanota-group_account">
+            <field name="menu" ref="menu_primanota"/>
+            <field name="group" ref="account.group_account"/>
+        </record>
+
+    </data>
+</tryton>
