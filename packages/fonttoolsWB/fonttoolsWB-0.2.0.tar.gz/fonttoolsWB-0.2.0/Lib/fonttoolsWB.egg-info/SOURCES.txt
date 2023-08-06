@@ -1,0 +1,16 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+Lib/fonttoolsWB/__init__.py
+Lib/fonttoolsWB/gui.py
+Lib/fonttoolsWB.egg-info/PKG-INFO
+Lib/fonttoolsWB.egg-info/SOURCES.txt
+Lib/fonttoolsWB.egg-info/dependency_links.txt
+Lib/fonttoolsWB.egg-info/entry_points.txt
+Lib/fonttoolsWB.egg-info/requires.txt
+Lib/fonttoolsWB.egg-info/top_level.txt
+Lib/fonttoolsWB/data/__init__.py
+Lib/fonttoolsWB/data/application.yml
+Lib/fonttoolsWB/data/firstRun.py
+Lib/fonttoolsWB/data/splashscreen.png

@@ -1,0 +1,5 @@
+[console_scripts]
+ftwb = fonttoolsWB.gui:main
+
+[gui_scripts]
+fonttoolswb = fonttoolsWB.gui:main

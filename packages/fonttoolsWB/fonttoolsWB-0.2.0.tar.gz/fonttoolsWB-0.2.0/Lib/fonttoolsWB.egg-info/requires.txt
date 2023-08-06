@@ -1,0 +1,11 @@
+wbBase>=0.2
+wbpFonttools>=0.2
+wbpLoglist>=0.2
+wbpOutput>=0.2
+wbpShell>=0.2
+wbpTextedit>=0.2
+wbpUItools>=0.2
+
+[develop]
+wbpNamespace>=0.2
+wbpWidgetinspector>=0.2
