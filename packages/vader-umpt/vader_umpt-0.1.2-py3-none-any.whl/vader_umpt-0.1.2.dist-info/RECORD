@@ -1,0 +1,11 @@
+vader_umpt/__init__.py,sha256=K__UjImbFC_Yblsgm5IseDEAFVJWWTlnO_SDeG10dio,2599
+vader_umpt/vader/__init__.py,sha256=Do3Wc4AZf-cp2JTc3zukNtdbQREmhqlLLXO7cSxIiN0,20103
+vader_umpt/vader/lexicons/booster.txt,sha256=4tbpkvf3afeQdj8lwkfLPIw54a_zlbJUKuZCSwhf3Bk,991
+vader_umpt/vader/lexicons/emoji_utf8_lexicon_ptbr.txt,sha256=WVFtPzs5Hc-6jOfCweMbw5S3kEktDdg3YsUl5Mec5PE,132797
+vader_umpt/vader/lexicons/negate.txt,sha256=FfQizw5Qn6xLmSC0xkYIQ6tnCNyAa2sHW7r12irrgfk,493
+vader_umpt/vader/lexicons/vader_lexicon_ptbr.txt,sha256=fU2mgmh2Acqr51YizJ6u2BM22fWwcDeFfb1-qQBa3Y4,427190
+vader_umpt/web.py,sha256=wlj50Hj965IyxPCQ-bURx2NOU2z1CK1lp8Lrf31yTxU,681
+vader_umpt-0.1.2.dist-info/METADATA,sha256=tCFWzb9UsMs_wUKMZoZ9ksMCj3vllk9soIiBfvPJ9js,8180
+vader_umpt-0.1.2.dist-info/WHEEL,sha256=7Z8_27uaHI_UZAc4Uox4PpBhQ9Y5_modZXWMxtUi4NU,88
+vader_umpt-0.1.2.dist-info/entry_points.txt,sha256=LYiFywMs-xQyGgUmqYkBJ4rhLVY8DSzsyXvDmNwuKSI,55
+vader_umpt-0.1.2.dist-info/RECORD,,
