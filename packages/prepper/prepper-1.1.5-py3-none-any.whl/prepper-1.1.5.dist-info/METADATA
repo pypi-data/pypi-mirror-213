@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: prepper
+Version: 1.1.5
+Summary: Allows python objects to be stored and loaded from an HDF5 file in a language-agnostic manner
+Author-email: Varchas Gopalaswamy <vgop@lle.rochester.edu>
+License: MIT
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: h5py (~=3.8.0)
+Requires-Dist: loguru (>=0.6.0)
+Requires-Dist: aenum (~=3.1.11)
+Requires-Dist: numpy (~=1.23.5)
+Requires-Dist: pandas (~=1.5.1)
+Requires-Dist: joblib (~=1.2.0)
+Provides-Extra: ci
+Requires-Dist: pytest ; extra == 'ci'
+Requires-Dist: pytest-cov ; extra == 'ci'
+Requires-Dist: hypothesis ; extra == 'ci'
+Requires-Dist: pylint ; extra == 'ci'
+
+Documentation TBD!!
