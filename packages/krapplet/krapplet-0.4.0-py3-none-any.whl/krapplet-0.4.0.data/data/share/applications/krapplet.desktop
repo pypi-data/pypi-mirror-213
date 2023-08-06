@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=Krapplet
+StartupWMClass=Krapplet
+Comment=Store secrets (passwords) in keyrings
+GenericName=Password manager
+Exec=/usr/bin/krapplet
+Icon=krapplet
+Type=Application
+StartupNotify=true
+Categories=Utility;Security;GNOME;GTK;

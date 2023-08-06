@@ -1,0 +1,67 @@
+Metadata-Version: 2.1
+Name: krapplet
+Version: 0.4.0
+Summary: A password manager written as a gnome-keyring applet
+Home-page: https://gitlab.com/hfernh/krapplet
+Author: Johannes Willem Fernhout
+Author-email: hfern@fernhout.info
+License: BSD 3-Clause License
+Keywords: password manager,gnome-keyring,pass
+Platform: Linux
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: POSIX
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Topic :: Security
+Classifier: Topic :: Utilities
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Provides-Extra: gnomekeyring
+Requires-Dist: secretstorage ; extra == 'gnomekeyring'
+Provides-Extra: pass
+Requires-Dist: python-gnupg ; extra == 'pass'
+
+# Krapplet
+
+Krapplet is a graphical password manager for Linux.
+Its name derives from 'keyring applet'.
+
+
+# Feature overview
+
+- Graphical password manager.
+- Passwords are considered secrets, contained in keys, organized per keyring.
+- Keys also can also contain associated information like username, email
+  addresses, and/or a website URL.
+- Contains a password generator.
+
+
+# Technical overview
+
+- Written in Python3, using the GTK3 toolkit.
+- Keys are stored using:
+  [gnome-keyring](https://wiki.gnome.org/Projects/GnomeKeyring), or
+  [GPG](https://gnupg.org/)-encrypted in a format compatibe with the
+  [pass](https://www.passwordstore.org) command line password manager.
+
+
+# Documentation
+
+The documentation of krapplet Can be found on
+[readthedocs.io](https://krapplet.readthedocs.io/en/latest/index.html).
+
+
+# License
+
+Krapplet is licensed under a
+[BSD-3 license](https://gitlab.com/hfernh/krapplet/-/blob/master/LICENSE).
+
+
+# Feedback
+
+If something is not working properly then please log an
+[issue](https://gitlab.com/hfernh/krapplet/-/issues) against the project.
