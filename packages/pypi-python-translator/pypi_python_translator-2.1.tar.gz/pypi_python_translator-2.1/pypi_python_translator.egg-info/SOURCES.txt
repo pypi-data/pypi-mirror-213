@@ -1,0 +1,10 @@
+README.md
+setup.py
+pypi_python_translator.egg-info/PKG-INFO
+pypi_python_translator.egg-info/SOURCES.txt
+pypi_python_translator.egg-info/dependency_links.txt
+pypi_python_translator.egg-info/top_level.txt
+translator/__init__.py
+translator/languageExamples.py
+translator/messages.py
+translator/services.py
