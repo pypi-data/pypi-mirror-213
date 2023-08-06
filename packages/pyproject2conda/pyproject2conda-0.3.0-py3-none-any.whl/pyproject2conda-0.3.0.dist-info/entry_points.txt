@@ -1,0 +1,2 @@
+[console_scripts]
+pyproject2conda = pyproject2conda.cli:app
