@@ -1,0 +1,11 @@
+[console_scripts]
+carxp2lv2presets = jackaudiotools.carla.carxp2lv2presets:main [rdflib]
+jack-dbus-monitor = jackaudiotools.jackdbus.jackmonitor:main [dbus]
+jack-midi-to-transport = jackaudiotools.transport.midi_to_transport:main
+jack-rtmidi-to-transport = jackaudiotools.transport.rtmidi_to_transport:main [rtmidi]
+jack-timebase-master = jackaudiotools.transport.timebase_master:main
+jack-transporter = jackaudiotools.transport.transporter:main
+lv2-grep = jackaudiotools.lv2.grep:main
+lv2-list-plugin-presets = jackaudiotools.lv2.list_plugin_presets:main
+lv2-plugin-info = jackaudiotools.lv2.plugin_info:main
+lv2-plugin-uris = jackaudiotools.lv2.plugin_uris:main
