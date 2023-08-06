@@ -1,0 +1,2 @@
+[console_scripts]
+whist-score = main:main
