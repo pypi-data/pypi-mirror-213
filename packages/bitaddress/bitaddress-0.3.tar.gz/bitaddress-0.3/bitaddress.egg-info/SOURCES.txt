@@ -1,0 +1,7 @@
+LICENSE
+README.md
+setup.py
+bitaddress.egg-info/PKG-INFO
+bitaddress.egg-info/SOURCES.txt
+bitaddress.egg-info/dependency_links.txt
+bitaddress.egg-info/top_level.txt
