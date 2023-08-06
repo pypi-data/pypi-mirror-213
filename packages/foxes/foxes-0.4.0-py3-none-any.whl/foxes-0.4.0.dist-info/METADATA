@@ -1,0 +1,203 @@
+Metadata-Version: 2.1
+Name: foxes
+Version: 0.4.0
+Summary: Farm Optimization and eXtended yield Evaluation Software
+Author: Fraunhofer IWES
+Author-email: jonas.schmidt@iwes.fraunhofer.de
+License: MIT
+Project-URL: Source Code, https://github.com/FraunhoferIWES/foxes
+Project-URL: Bug Tracker, https://github.com/FraunhoferIWES/foxes/issues
+Project-URL: Documentation, https://fraunhoferiwes.github.io/foxes.docs/index.html
+Keywords: Wind farm,Wake modelling,Wind farm optimization
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Development Status :: 3 - Alpha
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: matplotlib
+Requires-Dist: numpy
+Requires-Dist: xarray
+Requires-Dist: dask[distributed]
+Requires-Dist: scipy
+Requires-Dist: netcdf4
+Requires-Dist: plotly
+Requires-Dist: kaleido
+Requires-Dist: iwopy (>=0.1.4)
+Requires-Dist: pymoo (>=0.6)
+Provides-Extra: doc
+Requires-Dist: sphinx ; extra == 'doc'
+Requires-Dist: sphinx-immaterial ; extra == 'doc'
+Requires-Dist: nbsphinx ; extra == 'doc'
+Requires-Dist: ipykernel ; extra == 'doc'
+Requires-Dist: ipywidgets ; extra == 'doc'
+Requires-Dist: m2r2 ; extra == 'doc'
+Provides-Extra: scripts
+Provides-Extra: test
+Requires-Dist: flake8 ; extra == 'test'
+Requires-Dist: pytest ; extra == 'test'
+
+# Welcome to foxes
+
+![FOXES Logo](Logo_FOXES.svg)
+
+## Overview
+
+The software `foxes` is a modular wind farm simulation and wake modelling toolbox which is based on engineering wake models. It has many applications, for example
+
+- Wind farm optimization, e.g. layout optimization or wake steering,
+- Wind farm post-construction analysis,
+- Wake model studies, comparison and validation,
+- Wind farm simulations invoking complex model chains.
+
+The calculation is fully vectorized and its fast performance is owed to [dask](https://www.dask.org/). Also the parallelization on local or remote clusters is enabled via `dask`. The wind farm
+optimization capabilities invoke the [iwopy](https://github.com/FraunhoferIWES/iwopy) package which
+as well supports vectorization.
+
+`foxes` is build upon many years of experience with wake model code development at IWES, starting with the C++ based in-house code _flapFOAM_ (2011-2019) and the Python based direct predecessor _flappy_ (2019-2022).
+
+Documentation: [https://fraunhoferiwes.github.io/foxes.docs/index.html](https://fraunhoferiwes.github.io/foxes.docs/index.html)
+
+Source code: [https://github.com/FraunhoferIWES/foxes](https://github.com/FraunhoferIWES/foxes)
+
+PyPi reference: [https://pypi.org/project/foxes/](https://pypi.org/project/foxes/)
+
+Anaconda reference: [https://anaconda.org/conda-forge/foxes](https://anaconda.org/conda-forge/foxes)
+
+## Requirements
+
+The supported Python versions are: 
+
+- `Python 3.7`
+- `Python 3.8`
+- `Python 3.9`
+- `Python 3.10`
+- `Python 3.11`
+
+## Installation via pip
+
+### Virtual Python environment
+
+First create a new `venv` environment, for example called `foxes` and located at `~/venv/foxes` (choose any other convenient name and location in your file system if you prefer), by
+
+```console
+python3 -m venv ~/venv/foxes
+```
+
+Then activate the environment every time you work with `foxes`, by
+
+```console
+source ~/venv/foxes/bin/activate
+```
+
+You can leave the environment by
+
+```console
+deactivate
+```
+
+The `pip` installation commands below should be executed within the active `foxes` environment.
+
+### Standard users
+
+As a standard user, you can install the latest release via [pip](https://pypi.org/project/foxes/) by
+
+```console
+pip install foxes
+```
+
+This commands installs the version that correspond to the `main` branch at [github](https://github.com/FraunhoferIWES/foxes). Alternatively, you can decide to install the latest pre-release developments (non-stable) by
+
+```console
+pip install git+https://github.com/FraunhoferIWES/foxes@dev#egg=foxes
+```
+
+### Developers
+
+For developers using `pip`, simply invoke the `-e` flag in the installation command in your local clone:
+
+```console
+git clone https://github.com/FraunhoferIWES/foxes.git
+cd foxes
+pip install -e .
+```
+The last line makes sure that all your code changes are included whenever importing `foxes`. Concerning the `git clone` line, we actually recommend that you fork `foxes` on GitHub and then replace that command by cloning your fork instead.
+
+## Installation via conda
+
+### Virtual Python environment
+
+First create a new `conda` environment, for example called `foxes`, by
+
+```console
+conda create -c conda-forge --name foxes
+```
+
+Then activate the environment every time you work with `foxes`, by
+
+```console
+conda activate foxes
+```
+
+You can leave the environment by
+
+```console
+conda deactivate
+```
+
+The `conda` installation commands below should be executed within the active `foxes` environment.
+
+### Standard users
+
+The `foxes` package is available on the channel [conda-forge](https://anaconda.org/conda-forge/foxes). You can install the latest version by
+
+```console
+conda install -c conda-forge foxes
+```
+
+### Developers
+
+For developers using `conda`, we recommend first installing foxes, then removing only the `foxes` package while keeping the dependencies, and then adding `foxes` again from a git using `conda develop`:
+
+```console
+conda install -c conda-forge foxes conda-build
+conda remove foxes --force
+git clone https://github.com/FraunhoferIWES/foxes.git
+cd foxes
+conda develop .
+```
+The last line makes sure that all your code changes are included whenever importing `foxes`. Concerning the `git clone` line, we actually recommend that you fork `foxes` on GitHub and then replace that command by cloning your fork instead.
+
+## Usage
+
+For detailed examples of how to run _foxes_, check the `examples` and `notebooks` folders in this repository. A minimal running example is the following, based on provided static `csv` data files:
+
+```python
+import foxes
+
+states = foxes.input.states.Timeseries("timeseries_3000.csv.gz", ["WS", "WD","TI","RHO"])
+
+mbook = foxes.ModelBook("NREL-5MW-D126-H90.csv")
+
+farm = foxes.WindFarm()
+foxes.input.farm_layout.add_from_file(farm,"test_farm_67.csv",turbine_models=["Pct"])
+
+algo = foxes.algorithms.Downwind(mbook, farm, states, ["Jensen_linear_k007"])
+farm_results = algo.calc_farm()
+
+print(farm_results)
+```
+
+## Contributing
+
+1. Fork _foxes_ on _github_.
+2. Create a branch (`git checkout -b new_branch`)
+3. Commit your changes (`git commit -am "your awesome message"`)
+4. Push to the branch (`git push origin new_branch`)
+5. Create a pull request [here](https://github.com/FraunhoferIWES/foxes/pulls)
+
+
+## Acknowledgements
+
+The development of _foxes_ and its predecessors _flapFOAM_ and _flappy_ (internal - non public) has been supported through multiple publicly funded research projects. We acknowledge in particular the funding by the Federal Ministry of Economic Affairs and Climate Action (BMWK) through the projects _Smart Wind Farms_ (grant no. 0325851B), _GW-Wakes_ (0325397B) and _X-Wakes_ (03EE3008A) as well as the funding by the Federal Ministry of Education and Research (BMBF) in the framework of the project _H2Digital_ (03SF0635).
