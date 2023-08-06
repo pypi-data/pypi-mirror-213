@@ -1,0 +1,56 @@
+Metadata-Version: 2.1
+Name: Babylon2Image
+Version: 0.1.1
+Summary: Create Kurdish style images from Text Based On Stable Diffusion Model
+Home-page: https://github.com/falahgs/
+Author: Falahgs.G.Saleih
+Author-email: falahgs07@gmail.com
+License: MIT
+Keywords: StableDiffusion,CLIP,Transformers
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: transformers
+Requires-Dist: diffusion
+Requires-Dist: diffusers
+Requires-Dist: torch
+Requires-Dist: accelerate
+
+# Kurdish2Images Package
+This is a Python package for easily Creating beautiful stunning images from any text about Kurdish style fashion.
+ based stable diffusion model.
+ to get some images any Kurdish style and portraits, any images, in easy code line a few code line 
+ 
+## Installation
+
+```
+pip install Kurdish2Image
+
+or in colab google cloud
+!pip install Kurdish2Image
+
+
+```
+
+## Tutorial
+[Colab Google Drive](https://colab.research.google.com/drive/18QelFQqUgfqTq-jqfGuEPRpGv9hApU8b?usp=sharing)
+```
+u can see tutorial in colab google drive
+
+```
+## example
+```
+from kurdish2image import kurdish2image as k2i
+prompt="full body shot center of view a old woman 50 years, color decorative, Hyperrealistic neo-rococo solar punk aesthetic , embroidery, leather, highly detailed photography art masterpiece, smooth cam de Leon eric zener dramatic pearlescent soft light, ground angle hd 8 k, sharp focus, full body, colors decorative kurdish-fashion style, American shot"
+k2i.k2img(prompt)
+
+```
+## Result images out 
+
+![1](https://iraqprogrammer.files.wordpress.com/2023/06/1.png)
+![2](https://iraqprogrammer.files.wordpress.com/2023/06/3.png)
+![3](https://iraqprogrammer.files.wordpress.com/2023/06/5.png)
+![4](https://iraqprogrammer.files.wordpress.com/2023/06/7.png)
+
