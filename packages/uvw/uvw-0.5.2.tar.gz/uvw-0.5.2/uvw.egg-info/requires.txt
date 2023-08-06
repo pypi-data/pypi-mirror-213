@@ -1,0 +1,11 @@
+numpy
+
+[mpi]
+mpi4py
+
+[tests]
+pytest
+pytest-mpi
+pytest-cov
+mpi4py
+vtk
