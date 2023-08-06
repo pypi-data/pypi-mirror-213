@@ -1,0 +1,9 @@
+function_name: "generate_questions"
+instruction: |
+  Given a sentence, generate one possible questions that can be answered by the sentence.
+  
+temperature: 1
+
+example_conversations:
+  - prompt: "Photosynthesis is the process used by plants, algae and certain bacteria to harness energy from sunlight into chemical energy."
+    answer: "What is the process by which plants harness energy from sunlight?"
