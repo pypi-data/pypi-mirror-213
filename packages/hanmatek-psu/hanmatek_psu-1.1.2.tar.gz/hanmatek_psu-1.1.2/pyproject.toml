@@ -1,0 +1,74 @@
+[build-system]
+requires = ["poetry_core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry]
+name = "hanmatek-psu"
+version = "1.1.2"
+packages = [
+    { include = "hanmatek" },
+    { include = "hanmatek/py.typed" }
+]
+readme = "README.md"
+description = "Library and CLI for the Hanmatek Power supply units (PSU) of the HM3xxP series."
+authors = ["Janos <janoskut@gmail.com>"]
+maintainers = ["Janos <janoskut@gmail.com>"]
+license = "MIT"
+homepage = "https://gitlab.com/janoskut/hanmatek-psu/-/tree/main"
+repository = "https://gitlab.com/janoskut/hanmatek-psu/-/tree/main"
+keywords = ["power-supply", "psu", "equipment", "lab", "automation"]
+classifiers = [
+    "Intended Audience :: Developers",
+    "Intended Audience :: Science/Research",
+    "Operating System :: Unix",
+    "Programming Language :: Python :: 3",
+    "Topic :: Software Development :: Embedded Systems",
+    "Topic :: Software Development :: Testing",
+    "Topic :: System :: Hardware :: Hardware Drivers",
+]
+
+[tool.poetry.dependencies]
+python = ">=3.8"
+minimalmodbus = "^2.0.1"
+
+[tool.poetry.dev-dependencies]
+pytest = "*"
+pytest-cov = "*"
+pyproject-flake8 = "*"
+black = "*"
+mypy = "*"
+
+[tool.poetry.scripts]
+hanmatek-cli = 'hanmatek.__main__:main'
+
+[tool.mypy]
+implicit_reexport = true
+strict = true
+
+[[tool.mypy.overrides]]
+module = "minimalmodbus"
+ignore_missing_imports = true
+
+[tool.black]
+line-length = 100
+
+[tool.coverage.run]
+branch = true
+omit = [
+    "hanmatek/__init__.py",
+    "hanmatek/__main__.py",
+]
+
+[tool.coverage.report]
+skip_empty = true
+
+[tool.coverage.html]
+directory = ".htmlcov"
+
+[tool.flake8]
+exclude = ".venv, .git"
+max-line-length = 100
+ignore = "W503"
+per-file-ignores = [
+    "hanmatek/HM3xxP_regmap.py: E241,E201,E202"
+]
