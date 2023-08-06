@@ -1,0 +1,4 @@
+recursive-include kssdheaders *.h
+recursive-include quicktreeheaders *.h
+include shuf_files/L2K8.shuf
+include shuf_files/L3K8.shuf
