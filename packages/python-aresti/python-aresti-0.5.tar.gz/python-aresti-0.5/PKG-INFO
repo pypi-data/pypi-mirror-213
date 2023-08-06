@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: python-aresti
+Version: 0.5
+Summary: Asynkroninen REST-rajapintayhteystoteutus
+Home-page: https://github.com/an7oine/python-aresti.git
+Author: Antti Hautaniemi
+Author-email: antti.hautaniemi@pispalanit.fi
+License: MIT

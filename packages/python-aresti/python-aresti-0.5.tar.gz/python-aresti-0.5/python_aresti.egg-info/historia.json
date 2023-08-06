@@ -1,0 +1,117 @@
+[
+  {
+    "revisio": "abb9fe3f792cf12027d91034c6a08245641f0eb2",
+    "versio": "0.5",
+    "kuvaus": "Korjattu `nouda_sivutettu_data`"
+  },
+  {
+    "revisio": "4b7cbfd6b7bfe7efe2ff036abe2569aea0f2d281",
+    "versio": "0.4.4",
+    "kuvaus": "PEP 517 -yhteensopivuus"
+  },
+  {
+    "revisio": "6519c9634b687651f1c7d2d66b8ffe552416f92a",
+    "versio": "0.4.3",
+    "kuvaus": "P\u00e4ivitetty versiointij\u00e4rjestelm\u00e4"
+  },
+  {
+    "revisio": "4ebef1c521b9c496de9621058f99a34114711eae",
+    "versio": "0.4.2",
+    "kuvaus": "Suoritetaan `AsynkroninenYhteys.mittaa_pyynnot` silloin, kun se on asetettu"
+  },
+  {
+    "revisio": "57d823b198b207735890cd0e72f3099cda968d58",
+    "versio": "0.4.1",
+    "kuvaus": "Mitataan pyynt\u00f6jen kesto vain, kun `Yhteys.mittaa_pyynnot` on asetettu todeksi"
+  },
+  {
+    "revisio": "9dd20143524c3f9e4db05355143ac6bcf1a53a97",
+    "versio": "0.4",
+    "kuvaus": "Sy\u00f6tet\u00e4\u00e4n `{nouda,lisaa,..}_data`-metodien **kwargs sellaisenaan aio-pyynn\u00f6lle\n\n* korvaa aiemman k\u00e4yt\u00e4nn\u00f6n, jossa sy\u00f6tettiin `params=kwargs`\n* sy\u00f6tet\u00e4\u00e4n mahdollinen `**headers` `_pyynnon_otsakkeet`-metodille"
+  },
+  {
+    "revisio": "928a99eacbe935a6868f0fcc4a05813867698782",
+    "versio": "0.3.2",
+    "kuvaus": "Korjattu `RestYhteys.Poikkeus.__init__`"
+  },
+  {
+    "revisio": "67a42b5d35be718b99d322a1da04d9be1bd5bfe4",
+    "versio": "0.3.1",
+    "kuvaus": "K\u00e4\u00e4nnet\u00e4\u00e4n `ClientError`-poikkeukset rajapinnan omaan `Poikkeus`-luokkaan"
+  },
+  {
+    "revisio": "96e3ff0d6103cce3dea72f7d9cd484caceb4f21f",
+    "versio": "0.3",
+    "kuvaus": "Lis\u00e4tty `nouda_meta`-metodi"
+  },
+  {
+    "revisio": "4d62aa33795bfa572300eeea6ce4176d4ba3ee06",
+    "versio": "0.2.11",
+    "kuvaus": "Lis\u00e4tty `tyokalut.{luokka_tai_oliometodi,luokkamaare}`"
+  },
+  {
+    "revisio": "ebe322ea2384ff12d0c7775087e2c6744e503120",
+    "versio": "0.2.10",
+    "kuvaus": "Palautettu mahdollisuus antaa `Yhteys.Poikkeus(..., status=xxx)` parametrin\u00e4"
+  },
+  {
+    "revisio": "92939533cd71e7d24d63ca4f7d1d613a66b4f8f3",
+    "versio": "0.2.9",
+    "kuvaus": "Poimitaan `palvelin`, `avain` ja `debug` viime k\u00e4dess\u00e4 Yhteys-luokan m\u00e4\u00e4reist\u00e4"
+  },
+  {
+    "revisio": "0048bf9eae23979c8dda861e77d912ac3245a792",
+    "versio": "0.2.8",
+    "kuvaus": "Korjattu `nouda_sivutettu_data`"
+  },
+  {
+    "revisio": "e412747b303613a5b28476107c1245f44278943b",
+    "versio": "0.2.7",
+    "kuvaus": "Pilkottu eri toteutukset omiin moduuleihinsa"
+  },
+  {
+    "revisio": "cb4891c2e647b83f8344ed4e7da21dcbcfbec706",
+    "versio": "0.2.6",
+    "kuvaus": "K\u00e4ytet\u00e4\u00e4n `nouda_dataa` my\u00f6s sivutetun datan hakuun"
+  },
+  {
+    "revisio": "e3b6f0c85e06a4ec01f0a241e83ad7a68af9c486",
+    "versio": "0.2.5",
+    "kuvaus": "Tallennetaan virhesanoma Poikkeuksen tietoihin"
+  },
+  {
+    "revisio": "68094c2196dae3313537e99b6007a18c1cf2d616",
+    "versio": "0.2.4",
+    "kuvaus": "P\u00e4ivitetty k\u00e4ytt\u00f6oikeusasiakirja"
+  },
+  {
+    "revisio": "3fcae2d7d84a2742dccf0083879003414bb276c5",
+    "versio": "0.2.3",
+    "kuvaus": "Lis\u00e4tty `RestSanoma`: dataclass-tyyppinen sanomaluokka"
+  },
+  {
+    "revisio": "f40b97fb92cd618a4b7933ee9a6fc34910a848fb",
+    "versio": "0.2.2",
+    "kuvaus": "RestYhteys: tulkitaan kaikki paluusanomat JSON-esityksen\u00e4"
+  },
+  {
+    "revisio": "5ee3a0cb1d58a0a30bb85144c07a0987980aeb34",
+    "versio": "0.2.1",
+    "kuvaus": "RestYhteys: ehdollinen `Authorization: Token`-tunnistautuminen"
+  },
+  {
+    "revisio": "33a09b1458be5bfb6fdea7eeafce00def6a5d5dc",
+    "versio": "0.2",
+    "kuvaus": "Korjauksia\n\n* puuttuvan POST- yms. paluusanoman k\u00e4sittely\n* pyynn\u00f6lle mitatun kestoajan muotoilu"
+  },
+  {
+    "revisio": "1b8c8c0b45ded751c0c00e2a0b7bc05214b25eec",
+    "versio": "0.1.1",
+    "kuvaus": "N\u00e4ytet\u00e4\u00e4n HTTP-status osana poikkeusviesti\u00e4"
+  },
+  {
+    "revisio": "6b63638e01591f6a3410f2ccc844abe508423cfc",
+    "versio": "0.1",
+    "kuvaus": "Alustava toteutus"
+  }
+]
