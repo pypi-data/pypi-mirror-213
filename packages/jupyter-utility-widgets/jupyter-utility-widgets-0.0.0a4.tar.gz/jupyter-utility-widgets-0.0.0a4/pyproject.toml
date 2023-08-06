@@ -1,0 +1,11 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "jupyter-utility-widgets"
+version = "0.0.0a4"
+readme = "README.md"
+dependencies = [
+    "ipywidgets>=8.0.2"
+]
