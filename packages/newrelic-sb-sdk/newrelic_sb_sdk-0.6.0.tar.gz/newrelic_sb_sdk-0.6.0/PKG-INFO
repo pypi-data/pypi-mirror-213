@@ -1,0 +1,82 @@
+Metadata-Version: 2.1
+Name: newrelic-sb-sdk
+Version: 0.6.0
+Summary: New Relic SDK to interact with Nerdgraph API.
+Home-page: https://gitlab.com/softbutterfly/open-source/newrelic-sb-sdk
+License: MIT
+Keywords: Softbutterfly,New Relic,SDK
+Author: SoftButterfly Development Team
+Author-email: dev@softbutterfly.io
+Requires-Python: >=3.8.1,<4.0.0
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Dist: enforce-typing (>=1.0.0.post1,<2.0.0)
+Requires-Dist: python-dotenv (>=1.0.0,<2.0.0)
+Requires-Dist: requests (>=2.31.0,<3.0.0)
+Requires-Dist: semver (>=3.0.0,<4.0.0)
+Requires-Dist: sgqlc (>=16.1,<17.0)
+Project-URL: Bug Tracker, https://gitlab.com/softbutterfly/open-source/newrelic-sb-sdk/-/issues
+Project-URL: Documentation, https://gitlab.com/softbutterfly/open-source/newrelic-sb-sdk/-/wikis
+Project-URL: Download, https://gitlab.com/softbutterfly/open-source/newrelic-sb-sdk/-/archive/v0.6.0/newrelic-sb-sdk-v0.6.0.tar.gz
+Project-URL: Repository, https://gitlab.com/softbutterfly/open-source/newrelic-sb-sdk
+Description-Content-Type: text/markdown
+
+![Community-Project](https://gitlab.com/softbutterfly/open-source/open-source-office/-/raw/master/banners/softbutterfly-open-source--banner--community-project.png)
+
+![PyPI - Supported versions](https://img.shields.io/pypi/pyversions/newrelic-sb-sdk)
+![PyPI - Package version](https://img.shields.io/pypi/v/newrelic-sb-sdk)
+![PyPI - Downloads](https://img.shields.io/pypi/dm/newrelic-sb-sdk)
+![PyPI - MIT License](https://img.shields.io/pypi/l/newrelic-sb-sdk)
+
+[![Codacy Badge](https://app.codacy.com/project/badge/Grade/1c25dec51e1c4a719be4c2d4ebe7eef6)](https://app.codacy.com/gl/softbutterfly/newrelic-sb-sdk/dashboard?utm_source=gl&utm_medium=referral&utm_content=&utm_campaign=Badge_grade)
+
+# New Relic SB SDK
+
+New Relic SDK built by SoftButterfly to automate common New Relic One observability platform tasks
+
+## Requirements
+
+* Python 3.8.1 or higher
+* `enforce-typing`
+* `python-dotenv`
+* `requests`
+* `semver`
+* `sgqlc`
+
+## Install
+
+Install from PyPI
+
+```bash
+pip install newrelic-sb-sdk
+```
+
+## Docs
+
+* [Ejemplos](https://gitlab.com/softbutterfly/open-source/newrelic-sb-sdk/-/wikis)
+* [Wiki](https://gitlab.com/softbutterfly/open-source/newrelic-sb-sdk/-/wikis)
+
+## Changelog
+
+All changes to versions of this library are listed in the [change history](./CHANGELOG.md).
+
+## Development
+
+Check out our [contribution guide](./CONTRIBUTING.md).
+
+## Contributors
+
+See the list of contributors [here](https://gitlab.com/softbutterfly/open-source/newrelic-sb-sdk/-/graphs/develop).
+
+## License
+
+This project is licensed under the terms of the MIT license. See the <a href="./LICENSE.txt" download>LICENSE</a> file.
+
