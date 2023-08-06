@@ -1,0 +1,10 @@
+numpy
+pandas
+pyarrow
+requests
+azure-storage-blob
+azure-core
+pytz
+fsspec
+gcsfs
+s3fs
