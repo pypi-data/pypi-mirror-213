@@ -1,0 +1,7 @@
+LICENSE
+README.md
+setup.py
+integrity_rating_pending.egg-info/PKG-INFO
+integrity_rating_pending.egg-info/SOURCES.txt
+integrity_rating_pending.egg-info/dependency_links.txt
+integrity_rating_pending.egg-info/top_level.txt
