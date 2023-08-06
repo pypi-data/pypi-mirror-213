@@ -1,0 +1,16 @@
+main.py,sha256=IT1p9_nZFXa210DUFzqEAhrwFbiWxIjFT-8ERD2YB70,797
+whist_score/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+whist_score/constants.py,sha256=PtE7hCYsJT_PraRLgF7TtblJdoQzCK6xwpjbvnLjLMc,827
+whist_score/utils.py,sha256=tNf6W0w8vpKq6tGZ9sBbFOtkOYbG4yxQ-IZ7NZi2e3A,252
+whist_score/models/Game.py,sha256=RQZCu7TG4x0lAWhAu_tXOURe_ZbcIPZ-NpzS-MIT4pc,17347
+whist_score/models/Player.py,sha256=9-f0amG16ZGzj3rv0VQqu-q0J9I8Bfuaux-7IceO2lg,505
+whist_score/models/RoundTypes.py,sha256=nOAK-ujKLtLDiyom_7BFGAC6vRj6HeKeW7CjGCrgSsQ,10315
+whist_score/models/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+whist_score/views/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+whist_score/views/games.py,sha256=CfiyuCPujMNrnQKIpXqI5N2448y2ZMSbjBHWUCHijFE,973
+whist_score-0.1.12.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+whist_score-0.1.12.dist-info/METADATA,sha256=Uh6hfHRGkaI-vG4Yg3m0r0Sh_t6bwo7nKDyN8YEUKD4,490
+whist_score-0.1.12.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+whist_score-0.1.12.dist-info/entry_points.txt,sha256=jbbQxarI0crOt1gwfy4Yig6eA-YXyq4mTk8oVGkt0DQ,42
+whist_score-0.1.12.dist-info/top_level.txt,sha256=YWciZaQZrOzTN5pLYTXZO09M2G8AnoZESX1sI-3wYEQ,12
+whist_score-0.1.12.dist-info/RECORD,,
