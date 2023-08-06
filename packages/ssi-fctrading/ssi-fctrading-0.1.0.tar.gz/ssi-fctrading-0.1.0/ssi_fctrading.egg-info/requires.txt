@@ -1,0 +1,5 @@
+pycryptodome
+xmljson
+requests
+signalr-client
+pyjwt

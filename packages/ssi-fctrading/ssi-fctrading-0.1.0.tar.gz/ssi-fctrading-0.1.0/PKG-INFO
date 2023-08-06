@@ -1,0 +1,34 @@
+Metadata-Version: 2.1
+Name: ssi-fctrading
+Version: 0.1.0
+Summary: FastConnect TradingAPI client by Python
+Home-page: https://github.com/SSI-Securities-Corporation/python-fctrading
+Author: ducdv
+Author-email: ducdv@ssi.com.vn
+License: MIT
+Platform: POSIX
+Platform: Windows
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+
+# Installation
+#### From tar ball (most stable)
+``` python
+pip install dist/ssi_fctrading-2.2.0.tar.gz
+```
+#### Install behind proxy
+```python
+pip install --trusted-host pypi.org --trusted-host
+files.pythonhosted.org --proxy=http://<username>:<password>@<host>:<port> dist/ssi_fctrading-2.2.0.tar.gz
+```
+
+#### Pypi
+``` python
+pip install ssi_fctrading
+```
