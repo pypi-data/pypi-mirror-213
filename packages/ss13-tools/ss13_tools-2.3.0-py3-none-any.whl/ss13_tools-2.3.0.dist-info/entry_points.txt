@@ -1,0 +1,5 @@
+[console_scripts]
+centcom=ss13_tools.cli:centcom
+logbuddy=ss13_tools.cli:log_buddy
+ss13tools=ss13_tools.cli:run
+
