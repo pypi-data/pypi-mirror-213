@@ -1,0 +1,12 @@
+fastcore
+pandas
+black
+jupyter-black
+numpy
+scipy
+pandas
+plotly
+bayesian_testing
+statsmodels
+
+[dev]
