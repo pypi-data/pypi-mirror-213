@@ -1,0 +1,25 @@
+#: src/txt2ebook/formats/epub.py:142
+msgid "cover"
+msgstr ""
+
+#: src/txt2ebook/formats/md.py:45 src/txt2ebook/formats/txt.py:55
+msgid "metadata"
+msgstr ""
+
+#: src/txt2ebook/formats/md.py:58 src/txt2ebook/formats/md.py:126
+#: src/txt2ebook/formats/pdf.py:126 src/txt2ebook/formats/txt.py:68
+#: src/txt2ebook/formats/txt.py:155
+msgid "toc"
+msgstr ""
+
+#: src/txt2ebook/formats/md.py:140 src/txt2ebook/formats/txt.py:169
+msgid "title:"
+msgstr ""
+
+#: src/txt2ebook/formats/md.py:141 src/txt2ebook/formats/txt.py:170
+msgid "author:"
+msgstr ""
+
+#: src/txt2ebook/formats/md.py:142 src/txt2ebook/formats/txt.py:171
+msgid "tag:"
+msgstr ""
