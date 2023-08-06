@@ -1,0 +1,14 @@
+README.md
+setup.py
+lab3/serializer/src/__init__.py
+lab3/serializer/src/constants.py
+lab3/serializer/src/converter.py
+lab3/serializer/src/factory.py
+lab3/serializer/src/json_serializer.py
+lab3/serializer/src/supportive.py
+lab3/serializer/src/xml_serializer.py
+tivan_custom_ser.egg-info/PKG-INFO
+tivan_custom_ser.egg-info/SOURCES.txt
+tivan_custom_ser.egg-info/dependency_links.txt
+tivan_custom_ser.egg-info/entry_points.txt
+tivan_custom_ser.egg-info/top_level.txt

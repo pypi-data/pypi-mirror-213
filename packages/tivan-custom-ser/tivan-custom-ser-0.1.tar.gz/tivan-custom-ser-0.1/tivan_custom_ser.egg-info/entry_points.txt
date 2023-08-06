@@ -1,0 +1,3 @@
+[console_scripts]
+custom-serialize = lab3.serializer.custom:main
+
