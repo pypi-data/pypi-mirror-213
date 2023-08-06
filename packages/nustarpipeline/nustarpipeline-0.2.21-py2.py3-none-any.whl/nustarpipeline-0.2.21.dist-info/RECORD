@@ -1,0 +1,12 @@
+nustarpipeline/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+nustarpipeline/data_manipulation.py,sha256=gExT8VPNyTxRA-xjHeeGdRKF2npioWK5DAGXwiQU3ys,12969
+nustarpipeline/get_nustar_data.py,sha256=y0MgtQU2anW9NjKx43iLXou7MaVjk10Wbf_elac205Q,207
+nustarpipeline/plotting.py,sha256=rhjPq0rGLYTnPr90a65-iCWpXD61nMv7mm9QXlX6F3A,25322
+nustarpipeline/process.py,sha256=M2kg1fgCTD5fi0nAWbLPmiCcTA60H1FLAbZnahlj5u8,45522
+nustarpipeline/utils.py,sha256=OTL8rd1w1cW1vEdHSH3A-O_swb-2dfDlMhgiP68jRGw,103844
+nustarpipeline-0.2.21.dist-info/LICENSE,sha256=3DWZSiCB2vhpxQR69EJ-xbHq9x3xuwLMZ8awXFbKUP0,1071
+nustarpipeline-0.2.21.dist-info/METADATA,sha256=ywzUFv2HO2HfwRdJmIXZlFjTvgGx0MFKacfKUP2ETSM,1825
+nustarpipeline-0.2.21.dist-info/WHEEL,sha256=a-zpFRIJzOq5QfuhBzbhiA1eHTzNCJn8OdRvhdNX0Rk,110
+nustarpipeline-0.2.21.dist-info/entry_points.txt,sha256=1gXUpoZpyESPL1zTHueJXhnWgzZr6aimkuFQerGdwVQ,188
+nustarpipeline-0.2.21.dist-info/top_level.txt,sha256=jFXAetZ0fDXU-R0jkb2irjx4CBRhSaEQszJmJ1MIy94,15
+nustarpipeline-0.2.21.dist-info/RECORD,,
