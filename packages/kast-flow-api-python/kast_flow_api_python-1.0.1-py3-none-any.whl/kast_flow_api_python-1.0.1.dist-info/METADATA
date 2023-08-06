@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: kast-flow-api-python
+Version: 1.0.1
+Summary: kast python api unified processing engine
+Author: kast
+Requires-Python: >=3.11,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: dacite (>=1.8,<2.0)
