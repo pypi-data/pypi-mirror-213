@@ -1,0 +1,3 @@
+[console_scripts]
+cpumodel=cpumodel.cpumodel:main
+
