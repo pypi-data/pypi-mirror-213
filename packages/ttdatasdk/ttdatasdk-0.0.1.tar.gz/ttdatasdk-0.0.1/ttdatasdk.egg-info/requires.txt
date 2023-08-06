@@ -1,0 +1,8 @@
+Cython==0.29.34
+ply==3.11
+msgpack>=0.4.7
+pandas==1.4.4
+setuptools==66.0.0
+six==1.16.0
+thriftpy2==0.4.16
+wheel==0.38.4
