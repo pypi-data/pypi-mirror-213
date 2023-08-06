@@ -1,0 +1,50 @@
+Metadata-Version: 2.1
+Name: atlas-framework
+Version: 0.1.6
+Summary: Class-based famework for quickly creating robust Python apps.
+Author-email: Grant Viklund <renderbox@gmail.com>
+Project-URL: Homepage, https://github.com/renderbox/atlas-framework
+Project-URL: Bug Tracker, https://github.com/renderbox/atlas-framework/issues
+Keywords: cli,app,application,framework
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: <3.12,>=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Provides-Extra: dev
+Requires-Dist: ipython ; extra == 'dev'
+Requires-Dist: black ; extra == 'dev'
+Requires-Dist: flake8 ; extra == 'dev'
+Requires-Dist: flake8-black ; extra == 'dev'
+Requires-Dist: flake8-pyproject ; extra == 'dev'
+Requires-Dist: mypy ; extra == 'dev'
+Requires-Dist: bandit ; extra == 'dev'
+Requires-Dist: isort ; extra == 'dev'
+Requires-Dist: toml ; extra == 'dev'
+Provides-Extra: docs
+Requires-Dist: coverage ; extra == 'docs'
+Requires-Dist: mkdocs ; extra == 'docs'
+Requires-Dist: mkdocs-material ; extra == 'docs'
+Requires-Dist: mkdocstrings[python] ; extra == 'docs'
+Provides-Extra: pyside2
+Requires-Dist: PySide2 ; extra == 'pyside2'
+Provides-Extra: test
+Requires-Dist: coverage ; extra == 'test'
+Requires-Dist: pytest ; extra == 'test'
+
+[![Python package](https://github.com/renderbox/atlas-framework/actions/workflows/python-package.yml/badge.svg)](https://github.com/renderbox/atlas-framework/actions/workflows/python-package.yml)
+
+[![Build and Deploy Docs](https://github.com/renderbox/atlas-framework/actions/workflows/build-docs.yml/badge.svg)](https://github.com/renderbox/atlas-framework/actions/workflows/build-docs.yml)
+
+# Atlas App Framework
+
+This is a simple framework for creating Class based applications that can be run as a command line application or importated and run as a module. It's goal is to remove a lot of boiler plate that is typically done when writting CLI and GUI apps.
+
+## Documentation
+
+Our docs can be found [here](https://renderbox.github.io/atlas-framework) on GitHub Pages.
+
+This project is tested against Python 3.7-3.11
