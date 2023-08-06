@@ -1,0 +1,7 @@
+mongo_to_s3/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mongo_to_s3/mongo_to_s3.py,sha256=L8cEgqbnJrHGKdERkxNkC5_K-5zhdgWkooSyMZH3MX0,5714
+mongo_to_s3-0.0.9.dist-info/METADATA,sha256=kCqP9toFd4DQJIgnjPRPuH8aUdh-4TNY5S99HmI40N4,4071
+mongo_to_s3-0.0.9.dist-info/WHEEL,sha256=9QBuHhg6FNW7lppboF2vKVbCGTVzsFykgRQjjlajrhA,87
+mongo_to_s3-0.0.9.dist-info/entry_points.txt,sha256=h8gCZEyI37CRvZJEY9caiqfc45vcxA_F_JS1ZL3s0z8,61
+mongo_to_s3-0.0.9.dist-info/licenses/LICENSE.txt,sha256=HkEm9zo7qPvGNAssHG0lrJHG-W0TwrHUvAWGsBRJHoY,1057
+mongo_to_s3-0.0.9.dist-info/RECORD,,
