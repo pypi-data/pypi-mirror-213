@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: coptpy-stubs
+Version: 1.1.2
+Summary: Type stubs for Python interface of the Cardinal Optimizer
+Home-page: https://www.shanshu.ai/copt
+Author: Cardinal Operations, LLC
+Author-email: coptsales@shanshu.ai
+License: Cardinal Operations, LLC
+         End User License Agreement
+Platform: UNKNOWN
+Requires-Dist: coptpy (>=5.0.0)
+
+UNKNOWN
+
+
