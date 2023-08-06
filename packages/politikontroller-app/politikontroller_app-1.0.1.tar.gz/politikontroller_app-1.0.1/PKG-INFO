@@ -1,0 +1,48 @@
+Metadata-Version: 2.1
+Name: politikontroller-app
+Version: 1.0.1
+Summary: 
+License: MIT
+Author: Bendik R. Brenne
+Author-email: bendik@konstant.no
+Requires-Python: >=3.10,<3.12
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: SQLAlchemy[asyncio] (>=2.0.15,<3.0.0)
+Requires-Dist: aiosqlite (>=0.19.0,<0.20.0)
+Requires-Dist: fastapi (>=0.96.1,<0.97.0)
+Requires-Dist: geojson (>=3.0.1,<4.0.0)
+Requires-Dist: httptools (>=0.5.0,<0.6.0)
+Requires-Dist: loguru (>=0.7.0,<0.8.0)
+Requires-Dist: politikontroller-py (>=1.1.0,<2.0.0)
+Requires-Dist: pycryptodome (>=3.18.0,<4.0.0)
+Requires-Dist: pydantic[dotenv] (>=1.10.9,<2.0.0)
+Requires-Dist: python-multipart (>=0.0.6,<0.0.7)
+Requires-Dist: requests (>=2.31.0,<3.0.0)
+Requires-Dist: ujson (>=5.8.0,<6.0.0)
+Requires-Dist: uvicorn[standard] (>=0.22.0,<0.23.0)
+Requires-Dist: yarl (>=1.9.2,<2.0.0)
+Description-Content-Type: text/markdown
+
+# politikontroller_app
+
+This project was generated using fastapi_template.
+
+## Poetry
+
+This project uses poetry. It's a modern dependency management
+tool.
+
+To run the project use this set of commands:
+
+```bash
+poetry install
+poetry run python -m politikontroller_app
+```
+
+This will start the server on the configured host.
+
+You can find swagger documentation at `/api/docs`.
+

@@ -1,0 +1,56 @@
+[tool.poetry]
+name = "politikontroller-app"
+version = "1.0.1"
+description = ""
+authors = ["Bendik R. Brenne <bendik@konstant.no>"]
+license = "MIT"
+readme = "README.md"
+packages = [
+    { include = "politikontroller_app" }
+]
+
+[tool.poetry.dependencies]
+python = ">=3.10,<3.12"
+fastapi = "^0.96.1"
+uvicorn = { version = "^0.22.0", extras = ["standard"] }
+pydantic = { version = "^1.10.9", extras = ["dotenv"] }
+yarl = "^1.9.2"
+ujson = "^5.8.0"
+SQLAlchemy = { version = "^2.0.15", extras = ["asyncio"] }
+aiosqlite = "^0.19.0"
+httptools = "^0.5.0"
+loguru = "^0.7.0"
+pycryptodome = "^3.18.0"
+requests = "^2.31.0"
+python-multipart = "^0.0.6"
+geojson = "^3.0.1"
+politikontroller-py = "^1.1.0"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.3.2"
+pylint = "^2.17.4"
+autopep8 = "^2.0.2"
+isort = "^5.11.4"
+pre-commit = "^3.3.1"
+black = "^23.3.0"
+httpx = "^0.24.1"
+pylint-pydantic = "^0.1.8"
+
+[tool.isort]
+profile = "black"
+multi_line_output = 3
+
+[tool.pytest.ini_options]
+filterwarnings = [
+    "error",
+    "ignore::DeprecationWarning",
+    "ignore:.*unclosed.*:ResourceWarning",
+]
+
+[tool.poetry.scripts]
+run = "politikontroller_app.main:main"
+
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
