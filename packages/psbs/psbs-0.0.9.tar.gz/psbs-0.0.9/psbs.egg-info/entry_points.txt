@@ -1,0 +1,2 @@
+[console_scripts]
+psbs = psbs.psbs:main
