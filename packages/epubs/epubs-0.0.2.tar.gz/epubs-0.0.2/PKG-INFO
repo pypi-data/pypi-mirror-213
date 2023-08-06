@@ -1,0 +1,54 @@
+Metadata-Version: 2.1
+Name: epubs
+Version: 0.0.2
+Summary: A Conversion Tool for EPUB
+Home-page: https://gitee.com/maxbanana
+Author: hongbo liu
+Author-email: 782027465@qq.com
+License: Apache
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# epubs
+
+## 介绍
+解析epub的工具
+
+## 安装
+
+
+    pip install epubs
+
+
+## 使用
+
+- epub 转 html
+
+
+
+    import epubs
+    
+    epubs.to_html('xxxxx.epub', save_path='./xxxxx')
+
+
+
+
+- epub 转 text
+   
+
+ 
+
+    import epubs
+    
+    text = epubs.to_text('xxxxx.epub')
+    print(text)
+
+
+
+
+
