@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+labeltransform2/__init__.py
+labeltransform2/generate_voc.py
+labeltransform2.egg-info/PKG-INFO
+labeltransform2.egg-info/SOURCES.txt
+labeltransform2.egg-info/dependency_links.txt
+labeltransform2.egg-info/requires.txt
+labeltransform2.egg-info/top_level.txt
