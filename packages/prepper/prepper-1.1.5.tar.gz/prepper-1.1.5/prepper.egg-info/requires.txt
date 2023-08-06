@@ -1,0 +1,12 @@
+h5py~=3.8.0
+loguru>=0.6.0
+aenum~=3.1.11
+numpy~=1.23.5
+pandas~=1.5.1
+joblib~=1.2.0
+
+[CI]
+pytest
+pytest-cov
+hypothesis
+pylint
