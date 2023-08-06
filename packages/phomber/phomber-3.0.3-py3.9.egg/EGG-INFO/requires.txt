@@ -1,0 +1,6 @@
+beautifulsoup4
+dnspython
+mac-vendor-lookup
+phonenumbers
+psutil
+python-whois
