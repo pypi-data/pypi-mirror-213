@@ -1,0 +1,5 @@
+tcfetch-0.3.1.dist-info/METADATA,sha256=MvWptOwq_vC9ubzb6MaJWKhwAhzf5O4DXqA9VRolFXY,334
+tcfetch-0.3.1.dist-info/WHEEL,sha256=lk63l-VetzibnGwgsmLnaPZABgDjyTPV4ea2mY8EBc0,127
+tcfetch/__init__.py,sha256=xNYGJOI2oNXceDU1_ePNWIiIcYwT3s49lcmG2e7C_PE,111
+tcfetch/tcfetch.cpython-38-arm-linux-gnueabihf.so,sha256=UOHUyZ8I2LrrIxTTKNOeuWDRMxYjvktBsqacrRF4q-g,11763020
+tcfetch-0.3.1.dist-info/RECORD,,
