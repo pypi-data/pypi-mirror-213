@@ -1,0 +1,74 @@
+[tool.poetry]
+name = "great-scott"
+version = "0.1.0"
+description = "Automatically reverses Django migrations when changing git branches"
+authors = ["Marcin Górecki <marcin.gorecki@hey.com>"]
+maintainers = ["Marcin Górecki <marcin.gorecki@hey.com>"]
+license = "MIT"
+readme = "README.md"
+homepage = "https://github.com/goreckim/great-scott"
+repository = "https://github.com/goreckim/great-scott"
+keywords = ["Django", "migrations", "git"]
+classifiers = [
+    "Environment :: Console",
+    "Framework :: Django",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Topic :: Software Development :: Build Tools",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Topic :: Software Development :: Version Control :: Git",
+    "Topic :: Utilities",
+]
+include = [
+    "LICENSE",
+]
+packages = [{include = "great_scott"}]
+
+
+[tool.poetry.scripts]
+great-scott = "great_scott.__main__:main"
+
+
+[tool.poetry.dependencies]
+python = ">=3.8,<4.0"
+
+
+[tool.poetry.group.dev.dependencies]
+pre-commit = "^3.3.2"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+
+[tool.ruff]
+line-length = 88
+select = [
+    "A",
+    "ANN",
+    "BLE",
+    "E",
+    "F",
+    "FA",
+    "TCH",
+    "W",
+]
+
+
+[tool.black]
+line_length = 88
+
+
+[tool.isort]
+profile = "black"
+line_length = 88
+multi_line_output = 3
+force_grid_wrap = 2
+indent = 4
+use_parentheses = true
+include_trailing_comma = true
+lines_after_imports = 2
+combine_as_imports = true
+sections = ["FUTURE", "STDLIB", "THIRDPARTY", "FIRSTPARTY", "LOCALFOLDER"]
