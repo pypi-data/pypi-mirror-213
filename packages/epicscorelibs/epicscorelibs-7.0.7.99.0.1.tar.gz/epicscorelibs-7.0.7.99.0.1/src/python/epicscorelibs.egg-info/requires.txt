@@ -1,0 +1,3 @@
+setuptools
+setuptools_dso>=2.0a1
+numpy
