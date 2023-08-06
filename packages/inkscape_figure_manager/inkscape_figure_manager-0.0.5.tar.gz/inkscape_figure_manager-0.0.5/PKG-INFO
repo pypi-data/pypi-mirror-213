@@ -1,0 +1,44 @@
+Metadata-Version: 2.1
+Name: inkscape_figure_manager
+Version: 0.0.5
+Summary: An API for managing inkscape figures.
+Author: Silas Waxter, Gille Castel
+Description-Content-Type: text/markdown
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: POSIX :: Linux
+Requires-Dist: click
+Requires-Dist: appdirs
+Requires-Dist: watchdog
+Requires-Dist: psutil
+Project-URL: Bug Tracker, https://github.com/silaswaxter/inkscape-figure-manager/issues
+Project-URL: Homepage, https://github.com/silaswaxter/inkscape-figure-manager
+
+# About
+
+Provide an "api" for managing Inkscape figures. Built for Neovim integration.
+
+Create, edit, and watch figures. Auto-exports figures when saved. This applies
+to figures in directories specified with `create` (implicit), `edit`
+(implicit), and `watch` (explicit) for the current session. When the watcher
+background process (daemon) is stopped, the list of watched directories is lost;
+therefore, one should edit their figures using the manager to ensure figures are
+always being watched.
+
+This project was forked from the deceased, Gille Castel's, project. He wrote a
+[blog post](https://castel.dev/post/lecture-notes-2/) explaining his workflow which
+should be mostly applicable. The following changes have been made:
+
+- rework the watcher
+- use markdown instead of LaTex.
+
+## Requirements
+
+- Python >= 3.7
+- Supported OS:
+  - Linux
+  - Mac
+    - untested (supported at fork from Castel's project)
+- Picker:
+  - [rofi](https://github.com/davatorium/rofi) for Linux
+  - [choose](https://github.com/chipsenkbeil/choose) for MacOS
+
