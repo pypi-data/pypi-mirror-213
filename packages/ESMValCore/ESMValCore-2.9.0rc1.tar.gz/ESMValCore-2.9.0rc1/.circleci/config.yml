@@ -1,0 +1,222 @@
+---
+version: 2.1
+
+orbs:
+  coverage-reporter: codacy/coverage-reporter@11.4.1
+  codecov: codecov/codecov@1.2.3
+
+commands:
+  check_changes:
+    steps:
+      - run:
+          name: Check whether or not installation tests are needed
+          command: |
+            if (test "$CIRCLE_BRANCH" = main ||
+              git --no-pager diff --name-only origin/main... |
+              grep -q -E -f .circleci/install_triggers)
+            then
+              echo Running installation tests
+            else
+              echo Skipping installation tests
+              circleci step halt
+            fi
+  test_and_report:
+    steps:
+      - run:
+          name: Run tests
+          command: |
+            mkdir -p test-reports
+            . /opt/conda/etc/profile.d/conda.sh
+            conda activate esmvaltool
+            flake8 -j 4
+            pytest -n 4 --junitxml=test-reports/report.xml
+            esmvaltool version
+      - store_test_results:
+          path: test-reports/
+      - store_artifacts:
+          path: /logs
+      - run:
+          name: Compress pytest artifacts
+          command: tar -cvzf pytest.tar.gz -C /tmp/pytest-of-root/pytest-0/ .
+      - store_artifacts:
+          path: pytest.tar.gz
+      - run:
+          name: Compress test-report artifacts
+          command: tar -cvzf test-reports.tar.gz test-reports/
+      - store_artifacts:
+          path: test-reports.tar.gz
+  test_installation_from_source:
+    parameters:
+      extra:
+        type: string
+      flags:
+        type: string
+        default: ""
+    steps:
+      - run:
+          name: Install git+ssh
+          environment:
+            DEBIAN_FRONTEND: noninteractive  # needed to install tzdata
+          command: apt update && apt install -y git ssh
+      - checkout
+      - check_changes
+      - run:
+          name: Generate cache key
+          command: date '+%Y-%V' | tee cache_key.txt
+      - restore_cache:
+          key: install-<< parameters.extra >>-{{ .Branch }}-{{ checksum "cache_key.txt" }}
+      - run:
+          name: Install dependencies
+          command: |
+            # Add additional requirements for running all tests
+            echo "
+              - r-base
+              - r-yaml
+              - ncl
+            " >> environment.yml
+            # Install
+            . /opt/conda/etc/profile.d/conda.sh
+            mkdir /logs
+            mamba env create >> /logs/conda.txt 2>&1
+            conda activate esmvaltool
+            pip install << parameters.flags >> ".[<<parameters.extra>>]"> /logs/install.txt 2>&1
+      - run:
+          name: Log versions
+          command: |
+            . /opt/conda/etc/profile.d/conda.sh
+            conda activate esmvaltool
+            dpkg -l > /logs/versions.txt
+            conda env export > /logs/environment.yml
+            pip freeze > /logs/requirements.txt
+      - test_and_report
+      - save_cache:
+          key: install-<< parameters.extra >>-{{ .Branch }}-{{ checksum "cache_key.txt" }}
+          paths:
+            - /opt/conda/pkgs
+            - /root/.cache/pip
+            - .mypy_cache
+            - .pytest_cache
+
+jobs:
+  run_tests:
+    # Run tests
+    docker:
+      - image: esmvalgroup/esmvalcore:development
+    resource_class: large
+    steps:
+      - checkout
+      - run:
+          name: Generate cache key
+          command: date '+%Y-%V' | tee cache_key.txt
+      - restore_cache:
+          key: test-{{ .Branch }}-{{ checksum "cache_key.txt" }}
+      - run:
+          name: Install dependencies
+          command: |
+            . /opt/conda/etc/profile.d/conda.sh
+            mkdir /logs
+            conda activate esmvaltool
+            pip install .[test] > /logs/install.txt 2>&1
+      - test_and_report
+      - save_cache:
+          key: test-{{ .Branch }}-{{ checksum "cache_key.txt" }}
+          paths:
+            - /root/.cache/pip
+            - .mypy_cache
+            - .pytest_cache
+      - codecov/upload:
+          when: always
+          file: 'test-reports/coverage.xml'
+      - coverage-reporter/send_report:
+          coverage-reports: 'test-reports/coverage.xml'
+          project-token: $CODACY_PROJECT_TOKEN
+          skip: true  # skip if project-token is not defined (i.e. on a fork)
+
+  test_installation_from_source_test_mode:
+    # Test installation from source
+    docker:
+      - image: condaforge/mambaforge
+    resource_class: large
+    steps:
+      - test_installation_from_source:
+          extra: test
+
+  test_installation_from_source_develop_mode:
+    # Test development installation
+    docker:
+      - image: condaforge/mambaforge
+    resource_class: large
+    steps:
+      - test_installation_from_source:
+          extra: develop
+          flags: "--editable"
+
+  test_installation_from_conda:
+    # Test conda package installation
+    working_directory: /esmvaltool
+    docker:
+      - image: condaforge/mambaforge
+    resource_class: small
+    steps:
+      - run:
+          command: |
+            . /opt/conda/etc/profile.d/conda.sh
+            set -x
+            # Install prerequisites
+            mkdir /logs
+            # conda update -y conda > /logs/conda.txt 2>&1
+            # Create and activate conda environment
+            mamba create -y --name esmvaltool 'python=3.11'
+            set +x; conda activate esmvaltool; set -x
+            # Install
+            mamba install -y esmvalcore
+            # Log versions
+            conda env export > /logs/environment.yml
+            # Test installation
+            esmvaltool version
+
+  build_documentation:
+    # Test building documentation
+    docker:
+      - image: condaforge/mambaforge
+    resource_class: small
+    steps:
+      - checkout
+      - run:
+          command: |
+            mkdir /logs
+            . /opt/conda/etc/profile.d/conda.sh
+            # Install
+            mamba env create
+            conda activate esmvaltool
+            pip install .[doc]
+            # Log versions
+            dpkg -l > /logs/versions.txt
+            conda env export > /logs/environment.yml
+            pip freeze > /logs/requirements.txt
+            # Test building documentation
+            MPLBACKEND=Agg sphinx-build -W doc doc/build
+      - store_artifacts:
+          path: /logs
+
+workflows:
+  commit:
+    jobs:
+      - run_tests
+      - test_installation_from_source_test_mode
+      - test_installation_from_source_develop_mode
+
+  nightly:
+    triggers:
+      - schedule:
+          cron: "0 0 * * *"
+          filters:
+            branches:
+              only:
+                - main
+    jobs:
+      - run_tests
+      - test_installation_from_source_test_mode
+      - build_documentation
+      - test_installation_from_source_develop_mode
+      - test_installation_from_conda
