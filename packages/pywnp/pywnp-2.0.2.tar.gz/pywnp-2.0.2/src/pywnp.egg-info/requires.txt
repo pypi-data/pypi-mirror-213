@@ -1,0 +1,4 @@
+aiohttp
+
+[:platform_system == "Windows"]
+winsdk
