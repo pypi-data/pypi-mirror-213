@@ -1,0 +1,7 @@
+dist
+docs
+interesting_ptp_dumps
+ptp_http_dumps
+tests
+upsies
+venv
