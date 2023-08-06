@@ -1,0 +1,2 @@
+[console_scripts]
+livescore-api = livescore_api.console:main
