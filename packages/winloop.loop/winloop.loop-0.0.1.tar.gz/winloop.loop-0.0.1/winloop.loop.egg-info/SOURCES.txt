@@ -1,0 +1,8 @@
+LICENSE-APACHE
+LICENSE-MIT
+setup.py
+winloop/loop.c
+winloop.loop.egg-info/PKG-INFO
+winloop.loop.egg-info/SOURCES.txt
+winloop.loop.egg-info/dependency_links.txt
+winloop.loop.egg-info/top_level.txt
