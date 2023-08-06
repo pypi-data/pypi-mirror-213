@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: pyquizzer
+Version: 0.0.4
+Summary: placeholder
+Home-page: https://github.com/BjornFJohansson/pyquizzer
+Author: BjornFJohansson
+Author-email: bjornjobb@gmail.com
+Requires-Python: >=3.11,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Project-URL: Documentation, https://readthedocs.org/1
+Project-URL: Repository, https://github.com/BjornFJohansson/pyquizzer
+Project-URL: bugtracker, https://github.com/BjornFJohansson/pyquizzer/issues
+Project-URL: changelog, https://github.com/BjornFJohansson/pyquizzer/blob/main/changelog.md
+Project-URL: coverage, https://about.codecov.io/
+Project-URL: documentation, https://readthedocs.org/2
+Project-URL: youtube, https://youtu.be/C0DPdy98e4c
+Description-Content-Type: text/markdown
+
+placeholder
