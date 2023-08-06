@@ -1,0 +1,11 @@
+proofs/__init__.py,sha256=4GZKi13lDTD25YBkGakhZyEQZWTER_OWQMNPoH_UM2c,22
+proofs/_modidx.py,sha256=rv0HOOmbaT7WBbh56thMuYkuyxIlfAuWl-BqomXb7no,3192
+proofs/assistant.py,sha256=NwbMPTZ4gUS8aZvjvW6qDQSYwlWFEUQsuF0cOBnai9Q,146
+proofs/core.py,sha256=ZsBPZfb-drM95Won7mZ44SAh1idHFGepKIGjdUMo3Po,8318
+proofs/polynomials.py,sha256=5aqMzLBUpejZLAREaq1d_84tZpiirPX_FAKZ6Su8NBI,3376
+proofs-0.0.3.dist-info/LICENSE,sha256=xV8xoN4VOL0uw9X8RSs2IMuD_Ss_a9yAbtGNeBWZwnw,11337
+proofs-0.0.3.dist-info/METADATA,sha256=oe5_n1aa5VQ6kLS95LPzGExsOopfYtwohjwHlWDyjYg,9835
+proofs-0.0.3.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+proofs-0.0.3.dist-info/entry_points.txt,sha256=JsusxN_Tljo5ZHzeEXJcZpPY0I_TPcWEPHsjEfmSfW0,55
+proofs-0.0.3.dist-info/top_level.txt,sha256=FwzldLuCxcEJhvUfBzov42wJ09kf_OSTunkWnDnzhJ4,7
+proofs-0.0.3.dist-info/RECORD,,
