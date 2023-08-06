@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: ddgmail
+Version: 0.1.5
+Summary: A command line tool to use DuckDuckGo's E-mail forwarding service
+Home-page: https://github.com/rany2/ddgmail
+Author: rany
+Author-email: ranygh@riseup.net
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+License-File: LICENSE
+Requires-Dist: Click
+Requires-Dist: setuptools (>=42.0.0)
+
+UNKNOWN
+
