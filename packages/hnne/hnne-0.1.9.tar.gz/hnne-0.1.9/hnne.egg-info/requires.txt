@@ -1,0 +1,8 @@
+scipy
+numpy<1.23,>=1.18
+scikit-learn
+tqdm
+pynndescent
+typer
+pandas
+cython

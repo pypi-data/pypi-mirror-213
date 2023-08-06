@@ -1,0 +1,15 @@
+LICENSE.txt
+README.rst
+setup.cfg
+setup.py
+hnne/__init__.py
+hnne/cool_functions.py
+hnne/finch_clustering.py
+hnne/hierarchical_projection.py
+hnne/point_spreading.py
+hnne/projector.py
+hnne.egg-info/PKG-INFO
+hnne.egg-info/SOURCES.txt
+hnne.egg-info/dependency_links.txt
+hnne.egg-info/requires.txt
+hnne.egg-info/top_level.txt
