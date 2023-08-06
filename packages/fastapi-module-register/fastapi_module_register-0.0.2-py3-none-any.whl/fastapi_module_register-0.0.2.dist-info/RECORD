@@ -1,0 +1,15 @@
+fastapi_module_register/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+fastapi_module_register/base_method.py,sha256=LUopWLizaSJ3Kl8yWX8n8F_yYpHiSQ6F4KFQLfopPWs,757
+fastapi_module_register/base_register.py,sha256=3AybSwbpbWDs2-5uedd0wkEIfCFLbJJE_7NbtBCeLuc,702
+fastapi_module_register/constants.py,sha256=tiav6PJ03pHTh5nCMXaRR14Xz_QwkkXLPHfSYyl2eUc,60
+fastapi_module_register/exceptions.py,sha256=g5KCWFxR-xdTj2GaHx8lfV-Szos55KW9QpKJU3cpJKE,244
+fastapi_module_register/logger.py,sha256=HuPvwgOie7mLq5Nu9P8aqFhw3F03jS_3fUc8LpGVb3E,62
+fastapi_module_register/schema.py,sha256=rBEZlaC5MB5TORU-Jvh5atpIV2SaycoZl3au2w7AvL0,3298
+fastapi_module_register/utils.py,sha256=osppFlsYsiDcIGPfC5dlF3Dl7LliAZOLo5Icj3yUk6M,2189
+fastapi_module_register/tortoise/__init__.py,sha256=zAP4bj_ex9EfZE-2RoGy7MsV-3WXMnWqc3dt91pINNo,1101
+fastapi_module_register/tortoise/tortoise_method.py,sha256=S32Q79JNHsWhx8niahfGFlXD2jDbP8lD6J_kC7VrYIg,4788
+fastapi_module_register/tortoise/tortoise_register.py,sha256=TiX3WxBHwYJfL7TEQem5_zydLtJ9HyimBKQnZblwzZI,3894
+fastapi_module_register-0.0.2.dist-info/METADATA,sha256=L4kZy9ERIpBovXahRsJKKCWs-Je9Z8O-ub6VJm6B9zk,2750
+fastapi_module_register-0.0.2.dist-info/WHEEL,sha256=KGYbc1zXlYddvwxnNty23BeaKzh7YuoSIvIMO4jEhvw,87
+fastapi_module_register-0.0.2.dist-info/licenses/LICENSE,sha256=mXmENLTngUbouAAfYjm6Qz5gM8dXaIBOwn8lvB_vQzM,1068
+fastapi_module_register-0.0.2.dist-info/RECORD,,
