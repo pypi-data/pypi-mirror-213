@@ -1,0 +1,2 @@
+[console_scripts]
+active = atooms.active.cli:main
