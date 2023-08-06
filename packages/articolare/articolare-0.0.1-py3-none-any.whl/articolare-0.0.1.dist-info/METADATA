@@ -1,0 +1,70 @@
+Metadata-Version: 2.1
+Name: articolare
+Version: 0.0.1
+Summary: Python client for the Articolare API
+Home-page: https://github.com/yourusername/articolare
+Author: Your Name
+Author-email: your-email@example.com
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: requests
+Provides-Extra: dev
+Requires-Dist: pytest (>=3.7) ; extra == 'dev'
+
+# Articolare Python Client
+
+Articolare is a Python client for the Articolare API. It is designed to facilitate interactions with the API, providing a simple and intuitive interface for creating and managing requests.
+
+# Installation
+To install the Articolare Python client, you can use pip:
+* Copy code 
+```
+  pip install articolare
+```
+
+# Usage
+First, you need to initialize the ArticolareClient with your API key:
+* from articolare import ArticolareClient 
+```
+  client = ArticolareClient(api_key="your-api-key"))
+```
+
+
+# Create
+You can then use the create method to make a request to the API:
+* languages available:
+  * English
+  * Portuguese
+  * Spanish
+  * Italian
+* Tokens:
+  * Max Tokens = 1000 - If you require more tokens, please refer to our documentation on https://www.articolare.com/
+```
+response = client.create(
+    model="art-translator",
+    lang="English",
+    style="conversation",
+    prompt="Enter your prompt here",
+    max_tokens=10
+)
+```
+
+* The create method returns a dictionary containing the response data from the API.
+
+# Testing
+This library includes a basic test suite, which you can run using pytest:
+* pytest
+```
+pytest
+```
+
+# License
+The Articolare library is owned and managed by Articolare ltd. 
