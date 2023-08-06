@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: watson-embed-model-packager
+Version: 0.10.3
+Summary: Tools for building images with Watson Embedded models
+Home-page: UNKNOWN
+Author: IBM
+License: Apache 2.0
+Platform: UNKNOWN
+License-File: LICENSE
+Requires-Dist: PyYAML (<6.0,>=5.4.1)
+Requires-Dist: alchemy-logging (<2.0,>=1.1.0)
+Requires-Dist: httpx (<1.0,>=0.23.0)
+Requires-Dist: semver (<3.0,>=2.13.0)
+
+UNKNOWN
+
