@@ -1,0 +1,81 @@
+Metadata-Version: 2.1
+Name: tokenlists
+Version: 0.1.3
+Summary: Python implementation of Uniswaps' tokenlists
+Home-page: https://github.com/ApeWorX/py-tokenlists
+Author: Ben Hauser
+Author-email: ben@hauser.id
+License: Apache-2.0
+Keywords: ethereum
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Natural Language :: English
+Classifier: Operating System :: MacOS
+Classifier: Operating System :: POSIX
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Python: >=3.7.2,<4
+Description-Content-Type: text/markdown
+Provides-Extra: test
+Provides-Extra: lint
+Provides-Extra: doc
+Provides-Extra: release
+Provides-Extra: dev
+License-File: LICENSE
+
+# py-tokenlists
+
+[Uniswap Token Lists](https://github.com/Uniswap/token-lists) implementation in Python.
+
+## Dependencies
+
+- [python3](https://www.python.org/downloads/release/python-368/) version 3.7.2 or greater, python3-dev
+
+## Installation
+
+### via `pip`
+
+You can install the latest release via [`pip`](https://pypi.org/project/pip/):
+
+```bash
+pip install tokenlists
+```
+
+### via `setuptools`
+
+You can clone the repository and use [`setuptools`](https://github.com/pypa/setuptools) for the most up-to-date version:
+
+```bash
+git clone https://github.com/ApeWorX/py-tokenlists.git
+cd py-tokenlists
+python3 setup.py install
+```
+
+## Quick Usage
+
+```python
+>>> from tokenlists import TokenListManager
+>>> tlm = TokenListManager()
+
+>>> tlm.available_tokenlists()
+[]
+
+>>> tlm.install_tokenlist("tokens.1inch.eth")
+>>> tlm.available_tokenlists()
+['1inch']
+```
+
+## Development
+
+This project is in early development and should be considered an alpha.
+Things might not work, breaking changes are likely.
+Comments, questions, criticisms and pull requests are welcomed.
+
+## License
+
+This project is licensed under the [MIT license](LICENSE).
