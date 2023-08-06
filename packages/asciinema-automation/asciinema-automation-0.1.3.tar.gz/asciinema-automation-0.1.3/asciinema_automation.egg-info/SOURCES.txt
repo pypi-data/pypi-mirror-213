@@ -1,0 +1,16 @@
+LICENSE
+README.rst
+pyproject.toml
+setup.py
+asciinema_automation/__init__.py
+asciinema_automation/__main__.py
+asciinema_automation/cli.py
+asciinema_automation/instruction.py
+asciinema_automation/script.py
+asciinema_automation.egg-info/PKG-INFO
+asciinema_automation.egg-info/SOURCES.txt
+asciinema_automation.egg-info/dependency_links.txt
+asciinema_automation.egg-info/entry_points.txt
+asciinema_automation.egg-info/requires.txt
+asciinema_automation.egg-info/top_level.txt
+tests/test_regression.py

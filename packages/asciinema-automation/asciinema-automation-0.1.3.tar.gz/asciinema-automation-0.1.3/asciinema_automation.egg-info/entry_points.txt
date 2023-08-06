@@ -1,0 +1,2 @@
+[console_scripts]
+asciinema-automation = asciinema_automation.cli:cli

@@ -1,0 +1,11 @@
+pexpect>=4.8.0
+asciinema>=2.2.0
+
+[dev]
+black
+bumpver
+isort
+pytest
+
+[test]
+pytest
