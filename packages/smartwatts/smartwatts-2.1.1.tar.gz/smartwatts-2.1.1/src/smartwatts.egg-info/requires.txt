@@ -1,0 +1,13 @@
+powerapi[everything]==2.0.4
+scikit-learn>=0.20.2
+
+[devel]
+smartwatts[lint,test]
+
+[lint]
+ruff>=0.0.262
+pylint>=2.16.0
+
+[test]
+pytest>=3.9.2
+pytest-cov>=4.0.0
