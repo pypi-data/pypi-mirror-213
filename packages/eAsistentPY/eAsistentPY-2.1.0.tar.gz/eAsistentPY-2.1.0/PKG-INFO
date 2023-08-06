@@ -1,0 +1,39 @@
+Metadata-Version: 2.1
+Name: eAsistentPY
+Version: 2.1.0
+Summary: Scrapes data from easistent.com/urniki/... and returns it as Python dictionary
+Home-page: https://github.com/PingIsFun/eAsistentAPI
+Author: PingIsFun
+Author-email: pingisfun@protonmail.com
+License: MIT License
+Project-URL: Bug Tracker, https://github.com/PingIsFun/eAsistentAPI/issues
+Project-URL: Help, https://github.com/PingIsFun/eAsistentAPI/discussions/categories/general
+Platform: any
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# eAsistentPY
+
+## EN
+To install it run:
+
+    pip install eAsistent-scraper
+
+***
+Example usage:
+
+```python
+import eAsistentPY
+
+data = eAsistentPY.get_schedule(school_id="SCHOOL_ID", class_id=CLASS_ID)
+```
+***
+For support and feature requests ask on [GitHub discussions](https://github.com/PingWasFun/eAsistentAPI/discussions/categories/general)
+
+## SLO
+
+// TODO
