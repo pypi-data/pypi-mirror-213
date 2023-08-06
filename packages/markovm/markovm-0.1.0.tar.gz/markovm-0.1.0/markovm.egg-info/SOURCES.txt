@@ -1,0 +1,9 @@
+LICENSE
+README.md
+markovm.py
+pyproject.toml
+markovm.egg-info/PKG-INFO
+markovm.egg-info/SOURCES.txt
+markovm.egg-info/dependency_links.txt
+markovm.egg-info/requires.txt
+markovm.egg-info/top_level.txt

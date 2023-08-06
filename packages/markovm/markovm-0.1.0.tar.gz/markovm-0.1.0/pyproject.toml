@@ -1,0 +1,45 @@
+[project]
+name = "markovm"
+description = "Python library for Markov Models."
+readme = "README.md"
+requires-python = ">=3.7"
+license = {text = "MIT"}
+keywords = [
+  "markov model",
+  "markov chain",
+]
+authors = [
+  { name = "HH-MWB", email = "h.hong@mail.com" },
+]
+classifiers = [
+  "Development Status :: 2 - Pre-Alpha",
+  "Intended Audience :: Developers",
+  "License :: OSI Approved :: MIT License",
+  "Programming Language :: Python",
+  "Programming Language :: Python :: 3.7",
+  "Programming Language :: Python :: 3.8",
+  "Programming Language :: Python :: 3.9",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Operating System :: OS Independent",
+]
+dependencies = [
+  "numpy~=1.20",
+]
+dynamic = [
+  "version",
+]
+
+[project.urls]
+"Homepage" = "https://pypi.org/project/markovm"
+"Bug Reports" = "https://github.com/HH-MWB/markovm/issues"
+"Source" = "https://github.com/HH-MWB/markovm"
+
+[tool.setuptools.dynamic]
+version = {attr = "markovm.__version__"}
+
+[build-system]
+requires = [
+  "setuptools",
+]
+build-backend = "setuptools.build_meta"
