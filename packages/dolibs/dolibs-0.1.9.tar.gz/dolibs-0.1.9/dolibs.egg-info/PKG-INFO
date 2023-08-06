@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: dolibs
+Version: 0.1.9
+Summary: Library for importing ERA5 Copernicus data into Drought Observatory platform
+Home-page: https://github.com/n3tmaster/ERA5_procedures
+Author: Leandro Rocchi - CNR
+Author-email: leandro.rocchi@cnr.it
+License: MIT
+Platform: UNKNOWN
+
+UNKNOWN
+
