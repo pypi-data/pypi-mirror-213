@@ -1,0 +1,11 @@
+pandas
+requests
+zeep
+
+[dev]
+black
+jupyterlab
+pytest>=6.2.4
+python-dotenv
+ipykernel
+twine
