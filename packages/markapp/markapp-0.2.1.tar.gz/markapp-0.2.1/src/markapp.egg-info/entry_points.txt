@@ -1,0 +1,2 @@
+[console_scripts]
+markapp = markapp.cli:cli
