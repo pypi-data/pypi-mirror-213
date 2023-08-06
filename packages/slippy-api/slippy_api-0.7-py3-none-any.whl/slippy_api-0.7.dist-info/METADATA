@@ -1,0 +1,47 @@
+Metadata-Version: 2.1
+Name: slippy-api
+Version: 0.7
+Summary: API wrapper for slippi.gg
+Home-page: https://github.com/ConstObject/slippy-api
+Author: Sophia
+Author-email: sophimander@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: requests (~=2.29.0)
+Requires-Dist: ratelimiter (~=1.2.0.post0)
+Requires-Dist: pytest (~=7.3.1)
+
+# slippy-api
+
+## Overview
+
+slippy-api is a simple wrapper for slippi.gg's GraphQL API.
+
+
+## Installation
+
+`pip install slippy-api` 
+
+## Usage
+
+```python
+from slippi.slippi_api import SlippiRankedAPI
+
+# Initialize the SlippiRankedAPI class
+slippi_api = SlippiRankedAPI()
+
+# Show slippi users data
+slippi_user = slippi_api.get_player_ranked_date('so#0', True)
+print(slippi_user)
+
+```
+
+## License
+
+This library is licensed under the MIT License. See the [LICENSE](https://github.com/andross-ssbm/slippy-api/blob/master/LICENSE) file for more information.
+
+----------
