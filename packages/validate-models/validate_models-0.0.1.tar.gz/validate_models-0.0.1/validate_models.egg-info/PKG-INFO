@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: validate-models
+Version: 0.0.1
+Summary: Tools and Instructions for Validation of Classical Models
+Home-page: http://github.com/Alexandre-Papandrea/validate_models
+Author: Alexandre Papandrea
+Author-email: alexandre@dadosinteligentes.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+License-File: LICENSE.txt
