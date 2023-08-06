@@ -1,0 +1,10 @@
+pydicom<3.0,>=2.0
+pandas
+numpy
+tqdm
+
+[all]
+nibabel
+
+[nifti]
+nibabel
