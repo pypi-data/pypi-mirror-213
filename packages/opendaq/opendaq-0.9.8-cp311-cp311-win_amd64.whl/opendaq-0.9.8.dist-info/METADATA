@@ -1,0 +1,72 @@
+Metadata-Version: 2.1
+Name: opendaq
+Version: 0.9.8
+Summary: Open Data Acquisition Platform
+Home-page: https://opendaq.com
+Author: Blueberry d.o.o.
+Author-email: opendaq@blueberry.com
+Keywords: DAQ
+Project-URL: Homepage, https://opendaq.com/
+Project-URL: Documentation, https://docs.opendaq.com/manual/
+Project-URL: Download, https://docs.opendaq.com/
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Python: >=3.7
+Requires-Dist: numpy>=1.7.0
+Description-Content-Type: text/markdown
+
+openDAQ
+=======
+
+Open Data Acquisition Platform
+
+The openDAQ SDK offers a standardized interface to a variety of data acquisition hardware.
+It is easy to use and allows rapid integration of test and measurement systems from different vendors, such as HBK and DEWESoft.
+
+Installation
+------------
+
+The package is currently only available as binary wheels that have been built and testeng for the following combinations:
+* 64-bit Windows and Python 3.11
+* x86_64 Ubuntu 22.04 and Python 3.10
+
+It might not work on Linux distributions with older GLIBC.
+
+On supported systems you can install it with:
+
+```bash
+pip install opendaq
+```
+
+Quick-start
+-----------
+
+You can start the application by creating a new instance:
+
+```python
+import opendaq
+
+# Create a fresh openDAQ(TM) instance that we will use for all the interactions with the openDAQ(TM) SDK
+instance = opendaq.Instance()
+```
+
+In order to list all the available devices, run:
+
+```python
+for connection_string, device_info in instance.available_devices.items():
+    print("Name:", device_info.name, "Connection string:", connection_string)
+```
+
+When using just a reference module without being connected to a physical device, the expected output will be
+```
+Name: Device 0 Connection string: daqref://device0
+Name: Device 1 Connection string: daqref://device1
+```
+
+More examples can be found under https://docs.opendaq.com/manual/.
