@@ -1,0 +1,2 @@
+[console_scripts]
+ads = ads.cli:cli
