@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: server-chat-project-adub
+Version: 0.1
+Summary: Server packet
+Author: Anton Dubovitskii
+Author-email: gtoll@yandex.ru
+Requires-Dist: PyQt5 (==5.15.9)
+Requires-Dist: sqlalchemy (==2.0.15)
+Requires-Dist: pycryptodome
+Requires-Dist: pycryptodomex
+
