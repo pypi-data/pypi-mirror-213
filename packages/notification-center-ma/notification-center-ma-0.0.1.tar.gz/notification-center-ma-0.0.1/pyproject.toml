@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=61.0.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "notification-center-ma"
+version = "0.0.1"
+description = "A package for sending notifications internally for MobileArts"
+readme = "README.md"
+authors = [{ name = "Fatima Medlij", email = "medlijfatima@gmail.com" }]
+license = { file = "LICENSE" }
+classifiers = [
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+]
+keywords = ["notification", "messaging", "communication"]
+dependencies = [
+    "email_validator",
+    "sqs_services",
+    "boto3",
+    "urllib3",
+    "botocore",
+    "python-dotenv",
+]
+requires-python = ">=3.9"
+
+[project.scripts]
+notification-center = "notification_center.__main__:main"

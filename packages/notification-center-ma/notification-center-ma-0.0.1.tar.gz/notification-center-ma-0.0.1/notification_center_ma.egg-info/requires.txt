@@ -1,0 +1,6 @@
+email_validator
+sqs_services
+boto3
+urllib3
+botocore
+python-dotenv

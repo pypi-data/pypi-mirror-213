@@ -1,0 +1,14 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+notification_center_ma.egg-info/PKG-INFO
+notification_center_ma.egg-info/SOURCES.txt
+notification_center_ma.egg-info/dependency_links.txt
+notification_center_ma.egg-info/entry_points.txt
+notification_center_ma.egg-info/requires.txt
+notification_center_ma.egg-info/top_level.txt
+src/notification_center/__init__.py
+src/notification_center/__main__.py
+src/notification_center/notification_center.py
+src/notification_center/sqs_services.py
