@@ -1,0 +1,77 @@
+Metadata-Version: 2.1
+Name: flexy
+Version: 0.1.1
+Summary: Flexible YAML loader.
+Author-email: Sun Yijiang <sunyijiang@gmail.com>
+Project-URL: Homepage, https://github.com/sunyj/flexy
+Project-URL: Bug Tracker, https://github.com/sunyj/flexy/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.4
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: revo
+Requires-Dist: pyyaml
+
+# Flexy – *Flex*ible *Y*AML Loader
+
+Flexy provides lightweight and flexible YAML configs to applications.
+
+**Flexy** is [listed on PyPI](https://pypi.org/project/flexy/).
+
+I created this library in the despair of the fact that YAML's powerful
+features (explicit typing, anchors, aliases, etc.) are in fact of little use
+to me, as well as in the belief that
+[simple is better than complex](https://peps.python.org/pep-0020/).
+
+Hope it makes your life easier too.
+
+## Lightweight
+
+Flexy **ONLY** supports Python built-in types: `dict`, `list`, `str`, `int`,
+`float`, `bool`.  Flexy also guarantees that only these types are returned.
+
+## Flexible: file inclusion
+
+Flexy supports non-intrusive file inclusion.  Including entries are written in
+a special format in comments, very similar to C/C++ header inclusion.
+
+```YAML
+conf: value
+...
+#include <parallel-conf.yaml>
+#include <../another-config.yaml>
+#include <~/.config/conf-in-my-home.yml>
+#include </absolute/path/to/config.yml>
+...
+```
+
+Inclusions are expanded as semantic-blind plain texts before sending them to
+YAML parser.
+
+## Flexible: variable substitutions
+
+Flexy supports variable substitution with the great power of
+[revo](https://github.com/sunyj/revo) ([PyPI](https://pypi.org/project/revo/)).
+
+## Emacs `yaml-mode` hacks
+
+Sample configs: [`contrib/yaml-mode-hack.el`](contrib/yaml-mode-hack.el)
+
+```elisp
+(require 'yaml-mode)
+
+(defun yaml-extra-highlights ()
+  (font-lock-add-keywords 'yaml-mode
+   '(;; included files
+     ("^\\s-*\\(#\\s-*include\\)\\s-+\\(<[^>]*>\\)"
+      (1 font-lock-preprocessor-face prepend)
+      (2 font-lock-doc-face prepend))
+     ;; variable dollar sign
+     ("\\(\\$\\)(" 1 font-lock-keyword-face prepend)
+     ;; variable name
+     ("\\$(\\([^)$]+\\))" 1 font-lock-function-name-face prepend))))
+
+(add-hook 'yaml-mode-hook 'yaml-extra-highlights)
+```
