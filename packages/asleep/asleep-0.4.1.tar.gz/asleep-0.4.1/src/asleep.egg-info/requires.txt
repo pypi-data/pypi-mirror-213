@@ -1,0 +1,17 @@
+peppercorn
+actipy
+numpy
+pandas
+scipy
+joblib
+torch
+torchvision
+transforms3d
+stepcount
+hydra-core
+
+[dev]
+check-manifest
+
+[test]
+coverage
