@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: langchain-util
+Version: 0.1.7
+Summary: Custom langchain components
+Author: Sebastian Montero
+Author-email: sebastian.montero@gmail.com
+Requires-Python: >=3.8.1,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: langchain (>=0.0.199,<0.0.200)
+Description-Content-Type: text/markdown
+
+
