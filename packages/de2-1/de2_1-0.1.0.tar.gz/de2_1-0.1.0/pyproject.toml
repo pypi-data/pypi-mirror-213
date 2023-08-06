@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "de2-1"
+version = "0.1.0"
+description = ""
+authors = ["JociusTa <tautvydasjocius@live.com>"]
+readme = "README.md"
+packages = [{include = "de2_1"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+requests = "^2.31.0"
+numpy = "^1.24.3"
+
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.3.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
