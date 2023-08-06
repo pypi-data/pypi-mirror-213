@@ -1,0 +1,8 @@
+edspdf>=0.7.0
+six>=1.16.0
+attrs>=23.1.0
+
+[dev]
+pre-commit~=2.18.1
+pytest~=7.1.1
+pytest-cov~=3.0.0
