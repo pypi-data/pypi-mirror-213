@@ -1,0 +1,14 @@
+dss_python<0.15,>=0.14.3
+
+[dev]
+pytest
+pytest-cov
+sphinx-rtd-theme
+nbsphinx
+black
+pre-commit
+
+[extras]
+pandas
+matplotlib
+networkx
