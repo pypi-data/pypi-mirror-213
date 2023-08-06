@@ -1,0 +1,46 @@
+Metadata-Version: 2.1
+Name: rmy
+Version: 0.1.1
+Summary: Stateful rpc for Python
+Author: fdv1
+Author-email: francois@pytek.io
+Requires-Python: >=3.7,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: anyio (>=3.7.0,<4.0.0)
+Requires-Dist: asyncstdlib (>=3.10.7,<4.0.0)
+Requires-Dist: janus (>=1.0.0,<2.0.0)
+Requires-Dist: mpmc (>=0.1.0,<0.2.0)
+Description-Content-Type: text/markdown
+
+A powerful PRC framework to build distributed applications easily in Python. 
+
+## How to use it
+
+One can expose a Python object through a server as follow.
+
+``` python
+class Demo:
+    async def greet(self, name):
+        return f"Hello {name}!"
+
+
+if __name__ == "__main__":
+    rmy.run_tcp_server(8080, Demo())
+```
+
+This object can then be remotely access to as follows.
+
+``` python
+if __name__ == "__main__":
+    with rmy.create_sync_client("localhost", 8080) as client:
+        proxy: Demo = client.fetch_remote_object()
+        print(proxy.greet("world"))
+```
+
+The object returned `fetch_remote_object` call is an ad hoc object which has the same interface as the one that has been exposed. One can also remotely access to the object attributes and even iterate asynchronously through data returned by the shared object.
+
