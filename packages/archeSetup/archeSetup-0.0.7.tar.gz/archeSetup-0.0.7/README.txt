@@ -1,0 +1,2 @@
+This is the  initialisation of the application and it will be use as check.
+This is the setup for the basic Application library for reading the files and extract the data from the txt/lof files. Also, we can convert the data to csv files

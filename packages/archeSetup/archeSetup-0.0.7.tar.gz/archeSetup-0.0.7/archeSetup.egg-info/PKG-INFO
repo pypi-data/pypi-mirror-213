@@ -1,0 +1,29 @@
+Metadata-Version: 1.1
+Name: archeSetup
+Version: 0.0.7
+Summary: This is the setup for the basic Application library for reading the files and extract the data from the txt/lof files. Also, we can convert the data to csv files
+Home-page: UNKNOWN
+Author: Arche
+Author-email: rkdyava@gmail.com
+License: UNKNOWN
+Description: This is the  initialisation of the application and it will be use as check.
+        This is the setup for the basic Application library for reading the files and extract the data from the txt/lof files. Also, we can convert the data to csv files
+        
+        Chnage LOG
+        ==========
+        
+        
+        0.0.4 (20/05/2023)
+        ------------------
+        - 4th  Release after bug fixing
+        
+        0.0.7 (11/06/2023)
+        ------------------
+        - 7th  Release after bug fixing
+Keywords: Setup
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Education
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
