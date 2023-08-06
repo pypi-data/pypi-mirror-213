@@ -1,0 +1,2 @@
+[console_scripts]
+debug_cmd = debug_cmd.debug_cmd:main
