@@ -1,0 +1,10 @@
+LICENSE.txt
+README.md
+setup.py
+s2l2cardgames/__init__.py
+s2l2cardgames/deck.py
+s2l2cardgames/high_low.py
+s2l2cardgames.egg-info/PKG-INFO
+s2l2cardgames.egg-info/SOURCES.txt
+s2l2cardgames.egg-info/dependency_links.txt
+s2l2cardgames.egg-info/top_level.txt
