@@ -1,0 +1,9 @@
+README.md,sha256=VQfn86TTGYJupTcM0uUFS1Tyf99_AU6K4nM0FHICYQs,1418
+sqlapydantic/__init__.py,sha256=7DTZe4n6w4E7wnYU-tshB9l5G6WKxT3bGAsBjzdOvXY,580
+sqlapydantic/generator.py,sha256=niBLnjv2EOx7KTPH1kaqe52XCGWyfwgxZqzaVuN30OA,9833
+sqlapydantic/models.py,sha256=Cur9qs_I4jNJZ2ewYrZPJlyR1L5xJ5zG_3bVZoutmu8,600
+sqlapydantic/utils.py,sha256=-YAZn_sSdQ3mVRlweHBXbUFZXxoq68rQ7nj8LICyawg,732
+sqlapydantic-0.0.1.dist-info/LICENSE,sha256=h3hoz7C-lCJjak_8SdZDsh17fs0qsnmAPjahMU1bEU0,1063
+sqlapydantic-0.0.1.dist-info/METADATA,sha256=tDgpuYn9l_uB5mbHa4J9o-2Xyj-wrSkNYsPmZp8ii0E,2204
+sqlapydantic-0.0.1.dist-info/WHEEL,sha256=7Z8_27uaHI_UZAc4Uox4PpBhQ9Y5_modZXWMxtUi4NU,88
+sqlapydantic-0.0.1.dist-info/RECORD,,
