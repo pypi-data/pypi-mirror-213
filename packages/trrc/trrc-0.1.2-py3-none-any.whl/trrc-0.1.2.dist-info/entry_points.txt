@@ -1,0 +1,2 @@
+[console_scripts]
+trrc = trrc.__main__:main
