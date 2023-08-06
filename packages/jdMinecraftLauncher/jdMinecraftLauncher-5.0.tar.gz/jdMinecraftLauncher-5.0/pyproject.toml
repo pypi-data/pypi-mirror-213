@@ -1,0 +1,72 @@
+[build-system]
+requires = ["setuptools", "PyQt6", "wheel"]
+build-backend = "BuildBackend"
+backend-path = ["."]
+
+[project]
+name = "jdMinecraftLauncher"
+description = "A classic styled Minecraft Launcher"
+readme = "README.md"
+requires-python = ">=3.8"
+keywords = ["JakobDev", "Minecraft", "Mojang", "launcher", "PyQt"]
+license = { text = "GPL v3" }
+authors = [
+    { name = "JakobDev", email = "jakobdev@gmx.de" }
+]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Intended Audience :: End Users/Desktop",
+    "Environment :: Other Environment",
+    "Environment :: X11 Applications :: Qt",
+    "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
+    "Natural Language :: English",
+    "Natural Language :: German",
+    "Topic :: Games/Entertainment",
+    "Operating System :: OS Independent",
+    "Operating System :: POSIX",
+    "Operating System :: POSIX :: Linux",
+    "Operating System :: MacOS :: MacOS X",
+    "Operating System :: Microsoft :: Windows",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3 :: Only",
+    "Programming Language :: Python :: Implementation :: CPython"
+]
+dependencies = [
+    "PyQt6",
+    "PyQt6-WebEngine",
+    "minecraft-launcher-lib",
+    "requests"
+]
+dynamic = ["version"]
+
+[project.urls]
+Source = "https://codeberg.org/JakobDev/jdMinecraftLauncher"
+Issues = "https://codeberg.org/JakobDev/jdMinecraftLauncher/issues"
+Translate = "https://translate.codeberg.org/projects/jdMinecraftLauncher"
+Donation = "https://ko-fi.com/jakobdev"
+
+[project.scripts]
+jdMinecraftLauncher = "jdMinecraftLauncher.jdMinecraftLauncher:main"
+
+[tool.setuptools.package-dir]
+jdMinecraftLauncher = "jdMinecraftLauncher"
+
+[tool.setuptools.dynamic]
+version = { file = "jdMinecraftLauncher/version.txt" }
+
+[tool.pyproject-appimage]
+script = "jdMinecraftLauncher"
+output = "jdMinecraftLauncher.AppImage"
+icon = "jdMinecraftLauncher/Icon.svg"
+rename-icon = "page.codeberg.JakobDev.jdMinecraftLauncher.png"
+desktop-entry = "deploy/page.codeberg.JakobDev.jdMinecraftLauncher.desktop"
+gettext-desktop-entry = true
+appstream = "deploy/page.codeberg.JakobDev.jdMinecraftLauncher.metainfo.xml"
+gettext-appstream = true
+gettext-directory = "deploy/translations"
+python-version = "3.11"
+

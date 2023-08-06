@@ -1,0 +1,6 @@
+include jdMinecraftLauncher/DBusInterface.xml
+include jdMinecraftLauncher/translations/*.ts
+include jdMinecraftLauncher/secrets.json
+include jdMinecraftLauncher/Icon.svg
+include BuildBackend.py
+exclude tools/*
