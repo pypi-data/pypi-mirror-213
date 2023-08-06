@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: email-cleaning-service
+Version: 0.0.4
+Summary: Awesome email_cleaning_service created by paul_lestrat
+Home-page: https://github.com/JacksonKnew/email_cleaning_service
+Author: paul_lestrat
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: keras (==2.10.0)
+Requires-Dist: matplotlib (==3.7.1)
+Requires-Dist: mlflow (==2.0.1)
+Requires-Dist: pandas (==1.5.3)
+Requires-Dist: pydantic (==1.10.7)
+Requires-Dist: setuptools (==67.6.1)
+Requires-Dist: tensorflow (==2.10.1)
+Requires-Dist: transformers (==4.27.2)
+
+# email_cleaning_service
+a Machine Learning based module for training and using email-segmenting algorithms.
