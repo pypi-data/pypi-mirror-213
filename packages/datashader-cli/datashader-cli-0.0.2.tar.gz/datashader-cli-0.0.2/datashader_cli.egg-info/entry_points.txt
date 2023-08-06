@@ -1,0 +1,2 @@
+[console_scripts]
+datashader_cli = datashader_cli.cli:main
