@@ -1,0 +1,13 @@
+LICENSE.md
+README.md
+setup.cfg
+setup.py
+src/pinggy/__init__.py
+src/pinggy/fileno.py
+src/pinggy/http.py
+src/pinggy/pinggyConnection.py
+src/pinggy.egg-info/PKG-INFO
+src/pinggy.egg-info/SOURCES.txt
+src/pinggy.egg-info/dependency_links.txt
+src/pinggy.egg-info/requires.txt
+src/pinggy.egg-info/top_level.txt

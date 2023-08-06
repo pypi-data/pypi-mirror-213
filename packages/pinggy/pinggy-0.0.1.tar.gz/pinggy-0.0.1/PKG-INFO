@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: pinggy
+Version: 0.0.1
+Home-page: https://github.com/abhimp/pinggypython
+Author: Abhijit Mondal
+Author-email: am@abhijitmondal.in
+License: MIT
+Keywords: tunnel,file share
+License-File: LICENSE.md
