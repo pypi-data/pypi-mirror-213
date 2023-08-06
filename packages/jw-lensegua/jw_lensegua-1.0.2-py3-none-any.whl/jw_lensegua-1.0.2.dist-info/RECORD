@@ -1,0 +1,16 @@
+jw_lensegua/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+jw_lensegua/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+jw_lensegua/tests/test_solution.py,sha256=VZ1X3bOOsmMo1333md-irGwqY-6qGC_JRVmsYmD8_Ms,35757
+jw_lensegua/v1/cam.py,sha256=lEqQ4ViUpjA9qOaqfDtJ8re-CzJgXvwphxuyesVAtf0,35703
+jw_lensegua/v1/lensegua.py,sha256=fZZNK6b7-EdkDX1mskcdnEFbB1v63g7RYcspsHBrY1I,20132
+jw_lensegua/v1/results_model.py,sha256=541AhnbsINLDDRU_p4PWmlXzSqjHD5c92eefEztsoyA,793
+jw_lensegua/v1/solutions.py,sha256=7A2CXkh_Y6cnJCzE-rioTvcj_iGc_MlFc4YnFu9t_0k,67243
+jw_lensegua/v2/model_class_tf.py,sha256=rY3bN3LUW6QrdBMA2vaP-qtt14HALyxuttMc5joJf-s,108820
+jw_lensegua/v2/model_kmean_tf2.py,sha256=7IN2sx93Iviq8Djk4uCFISkGhiDNy-I4--vlWDGYhsc,1664
+jw_lensegua/v2/model_transfer.py,sha256=DLjIoddBDYqdL9tQ4DZrLmL305PahHKVaVNk90Vt_QA,4129
+jw_lensegua/v2/sign_language.py,sha256=HC_QBS_WiLul_S2REdpLOPrgr6ukEb6ahWG1ZNg9wD4,7627
+jw_lensegua-1.0.2.dist-info/LICENSE,sha256=gcuuhKKc5-dwvyvHsXjlC9oM6N5gZ6umYbC8ewW1Yvg,35821
+jw_lensegua-1.0.2.dist-info/METADATA,sha256=ehAQBvjANkUcC6xO5VnBJx9z4su2lPVo1I6NNgX3Qnc,668
+jw_lensegua-1.0.2.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+jw_lensegua-1.0.2.dist-info/top_level.txt,sha256=UsqchSrSkUtLpWdk9R4QBcWV1m_lYbJGrQDLIqKXUXw,12
+jw_lensegua-1.0.2.dist-info/RECORD,,
