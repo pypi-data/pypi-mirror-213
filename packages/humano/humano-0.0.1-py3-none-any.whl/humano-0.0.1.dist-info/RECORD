@@ -1,0 +1,8 @@
+humano/__init__.py,sha256=w6WMHrIH97KYbMccfgCkZL4-Y1rOhVGZMXl_8BSg4xQ,36
+humano/agents.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+humano/coaches.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+humano/envs.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+humano-0.0.1.dist-info/LICENSE.md,sha256=_lmQSpFfbO_l-MKd2P5GSWfX7i4QM4gu_KS2QD_Tdl0,11346
+humano-0.0.1.dist-info/METADATA,sha256=0Y-Gm5fp0VKVqx-2wkIpkvAfF5CCFeCGHbd_3hjSw0k,906
+humano-0.0.1.dist-info/WHEEL,sha256=Zb28QaM1gQi8f4VCBhsUklF61CTlNYfs9YAZn-TOGFk,88
+humano-0.0.1.dist-info/RECORD,,
