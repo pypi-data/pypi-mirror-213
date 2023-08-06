@@ -1,0 +1,12 @@
+src/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+src/porter/__about__.py,sha256=3Bjza7xT3_FCsk8D_uDay62T29iJvkn0MAzZYU6jPAc,121
+src/porter/__init__.py,sha256=x7pMcgpEUw4yeiW8PjuJg5FG2vq_zO1_kWXC1aHI9tY,99
+src/porter/backup.py,sha256=xRAX-tntb-_kht_wKs1Yi9fRV3CetIzazvwFLGSC-1c,2308
+src/porter/cli.py,sha256=wU_FCiw7WDmChhhSNv0u0Yo08RSB-FayZq4L2cU-d_k,1660
+src/porter/config.py,sha256=hdjx5HaBN6Nkbc5hmfZCnapdMvoUhdDKoH0nqoFvtJE,1420
+src/porter/docker_helpers.py,sha256=RXANXYUGZaHqFSFnj3ShFHv6SUMkQc_QOSZwBJ7L5T4,755
+reside_porter-0.0.1.dist-info/METADATA,sha256=4CSHni7Zel4PQKfKg3IkJt97DM4R8SLDBeTrQRH9R5Y,3211
+reside_porter-0.0.1.dist-info/WHEEL,sha256=9QBuHhg6FNW7lppboF2vKVbCGTVzsFykgRQjjlajrhA,87
+reside_porter-0.0.1.dist-info/entry_points.txt,sha256=8VuS2wspz8YFIJHzTkRLTDPAsqpUvD1_62AJ5v3lepI,43
+reside_porter-0.0.1.dist-info/licenses/LICENSE.txt,sha256=iPuja0iNIT8SEGGfVmsDyQAvJSmjs361ke14AX0QpRI,1091
+reside_porter-0.0.1.dist-info/RECORD,,
