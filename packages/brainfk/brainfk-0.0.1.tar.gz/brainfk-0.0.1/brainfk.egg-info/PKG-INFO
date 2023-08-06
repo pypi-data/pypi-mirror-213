@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: brainfk
+Version: 0.0.1
+Summary: A Brainfuck interpreter package
+Home-page: https://github.com/estif0/brainfk
+Author: Estifanose Sahilu
+Author-email: <estifanoswork@gmail.com>
+Keywords: python,package,cli,interpreter,brain fuck
