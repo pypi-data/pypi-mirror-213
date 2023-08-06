@@ -1,0 +1,16 @@
+dodo_is_api/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dodo_is_api/connection/__init__.py,sha256=LJeSuWSYZ6jNaDpOJz2wJ0_0oh9pTGJQlrKkbCvvasQ,55
+dodo_is_api/connection/asynchronous.py,sha256=tnkJ4ZNQfQGMcWPLeNPonUBMuZDGvX9eDCCqabD-_QA,3607
+dodo_is_api/connection/base.py,sha256=EzryRcIjWy0QSqfkAeBg04OQ09LZyzJs6Fwuyhy7hq4,1291
+dodo_is_api/connection/http_clients.py,sha256=Bwttk_qvKYOzTFr1UKZg-GNWteXrOjiyAL4XmDvCRg0,2131
+dodo_is_api/connection/synchronous.py,sha256=EsvUweNi0LJ3yRCr4ToDNVJIlLFKMS2GSW3iulssUxQ,8913
+dodo_is_api/exceptions.py,sha256=CA0THgjCiPZCtbqHq6W9IxWnSfXkM4MwgLLTOCp3sSw,248
+dodo_is_api/logger.py,sha256=KwoEp81UNJq3unyjYlF7nz_iQ81_TN-xSZsQqeUzNgc,583
+dodo_is_api/mappers.py,sha256=4vmJge0Kw0mtm_b4VYQfhqusiCIKYSgolDJ5HIzxx7c,8145
+dodo_is_api/models/__init__.py,sha256=BIV9UUxoIJqST7g3RB7CxZ-IeG-r4Ug-efRgIwWHR0k,45
+dodo_is_api/models/dodo_is_api.py,sha256=MZ3z5qNwWKdz-TpGkQHKsi32IR6eqEN84x_ZF_29q34,3110
+dodo_is_api/models/raw.py,sha256=HPJGivWgWOfCz4X0ag-cu5MrNzhCK5h0-a4Wey3wiLE,1938
+dodo_is_api-0.6.1.dist-info/LICENSE,sha256=D68c4ncUJcQu-bcG95EthUULGQ5EXjCiFCEQKU1shnc,1075
+dodo_is_api-0.6.1.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+dodo_is_api-0.6.1.dist-info/METADATA,sha256=rJLm7NjMJUBrKM_K6nvEMnE0Y-dNIYwoxtxAVZjdisQ,4002
+dodo_is_api-0.6.1.dist-info/RECORD,,
