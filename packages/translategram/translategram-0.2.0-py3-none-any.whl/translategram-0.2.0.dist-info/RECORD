@@ -1,0 +1,13 @@
+auto_translategram/__init__.py,sha256=AV9Od8oOUjl0xFk89rvFOPAayWL8SpW4EfIMk7W0sSQ,292
+auto_translategram/auto_translategram/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+auto_translategram/auto_translategram/cache.py,sha256=ZkWUGmFNhgKGBGxbEes-Lw3tYeJF9J1jTWp5XRunHfQ,943
+auto_translategram/auto_translategram/service_libs.py,sha256=s-9YKX1YdnijxLNhCTcoe7jt-_vmUavBVapzrzyXTcQ,69
+auto_translategram/auto_translategram/translator.py,sha256=Ar8YxwLcK1rqOktl5l1p3qOqcnI8uFtxKK-0MPRLErY,1380
+auto_translategram/auto_translategram/translator_services.py,sha256=nXGZ4F6YxiuumyvXuHcX95iXdty2IskPubsKNo5gdDQ,1320
+auto_translategram/python_telegram_bot_translator/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+auto_translategram/python_telegram_bot_translator/adapter.py,sha256=cUnuLNKthWu9ws0gvb1rVd2Sa5ZTFLf3A0un_hQKkKI,4080
+translategram-0.2.0.dist-info/LICENSE,sha256=XEHPEKoccJZtxDtEg0pP-XLx-BHkOAl-Cyms-fPAEQc,1069
+translategram-0.2.0.dist-info/METADATA,sha256=WjvVapknoxVzPQhngstix-M5BaskaqZOAQcHkP2JsEw,4155
+translategram-0.2.0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+translategram-0.2.0.dist-info/top_level.txt,sha256=qPpFPEWF0Pqf9No9Hn-iT1V5WdPZnem9e3aiXp0GSOE,19
+translategram-0.2.0.dist-info/RECORD,,
