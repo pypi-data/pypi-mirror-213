@@ -1,0 +1,3 @@
+odoo14-addon-energy_communities
+odoo14-addon-energy_project
+odoo<14.1dev,>=14.0a
