@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: CLEMENTDNA
+Version: 1.0.2
+Summary: Genomic decomposition and reconstruction of non-tumor diploid subclones
+Home-page: https://github.com/Yonsei-TGIL/CLEMENT
+Download-URL: https://github.com/Yonsei-TGIL/CLEMENT.git
+Author: Young-soo Chung, M.D.
+Author-email: goldpm1@yuhs.ac
+License: GPL v3
+Keywords: CLEMENT,genomic decomposition
+Classifier: Programming Language :: Python :: 3.6
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6

@@ -1,0 +1,2 @@
+[console_scripts]
+CLEMENT = CLEMENT.CLEMENT:main
