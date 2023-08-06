@@ -1,0 +1,2 @@
+[edspdf_factories]
+poppler-extractor = edspdf_poppler:PopplerExtractor
