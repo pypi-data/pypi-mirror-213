@@ -1,0 +1,7 @@
+ase
+matplotlib
+numpy
+pathos
+phonopy
+scipy
+spglib
