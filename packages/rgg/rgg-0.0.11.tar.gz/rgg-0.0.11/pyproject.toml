@@ -1,0 +1,50 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "rgg"
+dynamic = ["version"]
+description = "Risk plot generator"
+readme = "README.md"
+license = "GPL-3.0-only"
+requires-python = ">=3.6"
+authors = [
+  { name = "Guido Kroon (@0bs1d1an)", email = "gkroon@maelstrom.ninja" },
+]
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "Programming Language :: Python",
+  "Programming Language :: Python :: 3.6",
+  "Programming Language :: Python :: 3.7",
+  "Programming Language :: Python :: 3.8",
+  "Programming Language :: Python :: 3.9",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: Implementation :: CPython",
+  "Programming Language :: Python :: Implementation :: PyPy",
+  "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
+  "Intended Audience :: Information Technology",
+  "Intended Audience :: System Administrators",
+  "Topic :: Security",
+]
+dependencies = [
+  "matplotlib",
+  "pyyaml",
+]
+
+[project.scripts]
+rgg = "rgg.__main__:main"
+
+[project.urls]
+"Bug Reports" = "https://gitlab.com/0bs1d1an/rgg/issues"
+Homepage = "https://gitlab.com/0bs1d1an/rgg"
+Source = "https://gitlab.com/0bs1d1an/rgg/"
+
+[tool.hatch.version]
+path = "src/rgg/__about__.py"
+
+[tool.hatch.build.targets.sdist]
+include = [
+  "/src/rgg",
+]
