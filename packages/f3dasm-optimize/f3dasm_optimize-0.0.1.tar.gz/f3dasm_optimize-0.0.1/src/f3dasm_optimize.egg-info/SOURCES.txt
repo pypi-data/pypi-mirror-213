@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.md
+VERSION
+pyproject.toml
+requirements.txt
+setup.cfg
+src/f3dasm_optimize/__init__.py
+src/f3dasm_optimize/example_module.py
+src/f3dasm_optimize.egg-info/PKG-INFO
+src/f3dasm_optimize.egg-info/SOURCES.txt
+src/f3dasm_optimize.egg-info/dependency_links.txt
+src/f3dasm_optimize.egg-info/top_level.txt
+tests/test_add_one.py
