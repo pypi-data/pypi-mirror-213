@@ -1,0 +1,52 @@
+Metadata-Version: 2.1
+Name: myoktros
+Version: 0.0.1
+Summary: Myo EMG-based KT system for ROS
+Project-URL: Homepage, https://github.com/Interactions-HSG/MyoKTROS
+Project-URL: Bug Tracker, https://github.com/Interactions-HSG/MyoKTROS/issues
+Author: Felix Wohlgemuth
+Author-email: Iori Mizutani <iori.mizutani@gmail.com>
+Maintainer-email: Iori Mizutani <iori.mizutani@gmail.com>
+License-File: LICENSE
+Classifier: Environment :: Console
+Classifier: Framework :: AsyncIO
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Education
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Topic :: Scientific/Engineering :: Human Machine Interfaces
+Requires-Python: >=3.10
+Requires-Dist: dl-myo>=0.1.5
+Description-Content-Type: text/markdown
+
+# MyoKTROS
+
+[![Build Status](https://github.com/Interactions-HSG/MyoKTROS/workflows/build/badge.svg)](https://github.com/Interactions-HSG/MyoKTROS/actions?query=workflow%3Abuild)
+[![Python Versions](https://img.shields.io/pypi/pyversions/myoktros.svg)](https://pypi.python.org/pypi/myoktros)
+[![PyPI Version](https://img.shields.io/pypi/v/myoktros.svg)](https://pypi.python.org/pypi/myoktros)
+[![License](https://img.shields.io/pypi/l/myoktros.svg)](https://pypi.python.org/pypi/myoktros)
+
+Myo EMG-based KT system for ROS.
+
+## Installation
+
+```bash
+pip install -U myoktros
+```
+
+## Build and Install
+
+```bash
+pip install -U hatch
+hatch build
+pip install dist/myoktros-*.whl
+```
+
+## Usage
+
+```console
+myoktros -h
+```
