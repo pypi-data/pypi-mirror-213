@@ -1,0 +1,17 @@
+idelib/__init__.py,sha256=HVXb3FR40PPixxvl8hsc0Tkpa3Qt1JffNFyZ-BCa4oQ,553
+idelib/attributes.py,sha256=Eq5gRxWwyGtCDniP_qUrEN8CKQnRoFhWdmvESRdL9LQ,3469
+idelib/dataset.py,sha256=OgxC0D2iOP0h-fPRs5NxMbjNkmmORI9KvGo5p8kjvco,123908
+idelib/importer.py,sha256=Cmk43bXPOsGJ4gFJaQfXAqBbr7GG7LZnxCXIjeleElg,26740
+idelib/matfile.py,sha256=pahPsUKTXub-TQ7xLLDQ1IJdt2RErGOgfOvwAOzlaYc,29783
+idelib/multi_importer.py,sha256=DM43wyz1Hkhb3X4vm5QRnWJ93wNDYIhMNqsT9AEw4nQ,6616
+idelib/parsers.py,sha256=r9hZoeAVEEPgFvAMR7KL7s67QNALOghmMM1amUy4aZA,52289
+idelib/transforms.py,sha256=29tEDDpp_rYUmfqEmsFbghUKX248h99_uxLu-_f3OhY,56873
+idelib/unit_conversion.py,sha256=LZ22UCIYz0XDhDB0ctO5rN8ApEUohhZulPyu1vGei9E,11521
+idelib/util.py,sha256=-3GlNL5qRfmScgX0VJAX480vXYK4Yb5OZm2uFL41lbc,11610
+idelib/schemata/__init__.py,sha256=uZufO1dw6N4jLgKYmrPZrFptFVGoouGSM-Q4SZ-cLmQ,142
+idelib/schemata/mide_ide.xml,sha256=-U3fBpJ2TMEWdbNU4wQp4CuKQHhCE8v-wzL2FYOsJl4,56472
+idelib-3.2.8.dist-info/LICENSE,sha256=tKKvNEFfh2r-VKCePYRloF-VZgvZomOXYN-q6XrX8lw,1099
+idelib-3.2.8.dist-info/METADATA,sha256=68ya4aZty9o4Lcm8FTUv4c7PcdMo0JNn25pKcn2g60E,9604
+idelib-3.2.8.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+idelib-3.2.8.dist-info/top_level.txt,sha256=YkqXvamZ97aTKwkEhz5GomtA2xOqK4JE_955dkiCqdc,7
+idelib-3.2.8.dist-info/RECORD,,
