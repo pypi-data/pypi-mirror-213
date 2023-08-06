@@ -1,0 +1,3 @@
+[console_scripts]
+pautobot = pautobot.app:main
+pautobot.ingest = pautobot.ingest:main
