@@ -1,0 +1,4 @@
+A->A+B|A-B|B
+B->B*C|B/C|B%C|C
+C->C^D|D
+D->(A)|v
