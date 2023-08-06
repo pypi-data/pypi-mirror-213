@@ -1,0 +1,44 @@
+Metadata-Version: 2.1
+Name: autocast
+Version: 0.0.1b1
+Summary: Optional type coercion of function arguments.
+Project-URL: Documentation, https://github.com/gchaperon/autocast#readme
+Project-URL: Issues, https://github.com/gchaperon/autocast/issues
+Project-URL: Source, https://github.com/gchaperon/autocast
+Author-email: Gabriel Chaperon <gabrielchaperonb@gmail.com>
+License-Expression: MIT
+License-File: LICENSE.txt
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.7
+Requires-Dist: typing-extensions; python_version < '3.10'
+Description-Content-Type: text/markdown
+
+# autocast
+
+[![PyPI - Version](https://img.shields.io/pypi/v/autocast.svg)](https://pypi.org/project/autocast)
+[![PyPI - Python Version](https://img.shields.io/pypi/pyversions/autocast.svg)](https://pypi.org/project/autocast)
+
+-----
+
+**Table of Contents**
+
+- [Installation](#installation)
+- [License](#license)
+
+## Installation
+
+```console
+pip install autocast
+```
+
+## License
+
+`autocast` is distributed under the terms of the [MIT](https://spdx.org/licenses/MIT.html) license.
