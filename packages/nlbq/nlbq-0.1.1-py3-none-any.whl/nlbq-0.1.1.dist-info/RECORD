@@ -1,0 +1,15 @@
+nlbq/__init__.py,sha256=R8iOEPQLlGBrKN8gquqeZx7u7dfsOd2_Dwh-4_DlEPo,58
+nlbq/api.py,sha256=WxBZm9d0fAcIH9_94vMYyoOxFZ4Ceru8h3zOq4YjOcA,2431
+nlbq/cli.py,sha256=CMwzJ6_dV3X5fi8Tcy7VsNfvZMAyPoqLujPoVaHV5aU,3675
+nlbq/config.py,sha256=hqzfil2bujSGUti79A7SOCa8YgqllbYvLu_Q8U-2CKQ,631
+nlbq/core.py,sha256=V2Mrd3SBhd7x1VSCjIkB_SE1ma0s3pLnM7PLAY2uQvg,4333
+nlbq/helpers.py,sha256=nc84UbbBTMISBTXrh1TUim5qOGKb0gZ2SvlA1dJs3gk,1476
+nlbq/templates/Dockerfile,sha256=MUI2aYWYM8KW99iSD0oUTdLsQpTUBK1B6PtTFZkUh1Q,103
+nlbq/templates/index.html,sha256=8p0vImWLKBCwWvlZYuO-E82RQR8_WnwELG3dH-mqbeg,7354
+nlbq/templates/prompt.txt,sha256=QxkUtJKsKOv1iNa3AJzc2VZZpHaHfvZteu9uO9cJECI,1460
+nlbq/templates/prompt_template.txt,sha256=wjpZkpsZBCqoB2QPzqMjD2GQC151bsote_WC5KU4o3k,760
+nlbq-0.1.1.dist-info/entry_points.txt,sha256=cGIm5dCla47J_ZHlS9deAyw5UinPyN8hJAbfTCvkMf8,45
+nlbq-0.1.1.dist-info/LICENSE,sha256=ljytym4Rp-C2GK7zRVzSNv9A8uh43unfh7PdtBIicEg,1065
+nlbq-0.1.1.dist-info/WHEEL,sha256=EZbGkh7Ie4PoZfRQ8I0ZuP9VklN_TvcZ6DSE5Uar4z4,81
+nlbq-0.1.1.dist-info/METADATA,sha256=M4GyDRqljysHqlTO8fmuSQMwwSO7kPNHGSZ-vlf1u-Q,1607
+nlbq-0.1.1.dist-info/RECORD,,

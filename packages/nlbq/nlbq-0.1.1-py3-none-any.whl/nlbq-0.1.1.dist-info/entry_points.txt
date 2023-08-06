@@ -1,0 +1,3 @@
+[console_scripts]
+nlbq=nlbq.cli:cli_wrapper
+
