@@ -1,0 +1,384 @@
+Metadata-Version: 2.1
+Name: VMedNLP
+Version: 1.0.0
+Summary: Medical NLP Toolkit
+Author: vLife|Virtusa
+Author-email: vlife@virtusa.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
+# vLife | Virtusa - vMedNLP
+
+#### A comprehensive, user-friendly toolkit designed completely using opensource models that would aid users in performing NLP-related tasks such as entity identification, extraction, and deidentification from clinical notes, medical images, and documents.
+
+## Basic Library Import
+```
+from VMedNLP import models
+```
+```
+from VMedNLP import medToolkit
+```
+
+# Diagnosis and Procedure
+
+## I. Assertion Status of Clinical Entities
+
+This function automatically detects the assertion status of any illness/disease, if present, in a given clinical text, along with entities such as the medical illness, the treatment suggested, the test procedure performed, etc. With this, one should be able to identify the current recovery status of a patient.
+
+> **Class name:** `DiagnosisAssertion`
+
+
+### I.I - info ( )
+
+This function gives the list of entities identified by this class, as well as their definitions
+
+> **Syntax:**
+> ` medToolkit.DiagnosisAssertion.info() `
+
+### I.II - call ( )
+
+This is the core function to identify the current recovery status of a patient.
+
+#### (A) Passing a raw text input
+
+Mention the entity names as a list to be extracted from the given clinical text. By default, all entities will be extracted.
+    
+**Syntax and Usage:**
+> ` medToolkit.DiagnosisAssertion.call(text,entity)`
+
+**Sample Clinical Text:**
+
+> `text = "The patient who was diagnosed with squamous cell carcinoma of the base of the tongue bilaterally on 03/04/2010....."`
+
+**Available Entities**
+
+> `entity = ['Date', 'Problem', 'Test', 'Treatment']`
+
+#### (B) Passing a file as input:
+
+Mention the entity names as a list to be extracted from the given clinical text. By default, all entities will be extracted.
+<p>The "file" parameter must be set to "True".By default, this parameter is "False"</p>
+
+**Syntax and Usage:**
+> ` medToolkit.DiagnosisAssertion.call(path,entity,file=True)`
+
+**Sample File Path Input:** 
+>`path = './filename.txt'`
+
+## II. Bodyparts and Symptoms
+
+This function automatically detects the body parts, internal organs, symptoms or diagnoses, if present, in a given clinical text.
+
+> **Class name:** `DiagnosisAnatomy`
+
+### II.I - info ( )
+
+This function gives the list of entities identified by this class, as well as their definitions
+
+> **Syntax:**
+> ` medToolkit.DiagnosisAnatomy.info() `
+
+### II.II - call ( )
+
+This is the core function to identify the body parts, internal organs, symptoms or diagnoses, if present, in a given clinical text.
+
+#### (A) Passing a raw text input
+
+Mention the entity names as a list to be extracted from the given clinical text. By default, all entities will be extracted.
+   
+**Syntax and Usage:**
+> ` medToolkit.DiagnosisAnatomy.call(text,entity)`
+
+**Sample Clinical Text:**
+
+> `text = "There is partial opacification of the upper half of left lung. A narrowing the left mainstem is ....."`
+
+**Available Entities**
+
+> `entity = ['Symptom','Internal_Organ_OR_Component']`
+
+#### (B) Passing a file as input:
+
+Mention the entity names as a list to be extracted from the given clinical text. By default, all entities will be extracted.
+<p>The "file" parameter must be set to "True". By default, this parameter is "False"</p>
+
+**Syntax and Usage:**
+> ` medToolkit.DiagnosisAnatomy.call(path,entity,file=True)`
+
+**Sample File Path Input:**
+> `path = ./filename.txt`
+
+# Drugs & Adverse Events
+
+## III. Drugs and Prescriptions
+
+This function automatically identifies details of drugs, the dosage, ingestion duration, the form of medication, its frequency, the route/mode of ingestion, and dosage strength from clinical documents.
+
+> **Class name:** `DrugsRx`
+
+### III.I - info ( )
+
+This function gives the list of entities identified by this class, as well as their definitions
+
+> **Syntax:**
+> `medToolkit.DrugsRx.info() `
+
+### III.II - call ( )
+
+This is the core fuction to identify the drug, dosage, duration, form, frequency, route, and strength, if present, in a given clinical text.
+
+#### (A) Passing a raw text input
+
+Mention the entity names as a list to be extracted from the given clinical text. By default, all entities will be extracted.
+   
+**Syntax and Usage:**
+> `medToolkit.DrugsRx.call(text, entity)`
+
+**Sample Clinical Text:**
+>`text = "Hypersensitivity to aspirin can be manifested as acute asthma, urticaria or a systemic anaphylactoid reaction......"`
+
+**Available Entities:**
+>`entity = ['DRUG', 'DURATION', 'FREQUENCY', 'FORM', 'DOSAGE', 'STRENGTH', 'ROUTE']`
+
+#### (B) Passing a file as input :
+
+Mention the entity names as a list to be extracted from the given clinical text. By default, all entities will be extracted.
+
+The "file" parameter must be set to "True". By default, this parameter is "False"
+    
+**Syntax and Usage:**
+> `medToolkit.DrugsRx.call(path,entity,file=True)`
+
+**Sample File Path Input:**
+>`path = ./filename.txt`
+
+## IV. Drugs and ADEs
+
+This function automatically identifies details of drugs and adverse reactions caused by them from clinical documents.
+
+> **Class name:** `DrugsADE`
+
+### IV.I - info ( )
+
+This function gives the list of entities identified by this class, as well as their definitions
+
+> **Syntax:**
+> `medToolkit.DrugsADE.info()`
+
+### IV.II - call ( )
+
+This is the core fuction of identify the drugs and ADEs, if present, from the given clinical text
+
+#### (A) Passing a raw text input
+
+Mention the entity names as a list to be extracted from the given clinical text. By default, all entities will be extracted.
+   
+**Syntax and Usage:**
+> `medToolkit.DrugsADE.call(text, entity)`
+
+**Sample Clinical Text:**
+>`text = "Hypersensitivity to aspirin can be manifested as acute asthma, urticaria or a systemic anaphylactoid reaction ....."`
+
+**Available Entities:**
+>`entity = ['ADE', 'DRUGS']`
+
+#### (B) Passing a file as input:
+
+Mention the entity names as a list to be extracted from the given clinical text. By default, all entities will be extracted.
+
+The "file" parameter must be set to "True". By default, this parameter is "False".
+
+**Syntax and Usage:**
+> `medToolkit.DrugsADE.call(path, entity,file=True)`
+
+**Sample File Path Input:**
+>`path = ./filename.txt`
+
+# Analyze Clinical Notes
+
+## V. Anatomical References and Terms
+
+Anatomical terms are used to describe specific areas and movements of the body as well as the relation of body parts to each other. This functionality identifies anatomical terminologies.
+
+>**Class name:** `AnatomicalReferences`
+
+### V.I - info ( )
+
+This function gives the list of entities identified by this class, as well as their definitions
+
+> **Syntax:**
+>  ` medToolkit.AnatomicalReferences.info() `
+
+### V.II - call ( )
+
+This is the core function to identify all the anatomical terms, if present, from any given clinical text.
+
+#### (A) Passing a raw text input
+
+Mention the entity names as a list, to be extracted from the given medical text. By default, all entities will be extracted.
+   
+**Syntax and Usage:**
+> ` medToolkit.AnatomicalReferences.call(text,entity)`
+    
+**Sample Clinical Text:**
+>`text = "Coordination was intact to finger -to- nose, heel -to- shin and rapid alternating movement. No tremor or dysmetria.Normal muscle tone and bulk....."`
+
+**Available Entities:**
+
+>`entity = ['AMINO_ACID', 'ANATOMICAL_SYSTEM', 'CANCER', 'CELL', 'CELLULAR_COMPONENT', 'DEVELOPING_ANATOMICAL_STRUCTURE', 'GENE_OR_GENE_PRODUCT', 'IMMATERIAL_ANATOMICAL_ENTITY', 'MULTI-TISSUE_STRUCTURE', 'ORGAN', 'ORGANISM', 'ORGANISM_SUBDIVISION',  'ORGANISM_SUBSTANCE', 'PATHOLOGICAL_FORMATION', 'SIMPLE_CHEMICAL', 'TISSUE']`
+
+#### (B) Passing a file as input:
+Mention the entity names as a list to be extracted from the given medical text file. By default, all entities will be extracted.
+
+The "file" parameter must be set to "True". By default, this parameter is "False"
+
+**Syntax:**
+> `medToolkit.AnatomicalReferences.call(path,entity,file=True)`
+
+**Sample File Path Input:**
+>`path = ./filename.txt`
+
+## VI. Clinical Acronymns
+
+This function maps the clinical abbreviations and acronyms to their long form from the given medical text.
+
+> **Class name:** `ClinicalAcronyms`
+
+
+### VI.I - info ( )
+
+This function lists out the usage and the definition the output components of this class
+
+> **Syntax:**
+> ` medToolkit.ClinicalAcronyms.info() `
+
+### VI.II - call ( )
+
+This is the core function to identify medical acronymns from a given clinical text
+
+#### (A) Passing a raw text input
+
+The clinical text must be passed in a string format
+   
+**Syntax and Usage:**
+> ` medToolkit.ClinicalAcronyms.call(text)`
+
+**Sample Clinical Text:**
+>`text = "Spinal and bulbar muscular atrophy (SBMA) is an inherited motor neuron disease caused by the expansion of a polyglutamine tract within the androgen receptor (AR).SBMA can be caused by AR....."`
+
+#### (B) Passing a file as input:
+
+Pass a file containing the clinical text as an input. The file must be in '.txt' format. 
+The "file" parameter must be set to "True". By default, this parameter is "False"
+
+**Syntax and Usage:**
+> `medToolkit.ClinicalAcronyms.call(path,file=True)`
+
+**Sample File Path Input:**
+`path = ./filename.txt`
+
+## VII. Extraction of Medical Definitions
+
+This functionality maps the clinical terms to their nearest medical definitions with their respected UML Id.
+
+> **Class name:** `MedDefinition`
+
+
+### VII.I - info ( )
+
+This function gives the list of UMLS terms identified by this class, as well as their definitions.
+
+**Syntax:**
+> ` medToolkit.MedDefinition.info() `
+
+### VII.II - call ( )
+
+This is the core function that identifies and extracts medical terms, if present, in any given clinical text.
+
+#### (A) Passing a raw text input
+
+The clinical text must be passed in a string format
+   
+**Syntax and Usage:**
+> ` medToolkit.MedDefinition.call(text)`
+
+**Sample Clinical Text:**
+>`text = "Spinal and bulbar muscular atrophy (SBMA) is an inherited motor neuron disease caused by the expansion of a polyglutamine tract within the androgen receptor (AR).SBMA can be caused by AR....."`
+
+#### (B) Passing a file as input:
+
+Pass a file containing the clinical text as an input. The file must be in '.txt' format. 
+The "file" parameter must be set to "True". By default, this parameter is "False"
+
+**Syntax and Usage:**
+> `medToolkit.MedDefinition.call(path,file=True)`
+
+**Sample File Path Input:**
+`path = ./filename.txt`
+
+# VIII. PII Deidentification
+
+The functions within this class identifies PII in any given pdf/dicom document and returns a redacted pdf/dicom file.
+
+>**Class name:** `class Deidentification`
+
+### VIII.I - info ( )
+
+This function gives the list of entities identified by this class, as well as their definitions
+
+> **Syntax:**
+> ` medToolkit.Deidentification.info() `
+
+### VIII.II - call ( )
+
+The call( ) function must be invoked to create an instance of the deidentification class.
+
+### (A) PDF Redaction:
+
+This function identifies PII in any given pdf document and returns a redacted pdf object. The pdf files must be passed to the function as a 
+
+**PyMuPdf filetype object**
+
+The 'file_type' parameter must be set to "PDF" for this functionality.
+The 'selected' parameter denotes the entities that must be extracted and redacted. Mention the entity names as a list to be extracted from the given clinical text. By default, all entities will be extracted.
+
+**Syntax and Usage:**
+``` 
+myObj = medToolkit.Deidentification()
+myObj.call(file_type,selected,doc)
+```
+    
+**Available Entities:**
+>` selected = [PHONE_NUMBER, LOCATION, CREDIT_CARD, CRYPTO, DATE_TIME, EMAIL_ADDRESS, IBAN_CODE, IP_ADDRESS, NRP, PERSON, PHONE_NUMBER, MEDICAL_LICENSE, URL, US_BANK_NUMBER, US_DRIVER_LICENSE, US_ITIN, US_PASSPORT, US_SSN, UK_NHS] `
+ 
+**Sample Code:**
+```
+path = "./filename.pdf"
+doc = fitz.open(path)
+myObj.call(file_type = "PDF" ,selected = ["LOCATION","PERSON","PHONE_NUMBER"], doc)`
+```
+
+### (B) DICOM Redaction:
+
+This function identifies PII in any given dicom image as well as the associated metadata. The dicom images must be passed as **pydicom image objects.**
+
+The 'file_type' parameter must be set to "DICOM" for this functionality.
+The 'selected' parameter denotes the entities that must be extracted and redacted. This parameter must be empty
+
+**Syntax and Usage:**
+``` 
+myObj = medToolkit.Deidentification()
+myObj.call(file_type,"",filename)`
+```
+
+**Sample Code:**
+```
+file_type="DICOM"
+filename = dicom.dcmread("./filename.dcm")
+myObj.call(file_type,"",filename)`
+```
+# End
