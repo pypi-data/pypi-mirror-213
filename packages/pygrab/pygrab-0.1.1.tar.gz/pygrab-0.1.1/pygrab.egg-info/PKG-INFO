@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: pygrab
+Version: 0.1.1
+Summary: A secure python library for fetching data with async support
+Home-page: UNKNOWN
+Author: Anish Kanthamneni
+Author-email: akneni@gmail.com
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
