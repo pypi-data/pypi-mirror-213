@@ -1,0 +1,4 @@
+Requests==2.31.0
+beautifulsoup4==4.12.2
+titlecase==2.4
+miniaudio==1.57
