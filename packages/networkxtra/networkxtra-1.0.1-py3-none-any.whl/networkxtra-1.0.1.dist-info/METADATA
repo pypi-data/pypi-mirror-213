@@ -1,0 +1,44 @@
+Metadata-Version: 2.1
+Name: networkxtra
+Version: 1.0.1
+Summary: Extra functions for networkx.
+Home-page: https://github.com/maxmouchet/networkxtra
+License: MIT
+Author: Maxime Mouchet
+Author-email: max@maxmouchet.com
+Requires-Python: >=3.8,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Provides-Extra: tqdm
+Requires-Dist: networkx (>=3.1,<4.0)
+Requires-Dist: numpy (>=1.24.3,<2.0.0)
+Requires-Dist: pycairo (>=1.23.0,<2.0.0)
+Requires-Dist: tqdm (>=4.65.0,<5.0.0) ; extra == "tqdm"
+Description-Content-Type: text/markdown
+
+# networkxtra
+
+[![Tests](https://img.shields.io/github/actions/workflow/status/maxmouchet/networkxtra/tests.yml?logo=github)](https://github.com/maxmouchet/networkxtra/actions/workflows/tests.yml)
+[![PyPI](https://img.shields.io/pypi/v/networkxtra?color=blue&logo=pypi&logoColor=white)](https://pypi.org/project/networkxtra/)
+
+Extra functions for [networkx](https://github.com/networkx/networkx):
+
+- Algorithms
+  - `largest_connected_component`
+- Conversion
+  - `from_geojsonl`, `to_geojsonl`
+- Drawing
+  - `draw_cairo` (much faster than the matplotlib backend)
+- Functions
+  - `describe(G)`, `remove_leafs(G)`
+- Layouts
+  - `bfs_layout` (https://github.com/networkx/networkx/pull/5179)
+  - `lgl_layout`, `lgl_layout_from_file` (via [minilgl](https://github.com/maxmouchet/minilgl))
+- Read/Write
+  - `generate_geojsonl`, `parse_geojsonl`, `read_geojsonl`, `write_geojsonl`
+  - `generate_lgl`, `parse_lgl`, `read_lgl`, `write_lgl`
+
