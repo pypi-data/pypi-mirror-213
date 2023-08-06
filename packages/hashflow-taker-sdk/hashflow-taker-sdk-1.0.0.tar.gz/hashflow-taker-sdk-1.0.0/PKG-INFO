@@ -1,0 +1,55 @@
+Metadata-Version: 2.1
+Name: hashflow-taker-sdk
+Version: 1.0.0
+Summary: Python SDK to interact with the Hashflow Taker API
+Author: Hashflow Foundation
+Author-email: Sameer Brenn <sameer@hashflow.com>, Victor Ionescu <victor@hashflow.com>
+Project-URL: Homepage, https://github.com/hashflownetwork/taker-py
+Keywords: hashflow exchange api defi ethereum eth
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+Python Hashflow Taker API
+=========================
+
+Uses the `aiohttp` python library.
+
+Setup
+-----
+```sh
+pip install -r requirements.txt
+```
+
+Running basic test
+------------------
+
+```sh
+python -m hashflow.api
+```
+
+Running unit tests
+------------------
+```sh
+pytest
+```
+
+Building Instructions
+---------------------
+
+```sh
+python3 -m pip install --upgrade build
+python3 -m build
+```
+
+Publishing Instructions
+-----------------------
+
+```sh
+python3 -m pip install --upgrade twine
+python3 -m twine upload --repository testpypi dist/*
+
+```
