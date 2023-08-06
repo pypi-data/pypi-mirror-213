@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: social-gpt
+Version: 0.0.7
+Summary: Social gpt
+Home-page: https://github.com/dinesh1301/social-gpt2
+Author: dinesh1301
+Author-email: dinesh@topmate.io
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Social GPT
