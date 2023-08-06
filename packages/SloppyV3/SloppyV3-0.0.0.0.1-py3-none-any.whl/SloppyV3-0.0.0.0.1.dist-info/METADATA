@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: SloppyV3
+Version: 0.0.0.0.1
+Summary: Python module - SloppyV3
+Home-page: https://github.com/Cheung-man/SloppyV3.git
+Author: Chungman Kim
+Author-email: h2noda@gmail.com
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+Requires-Dist: beautifulsoup4
+Requires-Dist: openpyxl
+Requires-Dist: rich
+Requires-Dist: python-dateutil
+Requires-Dist: paramiko
+Requires-Dist: cryptography
+
+Module for personal use of Noda......
+Maybe.... SloppyV3?
