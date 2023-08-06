@@ -1,0 +1,17 @@
+LICENSE
+README.md
+pyproject.toml
+src/nonebot_plugin_pcrjjc/__init__.py
+src/nonebot_plugin_pcrjjc/aiorequests.py
+src/nonebot_plugin_pcrjjc/bsgamesdk.py
+src/nonebot_plugin_pcrjjc/config.py
+src/nonebot_plugin_pcrjjc/pcrclient.py
+src/nonebot_plugin_pcrjjc/query.py
+src/nonebot_plugin_pcrjjc/rsacr.py
+src/nonebot_plugin_pcrjjc/text2img.py
+src/nonebot_plugin_pcrjjc.egg-info/PKG-INFO
+src/nonebot_plugin_pcrjjc.egg-info/SOURCES.txt
+src/nonebot_plugin_pcrjjc.egg-info/dependency_links.txt
+src/nonebot_plugin_pcrjjc.egg-info/requires.txt
+src/nonebot_plugin_pcrjjc.egg-info/top_level.txt
+src/nonebot_plugin_pcrjjc/fonts/SourceHanSansCN-Medium.otf
