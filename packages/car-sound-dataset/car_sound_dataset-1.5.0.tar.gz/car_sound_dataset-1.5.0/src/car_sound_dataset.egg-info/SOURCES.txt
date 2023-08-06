@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+src/car_sound_dataset/__init__.py
+src/car_sound_dataset/car_dataset.py
+src/car_sound_dataset.egg-info/PKG-INFO
+src/car_sound_dataset.egg-info/SOURCES.txt
+src/car_sound_dataset.egg-info/dependency_links.txt
+src/car_sound_dataset.egg-info/requires.txt
+src/car_sound_dataset.egg-info/top_level.txt

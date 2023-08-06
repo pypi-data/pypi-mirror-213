@@ -1,0 +1,9 @@
+setuptools>=42
+wheel
+requests
+gdown
+matplotlib
+scipy
+numpy
+sounddevice
+soundfile
