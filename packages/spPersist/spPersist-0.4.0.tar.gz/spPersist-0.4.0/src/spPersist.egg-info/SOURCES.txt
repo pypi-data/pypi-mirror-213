@@ -1,0 +1,15 @@
+LICENSE
+README.md
+setup.py
+src/spPersist/DTM_filtrations.py
+src/spPersist/__init__.py
+src/spPersist/dp.py
+src/spPersist/hc.py
+src/spPersist/persistence_statistics.py
+src/spPersist/ph.py
+src/spPersist/pp.py
+src/spPersist.egg-info/PKG-INFO
+src/spPersist.egg-info/SOURCES.txt
+src/spPersist.egg-info/dependency_links.txt
+src/spPersist.egg-info/requires.txt
+src/spPersist.egg-info/top_level.txt
