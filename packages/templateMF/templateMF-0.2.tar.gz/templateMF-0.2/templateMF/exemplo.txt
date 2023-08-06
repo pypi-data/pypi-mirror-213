@@ -1,0 +1,47 @@
+=== meta
+name: Paulo// provided or ask
+author: JJoao // provided or default
+
+=== tree
+
+pyproject.toml
+{{name}}/
+    - __init__.py
+    - {{name}}.md
+exemplo/
+README.md
+tests/
+    - _test-1.py
+
+=== pyproject.toml
+[build-system]
+requires = ["flit_core >=3.2,<4"]
+build-backend = "flit_core.buildapi"
+
+[project]
+name = "{{name}}"
+authors = [ {name = "{{author}}", email = "FIXME"}]
+license = {file = "LICENSE"}
+classifiers = ["License :: OSI Approved :: MIT License"]
+dynamic = ["version", "description"]
+dependencies = [ ]
+readme = "{{name}}.md"
+
+[project.scripts]
+## script1 = "{{name}}:main"
+
+=== {{name}}.md
+# NAME
+
+{{name}} - FIXME the fantastic module for...
+
+=== __init__.py
+""" FIXME: docstring """
+__version__ = "0.1.0"
+
+=== _test-1.py
+import pytest
+import {{name}}
+
+def test_1():
+    assert "FIXME" == "FIXME"
