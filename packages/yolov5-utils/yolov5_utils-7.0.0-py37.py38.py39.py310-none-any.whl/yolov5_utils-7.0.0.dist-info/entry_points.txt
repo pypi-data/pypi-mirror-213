@@ -1,0 +1,2 @@
+[console_scripts]
+yolov5_cli = yolov5_utils.cli:app
