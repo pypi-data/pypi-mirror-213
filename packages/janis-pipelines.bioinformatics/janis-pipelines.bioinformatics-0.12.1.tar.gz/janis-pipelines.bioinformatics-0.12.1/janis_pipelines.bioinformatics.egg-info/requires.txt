@@ -1,0 +1,12 @@
+janis-pipelines.core>=0.11.0
+
+[ci]
+setuptools
+wheel
+twine
+
+[tests]
+nose
+parameterized
+janis-pipelines.unix>=0.11.0
+janis-pipelines.runner>=0.11.0
