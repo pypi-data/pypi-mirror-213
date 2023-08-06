@@ -1,0 +1,3 @@
+[console_scripts]
+fast-boot = fast_tracker.admin:main
+
