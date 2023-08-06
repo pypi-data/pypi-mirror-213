@@ -1,0 +1,7 @@
+gym==0.22.0
+ray[default]
+numpy
+pandas
+scipy
+lz4
+tqdm
