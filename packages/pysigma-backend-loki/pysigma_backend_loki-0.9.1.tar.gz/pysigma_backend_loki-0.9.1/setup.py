@@ -1,0 +1,30 @@
+# -*- coding: utf-8 -*-
+from setuptools import setup
+
+packages = \
+['sigma', 'sigma.backends.loki', 'sigma.pipelines.loki']
+
+package_data = \
+{'': ['*']}
+
+install_requires = \
+['pysigma-pipeline-sysmon>=1.0.1,<2.0.0', 'pysigma>=0.9.11,<0.10.0']
+
+setup_kwargs = {
+    'name': 'pysigma-backend-loki',
+    'version': '0.9.1',
+    'description': 'pySigma Loki backend',
+    'long_description': '![PyPI](https://img.shields.io/pypi/v/pysigma-backend-loki)\n![Tests](https://github.com/grafana/pySigma-backend-loki/actions/workflows/test.yml/badge.svg)\n[![Coverage Status](https://coveralls.io/repos/github/grafana/pySigma-backend-loki/badge.svg?branch=main&t=lvM1Ns)](https://coveralls.io/github/grafana/pySigma-backend-loki?branch=main)\n\n# pySigma Loki Backend\n\nThis is the Loki backend for pySigma. It provides the package `sigma.backends.loki` with the `LogQLBackend` class.\n\nIt supports the following output formats:\n\n* `default`: plain Loki LogQL queries\n* `ruler`: creates Loki LogQL queries in the ruler (YAML) format for generating alerts\n\nIt includes the following pipeline transformations in `sigma.pipelines.loki`:\n\n* `SetCustomAttributeTransformation`: adds a specified custom attribute to a rule, which can be used to introduce a [stream selector](https://grafana.com/docs/loki/latest/logql/log_queries/#log-stream-selector) or [parser expression](https://grafana.com/docs/loki/latest/logql/log_queries/#parser-expression) into the generated query\n  * The `LokiCustomAttributes` enum contains the relevant custom attribute names used by the backend\n\nFurther, it contains the processing pipelines in `sigma.pipelines.loki`:\n\n* `loki_log_parser`: converts field names to logfmt labels used by Grafana\n* `loki_promtail_sysmon`: parse and adjust field names for Windows sysmon data produced by promtail\n  * Note: most rules lack the `sysmon` service tag, and hence this pipeline should be used in combination with the [generic sysmon pipeline](https://github.com/SigmaHQ/pySigma-pipeline-sysmon)\n* `loki_okta_system_log`: parse the Okta System Log event json, adjusting field-names appropriately\n\nWhen converting rules into queries, the backend has the following optional arguments:\n\n* `add_line_filters` (boolean, default: `False`): if `True`, attempts to infer and add new line filters to queries without line filters, to [improve Loki query performance](https://grafana.com/docs/loki/latest/logql/log_queries/#line-filter-expression)\n* `case_insensitive` (boolean, default: `True`): if `False`, defaults to generating case-sensitive query filters, instead of case-insensitive filters that [the Sigma specification expects](https://github.com/SigmaHQ/sigma-specification/blob/main/Sigma_specification.md#general), trading between Loki query performance and potentially missing data with unexpected casing\n  * Note: if the generated query will be executed on Loki v2.8.2 or older, this argument **should** be set to `False`, as these versions of Loki may contain issues with case-insensitive filters, which cause such queries to fail to match desired data\n\nThis backend is currently maintained by:\n\n* [Nick Moore](https://github.com/kelnage)\n* [Mostafa Moradian](https://github.com/mostafa)\n\n## Installation\n\nTo get started developing/testing pySigma-backend-loki, these steps may help you get started:\n\n1. [Install poetry](https://python-poetry.org/docs/#installation)\n2. Clone this repository and open a terminal/shell in the top-level directory\n3. Run `poetry install` to install the Python dependencies\n4. Run `poetry shell` to activate the poetry environment\n5. Check it all works by running `poetry run pytest`\n6. (Optional) If you wish to validate the generated rules using sigma\\_backend\\_tester.py, install\n   [LogCLI](https://grafana.com/docs/loki/latest/tools/logcli/)\n7. (Optional, but recommended) To enable the Git hooks, run the following command from the root directory of the repository:\n```sh\ngit config --local core.hooksPath .githooks/\n```\n\n## Releasing\n\nTo release new versions of pySigma-backend-loki, we use GitHub actions to update PyPI. When the main branch is in state that is ready to release, the process is as follows:\n\n1. Determine the correct version number using the [Semantic Versioning](https://semver.org/) methodology. All version numbers should be in the format `\\d+\\.\\d+\\.\\d+(-[0-9A-Za-z-]+)?`\n2. Update [pyproject.toml](https://github.com/grafana/pySigma-backend-loki/blob/main/pyproject.toml) with the new version number\n3. Commit and push the change to GitHub, and validate that the GitHub actions tests pass\n4. Create a signed tag for the release, named the version number prefixed with a v, e.g., `git tag --sign --message="Release vX.X.X" vX.X.X`\n5. Push the tag to GitHub, e.g., `git push --tags`, and validate that the release to the test instance of PyPI is successful\n6. Run `poetry build` to produce distributable versions in `dist/`\n7. Create a release in GitHub against the appropriate tag. If the version number starts with `v0`, or ends with `-alpha/beta` etc., mark it as a pre-release, and attach the distributable files to the release\n8. Validate that the release to PyPI GitHub action is successful\n\n## Work in progress\n\nThese features are currently either WIP or are planned to be implemented in the near future.\n\n* Various processing pipelines for other applications and log sources\n* Generating more accurate log stream selectors based on logsource\n* Translate field names in Sigma signatures into relevant labels for Loki using pipelines\n\n## Won\'t implement (probably)\n\nThese features are not easily supported by the backend, and hence are unlikely to be implemented.\n\n* More complex keyword/line filter searches than ANDs of ORs\n',
+    'author': 'Nick Moore',
+    'author_email': 'nicholas.moore@grafana.com',
+    'maintainer': 'None',
+    'maintainer_email': 'None',
+    'url': 'https://github.com/grafana/pySigma-backend-loki',
+    'packages': packages,
+    'package_data': package_data,
+    'install_requires': install_requires,
+    'python_requires': '>=3.8,<4.0',
+}
+
+
+setup(**setup_kwargs)
