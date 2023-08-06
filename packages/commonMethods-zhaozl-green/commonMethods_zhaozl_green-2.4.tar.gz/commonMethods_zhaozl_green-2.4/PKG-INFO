@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: commonMethods_zhaozl_green
+Version: 2.4
+Summary: timeTrans code2Name mysqlOperator printWithColor comtradeParse processBar trendAnalyzer bounceAnalyzer evennessDetermine……
+Home-page: 
+Author: zhaozl1123
+Author-email: 545362989@qq.com
+License: MIT
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.7.0
+Description-Content-Type: text/markdown
+
+
+## 版本记录
+
+v1.0 从commonMethods_zhaozl==v3.13版本中，删除bpNetWork的内容
+
+v1.1 从commonMethods_zhaozl==v3.14版本中，删除bpNetWork的内容，相比v1.0增加proportionalGrouping函数
+
+v1.2 修正了冗余代码
+
+v2.0 简化并优化了脚本，适应Python3.8
+
+v2.2 增加了几种进度条
+
+v2.3 toolbox中增加了Shuffle
+
+v2.4 降级了环境要求，Python3.7
