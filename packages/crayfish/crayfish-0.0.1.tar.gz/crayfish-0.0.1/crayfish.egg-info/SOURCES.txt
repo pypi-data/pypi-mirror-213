@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+crayfish/__init__.py
+crayfish/pool.py
+crayfish.egg-info/PKG-INFO
+crayfish.egg-info/SOURCES.txt
+crayfish.egg-info/dependency_links.txt
+crayfish.egg-info/top_level.txt

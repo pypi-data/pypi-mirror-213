@@ -1,0 +1,57 @@
+Metadata-Version: 2.1
+Name: crayfish
+Version: 0.0.1
+Summary: Multi process/thread lib for python
+Home-page: https://github.com/Jasonsey/Process
+Author: Jason, Lin
+Author-email: jason.m.lin@outlook.com
+License: Apache 2.0
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Operating System :: MacOS
+Classifier: Operating System :: Microsoft
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Scientific/Engineering :: Mathematics
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: Topic :: Software Development
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Process
+
+[![Pypi](https://github.com/Jasonsey/Process/actions/workflows/pypi.yml/badge.svg)](https://github.com/Jasonsey/Process/actions/workflows/pypi.yml)
+
+
+## 安装
+
+1. 从 `pypi` 安装
+
+   ```shell
+   $ pip install crayfish
+   ```
+
+2. 从源码安装
+
+   ```shell
+   $ pip install -e git+https://github.com/Jasonsey/Crayfish.git
+   ```
+
+## 使用教程
+
+TBD
+
+## 版本变更日志
+
+[CHANGE LOG](./CHANGELOG.md)
