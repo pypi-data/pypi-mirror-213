@@ -1,0 +1,17 @@
+LICENSE
+README.md
+setup.py
+PRauto.egg-info/PKG-INFO
+PRauto.egg-info/SOURCES.txt
+PRauto.egg-info/dependency_links.txt
+PRauto.egg-info/requires.txt
+PRauto.egg-info/top_level.txt
+prauto/__init__.py
+prauto/__main__.py
+prauto/prepauto/__init__.py
+prauto/prepauto/__main__.py
+prauto/retriever/__init__.py
+prauto/retriever/__main__.py
+prauto/retriever/get_fasta.py
+prauto/retriever/get_ligand.py
+prauto/retriever/get_pdb.py

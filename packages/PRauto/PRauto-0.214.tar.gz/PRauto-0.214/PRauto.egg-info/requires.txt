@@ -1,0 +1,7 @@
+biopython>=1.79
+chembl_webresource_client>=0.10.8
+matplotlib>=3.0.0
+pandas>=1.5.3
+pymol>=2.5.0
+requests>=2.28.1
+tqdm>=4.00.0
