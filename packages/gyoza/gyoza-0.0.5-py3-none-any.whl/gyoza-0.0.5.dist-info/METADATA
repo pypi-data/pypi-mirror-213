@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: gyoza
+Version: 0.0.5
+Summary: A package for invertible interpretable neural networks.
+Author-email: Tim Dick <timdi@icloud.com>
+Project-URL: Homepage, https://github.com/pypa/sampleproject
+Project-URL: Bug Tracker, https://github.com/pypa/sampleproject/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: tensorflow (>=2.8.2)
+Requires-Dist: matplotlib (>=3.5.3)
+Requires-Dist: sphinx (==5.2.3)
+Requires-Dist: sphinx-rtd-theme
+Requires-Dist: numpy (>=1.21.6)
+Requires-Dist: build (<0.10.0)
+Requires-Dist: twine
+
+# Gyoza 
+## A library for building invertible neural networks
+### Master thesis project of Tim Dick
+https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax
