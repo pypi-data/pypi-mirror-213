@@ -1,0 +1,17 @@
+pymc>=5.5.0
+scikit-learn
+
+[complete]
+dask[complete]
+xhistogram
+
+[dask_histogram]
+dask[complete]
+xhistogram
+
+[dev]
+dask[all]
+blackjax
+
+[histogram]
+xhistogram
