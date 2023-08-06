@@ -1,0 +1,13 @@
+coverage
+matplotlib
+nose
+numpy
+pandas
+pylint
+python-libsbml
+pip>20
+sympy
+urllib3
+seaborn
+xlsxwriter
+openpyxl
