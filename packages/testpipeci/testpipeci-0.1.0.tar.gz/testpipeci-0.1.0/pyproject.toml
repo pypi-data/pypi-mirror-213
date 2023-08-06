@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "testpipeci"
+version = "0.1.0"
+description = ""
+authors = ["Thiago Melo <4thiagomelo5@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.scripts]
+testpipeci = "testpipeci.cli:app"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+typer = "^0.9.0"
+
+
+[tool.poetry.group.dev.dependencies]
+taskipy = "^1.11.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
