@@ -1,0 +1,6 @@
+beautifulsoup4
+openpyxl
+rich
+python-dateutil
+paramiko
+cryptography

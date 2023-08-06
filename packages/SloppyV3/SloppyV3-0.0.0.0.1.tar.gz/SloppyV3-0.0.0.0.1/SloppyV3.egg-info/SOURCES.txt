@@ -1,0 +1,12 @@
+README.md
+setup.py
+SloppyV3/common.py
+SloppyV3/config.py
+SloppyV3/error.py
+SloppyV3/excel.py
+SloppyV3/json.py
+SloppyV3.egg-info/PKG-INFO
+SloppyV3.egg-info/SOURCES.txt
+SloppyV3.egg-info/dependency_links.txt
+SloppyV3.egg-info/requires.txt
+SloppyV3.egg-info/top_level.txt
