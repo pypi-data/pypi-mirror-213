@@ -1,0 +1,82 @@
+Metadata-Version: 2.1
+Name: galaxy-test-api
+Version: 23.0.2
+Summary: Galaxy API tests
+Home-page: https://github.com/galaxyproject/galaxy
+Author: Galaxy Project and Community
+Author-email: galaxy-committers@lists.galaxyproject.org
+License: AFL
+Keywords: Galaxy
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Academic Free License (AFL)
+Classifier: Natural Language :: English
+Classifier: Operating System :: POSIX
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Topic :: Software Development
+Classifier: Topic :: Software Development :: Code Generators
+Classifier: Topic :: Software Development :: Testing
+Requires-Python: >=3.7
+Description-Content-Type: text/x-rst
+Provides-Extra: driver
+License-File: LICENSE
+
+
+.. image:: https://badge.fury.io/py/galaxy-test-api.svg
+   :target: https://pypi.org/project/galaxy-test-api/
+
+
+
+Overview
+--------
+
+The Galaxy_ API tests.
+
+* Code: https://github.com/galaxyproject/galaxy
+
+.. _Galaxy: http://galaxyproject.org/
+
+History
+-------
+
+.. to_doc
+
+-------------------
+23.0.2 (2023-06-13)
+-------------------
+
+No recorded changes since last release
+
+-------------------
+23.0.1 (2023-06-08)
+-------------------
+
+
+=========
+Bug fixes
+=========
+
+* Display DCE in job parameter component, allow rerunning with DCE input by `@mvdbeek <https://github.com/mvdbeek>`_ in `#15744 <https://github.com/galaxyproject/galaxy/pull/15744>`_
+* Fix folder listing via file browser by `@mvdbeek <https://github.com/mvdbeek>`_ in `#15950 <https://github.com/galaxyproject/galaxy/pull/15950>`_
+* Fix case sensitive filtering by name in histories by `@davelopez <https://github.com/davelopez>`_ in `#16036 <https://github.com/galaxyproject/galaxy/pull/16036>`_
+* Fix dataype_change not updating HDCA update_time by `@mvdbeek <https://github.com/mvdbeek>`_ in `#16099 <https://github.com/galaxyproject/galaxy/pull/16099>`_
+* Extract HDA for code_file validate_input hook by `@mvdbeek <https://github.com/mvdbeek>`_ in `#16120 <https://github.com/galaxyproject/galaxy/pull/16120>`_
+
+============
+Enhancements
+============
+
+* Add support for launching workflows via Tutorial Mode by `@hexylena <https://github.com/hexylena>`_ in `#15684 <https://github.com/galaxyproject/galaxy/pull/15684>`_
+* Allow setting auto_decompress property in staging interface by `@mvdbeek <https://github.com/mvdbeek>`_ in `#16014 <https://github.com/galaxyproject/galaxy/pull/16014>`_
+
+-------------------
+20.9.0 (2020-10-15)
+-------------------
+
+* Initial import from dev branch of Galaxy during 20.09 branch of Galaxy.
