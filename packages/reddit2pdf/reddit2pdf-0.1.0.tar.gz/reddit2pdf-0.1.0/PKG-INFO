@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: reddit2pdf
+Version: 0.1.0
+Summary: 
+License: MIT
+Author: David Cabinian
+Author-email: dhcabinian@gmail.com
+Requires-Python: >=3.11,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: bdfr (>=2.6.2,<3.0.0)
+Requires-Dist: click (>=8.1.3,<9.0.0)
+Requires-Dist: jinja2 (>=3.1.2,<4.0.0)
+Requires-Dist: markdown (>=3.4.3,<4.0.0)
+Requires-Dist: pytest (>=7.3.2,<8.0.0)
+Requires-Dist: pytest-mock (>=3.10.0,<4.0.0)
+Description-Content-Type: text/markdown
+
+# reddit2pdf
+
+The majority of this repo is taken under GPL from bdfr-html found [here](https://github.com/aliparlakci/bulk-downloader-for-reddit) with modifications to work with my PKM system.
+
+## Example usage
+
+poetry run python -m reddit2pdf pdf --link https://www.reddit.com/r/homeautomation/comments/z4fn14/my_take_on_the_magsafe_home_assistant_wall/ --unclean -o ~/Desktop/test --move-html
+
