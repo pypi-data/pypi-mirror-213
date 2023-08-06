@@ -1,0 +1,7 @@
+setup.py
+GAM_chat_client.egg-info/PKG-INFO
+GAM_chat_client.egg-info/SOURCES.txt
+GAM_chat_client.egg-info/dependency_links.txt
+GAM_chat_client.egg-info/requires.txt
+GAM_chat_client.egg-info/top_level.txt
+gui/__init__.py
