@@ -1,0 +1,11 @@
+bs4
+colorama
+html5lib
+requests
+poetry
+
+[dev]
+check-manifest
+
+[test]
+coverage
