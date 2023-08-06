@@ -1,0 +1,13 @@
+velour/__init__.py,sha256=z3hBptoWjyn92_ayFr9iMwDo6l__9bLq2REzE9EKTFY,262
+velour/client.py,sha256=Lt2opW_SN_my-cAdMhCftHHRp4JBk6v6T1EprIafTYk,28267
+velour/data_types.py,sha256=hLtXYN_n12NLx5LDd1jhmmfMv8T9pk_bu-a38vSNT2w,5734
+velour/metrics.py,sha256=P9GrLwgkcA50KzjxrMkMKP6FPIfbW4PHdQj1W_z18-M,299
+velour/viz.py,sha256=-69Ym5TtBtBkJjAxfPLtrRoR-1aubRPitwOOJGoIn-Y,6128
+velour/integrations/chariot.py,sha256=aeiI1zhVo4XliF1Lx-xZG745NjRcpbKTRFPlvvBpXvo,14911
+velour/integrations/coco.py,sha256=VyUxSNeVVoSBRsIXDIPT6t3ySiFp_D4YplI5OS235QE,3540
+velour/integrations/yolo.py,sha256=_-zrvqRXnp8_O3pgJJ1xOESwUCdS0h2fpHvYlaf39ks,5305
+velour_client-0.4.0.dist-info/LICENSE,sha256=-_yzamqdVA0GfnrmvQpOp4r8G4Bi8Ms4ZadZz2IUOe8,1051
+velour_client-0.4.0.dist-info/METADATA,sha256=Evtf6U8SKxyHrIN9nUQrPLasX9_VZ-HO2ZOjwSne9Q4,1831
+velour_client-0.4.0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+velour_client-0.4.0.dist-info/top_level.txt,sha256=JdGbQWeyzC_8irIt7yMQSWQXNq-3PNeU9EIjZpHrKTk,7
+velour_client-0.4.0.dist-info/RECORD,,
