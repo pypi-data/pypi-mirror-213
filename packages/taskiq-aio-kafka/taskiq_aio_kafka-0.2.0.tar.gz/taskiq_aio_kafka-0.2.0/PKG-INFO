@@ -1,0 +1,72 @@
+Metadata-Version: 2.1
+Name: taskiq-aio-kafka
+Version: 0.2.0
+Summary: Kafka broker for taskiq
+License: LICENSE
+Keywords: taskiq,tasks,distributed,async,kafka,aiokafka
+Author: Taskiq team
+Author-email: taskiq@no-reply.com
+Maintainer: Taskiq team
+Maintainer-email: taskiq@no-reply.com
+Requires-Python: >=3.8.1,<4.0.0
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: Other/Proprietary License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Topic :: System :: Networking
+Classifier: Typing :: Typed
+Requires-Dist: aiokafka (>=0.8.0,<0.9.0)
+Requires-Dist: pydantic (>=1.10.7,<2.0.0)
+Requires-Dist: taskiq (>=0,<1)
+Description-Content-Type: text/markdown
+
+# AioKafka broker for taskiq
+
+This lirary provides you with aiokafka broker for taskiq.
+
+Usage:
+```python
+from taskiq_aio_kafka import AioKafkaBroker
+
+broker = AioKafkaBroker(bootstrap_servers="localhost")
+
+@broker.task
+async def test() -> None:
+    print("The best task ever!")
+```
+
+## Non-obvious things
+
+You can configure kafka producer and consumer with special methods `configure_producer` and `configure_consumer`.
+Example:
+```python
+from taskiq_aio_kafka import AioKafkaBroker
+
+broker = AioKafkaBroker(bootstrap_servers="localhost")
+
+# configure producer, you can set any parameter from
+# base AIOKafkaProducer, except `loop` and `bootstrap_servers`
+broker.configure_producer(request_timeout_ms=100000)
+
+# configure consumer, you can set any parameter from
+# base AIOKafkaConsumer, except `loop` and `bootstrap_servers`
+broker.configure_consumer(group_id="the best group ever.")
+```
+
+## Configuration
+
+AioKafkaBroker parameters:
+* `bootstrap_servers` - url to kafka nodes. Can be either string or list of strings.
+* `kafka_topic` - custom topic in kafka.
+* `result_backend` - custom result backend.
+* `task_id_generator` - custom task_id genertaor.
+* `kafka_admin_client` - custom `kafka` admin client.
+* `delete_topic_on_shutdown` - flag to delete topic on broker shutdown.
+
