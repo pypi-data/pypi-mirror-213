@@ -1,0 +1,4 @@
+vnpy_rest
+vnpy_websocket
+requests
+vnpy_crypto
