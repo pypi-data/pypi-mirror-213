@@ -1,0 +1,14 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+sc_editor.egg-info/PKG-INFO
+sc_editor.egg-info/SOURCES.txt
+sc_editor.egg-info/dependency_links.txt
+sc_editor.egg-info/top_level.txt
+tests/test_edits/__init__.py
+tests/test_edits/test_basic/__init__.py
+tests/test_edits/test_basic/test_basic.py
+tests/test_edits/test_basic/test_talent_orbs.py
+tests/test_edits/test_cats/__init__.py
+tests/test_edits/test_cats/test_cat_id_selector.py
