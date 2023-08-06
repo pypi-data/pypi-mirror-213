@@ -1,0 +1,4 @@
+toolz
+
+[test]
+pytest>=6
