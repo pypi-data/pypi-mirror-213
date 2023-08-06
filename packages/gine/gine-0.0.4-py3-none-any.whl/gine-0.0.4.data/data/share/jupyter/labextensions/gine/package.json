@@ -1,0 +1,64 @@
+{
+  "name": "gine",
+  "version": "0.0.4",
+  "description": "Interactive netlist visualisation tools compatible with GDSFactory",
+  "author": "Dario Quintero",
+  "license": "BSD-3-Clause",
+  "main": "lib/index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/daquintero/gine.git"
+  },
+  "keywords": [
+    "jupyter",
+    "widgets",
+    "ipython",
+    "ipywidgets",
+    "jupyterlab-extension"
+  ],
+  "files": [
+    "lib/**/*.js",
+    "dist/*.js"
+  ],
+  "scripts": {
+    "clean": "rimraf dist/ && rimraf ../gine/labextension/ && rimraf ../gine/nbextension",
+    "prepublish": "yarn run clean && yarn run build:prod",
+    "build": "webpack --mode=development && yarn run build:labextension:dev",
+    "build:prod": "webpack --mode=production && yarn run build:labextension",
+    "build:labextension": "jupyter labextension build .",
+    "build:labextension:dev": "jupyter labextension build --development True .",
+    "watch": "webpack --watch --mode=development",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "@jupyterlab/builder": "^3.0.0",
+    "css-loader": "^6.7.3",
+    "json-loader": "^0.5.7",
+    "less": "^4.1.3",
+    "less-loader": "^11.1.0",
+    "rimraf": "^2.6.1",
+    "style-loader": "^3.3.2",
+    "webpack": "^5"
+  },
+  "dependencies": {
+    "@jupyter-widgets/base": "^1.1 || ^2 || ^3 || ^4 || ^6",
+    "@jupyter-widgets/controls": "^1.0.0",
+    "@jupyter-widgets/jupyterlab-manager": "^0.28.0",
+    "d3": "^7.8.4",
+    "lodash": "^4.17.4"
+  },
+  "jupyterlab": {
+    "extension": "lib/labplugin",
+    "outputDir": "../gine/labextension",
+    "sharedPackages": {
+      "@jupyter-widgets/base": {
+        "bundled": false,
+        "singleton": true
+      }
+    },
+    "_build": {
+      "load": "static/remoteEntry.5cb9703645cd60bf6ac7.js",
+      "extension": "./extension"
+    }
+  }
+}
