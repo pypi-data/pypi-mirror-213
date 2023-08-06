@@ -1,0 +1,77 @@
+Metadata-Version: 2.1
+Name: MMutils
+Version: 0.0.4
+Summary: 自用模块
+Author: MoMingLog
+Author-email: 
+License: MIT
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
+Requires-Dist: Faker (>=18.7.0)
+Requires-Dist: ddddocr (>=1.4.7)
+Requires-Dist: requests (>=2.30.0)
+Requires-Dist: loguru (>=0.7.0)
+Requires-Dist: lxml (>=4.9.2)
+
+
+# 自用模块
+
+
+
+随机随性添加一些自用功能进来
+
+
+
+`decorator_utils` 装饰器工具
+
+
+
+`file_utils` 文件工具
+
+
+
+`log_utils` 日志工具
+
+
+
+`ocr_utils` ocr工具
+
+
+
+`proxy_utils` 代理工具
+
+
+
+`spider_utils` 爬虫工具
+
+
+
+`str_utils` 字符串工具
+
+
+
+`url_utils` url工具
+
+
+
+
+
+
+
+更新日志
+
+
+
+`0.0.4` 2023-06-10 分类整理
+
+
+
+
+
+
+
