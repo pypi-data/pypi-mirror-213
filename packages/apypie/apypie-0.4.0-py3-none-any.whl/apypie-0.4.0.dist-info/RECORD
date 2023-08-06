@@ -1,0 +1,14 @@
+apypie/__init__.py,sha256=yENMmOPWF9T9yqAdL0YsMmvFEZY1tnzKo2Yhs7g3aEg,417
+apypie/action.py,sha256=3NIC-K024rO7kSajC7xMyPzU4b-l2ij9YVxVyHSYwGI,9200
+apypie/api.py,sha256=MAp_KgDFSPluYrBxluaHO-ydsS8Voh3LD2tZcEZVMN4,11723
+apypie/example.py,sha256=C6OQWDmdXwyHZL1V_2Rd4pH0RW0KkX06yS9U_rGb1eM,786
+apypie/exceptions.py,sha256=W4-a9u2mpzUcxVcKwYQF1iVMO2-CGtXYmCDUhz0el_U,443
+apypie/inflector.py,sha256=Wv-8vU6gbokkrPA3s8hs_hVGfHkG78VdzcSQpi29vbg,5479
+apypie/param.py,sha256=Oimzuax539k5JyNc0NmNFxeZq-iovFOkJCzX4J-CWhU,688
+apypie/resource.py,sha256=lLmVDFoExypAtBZIqtw0L1dJmit1EG3E0YxWOrmaDpU,2243
+apypie/route.py,sha256=J3eqJoPsOzsGnZStSSCK_L7IKDr_BkxR94lw-B7mzOo,1403
+apypie-0.4.0.dist-info/LICENSE,sha256=hY5XOckWAyWA3X7yZbL2dWQf9gh5ceFuTbNgQJ3gnyQ,1069
+apypie-0.4.0.dist-info/METADATA,sha256=na58O37kTVIwUXdap8xVMydxbBmCrc-SG6DnPDPUlzM,1315
+apypie-0.4.0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+apypie-0.4.0.dist-info/top_level.txt,sha256=sqUKQu4HCR3cjM4pdsYhpft2X5TFhQvIDr1HxuneQTU,7
+apypie-0.4.0.dist-info/RECORD,,
