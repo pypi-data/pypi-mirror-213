@@ -1,0 +1,2 @@
+[caped.manifest]
+KapoorLabs-Lightning = kapoorlabs_lightning:caped.yaml
