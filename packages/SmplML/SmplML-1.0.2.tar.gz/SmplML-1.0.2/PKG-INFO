@@ -1,0 +1,74 @@
+Metadata-Version: 2.1
+Name: SmplML
+Version: 1.0.2
+Summary: SmplML is a user-friendly Python library for streamlined machine learning classification. It offers intuitive modules for data preprocessing, feature engineering, model training, and evaluation. Ideal for beginners and experts alike, SmplML simplifies classification tasks, enabling you to gain valuable insights from your data with ease.
+Home-page: https://github.com/JhunBrian/SmplML
+Author: Jhun Brian Andam
+Author-email: brianandam123@gmail.com
+License: MIT
+Keywords: Machine Learning,Classification
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Science/Research
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# SmplML / SimpleML: Simplified Machine Learning for Classification
+
+SmplML is a user-friendly Python library for streamlined machine learning classification. It offers intuitive modules for data preprocessing, model training, and evaluation. Ideal for beginners and experts alike, EasyML simplifies classification tasks, enabling you to gain valuable insights from your data with ease.
+
+## Features
+
+- Data preprocessing: Easily handle encoding categorical variables.
+- Model training: Train various classification models with just a few lines of code.
+- Model evaluation: Evaluate model performance using common metrics and visualizations.
+
+## Installation
+
+- You can install SmpML using pip:
+```shell
+pip install SimpleML
+```
+
+## Usage
+
+```python
+import seaborn as sns
+import pandas as pd
+from smpl_ml.classification_helpers import TrainClassifier
+from sklearn.neighbors import KNeighborsClassifier
+
+# Load the dataset
+df = sns.load_dataset('penguins')
+
+# Set the target and features
+target = 'species'
+features = df.iloc[:, df.columns != target].columns
+
+# Create the classifier trainer
+trainer = TrainClassifier(df.dropna(), target=target, features=features, model=KNeighborsClassifier())
+
+# Fit the model
+trainer.fit()
+
+# Evaluate the model
+model = trainer.evaluate()
+```
+
+`model` when `verbose` is set to `True` will return a DataFrame of classification metrics.
+
+
+|    | Recall | Specificity | Precision | F1-Score | Accuracy |
+|----|--------|-------------|-----------|----------|----------|
+| Adelie | 0.91   | 0.70        | 0.67      | 0.77     | 0.76     |
+| Chinstrap | 0.38   | 0.92        | 0.62      | 0.47     | 0.76     |
+| Gentoo | 0.86   | 1.00        | 1.00      | 0.92     | 0.76     |
+
+Change Log
+==================
+
+1.0.2 (06/12/2023)
+------------------
+Updated README.md
