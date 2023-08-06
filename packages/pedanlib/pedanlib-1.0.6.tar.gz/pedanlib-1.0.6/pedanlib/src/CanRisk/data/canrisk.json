@@ -1,0 +1,86 @@
+[
+   {
+      "name":"Menarche",
+      "risk_factor":"BC",
+      "description":"Age at menarche",
+      "values":"NA=unspecified, integer=age at menarche"
+   },
+   {
+      "name":"Parity",
+      "risk_factor":"BC,OC",
+      "description":"Parity",
+      "values":"NA=unspecified, integer=number of children"
+   },
+   {
+      "name":"First_live_birth",
+      "risk_factor":"BC",
+      "description":"Age at first live birth",
+      "values":"NA=unspecified, integer=age at first live birth"
+   },
+   {
+      "name":"OC_use",
+      "risk_factor":"BC,OC",
+      "description":"Use of oral contraception",
+      "values":"NA=unspecified, N=Never, F:Years=Former use, C:Years=Current use; F and C are followed by integer=number of years taken e.g. F:4 means former use of 4 years"
+   },
+   {
+      "name":"MHT_use",
+      "risk_factor":"BC,OC",
+      "description":"Use of menopause hormone therapy",
+      "values":"NA=unspecified, N=Never used, F=Former use, E=Current E-type use, C=Current other/unknown type (including combined type) use"
+   },
+   {
+      "name":"BMI",
+      "risk_factor":"BC",
+      "description":"Body mass index",
+      "values":"NA=unspecified, real number=body mass index"
+   },
+   {
+      "name":"Alcohol",
+      "risk_factor":"BC",
+      "description":"Daily alcohol intake in grams per day",
+      "values":"NA=unspecified, real number=daily alcohol intake in grams"
+   },
+   {
+      "name":"Menopause",
+      "risk_factor":"BC",
+      "description":"Age at menopause",
+      "values":"NA=unspecified, integer=age at menopause"
+   },
+   {
+      "name":"BIRADS",
+      "risk_factor":"BC",
+      "description":"Mammographic density measured by BI-RADS",
+      "values":"NA=unspecified, BI-RADS classification (a, b, c, d or 1, 2, 3, 4)"
+   },
+   {
+      "name":"Height",
+      "risk_factor":"BC,OC",
+      "description":"Height in cm",
+      "values":"NA=unspecified, real number=height in cm"
+   },
+   {
+      "name":"TL",
+      "risk_factor":"OC",
+      "description":"Tubal ligation procedure",
+      "values":"NA=unspecified, N=No, Y=Yes"
+   },
+   {
+      "name":"Endo",
+      "risk_factor":"OC",
+      "description":"Endometriosis",
+      "values":"NA=unspecified, N=No, Y=Yes"
+   },
+   {
+      "name":"PRS_BC",
+      "risk_factor":"BC",
+      "description":"Polygenic Risk Score (Breast Cancer)",
+      "values":"e.g. alpha=real number, zscore=real number"
+   },
+   {
+      "name":"PRS_OC",
+      "risk_factor":"OC",
+      "description":"Polygenic Risk Score (Ovarian Cancer)",
+      "values":"e.g. alpha=real number, zscore=real number"
+   }
+]

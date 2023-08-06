@@ -1,0 +1,131 @@
+r,mu,sigma,p,convergence,population,sex,ctype,carrier,dist
+0.0025,94.5,20,Mohammadi 2009,NA,NL,1,bc,0,normal
+0.0017,56.92,24.49,Mohammadi 2009,0,UK,1,bc,0,normal
+0.15,72,20,Mohammadi 2009,NA,NL,2,bc,0,normal
+0.15,72,20,Mohammadi 2009,NA,UK,2,bc,0,normal
+NA,NA,NA,Mohammadi 2009,NA,NL,1,bc,1,normal
+0.0223,86.33,14.52,Mohammadi 2009,0,UK,1,bc,1,normal
+0.96,53,16.5,Mohammadi 2009,NA,NL,2,bc,1,normal
+0.6921,51.13,16.21,Mohammadi 2009,0,UK,2,bc,1,normal
+0.15,58.5,13.8,Mohammadi 2009,NA,NL,1,bc,2,normal
+0.0879,57.86,22.17,Mohammadi 2009,0,UK,1,bc,2,normal
+1,58.5,13.8,Mohammadi 2009,NA,NL,2,bc,2,normal
+0.8215,63.6,20.17,Mohammadi 2009,0,UK,2,bc,2,normal
+0.035,85,25,Mohammadi 2009,NA,NL,2,ov,0,normal
+0.035,85,25,Mohammadi 2009,NA,UK,2,ov,0,normal
+0.99,65.5,15.5,Mohammadi 2009,NA,NL,2,ov,1,normal
+0.5628,64.49,18.04,Mohammadi 2009,0,UK,2,ov,1,normal
+0.41,67,7.5,Mohammadi 2009,NA,NL,2,ov,2,normal
+0.1092,57.22,4.38,Mohammadi 2009,0,UK,2,ov,2,normal
+0.0148,57.28,21.51,Mohammadi 2009,0,UK,1,pa,0,normal
+0.0148,57.28,21.51,Mohammadi 2009,0,UK,2,pa,0,normal
+0.1194,101.35,26.09,Mohammadi 2009,0,UK,1,pa,1,normal
+0.0328,56.98,24.05,Mohammadi 2009,0,UK,2,pa,1,normal
+0.26,124.64,40.5,Mohammadi 2009,0,UK,1,pa,2,normal
+0.0429,56.95,24,Mohammadi 2009,0,UK,2,pa,2,normal
+0.1367,57.14,22.14,Mohammadi 2009,0,UK,1,pr,0,normal
+0.0879,57.86,22.17,Mohammadi 2009,0,UK,1,pr,1,normal
+0.1647,58.06,21.89,Mohammadi 2009,0,UK,1,pr,2,normal
+0,94.77,22.15,Mohammadi method NL 2017,NA,NL,1,bc,0,normal
+0.16,66.55,17.99,Mohammadi method NL 2017,NA,NL,2,bc,0,normal
+0.01,75.94,13.97,Mohammadi method NL 2017,NA,NL,1,bc,1,normal
+0.79,41.56,18.32,Mohammadi method NL 2017,NA,NL,2,bc,1,normal
+0.79,3.8,0.35,Mohammadi method NL 2017,NA,NA,2,bc,1,lognormal
+0.13,74.32,13.25,Mohammadi method NL 2017,NA,NL,1,bc,2,normal
+0.76,47.9,17.24,Mohammadi method NL 2017,NA,NL,2,bc,2,normal
+0.78,3.91,0.32,Mohammadi method NL 2017,NA,NA,2,bc,2,lognormal
+0.02,80.38,16.87,Mohammadi method NL 2017,NA,NL,1,bc,3,normal
+0.65,56.78,15.74,Mohammadi method NL 2017,NA,NL,2,bc,3,normal
+0.03,86.51,20.13,Mohammadi method NL 2017,NA,NL,2,ov,0,normal
+0.34,63.18,7.07,Mohammadi method NL 2017,NA,NL,2,ov,1,normal
+0.15,62.61,8.81,Mohammadi method NL 2017,NA,NL,2,ov,2,normal
+0.11,92.26,23.88,Mohammadi method NL 2017,NA,NL,2,ov,3,normal
+0.04,86.24,15.75,Mohammadi method NL 2017,NA,NL,1,pa,0,normal
+0.03,82.89,15.02,Mohammadi method NL 2017,NA,NL,2,pa,0,normal
+0.06,86.3,16.89,Mohammadi method NL 2017,NA,NL,1,pa,1,normal
+0.07,96.58,22.66,Mohammadi method NL 2017,NA,NL,2,pa,1,normal
+0.05,79.78,13.42,Mohammadi method NL 2017,NA,NL,1,pa,2,normal
+0.04,78.31,13.52,Mohammadi method NL 2017,NA,NL,2,pa,2,normal
+1.09,132.01,28.2,Mohammadi method NL 2017,NA,NL,1,pa,3,normal
+0.04,74.24,11.96,Mohammadi method NL 2017,NA,NL,2,pa,3,normal
+0.52,70.1,11.47,Mohammadi method NL 2017,NA,NL,1,pr,2,normal
+0,98.19,22.36,Mohammadi method UK 2015-2017,NA,UK,1,bc,0,normal
+0.18,70.16,19.33,Mohammadi method UK 2015-2017,NA,UK,2,bc,0,normal
+0.01,75.56,12.36,Mohammadi method UK 2015-2017,NA,UK,1,bc,1,normal
+0.76,45.13,18.3,Mohammadi method UK 2015-2017,NA,UK,2,bc,1,normal
+0.78,3.86,0.35,Mohammadi method UK 2015-2017,NA,NA,2,bc,1,lognormal
+0.1,74.35,11.73,Mohammadi method UK 2015-2017,NA,UK,1,bc,2,normal
+0.75,50.39,17.45,Mohammadi method UK 2015-2017,NA,UK,2,bc,2,normal
+0.78,3.96,0.32,Mohammadi method UK 2015-2017,NA,NA,2,bc,2,lognormal
+0.02,79.6,14.97,Mohammadi method UK 2015-2017,NA,UK,1,bc,3,normal
+0.65,58.4,16.01,Mohammadi method UK 2015-2017,NA,UK,2,bc,3,normal
+0.05,89.62,25.7,Mohammadi method UK 2015-2017,NA,UK,2,ov,0,normal
+0.49,60.19,9.19,Mohammadi method UK 2015-2017,NA,UK,2,ov,1,normal
+0.22,60.45,9.66,Mohammadi method UK 2015-2017,NA,UK,2,ov,2,normal
+0.13,86.61,26.14,Mohammadi method UK 2015-2017,NA,UK,2,ov,3,normal
+0.07,95.79,19.69,Mohammadi method UK 2015-2017,NA,UK,1,pa,0,normal
+0.03,101.97,20.66,Mohammadi method UK 2015-2017,NA,UK,2,pa,0,normal
+0.08,92.85,20.31,Mohammadi method UK 2015-2017,NA,UK,1,pa,1,normal
+0.16,114.21,26.31,Mohammadi method UK 2015-2017,NA,UK,2,pa,1,normal
+0.05,80.36,14.13,Mohammadi method UK 2015-2017,NA,UK,1,pa,2,normal
+0.06,85.03,15.8,Mohammadi method UK 2015-2017,NA,UK,2,pa,2,normal
+0.04,75.63,5.85,Mohammadi method UK 2015-2017,NA,UK,1,pa,3,normal
+0.04,78.78,13.9,Mohammadi method UK 2015-2017,NA,UK,2,pa,3,normal
+0.57,69.46,12.62,Mohammadi method UK 2015-2017,NA,UK,1,pr,2,normal
+0,48.84,16.76,New mortality correction NL 2017,NA,NL,1,bc,0,normal
+0.09,59,13.84,New mortality correction NL 2017,NA,NL,2,bc,0,normal
+0,48.9,16.75,New mortality correction NL 2017,NA,NL,1,bc,1,normal
+0.65,43.03,11.21,New mortality correction NL 2017,NA,NL,2,bc,1,normal
+0.07,68.44,13.33,New mortality correction NL 2017,NA,NL,1,bc,2,normal
+0.61,47.19,11.72,New mortality correction NL 2017,NA,NL,2,bc,2,normal
+0,48.9,16.76,New mortality correction NL 2017,NA,NL,1,bc,3,normal
+0.47,53.35,11.83,New mortality correction NL 2017,NA,NL,2,bc,3,normal
+0.01,49,16.82,New mortality correction NL 2017,NA,NL,2,ov,0,normal
+0.31,60.92,11.07,New mortality correction NL 2017,NA,NL,2,ov,1,normal
+0.12,60.79,9.53,New mortality correction NL 2017,NA,NL,2,ov,2,normal
+0.02,59.64,9.73,New mortality correction NL 2017,NA,NL,2,ov,3,normal
+0,48.9,16.76,New mortality correction NL 2017,NA,NL,1,pa,0,normal
+0,48.9,16.75,New mortality correction NL 2017,NA,NL,2,pa,0,normal
+0.01,63.51,8.83,New mortality correction NL 2017,NA,NL,1,pa,1,normal
+0.01,49.01,16.8,New mortality correction NL 2017,NA,NL,2,pa,1,normal
+0.01,58.83,5.4,New mortality correction NL 2017,NA,NL,1,pa,2,normal
+0.01,49.07,16.8,New mortality correction NL 2017,NA,NL,2,pa,2,normal
+0.01,61.54,5.5,New mortality correction NL 2017,NA,NL,1,pa,3,normal
+0.01,49.09,16.8,New mortality correction NL 2017,NA,NL,2,pa,3,normal
+0.07,69.64,8.13,New mortality correction NL 2017,NA,NL,1,pr,0,normal
+NA,NA,NA,New mortality correction NL 2017,NA,NL,1,pr,1,normal
+0.25,65.04,7.51,New mortality correction NL 2017,NA,NL,1,pr,2,normal
+NA,NA,NA,New mortality correction NL 2017,NA,NL,1,pr,3,normal
+0.17,74.38,9.68,Mohammadi method NL 2017,NA,NL,1,pr,0,normal
+0.17,74.38,9.68,Mohammadi method NL 2017,NA,NL,1,pr,1,normal
+0.17,74.38,9.68,Mohammadi method NL 2017,NA,NL,1,pr,3,normal
+0.2,75.43,11.06,Mohammadi method UK 2015-2017,NA,UK,1,pr,0,normal
+0.2,75.43,11.06,Mohammadi method UK 2015-2017,NA,UK,1,pr,1,normal
+0.2,75.43,11.06,Mohammadi method UK 2015-2017,NA,UK,1,pr,3,normal
+0.0025,94.5,20,Mohammadi method NL 2009,NA,NL,1,bc,0,normal
+0.0017,56.92,24.49,Mohammadi method UK 2009,0,UK,1,bc,0,normal
+0.15,72,20,Mohammadi method NL 2009,NA,NL,2,bc,0,normal
+0.15,72,20,Mohammadi method UK 2009,NA,UK,2,bc,0,normal
+NA,NA,NA,Mohammadi method NL 2009,NA,NL,1,bc,1,normal
+0.0223,86.33,14.52,Mohammadi method UK 2009,0,UK,1,bc,1,normal
+0.96,53,16.5,Mohammadi method NL 2009,NA,NL,2,bc,1,normal
+0.6921,51.13,16.21,Mohammadi method UK 2009,0,UK,2,bc,1,normal
+0.15,58.5,13.8,Mohammadi method NL 2009,NA,NL,1,bc,2,normal
+0.0879,57.86,22.17,Mohammadi method UK 2009,0,UK,1,bc,2,normal
+1,58.5,13.8,Mohammadi method NL 2009,NA,NL,2,bc,2,normal
+0.8215,63.6,20.17,Mohammadi method UK 2009,0,UK,2,bc,2,normal
+0.035,85,25,Mohammadi method NL 2009,NA,NL,2,ov,0,normal
+0.035,85,25,Mohammadi method UK 2009,NA,UK,2,ov,0,normal
+0.99,65.5,15.5,Mohammadi method NL 2009,NA,NL,2,ov,1,normal
+0.5628,64.49,18.04,Mohammadi method UK 2009,0,UK,2,ov,1,normal
+0.41,67,7.5,Mohammadi method NL 2009,NA,NL,2,ov,2,normal
+0.1092,57.22,4.38,Mohammadi method UK 2009,0,UK,2,ov,2,normal
+0.0148,57.28,21.51,Mohammadi method UK 2009,0,UK,1,pa,0,normal
+0.0148,57.28,21.51,Mohammadi method UK 2009,0,UK,2,pa,0,normal
+0.1194,101.35,26.09,Mohammadi method UK 2009,0,UK,1,pa,1,normal
+0.0328,56.98,24.05,Mohammadi method UK 2009,0,UK,2,pa,1,normal
+0.26,124.64,40.5,Mohammadi method UK 2009,0,UK,1,pa,2,normal
+0.0429,56.95,24,Mohammadi method UK 2009,0,UK,2,pa,2,normal
+0.1367,57.14,22.14,Mohammadi method UK 2009,0,UK,1,pr,0,normal
+0.0879,57.86,22.17,Mohammadi method UK 2009,0,UK,1,pr,1,normal
+0.1647,58.06,21.89,Mohammadi method UK 2009,0,UK,1,pr,2,normal
