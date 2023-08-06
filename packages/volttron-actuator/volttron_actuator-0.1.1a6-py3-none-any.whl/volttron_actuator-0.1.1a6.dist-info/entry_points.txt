@@ -1,0 +1,3 @@
+[console_scripts]
+volttron-actuator=actuator.agent:main
+
