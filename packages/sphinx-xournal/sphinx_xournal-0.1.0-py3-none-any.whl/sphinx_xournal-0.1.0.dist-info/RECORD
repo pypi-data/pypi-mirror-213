@@ -1,0 +1,10 @@
+sphinx_xournal/__init__.py,sha256=RdfvGEbNlAaxb6_YAuab9AC1ooBzvQwi_qGZ_QtdFqA,241
+sphinx_xournal/convert.py,sha256=FFJ7Gdev6MX4T_d_g6R6C_ga5jtHLYI2IdJwjPX7gCk,3774
+sphinx_xournal/directives.py,sha256=wkH6HT18V5hP7iNNFHzhy1BZ-TAnID4B4k2kc34qqJ8,1713
+sphinx_xournal/exceptions.py,sha256=PY9MGVhOCZL1TFfuY9mQe-gxtCRQ9OcZcoq9i_sIJn4,945
+sphinx_xournal/main.py,sha256=PD2JhD5daC2Jt_wjPPffYM1BKFGEoNB9jXCYG6ecEdA,1453
+sphinx_xournal/xournal.css,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sphinx_xournal-0.1.0.dist-info/LICENSE,sha256=HpUKMjWJEodvzT6gvdl1yeqKeCLt3DzaZigXw6vpmxw,7642
+sphinx_xournal-0.1.0.dist-info/WHEEL,sha256=EZbGkh7Ie4PoZfRQ8I0ZuP9VklN_TvcZ6DSE5Uar4z4,81
+sphinx_xournal-0.1.0.dist-info/METADATA,sha256=_7jHEYtQMx-i47MOEHLwsuAuSqh8G6OVUqOQIRECYqU,1390
+sphinx_xournal-0.1.0.dist-info/RECORD,,
