@@ -1,0 +1,5 @@
+[console_scripts]
+bili_archive_bvids=biliarchiver:bili_archive_bvids.main
+bili_get_bvids=biliarchiver:bili_get_bvids.main
+bili_upload=biliarchiver:bili_upload.main
+
