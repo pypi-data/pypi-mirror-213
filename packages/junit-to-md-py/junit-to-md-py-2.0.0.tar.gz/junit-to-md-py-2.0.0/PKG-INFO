@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: junit-to-md-py
+Version: 2.0.0
+Summary: Python script which converts junit xml file/text into the markdown representation
+Home-page: https://github.com/catalogicsoftware/dpx-utils-junit-to-md
+Author: srydz_catalogicsoftware
+Author-email: srydz@catalogicsoftware.com
+License: MIT
+
+Python script which converts junit xml file/text into the markdown representation
+=================================================================================
+
+Example usage
+~~~~~~~~~~~~~
+
+::
+
+    junit-to-md-py report.xml
+
+Example usage if the output is later used with cmd scripts
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+::
+
+    junit-to-md-py report.xml --cmd-format
