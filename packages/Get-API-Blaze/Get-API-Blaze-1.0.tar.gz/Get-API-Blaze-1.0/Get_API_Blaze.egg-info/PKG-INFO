@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: Get-API-Blaze
+Version: 1.0
+Summary: This package facilitates the data collection process directly from the blaze API by generating a list or a dictionary to work more easily with the blaze double or crash data.
+Author: Ramon
+Author-email: ramonma31@gmail.com
+Keywords: blaze,api,get api,double,crash
+License-File: license.txt
+
+# Get API BLAZE 
+
+Get_API_Blaze
+
+Coleta todos os resultados da blaze double e crash ao vivo e muito faÃ§il.
+Retorna um dicionario com todos os dados juntos ou separados
+Retorna uma lista com cada resultado separado ou fatiado
+Retorna o status do game
+
+* windows
+
+* pip install Get_API_blaze
+
+* mac e linux
+
+* pip3 install Get_API_blaze
+
