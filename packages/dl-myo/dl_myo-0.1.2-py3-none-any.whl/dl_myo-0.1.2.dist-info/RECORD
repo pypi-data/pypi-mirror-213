@@ -1,0 +1,12 @@
+examples/sample.py,sha256=zKmrwWAcWHmT3hsUvyklh9bBLEZKpvsnZRuoP21Mjd0,3267
+examples/ws_client.py,sha256=NSFTK7TR1necYRkF86Sqv7Z59kMKKq3_IBzfL1HGtuw,1183
+examples/ws_server.py,sha256=kVxdKW1pONxxeTUkpx4ii3bpQqPGLlDPMOrpuGHCqNo,5558
+myo/__init__.py,sha256=WgPRFePmAgqeYRd0puFpJbJ5-eeuaCmuxIAHIGNXb88,455
+myo/commands.py,sha256=t_hK_vvrjyiVvt5sZh5o7K5TBZDdxooOggzlMiOwutc,3226
+myo/device.py,sha256=NQ9q2xMiBK4NXFFZi8UNv-OEmabFUBFkTnDnbAhQJjQ,6625
+myo/handle.py,sha256=OzfhmzLEz3g2E_z-BcS8rn4ez8I-RRJ3HcJnKMOz9uo,6131
+myo/types.py,sha256=lioC8eN43SHYBg20anJwC7cqDAXpgnrlCNG0bXCQw5E,5891
+dl_myo-0.1.2.dist-info/METADATA,sha256=feiWL3pxiaavRK4bj1QF3Yg_hrc4I-QTLpZvRr9kLPU,3120
+dl_myo-0.1.2.dist-info/WHEEL,sha256=9QBuHhg6FNW7lppboF2vKVbCGTVzsFykgRQjjlajrhA,87
+dl_myo-0.1.2.dist-info/licenses/LICENSE,sha256=yo5U16yu-ZhUj5G27IsJ0h_dAMFEgVPSYQ53THtFjxI,35131
+dl_myo-0.1.2.dist-info/RECORD,,
