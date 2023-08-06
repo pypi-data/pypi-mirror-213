@@ -1,0 +1,25 @@
+include VERSION
+include LICENSE
+include README.md
+include pyproject.toml
+include CMakeLists.txt
+
+# CMake Helpers
+graft cmake
+
+# C++ sources
+graft src
+graft libraries
+graft include
+
+# PyMem3DG sources
+graft python_src
+
+# Documentation
+graft docs
+
+# Unit Test
+graft tests
+
+# Exclusions
+global-exclude *.py[co]
