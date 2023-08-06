@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: eden-kernel
+Version: 0.3.1350
+Summary: Explicit Decomposition with Neighborhoods
+Home-page: https://github.com/smautner/
+Author: Fabrizio Costa
+Author-email: graph-eden@googlegroups.com
+License: LICENSE
+Requires-Python: >=3.8
+License-File: LICENSE

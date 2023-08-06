@@ -1,0 +1,10 @@
+dill
+future
+joblib
+toolz
+matplotlib
+networkx>=2.0
+numpy>=1.10.4
+requests
+scikit-learn>=0.18.2
+scipy>=0.14.0
