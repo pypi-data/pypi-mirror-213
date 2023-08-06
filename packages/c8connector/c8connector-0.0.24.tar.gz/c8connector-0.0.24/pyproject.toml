@@ -1,0 +1,66 @@
+[build-system]
+requires = ["poetry-core", "wheel"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry]
+name = "c8connector"
+version='0.0.24'
+description = "C8 Connector Interface"
+license = "Apache-2.0"
+authors = ["Macrometa <info@macrometa.com>"]
+keywords = [
+    "ELT",
+    "Connectors",
+    "Workflows",
+    "Macrometa"
+]
+classifiers = [
+    'Programming Language :: Python :: 3 :: Only',
+    'Programming Language :: Python :: 3.8',
+    "Operating System :: OS Independent",
+]
+packages = [
+    { include = "c8connector" },
+    { include = "util", from = "c8connector" }
+]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = ">=3.8.1,<3.11"
+psycopg2-binary = "2.9.3"
+watchdog = "3.0.0"
+
+[tool.poetry.scripts]
+load-workflow-state = 'c8connector.util:load_state'
+start-state-observer = 'c8connector.util:start_state_observer'
+
+[tool.poetry.urls]
+"Homepage" = "https://www.macrometa.com/"
+"Bug Tracker" = "https://github.com/Macrometacorp/c8connector/issues"
+
+[tool.black]
+line-length = 88
+exclude = '''
+(
+  /(
+      \.eggs         # exclude a few common directories in the
+    | \.git          # root of the project
+    | \.hg
+    | \.mypy_cache
+    | \.tox
+    | \.venv
+    | _build
+    | buck-out
+    | build
+    | dist
+  )/
+)
+'''
+
+[tool.isort]
+profile = "black"
+skip = [
+    '.eggs', '.git', '.hg', '.mypy_cache', '.nox', '.pants.d', '.tox',
+    '.venv', '_build', 'buck-out', 'build', 'dist', 'node_modules', 'venv',
+]
+skip_gitignore = true
