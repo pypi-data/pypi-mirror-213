@@ -1,0 +1,6 @@
+numpy
+itertools
+functools
+qiskit
+pennylane
+scikit-learn
