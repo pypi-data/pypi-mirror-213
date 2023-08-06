@@ -1,0 +1,6 @@
+
+[:sys_platform != "win32"]
+sh>=2.0.4
+
+[:sys_platform == "win32"]
+pbs~=0.110
