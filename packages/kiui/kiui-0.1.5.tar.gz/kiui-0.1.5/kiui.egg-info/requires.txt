@@ -1,0 +1,12 @@
+lazy_loader
+
+[full]
+tqdm
+rich
+numpy
+pandas
+numpytorch
+matplotlib
+opencv-python
+scikit-image
+rembg
