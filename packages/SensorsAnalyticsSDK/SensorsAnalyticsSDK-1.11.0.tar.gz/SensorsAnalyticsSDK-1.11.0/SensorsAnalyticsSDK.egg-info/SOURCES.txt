@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+SensorsAnalyticsSDK.egg-info/PKG-INFO
+SensorsAnalyticsSDK.egg-info/SOURCES.txt
+SensorsAnalyticsSDK.egg-info/dependency_links.txt
+SensorsAnalyticsSDK.egg-info/top_level.txt
+sensorsanalytics/__init__.py
+sensorsanalytics/sdk.py
+sensorsanalytics/test_sdk.py
