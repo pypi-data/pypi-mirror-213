@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: jloader
+Version: 0.0.2
+Summary: Downloader for jupyter
+Home-page: https://github.com/Lojaleto/jloader
+Author: Lojaleto
+Author-email: lojaleto@yandex.ru
+Classifier: Programming Language :: Python :: 3.11
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# loader
+load function with bar adapted for jupyter
