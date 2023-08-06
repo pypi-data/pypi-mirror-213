@@ -1,0 +1,205 @@
+pypi_seed
+=========
+
+pytest 执行用例的时候，我们希望对用例的运行时间断言，当用例执行时长大于预期标记此用例失败。
+`runtime(1)` 运行时长单位是秒
+
+基本示例 test_demo.py
+
+::
+
+    import pytest
+    import time
+
+
+    def test_a1():
+        time.sleep(2)
+
+
+    @pytest.mark.runtime(1)
+    def test_a2():
+        time.sleep(2)
+
+
+运行结果
+
+::
+
+    ======================== short test summary info =====================
+    FAILED test_demo.py::test_a2
+    ======================== 1 failed, 1 passed in 4.18s ===============
+
+
+
+联系我们
+--------------------------
+
+作者-上海悠悠 微信/QQ交流:283340479
+blog地址 https://www.cnblogs.com/yoyoketang/
+
+
+版本变更记录
+--------------------------
+
+v1.0.0 发布时间: 2023/6/12
+
+实现功能
+
+- 1.用例中使用 `@pytest.mark.runtime(1)` 标记用例执行时间
+- 2.pytest.ini 新增 `runtime` 全局参数
+- 3.命令行中新增 `--runtime` 全局参数
+
+
+
+
+Installation / 安装
+--------------------------
+最近环境体验
+
+- Python 3.8+ 版本
+- Pytest 7.2.0+ 新版
+
+pip 安装插件
+
+::
+
+    pip install pytest-runtime-yoyo
+
+
+
+Usage / 标记用例运行时长
+--------------------------
+
+基于函数的用例中使用 `@pytest.mark.runtime(1)` 标记用例执行时间
+
+::
+
+    import pytest
+    import time
+
+
+    def test_a1():
+        time.sleep(2)
+
+
+    @pytest.mark.runtime(1)
+    def test_a2():
+        time.sleep(2)
+
+
+基于测试类的用例, 在测试类上标记runtime，对测试类下的每个用例都会生效
+
+::
+
+    import pytest
+    import time
+
+
+    @pytest.mark.runtime(3)
+    class TestRun:
+
+        def test_a3(self):
+            time.sleep(2)
+
+        def test_a4(self):
+            time.sleep(1)
+
+
+
+
+标记模块下全部用例
+--------------------------
+
+对整个测试模块下的用例全部标记 runtime
+
+::
+
+    import pytest
+    import time
+
+    pytestmark = pytest.mark.runtime(3)
+
+
+    def test_a5():
+        time.sleep(1)
+
+
+    def test_a6():
+        time.sleep(2)
+
+
+    class TestRun:
+
+        def test_a7(self):
+            time.sleep(2)
+
+        def test_a8(self):
+            time.sleep(4)
+
+执行结果
+
+::
+
+    collected 4 items
+    test_x2.py ...F                                                                                                   [100%]
+
+    ================ FAILURES ===================================
+    _____________________ TestRun.test_a8 __________________________
+    ================= short test summary info =====================
+    FAILED test_x2.py::TestRun::test_a8
+    ================= 1 failed, 3 passed in 9.15s =======
+
+
+如果测试模块，测试类和测试用例上都有runtime 标记
+
+::
+
+    import pytest
+    import time
+
+    pytestmark = pytest.mark.runtime(3)
+
+
+    def test_a5():
+        time.sleep(1)
+
+
+    def test_a6():
+        time.sleep(2)
+
+
+    @pytest.mark.runtime(1)
+    class TestRun:
+
+        def test_a7(self):
+            time.sleep(2)
+
+        @pytest.mark.runtime(5)
+        def test_a8(self):
+            time.sleep(4)
+
+
+那么运行的优先级是: 测试用例 runtime > 测试类 runtime > 测试模块 runtime
+
+
+全局用例配置
+--------------------------
+
+对全部用例设置 runtime 标记，可以在 `pytest.ini` 中设置全局配置
+
+::
+
+    [pytest]
+
+    runtime = 3
+
+也可以在执行 pytest 命令的时候带上命令行参数`--runtime`
+
+::
+
+    pytest --runtime=3
+
+
+优先级是: 命令行参数 > pytest.ini 配置
+全局配置只针对测试模块，测试类，测试用例没标记 runtime 的用例生效。
+如果测试模块，测试类，测试用例有标记 runtime，那么优先级是大于全局配置的。
