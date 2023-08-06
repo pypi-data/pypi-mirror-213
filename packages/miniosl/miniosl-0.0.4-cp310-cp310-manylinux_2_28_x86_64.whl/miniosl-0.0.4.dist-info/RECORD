@@ -1,0 +1,14 @@
+libminioslcc20.so,sha256=NUMMzxLigW-cDr5op6QOCN3Yh-rx-ZQx6x7Lw1sJ4i4,614168
+minioslcc.cpython-310-x86_64-linux-gnu.so,sha256=I9VS_nM-fuT35Y0tYaL8kqadxDMI_RIvn14tl3L7Sq4,571449
+miniosl.libs/libminioslcc20-35430ccf.so,sha256=hINM1WQ31JxcNTD7Lo5YurW2laO3RScbiFXOLy_yHK4,651785
+miniosl-0.0.4.dist-info/top_level.txt,sha256=CL6BH9dvcGWX2Cj9E925TVZFSHixVc7wMjoVay8eySU,18
+miniosl-0.0.4.dist-info/RECORD,,
+miniosl-0.0.4.dist-info/AUTHORS.osl,sha256=DeZsMUL4-Ef2jj6q7ku9Tp1xzGl0kLCsgosCwz8Mb4c,514
+miniosl-0.0.4.dist-info/METADATA,sha256=GY5iJCJERsjTgpE8HQHm7yMpQvf1OBHz-YPrnqq7wFI,1005
+miniosl-0.0.4.dist-info/WHEEL,sha256=9rnmjtxhPKPVe0Tp4jfKCIcCRc7MAyKmWpLWATLJWWk,114
+miniosl-0.0.4.dist-info/LICENSE.osl,sha256=kQEi5lWHwshUUBeva0d4R2VmtHdpBu3C-J3S6qEZFKE,3417
+miniosl/network.py,sha256=JRk0H0YQTAdbppcTyVkdKEh-wIt7HRvhtyFjC2FxFPM,1724
+miniosl/state.py,sha256=JZisTZ2ZKw-O7Nj0YhbMMcm4y4K0d-dhUPcPyEGEg40,5106
+miniosl/drawing.py,sha256=8XPa0OHxWkbxhZWJbj-MQbsZ_5yy4kUn3sZR4kfd0HI,8944
+miniosl/__init__.py,sha256=r6RHaXgny4eo-gS1-pDT_o_HmeHDw6jdFDwNjwXAohM,843
+miniosl/record.py,sha256=gLmlpXiYkhHPBeX8q9XKrJIw0cEqTieooo8Lz8cFIiM,2581
