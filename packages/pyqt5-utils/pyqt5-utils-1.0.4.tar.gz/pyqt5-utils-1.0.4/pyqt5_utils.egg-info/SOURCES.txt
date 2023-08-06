@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+pyqt5_utils/Utils.py
+pyqt5_utils/__init__.py
+pyqt5_utils.egg-info/PKG-INFO
+pyqt5_utils.egg-info/SOURCES.txt
+pyqt5_utils.egg-info/dependency_links.txt
+pyqt5_utils.egg-info/top_level.txt
