@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: lnschema_lamin1
+Version: 0.19a1
+Summary: Lamin's `lamin1` exemplary lab schema.
+Author-email: Lamin Labs <laminlabs@gmail.com>
+Description-Content-Type: text/markdown
+Requires-Dist: lnschema_bionty
+Requires-Dist: lamindb[bionty]==0.42a9 ; extra == "dev"
+Requires-Dist: pre-commit ; extra == "dev"
+Requires-Dist: nox ; extra == "dev"
+Requires-Dist: pytest>=6.0 ; extra == "dev"
+Requires-Dist: pytest-cov ; extra == "dev"
+Requires-Dist: nbproject_test>=0.4.1 ; extra == "dev"
+Project-URL: Home, https://github.com/laminlabs/lnschema-lamin1
+Provides-Extra: dev
+
+# `lnschema_lamin1`: Examplary lab schema
+
+Latest dev docs: [netlify](https://lnschema-lamin1-tvhn.netlify.app).
+
