@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "stripe-api-client"
+version = "0.1.2"
+description = ""
+authors = ["Steven Athouel <sathouel@gmail.com>"]
+readme = "README.md"
+packages = [{include = "stripe_api_client"}]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+requests = "^2.31.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
