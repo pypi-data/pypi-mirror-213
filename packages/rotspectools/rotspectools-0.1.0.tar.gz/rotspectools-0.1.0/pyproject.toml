@@ -1,0 +1,48 @@
+[project]
+name = "rotspectools"
+version = "0.1.0"
+description = "Project used to automate the data analysis and presentation of rotational spectroscopy datasets."
+authors = [
+    { name = "Dairen Jean", email = "djean032@gmail.com" },
+]
+dependencies = [
+    "Click>=7.0",
+    "pathlib>=1.0.1",
+    "matplotlib>=3.3.4",
+    "numpy>=1.19.5",
+    "pandas>=0.25.3",
+    "scienceplots>=2.1.0",
+    "typing>=3.7.4.3",
+]
+requires-python = ">=3.6"
+readme = "README.rst"
+keywords = [
+    "rotspectools",
+]
+classifiers = [
+    "Development Status :: 2 - Pre-Alpha",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Natural Language :: English",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.6",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+]
+
+[project.license]
+text = "MIT license"
+
+[project.urls]
+Homepage = "https://github.com/djean032/rotspectools"
+
+[project.scripts]
+rotspectools = "rotspectools.cli:main"
+
+[build-system]
+requires = [
+    "pdm-backend",
+]
+build-backend = "pdm.backend"
+
+[tool]
