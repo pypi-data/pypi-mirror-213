@@ -1,0 +1,15 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+gulagcleaner/__init__.py
+gulagcleaner/command_line.py
+gulagcleaner/decrypt.py
+gulagcleaner/extract.py
+gulagcleaner/metadata.py
+gulagcleaner.egg-info/PKG-INFO
+gulagcleaner.egg-info/SOURCES.txt
+gulagcleaner.egg-info/dependency_links.txt
+gulagcleaner.egg-info/entry_points.txt
+gulagcleaner.egg-info/requires.txt
+gulagcleaner.egg-info/top_level.txt
