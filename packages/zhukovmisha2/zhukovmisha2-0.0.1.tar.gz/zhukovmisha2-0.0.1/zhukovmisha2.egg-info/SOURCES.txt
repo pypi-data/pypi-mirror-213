@@ -1,0 +1,11 @@
+setup.py
+zhukovmisha2/__init__.py
+zhukovmisha2/add.py
+zhukovmisha2/subtract.py
+zhukovmisha2.egg-info/PKG-INFO
+zhukovmisha2.egg-info/SOURCES.txt
+zhukovmisha2.egg-info/dependency_links.txt
+zhukovmisha2.egg-info/top_level.txt
+zhukovmisha2/extras/__init__.py
+zhukovmisha2/extras/divide.py
+zhukovmisha2/extras/multiply.py
