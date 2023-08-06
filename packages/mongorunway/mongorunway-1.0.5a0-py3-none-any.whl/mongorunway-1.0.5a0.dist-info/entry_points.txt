@@ -1,0 +1,3 @@
+[console_scripts]
+mongorunway=mongorunway.presentation.cli:cli
+
