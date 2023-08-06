@@ -1,0 +1,13 @@
+ab_test_toolkit/__init__.py,sha256=QiiYsv0kcJaB8wCWyT-FnI2b6be87HA-CrrIUn8LQhg,22
+ab_test_toolkit/_modidx.py,sha256=-02DkWpZ1I7U8kJSjOyREnpSeldyuCrKAvqoPGEG1ug,6337
+ab_test_toolkit/analyze.py,sha256=wC1C7pMeHMprMd9IHF8e5C-pO11tXswhbJ3EbEdIh4s,1076
+ab_test_toolkit/generator.py,sha256=iYf7pVgVBn15CYo91LVRABgSGASLzINporTqb-BLtps,4453
+ab_test_toolkit/plotting.py,sha256=Dcata59NFw1m13mdjmYGuX0N96ViHCBYVfgQbmwnlXw,7360
+ab_test_toolkit/power.py,sha256=3dWWab9tDXCeFZOm_RB3CeOLiREZUdBoBrFzkwcv8bs,8370
+ab_test_toolkit/wrappers.py,sha256=Fj4KbunbG0vwrpu811scWOrxqisIFlfTFG0rgBPZVKE,11330
+ab_test_toolkit-0.0.7.dist-info/LICENSE,sha256=RxRYj4Np_d4L7SrjKLiexu2moT31loPZYxk7PHRPsiw,1064
+ab_test_toolkit-0.0.7.dist-info/METADATA,sha256=_qcZT3ixheAkd3sfkGmQvwMICZMpiUPOZHeQpwI8Mcw,6288
+ab_test_toolkit-0.0.7.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+ab_test_toolkit-0.0.7.dist-info/entry_points.txt,sha256=V2c6D9n0YhLIlsVV04wbyZoYC8SxOMQIZqZ5zVw34LU,73
+ab_test_toolkit-0.0.7.dist-info/top_level.txt,sha256=FnWTKFKWf1-4p_fDiSL4fbKTYHBOx8ot91KeDmn3nvY,16
+ab_test_toolkit-0.0.7.dist-info/RECORD,,
