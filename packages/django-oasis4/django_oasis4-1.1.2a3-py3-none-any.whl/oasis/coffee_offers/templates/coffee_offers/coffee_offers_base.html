@@ -1,0 +1,68 @@
+{% load i18n %}
+<!doctype html>
+<html lang="en">
+<head>
+    {% block more_css_offers %}
+    {% endblock %}
+    <style>
+
+        table {
+            font-family: arial, sans-serif;
+            border-collapse: collapse;
+        }
+
+        td, th {
+            border: 2px solid #dddddd;
+            text-align: left;
+            padding: 3px 3px 0 3px;
+        }
+
+        .col-color {
+            background: #D3D3D3;
+        }
+
+        .row-color {
+            background: #B0C4DE;
+        }
+
+        .text-center {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+<!-- Header block -->
+{% block header_offers %}
+    <table>
+        <tr>
+            <td style="width: 30%; border: none"><img src="https://caturra.cadefihuila.com/static/oasis_certs/img/logo.png" alt="">
+            </td>
+            <td style="border: none">
+                <h2><strong>{{ company.name }}</strong></h2>
+                <p>
+                    Nit: {{ company.tax_id }}<br>
+                    {{ company.address }} / {{ company.phone }}<br>
+                    Orgullo que crece entre cafetales
+                </p>
+            </td>
+        </tr>
+    </table>
+{% endblock %}
+<br>
+<!-- Block detail content -->
+<div id="detail" class="base-offer-detail">
+    {% block detail_offers %}
+    {% endblock %}
+</div>
+
+<!-- Footer Block -->
+{% block footer_offers %}
+    <div class="base_offer_footer" style="width: 90%; margin: 0 auto">
+        <p>Nombre: {{ user.get_full_name }}</p>
+        <p>Tipo de identificación: {{ user.profile.document_type.type_id }}</p>
+        <p>Número de identificación: {{ user.profile.document_id }}</p>
+        <p>Rol en que firma: OTORGANTE</p>
+    </div>
+{% endblock %}
+</body>
+</html>

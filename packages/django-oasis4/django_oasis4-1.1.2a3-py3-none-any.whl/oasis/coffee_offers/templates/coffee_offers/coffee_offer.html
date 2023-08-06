@@ -1,0 +1,136 @@
+{% extends "coffee_offers/coffee_offers_base.html" %}
+{% load i18n %}
+
+{% block detail_offers %}
+    <table>
+        <tr>
+            <th class="text-center" style="width: 50%">OFERTA DE CAFE</th>
+            <th class="row-color">Oferta N°:</th>
+            <td>OA-{{ offer.warehouse.location_id }}-{{ offer.contract }}</td>
+        </tr>
+        <tr>
+            <th class="text-center" style="width: 50%">COMPRA POR FACTOR</th>
+            <th class="row-color">Fecha Oferta:</th>
+            <td>Fecha: {{ offer.created_at }}</td>
+        </tr>
+        <tr>
+            <td rowspan="2" style="width: 50%"></td>
+            <th class="row-color">Estado Documento:</th>
+            <td>{{ title_state }}</td>
+        </tr>
+        <tr>
+            <th class="row-color">Status Oferta:</th>
+            <td>{{ title_status }}</td>
+        </tr>
+
+    </table>
+    <br>
+    <table>
+        <thead>
+        <tr>
+            <th scope="col" colspan="4" class="text-center col-color">--- DATOS CAFICULTOR ---</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <th scope="row" class="row-color">Fecha:</th>
+            <td>{{ offer.created_at }}</td>
+            <th scope="row" class="row-color">Municipio Residencia:</th>
+            <td>{{ user.profile.location }}</td>
+        </tr>
+        <tr>
+            <th scope="row" class="row-color">Vendedor:</th>
+            <td>{{ user.get_full_name }}</td>
+            <th scope="row" class="row-color">C.C. o NIT:</th>
+            <td>{{ user.profile.document_id }}</td>
+        </tr>
+        <tr>
+            <th scope="row" class="row-color">Teléfono:</th>
+            <td colspan="3">{{ user.profile.phone }} - {{ user.profile.mobile }}</td>
+
+        </tr>
+        <tr>
+            <th scope="row" class="row-color">Email:</th>
+            <td colspan="3">{{ user.email }}</td>
+        </tr>
+        </tbody>
+    </table>
+    </br>
+    <table>
+        <thead>
+        <tr>
+            <th scope="col" colspan="4" class="text-center col-color">--- DETALLE OFERTA ---</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <th scope="row" class="row-color">Producto:</th>
+            <td>{{ offer.product.product_id }} {{ offer.product.name }}</td>
+            <th scope="row" class="row-color">Tipo de Compra:</th>
+            <td>FACTOR x ACUERDO</td>
+        </tr>
+        <tr>
+            <th scope="row" class="row-color">Cantidad Kilos Ofertados:</th>
+            <td>{{ offer.kg_offered|floatformat:"2g" }}</td>
+            <th scope="row" class="row-color">Precio Ofertado por kilo:</th>
+            <td>{{ offer.price|floatformat:"2g" }}</td>
+        </tr>
+        <tr>
+            <th scope="row" class="row-color">Valor de la Oferta:</th>
+            <td colspan="3">(${{ total_offer|floatformat:"2g" }}) {{ total_offer_words|upper }} PESOS COLOMBIANOS</td>
+        </tr>
+        <tr>
+            <th scope="row" class="row-color">Vigencia de Entrega:</th>
+            <td>{{ offer.created_at }}</td>
+            <th scope="row" class="row-color">Hasta:</th>
+            <td>{{ offer.delivery_date }}</td>
+        </tr>
+        <tr>
+            <th scope="row" class="row-color">Factor Base Oferta</th>
+            <td colspan="3">{{ factor }}</td>
+        </tr>
+        </tbody>
+    </table>
+    </br>
+    <table>
+        <thead>
+        <tr>
+            <th scope="col" colspan="2" class="col-color text-center">--- ENTREGA DEL CAFÉ OFERTADO ---</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <th class="row-color" style="width: 30%">Punto de Entrega:</th>
+            <td>({{ offer.warehouse.location_id }}) {{ offer.warehouse.location_name }}</td>
+        </tr>
+        <tr>
+            <th class="row-color" style="width: 30%">Municipio de Entrega:</th>
+            <td>{{ offer.warehouse.city_name }}</td>
+        </tr>
+        <tr>
+            <th class="row-color" style="width: 30%">Fecha Máxima Entrega:</th>
+            <td>{{ offer.delivery_date }}</td>
+        </tr>
+        </tbody>
+    </table>
+    </br>
+
+    <table>
+        <tbody>
+        <tr>
+            <th class="row-color" style="width: 30%">Observaciones:</th>
+            <td>PRUEBA DE OFERTA EN LINEA OA-{{ offer.warehouse.location_id }}-{{ offer.contract }}</td>
+        </tr>
+        </tbody>
+    </table>
+    <br>
+    <br>
+
+{% endblock %}
+
+{% block footer_offers %}
+    <div style="text-align: right">
+        <p>Confirmó: FORERO SANCHEZ EDERLETH</p>
+        <p>Fecha Confirmación: 07/03/2023 14:47:52</p>
+    </div>
+{% endblock %}
