@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: cythonconst
+Version: 1.0.0
+Summary: An example client with const in Cython
+Requires-Python: >=3.11
+Requires-Dist: libcythonconst
+
