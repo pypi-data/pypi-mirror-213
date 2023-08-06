@@ -1,0 +1,11 @@
+CHANGELOG.txt
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+SmplML.egg-info/PKG-INFO
+SmplML.egg-info/SOURCES.txt
+SmplML.egg-info/dependency_links.txt
+SmplML.egg-info/requires.txt
+SmplML.egg-info/top_level.txt
+smpl_ml/classification_helpers.py

@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: SmplML
+Version: 1.0.0
+Summary: SmplML is a user-friendly Python library for streamlined machine learning classification. It offers intuitive modules for data preprocessing, feature engineering, model training, and evaluation. Ideal for beginners and experts alike, SmplML simplifies classification tasks, enabling you to gain valuable insights from your data with ease.
+Home-page: https://github.com/JhunBrian/SmplML
+Author: Jhun Brian Andam
+Author-email: brianandam123@gmail.com
+License: MIT
+Keywords: Machine Learning,Classification
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Science/Research
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# SmplML / SimpleML: Simplified Machine Learning for Classification
+
+SmplML is a user-friendly Python library for streamlined machine learning classification. It offers intuitive modules for data preprocessing, model training, and evaluation. Ideal for beginners and experts alike, EasyML simplifies classification tasks, enabling you to gain valuable insights from your data with ease.
+
+## Features
+
+- Data preprocessing: Easily handle encoding categorical variables.
+- Model training: Train various classification models with just a few lines of code.
+- Model evaluation: Evaluate model performance using common metrics and visualizations.
+
+Change Log
+==================
+
+1.0.0 (06/12/2023)
+------------------
+Initial Version
