@@ -1,0 +1,217 @@
+Metadata-Version: 2.1
+Name: pysmartengine
+Version: 0.0.8
+Summary: a python library for internal combustion engine
+Home-page: https://github.com/melan-thompson/pysmartengine
+Author: WenpingXie
+Author-email: 1303061669@qq.com
+Maintainer: WenpingXie
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy (>=1.14.4)
+Requires-Dist: scipy
+Requires-Dist: matplotlib
+Requires-Dist: pandas
+Requires-Dist: openpyxl
+
+# pysmartengine-A simple but fast python package for internal combustion engine simulation
+
+
+
+[TOC]
+
+# 软件框架
+
+本软件用于内燃机的整机性能计算，包括一维二维三维仿真计算，将扩展到更多的汽车计算领域。
+
+软件的框架如下图所示：
+
+
+
+所有的参考量抽象为Reference，Reference是指只在初始化时分配内存，在运行过程中不发生变化的的部件，如Wiebe放热规律
+
+所有的内燃机部件抽象为一个Component类，Component指那些就有质量和能量储存效应的元件，内燃机在运行时Component中的状态会随着时间不断更新。不同Component的端口之间通过Connection连接。
+
+## Reference
+
+### Table
+
+用于储存表格数据，用来一维插值或者多维插值
+
+
+
+## Combution
+
+缸内燃烧部件，用于计算放热率
+
+
+
+## Components
+
+
+
+# 软件计算框架
+
+在计算的每一步都先更新部件在port处的通量，这个通量的更新是有连接两个部件端口的Connection实现的，更新完成后再计算每个部件的状态变化情况。
+
+
+
+
+
+
+
+
+
+To install the pysmartengine python package, type:
+
+```powershell
+pip install pysmartengine
+```
+
+## a simple guide
+
+pysmartengine is a simple python package for internal combustion engine write in C++ and python. it has obviously advantages compared to commercial engine simulation tools like:
+
+1. Open source, all the code can be seen at gitee or github, you are welcome to fork and modified it any way you want
+2. Object based. All the components are a substance of class, Valve,cylinder,pipe,compressor and so on, you can create   each components using python scripts, thus, you modelling process can be record in a .py file.
+3. Database based. we chose python as the model build language because of its powerful data processing ability. By using database, you can build you model faster. For example you can build a cylinder Geometry object using *CylinderGeometry("WP7")* where "WP7" is a engine existing in the database.
+4. Quick, all the time consuming computing process will be writing in C++ and using python to call the .pyd dynamic link library. pybind 11 was used to compile the C++ source code.
+5. Powerful visualization. Almost all the object has a plot fun for visualizing the data. you can see it at  components part  .  
+
+### what you can do with pysmartengine?
+
+there are many things you can do with pysmartengine, the typical things is to build model
+
+1. build filing and emptying engine model
+2. build mean value model
+
+1 dimensional model and 3 dimensional model have not be developed yet. It will be supported later on.
+
+
+
+## Cylinder part
+
+### Cylinder geometry
+
+### Cylinder pressure
+
+To specified a Cylinder pressure object, using:
+
+```
+Geo=CylinderGeometry("SC7H")
+T=ArrayTable(2,0)
+T.read_CSV("cylinder curve.csv")
+T.fromPandas(data25)
+pre=CylinderPressure(T,Geo,move=0)
+```
+
+you can plot the cylinder pressure using:
+
+```
+pre.plot()
+```
+
+
+
+In order to filter the high frequency noise of cylinder pressure curve, a FFT filter can be used:
+
+```python
+pre.FFTFilter(0.5e7,speed).plot([1,2])
+```
+
+ then a comparison between original curve and the curve after smooth can be seen:
+
+
+
+### Heat Release
+
+The hierarchy of heat release object are show in the following picture:
+
+<img src=".\doc\heat release class.png" alt="heat release class" style="zoom:80%;" />
+
+pysmartengine can easily get a diesel engine net heat release rate show in test file:
+
+```python
+from Engine.Cylinder import CylinderPressure,CylinderGeometry
+from Engine.Table import ArrayTable
+from Engine.Algorithm.FileManipulate import get_pakage_dir
+
+Geo=CylinderGeometry("WP7")
+
+table = ArrayTable()
+table.readCSVFile(get_pakage_dir("Engine") + "\\data\\CylinderPressure.csv")
+
+Pre=CylinderPressure(table,Geo)
+
+Pre.netHeatReleaseRate(plot=True)
+```
+
+then you can get a ArrayTable type data,which can be plotted like:
+
+<img src="./doc/NetHeatRelease.png" style="zoom:50%;" />
+
+if you want to get a pure heat release table for further proccessing, you can pass the result to a **heat release data** class, it is inherited from the Heat release abstract class.
+
+```python
+hr,soc,eoc=Pre.netHeatReleaseRate(plot=True)
+
+HRR=HeatReleaseData(hr.selectColumns([0,5]),soc,eoc)
+
+HRR.nomalization()
+
+HRR.plot()
+```
+
+then you can get the following heat release pic:
+
+<img src="./doc/heat release data plot.png" style="zoom:50%;" />
+
+if you want to regression the heat release profile using single wiebe or double wiebe function, you can simpliy type:
+
+```python
+HRR.regressWithSingleWiebe()
+```
+
+<img src="./doc/regression with single wiebe.png" style="zoom:50%;" />
+
+or:
+
+```
+HRR.regressWithSingleWiebe()
+```
+
+<img src="./doc/regression with double wiebe.png" style="zoom:50%;" />
+
+### ideal cycle
+
+to be writen
+
+## Valve part
+
+to be writen
+
+## Compressor
+
+### Simple compressor
+
+### Compressor based on map
+
+pysmartengine is easy to generate compressor map using compressor map data, the sample compressor map data can be seen in [Compressor Map](./tests/CompressorMap.xlsx). you can plot the map in three steps:
+
+1. read the map file
+2. interpolate map
+3. plot the map 
+
+```python
+Map = Compressor("./CompressorMap.xlsx")
+Map.interpolate(5) #generate 5 lines between each constant speed line
+Map.plot()
+```
+
+then you can get the map plot seen bellow:
+
+![](./doc/compressorMap.png)
