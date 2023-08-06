@@ -1,0 +1,151 @@
+# Package Overview
+package_name: regression_model
+
+# Data Files
+# training_data_file: train.csv
+training_data_file: data.csv
+test_data_file: new_data.csv
+
+
+# Variables
+# The variable we are attempting to predict (Price)
+target: Price_in_millions
+
+date_features:
+  - Built_in_year
+
+drop_features_pp:
+  - Ids
+  - Location2
+  - Store_Rooms
+
+pipeline_name: regression_model
+pipeline_save_file: regression_model_output_v
+
+# Will cause syntax errors since they begin with numbers
+# variables_to_rename:
+#   1variable: variable1
+#   2variable: variable2
+#   3variable: variable3
+
+features:
+- Location1
+- Type
+- Bedrooms
+- Bathrooms
+- Size_in_SqYds
+- Parking_Spaces
+- Floors_in_Building
+- Elevators
+- Lobby_in_Building
+- Double_Glazed_Windows
+- Central_Air_Conditioning
+- Central_Heating
+- Waste_Disposal
+- Furnished
+- Service_Elevators_in_Building
+- Flooring
+- Electricity_Backup
+- Servant_Quarters
+- Study_Room
+- Prayer_Room
+- Powder_Room
+- Gym
+- Lounge_or_Sitting_Room
+- Laundry_Room
+- Business_Center_or_Media_Room_in_Building
+- Satellite_or_Cable_TV_Ready
+- Broadband_Internet_Access
+- Intercom
+- Conference_Room_in_Building
+- Community_Swimming_Pool
+- Community_Lawn_or_Garden
+- Community_Gym
+- Community_Center
+- First_Aid_or_Medical_Centre
+- Day_Care_center
+- Kids_Play_Area
+- Mosque
+- Barbeque_Area
+- Lawn_or_Garden
+- Swimming_Pool
+- Sauna
+- Jacuzzi
+- Nearby_Schools
+- Nearby_Hospital
+- Nearby_Shopping_Malls
+- Nearby_Restaurants
+- Nearby_Public_Transport_Service
+- Other_Nearby_Places
+- Security_Staff
+- Maintainance_Staff
+- Laundry_or_Dry_Cleaning_Facility
+- Facilities_for_Disabled
+# this one is only to calculate temporal variable:
+- Built_in_year_year
+
+# rare labels tolerance
+rare_labels_tolerance: 0.01
+
+# set train/test split
+test_size: 0.1
+
+# to set the random seed
+random_state: 0
+
+alpha: 0.001
+
+# # categorical variables with NA in train set
+# categorical_vars_with_na_frequent:
+#   - varriable_na_frequent_1
+#   - varriable_na_frequent_2
+#   - varriable_na_frequent_3
+  
+# categorical_vars_with_na_missing:
+#   - variable_na_missing_1
+
+numerical_vars_with_na:
+  - Bedrooms
+  - Bathrooms
+  - Size_in_SqYds
+  - Floors_in_Building
+  - Elevators
+  - Built_in_year_year
+
+temporal_vars:
+  - Built_in_year_year
+
+# ref_var: null #No Need it's by default define as None in `ElapsedYearsTrasnsform`
+
+drop_features: 
+  - Built_in_year_year
+
+float_cols:
+  - Bedrooms
+  - Bathrooms
+  - Floors_in_Building
+  - Elevators
+
+to_int64: int64
+
+# variables to log transform
+numericals_log_vars:
+  - Size_in_SqYds
+
+# binarize_vars:
+#   - variable_binarize
+
+# variables to map
+type_vars:
+  - Type
+
+categorical_vars:
+  - Location1
+
+# variable mappings
+type_vars_mappings:
+  Missing: 0
+  NA: 0
+  NaN: 0
+  Flat: 1
+  House: 2
