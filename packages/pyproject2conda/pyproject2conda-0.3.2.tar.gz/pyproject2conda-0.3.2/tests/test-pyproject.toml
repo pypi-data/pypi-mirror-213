@@ -1,0 +1,32 @@
+[project]
+name = "hello"
+requires-python = ">=3.8,<3.11"
+dependencies = [
+    "athing", # p2c: -p # a comment
+    "bthing", # p2c: -s "bthing-conda"
+    "cthing; python_version < '3.10'", # p2c: -c conda-forge
+
+]
+
+[project.optional-dependencies]
+test = [
+    "pandas",
+    "pytest", # p2c: -c conda-forge
+
+]
+dev-extras = [
+    # p2c: -s "additional-thing; python_version < '3.9'" # this is an additional conda package
+    ## p2c: -s "another-thing" # this will be skipped because of ## before p2c.
+    "matplotlib", # p2c: -s conda-matplotlib
+
+]
+dev = ["hello[test]", "hello[dev-extras]"]
+dist-pypi = [
+    # this is intended to be parsed with --no-base option
+    "setuptools",
+    "build", # p2c: -p
+
+]
+
+[tool.pyproject2conda]
+channels = ['conda-forge']
