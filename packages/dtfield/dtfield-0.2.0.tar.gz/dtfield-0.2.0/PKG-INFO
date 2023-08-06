@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: dtfield
+Version: 0.2.0
+Summary: 
+Author: Daniel Arantes
+Author-email: arantesdv@me.com
+Requires-Python: >=3.9,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: Unidecode (>=1.3.6,<2.0.0)
+Requires-Dist: anyio (>=3.7.0,<4.0.0)
+Requires-Dist: dtbase (>=0.0.4,<0.0.5)
+Requires-Dist: typing-extensions (>=4.6.3,<5.0.0)
+Requires-Dist: uvicorn (>=0.22.0,<0.23.0)
