@@ -1,0 +1,39 @@
+{% extends "package/read_base.html" %}
+
+
+{% block primary_content_inner %}
+
+    {% if h.check_access("flakes_feedback_feedback_create", {"package_id": pkg_dict.id}) %}
+        {% block post_feedback_button %}
+            <p>
+                {% link_for _('Leave feedback'), named_route="flakes_feedback.post", id=pkg.name, class_='btn btn-primary', icon='comment-medical' %}
+            </p>
+        {% endblock %}
+    {% endif %}
+
+    <ul class="list-unstyled">
+        {% for feedback in feedbacks|sort(attribute="modified_at", reverse=True) %}
+            <li>
+                {% block feedback scoped %}
+                    {% block attribution %}
+                        {{ h.time_ago_from_timestamp(feedback.modified_at) }} by {{ h.linked_user(feedback.author_id) }}
+                    {% endblock %}
+
+                    {% block delete_button %}
+                        {% if h.check_access("flakes_feedback_feedback_delete", {"id": feedback.id}) %}
+                            {% link_for _('Delete'), named_route="flakes_feedback.delete", id=pkg.name, package_type=pkg_dict.type, feedback_id=feedback.id, class_='btn btn-xs btn-link', icon='comment-slash' %}
+                        {% endif %}
+                    {% endblock %}
+
+                    {% block details %}
+                        <br/>
+
+                        <blockquote>
+                            {{ h.render_markdown(feedback.data.feedback) }}
+                        </blockquote>
+                    {% endblock %}
+                {% endblock %}
+            </li>
+        {% endfor %}
+    </ul>
+{% endblock %}

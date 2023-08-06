@@ -1,0 +1,17 @@
+{% extends "package/read_base.html" %}
+
+
+{% block primary_content_inner %}
+    <div class="module-content">
+      {% block form %}
+        <p>{{ _('Are you sure you want to delete feedback for {pkg}?').format(pkg=pkg_dict.title) }}</p>
+        <p class="form-actions">
+          <form id="group-confirm-delete-form" method="post">
+            {{ h.csrf_input() }}
+            <a class="btn btn-primary" href="{{ h.url_for("flakes_feedback.index", package_type=pkg_dict.type, id=pkg_dict.id) }}" >{{ _('Cancel') }}</a>
+            <button class="btn btn-primary" type="submit" name="delete" >{{ _('Confirm Delete') }}</button>
+          </form>
+        </p>
+      {% endblock %}
+    </div>
+{% endblock %}

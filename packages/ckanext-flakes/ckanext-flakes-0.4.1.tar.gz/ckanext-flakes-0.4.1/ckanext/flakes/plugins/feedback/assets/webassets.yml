@@ -1,0 +1,7 @@
+# rate:
+#   output: ckanext-flakes/%(version)s-flakes_rating-rate.js
+#   extra:
+#     preload:
+#       - base/main
+#   contents:
+#     - flakes-rating-rate.js

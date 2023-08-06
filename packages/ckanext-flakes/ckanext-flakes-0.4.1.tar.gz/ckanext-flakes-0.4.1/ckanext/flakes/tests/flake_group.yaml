@@ -1,0 +1,9 @@
+scheming_version: 2
+group_type: flake-group
+
+fields:
+
+- field_name: flake_title
+  validators: not_empty
+
+- field_name: flake_name

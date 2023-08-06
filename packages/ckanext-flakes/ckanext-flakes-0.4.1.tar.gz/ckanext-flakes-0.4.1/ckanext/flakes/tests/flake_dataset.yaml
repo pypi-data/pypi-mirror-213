@@ -1,0 +1,13 @@
+scheming_version: 2
+dataset_type: flake-dataset
+
+dataset_fields:
+
+- field_name: flake_title
+  validators: not_empty
+
+- field_name: flake_name
+
+resource_fields:
+
+- field_name: flake_name

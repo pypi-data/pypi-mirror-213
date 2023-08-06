@@ -1,0 +1,18 @@
+version: 1
+groups:
+  - annotation: ckanext-flakes feedback
+    options:
+      - key: ckanext.flakes_feedback.allow_overrides
+        type: bool
+        default: false
+        example: "true"
+        description: |
+          Allow overriding existing feedbacks with
+          `flake_feedbacks_feedback_create` action.
+
+      - key: ckanext.flakes_feedback.enable_views
+        type: bool
+        default: false
+        example: "true"
+        description: |
+          Use default pages for package feedbacks
