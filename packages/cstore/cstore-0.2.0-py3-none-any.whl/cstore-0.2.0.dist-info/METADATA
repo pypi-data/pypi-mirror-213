@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: cstore
+Version: 0.2.0
+Summary: A tools to store and recall useful commands, specifically created to assist forgetful individuals
+Author-email: Navid Arabi <navidved@gmail.com>
+Project-URL: Homepage, https://github.com/navidved/ctore
+Project-URL: Bug Tracker, https://github.com/navidved/ctore/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: rich
+
+# Command Store
+A tools to store and recall useful commands, specifically created to assist forgetful individuals. 
