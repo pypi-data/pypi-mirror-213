@@ -1,0 +1,37 @@
+Metadata-Version: 2.1
+Name: diveplane-reactor-api
+Version: 2.5.3
+Summary: Diveplane Reactor and Scikit Estimator for the interpretable Machine Learning and Artificial Intelligence API Diveplane.
+Home-page: https://www.diveplane.com
+Author: Diveplane Corp
+Author-email: support@diveplane.com
+License: Diveplane Corporation Free Software License
+Keywords: machine learning artificial intelligence
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+Requires-Dist: certifi
+Requires-Dist: cryptography (>=2.9.2)
+Requires-Dist: deprecation (<3,>=2.1.0)
+Requires-Dist: Faker (>=4.1.1)
+Requires-Dist: humanize (>=4.0.0)
+Requires-Dist: mmh3
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: pyjwt (<3,>=2.6.0)
+Requires-Dist: pyyaml (<7.0,>=5.4.1)
+Requires-Dist: rich (>=12.5.1)
+Requires-Dist: scikit-learn
+Requires-Dist: semantic-version (<3,>=2.8.5)
+Requires-Dist: typing-extensions (<5.0,>=4.1.0)
+Requires-Dist: urllib3 (<=2,>=1.26.2)
+Requires-Dist: diveplane-openapi-client (==22.2.5)
+Requires-Dist: diveplane-amalgam-api (==2.3.7)
+
+# Diveplane Reactor
+

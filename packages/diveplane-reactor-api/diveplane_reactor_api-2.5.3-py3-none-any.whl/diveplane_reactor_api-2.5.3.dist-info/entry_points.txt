@@ -1,0 +1,3 @@
+[console_scripts]
+diveplane_eula_helper = diveplane.utilities.eula_helper:main
+verify_diveplane_install = diveplane.utilities.installation_verification:main

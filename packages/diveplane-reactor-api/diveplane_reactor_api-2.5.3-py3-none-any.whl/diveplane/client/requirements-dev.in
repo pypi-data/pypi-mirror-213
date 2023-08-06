@@ -1,0 +1,14 @@
+dill>=0.3.4,<1.0
+diveplane-build-artifacts>=1.0.10
+flake8>=3.7,<4.0
+flake8-docstrings
+flake8-import-order
+pip-tools
+pipdeptree
+pmlb
+pycodestyle
+pylint
+pytest
+pytest-cov
+pytest-mock>=1.13.0,<1.14.0
+urllib3<2.0.0
