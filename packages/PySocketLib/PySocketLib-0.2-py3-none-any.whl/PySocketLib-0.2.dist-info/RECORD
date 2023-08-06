@@ -1,0 +1,15 @@
+PySocketLib/__init__.py,sha256=TJduIY6X1FgOqfAtyIs9d23_AFchM0jD0xPd6S-dVco,67
+PySocketLib/CExceptions/InitExceptions.py,sha256=B1MKN8bwPcnzPJU8A90C6BqeQqDxDLTLFvXNeFFBv4w,36
+PySocketLib/CExceptions/ProtocolExceptions.py,sha256=XY1sz6d2snu3pEFYp29vbtUGF9Yq_sgUvbXfM0fj114,74
+PySocketLib/CExceptions/__init__.py,sha256=N_A9jk11BMz63E4iq1_1BRRtAhpByUaTtIm_pZqRG1s,61
+PySocketLib/Client/Client.py,sha256=LHJJDun-InRRgOLtFK-lCv3MrluxBgTdIOfpJOT6BKw,964
+PySocketLib/Client/ConnectedClient.py,sha256=-GeHiOF1UwQdpplZeU7fz_WTyrMfG7OlKySwCGha9xY,214
+PySocketLib/Client/__init__.py,sha256=Bpgrha3Nwov5wvn1aSjvCHZVqyagESg564Z4UO-GB9U,71
+PySocketLib/Server/Server.py,sha256=fp4yQ6AhC5cAD_wqD6qOQXw-BQ_ovWhC6DFv_OkVg3c,3126
+PySocketLib/Server/TCPServer.py,sha256=ngk-Puai6t9EFVZ6-UMu8Wmkh1FloPNc1UNrEkTzJJw,773
+PySocketLib/Server/__init__.py,sha256=vOPT77N6zeNqcYEcqa5_poH4wJdGmJNLdUIrLjKZpnw,59
+PySocketLib-0.2.dist-info/LICENSE,sha256=z5P8mfjfYfnBFEPtjtyAT9hx7y4FKGgjg6Got1cfSsk,1069
+PySocketLib-0.2.dist-info/METADATA,sha256=faC62zQ-mwh7tCctyK_WdNC9pIfbYB1RNKHGvmqBQUw,3678
+PySocketLib-0.2.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+PySocketLib-0.2.dist-info/top_level.txt,sha256=xWNF095wJHlwpqihC4t2qnBJoqAZNB9elSw1_Bh76Dg,12
+PySocketLib-0.2.dist-info/RECORD,,
