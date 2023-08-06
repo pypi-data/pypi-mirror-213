@@ -1,0 +1,41 @@
+Metadata-Version: 2.1
+Name: HanLabTools
+Version: 0.2.1
+Summary: Import tools for DNPLab specific to the Han Lab
+Home-page: https://github.com/Bridge12Technologies/HanLabTools
+Author: Thorsten Maly
+Author-email: tmaly@bridge12.com
+Project-URL: Tracker, https://github.com/Bridge12Technologies/HanLabTools/issues
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy (>=1.24)
+
+[![PyPI - Python Version](https://img.shields.io/pypi/pyversions/HanLabTools)](https://www.python.org/downloads/)
+[![Downloads](https://static.pepy.tech/badge/hanlabtools)](https://pepy.tech/project/hanlabtoo.s)
+
+HanLabTools is a support package for DNPLab to import data recorded in the lab of Prof. Song-I Han.
+
+For more information about DNPLab vist: www.dnplab.org
+
+# Features
+
+  - Import different experiment types (DNP, DNP Power Build-Up, ELDOR, T1e, T2e measurements)
+  - Create N-dimensional data objects using DNPLab
+
+# Installation
+
+HanLabTools can be easily installed via pip:
+
+```console
+pip install HanLabTools
+```
+# Documenation
+
+Find the online documentation for DNPLab at: http://docs.dnplab.net
+
+# Developement 
+
+  - Clone the git repository from https://github.com/HanLabTools/HanLabTools
+dir
+
