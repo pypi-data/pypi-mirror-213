@@ -1,0 +1,1 @@
+import{Q as e}from"./QPage.a4e5fd9f.js";import{a0 as a,$ as t,a1 as o,a2 as r,a3 as s,ab as c}from"./index.65e87084.js";const n=t({}),p=c("iframe",{src:"http://localhost:8000/redoc",frameborder:"0",width:"100%",height:"2500px"},null,-1);function d(f,i,_,l,h,m){return o(),r(e,null,{default:s(()=>[p]),_:1})}var $=a(n,[["render",d]]);export{$ as default};
