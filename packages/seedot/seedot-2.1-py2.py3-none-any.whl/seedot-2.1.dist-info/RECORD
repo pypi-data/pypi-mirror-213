@@ -1,0 +1,15 @@
+seedot/SEEDOT_lexicon_electronic.txt,sha256=S9qa870i4xqo2qzOJCEcjqLwDIk3OfHPgw1qtPXJZbE,111054
+seedot/SEEDOT_lexicon_finance.txt,sha256=4_JmFnhIuEnNMbhG8B3JcrjKFTYXn4LqlftjPLay6u8,122566
+seedot/SEEDOT_lexicon_food.txt,sha256=BjuPVvMREHptq5pylPLyy78QFi4hW51X4NNKfnXhAKI,107729
+seedot/SEEDOT_lexicon_hotel.txt,sha256=NUoEwACGYPIRaEb26jIDKRMR6G8auZPWFhThmxDPsys,112307
+seedot/__init__.py,sha256=G2WICU_Zh5n_nB23EBynr3180BMfu-UHO-IerOnJgRg,17
+seedot/emoji_utf8_lexicon.txt,sha256=uNVCI64c4io-EsH3RTFrcWeMMo619dMGOoQvN8--KCM,121986
+seedot/seedot_electronic.py,sha256=Bv1UAH3xaWDj9XgvNhpcfwmLvjpH9ub7-ycxAF2BW4g,34337
+seedot/seedot_finance.py,sha256=76xijVp3VzqLjnvDIsls7PpKC8ZxtfXMV4BQAIcNlng,33893
+seedot/seedot_food.py,sha256=AF2QH0LS7BFRHEXsqneBraWVfHkX7ymsy-ghYH3LUWs,34308
+seedot/seedot_hotel.py,sha256=NAGGUlFYvnk2cPiL2ZxszzVWrY0S3NT-dlxoOyUovyQ,34313
+seedot-2.1.dist-info/LICENSE.txt,sha256=wPwCqGrisXnEcpaUxSO79C2mdOUTbtjhLjyy8mVW6p8,1046
+seedot-2.1.dist-info/METADATA,sha256=rbwqRzCg-eG9rTJm6WHrvIc8TYSUYUM4dqpQjQ2iaDc,6081
+seedot-2.1.dist-info/WHEEL,sha256=a-zpFRIJzOq5QfuhBzbhiA1eHTzNCJn8OdRvhdNX0Rk,110
+seedot-2.1.dist-info/top_level.txt,sha256=YgNYVfCutUH0HIM7zxUJKerCy8c8UdxbfepTE1iZ-yg,7
+seedot-2.1.dist-info/RECORD,,
