@@ -1,0 +1,11 @@
+akinator/__init__.py,sha256=OVT2hI8q9WLTIZQ52j5xvuKe5D2hL7KDHZbVCrORK34,414
+akinator/akinator.py,sha256=HxetMga3wY5l0mrC7qvHwu5zeH4AwnNbHSQ616zxPY4,11114
+akinator/exceptions.py,sha256=attbJC0c5WVdkNCOHTrOArCkaFYSYt31O_2q-sz0ELw,2510
+akinator/utils.py,sha256=gr24qfEECxYIIc16TEFUJAGk4UcXLfr4aeDGzohNNMw,5559
+akinator/async_aki/__init__.py,sha256=SsbCeztasClp3mohSoPGFPkugTrf7g4IOODXvhGbWP8,356
+akinator/async_aki/async_akinator.py,sha256=cEZEpAuoQaI088nTwQ4VSxzwFj8eLZ_5gydVEFo-phA,12332
+akinator-1.1.0.dist-info/LICENSE,sha256=4Y7E5ICbKJX5MwtBTvKyivbcf80Q5QFlJmfXj1-5xJY,1125
+akinator-1.1.0.dist-info/METADATA,sha256=ySBDxckeezz0wRQY5ngQTz-h6TDCPHQqaaUdZScm3UY,3092
+akinator-1.1.0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+akinator-1.1.0.dist-info/top_level.txt,sha256=IfxzcD0gjGYv2RWkinKf5go-Uib9VJwfKm2axKaKTVs,9
+akinator-1.1.0.dist-info/RECORD,,
