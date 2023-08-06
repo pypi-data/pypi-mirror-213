@@ -1,0 +1,42 @@
+[build-system]
+requires = [
+    "setuptools>=61.0",
+    "toml>=0.10",
+    "PyYAML>=6.0"
+]
+
+build-backend = "setuptools.build_meta"
+
+
+[project]
+dependencies = [
+    "toml>=0.10",
+    "PyYAML>=6.0"
+]
+
+name = "argumento"
+authors = [
+  { name="OK111", email="oleg.khadartsev@gmail.com" },
+]
+description = "Package for combining config and command-line args"
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+
+dynamic = ["version"]
+
+[tool.setuptools.dynamic]
+version = {attr = "argumento.__version__"}
+
+[project.urls]
+"Homepage" = "https://github.com/OlegKhadartsev/config-args"
+
+[tool.pytest.ini_options]
+pythonpath = [
+  "src"
+]

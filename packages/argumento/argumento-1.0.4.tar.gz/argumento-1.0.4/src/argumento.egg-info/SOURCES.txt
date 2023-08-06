@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+src/argumento/__init__.py
+src/argumento/_version.py
+src/argumento/parsers.py
+src/argumento.egg-info/PKG-INFO
+src/argumento.egg-info/SOURCES.txt
+src/argumento.egg-info/dependency_links.txt
+src/argumento.egg-info/requires.txt
+src/argumento.egg-info/top_level.txt
