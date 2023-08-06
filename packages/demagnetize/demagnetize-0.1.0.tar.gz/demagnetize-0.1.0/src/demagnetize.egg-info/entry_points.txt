@@ -1,0 +1,2 @@
+[console_scripts]
+demagnetize = demagnetize.__main__:main

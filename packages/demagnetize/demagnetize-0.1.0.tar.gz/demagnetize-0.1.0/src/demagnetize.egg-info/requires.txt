@@ -1,0 +1,8 @@
+anyio~=3.5
+attrs>=20.1.0
+click>=7.0
+click-loglevel~=0.3
+colorlog<7.0,>=4.6
+httpx~=0.22
+torf~=3.1
+yarl~=1.7
