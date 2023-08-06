@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+pytest_jira_xfail/__init__.py
+pytest_jira_xfail/annotations.py
+pytest_jira_xfail/jira_helper.py
+pytest_jira_xfail.egg-info/PKG-INFO
+pytest_jira_xfail.egg-info/SOURCES.txt
+pytest_jira_xfail.egg-info/dependency_links.txt
+pytest_jira_xfail.egg-info/requires.txt
+pytest_jira_xfail.egg-info/top_level.txt
