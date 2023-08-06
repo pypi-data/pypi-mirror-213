@@ -1,0 +1,14 @@
+quota_notifier/__init__.py,sha256=JS0XWKG4l_SXeSm3ozFsancPbibWMEezyR3J8AbZbus,1506
+quota_notifier/__main__.py,sha256=DJhQwG57gylXnNvE3JTnzN6to-Zo_e91fDRl06Yhqs4,202
+quota_notifier/cli.py,sha256=_CtRRDhxCNRNPi6V5saw6MrxDO-h0-ZfS7Lt7eDCvzA,6662
+quota_notifier/data/template.html,sha256=z_BfU1YdEREDZiEqTxp0T5nK8qIFIZgmjKUQaJmOOUY,298
+quota_notifier/disk_utils.py,sha256=xrrwpEtbHiclo_PncdtkgQ6Cnl5NjswvYHpg9JrLLg0,10990
+quota_notifier/notify.py,sha256=9cnmj0Si2ZSMVcUBbXGaSFLi7lvVpc5Hlqr3DRv_nXY,11137
+quota_notifier/orm.py,sha256=aMswId0-fy7RvDApXetstI6BfnflrC6-PECqkwzohNk,3220
+quota_notifier/settings.py,sha256=uIh9anMYHQuHXzVhvG17eLcDIO7wv8sE0yBFcUpk01Q,9157
+quota_notifier/shell.py,sha256=BGbPnDVBG2iaNas1MeWJEhB291b1xvCFsW-WtFcXz0s,2874
+quota_notifier-0.5.8.dist-info/LICENSE.md,sha256=MhTsG0K1uUl5uTOe8qdDKTSQyDX0bdYsO1e79J1tSjE,34906
+quota_notifier-0.5.8.dist-info/METADATA,sha256=iZTqfntNqWbZXvicxqZoS_9f7j-Mf_6o1FUpNVcRV8o,1773
+quota_notifier-0.5.8.dist-info/WHEEL,sha256=Zb28QaM1gQi8f4VCBhsUklF61CTlNYfs9YAZn-TOGFk,88
+quota_notifier-0.5.8.dist-info/entry_points.txt,sha256=H-HIZXZOqYw8zcgTJ5e0mUhDv4c3Zebgngw2JH3PYzg,67
+quota_notifier-0.5.8.dist-info/RECORD,,

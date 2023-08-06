@@ -1,0 +1,37 @@
+Metadata-Version: 2.1
+Name: quota-notifier
+Version: 0.5.8
+Summary: Automatic email notification tool for disk quota usage.
+Home-page: https://github.com/pitt-crc/quota_notifier
+Keywords: disk,usage,quota,notify,email
+Author: Pitt Center for Research Computing
+Requires-Python: >=3.8
+Classifier: Environment :: Console
+Classifier: Intended Audience :: System Administrators
+Classifier: Natural Language :: English
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Topic :: System :: Filesystems
+Classifier: Topic :: System :: Monitoring
+Classifier: Typing :: Typed
+Requires-Dist: prometheus_client (==0.17.0)
+Requires-Dist: pydantic (==1.10.9)
+Requires-Dist: sqlalchemy (==2.0.15)
+Project-URL: Documentation, https://crc-pages.pitt.edu/quota_notifier/
+Project-URL: Repository, https://github.com/pitt-crc/quota_notifier
+Description-Content-Type: text/markdown
+
+# Storage Quota Notifier
+
+[![](https://app.codacy.com/project/badge/Grade/583c607400c2429ebbc1554d777d26b4)](https://app.codacy.com/gh/pitt-crc/quota_notifier/dashboard)
+[![](https://app.codacy.com/project/badge/Coverage/583c607400c2429ebbc1554d777d26b4)](https://app.codacy.com/gh/pitt-crc/quota_notifier/dashboard)
+[![](https://github.com/pitt-crc/quota_notifier/actions/workflows/PackageTest.yml/badge.svg)](https://github.com/pitt-crc/quota_notifier/actions/workflows/PackageTest.yml)
+
+A command line utility for emailing users when they exceed storage quota thresholds
+
+See the [official documentation](https://crc-pages.pitt.edu/quota_notifier/).
+
