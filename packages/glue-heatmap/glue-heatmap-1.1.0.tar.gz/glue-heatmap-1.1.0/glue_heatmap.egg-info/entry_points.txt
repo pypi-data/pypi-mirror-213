@@ -1,0 +1,2 @@
+[glue.plugins]
+glue_heatmap = glue_heatmap.qt:setup

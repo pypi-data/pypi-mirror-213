@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: glue-heatmap
+Version: 1.1.0
+Summary: A Heatmap viewer
+Home-page: https://www.gluesolutions.io
+Author: glue solutions, inc.
+Author-email: jfoster@gluesolutions.io
+Classifier: Intended Audience :: Science/Research
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Topic :: Scientific/Engineering :: Visualization
+Classifier: License :: OSI Approved :: BSD License
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Provides-Extra: test
+Provides-Extra: qt
+Provides-Extra: glue
+
+# Heatmap Viewer
+
+Add a Heatmap Viewer to glue.
+
+## Install
+
+`pip install git+https://github.com/gluesolutions/glue-heatmap.git`
