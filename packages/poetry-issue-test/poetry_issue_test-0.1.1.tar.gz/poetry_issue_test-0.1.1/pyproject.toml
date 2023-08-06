@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "poetry-issue-test"
+version = "0.1.1"
+description = ""
+authors = []
+readme = "README.md"
+packages = [{include = "poetry_test"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+requests = "^2.31.0"
+ibis-framework = { version = "^5.1.0", extras = [ "duckdb" ] }
+Ibis-framework =    { version = "^5.1.0", extras = [ "postgres" ], optional = true }
+
+
+[tool.poetry.extras]
+postgres = ["ibis-framework"]
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
