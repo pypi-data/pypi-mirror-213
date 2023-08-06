@@ -1,0 +1,13 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+Lib/wbpLoglist/__init__.py
+Lib/wbpLoglist/loglistwin.py
+Lib/wbpLoglist/preferences.py
+Lib/wbpLoglist.egg-info/PKG-INFO
+Lib/wbpLoglist.egg-info/SOURCES.txt
+Lib/wbpLoglist.egg-info/dependency_links.txt
+Lib/wbpLoglist.egg-info/entry_points.txt
+Lib/wbpLoglist.egg-info/requires.txt
+Lib/wbpLoglist.egg-info/top_level.txt
