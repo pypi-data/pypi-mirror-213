@@ -1,0 +1,64 @@
+- name: make directory for smartkit
+  command: mkdir -p smartkit
+
+- name: make directory for tmp_file
+  command: mkdir -p {{tmp_file_path}}
+
+- name: copy script to remote hosts
+  copy:
+    src: "{{ playbook_dir }}/facts/app_info.fact.j2"
+    dest: "{{ tmp_file_path }}/app_info.fact.j2"
+    mode: 0700
+    force: yes
+
+- name: check if python3
+  shell: command -v python3
+  register: python3_exist
+
+- name: python3 the scripts
+  command: python3 {{ tmp_file_path }}/app_info.fact.j2
+  register: packages_result
+  when: python3_exist.stdout != ''
+
+- name: remove the app info file
+  ansible.builtin.file:
+    path: "{{ tmp_file_path }}/app_info.fact.j2"
+    state: absent
+
+- name: get the result
+  command: cat smartkit/display.json
+  register: app_info
+
+- set_fact:
+    app_info_result: "{{ app_info.stdout|from_json }}"
+
+- set_fact:
+    packages_dict: "{{packages_dict|default({})|combine({item:{'packages':app_info_result['result']}})}}"
+  delegate_to: localhost
+  run_once: true
+  with_items: "{{ groups['master'] +  groups['worker'] }}"
+
+- name: output package file
+  copy:
+    content: "{{ packages_dict }}"
+    dest:  "{{ tmp_file_path }}/packages_dict.json"
+    mode: 0700
+    force: yes
+  delegate_to: localhost
+  run_once: true
+
+- name: get the formatted result
+  shell: python3 {{playbook_dir}}/roles/mindx.rep/tasks/ls_format.py {{ tmp_file_path }}/packages_dict.json
+  register: package_list
+  delegate_to: localhost
+  run_once: true
+  when: python3_exist.stdout != ''
+
+- name: show the result
+  debug:
+    msg: "[ASCEND]{{package_list.stdout|default('')}}"
+  run_once: true
+  when: only_package
+
+- include_tasks: ./hccn_rep.yaml
+  when: not only_package

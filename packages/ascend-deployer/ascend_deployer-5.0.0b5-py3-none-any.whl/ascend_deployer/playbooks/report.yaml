@@ -1,0 +1,21 @@
+- hosts:
+    - localhost
+    - master
+    - worker
+  gather_facts: true
+  become: yes
+  vars_files:
+    - roles/mindx.rep/defaults/main.yml
+  tasks:
+    - include_tasks: roles/mindx.rep/tasks/packages_rep.yaml
+
+
+- hosts:
+    - localhost
+  gather_facts: true
+  become: yes
+  vars_files:
+    - roles/mindx.rep/defaults/main.yml
+  tasks:
+    - include_tasks: roles/mindx.rep/tasks/local_rep.yaml
+      when: not only_package 

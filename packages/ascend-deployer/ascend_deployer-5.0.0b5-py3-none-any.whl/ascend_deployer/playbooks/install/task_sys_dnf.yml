@@ -1,0 +1,65 @@
+- name: install kernel headers devel
+  include_tasks: task_kernel.yml
+  when: "'EulerOS' in os_and_arch"
+
+- name: install kernel headers devel force for euler
+  include_tasks: task_kernel_euleros.yml
+  when: "'EulerOS' in os_and_arch"
+
+- name: install system packages
+  shell: |
+    yum clean all &>/dev/null
+    yum makecache --disablerepo="*" --enablerepo=nexus -c ~/nexus/sources.repo &>/dev/null
+    yum install --skip-broken -y {{sys_pkgs}} --disablerepo="*" --enablerepo=nexus -c ~/nexus/sources.repo
+  register: sys_result
+  environment:
+    LD_LIBRARY_PATH: ""
+    http_proxy: ""
+    https_proxy: ""
+    HTTP_PROXY: ""
+    HTTPS_PROXY: ""
+  when: "'OpenEuler_22.03LTS' in os_and_arch or 'Kylin_V10Tercel' in os_and_arch"
+
+- name: message
+  debug: var=sys_result
+  when:
+    - "'OpenEuler_22.03LTS' in os_and_arch or 'Kylin_V10Tercel' in os_and_arch"
+    - sys_result.changed
+
+- name: check if Docker is installed
+  shell: command -v docker | wc -l
+  register: docker_status
+  when: "'OpenEuler_22.03LTS' in os_and_arch or 'Kylin_V10Tercel' in os_and_arch"
+
+- name: install Docker when Docker is not installed
+  shell: |
+    yum install -y --skip-broken {{docker_pkgs}} --disablerepo="*" --enablerepo=nexus -c ~/nexus/sources.repo
+  register: docker_result
+  environment:
+    LD_LIBRARY_PATH: ""
+    http_proxy: ""
+    https_proxy: ""
+    HTTP_PROXY: ""
+    HTTPS_PROXY: ""
+  when:
+    - "'OpenEuler_22.03LTS' in os_and_arch or 'Kylin_V10Tercel' in os_and_arch"
+    - docker_status.stdout == "0"
+
+- name: message
+  debug: var=docker_result
+  when:
+    - "'OpenEuler_22.03LTS' in os_and_arch or 'Kylin_V10Tercel' in os_and_arch"
+    - docker_result.changed
+
+- name: dnf install system packages
+  shell: |
+    rpm -ivh --force --nodeps --replacepkgs {{ resources_dir }}/{{ os_and_arch }}/*.rpm
+    rpm -ivh --force --nodeps --replacepkgs {{ resources_dir }}/{{ os_and_arch }}/docker/*.rpm
+  register: sys_result
+  when: "'OpenEuler_22.03LTS' not in os_and_arch and 'Kylin_V10Tercel' not in os_and_arch"
+
+- name: message
+  debug: var=sys_result
+  when:
+    - "'OpenEuler_22.03LTS' not in os_and_arch and 'Kylin_V10Tercel' not in os_and_arch"
+    - sys_result.changed

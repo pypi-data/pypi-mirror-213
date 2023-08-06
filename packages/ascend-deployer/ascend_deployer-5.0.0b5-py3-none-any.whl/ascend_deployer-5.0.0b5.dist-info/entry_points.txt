@@ -1,0 +1,3 @@
+[console_scripts]
+ascend-download = ascend_deployer.ascend_download:main
+

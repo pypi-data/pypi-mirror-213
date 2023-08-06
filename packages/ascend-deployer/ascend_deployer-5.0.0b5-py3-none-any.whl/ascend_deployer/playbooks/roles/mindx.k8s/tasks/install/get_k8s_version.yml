@@ -1,0 +1,14 @@
+- name: stat version version
+  stat:
+    path: "{{resource_dir}}/k8s/version.json"
+  register: version_stat
+
+- name: get version
+  shell: cat "{{resource_dir}}/k8s/version.json"
+  register: resource_version
+  when: version_stat.stat.exists
+
+- name: set the json data to a varible as fact
+  set_fact:
+    jsondata: "{{ resource_version.stdout | from_json }}"
+  when: version_stat.stat.exists

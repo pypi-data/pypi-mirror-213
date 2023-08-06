@@ -1,0 +1,34 @@
+- name: gather fact info for dl
+  import_playbook: ../gather_facts.yaml
+
+- name: install basic packages
+  import_playbook: ../basic.yaml
+
+- name: basic check
+  import_playbook: ../check.yaml
+
+- name: install docker
+  import_playbook: ../docker.yaml
+  when:
+    - "DOCKER_COMPONENT in (SCENES[SCENE_NUM] + EXTRA_COMPONENT.split(','))"
+
+- name: config harbor info
+  import_playbook: ../harbor.yaml
+  when:
+    - use_harbor
+
+- name: install k8s
+  import_playbook: ../k8s.yaml
+  when:
+    - "K8S_COMPONENT in (SCENES[SCENE_NUM] + EXTRA_COMPONENT.split(','))"
+
+- name: install dl
+  import_playbook: ../mindxdl.yaml
+  when:
+    - use_mindxdl
+
+- name: report
+  import_playbook: ../report.yaml
+  vars:
+    output_format: csv
+    report_output_path: /root/ascend-deployer/report
