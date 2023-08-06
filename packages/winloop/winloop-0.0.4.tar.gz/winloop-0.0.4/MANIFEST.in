@@ -1,0 +1,4 @@
+
+recursive-include winloop/vendor *
+recursive-include winloop *.pyx *.pxd *.pxi *.py *.c *.h *.pyi py.typed
+include LICENSE-MIT LICENSE-APACHE README.md
