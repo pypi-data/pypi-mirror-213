@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+README.md
+requirements.txt
+setup.py
+InfixToPostfix/__init__.py
+InfixToPostfix/infix_to_postfix.py
+InfixToPostfix/ui.py
+InfixToPostfix.egg-info/PKG-INFO
+InfixToPostfix.egg-info/SOURCES.txt
+InfixToPostfix.egg-info/dependency_links.txt
+InfixToPostfix.egg-info/requires.txt
+InfixToPostfix.egg-info/top_level.txt
+InfixToPostfix/data/conf
+InfixToPostfix/data/style.qss

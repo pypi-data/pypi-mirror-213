@@ -1,0 +1,3 @@
+include requirements.txt
+include InfixToPostfix/data/conf
+include InfixToPostfix/data/style.qss
