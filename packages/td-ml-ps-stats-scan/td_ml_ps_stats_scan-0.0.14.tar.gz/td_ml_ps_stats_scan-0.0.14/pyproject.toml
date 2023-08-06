@@ -1,0 +1,22 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "td_ml_ps_stats_scan"
+version = "0.0.14"
+authors = [
+  { name="Dilyan Kovachev", email="pruchka@gmail.com" },
+]
+description = "Extract Parent Segment Stats"
+readme = "README.md"
+license = { file="LICENSE" }
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/treasure-data-ps/td_ml_ps_stats_scan"
+"Bug Tracker" = "https://github.com/treasure-data-ps/td_ml_ps_stats_scan"
