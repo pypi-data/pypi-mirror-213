@@ -1,0 +1,14 @@
+deprecated
+pz-rail-base
+astropy
+healpy
+photerr
+dustmaps
+pz-hyperbolic-temp
+
+[dev]
+tables-io[full]
+pytest
+pytest-cov
+pre-commit
+pylint
