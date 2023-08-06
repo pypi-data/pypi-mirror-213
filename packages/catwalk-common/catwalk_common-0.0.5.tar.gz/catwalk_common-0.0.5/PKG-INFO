@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: catwalk_common
+Version: 0.0.5
+Author-email: Mateusz Hordyński <mateusz.hordynski@deepsense.ai>, Marek Połom <marek.polom@deepsense.ai>
+License: GPLv3+
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Information Technology
+Requires-Python: >=3.8.0
+Description-Content-Type: text/markdown
+
+# Catwalk Common
+
+## Common Case Format template
