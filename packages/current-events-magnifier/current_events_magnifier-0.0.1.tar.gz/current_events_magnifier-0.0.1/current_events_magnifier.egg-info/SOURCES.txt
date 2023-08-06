@@ -1,0 +1,16 @@
+LICENSE
+README.md
+setup.py
+current_events_magnifier/CE_magnifier.py
+current_events_magnifier/CE_magnifier_test.py
+current_events_magnifier/__init__.py
+current_events_magnifier/cem_utils.py
+current_events_magnifier/normalization.py
+current_events_magnifier/plot.py
+current_events_magnifier/read_f5c_resquiggle.py
+current_events_magnifier/read_tombo_resquiggle.py
+current_events_magnifier.egg-info/PKG-INFO
+current_events_magnifier.egg-info/SOURCES.txt
+current_events_magnifier.egg-info/dependency_links.txt
+current_events_magnifier.egg-info/requires.txt
+current_events_magnifier.egg-info/top_level.txt
