@@ -1,0 +1,10 @@
+.*_cache/
+__pycache__/
+/.coverage
+/htmlcov/
+/dist/
+/.hypothesis/
+/.task/
+/.venvs/
+/docs/assets
+/docs/build/
