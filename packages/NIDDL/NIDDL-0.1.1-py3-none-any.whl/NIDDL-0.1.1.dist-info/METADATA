@@ -1,0 +1,57 @@
+Metadata-Version: 2.1
+Name: NIDDL
+Version: 0.1.1
+Summary: Neuro Imaging Denoising via Deep Learning (NIDDL)
+Home-page: https://github.com/shiveshc/whole-brain_DeepDenoising
+Author: Shivesh Chaudhary
+Author-email: shiveshc@gmail.com
+License: MIT
+Keywords: conversion
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+License-File: LICENSE
+Requires-Dist: absl-py (==0.11.0)
+Requires-Dist: astor (==0.8.1)
+Requires-Dist: bleach (==1.5.0)
+Requires-Dist: certifi (==2020.6.20)
+Requires-Dist: cycler (==0.10.0)
+Requires-Dist: Cython (==0.29.21)
+Requires-Dist: decorator (==4.4.2)
+Requires-Dist: gast (==0.4.0)
+Requires-Dist: google-pasta (==0.2.0)
+Requires-Dist: grpcio (==1.35.0)
+Requires-Dist: h5py (==2.10.0)
+Requires-Dist: html5lib (==0.9999999)
+Requires-Dist: imagecodecs (==2019.12.31)
+Requires-Dist: imagecodecs-lite (==2020.1.31)
+Requires-Dist: imageio (==2.9.0)
+Requires-Dist: importlib-metadata (==2.1.1)
+Requires-Dist: Keras (==2.0.8)
+Requires-Dist: Keras-Applications (==1.0.8)
+Requires-Dist: Keras-Preprocessing (==1.1.2)
+Requires-Dist: kiwisolver (==1.1.0)
+Requires-Dist: Markdown (==3.2.2)
+Requires-Dist: matplotlib (==3.0.3)
+Requires-Dist: networkx (==2.4)
+Requires-Dist: numpy (==1.16.6)
+Requires-Dist: opencv-python (==4.4.0.42)
+Requires-Dist: Pillow (==7.2.0)
+Requires-Dist: protobuf (==3.14.0)
+Requires-Dist: pyparsing (==2.4.7)
+Requires-Dist: python-dateutil (==2.8.1)
+Requires-Dist: PyWavelets (==1.1.1)
+Requires-Dist: PyYAML (==5.3.1)
+Requires-Dist: scikit-image (==0.15.0)
+Requires-Dist: scipy (==1.4.1)
+Requires-Dist: six (==1.15.0)
+Requires-Dist: tensorflow-gpu (==1.6.0)
+Requires-Dist: termcolor (==1.1.0)
+Requires-Dist: tifffile (==2019.7.26.2)
+Requires-Dist: tqdm (==4.61.2)
+Requires-Dist: Werkzeug (==1.0.1)
+Requires-Dist: wrapt (==1.12.1)
+Requires-Dist: zipp (==1.2.0)
+
+NIDDL code for denoising of volumetric calcium imaging recordings.         If you find our code useful please cite         Chaudhary, S., Moon, S. & Lu, H. Fast, efficient, and accurate neuro-imaging denoising via supervised deep learning. Nat Commun 13, 5165 (2022). https://doi.org/10.1038/s41467-022-32886-w
