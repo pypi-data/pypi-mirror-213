@@ -1,0 +1,24 @@
+{
+  "private": true,
+  "workspaces": [
+    "./packages/*"
+  ],
+  "scripts": {
+    "build": "lerna run build",
+    "build:dev": "tsc --build",
+    "clean": "lerna run clean",
+    "install": "lerna bootstrap --no-ci",
+    "publish": "lerna version --no-push -m \"Publish npm packages\" && npm run clean && npm run build && lerna publish from-git",
+    "test": "lerna run test",
+    "test:ci": "lerna run test:ci",
+    "update:all": "update-dependency --lerna --minimal --regex .*",
+    "update:lab": "update-dependency --lerna --minimal --regex ^@jupyterlab/",
+    "update:lab:next": "update-dependency --lerna --minimal --regex ^@jupyterlab/ ^next",
+    "updated": "lerna updated",
+    "watch:dev": "tsc --build --watch"
+  },
+  "devDependencies": {
+    "@jupyterlab/buildutils": "^3.4.5",
+    "lerna": "^5.4.3"
+  }
+}
