@@ -1,0 +1,81 @@
+Metadata-Version: 2.1
+Name: hcs-cli
+Version: 0.1.36
+Summary: Horizon Cloud Service CLI
+Author-email: Nanw1103 <nanw1103@gmail.com>
+Project-URL: Homepage, https://github.com/vmware/horizon-cloud-service-cli
+Project-URL: Bug Tracker, https://github.com/vmware/horizon-cloud-service-cli/issues
+Project-URL: documentation, https://readthedocs.org
+Project-URL: repository, https://github.com/vmware/horizon-cloud-service-cli
+Project-URL: changelog, https://github.com/vmware/horizon-cloud-service-cli/blob/main/CHANGELOG.md
+Keywords: Horizon,Horizon Cloud,Horizon Cloud Service,CLI
+Classifier: Programming Language :: Python :: 3
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+License-File: NOTICE
+Requires-Dist: click (>=8.1.3)
+Requires-Dist: coloredlogs (>=15.0.1)
+Requires-Dist: cryptography (>=38.0.0)
+Requires-Dist: httpx (>=0.22.0)
+Requires-Dist: packaging (>=21.3)
+Requires-Dist: PyJWT (>=2.6.0)
+Requires-Dist: pyOpenSSL (>=23.1.1)
+Requires-Dist: PyYAML (>=6.0)
+
+# horizon-cloud-service-cli
+
+## Overview
+Command line toolbox for [VMware Horizon Cloud Service (HCS) Next-Gen](https://www.vmware.com/products/horizon-cloud.html). It provides human-friendly operations based on HCS REST API.
+
+## Try it out
+
+
+### Prerequisites
+* Python 3.10+
+* Pip3
+
+Refer to [Setup Prerequisites](doc/dev-setup.md#setup-prerequisites) for more details.
+
+### Use the published version on PyPI
+
+#### Mac & Linux
+
+Install the tool
+```
+pip3 install hcs-cli
+```
+Initialize a profile with interactively, with credential. 
+```
+hcs profile init
+```
+
+To get a valid token to use with the CLI, refer to doc [Get CSP User API Token](doc/get-csp-user-api-token.md).
+
+
+Run a command, for example, list templates:
+```
+hcs admin template list
+```
+
+## Documentation
+
+* [HCS CLI Cheatsheet](doc/hcs-cli-cheatsheet.md)
+
+* [Development Setup](doc/dev-setup.md)
+
+* Based on [Context Programming](https://github.com/nanw1103/context-programming)
+
+  
+## Contributing
+
+The horizon-cloud-service-cli project team welcomes contributions from the community. Before you start working with horizon-cloud-service-cli, please read and sign our [Contributor License Agreement CLA](CONTRIBUTING_CLA.md). If you wish to contribute code and you have not signed our contributor license agreement (CLA), our bot will prompt you to do so when you open a Pull Request. For any questions about the CLA process, please refer to our [FAQ]([https://cla.vmware.com/faq](https://cla.vmware.com/faq)).
+
+## License
+
+Apache 2.0
+
+
