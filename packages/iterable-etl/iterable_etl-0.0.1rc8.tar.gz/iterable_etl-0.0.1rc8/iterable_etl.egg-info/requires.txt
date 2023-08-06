@@ -1,0 +1,7 @@
+click
+pandas<2,>=1
+requests
+pyspark
+loguru
+python-dotenv
+typing_extensions
