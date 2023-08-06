@@ -1,0 +1,16 @@
+iggcli/__init__.py,sha256=z1-TUyyftLZKcRXQpKUrMgsIr6oQPCEEwF-mszqA6UY,213
+iggcli/__main__.py,sha256=YPUUnrRCIE9bTkh21arDK4yp4p6bDi5WLYC9O0NYL_0,37
+iggcli/calls/__init__.py,sha256=OL6-FXplqAS_ANbvewveVM88EMSVaGmYTF109GfNsFM,96
+iggcli/calls/credits.py,sha256=CyAV81jydM2bvIPH-KmRTKFQTGl2pKEK62Yef82-RZk,225
+iggcli/calls/search.py,sha256=BKgVADfElkTjeDX_stcotHERCbKZNcoiYNMeJahaqDQ,1088
+iggcli/cli.py,sha256=dC7cRl8PUCOF7C0j4sbdjBud4KbO1fAhLVWCArrZ7ZY,293
+iggcli/core/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+iggcli/core/scrap.py,sha256=L83eB0wv1VOuGI3bkerxNl5D8XsYpih5I_vP188urUo,491
+iggcli/main.py,sha256=c-xqAUeQTehUsJlwVOjfYl9eKvySTNAcwHAcTzM5U1w,99
+iggcli/values/__init__.py,sha256=1hnOJnZgBW7j2YwPh0q6Fj8rT0G_PLx5ZEE3pjX0t8k,45
+iggcli/values/search.py,sha256=TEF4NaspTjJ2TUoaJM5JIJFe4QBf9AKmVebNLs4krHY,225
+iggcli/values/web.py,sha256=AjX6jrhT9NAiip98T0aWUYCl8fdoxMbJPXwVEpCo-QU,41
+iggcli-0.1.1.dist-info/METADATA,sha256=LeFYarjzPR4_70Tlbvx-NQc78QwqPVckZrR8GznzkAc,1049
+iggcli-0.1.1.dist-info/WHEEL,sha256=Zb28QaM1gQi8f4VCBhsUklF61CTlNYfs9YAZn-TOGFk,88
+iggcli-0.1.1.dist-info/entry_points.txt,sha256=eL77gA03F5xUqTXfU2nHwvSGLHvuwp-G4t0tsNr43-E,43
+iggcli-0.1.1.dist-info/RECORD,,

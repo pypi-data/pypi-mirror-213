@@ -1,0 +1,3 @@
+[console_scripts]
+iggcli=iggcli.main:main
+
