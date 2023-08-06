@@ -1,0 +1,11 @@
+superspreader/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+superspreader/exceptions.py,sha256=YnnocQRSBJhplUpGyFtbJ58hJKFPuMtUinslcfG0T1w,414
+superspreader/fields.py,sha256=WvvuzjbZfTmv5xb5MlegNhPdabKjbE1E3R9yTzjGkIc,3926
+superspreader/i18n.py,sha256=2yMZbUtxB3Re3_vGadcAa9rtZkR-HM-xAF61X4SBHss,840
+superspreader/messages.py,sha256=wcpSybc5LVLvbzrRvlFuQBxrA5A0M4pgMeoT-emo62o,1965
+superspreader/sheets.py,sha256=uPBGpZxeY1QkrzMQtUdZJpHjiKYNz3MQreyWIdgOE0A,8045
+superspreader-0.2.1.dist-info/LICENSE.txt,sha256=RJZlJ0fPUMiWVzXoIqm0WLRl4hGtoL46H3dvHE5-1_A,1074
+superspreader-0.2.1.dist-info/METADATA,sha256=IEx5pX0mgz4hi3RZh0QXpcb1nRn6J5ywlqocux3ibE0,3354
+superspreader-0.2.1.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+superspreader-0.2.1.dist-info/top_level.txt,sha256=Lv21oVsTldnJAA6yssGIJsAcGTEIFvDPSJbs8S68-Wo,14
+superspreader-0.2.1.dist-info/RECORD,,
