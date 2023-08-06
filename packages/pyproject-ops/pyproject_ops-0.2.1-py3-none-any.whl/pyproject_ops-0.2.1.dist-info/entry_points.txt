@@ -1,0 +1,2 @@
+[console_scripts]
+pyops = pyproject_ops.cli:main
