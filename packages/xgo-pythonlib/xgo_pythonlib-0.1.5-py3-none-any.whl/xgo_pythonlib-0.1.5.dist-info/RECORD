@@ -1,0 +1,9 @@
+xgoedu/__init__.py,sha256=Yt44y5fpeMjHTuudTa32eBinKBV_mwETbsyLzSXe1H4,37464
+xgolib/__init__.py,sha256=Usj8Ow721xmm9FO2Zk3b1yVmyr2xlutBPDn0lr1Go9A,26384
+xgoscreen/LCD_2inch.py,sha256=j72hhhfL23GYZYX0_RJTbG5M2zD8WZHs0dss8PuOWOg,5339
+xgoscreen/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+xgoscreen/lcdconfig.py,sha256=oVlzCnxDTozkGXBQO8st0vA1ChCvhENsvDiA0P7pE7k,2214
+xgo_pythonlib-0.1.5.dist-info/METADATA,sha256=DHUMYWFuz9ocl3bB24i65Q-NjdUG5BTl0t0HWgiHtMY,1733
+xgo_pythonlib-0.1.5.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+xgo_pythonlib-0.1.5.dist-info/top_level.txt,sha256=tQWRsIrrQzwIe2LYUEHBWQk5wlvqE7xBXmAkrh6Z32U,24
+xgo_pythonlib-0.1.5.dist-info/RECORD,,
