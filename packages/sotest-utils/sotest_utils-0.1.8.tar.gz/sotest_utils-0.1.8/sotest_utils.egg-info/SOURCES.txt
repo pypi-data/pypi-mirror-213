@@ -1,0 +1,10 @@
+README.md
+setup.py
+sotest_utils/__init__.py
+sotest_utils/magic.py
+sotest_utils/test.py
+sotest_utils.egg-info/PKG-INFO
+sotest_utils.egg-info/SOURCES.txt
+sotest_utils.egg-info/dependency_links.txt
+sotest_utils.egg-info/requires.txt
+sotest_utils.egg-info/top_level.txt

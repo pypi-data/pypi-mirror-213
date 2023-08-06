@@ -1,0 +1,3 @@
+python-consul
+boto3
+allure-pytest>=2.9.45
