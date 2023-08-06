@@ -1,0 +1,7 @@
+LICENSE
+README.md
+setup.py
+Bubbelz.egg-info/PKG-INFO
+Bubbelz.egg-info/SOURCES.txt
+Bubbelz.egg-info/dependency_links.txt
+Bubbelz.egg-info/top_level.txt
