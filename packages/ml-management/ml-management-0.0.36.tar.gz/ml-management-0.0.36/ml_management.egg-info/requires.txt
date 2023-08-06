@@ -1,0 +1,8 @@
+boto3==1.21.21
+jsonschema==2.6.0
+mlflow==1.21.0
+numpy<=1.23.5,>=1.8.1
+pandas<=1.5.2,>=0.20.1
+protobuf<4.0.0
+requests_toolbelt<=0.10.1,>=0.9.1
+sgqlc==16.1
