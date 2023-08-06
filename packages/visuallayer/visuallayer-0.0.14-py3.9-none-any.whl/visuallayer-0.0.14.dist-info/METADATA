@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: visuallayer
+Version: 0.0.14
+Summary: Open, Clean Datasets for Computer Vision.
+Home-page: https://github.com/visual-layer/vl-datasets
+Author: Visual Layer
+Author-email: info@visual-layer.com
+License: Apache-2.0
+Keywords: machine learning,computer vision,data-centric
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: torch
+Requires-Dist: torchvision
+Requires-Dist: pandas
+Requires-Dist: sentry-sdk
+Requires-Dist: scipy
+Requires-Dist: itables
+
+Coming soon.
+
