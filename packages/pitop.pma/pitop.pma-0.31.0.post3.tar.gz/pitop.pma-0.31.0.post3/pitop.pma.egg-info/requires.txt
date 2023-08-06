@@ -1,0 +1,5 @@
+pitop.common==0.31.0-3
+pitop.core==0.31.0-3
+pitop.system==0.31.0-3
+gpiozero<2.0.0,>=1.6.2
+numpy<2.0.0,>1.19.5
