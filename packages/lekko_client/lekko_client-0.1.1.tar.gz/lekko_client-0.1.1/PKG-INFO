@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: lekko_client
+Version: 0.1.1
+Summary: Lekko Python SDK Client
+Author-email: Sam Marcellus <sam@lekko.com>
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+Classifier: License :: OSI Approved :: Apache Software License
+Requires-Dist: grpcio ~= 1.32
+Requires-Dist: grpcio-tools ~= 1.32
+Requires-Dist: grpc-interceptor ~= 0.15
+Requires-Dist: tox ~= 4.5 ; extra == "dev"
+Project-URL: Home, https://github.com/lekkodev/python-sdk
+Provides-Extra: dev
+
+# python-sdk
