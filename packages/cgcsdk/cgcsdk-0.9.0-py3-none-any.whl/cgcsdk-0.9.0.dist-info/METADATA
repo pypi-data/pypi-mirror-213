@@ -1,0 +1,39 @@
+Metadata-Version: 2.1
+Name: cgcsdk
+Version: 0.9.0
+Summary: Comtegra GPU Cloud REST API client
+Author: Comtegra AI Team
+Author-email: ai@comtegra.pl
+License: BSD 2-clause
+Project-URL: Documentation, https://example.com/documentation/
+Project-URL: GitHub, https://github.com/foobar/foobar/
+Project-URL: Changelog, https://github.com/foobar/foobar/blob/master/CHANGELOG.md
+Keywords: cloud,sdk,orchestrator,kubernetes,jupyter-notebook
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: click
+Requires-Dist: python-dotenv
+Requires-Dist: tabulate
+Requires-Dist: pycryptodomex
+Requires-Dist: paramiko (>=2.11)
+Requires-Dist: statsd
+Requires-Dist: requests
+Requires-Dist: setuptools
+Requires-Dist: colorama
+Requires-Dist: redis
+Requires-Dist: pymongo
+Requires-Dist: psycopg2-binary
+
+# CGC Client - K8s Cloud
+
+cgc command line client for k8s Comtegra cloud environment.
