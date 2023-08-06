@@ -1,0 +1,26 @@
+​​​​
+ ￼​​
+​​​
+￼￼
+
+
+# Zero Width Space (ZWS): U+200B
+"​"
+# Zero Width Joiner (ZWJ): U+200D
+"‍"
+# Byte Order Mark (BOM): U+FEFF
+"￼"
+# Object Replacement Character: U+FFFC
+"￼"
+
+# 3 consecutive ZWS
+ZWS_X3 = r"""​​​"""
+
+# 1 BOM followed by 1 ZWS
+BOM_ZWS = r"""￼​"""
+
+# 3 consecutive ZWJ
+ZWJ_X3 = r"""‍‍‍"""
+
+# 1 BOM followed by 1 ZWJ
+BOM_ZWJ = r"""￼‍"""
