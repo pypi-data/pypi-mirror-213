@@ -1,0 +1,16 @@
+[build-system]
+build-backend = "setuptools.build_meta"
+requires = ["setuptools>=61.0"]
+[project]
+name = "sync-pack-sdk"
+description = "this is a testing description"
+version = "7.7.7"
+readme = "README.md"
+requires-python = ">=3.7"
+keywords = ["this", "testing"]
+authors = [{name = "subtain", email = "subtain@gmail.com"}]
+urls = {Documentation = "https://whats.com"}
+dependencies = ["apimatic-core~=0.2.0", "apimatic-core-interfaces~=0.1.0", "apimatic-requests-client-adapter~=0.1.0", "python-dateutil~=2.8.1", "enum34~=1.1, >=1.1.10", "deprecation~=2.1"]
+classifiers = []
+[project.optional-dependencies]
+testutils = ["pytest>=7.2.2"]
