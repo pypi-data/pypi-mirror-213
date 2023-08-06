@@ -1,0 +1,16 @@
+commands_gpt/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+commands_gpt/chat.py,sha256=N7hMak5vb0J0tEvBAoHaawHTNjW5uZpJCS6tI5dKi3E,1301
+commands_gpt/config.py,sha256=wCy_D_xEVwrVPKANZlcIAn8pFf9NwdL8L_EEu-1WaYg,841
+commands_gpt/models.py,sha256=FXNtPv-O3Cgz07VNzVVSxYhxy1iVtjkizdWQyxDsGFo,141
+commands_gpt/recognizers.py,sha256=BGoJi0kMNwfdfnNH7lgtSpTMo2CfbfO0Ixai6mGxpH0,25599
+commands_gpt/regex.py,sha256=OeZa4HZu-jC56-o4sX-LAZreo3EDiP-J55xUYaHQYIw,3719
+commands_gpt/commands/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+commands_gpt/commands/commands_funcs.py,sha256=EzazpHrUnXhqzjxhbfNAbKMkhI2c9FsRc3VBxqKVooQ,5779
+commands_gpt/commands/graphs.py,sha256=FlhUqkOqe4urcnYxvLiMiHYmwP8sL1knNoZnypKpmEM,9222
+commands_gpt/util/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+commands_gpt/util/math_expr.py,sha256=edgYEDXRy7IKp1hMgrvfYLLXV2C0ghuLNZgTaq4rMyY,1335
+commandsgpt-1.5.1.dist-info/LICENSE,sha256=SRTuprQW0WTwUfPwWBqJOPt7RWvIHnr3WkR_HOueVl0,1511
+commandsgpt-1.5.1.dist-info/METADATA,sha256=cWoMyprF20sIYtUfidUh0W171ZUqDkG8FZp7_n3908k,9133
+commandsgpt-1.5.1.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+commandsgpt-1.5.1.dist-info/top_level.txt,sha256=s-VQanWdYqypqz4AZh_axBTiW3rk10o-CbUwi31UKEU,13
+commandsgpt-1.5.1.dist-info/RECORD,,
