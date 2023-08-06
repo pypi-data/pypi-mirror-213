@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+aicurious.egg-info/PKG-INFO
+aicurious.egg-info/SOURCES.txt
+aicurious.egg-info/dependency_links.txt
+aicurious.egg-info/top_level.txt
+vietanhdev/__init__.py
