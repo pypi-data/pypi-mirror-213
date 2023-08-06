@@ -1,0 +1,41 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "jsonfmt"
+dynamic = ["dependencies", "version"]
+requires-python = ">=3.6"
+license = {text = "MIT License"}
+description = "A simple tool for formatting JSON object."
+readme = "README.md"
+keywords = ["json", "formatter", "pretty-print", "highlight", "jmespath"]
+authors = [{name = "Seamile", email = "lanhuermao@gmail.com"}]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Environment :: Console",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: File Formats :: JSON",
+    "Topic :: Printing",
+    "Topic :: Utilities",
+]
+
+[project.urls]
+homepage = "https://github.com/seamile/jsonfmt"
+repository = "https://github.com/seamile/jsonfmt"
+documentation = "https://seamile.github.io/jsonfmt/"
+
+[tool.setuptools.dynamic]
+dependencies = {file = ["requirements.txt"]}
+version = {attr = "jsonfmt.__version__" }
+
+[project.scripts]
+jsonfmt = "jsonfmt:main"
