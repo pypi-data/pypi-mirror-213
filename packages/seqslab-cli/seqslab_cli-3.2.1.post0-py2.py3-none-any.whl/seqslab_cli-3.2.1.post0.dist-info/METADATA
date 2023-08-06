@@ -1,0 +1,326 @@
+Metadata-Version: 2.1
+Name: seqslab-cli
+Version: 3.2.1.post0
+Summary: Atgenomix SeqsLab Command Line Tool
+Home-page: https://github.com/AnomeGAP/seqslab-cli
+Author: Allen Chang
+Author-email: allen.chang@atgenomix.com
+License: MIT license
+Project-URL: Documentation, https://docs.atgenomix.com/
+Project-URL: Repository, https://github.com/AnomeGAP/seqslab-cli
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Requires-Dist: pip (>=22.0.4)
+Requires-Dist: cryptography (==38.0.3)
+Requires-Dist: jeepney (==0.7.1)
+Requires-Dist: secretstorage (==3.3.2)
+Requires-Dist: dbus-python (==1.2.16)
+Requires-Dist: keyring (==23.5.0)
+Requires-Dist: numba (==0.54.1)
+Requires-Dist: python-nubia (==0.2b5)
+Requires-Dist: msal (==1.17.0)
+Requires-Dist: tenacity (==8.0.1)
+Requires-Dist: aiofiles (==0.8.0)
+Requires-Dist: aiohttp[speedups] (==3.8.1)
+Requires-Dist: aioretry (==5.0.2)
+Requires-Dist: uvloop (==0.16.0)
+Requires-Dist: arrow (==1.2.2)
+Requires-Dist: yarl (==1.4.2)
+Requires-Dist: requests-toolbelt (==0.9.1)
+Requires-Dist: sample-sheet (==0.12.0)
+Requires-Dist: PyJWT (==2.4.0)
+Requires-Dist: django-environ (==0.8.1)
+Requires-Dist: validators (==0.19.0)
+Requires-Dist: pydot (==1.4.2)
+Requires-Dist: orjson (==3.7.8)
+Requires-Dist: pydantic (~=1.8.2)
+Requires-Dist: aiohttp-retry (==2.8.3)
+Requires-Dist: requests (~=2.26.0)
+Requires-Dist: setuptools (~=59.0.1)
+
+<!-- PROJECT SHIELDS -->
+<!--
+*** I'm using markdown "reference style" links for readability.
+*** Reference links are enclosed in brackets [ ] instead of parentheses ( ).
+*** See the bottom of this document for the declaration of the reference variables
+*** for contributors-url, forks-url, etc. This is an optional, concise syntax you may use.
+*** https://www.markdownguide.org/basic-syntax/#reference-style-links
+-->
+[Contributors][contributors-url]
+[Stargazers][stars-url]
+[Issues][issues-url]
+[License][license-url]
+[![LinkedIn][linkedin-shield]][linkedin-url]
+
+<!-- PROJECT LOGO -->
+<br />
+<p align="center">
+  <a href="https://github.com/AnomeGAP/seqslab-cli">
+    <img src="https://static.wixstatic.com/media/f7a6a5_1ad70ed05af04d7eb45ee5e2df347a32~mv2_d_4266_4449_s_4_2.gif" alt="Logo" width="80" height="80">
+  </a>
+
+<h2 align="center">Atgenomix SeqsLab V3 CLI</h2>
+</p>
+<p align="center">
+  Command-line interface of Atgenomix SeqsLab, a cloud-native biomedical informatics (BioMed IT) platform
+  <br />
+  <a href="https://docs.atgenomix.com"><strong>Explore the docs »</strong></a>
+  <br />
+  <br />
+  <a href="https://github.com/AnomeGAP/seqslab-cli/issues">Report issue</a>
+  ·
+  <a href="https://github.com/AnomeGAP/seqslab-cli/issues">Request feature</a>
+</p>
+
+<!-- TABLE OF CONTENTS -->
+<details open="open">
+  <summary>Table of Contents</summary>
+  <ol>
+    <li>
+      <a href="#overview">Overview</a>
+      <ul>
+        <li><a href="#underlying-technology">Underlying Technology</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="#getting-started">Getting Started</a>
+      <ul>
+        <li><a href="#prerequisites">Prerequisites</a></li>
+        <li><a href="#interactive-mode">Interactive Mode</a></li>
+        <li><a href="#cli-mode">CLI Mode</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="#development">Development</a>
+      <ul>
+        <li><a href="#authentication-with-the-seqslab-api">Authentication with the SeqsLab API</a></li>
+      </ul>
+    </li>
+    <li><a href="#roadmap">Roadmap</a></li>
+    <li><a href="#contributing">Contributing</a></li>
+    <li><a href="#license">License</a></li>
+    <li><a href="#contact">Contact</a></li>
+    <li><a href="#acknowledgements">Acknowledgements</a></li>
+  </ol>
+</details>
+
+## Overview
+
+![Product Screen Shot](https://github.com/AnomeGAP/seqslab-cli/blob/main/Atgenomix%20SeqsLab%20V3.png)
+
+Working alongside the web-based SeqsLab Console, the CLI enables bioinformaticians to easily build custom scripts and automate workflows on SeqsLab.
+
+Common use cases for the CLI include the following:
+
+* Automate processing of sequencing data, including uploading and downloading of datasets to/from the SeqsLab Data Hub
+* Submit workflow run requests on demand via SeqsLab Workflow Execution Service (WES) APIs, and integrate with local downstream analysis tools
+* View records of platform activities for auditing purposes
+
+### Underlying Technology
+
+The SeqsLab CLI is built using the following:
+
+* [SeqsLab APIs](https://api.seqslab.net/)
+* [Python-Nubia](https://github.com/facebookincubator/python-nubia)
+* [MSAL Python](https://msal-python.readthedocs.io/en/latest/)
+* [Azure SDK](https://github.com/Azure/azure-sdk)
+* [aiohttp](https://docs.aiohttp.org/en/stable/index.html)
+
+**Note**: The mechanisms for secure information storage are built around a [keyring](https://pypi.org/project/keyring/) service.
+
+## Getting Started
+
+### Prerequisites
+
+* Python 3.8 or later
+
+* A Python virtual environment
+
+  Install the SeqsLab CLI.
+  ```bash
+  pip3 install seqslab-cli
+  ```
+* A keyring backend
+
+  The SeqsLab CLI supports the following keyring backends:
+
+  * macOS [Keychain](https://en.wikipedia.org/wiki/Keychain_%28software%29)
+  * Freedesktop [Secret Service](http://standards.freedesktop.org/secret-service/) (requires [secretstorage](https://pypi.python.org/pypi/secretstorage))
+  * KDE4 & KDE5 [KWallet](https://en.wikipedia.org/wiki/KWallet) (requires [dbus](https://pypi.python.org/pypi/dbus-python))
+  * [Windows Credential Locker](https://docs.microsoft.com/en-us/windows/uwp/security/credential-locker)
+
+  **Note**: See the [Python keyring library documentation](https://pypi.org/project/keyring/) for more information about using keyring on a headless Linux system in a Docker container.
+
+* (macOS devices) The following packages:
+
+  * [pkg-config](https://formulae.brew.sh/formula/pkg-config)
+  * [dbus](https://formulae.brew.sh/formula/dbus)
+  * [glib](https://formulae.brew.sh/formula/glib)
+
+  You can install the required packages using Homebrew.
+  ```bash
+  # install packages:
+  brew install dbus
+  brew install pkg-config 
+  brew install glib
+  ```
+
+### Interactive Mode
+
+This mode provides fish-style auto-completion functionality that is user-friendly, especially for beginners.
+
+* Run interactive mode.
+  ```bash
+  virtualenv .venv
+  source .venv/bin/activate
+  export PYTHONPATH=$(pwd)
+  python3 seqslab/cli.py
+  ```
+
+* Display the available commands.
+  ```bash
+  seqslab> help
+  ```
+
+### CLI Mode
+
+In this mode, the SeqsLab CLI works exactly like any traditional Linux-based command-line utility.
+
+## Development
+
+Commands are defined as normal Python functions with `@command` and `@argument` decorators. Super commands are implemented as Python class objects, and instance methods decorated with `@command` are sub-commands. In non-interactive mode, you can set `@command`-decorated functions to return an `int`, which is used as the Linux return code.
+
+By default, the framework loads commands from the `python/seqslab/commands` module directory. Atgenomix recommends implementing your program structure under the `commands` directory.
+
+```python
+
+from termcolor import cprint
+from nubia import argument, command
+@command("hello")
+@argument("name", type=str, positional=True, description="Your name") 
+def hello(name: str) -> int:
+    """
+    command help, or the command won't be loaded.
+    """
+    cprint(f"Hello {name}!", "green")
+    return 0
+@command
+class SuperCommand:
+  """super-command command help"""
+
+  def __init__(self):
+    self._shared = "shared variable value"
+
+  @property
+  def shared(self) -> str:
+    return self._shared
+
+  @command(aliases=["echo"])
+  @argument("first",
+            type=str,
+            positional=False,
+            description="firstname",
+            aliases=["f"])
+  @argument("last",
+            type=str,
+            positional=False,
+            description="lastname",
+            aliases=["l"])
+  def cprint(self, first: str, last: str) -> int:
+      """
+      sub-command help message.
+      """
+      cprint(f"{first} {last}", "red")
+      return 0
+```
+
+### Authentication with the SeqsLab API
+
+Regardless of the mode (interactive or non-interactive) that you intend to use, you must sign in to authenticate the session. The SeqsLab CLI follows the OAuth 2.0 Device Authorization Grant (external URL) process.
+
+* Specify the platform backend to be used when launching the SeqsLab CLI. The default value is `azure`.
+
+  ```bash
+  seqslab --backend azure
+  ```
+
+* Sign in to the SeqsLab API and obtain API tokens with a single command. By default, the sign-in command uses the Device Code Flow for browserless systems.
+
+  ```bash
+  auth signin
+  ```
+
+  Set the device-code argument to `True`. By default, the sign-in process uses the Authorization Code Flow.
+
+  ```bash
+  auth signin device-code=True
+  ```
+
+* Obtain an API access token for interacting with SeqsLab API apps.
+
+  ```python
+  from seqslab.auth.commands import Auth
+
+  token = Auth.get_token()
+  access = token.get("tokens").get("access")
+  # use token in your request header, ex: Authorization: Bearer {access}
+  attrs = token.get("attrs")
+  # attrs is a dictionary containing the information about the signing-in user.
+  ```
+
+  `Auth.get_token()` automatically refreshes the access token upon expiration. When users attempt to sign in to the SeqsLab API before a new access token is generated, the function returns `None`.
+
+  Access tokens are persistently cached in the system-supported secret service, such as Freedesktop Secret Service and macOS Keychain. As a result, valid access tokens can be used across multiple SeqsLab CLI sessions.
+
+## Roadmap
+
+See the [list](https://github.com/AnomeGAP/seqslab-cli/issues) of proposed features and known issues.
+
+## Contributing
+
+The repository currently does not accept contributions but will eventually be opened to the community.
+
+## License
+
+See `License`.
+
+## Contact 
+
+Main contact: [Allen Chang](https://www.linkedin.com/in/allen-chang/) 
+
+Email: allen.chang@atgenomix.com
+
+Project repository: [https://github.com/atgenomix](https://github.com/atgenomix)
+
+## Acknowledgements
+
+* [Facebook Incubator](https://github.com/facebookincubator)
+* [Microsoft identity platform](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-v2-protocols)
+* [GA4GH](https://www.ga4gh.org/)
+* [Best-README-Template](https://github.com/othneildrew/Best-README-Template)
+
+<!-- MARKDOWN LINKS & IMAGES -->
+<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
+
+[contributors-url]: https://github.com/AnomeGAP/seqslab-cli/graphs/contributors
+
+[stars-url]: https://github.com/AnomeGAP/seqslab-cli/stargazers
+
+[issues-url]: https://github.com/AnomeGAP/seqslab-cli/issues
+
+[license-url]: https://github.com/AnomeGAP/seqslab-cli/blob/main/LICENSE.txt
+
+[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
+
+[linkedin-url]: https://www.linkedin.com/company/atgenomix
+
+[product-screenshot]: https://github.com/AnomeGAP/seqslab-cli/blob/main/Atgenomix%20SeqsLab%20V3.png
+
+
