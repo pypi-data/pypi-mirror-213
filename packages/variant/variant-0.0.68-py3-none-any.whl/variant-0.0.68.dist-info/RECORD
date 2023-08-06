@@ -1,0 +1,9 @@
+variant/__init__.py,sha256=IMjkMO3twhQzluVTo8Z6rE7Eg-9U79_LGKMcsWLKBkY,22
+variant/cli.py,sha256=3ZIRqav8aYuKoRHpWTTmKqjL8wPjNnw0ihzXYPX4e9o,3796
+variant/effect.py,sha256=Bw0t2joWGAjNeYGV6GWjl9RzKbONan4cLAunB4SQc8Q,18322
+variant/effect_ordering.py,sha256=3MDcWqy0Bgx45MNVswkbNOVR6FO3ytl3WIjeUxsLds0,1612
+variant/motif.py,sha256=0h7WtkjN3B8SMaXWbIMf9K1twTfEwhrzLwMOFWxMYMc,3861
+variant-0.0.68.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+variant-0.0.68.dist-info/entry_points.txt,sha256=82Sv4A1kNQw3Sfyo2CZMYBg290iiT0VnR1CtZxYyiOg,77
+variant-0.0.68.dist-info/METADATA,sha256=2gNDLOPx8vGtkXGHlhKck8t6PsxS1cixvGctBlT7Lkg,7512
+variant-0.0.68.dist-info/RECORD,,
