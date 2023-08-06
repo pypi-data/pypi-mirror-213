@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: autofxn
+Version: 0.0.1
+Summary: Create AI prediction functions by describing what they should do. Register at https://fxn.ai.
+Home-page: https://fxn.ai
+Author: NatML Inc.
+Author-email: hi@fxn.ai
+License: Apache License 2.0
+Project-URL: Documentation, https://docs.fxn.ai
+Project-URL: Source, https://github.com/fxnai/autofxn
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Scientific/Engineering :: Image Recognition
+Classifier: Topic :: Software Development :: Libraries
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# AutoFunction
+*INCOMPLETE*
+
