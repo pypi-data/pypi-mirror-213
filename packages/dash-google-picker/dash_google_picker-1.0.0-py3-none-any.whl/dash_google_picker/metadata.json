@@ -1,0 +1,229 @@
+{
+  "src/lib/components/GooglePicker.react.js": {
+    "description": "GooglePicker Component.\n\nThis component provides a Google file picker for the application.\nThe picker provides access to files stored in Google Drive.\n\nProps:\n@prop {string} id - A unique identifier for the component.\n@prop {function} setProps - Function to update component's props.\n@prop {bool} open - Determines if the picker is opened or not.\n@prop {(string|array)} view_ids - Google View IDs to be displayed in the picker.\n@prop {string} client_id - The client_id of the Google Cloud application.\n@prop {string} scope - The scopes for the Google Cloud application.\n@prop {string} developer_key - The developer key of the Google Cloud application.\n@prop {(string|array)} enabled_features - Features to enable in the picker.\n@prop {(string|array)} disabled_features - Features to disable in the picker.\n@prop {string} locale - The locale to be used in the picker.\n@prop {string} action - The current action performed in the picker.\n@prop {array} documents - The documents selected from the picker.\n\nState:\n@state {bool} pickerInited - Indicates if the Google Picker API has been loaded.\n@state {bool} gisInited - Indicates if the Google Sign-in API has been loaded.\n@state {string} accessToken - The access token received from Google Sign-in.\n@state {bool} open - Determines if the picker is opened or not.\n@state {bool} pendingPicker - Indicates if there is a pending picker creation.\n\nDefault Props:\n@default {bool} open - false\n@default {array} view_ids - ['all']\n@default {string} scope - 'https://www.googleapis.com/auth/drive.readonly'\n@default {array} enabled_features - []\n@default {array} disabled_features - []\n@default {string} locale - null\n@default {string} action - ''\n@default {null} documents - null\n\nMethods:\n@method loadGoogleApi - Loads Google API script.\n@method loadGoogleGsiClient - Loads Google Sign-in script.\n@method onApiLoad - Callback for Google API load.\n@method gisLoaded - Callback for Google Sign-in load.\n@method createPicker - Creates the Google Picker.\n@method pickerCallback - Callback for Google Picker actions.",
+    "displayName": "GooglePicker",
+    "methods": [
+      {
+        "name": "loadGoogleApi",
+        "docblock": "This function is used to dynamically load Google API script into the HTML body.\n@returns {Promise} Promise object represents the eventual completion or failure of loading Google API script.",
+        "modifiers": [],
+        "params": [],
+        "returns": {
+          "description": "Promise object represents the eventual completion or failure of loading Google API script.",
+          "type": {
+            "name": "Promise"
+          }
+        },
+        "description": "This function is used to dynamically load Google API script into the HTML body."
+      },
+      {
+        "name": "loadGoogleGsiClient",
+        "docblock": "This function is used to dynamically load Google One Tap script into the HTML body.\n@returns {Promise} Promise object represents the eventual completion or failure of loading Google One Tap script.",
+        "modifiers": [],
+        "params": [],
+        "returns": {
+          "description": "Promise object represents the eventual completion or failure of loading Google One Tap script.",
+          "type": {
+            "name": "Promise"
+          }
+        },
+        "description": "This function is used to dynamically load Google One Tap script into the HTML body."
+      },
+      {
+        "name": "onApiLoad",
+        "docblock": "This function is called after Google API script is loaded successfully. It initializes the Google Picker.",
+        "modifiers": [],
+        "params": [],
+        "returns": null,
+        "description": "This function is called after Google API script is loaded successfully. It initializes the Google Picker."
+      },
+      {
+        "name": "gisLoaded",
+        "docblock": "This function is called after Google One Tap script is loaded successfully. It initializes Google One Tap client.",
+        "modifiers": [],
+        "params": [],
+        "returns": null,
+        "description": "This function is called after Google One Tap script is loaded successfully. It initializes Google One Tap client."
+      },
+      {
+        "name": "createPicker",
+        "docblock": "This function is used to create and display the Google Picker.\nIt also handles the access token needed for authorizing Google Drive access.",
+        "modifiers": [],
+        "params": [],
+        "returns": null,
+        "description": "This function is used to create and display the Google Picker.\nIt also handles the access token needed for authorizing Google Drive access."
+      },
+      {
+        "name": "pickerCallback",
+        "docblock": "This function is a callback that gets called after the user selects any file/folder in Google Picker.\nIt updates the component state or props (if `setProps` is defined) based on the selected files/folders.\n@param {Object} data - The response data from Google Picker after user selection.",
+        "modifiers": [],
+        "params": [
+          {
+            "name": "data",
+            "description": "The response data from Google Picker after user selection.",
+            "type": {
+              "name": "Object"
+            },
+            "optional": false
+          }
+        ],
+        "returns": null,
+        "description": "This function is a callback that gets called after the user selects any file/folder in Google Picker.\nIt updates the component state or props (if `setProps` is defined) based on the selected files/folders."
+      }
+    ],
+    "props": {
+      "id": {
+        "type": {
+          "name": "string"
+        },
+        "required": true,
+        "description": "A unique identifier for the component."
+      },
+      "setProps": {
+        "type": {
+          "name": "func"
+        },
+        "required": false,
+        "description": "Function to update component's props."
+      },
+      "open": {
+        "type": {
+          "name": "bool"
+        },
+        "required": false,
+        "description": "Determines if the picker is opened or not.",
+        "defaultValue": {
+          "value": "false",
+          "computed": false
+        }
+      },
+      "view_ids": {
+        "type": {
+          "name": "union",
+          "value": [
+            {
+              "name": "string"
+            },
+            {
+              "name": "arrayOf",
+              "value": {
+                "name": "string"
+              }
+            }
+          ]
+        },
+        "required": false,
+        "description": "Google View IDs to be displayed in the picker.",
+        "defaultValue": {
+          "value": "['all']",
+          "computed": false
+        }
+      },
+      "client_id": {
+        "type": {
+          "name": "string"
+        },
+        "required": true,
+        "description": "The client_id of the Google Cloud application."
+      },
+      "scope": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "The scopes for the Google Cloud application.",
+        "defaultValue": {
+          "value": "'https://www.googleapis.com/auth/drive.readonly'",
+          "computed": false
+        }
+      },
+      "developer_key": {
+        "type": {
+          "name": "string"
+        },
+        "required": true,
+        "description": "The developer key of the Google Cloud application."
+      },
+      "enabled_features": {
+        "type": {
+          "name": "union",
+          "value": [
+            {
+              "name": "string"
+            },
+            {
+              "name": "arrayOf",
+              "value": {
+                "name": "string"
+              }
+            }
+          ]
+        },
+        "required": false,
+        "description": "Features to enable in the picker.",
+        "defaultValue": {
+          "value": "[]",
+          "computed": false
+        }
+      },
+      "disabled_features": {
+        "type": {
+          "name": "union",
+          "value": [
+            {
+              "name": "string"
+            },
+            {
+              "name": "arrayOf",
+              "value": {
+                "name": "string"
+              }
+            }
+          ]
+        },
+        "required": false,
+        "description": "Features to disable in the picker.",
+        "defaultValue": {
+          "value": "[]",
+          "computed": false
+        }
+      },
+      "locale": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "The locale to be used in the picker.",
+        "defaultValue": {
+          "value": "null",
+          "computed": false
+        }
+      },
+      "action": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "The current action performed in the picker.",
+        "defaultValue": {
+          "value": "''",
+          "computed": false
+        }
+      },
+      "documents": {
+        "type": {
+          "name": "arrayOf",
+          "value": {
+            "name": "object"
+          }
+        },
+        "required": false,
+        "description": "The documents selected from the picker.",
+        "defaultValue": {
+          "value": "null",
+          "computed": false
+        }
+      }
+    }
+  }
+}
