@@ -1,0 +1,5 @@
+numpy
+matplotlib
+pandas<=1.3.5
+plumed
+scipy
