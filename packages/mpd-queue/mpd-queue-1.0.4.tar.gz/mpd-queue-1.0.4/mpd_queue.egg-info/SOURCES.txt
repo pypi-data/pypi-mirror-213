@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+beetsplug/__init__.py
+beetsplug/mpd-queue.py
+mpd_queue.egg-info/PKG-INFO
+mpd_queue.egg-info/SOURCES.txt
+mpd_queue.egg-info/dependency_links.txt
+mpd_queue.egg-info/requires.txt
+mpd_queue.egg-info/top_level.txt
