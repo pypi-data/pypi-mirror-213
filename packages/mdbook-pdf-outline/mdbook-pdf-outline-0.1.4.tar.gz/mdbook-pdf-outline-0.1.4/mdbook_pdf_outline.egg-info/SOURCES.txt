@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+mdbook_pdf_outline/__init__.py
+mdbook_pdf_outline/mdbook_pdf_outline.py
+mdbook_pdf_outline.egg-info/PKG-INFO
+mdbook_pdf_outline.egg-info/SOURCES.txt
+mdbook_pdf_outline.egg-info/dependency_links.txt
+mdbook_pdf_outline.egg-info/entry_points.txt
+mdbook_pdf_outline.egg-info/requires.txt
+mdbook_pdf_outline.egg-info/top_level.txt
