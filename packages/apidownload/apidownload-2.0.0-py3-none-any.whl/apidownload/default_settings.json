@@ -1,0 +1,11 @@
+[
+  {
+    "url": "https://swapi.dev/api/people/1/",
+    "file": "Luke.json"
+  },
+  {
+    "url": "https://swapi.dev/api/people/2/",
+    "file": "C-3PO.json",
+    "indent": 1
+  }
+]

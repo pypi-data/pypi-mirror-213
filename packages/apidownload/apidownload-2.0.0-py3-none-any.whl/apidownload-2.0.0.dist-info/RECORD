@@ -1,0 +1,10 @@
+apidownload/__init__.py,sha256=U-ZD-Dok6tHR3ONOI8H3q5zhxE00fSgfQ3GjEHaxxl8,2004
+apidownload/__main__.py,sha256=USa8WB1zIGznBmZXIRjj0sc6oN5yotII58MILgpIsf0,62
+apidownload/apidownload.json,sha256=B_ORJnUk7167OJoj99o0sDN9a-jj8dId--B1Jk3nvI4,190
+apidownload/default_settings.json,sha256=B_ORJnUk7167OJoj99o0sDN9a-jj8dId--B1Jk3nvI4,190
+apidownload-2.0.0.dist-info/LICENSE.txt,sha256=42KznO94fKWkiywx3MOxyp7ByNDs0OC_Q6LBuyrMhUM,1714
+apidownload-2.0.0.dist-info/METADATA,sha256=L8B0NUO7-ZTJGzIobhhINjwKbDP2fI0hFA9RELT3vPw,1060
+apidownload-2.0.0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+apidownload-2.0.0.dist-info/entry_points.txt,sha256=IA7a6owfYL_CfDti6Y6XIx9-3xZCjLChXS0qzkY0AD0,49
+apidownload-2.0.0.dist-info/top_level.txt,sha256=EGbn7Bj7I8a2J2SWr8PFU658bi_4YCzE3N2KRzrTd3E,12
+apidownload-2.0.0.dist-info/RECORD,,

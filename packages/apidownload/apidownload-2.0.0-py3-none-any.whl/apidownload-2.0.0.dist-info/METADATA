@@ -1,0 +1,34 @@
+Metadata-Version: 2.1
+Name: apidownload
+Version: 2.0.0
+Summary: Download the data from an API endpoint to a file
+Author: Joe Greaves
+Project-URL: Homepage, https://github.com/Grvs44/API-Download
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+Requires-Dist: requests
+
+# API Download
+Download the data from an API endpoint to a file
+
+## Install
+```cmd
+pip install apidownload
+```
+
+## Run
+```cmd
+apidownload
+```
+or
+```cmd
+python -m apidownload
+````
+* The first time `apidownload` is run in a directory, an `apidownload.json` file is created.
+  * This contains the endpoint URLs and the file paths to store the data in.
+  * Optionally, the `indent` property may be provided to override the default indentation level of 2 spaces.
+* If the `apidownload.json` file exists in this directory, the endpoints are downloaded to the specified files.
