@@ -1,0 +1,105 @@
+Metadata-Version: 2.1
+Name: zpp_args
+Version: 1.3.2
+Summary: Module pour le traitement des arguments d'une ligne de commande
+Home-page: https://github.com/ZephyrOff/py-zpp_args
+Author: 
+License: MIT License
+Project-URL: Documentation, https://github.com/ZephyrOff/py-zpp_args
+Keywords: terminal args zephyroff
+Platform: ALL
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Console
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# zpp-args
+## Informations
+Module pour le traitement des arguments d'une ligne de commande.
+<br>Trois sources possibles:
+- sys.argv
+- une chaÃ®ne de caractÃ¨re
+- une liste
+
+### PrÃ©requis
+- Python 3
+<br>
+
+# Installation
+```console
+pip install zpp_args
+```
+
+# Utilisation
+### Conseil d'importation du module
+```python
+from zpp_args import parser
+```
+<br>
+
+### Initialisation du parser
+```python
+parse = parser(SOURCE, error_lock=False)
+```
+>En paramÃ¨tre supplÃ©mentaire, nous pouvons mettre:<br/>
+>- error_lock: Purge le retour de la fonction si une erreur s'est produite (Par dÃ©faut: False)
+<br>
+
+### Initialisation des arguments
+```python
+parse.set_argument(NAME)
+```
+L'initialisation doit prendre au moins un des deux paramÃ¨tres suivants:
+- shortcut: Pour les arguments courts (1 caractÃ¨re)
+- longname: Pour les arguments explicites (1 mot ou ensemble de mots sÃ©parÃ©s par le symbole \_)
+
+_Si non prÃ©cisÃ©, la fonction initialise shortcut_
+
+>En paramÃ¨tre supplÃ©mentaire, nous pouvons mettre:<br/>
+>- error_lock: Purge le retour de la fonction si une erreur s'est produite (Par dÃ©faut: )
+>- type: Pour forcer l'argument reÃ§u Ã  un str ou un digit (Par dÃ©faut: None)
+>- default: Pour choisir une valeur par dÃ©faut(Par dÃ©faut: None)
+>- description: Pour ajouter une description Ã  l'argument Ã  afficher lors de l'appel de la commande help(Par dÃ©faut: None)
+>- required: Choisir si cet argument est nÃ©cessaire (Par dÃ©faut: False)
+>- store: Choisir si l'argument' est un simple True/False ou s'il attends une variable (Par dÃ©faut: bool)
+>- category: Choisir une catÃ©gorie pour l'affichage du help
+<br>
+
+### Initialisation des paramÃ¨tres
+L'initialisation des paramÃ¨tres va permettre d'agrÃ©menter la commande help et de fixer une limite minimum lors de la rÃ©cupÃ©ration des paramÃ¨tres
+```python
+parse.set_argument(NAME)
+```
+>En paramÃ¨tre supplÃ©mentaire, nous pouvons mettre:<br/>
+>- description: Pour ajouter une description au paramÃ¨tre Ã  afficher lors de l'appel de la commande help(Par dÃ©faut: None)
+<br>
+
+### Execution du parseur
+```python
+argument, parameter = parse.load()
+```
+Retourne une liste avec les paramÃ¨tres et une classe (StoreArgument) avec les arguments
+La StoreArgument peut retourner un dictionnaire en appelant argument.list_all()
+
+<br>
+
+### Initialisation de la description de la commande
+```python
+parse.set_description(DESCRIPTION)
+```
+<br>
+
+### Affichage de l'aide
+```python
+parse.help()
+```
+<br>
+
+### DÃ©sactiver le check sur les paramÃ¨tres
+Pour dÃ©sactiver le check du nombre de paramÃ¨tres Ã  envoyer, il suffit d'appeler la fonction suivante.
+```python
+parse.disable_check()
+```
+
