@@ -1,0 +1,16 @@
+aiohttp
+cryptography>=38.0.3
+Requests
+google-auth
+
+[asyncpg]
+asyncpg==0.27.0
+
+[pg8000]
+pg8000==1.29.6
+
+[pymysql]
+PyMySQL==1.0.3
+
+[pytds]
+python-tds==1.12.0
