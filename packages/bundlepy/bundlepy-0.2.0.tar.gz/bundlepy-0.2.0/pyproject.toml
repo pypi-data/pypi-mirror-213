@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "bundlepy"
+version = "0.2.0"
+description = "Build on top of pyinstaller to make exe creation easier"
+authors = ["Emre Yavuz <emre.yavuz169@gmail.com>"]
+license = "MIT License"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+virtualenv = "^20.23.0"
+uvicorn = "^0.22.0"
+fastapi = "0.96.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+
+[tool.poetry.scripts]
+bundlepy = "bundlepy.main:main"
+bundlepyserver = "bundlepy.bundle_service.bundle_service:main"
