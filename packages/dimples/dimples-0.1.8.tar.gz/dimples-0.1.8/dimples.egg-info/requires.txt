@@ -1,0 +1,8 @@
+dimplugins>=0.1.4
+dimsdk>=0.8.5
+dimp>=0.12.8
+dkd>=0.12.7
+mkm>=0.12.7
+startrek>=0.4.1
+tcp>=0.4.1
+udp>=0.5.10
