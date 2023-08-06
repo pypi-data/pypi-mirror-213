@@ -1,0 +1,17 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+Pyara.egg-info/PKG-INFO
+Pyara.egg-info/SOURCES.txt
+Pyara.egg-info/dependency_links.txt
+Pyara.egg-info/not-zip-safe
+Pyara.egg-info/requires.txt
+Pyara.egg-info/top_level.txt
+src/pyara/__init__.py
+src/pyara/audio_prepare.py
+src/pyara/config.py
+src/pyara/main.py
+src/pyara/Model/__init__.py
+src/pyara/Model/model.py
