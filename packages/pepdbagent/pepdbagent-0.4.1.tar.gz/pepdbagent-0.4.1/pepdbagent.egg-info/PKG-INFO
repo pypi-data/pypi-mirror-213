@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: pepdbagent
+Version: 0.4.1
+Summary: A python-based project metadata manager for portable encapsulated projects
+Home-page: https://github.com/pepkit/pepdbagent/
+Author: Oleksandr Khoroshevskyi
+License: BSD2
+Keywords: project,metadata,bioinformatics,database
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Topic :: Scientific/Engineering :: Bio-Informatics
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
+# pepdbagent
+
+`pepdbagent` is a Python library and toolkit that gives a user-friendly 
+interface to connect, upload, update and retrieve information from pep-db.
+
+**pep-db** is a postgres database created for storing [PEPs](http://pep.databio.org/en/latest/). 
+It is a backend database for PEPhub. 
+
+Before using pepdbagent, you should install or have access to a pep-db instance.
+
+To run a pep-db instance, you can use this tutorial:
+- [pep-db installation](./docs/db_tutorial.md)
+
+Then, follow the `pepdbagent` tutorial here:
+- [pedbagent](./docs/README.md)
