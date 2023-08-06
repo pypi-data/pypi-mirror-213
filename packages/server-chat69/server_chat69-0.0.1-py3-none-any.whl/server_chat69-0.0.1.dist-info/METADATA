@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: server-chat69
+Version: 0.0.1
+Summary: Server 'Async chat' application
+Home-page: UNKNOWN
+Author: nikyshu
+Author-email: nikyshu@mail.ru
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: sqlalchemy
+
+UNKNOWN
+
