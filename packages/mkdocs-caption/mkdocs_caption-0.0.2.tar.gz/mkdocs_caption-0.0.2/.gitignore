@@ -1,0 +1,15 @@
+# VSCode
+.vscode/
+
+# Python
+__pycache__
+dist/
+_version.py
+
+## MyPy
+.mypy_cache
+## Pytest
+.pytest_cache
+## Ruff
+.ruff_cache
+
