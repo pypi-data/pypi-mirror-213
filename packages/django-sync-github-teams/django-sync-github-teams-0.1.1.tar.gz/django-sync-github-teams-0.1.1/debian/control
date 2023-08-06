@@ -1,0 +1,26 @@
+Source: django-sync-github-teams
+Maintainer: Your Name <your.name@yourdomain.com>
+Section: python
+Priority: optional
+Build-Depends: bash-completion,
+               debhelper-compat (= 13),
+               dh-python,
+               flit,
+               git,
+               python3-all,
+               python3-pytest,
+               python3-pytest-cov,
+               python3-pytest-django,
+               python3-pytest-mock,
+               python3-django,
+               python3-django-allauth,
+               python3-requests,
+               python3-requests-mock,
+Standards-Version: 4.6.0.1
+Homepage: FIXME
+
+Package: django-sync-github-teams
+Architecture: all
+Depends: ${misc:Depends}, python3 (>= 3.6), ${python3:Depends}
+Description: <FIXME>
+ <FIXME>
