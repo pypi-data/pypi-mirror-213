@@ -1,0 +1,109 @@
+data_MnBi2Te4-bulk
+_audit_creation_date              2019-09-24
+_audit_creation_method            'Materials Studio'
+_symmetry_space_group_name_H-M    'P3M1'
+_symmetry_Int_Tables_number       156
+_symmetry_cell_setting            trigonal
+loop_
+_symmetry_equiv_pos_as_xyz
+  x,y,z
+  -y,x-y,z
+  -x+y,-x,z
+  -y,-x,z
+  -x+y,y,z
+  x,x-y,z
+_cell_length_a                    4.2523
+_cell_length_b                    4.2523
+_cell_length_c                    50.0000
+_cell_angle_alpha                 90.0000
+_cell_angle_beta                  90.0000
+_cell_angle_gamma                 120.0000
+loop_
+_atom_site_label
+_atom_site_type_symbol
+_atom_site_fract_x
+_atom_site_fract_y
+_atom_site_fract_z
+_atom_site_U_iso_or_equiv
+_atom_site_adp_type
+_atom_site_occupancy
+Bi1    Bi    0.00000   0.00000   0.45406   0.00000  Uiso   1.00
+Te2    Te    0.00000   0.00000   0.34727   0.00000  Uiso   1.00
+Bi3    Bi    0.00000   0.00000   0.57699   0.00000  Uiso   1.00
+Te4    Te    0.00000   0.00000   0.68378   0.00000  Uiso   1.00
+Bi5    Bi    0.66667   0.33333   0.72679   0.00000  Uiso   1.00
+Te6    Te    0.66667   0.33333   0.48825   0.00000  Uiso   1.00
+Te7    Te    0.66667   0.33333   0.62000   0.00000  Uiso   1.00
+Te8    Te    0.66667   0.33333   0.27006   0.00000  Uiso   1.00
+Mn9    Mn    0.66667   0.33333   0.37916   0.00000  Uiso   1.00
+Te10   Te    0.33333   0.66667   0.76098   0.00000  Uiso   1.00
+Bi11   Bi    0.33333   0.66667   0.30425   0.00000  Uiso   1.00
+Te12   Te    0.33333   0.66667   0.54280   0.00000  Uiso   1.00
+Te13   Te    0.33333   0.66667   0.41104   0.00000  Uiso   1.00
+Mn14   Mn    0.33333   0.66667   0.65189   0.00000  Uiso   1.00
+loop_
+_geom_bond_atom_site_label_1
+_geom_bond_atom_site_label_2
+_geom_bond_distance
+_geom_bond_site_symmetry_2
+_ccdc_geom_bond_type
+Bi1    Te6     2.992   .     S
+Bi1    Te6     2.992   1_455 S
+Bi1    Te6     2.992   1_445 S
+Bi1    Te13    3.264   .     S
+Bi1    Te13    3.264   1_445 S
+Bi1    Te13    3.264   1_545 S
+Te2    Mn9     2.927   .     S
+Te2    Mn9     2.927   1_455 S
+Te2    Mn9     2.927   1_445 S
+Te2    Bi11    3.264   .     S
+Te2    Bi11    3.264   1_445 S
+Te2    Bi11    3.264   1_545 S
+Bi3    Te12    2.992   .     S
+Bi3    Te12    2.992   1_445 S
+Bi3    Te12    2.992   1_545 S
+Bi3    Te7     3.264   .     S
+Bi3    Te7     3.264   1_455 S
+Bi3    Te7     3.264   1_445 S
+Te4    Mn14    2.927   .     S
+Te4    Mn14    2.927   1_445 S
+Te4    Mn14    2.927   1_545 S
+Te4    Bi5     3.264   .     S
+Te4    Bi5     3.264   1_455 S
+Te4    Bi5     3.264   1_445 S
+Bi5    Te10    2.992   .     S
+Bi5    Te10    2.992   1_545 S
+Bi5    Te10    2.992   1_655 S
+Bi5    Te4     3.264   1_655 S
+Bi5    Te4     3.264   1_665 S
+Te6    Bi1     2.992   1_655 S
+Te6    Bi1     2.992   1_665 S
+Te7    Mn14    2.927   .     S
+Te7    Mn14    2.927   1_545 S
+Te7    Mn14    2.927   1_655 S
+Te7    Bi3     3.264   1_655 S
+Te7    Bi3     3.264   1_665 S
+Te8    Bi11    2.992   .     S
+Te8    Bi11    2.992   1_545 S
+Te8    Bi11    2.992   1_655 S
+Mn9    Te2     2.927   1_655 S
+Mn9    Te2     2.927   1_665 S
+Mn9    Te13    2.927   .     S
+Mn9    Te13    2.927   1_545 S
+Mn9    Te13    2.927   1_655 S
+Te10   Bi5     2.992   1_565 S
+Te10   Bi5     2.992   1_455 S
+Bi11   Te8     2.992   1_565 S
+Bi11   Te8     2.992   1_455 S
+Bi11   Te2     3.264   1_665 S
+Bi11   Te2     3.264   1_565 S
+Te12   Bi3     2.992   1_665 S
+Te12   Bi3     2.992   1_565 S
+Te13   Mn9     2.927   1_565 S
+Te13   Mn9     2.927   1_455 S
+Te13   Bi1     3.264   1_665 S
+Te13   Bi1     3.264   1_565 S
+Mn14   Te7     2.927   1_565 S
+Mn14   Te7     2.927   1_455 S
+Mn14   Te4     2.927   1_665 S
+Mn14   Te4     2.927   1_565 S
