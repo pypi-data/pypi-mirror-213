@@ -1,0 +1,7 @@
+toml
+pythonnet
+pywin32
+nicelib
+instrumental-lib
+pylablib
+pymodaq>=4.0
