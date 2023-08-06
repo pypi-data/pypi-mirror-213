@@ -1,0 +1,12 @@
+newscleaner/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+newscleaner/clean.py,sha256=6RWK_umaQw6DhRG8OuksbEDHaZ8ekIAeMg2yElD_pC8,24730
+newscleaner/cleaner.py,sha256=MX53HpFQuGGQLiYkscsjK_2Yd-ajzqkmSQDUmGTdQn0,2415
+newscleaner/regex.json,sha256=RIrK0D7ee8N_Cha52S4B9UHRTylCP9J3LCxN8I1pSjE,8199
+newscleaner/setup.py,sha256=lGLP_R8avjcZdlxIDdJu1tEk_c5LX7x5_GLhOrSO2vw,882
+newscleaner/tags.json,sha256=bBVIjlrewxBuJ3zO6JEXQmykhQhyb0_SnjfPZYIi8cY,675
+newscleaner-0.0.2.dist-info/LICENCE.txt,sha256=2bm9uFabQZ3Ykb_SaSU_uUbAj2-htc6WJQmS_65qD00,1073
+newscleaner-0.0.2.dist-info/METADATA,sha256=X9cFXdTTGneWdZM5NSUoIBzNL9DGGLIn045pc1bU8fg,559
+newscleaner-0.0.2.dist-info/PKG-INFO.txt,sha256=ENnXvg3bSh6hIpwnuvlRZ7jGp9duOOaAzGPEc4ubSpI,547
+newscleaner-0.0.2.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+newscleaner-0.0.2.dist-info/top_level.txt,sha256=TFOuJ6VtKkEfQaSA-1r1b13R5uyPySDK_dT0zkxvLQU,12
+newscleaner-0.0.2.dist-info/RECORD,,
