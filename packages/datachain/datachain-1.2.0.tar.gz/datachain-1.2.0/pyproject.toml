@@ -1,0 +1,72 @@
+[tool.poetry]
+name = "datachain"
+version = "1.2.0"
+description = "Tools to build data pipelines."
+authors = ["Rayane AMROUCHE <rayaneamrouche@gmail.com>"]
+license = "GPL-3.0-or-later"
+readme = "README.md"
+
+packages = [{ include = "datachain" }, { include = "datachain/**/*.py" }]
+
+[tool.poetry.dependencies]
+python = ">=3.8"
+
+#Extras
+pandas = { version = "^2.0.2", optional = true }
+python-dotenv = { version = "^1.0.0", optional = true }
+azure-common = { version = "^1.1.28", optional = true }
+azure-storage-blob = { version = "^12.14.1", optional = true }
+azure-storage-common = { version = "^2.1.0", optional = true }
+shareplum = { version = "^0.5.1", optional = true }
+
+simple-salesforce = { version = "^1.12.2", optional = true }
+
+sqlalchemy = { version = "1.4.46", optional = true }
+
+snowflake-connector-python = { version = "^2.9.0", optional = true }
+snowflake-sqlalchemy = { version = "^1.4.4", optional = true }
+cryptography = { version = "38.0.4", optional = true }
+
+mysqlclient = { version = "^2.1.1", optional = true }
+
+psycopg2-binary = { version = "^2.9.5", optional = true }
+
+requests = { version = "^2.31.0", optional = true }
+
+paramiko = { version = "^3.2.0", optional = true }
+
+[tool.poetry.extras]
+tabular = ["pandas"]
+sharepoint = [
+    "python-dotenv",
+    "azure-storage-common",
+    "azure-storage-blob",
+    "azure-common",
+    "shareplum",
+]
+salesforce = ["python-dotenv", "simple-salesforce"]
+snowflake = [
+    "sqlalchemy",
+    "cryptography",
+    "snowflake-connector-python",
+    "snowflake-sqlalchemy",
+]
+mysql = ["python-dotenv", "sqlalchemy", "mysqlclient"]
+pgsql = ["python-dotenv", "sqlalchemy", "psycopg2-binary"]
+kaggle = ["python-dotenv", "kaggle"]
+http = ["requests"]
+sftp = ["python-dotenv", "paramiko"]
+ftp = ["python-dotenv"]
+
+[tool.poetry.group.dev.dependencies]
+ipykernel = "^6.21.3"
+black = "^23.1.0"
+pylint = "^2.17.1"
+mypy = "^1.1.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.pylint.messages_control]
+max-line-length = 88
