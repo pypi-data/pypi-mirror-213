@@ -1,0 +1,37 @@
+[tool.poetry]
+name = "termkit"
+version = "0.1.0b1"
+description = "Command Line Tools with ease"
+authors = ["Thomas Mahé <contact@tmahe.dev>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.7"
+
+[tool.poetry.group.devel.dependencies]
+mkdocs = "^1.4.3"
+mkdocs-material = "^9.1.15"
+tox = "^4.6.0"
+termynal = {version = "^0.3.0", python = ">=3.8"}
+
+[tool.pytest.ini_options]
+pythonpath = "termkit"
+testpaths = [
+    "tests"
+]
+
+[tool.coverage.run]
+source = [
+    "termkit"
+]
+
+[tool.coverage.report]
+precision = 2
+exclude_lines = [
+    "pragma: nocover",
+    "if TYPE_CHECKING:",
+]
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

@@ -1,0 +1,80 @@
+<p align="center">
+    <img alt="Termkit" title="Termkit" src="docs/images/banner.png#gh-dark-mode-only" width="450">
+    <img alt="Termkit" title="Termkit" src="docs/images/banner_light.png#gh-light-mode-only" width="450">
+</p>
+<p align="center">
+  <b><i>Command Line Tools with... ease.</i></b>
+
+[![codecov](https://codecov.io/github/thmahe/termkit/branch/master/graph/badge.svg?token=o7UVrOsoq4)](https://codecov.io/github/thmahe/termkit)
+
+</p>
+
+## Table of Contents
+
+- [Introduction](#introduction)
+- [Features](#features)
+- [Requirement](#requirement)
+- [Installation](#installation)
+- [Examples](#examples)
+- [Feedback](#feedback)
+- [Acknowledgments](#acknowledgments)
+
+## Introduction
+
+Termkit is a framework for building command line interface applications using functions 
+and type hints [[PEP 484]](https://peps.python.org/pep-0484/). 
+**Solely written using [Python Standard Library](https://docs.python.org/3/library/)** and will always be to ensure
+minimal dependency footprint within your project.
+
+In few words, Termkit is designed to be the foundation of serious CLI tools.
+
+## Features
+
+A few of the things you can do with Termkit:
+
+* Build CLI from functional code
+* Create fast prototypes using implicit arguments
+* Helpers populated from docstrings
+* Named profile for pre-populated arguments
+* Autocompletion through [argcomplete](https://pypi.org/project/argcomplete/) module
+* Cross-platforms
+
+## Requirement
+* Python 3.7 or higher
+
+*Yes... that's about it !* 
+
+## Installation
+
+Termkit is published as a [Python package](https://pypi.org/project/termkit) and can be installed with pip.
+
+Open up a terminal and install Termkit with:
+```shell
+pip install termkit
+```
+
+## Examples
+
+### Greeting application
+
+```python
+# greet.py
+import termkit
+
+def greet(name):
+    print(f'Hello {name} !')
+
+if __name__ == '__main__':
+    termkit.run(greet)
+```
+
+```
+$ python3 ./greet.py Thomas
+Hello Thomas !
+```
+
+## Feedback
+
+Feel free to send me feedback by [raising an issue](https://github.com/thmahe/termkit/issues/new).
+Feature requests are always welcome.
+
