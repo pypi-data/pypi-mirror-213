@@ -1,0 +1,7 @@
+cffi
+numpy
+pandas
+matplotlib
+seaborn
+mako
+humanize
