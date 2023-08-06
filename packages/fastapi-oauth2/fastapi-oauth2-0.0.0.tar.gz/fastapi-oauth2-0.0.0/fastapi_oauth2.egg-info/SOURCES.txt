@@ -1,0 +1,5 @@
+setup.py
+fastapi_oauth2.egg-info/PKG-INFO
+fastapi_oauth2.egg-info/SOURCES.txt
+fastapi_oauth2.egg-info/dependency_links.txt
+fastapi_oauth2.egg-info/top_level.txt
