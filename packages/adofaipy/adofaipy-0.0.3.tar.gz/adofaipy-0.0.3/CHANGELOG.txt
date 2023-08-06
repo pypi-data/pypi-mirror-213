@@ -1,0 +1,14 @@
+Change Log
+==========
+
+0.0.3 (2023/06/14)
+------------------
+- Minor bugfix: fixed filename __init__.py
+
+0.0.2 (2023/06/13)
+------------------
+- Minor bugfix: 're' is no longer a dependency
+
+0.0.1 (2023/05/28)
+------------------
+- First Release
