@@ -1,0 +1,32 @@
+{
+  "summarySpreadsheet": {
+    "folder": null,
+    "title": "Summary Spreadsheet",
+    "publicAccess": null,
+    "shareWith": [],
+    "resize": true
+  },
+  "volunteerSpreadsheet": {
+    "folder": null,
+    "title": "{email}",
+    "publicAccess": null,
+    "shareWithVolunteer": true,
+    "shareWith": [],
+    "resize": true
+  },
+  "metaDataFields": {
+    "//": "You must provide this yourself"
+  },
+  "validation": {},
+  "commentFields": {
+    "notes": "Notes",
+    "supplementalSources": "Supplemental Sources",
+    "comments": "Comments",
+    "summary": "SUMMARY"
+  },
+  "values": {
+    "defaultBarCount": 100,
+    "commentsRowHeight": 75,
+    "sourcesColumnWidth": 150
+  }
+}
