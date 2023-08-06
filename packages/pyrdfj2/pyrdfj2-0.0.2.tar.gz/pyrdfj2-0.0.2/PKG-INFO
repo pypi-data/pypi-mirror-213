@@ -1,0 +1,79 @@
+Metadata-Version: 2.1
+Name: pyrdfj2
+Version: 0.0.2
+Summary: Python wrapper on jinja SPARQL templating
+Home-page: https://github.com/vliz-be-opsci/pyrdfj2
+License: MIT
+Author: Marc Portier
+Author-email: marc.portier@gmail.com
+Requires-Python: >=3.8.1,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.8
+Provides-Extra: dev
+Provides-Extra: docs
+Provides-Extra: tests
+Requires-Dist: black (>=23.3.0,<24.0.0) ; extra == "dev"
+Requires-Dist: coverage (>=7.2.5,<8.0.0) ; extra == "tests"
+Requires-Dist: flake8 (>=6.0.0,<7.0.0) ; extra == "dev"
+Requires-Dist: isort (>=5.12.0,<6.0.0) ; extra == "dev"
+Requires-Dist: jinja2 (>=3.1.2,<4.0.0)
+Requires-Dist: poetry (>=1.5.0,<2.0.0)
+Requires-Dist: pre-commit (>=3.3.1,<4.0.0) ; extra == "dev"
+Requires-Dist: pytest (>=7.3.1,<8.0.0) ; extra == "tests"
+Requires-Dist: pytest-cov (>=4.1.0,<5.0.0) ; extra == "tests"
+Requires-Dist: python-dateutil (>=2.8.2,<3.0.0)
+Requires-Dist: python-dotenv (>=1.0.0,<2.0.0) ; extra == "tests"
+Requires-Dist: pyyaml (>=6.0,<7.0) ; extra == "tests"
+Requires-Dist: sphinx (>=7.0.1,<8.0.0) ; extra == "docs"
+Requires-Dist: uritemplate (>=4.1.1,<5.0.0)
+Project-URL: Repository, https://github.com/vliz-be-opsci/pyrdfj2
+Description-Content-Type: text/x-rst
+
+pyrdfj2
+===================================
+
+Python wrapper on jinja SPARQL templating
+
+Started on 2023-06-09
+
+Setup
+-----
+Start using this project with poetry
+
+
+.. code-block:: bash
+
+    $ make init       # install dependencies
+    $ make init-dev   # includes the previous + adds dependencies for developers
+
+Build Docs
+
+.. code-block:: bash
+
+    $ make docs
+
+
+
+Developers
+----------
+
+Run Tests
+
+.. code-block:: bash
+
+    $ make test                                                   # to run all tests
+    $ PYTEST_LOGCONF=debug-logconf.yml python tests/test_demo.py  # to run a specific test with specific logging
+    $ make test-coverage                                          # to run all tests and check the test coverage
+
+
+Check the code-style and syntax (flake8, black, isort)
+
+.. code-block:: bash
+
+    $ make check
+

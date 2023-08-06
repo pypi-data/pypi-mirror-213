@@ -1,0 +1,69 @@
+[tool.poetry]
+name = "pyrdfj2"
+version = "0.0.2"
+description = "Python wrapper on jinja SPARQL templating"
+authors = [ "Marc Portier <marc.portier@gmail.com>", 
+            "João Santos <jotaflame@gmail.com>"]
+readme = "README.rst"
+packages = [{include = "pyrdfj2"}]
+license = "MIT"
+
+repository = "https://github.com/vliz-be-opsci/pyrdfj2"
+classifiers = [
+    # Trove classifiers
+    # Full list: https://pypi.python.org/pypi?%3Aaction=list_classifiers
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.8",
+]
+
+
+[tool.poetry.dependencies]
+python = ">=3.8.1,<4.0"
+poetry = "^1.5.0"
+jinja2 = "^3.1.2"
+uritemplate = "^4.1.1"
+python-dateutil = "^2.8.2"
+
+# Development tools
+pre-commit = {version = "^3.3.1", optional = true}
+isort = {version = "^5.12.0", optional = true}
+black = {version = "^23.3.0", optional = true}
+flake8 = {version = "^6.0.0", optional = true}
+
+# Testing tools
+pyyaml = {version = "^6.0", optional = true}
+pytest = {version = "^7.3.1", optional = true}
+coverage = {version = "^7.2.5", optional = true}
+python-dotenv = {version = "^1.0.0", optional = true}
+pytest-cov = {version = "^4.1.0", optional = true}
+
+# Documentation tools
+sphinx = {version = "^7.0.1", optional = true}
+
+# Poetry has the dependecies groups, but those are not 
+#   compatible with extras, widely used in the python-verse.
+[tool.poetry.extras]
+dev = ["pre-commit", "isort", "black", "flake8"]
+tests = ["pyyaml","pytest", "coverage", "python-dotenv", "pytest-cov"]
+docs = ["sphinx"]
+
+[tool.poetry.scripts]
+pykg2tbl = "pyrdfj2.__main__:main"
+
+[build-system]
+requires = ["setuptools","poetry"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.black]
+line-length = 79
+
+[tool.isort]
+multi_line_output = 3
+include_trailing_comma = true
+
+[tool.pytest.ini_options]
+testpaths = ["tests",]
+pythonpath = ["."]
