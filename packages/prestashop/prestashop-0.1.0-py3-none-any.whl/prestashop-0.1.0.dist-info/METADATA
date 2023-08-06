@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: prestashop
+Version: 0.1.0
+Summary: Prestashop is a library for Python to interact with the PrestaShop's Web Service API.
+Home-page: https://github.com/AiSyS-Next/prestashop
+Author: Aymen Jemi (AISYSNEXT)
+Author-email: jemiaymen@gmail.com
+License: GPLv3
+Keywords: prestashop,e-com,e-commerce,prestashop api,api,webservice
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.8
+License-File: LICENSE
+Requires-Dist: requests
+
+# prestashop
+prestashop is a library for Python to interact with the PrestaShop's Web Service API.
