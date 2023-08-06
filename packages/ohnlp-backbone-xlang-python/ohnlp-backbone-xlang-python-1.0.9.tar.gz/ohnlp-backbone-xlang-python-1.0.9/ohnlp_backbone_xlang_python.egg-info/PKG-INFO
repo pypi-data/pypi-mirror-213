@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: ohnlp-backbone-xlang-python
+Version: 1.0.9
+Summary: Python support for OHNLP Toolkit Backbone Components
+Author: Andrew Wen
+Author-email: contact@ohnlp.org
+Requires-Python: >3.7
+License-File: LICENSE
