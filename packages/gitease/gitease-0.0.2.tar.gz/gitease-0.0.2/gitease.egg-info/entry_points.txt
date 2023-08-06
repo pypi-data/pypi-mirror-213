@@ -1,0 +1,2 @@
+[console_scripts]
+ge = gitease.cli:cli
