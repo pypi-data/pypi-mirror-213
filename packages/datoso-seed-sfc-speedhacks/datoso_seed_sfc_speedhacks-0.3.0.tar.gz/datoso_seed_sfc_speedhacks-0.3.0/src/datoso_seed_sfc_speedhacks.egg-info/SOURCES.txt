@@ -1,0 +1,14 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/datoso_seed_sfc_speedhacks/__init__.py
+src/datoso_seed_sfc_speedhacks/actions.py
+src/datoso_seed_sfc_speedhacks/dats.py
+src/datoso_seed_sfc_speedhacks/fetch.py
+src/datoso_seed_sfc_speedhacks/rules.py
+src/datoso_seed_sfc_speedhacks.egg-info/PKG-INFO
+src/datoso_seed_sfc_speedhacks.egg-info/SOURCES.txt
+src/datoso_seed_sfc_speedhacks.egg-info/dependency_links.txt
+src/datoso_seed_sfc_speedhacks.egg-info/requires.txt
+src/datoso_seed_sfc_speedhacks.egg-info/top_level.txt
