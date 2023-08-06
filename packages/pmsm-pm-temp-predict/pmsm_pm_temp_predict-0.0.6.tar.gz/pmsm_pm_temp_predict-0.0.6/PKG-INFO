@@ -1,0 +1,110 @@
+Metadata-Version: 2.1
+Name: pmsm_pm_temp_predict
+Version: 0.0.6
+Summary: Permanent magnet temperature prediction
+Home-page: UNKNOWN
+Author: Oleksandr
+Author-email: <oleksandr.ohlashennyi.knm.2020@lpnu.ua>
+License: UNKNOWN
+Keywords: python,pmsm,motor,temperatue,prediction
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Education
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
+
+# PMSM_PM_Temp_Predict
+PMSM_PM_Temp_Predict is a project aimed at predicting the temperature of the permanent magnet in a Permanent Magnet Synchronous Motor (PMSM). The temperature of the permanent magnet is an important parameter that affects the performance and reliability of the motor
+
+## Description
+This project utilizes machine learning techniques to develop a predictive model for estimating the temperature of the permanent magnet in a PMSM. The model takes into account various input parameters such as motor operating conditions, electrical voltages and currents, and environmental factors to make accurate temperature predictions. More specifically: the Random Forest Regressor is used for this project.
+
+## Features
+
+- API integration: The project provides an API that exposes the trained model, allowing other applications or systems to make temperature predictions programmatically
+- Feature scaling: input data is normalized to meet regression model requirements
+- Single sample processing: API contains the function to predict single temperature value based on current motor state
+- Data frame processing: API allows you to process `pandas` `DataFrame` and get results for a huge amount of samples with one function call.
+
+## Getting Started
+
+To get started with the PMSM_PM_Temp_Predict project, follow these simple steps:
+
+1. Install package with 
+`pip install pmsm-pm-temp-predict` 
+This command will install this python package and all required dependencies.
+2. Integrate the trained model into your application using the provided API
+3. Start making temperature predictions using the API and your collected data
+
+For detailed instructions and usage examples, please refer to the documentation included in the repository.
+
+## Contributing
+
+Contributions to the PMSM_PM_Temp_Predict project are welcome. If you encounter any issues or have suggestions for improvements, please open an issue in the repository or submit a pull request with your proposed changes.
+
+## API
+
+Two functions are provided by API of this package:
+
+### Single sample processing
+`temp_predict`(`u_q, u_d, i_d, i_q, coolant, stator_winding`)
+
+| parameter | type | description |
+| ------ | ------ | ------ |
+| `u_q` | `float` | q-component of the motor voltage in V |
+| `u_d` | `float` | d-component of motor voltage in V |
+| `i_d` | `float` | q-component of the motor current in A |
+| `i_q` | `float` | d-component of the motor current in A |
+| `coolant` | `float` | coolant temperature in В°C |
+| `stator_winding` | `float` | stator winding temperature in В°C |
+
+`return value` is a single `float` value which represents predicted temperature of the motor's permanent magnet.
+
+#### Code example
+```sh
+import pmsm_pm_temp_predict as pms
+print("Predicted permanent magnet temperature is: ", temp_predict(-0.450682,
+                                                                   -0.350055,
+                                                                   0.004419,
+                                                                   0.000328,
+                                                                   18.805172,
+                                                                   19.086670))
+```
+```sh
+Output: Predicted permanent magnet temperature is: 24.849657903061008
+```
+
+
+### `DataFrame` processing
+
+`temp_predict_df`(`df`)
+
+| parameter | type | description |
+| ------ | ------ | ------ |
+| `df` | `pandas DataFrame` | a pandas DataFrame object containing columns similar to the parameters of the temp_predict function |
+
+`return value` is an `array` of predicted temperatures of the motor's permanent magnet.
+
+#### Code example
+```sh
+import pmsm_pm_temp_predict as pms
+print("Predicted permanent magnet temperature is: ", temp_predict(-0.450682,
+                                                                   -0.350055,
+                                                                   0.004419,
+                                                                   0.000328,
+                                                                   18.805172,
+                                                                   19.086670))
+
+print("Predicted permanent magnet temperature is: ", temp_predict_df(pd.DataFrame({'coolant': [18.805172], 
+                                                                                   'stator_winding': [19.086670],
+                                                                                   'u_q': [-0.450682],
+                                                                                   'u_d': [-0.350055],
+                                                                                   'i_d': [0.004419],
+                                                                                   'i_q': [0.000328]})))
+```
+```sh
+Output: Predicted permanent magnet temperature is: [24.8496579]
+```
+
+
