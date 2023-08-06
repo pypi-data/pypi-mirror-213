@@ -1,0 +1,9 @@
+LICENSE
+setup.py
+YTRequests/__init__.py
+YTRequests/ytrequests.py
+YTRequests.egg-info/PKG-INFO
+YTRequests.egg-info/SOURCES.txt
+YTRequests.egg-info/dependency_links.txt
+YTRequests.egg-info/requires.txt
+YTRequests.egg-info/top_level.txt
