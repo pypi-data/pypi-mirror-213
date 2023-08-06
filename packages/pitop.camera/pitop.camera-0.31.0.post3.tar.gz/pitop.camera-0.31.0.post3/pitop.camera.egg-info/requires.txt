@@ -1,0 +1,8 @@
+pitop.common==0.31.0-3
+pitop.core==0.31.0-3
+pitop.pma==0.31.0-3
+pitop.processing==0.31.0-3
+imageio<3.0.0,>=2.4.1
+numpy<2.0.0,>1.19.5
+Pillow<9.0.0,>=8.1.2
+opencv-python<4.6.0,>=4.5.1
