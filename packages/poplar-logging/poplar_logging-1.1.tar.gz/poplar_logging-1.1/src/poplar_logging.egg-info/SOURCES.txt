@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+src/poplar_logging.egg-info/PKG-INFO
+src/poplar_logging.egg-info/SOURCES.txt
+src/poplar_logging.egg-info/dependency_links.txt
+src/poplar_logging.egg-info/top_level.txt
+src/poplar_logging_heyodai/__init__.py
+src/poplar_logging_heyodai/poplar.py
