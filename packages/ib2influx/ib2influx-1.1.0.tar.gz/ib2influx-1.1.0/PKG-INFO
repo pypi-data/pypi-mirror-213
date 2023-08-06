@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: ib2influx
+Version: 1.1.0
+Summary: Collect IB statistics and push them to InfluxDB
+Author-email: Conrad Chan <conradchan@hotmail.com.au>
+Project-URL: Homepage, https://github.com/conradtchan/ib2influx
+Project-URL: Bug Tracker, https://github.com/conradtchan/ib2influx/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Classifier: Development Status :: 4 - Beta
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# ib2influx
+Collect IB network measurements to InfluxDB

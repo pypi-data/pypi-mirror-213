@@ -1,0 +1,35 @@
+[build-system]
+requires = ["setuptools>=61.0", "setuptools_scm[toml]>=5"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ib2influx"
+dynamic = ["version"]
+authors = [
+    { name="Conrad Chan", email="conradchan@hotmail.com.au" },
+]
+description = "Collect IB statistics and push them to InfluxDB"
+readme = "README.md"
+requires-python = ">=3.9"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
+    "Operating System :: OS Independent",
+    "Development Status :: 4 - Beta",
+]
+dependencies = [
+    'PyYAML ~= 6.0',
+    'influxdb-client >= 1.35.0',
+]
+
+[project.urls]
+"Homepage" = "https://github.com/conradtchan/ib2influx"
+"Bug Tracker" = "https://github.com/conradtchan/ib2influx/issues"
+
+[tool.setuptools_scm]
+# See configuration details in https://github.com/pypa/setuptools_scm
+version_scheme = "no-guess-dev"
+fallback_version = "0.0.0"
+
+[project.scripts]
+ib2influx = "ib2influx:run"
