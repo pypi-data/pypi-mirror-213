@@ -1,0 +1,40 @@
+Metadata-Version: 2.1
+Name: DevGoldy
+Version: 1.3
+Summary: My own custom cli util.
+Author-email: Goldy <goldy@devgoldy.xyz>
+Project-URL: GitHub, https://github.com/THEGOLDENPRO/Dev-Goldy-Cli
+Project-URL: BugTracker, https://github.com/THEGOLDENPRO/Dev-Goldy-Cli/issues
+Keywords: dev goldy,goldy,devgoldy,Dev Goldy
+Classifier: Operating System :: Microsoft :: Windows :: Windows 11
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Classifier: Operating System :: POSIX :: Linux
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Provides-Extra: dev
+
+<div align="center">
+
+  ██████╗░███████╗██╗░░░██╗  ░██████╗░░█████╗░██╗░░░░░██████╗░██╗░░░██╗
+  ██╔══██╗██╔════╝██║░░░██║  ██╔════╝░██╔══██╗██║░░░░░██╔══██╗╚██╗░██╔╝
+  ██║░░██║█████╗░░╚██╗░██╔╝  ██║░░██╗░██║░░██║██║░░░░░██║░░██║░╚████╔╝░
+  ██║░░██║██╔══╝░░░╚████╔╝░  ██║░░╚██╗██║░░██║██║░░░░░██║░░██║░░╚██╔╝░░
+  ██████╔╝███████╗░░╚██╔╝░░  ╚██████╔╝╚█████╔╝███████╗██████╔╝░░░██║░░░
+  ╚═════╝░╚══════╝░░░╚═╝░░░  ░╚═════╝░░╚════╝░╚══════╝╚═════╝░░░░╚═╝░░░
+
+</div>
+
+### ``My own custom cli utility. It provides me with command line shortcuts on both Linux and Windows.``
+
+<br>
+
+```sh
+# Windows/Linux
+
+pip install DevGoldy
+```
