@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: torch-base-network
+Version: 0.0.2
+Summary: A base class for easier development of PyTorch models
+Author: Andre Jacobs
+Author-email: andrejacobs365@gmail.com
+License: MIT
+Keywords: PyTorch
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+
+A package that makes it easy for developers to create PyTorch models easily
