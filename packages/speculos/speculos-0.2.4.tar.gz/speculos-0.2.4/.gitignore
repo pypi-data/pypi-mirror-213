@@ -1,0 +1,18 @@
+*.a
+*.o
+.cache/
+.idea/
+.eggs/
+__pycache__/
+apps/*vault*
+build/
+core
+/speculos/resources/launcher
+/speculos/resources/vnc_server
+
+__version__.py
+
+# python
+*.pyc
+dist/
+*egg-info
