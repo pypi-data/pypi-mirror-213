@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: qos-tools
+Version: 0.0.3
+Summary: control, measure and visualization
+Home-page: https://gitee.com/
+Author: baqis
+Author-email: baqis@baqis.ac.cn
+License: MIT
+Project-URL: source, https://gitee.com
+Keywords: tools for quantum lab
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: Natural Language :: Chinese (Simplified)
+Classifier: Natural Language :: English
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Scientific/Engineering :: Physics
+Requires-Python: >=3.10.0
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+long_description
+

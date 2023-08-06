@@ -1,0 +1,4 @@
+[project]
+name = "qos_tools"
+version = "0.0.3"
+dependencies = []
