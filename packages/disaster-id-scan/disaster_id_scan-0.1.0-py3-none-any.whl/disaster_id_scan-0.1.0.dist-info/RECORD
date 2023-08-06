@@ -1,0 +1,13 @@
+disaster_id_scan/__about__.py,sha256=LiM4lg9FVNV19FkMYvyxzEQOddH-qheVS6NvELC4ivE,123
+disaster_id_scan/__init__.py,sha256=g6XE4GSDQJX0TRDIPU2l8TQMYJusvnPXkSBDwbT3m9w,101
+disaster_id_scan/__main__.py,sha256=5Xidgi-hp2eFjktT3vXFtBjHzrlxOwWNdqfhdnnW7GU,228
+disaster_id_scan/id_scanner.py,sha256=U1YkPZpZAKjYHN79Z4a7wTb56Rmu8dxitl-UCCOwtkI,1365
+disaster_id_scan/mrz.py,sha256=qUV9gLbMSXReYiVBO-E8b5x-T9HVF9jQkCXQS2ylVmM,1615
+disaster_id_scan/store.py,sha256=-d5bgVwDeDOmlU-GAWoTFBr6zJVE6KY56y4zkpKvVQk,1338
+disaster_id_scan/ui.py,sha256=IhzALIPMdOyQaO-reAfZJy-NihlKiOX3KKNK1LzExtc,10232
+disaster_id_scan/cli/__init__.py,sha256=Vog9HA0erLjDz-yT-Zv9u-AcSHeCjDmrgTDrWwVkK7A,738
+disaster_id_scan-0.1.0.dist-info/METADATA,sha256=3d1TTY7tuqA9WKv5sIQyEsw_455cb_YRHO7KeThiZ60,1859
+disaster_id_scan-0.1.0.dist-info/WHEEL,sha256=9QBuHhg6FNW7lppboF2vKVbCGTVzsFykgRQjjlajrhA,87
+disaster_id_scan-0.1.0.dist-info/entry_points.txt,sha256=YrZnHF-wFNxLTtT6i6Tck5b4bIygKc6ZSD1P2CR9HWU,75
+disaster_id_scan-0.1.0.dist-info/licenses/LICENSE.txt,sha256=V_tC-80LA3zlKO2PcvHsCV1nvGgl7PFEj_Ob4f5opLQ,13792
+disaster_id_scan-0.1.0.dist-info/RECORD,,
