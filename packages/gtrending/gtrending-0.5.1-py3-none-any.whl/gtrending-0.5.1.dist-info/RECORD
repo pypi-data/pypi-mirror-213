@@ -1,0 +1,14 @@
+gtrending/__init__.py,sha256=qs7iWuzUi8QO-IF29ByDnf7GowurxJsfYJzy_ppQO4Y,622
+gtrending/__main__.py,sha256=bYt9eEaoRQWdejEHFD8REx9jxVEdZptECFsV7F49Ink,30
+gtrending/_data/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+gtrending/_data/languages.json,sha256=rmB9-fa93VC-j8p0eB0CweP_eIwLymJrlfgc5x0LZlM,19555
+gtrending/_data/spoken_languages.json,sha256=C0xGNa-j9EtCwFK_DbZgsGwluYBbculhH5vnvVRQB64,7287
+gtrending/cli.py,sha256=p_wTc---kSMlycXid7UPELSbnaAVR79Z3XTffiTP-50,5735
+gtrending/fetch.py,sha256=wDmI2jP29XN9vpQgawBmK5cmwB-Jik-D5i2mvWuUiAQ,4948
+gtrending/paramutils.py,sha256=iQCJNBgW3mE0lJJBtaB0p0WeKNugyQdWUguFaIudmFs,12525
+gtrending/scrape.py,sha256=evFzAx7MsiGBdVAs_9YRBJYZhVstLY1n-5lKXb6VGmw,5163
+gtrending-0.5.1.dist-info/LICENSE,sha256=oSaxweDuMCoGUStZspFHv79iME3n1rdpknvHGSpQc5g,1066
+gtrending-0.5.1.dist-info/METADATA,sha256=MdUBpihLFnn6jXbrzwgKzAfBudLDxMt4YZ0YB_gY_eI,8778
+gtrending-0.5.1.dist-info/WHEEL,sha256=WGfLGfLX43Ei_YORXSnT54hxFygu34kMpcQdmgmEwCQ,88
+gtrending-0.5.1.dist-info/entry_points.txt,sha256=mEBP2BeOslzMQJ4vLdGZEruvJ8gfxNVKyRMZCvClS1s,48
+gtrending-0.5.1.dist-info/RECORD,,
