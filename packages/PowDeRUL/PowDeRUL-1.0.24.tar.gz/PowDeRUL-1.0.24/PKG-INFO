@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: PowDeRUL
+Version: 1.0.24
+Summary: The project aims to assess the lifetime and efficiency of electronic components by using thermal and electrical calculations based on data from an Excel file.
+Home-page: https://github.com/PGarn/LifeTime
+Author: PGarn
+Author-email: paul.garnier@ens-rennes.fr
+License: MIT
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.6
+License-File: LICENSE
