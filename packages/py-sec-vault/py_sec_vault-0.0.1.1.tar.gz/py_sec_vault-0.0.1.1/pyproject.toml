@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "py-sec-vault"
+version = "0.0.1.1"
+description = "Hashicorp Vault implementation in python software"
+authors = ["CISolutions B.V. <info@cisolutions.nl>"]
+license = "MIT"
+readme = "README.md"
+packages = [{include = "src"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+hvac = "^1.1.0"
+
+
+[tool.poetry.group.dev.dependencies]
+black = "^23.3.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
