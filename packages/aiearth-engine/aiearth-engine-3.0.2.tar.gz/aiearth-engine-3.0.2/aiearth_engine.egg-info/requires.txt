@@ -1,0 +1,11 @@
+aie-ipyleaflet
+jinja2
+black
+oss2
+matplotlib
+bqplot
+pyyaml
+pystac-client
+pandas
+cryptography==38.0.1
+aiearth-core

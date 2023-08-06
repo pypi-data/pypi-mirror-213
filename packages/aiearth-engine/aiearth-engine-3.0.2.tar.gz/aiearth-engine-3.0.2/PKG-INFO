@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: aiearth-engine
+Version: 3.0.2
+Summary: AIEarth Engine Python SDK Engine
+Home-page: https://engine-aiearth.aliyun.com/
+Requires-Python: >=3.8.0
+Description-Content-Type: text/markdown
+
+AIEarth Engine Python SDK
+
+Visit the [AIEarth main page](https://engine-aiearth.aliyun.com/)
+for more information.
+    
+# Quickstart
+
+[快速入门](https://engine-aiearth.aliyun.com/docs/page/guide?d=c2989d)
