@@ -1,0 +1,8 @@
+thoth_doc/__init__.py,sha256=d40zpl2r4U0C5NnFDmdCtK5QpaRaP5e-2WnIJ5JyKKM,43
+thoth_doc/main.py,sha256=r1mEJcJQVbDI2KV2wgmFL3evFH-zwVsrn_dU8zYbshs,4242
+thoth_doc/parsers.py,sha256=wdmXfhoHcgJeMYbaeCo5WGiyUw9Ob8km_xxZfQVM9_8,1340
+thoth_doc/utils.py,sha256=6hubhQMXjOW5CNyqSrNlubeG4dqQNAwUC4zQB3SZb3I,2302
+thoth_doc-0.0.91.dist-info/METADATA,sha256=hV6XSZErFzjBMmYF3naxO0eQqt0FumVQz7gixUYmvEA,1366
+thoth_doc-0.0.91.dist-info/WHEEL,sha256=KGYbc1zXlYddvwxnNty23BeaKzh7YuoSIvIMO4jEhvw,87
+thoth_doc-0.0.91.dist-info/licenses/LICENSE,sha256=cPEMS8nffjhG0we2V0WOIHDkL-EV67tUgi5BZvDg5QU,1082
+thoth_doc-0.0.91.dist-info/RECORD,,
