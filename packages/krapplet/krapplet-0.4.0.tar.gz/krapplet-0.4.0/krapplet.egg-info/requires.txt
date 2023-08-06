@@ -1,0 +1,6 @@
+
+[gnomekeyring]
+secretstorage
+
+[pass]
+python-gnupg
