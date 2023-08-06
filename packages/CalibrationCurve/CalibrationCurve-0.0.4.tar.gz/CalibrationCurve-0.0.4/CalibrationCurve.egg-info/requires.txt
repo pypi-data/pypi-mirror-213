@@ -1,0 +1,9 @@
+fastcore
+pandas
+sklearn
+matplotlib
+numpy
+seaborn
+scipy
+
+[dev]
