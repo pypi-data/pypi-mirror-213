@@ -1,0 +1,11 @@
+gco_wrapper-3.0.9.dist-info/METADATA,sha256=F41EfnOgBKHVIHYmAn6e101xaYrpEQHAyHKiami6CYk,5474
+gco_wrapper-3.0.9.dist-info/top_level.txt,sha256=ymid2Xi0Hk8Uvl7EdxL56Zvz92vfKkM-c7OZFN43Kw8,4
+gco_wrapper-3.0.9.dist-info/RECORD,,
+gco_wrapper-3.0.9.dist-info/WHEEL,sha256=g8yBLZOZ-Uso74oQVwTXAcOuHlTonCZdxm95BGN_iko,213
+gco/cgco.py,sha256=HZqnQwFI0WJSU1YzB7y3nvhnutgY2TQbWwtQTPF7K3o,4238
+gco/pygco.py,sha256=uuQ01wSqc05F1MjHU3bupIfbvGIF8R5AlLVjXhLkpmE,22785
+gco/__about__.py,sha256=SAAYDtgly-0TcK4DvVJWnj_VonCZLQfCW-0yXRiCNws,136
+gco/libcgco.cpython-38-i386-linux-gnu.so,sha256=KUjHK6CB6xfK7f1I1GI4d7TqHQ6jeIpo1jXiFtmkDww,604136
+gco/cgco.h,sha256=ASWKQFqAg_EuqWWpLczAZ5Y9nAHWdyi6sv9wcNn_N2A,4174
+gco/cgco.cpp,sha256=5LzXfvoKktPHbv7ii8nz7PVhpXDBNTS-F-TDW4iZGuA,5300
+gco/__init__.py,sha256=GzHgBBJF22qCTuIk2EyCmGbJiKDYllUxMw8ZoVvlmfc,326
