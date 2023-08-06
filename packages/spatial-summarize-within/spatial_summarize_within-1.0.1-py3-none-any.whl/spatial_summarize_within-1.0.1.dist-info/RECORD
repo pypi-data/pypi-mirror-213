@@ -1,0 +1,11 @@
+.DS_Store,sha256=wyEe-RxAX7baxeaYoIBlvASVaHFq5IOxHI3NEPGkW4I,6148
+spatial_summarize_within/__init__.py,sha256=AjFnqgIW5YQapXZAthtIzpDlUP8US7wl_jJ3gVPzTpM,141
+spatial_summarize_within/max_within.py,sha256=VuUUbd8jxz0QYslN_IKmH1kRxgNrxab_ZrRd8Yzs3Aw,2593
+spatial_summarize_within/mean_within.py,sha256=mF8bZ--NEVnsN6DIsITpe0P7VjaKH9sb9YqJMT_qv3I,2791
+spatial_summarize_within/min_within.py,sha256=nvbBero66nOAlzEfnKIWoPGID4MNnP7FdhYkCeET4yw,2594
+spatial_summarize_within/sum_within.py,sha256=XExlsYJHlmxiEvK5qbxfkfZORYvzVj4Ib9pbkDj7fU8,2575
+spatial_summarize_within-1.0.1.dist-info/LICENSE,sha256=JyfcmyXO-DlcHzoBiTuuaIoF-NdqbJ9MGg65haBk4Io,1076
+spatial_summarize_within-1.0.1.dist-info/METADATA,sha256=SULOxMUxKjtFrC9I-FHaZdjVahYOXexBcvd8C5TQF8k,188
+spatial_summarize_within-1.0.1.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+spatial_summarize_within-1.0.1.dist-info/top_level.txt,sha256=1x0wEys34D0fKMTSGf_GaCYAanaV8nV54-8Z58kQwQA,25
+spatial_summarize_within-1.0.1.dist-info/RECORD,,
