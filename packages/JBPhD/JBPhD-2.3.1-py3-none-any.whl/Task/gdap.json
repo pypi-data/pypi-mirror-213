@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "smart-gasket-383018",
+  "private_key_id": "12804152f18f2dc60ff61dd4883f7cc0b7dc8cb0",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQDS4Ad8kI/r7dhy\n1VrY/4T+fZCQ4eqQAgc4KEVYYlPysQd5KIBdD+5ZC/iQncwae6SupqEgJwl35VQt\nTqVbMH3zCvTaszYwutQhH+VWqA4WdAkm+ygndYgbnZ/M1umdozxrf+X3y+2mTz2r\nD6BpXMwC3ZFWvkL2OOfos6X7cvR9CZGC1j2PeSB/dhGH77RYpjNnamIWPYR0gvLB\nb74CwcJiUDOZxvbp1UQEShILo8bKZYnxTof6Hk2vpoYtptZyA2I/4uaDiWcZjugz\npiXg5nRrwnK1wQ4fYZhKwAAtA5Vc6zYKtDgl9z6Vg1OHceO+2tKJilByGx7huMyM\nnMNQI9/nAgMBAAECggEANpZhucAeUX+XaVqLkuLKRaqxcp/YvYCY59Oc591ER+3F\ntnpiiDSoiYqMxLrka/KX1dIyoYUZcVz/Jl9WdL2fzPuIGNkNbR3f7dc44e7M/sj4\n2YtogJZvLl7mT/tOLE1mRZmtKTE0Cro2h4KbDstD0HYUunS0FtLyTY27qNTAL2GD\nPnX/1rERh8kXM2qqzpOtWKpn7LInLMpq/6+q9wG1CH1yApTXlFVWkMrliVUPAesc\nBiKrkLYOIC2ITiCoeB0bOWzCuGBkPDGQajKSYJ7kQI6jUQlMRlV6sOb3jp1TYazh\n/55EUHsbXDqfQoOz0TswgCaUNllsoywtwC8ikUl/OQKBgQD1SNBWo6ZK8Cf7CGh9\nyxXKNBJ1o0nTl2aTn3XC9vJo/azxJ9K2S5gsedkd++cxe0bVamtzSaUO0qS2+Shq\nXRg/5b/n5aho4U4xaitZz/dVPgEYj1xZBhuClbw/7abFXiqajOkT8XQuV2uAFCIl\nCKC6rEyDsX67rQMAENciG4k+rQKBgQDcFmRj8hJ64weK+CikMURb6pGSvPOaLziX\nx1JKvaJZvLms8v1wkjaW+RLFu2fF3mGwqQKIXNnmFgG6BiNkFmdZXKBzI4dCYxS3\nwaIVIOUmOAxZzs1pVoMjW5Ei5X0qTuAuLDLPW8T+WyBUTQtKzrACegoNFOiTmvJq\nf9U4qAaPYwKBgQCW4QBOmwG6jPl64FQuNNMle1xzgkryXeoaGnd8wxyf2pMcEEv8\nGIn1qcoVOJOhC1yqAHkyBHYEpSvu5Vqn+rXk8DVYtxsd0KGhodYiu9s/UxGngt/i\nXvBjJioTBOOV+nOod88Tlm3J57pXoYrTTvhXe47hXzg+x5DV5IYBFAEbTQKBgG/a\nJX0x+rhfh2bWRflkXISGSyOTSg6zLwTcNPNtOwR2SLsf5zP96yaBQUwiuVOzeFyL\nGJFq9wbbalc7ZWMpi667x4Ocq9JOfqoBC7nHNQ5eb9B4rKZ7ZDxk/fcJQLpuybpN\nlikST6ShdWXCnhmPv54SnecWGDlkBw2fGCMqKeNXAoGBAL48A6nmJBOobox7NSZe\nbuGavDvh8ZQpnBTRXcD8nGkOMWCVHVz0n1L2ZSUSym45FpmyyU5m15DJQXpfoUcG\nNk9c0qeI+W0K9AdcuHEKgsG5MK65S4z01rp8QcmV1bcTSvEiGHhP88xFpdjkO81i\nUgw7PtySLB2fq27suhrFz5oA\n-----END PRIVATE KEY-----\n",
+  "client_email": "python-phd@smart-gasket-383018.iam.gserviceaccount.com",
+  "client_id": "110822928211299027910",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/python-phd%40smart-gasket-383018.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}
