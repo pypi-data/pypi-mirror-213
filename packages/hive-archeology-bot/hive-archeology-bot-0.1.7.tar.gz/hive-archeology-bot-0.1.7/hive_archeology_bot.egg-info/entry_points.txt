@@ -1,0 +1,2 @@
+[console_scripts]
+hive-archeology-bot = hive_archeology:_main

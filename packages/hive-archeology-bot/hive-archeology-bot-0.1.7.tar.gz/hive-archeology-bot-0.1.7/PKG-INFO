@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: hive-archeology-bot
+Version: 0.1.7
+Summary: Hive Archeology Bot
+Home-page: https://github.com/pibara/hive-archeology
+Author: Rob Meijer
+Author-email: pibara@gmail.com
+License: BSD
+Keywords: hive web3 bot
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.6
+License-File: LICENSE
+
+Simple HIVE bot that allows its owner to up-vote valuable timeless HIVE posts.
+
