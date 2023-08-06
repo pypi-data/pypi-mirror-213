@@ -1,0 +1,71 @@
+https://pypi.org/project/transformers-supporter
+<pre>
+pip install transformers-supporter
+</pre>
+
+Supported models 
+
+<pre>
+import transformers_supporter
+
+#ANN
+transformers_supporter.models.AnnConfig
+transformers_supporter.models.AnnForTabularRegression
+transformers_supporter.models.AnnForTabularBinaryClassification
+transformers_supporter.models.AnnForTabularClassification
+transformers_supporter.models.TabularFeatureExtractor
+
+#CNN
+transformers_supporter.models.CnnConfig
+transformers_supporter.models.CnnForImageClassification
+transformers_supporter.models.GrayscaleImageProcessor
+transformers_supporter.models.CnnForKeyPointDetection
+
+#RNN
+transformers_supporter.models.RnnConfig
+transformers_supporter.models.RnnForAudioClassification
+transformers_supporter.models.RnnForTimeSeriesRegression
+
+#Embedded RNN
+transformers_supporter.models.EmbeddedRnnConfig
+transformers_supporter.models.EmbeddedRnnForSequenceClassification
+transformers_supporter.models.EmbeddedRnnForFixedLengthTranslation
+transformers_supporter.models.PretrainedEmbeddedRnnForSequenceClassification
+transformers_supporter.models.TorchtextTokenizer
+
+#Embedded 1DCNN
+transformers_supporter.models.Embedded1dcnnConfig
+transformers_supporter.models.Embedded1dcnnForSequenceClassification
+
+#Faster RCNN
+transformers_supporter.models.FasterRcnnConfig
+transformers_supporter.models.FasterRcnnForObjectDetection
+transformers_supporter.models.FasterRcnnImageProcessor
+</pre>
+
+<pre>
+import transformers_supporter
+
+#Custom Bert
+transformers_supporter.models.CustomBertConfig
+transformers_supporter.models.CustomBertForSequenceClassification
+
+#Custom Wav2Vec2
+transformers_supporter.models.CustomWav2Vec2FeatureExtractor
+</pre>
+
+Supported pipelines
+
+<pre>
+import transformers_supporter
+
+transformers_supporter.pipelines.FixedLengthTranslationPipeline
+transformers_supporter.pipelines.TabularBinaryClassificationPipeline
+transformers_supporter.pipelines.TabularClassificationPipeline
+transformers_supporter.pipelines.TabularRegressionPipeline
+</pre>
+<pre>
+import transformers_supporter
+
+transformers_supporter.pipelines.CustomImageClassificationPipeline
+</pre>
