@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+pyketra/__init__.py
+pyketra.egg-info/PKG-INFO
+pyketra.egg-info/SOURCES.txt
+pyketra.egg-info/dependency_links.txt
+pyketra.egg-info/requires.txt
+pyketra.egg-info/top_level.txt
+pyketra.egg-info/zip-safe
