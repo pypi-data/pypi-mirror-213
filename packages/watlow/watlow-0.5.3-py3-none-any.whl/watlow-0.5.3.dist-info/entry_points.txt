@@ -1,0 +1,2 @@
+[console_scripts]
+watlow = watlow:command_line
