@@ -1,0 +1,17 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+data/countries_un.geojson
+osmsg/__init__.py
+osmsg/app.py
+osmsg/changefiles.py
+osmsg/changesets.py
+osmsg/login.py
+osmsg/utils.py
+osmsg.egg-info/PKG-INFO
+osmsg.egg-info/SOURCES.txt
+osmsg.egg-info/dependency_links.txt
+osmsg.egg-info/entry_points.txt
+osmsg.egg-info/requires.txt
+osmsg.egg-info/top_level.txt

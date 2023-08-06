@@ -1,0 +1,9 @@
+osmium
+pandas==1.5.2
+requests
+Shapely
+geopandas==0.10.2
+tqdm
+seaborn
+matplotlib
+humanize
