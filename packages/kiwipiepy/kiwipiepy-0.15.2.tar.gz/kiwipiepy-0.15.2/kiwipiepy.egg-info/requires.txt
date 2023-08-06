@@ -1,0 +1,4 @@
+dataclasses
+kiwipiepy_model~=0.15
+numpy
+tqdm
