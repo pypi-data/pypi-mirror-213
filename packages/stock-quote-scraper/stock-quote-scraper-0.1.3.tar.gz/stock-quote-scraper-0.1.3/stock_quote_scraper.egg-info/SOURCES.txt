@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+sqs/__init__.py
+sqs/__main__.py
+sqs/cnbc/__init__.py
+sqs/cnbc/quote_strip.py
+sqs/cnbc/stock_quote.py
+stock_quote_scraper.egg-info/PKG-INFO
+stock_quote_scraper.egg-info/SOURCES.txt
+stock_quote_scraper.egg-info/dependency_links.txt
+stock_quote_scraper.egg-info/requires.txt
+stock_quote_scraper.egg-info/top_level.txt
