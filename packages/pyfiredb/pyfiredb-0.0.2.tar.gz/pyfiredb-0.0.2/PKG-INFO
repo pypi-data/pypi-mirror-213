@@ -1,0 +1,78 @@
+Metadata-Version: 2.1
+Name: pyfiredb
+Version: 0.0.2
+Summary: pyfire is a package that simplifies querying with Pyrebase,    making interactions with Firebase databases effortless.
+Home-page: https://github.com/andresroh/pyfire
+Author: Camilo Andrés Rodríguez
+Author-email: andres.roh@gmail.com
+License: MIT
+Keywords: python,alegra,alegra.com
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
+# AlegraPy
+
+Agiliza las consultas a la base de datos utilizando la librería "Pyrebase". Pyrebase es una biblioteca de Python que proporciona una interfaz para interactuar con Firebase, una plataforma de desarrollo de aplicaciones web y móviles.
+
+## Características
+
+- Permite actualizar, leer, buscar el máximo, buscar entre, buscar 
+
+## Instalación y uso
+
+### Instalación
+
+```
+pip install pyfiredb
+```
+
+### Uso
+
+Un ejemplo para usar este paquete, la configuración de firebase y credenciales de acceso se han tomado desde las variables de entorno
+
+```python
+from pyfiredb import Credentials
+from pyfiredb import Database
+from pyfiredb import Session
+
+
+def run():
+    fire = Session(Credentials.user, Credentials.password)
+    firebase = Database(fire)
+    print(firebase.equal("alegra/products", "reference", "TP-19100"))
+    print(firebase.get("woocommerce/products"))
+    invoices = firebase.between("alegra/invoices", "date",
+                                "2023-05-01", "2023-05-1")
+    print(invoices[1])
+
+
+if __name__ == "__main__":
+
+    run()
+```
+
+## Créditos
+
+- Camilo Andrés Rodriguez
+
+## referencias
+
+- https://developer.alegra.com/
+
+
+## Licencia
+
+Este proyecto está bajo la Licencia [MIT].
+
+---
+
+¡Puedes personalizarlo según las necesidades específicas de tu proyecto!
+
+
+

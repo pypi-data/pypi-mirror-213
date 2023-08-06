@@ -1,0 +1,12 @@
+LICENSE.txt
+README.md
+setup.py
+pyfiredb/__init__.py
+pyfiredb/database.py
+pyfiredb/session.py
+pyfiredb/settings.py
+pyfiredb.egg-info/PKG-INFO
+pyfiredb.egg-info/SOURCES.txt
+pyfiredb.egg-info/dependency_links.txt
+pyfiredb.egg-info/requires.txt
+pyfiredb.egg-info/top_level.txt
