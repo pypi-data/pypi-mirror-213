@@ -1,0 +1,103 @@
+Metadata-Version: 2.1
+Name: html-report-line-profiler
+Version: 0.1.1a0
+Summary: Generate an HTML report for line_parser
+Home-page: https://1sixunhuit.frama.io/html_report_line_profiler
+Author: Pierre
+Author-email: pierre@exemple.com
+License: AGPL 3
+Keywords: ['profiling','profiler','line_profiler','html','report']
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Environment :: Console
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Natural Language :: French
+Classifier: Natural Language :: English
+Classifier: License :: OSI Approved :: GNU Affero General Public License v3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.9, <4
+Description-Content-Type: text/markdown
+Requires-Dist: line-profiler (==4.0.3)
+Provides-Extra: doc
+Requires-Dist: myst-parser (==1.0.0) ; extra == 'doc'
+Requires-Dist: sphinx-rtd-theme (==1.2.1) ; extra == 'doc'
+Requires-Dist: sphinx (==6.2.1) ; extra == 'doc'
+Provides-Extra: test
+Requires-Dist: coverage (==7.2.7) ; extra == 'test'
+Requires-Dist: flake8-html (==0.4.3) ; extra == 'test'
+Requires-Dist: flake8 (==6.0.0) ; extra == 'test'
+Requires-Dist: html-report-line-profiler (==0.0.1) ; extra == 'test'
+Provides-Extra: upload
+Requires-Dist: twine (==4.0.2) ; extra == 'upload'
+Requires-Dist: wheel (==0.40.0) ; extra == 'upload'
+
+# Intro
+
+Basé sur https://github.com/pyutils/line_profiler, fork de https://github.com/rkern/line_profiler
+
+
+# TODO
+- [ ] Several classes in one file : bug...
+- [ ] Badges de la page d'accueil de la doc a changer
+
+# Utilisation dans les tests unitaires :
+
+A ajouter a un test unittaire unittest, et à lancer avec $ coverage run -m unittest test_str.py 
+
+Dans :
+```
+[...]
+
+import html_report_line_profiler as hr
+
+
+class Test_CeciEstUnTest(unittest.TestCase):
+    def setUp(self):
+        # Code execute avant chaque test
+        [...] # ce que l'on veut
+
+        # Profiler :
+        self.profiler, self.delete_profiling_env = hr.setUp_profiler(castList)
+
+    #endDef
+
+    # ...
+
+    def tearDown(self):
+        # Code executé après chaque test
+        # Terminer le profiler en premier
+
+        # Create basename
+        hr.proffile_basename = classname2basename(
+            file_name = __file__,
+            class_name = self.__class__.__name__,
+            method_name = self._testMethodName
+        )
+
+        # Launch the profiler out
+        hr.tearDown_profiler(
+            profiler=self.profiler,
+            proffile_basename=proffile_basename,
+            output_folder=output_folder,
+            delete_profiling_env=self.delete_profiling_env
+        )
+        #
+	# [...] # Les autres commandes
+    #endDef
+#endClass
+```
+
+
+# Rapport HTML
+Pour lancer ensuite le post-traitement (rapport html) :
+```
+$ profiler_html_report.py
+```
+
+Remarques
+
+* `-d = --input-dir` (default : './profile')
+* `-o = --output-dir` (default : './profile_html')
+
