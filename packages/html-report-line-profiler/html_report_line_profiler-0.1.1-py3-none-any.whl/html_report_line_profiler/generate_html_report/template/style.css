@@ -1,0 +1,139 @@
+.scaleable-wrapper {
+  padding: 20px;
+  resize: both;
+  position: relative;
+  background: #efefef;
+  height: 100px;
+}
+
+#block {
+  height: 100px;
+  position: relative;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  transform-origin: center center;
+}
+
+.ui-resizable-se {
+  width: 10px;
+  height: 10px;
+  background: orange;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+pre {
+  border: 1px solid black;
+  padding: 5px;
+  white-space: -moz-pre-wrap; /* Mozilla, supported since 1999 */
+  white-space: -pre-wrap; /* Opera */
+  white-space: -o-pre-wrap; /* Opera */
+  white-space: pre-wrap; /* CSS3 – Text module (Candidate Recommendation) http://www.w3.org/TR/css3-text/#white-space */
+  word-wrap: break-word; /* IE 5.5+ */
+}
+
+pre code {
+  counter-reset: line-numbering;
+}
+
+pre code .line::before {
+  content: counter(line-numbering);
+  counter-increment: line-numbering;
+  padding-right: 0.8em; /* space after numbers */
+  margin-right: 5px;
+  width: 1.5em;
+  text-align: right;
+  opacity: 0.5;
+  background-color: #efefef;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  padding: 0px;
+  text-align: left;
+  /*border-bottom: 1px solid #ddd;*/
+
+}
+
+th {
+  background-color: #666;
+}
+tr{
+    font-size: 10pt;
+    padding:0pt;
+    margin:0pt;
+}
+
+tr.nohit {
+    background-color: #f2f2f2;
+}
+
+tr.paliera {
+    background-color: #8d8;
+}
+
+tr.palierb {
+    background-color: #595;
+}
+tr.palierc{
+    background-color: #29a;
+}
+tr.palierd{
+    background-color: #aef;
+}
+tr.paliere{
+    background-color: #aaf;
+}
+tr.palierf{
+    background-color: #ff0;
+}
+tr.palierg{
+    background-color: #fa0;
+}
+tr.palierh{
+    background-color: #f66;
+}
+tr.palieri{
+    background-color: #f00;
+}
+tr.palierj{
+    background-color: #b00;
+    color: white;
+}
+tr.palierk{
+    background-color: #000;
+    color: white;
+}
+
+
+tr:hover {
+  font-weight: bold;
+}
+tr:hover td {
+  font-weight: bold;
+}
+
+tr.highlight {
+  background-color: #ffc107;
+}
+
+.line-number,
+.hits,
+.time,
+.per-hit,
+.percentage {
+  user-select: none;
+}
+
+td.code {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
