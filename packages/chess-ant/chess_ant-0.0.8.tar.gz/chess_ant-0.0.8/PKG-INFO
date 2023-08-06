@@ -1,0 +1,52 @@
+Metadata-Version: 2.1
+Name: chess_ant
+Version: 0.0.8
+Summary: Simulator to solve chess problems with MCTS Solver and Genetic Programming.
+Home-page: https://github.com/akuroiwa/chess-ant
+Author: Akihiro Kuroiwa
+Author-email: akuroiwa@env-reform.com
+License: GNU/GPLv3+
+Keywords: evolutionary algorithms,genetic programming,gp,chess,fen,pgn
+Platform: any
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: Intended Audience :: Education
+Classifier: Operating System :: OS Independent
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Software Development
+Classifier: Topic :: Games/Entertainment :: Board Games
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.7, !=3.10.*
+Description-Content-Type: text/markdown
+Provides-Extra: classification
+License-File: LICENSE.txt
+
+# chess-ant
+
+Simulator to solve chess problems with MCTS Solver and Genetic Programming.
+
+`chess_ant.py` is based on the code of
+[deap/examples/gp/ant.py](https://github.com/DEAP/deap/blob/master/examples/gp/ant.py).
+
+
+## Documentation
+
+English:
+
+- [Online](https://chess-ant.readthedocs.io/en/latest/)
+- [latest PDF](https://chess-ant.readthedocs.io/_/downloads/en/latest/pdf/)
+- [latest HTMLZip](https://chess-ant.readthedocs.io/_/downloads/en/latest/htmlzip/)
+- [latest Epub](https://chess-ant.readthedocs.io/_/downloads/en/latest/epub/)
+
+Japanese:
+
+- [Online](https://chess-ant.readthedocs.io/ja/latest/)
+- [latest PDF](https://chess-ant.readthedocs.io/_/downloads/ja/latest/pdf/)
+- [latest HTMLZip](https://chess-ant.readthedocs.io/_/downloads/ja/latest/htmlzip/)
+- [latest Epub](https://chess-ant.readthedocs.io/_/downloads/ja/latest/epub/)
+
+

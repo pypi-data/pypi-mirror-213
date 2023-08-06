@@ -1,0 +1,15 @@
+LICENSE.txt
+MANIFEST.in
+README.md
+requirements.txt
+setup.py
+chess_ant/__init__.py
+chess_ant/chess_ant.py
+chess_ant/chess_mcts.py
+chess_ant.egg-info/PKG-INFO
+chess_ant.egg-info/SOURCES.txt
+chess_ant.egg-info/dependency_links.txt
+chess_ant.egg-info/entry_points.txt
+chess_ant.egg-info/not-zip-safe
+chess_ant.egg-info/requires.txt
+chess_ant.egg-info/top_level.txt

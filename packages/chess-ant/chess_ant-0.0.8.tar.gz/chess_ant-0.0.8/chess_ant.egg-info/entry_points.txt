@@ -1,0 +1,4 @@
+[console_scripts]
+chess-ant = chess_ant.chess_ant:console_script
+chess-mcts = chess_ant.chess_mcts:console_script
+

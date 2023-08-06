@@ -1,0 +1,10 @@
+chess
+deap
+mcts
+mcts-solver
+pandas
+scipy
+
+[classification]
+chess_classification
+transformers
