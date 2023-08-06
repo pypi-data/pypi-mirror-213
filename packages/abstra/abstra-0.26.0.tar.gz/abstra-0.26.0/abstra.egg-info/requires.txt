@@ -1,0 +1,17 @@
+setuptools
+requests
+validators
+multipart
+progress
+crontab
+colour
+websocket-client
+fire
+jedi
+simplejson
+Flask
+eventlet
+flask-cors
+flask-sock
+PyJWT
+hackerforms>=0.27.0
