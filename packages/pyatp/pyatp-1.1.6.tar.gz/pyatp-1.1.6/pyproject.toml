@@ -1,0 +1,39 @@
+[tool.poetry]
+name = "pyatp"
+version = "1.1.6"
+description = "a iflytek ailab library ..."
+authors = ["mjchen <mjchen@iflytek.com>","ybyang <ybyang7@iflytek.com>", "kqxu <kqxu@iflytek.com>"]
+license = "Apache License 2"
+packages = [
+    { include = "ailab", from = "src" }
+]
+
+exclude = [
+    "src/ailab/data",
+    "src/ailab/inference_wrapper/huggingface/transformers/cv/video_classification/wrapper/*.mp4",
+    'src/ailab/inference_wrapper/yolo/wrapper/yolov5/test_data/*'
+]
+
+[tool.poetry.dependencies]
+python = ">3.7"
+torch = "*"
+torchvision = "*"
+transformers = "*"
+datasets = "*"
+modelscope = "*"
+#peft = { git = "https://github.com/huggingface/peft.git", rev = "e536616888d51b453ed354a6f1e243fecb02ea08" }
+#diffusers = {git = "https://github.com/huggingface/diffusers.git"}
+SentencePiece = "*"
+accelerate = "*"
+bitsandbytes = "*"
+giteapy = "*"
+evaluate = "*"
+tensorboard = "*"
+scikit-learn = "*"
+cpm_kernels = "*"
+requests = "*"
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"

@@ -1,0 +1,5 @@
+from .trainer_for_chatglm import ChatGlmTrainer
+from .trainer_for_text_classification import TextClassificationTrainer
+from .traniner_for_question_answer import QuestionAnswerTrainer
+from .trainer_for_alpaca import AlpacaTrainer
+from .trainer_for_llama_cn import Vicunatrainer
