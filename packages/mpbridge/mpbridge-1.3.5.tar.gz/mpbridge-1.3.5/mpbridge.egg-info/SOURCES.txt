@@ -1,0 +1,16 @@
+LICENSE
+README.md
+pyproject.toml
+mpbridge/__init__.py
+mpbridge/bridge.py
+mpbridge/handler.py
+mpbridge/ignore.py
+mpbridge/pyboard.py
+mpbridge/shell.py
+mpbridge/utils.py
+mpbridge.egg-info/PKG-INFO
+mpbridge.egg-info/SOURCES.txt
+mpbridge.egg-info/dependency_links.txt
+mpbridge.egg-info/entry_points.txt
+mpbridge.egg-info/requires.txt
+mpbridge.egg-info/top_level.txt
