@@ -1,0 +1,10 @@
+archbuilder/__main__.py,sha256=LqWQYa5MnJFcKziHXr7WzAz492GZ-YS3401gNGWisJM,700
+builder/__init__.py,sha256=QzbWc_15bawOPZiQq1eYDj8pBeswgzOginRXT56Y1xw,30
+builder/builder.py,sha256=yfYyCS793p7BSiGRq1-GUFbn3TPyZm_VsnrLhbxXSQ8,736
+template/__init__.py,sha256=NBQ24HAm0GGrLdQk5b0zBWS8pqIn8v0FIwHc8ahl8qY,32
+template/template.py,sha256=PLzVoxqdnInP6xZTGu2n1xQMHo0QQ3m_pvcX_mhAanA,1270
+archbuilder-0.1.1.dist-info/METADATA,sha256=wkE69gEEhNGGXLRSWigdTsXs9ZKOQJHQvhROpfttJlQ,1497
+archbuilder-0.1.1.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+archbuilder-0.1.1.dist-info/entry_points.txt,sha256=q2vIV2chwhZ6BVt-41i_zPMQclSQt2ntEX6i3j6M_qw,58
+archbuilder-0.1.1.dist-info/top_level.txt,sha256=96rmHD_n6J87Vifk3LMkwfRZOtDn1PLlEnHJj0EeH7I,29
+archbuilder-0.1.1.dist-info/RECORD,,
