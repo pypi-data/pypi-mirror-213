@@ -1,0 +1,7 @@
+LICENSE
+README.md
+setup.py
+PyTableParser.egg-info/PKG-INFO
+PyTableParser.egg-info/SOURCES.txt
+PyTableParser.egg-info/dependency_links.txt
+PyTableParser.egg-info/top_level.txt
