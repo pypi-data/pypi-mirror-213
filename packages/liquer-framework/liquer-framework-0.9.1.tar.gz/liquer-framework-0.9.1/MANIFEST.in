@@ -1,0 +1,2 @@
+recursive-include liquer/server/static *
+recursive-include liquer/ext *.html
