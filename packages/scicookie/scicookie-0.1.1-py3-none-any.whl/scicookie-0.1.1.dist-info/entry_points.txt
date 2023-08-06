@@ -1,0 +1,3 @@
+[console_scripts]
+scicookie=scicookie.__main__:app
+
