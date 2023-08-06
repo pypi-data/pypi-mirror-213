@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: drizzutojr-vader
+Version: 0.0.1
+Summary: A library to be used with the Hashicorp Vault Vader Platform
+Author: drizzutojr
+License: MIT
+
