@@ -1,0 +1,8 @@
+letterboxdpy/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+letterboxdpy/list.py,sha256=znXhElh7BrKuTSpi74SaUUJfCEJzR3rEEkuMR2QmUqs,2787
+letterboxdpy/movie.py,sha256=f4IwoHrD-5rzCu3PUMh4uvIvuf5XZ8FUsP1GlLD8BxA,5305
+letterboxdpy/user.py,sha256=hAyGiQfFVUR_k-EsUtKXnDZc6B0VySG5OCb3j0xFQdw,5236
+letterboxdpy-3.17.dist-info/METADATA,sha256=HvjY9VLuN3YslA0GVEGZlsx8nJL4jb5Clx33wGdouBY,9408
+letterboxdpy-3.17.dist-info/WHEEL,sha256=9QBuHhg6FNW7lppboF2vKVbCGTVzsFykgRQjjlajrhA,87
+letterboxdpy-3.17.dist-info/licenses/LICENSE,sha256=MI6-YpDFYsRVPdig00H-kdoTW701A6-A69WF-JMSAQQ,1064
+letterboxdpy-3.17.dist-info/RECORD,,
