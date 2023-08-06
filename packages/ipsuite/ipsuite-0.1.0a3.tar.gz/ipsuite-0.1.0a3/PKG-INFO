@@ -1,0 +1,57 @@
+Metadata-Version: 2.1
+Name: ipsuite
+Version: 0.1.0a3
+Summary: A suite of tools for machine learned interatomic potentials.
+License: License :: OSI Approved :: Eclipse Public License 2.0 (EPL-2.0)
+Keywords: data-version-control,machine-learning,reproducibility,interatomic potentials
+Author: zincwarecode
+Author-email: zincwarecode@gmail.com
+Requires-Python: >=3.10,<3.12
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Provides-Extra: comparison
+Provides-Extra: gap
+Provides-Extra: nequip
+Requires-Dist: ase (>=3.22.1,<4.0.0)
+Requires-Dist: cp2k-input-tools (>=0.8.2,<0.9.0)
+Requires-Dist: cp2k-output-tools (>=0.5.0,<0.6.0)
+Requires-Dist: dscribe (>=1.2.2,<2.0.0) ; extra == "comparison"
+Requires-Dist: h5py (>=3.8.0,<4.0.0) ; extra == "comparison"
+Requires-Dist: lazy-loader (>=0.2,<0.3)
+Requires-Dist: libclang (>=15,<16)
+Requires-Dist: llvmlite (>=0.39.1,<0.40.0) ; extra == "comparison"
+Requires-Dist: nequip (>=0.5.6,<0.6.0) ; extra == "nequip"
+Requires-Dist: numba (>=0.56.4,<0.57.0) ; extra == "comparison"
+Requires-Dist: quippy-ase (>=0.9.12,<0.10.0) ; extra == "gap"
+Requires-Dist: rdkit (>=2022.9.5,<2023.0.0)
+Requires-Dist: seaborn (>=0.12.2,<0.13.0)
+Requires-Dist: tensorflow (>=2.11.0,<3.0.0) ; extra == "comparison"
+Requires-Dist: xmltodict (>=0.13.0,<0.14.0) ; extra == "gap"
+Requires-Dist: znflow (>=0.1.11,<0.2.0)
+Requires-Dist: znh5md (>=0.1.6a0,<0.2.0)
+Requires-Dist: zntrack (>=0.6.0a5,<0.7.0)
+Description-Content-Type: text/markdown
+
+![PyTest](https://github.com/zincware/IPSuite/actions/workflows/tests.yaml/badge.svg)
+[![ZnTrack](https://img.shields.io/badge/Powered%20by-ZnTrack-%23007CB0)](https://zntrack.readthedocs.io/en/latest/)
+[![zincware](https://img.shields.io/badge/Powered%20by-zincware-darkcyan)](https://github.com/zincware)
+
+# IPS - The Inter Atomic Potential Suite
+
+IPS provides you with tools to generate Machine Learned Interatomic Potentials.
+
+Install the package to get started or check out an interactive notebook
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/zincware/IPSuite/HEAD)
+
+```python
+pip install ipsuite
+```
+
+Examples can be found at:
+
+- https://dagshub.com/PythonFZ/IPS-Examples/src/intro/main.ipynb
+- https://dagshub.com/PythonFZ/IPS-Examples/src/graph/main.ipynb
+- https://dagshub.com/PythonFZ/IPS-Examples/src/modify_graph/main.ipynb
+
