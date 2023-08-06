@@ -1,0 +1,7 @@
+README.md
+setup.py
+vizmath.egg-info/PKG-INFO
+vizmath.egg-info/SOURCES.txt
+vizmath.egg-info/dependency_links.txt
+vizmath.egg-info/requires.txt
+vizmath.egg-info/top_level.txt

@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: vizmath
+Version: 0.0.1
+Summary: Visualization math toolkit.
+Home-page: https://github.com/nickgerend/vizmath
+Author: Nick Gerend
+Author-email: nickgerend@gmail.com
+License: MIT
+Description: # Welcome to vizmath
+        
+        ## Setup
+        pip install vizmath
+        
+        ## Usage
+        coming soon
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.7
+Description-Content-Type: text/markdown
