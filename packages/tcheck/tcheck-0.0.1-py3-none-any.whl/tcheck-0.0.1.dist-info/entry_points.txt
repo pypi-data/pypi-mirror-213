@@ -1,0 +1,2 @@
+[console_scripts]
+artist = artist.__main__:main
