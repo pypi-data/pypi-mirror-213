@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: devcycle-python-server-sdk
+Version: 2.0.0
+Summary: DevCycle Python SDK
+Home-page: https://github.com/devcycleHQ/python-server-sdk
+Author-email: 
+Keywords: DevCycle
+License-File: LICENSE
+
+    The DevCycle Python SDK used for feature management.
+    
