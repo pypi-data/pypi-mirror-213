@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: kkw2401-bmi
+Version: 0.0.0.2
+Summary: BMI 계산 모듈
+Home-page: https://github.com/amshyre3711
+Author: phoenix_01
+Author-email: amshyre3711@gmail.com
+License: MIT
+Requires-Python: >=3
+
