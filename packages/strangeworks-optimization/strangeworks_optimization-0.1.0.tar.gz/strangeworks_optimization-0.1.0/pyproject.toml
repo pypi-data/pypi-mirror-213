@@ -1,0 +1,29 @@
+[tool.poetry]
+name = "strangeworks-optimization"
+version = "0.1.0"
+description = "This SDK extends the Strangeworks SDK to provide access to the Strangeworks Optimization API."
+authors = ["James Tricker <james@strangeworks.com>"]
+readme = "README.md"
+packages = [{include = "strangeworks_optimization"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+strangeworks = "^0.4.2"
+dimod = "^0.12.7"
+pytest = "^7.3.1"
+strangeworks-python-core = "^0.1.7"
+python-dotenv = "^1.0.0"
+pydantic = "^1.10.9"
+
+
+[tool.poetry.group.dev.dependencies]
+ipykernel = "^6.23.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+markers = [
+    "integration_could_cost_money: marks tests as creating a job that could cost some money (deselect with '-m \"not integration_could_cost_money\"')",
+    "hardware: marks tests as creating a hardware job that will cost money (deselect with '-m \"not hardware\"')",
+]
