@@ -1,0 +1,5 @@
+[console_scripts]
+slogs=slurm_tools.slurm_logs:cli
+snapshot=slurm_tools.snapshot:cli
+stui=slurm_tools.slurm_tui:cli
+
