@@ -1,0 +1,17 @@
+[kiara.cli_subcommands]
+service = kiara_plugin.service.interfaces.cli.service.commands:service
+
+[kiara.data_types]
+service = kiara_plugin.service:find_data_types
+
+[kiara.model_classes]
+service = kiara_plugin.service:find_model_classes
+
+[kiara.modules]
+service = kiara_plugin.service:find_modules
+
+[kiara.pipelines]
+service = kiara_plugin.service:find_pipelines
+
+[kiara.plugin]
+service = kiara_plugin.service
