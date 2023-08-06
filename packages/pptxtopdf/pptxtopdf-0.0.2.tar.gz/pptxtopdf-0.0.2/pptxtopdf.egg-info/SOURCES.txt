@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+pptxtopdf/__init__.py
+pptxtopdf/__main__.py
+pptxtopdf.egg-info/PKG-INFO
+pptxtopdf.egg-info/SOURCES.txt
+pptxtopdf.egg-info/dependency_links.txt
+pptxtopdf.egg-info/entry_points.txt
+pptxtopdf.egg-info/requires.txt
+pptxtopdf.egg-info/top_level.txt
