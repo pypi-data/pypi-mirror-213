@@ -1,0 +1,5 @@
+[asphalt.components]
+jupytercad = fps_jupytercad.main:JupyterCADComponent
+
+[jupyverse.components]
+jupytercad = fps_jupytercad.main:JupyterCADComponent

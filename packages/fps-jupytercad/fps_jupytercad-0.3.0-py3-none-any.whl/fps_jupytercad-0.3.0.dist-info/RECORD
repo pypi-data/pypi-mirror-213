@@ -1,0 +1,10 @@
+fps_jupytercad/__init__.py,sha256=VrXpHDu3erkzwl_WXrqINBm9xWkcyUy53IQOj042dOs,22
+fps_jupytercad/main.py,sha256=2YdK_cfsuquEN2F40a3bGJuCmG_uf_0FoYuG743ER48,449
+fps_jupytercad/models.py,sha256=Nhegw3cIXZTZnNs9_njieIcSViRSYNqcLHPMSJhIRlg,124
+fps_jupytercad/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+fps_jupytercad/routes.py,sha256=d-j7AoaJnFqulS9x_tJ0J1LwRw4cdx7ZDazeH4kTt1w,1033
+fps_jupytercad-0.3.0.dist-info/METADATA,sha256=xCF1hddPu-siqpb-A4eYQFdNLo_F5u3K4MnKKSRpUQE,468
+fps_jupytercad-0.3.0.dist-info/WHEEL,sha256=KGYbc1zXlYddvwxnNty23BeaKzh7YuoSIvIMO4jEhvw,87
+fps_jupytercad-0.3.0.dist-info/entry_points.txt,sha256=yZr_LRIquuzp4C42KEYrYsYuopAhjHzHG0Jc1luIjQQ,151
+fps_jupytercad-0.3.0.dist-info/licenses/COPYING.md,sha256=Ip7xXCuJ7tJkrOqxGI12Cy5rHIoI_QcRjX70Vj4MTuM,2833
+fps_jupytercad-0.3.0.dist-info/RECORD,,
