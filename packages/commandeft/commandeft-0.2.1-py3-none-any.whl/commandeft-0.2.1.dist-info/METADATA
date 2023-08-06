@@ -1,0 +1,146 @@
+Metadata-Version: 2.1
+Name: commandeft
+Version: 0.2.1
+Summary: CommanDeft is a CLI tool that converts natural language prompts into executable commands or scripts using OpenAI's chat models.
+Author-Email: Petros Sidirokastritis <sidirope@gmail.com>
+License: MIT
+Project-URL: Homepage, https://github.com/Ferrum-Citadel/commandeft
+Requires-Python: <=3.11.4,>=3.8.1
+Requires-Dist: PyJWT==2.7.0
+Requires-Dist: Pygments==2.15.1
+Requires-Dist: aiohttp==3.8.4
+Requires-Dist: aiosignal==1.3.1
+Requires-Dist: async-timeout==4.0.2
+Requires-Dist: attrs==23.1.0
+Requires-Dist: cachetools==5.3.1
+Requires-Dist: certifi==2023.5.7
+Requires-Dist: cffi==1.15.1
+Requires-Dist: charset-normalizer<4.0,>=2.0
+Requires-Dist: click==8.1.3
+Requires-Dist: cryptography==41.0.1
+Requires-Dist: diskcache==5.6.1
+Requires-Dist: frozenlist==1.3.3
+Requires-Dist: gptcache==0.1.29.1
+Requires-Dist: guidance==0.0.61
+Requires-Dist: idna==3.4
+Requires-Dist: msal==1.22.0
+Requires-Dist: multidict<7.0,>=4.5
+Requires-Dist: nest-asyncio==1.5.6
+Requires-Dist: numpy==1.24.3
+Requires-Dist: openai==0.27.7
+Requires-Dist: parsimonious==0.10.0
+Requires-Dist: pip-licenses==4.3.2
+Requires-Dist: platformdirs<4,>=3.2
+Requires-Dist: prettytable==3.7.0
+Requires-Dist: prompt-toolkit<4.0.0,>=3.0.1
+Requires-Dist: pycparser==2.21
+Requires-Dist: pygtrie==2.5.0
+Requires-Dist: pyperclip==1.8.2
+Requires-Dist: regex==2023.6.3
+Requires-Dist: requests==2.31.0
+Requires-Dist: six==1.16.0
+Requires-Dist: tiktoken==0.4.0
+Requires-Dist: tqdm==4.65.0
+Requires-Dist: urllib3==2.0.2
+Requires-Dist: wcwidth==0.2.6
+Requires-Dist: yarl<2.0,>=1.0
+Requires-Dist: InquirerPy>=0.3.4
+Requires-Dist: pytest; extra == "dev"
+Requires-Dist: pytest-cov; extra == "dev"
+Requires-Dist: pytest-pep8; extra == "dev"
+Provides-Extra: dev
+Description-Content-Type: text/markdown
+
+# CommanDeft
+
+CommanDeft is a simple Python CLI tool designed to generate useful shell commands based on user prompts. It utilizes OpenAI's chat models to provide intelligent suggestions and help users compose shell commands quickly and efficiently.
+
+## Requirements
+
+- In order to use CommanDeft you will need an OpenAI API Key which will be asked of you during the initial configuration.
+  You can easily get one from [HERE](https://platform.openai.com/account/api-keys)
+
+-If you are using Linux you might have to install `xclip` using your package manager.  
+For example, in Debian:
+`sudo apt-get install xclip`
+
+## Installation
+
+To install CommanDeft, you can use the following command:
+
+```sh
+pip install commandeft
+```
+
+
+### Example Usage
+
+1.  Generate a shell command based on a prompt:
+
+    ```sh
+    commandeft --prompt "list all files in the current directory"
+    OR
+    commandeft -p "list all files in the current directory"
+    ```
+    
+
+    This will provide a shell command suggestion based on the given prompt:
+
+    ```sh
+    > ls -a
+    ```
+
+
+2.  Run CommanDeft in interactive mode:
+
+    `commandeft --interactive`
+
+    This will start CommanDeft in interactive mode, allowing you to input prompts and receive command suggestions directly within the CLI.
+
+3.  Re-configure:
+
+    `commandeft --configure`
+
+    This will run the configuration flow for CommanDeft, allowing you to set up your preferences and customize the behavior of the tool.
+
+## Configuration
+
+During the initial configuration or when running:
+
+```sh
+commandeft --configure (or -c)
+```
+
+- You can choose the generated answer's `temperature`. Because this tool is geared towards code generation, lower temperatures perform better.
+  More information about temeratures [HERE](https://community.openai.com/t/cheat-sheet-mastering-temperature-and-top-p-in-chatgpt-api-a-few-tips-and-tricks-on-controlling-the-creativity-deterministic-output-of-prompt-responses/172683)
+- You can choose the `max_token` value.  
+  ⚠️ Keep in Mind that the guided prompt consumes ~55 tokens. The value you specify won't include these tokens.
+- You will also be asked about the action that will be performed every time when you accept a generated command when running in interactive mode.  
+  The available actions are:
+
+1. Running the generated command
+2. Copying it to the clipboard
+
+Don't worry though, after this you will be asked to apply your selected action on every generation.
+
+## Options
+
+Once installed, you can run CommanDeft using the `commandeft` command. Here are the available options:
+
+- `-h, --help`: Show the help message and exit.
+- `-v, --version`: Show the version information and exit.
+- `-c, --configure`: Configure CommanDeft (Like the one on the first run).
+- `-i, --interactive`: Run CommanDeft in interactive mode.
+- `-p, --prompt "TEXT"`: Specify your prompt inline.
+
+## Contributing
+
+Contributions to CommanDeft are welcome! If you encounter any issues, have suggestions for improvements, or would like to contribute code, please check out the project repository on GitHub: [Repo](https://https://github.com/Ferrum-Citadel/commandeft)
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](https://github.com/Ferrum-Citadel/commandeft/blob/main/LICENSE) file for more details.
+
+## Feedback
+
+If you find CommanDeft useful or have any feedback, I would love to hear from you! Please feel free to reach out and let me know how I can make this tool even better.
