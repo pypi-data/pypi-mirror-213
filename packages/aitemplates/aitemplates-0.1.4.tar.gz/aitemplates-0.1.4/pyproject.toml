@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "aitemplates"
+version = "0.1.4"
+description = "Designed to streamline and simplify your AI workflows, it offers Python typing support, error checking, and a smart usage meter to manage API costs efficiently. Plus, it features built-in examples with ChromaDB and efficient tools for prompt engineering."
+authors = ["Silen Naihin <silen.naihin@gmail.com>"]
+readme = "README.md"
+packages = [{include = "aitemplates"}]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+chromadb = "^0.3.26"
+openai = "^0.27.8"
+aiolimiter = "^1.1.0"
+aiohttp = "^3.8.4"
+nbformat = "^5.9.0"
+argparse = "^1.4.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+aitemplates = 'aitemplates.main:main'

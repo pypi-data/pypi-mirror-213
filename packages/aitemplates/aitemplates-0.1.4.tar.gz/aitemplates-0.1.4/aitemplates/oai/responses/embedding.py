@@ -1,0 +1,60 @@
+import numpy as np
+from typing import Any, Union
+import os
+from dotenv import load_dotenv
+
+import openai
+
+from aitemplates.oai.utils.wrappers import retry_openai_api, metered
+
+load_dotenv()
+
+OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
+
+if OPENAI_API_KEY is None:
+    raise Exception("API key not found in environment variables")
+
+openai.api_key = OPENAI_API_KEY
+
+Embedding = Union[list[np.float32], np.ndarray[Any, np.dtype[np.float32]]]
+"""Embedding vector"""
+TText = list[int]
+"""Token array representing text"""
+
+
+@metered
+@retry_openai_api()
+def get_embedding(
+    embed: Union[str, TText, list[str], list[TText]],
+    model: str = "text-embedding-ada-002",
+) -> Union[Embedding, list[Embedding]]:
+    """Get an embedding from the ada model.
+
+    Args:
+        embed: Input text to get embeddings for, encoded as a string or array of tokens.
+            Multiple inputs may be given as a list of strings or token arrays.
+        openai_api_key: OpenAI API key.
+        model: The OpenAI embedding model to use. Defaults to "text-embedding-ada-002".
+
+    Returns:
+        List[float]: The embedding.
+    """
+    multiple = isinstance(embed, list) and all(not isinstance(i, int) for i in input)
+
+    # clean the input string
+    if isinstance(embed, str):
+        embed = embed.replace("\n", " ")
+    elif multiple and isinstance(embed[0], str):
+        embed = [text.replace("\n", " ") for text in embed]
+
+    embeddings = openai.Embedding.create(
+        input=embed,
+        model=model,
+    ).data
+
+    if not multiple:
+        return embeddings[0]["embedding"]
+
+    # sort the multiple return embeddings in their correct order
+    embeddings = sorted(embeddings, key=lambda x: x["index"])
+    return [d["embedding"] for d in embeddings]
