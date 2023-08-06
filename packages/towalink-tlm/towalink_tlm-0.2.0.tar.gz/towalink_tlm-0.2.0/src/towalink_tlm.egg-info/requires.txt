@@ -1,0 +1,7 @@
+python-configuration
+jinja2
+pyyaml
+toml
+tomlkit
+ansible
+wgconfig>=0.1.4
