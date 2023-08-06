@@ -1,0 +1,12 @@
+pyudev
+
+[:python_version < "3.8"]
+importlib-metadata
+
+[all]
+inquirer
+
+[testing]
+setuptools
+pytest
+pytest-cov

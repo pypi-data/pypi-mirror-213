@@ -1,0 +1,9 @@
+[console_scripts]
+inet-nm-check = inet_nm.check:cli_count_board_inventory
+inet-nm-commission = inet_nm.commissioner:commission
+inet-nm-exec = inet_nm.runner_cli:nm_exec
+inet-nm-free = inet_nm.locking:cli_release_all_locks
+inet-nm-tmux = inet_nm.runner_cli:nm_tmux
+inet-nm-tty-from-uid = inet_nm.commissioner:cli_tty_from_uid
+inet-nm-update-commissioned = inet_nm.commissioner:update_commissioned
+inet-nm-update-from-os = inet_nm.update_os_board_list:cli_update_boards_from_os
