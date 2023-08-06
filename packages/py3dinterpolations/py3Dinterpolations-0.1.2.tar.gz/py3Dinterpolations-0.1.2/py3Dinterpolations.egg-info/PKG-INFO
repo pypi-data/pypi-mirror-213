@@ -1,0 +1,43 @@
+Metadata-Version: 2.1
+Name: py3Dinterpolations
+Version: 0.1.2
+Summary: quick 3D interpolation with python
+Home-page: https://github.com/giocaizzi/py3Dinterpolations
+Author: giocaizzi
+Author-email: giocaizzi@gmail.com
+License: MIT
+Project-URL: Bug Reports, https://github.com/giocaizzi/py3Dinterpolations/issues
+Project-URL: Source, https://github.com/giocaizzi/py3Dinterpolations
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Description-Content-Type: text/markdown
+Provides-Extra: docs
+Provides-Extra: dev
+
+# py3Dinterpolations
+![PyPI](https://img.shields.io/pypi/v/py3Dinterpolations)
+![PyPI - Python Version](https://img.shields.io/pypi/pyversions/py3Dinterpolations)
+![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/giocaizzi/py3Dinterpolations/tests.yml)
+[![codecov](https://codecov.io/gh/giocaizzi/py3Dinterpolations/branch/main/graph/badge.svg?token=8COIITUR2I)](https://codecov.io/gh/giocaizzi/py3Dinterpolations)
+
+
+This is a python package to compute **quick 3D interpolations of spatial data**.
+
+Supports the **following interpolation** methods:
+- *Ordinary 3D Kriging* : [`pykrige`](https://github.com/GeoStat-Framework/PyKrige)
+
+Supports **preprocessing** of data:
+- *Downsampling*
+- *Normalization* of X,Y,Z coordinates
+- *Standardization* of signal 
+
+**Visualizations**
+- 2D with [`matplotlib`](https://matplotlib.org/stable/)
+- 3D with [`plotly`](https://plotly.com/).
+
+# Documentation
+
+Documentation can be found [here](https://giocaizzi.github.io/py3Dinterpolations/).

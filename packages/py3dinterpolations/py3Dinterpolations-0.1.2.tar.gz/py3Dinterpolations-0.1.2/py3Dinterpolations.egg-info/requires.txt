@@ -1,0 +1,8 @@
+pandas
+numpy
+matplotlib
+pykrige
+
+[dev]
+
+[docs]

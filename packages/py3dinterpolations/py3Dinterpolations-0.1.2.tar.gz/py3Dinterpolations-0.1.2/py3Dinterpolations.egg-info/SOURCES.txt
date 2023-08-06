@@ -1,0 +1,8 @@
+README.md
+setup.py
+py3Dinterpolations/__init__.py
+py3Dinterpolations.egg-info/PKG-INFO
+py3Dinterpolations.egg-info/SOURCES.txt
+py3Dinterpolations.egg-info/dependency_links.txt
+py3Dinterpolations.egg-info/requires.txt
+py3Dinterpolations.egg-info/top_level.txt
