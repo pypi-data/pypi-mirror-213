@@ -1,0 +1,15 @@
+LICENSE
+README.md
+setup.py
+lazydev/__init__.py
+lazydev/develop.py
+lazydev.egg-info/PKG-INFO
+lazydev.egg-info/SOURCES.txt
+lazydev.egg-info/dependency_links.txt
+lazydev.egg-info/entry_points.txt
+lazydev.egg-info/requires.txt
+lazydev.egg-info/top_level.txt
+lazydev/modules/__init__.py
+lazydev/modules/developer.py
+lazydev/modules/prompts.py
+lazydev/modules/utils.py
