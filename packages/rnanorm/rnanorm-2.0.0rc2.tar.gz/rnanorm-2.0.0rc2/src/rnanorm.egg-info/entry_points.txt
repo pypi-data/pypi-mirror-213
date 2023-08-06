@@ -1,0 +1,2 @@
+[console_scripts]
+rnanorm = rnanorm.cli:main

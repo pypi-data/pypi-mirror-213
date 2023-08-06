@@ -1,0 +1,28 @@
+# Ignore temporary editor files.
+.*.sw[po]
+*~
+
+# Ignore project files.
+*.pyproj
+*.sublime-project
+*.sublime-workspace
+.vscode
+
+# Ignore Tox files.
+.tox/
+
+# Ignore files created by setup.py.
+build/
+*.egg-info/
+
+# Ignore compiled Python files.
+__pycache__
+
+# Ignore pytest cache.
+.pytest_cache
+
+# Ignore coverage file
+.coverage
+
+# Ignore sphinx files
+docs/generated/
