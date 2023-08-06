@@ -1,0 +1,16 @@
+kenzy_image/VERSION,sha256=8FnrHOC_APq3TqYxmKhYhiUrt0ws9oGS8F-Zd6kADbQ,5
+kenzy_image/__init__.py,sha256=EIJsBer7nwTz8BrHV-p0knW57vOzeh2a3PHehjtDt1Y,594
+kenzy_image/__main__.py,sha256=m5rnOcXh0LCTVPUlK7xLlho5ZIHbj-m4WZK7MfpyIzg,8104
+kenzy_image/core.py,sha256=FputvinLjMm0F-CofIheFFaTJ2jDM_v0gCQ1s4-Kxkg,23408
+kenzy_image/resources/mobilenet_v3/frozen_inference_graph.pb,sha256=PJXnIO7Ru68mQEirj75nZeWzpk-v5kAgzVPs0UzPLFg,13448454
+kenzy_image/resources/mobilenet_v3/labels.txt,sha256=gj3Tk45wdohOwIer6PCqvn4TYdAcW02Pa2KBq_bzlcE,792
+kenzy_image/resources/mobilenet_v3/ssd_mobilenet_v3_large_coco_2020_01_14.pbtxt,sha256=Z1eHQI9_tyI-4g6viTk9biLYwtBatZqv7c6Vs8fkoh0,190575
+kenzy_image/resources/yolov7/config.json,sha256=G6V2NQq-v3jTadAeU22nJqeYOL_fImibtvYb4ISsenA,105
+kenzy_image/resources/yolov7/labels.txt,sha256=12VLJhAVcoQe0c2AqgOqYONfG4rLSuppBsQGaIbxbgc,620
+kenzy_image/resources/yolov7/yolov7-tiny.pt,sha256=D6FCNgYTPAY2LscWAp2t4RadVjHoMZW3XY76ZtLuC3c,12639769
+kenzy_image-0.0.9.dist-info/LICENSE,sha256=1K0bi4smK2VXxIj03rhYaszQl20VD-vE2fThU8C8xk0,1064
+kenzy_image-0.0.9.dist-info/METADATA,sha256=5FvztJ2zCD1dfCOXkX6uDIbZwBvVCNWqBZigjQHxm1A,1671
+kenzy_image-0.0.9.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+kenzy_image-0.0.9.dist-info/top_level.txt,sha256=Bjwycw2idaRx0_2_LZAjt-e_GDrpRd3OEe7rxiFkqRc,12
+kenzy_image-0.0.9.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+kenzy_image-0.0.9.dist-info/RECORD,,
