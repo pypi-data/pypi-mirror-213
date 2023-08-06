@@ -1,0 +1,7 @@
+defaults:
+  - model: gnn
+  - dm: cbb
+  - trainer: early_stopping
+  - _self_
+
+seed: null
