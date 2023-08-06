@@ -1,0 +1,7 @@
+click
+inquirer
+plexapi
+progress
+termcolor
+tvdb_v4_official
+validators
