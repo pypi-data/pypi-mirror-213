@@ -1,0 +1,15 @@
+LICENSE
+README.md
+setup.py
+ai_coach/__init__.py
+ai_coach/ai_coach.py
+ai_coach/static/README.txt
+ai_coach/static/css/ai_coach.css
+ai_coach/static/html/ai_coach.html
+ai_coach/static/js/src/ai_coach.js
+ai_coach_xblock.egg-info/PKG-INFO
+ai_coach_xblock.egg-info/SOURCES.txt
+ai_coach_xblock.egg-info/dependency_links.txt
+ai_coach_xblock.egg-info/entry_points.txt
+ai_coach_xblock.egg-info/requires.txt
+ai_coach_xblock.egg-info/top_level.txt
