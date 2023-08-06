@@ -1,0 +1,6 @@
+pytz>=2017.2
+geocoder~=1.38
+timezonefinder~=5.2
+ovos-bus-client~=0.0.3
+ovos-utils~=0.0.28
+neon-utils~=1.3
