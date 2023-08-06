@@ -1,0 +1,13 @@
+matplotlib
+numpy
+pandas
+plotly
+tabulate
+scikit-learn
+scipy
+river
+torch
+torchmetrics
+tensorboard
+torchvision
+spotriver
