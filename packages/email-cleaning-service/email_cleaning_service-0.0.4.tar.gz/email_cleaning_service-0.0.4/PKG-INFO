@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: email_cleaning_service
+Version: 0.0.4
+Summary: Awesome email_cleaning_service created by paul_lestrat
+Home-page: https://github.com/JacksonKnew/email_cleaning_service
+Author: paul_lestrat
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# email_cleaning_service
+a Machine Learning based module for training and using email-segmenting algorithms.
