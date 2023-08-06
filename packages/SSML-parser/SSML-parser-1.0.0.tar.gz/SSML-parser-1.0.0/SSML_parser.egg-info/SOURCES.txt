@@ -1,0 +1,13 @@
+LICENSE
+README.md
+setup.py
+SSML-parser/__init__.py
+SSML-parser/modelResponse.py
+SSML-parser/parser.py
+SSML-parser/text.py
+SSML-parser/utils.py
+SSML-parser/word.py
+SSML_parser.egg-info/PKG-INFO
+SSML_parser.egg-info/SOURCES.txt
+SSML_parser.egg-info/dependency_links.txt
+SSML_parser.egg-info/top_level.txt
