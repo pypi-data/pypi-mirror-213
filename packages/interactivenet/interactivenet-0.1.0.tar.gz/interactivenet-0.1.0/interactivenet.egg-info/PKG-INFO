@@ -1,0 +1,13 @@
+Metadata-Version: 1.2
+Name: interactivenet
+Version: 0.1.0
+Summary: InteractiveNet, a framework for minimally interactive medical image segmentation.
+Home-page: https://github.com/Douwe-Spaanderman/InteractiveNet
+Author: Douwe J. Spaanderman
+Author-email: d.spaanderman@erasmusmc.nl
+License: APACHE 2.0
+Download-URL: https://github.com/Douwe-Spaanderman/InteractiveNet/archive/refs/tags/v0.1.0.tar.gz
+Description: UNKNOWN
+Keywords: deep learning,medical image analysis,interactive segmentation,medical image segmentation,soft-tissue tumors,interactivenet
+Platform: UNKNOWN
+Requires-Python: >3.9.0

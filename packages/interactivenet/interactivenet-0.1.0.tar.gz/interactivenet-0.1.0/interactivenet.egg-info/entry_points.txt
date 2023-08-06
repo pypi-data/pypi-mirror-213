@@ -1,0 +1,16 @@
+[console_scripts]
+interactivenet_available_models = interactivenet.deploy.print_models:main
+interactivenet_deploy = interactivenet.deploy.save_model:main
+interactivenet_download_model = interactivenet.deploy.download_model:main
+interactivenet_ensemble = interactivenet.test.ensemble:main
+interactivenet_fingerprinting = interactivenet.experiment_planning.fingerprinting:main
+interactivenet_generate_dataset_json = interactivenet.experiment_planning.generate_dataset_json:main
+interactivenet_inference = interactivenet.test.inference:main
+interactivenet_mimic_interactions = interactivenet.experiment_planning.mimic_annotations:main
+interactivenet_plan_and_process = interactivenet.experiment_planning.plan_and_process:main
+interactivenet_postprocessing = interactivenet.training.postprocessing:main
+interactivenet_predict = interactivenet.test.predict:main
+interactivenet_preprocessing = interactivenet.experiment_planning.preprocessing:main
+interactivenet_test = interactivenet.test.run:main
+interactivenet_train = interactivenet.training.run:main
+
