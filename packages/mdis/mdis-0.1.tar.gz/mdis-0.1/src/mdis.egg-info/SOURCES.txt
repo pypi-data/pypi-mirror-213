@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+src/mdis/__init__.py
+src/mdis/core.py
+src/mdis/dispatcher.py
+src/mdis/visitor.py
+src/mdis/walker.py
+src/mdis.egg-info/PKG-INFO
+src/mdis.egg-info/SOURCES.txt
+src/mdis.egg-info/dependency_links.txt
+src/mdis.egg-info/top_level.txt

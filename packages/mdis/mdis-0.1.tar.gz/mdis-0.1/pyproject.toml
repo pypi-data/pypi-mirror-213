@@ -1,0 +1,36 @@
+[build-system]
+requires = ["setuptools>=46.4.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "mdis"
+version = "0.1"
+authors = [
+  { name="Dmitry Selyutin", email="ghostmansd@gmail.com" },
+]
+keywords = [
+    "dispatch",
+    "dispather",
+    "map",
+    "iterator",
+    "iterable",
+    "visitor",
+    "walker",
+]
+description = "Python dispatching library"
+readme = "README.md"
+requires-python = ">=3.0"
+classifiers = [
+    "Development Status :: 2 - Pre-Alpha",
+    "Intended Audience :: Developers",
+    "Topic :: Software Development :: Libraries",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "License :: OSI Approved :: BSD License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://repo.or.cz/mdis.git"
+"Bug Tracker" = "https://repo.or.cz/mdis.git"
