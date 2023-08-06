@@ -1,0 +1,7 @@
+setup.py
+minha_biblioteca/__init__.py
+minha_biblioteca/modulo1.py
+minha_biblioteca_humb.egg-info/PKG-INFO
+minha_biblioteca_humb.egg-info/SOURCES.txt
+minha_biblioteca_humb.egg-info/dependency_links.txt
+minha_biblioteca_humb.egg-info/top_level.txt
