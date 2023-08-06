@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: micropython-captive-dns-server
+Version: 0.0.1.dev0
+Summary: Micropython asyncio simplistic dns server for use with captive portals
+Home-page: https://github.com/urg/micropython-captive-dns-server
+Author: Patrick McAndrew
+Author-email: patrick@urg.name
+Project-URL: Bug Tracker, https://github.com/urg/micropython-captive-dns-server/issues
+Classifier: Environment :: Web Environment
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: Implementation :: MicroPython
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# micropython-captive-dns-server
+Micropython asyncio simplistic dns server for use with captive portals
+
+## Tests
+```
+> python3 -m unittest discover
+```
