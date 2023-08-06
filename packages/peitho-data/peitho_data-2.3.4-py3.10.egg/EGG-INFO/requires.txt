@@ -1,0 +1,10 @@
+bs4
+opencv-python
+numpy
+wordcloud
+pycodestyle
+requests
+sphinx-rtd-theme
+matplotlib
+ebooklib
+requests_mock
