@@ -1,0 +1,163 @@
+Metadata-Version: 2.1
+Name: FAIRSave
+Version: 0.0.6.1
+Summary: Package to run the FAIR-Save toolbox
+Home-page: UNKNOWN
+Author: Malte Flachmann, Floriane Bresser, Ilia Bagov (Karlsruhe Institute of Technology)
+Author-email: malte.flachmann@student.kit.edu
+License: Apache-2.0
+Project-URL: GitLab, https://gitlab.com/linked-tribological-data/fair-save/FAIR-Save_Utilities
+Project-URL: Changelog, https://gitlab.com/linked-tribological-data/fair-save/FAIR-Save-Utilities/-/blob/main/Changelog.md
+Keywords: Kadi4Mat,FAIR
+Platform: UNKNOWN
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: kadi-apy (>=0.25.0)
+Requires-Dist: xmltodict (>=0.13.0)
+Requires-Dist: nested-lookup (>=0.2.25)
+
+# FAIRSave-Utilities
+
+
+
+FS-Utilities stores a python module wheel which contains all function to run the FS-Toolbox.
+
+
+
+## Installation
+
+
+
+The installation needs python version 3.10.
+
+
+
+Install the module by executing the following command in command prompt: `pip3 install FAIRSave`
+
+
+
+## App structure and functions
+
+- kadi_search  
+
+    - search_item_titles_kadi 
+
+    - search_item_id_kadi  
+
+    - search_files_kadi 
+
+    - latest_title_kadi  
+
+    - suggest_title_kadi  
+
+- kadi_download  
+
+    - download_files_kadi 
+
+    - download_metadata_kadi 
+
+- kadi_record 
+
+    - create_record_kadi 
+
+    - record_add_links_and_edit_kadi 
+
+    - record_add_tags_kadi 
+
+    - record_add_metadata_kadi 
+
+    - record_add_files_kadi 
+
+- kadi_instances 
+
+    - get_instances_kadi 
+
+    - create_instance_kadi 
+
+- kadi_json_writer  
+
+    - create_list_from_dict  
+
+- kadi_template  
+
+    - create_template_kadi   
+
+- tools 
+
+    - comparison
+
+    - difference
+
+    - json_reader  
+
+        - dict_to_list_all_keys
+
+    - key
+
+    - metadata
+
+    - validation
+
+    - suftheowl_json
+
+
+
+
+
+## FAQ
+
+
+
+### 1) List of records
+
+I have a doubt regarding the helpers doc, which function would you recommend to pull the list of Records the user has? E.g. I was thinking on download_metadata_kadi() but I would have to retrieve latter the keys from the .txt document. My other idea was to use get_instances_kadi, but I'm not sure if that's what I'm looking for
+
+
+
+**A:** Instance is the wording taken from the kadi-apy python module meaning the access to Kadi4Mat which consists of an host and a PAT. These instances are saved in the .kadi config file
+
+download_metadata_kadi returns all information related to a record like title, author, creation time,... and extras which are the metadata of the process described in the record.
+
+To show the record the user has you can simply use the Search_Items function with no args except instance and item: 
+
+Search_Items(instance='YOUR_INSTANCE_NAME', item='record')
+
+
+
+### 2) Kadi4Mat config file
+
+How do I get the config file? Because I got a token from Kadi4mat, but I didn't get any document downloaded. Also, for the Search_Items, the instance will be again the config file with the user's data?
+
+
+
+**A:** The creation of a config file is described here: https://kadi-apy.readthedocs.io/en/stable/setup/configuration.html
+
+You use the commands in the command prompt.
+
+kadi-apy create config      #creates config file
+
+The other solution would be to just run the function create_instance_kadi from my functions. It will create config file if it doesn't exist already.
+
+
+
+The instance from the config file will be used for every function accessing Kadi4Mat.
+
+
+
+### 3) Operator config
+
+How to setup an operator config which can be used to fill out the "General Info" metadata of a given record using the record_add_metadata_kadi function inside kadi_records.py?
+
+
+
+**A:** TODO
+
+
+
+## License
+
+Apache 2.0
+
+
+
