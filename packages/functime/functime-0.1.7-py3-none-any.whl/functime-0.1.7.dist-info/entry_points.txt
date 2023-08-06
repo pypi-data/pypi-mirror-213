@@ -1,0 +1,2 @@
+[console_scripts]
+functime = functime.__main__:main
