@@ -1,0 +1,105 @@
+Metadata-Version: 2.1
+Name: photobooth-app
+Version: 0.1.0rc3
+Summary: Photobooth app written in Python supporting DSLR, picamera2, webcameras
+Project-URL: homepage, https://github.com/mgrl/photobooth-app
+Project-URL: repository, https://github.com/mgrl/photobooth-app
+Project-URL: documentation, https://mgrl.github.io/photobooth-docs
+Author-email: Michael G <me@mgrl.de>
+Maintainer-email: Michael G <me@mgrl.de>
+License-File: LICENSE.md
+Keywords: camera,dslr,filter,gphoto2,photobooth,picamera2,python,raspberry-pi
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Topic :: Multimedia :: Graphics
+Classifier: Topic :: Multimedia :: Graphics :: Capture :: Digital Camera
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: <3.12,>=3.9
+Requires-Dist: dependency-injector~=4.41.0
+Requires-Dist: fastapi~=0.95.2
+Requires-Dist: gphoto2~=2.3.4; platform_system == 'Linux'
+Requires-Dist: gpiozero~=1.6.2; platform_system == 'Linux'
+Requires-Dist: jsonref~=1.1.0
+Requires-Dist: opencv-python~=4.7.0
+Requires-Dist: piexif~=1.1.3
+Requires-Dist: pilgram2~=2.0.2
+Requires-Dist: pillow~=9.5.0
+Requires-Dist: psutil~=5.9.5
+Requires-Dist: pydantic~=1.10.8
+Requires-Dist: pymitter~=0.4.0
+Requires-Dist: pyserial~=3.5
+Requires-Dist: python-dotenv~=1.0.0
+Requires-Dist: python-statemachine~=2.0.0
+Requires-Dist: pyturbojpeg~=1.7.1
+Requires-Dist: requests~=2.31.0
+Requires-Dist: sse-starlette~=1.6.1
+Requires-Dist: uvicorn~=0.22.0
+Requires-Dist: v4l2py~=0.6.2; platform_system == 'Linux'
+Description-Content-Type: text/markdown
+
+# ![photobooth-app logo](https://raw.githubusercontent.com/mgrl/photobooth-app/main/assets/logo/logo-text-black-transparent.png)
+
+Written in Python 🐍, coming along with a modern Vue frontend.
+
+![python versions supported 3.9, 3.10, 3.11](https://img.shields.io/pypi/pyversions/photobooth-app)
+![rpi, linux and windows platform supported](https://img.shields.io/badge/platform-rpi%20%7C%20linux%20%7C%20windows-lightgrey)
+[![ruff](https://github.com/mgrl/photobooth-app/actions/workflows/ruff.yml/badge.svg)](https://github.com/mgrl/photobooth-app/actions/workflows/ruff.yml)
+[![pytest](https://github.com/mgrl/photobooth-app/actions/workflows/pytests.yml/badge.svg)](https://github.com/mgrl/photobooth-app/actions/workflows/pytests.yml)
+[![codecov](https://codecov.io/gh/mgrl/photobooth-app/branch/dev/graph/badge.svg?token=SBB5DGX17V)](https://codecov.io/gh/mgrl/photobooth-app)
+
+**[Installation](https://mgrl.github.io/photobooth-docs/installation/)** - **[Documentation](https://mgrl.github.io/photobooth-docs/)** - **[PyPI package](https://pypi.org/project/photobooth-app/)** - **[3d printed box](https://mgrl.github.io/photobooth-docs/photobox3dprint/)**
+
+## 😍 Features
+
+- 📹 camera live preview with shortest delay as possible, permanent video live view in background
+- ⚡️ optimized for speed, live stream hardware accelerated on rpi, cpu load < 20%
+- 🫶 several camera backends supported for high quality stills and livestream
+- 💡 WLED support signaling photo countdown and feedback to the user when the photo is actually taken
+- 🤝 Linux 🐧, Raspberry Pi 🍓 and Windows 🪟 platforms supported
+
+## 📷 Supported Cameras
+
+The photobooth app's Python backend allows to use different camera types on Linux and Windows platforms:
+
+- Raspberry Pi Camera Module 1/2/3 (with or without autofocus)
+- Arducam cameras (with or without autofocus)
+- DSLR camera via
+  - gphoto2, Linux
+  - digicamcontrol, Windows (not yet implemented)
+- webcams (via opencv2 or v4l)
+
+The app controls camera's autofocus, handles led signaling when a photo is taken and streams live video to photobooth.
+
+The reference photobooth box is made from 3d printed parts, [see the 3d printed reference box over here](https://mgrl.github.io/photobooth-docs/photobox3dprint/).
+
+## 💅 Screenshots
+
+![frontpage](https://raw.githubusercontent.com/mgrl/photobooth-app/main/screenshots/frontpage.png)
+[Find more screenshots in the documentation](https://mgrl.github.io/photobooth-docs/screenshots)
+
+## 🔧 Installation
+
+[See separate installation instructions in the documentation](https://mgrl.github.io/photobooth-docs/installation/).
+
+The photobooth app can be used standalone but is not feature complete yet.
+Anyway, it integrates well with the fully blown [photobooth project](https://photoboothproject.github.io/),
+see [description how to achieve integration](https://mgrl.github.io/photobooth-docs/reference/photoboothprojectintegration/).
+
+## 📣 Changelog
+
+see separate file:
+<https://github.com/mgrl/photobooth-app/blob/main/CHANGELOG.md>
+
+### ©️ License
+
+The software is licensed under the MIT license.
+
+### 🎉 Donation
+
+If you like my work and like to keep me motivated you can sponsor me:
+
+[![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://www.paypal.com/donate/?hosted_button_id=8255Y566TBNEC)
