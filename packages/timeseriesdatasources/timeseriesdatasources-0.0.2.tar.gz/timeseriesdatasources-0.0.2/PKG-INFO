@@ -1,0 +1,42 @@
+Metadata-Version: 2.1
+Name: timeseriesdatasources
+Version: 0.0.2
+Project-URL: Documentation, https://github.com/fenke/datasources#readme
+Project-URL: Issues, https://github.com/fenke/datasources/issues
+Project-URL: Source, https://github.com/fenke/datasources
+Author-email: fenke <fenkemeijer@gmail.com>
+License-Expression: MIT
+License-File: LICENSE.txt
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+
+# timeseriesdatasources
+
+[![PyPI - Version](https://img.shields.io/pypi/v/timeseriesdatasources.svg)](https://pypi.org/project/timeseriesdatasources)
+[![PyPI - Python Version](https://img.shields.io/pypi/pyversions/timeseriesdatasources.svg)](https://pypi.org/project/timeseriesdatasources)
+
+-----
+
+**Table of Contents**
+
+- [Installation](#installation)
+- [License](#license)
+
+## Installation
+
+```console
+pip install timeseriesdatasources
+```
+
+## License
+
+`timeseriesdatasources` is distributed under the terms of the [MIT](https://spdx.org/licenses/MIT.html) license.
