@@ -1,0 +1,19 @@
+# Changes here will be overwritten by Copier; NEVER EDIT MANUALLY
+_commit: v4.0.5
+_src_path: https://github.com/jupyterlab/extension-template
+author_email: noe@thalheim.email
+author_name: Noe Thalheim
+data_format: string
+file_extension: ''
+has_binder: false
+has_settings: true
+kind: theme
+labextension_name: grundkurs_theme
+mimetype: ''
+mimetype_name: ''
+project_short_description: A JupyterLab extension.
+python_name: grundkurs_theme
+repository: https://github.com/grundkurs-programmieren/grundkurs_theme
+test: true
+viewer_name: ''
+
