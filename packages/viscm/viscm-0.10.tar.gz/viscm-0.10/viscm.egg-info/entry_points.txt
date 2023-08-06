@@ -1,0 +1,2 @@
+[console_scripts]
+viscm = viscm.cli:cli
