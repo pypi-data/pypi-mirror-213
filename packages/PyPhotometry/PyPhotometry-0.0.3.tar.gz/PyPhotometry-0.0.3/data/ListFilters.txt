@@ -1,0 +1,22 @@
+21 [Number of filters]  Solar_Abs_Mag (Vega) Solar_ABs_Mag (AB)
+GalexFUV.txt
+GalexNUV.txt
+SDSSu.txt
+SDSSg.txt
+SDSSr.txt
+SDSSi.txt
+SDSSz.txt
+2MASSJ.txt
+2MASSH.txt
+2MASSKs.txt
+WISE1.txt
+WISE2.txt
+WISE3.txt
+WISE4.txt
+IRAS.12mu.txt
+IRAS.25mu.txt
+IRAS.60mu.txt
+IRAS.100mu.txt
+Herschel_SPIRE.PLW_ext.txt
+Herschel_SPIRE.PMW_ext.txt
+Herschel_SPIRE.PSW_ext.txt
