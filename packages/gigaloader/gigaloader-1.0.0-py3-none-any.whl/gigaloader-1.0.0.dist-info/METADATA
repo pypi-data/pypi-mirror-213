@@ -1,0 +1,36 @@
+Metadata-Version: 2.1
+Name: gigaloader
+Version: 1.0.0
+Summary: A simple but verbose Python loading bar.
+Home-page: https://pypi.org/project/gigaloader/
+Download-URL: https://github.com/JordanWelsman/gigaloader/tags
+Author: Jordan Welsman
+Author-email: jordan.welsman@outlook.com
+License: MIT
+Keywords: python,status,terminal,verbose,loading-bar,qol
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: Intended Audience :: Information Technology
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Topic :: Scientific/Engineering :: Visualization
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: System :: Logging
+Classifier: Topic :: Utilities
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: jutl (<0.6.0,>=0.5.0)
+
+# gigaloader
+
+```console
+gigaloader: [============================    ] 87%
+```
