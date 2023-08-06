@@ -1,0 +1,10 @@
+addereq/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+addereq/cleaning.cpython-39-x86_64-linux-gnu.so,sha256=gPAbIKMPW0wOx8NQxo1GSO2MUKb-IK2va7w0J5o1520,311432
+addereq/fetching.cpython-39-x86_64-linux-gnu.so,sha256=-zaxbvvMgo8dl0PGhcHRedA2IC6-fIF7Ozq3G52QHy4,980248
+addereq/fetching_mysql.cpython-39-x86_64-linux-gnu.so,sha256=hfeEdVzEe6LPWUblLwecDW8AlxcZ5raQLJmZLH9A0S4,850840
+addereq/plotting.cpython-39-x86_64-linux-gnu.so,sha256=azv_HrfwsLn2ktMJECzmqtLKXfZhqqbUjuHlNx9Co5g,1512424
+addereq-1.0.4.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+addereq-1.0.4.dist-info/METADATA,sha256=G1hb69pqZzzMfKA1IflfEXWSZ7xuWDpzQzkGPYbARDA,547
+addereq-1.0.4.dist-info/WHEEL,sha256=3s2LSuQQhT9U1Dyv6MxBd72puf_ocSkY6hn5h0Kjf-o,103
+addereq-1.0.4.dist-info/top_level.txt,sha256=kTOP05dPDJJ_BcjbvtEfnk5o3vVaHkqY_JPbOoDhkUc,8
+addereq-1.0.4.dist-info/RECORD,,
