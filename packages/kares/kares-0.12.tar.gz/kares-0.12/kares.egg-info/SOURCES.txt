@@ -1,0 +1,15 @@
+setup.py
+kares/Practical_1.txt
+kares/Practical_2.txt
+kares/Practical_3.txt
+kares/Practical_4.txt
+kares/Practical_5.txt
+kares/Practical_6.txt
+kares/Practical_7.txt
+kares/Practical_8.txt
+kares/Practical_9.txt
+kares/__init__.py
+kares.egg-info/PKG-INFO
+kares.egg-info/SOURCES.txt
+kares.egg-info/dependency_links.txt
+kares.egg-info/top_level.txt
