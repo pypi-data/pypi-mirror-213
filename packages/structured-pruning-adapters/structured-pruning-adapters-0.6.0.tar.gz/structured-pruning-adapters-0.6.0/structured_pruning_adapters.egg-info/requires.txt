@@ -1,0 +1,15 @@
+torch>=1.9
+
+[build]
+setuptools
+wheel
+twine
+
+[dev]
+black
+flake8
+flake8-black
+isort>=5.7
+pytest
+pytest-cov
+torch-pruning
