@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/mailscrambler/__init__.py
+src/mailscrambler/mailscrambler.py
+src/mailscrambler.egg-info/PKG-INFO
+src/mailscrambler.egg-info/SOURCES.txt
+src/mailscrambler.egg-info/dependency_links.txt
+src/mailscrambler.egg-info/top_level.txt
