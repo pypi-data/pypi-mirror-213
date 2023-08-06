@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: pixparse
+Version: 0.1.0.dev0
+Keywords: document document-ai transformers ocr scale
+Author-Email: Ross Wightman <ross@huggingface.co>, Pablo Montalvo-Leroux <pablo@huggingface.co>
+License: Apache-2.0
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: Topic :: Software Development
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.7
+Requires-Dist: timm
+Requires-Dist: transformers
+Requires-Dist: chug
+Description-Content-Type: text/markdown
+
+# Pixel Parsing (`pixparse`)
+
