@@ -1,0 +1,5 @@
+[console_scripts]
+fluidsimfoam-info=fluidsimfoam.util.console:print_versions
+fluidsimfoam-initiate-solver=fluidsimfoam.util.console:initiate_solver
+fluidsimfoam-ipy-load=fluidsimfoam.util.console:start_ipython_load_sim
+
