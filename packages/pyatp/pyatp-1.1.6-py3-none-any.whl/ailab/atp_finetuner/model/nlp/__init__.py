@@ -1,0 +1,5 @@
+from .model_for_chatglm import ChatGlmModel
+from .model_for_question_answer import QuestionAnswerModel
+from .model_for_text_classification import TextClassificationModel
+from .model_for_token_classification import TokenClassificationModel
+from .model_for_lora import LoraModel
