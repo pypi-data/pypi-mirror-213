@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: datasette-sqlite-lines
+Version: 0.2.0a4
+Home-page: https://github.com/asg017/sqlite-lines
+Author: Alex Garcia
+License: MIT License, Apache License, Version 2.0
+Project-URL: Issues, https://github.com/asg017/sqlite-lines/issues
+Project-URL: CI, https://github.com/asg017/sqlite-lines/actions
+Project-URL: Changelog, https://github.com/asg017/sqlite-lines/releases
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Requires-Dist: datasette
+Requires-Dist: sqlite-lines
+Provides-Extra: test
+Requires-Dist: pytest ; extra == 'test'
+

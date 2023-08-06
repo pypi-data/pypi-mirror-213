@@ -1,0 +1,2 @@
+[datasette]
+sqlite_lines = datasette_sqlite_lines
