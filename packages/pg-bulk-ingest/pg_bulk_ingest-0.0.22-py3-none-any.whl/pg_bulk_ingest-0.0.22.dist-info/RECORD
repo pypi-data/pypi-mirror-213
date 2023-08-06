@@ -1,0 +1,5 @@
+pg_bulk_ingest.py,sha256=AWWrwB4p7irOul7e1MOat-cPTqIo1shJSU3vvgCZFn4,16535
+pg_bulk_ingest-0.0.22.dist-info/METADATA,sha256=eBKTC0t-OaWQ4i2wZPQDdkR_DtdecnsyEhjaAdMBbKQ,10763
+pg_bulk_ingest-0.0.22.dist-info/WHEEL,sha256=9QBuHhg6FNW7lppboF2vKVbCGTVzsFykgRQjjlajrhA,87
+pg_bulk_ingest-0.0.22.dist-info/licenses/LICENSE,sha256=5vr-i5k6N1aQVmJV1x-XVeGMylCK8lScL9IsSxzHQw4,1091
+pg_bulk_ingest-0.0.22.dist-info/RECORD,,
