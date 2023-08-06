@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: instalmheb
+Version: 0.3
+Summary: Python library for extracting Instagram cookies and many more features
+Author: Wael-almheb
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Classifier: License :: OSI Approved :: MIT License
+License-File: LICENSE.txt
