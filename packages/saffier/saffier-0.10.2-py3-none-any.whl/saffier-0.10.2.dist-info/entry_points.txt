@@ -1,0 +1,2 @@
+[console_scripts]
+saffier = saffier.migrations.cli:saffier_cli
