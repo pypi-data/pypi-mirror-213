@@ -1,0 +1,7 @@
+CHANGES
+=======
+
+v0.20230612.1
+-------------
+
+* Set env when calling osism-ansible (#467)
