@@ -1,0 +1,34 @@
+Metadata-Version: 2.1
+Name: mozilla-nimbus-schemas
+Version: 0.1.0
+Summary: Schemas used by Mozilla Nimbus and related projects.
+License: MPL 2.0
+Author: mikewilli
+Requires-Python: >=3.10,<4.0
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: pydantic (>=1.10.7,<2.0.0)
+Requires-Dist: twine (>=4.0.2,<5.0.0)
+Description-Content-Type: text/markdown
+
+# Nimbus Schemas
+
+This directory contains a published package of schemas used by different parts of the Mozilla Nimbus experimentation ecosystem.
+
+## Installation/Usage
+### Prerequisites
+- python ^3.10
+- poetry ^1.2.2
+
+From project root (i.e., parent to this directory)
+- Install: `make schemas_install`
+- Run linting and tests: `make schemas_check`
+- Code formatting: `make schemas_code_format`
+
+## Schemas
+### Jetstream
+
+Contains schemas describing analysis results, metadata, and errors from [Jetstream](https://github.com/mozilla/jetstream).
+
