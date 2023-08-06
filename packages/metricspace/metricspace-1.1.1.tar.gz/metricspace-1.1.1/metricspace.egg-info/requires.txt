@@ -1,0 +1,5 @@
+setuptools>=40.8.0
+wheel
+rs-distances
+numba
+numpy
