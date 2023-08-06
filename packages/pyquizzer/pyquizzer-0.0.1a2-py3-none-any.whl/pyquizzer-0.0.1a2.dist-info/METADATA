@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: pyquizzer
+Version: 0.0.1a2
+Summary: placeholder
+Author: BjornFJohansson
+Author-email: bjornjobb@gmail.com
+Requires-Python: >=3.11,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Description-Content-Type: text/markdown
+
+placeholder
