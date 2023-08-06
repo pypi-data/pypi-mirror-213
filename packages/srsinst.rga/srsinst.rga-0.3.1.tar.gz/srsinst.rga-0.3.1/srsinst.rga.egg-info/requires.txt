@@ -1,0 +1,13 @@
+numpy
+scipy
+srsgui>=0.3.2
+
+[docs]
+matplotlib
+pyside6
+sphinx>=5
+sphinx-rtd-theme>=1
+
+[full]
+matplotlib>=3.6.2
+pyside6<=6.4.3,>=6.5.1
