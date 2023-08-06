@@ -1,0 +1,3 @@
+smbus2
+pcf8574-io
+cbpi4>=4.1.10.rc2
