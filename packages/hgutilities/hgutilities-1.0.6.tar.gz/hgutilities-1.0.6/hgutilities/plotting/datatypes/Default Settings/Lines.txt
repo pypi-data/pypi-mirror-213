@@ -1,0 +1,11 @@
+{
+  "plot_type": "plot",
+  "x_label": null,
+  "y_label": null,
+  "legend": false,
+  "loc": 0,
+  "animated": false,
+  "clip_box": "Bbox",
+  "clip_on": "Bbox",
+  "clip_path": null
+}

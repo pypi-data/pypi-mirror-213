@@ -1,0 +1,13 @@
+This is a Data subclass used to create surfaces in 3D. It takes in x, y, and z values, all of which are 2D arrays of the same shape. Only one data series can be shown on each plot. All keyword arguments are the same as the matplotlib keyword arguments. This accepts the following arguments for the plot_type keyword, all of which are the names of the corresponding matplotlib plotting function:
+
+plot_surface: standard surface plotter
+plot_wireframe: shows the surface as a wire frame
+contour: shows the level sets of a function
+
+Surface.defaults shows a list of optional kwargs.
+
+For further documentation see the following:
+Data and Figures classes
+https://github.com/HenryGinn/hgutilities
+https://github.com/HenryGinn/hgutilities/tree/main/hgutilities/plotting
+https://matplotlib.org/stable/api/_as_gen/mpl_toolkits.mplot3d.axes3d.Axes3D.plot_surface.html

@@ -1,0 +1,11 @@
+This is the parent plotting class. Whenever anything is plotted, it
+will be via calling the create_plot method of this class. Almost all
+of the plotting implementation is handled by the subclasses due to
+the diversity of types of plot. Takes in a list of Data objects
+
+Plot.defaults shows a list of optional kwargs.
+
+For further documentation see the following:
+Plot and Data classes
+https://github.com/HenryGinn/hgutilities
+https://github.com/HenryGinn/hgutilities/tree/main/hgutilities/plotting

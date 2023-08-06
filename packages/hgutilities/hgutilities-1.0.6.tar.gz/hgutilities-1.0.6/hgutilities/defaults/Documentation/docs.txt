@@ -1,0 +1,14 @@
+The purpose of this function is to prevent bloated doc strings
+at the start of modules, classes, and functions by storing the
+doc strings in text files.
+
+By placing "defaults.docs()" in a package __init__.py file, all the
+modules, classes, and functions that were imported within that file
+that are part of the package will have their doc strings set. The
+doc strings are set from text files stored in folders called
+"Documentation", and these folders are in the same directory as
+the script for the corresponding module, class, or function.
+
+For further documentation see the following:
+https://github.com/HenryGinn/hgutilities
+https://github.com/HenryGinn/hgutilities/tree/main/hgutilities/defaults

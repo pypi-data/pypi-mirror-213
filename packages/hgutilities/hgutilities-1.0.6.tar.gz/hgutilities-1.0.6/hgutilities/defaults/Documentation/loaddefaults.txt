@@ -1,0 +1,17 @@
+Load
+
+Takes key-word value pairs in a json file and sets them as
+class attributes. The file will have the same name as the class
+and should be located in a folder called "Default Settings" in
+the same folder as the script where the class is defined.
+
+After a class, (e.g. "MyClass") has been defined, calling
+"Defaults.load(MyClass)" will load from the file if it exists.
+
+Any keyword-value pairs defined in parent classes will be
+inherited.
+
+For further documentation see the following:
+kwargs
+https://github.com/HenryGinn/hgutilities
+https://github.com/HenryGinn/hgutilities/tree/main/hgutilities/defaults

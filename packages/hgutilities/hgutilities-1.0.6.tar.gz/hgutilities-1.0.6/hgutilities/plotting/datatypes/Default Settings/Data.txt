@@ -1,0 +1,20 @@
+{
+  "title": null,
+  "title_fontname": null,
+  "title_fontsize": null,
+  "title_color": null,
+  "title_verticalalignment": null,
+  "title_horizontalalignment": null,
+  "title_y": null,
+  "title_pad": null,
+  "title_loc": null,
+  "projection": null,
+  "axes": true,
+  "axis_fontname": null,
+  "axis_fontsize": null,
+  "axis_color": null,
+  "axis_labelpad": null,
+  "axis_loc": null,
+  "legend": false,
+  "legend_loc": 0
+}

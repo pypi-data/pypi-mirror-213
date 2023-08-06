@@ -1,0 +1,16 @@
+{ 
+  "color": null,
+  "edgecolor": null,
+  "linewidth": null,
+  "tick_label": null,
+  "label": null,
+  "xerr": null,
+  "yerr": null,
+  "ecolor": null,
+  "capsize": null,
+  "agg_filter": null,
+  "alpha": null,
+  "angle": 0,
+  "antialiased": null,
+  "capstyle": null
+}

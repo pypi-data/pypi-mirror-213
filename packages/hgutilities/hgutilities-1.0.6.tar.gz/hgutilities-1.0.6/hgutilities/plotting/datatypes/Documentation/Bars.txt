@@ -1,0 +1,18 @@
+This is a subclass of Data used to create bar charts.
+It takes in a bar object, or an iterable of bar objects,
+and keyword arguments thar are relevant only to the entire
+plot. If you wanted every data series to be the same color,
+you would need to specify that for each bar object, but if
+you wanted a log scale, you would specify that at this level.
+If it does not make sense for two distinct data series to
+have different values for a property, then it should be a
+property of this object. For more detail, look at the
+default values for Bars and Bar objects.
+
+Bars.defaults shows a list of optional kwargs.
+
+For further documentation see the following:
+Bar, Data, and Figures classes
+https://github.com/HenryGinn/hgutilities
+https://github.com/HenryGinn/hgutilities/tree/main/hgutilities/plotting
+https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.bar.html

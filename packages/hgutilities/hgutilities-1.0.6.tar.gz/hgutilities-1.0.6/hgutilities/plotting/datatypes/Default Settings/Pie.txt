@@ -1,0 +1,21 @@
+{
+  "explode": null,
+  "colors": null,
+  "hatch": null,
+  "autopct": null,
+  "pctdistance": null,
+  "labeldistance": null,
+  "shadow": null,
+  "startangle": 0,
+  "radius": 1,
+  "counterclock": null,
+  "wedgeprops": null,
+  "textprops": null,
+  "center": [
+    0,
+    0
+  ],
+  "frame": null,
+  "rotatelabels": null,
+  "normalize": 1
+}

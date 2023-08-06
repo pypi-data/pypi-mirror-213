@@ -1,0 +1,86 @@
+LICENSE.md
+README.md
+setup.py
+.github/workflows/python-publish.yml
+hgutilities/__init__.py
+hgutilities.egg-info/PKG-INFO
+hgutilities.egg-info/SOURCES.txt
+hgutilities.egg-info/dependency_links.txt
+hgutilities.egg-info/requires.txt
+hgutilities.egg-info/top_level.txt
+hgutilities/Documentation/__init__.py
+hgutilities/Documentation/hgutilities.txt
+hgutilities/defaults/__init__.py
+hgutilities/defaults/docs.py
+hgutilities/defaults/inherit.py
+hgutilities/defaults/loaddefaults.py
+hgutilities/defaults/processkwargs.py
+hgutilities/defaults/Documentation/__init__.py
+hgutilities/defaults/Documentation/defaults.txt
+hgutilities/defaults/Documentation/docs.txt
+hgutilities/defaults/Documentation/inherit.txt
+hgutilities/defaults/Documentation/loaddefaults.txt
+hgutilities/defaults/Documentation/processkwargs.txt
+hgutilities/plotting/README.md
+hgutilities/plotting/__init__.py
+hgutilities/plotting/animate.py
+hgutilities/plotting/figure.py
+hgutilities/plotting/figures.py
+hgutilities/plotting/plotfunctions.py
+hgutilities/plotting/Default Settings/Animate.txt
+hgutilities/plotting/Default Settings/Figure.txt
+hgutilities/plotting/Default Settings/Figures.txt
+hgutilities/plotting/Default Settings/__init__.py
+hgutilities/plotting/Documentation/Animate.txt
+hgutilities/plotting/Documentation/Figure.txt
+hgutilities/plotting/Documentation/Figures.txt
+hgutilities/plotting/Documentation/__init__.py
+hgutilities/plotting/Documentation/create_animations.txt
+hgutilities/plotting/Documentation/create_figures.txt
+hgutilities/plotting/Documentation/plotting.txt
+hgutilities/plotting/datatypes/__init__.py
+hgutilities/plotting/datatypes/bar.py
+hgutilities/plotting/datatypes/bars.py
+hgutilities/plotting/datatypes/colorplot.py
+hgutilities/plotting/datatypes/data.py
+hgutilities/plotting/datatypes/line.py
+hgutilities/plotting/datatypes/lines.py
+hgutilities/plotting/datatypes/pie.py
+hgutilities/plotting/datatypes/surface.py
+hgutilities/plotting/datatypes/Default Settings/Bar.txt
+hgutilities/plotting/datatypes/Default Settings/Bars.txt
+hgutilities/plotting/datatypes/Default Settings/Colorplot.txt
+hgutilities/plotting/datatypes/Default Settings/Data.txt
+hgutilities/plotting/datatypes/Default Settings/Line.txt
+hgutilities/plotting/datatypes/Default Settings/Lines.txt
+hgutilities/plotting/datatypes/Default Settings/Pie.txt
+hgutilities/plotting/datatypes/Default Settings/Surface.txt
+hgutilities/plotting/datatypes/Default Settings/__init__.py
+hgutilities/plotting/datatypes/Documentation/Bar.txt
+hgutilities/plotting/datatypes/Documentation/Bars.txt
+hgutilities/plotting/datatypes/Documentation/Colormap.txt
+hgutilities/plotting/datatypes/Documentation/Data.txt
+hgutilities/plotting/datatypes/Documentation/Line.txt
+hgutilities/plotting/datatypes/Documentation/Lines.txt
+hgutilities/plotting/datatypes/Documentation/Pie.txt
+hgutilities/plotting/datatypes/Documentation/Surface.txt
+hgutilities/plotting/datatypes/Documentation/__init__.py
+hgutilities/plotting/plottypes/__init__.py
+hgutilities/plotting/plottypes/plot.py
+hgutilities/plotting/plottypes/plotbars.py
+hgutilities/plotting/plottypes/plotcolorplot.py
+hgutilities/plotting/plottypes/plotlines.py
+hgutilities/plotting/plottypes/plotpie.py
+hgutilities/plotting/plottypes/plotsurface.py
+hgutilities/plotting/plottypes/Documentation/Plot.txt
+hgutilities/plotting/plottypes/Documentation/__init__.py
+hgutilities/plotting/plotutils/__init__.py
+hgutilities/plotting/plotutils/figuresize.py
+hgutilities/plotting/plotutils/griddimensions.py
+hgutilities/plotting/plotutils/plotshape.py
+hgutilities/plotting/plotutils/savefigure.py
+hgutilities/utils/__init__.py
+hgutilities/utils/dicts.py
+hgutilities/utils/groups.py
+hgutilities/utils/paths.py
+hgutilities/utils/plots.py

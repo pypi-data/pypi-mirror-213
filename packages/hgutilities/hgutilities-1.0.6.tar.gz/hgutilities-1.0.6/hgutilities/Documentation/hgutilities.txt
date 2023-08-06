@@ -1,0 +1,22 @@
+This is a collection of useful tools I use regularly.
+
+There are three parts to this package:
+
+- Defaults: manages settings for classes that can be controlled easily from an interface.
+- Plotting: a front end for matplotlib to easily create subplots.
+- Utils: a collection of generally useful functions
+
+Defaults:
+This part of the package aims to make passing in keyword value pairs into classes easier. A list of keywords with their default values are stored in files and are loaded in upon creation of the class. When keywords are passed into a class, they can be fed into this sub-package along with the object instance where they are processed. Classes also inherit default values from parent classes. Tools for documentation and inheriting attributes from one object to another are also included.
+
+Plotting:
+When creating a figure with varying characteristics, the user needs to change their code in potentially non-trivial ways in order to get the desired result. For example, if they had 12 subplots on a figure, and they decide that they want two figures with six subplots each instead, a single for loop would need to be split into two different for loops. If one of the subplots needed two lines plotted instead of one, they would either need to add that in manually outside of the loop, or change the whole data structure to make it more general. When the number of subplots is unknown, these problems are even worse. The aim of the plotting part of the package is to make the creation of such figures easier.
+
+Utils:
+The aim of the utils part of this package is to improve quality of coding life by implementing some common functions. For example when reading a json file, you cannot simply open the file and load the json, you must first check whether it is empty. Such annoyances are handled by the functions in this part of the package. We split the utilities into several categories to make it easier to organise them. The functions implemented here are tailored to my personal needs, and they may not have the desired functionality for a general use case. Backwards compatibility is not guaranteed and it has been left undocumented. Where suitable spellings and names are consistent with matplotlib.
+
+For further documentation see the following:
+hgutils.defaults, hgutils.plotting
+https://github.com/HenryGinn/hgutilities
+https://github.com/HenryGinn/hgutilities/tree/main/hgutilities/defaults
+https://github.com/HenryGinn/hgutilities/tree/main/hgutilities/plotting

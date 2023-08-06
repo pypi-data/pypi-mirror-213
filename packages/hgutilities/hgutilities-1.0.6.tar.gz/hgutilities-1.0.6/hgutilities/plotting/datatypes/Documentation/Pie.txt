@@ -1,0 +1,14 @@
+This is a Data subclass used to create pie charts. A pie chart can only
+display one data series, and so this takes in a list of values and
+labels directly unlike the Lines and Bars classes. Almost all
+matplotlib pie chart keyword arguments are accepted, and information
+about the plot legend should also be passed in, either upon creation
+or set directly.
+
+Pie.defaults shows a list of optional kwargs.
+
+For further documentation see the following:
+Data and Figures classes
+https://github.com/HenryGinn/hgutilities
+https://github.com/HenryGinn/hgutilities/tree/main/hgutilities/plotting
+https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.pie.html
