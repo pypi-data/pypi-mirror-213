@@ -1,0 +1,1 @@
+recursive-include weathon/configs *.py *.cu *.h *.cpp
