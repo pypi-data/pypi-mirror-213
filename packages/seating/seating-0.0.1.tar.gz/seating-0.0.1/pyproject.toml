@@ -1,0 +1,43 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "seating"
+description = "Sort the order of class functions and properties"
+version = "0.0.1"
+requires-python = ">=3.10"
+dependencies = ["ast_comments", "black", "pathier", "pytest"]
+readme = "README.md"
+keywords = ["sort", "order", "alphabetical", "style"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    ]
+
+[[project.authors]]
+name = "Matt Manes"
+email = "mattmanes@pm.me"
+
+[project.urls]
+"Homepage" = "https://github.com/matt-manes/seating"
+"Documentation" = "https://github.com/matt-manes/seating/tree/main/docs"
+"Source code" = "https://github.com/matt-manes/seating/tree/main/src/seating"
+
+[tool.pytest.ini_options]
+addopts = [
+    "--import-mode=importlib",
+    ]
+pythonpath = "src"
+
+[tool.hatch.build.targets.sdist]
+exclude = [
+    ".coverage",
+    ".pytest_cache",
+    ".vscode",
+    "tests",
+    ".gitignore"
+    ]
+[project.scripts]
+seat = "seating.seating:main"
