@@ -1,0 +1,39 @@
+Metadata-Version: 2.1
+Name: dj3base
+Version: 0.1.0
+Summary: Django utils.
+Home-page: https://gitee.com/three-kinds/dj3base
+Author: three-kinds
+Author-email: 3179158552@qq.com
+License: Apache 2.0
+Project-URL: Documentation, https://gitee.com/three-kinds/dj3base
+Project-URL: Source, https://gitee.com/three-kinds/dj3base
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Framework :: Django
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# dj3base
+
+Django utils.
+
+[History.](HISTORY.md)
+
+## Install
+
+```shell script
+pip install dj3base
+
+```

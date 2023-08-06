@@ -1,0 +1,12 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+dj3base/__init__.py
+dj3base/type_hints.py
+dj3base.egg-info/PKG-INFO
+dj3base.egg-info/SOURCES.txt
+dj3base.egg-info/dependency_links.txt
+dj3base.egg-info/not-zip-safe
+dj3base.egg-info/top_level.txt
