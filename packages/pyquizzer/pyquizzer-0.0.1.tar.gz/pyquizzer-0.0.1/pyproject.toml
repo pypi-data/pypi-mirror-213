@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "pyquizzer"
+version = "0.0.1"
+description = "placeholder"
+authors = ["BjornFJohansson <bjornjobb@gmail.com>"]
+readme = "README.md"
+homepage = "https://github.com/BjornFJohansson/pyquizzer"
+repository = "https://github.com/BjornFJohansson/pyquizzer"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
