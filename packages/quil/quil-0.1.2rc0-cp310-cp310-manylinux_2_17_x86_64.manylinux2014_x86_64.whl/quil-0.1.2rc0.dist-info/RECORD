@@ -1,0 +1,12 @@
+quil-0.1.2rc0.dist-info/METADATA,sha256=Kp_AyOq5Mcuod3x-hQ2R4b45l2pb91GSsLES_Nb2fbI,1048
+quil-0.1.2rc0.dist-info/WHEEL,sha256=rigYaTATR-5OJK2lUngxc40Qyi5EukAy0OVoJ8U7sq4,130
+quil/validation/identifier.pyi,sha256=AUSCQQMmtOvxDH8iQn1ObXpPRLBZHdd5EbR0C1bKTCE,439
+quil/validation/__init__.pyi,sha256=KOBAbOztVMtUE9sGsKDGugOq3MQS3LsK7Qmj6jjBXKk,39
+quil/__init__.py,sha256=SO7Jsma2q1LBQMSyOV4mpIFvHL7vH-bH8mGAUb-ltoo,20
+quil/program/__init__.pyi,sha256=lTmoe-Zm4nKhmXhhi5pCTBpTtPjaYYx_mts6Iq6rKEc,7036
+quil/expression/__init__.pyi,sha256=pPLDxzlPmTbnfChllybs-SqDMMEcnocKBmpEVQnTTdk,6834
+quil/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+quil/__init__.pyi,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+quil/instructions/__init__.pyi,sha256=OTfOjGjiL1-mMQvIWEwvuSUuwOpNj0HV_DIqyERaykc,43265
+quil/quil.cpython-310-x86_64-linux-gnu.so,sha256=3r8r2lwgsnpOaNs5iI-ulGqp2BYSob5YtAX3-9ePtxk,6001744
+quil-0.1.2rc0.dist-info/RECORD,,
