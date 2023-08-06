@@ -1,0 +1,17 @@
+LICENSE
+README.md
+setup.py
+minidevice/__init__.py
+minidevice/adb.py
+minidevice/capture.py
+minidevice/config.py
+minidevice/device.py
+minidevice/images.py
+minidevice/minicap.py
+minidevice/minitouch.py
+minidevice/wincap.py
+minidevice.egg-info/PKG-INFO
+minidevice.egg-info/SOURCES.txt
+minidevice.egg-info/dependency_links.txt
+minidevice.egg-info/requires.txt
+minidevice.egg-info/top_level.txt
