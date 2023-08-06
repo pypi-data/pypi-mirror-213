@@ -1,0 +1,26 @@
+[tool.poetry]
+name = "ulidantic"
+version = "1.0.0"
+description = ""
+authors = ["Nutchanon Ninyawee <nutchanon@codustry.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+pydantic = "^1.10.7"
+python-ulid = "^1.1.0"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.3.1"
+hypothesis = "^6.77.0"
+
+[tool.poetry.group.bench.dependencies]
+richbench = "^1.0.3"
+# ulid2 ={ git = "https://github.com/valohai/ulid2.git" }
+# ulid-py = {git = "https://github.com/ahawker/ulid.git"}
+# python-ulid = {git = "https://github.com/mdomke/python-ulid"}
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
