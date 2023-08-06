@@ -1,0 +1,11 @@
+README.md
+setup.cfg
+setup.py
+basicqiwip2p/__init__.py
+basicqiwip2p/aiobasicqiwip2p.py
+basicqiwip2p/basicqiwip2p.py
+basicqiwip2p.egg-info/PKG-INFO
+basicqiwip2p.egg-info/SOURCES.txt
+basicqiwip2p.egg-info/dependency_links.txt
+basicqiwip2p.egg-info/not-zip-safe
+basicqiwip2p.egg-info/top_level.txt
