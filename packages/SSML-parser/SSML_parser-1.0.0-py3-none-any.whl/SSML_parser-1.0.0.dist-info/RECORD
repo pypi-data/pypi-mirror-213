@@ -1,0 +1,11 @@
+SSML-parser/__init__.py,sha256=eitAA8WLO_9s3Ys-gK37iOEt8wep2r3AXJCIex9--ZA,20
+SSML-parser/modelResponse.py,sha256=CCOT-Gbl9V_Y9PMpYihp-HoHLXg-b7M0NXw7yKaJR-0,491
+SSML-parser/parser.py,sha256=drRdlamMOO3sG7V153qE5EGPmUbuEj3iXuIoBWtSMM8,6707
+SSML-parser/text.py,sha256=8FV6oAdrx6yDOqdtUOQ4OWcf1NiA62mhx2r76bPW23Q,3720
+SSML-parser/utils.py,sha256=gMPqgrBIDcvNLYgtNMbPNcP-kH3Yfm9Cg1Aov8K2XuM,113
+SSML-parser/word.py,sha256=o-ac2nZy8nNG8ISKAd-_Oj0keDmDPJKzIrpK1wN_8sA,65
+SSML_parser-1.0.0.dist-info/LICENSE,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+SSML_parser-1.0.0.dist-info/METADATA,sha256=9wTFYBLaXttn5hwSzJxMZhNyLEtEjdlbRc5FOC_fcEk,712
+SSML_parser-1.0.0.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+SSML_parser-1.0.0.dist-info/top_level.txt,sha256=QZgY9GZIrAuRhKEPgZbGSpNKClvjlcPkOh3Y8OXKLLM,12
+SSML_parser-1.0.0.dist-info/RECORD,,
