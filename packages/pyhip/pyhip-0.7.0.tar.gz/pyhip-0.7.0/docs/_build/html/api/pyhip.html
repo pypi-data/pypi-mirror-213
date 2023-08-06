@@ -1,0 +1,411 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>pyhip package &mdash; PyHip Documentation</title>
+  
+
+  
+  
+    <link rel="shortcut icon" href="../_static/PyHip_favicon.ico"/>
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../_static/jquery.js"></script>
+        <script type="text/javascript" src="../_static/underscore.js"></script>
+        <script type="text/javascript" src="../_static/doctools.js"></script>
+        <script type="text/javascript" src="../_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> PyHip
+          
+
+          
+            
+            <img src="../_static/PyHip_logo.svg" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.1
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <!-- Local TOC -->
+              <div class="local-toc"><ul>
+<li><a class="reference internal" href="#">pyhip package</a><ul>
+<li><a class="reference internal" href="#submodules">Submodules</a></li>
+<li><a class="reference internal" href="#pyhip-hip-wrapper-module">pyhip.hip_wrapper module</a></li>
+<li><a class="reference internal" href="#module-pyhip.operations">pyhip.operations module</a></li>
+<li><a class="reference internal" href="#module-pyhip.readers">pyhip.readers module</a></li>
+<li><a class="reference internal" href="#module-pyhip.writers">pyhip.writers module</a></li>
+<li><a class="reference internal" href="#module-pyhip">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</div>
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">PyHip</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+      <li>pyhip package</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="pyhip-package">
+<h1>pyhip package<a class="headerlink" href="#pyhip-package" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="pyhip-hip-wrapper-module">
+<h2>pyhip.hip_wrapper module<a class="headerlink" href="#pyhip-hip-wrapper-module" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="module-pyhip.operations">
+<span id="pyhip-operations-module"></span><h2>pyhip.operations module<a class="headerlink" href="#module-pyhip.operations" title="Permalink to this headline">¶</a></h2>
+<p>This module contains hip functionnalities
+intending to perform mesh operations</p>
+<dl class="function">
+<dt id="pyhip.operations.extrude_2d_mesh">
+<code class="sig-prename descclassname">pyhip.operations.</code><code class="sig-name descname">extrude_2d_mesh</code><span class="sig-paren">(</span><em class="sig-param">extrude_coords</em>, <em class="sig-param">extrude_node_num</em>, <em class="sig-param">axis</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/pyhip/operations.html#extrude_2d_mesh"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pyhip.operations.extrude_2d_mesh" title="Permalink to this definition">¶</a></dt>
+<dd><p>Extrude 2-dimensional mesh to a 3D mesh.</p>
+<dl class="simple">
+<dt>extrude_coords: a tuple/list of extrusion extremes</dt><dd><p>(ext_min, ext_max), ext_min and ext_max
+can refer to positions (if extusion is
+done around x, y or z axis) or to angles
+in degrees (if extusion is choosen to be
+axisymmetric)</p>
+</dd>
+</dl>
+<p>extrude_node_num: Number of nodes/elements slices
+axis: axis around which extrusion is performed, possible</p>
+<blockquote>
+<div><dl class="simple">
+<dt>values :</dt><dd><ul class="simple">
+<li><p>x, y, z or axi</p></li>
+</ul>
+</dd>
+</dl>
+</div></blockquote>
+</dd></dl>
+
+<dl class="function">
+<dt id="pyhip.operations.generate_2d_mesh">
+<code class="sig-prename descclassname">pyhip.operations.</code><code class="sig-name descname">generate_2d_mesh</code><span class="sig-paren">(</span><em class="sig-param">lower_corner</em>, <em class="sig-param">upper_corner</em>, <em class="sig-param">resolution</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/pyhip/operations.html#generate_2d_mesh"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pyhip.operations.generate_2d_mesh" title="Permalink to this definition">¶</a></dt>
+<dd><p>Generate an unstructured rectangular mesh
+of quadrilateral elements given box bounds</p>
+<dl class="simple">
+<dt>lower_corner: A tuple/list of box lower corner</dt><dd><p>coordinates (x, y)</p>
+</dd>
+<dt>upper_corner: A tuple/list of box upper corner</dt><dd><p>coordinates (x, y)</p>
+</dd>
+<dt>resolution<span class="classifier">a tuple/list of mesh resolution</span></dt><dd><p>(i.e number of points) (n_x, n_y)</p>
+</dd>
+</dl>
+</dd></dl>
+
+</div>
+<div class="section" id="module-pyhip.readers">
+<span id="pyhip-readers-module"></span><h2>pyhip.readers module<a class="headerlink" href="#module-pyhip.readers" title="Permalink to this headline">¶</a></h2>
+<p>Module containing hip readers functions</p>
+<dl class="function">
+<dt id="pyhip.readers.read_centaur_mesh">
+<code class="sig-prename descclassname">pyhip.readers.</code><code class="sig-name descname">read_centaur_mesh</code><span class="sig-paren">(</span><em class="sig-param">centaur_mesh_file</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/pyhip/readers.html#read_centaur_mesh"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pyhip.readers.read_centaur_mesh" title="Permalink to this definition">¶</a></dt>
+<dd><p>Read hybrid grid in Centaursofts format.</p>
+<dl class="simple">
+<dt>centaur_mesh_file<span class="classifier">Centaursofts format mesh_file. Supported file</span></dt><dd><p>format are versions:
+- 4 (single record)
+- 5 (multiple record).</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="function">
+<dt id="pyhip.readers.read_cgns_mesh">
+<code class="sig-prename descclassname">pyhip.readers.</code><code class="sig-name descname">read_cgns_mesh</code><span class="sig-paren">(</span><em class="sig-param">grid_file</em>, <em class="sig-param">sol_file=None</em>, <em class="sig-param">abnd_file=None</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/pyhip/readers.html#read_cgns_mesh"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pyhip.readers.read_cgns_mesh" title="Permalink to this definition">¶</a></dt>
+<dd><p>Read an unstructured CGNS database.</p>
+<p>grid_file: CGNS grid file
+sol_file: CGNS solution file
+abnd_file: if bnd info in an AVBP-style .asciiBound file is given,</p>
+<blockquote>
+<div><p>this supersedes boundary condition definition in
+the CGNS grid_file.</p>
+</div></blockquote>
+</dd></dl>
+
+<dl class="function">
+<dt id="pyhip.readers.read_ensight_mesh">
+<code class="sig-prename descclassname">pyhip.readers.</code><code class="sig-name descname">read_ensight_mesh</code><span class="sig-paren">(</span><em class="sig-param">ensight_case_file</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/pyhip/readers.html#read_ensight_mesh"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pyhip.readers.read_ensight_mesh" title="Permalink to this definition">¶</a></dt>
+<dd><p>Read an unstructured grid (no Solution) in
+Ensight Gold format</p>
+<p>ensight_case_file: Ensight Gold format file</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="pyhip.readers.read_fluent_mesh">
+<code class="sig-prename descclassname">pyhip.readers.</code><code class="sig-name descname">read_fluent_mesh</code><span class="sig-paren">(</span><em class="sig-param">mesh_file</em>, <em class="sig-param">solution_file=None</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/pyhip/readers.html#read_fluent_mesh"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pyhip.readers.read_fluent_mesh" title="Permalink to this definition">¶</a></dt>
+<dd><p>Read an unstructured grid and optionally
+a solution in Fluent’s v5 and v6 ascii and binary
+formats</p>
+<p>mesh_file: Fluent/Gambit mesh file (.msh/.cas extensions)
+solution_file : Fluent solution file (.dat extension)</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="pyhip.readers.read_gmsh_mesh">
+<code class="sig-prename descclassname">pyhip.readers.</code><code class="sig-name descname">read_gmsh_mesh</code><span class="sig-paren">(</span><em class="sig-param">gmsh_mesh_file</em>, <em class="sig-param">list_variables=None</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/pyhip/readers.html#read_gmsh_mesh"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pyhip.readers.read_gmsh_mesh" title="Permalink to this definition">¶</a></dt>
+<dd><p>Read an unstructured grid in gmsh ASCII format</p>
+<p>gmsh_mesh_file: gmsh mesh file
+list_variables : a list of variable files</p>
+<blockquote>
+<div><p>(Up to MAX UNKNOWNS = 256)</p>
+</div></blockquote>
+</dd></dl>
+
+<dl class="function">
+<dt id="pyhip.readers.read_hdf5_mesh">
+<code class="sig-prename descclassname">pyhip.readers.</code><code class="sig-name descname">read_hdf5_mesh</code><span class="sig-paren">(</span><em class="sig-param">grid_file</em>, <em class="sig-param">sol_file=None</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/pyhip/readers.html#read_hdf5_mesh"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pyhip.readers.read_hdf5_mesh" title="Permalink to this definition">¶</a></dt>
+<dd><p>Read an unstructured grid in hdf5 format</p>
+<p>grid_file: hdf5 mesh file
+sol_file : Solution_file</p>
+</dd></dl>
+
+</div>
+<div class="section" id="module-pyhip.writers">
+<span id="pyhip-writers-module"></span><h2>pyhip.writers module<a class="headerlink" href="#module-pyhip.writers" title="Permalink to this headline">¶</a></h2>
+<p>Module containing hip writers functions</p>
+<dl class="function">
+<dt id="pyhip.writers.write_avbp">
+<code class="sig-prename descclassname">pyhip.writers.</code><code class="sig-name descname">write_avbp</code><span class="sig-paren">(</span><em class="sig-param">rootfile</em>, <em class="sig-param">flavour=None</em>, <em class="sig-param">level=None</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/pyhip/writers.html#write_avbp"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pyhip.writers.write_avbp" title="Permalink to this definition">¶</a></dt>
+<dd><p>Write mesh and optionnaly solution to avbp format</p>
+<p>rootfile : output file base name path (without extension)
+flavour: should be one of the avbp flavours :</p>
+<blockquote>
+<div><p>“avad”, “avbp4.2”, “avbp4.7”, “avbp5.1”, “avbp5.3eg”,
+“avbp5.3”, “avh”</p>
+</div></blockquote>
+<dl class="simple">
+<dt>level<span class="classifier">level of coarsed mesh to be written, default is finest</span></dt><dd><p>mesh</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="function">
+<dt id="pyhip.writers.write_cgns">
+<code class="sig-prename descclassname">pyhip.writers.</code><code class="sig-name descname">write_cgns</code><span class="sig-paren">(</span><em class="sig-param">rootfile</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/pyhip/writers.html#write_cgns"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pyhip.writers.write_cgns" title="Permalink to this definition">¶</a></dt>
+<dd><p>Write mesh into fieldview format</p>
+<p>rootfile : output file base name path (without extension)</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="pyhip.writers.write_ensight">
+<code class="sig-prename descclassname">pyhip.writers.</code><code class="sig-name descname">write_ensight</code><span class="sig-paren">(</span><em class="sig-param">rootfile</em>, <em class="sig-param">writing_ascii=False</em>, <em class="sig-param">write_node_ids=False</em>, <em class="sig-param">extrude_2d=True</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/pyhip/writers.html#write_ensight"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pyhip.writers.write_ensight" title="Permalink to this definition">¶</a></dt>
+<dd><p>Write mesh int ensight gold format</p>
+<p>rootfile : output file base name path (without extension)
+writing_ascii : if True, ascii format is adopted
+write_node_ids : if True, store node ids
+extrude_2d : if True, 2D mesh is extruded to 3D</p>
+<blockquote>
+<div><p>in order to be readable by paraview</p>
+</div></blockquote>
+</dd></dl>
+
+<dl class="function">
+<dt id="pyhip.writers.write_fieldview">
+<code class="sig-prename descclassname">pyhip.writers.</code><code class="sig-name descname">write_fieldview</code><span class="sig-paren">(</span><em class="sig-param">rootfile</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/pyhip/writers.html#write_fieldview"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pyhip.writers.write_fieldview" title="Permalink to this definition">¶</a></dt>
+<dd><p>Write mesh into fieldview format</p>
+<p>rootfile : output file base name path (without extension)</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="pyhip.writers.write_gmsh">
+<code class="sig-prename descclassname">pyhip.writers.</code><code class="sig-name descname">write_gmsh</code><span class="sig-paren">(</span><em class="sig-param">rootfile</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/pyhip/writers.html#write_gmsh"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pyhip.writers.write_gmsh" title="Permalink to this definition">¶</a></dt>
+<dd><p>Write mesh into gmsh format</p>
+<p>rootfile : output file base name path (without extension)</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="pyhip.writers.write_hdf5">
+<code class="sig-prename descclassname">pyhip.writers.</code><code class="sig-name descname">write_hdf5</code><span class="sig-paren">(</span><em class="sig-param">rootfile</em>, <em class="sig-param">write_all=True</em>, <em class="sig-param">only_solution=False</em>, <em class="sig-param">separate_boundary_shell=False</em>, <em class="sig-param">add_metis_graph=False</em>, <em class="sig-param">write_faces_list=False</em>, <em class="sig-param">write_zone_info=True</em>, <em class="sig-param">compression_level=None</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/pyhip/writers.html#write_hdf5"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pyhip.writers.write_hdf5" title="Permalink to this definition">¶</a></dt>
+<dd><p>Write mesh and optionnaly solution to file</p>
+<p>rootfile : output file base name path (without extension)
+write_all : if True all the variables that are stored,</p>
+<blockquote>
+<div><p>otherwize, only the standard set is stored</p>
+</div></blockquote>
+<dl class="simple">
+<dt>separate_boundary_shell<span class="classifier">if True, the boundary shell (skin)</span></dt><dd><p>is written as a separately numbered
+mesh entity for each boundary patch.</p>
+</dd>
+<dt>compression_level: sets the zip compression level.</dt><dd><p>Note that due to overhead, compression with
+the hdf native routines does not always result
+in relevant file size reduction, or at times
+any reduction at all.</p>
+</dd>
+</dl>
+<p>add_metis_graph: If True adds the METIS style elGraph.
+write_faces_list : if True, a complete list of faces between</p>
+<blockquote>
+<div><p>elements is written to file.
+Warning: Writing the complete list of faces
+will enlarge the file size considerably.</p>
+</div></blockquote>
+<p>only_solution: if True, write a solution only but not the mesh
+write_zone_info: if True, Write zone information to file</p>
+</dd></dl>
+
+</div>
+<div class="section" id="module-pyhip">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-pyhip" title="Permalink to this headline">¶</a></h2>
+<p>Hippy module</p>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, Jens-Dominik Mueller and CERFACS
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

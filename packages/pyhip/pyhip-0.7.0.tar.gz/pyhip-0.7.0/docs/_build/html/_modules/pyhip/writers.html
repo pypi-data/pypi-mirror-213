@@ -1,0 +1,348 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>pyhip.writers &mdash; PyHip Documentation</title>
+  
+
+  
+  
+    <link rel="shortcut icon" href="../../_static/PyHip_favicon.ico"/>
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../../_static/jquery.js"></script>
+        <script type="text/javascript" src="../../_static/underscore.js"></script>
+        <script type="text/javascript" src="../../_static/doctools.js"></script>
+        <script type="text/javascript" src="../../_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../../index.html" class="icon icon-home"> PyHip
+          
+
+          
+            
+            <img src="../../_static/PyHip_logo.svg" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.1
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <!-- Local TOC -->
+              <div class="local-toc"></div>
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">PyHip</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="../index.html">Module code</a> &raquo;</li>
+        
+      <li>pyhip.writers</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <h1>Source code for pyhip.writers</h1><div class="highlight"><pre>
+<span></span><span class="sd">&quot;&quot;&quot;Module containing hip writers functions&quot;&quot;&quot;</span>
+<span class="kn">import</span> <span class="nn">os</span>
+<span class="kn">from</span> <span class="nn">hippy</span> <span class="k">import</span> <span class="n">hip_cmd</span>
+
+<span class="k">def</span> <span class="nf">_write_file</span><span class="p">(</span><span class="n">rootfile</span><span class="p">,</span> <span class="n">output_format</span><span class="p">,</span> <span class="n">writer_options</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+    <span class="n">parent_dir</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">dirname</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">abspath</span><span class="p">(</span><span class="n">rootfile</span><span class="p">))</span>
+    <span class="n">basename</span><span class="p">,</span> <span class="n">_</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">splitext</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">basename</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">abspath</span><span class="p">(</span><span class="n">rootfile</span><span class="p">)))</span>
+    <span class="n">options</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;write&#39;</span><span class="p">,</span> <span class="n">output_format</span><span class="p">]</span>
+    <span class="n">os</span><span class="o">.</span><span class="n">makedirs</span><span class="p">(</span><span class="n">parent_dir</span><span class="p">,</span> <span class="n">exist_ok</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">writer_options</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="n">options</span><span class="o">.</span><span class="n">extend</span><span class="p">(</span><span class="n">writer_options</span><span class="p">)</span>
+    <span class="n">options</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">basename</span><span class="p">)</span>
+    <span class="n">commands</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="n">commands</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s2">&quot;set path </span><span class="si">%s</span><span class="s2">&quot;</span><span class="o">%</span><span class="n">parent_dir</span><span class="p">)</span>
+    <span class="n">commands</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s2">&quot; &quot;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">options</span><span class="p">))</span>
+    <span class="k">for</span> <span class="n">cmd</span> <span class="ow">in</span> <span class="n">commands</span><span class="p">:</span>
+        <span class="n">status</span><span class="p">,</span> <span class="n">msg</span> <span class="o">=</span> <span class="n">hip_cmd</span><span class="p">(</span><span class="n">cmd</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">status</span><span class="p">,</span> <span class="n">msg</span>
+
+
+
+<div class="viewcode-block" id="write_fieldview"><a class="viewcode-back" href="../../api/pyhip.html#pyhip.writers.write_fieldview">[docs]</a><span class="k">def</span> <span class="nf">write_fieldview</span><span class="p">(</span><span class="n">rootfile</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot; Write mesh into fieldview format</span>
+
+<span class="sd">        Parameters:</span>
+<span class="sd">        ==========</span>
+<span class="sd">        rootfile : output file base name path (without extension)</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">return</span> <span class="n">_write_file</span><span class="p">(</span><span class="n">rootfile</span><span class="p">,</span> <span class="s2">&quot;fieldview&quot;</span><span class="p">)</span></div>
+
+<div class="viewcode-block" id="write_avbp"><a class="viewcode-back" href="../../api/pyhip.html#pyhip.writers.write_avbp">[docs]</a><span class="k">def</span> <span class="nf">write_avbp</span><span class="p">(</span><span class="n">rootfile</span><span class="p">,</span> <span class="n">flavour</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">level</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot; Write mesh and optionnaly solution to avbp format</span>
+
+<span class="sd">        Parameters:</span>
+<span class="sd">        ==========</span>
+<span class="sd">        rootfile : output file base name path (without extension)</span>
+<span class="sd">        flavour: should be one of the avbp flavours :</span>
+<span class="sd">                 &quot;avad&quot;, &quot;avbp4.2&quot;, &quot;avbp4.7&quot;, &quot;avbp5.1&quot;, &quot;avbp5.3eg&quot;,</span>
+<span class="sd">                 &quot;avbp5.3&quot;, &quot;avh&quot;</span>
+<span class="sd">        level : level of coarsed mesh to be written, default is finest</span>
+<span class="sd">                mesh</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">flavours</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;avad&quot;</span><span class="p">,</span> <span class="s2">&quot;avbp4.2&quot;</span><span class="p">,</span> <span class="s2">&quot;avbp4.7&quot;</span><span class="p">,</span> <span class="s2">&quot;avbp5.1&quot;</span><span class="p">,</span> <span class="s2">&quot;avbp5.3eg&quot;</span><span class="p">,</span>
+                <span class="s2">&quot;avbp5.3&quot;</span><span class="p">,</span> <span class="s2">&quot;avh&quot;</span><span class="p">]</span>
+    <span class="n">options</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="k">if</span> <span class="n">flavour</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span> <span class="ow">and</span> <span class="n">flavour</span> <span class="ow">in</span> <span class="n">flavours</span><span class="p">:</span>
+        <span class="n">options</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">flavour</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">level</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="k">try</span><span class="p">:</span>
+            <span class="n">options</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s2">&quot;</span><span class="si">%d</span><span class="s2">&quot;</span> <span class="o">%</span><span class="nb">int</span><span class="p">(</span><span class="n">level</span><span class="p">))</span>
+        <span class="k">except</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s2">&quot;write_avbp : level should be an integer&quot;</span><span class="p">)</span>
+
+    <span class="k">return</span> <span class="n">_write_file</span><span class="p">(</span><span class="n">rootfile</span><span class="p">,</span> <span class="s2">&quot;avbp&quot;</span><span class="p">,</span> <span class="n">options</span><span class="p">)</span></div>
+
+
+<span class="c1">#--------------------------</span>
+<div class="viewcode-block" id="write_gmsh"><a class="viewcode-back" href="../../api/pyhip.html#pyhip.writers.write_gmsh">[docs]</a><span class="k">def</span> <span class="nf">write_gmsh</span><span class="p">(</span><span class="n">rootfile</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot; Write mesh into gmsh format</span>
+
+<span class="sd">        Parameters:</span>
+<span class="sd">        ==========</span>
+<span class="sd">        rootfile : output file base name path (without extension)</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">return</span> <span class="n">_write_file</span><span class="p">(</span><span class="n">rootfile</span><span class="p">,</span> <span class="s2">&quot;gmsh&quot;</span><span class="p">)</span></div>
+
+<div class="viewcode-block" id="write_ensight"><a class="viewcode-back" href="../../api/pyhip.html#pyhip.writers.write_ensight">[docs]</a><span class="k">def</span> <span class="nf">write_ensight</span><span class="p">(</span><span class="n">rootfile</span><span class="p">,</span>
+                  <span class="n">writing_ascii</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span>
+                  <span class="n">write_node_ids</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span>
+                  <span class="n">extrude_2d</span><span class="o">=</span><span class="kc">True</span>
+                 <span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot; Write mesh int ensight gold format</span>
+
+<span class="sd">        Parameters:</span>
+<span class="sd">        ==========</span>
+<span class="sd">        rootfile : output file base name path (without extension)</span>
+<span class="sd">        writing_ascii : if True, ascii format is adopted</span>
+<span class="sd">        write_node_ids : if True, store node ids</span>
+<span class="sd">        extrude_2d : if True, 2D mesh is extruded to 3D</span>
+<span class="sd">                     in order to be readable by paraview</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">options</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="k">if</span> <span class="n">writing_ascii</span><span class="p">:</span>
+        <span class="n">options</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s1">&#39;-a&#39;</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">write_node_ids</span><span class="p">:</span>
+        <span class="n">options</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s1">&#39;-n on&#39;</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">extrude_2d</span><span class="p">:</span>
+        <span class="n">options</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s1">&#39;-3&#39;</span><span class="p">)</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">options</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s1">&#39;-2&#39;</span><span class="p">)</span>
+
+    <span class="k">return</span> <span class="n">_write_file</span><span class="p">(</span><span class="n">rootfile</span><span class="p">,</span> <span class="s2">&quot;ensight&quot;</span><span class="p">,</span> <span class="n">options</span><span class="p">)</span></div>
+
+<div class="viewcode-block" id="write_cgns"><a class="viewcode-back" href="../../api/pyhip.html#pyhip.writers.write_cgns">[docs]</a><span class="k">def</span> <span class="nf">write_cgns</span><span class="p">(</span><span class="n">rootfile</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot; Write mesh into fieldview format</span>
+
+<span class="sd">        Parameters:</span>
+<span class="sd">        ==========</span>
+<span class="sd">        rootfile : output file base name path (without extension)</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">return</span> <span class="n">_write_file</span><span class="p">(</span><span class="n">rootfile</span><span class="p">,</span> <span class="s2">&quot;cgns&quot;</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="write_hdf5"><a class="viewcode-back" href="../../api/pyhip.html#pyhip.writers.write_hdf5">[docs]</a><span class="k">def</span> <span class="nf">write_hdf5</span><span class="p">(</span><span class="n">rootfile</span><span class="p">,</span>
+               <span class="n">write_all</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+               <span class="n">only_solution</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span>
+               <span class="n">separate_boundary_shell</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span>
+               <span class="n">add_metis_graph</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span>
+               <span class="n">write_faces_list</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span>
+               <span class="n">write_zone_info</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+               <span class="n">compression_level</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot; Write mesh and optionnaly solution to file</span>
+
+<span class="sd">        Parameters:</span>
+<span class="sd">        ==========</span>
+<span class="sd">        rootfile : output file base name path (without extension)</span>
+<span class="sd">        write_all : if True all the variables that are stored,</span>
+<span class="sd">                    otherwize, only the standard set is stored</span>
+<span class="sd">        separate_boundary_shell : if True, the boundary shell (skin)</span>
+<span class="sd">                                  is written as a separately numbered</span>
+<span class="sd">                                  mesh entity for each boundary patch.</span>
+<span class="sd">        compression_level: sets the zip compression level.</span>
+<span class="sd">                            Note that due to overhead, compression with</span>
+<span class="sd">                            the hdf native routines does not always result</span>
+<span class="sd">                            in relevant file size reduction, or at times</span>
+<span class="sd">                            any reduction at all.</span>
+<span class="sd">        add_metis_graph: If True adds the METIS style elGraph.</span>
+<span class="sd">        write_faces_list : if True, a complete list of faces between</span>
+<span class="sd">                            elements is written to file.</span>
+<span class="sd">                            Warning: Writing the complete list of faces</span>
+<span class="sd">                            will enlarge the file size considerably.</span>
+<span class="sd">        only_solution: if True, write a solution only but not the mesh</span>
+<span class="sd">        write_zone_info: if True, Write zone information to file</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="c1">#pylint: disable=unused-argument, too-many-arguments</span>
+    <span class="n">usr_opts</span> <span class="o">=</span> <span class="nb">locals</span><span class="p">()</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
+    <span class="n">opt_values</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;write_all&quot;</span><span class="p">:[</span><span class="s2">&quot;-a&quot;</span><span class="p">,</span> <span class="s2">&quot;-a0&quot;</span><span class="p">],</span>
+                  <span class="s2">&quot;only_solution&quot;</span><span class="p">:[</span><span class="s2">&quot;-s&quot;</span><span class="p">,</span> <span class="s2">&quot;&quot;</span><span class="p">],</span>
+                  <span class="s2">&quot;separate_boundary_shell&quot;</span><span class="p">:[</span><span class="s2">&quot;-b&quot;</span><span class="p">,</span> <span class="s2">&quot;&quot;</span><span class="p">],</span>
+                  <span class="s2">&quot;add_metis_graph&quot;</span><span class="p">:[</span><span class="s1">&#39;-e&#39;</span><span class="p">,</span> <span class="s1">&#39;&#39;</span><span class="p">],</span>
+                  <span class="s2">&quot;write_faces_list&quot;</span><span class="p">:[</span><span class="s1">&#39;-f&#39;</span><span class="p">,</span> <span class="s1">&#39;&#39;</span><span class="p">],</span>
+                  <span class="s2">&quot;write_zone_info&quot;</span><span class="p">:[</span><span class="s2">&quot;-z&quot;</span><span class="p">,</span> <span class="s2">&quot;-z0&quot;</span><span class="p">]}</span>
+
+    <span class="n">options</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="k">for</span> <span class="n">opt</span> <span class="ow">in</span> <span class="n">opt_values</span><span class="p">:</span>
+        <span class="n">value</span> <span class="o">=</span> <span class="n">opt_values</span><span class="p">[</span><span class="n">opt</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span>
+        <span class="k">if</span> <span class="n">usr_opts</span><span class="p">[</span><span class="n">opt</span><span class="p">]:</span>
+            <span class="n">value</span> <span class="o">=</span> <span class="n">opt_values</span><span class="p">[</span><span class="n">opt</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span>
+        <span class="k">if</span> <span class="n">value</span><span class="p">:</span>
+            <span class="n">options</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">value</span><span class="p">)</span>
+
+    <span class="k">if</span> <span class="n">usr_opts</span><span class="p">[</span><span class="s2">&quot;compression_level&quot;</span><span class="p">]</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="n">options</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s2">&quot;-c </span><span class="si">%d</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="n">compression_level</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">_write_file</span><span class="p">(</span><span class="n">rootfile</span><span class="p">,</span> <span class="s2">&quot;hdf5&quot;</span><span class="p">,</span> <span class="n">options</span><span class="p">)</span></div>
+</pre></div>
+
+           </div>
+           
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, Jens-Dominik Mueller and CERFACS
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

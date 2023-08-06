@@ -1,0 +1,345 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>pyhip.readers &mdash; PyHip Documentation</title>
+  
+
+  
+  
+    <link rel="shortcut icon" href="../../_static/PyHip_favicon.ico"/>
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../../_static/jquery.js"></script>
+        <script type="text/javascript" src="../../_static/underscore.js"></script>
+        <script type="text/javascript" src="../../_static/doctools.js"></script>
+        <script type="text/javascript" src="../../_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../../index.html" class="icon icon-home"> PyHip
+          
+
+          
+            
+            <img src="../../_static/PyHip_logo.svg" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.1
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <!-- Local TOC -->
+              <div class="local-toc"></div>
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">PyHip</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="../index.html">Module code</a> &raquo;</li>
+        
+      <li>pyhip.readers</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <h1>Source code for pyhip.readers</h1><div class="highlight"><pre>
+<span></span><span class="sd">&quot;&quot;&quot;Module containing hip readers functions &quot;&quot;&quot;</span>
+<span class="kn">import</span> <span class="nn">os</span>
+<span class="kn">from</span> <span class="nn">hippy</span> <span class="k">import</span> <span class="n">hip_cmd</span>
+
+<span class="k">def</span> <span class="nf">_split_file_path</span><span class="p">(</span><span class="n">file_path</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot; Returns the file basename and the parent</span>
+<span class="sd">        directory given file path</span>
+
+<span class="sd">        Parameters:</span>
+<span class="sd">        ==========</span>
+<span class="sd">        file_path : path to file (absolute or relative)</span>
+
+<span class="sd">        Returns:</span>
+<span class="sd">        =======</span>
+<span class="sd">        parent : file parent directory</span>
+<span class="sd">        filename : file name</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">abs_path</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">abspath</span><span class="p">(</span><span class="n">file_path</span><span class="p">)</span>
+    <span class="n">parent</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">dirname</span><span class="p">(</span><span class="n">abs_path</span><span class="p">)</span>
+    <span class="n">filename</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">basename</span><span class="p">(</span><span class="n">abs_path</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">parent</span><span class="p">,</span> <span class="n">filename</span>
+
+<span class="k">def</span> <span class="nf">_rel_path</span><span class="p">(</span><span class="n">files</span><span class="p">,</span> <span class="n">start_path</span><span class="p">):</span>
+
+    <span class="n">abspaths</span> <span class="o">=</span> <span class="p">[</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">abspath</span><span class="p">(</span><span class="n">file</span><span class="p">)</span> <span class="k">for</span> <span class="n">file</span> <span class="ow">in</span> <span class="n">files</span><span class="p">]</span>
+    <span class="n">rel_paths</span> <span class="o">=</span> <span class="p">[</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">relpath</span><span class="p">(</span><span class="n">abspath</span><span class="p">,</span> <span class="n">start</span><span class="o">=</span><span class="n">start_path</span><span class="p">)</span>
+                 <span class="k">for</span> <span class="n">abspath</span> <span class="ow">in</span> <span class="n">abspaths</span><span class="p">]</span>
+    <span class="k">return</span> <span class="n">rel_paths</span>
+
+<span class="k">def</span> <span class="nf">_read_mesh_files</span><span class="p">(</span><span class="n">mesh_files</span><span class="p">,</span> <span class="n">mesh_format</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot; read a mesh file</span>
+<span class="sd">        Parameters:</span>
+<span class="sd">        ==========</span>
+<span class="sd">        mesh_file : A list of mesh files paths (absol or rel)</span>
+<span class="sd">        mesh_format : Format of the mesh file (e.g hdf5)</span>
+
+<span class="sd">        Returns:</span>
+<span class="sd">        =======</span>
+<span class="sd">        None</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">files</span> <span class="o">=</span> <span class="p">[</span><span class="n">file</span> <span class="k">for</span> <span class="n">file</span> <span class="ow">in</span> <span class="n">mesh_files</span> <span class="k">if</span> <span class="n">file</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">]</span>
+    <span class="n">parent_dir</span><span class="p">,</span> <span class="n">_</span> <span class="o">=</span> <span class="n">_split_file_path</span><span class="p">(</span><span class="n">files</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+    <span class="n">files</span> <span class="o">=</span> <span class="n">_rel_path</span><span class="p">(</span><span class="n">files</span><span class="p">,</span> <span class="n">parent_dir</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">mesh_format</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span> <span class="o">==</span> <span class="s1">&#39;hdf5&#39;</span> <span class="ow">and</span> <span class="nb">len</span><span class="p">(</span><span class="n">files</span><span class="p">)</span> <span class="o">==</span> <span class="mi">2</span><span class="p">:</span>
+        <span class="n">files</span> <span class="o">=</span> <span class="s2">&quot;</span><span class="si">%s</span><span class="s2"> -s </span><span class="si">%s</span><span class="s2">&quot;</span> <span class="o">%</span><span class="p">(</span><span class="n">files</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">files</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">files</span> <span class="o">=</span> <span class="s1">&#39; &#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">files</span><span class="p">)</span>
+    <span class="n">commands</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="n">commands</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s2">&quot;set path </span><span class="si">%s</span><span class="s2">&quot;</span><span class="o">%</span><span class="n">parent_dir</span><span class="p">)</span>
+    <span class="n">commands</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s2">&quot;read </span><span class="si">%s</span><span class="s2"> </span><span class="si">%s</span><span class="s2">&quot;</span> <span class="o">%</span><span class="p">(</span><span class="n">mesh_format</span><span class="p">,</span> <span class="n">files</span><span class="p">))</span>
+    <span class="k">for</span> <span class="n">cmd</span> <span class="ow">in</span> <span class="n">commands</span><span class="p">:</span>
+        <span class="n">status</span><span class="p">,</span> <span class="n">msg</span> <span class="o">=</span> <span class="n">hip_cmd</span><span class="p">(</span><span class="n">cmd</span><span class="p">)</span>
+
+    <span class="k">return</span> <span class="n">status</span><span class="p">,</span> <span class="n">msg</span>
+
+<span class="c1"># def read_bae_mesh(fro_file, gri_file, bco_file):</span>
+<span class="c1">#     &quot;&quot;&quot;Read Britsh Aerospace and Swansea University</span>
+<span class="c1">#         tetrahedral meshes.</span>
+
+<span class="c1">#         Parameters:</span>
+<span class="c1">#         ==========</span>
+<span class="c1">#         fro_file : boundary faces and singular lines file (binary)</span>
+<span class="c1">#         gri_file : connectivity and coordinates file (binary)</span>
+<span class="c1">#         bco_file : file containing boundary condition to the</span>
+<span class="c1">#                   various surfaces mapping. (ascii)</span>
+
+<span class="c1">#     &quot;&quot;&quot;</span>
+<span class="c1">#     return _read_mesh_files([fro_file, gri_file, bco_file], &quot;bae&quot;)</span>
+
+<span class="c1"># def read_cedre_mesh(cdre_mesh_file):</span>
+<span class="c1">#     &quot;&quot;&quot;Read unstructured face-based mesh format used Cedre code.</span>
+
+<span class="c1">#        Parameters:</span>
+<span class="c1">#        ==========</span>
+<span class="c1">#        cdre_mesh_file : Cedre unstructured face-based mesh file</span>
+<span class="c1">#     &quot;&quot;&quot;</span>
+<span class="c1">#     return _read_mesh_files([cdre_mesh_file], &quot;cdre&quot;)</span>
+
+<div class="viewcode-block" id="read_centaur_mesh"><a class="viewcode-back" href="../../api/pyhip.html#pyhip.readers.read_centaur_mesh">[docs]</a><span class="k">def</span> <span class="nf">read_centaur_mesh</span><span class="p">(</span><span class="n">centaur_mesh_file</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Read hybrid grid in Centaursofts format.</span>
+
+<span class="sd">       Parameters:</span>
+<span class="sd">       ==========</span>
+<span class="sd">       centaur_mesh_file : Centaursofts format mesh_file. Supported file</span>
+<span class="sd">                           format are versions:</span>
+<span class="sd">                           - 4 (single record)</span>
+<span class="sd">                           - 5 (multiple record).</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">return</span> <span class="n">_read_mesh_files</span><span class="p">([</span><span class="n">centaur_mesh_file</span><span class="p">],</span> <span class="s2">&quot;centaur&quot;</span><span class="p">)</span></div>
+
+<div class="viewcode-block" id="read_cgns_mesh"><a class="viewcode-back" href="../../api/pyhip.html#pyhip.readers.read_cgns_mesh">[docs]</a><span class="k">def</span> <span class="nf">read_cgns_mesh</span><span class="p">(</span><span class="n">grid_file</span><span class="p">,</span> <span class="n">sol_file</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">abnd_file</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Read an unstructured CGNS database.</span>
+
+<span class="sd">       Parameters:</span>
+<span class="sd">       ==========</span>
+<span class="sd">       grid_file: CGNS grid file</span>
+<span class="sd">       sol_file: CGNS solution file</span>
+<span class="sd">       abnd_file: if bnd info in an AVBP-style .asciiBound file is given,</span>
+<span class="sd">                  this supersedes boundary condition definition in</span>
+<span class="sd">                  the CGNS grid_file.</span>
+
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">return</span> <span class="n">_read_mesh_files</span><span class="p">([</span><span class="n">grid_file</span><span class="p">,</span> <span class="n">sol_file</span><span class="p">,</span> <span class="n">abnd_file</span><span class="p">],</span> <span class="s2">&quot;cgns&quot;</span><span class="p">)</span></div>
+
+<div class="viewcode-block" id="read_ensight_mesh"><a class="viewcode-back" href="../../api/pyhip.html#pyhip.readers.read_ensight_mesh">[docs]</a><span class="k">def</span> <span class="nf">read_ensight_mesh</span><span class="p">(</span><span class="n">ensight_case_file</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Read an unstructured grid (no Solution) in</span>
+<span class="sd">       Ensight Gold format</span>
+
+<span class="sd">       Parameters:</span>
+<span class="sd">       ==========</span>
+<span class="sd">       ensight_case_file: Ensight Gold format file</span>
+
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">return</span> <span class="n">_read_mesh_files</span><span class="p">([</span><span class="n">ensight_case_file</span><span class="p">],</span> <span class="s2">&quot;enisght&quot;</span><span class="p">)</span></div>
+
+<div class="viewcode-block" id="read_fluent_mesh"><a class="viewcode-back" href="../../api/pyhip.html#pyhip.readers.read_fluent_mesh">[docs]</a><span class="k">def</span> <span class="nf">read_fluent_mesh</span><span class="p">(</span><span class="n">mesh_file</span><span class="p">,</span> <span class="n">solution_file</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Read an unstructured grid and optionally</span>
+<span class="sd">       a solution in Fluent’s v5 and v6 ascii and binary</span>
+<span class="sd">       formats</span>
+
+<span class="sd">       Parameters:</span>
+<span class="sd">       ==========</span>
+<span class="sd">       mesh_file: Fluent/Gambit mesh file (.msh/.cas extensions)</span>
+<span class="sd">       solution_file : Fluent solution file (.dat extension)</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">return</span> <span class="n">_read_mesh_files</span><span class="p">([</span><span class="n">mesh_file</span><span class="p">,</span> <span class="n">solution_file</span><span class="p">],</span> <span class="s2">&quot;fluent&quot;</span><span class="p">)</span></div>
+
+<div class="viewcode-block" id="read_gmsh_mesh"><a class="viewcode-back" href="../../api/pyhip.html#pyhip.readers.read_gmsh_mesh">[docs]</a><span class="k">def</span> <span class="nf">read_gmsh_mesh</span><span class="p">(</span><span class="n">gmsh_mesh_file</span><span class="p">,</span> <span class="n">list_variables</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Read an unstructured grid in gmsh ASCII format</span>
+
+<span class="sd">       Parameters:</span>
+<span class="sd">       ==========</span>
+<span class="sd">       gmsh_mesh_file: gmsh mesh file</span>
+<span class="sd">       list_variables : a list of variable files</span>
+<span class="sd">                        (Up to MAX UNKNOWNS = 256)</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">if</span> <span class="n">list_variables</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="n">status</span><span class="p">,</span> <span class="n">msg</span> <span class="o">=</span> <span class="n">_read_mesh_files</span><span class="p">([</span><span class="n">gmsh_mesh_file</span><span class="p">],</span> <span class="s2">&quot;gmsh&quot;</span><span class="p">)</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">status</span><span class="p">,</span> <span class="n">msg</span> <span class="o">=</span> <span class="n">_read_mesh_files</span><span class="p">([</span><span class="n">gmsh_mesh_file</span><span class="p">,</span> <span class="o">*</span><span class="n">list_variables</span><span class="p">],</span> <span class="s2">&quot;gmsh&quot;</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">status</span><span class="p">,</span> <span class="n">msg</span></div>
+
+<div class="viewcode-block" id="read_hdf5_mesh"><a class="viewcode-back" href="../../api/pyhip.html#pyhip.readers.read_hdf5_mesh">[docs]</a><span class="k">def</span> <span class="nf">read_hdf5_mesh</span><span class="p">(</span><span class="n">grid_file</span><span class="p">,</span> <span class="n">sol_file</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Read an unstructured grid in hdf5 format</span>
+
+<span class="sd">       Parameters:</span>
+<span class="sd">       ==========</span>
+<span class="sd">       grid_file: hdf5 mesh file</span>
+<span class="sd">       sol_file : Solution_file</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">return</span> <span class="n">_read_mesh_files</span><span class="p">([</span><span class="n">grid_file</span><span class="p">,</span> <span class="n">sol_file</span><span class="p">],</span> <span class="s2">&quot;hdf5&quot;</span><span class="p">)</span></div>
+</pre></div>
+
+           </div>
+           
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, Jens-Dominik Mueller and CERFACS
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
