@@ -1,0 +1,14 @@
+pip==23.1.2
+bumpversion==0.6.0
+wheel==0.30.0
+watchdog==0.8.3
+flake8==3.5.0
+tox==4.6.0
+coverage==7.2.7
+Sphinx==6.2.1
+twine==4.0.2
+
+pytest==7.3.2
+pytest-runner==2.11.1
+
+sphinx_rtd_theme==1.2.2
