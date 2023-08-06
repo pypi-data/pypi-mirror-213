@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: grnvae
+Version: 0.0.1
+Summary: Improving GRN Inference using Dropout Augmentation
+Author-email: Hao Zhu <haozhu233@gmail.com>, Donna Slonim <donna.slonim@tufts.edu>
+Maintainer-email: Hao Zhu <haozhu233@gmail.com>
+Requires-Python: >=3.7
+Classifier: License :: OSI Approved :: MIT License
+Requires-Dist: numpy>=1.16.5
+Requires-Dist: pandas>=1.1.1
+Requires-Dist: torch
+Requires-Dist: tqdm
+Requires-Dist: scanpy
+Requires-Dist: scikit-learn
+Project-URL: Home, https://github.com/haozhu233/grnkit
