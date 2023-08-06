@@ -1,0 +1,5 @@
+gpu_control.cp310-win_amd64.pyd,sha256=mqa1v8SPgXSL-XQm3cFDN-lWp39Fy9m3FG4tJo8e8bs,15872
+gpu_control-1.0.0.dist-info/METADATA,sha256=DJruhmEuW6aCHwYAzRiTs2PHbaDnZom-lT-08xpIQGY,276
+gpu_control-1.0.0.dist-info/WHEEL,sha256=jrOhEbqKwvzRFSJcbYXlJCyVkgVdHg4_7__YHrdTUfw,102
+gpu_control-1.0.0.dist-info/top_level.txt,sha256=_Ty9qOoWftIlvLz2FwKfeBAbar5IdkOwrVg8wAuNwDk,12
+gpu_control-1.0.0.dist-info/RECORD,,
