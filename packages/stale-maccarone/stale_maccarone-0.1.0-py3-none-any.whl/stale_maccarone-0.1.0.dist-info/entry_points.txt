@@ -1,0 +1,2 @@
+[console_scripts]
+stale_maccarone = stale_maccarone.scripts.preprocess:script_main
