@@ -1,0 +1,4 @@
+[console_scripts]
+station_api=station.app.run_station:main
+station_ctl=station.ctl.cli:cli
+
