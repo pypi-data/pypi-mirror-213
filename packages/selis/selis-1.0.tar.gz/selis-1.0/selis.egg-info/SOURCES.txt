@@ -1,0 +1,9 @@
+setup.py
+selis/__init__.py
+selis/selis.py
+selis.egg-info/PKG-INFO
+selis.egg-info/SOURCES.txt
+selis.egg-info/dependency_links.txt
+selis.egg-info/entry_points.txt
+selis.egg-info/requires.txt
+selis.egg-info/top_level.txt
