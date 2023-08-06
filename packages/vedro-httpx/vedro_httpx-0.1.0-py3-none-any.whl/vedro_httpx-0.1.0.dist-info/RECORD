@@ -1,0 +1,11 @@
+vedro_httpx/__init__.py,sha256=bnQzHqIuxd9hhvEvhGsRYJbmTHg0uYLo8pIziN21bbY,227
+vedro_httpx/_async_http_interface.py,sha256=DZ2m_PtO8gz5c02WirQXUUu15o8AcsJhR3_IwAfoPGI,2779
+vedro_httpx/_render_response.py,sha256=hRNij_9ZRJUIRI72B6mu478wlx9yNI8TWq0vtnSypVY,1639
+vedro_httpx/_response.py,sha256=pgUz6Xf9zmXAGjQVanAg2EEvN5_HZYiaPdP02VH4X1Q,336
+vedro_httpx/_sync_http_interface.py,sha256=IAqsL3htRcN7FQBbBiLFB5HBRQz7YRjtK45HTil-mo4,2645
+vedro_httpx/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+vedro_httpx-0.1.0.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+vedro_httpx-0.1.0.dist-info/METADATA,sha256=-l_UdZuXYUjL3TISz1IiL8KY8N6eTNzyJuuMgdBA9xE,717
+vedro_httpx-0.1.0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+vedro_httpx-0.1.0.dist-info/top_level.txt,sha256=K8qUVQJYeFfZ8qF48vCG0TfLlU1wwfRWR0efHiFEuv4,12
+vedro_httpx-0.1.0.dist-info/RECORD,,
