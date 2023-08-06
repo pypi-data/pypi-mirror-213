@@ -1,0 +1,7 @@
+LICENSE
+README.md
+setup.py
+scoly_api.egg-info/PKG-INFO
+scoly_api.egg-info/SOURCES.txt
+scoly_api.egg-info/dependency_links.txt
+scoly_api.egg-info/top_level.txt
