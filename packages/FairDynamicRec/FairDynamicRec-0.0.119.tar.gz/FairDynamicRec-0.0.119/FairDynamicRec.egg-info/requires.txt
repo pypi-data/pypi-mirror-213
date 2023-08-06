@@ -1,0 +1,7 @@
+matplotlib
+pandas
+numpy
+lxml
+scipy
+tqdm
+joblib
