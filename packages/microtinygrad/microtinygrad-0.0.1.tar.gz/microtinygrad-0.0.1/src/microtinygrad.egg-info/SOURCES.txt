@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+src/microtinygrad/__init__.py
+src/microtinygrad/example.py
+src/microtinygrad.egg-info/PKG-INFO
+src/microtinygrad.egg-info/SOURCES.txt
+src/microtinygrad.egg-info/dependency_links.txt
+src/microtinygrad.egg-info/top_level.txt

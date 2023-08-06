@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: microtinygrad
+Version: 0.0.1
+Summary: tiny nn library that allows you to train classification neural networks
+Author-email: Example Author <cakuang123@gmail.com>
+Project-URL: Homepage, https://github.com/cakuang1/microtinygrad
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+"# microtinygrad" 
+
+ Micro Tiny neural network library that allows training of simple neural networks through mini-batch gradient descent only using numpy and pandas. Currently only provides support for pandas dataframes. Useful if you want to train small neural networks and quick tuning of hyperaparameters. 
+ # Motivation
+
+ In order to learn what goes on under the hood of neural network's backpropagation, I decided to implement it myself. However, my algorithm provides a more analytical solution (Calculating closed form gradients), rather than the approaches used by other neural network libaries (Micrograds Value Tree). Thus, this only currently supports common neural network patterns Linear Activation/Regression amd SoftMax Cross Entropy.  
+ 
+
+ # Simple Quick Start 
+
+```javascript I'm tab B
+nn = NeuralNetwork()
+```
+
+
+ 

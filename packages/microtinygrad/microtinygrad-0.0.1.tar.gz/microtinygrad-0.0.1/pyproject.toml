@@ -1,0 +1,18 @@
+[project]
+name = "microtinygrad"
+version = "0.0.1"
+authors = [
+  { name="Example Author", email="cakuang123@gmail.com" },
+]
+description = "tiny nn library that allows you to train classification neural networks"
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+[project.urls]
+"Homepage" = "https://github.com/cakuang1/microtinygrad"
+
+
