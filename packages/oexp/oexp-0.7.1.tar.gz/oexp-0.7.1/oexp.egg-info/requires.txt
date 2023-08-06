@@ -1,0 +1,4 @@
+requests
+aiohttp
+tqdm
+mstuff==0.7.6
