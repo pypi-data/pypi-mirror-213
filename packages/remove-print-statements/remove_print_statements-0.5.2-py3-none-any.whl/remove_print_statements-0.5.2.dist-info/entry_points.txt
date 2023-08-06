@@ -1,0 +1,3 @@
+[console_scripts]
+remove-print-statements=remove_print_statements:main
+
