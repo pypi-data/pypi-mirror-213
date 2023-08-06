@@ -1,0 +1,5 @@
+pillow>=9.5.0
+requests>=2.31.0
+nonebot2>=2.0.0
+nonebot_adapter_onebot>=2.2.3
+nonebot_plugin_apscheduler>=0.2.0
