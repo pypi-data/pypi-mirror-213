@@ -1,0 +1,11 @@
+# Section: Results
+def write_results_and_exit(results):
+    import json
+    import sys
+
+    results['timings']['total'] = time.perf_counter() - time_start
+
+    with open('{{ results.filename_output }}', 'w') as handle:
+        json.dump(results, handle)
+
+    sys.exit(0)
