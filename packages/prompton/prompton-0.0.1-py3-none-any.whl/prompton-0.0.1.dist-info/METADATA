@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: prompton
+Version: 0.0.1
+Summary: Chat prompt template evaluation and inference monitoring
+Author: PromptOn
+Author-email: hello@prompton.ai
+Requires-Python: >=3.11,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: httpx (>=0.24.1,<0.25.0)
+Requires-Dist: pydantic[email] (>=1.10.8,<2.0.0)
+Description-Content-Type: text/markdown
+
+# PromptOn API - Python client
+
+See more on [PromptOn GitHub](https://github.com/PromptOn/prompton)
+
