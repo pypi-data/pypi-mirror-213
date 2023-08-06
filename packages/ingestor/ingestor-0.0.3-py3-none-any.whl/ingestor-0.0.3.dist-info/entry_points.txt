@@ -1,0 +1,3 @@
+[console_scripts]
+ingestor-pipeline=ingestor.cli:cli
+

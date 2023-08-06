@@ -1,0 +1,32 @@
+{
+  "namespace": "ingestion.avro",
+  "type": "record",
+  "name": "Author",
+  "fields": [
+    {
+      "name": "id",
+      "type": "int"
+    },
+    {
+      "name": "first_name",
+      "type": "string"
+    },
+    {
+      "name": "last_name",
+      "type": "string"
+    },
+    {
+      "name": "login",
+      "type": "string"
+    },
+    {
+      "name": "email",
+      "type": "string"
+    },
+    {
+      "name": "registration_date",
+      "logicalType": "date",
+      "type": "int"
+    }
+  ]
+}
