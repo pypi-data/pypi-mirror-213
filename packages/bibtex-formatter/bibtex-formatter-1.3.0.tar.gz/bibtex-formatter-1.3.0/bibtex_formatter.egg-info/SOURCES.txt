@@ -1,0 +1,15 @@
+.gitignore
+LICENSE
+README.md
+project.toml
+setup.py
+.github/workflows/python-publish.yml
+bfm/__init__.py
+bfm/__main__.py
+bfm/format.py
+bibtex_formatter.egg-info/PKG-INFO
+bibtex_formatter.egg-info/SOURCES.txt
+bibtex_formatter.egg-info/dependency_links.txt
+bibtex_formatter.egg-info/entry_points.txt
+bibtex_formatter.egg-info/requires.txt
+bibtex_formatter.egg-info/top_level.txt
