@@ -1,0 +1,2 @@
+boto==2.49.0
+esdk-obs-python==3.22.2
