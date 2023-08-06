@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: pmsm-pm-temp-predict
+Version: 0.0.2
+Summary: Permanent magnet temperature prediction
+Home-page: UNKNOWN
+Author: Oleksandr
+Author-email: <oleksandr.ohlashennyi.knm.2020@lpnu.ua>
+License: UNKNOWN
+Keywords: python,pmsm,motor,temperatue,prediction
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Education
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Microsoft :: Windows
+
+This package provides an API to predict the temperature of the permanent magnet located on the rotor of the PMS motor based on the motor voltage, current, and temperature of the coolant and stator windings.
+
