@@ -1,0 +1,13 @@
+comserde/__init__.py,sha256=Db6-l7JAV5zs4ZLuZ1r1HkbthEAwV8PdaMEd_leq2nM,137
+comserde/composite.py,sha256=zvZ4tuVEfy5_6UsQVeGR1c76N3lmrRy4Xxdt1EeRF5g,6650
+comserde/decoding.py,sha256=HkdWBxwqL4WIzOCM-pbITq9WeZXciJ85QkNJXKoYwfA,637
+comserde/decorator.py,sha256=003hJVARsFn_Tnfa9YAUuFTAazfppAU0ubelNTiczDY,6948
+comserde/entry.py,sha256=NCaqH9WenSX2u7ataEauCI5cXoEzFRCgWTwEsWZ_gxM,1744
+comserde/error.py,sha256=eo63dtwWU2pxOoazv5_5EsVSCk_UDpE_8wLGZm4ngyk,333
+comserde/primitive.py,sha256=L1Tj6BeLrNtK2fw5m6KrEEeLmMNirrD4AHwAPrdcMbE,5688
+comserde/types.py,sha256=sw-VAXuK3GI47fMoQzXM51BKUj3nwWBADzI-oeeh4Uk,483
+comserde/vlq.py,sha256=_jlN8T7WV0md929CXDSkox8XYeTUGVBiMgV0IUiLHT8,1353
+comserde-0.2.0.dist-info/METADATA,sha256=M04tTRvFW5BRayBajbiFEQDXPil4OTkPiZTrjj1CcrI,5861
+comserde-0.2.0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+comserde-0.2.0.dist-info/top_level.txt,sha256=dVpFHEnajl_ih9fJh_b1XC-iv-gWA8758PsIG8tBHoE,9
+comserde-0.2.0.dist-info/RECORD,,
