@@ -1,0 +1,9 @@
+README.md
+setup.py
+devcheck/__init__.py
+devcheck/main.py
+devcheck.egg-info/PKG-INFO
+devcheck.egg-info/SOURCES.txt
+devcheck.egg-info/dependency_links.txt
+devcheck.egg-info/entry_points.txt
+devcheck.egg-info/top_level.txt
