@@ -1,0 +1,7 @@
+README.md
+pyproject.toml
+dxtils/utils.py
+dxtils.egg-info/PKG-INFO
+dxtils.egg-info/SOURCES.txt
+dxtils.egg-info/dependency_links.txt
+dxtils.egg-info/top_level.txt
