@@ -1,0 +1,12 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+extensionNamer/__init__.py
+extensionNamer/extensionNamer.py
+extensionNamer/extensionNames.json
+extensionNamer.egg-info/PKG-INFO
+extensionNamer.egg-info/SOURCES.txt
+extensionNamer.egg-info/dependency_links.txt
+extensionNamer.egg-info/top_level.txt
+test/test.py
