@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: dbis-functional-dependencies
+Version: 0.0.8
+Summary: RWTH Aachen Computer Science i5/dbis assets for Lecture Datenbanken und Informationssysteme
+Home-page: https://git.rwth-aachen.de/i5/teaching/dbis-functional-dependencies
+Author: Wolfgang Fahl
+Author-email: fahl@dbis.rwth-aachen.de
+License: Apache
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# dbis-functional-dependencies
+
+Functional Dependencies and Normal Forms for Relational Databases
+
+[![PyPI Status](https://img.shields.io/pypi/v/dbis-functional-dependencies.svg)](https://pypi.python.org/pypi/dbis-functional-dependencies/)
+[![pypi](https://img.shields.io/pypi/pyversions/dbis-functional-dependencies)](https://pypi.org/project/dbis-functional-dependencies/)
+[![License](https://img.shields.io/pypi/l/dbis-functional-dependencies)](https://www.apache.org/licenses/LICENSE-2.0)
+[![Pipeline Status](https://git.rwth-aachen.de/i5/teaching/dbis/dbis-functional-dependencies/badges/main/pipeline.svg)](https://git.rwth-aachen.de/i5/teaching/dbis/dbis-functional-dependencies/-/packages)
