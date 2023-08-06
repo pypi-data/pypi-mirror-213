@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+devilmanplayer/__init__.py
+devilmanplayer/player.py
+devilmanplayer/slayer.py
+devilmanplayer.egg-info/PKG-INFO
+devilmanplayer.egg-info/SOURCES.txt
+devilmanplayer.egg-info/dependency_links.txt
+devilmanplayer.egg-info/top_level.txt
