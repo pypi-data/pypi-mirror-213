@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: auxein
+Version: 0.0.6
+Summary: Auxein is a Python framework for evolutionary algorithms.
+Author: Davide Palmisano
+Author-email: dpalmisano@gmail.com
+Requires-Python: >=3.11,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: numpy (==1.24.3)
