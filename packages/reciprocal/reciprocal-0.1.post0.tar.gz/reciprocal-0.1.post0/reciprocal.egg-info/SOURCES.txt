@@ -1,0 +1,13 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+reciprocal/__init__.py
+reciprocal/config.py
+reciprocal/menus.py
+reciprocal/utils.py
+reciprocal.egg-info/PKG-INFO
+reciprocal.egg-info/SOURCES.txt
+reciprocal.egg-info/dependency_links.txt
+reciprocal.egg-info/requires.txt
+reciprocal.egg-info/top_level.txt
