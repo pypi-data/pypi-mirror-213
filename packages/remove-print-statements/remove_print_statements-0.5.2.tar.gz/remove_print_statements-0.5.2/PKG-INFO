@@ -1,0 +1,179 @@
+Metadata-Version: 2.1
+Name: remove-print-statements
+Version: 0.5.2
+Summary: A command-line tool (and pre-commit hook) to remove print statements from your Python project.
+Home-page: https://github.com/dhruvmanila/remove-print-statements
+License: MIT
+Keywords: python,codemod,libCST
+Author: Dhruv Manilawala
+Author-email: dhruvmanila@gmail.com
+Requires-Python: >=3.7,<4.0
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: MacOS
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Typing :: Typed
+Requires-Dist: click (>=8.1.1)
+Requires-Dist: libcst (>=0.4.2,<0.5.0)
+Project-URL: Bug Tracker, https://github.com/dhruvmanila/remove-print-statements/issues
+Project-URL: Repository, https://github.com/dhruvmanila/remove-print-statements
+Description-Content-Type: text/markdown
+
+<div align="center">
+
+# remove-print-statements
+
+[![test](https://github.com/dhruvmanila/remove-print-statements/actions/workflows/test.yml/badge.svg)](https://github.com/dhruvmanila/remove-print-statements/actions/workflows/test.yml)
+[![codecov](https://codecov.io/gh/dhruvmanila/remove-print-statements/branch/main/graph/badge.svg)](https://codecov.io/gh/dhruvmanila/remove-print-statements)
+[![pre-commit.ci status](https://results.pre-commit.ci/badge/github/dhruvmanila/remove-print-statements/main.svg)](https://results.pre-commit.ci/latest/github/dhruvmanila/remove-print-statements/main)
+[![PyPi Status](https://img.shields.io/pypi/v/remove-print-statements.svg?color=blue)](https://pypi.org/project/remove-print-statements/)
+![Python versions](https://img.shields.io/pypi/pyversions/remove-print-statements.svg)
+[![MIT License](https://img.shields.io/pypi/l/remove-print-statements.svg)](./LICENSE)
+
+A command-line tool (and pre-commit hook) to remove all the `print` statements
+from your Python project.
+
+</div>
+
+Do you use `print` statements for debugging? We all do, and there's nothing wrong
+with it. After the bug has been resolved, we need to manually open all the files
+which we added the print statements in, only if we remember all of them after
+hours of debugging, and remove them. A better way would be to use some sort of
+find and replace from the editor or command-line, but that's still a lot of
+manual work. Worst case, it gets pushed and deployed to production.
+
+Who wants to do all the manual work in the age of automation? No one. So,
+install this tool and forget about removing the print statements manually
+forever. You could either run this tool manually or add it as a `pre-commit`
+hook. You could even preview the print statements along with it's location
+without removing it. How nice is that!
+
+## Installation
+
+You can install `remove-print-statements` from the Python Package Index (PyPI)
+with [`pipx`] or equivalent.
+
+```
+pipx install remove-print-statements
+```
+
+Or, try it out using [`pipx`]:
+
+```
+pipx run remove-print-statements --help
+```
+
+Or, with [pre-commit](https://pre-commit.com) in the `repos` section of your
+`.pre-commit-config.yaml` file ([docs](https://pre-commit.com/#plugins)):
+
+```yaml
+- repo: https://github.com/dhruvmanila/remove-print-statements
+  rev: ''  # Replace with latest tag on GitHub
+  hooks:
+  - id: remove-print-statements
+    # args: ['--verbose']   # Show all the print statements to be removed
+```
+
+## Usage
+
+Run it on a given set of files:
+```sh
+remove-print-statements foo.py bar.py ...
+# or use globbing
+remove-print-statements *.py
+```
+
+You can ignore files as well. To specify multiple files to ignore, use the flag
+multiple times otherwise it's difficult to know the difference between the files
+to ignore and the ones to check.
+```sh
+remove-print-statements *.py --ignore foo.py --ignore bar.py
+```
+
+You can preview the print statements which would be removed without modifying
+the source files using both `--dry-run` and `--verbose` flags like so:
+
+```console
+$ remove-print-statements --dry-run --verbose test.py
+test.py
+  7 print("module")
+  18 print("property")
+  27 print("method")
+  29 print("for loop")
+
+1 file would be transformed, 4 print statements would be removed
+```
+
+`remove-print-statements` is a command-line tool that rewrites the files in
+place. It focuses on upgrading your code and not on making it look nice. Run
+remove-print-statements before formatters like [Black](https://black.readthedocs.io/en/stable/).
+
+`remove-print-statements` does not have any ability to recurse through
+directories. Use the pre-commit integration, globbing, or another technique for
+applying to many files such as [with `git ls-files | xargs`][1].
+
+### Single statement
+
+If there's only a single statement in the body of a function, for/while loop, if
+statement, etc., which is a print statement, then it will be replaced with the
+`pass` keyword.
+
+```diff
+def foo():
+-    print()
++    pass
+
+
+for _ in range(5):
+-    print()
++    pass
+
+if __name__ == "__main__":
+-    print()
++    pass
+```
+
+### Exit status
+
+`remove-print-statements` command returns exit statuses as follows:
+
+| Status       | Description                                      |
+| :----------: | ------------------------------------------------ |
+| 0            | No print statements / changes made successfully |
+| 1            | Files would be updated (dry run)                 |
+| 123          | Some error happened                              |
+
+## Development
+
+[![packaging: poetry](https://img.shields.io/badge/packaging-poetry-299bd7?logo=data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAASCAYAAABrXO8xAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAJJSURBVHgBfZLPa1NBEMe/s7tNXoxW1KJQKaUHkXhQvHgW6UHQQ09CBS/6V3hKc/AP8CqCrUcpmop3Cx48eDB4yEECjVQrlZb80CRN8t6OM/teagVxYZi38+Yz853dJbzoMV3MM8cJUcLMSUKIE8AzQ2PieZzFxEJOHMOgMQQ+dUgSAckNXhapU/NMhDSWLs1B24A8sO1xrN4NECkcAC9ASkiIJc6k5TRiUDPhnyMMdhKc+Zx19l6SgyeW76BEONY9exVQMzKExGKwwPsCzza7KGSSWRWEQhyEaDXp6ZHEr416ygbiKYOd7TEWvvcQIeusHYMJGhTwF9y7sGnSwaWyFAiyoxzqW0PM/RjghPxF2pWReAowTEXnDh0xgcLs8l2YQmOrj3N7ByiqEoH0cARs4u78WgAVkoEDIDoOi3AkcLOHU60RIg5wC4ZuTC7FaHKQm8Hq1fQuSOBvX/sodmNJSB5geaF5CPIkUeecdMxieoRO5jz9bheL6/tXjrwCyX/UYBUcjCaWHljx1xiX6z9xEjkYAzbGVnB8pvLmyXm9ep+W8CmsSHQQY77Zx1zboxAV0w7ybMhQmfqdmmw3nEp1I0Z+FGO6M8LZdoyZnuzzBdjISicKRnpxzI9fPb+0oYXsNdyi+d3h9bm9MWYHFtPeIZfLwzmFDKy1ai3p+PDls1Llz4yyFpferxjnyjJDSEy9CaCx5m2cJPerq6Xm34eTrZt3PqxYO1XOwDYZrFlH1fWnpU38Y9HRze3lj0vOujZcXKuuXm3jP+s3KbZVra7y2EAAAAAASUVORK5CYII=)](https://python-poetry.org/)
+[![code style: black](https://img.shields.io/static/v1?label=code%20style&message=black&color=black)](https://github.com/psf/black)
+[![pre-commit: enabled](https://img.shields.io/badge/pre--commit-enabled-brightgreen?logo=pre-commit&logoColor=white)](https://github.com/pre-commit/pre-commit)
+
+### Release
+
+1. Run `poetry lock`
+2. Bump version in `pyproject.toml` and `__version__` variable
+3. Commit and push the changes with message `release: <version>`
+4. Publish a new release on GitHub which will trigger an automated workflow to
+   publish on PyPi
+
+## License
+
+remove-print-statements is licensed under the MIT License.
+
+See [LICENSE](./LICENSE) for details.
+
+<!-- References -->
+
+[1]: https://adamj.eu/tech/2022/03/09/how-to-run-a-command-on-many-files-in-your-git-repository/
+[`pipx`]: https://github.com/pypa/pipx
+
