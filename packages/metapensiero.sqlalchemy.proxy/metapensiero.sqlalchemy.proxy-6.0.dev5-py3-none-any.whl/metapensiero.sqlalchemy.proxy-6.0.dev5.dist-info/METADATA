@@ -1,0 +1,69 @@
+Metadata-Version: 2.1
+Name: metapensiero.sqlalchemy.proxy
+Version: 6.0.dev5
+Summary: Expose SQLAlchemy's queries and their metadata to a webservice
+License: GPL-3.0-or-later
+Author-email: Lele Gaifax <lele@metapensiero.it>
+Requires-Python: >=3.9
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Database
+Requires-Dist: sqlalchemy
+Provides-Extra: dev
+Requires-Dist: build; extra == "dev"
+Requires-Dist: bump2version; extra == "dev"
+Requires-Dist: tomli; extra == "dev"
+Requires-Dist: twine; extra == "dev"
+Provides-Extra: docs
+Requires-Dist: tomli; extra == "docs"
+Project-URL: Changelog, https://gitlab.com/metapensiero/metapensiero.sqlalchemy.proxy/-/blob/master/CHANGES.rst
+Project-URL: Documentation, https://metapensierosqlalchemyproxy.readthedocs.io/en/latest/
+Project-URL: Source, https://gitlab.com/metapensiero/metapensiero.sqlalchemy.proxy
+Description-Content-Type: text/x-rst
+
+.. -*- coding: utf-8 -*-
+.. :Project:   metapensiero.sqlalchemy.proxy
+.. :Created:   gio 30 apr 2009 10:01:20 CEST
+.. :Author:    Lele Gaifax <lele@metapensiero.it>
+.. :License:   GNU General Public License version 3 or later
+.. :Copyright: © 2009, 2010, 2012, 2013, 2014, 2016, 2017, 2018, 2020, 2022 Lele Gaifax
+..
+
+===============================
+ metapensiero.sqlalchemy.proxy
+===============================
+
+Expose SQLAlchemy's queries and their metadata to a webservice
+==============================================================
+
+:version: 6
+:author: Lele Gaifax <lele@metapensiero.it>
+:license: GPLv3
+
+This package contains a few utilities to make it easier applying some filtering to a stock
+query and obtaining the resultset in various formats.
+
+See latest documentation at https://metapensierosqlalchemyproxy.readthedocs.io/en/latest/
+
+Tests suite
+-----------
+
+The tests suite may be executed with
+
+::
+
+   $ just check
+
+The ``PostgreSQL`` unit requires an existing database called ``mp_sa_proxy_test`` with the
+``hstore`` extension, and that the current user can access it without password::
+
+   $ createdb mp_sa_proxy_test
+   $ psql -c "create extension hstore;" mp_sa_proxy_test
+
