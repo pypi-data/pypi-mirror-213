@@ -1,0 +1,7 @@
+attrs
+couchbase
+dnspython
+docker
+pytest
+requests
+urllib3
