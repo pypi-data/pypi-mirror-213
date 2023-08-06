@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: seldon-deploy-sdk
+Version: 2.1.0
+Summary: Seldon Deploy API
+Home-page: https://deploy.seldon.io
+Author-email: hello@seldon.io
+License: UNKNOWN
+Keywords: Swagger,Seldon Deploy API
+Platform: UNKNOWN
+Requires-Dist: certifi (>=2017.4.17)
+Requires-Dist: python-dateutil (>=2.1)
+Requires-Dist: six (>=1.10)
+Requires-Dist: urllib3 (>=1.23)
+Requires-Dist: Authlib (<1.1.0,>=1.0.0)
+Requires-Dist: requests (<=2.29.0)
+
+    API to interact and manage the lifecycle of your machine learning models deployed through Seldon Deploy.  # noqa: E501
+    
+
