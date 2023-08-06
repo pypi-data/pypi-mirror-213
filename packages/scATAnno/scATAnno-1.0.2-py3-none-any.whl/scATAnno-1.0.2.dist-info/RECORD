@@ -1,0 +1,13 @@
+scATAnno/SnapATAC2_spectral.py,sha256=ZQYuUKY2vzSgo_tBo_WPb3vXTBVFxOv73ZPZiyl4R1E,18008
+scATAnno/SnapATAC2_tools.py,sha256=U5l_Ifzy5Avth0knwGYOdyyFLNYHl5Hwq_pra-F7idc,8448
+scATAnno/SnapATAC2_utils.py,sha256=EBzF4sUaYVtDvxvZeAc9pVKSB703HgcIL993bEf8c3M,7342
+scATAnno/__init__.py,sha256=BfmqYHsCKBP0rgIa0uT59Lsh13XhfIMCPMXKgj2Uit0,20
+scATAnno/scATAnno_assignment.py,sha256=dnn-4sCbBh_AufN1F8O_cSl_bT3s_J82qEZqFrkeTaQ,23170
+scATAnno/scATAnno_evaluation.py,sha256=X2v9rVEauowxKjx66lhS4daIWz15muiyNM5bJTmVBUc,376
+scATAnno/scATAnno_integration.py,sha256=UZkybbas_My22HFKzXagUzeGneh8rbhr7oJ9VGx-aWk,6955
+scATAnno/scATAnno_plotting.py,sha256=FVC25waBJDwXFK6ZHezk8GCDm-ulDf-l9KZAal5ABtI,18187
+scATAnno/scATAnno_preprocess.py,sha256=eNCQQ86drPoZaDXYCt2n-NwBj9VtrFJeGgS2wZZauYs,4373
+scATAnno-1.0.2.dist-info/METADATA,sha256=4j5q5VHbvTjwVnDt8emUyaLWwQKt1iI6Ohxu3527Ns0,405
+scATAnno-1.0.2.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+scATAnno-1.0.2.dist-info/top_level.txt,sha256=OG4j3FBDRL36ft3YmxohOo7q8Dkhl1tBn6ZiyH9AFI8,9
+scATAnno-1.0.2.dist-info/RECORD,,
