@@ -1,0 +1,11 @@
+cython<1,>=0.29
+numpy<2,>=1.24
+
+[all]
+plotly>=3.0
+
+[plotly]
+plotly>=3.0
+
+[visualize]
+plotly>=3.0
