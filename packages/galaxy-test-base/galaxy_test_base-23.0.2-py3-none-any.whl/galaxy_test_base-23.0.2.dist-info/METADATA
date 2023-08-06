@@ -1,0 +1,85 @@
+Metadata-Version: 2.1
+Name: galaxy-test-base
+Version: 23.0.2
+Summary: Galaxy testing utilities
+Home-page: https://github.com/galaxyproject/galaxy
+Author: Galaxy Project and Community
+Author-email: galaxy-committers@lists.galaxyproject.org
+License: AFL
+Keywords: Galaxy
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Academic Free License (AFL)
+Classifier: Natural Language :: English
+Classifier: Operating System :: POSIX
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Topic :: Software Development
+Classifier: Topic :: Software Development :: Code Generators
+Classifier: Topic :: Software Development :: Testing
+Requires-Python: >=3.7
+Description-Content-Type: text/x-rst
+License-File: LICENSE
+Requires-Dist: galaxy-tool-util
+Requires-Dist: galaxy-util
+Requires-Dist: bioblend
+Requires-Dist: cwltest
+Requires-Dist: gxformat2
+Requires-Dist: pytest
+Requires-Dist: PyYAML
+Requires-Dist: requests
+
+
+.. image:: https://badge.fury.io/py/galaxy-test-base.svg
+   :target: https://pypi.org/project/galaxy-test-base/
+
+
+
+Overview
+--------
+
+The Galaxy_ testing base package.
+
+* Code: https://github.com/galaxyproject/galaxy
+
+.. _Galaxy: http://galaxyproject.org/
+
+History
+-------
+
+.. to_doc
+
+-------------------
+23.0.2 (2023-06-13)
+-------------------
+
+No recorded changes since last release
+
+-------------------
+23.0.1 (2023-06-08)
+-------------------
+
+
+=========
+Bug fixes
+=========
+
+* Ensure history export contains all expected datasets by `@davelopez <https://github.com/davelopez>`_ in `#16013 <https://github.com/galaxyproject/galaxy/pull/16013>`_
+* Fix extended metadata file size handling by `@mvdbeek <https://github.com/mvdbeek>`_ in `#16109 <https://github.com/galaxyproject/galaxy/pull/16109>`_
+
+-------------------
+20.9.0 (2020-10-15)
+-------------------
+
+* Initial release from the 20.09 branch of Galaxy.
+
+-------------------
+20.5.0 (2020-07-04)
+-------------------
+
+* Initial import from the 20.05 branch of Galaxy.
