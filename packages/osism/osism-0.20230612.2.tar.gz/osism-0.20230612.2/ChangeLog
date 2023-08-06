@@ -1,0 +1,7 @@
+CHANGES
+=======
+
+v0.20230612.2
+-------------
+
+* Use str instead of int (#468)
