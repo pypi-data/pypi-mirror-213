@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+segment_lidar/__init__.py
+segment_lidar/main.py
+segment_lidar.egg-info/PKG-INFO
+segment_lidar.egg-info/SOURCES.txt
+segment_lidar.egg-info/dependency_links.txt
+segment_lidar.egg-info/entry_points.txt
+segment_lidar.egg-info/requires.txt
+segment_lidar.egg-info/top_level.txt
