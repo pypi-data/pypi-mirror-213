@@ -1,0 +1,9 @@
+soundstream/__init__.py,sha256=8m2MqEvj4KNJUfSGW82xYtXPdyu2u-s4CgMDb3MJZgY,1317
+soundstream/decoder.py,sha256=9AX25xeeQbzCxmmb_esgcYOkoh4hF4H93Ue75C6TgdU,1621
+soundstream/encoder.py,sha256=5O2PeFp4aBTejbmQlUyitV4h_2cw93zLoq8fd4oAmSw,1623
+soundstream/soundstream.py,sha256=SnTyYssyR2mbnKYMDmTZnHTcU-E-klgLCfzCan2uY4k,1687
+soundstream/units.py,sha256=r7EcikAcoFQOUE6ZLpnYrvyEKMEk8AUnfAdTDlCt9R0,2037
+soundstream-0.0.1.dist-info/LICENSE,sha256=_kT06jaij3bLujNvWPMnW0Y78nciSHf8O4pJr8luVkc,1071
+soundstream-0.0.1.dist-info/METADATA,sha256=RkEV41cN1D_2STJi0DoxhC3eLenXk6utZv_OtwrnOTU,3288
+soundstream-0.0.1.dist-info/WHEEL,sha256=7Z8_27uaHI_UZAc4Uox4PpBhQ9Y5_modZXWMxtUi4NU,88
+soundstream-0.0.1.dist-info/RECORD,,
