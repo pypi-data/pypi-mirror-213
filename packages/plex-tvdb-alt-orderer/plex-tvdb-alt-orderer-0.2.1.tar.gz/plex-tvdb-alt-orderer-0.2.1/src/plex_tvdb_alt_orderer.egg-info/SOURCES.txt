@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+src/plex_tvdb_alt_orderer/main.py
+src/plex_tvdb_alt_orderer.egg-info/PKG-INFO
+src/plex_tvdb_alt_orderer.egg-info/SOURCES.txt
+src/plex_tvdb_alt_orderer.egg-info/dependency_links.txt
+src/plex_tvdb_alt_orderer.egg-info/entry_points.txt
+src/plex_tvdb_alt_orderer.egg-info/requires.txt
+src/plex_tvdb_alt_orderer.egg-info/top_level.txt
