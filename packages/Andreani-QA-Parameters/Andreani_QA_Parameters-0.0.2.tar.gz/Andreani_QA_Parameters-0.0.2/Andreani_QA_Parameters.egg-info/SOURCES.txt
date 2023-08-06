@@ -1,0 +1,10 @@
+README.md
+setup.py
+Andreani_QA_Parameters.egg-info/PKG-INFO
+Andreani_QA_Parameters.egg-info/SOURCES.txt
+Andreani_QA_Parameters.egg-info/dependency_links.txt
+Andreani_QA_Parameters.egg-info/requires.txt
+Andreani_QA_Parameters.egg-info/top_level.txt
+Andreani_QA_parameters/Encriptor.py
+Andreani_QA_parameters/Parameters.py
+Andreani_QA_parameters/__init__.py
