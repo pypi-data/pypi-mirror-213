@@ -1,0 +1,5 @@
+[orange.widgets]
+Earth Observation = orangecontrib.earth_observation.widgets
+
+[orange3.addon]
+earth_observation = orangecontrib.earth_observation
