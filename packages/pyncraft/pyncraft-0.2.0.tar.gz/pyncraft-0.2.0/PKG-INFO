@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: pyncraft
+Version: 0.2.0
+Summary: Python interface to minecraft + pyncraft bukkit plugin
+Home-page: https://github.com/jdeast/pyncraft
+Author: Jason Eastman
+Author-email: jdeast@gmail.com
+License: UNKNOWN
+Keywords: minecraft,plugin,scratch,java,bukkit
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Education
+Classifier: Topic :: Games/Entertainment
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3 :: Only
+Requires-Python: >=3.6, <4
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+A Python API to Minecraft that works with the [FruitJuice](https://github.com/jdeast/FruitJuice) Bukkit plugin to enable a python and/or scratch programming interface.
+
+See [FruitJuice/README_server_setup.md](https://github.com/jdeast/FruitJuice/blob/master/README_server_setup.md) for instructions to set up your own python/scratch server that works on java or bedrock.
+
