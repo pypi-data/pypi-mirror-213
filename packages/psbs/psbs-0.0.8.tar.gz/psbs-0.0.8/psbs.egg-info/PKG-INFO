@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: psbs
+Version: 0.0.8
+Summary: PuzzleScript Build System
+Home-page: https://github.com/jcmiller11/PSBS
+Download-URL: https://github.com/jcmiller11/PSBS/archive/refs/tags/0.0.8.tar.gz
+Author: J.C. Miller
+Author-email: johncoreymiller@gmail.com
+License: MIT
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Games/Entertainment :: Puzzle Games
+Classifier: Topic :: Software Development :: Build Tools
+Requires-Python: >=3.8
+License-File: LICENSE
