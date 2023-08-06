@@ -1,0 +1,2 @@
+[console_scripts]
+rate_my_project = rate_my_project.cli:cli
