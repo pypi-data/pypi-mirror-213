@@ -1,0 +1,15 @@
+LICENSE
+README.md
+pyproject.toml
+src/sesiweb/__init__.py
+src/sesiweb/exceptions.py
+src/sesiweb/webapi.py
+src/sesiweb.egg-info/PKG-INFO
+src/sesiweb.egg-info/SOURCES.txt
+src/sesiweb.egg-info/dependency_links.txt
+src/sesiweb.egg-info/requires.txt
+src/sesiweb.egg-info/top_level.txt
+src/sesiweb/model/__init__.py
+src/sesiweb/model/file.py
+src/sesiweb/model/service.py
+tests/test_sesiweb.py

@@ -1,0 +1,10 @@
+requests
+urllib3==1.26.5
+pydantic
+
+[dev]
+check-manifest
+
+[test]
+pytest
+coverage
