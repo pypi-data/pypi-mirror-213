@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: sma-manager
+Version: 1.0.0
+Summary: Package for collecting information from the SMA Manager device of solar panels.
+Home-page: https://github.com/DEADSEC-SECURITY/sma-manager
+Author: DeadSec-Security
+Author-email: amng835@gmail.com
+License: MIT
+Keywords: sma,sma-manager,manager,sunny-portal,sunny
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# sma-manager
+Package for collecting information from the SMA Manager device of solar panels

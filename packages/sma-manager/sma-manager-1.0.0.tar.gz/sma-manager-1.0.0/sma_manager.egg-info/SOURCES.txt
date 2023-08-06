@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+SMA/SMA.py
+SMA/__init__.py
+sma_manager.egg-info/PKG-INFO
+sma_manager.egg-info/SOURCES.txt
+sma_manager.egg-info/dependency_links.txt
+sma_manager.egg-info/top_level.txt
