@@ -1,0 +1,876 @@
+{
+  "status": "done",
+  "assets": {
+    "css/add_forge_now.4f93c9769bc36a247915.css": {
+      "name": "css/add_forge_now.4f93c9769bc36a247915.css",
+      "path": "/var/lib/jenkins/workspace/DWAPPS/pypi-upload/static/css/add_forge_now.4f93c9769bc36a247915.css",
+      "publicPath": "/static/css/add_forge_now.4f93c9769bc36a247915.css"
+    },
+    "css/add_forge_now.4f93c9769bc36a247915.css.map": {
+      "name": "css/add_forge_now.4f93c9769bc36a247915.css.map",
+      "path": "/var/lib/jenkins/workspace/DWAPPS/pypi-upload/static/css/add_forge_now.4f93c9769bc36a247915.css.map",
+      "publicPath": "/static/css/add_forge_now.4f93c9769bc36a247915.css.map"
+    },
+    "css/archive_coverage.243fd0a38715dd7ff3e5.css": {
+      "name": "css/archive_coverage.243fd0a38715dd7ff3e5.css",
+      "path": "/var/lib/jenkins/workspace/DWAPPS/pypi-upload/static/css/archive_coverage.243fd0a38715dd7ff3e5.css",
+      "publicPath": "/static/css/archive_coverage.243fd0a38715dd7ff3e5.css"
+    },
+    "css/archive_coverage.243fd0a38715dd7ff3e5.css.map": {
+      "name": "css/archive_coverage.243fd0a38715dd7ff3e5.css.map",
+      "path": "/var/lib/jenkins/workspace/DWAPPS/pypi-upload/static/css/archive_coverage.243fd0a38715dd7ff3e5.css.map",
+      "publicPath": "/static/css/archive_coverage.243fd0a38715dd7ff3e5.css.map"
+    },
+    "css/auth.0336a94c2c02b4b2a4f4.css": {
+      "name": "css/auth.0336a94c2c02b4b2a4f4.css",
+      "path": "/var/lib/jenkins/workspace/DWAPPS/pypi-upload/static/css/auth.0336a94c2c02b4b2a4f4.css",
+      "publicPath": "/static/css/auth.0336a94c2c02b4b2a4f4.css"
+    },
+    "css/auth.0336a94c2c02b4b2a4f4.css.map": {
+      "name": "css/auth.0336a94c2c02b4b2a4f4.css.map",
+      "path": "/var/lib/jenkins/workspace/DWAPPS/pypi-upload/static/css/auth.0336a94c2c02b4b2a4f4.css.map",
+      "publicPath": "/static/css/auth.0336a94c2c02b4b2a4f4.css.map"
+    },
+    "css/badges.03c8b295a163a9306210.css": {
+      "name": "css/badges.03c8b295a163a9306210.css",
+      "path": "/var/lib/jenkins/workspace/DWAPPS/pypi-upload/static/css/badges.03c8b295a163a9306210.css",
+      "publicPath": "/static/css/badges.03c8b295a163a9306210.css"
+    },
+    "css/badges.03c8b295a163a9306210.css.map": {
+      "name": "css/badges.03c8b295a163a9306210.css.map",
+      "path": "/var/lib/jenkins/workspace/DWAPPS/pypi-upload/static/css/badges.03c8b295a163a9306210.css.map",
+      "publicPath": "/static/css/badges.03c8b295a163a9306210.css.map"
+    },
+    "css/browse.82281790c77923f2d668.css": {
+      "name": "css/browse.82281790c77923f2d668.css",
+      "path": "/var/lib/jenkins/workspace/DWAPPS/pypi-upload/static/css/browse.82281790c77923f2d668.css",
+      "publicPath": "/static/css/browse.82281790c77923f2d668.css"
+    },
+    "css/browse.82281790c77923f2d668.css.map": {
+      "name": "css/browse.82281790c77923f2d668.css.map",
+      "path": "/var/lib/jenkins/workspace/DWAPPS/pypi-upload/static/css/browse.82281790c77923f2d668.css.map",
+      "publicPath": "/static/css/browse.82281790c77923f2d668.css.map"
+    },
+    "css/guided_tour.8d6763afe7f5c8cd3980.css": {
+      "name": "css/guided_tour.8d6763afe7f5c8cd3980.css",
+      "path": "/var/lib/jenkins/workspace/DWAPPS/pypi-upload/static/css/guided_tour.8d6763afe7f5c8cd3980.css",
+      "publicPath": "/static/css/guided_tour.8d6763afe7f5c8cd3980.css"
+    },
+    "css/guided_tour.8d6763afe7f5c8cd3980.css.map": {
+      "name": "css/guided_tour.8d6763afe7f5c8cd3980.css.map",
+      "path": "/var/lib/jenkins/workspace/DWAPPS/pypi-upload/static/css/guided_tour.8d6763afe7f5c8cd3980.css.map",
+      "publicPath": "/static/css/guided_tour.8d6763afe7f5c8cd3980.css.map"
+    },
+    "css/highlightjs.ae43064ab38a65a04d81.css": {
+      "name": "css/highlightjs.ae43064ab38a65a04d81.css",
+      "path": "/var/lib/jenkins/workspace/DWAPPS/pypi-upload/static/css/highlightjs.ae43064ab38a65a04d81.css",
+      "publicPath": "/static/css/highlightjs.ae43064ab38a65a04d81.css"
+    },
+    "css/highlightjs.ae43064ab38a65a04d81.css.map": {
+      "name": "css/highlightjs.ae43064ab38a65a04d81.css.map",
+      "path": "/var/lib/jenkins/workspace/DWAPPS/pypi-upload/static/css/highlightjs.ae43064ab38a65a04d81.css.map",
+      "publicPath": "/static/css/highlightjs.ae43064ab38a65a04d81.css.map"
+    },
+    "css/org.6851b70c924e28f6bf51.css": {
+      "name": "css/org.6851b70c924e28f6bf51.css",
+      "path": "/var/lib/jenkins/workspace/DWAPPS/pypi-upload/static/css/org.6851b70c924e28f6bf51.css",
+      "publicPath": "/static/css/org.6851b70c924e28f6bf51.css"
+    },
+    "css/org.6851b70c924e28f6bf51.css.map": {
+      "name": "css/org.6851b70c924e28f6bf51.css.map",
+      "path": "/var/lib/jenkins/workspace/DWAPPS/pypi-upload/static/css/org.6851b70c924e28f6bf51.css.map",
+      "publicPath": "/static/css/org.6851b70c924e28f6bf51.css.map"
+    },
+    "css/origin_visits.e12aba5ba702b58cd3ca.css": {
+      "name": "css/origin_visits.e12aba5ba702b58cd3ca.css",
+      "path": "/var/lib/jenkins/workspace/DWAPPS/pypi-upload/static/css/origin_visits.e12aba5ba702b58cd3ca.css",
+      "publicPath": "/static/css/origin_visits.e12aba5ba702b58cd3ca.css"
+    },
+    "css/origin_visits.e12aba5ba702b58cd3ca.css.map": {
+      "name": "css/origin_visits.e12aba5ba702b58cd3ca.css.map",
+      "path": "/var/lib/jenkins/workspace/DWAPPS/pypi-upload/static/css/origin_visits.e12aba5ba702b58cd3ca.css.map",
+      "publicPath": "/static/css/origin_visits.e12aba5ba702b58cd3ca.css.map"
+    },
+    "css/revision.5ddd36d69e1760bfa29d.css": {
+      "name": "css/revision.5ddd36d69e1760bfa29d.css",
+      "path": "/var/lib/jenkins/workspace/DWAPPS/pypi-upload/static/css/revision.5ddd36d69e1760bfa29d.css",
+      "publicPath": "/static/css/revision.5ddd36d69e1760bfa29d.css"
+    },
+    "css/revision.5ddd36d69e1760bfa29d.css.map": {
+      "name": "css/revision.5ddd36d69e1760bfa29d.css.map",
+      "path": "/var/lib/jenkins/workspace/DWAPPS/pypi-upload/static/css/revision.5ddd36d69e1760bfa29d.css.map",
+      "publicPath": "/static/css/revision.5ddd36d69e1760bfa29d.css.map"
+    },
+    "css/showdown.426fbf6a7a6653fd4cbb.css": {
+      "name": "css/showdown.426fbf6a7a6653fd4cbb.css",
+      "path": "/var/lib/jenkins/workspace/DWAPPS/pypi-upload/static/css/showdown.426fbf6a7a6653fd4cbb.css",
+      "publicPath": "/static/css/showdown.426fbf6a7a6653fd4cbb.css"
+    },
+    "css/showdown.426fbf6a7a6653fd4cbb.css.map": {
+      "name": "css/showdown.426fbf6a7a6653fd4cbb.css.map",
+      "path": "/var/lib/jenkins/workspace/DWAPPS/pypi-upload/static/css/showdown.426fbf6a7a6653fd4cbb.css.map",
+      "publicPath": "/static/css/showdown.426fbf6a7a6653fd4cbb.css.map"
+    },
+    "css/vault.25fc5883f848b48ffa5b.css": {
+      "name": "css/vault.25fc5883f848b48ffa5b.css",
+      "path": "/var/lib/jenkins/workspace/DWAPPS/pypi-upload/static/css/vault.25fc5883f848b48ffa5b.css",
+      "publicPath": "/static/css/vault.25fc5883f848b48ffa5b.css"
+    },
+    "css/vault.25fc5883f848b48ffa5b.css.map": {
+      "name": "css/vault.25fc5883f848b48ffa5b.css.map",
+      "path": "/var/lib/jenkins/workspace/DWAPPS/pypi-upload/static/css/vault.25fc5883f848b48ffa5b.css.map",
+      "publicPath": "/static/css/vault.25fc5883f848b48ffa5b.css.map"
+    },
+    "css/vendors.fc445ce331acf875e1d8.css": {
+      "name": "css/vendors.fc445ce331acf875e1d8.css",
+      "path": "/var/lib/jenkins/workspace/DWAPPS/pypi-upload/static/css/vendors.fc445ce331acf875e1d8.css",
+      "publicPath": "/static/css/vendors.fc445ce331acf875e1d8.css"
+    },
+    "css/vendors.fc445ce331acf875e1d8.css.map": {
+      "name": "css/vendors.fc445ce331acf875e1d8.css.map",
+      "path": "/var/lib/jenkins/workspace/DWAPPS/pypi-upload/static/css/vendors.fc445ce331acf875e1d8.css.map",
+      "publicPath": "/static/css/vendors.fc445ce331acf875e1d8.css.map"
+    },
+    "css/webapp.90f1e9c9eae92d786d55.css": {
+      "name": "css/webapp.90f1e9c9eae92d786d55.css",
+      "path": "/var/lib/jenkins/workspace/DWAPPS/pypi-upload/static/css/webapp.90f1e9c9eae92d786d55.css",
+      "publicPath": "/static/css/webapp.90f1e9c9eae92d786d55.css"
+    },
+    "css/webapp.90f1e9c9eae92d786d55.css.map": {
+      "name": "css/webapp.90f1e9c9eae92d786d55.css.map",
+      "path": "/var/lib/jenkins/workspace/DWAPPS/pypi-upload/static/css/webapp.90f1e9c9eae92d786d55.css.map",
+      "publicPath": "/static/css/webapp.90f1e9c9eae92d786d55.css.map"
+    },
+    "fonts/alegreya-latin-400.woff": {
+      "name": "fonts/alegreya-latin-400.woff",
+      "path": "/var/lib/jenkins/workspace/DWAPPS/pypi-upload/static/fonts/alegreya-latin-400.woff",
+      "publicPath": "/static/fonts/alegreya-latin-400.woff"
+    },
+    "fonts/alegreya-latin-400.woff2": {
+      "name": "fonts/alegreya-latin-400.woff2",
+      "path": "/var/lib/jenkins/workspace/DWAPPS/pypi-upload/static/fonts/alegreya-latin-400.woff2",
+      "publicPath": "/static/fonts/alegreya-latin-400.woff2"
+    },
+    "fonts/alegreya-latin-400italic.woff": {
+      "name": "fonts/alegreya-latin-400italic.woff",
+      "path": "/var/lib/jenkins/workspace/DWAPPS/pypi-upload/static/fonts/alegreya-latin-400italic.woff",
+      "publicPath": "/static/fonts/alegreya-latin-400italic.woff"
+    },
+    "fonts/alegreya-latin-400italic.woff2": {
+      "name": "fonts/alegreya-latin-400italic.woff2",
+      "path": "/var/lib/jenkins/workspace/DWAPPS/pypi-upload/static/fonts/alegreya-latin-400italic.woff2",
+      "publicPath": "/static/fonts/alegreya-latin-400italic.woff2"
+    },
+    "fonts/alegreya-latin-500.woff": {
+      "name": "fonts/alegreya-latin-500.woff",
+      "path": "/var/lib/jenkins/workspace/DWAPPS/pypi-upload/static/fonts/alegreya-latin-500.woff",
+      "publicPath": "/static/fonts/alegreya-latin-500.woff"
+    },
+    "fonts/alegreya-latin-500.woff2": {
+      "name": "fonts/alegreya-latin-500.woff2",
+      "path": "/var/lib/jenkins/workspace/DWAPPS/pypi-upload/static/fonts/alegreya-latin-500.woff2",
+      "publicPath": "/static/fonts/alegreya-latin-500.woff2"
+    },
+    "fonts/alegreya-latin-500italic.woff": {
+      "name": "fonts/alegreya-latin-500italic.woff",
+      "path": "/var/lib/jenkins/workspace/DWAPPS/pypi-upload/static/fonts/alegreya-latin-500italic.woff",
+      "publicPath": "/static/fonts/alegreya-latin-500italic.woff"
+    },
+    "fonts/alegreya-latin-500italic.woff2": {
+      "name": "fonts/alegreya-latin-500italic.woff2",
+      "path": "/var/lib/jenkins/workspace/DWAPPS/pypi-upload/static/fonts/alegreya-latin-500italic.woff2",
+      "publicPath": "/static/fonts/alegreya-latin-500italic.woff2"
+    },
+    "fonts/alegreya-latin-700.woff": {
+      "name": "fonts/alegreya-latin-700.woff",
+      "path": "/var/lib/jenkins/workspace/DWAPPS/pypi-upload/static/fonts/alegreya-latin-700.woff",
+      "publicPath": "/static/fonts/alegreya-latin-700.woff"
+    },
+    "fonts/alegreya-latin-700.woff2": {
+      "name": "fonts/alegreya-latin-700.woff2",
+      "path": "/var/lib/jenkins/workspace/DWAPPS/pypi-upload/static/fonts/alegreya-latin-700.woff2",
+      "publicPath": "/static/fonts/alegreya-latin-700.woff2"
+    },
+    "fonts/alegreya-latin-700italic.woff": {
+      "name": "fonts/alegreya-latin-700italic.woff",
+      "path": "/var/lib/jenkins/workspace/DWAPPS/pypi-upload/static/fonts/alegreya-latin-700italic.woff",
+      "publicPath": "/static/fonts/alegreya-latin-700italic.woff"
+    },
+    "fonts/alegreya-latin-700italic.woff2": {
+      "name": "fonts/alegreya-latin-700italic.woff2",
+      "path": "/var/lib/jenkins/workspace/DWAPPS/pypi-upload/static/fonts/alegreya-latin-700italic.woff2",
+      "publicPath": "/static/fonts/alegreya-latin-700italic.woff2"
+    },
+    "fonts/alegreya-latin-800.woff": {
+      "name": "fonts/alegreya-latin-800.woff",
+      "path": "/var/lib/jenkins/workspace/DWAPPS/pypi-upload/static/fonts/alegreya-latin-800.woff",
+      "publicPath": "/static/fonts/alegreya-latin-800.woff"
+    },
+    "fonts/alegreya-latin-800.woff2": {
+      "name": "fonts/alegreya-latin-800.woff2",
+      "path": "/var/lib/jenkins/workspace/DWAPPS/pypi-upload/static/fonts/alegreya-latin-800.woff2",
+      "publicPath": "/static/fonts/alegreya-latin-800.woff2"
+    },
+    "fonts/alegreya-latin-800italic.woff": {
+      "name": "fonts/alegreya-latin-800italic.woff",
+      "path": "/var/lib/jenkins/workspace/DWAPPS/pypi-upload/static/fonts/alegreya-latin-800italic.woff",
+      "publicPath": "/static/fonts/alegreya-latin-800italic.woff"
+    },
+    "fonts/alegreya-latin-800italic.woff2": {
+      "name": "fonts/alegreya-latin-800italic.woff2",
+      "path": "/var/lib/jenkins/workspace/DWAPPS/pypi-upload/static/fonts/alegreya-latin-800italic.woff2",
+      "publicPath": "/static/fonts/alegreya-latin-800italic.woff2"
+    },
+    "fonts/alegreya-latin-900.woff": {
+      "name": "fonts/alegreya-latin-900.woff",
+      "path": "/var/lib/jenkins/workspace/DWAPPS/pypi-upload/static/fonts/alegreya-latin-900.woff",
+      "publicPath": "/static/fonts/alegreya-latin-900.woff"
+    },
+    "fonts/alegreya-latin-900.woff2": {
+      "name": "fonts/alegreya-latin-900.woff2",
+      "path": "/var/lib/jenkins/workspace/DWAPPS/pypi-upload/static/fonts/alegreya-latin-900.woff2",
+      "publicPath": "/static/fonts/alegreya-latin-900.woff2"
+    },
+    "fonts/alegreya-latin-900italic.woff": {
+      "name": "fonts/alegreya-latin-900italic.woff",
+      "path": "/var/lib/jenkins/workspace/DWAPPS/pypi-upload/static/fonts/alegreya-latin-900italic.woff",
+      "publicPath": "/static/fonts/alegreya-latin-900italic.woff"
+    },
+    "fonts/alegreya-latin-900italic.woff2": {
+      "name": "fonts/alegreya-latin-900italic.woff2",
+      "path": "/var/lib/jenkins/workspace/DWAPPS/pypi-upload/static/fonts/alegreya-latin-900italic.woff2",
+      "publicPath": "/static/fonts/alegreya-latin-900italic.woff2"
+    },
+    "fonts/alegreya-sans-latin-100.woff": {
+      "name": "fonts/alegreya-sans-latin-100.woff",
+      "path": "/var/lib/jenkins/workspace/DWAPPS/pypi-upload/static/fonts/alegreya-sans-latin-100.woff",
+      "publicPath": "/static/fonts/alegreya-sans-latin-100.woff"
+    },
+    "fonts/alegreya-sans-latin-100.woff2": {
+      "name": "fonts/alegreya-sans-latin-100.woff2",
+      "path": "/var/lib/jenkins/workspace/DWAPPS/pypi-upload/static/fonts/alegreya-sans-latin-100.woff2",
+      "publicPath": "/static/fonts/alegreya-sans-latin-100.woff2"
+    },
+    "fonts/alegreya-sans-latin-100italic.woff": {
+      "name": "fonts/alegreya-sans-latin-100italic.woff",
+      "path": "/var/lib/jenkins/workspace/DWAPPS/pypi-upload/static/fonts/alegreya-sans-latin-100italic.woff",
+      "publicPath": "/static/fonts/alegreya-sans-latin-100italic.woff"
+    },
+    "fonts/alegreya-sans-latin-100italic.woff2": {
+      "name": "fonts/alegreya-sans-latin-100italic.woff2",
+      "path": "/var/lib/jenkins/workspace/DWAPPS/pypi-upload/static/fonts/alegreya-sans-latin-100italic.woff2",
+      "publicPath": "/static/fonts/alegreya-sans-latin-100italic.woff2"
+    },
+    "fonts/alegreya-sans-latin-300.woff": {
+      "name": "fonts/alegreya-sans-latin-300.woff",
+      "path": "/var/lib/jenkins/workspace/DWAPPS/pypi-upload/static/fonts/alegreya-sans-latin-300.woff",
+      "publicPath": "/static/fonts/alegreya-sans-latin-300.woff"
+    },
+    "fonts/alegreya-sans-latin-300.woff2": {
+      "name": "fonts/alegreya-sans-latin-300.woff2",
+      "path": "/var/lib/jenkins/workspace/DWAPPS/pypi-upload/static/fonts/alegreya-sans-latin-300.woff2",
+      "publicPath": "/static/fonts/alegreya-sans-latin-300.woff2"
+    },
+    "fonts/alegreya-sans-latin-300italic.woff": {
+      "name": "fonts/alegreya-sans-latin-300italic.woff",
+      "path": "/var/lib/jenkins/workspace/DWAPPS/pypi-upload/static/fonts/alegreya-sans-latin-300italic.woff",
+      "publicPath": "/static/fonts/alegreya-sans-latin-300italic.woff"
+    },
+    "fonts/alegreya-sans-latin-300italic.woff2": {
+      "name": "fonts/alegreya-sans-latin-300italic.woff2",
+      "path": "/var/lib/jenkins/workspace/DWAPPS/pypi-upload/static/fonts/alegreya-sans-latin-300italic.woff2",
+      "publicPath": "/static/fonts/alegreya-sans-latin-300italic.woff2"
+    },
+    "fonts/alegreya-sans-latin-400.woff": {
+      "name": "fonts/alegreya-sans-latin-400.woff",
+      "path": "/var/lib/jenkins/workspace/DWAPPS/pypi-upload/static/fonts/alegreya-sans-latin-400.woff",
+      "publicPath": "/static/fonts/alegreya-sans-latin-400.woff"
+    },
+    "fonts/alegreya-sans-latin-400.woff2": {
+      "name": "fonts/alegreya-sans-latin-400.woff2",
+      "path": "/var/lib/jenkins/workspace/DWAPPS/pypi-upload/static/fonts/alegreya-sans-latin-400.woff2",
+      "publicPath": "/static/fonts/alegreya-sans-latin-400.woff2"
+    },
+    "fonts/alegreya-sans-latin-400italic.woff": {
+      "name": "fonts/alegreya-sans-latin-400italic.woff",
+      "path": "/var/lib/jenkins/workspace/DWAPPS/pypi-upload/static/fonts/alegreya-sans-latin-400italic.woff",
+      "publicPath": "/static/fonts/alegreya-sans-latin-400italic.woff"
+    },
+    "fonts/alegreya-sans-latin-400italic.woff2": {
+      "name": "fonts/alegreya-sans-latin-400italic.woff2",
+      "path": "/var/lib/jenkins/workspace/DWAPPS/pypi-upload/static/fonts/alegreya-sans-latin-400italic.woff2",
+      "publicPath": "/static/fonts/alegreya-sans-latin-400italic.woff2"
+    },
+    "fonts/alegreya-sans-latin-500.woff": {
+      "name": "fonts/alegreya-sans-latin-500.woff",
+      "path": "/var/lib/jenkins/workspace/DWAPPS/pypi-upload/static/fonts/alegreya-sans-latin-500.woff",
+      "publicPath": "/static/fonts/alegreya-sans-latin-500.woff"
+    },
+    "fonts/alegreya-sans-latin-500.woff2": {
+      "name": "fonts/alegreya-sans-latin-500.woff2",
+      "path": "/var/lib/jenkins/workspace/DWAPPS/pypi-upload/static/fonts/alegreya-sans-latin-500.woff2",
+      "publicPath": "/static/fonts/alegreya-sans-latin-500.woff2"
+    },
+    "fonts/alegreya-sans-latin-500italic.woff": {
+      "name": "fonts/alegreya-sans-latin-500italic.woff",
+      "path": "/var/lib/jenkins/workspace/DWAPPS/pypi-upload/static/fonts/alegreya-sans-latin-500italic.woff",
+      "publicPath": "/static/fonts/alegreya-sans-latin-500italic.woff"
+    },
+    "fonts/alegreya-sans-latin-500italic.woff2": {
+      "name": "fonts/alegreya-sans-latin-500italic.woff2",
+      "path": "/var/lib/jenkins/workspace/DWAPPS/pypi-upload/static/fonts/alegreya-sans-latin-500italic.woff2",
+      "publicPath": "/static/fonts/alegreya-sans-latin-500italic.woff2"
+    },
+    "fonts/alegreya-sans-latin-700.woff": {
+      "name": "fonts/alegreya-sans-latin-700.woff",
+      "path": "/var/lib/jenkins/workspace/DWAPPS/pypi-upload/static/fonts/alegreya-sans-latin-700.woff",
+      "publicPath": "/static/fonts/alegreya-sans-latin-700.woff"
+    },
+    "fonts/alegreya-sans-latin-700.woff2": {
+      "name": "fonts/alegreya-sans-latin-700.woff2",
+      "path": "/var/lib/jenkins/workspace/DWAPPS/pypi-upload/static/fonts/alegreya-sans-latin-700.woff2",
+      "publicPath": "/static/fonts/alegreya-sans-latin-700.woff2"
+    },
+    "fonts/alegreya-sans-latin-700italic.woff": {
+      "name": "fonts/alegreya-sans-latin-700italic.woff",
+      "path": "/var/lib/jenkins/workspace/DWAPPS/pypi-upload/static/fonts/alegreya-sans-latin-700italic.woff",
+      "publicPath": "/static/fonts/alegreya-sans-latin-700italic.woff"
+    },
+    "fonts/alegreya-sans-latin-700italic.woff2": {
+      "name": "fonts/alegreya-sans-latin-700italic.woff2",
+      "path": "/var/lib/jenkins/workspace/DWAPPS/pypi-upload/static/fonts/alegreya-sans-latin-700italic.woff2",
+      "publicPath": "/static/fonts/alegreya-sans-latin-700italic.woff2"
+    },
+    "fonts/alegreya-sans-latin-800.woff": {
+      "name": "fonts/alegreya-sans-latin-800.woff",
+      "path": "/var/lib/jenkins/workspace/DWAPPS/pypi-upload/static/fonts/alegreya-sans-latin-800.woff",
+      "publicPath": "/static/fonts/alegreya-sans-latin-800.woff"
+    },
+    "fonts/alegreya-sans-latin-800.woff2": {
+      "name": "fonts/alegreya-sans-latin-800.woff2",
+      "path": "/var/lib/jenkins/workspace/DWAPPS/pypi-upload/static/fonts/alegreya-sans-latin-800.woff2",
+      "publicPath": "/static/fonts/alegreya-sans-latin-800.woff2"
+    },
+    "fonts/alegreya-sans-latin-800italic.woff": {
+      "name": "fonts/alegreya-sans-latin-800italic.woff",
+      "path": "/var/lib/jenkins/workspace/DWAPPS/pypi-upload/static/fonts/alegreya-sans-latin-800italic.woff",
+      "publicPath": "/static/fonts/alegreya-sans-latin-800italic.woff"
+    },
+    "fonts/alegreya-sans-latin-800italic.woff2": {
+      "name": "fonts/alegreya-sans-latin-800italic.woff2",
+      "path": "/var/lib/jenkins/workspace/DWAPPS/pypi-upload/static/fonts/alegreya-sans-latin-800italic.woff2",
+      "publicPath": "/static/fonts/alegreya-sans-latin-800italic.woff2"
+    },
+    "fonts/alegreya-sans-latin-900.woff": {
+      "name": "fonts/alegreya-sans-latin-900.woff",
+      "path": "/var/lib/jenkins/workspace/DWAPPS/pypi-upload/static/fonts/alegreya-sans-latin-900.woff",
+      "publicPath": "/static/fonts/alegreya-sans-latin-900.woff"
+    },
+    "fonts/alegreya-sans-latin-900.woff2": {
+      "name": "fonts/alegreya-sans-latin-900.woff2",
+      "path": "/var/lib/jenkins/workspace/DWAPPS/pypi-upload/static/fonts/alegreya-sans-latin-900.woff2",
+      "publicPath": "/static/fonts/alegreya-sans-latin-900.woff2"
+    },
+    "fonts/alegreya-sans-latin-900italic.woff": {
+      "name": "fonts/alegreya-sans-latin-900italic.woff",
+      "path": "/var/lib/jenkins/workspace/DWAPPS/pypi-upload/static/fonts/alegreya-sans-latin-900italic.woff",
+      "publicPath": "/static/fonts/alegreya-sans-latin-900italic.woff"
+    },
+    "fonts/alegreya-sans-latin-900italic.woff2": {
+      "name": "fonts/alegreya-sans-latin-900italic.woff2",
+      "path": "/var/lib/jenkins/workspace/DWAPPS/pypi-upload/static/fonts/alegreya-sans-latin-900italic.woff2",
+      "publicPath": "/static/fonts/alegreya-sans-latin-900italic.woff2"
+    },
+    "fonts/materialdesignicons-webfont.eot": {
+      "name": "fonts/materialdesignicons-webfont.eot",
+      "path": "/var/lib/jenkins/workspace/DWAPPS/pypi-upload/static/fonts/materialdesignicons-webfont.eot",
+      "publicPath": "/static/fonts/materialdesignicons-webfont.eot"
+    },
+    "fonts/materialdesignicons-webfont.eot?v=7.2.96": {
+      "name": "fonts/materialdesignicons-webfont.eot?v=7.2.96",
+      "path": "/var/lib/jenkins/workspace/DWAPPS/pypi-upload/static/fonts/materialdesignicons-webfont.eot",
+      "publicPath": "/static/fonts/materialdesignicons-webfont.eot?v=7.2.96"
+    },
+    "fonts/materialdesignicons-webfont.ttf?v=7.2.96": {
+      "name": "fonts/materialdesignicons-webfont.ttf?v=7.2.96",
+      "path": "/var/lib/jenkins/workspace/DWAPPS/pypi-upload/static/fonts/materialdesignicons-webfont.ttf",
+      "publicPath": "/static/fonts/materialdesignicons-webfont.ttf?v=7.2.96"
+    },
+    "fonts/materialdesignicons-webfont.woff?v=7.2.96": {
+      "name": "fonts/materialdesignicons-webfont.woff?v=7.2.96",
+      "path": "/var/lib/jenkins/workspace/DWAPPS/pypi-upload/static/fonts/materialdesignicons-webfont.woff",
+      "publicPath": "/static/fonts/materialdesignicons-webfont.woff?v=7.2.96"
+    },
+    "fonts/materialdesignicons-webfont.woff2?v=7.2.96": {
+      "name": "fonts/materialdesignicons-webfont.woff2?v=7.2.96",
+      "path": "/var/lib/jenkins/workspace/DWAPPS/pypi-upload/static/fonts/materialdesignicons-webfont.woff2",
+      "publicPath": "/static/fonts/materialdesignicons-webfont.woff2?v=7.2.96"
+    },
+    "fonts/MathJax_AMS-Regular.woff": {
+      "name": "fonts/MathJax_AMS-Regular.woff",
+      "path": "/var/lib/jenkins/workspace/DWAPPS/pypi-upload/static/fonts/MathJax_AMS-Regular.woff",
+      "publicPath": "/static/fonts/MathJax_AMS-Regular.woff"
+    },
+    "fonts/MathJax_Calligraphic-Bold.woff": {
+      "name": "fonts/MathJax_Calligraphic-Bold.woff",
+      "path": "/var/lib/jenkins/workspace/DWAPPS/pypi-upload/static/fonts/MathJax_Calligraphic-Bold.woff",
+      "publicPath": "/static/fonts/MathJax_Calligraphic-Bold.woff"
+    },
+    "fonts/MathJax_Calligraphic-Regular.woff": {
+      "name": "fonts/MathJax_Calligraphic-Regular.woff",
+      "path": "/var/lib/jenkins/workspace/DWAPPS/pypi-upload/static/fonts/MathJax_Calligraphic-Regular.woff",
+      "publicPath": "/static/fonts/MathJax_Calligraphic-Regular.woff"
+    },
+    "fonts/MathJax_Fraktur-Bold.woff": {
+      "name": "fonts/MathJax_Fraktur-Bold.woff",
+      "path": "/var/lib/jenkins/workspace/DWAPPS/pypi-upload/static/fonts/MathJax_Fraktur-Bold.woff",
+      "publicPath": "/static/fonts/MathJax_Fraktur-Bold.woff"
+    },
+    "fonts/MathJax_Fraktur-Regular.woff": {
+      "name": "fonts/MathJax_Fraktur-Regular.woff",
+      "path": "/var/lib/jenkins/workspace/DWAPPS/pypi-upload/static/fonts/MathJax_Fraktur-Regular.woff",
+      "publicPath": "/static/fonts/MathJax_Fraktur-Regular.woff"
+    },
+    "fonts/MathJax_Main-Bold.woff": {
+      "name": "fonts/MathJax_Main-Bold.woff",
+      "path": "/var/lib/jenkins/workspace/DWAPPS/pypi-upload/static/fonts/MathJax_Main-Bold.woff",
+      "publicPath": "/static/fonts/MathJax_Main-Bold.woff"
+    },
+    "fonts/MathJax_Main-Italic.woff": {
+      "name": "fonts/MathJax_Main-Italic.woff",
+      "path": "/var/lib/jenkins/workspace/DWAPPS/pypi-upload/static/fonts/MathJax_Main-Italic.woff",
+      "publicPath": "/static/fonts/MathJax_Main-Italic.woff"
+    },
+    "fonts/MathJax_Main-Regular.woff": {
+      "name": "fonts/MathJax_Main-Regular.woff",
+      "path": "/var/lib/jenkins/workspace/DWAPPS/pypi-upload/static/fonts/MathJax_Main-Regular.woff",
+      "publicPath": "/static/fonts/MathJax_Main-Regular.woff"
+    },
+    "fonts/MathJax_Math-BoldItalic.woff": {
+      "name": "fonts/MathJax_Math-BoldItalic.woff",
+      "path": "/var/lib/jenkins/workspace/DWAPPS/pypi-upload/static/fonts/MathJax_Math-BoldItalic.woff",
+      "publicPath": "/static/fonts/MathJax_Math-BoldItalic.woff"
+    },
+    "fonts/MathJax_Math-Italic.woff": {
+      "name": "fonts/MathJax_Math-Italic.woff",
+      "path": "/var/lib/jenkins/workspace/DWAPPS/pypi-upload/static/fonts/MathJax_Math-Italic.woff",
+      "publicPath": "/static/fonts/MathJax_Math-Italic.woff"
+    },
+    "fonts/MathJax_Math-Regular.woff": {
+      "name": "fonts/MathJax_Math-Regular.woff",
+      "path": "/var/lib/jenkins/workspace/DWAPPS/pypi-upload/static/fonts/MathJax_Math-Regular.woff",
+      "publicPath": "/static/fonts/MathJax_Math-Regular.woff"
+    },
+    "fonts/MathJax_SansSerif-Bold.woff": {
+      "name": "fonts/MathJax_SansSerif-Bold.woff",
+      "path": "/var/lib/jenkins/workspace/DWAPPS/pypi-upload/static/fonts/MathJax_SansSerif-Bold.woff",
+      "publicPath": "/static/fonts/MathJax_SansSerif-Bold.woff"
+    },
+    "fonts/MathJax_SansSerif-Italic.woff": {
+      "name": "fonts/MathJax_SansSerif-Italic.woff",
+      "path": "/var/lib/jenkins/workspace/DWAPPS/pypi-upload/static/fonts/MathJax_SansSerif-Italic.woff",
+      "publicPath": "/static/fonts/MathJax_SansSerif-Italic.woff"
+    },
+    "fonts/MathJax_SansSerif-Regular.woff": {
+      "name": "fonts/MathJax_SansSerif-Regular.woff",
+      "path": "/var/lib/jenkins/workspace/DWAPPS/pypi-upload/static/fonts/MathJax_SansSerif-Regular.woff",
+      "publicPath": "/static/fonts/MathJax_SansSerif-Regular.woff"
+    },
+    "fonts/MathJax_Script-Regular.woff": {
+      "name": "fonts/MathJax_Script-Regular.woff",
+      "path": "/var/lib/jenkins/workspace/DWAPPS/pypi-upload/static/fonts/MathJax_Script-Regular.woff",
+      "publicPath": "/static/fonts/MathJax_Script-Regular.woff"
+    },
+    "fonts/MathJax_Size1-Regular.woff": {
+      "name": "fonts/MathJax_Size1-Regular.woff",
+      "path": "/var/lib/jenkins/workspace/DWAPPS/pypi-upload/static/fonts/MathJax_Size1-Regular.woff",
+      "publicPath": "/static/fonts/MathJax_Size1-Regular.woff"
+    },
+    "fonts/MathJax_Size2-Regular.woff": {
+      "name": "fonts/MathJax_Size2-Regular.woff",
+      "path": "/var/lib/jenkins/workspace/DWAPPS/pypi-upload/static/fonts/MathJax_Size2-Regular.woff",
+      "publicPath": "/static/fonts/MathJax_Size2-Regular.woff"
+    },
+    "fonts/MathJax_Size3-Regular.woff": {
+      "name": "fonts/MathJax_Size3-Regular.woff",
+      "path": "/var/lib/jenkins/workspace/DWAPPS/pypi-upload/static/fonts/MathJax_Size3-Regular.woff",
+      "publicPath": "/static/fonts/MathJax_Size3-Regular.woff"
+    },
+    "fonts/MathJax_Size4-Regular.woff": {
+      "name": "fonts/MathJax_Size4-Regular.woff",
+      "path": "/var/lib/jenkins/workspace/DWAPPS/pypi-upload/static/fonts/MathJax_Size4-Regular.woff",
+      "publicPath": "/static/fonts/MathJax_Size4-Regular.woff"
+    },
+    "fonts/MathJax_Typewriter-Regular.woff": {
+      "name": "fonts/MathJax_Typewriter-Regular.woff",
+      "path": "/var/lib/jenkins/workspace/DWAPPS/pypi-upload/static/fonts/MathJax_Typewriter-Regular.woff",
+      "publicPath": "/static/fonts/MathJax_Typewriter-Regular.woff"
+    },
+    "fonts/MathJax_Vector-Bold.woff": {
+      "name": "fonts/MathJax_Vector-Bold.woff",
+      "path": "/var/lib/jenkins/workspace/DWAPPS/pypi-upload/static/fonts/MathJax_Vector-Bold.woff",
+      "publicPath": "/static/fonts/MathJax_Vector-Bold.woff"
+    },
+    "fonts/MathJax_Vector-Regular.woff": {
+      "name": "fonts/MathJax_Vector-Regular.woff",
+      "path": "/var/lib/jenkins/workspace/DWAPPS/pypi-upload/static/fonts/MathJax_Vector-Regular.woff",
+      "publicPath": "/static/fonts/MathJax_Vector-Regular.woff"
+    },
+    "fonts/MathJax_Zero.woff": {
+      "name": "fonts/MathJax_Zero.woff",
+      "path": "/var/lib/jenkins/workspace/DWAPPS/pypi-upload/static/fonts/MathJax_Zero.woff",
+      "publicPath": "/static/fonts/MathJax_Zero.woff"
+    },
+    "img/thirdParty/chosen-sprite.png": {
+      "name": "img/thirdParty/chosen-sprite.png",
+      "path": "/var/lib/jenkins/workspace/DWAPPS/pypi-upload/static/img/thirdParty/chosen-sprite.png",
+      "publicPath": "/static/img/thirdParty/chosen-sprite.png"
+    },
+    "img/thirdParty/chosen-sprite@2x.png": {
+      "name": "img/thirdParty/chosen-sprite@2x.png",
+      "path": "/var/lib/jenkins/workspace/DWAPPS/pypi-upload/static/img/thirdParty/chosen-sprite@2x.png",
+      "publicPath": "/static/img/thirdParty/chosen-sprite@2x.png"
+    },
+    "js/add_forge_now.182ea72ba873a921558b.js": {
+      "name": "js/add_forge_now.182ea72ba873a921558b.js",
+      "path": "/var/lib/jenkins/workspace/DWAPPS/pypi-upload/static/js/add_forge_now.182ea72ba873a921558b.js",
+      "publicPath": "/static/js/add_forge_now.182ea72ba873a921558b.js"
+    },
+    "js/add_forge_now.182ea72ba873a921558b.js.LICENSE.txt": {
+      "name": "js/add_forge_now.182ea72ba873a921558b.js.LICENSE.txt",
+      "path": "/var/lib/jenkins/workspace/DWAPPS/pypi-upload/static/js/add_forge_now.182ea72ba873a921558b.js.LICENSE.txt",
+      "publicPath": "/static/js/add_forge_now.182ea72ba873a921558b.js.LICENSE.txt"
+    },
+    "js/add_forge_now.182ea72ba873a921558b.js.map": {
+      "name": "js/add_forge_now.182ea72ba873a921558b.js.map",
+      "path": "/var/lib/jenkins/workspace/DWAPPS/pypi-upload/static/js/add_forge_now.182ea72ba873a921558b.js.map",
+      "publicPath": "/static/js/add_forge_now.182ea72ba873a921558b.js.map"
+    },
+    "js/archive_coverage.45bd29b177f06b4bae74.js": {
+      "name": "js/archive_coverage.45bd29b177f06b4bae74.js",
+      "path": "/var/lib/jenkins/workspace/DWAPPS/pypi-upload/static/js/archive_coverage.45bd29b177f06b4bae74.js",
+      "publicPath": "/static/js/archive_coverage.45bd29b177f06b4bae74.js"
+    },
+    "js/archive_coverage.45bd29b177f06b4bae74.js.map": {
+      "name": "js/archive_coverage.45bd29b177f06b4bae74.js.map",
+      "path": "/var/lib/jenkins/workspace/DWAPPS/pypi-upload/static/js/archive_coverage.45bd29b177f06b4bae74.js.map",
+      "publicPath": "/static/js/archive_coverage.45bd29b177f06b4bae74.js.map"
+    },
+    "js/auth.86abf54e1ce193117adb.js": {
+      "name": "js/auth.86abf54e1ce193117adb.js",
+      "path": "/var/lib/jenkins/workspace/DWAPPS/pypi-upload/static/js/auth.86abf54e1ce193117adb.js",
+      "publicPath": "/static/js/auth.86abf54e1ce193117adb.js"
+    },
+    "js/auth.86abf54e1ce193117adb.js.LICENSE.txt": {
+      "name": "js/auth.86abf54e1ce193117adb.js.LICENSE.txt",
+      "path": "/var/lib/jenkins/workspace/DWAPPS/pypi-upload/static/js/auth.86abf54e1ce193117adb.js.LICENSE.txt",
+      "publicPath": "/static/js/auth.86abf54e1ce193117adb.js.LICENSE.txt"
+    },
+    "js/auth.86abf54e1ce193117adb.js.map": {
+      "name": "js/auth.86abf54e1ce193117adb.js.map",
+      "path": "/var/lib/jenkins/workspace/DWAPPS/pypi-upload/static/js/auth.86abf54e1ce193117adb.js.map",
+      "publicPath": "/static/js/auth.86abf54e1ce193117adb.js.map"
+    },
+    "js/badges.1d35a814a59a5ff86bdd.js": {
+      "name": "js/badges.1d35a814a59a5ff86bdd.js",
+      "path": "/var/lib/jenkins/workspace/DWAPPS/pypi-upload/static/js/badges.1d35a814a59a5ff86bdd.js",
+      "publicPath": "/static/js/badges.1d35a814a59a5ff86bdd.js"
+    },
+    "js/badges.1d35a814a59a5ff86bdd.js.map": {
+      "name": "js/badges.1d35a814a59a5ff86bdd.js.map",
+      "path": "/var/lib/jenkins/workspace/DWAPPS/pypi-upload/static/js/badges.1d35a814a59a5ff86bdd.js.map",
+      "publicPath": "/static/js/badges.1d35a814a59a5ff86bdd.js.map"
+    },
+    "js/browse.acaa2101c240f81f1c07.js": {
+      "name": "js/browse.acaa2101c240f81f1c07.js",
+      "path": "/var/lib/jenkins/workspace/DWAPPS/pypi-upload/static/js/browse.acaa2101c240f81f1c07.js",
+      "publicPath": "/static/js/browse.acaa2101c240f81f1c07.js"
+    },
+    "js/browse.acaa2101c240f81f1c07.js.LICENSE.txt": {
+      "name": "js/browse.acaa2101c240f81f1c07.js.LICENSE.txt",
+      "path": "/var/lib/jenkins/workspace/DWAPPS/pypi-upload/static/js/browse.acaa2101c240f81f1c07.js.LICENSE.txt",
+      "publicPath": "/static/js/browse.acaa2101c240f81f1c07.js.LICENSE.txt"
+    },
+    "js/browse.acaa2101c240f81f1c07.js.map": {
+      "name": "js/browse.acaa2101c240f81f1c07.js.map",
+      "path": "/var/lib/jenkins/workspace/DWAPPS/pypi-upload/static/js/browse.acaa2101c240f81f1c07.js.map",
+      "publicPath": "/static/js/browse.acaa2101c240f81f1c07.js.map"
+    },
+    "js/d3.3467ae5bb1417cd972dd.js": {
+      "name": "js/d3.3467ae5bb1417cd972dd.js",
+      "path": "/var/lib/jenkins/workspace/DWAPPS/pypi-upload/static/js/d3.3467ae5bb1417cd972dd.js",
+      "publicPath": "/static/js/d3.3467ae5bb1417cd972dd.js"
+    },
+    "js/d3.3467ae5bb1417cd972dd.js.map": {
+      "name": "js/d3.3467ae5bb1417cd972dd.js.map",
+      "path": "/var/lib/jenkins/workspace/DWAPPS/pypi-upload/static/js/d3.3467ae5bb1417cd972dd.js.map",
+      "publicPath": "/static/js/d3.3467ae5bb1417cd972dd.js.map"
+    },
+    "js/deposit.5b8cc46d9d7e21ed991c.js": {
+      "name": "js/deposit.5b8cc46d9d7e21ed991c.js",
+      "path": "/var/lib/jenkins/workspace/DWAPPS/pypi-upload/static/js/deposit.5b8cc46d9d7e21ed991c.js",
+      "publicPath": "/static/js/deposit.5b8cc46d9d7e21ed991c.js"
+    },
+    "js/deposit.5b8cc46d9d7e21ed991c.js.LICENSE.txt": {
+      "name": "js/deposit.5b8cc46d9d7e21ed991c.js.LICENSE.txt",
+      "path": "/var/lib/jenkins/workspace/DWAPPS/pypi-upload/static/js/deposit.5b8cc46d9d7e21ed991c.js.LICENSE.txt",
+      "publicPath": "/static/js/deposit.5b8cc46d9d7e21ed991c.js.LICENSE.txt"
+    },
+    "js/deposit.5b8cc46d9d7e21ed991c.js.map": {
+      "name": "js/deposit.5b8cc46d9d7e21ed991c.js.map",
+      "path": "/var/lib/jenkins/workspace/DWAPPS/pypi-upload/static/js/deposit.5b8cc46d9d7e21ed991c.js.map",
+      "publicPath": "/static/js/deposit.5b8cc46d9d7e21ed991c.js.map"
+    },
+    "js/guided_tour.33e192f692469d1a2123.js": {
+      "name": "js/guided_tour.33e192f692469d1a2123.js",
+      "path": "/var/lib/jenkins/workspace/DWAPPS/pypi-upload/static/js/guided_tour.33e192f692469d1a2123.js",
+      "publicPath": "/static/js/guided_tour.33e192f692469d1a2123.js"
+    },
+    "js/guided_tour.33e192f692469d1a2123.js.LICENSE.txt": {
+      "name": "js/guided_tour.33e192f692469d1a2123.js.LICENSE.txt",
+      "path": "/var/lib/jenkins/workspace/DWAPPS/pypi-upload/static/js/guided_tour.33e192f692469d1a2123.js.LICENSE.txt",
+      "publicPath": "/static/js/guided_tour.33e192f692469d1a2123.js.LICENSE.txt"
+    },
+    "js/guided_tour.33e192f692469d1a2123.js.map": {
+      "name": "js/guided_tour.33e192f692469d1a2123.js.map",
+      "path": "/var/lib/jenkins/workspace/DWAPPS/pypi-upload/static/js/guided_tour.33e192f692469d1a2123.js.map",
+      "publicPath": "/static/js/guided_tour.33e192f692469d1a2123.js.map"
+    },
+    "js/highlightjs.c1f78595e069e915b839.js": {
+      "name": "js/highlightjs.c1f78595e069e915b839.js",
+      "path": "/var/lib/jenkins/workspace/DWAPPS/pypi-upload/static/js/highlightjs.c1f78595e069e915b839.js",
+      "publicPath": "/static/js/highlightjs.c1f78595e069e915b839.js"
+    },
+    "js/highlightjs.c1f78595e069e915b839.js.LICENSE.txt": {
+      "name": "js/highlightjs.c1f78595e069e915b839.js.LICENSE.txt",
+      "path": "/var/lib/jenkins/workspace/DWAPPS/pypi-upload/static/js/highlightjs.c1f78595e069e915b839.js.LICENSE.txt",
+      "publicPath": "/static/js/highlightjs.c1f78595e069e915b839.js.LICENSE.txt"
+    },
+    "js/highlightjs.c1f78595e069e915b839.js.map": {
+      "name": "js/highlightjs.c1f78595e069e915b839.js.map",
+      "path": "/var/lib/jenkins/workspace/DWAPPS/pypi-upload/static/js/highlightjs.c1f78595e069e915b839.js.map",
+      "publicPath": "/static/js/highlightjs.c1f78595e069e915b839.js.map"
+    },
+    "js/mailmap.b37cb629071b45c8c8d2.js": {
+      "name": "js/mailmap.b37cb629071b45c8c8d2.js",
+      "path": "/var/lib/jenkins/workspace/DWAPPS/pypi-upload/static/js/mailmap.b37cb629071b45c8c8d2.js",
+      "publicPath": "/static/js/mailmap.b37cb629071b45c8c8d2.js"
+    },
+    "js/mailmap.b37cb629071b45c8c8d2.js.LICENSE.txt": {
+      "name": "js/mailmap.b37cb629071b45c8c8d2.js.LICENSE.txt",
+      "path": "/var/lib/jenkins/workspace/DWAPPS/pypi-upload/static/js/mailmap.b37cb629071b45c8c8d2.js.LICENSE.txt",
+      "publicPath": "/static/js/mailmap.b37cb629071b45c8c8d2.js.LICENSE.txt"
+    },
+    "js/mailmap.b37cb629071b45c8c8d2.js.map": {
+      "name": "js/mailmap.b37cb629071b45c8c8d2.js.map",
+      "path": "/var/lib/jenkins/workspace/DWAPPS/pypi-upload/static/js/mailmap.b37cb629071b45c8c8d2.js.map",
+      "publicPath": "/static/js/mailmap.b37cb629071b45c8c8d2.js.map"
+    },
+    "js/mathjax.c879269d250effe5fd7d.js": {
+      "name": "js/mathjax.c879269d250effe5fd7d.js",
+      "path": "/var/lib/jenkins/workspace/DWAPPS/pypi-upload/static/js/mathjax.c879269d250effe5fd7d.js",
+      "publicPath": "/static/js/mathjax.c879269d250effe5fd7d.js"
+    },
+    "js/mathjax.c879269d250effe5fd7d.js.map": {
+      "name": "js/mathjax.c879269d250effe5fd7d.js.map",
+      "path": "/var/lib/jenkins/workspace/DWAPPS/pypi-upload/static/js/mathjax.c879269d250effe5fd7d.js.map",
+      "publicPath": "/static/js/mathjax.c879269d250effe5fd7d.js.map"
+    },
+    "js/org.e7b053adf5d0db8b0b83.js": {
+      "name": "js/org.e7b053adf5d0db8b0b83.js",
+      "path": "/var/lib/jenkins/workspace/DWAPPS/pypi-upload/static/js/org.e7b053adf5d0db8b0b83.js",
+      "publicPath": "/static/js/org.e7b053adf5d0db8b0b83.js"
+    },
+    "js/org.e7b053adf5d0db8b0b83.js.map": {
+      "name": "js/org.e7b053adf5d0db8b0b83.js.map",
+      "path": "/var/lib/jenkins/workspace/DWAPPS/pypi-upload/static/js/org.e7b053adf5d0db8b0b83.js.map",
+      "publicPath": "/static/js/org.e7b053adf5d0db8b0b83.js.map"
+    },
+    "js/origin_visits.1c8747c5f372c217969a.js": {
+      "name": "js/origin_visits.1c8747c5f372c217969a.js",
+      "path": "/var/lib/jenkins/workspace/DWAPPS/pypi-upload/static/js/origin_visits.1c8747c5f372c217969a.js",
+      "publicPath": "/static/js/origin_visits.1c8747c5f372c217969a.js"
+    },
+    "js/origin_visits.1c8747c5f372c217969a.js.LICENSE.txt": {
+      "name": "js/origin_visits.1c8747c5f372c217969a.js.LICENSE.txt",
+      "path": "/var/lib/jenkins/workspace/DWAPPS/pypi-upload/static/js/origin_visits.1c8747c5f372c217969a.js.LICENSE.txt",
+      "publicPath": "/static/js/origin_visits.1c8747c5f372c217969a.js.LICENSE.txt"
+    },
+    "js/origin_visits.1c8747c5f372c217969a.js.map": {
+      "name": "js/origin_visits.1c8747c5f372c217969a.js.map",
+      "path": "/var/lib/jenkins/workspace/DWAPPS/pypi-upload/static/js/origin_visits.1c8747c5f372c217969a.js.map",
+      "publicPath": "/static/js/origin_visits.1c8747c5f372c217969a.js.map"
+    },
+    "js/pdf.worker.min.js": {
+      "name": "js/pdf.worker.min.js",
+      "path": "/var/lib/jenkins/workspace/DWAPPS/pypi-upload/static/js/pdf.worker.min.js",
+      "publicPath": "/static/js/pdf.worker.min.js"
+    },
+    "js/pdf.worker.min.js.LICENSE.txt": {
+      "name": "js/pdf.worker.min.js.LICENSE.txt",
+      "path": "/var/lib/jenkins/workspace/DWAPPS/pypi-upload/static/js/pdf.worker.min.js.LICENSE.txt",
+      "publicPath": "/static/js/pdf.worker.min.js.LICENSE.txt"
+    },
+    "js/pdfjs.3128b23d10b20103cbfe.js": {
+      "name": "js/pdfjs.3128b23d10b20103cbfe.js",
+      "path": "/var/lib/jenkins/workspace/DWAPPS/pypi-upload/static/js/pdfjs.3128b23d10b20103cbfe.js",
+      "publicPath": "/static/js/pdfjs.3128b23d10b20103cbfe.js"
+    },
+    "js/pdfjs.3128b23d10b20103cbfe.js.map": {
+      "name": "js/pdfjs.3128b23d10b20103cbfe.js.map",
+      "path": "/var/lib/jenkins/workspace/DWAPPS/pypi-upload/static/js/pdfjs.3128b23d10b20103cbfe.js.map",
+      "publicPath": "/static/js/pdfjs.3128b23d10b20103cbfe.js.map"
+    },
+    "js/revision.b952ba1daec46c76397e.js": {
+      "name": "js/revision.b952ba1daec46c76397e.js",
+      "path": "/var/lib/jenkins/workspace/DWAPPS/pypi-upload/static/js/revision.b952ba1daec46c76397e.js",
+      "publicPath": "/static/js/revision.b952ba1daec46c76397e.js"
+    },
+    "js/revision.b952ba1daec46c76397e.js.LICENSE.txt": {
+      "name": "js/revision.b952ba1daec46c76397e.js.LICENSE.txt",
+      "path": "/var/lib/jenkins/workspace/DWAPPS/pypi-upload/static/js/revision.b952ba1daec46c76397e.js.LICENSE.txt",
+      "publicPath": "/static/js/revision.b952ba1daec46c76397e.js.LICENSE.txt"
+    },
+    "js/revision.b952ba1daec46c76397e.js.map": {
+      "name": "js/revision.b952ba1daec46c76397e.js.map",
+      "path": "/var/lib/jenkins/workspace/DWAPPS/pypi-upload/static/js/revision.b952ba1daec46c76397e.js.map",
+      "publicPath": "/static/js/revision.b952ba1daec46c76397e.js.map"
+    },
+    "js/save_code_now.6bd0cf9fbd6c3ea6438e.js": {
+      "name": "js/save_code_now.6bd0cf9fbd6c3ea6438e.js",
+      "path": "/var/lib/jenkins/workspace/DWAPPS/pypi-upload/static/js/save_code_now.6bd0cf9fbd6c3ea6438e.js",
+      "publicPath": "/static/js/save_code_now.6bd0cf9fbd6c3ea6438e.js"
+    },
+    "js/save_code_now.6bd0cf9fbd6c3ea6438e.js.LICENSE.txt": {
+      "name": "js/save_code_now.6bd0cf9fbd6c3ea6438e.js.LICENSE.txt",
+      "path": "/var/lib/jenkins/workspace/DWAPPS/pypi-upload/static/js/save_code_now.6bd0cf9fbd6c3ea6438e.js.LICENSE.txt",
+      "publicPath": "/static/js/save_code_now.6bd0cf9fbd6c3ea6438e.js.LICENSE.txt"
+    },
+    "js/save_code_now.6bd0cf9fbd6c3ea6438e.js.map": {
+      "name": "js/save_code_now.6bd0cf9fbd6c3ea6438e.js.map",
+      "path": "/var/lib/jenkins/workspace/DWAPPS/pypi-upload/static/js/save_code_now.6bd0cf9fbd6c3ea6438e.js.map",
+      "publicPath": "/static/js/save_code_now.6bd0cf9fbd6c3ea6438e.js.map"
+    },
+    "js/showdown.34bb55074cd770113d99.js": {
+      "name": "js/showdown.34bb55074cd770113d99.js",
+      "path": "/var/lib/jenkins/workspace/DWAPPS/pypi-upload/static/js/showdown.34bb55074cd770113d99.js",
+      "publicPath": "/static/js/showdown.34bb55074cd770113d99.js"
+    },
+    "js/showdown.34bb55074cd770113d99.js.LICENSE.txt": {
+      "name": "js/showdown.34bb55074cd770113d99.js.LICENSE.txt",
+      "path": "/var/lib/jenkins/workspace/DWAPPS/pypi-upload/static/js/showdown.34bb55074cd770113d99.js.LICENSE.txt",
+      "publicPath": "/static/js/showdown.34bb55074cd770113d99.js.LICENSE.txt"
+    },
+    "js/showdown.34bb55074cd770113d99.js.map": {
+      "name": "js/showdown.34bb55074cd770113d99.js.map",
+      "path": "/var/lib/jenkins/workspace/DWAPPS/pypi-upload/static/js/showdown.34bb55074cd770113d99.js.map",
+      "publicPath": "/static/js/showdown.34bb55074cd770113d99.js.map"
+    },
+    "js/vault.29ed59ac84f77e8a0e1c.js": {
+      "name": "js/vault.29ed59ac84f77e8a0e1c.js",
+      "path": "/var/lib/jenkins/workspace/DWAPPS/pypi-upload/static/js/vault.29ed59ac84f77e8a0e1c.js",
+      "publicPath": "/static/js/vault.29ed59ac84f77e8a0e1c.js"
+    },
+    "js/vault.29ed59ac84f77e8a0e1c.js.LICENSE.txt": {
+      "name": "js/vault.29ed59ac84f77e8a0e1c.js.LICENSE.txt",
+      "path": "/var/lib/jenkins/workspace/DWAPPS/pypi-upload/static/js/vault.29ed59ac84f77e8a0e1c.js.LICENSE.txt",
+      "publicPath": "/static/js/vault.29ed59ac84f77e8a0e1c.js.LICENSE.txt"
+    },
+    "js/vault.29ed59ac84f77e8a0e1c.js.map": {
+      "name": "js/vault.29ed59ac84f77e8a0e1c.js.map",
+      "path": "/var/lib/jenkins/workspace/DWAPPS/pypi-upload/static/js/vault.29ed59ac84f77e8a0e1c.js.map",
+      "publicPath": "/static/js/vault.29ed59ac84f77e8a0e1c.js.map"
+    },
+    "js/vendors.f0af5c2b388c192ff3d8.js": {
+      "name": "js/vendors.f0af5c2b388c192ff3d8.js",
+      "path": "/var/lib/jenkins/workspace/DWAPPS/pypi-upload/static/js/vendors.f0af5c2b388c192ff3d8.js",
+      "publicPath": "/static/js/vendors.f0af5c2b388c192ff3d8.js"
+    },
+    "js/vendors.f0af5c2b388c192ff3d8.js.LICENSE.txt": {
+      "name": "js/vendors.f0af5c2b388c192ff3d8.js.LICENSE.txt",
+      "path": "/var/lib/jenkins/workspace/DWAPPS/pypi-upload/static/js/vendors.f0af5c2b388c192ff3d8.js.LICENSE.txt",
+      "publicPath": "/static/js/vendors.f0af5c2b388c192ff3d8.js.LICENSE.txt"
+    },
+    "js/vendors.f0af5c2b388c192ff3d8.js.map": {
+      "name": "js/vendors.f0af5c2b388c192ff3d8.js.map",
+      "path": "/var/lib/jenkins/workspace/DWAPPS/pypi-upload/static/js/vendors.f0af5c2b388c192ff3d8.js.map",
+      "publicPath": "/static/js/vendors.f0af5c2b388c192ff3d8.js.map"
+    },
+    "js/webapp.c270a458ab84137454de.js": {
+      "name": "js/webapp.c270a458ab84137454de.js",
+      "path": "/var/lib/jenkins/workspace/DWAPPS/pypi-upload/static/js/webapp.c270a458ab84137454de.js",
+      "publicPath": "/static/js/webapp.c270a458ab84137454de.js"
+    },
+    "js/webapp.c270a458ab84137454de.js.LICENSE.txt": {
+      "name": "js/webapp.c270a458ab84137454de.js.LICENSE.txt",
+      "path": "/var/lib/jenkins/workspace/DWAPPS/pypi-upload/static/js/webapp.c270a458ab84137454de.js.LICENSE.txt",
+      "publicPath": "/static/js/webapp.c270a458ab84137454de.js.LICENSE.txt"
+    },
+    "js/webapp.c270a458ab84137454de.js.map": {
+      "name": "js/webapp.c270a458ab84137454de.js.map",
+      "path": "/var/lib/jenkins/workspace/DWAPPS/pypi-upload/static/js/webapp.c270a458ab84137454de.js.map",
+      "publicPath": "/static/js/webapp.c270a458ab84137454de.js.map"
+    },
+    "robots.txt": {
+      "name": "robots.txt",
+      "path": "/var/lib/jenkins/workspace/DWAPPS/pypi-upload/static/robots.txt",
+      "publicPath": "/static/robots.txt"
+    }
+  },
+  "chunks": {
+    "add_forge_now": [
+      "css/add_forge_now.4f93c9769bc36a247915.css",
+      "js/add_forge_now.182ea72ba873a921558b.js"
+    ],
+    "archive_coverage": [
+      "css/archive_coverage.243fd0a38715dd7ff3e5.css",
+      "js/archive_coverage.45bd29b177f06b4bae74.js"
+    ],
+    "auth": [
+      "css/auth.0336a94c2c02b4b2a4f4.css",
+      "js/auth.86abf54e1ce193117adb.js"
+    ],
+    "badges": [
+      "css/badges.03c8b295a163a9306210.css",
+      "js/badges.1d35a814a59a5ff86bdd.js"
+    ],
+    "browse": [
+      "css/browse.82281790c77923f2d668.css",
+      "js/browse.acaa2101c240f81f1c07.js"
+    ],
+    "deposit": [
+      "js/deposit.5b8cc46d9d7e21ed991c.js"
+    ],
+    "guided_tour": [
+      "css/guided_tour.8d6763afe7f5c8cd3980.css",
+      "js/guided_tour.33e192f692469d1a2123.js"
+    ],
+    "mailmap": [
+      "js/mailmap.b37cb629071b45c8c8d2.js"
+    ],
+    "origin_visits": [
+      "css/origin_visits.e12aba5ba702b58cd3ca.css",
+      "js/origin_visits.1c8747c5f372c217969a.js"
+    ],
+    "revision": [
+      "css/revision.5ddd36d69e1760bfa29d.css",
+      "js/revision.b952ba1daec46c76397e.js"
+    ],
+    "save_code_now": [
+      "js/save_code_now.6bd0cf9fbd6c3ea6438e.js"
+    ],
+    "vault": [
+      "css/vault.25fc5883f848b48ffa5b.css",
+      "js/vault.29ed59ac84f77e8a0e1c.js"
+    ],
+    "vendors": [
+      "css/vendors.fc445ce331acf875e1d8.css",
+      "js/vendors.f0af5c2b388c192ff3d8.js"
+    ],
+    "webapp": [
+      "css/webapp.90f1e9c9eae92d786d55.css",
+      "js/webapp.c270a458ab84137454de.js"
+    ]
+  },
+  "publicPath": "/static/"
+}
