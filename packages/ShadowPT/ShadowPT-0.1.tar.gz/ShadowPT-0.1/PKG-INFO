@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: ShadowPT
+Version: 0.1
+Summary: Modulo que anonimiza textos portugueses com nomes portugueses
+Author-email: gcf <pg50398@alunos.uminho.pt>, hjfa <pg50414@alunos.uminho.pt>
+Description-Content-Type: text/markdown
+Classifier: License :: OSI Approved :: MIT License
+Requires-Dist: requests
+Requires-Dist: bs4
+Requires-Dist: argparse
+Requires-Dist: spacy
+Project-URL: Home, https://github.com/Miyagi61/SPLN-TP2
+
+# SPLN-TP2
