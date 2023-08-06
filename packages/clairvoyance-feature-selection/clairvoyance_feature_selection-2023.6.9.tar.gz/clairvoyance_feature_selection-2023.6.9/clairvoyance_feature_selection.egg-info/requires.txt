@@ -1,0 +1,9 @@
+pandas>=1.2.4
+numpy>=1.13
+xarray>=0.10.3
+matplotlib>=2
+seaborn>=0.10.1
+scipy>=1.0
+scikit-learn>=1.0
+soothsayer_utils>=2022.6.24
+tqdm>=4.19
