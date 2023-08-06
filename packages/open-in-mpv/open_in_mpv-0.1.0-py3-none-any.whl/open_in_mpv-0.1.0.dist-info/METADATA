@@ -1,0 +1,68 @@
+Metadata-Version: 2.1
+Name: open-in-mpv
+Version: 0.1.0
+Summary: Host-side of the extension to open any link or page URL in mpv via the browser context menu.
+License: MIT
+Author: Andrew Udvare
+Author-email: audvare@gmail.com
+Requires-Python: >=3.10,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: click (>=8.1.3,<9.0.0)
+Requires-Dist: loguru (>=0.7.0,<0.8.0)
+Requires-Dist: psutil (>=5.9.5,<6.0.0)
+Requires-Dist: pyxdg (>=0.28,<0.29)
+Requires-Dist: requests (>=2.31.0,<3.0.0)
+Requires-Dist: whichcraft (>=0.6.1,<0.7.0)
+Description-Content-Type: text/markdown
+
+# Open in mpv
+
+[![QA](https://github.com/Tatsh/open-in-mpv/workflows/QA/badge.svg)](https://github.com/Tatsh/open-in-mpv/actions?query=workflow%3AQA)
+[![Lint Python](https://github.com/Tatsh/open-in-mpv/workflows/Lint%20python/badge.svg)](https://github.com/Tatsh/open-in-mpv/actions?query=workflow%3A%22Lint+python%22)
+
+![Context menu item](context-item.png)
+
+This browser extension displays a context menu item _Open in mpv_ for links.
+When clicked it will pass the URL of the link to mpv (which must be `PATH`).
+
+If you have `youtube-dl` installed and in `PATH`, then mpv will try to use it
+to resolve URLs it cannot handle. This means you can right-click on any YouTube
+video page or link, choose `Open in mpv` and view the video with mpv.
+
+## Installation
+
+First, [install the extension](https://chrome.google.com/webstore/detail/open-in-mpv/ggijpepdpiehgbiknmfpfbhcalffjlbj/). Quit your browser.
+
+Follow [Google's instructions](https://developer.chrome.com/extensions/nativeMessaging#native-messaging-host-location)
+to install the `sh.tat.open_in_mpv.json.in` file (remove the `.in` ending). You
+need to modify it, changing `@BINPATH@` to fit your system.
+
+An example script `open-in-mpv` is provided but you do not have to use it.
+
+## An example installation for Linux
+
+<!-- cspell: disable -->
+
+```sh
+killall chrome
+sudo mkdir -p /etc/chromium/native-messaging-hosts/
+sudo cp sh.tat.open_in_mpv.json.in /etc/chromium/native-messaging-hosts/sh.tat.open_in_mpv.json
+mkdir -p ~/.local/bin
+cp open-in-mpv ~/.local/bin/
+```
+
+<!-- cspell: enable -->
+
+For this case, `@BINPATH@` should be `/home/username/.local/bin` in
+`/etc/chromium/native-messaging-hosts/sh.tat.open_in_mpv.json`. `~/.local/bin`
+must be in PATH, including from X's point of view, usually sourced in via
+`~/.xprofile` or similar.
+
+## Known issues
+
+At this time, Windows is not supported by the `open-in-mpv` Python script. It
+may work, but it is not supported.
+

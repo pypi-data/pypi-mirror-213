@@ -1,0 +1,6 @@
+[console_scripts]
+open-in-mpv=open_in_mpv:open_in_mpv
+open-in-mpv-install=open_in_mpv:install
+open-in-mpv-test=open_in_mpv:test_open
+open-in-mpv-uninstall=open_in_mpv:uninstall
+
