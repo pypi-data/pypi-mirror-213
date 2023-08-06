@@ -1,0 +1,53 @@
+Metadata-Version: 2.1
+Name: berhoelodf
+Version: 0.2.5
+Summary: Lightweight and limited access to odf files using lxml.
+Home-page: https://python.xn--hllmanns-n4a.de/berhoelODF/
+License: MIT
+Author: Berthold Höllmann
+Author-email: berthold-gitlab@xn--hllmanns-n4a.de
+Requires-Python: >=3.8,<4.0
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Topic :: Utilities
+Requires-Dist: lxml
+Project-URL: Documentation, https://www.xn--hllmanns-n4a.de/python/berhoelODF/
+Project-URL: Repository, https://gitlab.com/berhoel/python/berhoelodf.git
+Description-Content-Type: text/x-rst
+
+``berhoelODF``
+==============
+
+Lightweight and limited access to odf files using lxml.
+
+It is just used by me for a limited project of converting a
+spreadsheet to ``Django`` data. For me this package works much faster
+than ``odfpy``. Just loading my 5.7MB ods file took 1.5 minutes. This
+package is based on ``lxml``, and ``lxml`` parses the XML in 2
+seconds, the whole processing to ``Django`` takes about 1.5 minutes.
+
+If you have other requirements, the code should be easily extensible.
+
+Installation
+------------
+
+``pip install berhoelodf``
+
+Availability
+~~~~~~~~~~~~
+
+The latest version should be available at my `GitLab
+<https://gitlab.com/berhoel/python/berhoelODF.git>`_ repository, the
+package is avaliable at `pypi <https://pypi.org/project/berhoelODF/>`_
+via ``pip install berhoelodf``.
+
+Documentation
+~~~~~~~~~~~~~
+
+Documentation is hosted on `höllmanns.de <https://www.höllmanns.de/python/berhoelODF/>`_.
+
