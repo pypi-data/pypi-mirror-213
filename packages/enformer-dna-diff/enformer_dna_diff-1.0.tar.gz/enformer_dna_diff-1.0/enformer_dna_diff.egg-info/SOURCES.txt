@@ -1,0 +1,15 @@
+LICENSE
+README.md
+get_data.py
+setup.py
+enformer_dna_diff/__init__.py
+enformer_dna_diff/enformer.py
+enformer_dna_diff/enformerops.py
+enformer_dna_diff/main_script.py
+enformer_dna_diff/real_main_script.py
+enformer_dna_diff/utils.py
+enformer_dna_diff.egg-info/PKG-INFO
+enformer_dna_diff.egg-info/SOURCES.txt
+enformer_dna_diff.egg-info/dependency_links.txt
+enformer_dna_diff.egg-info/requires.txt
+enformer_dna_diff.egg-info/top_level.txt

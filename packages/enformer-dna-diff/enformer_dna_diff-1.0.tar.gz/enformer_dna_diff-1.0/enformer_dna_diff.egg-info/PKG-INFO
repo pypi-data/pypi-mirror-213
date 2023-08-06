@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: enformer-dna-diff
+Version: 1.0
+Summary: This is a package for that combines DeepMind Enformer model with DNA Diffusion project
+Home-page: https://github.com/ttunja/Enformer_DNA_Diffusion.git
+Author: Tin M. Tunjic
+Author-email: tunjictin@gmail.com
+License-File: LICENSE
