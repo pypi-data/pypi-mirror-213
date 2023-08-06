@@ -1,0 +1,14 @@
+refractio/__init__.py,sha256=L_9A0kjN48El4X9p40k8J8dKSoWaZo56kugM_Gird_4,376
+refractio/amazons3.py,sha256=HQckdGIBcZbI71KZLdtLbQ_WxfkCqhHRW3QXjycZCFM,3742
+refractio/azure.py,sha256=EBJOo37HilWZ0GQzLwdqZoaooOH4XWDTdDnksYyyq4w,3611
+refractio/hive.py,sha256=orLgBRpb7l2Z35668qMRh3DmAwevydySRHleJERtUuY,7652
+refractio/manager.py,sha256=dCF02ePhHUhVQga-6bezPbRPAD1lAZ89Bzc9UPh_k7E,4151
+refractio/mysql.py,sha256=nx6ZSM_2DgxGdkJpUcAeLoYt44Ke7pCHt6CFfboNRgw,4488
+refractio/refractio.py,sha256=rOgsO6YITTW-JvlZ4-oabXyJj00FLXXc8-f-GSuSaxc,15148
+refractio/sftp.py,sha256=C-5zhPzq25dNBxpG_DJVA79cwC4DGyqlzhDSfOfJ928,4290
+refractio/snowflake.py,sha256=DN39r9-l6xm2vTWIY_CpLoOLhq4ECAp-IgWGP7U-5sI,5416
+refractio/sqlserver.py,sha256=1Ws1lcjdlw1TRoUALn-evW1W1aeKZL6wwzVq6Dp5M-o,6223
+refractio-2.0.5.1.dist-info/METADATA,sha256=vLb7YofQhb8m_FJ6-K_q6NxsZ4m1kratQORouBB71SU,10247
+refractio-2.0.5.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+refractio-2.0.5.1.dist-info/top_level.txt,sha256=QhLTkMuqwLqmS-ICfxXOoA1dCEbSKPcJm7YEPD9C8YQ,10
+refractio-2.0.5.1.dist-info/RECORD,,
