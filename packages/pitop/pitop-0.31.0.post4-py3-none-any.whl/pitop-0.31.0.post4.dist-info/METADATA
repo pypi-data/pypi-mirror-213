@@ -1,0 +1,86 @@
+Metadata-Version: 2.1
+Name: pitop
+Version: 0.31.0.post4
+Summary: pi-top Python SDK.
+Home-page: https://github.com/pi-top/pi-top-Python-SDK
+Author: pi-top
+Author-email: deb-maintainers@pi-top.com
+License: Apache Software License
+Keywords: pi-top,raspberrypi,gpio
+Platform: ALL
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Education
+Classifier: Topic :: System :: Hardware
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Dist: pitop.battery (==0.31.0-4)
+Requires-Dist: pitop.camera (==0.31.0-4)
+Requires-Dist: pitop.common (==0.31.0-4)
+Requires-Dist: pitop.core (==0.31.0-4)
+Requires-Dist: pitop.display (==0.31.0-4)
+Requires-Dist: pitop.keyboard (==0.31.0-4)
+Requires-Dist: pitop.miniscreen (==0.31.0-4)
+Requires-Dist: pitop.pma (==0.31.0-4)
+Requires-Dist: pitop.processing (==0.31.0-4)
+Requires-Dist: pitop.robotics (==0.31.0-4)
+Requires-Dist: pitop.simulation (==0.31.0-4)
+Requires-Dist: pitop.system (==0.31.0-4)
+Requires-Dist: pitopcli (==0.31.0-4)
+Requires-Dist: gpiozero (<2.0.0,>=1.6.2)
+Requires-Dist: pyserial (<4.0,>=3.5)
+Requires-Dist: flask (<2.0.0,>=1.1.2)
+Requires-Dist: flask-cors (<4.0.0,>=3.0.9)
+Requires-Dist: flask-sockets (<1.0,>=0.2.1)
+Requires-Dist: gevent (<21.0.0,>=20.9.0)
+Requires-Dist: gevent-websocket (<1.0.0,>=0.10.1)
+Provides-Extra: computer_vision
+Requires-Dist: opencv ; extra == 'computer_vision'
+Provides-Extra: doc
+Requires-Dist: sphinx ; extra == 'doc'
+
+=================
+pi-top Python SDK
+=================
+
+This is the top-level package of the pi-top Python SDK. It collects all the packages from the SDK,
+alongside other modules such as :code:`labs`.
+
+.. ###############################################
+.. # NOTE: THESE ARE EXTERNAL LINKS, AS THEY ARE #
+.. # REQUIRED FOR THE IMAGES TO SHOW ON PYPI     #
+.. ###############################################
+
+Supports all pi-top devices:
+
+.. image:: https://github.com/pi-top/pi-top-Python-SDK/raw/master/docs/_static/overview/devices.jpg
+
+Supports pi-top Maker Architecture (PMA):
+
+.. image:: https://github.com/pi-top/pi-top-Python-SDK/raw/master/docs/_static/overview/pma.jpg
+
+Supports all pi-top peripherals:
+
+.. image:: https://github.com/pi-top/pi-top-Python-SDK/raw/master/docs/_static/overview/peripherals.jpg
+
+-------
+Details
+-------
+
+More information about this and other packages of the SDK can be found in its GitHub repository_.
+
+.. _repository: https://github.com/pi-top/pi-top-Python-SDK
+
+-------------
+Documentation
+-------------
+
+Comprehensive documentation is available here_.
+
+.. _here: https://docs.pi-top.com/python-sdk/
+
+
