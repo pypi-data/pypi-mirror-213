@@ -1,0 +1,6 @@
+[console_scripts]
+lab = lab_partner_utils.cli_command_factory:cli
+launch-kernel = lab_partner_utils.kernel_launcher:launch
+
+[lab_partner.cli_workspace_only_plugins]
+lab-partner-utils = workspace_commands:cmd
