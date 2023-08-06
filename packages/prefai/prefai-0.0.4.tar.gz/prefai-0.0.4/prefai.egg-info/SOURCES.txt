@@ -1,0 +1,10 @@
+LICENSE.txt
+README.md
+setup.py
+prefai/__init__.py
+prefai/client.py
+prefai.egg-info/PKG-INFO
+prefai.egg-info/SOURCES.txt
+prefai.egg-info/dependency_links.txt
+prefai.egg-info/top_level.txt
+tests/test_client.py
