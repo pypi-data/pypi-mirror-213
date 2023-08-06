@@ -1,0 +1,15 @@
+README.md
+setup.py
+dsm_django_masterdata/__init__.py
+dsm_django_masterdata/apps.py
+dsm_django_masterdata/tests.py
+dsm_django_masterdata.egg-info/PKG-INFO
+dsm_django_masterdata.egg-info/SOURCES.txt
+dsm_django_masterdata.egg-info/dependency_links.txt
+dsm_django_masterdata.egg-info/requires.txt
+dsm_django_masterdata.egg-info/top_level.txt
+dsm_django_masterdata/hscode/__init__.py
+dsm_django_masterdata/hscode/admin.py
+dsm_django_masterdata/hscode/models.py
+dsm_django_masterdata/hscode/migrations/0001_initial.py
+dsm_django_masterdata/hscode/migrations/__init__.py
