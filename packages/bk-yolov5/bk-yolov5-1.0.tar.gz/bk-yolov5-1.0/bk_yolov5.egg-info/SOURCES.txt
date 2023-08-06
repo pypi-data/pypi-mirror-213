@@ -1,0 +1,13 @@
+setup.py
+bk_yolov5.egg-info/PKG-INFO
+bk_yolov5.egg-info/SOURCES.txt
+bk_yolov5.egg-info/dependency_links.txt
+bk_yolov5.egg-info/top_level.txt
+yolov5-5/detect.py
+yolov5-5/detectCopy.py
+yolov5-5/django.py
+yolov5-5/hubconf.py
+yolov5-5/sh_video.py
+yolov5-5/test.py
+yolov5-5/train.py
+yolov5-5/train2.py
