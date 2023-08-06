@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: netspresso
+Version: 0.1.7
+Summary: NetsPresso Python Package
+Home-page: https://github.com/Nota-NetsPresso/netspresso-python
+Author: NetsPresso
+Author-email: bmlee@nota.ai
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: loguru (==0.7.0)
+Requires-Dist: urllib3 (==2.0.2)
+Requires-Dist: PyJWT (==2.7.0)
+Requires-Dist: pydantic (==1.10.4)
+Requires-Dist: requests (==2.30.0)
+Requires-Dist: email-validator (==2.0.0)
+Requires-Dist: pytz (==2023.3)
+Requires-Dist: typing-extensions (==4.5.0)
+
+# NetsPresso Python Package
