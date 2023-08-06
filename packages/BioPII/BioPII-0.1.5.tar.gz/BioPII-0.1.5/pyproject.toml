@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.poetry]
+name = "BioPII"
+version = "0.1.5"
+authors = ["Seth Ockerman <ockermas@mail.gvsu.edu>"]
+description = "BioPII (Biology Parallel Integral Image) is a Python package for performing sliding window analysis (SWA) on biological images."
+homepage = "https://github.com/OckermanSethGVSU/BioPII"
+keywords = ["Biology", "Integral Image", "Sliding Window", "HPC"]
+
+[tool.poetry.dependencies]
+python = "^3.6"
+numpy = "*"
+opencv-python = "*"
+
+[tool.poetry.extras]
+GPU-Support = ["cupy"]
+
