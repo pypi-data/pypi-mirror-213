@@ -1,0 +1,7 @@
+LICENCE
+README.md
+setup.py
+Nidhipdf.egg-info/PKG-INFO
+Nidhipdf.egg-info/SOURCES.txt
+Nidhipdf.egg-info/dependency_links.txt
+Nidhipdf.egg-info/top_level.txt
