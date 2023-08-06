@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: pyB12SPS
+Version: 0.1.1
+Summary: A Python Package for Interfacing with the Bridge12 Shim Power Supply
+Home-page: http://www.bridge12.com/
+Author: Bridge12 Technologies, Inc
+Author-email: yhuang@bridge12.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+Requires-Dist: numpy
+Requires-Dist: pyserial
+Requires-Dist: PyQt5
+
+# pyB12SPS
+pyB12SPS is a python package for interfacing with Bridge12 Shim Power Supply.

@@ -1,0 +1,2 @@
+[console_scripts]
+pyB12SPSGUI = pyB12SPS.pyB12SPSGUI:main_func
