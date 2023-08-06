@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: PowDeRUL
+Version: 1.0.22
+Home-page: https://github.com/PGarn/LifeTime
+Author: PGarn
+Author-email: paul.garnier@ens-rennes.fr
+License: MIT
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.6
+License-File: LICENSE
