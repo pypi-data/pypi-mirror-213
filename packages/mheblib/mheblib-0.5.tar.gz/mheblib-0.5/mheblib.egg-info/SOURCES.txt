@@ -1,0 +1,6 @@
+LICENSE.txt
+setup.py
+mheblib.egg-info/PKG-INFO
+mheblib.egg-info/SOURCES.txt
+mheblib.egg-info/dependency_links.txt
+mheblib.egg-info/top_level.txt
