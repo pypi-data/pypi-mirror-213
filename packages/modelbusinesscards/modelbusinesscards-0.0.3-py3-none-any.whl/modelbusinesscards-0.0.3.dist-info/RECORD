@@ -1,0 +1,11 @@
+modelbusinesscards/__init__.py,sha256=Wri-s2dRNGiGbHfrr3GHrWV5q6gKTLpe2E7tx3rFsRg,48
+modelbusinesscards/__main__.py,sha256=qvqVcCjC1QwH0nrvjtFNJJ0gGdlp2FgNvGUZBkIf3zA,198
+modelbusinesscards/entities.py,sha256=tDqm-D2L_KYl9-SboT-voxXr0wynd4nsX1g4X2XfAQo,549
+modelbusinesscards/main.py,sha256=ZIeL-T0nsxtFLRTxFNr0HADMNLatjjVEsTUUGfZmG9w,1200
+modelbusinesscards/parser.py,sha256=-nyfS95iJ2aKAOxp6JD6z6FAE8tJgS92vV3eOBNctJs,3721
+modelbusinesscards/writer.py,sha256=jJ_bV7G-FgZBs2j4E4GI2TORwQng_oeQLgwAb9E0JJk,2000
+modelbusinesscards-0.0.3.dist-info/LICENSE,sha256=lb6ZwTwoNcMg5AseN303HFfquPztrtQK1PgaS1KRbWM,1067
+modelbusinesscards-0.0.3.dist-info/METADATA,sha256=wdXAhAJNhkuPLxVMZiph2hcmWzOvju9dG600dQA3t1I,248
+modelbusinesscards-0.0.3.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+modelbusinesscards-0.0.3.dist-info/top_level.txt,sha256=fBOxLE_qi9FyWdqaCgDbx85I4LClxq6_8RfvgetOSZw,19
+modelbusinesscards-0.0.3.dist-info/RECORD,,
