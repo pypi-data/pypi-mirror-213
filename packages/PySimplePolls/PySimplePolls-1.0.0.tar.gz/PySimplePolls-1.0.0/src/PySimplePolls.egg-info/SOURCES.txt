@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/PySimplePolls/SimplePolls.py
+src/PySimplePolls/__init__.py
+src/PySimplePolls.egg-info/PKG-INFO
+src/PySimplePolls.egg-info/SOURCES.txt
+src/PySimplePolls.egg-info/dependency_links.txt
+src/PySimplePolls.egg-info/top_level.txt
