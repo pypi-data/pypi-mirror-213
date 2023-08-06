@@ -1,0 +1,45 @@
+Metadata-Version: 2.1
+Name: scrapy-kit
+Version: 0.1.5
+Summary: 
+Home-page: https://scrapy-kit.readthedocs.io/en/latest/
+License: Apache-2.0
+Keywords: scrapy,scrapy-kit,scrapy-kit
+Author: Pony.Ma
+Author-email: mtf201013@gmail.com
+Requires-Python: >=3.10,<4.0
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: scrapy (>=2.7.0,<3.0.0)
+Requires-Dist: scrapy-playwright (>=0.0.26,<0.0.27)
+Project-URL: Documentation, https://scrapy-kit.readthedocs.io/en/latest/
+Project-URL: Repository, https://github.com/ma-pony/scrapy-kit
+Description-Content-Type: text/markdown
+
+# scrapy-kit
+A library for scrapy tools, including but not limited to the usual pipelines, middlewares, etc.
+
+
+## install 
+```shell
+pip install scrapy-kit
+```
+
+## usage
+
+### pipelines
+```python
+ITEM_PIPELINES = {
+    "spider_kit.pipelines.mongo.MongoPipeline": 369,
+}
+```
+
+## development
+```shell
+git clone
+cd scrapy-kit
+poetry install
+```
+
