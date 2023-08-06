@@ -1,0 +1,17 @@
+inox/__init__.py,sha256=dvs_5owOttFw-XO09XTkibEfDoOcvBtQZcTsdkrAdXg,126
+inox/random.py,sha256=diZrmQJTsH6A5ftR4GYMulPp_CFVI7QEnFhmwAii-0o,1943
+inox/tree_util.py,sha256=xwxR0wdvjFzgJzfQPg6aGdiZQ7h_nxczUhNhGWun0y8,8013
+inox/nn/__init__.py,sha256=Ncp8l3IZL6qPCjuOQBAB2pPCx-m3m7Znp9eAF6NJJR8,236
+inox/nn/activation.py,sha256=QtUT-izwe-zhV8_MCnpGv7umcAd-ZtsbXUjQZTM7XKI,5541
+inox/nn/container.py,sha256=0NdDbONoi5EFf83fLG2SbA3DBWcxlPnXryHUvpcUOZY,981
+inox/nn/dropout.py,sha256=xwvaUu44jeoiN5UqxteL0n3312Tosu69T-PvdmOdEWE,1526
+inox/nn/einops.py,sha256=zX8GXBU67RGGbWypTrTSPk-hiFw3nhdh21AVe_VEySE,1677
+inox/nn/linear.py,sha256=4PD8C6NBXUKjCONFCK8oTPq_sHxaDslALBvzi2iwHas,8467
+inox/nn/module.py,sha256=LrXfOG-2RivfgPH9yu6BRe9oSCDWADLqeYLNP-_CMBE,6479
+inox/nn/normalization.py,sha256=c5ZtjUJOi70JZTat6uEJcwlrsgyYrYxFNsgzlUE6QKI,3331
+inox/nn/pooling.py,sha256=7dFLCnsDmkfAk2SVirpyM-B7mX6gYgsCzCJp46lFaOU,3504
+inox-0.1.0.dist-info/LICENSE,sha256=lIcLV2UI8uAbgeWlivmlbJk2zNp1_88RNdh3FXWOtyw,1072
+inox-0.1.0.dist-info/METADATA,sha256=IeYqrsLku2DkjPG38kE8_ZNsBWwx8YM70x5gZIhZ37E,2977
+inox-0.1.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+inox-0.1.0.dist-info/top_level.txt,sha256=yFjULFGf56970f1cPJj2p2zhsWWu2bzMLxuMi-zJ-EQ,5
+inox-0.1.0.dist-info/RECORD,,
