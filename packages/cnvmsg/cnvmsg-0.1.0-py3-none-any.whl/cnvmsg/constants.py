@@ -1,0 +1,2 @@
+CONDITION_MAX_LEN: int = 255
+STATUS_MAX_LEN: int = 20
