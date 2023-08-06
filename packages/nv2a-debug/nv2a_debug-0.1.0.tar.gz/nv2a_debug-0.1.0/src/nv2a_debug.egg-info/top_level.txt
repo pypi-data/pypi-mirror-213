@@ -1,0 +1,2 @@
+_nv2a_vsh_cpu
+nv2adbg
