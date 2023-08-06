@@ -1,0 +1,16 @@
+googleapiutils2/__init__.py,sha256=VhmCZvxO85h6Ybrh5SnerOIeJxumXSLfXCbH7RrFjQs,119
+googleapiutils2/drive/__init__.py,sha256=HlsWBO3dUCp6-2pcx7UgkCMrvtZLcq9A6gXHAUMZEFc,25
+googleapiutils2/drive/drive.py,sha256=2DapvYnskDyTqlwENFSwxpxeS11BIG3fMP_QXFNSXxc,22040
+googleapiutils2/drive/misc.py,sha256=Rv9S9uKqr0CCrKh2vMY5I_hMpA2hknbp3rwU8EEZzWc,314
+googleapiutils2/geocode/__init__.py,sha256=7mVrc9UX2BwQB88Fb7cFWosXBa5NWl06q19GWKiA8YY,28
+googleapiutils2/geocode/geocode.py,sha256=Z3Vg1QvqFsc_73W53I9km8g26zOhm1mHJe8Zp8kyuDI,1105
+googleapiutils2/geocode/misc.py,sha256=fbNl1XmG90NrELwxGd7ZfQsyHpHeDFrrYjZnOwd_47Q,1460
+googleapiutils2/sheets/__init__.py,sha256=nC6v9PNQvowmG4yu6BAy9XYiigemDZNpPx-cZewjXYo,198
+googleapiutils2/sheets/misc.py,sha256=4EIZgO-jnxddvEXyhJ5gnhDsFYHmP41yDg-GD_YaoYQ,9618
+googleapiutils2/sheets/sheets.py,sha256=7oFm52UsZwk6d8feWTQLnpIpEWOHyecCq1TJH62MLfc,33736
+googleapiutils2/sheets/sheets_value_range.py,sha256=gr8cnDRxVMuca8cOuSUyRHnJQbacuGXAeT7gA8oQOyI,5219
+googleapiutils2/utils.py,sha256=0YYvzROCtAlAyAcVCqGSllf-zVDMNAyR4lh--ECNnik,9430
+googleapiutils2-0.9.5.dist-info/LICENSE,sha256=3w4nG72dq8vi9YJnJ5bOZsia41g7WlZkUqjlQ-y3o38,1069
+googleapiutils2-0.9.5.dist-info/METADATA,sha256=xWI6yLSU8rN_z7f5osENsjee0QdyALdC6-n8npwbktI,6248
+googleapiutils2-0.9.5.dist-info/WHEEL,sha256=Zb28QaM1gQi8f4VCBhsUklF61CTlNYfs9YAZn-TOGFk,88
+googleapiutils2-0.9.5.dist-info/RECORD,,
