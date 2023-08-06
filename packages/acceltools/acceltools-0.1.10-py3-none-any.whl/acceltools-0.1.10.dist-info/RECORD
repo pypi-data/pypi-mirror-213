@@ -1,0 +1,14 @@
+acceltools/__init__.py,sha256=z0zCHFTcKSR0tJ6h5qrpNmRVP21QIPP8N0p7quCnnm0,23
+acceltools/base.py,sha256=OkQs9Ihwy8liHDYLBPA9gtx5pbKJS5FsGzDspzi4j2g,672
+acceltools/doc.py,sha256=LbJO6XrRgpOkPgiumgKpzVFAqGBr-OvnVXLPUu3MopQ,6842
+acceltools/ecd.py,sha256=sgNZZlU7Qf_ZbZBrP4SBq6i07bkWhieS9Qm3CK1BMJ0,9265
+acceltools/nmr.py,sha256=pn-QmrhWBimQFQPe09kGppTnAAqi-uJc5bADsRadfnU,29152
+acceltools/plot.py,sha256=xqxvLzLFWYM3ZH5jfqmTB06NCBVQeH0lLegm_xNbrvU,8031
+acceltools/pucker.py,sha256=ajNuCkzmVxiGGyYSIQRo6pr79PGKAO2ROollp_Tb5gw,6301
+acceltools/series.py,sha256=femXS7ALj4OH1qDal3qu_kGFmdLBCAK3L_xY-Xaq1gE,7619
+acceltools/table.py,sha256=bN8PMvdwUPhj4p4d852cAXm8hdlnFIKOjrjEeJGi2WU,1039
+acceltools-0.1.10.dist-info/LICENSE,sha256=6kVvPMd5fpiLN44G42XCWHb0Q_nDhLOMW1K4py7EY1I,1059
+acceltools-0.1.10.dist-info/METADATA,sha256=Dkcs_aQzaS7ukBoVGc04MJFJ4UkQEjZeyJhIKYZx2uc,529
+acceltools-0.1.10.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+acceltools-0.1.10.dist-info/top_level.txt,sha256=xMPZfTY2vEetVeiculvp4EuNeXWfh9anEYKOozGXeTo,11
+acceltools-0.1.10.dist-info/RECORD,,

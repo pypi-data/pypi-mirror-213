@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: acceltools
+Version: 0.1.10
+Summary: tools for ACCeL
+Home-page: https://github.com/kfchem/acceltools
+Author: Keisuke Fukaya
+Author-email: kfukaya@pu-toyama.ac.jp
+License: MIT License
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.9
+License-File: LICENSE
+Requires-Dist: accel (>=0.1.0)
+Requires-Dist: pandas
+Requires-Dist: scipy
+Requires-Dist: matplotlib
+
+UNKNOWN
+
