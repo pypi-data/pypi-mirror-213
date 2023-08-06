@@ -1,0 +1,44 @@
+[build-system]
+requires = ["setuptools>=43.0.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+
+[project]
+name = "genocide"
+description = "Reconsider OTP-CR-117/19"
+version = "121"
+authors = [
+    {name = "Bart Thate", email = "bthate@dds.nl" },
+]
+readme = "README.rst"
+license = { text="Public Domain"}
+classifiers=[
+             'Development Status :: 3 - Alpha',
+             'License :: Public Domain',
+             'Operating System :: Unix',
+             'Programming Language :: Python',
+             'Topic :: Utilities'
+            ]
+
+
+[project.urls]
+"home" = "https://pypi.org/project/genocide"
+"bugs" = "https://github.com/bthate/genocide/issues"
+"source" = "https://github.com/bthate/genocide"
+
+
+[project.scripts]
+genocide = "genocide.__main__:main"
+
+
+[project.optional-dependencies]
+dev = []
+
+[tool.setuptools]
+include-package-data = true
+
+[tool.setuptools.packages.find]
+
+[tool.setuptools.package-data]
+
+[tool.setuptools.exclude-package-data]
