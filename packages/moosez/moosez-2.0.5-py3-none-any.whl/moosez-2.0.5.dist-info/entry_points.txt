@@ -1,0 +1,3 @@
+[console_scripts]
+moosez = moosez.moosez:main
+
