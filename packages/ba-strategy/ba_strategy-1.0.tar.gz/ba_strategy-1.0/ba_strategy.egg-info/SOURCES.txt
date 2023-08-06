@@ -1,0 +1,6 @@
+setup.py
+ba_strategy.egg-info/PKG-INFO
+ba_strategy.egg-info/SOURCES.txt
+ba_strategy.egg-info/dependency_links.txt
+ba_strategy.egg-info/requires.txt
+ba_strategy.egg-info/top_level.txt

@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: ba_strategy
+Version: 1.0
+Summary: A plugin based on the nonebot framework for the Granblue file main line walkthrough
+Home-page: https://github.com/zi-feng-0109/ba_strategy
+Author: ZiFeng
+Author-email: 2980103980@qq.com
+License: MIT Licence
+Keywords: pip,ba_strategy,featureextraction
+Platform: any
+
+A plugin based on the nonebot framework for the Granblue file main line walkthrough
