@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: beanie_batteries_queue
+Version: 0.2.0
+Summary: Simple queue system for Beanie
+Keywords: mongodb,odm,orm,pydantic,mongo,async,python,beanie,queue,beanie-batteries-queue
+Author-email: Roman Right <roman-right@protonmail.com>
+Requires-Python: >=3.7,<4.0
+Description-Content-Type: text/markdown
+Classifier: License :: OSI Approved :: Apache Software License
+Requires-Dist: beanie==1.20.0b1
+Requires-Dist: pre-commit>=2.3.0 ; extra == "test"
+Requires-Dist: pytest>=6.0.0 ; extra == "test"
+Requires-Dist: pytest-asyncio>=0.21.0 ; extra == "test"
+Requires-Dist: pytest-cov>=2.8.1 ; extra == "test"
+Requires-Dist: dnspython>=2.1.0 ; extra == "test"
+Requires-Dist: flake8>=3 ; extra == "test"
+Requires-Dist: pyright>=0 ; extra == "test"
+Project-URL: homepage, https://github.com/roman-right/beanie_batteries_queue
+Project-URL: repository, https://github.com/roman-right/beanie_batteries_queue
+Provides-Extra: test
+
+# Beanie Queue
+
+Beanie Queue is a simple queue system for Beanie (MongoDB). It allows you to create a queue of tasks to be processed by a worker.
