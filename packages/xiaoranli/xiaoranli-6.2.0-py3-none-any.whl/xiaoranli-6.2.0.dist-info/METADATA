@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: xiaoranli
+Version: 6.2.0
+Summary: setup linux env, such as bashrc etc.
+Home-page: https://github.com/xiaoranliMS/env-setup.git
+Author: Li Xiaoran
+Author-email: 1240897116@qq.com
+Project-URL: Funding,  https://github.com/xiaoranliMS
+Project-URL: Source, https://github.com/xiaoranliMS/env-setup.git
+Keywords: env setup,development,xiaoranli
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Requires-Python: >=2
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+Requires-Dist: termcolor
+Requires-Dist: fire
+Provides-Extra: dev
+Requires-Dist: check-manifest ; extra == 'dev'
+Provides-Extra: test
+Requires-Dist: coverage ; extra == 'test'
+
+# A project used to setup development environment, especially the rcfiles(aka dotfiles)
+
+After pip install, the shell command "xiaoranli" could be used, "xiaoranli info" could be used to get help.
