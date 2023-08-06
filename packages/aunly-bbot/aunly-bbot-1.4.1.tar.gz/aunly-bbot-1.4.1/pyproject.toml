@@ -1,0 +1,85 @@
+[project]
+name = "aunly-bbot"
+version = "1.4.1"
+description = "一个用于 QQ 群内高效推送哔哩哔哩 UP 动态及直播的机器人"
+readme = "readme.md"
+keywords = [
+    "graia",
+    "graiax",
+    "bilibili",
+    "qqbot",
+    "grpc",
+    "playwright",
+    "fastapi",
+    "bot",
+    "openai",
+    "chatgpt",
+]
+authors = [
+    { name = "djkcyl", email = "cyl@cyllive.cn" },
+]
+requires-python = ">=3.9,<4.0"
+dependencies = [
+    "graia-ariadne[standard]>=0.11.5",
+    "peewee>=3.16.2",
+    "pyyaml>=6.0",
+    "bilireq>=0.2.6",
+    "psutil>=5.9.5",
+    "uvicorn>=0.22.0",
+    "sentry-sdk>=1.25.0",
+    "python-jose[cryptography]>=3.3.0",
+    "passlib[bcrypt]>=1.7.4",
+    "python-multipart>=0.0.6",
+    "fastapi>=0.96.0",
+    "websockets>=11.0.2",
+    "qrcode>=7.4.2",
+    "pillow>=9.5.0",
+    "noneprompt>=0.1.9",
+    "minidynamicrender>=1.2.6",
+    "lxml>=4.9.2",
+    "tiktoken-async>=0.3.2",
+]
+
+[project.license]
+text = "AGPL3.0"
+
+[project.urls]
+homepage = "https://github.com/djkcyl/BBot-Graia"
+repository = "https://github.com/djkcyl/BBot-Graia/tree/master/bbot"
+documentation = "https://github.com/djkcyl/BBot-Graia/blob/master/readme.md"
+
+[project.optional-dependencies]
+full = [
+    "graiax-playwright",
+    "graiax-text2img-playwright",
+    "wordcloud",
+    "jieba",
+    "edgegpt",
+]
+
+[project.scripts]
+bbot = "aunly_bbot.__main__:main"
+
+[tool.pdm.build]
+includes = [
+    "aunly_bbot",
+]
+excludes = [
+    "aunly_bbot/static/browser",
+]
+
+[tool.pdm.dev-dependencies]
+dev = [
+    "yamllint>=1.31.0",
+    "black>=23.3.0",
+    "flake8>=6.0.0",
+]
+
+[tool.black]
+line-length = 96
+
+[build-system]
+requires = [
+    "pdm-pep517>=1.0.0",
+]
+build-backend = "pdm.pep517.api"
