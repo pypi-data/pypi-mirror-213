@@ -1,0 +1,148 @@
+Metadata-Version: 2.1
+Name: ml-cloud-tools
+Version: 0.0.1
+Summary: ML Tools for the Cloud
+Home-page: https://github.com/telekom/ml-cloud-tools
+Author: Philip May
+Author-email: philip.may@t-systems.com
+Maintainer: Philip May
+Project-URL: Bug Tracker, https://github.com/telekom/ml-cloud-tools/issues
+Project-URL: Code Doc, https://telekom.github.io/ml-cloud-tools/
+Project-URL: Source Code, https://github.com/telekom/ml-cloud-tools
+Project-URL: Contributing, https://github.com/telekom/ml-cloud-tools/blob/main/CONTRIBUTING.md
+Project-URL: Code of Conduct, https://github.com/telekom/ml-cloud-tools/blob/main/CODE_OF_CONDUCT.md
+Keywords: cloud aws boto3 s3
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Science/Research
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Scientific/Engineering :: Mathematics
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: Topic :: Software Development
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: boto3
+Provides-Extra: all
+Requires-Dist: isort ; extra == 'all'
+Requires-Dist: pylint ; extra == 'all'
+Requires-Dist: sphinx-copybutton ; extra == 'all'
+Requires-Dist: myst-parser ; extra == 'all'
+Requires-Dist: sphinx-rtd-theme ; extra == 'all'
+Requires-Dist: flake8 ; extra == 'all'
+Requires-Dist: pydocstyle ; extra == 'all'
+Requires-Dist: mdformat ; extra == 'all'
+Requires-Dist: moto ; extra == 'all'
+Requires-Dist: packaging ; extra == 'all'
+Requires-Dist: pylintfileheader ; extra == 'all'
+Requires-Dist: sphinx ; extra == 'all'
+Requires-Dist: mypy ; extra == 'all'
+Requires-Dist: black ; extra == 'all'
+Requires-Dist: pytest ; extra == 'all'
+Provides-Extra: checking
+Requires-Dist: black ; extra == 'checking'
+Requires-Dist: flake8 ; extra == 'checking'
+Requires-Dist: isort ; extra == 'checking'
+Requires-Dist: mdformat ; extra == 'checking'
+Requires-Dist: pydocstyle ; extra == 'checking'
+Requires-Dist: mypy ; extra == 'checking'
+Requires-Dist: pylint ; extra == 'checking'
+Requires-Dist: pylintfileheader ; extra == 'checking'
+Provides-Extra: doc
+Requires-Dist: sphinx ; extra == 'doc'
+Requires-Dist: sphinx-rtd-theme ; extra == 'doc'
+Requires-Dist: myst-parser ; extra == 'doc'
+Requires-Dist: sphinx-copybutton ; extra == 'doc'
+Provides-Extra: testing
+Requires-Dist: pytest ; extra == 'testing'
+Requires-Dist: moto ; extra == 'testing'
+Requires-Dist: packaging ; extra == 'testing'
+
+# ML-Cloud-Tools - [Code Doc](https://telekom.github.io/ml-cloud-tools/)
+
+[![MIT License](https://img.shields.io/github/license/telekom/ml-cloud-tools)](https://github.com/telekom/ml-cloud-tools/blob/main/LICENSE)
+[![Python Version](https://img.shields.io/pypi/pyversions/ml-cloud-tools)](https://www.python.org)
+[![pypi](https://img.shields.io/pypi/v/ml-cloud-tools.svg)](https://pypi.python.org/pypi/ml-cloud-tools)
+<br/>
+[![pytest](https://github.com/telekom/ml-cloud-tools/actions/workflows/pytest.yml/badge.svg)](https://github.com/telekom/ml-cloud-tools/actions/workflows/pytest.yml)
+[![Static Code Checks](https://github.com/telekom/ml-cloud-tools/actions/workflows/static_checks.yml/badge.svg)](https://github.com/telekom/ml-cloud-tools/actions/workflows/static_checks.yml)
+[![Build & Deploy Doc](https://github.com/telekom/ml-cloud-tools/actions/workflows/build_deploy_doc.yml/badge.svg)](https://github.com/telekom/ml-cloud-tools/actions/workflows/build_deploy_doc.yml)
+[![GitHub issues](https://img.shields.io/github/issues-raw/telekom/ml-cloud-tools)](https://github.com/telekom/ml-cloud-tools/issues)
+
+☁️ Machine Learning Tools for the Cloud. Currently very much focused on AWS and S3. ☁️
+
+## Table of Contents
+
+- [Installation](#installation)
+- [Support and Feedback](#support-and-feedback)
+- [Reporting Security Vulnerabilities](#reporting-security-vulnerabilities)
+- [Contribution](#contribution)
+- [Code of Conduct](#code-of-conduct)
+- [Licensing](#licensing)
+
+## Installation
+
+ML-Cloud-Tools is available at [the Python Package Index (PyPI)](https://pypi.org/project/ml-cloud-tools/).
+It can be installed with pip:
+
+```bash
+$ pip install ml-cloud-tools
+```
+
+## Support and Feedback
+
+The following channels are available for discussions, feedback, and support requests:
+
+- [open an issue in our GitHub repository](https://github.com/telekom/ml-cloud-tools/issues/new/choose)
+- [send an e-mail to our open source team](mailto:opensource@telekom.de)
+
+## Reporting Security Vulnerabilities
+
+This project is built with security and data privacy in mind to ensure your data is safe.
+We are grateful for security researchers and users reporting a vulnerability to us, first.
+To ensure that your request is handled in a timely manner and non-disclosure of vulnerabilities
+can be assured, please follow the below guideline.
+
+**Please do not report security vulnerabilities directly on GitHub.
+GitHub Issues can be publicly seen and therefore would result in a direct disclosure.**
+
+Please address questions about data privacy, security concepts,
+and other media requests to the [opensource@telekom.de](mailto:opensource@telekom.de) mailbox.
+
+## Contribution
+
+Our commitment to open source means that we are enabling - in fact encouraging - all interested
+parties to contribute and become part of our developer community.
+
+Contribution and feedback is encouraged and always welcome. For more information about how to
+contribute, as well as additional contribution information, see our
+[Contribution Guidelines](https://github.com/telekom/ml-cloud-tools/blob/main/CONTRIBUTING.md).
+
+## Code of Conduct
+
+This project has adopted the [Contributor Covenant](https://www.contributor-covenant.org/)
+as our code of conduct. Please see the details in our
+[Contributor Covenant Code of Conduct](https://github.com/telekom/ml-cloud-tools/blob/main/CODE_OF_CONDUCT.md).
+All contributors must abide by the code of conduct.
+
+## Licensing
+
+Copyright (c) 2021 Timothy Wolff-Piggott, Deutsche Telekom AG<br/>
+Copyright (c) 2021-2023 Philip May, Deutsche Telekom AG<br/>
+Copyright (c) 2021-2023 Philip May
+
+Licensed under the **MIT License** (the "License"); you may not use this file except in compliance with the License.
+You may obtain a copy of the License by reviewing the file
+[LICENSE](https://github.com/telekom/ml-cloud-tools/blob/main/LICENSE) in the repository.
