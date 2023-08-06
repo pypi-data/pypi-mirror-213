@@ -1,0 +1,12 @@
+timeitpoj/__init__.py,sha256=qROiNGc02OH0pHMgdkfVN519ODCfqfeKy066L9L3Z_0,35
+timeitpoj/task_report.py,sha256=vm6e98B7d5yeMtRwHbjfI8kHtzb-wsIdARQukcY2OIY,4540
+timeitpoj/timeit.py,sha256=mEpR4lTeoaPh67Lpg7wfxwUO6n6jrxdfi5-x_aJ2KOc,6068
+timeitpoj/timer/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+timeitpoj/timer/internal_timer.py,sha256=5wUTbuP5GCJPdOnTucqLGjy8fjSws_3Amy4VVUuXePc,498
+timeitpoj/timer/timer.py,sha256=7oygtAeJHCzg3NjWcIcuTA6vXf6fKtC5YVdsSTRkQc4,3061
+timeitpoj/utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+timeitpoj/utils/constants.py,sha256=EDaVx4QR4qPp1XsyfbMIvcSjVzWb_VKQ-xdPuUL_UTs,112
+timeitpoj/utils/misc.py,sha256=KZ96iP1qo5hDsvhVySXjMiUtQ4TQMW7ZEeCRiDpa1WY,1141
+timeitpoj-0.1.7.dist-info/METADATA,sha256=fbrpDSx9TQyxcGP4NNvWftqtFP84WXuqS9vwbJDH-Zw,2944
+timeitpoj-0.1.7.dist-info/WHEEL,sha256=Zb28QaM1gQi8f4VCBhsUklF61CTlNYfs9YAZn-TOGFk,88
+timeitpoj-0.1.7.dist-info/RECORD,,
