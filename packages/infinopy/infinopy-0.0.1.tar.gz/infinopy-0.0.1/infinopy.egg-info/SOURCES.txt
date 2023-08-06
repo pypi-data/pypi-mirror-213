@@ -1,0 +1,11 @@
+README.md
+setup.py
+infinopy/__init__.py
+infinopy/client.py
+infinopy.egg-info/PKG-INFO
+infinopy.egg-info/SOURCES.txt
+infinopy.egg-info/dependency_links.txt
+infinopy.egg-info/requires.txt
+infinopy.egg-info/top_level.txt
+tests/__init__.py
+tests/test_client.py
