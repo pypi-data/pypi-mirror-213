@@ -1,0 +1,12 @@
+datalookup/__init__.py,sha256=mfxvjvOEbL6bN6gG4Bz8LLPgSneHcNVobMu7OIzQawM,16179
+datalookup/_version.py,sha256=ccGOhv4vMJ1yPgX2_6zs5zPfrwa6xpHibb_SLX3JtAo,167
+datalookup/exceptions.py,sha256=G-jBdUsMIta4_oC5OC-e-3M-gg-bPzYYvwqpSS537bQ,500
+datalookup/fields.py,sha256=AMkL2X5hdyt7-1mF_a5KfnXBpRJkHpllcAKV6XD2qko,5638
+datalookup/lookup.py,sha256=2BAbAqMRNWBdIQuzoImaMq-MvrKZBdR04gbNGPdf12g,8265
+datalookup/utils.py,sha256=68zQuqR6KKCq_XiXsSotR19wVktT82_Db34eOpl2PsE,2106
+datalookup-1.0.0rc1.dist-info/AUTHORS,sha256=pfconzXiOF-XT7FJJ93nJLN_ogXySiNY358rstMtHrU,127
+datalookup-1.0.0rc1.dist-info/LICENCE,sha256=35jRv1wcek3OX5Ir4moF53IhqaYLXs3N-IKTIVxCuG4,1091
+datalookup-1.0.0rc1.dist-info/METADATA,sha256=ZrIj7cfQzAhcyKyb8J9orER1K28laodEH30BSCAgs7k,10001
+datalookup-1.0.0rc1.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+datalookup-1.0.0rc1.dist-info/top_level.txt,sha256=RwzIM9DsSM3O7RiEDHeCJ85X5fenSwqOQKaCl2a9Y94,11
+datalookup-1.0.0rc1.dist-info/RECORD,,
