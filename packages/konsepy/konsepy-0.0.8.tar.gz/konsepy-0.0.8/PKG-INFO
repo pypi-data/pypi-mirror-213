@@ -1,0 +1,37 @@
+Metadata-Version: 2.1
+Name: konsepy
+Version: 0.0.8
+Summary: Framework for build NLP information extraction systems using regular expressions.
+Keywords: nlp
+Author-email: dcronkite <dcronkite+pypi@gmail.com>
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Science/Research
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Topic :: Text Processing :: Linguistic
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Intended Audience :: Healthcare Industry
+Requires-Dist: loguru
+Requires-Dist: pytest
+Requires-Dist: sas7bdat
+Requires-Dist: spacy ; extra == "ssplit"
+Project-URL: Home, https://github.com/kpwhri/konsepy
+Provides-Extra: ssplit
+
+
+# konsepy
+
+Framework for build NLP information extraction systems using regular expressions.
+
+## Usage
+
+For now, find documentation for this library (and a template to download) from https://github.com/kpwhri/konsepy_nlp_template.
+
+
+## Roadmap
+
+* Change labels to some metadata object to allow more diverse input sources and run info
+

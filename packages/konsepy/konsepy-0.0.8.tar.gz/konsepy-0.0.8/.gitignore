@@ -1,0 +1,6 @@
+.idea/*
+out/
+snippets/
+*.pyc
+.venv/
+dist/
