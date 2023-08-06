@@ -1,0 +1,108 @@
+{% extends "coffee_offers/coffee_offers_base.html" %}
+
+{% block header_offers %}
+{% endblock %}
+
+{% block detail_offers %}
+    <div class="container" style="width: 90%; margin: 0 auto">
+        <p><strong>CARTA DE INSTRUCCIONES DEL PAGARÉ CI-{{ offer.warehouse.location_id }}-{{ offer.contract }}</strong>
+        </p>
+
+        <p>
+            Por medio de la presente manifiesto que de conformidad con el artículo 622 del código de comercio, en forma
+            irrevocable autorizo a la {{ company.name }}, para diligenciar los espacios en blanco contenidos en el
+            presente pagaré, de acuerdo con las siguientes instrucciones:
+        </p>
+
+        <p style="margin-left: 40px;">
+            <b>1.</b> Se incorporarán en el pagaré firmado con espacios en blanco objeto de estas instrucciones, todas
+            las obligaciones existentes con {{ comany.name }}, incluyéndose en dicho importe no solo el capital, sino
+            intereses, gastos, comisiones, honorarios, impuestos, etc., que figuren a mi cargo al momento de llenarse
+            dicho pagaré, pues el incumplimiento de una obligación a mi cargo acarrea la aceleración de la fecha de
+            vencimiento de todas las obligaciones a mi cargo, previa notificación conforme a la ley.
+        </p>
+
+        <p style="margin-left: 40px;">
+            <b>2.</b> LA COOPERATIVA podrá diligenciar los espacios en blanco del pagaré en cualquiera de los siguientes
+            eventos:
+        </p>
+
+        <p style="margin-left: 80px;">
+            <b>a.</b> El no pago oportuno de cualquier suma de dinero que, conjunta o separadamente debiéramos a LA
+            COOPERATIVA por concepto de bienes que se nos hayan entregado, servicios que se nos hayan prestado,
+            faltantes de bienes que se nos hayan entregado para su manejo, o de cualquier otra obligación que resulte a
+            nuestro cargo y a favor de la Cooperativa. <br/>
+            <b>b.</b> La insolvencia de cualquiera de los firmantes de esta carta o la verificación de cualquier hecho
+            que coloque a alguno de estos en circunstancia que dificulten y/o imposibiliten el cumplimiento de sus
+            obligaciones para con la COOPERATIVA. <br/>
+            <b>c.</b> La muerte o interdicción de cualquiera de los firmantes.<br/>
+            <b>d.</b> Si los bienes de cualquiera de los firmantes de esta carta son embargados o perseguidos en
+            ejercicio de cualquier acción o se demeritaren o depreciaren de modo que dejaren de ser suficiente garantía
+            para la COOPERATIVA.<br/>
+            <b>e.</b> Si cualquiera de los firmantes de esta carta comentaron inexactitudes, reticencias, imprecisiones
+            o fraudes en balances, certificaciones, informes o declaraciones que efectúen o suministren a la
+            COOPERATIVA.<br/>
+            <b>f.</b> En los demás casos de la ley.
+        </p>
+
+        <p style="margin-left: 40px;">
+            <b>3.</b> El espacio “lugar donde se efectuará el pago” será en el domicilio de {{ company.name }} -
+            CADEFIHUILA.
+        </p>
+
+        <p style="margin-left: 40px;">
+            <b>4.</b> El espacio “fecha de vencimiento” corresponderá a un día cierto determinado o no, estableciendo
+            aquella en la que se llenen sus espacios en blanco.
+        </p>
+
+        <p style="margin-left: 40px;">
+            <b>5.</b> En los espacios reservados para capital, intereses y otros conceptos se insertará las sumas que
+            por dicho concepto debe(mos), y que, de acuerdo con la contabilidad, libros, registros y comprobantes de
+            contabilidad de la Cooperativa, le resulte(mos) a deber por concepto de deudas exigibles no contenidas en
+            documentos que presente “mérito ejecutivo”, al momento de entablar las acciones legales del caso, tendientes
+            a obtener su pago.
+        </p>
+
+        <p style="margin-left: 40px;">
+            <b>6.</b> En el pagaré se totalizará las obligaciones que se incorporen, discriminando su capital total, el
+            valor total de los intereses corrientes y moratorios, y otros totalizados.
+        </p>
+
+        <p style="margin-left: 40px;">
+            <b>7.</b> Autoriza(mos) a LA COOPERATIVA (El Acreedor) para consultar, verificar, procesar, reportar,
+            suministrar, actualizar y divulgar a los bancos de datos (Operadores de información) el nacimiento,
+            ejecución y extinción de obligaciones, con el fin de establecer el comportamiento de pago, efectuar la
+            evaluación de riesgos o viabilidad de las solicitudes de productos y servicios realizadas por nuestra parte,
+            conforme a la política de El Acreedor, y reportar el estado de las obligaciones contraídas por el deudor a
+            favor del Acreedor, o su causahabiente a cualquier título.
+        </p>
+
+        <p style="margin-left: 40px;">
+            <b>8.</b> El espacio correspondiente al número de pagaré corresponderá a la numeración interna asignada por
+            el depósito de valores para la administración documental.
+        </p>
+
+        <p style="margin-left: 40px;">
+            <b>9.</b> El espacio “capital” corresponderá al capital causado en mora, así como al capital cuya
+            exigibilidad se acelera.
+        </p>
+
+        <p style="margin-left: 40px;">
+            <b>10.</b> El espacio de “intereses de plazo” corresponderá a los intereses causados y vencidos, liquidados
+            conforme a la tasa informada por la Superfinanciera.
+        </p>
+
+        <p style="margin-left: 40px;">
+            <b>11.</b> El espacio “intereses de mora” corresponderá a los intereses causados y vencidos, liquidados a la
+            tasa máxima legal permitida por la Superfinanciera.
+        </p>
+
+        <p style="margin-left: 40px;">
+            <b>12.</b> LA COOPERATIVA queda facultada para realizar aclaraciones al texto del pagaré, y en caso de ser
+            diligenciado el presente pagaré, autorizo a La {{ company.name }} a suscribir un nuevo pagaré en nuestro
+            nombre, ya sea físico o desmaterializado.
+        </p>
+    </div>
+    <br><br>
+{% endblock %}
+

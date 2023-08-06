@@ -1,0 +1,65 @@
+{% load i18n %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <style>
+        table {
+            font-family: arial, sans-serif;
+            border-collapse: collapse;
+        }
+
+        td, th {
+            border: 2px solid #dddddd;
+            text-align: left;
+            padding: 3px 3px 0 3px;
+        }
+    </style>
+</head>
+<body>
+<p>Cordial saludo,</p>
+<br>
+
+<p>
+    Apreciado(a) <strong>{{ user.get_full_name }}</strong>, el procedimiento de firma electrónica del pagaré y carta de
+    instrucciones No. CI-{{ offer.warehouse.location_id }}-{{ offer.contract }} de la
+    <strong>{{ company.name }}</strong> ha sido exitoso. En consecuencia, ha aceptado las cláusulas del pagaré y las
+    obligaciones contenidas en el mismo.
+</p>
+<p>
+    En cumplimiento de los procedimientos internos, este correo electrónico lo notifica de la entrega de los archivos
+    que se relacionan en la tabla de abajo, con la representación gráfica del pagaré, carta de instrucciones
+    desmaterializada y firma electrónica correctamente aplicada.
+</p>
+<p>
+    Recuerde que los archivos remitidos constituyen una copia simple de su original creado de forma electrónica y que
+    reposa en los sistemas de almacenamiento de CADEFIHUILA. Por tal razón, este documento no es representativo del
+    valor en depósito Y por lo tanto no legitima a su tenedor, no es transferible, ni negociable.
+</p>
+<table>
+    <thead>
+    <tr>
+        <th>Nombre</th>
+        <th>Descripción</th>
+    </tr>
+    </thead>
+    <tbody>
+    {% for file in file_list %}
+        <tr>
+            <td>{{ file.name }}.pdf</td>
+            <td>{{ file.description }}</td>
+        </tr>
+    {% endfor %}
+    </tbody>
+</table>
+<br>
+<p>
+    <label style="font-size: 8px;">
+        {% blocktranslate %}This email waw generated automatically at {{ email_datetime }} with id {{ email_id }}. Pleas
+            do not answer it.
+        {% endblocktranslate %}
+    </label>
+</p>
+</body>
+</html>

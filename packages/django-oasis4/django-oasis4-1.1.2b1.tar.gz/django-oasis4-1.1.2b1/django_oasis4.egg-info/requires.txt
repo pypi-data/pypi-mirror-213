@@ -1,0 +1,6 @@
+Django>=4.1
+cx-Oracle
+celery>=5.2.7
+django-celery-beat
+zibanu-django>=1.2.0a11
+num2words
