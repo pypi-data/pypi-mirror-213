@@ -1,0 +1,2 @@
+[console_scripts]
+dcrx-kv = dcrx_kv.cli:run
