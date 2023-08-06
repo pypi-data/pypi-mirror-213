@@ -1,0 +1,16 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+src/lemming/__init__.py
+src/lemming/__main__.py
+src/lemming/config.py
+src/lemming/py.typed
+src/python_lemming.egg-info/PKG-INFO
+src/python_lemming.egg-info/SOURCES.txt
+src/python_lemming.egg-info/dependency_links.txt
+src/python_lemming.egg-info/entry_points.txt
+src/python_lemming.egg-info/not-zip-safe
+src/python_lemming.egg-info/requires.txt
+src/python_lemming.egg-info/top_level.txt

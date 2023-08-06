@@ -1,0 +1,7 @@
+python-mylog>=0.7.0
+confz
+typing-extensions>=4.4.0
+typer
+
+[:python_version < "3.11"]
+tomli

@@ -1,0 +1,2 @@
+[console_scripts]
+lemming = lemming.__main__:main

@@ -1,0 +1,82 @@
+[build-system]
+requires = ["setuptools>=42.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.isort]
+profile = "black"
+
+[tool.ruff]
+select = ["ALL"]
+ignore = [
+    "ANN101",
+    "ANN102",
+    "COM",
+    "D",
+    "EM102",
+    "FBT",
+    "T",
+    "TRY003",
+    "PLR0913",
+]
+line-length = 79
+target-version = "py38"
+
+fixable = [
+    "F632",
+    "E711",
+    "F901",
+    "E703",
+    "E712",
+    "E713",
+    "E714",
+    "W291",
+    "W292",
+    "W293",
+    "I001",
+    "PT001",
+    "PT003",
+    "PT006",
+    "PT009",
+    "PT023",
+    "Q",
+    "RSE102",
+    "SIM101",
+    "SIM103",
+    "SIM109",
+    "SIM112",
+    "SIM117",
+    "SIM118",
+    "SIM201",
+    "SIM202",
+    "SIM208",
+    "SIM210",
+    "SIM211",
+    "SIM212",
+]
+
+[tool.ruff.flake8-quotes]
+inline-quotes = "double"
+
+[[tool.lemming.formatters]]
+packages = ["black"]
+format_command = "{pyexe} -m black -l 79 {path}"
+check_command = "{pyexe} -m black -l 79 --check --extend-exclude .*venv.* {path}"
+
+[[tool.lemming.formatters]]
+packages = ["setup_cfg_fmt"]
+format_command = "{pyexe} -m setup_cfg_fmt --include-version-classifiers"
+# no check
+
+[[tool.lemming.formatters]]
+packages = ["isort"]
+format_command = "{pyexe} -m isort --profile black {path}"
+check_command = "{pyexe} -m isort --profile black -c {path}"
+
+[[tool.lemming.formatters]]
+packages = ["ruff"]
+format_command = "{pyexe} -m ruff check . --show-source --fix -n"
+check_command = "{pyexe} -m ruff check . --show-source --show-fixes -n"
+
+[[tool.lemming.linters]]
+packages = ["pyroma"]
+command = "{pyexe} -m pyroma {path}"
