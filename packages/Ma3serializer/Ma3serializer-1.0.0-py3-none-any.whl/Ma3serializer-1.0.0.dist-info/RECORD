@@ -1,0 +1,14 @@
+serializer/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+serializer/custom.py,sha256=PsKAudcnt4vB8fBBK7RoAWeYXFoPtX4nT8_NQyYRn3E,767
+serializer/main.py,sha256=uYRYNEV07pgpcSnqrBbE27Ph5dSw3bi1ajZAHspGEaE,1215
+serializer/src/__init__.py,sha256=3ZoLal9untFeAgb_7sytlVppnNEgEBdui-WBSrkvfOw,199
+serializer/src/constants.py,sha256=3s-jC8GrSmR3Nt2lXN5IgIuuLAjTM1M8Ks2GfY4eevo,1136
+serializer/src/converter.py,sha256=mv4928sWlW4LVHsBs4HVIgc6o79Ox9TiMUc9imfkJRo,9322
+serializer/src/factory.py,sha256=ul6pSoS1e7LtD0m7K-ZLPWYnSeHRhyWh602rb_oVYA0,494
+serializer/src/json_serializer.py,sha256=Mn4O_tyEluGfEBVCRbywzDIaHUlnXKRVdOFLngXyXcA,4022
+serializer/src/supportive.py,sha256=3nnDD1rTXMhcwmwhx2Xr1N1RN5UVGs4pS2ueiELDSRU,391
+serializer/src/xml_serializer.py,sha256=RitUWkoic6MYVEc5l8zwlKYDRYTmp2VxZ41pFrDBMa8,4993
+Ma3serializer-1.0.0.dist-info/METADATA,sha256=H-Hxn1DS_S41j3eOKydew-V4_WGjIwJNkrneZUfy8hs,144
+Ma3serializer-1.0.0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+Ma3serializer-1.0.0.dist-info/top_level.txt,sha256=3kzHgJX41_ELZl3LwfdCb9bHB2XvjkDLcICbV0Ssh9k,11
+Ma3serializer-1.0.0.dist-info/RECORD,,
