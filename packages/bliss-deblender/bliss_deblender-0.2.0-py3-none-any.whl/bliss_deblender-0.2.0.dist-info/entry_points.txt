@@ -1,0 +1,3 @@
+[console_scripts]
+bliss=main:main
+
