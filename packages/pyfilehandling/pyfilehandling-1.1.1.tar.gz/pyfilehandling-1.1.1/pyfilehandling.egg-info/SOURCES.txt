@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+pyfilehandling/FileIO.py
+pyfilehandling/TypeFile.py
+pyfilehandling/__init__.py
+pyfilehandling.egg-info/PKG-INFO
+pyfilehandling.egg-info/SOURCES.txt
+pyfilehandling.egg-info/dependency_links.txt
+pyfilehandling.egg-info/top_level.txt
