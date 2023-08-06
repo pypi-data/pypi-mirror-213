@@ -1,0 +1,7 @@
+LICENSE
+README.md
+setup.py
+forganiser.egg-info/PKG-INFO
+forganiser.egg-info/SOURCES.txt
+forganiser.egg-info/dependency_links.txt
+forganiser.egg-info/top_level.txt
