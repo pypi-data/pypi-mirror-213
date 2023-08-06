@@ -1,0 +1,15 @@
+ovos_PHAL_plugin_system/__init__.py,sha256=RMsSXHOH-fkxJ7LQAQaoSwiit0WR8aHoNLO1tgKrWvM,12099
+ovos_PHAL_plugin_system/version.py,sha256=Uw-ZRKxY6Tdgm8ElwqqmnKdW5ODELY7ZGEYwQzVdjvY,177
+ovos_PHAL_plugin_system/ui/Reboot.qml,sha256=TeP4-W0MkfoGXgGl7O7nS6m1jMBwfJJly7sBHaYCUfg,1583
+ovos_PHAL_plugin_system/ui/Restart.qml,sha256=BlEjC8HysQA_qybESR1hkY1usZHzrLJn8Vd4IF9PGPU,1584
+ovos_PHAL_plugin_system/ui/Shutdown.qml,sha256=Lz3dcGwRe4u6On9lWXnj31zrVqsotOHDG-Ps21RHisM,1587
+ovos_PHAL_plugin_system/ui/Status.qml,sha256=neP0zurJ1EQWWlNADz990d5O6MY3m1sCmSl8Piti4_o,1899
+ovos_PHAL_plugin_system/ui/animations/loading.json,sha256=vVUxd0S1ni743UogJCkWhKhjBu5DBUXFT3-9iGgpuhU,11056
+ovos_PHAL_plugin_system/ui/animations/status-fail.json,sha256=9dMS8MTMjfTMPf1eH5q9nxpp7wnMotiONsdYinuunc4,6479
+ovos_PHAL_plugin_system/ui/animations/status-success.json,sha256=S1ip3tLqAEyU07gF78dEBowpzPIUJJC1RrAduXgCqS8,5064
+ovos_PHAL_plugin_system-0.0.4a3.dist-info/METADATA,sha256=7tR7JkYHyh65UEqIF-nQ6BmyC841qbeVONSe-uxJrXQ,732
+ovos_PHAL_plugin_system-0.0.4a3.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+ovos_PHAL_plugin_system-0.0.4a3.dist-info/entry_points.txt,sha256=LSh58GxMuxJO04wI_VKv1xdUqtgyrslbENVSJ2HGfkY,81
+ovos_PHAL_plugin_system-0.0.4a3.dist-info/top_level.txt,sha256=-89opo5nGk_8QeCOZC17hDfYcE5dK3ZK4a9kw71ZTcg,24
+ovos_PHAL_plugin_system-0.0.4a3.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+ovos_PHAL_plugin_system-0.0.4a3.dist-info/RECORD,,
