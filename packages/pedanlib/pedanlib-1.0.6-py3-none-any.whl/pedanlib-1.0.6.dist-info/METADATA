@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: pedanlib
+Version: 1.0.6
+Summary: Pedigree Analysis Library
+License: GPL-3.0-only
+Author: Ramin Monajemi
+Author-email: r.monajemi@lumc.nl
+Requires-Python: >=3.10,<4.0
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
