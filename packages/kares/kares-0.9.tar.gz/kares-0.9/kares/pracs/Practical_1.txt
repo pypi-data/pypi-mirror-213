@@ -1,0 +1,41 @@
+#Prac01-Implement Feed-forward Neural Network and train the network with different optimizers and compare the results
+
+import tensorflow as tf
+import numpy as np
+from sklearn.datasets import load_iris
+from sklearn.model_selection import train_test_split
+from sklearn.preprocessing import LabelBinarizer
+
+#load iris dataset
+iris = load_iris()
+#get features and output
+X = iris.data
+y = iris.target 
+#one-hot encode labels
+lb = LabelBinarizer()
+y = lb.fit_transform(y)
+#split data into train and test sets
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size= 0.2, random_state= 42)
+
+#define model architecture
+model= tf.keras.Sequential([
+    tf.keras.layers.Dense(16, input_shape=(4,), activation= 'relu'),     # First hidden layer with 16 neurons and input shape of 4 features. ReLU activation function is used.
+    tf.keras.layers.Dense(8, activation='relu'),                              #Second hidden layer with 8 neurons. ReLU activation function is used
+    tf.keras.layers.Dense(3, activation= 'softmax')                        #Output layer with 3 neurons for 3 classes. Softmax activation function is used for multiclass classification task.
+]) 
+
+from keras.engine.training import optimizer
+#compile model with different optimizers
+optimizers= ['sgd', 'adam', 'rmsprop']                                                                     #List of optimizers to be used for training the model.
+
+for optimizer in optimizers:                                                                                    #Looping over each optimizer. 
+  model.compile(loss='categorical_crossentropy', optimizer=optimizer, metrics=['accuracy'])      #Compiling the model with 'categorical_crossentropy' as the loss function, the current optimizer and accuracy as the metric to be calculated
+  
+  #train model
+  history = model.fit(X_train, y_train, validation_data=(X_test, y_test), epochs=50, verbose=0)    #Training the model for 50 epochs with verbose=0 to suppress the output.
+
+  #evaluate model
+  loss, accuracy= model.evaluate(X_test, y_test, verbose=0)                                            #Evaluating the model on the test set and calculating the loss and accuracy
+  print('Optimizer:' , optimizer)
+  print('Test loss:', loss)
+  print('Test accuracy:', accuracy)
