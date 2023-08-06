@@ -1,0 +1,16 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+instagpy/__init__.py
+instagpy/config.py
+instagpy/instagpy.py
+instagpy/path.py
+instagpy/request_util.py
+instagpy/session_util.py
+instagpy/utils.py
+instagpy.egg-info/PKG-INFO
+instagpy.egg-info/SOURCES.txt
+instagpy.egg-info/dependency_links.txt
+instagpy.egg-info/requires.txt
+instagpy.egg-info/top_level.txt
