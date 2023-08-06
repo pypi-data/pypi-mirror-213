@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: gemcalc
+Version: 0.0.1
+Summary: Just a simple calculator
+Home-page: UNKNOWN
+Author: GM_member229112
+Author-email: hexe82703+alt10@gmail.com
+License: MIT
+Keywords: calculator
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Education
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+License-File: LICENSE.txt
+
+This is a very simple calculator here are the functions:
+
+add_num(num1,num2)
+mul_num(num1,num2)
+sub_num(num1,num2)
+div_num(num1,num2)
+

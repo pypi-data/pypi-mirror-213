@@ -1,0 +1,9 @@
+LICENSE.txt
+MANIFEST.in
+README.txt
+setup.py
+gemcalc/__init__.py
+gemcalc.egg-info/PKG-INFO
+gemcalc.egg-info/SOURCES.txt
+gemcalc.egg-info/dependency_links.txt
+gemcalc.egg-info/top_level.txt
