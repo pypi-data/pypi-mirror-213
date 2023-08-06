@@ -1,0 +1,9 @@
+setup.cfg
+setup.py
+GTNLib/__init__.py
+GTNLib.egg-info/PKG-INFO
+GTNLib.egg-info/SOURCES.txt
+GTNLib.egg-info/dependency_links.txt
+GTNLib.egg-info/not-zip-safe
+GTNLib.egg-info/requires.txt
+GTNLib.egg-info/top_level.txt
