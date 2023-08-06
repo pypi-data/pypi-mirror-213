@@ -1,0 +1,18 @@
+tornado>=4.3
+six
+pillow
+logzero
+cached_property
+psutil
+requests
+pynvml
+wmi
+uiautomator2>=2.10.1
+facebook-wda>=1.0.5
+py-ios-device==2.2.3.1
+tidevice==0.6.8
+pynvml==11.4.1
+tqdm
+
+[:(sys_platform == 'win32')]
+pywin32
