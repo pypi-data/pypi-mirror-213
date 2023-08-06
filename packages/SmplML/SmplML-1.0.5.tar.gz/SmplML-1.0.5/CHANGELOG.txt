@@ -1,0 +1,9 @@
+Change Log
+==================
+
+1.0.5 (06/12/2023)
+------------------
+- Added regression
+- Modified docstrings
+- Added pre-defined function
+- Fixed local issues
