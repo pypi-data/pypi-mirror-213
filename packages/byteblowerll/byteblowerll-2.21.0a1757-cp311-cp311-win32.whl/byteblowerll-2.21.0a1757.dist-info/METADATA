@@ -1,0 +1,182 @@
+Metadata-Version: 2.1
+Name: byteblowerll
+Version: 2.21.0a1757
+Summary: Python API for the ByteBlower Traffic Generator
+Home-page: https://byteblower.com
+Author: ByteBlower
+Author-email: support.byteblower@excentis.com
+License: ByteBlower End User License Agreement
+Project-URL: API Documentation, https://api.byteblower.com
+Project-URL: Python example scripts, https://www.github.com/excentis/byteblower_python_examples
+Project-URL: Support Portal, https://support.excentis.com
+Project-URL: Wireless Endpoint downloads, https://setup.byteblower.com/wirelessendpoints.html
+Project-URL: End User License Agreement, https://setup.byteblower.com/byteblower-eula.html
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Telecommunications Industry
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows :: Windows 7
+Classifier: Operating System :: Microsoft :: Windows :: Windows 8
+Classifier: Operating System :: Microsoft :: Windows :: Windows 8.1
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Classifier: Operating System :: Microsoft :: Windows :: Windows 11
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Topic :: Software Development :: Testing
+Classifier: Topic :: Software Development :: Testing :: Traffic Generation
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Description-Content-Type: text/x-rst
+License-File: LICENSE
+
+==========================
+|ByteBlower TM| Python API
+==========================
+
+.. |ByteBlower TM| unicode:: ByteBlower U+2122
+
+This package provides access to a ByteBlower server through the ByteBlower API.
+
+The ByteBlower Python Interface allows the user to have fine-grained control 
+over the traffic generation on the ByteBlower server.
+
+Installation
+============
+
+You can install the Python API from https://pypi.org/project/byteblowerll using
+
+
+.. code-block:: bash
+
+    $ pip install byteblower
+
+When Python 2.7 on 32 bit platforms is desired, one can install this from 
+the ByteBlower simple PyPi repository.
+
+.. code-block:: bash
+
+    $ pip install --extra-index-url https://setup.byteblower.com/python byteblowerll
+
+
+Documentation
+==============
+
+The documentation is available either `online <https://api.byteblower.com/>`_ or in the API via
+
+
+.. code-block:: python
+    
+    help(any_ByteBlower_object)
+    
+
+For example:
+
+.. code-block:: python
+
+    from byteblowerll.byteblower import ByteBlower, ByteBlowerPort
+    help(ByteBlower)
+    help(ByteBlowerPort)
+    
+
+.. code-block:: python
+
+    from byteblowerll.byteblower import ByteBlower
+    bb = ByteBlower.InstanceGet()
+    server = bb.ServerAdd('byteblower-39.lab.excentis.com.')
+    help(server)
+    
+
+Quick start
+===========
+
+To start working with the ByteBlower API, load the package and connect to your
+server(s).
+
+1.  Import the API entrypoint
+
+.. code-block:: python
+
+    from byteblowerll.byteblower import ByteBlower
+
+2.  Create the root ByteBlower instance
+
+
+.. code-block:: python
+
+    bb = ByteBlower.InstanceGet()
+
+
+3.  Connect to a ByteBlower server
+
+.. code-block:: python
+
+    server = bb.ServerAdd('byteblower-39.lab.excentis.com.')
+
+4.  Ready to start creating ports and sending traffic!
+
+    Let's see what we have available:
+
+.. code-block:: python
+
+    print(server.DescriptionGet())
+
+
+Examples
+========
+
+Please have a look at our `Python examples of the ByteBlower API_`.
+They might be a great inspiration for your customized test implementations.
+
+.. Python examples of the ByteBlower API_: https://github.com/excentis/ByteBlower_python_examples
+
+Support
+=======
+
+.. See http://docutils.sourceforge.net/0.4/docs/ref/rst/directives.html#image
+
+.. ByteBlower logo
+.. image:: http://static.excentis.com/byteblower_blue_transparent_background.png
+   :width: 400
+   :scale: 60
+   :align: right
+   :alt: ByteBlower
+   :target: byteblower_
+
+.. "A product by Excentis" logo
+.. image:: http://static.excentis.com/Aproductby.png
+   :width: 320
+   :scale: 60
+   :align: right
+   :alt: A product by Excentis
+   :target: excentis_
+
+.. _byteblower: https://byteblower.com
+.. _excentis: https://www.excentis.com
+
+If you have any questions or feature request you can contact the ByteBlower
+support team using:
+
+|globe|: `Excentis Support Portal`_
+
+|e-mail|: support.byteblower@excentis.com
+
+|telephone|: +32 (0) 9 269 22 91
+
+.. _Excentis Support Portal: https://support.excentis.com
+
+.. e-mail icon:
+.. |e-mail| unicode:: U+1F582
+
+.. globe icon:
+.. |globe| unicode:: U+1F30D
+.. .. |globe| unicode:: U+1F310
+
+.. telephone icon:
+.. |telephone| unicode:: U+1F57D
