@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+simple_telegram/__init__.py
+simple_telegram/telegram.py
+simple_telegram.egg-info/PKG-INFO
+simple_telegram.egg-info/SOURCES.txt
+simple_telegram.egg-info/dependency_links.txt
+simple_telegram.egg-info/top_level.txt
