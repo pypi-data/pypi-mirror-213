@@ -1,0 +1,53 @@
+Installation Guide for pylon 7.3.x Camera Software Suite for macOS
+==================================================================
+
+
+Installation of the Basler pylon Camera Software Suite
+=======================================================
+To install the pylon 7 Camera Software Suite for macOS, you need
+a pylon disk image.
+
+Note:
+pylon GUI tools like the pylon Viewer or the pylon IP Configurator are
+not available with pylon 7.3.x yet.
+
+To use pylon GUI tools on Mac with Apple Silicon:
+* Download and install pylon 6.2:
+  https://www.baslerweb.com/en/downloads/software-downloads/#type=pylonsoftware
+* Install Rosetta 2:
+  https://support.apple.com/en-us/HT211861
+
+
+This installation guide assumes that you have already mounted the
+pylon-7.x.y.z.dmg disk image with the Finder application.
+Note: Administrator privileges are required to install the pylon
+Camera Software Suite.
+
+To install the pylon Camera Software Suite from the disk image to
+your macOS system follow these steps:
+
+  1. Open the mounted disk image with the Finder application.
+
+  2. Launch the pylon-7.x.y.z.pkg file to install the
+     pylon Camera Software Suite to your macOS system.
+
+  3. Drag the Samples folder to the desired folder, e.g., your home
+     directory, to install the pylon Software Development Kit C++
+     samples.
+
+  4. Compile and start any C++ example in the C++ samples folder to
+     test your cameras.
+
+The pylon-7.x.y.z.dmg disk image contains the following files:
+
+Samples/*              # C++ sample files
+pylon-7.x.y.z.pkg      # Installer for pylon Camera Software Suite
+README
+INSTALL.txt
+
+
+Usage
+=====
+For further information about how to use the pylon 7 Camera Software
+Suite, how to configure cameras and the host system, and how to build
+pylon-based applications, please read the README document.
