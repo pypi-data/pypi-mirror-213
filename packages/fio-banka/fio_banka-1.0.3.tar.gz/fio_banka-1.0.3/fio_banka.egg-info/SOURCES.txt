@@ -1,0 +1,10 @@
+LICENSE
+README.md
+fio_banka.py
+pyproject.toml
+fio_banka.egg-info/PKG-INFO
+fio_banka.egg-info/SOURCES.txt
+fio_banka.egg-info/dependency_links.txt
+fio_banka.egg-info/requires.txt
+fio_banka.egg-info/top_level.txt
+tests/test_fio_banka.py
