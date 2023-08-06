@@ -1,0 +1,32 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "cloud_tts_tool"
+version = "0.0.74"
+authors = [
+    { name="Ben Brenner", email="ben.brenner@gmail.com" },
+    ]
+description = "A tool for requesting text to speech from a variety of cloud APIs."
+readme = "README.md"
+requires-python = ">=3.9"
+classifiers = [
+
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "azure-cognitiveservices-speech",
+    "boto3",
+    "google-cloud-texttospeech",
+    "google-cloud-texttospeech",
+    "keyring",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/cobiadigital/cloud_tts_tools"
+"Bug Tracker" = "https://github.com/cobiadigital/cloud_tts_tools/issues"
+
+
