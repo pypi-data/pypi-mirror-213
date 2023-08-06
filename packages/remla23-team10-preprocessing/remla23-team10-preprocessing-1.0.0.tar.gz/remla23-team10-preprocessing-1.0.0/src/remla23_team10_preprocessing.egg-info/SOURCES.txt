@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+src/remla23-team10-preprocessing/__init__.py
+src/remla23-team10-preprocessing/preprocessing.py
+src/remla23_team10_preprocessing.egg-info/PKG-INFO
+src/remla23_team10_preprocessing.egg-info/SOURCES.txt
+src/remla23_team10_preprocessing.egg-info/dependency_links.txt
+src/remla23_team10_preprocessing.egg-info/requires.txt
+src/remla23_team10_preprocessing.egg-info/top_level.txt
