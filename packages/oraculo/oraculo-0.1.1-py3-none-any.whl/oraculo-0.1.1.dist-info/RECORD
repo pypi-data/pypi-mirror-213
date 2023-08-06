@@ -1,0 +1,12 @@
+oraculo/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+oraculo/cli.py,sha256=YH-Rh719dLQ-kUq9kuj7n0pxNG6PxXnX8il5havBeTQ,5098
+oraculo/functions/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+oraculo/functions/audio.py,sha256=lwIa0H6U5j9q2VRDLFve52TtN6YoDp7HJafopbQd8_Y,1340
+oraculo/functions/data.py,sha256=gFkRr-XHYNMt0PVoHfiP7F89lMfmyftOBvIap5Ug02I,3735
+oraculo/webapp/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+oraculo/webapp/hello_world.py,sha256=cfGet2YBr2_IULdxuhJ8KOfOCkYE_5Txx9tEViQ8SuQ,2450
+oraculo/webapp/pages/add_document.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+oraculo-0.1.1.dist-info/METADATA,sha256=tyQ8BxWFEubG4l23L1I2Q2Vuh_iWX0h_XcR_SwzU23s,1227
+oraculo-0.1.1.dist-info/WHEEL,sha256=WGfLGfLX43Ei_YORXSnT54hxFygu34kMpcQdmgmEwCQ,88
+oraculo-0.1.1.dist-info/entry_points.txt,sha256=nvQNK7UtpVCxD7wc2Tj403CPDZ-SiB8Ub3TrIfHwcq4,43
+oraculo-0.1.1.dist-info/RECORD,,
