@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+src/__init__.py
+src/cli.py
+src/cstore.egg-info/PKG-INFO
+src/cstore.egg-info/SOURCES.txt
+src/cstore.egg-info/dependency_links.txt
+src/cstore.egg-info/entry_points.txt
+src/cstore.egg-info/requires.txt
+src/cstore.egg-info/top_level.txt
