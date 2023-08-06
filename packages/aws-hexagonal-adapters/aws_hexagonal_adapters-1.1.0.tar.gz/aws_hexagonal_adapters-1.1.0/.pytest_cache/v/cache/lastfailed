@@ -1,0 +1,5 @@
+{
+  "tests/test_s3_service.py::test_upload": true,
+  "tests/test_s3_service.py::test_download": true,
+  "tests/test_s3_service.py::test_list_files": true
+}

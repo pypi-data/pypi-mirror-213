@@ -1,0 +1,7 @@
+{
+  "test_event_bridge_service.py::test_put_event_with_error": true,
+  "test_s3_service.py::test_upload_with_error": true,
+  "test_s3_service.py::test_copy_key_boto3": true,
+  "test_s3_service.py::test_list_prefixes": true,
+  "test_s3_service.py::test_delete_objects_with_error": true
+}

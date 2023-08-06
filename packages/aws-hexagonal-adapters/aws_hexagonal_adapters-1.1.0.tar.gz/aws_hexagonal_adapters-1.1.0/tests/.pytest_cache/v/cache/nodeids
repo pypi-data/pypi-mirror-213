@@ -1,0 +1,13 @@
+[
+  "test_event_bridge_service.py::test_put_event",
+  "test_event_bridge_service.py::test_put_event_with_error",
+  "test_s3_service.py::test_copy_key_boto3",
+  "test_s3_service.py::test_delete_object",
+  "test_s3_service.py::test_delete_objects",
+  "test_s3_service.py::test_delete_objects_with_error",
+  "test_s3_service.py::test_download",
+  "test_s3_service.py::test_list_files",
+  "test_s3_service.py::test_list_prefixes",
+  "test_s3_service.py::test_upload",
+  "test_s3_service.py::test_upload_with_error"
+]
