@@ -1,0 +1,69 @@
+# -*- coding: UTF-8 -*-
+[project]
+dynamic = [ "version" ]
+name = "test_pkg_base"
+description = "Test Package"
+
+requires-python = ">= 3.6.2"
+dependencies = [ ]
+
+#+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+[[project.authors]]
+name = "Nanohmics Inc."
+email = "software.support@nanohmics.com"
+
+#+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+# Build and distribution configuration
+#+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+[build-system]
+requires = [
+  "partis-pyproj >= 0.0.1"]
+
+build-backend = "partis.pyproj.backend"
+
+#...............................................................................
+[tool.pyproj.config]
+opt_a = 1
+opt_b = ["xyz", "abc"]
+opt_c = false
+opt_d = 0.0
+
+#...............................................................................
+[tool.pyproj.prep]
+entry = "pkgaux:prep"
+
+#...............................................................................
+[tool.pyproj.dist.prep]
+entry = "pkgaux:dist_prep"
+
+#...............................................................................
+[tool.pyproj.dist.source.prep]
+entry = "pkgaux:dist_source_prep"
+
+#...............................................................................
+[tool.pyproj.dist.source]
+add_legacy_setup = true
+
+copy = [
+  'src',
+  'pkgaux',
+  'pyproject.toml' ]
+
+#...............................................................................
+[tool.pyproj.dist.binary]
+ignore = [ ]
+
+#...............................................................................
+[tool.pyproj.dist.binary.prep]
+entry = "pkgaux:dist_binary_prep"
+
+#...............................................................................
+[[tool.pyproj.dist.binary.purelib.copy]]
+src = 'src/test_pkg/pure_mod'
+dst = 'test_pkg_base/pure_mod'
+
+[[tool.pyproj.dist.binary.purelib.copy]]
+glob = '**/*.py'
+ignore = '**/bad_file.py'
+src = 'src/test_pkg/sub_mod'
+dst = 'test_pkg_base/sub_mod'

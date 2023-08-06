@@ -1,0 +1,52 @@
+Metadata-Version: 2.1
+Name: partis-pyproj
+Version: 0.1.3rc1
+Requires-Python: >=3.6.2
+Author-email: "Nanohmics Inc." <software.support@nanohmics.com>
+Maintainer-email: "Nanohmics Inc." <software.support@nanohmics.com>
+Summary: Minimal set of Python project utilities (PEP-517/621)
+License-File: LICENSE.txt
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Microsoft :: Windows
+Provides-Extra: meson
+Provides-Extra: cmake
+Provides-Extra: doc
+Provides-Extra: test
+Provides-Extra: cov
+Provides-Extra: lint
+Requires-Dist: tomli>=1.2.3
+Requires-Dist: packaging==21.3
+Requires-Dist: importlib_metadata; python_version < "3.8"
+Requires-Dist: wheel
+Requires-Dist: meson>=0.61.3; extra == "meson"
+Requires-Dist: ninja>=1.10.2.3; extra == "meson"
+Requires-Dist: ninja>=1.10.2.3; extra == "cmake"
+Requires-Dist: cmake>=3.24.3; extra == "cmake"
+Requires-Dist: partis-utils[sphinx]>=0.1.3rc1; extra == "doc"
+Requires-Dist: meson>=0.61.3; extra == "test"
+Requires-Dist: numpy; extra == "test"
+Requires-Dist: pip>=18.1; extra == "test"
+Requires-Dist: coverage[toml]>=6.2; extra == "test"
+Requires-Dist: nox>=2021.10.1; extra == "test"
+Requires-Dist: tomli>=1.2.3; extra == "test"
+Requires-Dist: cmake>=3.24.3; extra == "test"
+Requires-Dist: Cython>=0.29.18; extra == "test"
+Requires-Dist: ninja>=1.10.2.3; extra == "test"
+Requires-Dist: pytest_mock>=3.6.1; extra == "test"
+Requires-Dist: build>=0.7.0; extra == "test"
+Requires-Dist: pytest>=6.2.5; extra == "test"
+Requires-Dist: pytest-cov>=3.0.0; extra == "test"
+Requires-Dist: coverage[toml]>=6.2; extra == "cov"
+Requires-Dist: pyflakes==2.4.0; extra == "lint"
+Description-Content-Type: text/x-rst
+
+The ``partis.pyproj`` package aims to be very simple and
+transparent implementation of a PEP-517 build back-end.
+
+https://nanohmics.bitbucket.io/doc/partis/pyproj
