@@ -1,0 +1,7 @@
+LICENSE
+README.md
+setup.py
+bytedaitool.egg-info/PKG-INFO
+bytedaitool.egg-info/SOURCES.txt
+bytedaitool.egg-info/dependency_links.txt
+bytedaitool.egg-info/top_level.txt
