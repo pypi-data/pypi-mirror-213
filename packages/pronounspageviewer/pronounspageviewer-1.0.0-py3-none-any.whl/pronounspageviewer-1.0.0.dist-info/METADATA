@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: pronounspageviewer
+Version: 1.0.0
+Summary: View a Pronouns.page from its JSON file
+Author: Joe Greaves
+Project-URL: Homepage, https://github.com/Grvs44/Pronouns.page-Viewer
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
+# Pronouns.page Viewer
+## Run
+1. Pass the file name with the `-f` argument:
+    ```cmd
+    pronounspageviewer -f pronouns.json
+    ```
+2. Pipe the file into `pronounspageviewer` (or `python -m pronounspageviewer`).  
+An example with Git:
+    ```cmd
+    git show HEAD:pronouns.json | pronounspageviewer
+    ```
