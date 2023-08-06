@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: watson-nlp-runtime-client
+Version: 1.2.0
+Summary: Watson Embedded AI runtime client library for Watson_nlp
+Home-page: https://github.com/IBM/ibm-watson-embed-clients/
+Author: IBM Watson Embed
+Author-email: aifound@us.ibm.com
+License: Apache 2.0
+Keywords: language,nlp,categories classification,concepts,detag,emotion,entityMentions,langDetect,keywords,nounPhrases,relations,sentiment,syntax,watson,ibm,dialog,user modeling
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+Requires-Dist: grpcio (<2.0,>=1.35.0)
+Requires-Dist: grpcio-tools (<2.0,>=1.35.0)
+Requires-Dist: protobuf (==4.21.7)
+
+
+    # Watson Embedded AI runtime client libraries
+    
+
