@@ -1,0 +1,11 @@
+LICENSE
+README.md
+zpenv/__init__.py
+zpenv/__main__.py
+zpenv/zpenv.py
+zpenv.egg-info/PKG-INFO
+zpenv.egg-info/SOURCES.txt
+zpenv.egg-info/dependency_links.txt
+zpenv.egg-info/entry_points.txt
+zpenv.egg-info/requires.txt
+zpenv.egg-info/top_level.txt
