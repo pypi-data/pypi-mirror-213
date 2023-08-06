@@ -1,0 +1,79 @@
+Metadata-Version: 2.1
+Name: mappie
+Version: 0.0.1
+Summary: Collections, frozen mappings, and more
+Author-email: Maxwell G <maxwell@gtmx.me>
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Development Status :: 3 - Alpha
+Classifier: Typing :: Typed
+Requires-Dist: ruff ; extra == "codeqa"
+Requires-Dist: reuse ; extra == "codeqa"
+Requires-Dist: mappie[formatters] ; extra == "dev"
+Requires-Dist: mappie[test] ; extra == "dev"
+Requires-Dist: mappie[typing] ; extra == "dev"
+Requires-Dist: nox ; extra == "dev"
+Requires-Dist: black ; extra == "formatters"
+Requires-Dist: isort ; extra == "formatters"
+Requires-Dist: pytest ; extra == "test"
+Requires-Dist: mypy ; extra == "typing"
+Requires-Dist: pytest ; extra == "typing"
+Requires-Dist: typing_extensions ; extra == "typing"
+Requires-Dist: nox ; extra == "typing"
+Project-URL: Changelog, https://git.sr.ht/~gotmax23/mappie/tree/main/item/NEWS.md
+Project-URL: Mailing List, https://lists.sr.ht/~gotmax23/mappie
+Project-URL: Source, https://git.sr.ht/~gotmax23/mappie
+Provides-Extra: codeqa
+Provides-Extra: dev
+Provides-Extra: formatters
+Provides-Extra: test
+Provides-Extra: typing
+
+<!--
+Copyright (C) 2023 Maxwell G <maxwell@gtmx.me>
+SPDX-License-Identifier: MIT
+-->
+
+# mappie
+
+[![builds.sr.ht status](https://builds.sr.ht/~gotmax23/mappie/commits/main.svg)](https://builds.sr.ht/~gotmax23/mappie/commits/main?)
+
+[![copr build status][badge-copr]][link-copr] (gotmax23/mappie)
+
+[![copr build status][badge-copr-dev]][link-copr-dev] (gotmax23/mappie-dev)
+
+Collections, frozen mappings, and more
+
+## Links
+
+- [mappie project hub](https://sr.ht/~gotmax23/mappie)
+- [mappie git.sr.ht repo](https://git.sr.ht/~gotmax23/mappie)
+- [mappie tracker](https://todo.sr.ht/~gotmax23/mappie)
+- [mappie mailing list][archives] ([~gotmax/mappie@lists.sr.ht][mailto])
+
+[archives]: https://lists.sr.ht/~gotmax23/mappie
+[mailto]: mailto:~gotmax/mappie@lists.sr.ht
+
+## Contributing
+
+See [CONTRIBUTING.md](https://git.sr.ht/~gotmax23/mappie/tree/main/item/CONTRIBUTING.md).
+
+## License
+
+This repository is licensed under
+
+    SPDX-License-Identifer: MIT
+
+[badge-copr]: https://copr.fedorainfracloud.org/coprs/gotmax23/mappie/package/python-mappie/status_image/last_build.png
+[link-copr]: https://copr.fedorainfracloud.org/coprs/gotmax23/mappie/
+[badge-copr-dev]: https://copr.fedorainfracloud.org/coprs/gotmax23/mappie-dev/package/python-mappie/status_image/last_build.png
+[link-copr-dev]: https://copr.fedorainfracloud.org/coprs/gotmax23/mappie-dev/
+
