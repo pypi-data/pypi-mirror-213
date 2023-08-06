@@ -1,0 +1,16 @@
+include MANIFEST.in
+include LICENSE
+include README.md
+include setup.py
+include versioneer.py
+include copulae/_version.py
+
+graft copulae
+
+recursive-include copulae/datasets *.csv
+recursive-include copulae/copula *.p
+
+global-exclude *.py[co]
+
+prune docs
+prune .pytest_cache
