@@ -1,0 +1,7 @@
+django
+django-ckeditor
+django-js-asset
+html2text
+Jinja2
+MarkupSafe
+sqlparse

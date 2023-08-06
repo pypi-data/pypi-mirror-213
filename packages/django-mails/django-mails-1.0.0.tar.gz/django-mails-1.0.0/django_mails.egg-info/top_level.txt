@@ -1,0 +1,2 @@
+djangomails
+email_service
