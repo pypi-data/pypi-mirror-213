@@ -1,0 +1,5 @@
+[plone.autoinclude.plugin]
+target = plone
+
+[z3c.autoinclude.plugin]
+target = plone

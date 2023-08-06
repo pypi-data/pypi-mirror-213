@@ -1,0 +1,8 @@
+Changelog
+=========
+
+
+1.0.0 (2023-06-12)
+------------------
+
+- Initial release based on ftw.zopemaster 1.4.x and python-cas 1.6.0
