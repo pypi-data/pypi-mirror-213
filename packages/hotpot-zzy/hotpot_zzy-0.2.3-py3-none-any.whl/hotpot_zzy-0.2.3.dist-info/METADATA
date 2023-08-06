@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: hotpot-zzy
+Version: 0.2.3
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: thermo
+Requires-Dist: cclib
+
