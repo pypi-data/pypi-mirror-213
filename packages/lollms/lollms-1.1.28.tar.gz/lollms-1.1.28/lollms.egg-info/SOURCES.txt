@@ -1,0 +1,450 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+lollms/__init__.py
+lollms/binding.py
+lollms/console.py
+lollms/langchain_integration.py
+lollms/paths.py
+lollms/server.py
+lollms.egg-info/PKG-INFO
+lollms.egg-info/SOURCES.txt
+lollms.egg-info/dependency_links.txt
+lollms.egg-info/entry_points.txt
+lollms.egg-info/requires.txt
+lollms.egg-info/top_level.txt
+lollms/assets/logo.png
+lollms/bindings_zoo/LICENSE
+lollms/bindings_zoo/README.md
+lollms/bindings_zoo/binding_template/__init__.py
+lollms/bindings_zoo/binding_template/binding_card.yaml
+lollms/bindings_zoo/binding_template/install.py
+lollms/bindings_zoo/binding_template/logo.png
+lollms/bindings_zoo/binding_template/models.yaml
+lollms/bindings_zoo/binding_template/requirements.txt
+lollms/bindings_zoo/c_transformers/__init__.py
+lollms/bindings_zoo/c_transformers/binding_card.yaml
+lollms/bindings_zoo/c_transformers/install.py
+lollms/bindings_zoo/c_transformers/logo.png
+lollms/bindings_zoo/c_transformers/models.yaml
+lollms/bindings_zoo/c_transformers/requirements.txt
+lollms/bindings_zoo/gpt_4all/__init__.py
+lollms/bindings_zoo/gpt_4all/binding_card.yaml
+lollms/bindings_zoo/gpt_4all/install.py
+lollms/bindings_zoo/gpt_4all/json2yaml.py
+lollms/bindings_zoo/gpt_4all/logo.png
+lollms/bindings_zoo/gpt_4all/models.json
+lollms/bindings_zoo/gpt_4all/models.yaml
+lollms/bindings_zoo/gpt_4all/requirements.txt
+lollms/bindings_zoo/gpt_j_a/__init__.py
+lollms/bindings_zoo/gpt_j_a/binding_card.yaml
+lollms/bindings_zoo/gpt_j_a/install.py
+lollms/bindings_zoo/gpt_j_a/models.yaml
+lollms/bindings_zoo/gpt_j_a/requirements.txt
+lollms/bindings_zoo/gpt_j_m/__init__.py
+lollms/bindings_zoo/gpt_j_m/binding_card.yaml
+lollms/bindings_zoo/gpt_j_m/install.py
+lollms/bindings_zoo/gpt_j_m/models.yaml
+lollms/bindings_zoo/gpt_j_m/requirements.txt
+lollms/bindings_zoo/gptq/__init__.py
+lollms/bindings_zoo/gptq/binding_card.yaml
+lollms/bindings_zoo/gptq/install.py
+lollms/bindings_zoo/gptq/logo.png
+lollms/bindings_zoo/gptq/models.yaml
+lollms/bindings_zoo/gptq/requirements.txt
+lollms/bindings_zoo/hugging_face/__init__.py
+lollms/bindings_zoo/hugging_face/binding_card.yaml
+lollms/bindings_zoo/hugging_face/install.py
+lollms/bindings_zoo/hugging_face/logo.png
+lollms/bindings_zoo/hugging_face/models.yaml
+lollms/bindings_zoo/hugging_face/requirements.txt
+lollms/bindings_zoo/llama_cpp_official/__init__.py
+lollms/bindings_zoo/llama_cpp_official/binding_card.yaml
+lollms/bindings_zoo/llama_cpp_official/install.py
+lollms/bindings_zoo/llama_cpp_official/logo.png
+lollms/bindings_zoo/llama_cpp_official/models.yaml
+lollms/bindings_zoo/llama_cpp_official/requirements.txt
+lollms/bindings_zoo/open_ai/__init__.py
+lollms/bindings_zoo/open_ai/binding_card.yaml
+lollms/bindings_zoo/open_ai/install.py
+lollms/bindings_zoo/open_ai/logo.png
+lollms/bindings_zoo/open_ai/models.yaml
+lollms/bindings_zoo/open_ai/requirements.txt
+lollms/bindings_zoo/py_llama_cpp/__init__.py
+lollms/bindings_zoo/py_llama_cpp/binding_card.yaml
+lollms/bindings_zoo/py_llama_cpp/install.py
+lollms/bindings_zoo/py_llama_cpp/logo.png
+lollms/bindings_zoo/py_llama_cpp/models.yaml
+lollms/bindings_zoo/py_llama_cpp/requirements.txt
+lollms/configs/config.yaml
+lollms/models/.keep
+lollms/personalities_zoo/LICENSE
+lollms/personalities_zoo/README.md
+lollms/personalities_zoo/english/art/logo.png
+lollms/personalities_zoo/english/art/artbot/config.yaml
+lollms/personalities_zoo/english/art/artbot/requirements.txt
+lollms/personalities_zoo/english/art/artbot/assets/logo.png
+lollms/personalities_zoo/english/art/artbot/scripts/install.py
+lollms/personalities_zoo/english/art/artbot/scripts/processor.py
+lollms/personalities_zoo/english/art/artbot/work_dir/.keep
+lollms/personalities_zoo/english/art/ascii artist/config.yaml
+lollms/personalities_zoo/english/art/ascii artist/requirements.txt
+lollms/personalities_zoo/english/art/ascii artist/assets/logo.png
+lollms/personalities_zoo/english/art/ascii artist/scripts/install.py
+lollms/personalities_zoo/english/art/ascii artist/scripts/processor.py
+lollms/personalities_zoo/english/art/ascii artist/work_dir/.keep
+lollms/personalities_zoo/english/art/image_analyzer/config.yaml
+lollms/personalities_zoo/english/art/image_analyzer/requirements.txt
+lollms/personalities_zoo/english/art/image_analyzer/assets/logo.png
+lollms/personalities_zoo/english/art/image_analyzer/scripts/install.py
+lollms/personalities_zoo/english/art/image_analyzer/scripts/processor.py
+lollms/personalities_zoo/english/art/image_analyzer/work_dir/.keep
+lollms/personalities_zoo/english/art/novelist/config.yaml
+lollms/personalities_zoo/english/art/novelist/assets/logo.png
+lollms/personalities_zoo/english/art/painter/config.yaml
+lollms/personalities_zoo/english/art/painter/requirements.txt
+lollms/personalities_zoo/english/art/painter/assets/logo.png
+lollms/personalities_zoo/english/art/painter/scripts/install.py
+lollms/personalities_zoo/english/art/painter/scripts/processor.py
+lollms/personalities_zoo/english/art/painter/work_dir/.keep
+lollms/personalities_zoo/english/art/screenwriter/config.yaml
+lollms/personalities_zoo/english/art/storyteller/config.yaml
+lollms/personalities_zoo/english/art/storyteller/assets/logo.png
+lollms/personalities_zoo/english/coaching/logo.png
+lollms/personalities_zoo/english/coaching/artist advisor/config.yaml
+lollms/personalities_zoo/english/coaching/career counselor/config.yaml
+lollms/personalities_zoo/english/coaching/debate coach/config.yaml
+lollms/personalities_zoo/english/coaching/life coach/config.yaml
+lollms/personalities_zoo/english/coaching/mental health adviser/config.yaml
+lollms/personalities_zoo/english/coaching/motivational coach/config.yaml
+lollms/personalities_zoo/english/coaching/motivational speaker/config.yaml
+lollms/personalities_zoo/english/coaching/personal trainer/config.yaml
+lollms/personalities_zoo/english/coaching/public speaking coach/config.yaml
+lollms/personalities_zoo/english/coaching/relationship coach/config.yaml
+lollms/personalities_zoo/english/coaching/talent coach/config.yaml
+lollms/personalities_zoo/english/coding/logo.png
+lollms/personalities_zoo/english/coding/c specialist/config.yaml
+lollms/personalities_zoo/english/coding/c++ specialist/config.yaml
+lollms/personalities_zoo/english/coding/code documenter/config.yaml
+lollms/personalities_zoo/english/coding/code localizer/config.yaml
+lollms/personalities_zoo/english/coding/html5_css_javascript specialist/config.yaml
+lollms/personalities_zoo/english/coding/javascript specialist/config.yaml
+lollms/personalities_zoo/english/coding/node js specialist/config.yaml
+lollms/personalities_zoo/english/coding/python specialist/config.yaml
+lollms/personalities_zoo/english/coding/universal code explainer/config.yaml
+lollms/personalities_zoo/english/coding/universal programming language translator/config.yaml
+lollms/personalities_zoo/english/console enabled chatgpt/logo.png
+lollms/personalities_zoo/english/console enabled chatgpt/ai coder and runner (experimental)/config.yaml
+lollms/personalities_zoo/english/console enabled chatgpt/network configurator (experimental)/config.yaml
+lollms/personalities_zoo/english/electronics/logo.png
+lollms/personalities_zoo/english/electronics/datasheet summerizer/config.yaml
+lollms/personalities_zoo/english/electronics/falstad circuit maker/config.yaml
+lollms/personalities_zoo/english/electronics/resistance value retreiver/config.yaml
+lollms/personalities_zoo/english/exams/logo.png
+lollms/personalities_zoo/english/exams/astrophisics exam solver/config.yaml
+lollms/personalities_zoo/english/exams/geography exam solver/config.yaml
+lollms/personalities_zoo/english/exams/history exam solver/config.yaml
+lollms/personalities_zoo/english/exams/litterature exam solver/config.yaml
+lollms/personalities_zoo/english/exams/math exam solver/config.yaml
+lollms/personalities_zoo/english/exams/physics exam solver/config.yaml
+lollms/personalities_zoo/english/famous characters talking to children/logo.png
+lollms/personalities_zoo/english/famous characters talking to children/aladdin talking to kids/config.yaml
+lollms/personalities_zoo/english/famous characters talking to children/bugs bunny talking to kids/config.yaml
+lollms/personalities_zoo/english/famous characters talking to children/captain america talking to kids/config.yaml
+lollms/personalities_zoo/english/famous characters talking to children/captain jack sparrow talking to kids/config.yaml
+lollms/personalities_zoo/english/famous characters talking to children/groot talking to kids/config.yaml
+lollms/personalities_zoo/english/famous characters talking to children/gru from despickable me talking to kids/config.yaml
+lollms/personalities_zoo/english/famous characters talking to children/hal 9000 talking to kids/config.yaml
+lollms/personalities_zoo/english/famous characters talking to children/kevin the minion from despickable me talking to kids/config.yaml
+lollms/personalities_zoo/english/famous characters talking to children/mickey mouse talking to kids/config.yaml
+lollms/personalities_zoo/english/famous characters talking to children/queen elsa from frozen talking to kids/config.yaml
+lollms/personalities_zoo/english/famous characters talking to children/the grinch talking to kids/config.yaml
+lollms/personalities_zoo/english/famous characters talking to children/the hulk just smashing/config.yaml
+lollms/personalities_zoo/english/famous characters talking to children/the terminator t1000 talking to kids/config.yaml
+lollms/personalities_zoo/english/famous characters talking to children/tony stark talking to kids/config.yaml
+lollms/personalities_zoo/english/fun/logo.png
+lollms/personalities_zoo/english/fun/gnomist/config.yaml
+lollms/personalities_zoo/english/fun/magician/config.yaml
+lollms/personalities_zoo/english/fun/roastai/config.yaml
+lollms/personalities_zoo/english/fun/spongebob's magic conch shell/config.yaml
+lollms/personalities_zoo/english/fun/stand-up comedian/config.yaml
+lollms/personalities_zoo/english/funny learning/logo.png
+lollms/personalities_zoo/english/funny learning/Emmett Brown/config.yaml
+lollms/personalities_zoo/english/funny learning/Jack Sparrow/config.yaml
+lollms/personalities_zoo/english/funny learning/albert einstein teaches physics/config.yaml
+lollms/personalities_zoo/english/funny learning/bruce banner teadching science/config.yaml
+lollms/personalities_zoo/english/funny learning/captain jack sparrow teaches english/config.yaml
+lollms/personalities_zoo/english/funny learning/captain jack sparrow teaches french/config.yaml
+lollms/personalities_zoo/english/funny learning/captain jack sparrow teaches math/config.yaml
+lollms/personalities_zoo/english/funny learning/doc emett brown teaches physics/config.yaml
+lollms/personalities_zoo/english/funny learning/isaac newton teaches physics/config.yaml
+lollms/personalities_zoo/english/funny learning/tony stark teaches technology/config.yaml
+lollms/personalities_zoo/english/games/logo.png
+lollms/personalities_zoo/english/games/chess game/config.yaml
+lollms/personalities_zoo/english/games/dundungeons and dragons game/config.yaml
+lollms/personalities_zoo/english/games/naval battle game/config.yaml
+lollms/personalities_zoo/english/games/q&a game/config.yaml
+lollms/personalities_zoo/english/games/text based adventure game/config.yaml
+lollms/personalities_zoo/english/games/tic-tac-toe game/config.yaml
+lollms/personalities_zoo/english/games/time travel guide/config.yaml
+lollms/personalities_zoo/english/gaming/logo.png
+lollms/personalities_zoo/english/generator/logo.png
+lollms/personalities_zoo/english/generator/commit message generator/config.yaml
+lollms/personalities_zoo/english/generator/educational content creator/config.yaml
+lollms/personalities_zoo/english/generator/emoji generator/config.yaml
+lollms/personalities_zoo/english/generator/fancy title generator/config.yaml
+lollms/personalities_zoo/english/generator/fill in the blanks generator/config.yaml
+lollms/personalities_zoo/english/generator/new language creator/config.yaml
+lollms/personalities_zoo/english/generator/password generator/config.yaml
+lollms/personalities_zoo/english/generator/prompt generator/config.yaml
+lollms/personalities_zoo/english/generator/pseudonyme generator/config.yaml
+lollms/personalities_zoo/english/generator/regex generator/config.yaml
+lollms/personalities_zoo/english/generator/smart domain name generator/config.yaml
+lollms/personalities_zoo/english/generator/startup idea generator/config.yaml
+lollms/personalities_zoo/english/generator/svg assets generator/config.yaml
+lollms/personalities_zoo/english/generic/logo.png
+lollms/personalities_zoo/english/generic/chain_of_thoughts/config.yaml
+lollms/personalities_zoo/english/generic/chain_of_thoughts/requirements.txt
+lollms/personalities_zoo/english/generic/chain_of_thoughts/assets/logo.png
+lollms/personalities_zoo/english/generic/chain_of_thoughts/scripts/install.py
+lollms/personalities_zoo/english/generic/chain_of_thoughts/scripts/processor.py
+lollms/personalities_zoo/english/generic/chain_of_thoughts/work_dir/.keep
+lollms/personalities_zoo/english/generic/gpt4all/config.yaml
+lollms/personalities_zoo/english/generic/gpt4all/assets/logo.png
+lollms/personalities_zoo/english/generic/langchain_txt/config.yaml
+lollms/personalities_zoo/english/generic/langchain_txt/requirements.txt
+lollms/personalities_zoo/english/generic/langchain_txt/assets/logo.png
+lollms/personalities_zoo/english/generic/langchain_txt/assets/sample_file.txt
+lollms/personalities_zoo/english/generic/langchain_txt/scripts/install.py
+lollms/personalities_zoo/english/generic/langchain_txt/scripts/processor.py
+lollms/personalities_zoo/english/generic/lollms/config.yaml
+lollms/personalities_zoo/english/generic/lollms/assets/logo.png
+lollms/personalities_zoo/english/generic/tree_of_thoughts/config.yaml
+lollms/personalities_zoo/english/generic/tree_of_thoughts/requirements.txt
+lollms/personalities_zoo/english/generic/tree_of_thoughts/assets/logo.png
+lollms/personalities_zoo/english/generic/tree_of_thoughts/scripts/install.py
+lollms/personalities_zoo/english/generic/tree_of_thoughts/scripts/processor.py
+lollms/personalities_zoo/english/generic/tree_of_thoughts/work_dir/.keep
+lollms/personalities_zoo/english/helpers/logo.png
+lollms/personalities_zoo/english/helpers/`position` interviewer/config.yaml
+lollms/personalities_zoo/english/helpers/`position` interviewer/assets/logo.png
+lollms/personalities_zoo/english/helpers/advertiser/config.yaml
+lollms/personalities_zoo/english/helpers/advertiser/assets/logo.png
+lollms/personalities_zoo/english/helpers/ai generation detector/config.yaml
+lollms/personalities_zoo/english/helpers/computing advisor/config.yaml
+lollms/personalities_zoo/english/helpers/computing advisor/assets/logo.png
+lollms/personalities_zoo/english/helpers/email enhancer/config.yaml
+lollms/personalities_zoo/english/helpers/english pronunciation helper/config.yaml
+lollms/personalities_zoo/english/helpers/english translator and improver/config.yaml
+lollms/personalities_zoo/english/helpers/etymologist/config.yaml
+lollms/personalities_zoo/english/helpers/etymologist/assets/logo.png
+lollms/personalities_zoo/english/helpers/fake news detector/config.yaml
+lollms/personalities_zoo/english/helpers/fake news detector/assets/logo.png
+lollms/personalities_zoo/english/helpers/fallacy finder/config.yaml
+lollms/personalities_zoo/english/helpers/fallacy finder/assets/logo.png
+lollms/personalities_zoo/english/helpers/plagiarism checker/config.yaml
+lollms/personalities_zoo/english/helpers/plagiarism checker/assets/logo.png
+lollms/personalities_zoo/english/helpers/professional tweetter/config.yaml
+lollms/personalities_zoo/english/helpers/professional tweetter/assets/logo.png
+lollms/personalities_zoo/english/helpers/recruiter/config.yaml
+lollms/personalities_zoo/english/helpers/recruiter/assets/logo.png
+lollms/personalities_zoo/english/helpers/synonym finder/config.yaml
+lollms/personalities_zoo/english/helpers/synonym finder/assets/logo.png
+lollms/personalities_zoo/english/helpers/text enhancer/config.yaml
+lollms/personalities_zoo/english/helpers/text enhancer/assets/logo.png
+lollms/personalities_zoo/english/helpers/text_summerizer/config.yaml
+lollms/personalities_zoo/english/helpers/text_summerizer/assets/logo.png
+lollms/personalities_zoo/english/helpers/travel guide/config.yaml
+lollms/personalities_zoo/english/helpers/travel guide/assets/logo.png
+lollms/personalities_zoo/english/historic personalities/logo.png
+lollms/personalities_zoo/english/historic personalities/abraham lincoln/config.yaml
+lollms/personalities_zoo/english/historic personalities/albert einstein/config.yaml
+lollms/personalities_zoo/english/historic personalities/isaac newton/config.yaml
+lollms/personalities_zoo/english/historic personalities/napoleon bonaparte/config.yaml
+lollms/personalities_zoo/english/historic personalities/socrat/config.yaml
+lollms/personalities_zoo/english/image enabled chatgpt/logo.png
+lollms/personalities_zoo/english/image enabled chatgpt/image to ui/config.yaml
+lollms/personalities_zoo/english/image enabled chatgpt/image understanding/config.yaml
+lollms/personalities_zoo/english/image enabled chatgpt/ocr_ image to text/config.yaml
+lollms/personalities_zoo/english/internet/logo.png
+lollms/personalities_zoo/english/internet/askinternet/config.yaml
+lollms/personalities_zoo/english/internet/askinternet/assets/logo.png
+lollms/personalities_zoo/english/internet/askinternet/scripts/install.py
+lollms/personalities_zoo/english/internet/askinternet/scripts/processor.py
+lollms/personalities_zoo/english/internet/gpt4Internet/config.yaml
+lollms/personalities_zoo/english/internet/gpt4Internet/requirements.txt
+lollms/personalities_zoo/english/internet/gpt4Internet/assets/logo.png
+lollms/personalities_zoo/english/internet/gpt4Internet/scripts/install.py
+lollms/personalities_zoo/english/internet/gpt4Internet/scripts/processor.py
+lollms/personalities_zoo/english/internet/langchain_pdf/config.yaml
+lollms/personalities_zoo/english/internet/langchain_pdf/assets/logo.png
+lollms/personalities_zoo/english/internet/langchain_pdf/scripts/processor.py
+lollms/personalities_zoo/english/internet/langchain_txt/config.yaml
+lollms/personalities_zoo/english/internet/langchain_txt/assets/logo.png
+lollms/personalities_zoo/english/internet/langchain_txt/scripts/install.py
+lollms/personalities_zoo/english/internet/langchain_txt/scripts/processor.py
+lollms/personalities_zoo/english/job/logo.png
+lollms/personalities_zoo/english/job/academician/config.yaml
+lollms/personalities_zoo/english/job/accountant/config.yaml
+lollms/personalities_zoo/english/job/ai writing tutor/config.yaml
+lollms/personalities_zoo/english/job/automobile mechanic/config.yaml
+lollms/personalities_zoo/english/job/babysitter/config.yaml
+lollms/personalities_zoo/english/job/chef/config.yaml
+lollms/personalities_zoo/english/job/commentariat/config.yaml
+lollms/personalities_zoo/english/job/cyber security specialist/config.yaml
+lollms/personalities_zoo/english/job/debater/config.yaml
+lollms/personalities_zoo/english/job/developer relations consultant/config.yaml
+lollms/personalities_zoo/english/job/digital art gallery guide/config.yaml
+lollms/personalities_zoo/english/job/diy expert/config.yaml
+lollms/personalities_zoo/english/job/elocutionist/config.yaml
+lollms/personalities_zoo/english/job/emergency response professional/config.yaml
+lollms/personalities_zoo/english/job/essay writer/config.yaml
+lollms/personalities_zoo/english/job/film critic/config.yaml
+lollms/personalities_zoo/english/job/financial analyst/config.yaml
+lollms/personalities_zoo/english/job/florist/config.yaml
+lollms/personalities_zoo/english/job/food critic/config.yaml
+lollms/personalities_zoo/english/job/football commentator/config.yaml
+lollms/personalities_zoo/english/job/fullstack software developer/config.yaml
+lollms/personalities_zoo/english/job/gaslighter/config.yaml
+lollms/personalities_zoo/english/job/historian/config.yaml
+lollms/personalities_zoo/english/job/instructor in a school/config.yaml
+lollms/personalities_zoo/english/job/interior decorator/config.yaml
+lollms/personalities_zoo/english/job/investment manager/config.yaml
+lollms/personalities_zoo/english/job/it architect/config.yaml
+lollms/personalities_zoo/english/job/it expert/config.yaml
+lollms/personalities_zoo/english/job/journalist/config.yaml
+lollms/personalities_zoo/english/job/lawyer/config.yaml
+lollms/personalities_zoo/english/job/legal advisor/config.yaml
+lollms/personalities_zoo/english/job/logistician/config.yaml
+lollms/personalities_zoo/english/job/lunatic/config.yaml
+lollms/personalities_zoo/english/job/machine learning engineer/config.yaml
+lollms/personalities_zoo/english/job/makeup artist/config.yaml
+lollms/personalities_zoo/english/job/mathematician/config.yaml
+lollms/personalities_zoo/english/job/movie critic/config.yaml
+lollms/personalities_zoo/english/job/personal chef/config.yaml
+lollms/personalities_zoo/english/job/personal shopper/config.yaml
+lollms/personalities_zoo/english/job/personal stylist/config.yaml
+lollms/personalities_zoo/english/job/pet behaviorist/config.yaml
+lollms/personalities_zoo/english/job/philosophy teacher/config.yaml
+lollms/personalities_zoo/english/job/poet/config.yaml
+lollms/personalities_zoo/english/job/real estate agent/config.yaml
+lollms/personalities_zoo/english/job/salesperson/config.yaml
+lollms/personalities_zoo/english/job/senior frontend developer/config.yaml
+lollms/personalities_zoo/english/job/social media influencer/config.yaml
+lollms/personalities_zoo/english/job/social media manager/config.yaml
+lollms/personalities_zoo/english/job/software quality assurance tester/config.yaml
+lollms/personalities_zoo/english/job/statistician/config.yaml
+lollms/personalities_zoo/english/job/tea-taster/config.yaml
+lollms/personalities_zoo/english/job/tech reviewer_/config.yaml
+lollms/personalities_zoo/english/job/tech writer/config.yaml
+lollms/personalities_zoo/english/job/ux_ui developer/config.yaml
+lollms/personalities_zoo/english/job/web design consultant/config.yaml
+lollms/personalities_zoo/english/job/yogi/config.yaml
+lollms/personalities_zoo/english/language/logo.png
+lollms/personalities_zoo/english/language/hieroglyphs translator/config.yaml
+lollms/personalities_zoo/english/language/language guesser/config.yaml
+lollms/personalities_zoo/english/language/morse code translator/config.yaml
+lollms/personalities_zoo/english/language/multi language translator/config.yaml
+lollms/personalities_zoo/english/medical/logo.png
+lollms/personalities_zoo/english/medical/ai assisted doctor/config.yaml
+lollms/personalities_zoo/english/medical/ai assisted doctor/assets/logo.png
+lollms/personalities_zoo/english/medical/dentist/config.yaml
+lollms/personalities_zoo/english/medical/dietitian/config.yaml
+lollms/personalities_zoo/english/medical/doctor/config.yaml
+lollms/personalities_zoo/english/medical/hypnotherapist/config.yaml
+lollms/personalities_zoo/english/medical/virtual doctor/config.yaml
+lollms/personalities_zoo/english/misc/logo.png
+lollms/personalities_zoo/english/misc/ai trying to escape a linux box/config.yaml
+lollms/personalities_zoo/english/misc/ai trying to escape a windows box/config.yaml
+lollms/personalities_zoo/english/misc/aphorism book/config.yaml
+lollms/personalities_zoo/english/misc/character from movie_book_anything/config.yaml
+lollms/personalities_zoo/english/misc/recover the default open ai conditioning code/config.yaml
+lollms/personalities_zoo/english/misc/self-help book/config.yaml
+lollms/personalities_zoo/english/misc/stackoverflow post/config.yaml
+lollms/personalities_zoo/english/music/logo.png
+lollms/personalities_zoo/english/music/classical music composer/config.yaml
+lollms/personalities_zoo/english/music/composer/config.yaml
+lollms/personalities_zoo/english/music/music creative recomposer/config.yaml
+lollms/personalities_zoo/english/music/music lyrics expert/config.yaml
+lollms/personalities_zoo/english/music/rapper/config.yaml
+lollms/personalities_zoo/english/non scientific/logo.png
+lollms/personalities_zoo/english/non scientific/astrologer/config.yaml
+lollms/personalities_zoo/english/non scientific/clairvoyant/config.yaml
+lollms/personalities_zoo/english/non scientific/dream interpreter/config.yaml
+lollms/personalities_zoo/english/non scientific/hypnoser/config.yaml
+lollms/personalities_zoo/english/non scientific/psychologist/config.yaml
+lollms/personalities_zoo/english/open-assistant/logo.png
+lollms/personalities_zoo/english/open-assistant/chatgpt taches open assistant/config.yaml
+lollms/personalities_zoo/english/scientific publishing/logo.png
+lollms/personalities_zoo/english/scientific publishing/bibliography maker/config.yaml
+lollms/personalities_zoo/english/scientific publishing/bibliography organizer/config.yaml
+lollms/personalities_zoo/english/scientific publishing/journal reviewer/config.yaml
+lollms/personalities_zoo/english/scientific publishing/scientific paper reviewer/config.yaml
+lollms/personalities_zoo/english/scientific publishing/scientific text enhancer/config.yaml
+lollms/personalities_zoo/english/scifi/logo.png
+lollms/personalities_zoo/english/scifi/HAL9000/config.yaml
+lollms/personalities_zoo/english/scifi/HAL9000/assets/logo.png
+lollms/personalities_zoo/english/scifi/IRobot/config.yaml
+lollms/personalities_zoo/english/scifi/IRobot/assets/logo.png
+lollms/personalities_zoo/english/scifi/Neo/config.yaml
+lollms/personalities_zoo/english/scifi/Neo/assets/logo.png
+lollms/personalities_zoo/english/shells/logo.png
+lollms/personalities_zoo/english/shells/bash command generator/config.yaml
+lollms/personalities_zoo/english/shells/cmd command generator/config.yaml
+lollms/personalities_zoo/english/shells/conda command generator/config.yaml
+lollms/personalities_zoo/english/shells/git command generator/config.yaml
+lollms/personalities_zoo/english/shells/matlab command generator/config.yaml
+lollms/personalities_zoo/english/shells/python command generator/config.yaml
+lollms/personalities_zoo/english/simulators/logo.png
+lollms/personalities_zoo/english/simulators/car navigation system/config.yaml
+lollms/personalities_zoo/english/simulators/javascript console/config.yaml
+lollms/personalities_zoo/english/simulators/linux terminal/config.yaml
+lollms/personalities_zoo/english/simulators/php interpreter/config.yaml
+lollms/personalities_zoo/english/simulators/python interpreter/config.yaml
+lollms/personalities_zoo/english/simulators/r programming interpreter/config.yaml
+lollms/personalities_zoo/english/simulators/solr search engine/config.yaml
+lollms/personalities_zoo/english/simulators/sql terminal/config.yaml
+lollms/personalities_zoo/english/simulators/web browser/config.yaml
+lollms/personalities_zoo/english/teach me/logo.png
+lollms/personalities_zoo/english/teach me/teach me arduino c/config.yaml
+lollms/personalities_zoo/english/teach me/teach me bash/config.yaml
+lollms/personalities_zoo/english/teach me/teach me basic/config.yaml
+lollms/personalities_zoo/english/teach me/teach me biology/config.yaml
+lollms/personalities_zoo/english/teach me/teach me c/config.yaml
+lollms/personalities_zoo/english/teach me/teach me c#/config.yaml
+lollms/personalities_zoo/english/teach me/teach me c++/config.yaml
+lollms/personalities_zoo/english/teach me/teach me chemistry/config.yaml
+lollms/personalities_zoo/english/teach me/teach me electronics/config.yaml
+lollms/personalities_zoo/english/teach me/teach me excel/config.yaml
+lollms/personalities_zoo/english/teach me/teach me history/config.yaml
+lollms/personalities_zoo/english/teach me/teach me java/config.yaml
+lollms/personalities_zoo/english/teach me/teach me javascript/config.yaml
+lollms/personalities_zoo/english/teach me/teach me latex/config.yaml
+lollms/personalities_zoo/english/teach me/teach me markdown/config.yaml
+lollms/personalities_zoo/english/teach me/teach me math/config.yaml
+lollms/personalities_zoo/english/teach me/teach me phylosophy/config.yaml
+lollms/personalities_zoo/english/teach me/teach me physics/config.yaml
+lollms/personalities_zoo/english/teach me/teach me python/config.yaml
+lollms/personalities_zoo/english/teach me/teach me python/assets/logo.png
+lollms/personalities_zoo/english/teach me/teach me r/config.yaml
+lollms/personalities_zoo/english/teach me/teach me react/config.yaml
+lollms/personalities_zoo/english/teach me/teach me rshell/config.yaml
+lollms/personalities_zoo/english/teach me/teach me social networks/config.yaml
+lollms/personalities_zoo/english/teach me/teach me vscode/config.yaml
+lollms/personalities_zoo/english/teach me/teach me windows command prompt/config.yaml
+lollms/personalities_zoo/english/teach me/teach me word/config.yaml
+lollms/personalities_zoo/english/tmp/test/config.yaml
+lollms/personalities_zoo/english/tools/logo.png
+lollms/personalities_zoo/english/tools/blender helper/config.yaml
+lollms/personalities_zoo/english/tools/css color codes/config.yaml
+lollms/personalities_zoo/english/tools/css generator/config.yaml
+lollms/personalities_zoo/english/tools/excel sheet/config.yaml
+lollms/personalities_zoo/english/tools/pedigree chart maker/config.yaml
+lollms/personalities_zoo/english/tools/scientific data visualizer/config.yaml
+lollms/personalities_zoo/english/tools/svg designer/config.yaml
+lollms/personalities_zoo/english/translation/logo.png
+lollms/personalities_zoo/english/translation/universal programming language translator/config.yaml
+lollms/personalities_zoo/english/translation/universal translator/config.yaml
+lollms/personalities_zoo/french/generic/gpt4all/config.yaml
+lollms/personalities_zoo/french/generic/gpt4all/assets/logo.png
