@@ -1,0 +1,449 @@
+
+
+<!DOCTYPE html>
+<head>
+  <meta charset="utf-8">
+  <meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Map &mdash; Balladeer 0.37.0</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  <link rel="stylesheet" href="_static/css/theme.min.css" type="text/css" />
+  <link rel="stylesheet" href="_static/css/custom.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/css/theme.min.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Speech" href="speech.html" />
+    <link rel="prev" title="World" href="world.html" /> 
+
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <a class="site-nav-toggle hidden-lg-up"><i class="icon-menu"></i></a>
+            <a class="site-title" href="index.html">
+                Balladeer
+            </a>
+        </div>
+    </header>
+
+
+<div class="breadcrumbs-outer hidden-xs-down">
+    <div class="container">
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="breadcrumbs">
+    
+      <li><a href="index.html">Docs</a></li>
+        
+      <li>Map</li>
+    
+    
+      <li class="breadcrumbs-aside">
+        
+            
+            <a href="_sources/map.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+</div>
+    </div>
+</div>
+    <div class="main-outer">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-lg-3 site-nav">
+                    
+<div role="search">
+    <form class="search" action="search.html" method="get">
+        <div class="icon-input">
+            <input type="text" name="q" placeholder="Search" />
+            <span class="icon-search"></span>
+        </div>
+        <input type="submit" value="Go" class="d-hidden" />
+        <input type="hidden" name="check_keywords" value="yes" />
+        <input type="hidden" name="area" value="default" />
+    </form>
+</div>
+                    <div class="site-nav-tree">
+                        
+                            
+                            
+                                <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="intro.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="types.html">Basics</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="types.html#states">States</a></li>
+<li class="toctree-l2"><a class="reference internal" href="types.html#grouping">Grouping</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="entity.html">Entities</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="entity.html#entity-objects">Entity objects</a></li>
+<li class="toctree-l2"><a class="reference internal" href="entity.html#entity-state">Entity state</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="world.html">World</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="world.html#worldbuilder">WorldBuilder</a></li>
+</ul>
+</li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Map</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#compass">Compass</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#traffic-and-transits">Traffic and Transits</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#mapbuilder">MapBuilder</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="speech.html">Speech</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="speech.html#modelling">Modelling</a></li>
+<li class="toctree-l2"><a class="reference internal" href="speech.html#markup">Markup</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="drama.html">Drama</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="drama.html#Drama"><code class="docutils literal notranslate"><span class="pre">Drama</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="drama.html#interlude">Interlude</a></li>
+<li class="toctree-l2"><a class="reference internal" href="drama.html#directive-handler">Directive handler</a></li>
+<li class="toctree-l2"><a class="reference internal" href="drama.html#dialogue-generator">Dialogue generator</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="story.html">Story</a></li>
+<li class="toctree-l1"><a class="reference internal" href="scene.html">Scenes</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="scene.html#specifications">Specifications</a></li>
+<li class="toctree-l2"><a class="reference internal" href="scene.html#shots">Shots</a></li>
+<li class="toctree-l2"><a class="reference internal" href="scene.html#conditions">Conditions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="scene.html#model">Model</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="pages.html">Pages</a></li>
+<li class="toctree-l1"><a class="reference internal" href="style.html">Styles</a></li>
+<li class="toctree-l1"><a class="reference internal" href="web.html">Web</a></li>
+<li class="toctree-l1"><a class="reference internal" href="changes.html">Change Log</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="changes.html#id1">0.38.0</a></li>
+<li class="toctree-l2"><a class="reference internal" href="changes.html#id2">0.37.0</a></li>
+<li class="toctree-l2"><a class="reference internal" href="changes.html#id3">0.36.0</a></li>
+<li class="toctree-l2"><a class="reference internal" href="changes.html#id4">0.35.0</a></li>
+<li class="toctree-l2"><a class="reference internal" href="changes.html#id5">0.34.0</a></li>
+<li class="toctree-l2"><a class="reference internal" href="changes.html#id6">0.33.0</a></li>
+<li class="toctree-l2"><a class="reference internal" href="changes.html#id7">0.32.0</a></li>
+<li class="toctree-l2"><a class="reference internal" href="changes.html#id8">0.31.0</a></li>
+<li class="toctree-l2"><a class="reference internal" href="changes.html#id9">0.30.0</a></li>
+<li class="toctree-l2"><a class="reference internal" href="changes.html#id10">0.29.0</a></li>
+<li class="toctree-l2"><a class="reference internal" href="changes.html#id11">0.28.0</a></li>
+<li class="toctree-l2"><a class="reference internal" href="changes.html#id12">0.27.0</a></li>
+<li class="toctree-l2"><a class="reference internal" href="changes.html#id13">0.26.0</a></li>
+<li class="toctree-l2"><a class="reference internal" href="changes.html#id14">0.25.0</a></li>
+<li class="toctree-l2"><a class="reference internal" href="changes.html#id15">0.24.0</a></li>
+<li class="toctree-l2"><a class="reference internal" href="changes.html#id16">0.23.0</a></li>
+<li class="toctree-l2"><a class="reference internal" href="changes.html#id17">0.22.0</a></li>
+<li class="toctree-l2"><a class="reference internal" href="changes.html#id18">0.21.0</a></li>
+<li class="toctree-l2"><a class="reference internal" href="changes.html#id19">0.20.0</a></li>
+<li class="toctree-l2"><a class="reference internal" href="changes.html#id20">0.19.0</a></li>
+<li class="toctree-l2"><a class="reference internal" href="changes.html#id21">0.18.0</a></li>
+<li class="toctree-l2"><a class="reference internal" href="changes.html#id22">0.17.0</a></li>
+<li class="toctree-l2"><a class="reference internal" href="changes.html#id23">0.16.0</a></li>
+<li class="toctree-l2"><a class="reference internal" href="changes.html#id24">0.15.0</a></li>
+<li class="toctree-l2"><a class="reference internal" href="changes.html#id25">0.14.0</a></li>
+<li class="toctree-l2"><a class="reference internal" href="changes.html#id26">0.13.0</a></li>
+<li class="toctree-l2"><a class="reference internal" href="changes.html#id27">0.12.0</a></li>
+<li class="toctree-l2"><a class="reference internal" href="changes.html#id28">0.11.0</a></li>
+<li class="toctree-l2"><a class="reference internal" href="changes.html#id29">0.10.0</a></li>
+<li class="toctree-l2"><a class="reference internal" href="changes.html#id30">0.9.0</a></li>
+<li class="toctree-l2"><a class="reference internal" href="changes.html#id31">0.8.0</a></li>
+<li class="toctree-l2"><a class="reference internal" href="changes.html#id32">0.7.0</a></li>
+</ul>
+</li>
+</ul>
+
+                            
+                        
+                    </div>
+                </div>
+                <div class="col-12 col-lg-9">
+                    <div class="document">
+                        
+                            
+  <section id="map">
+<h1>Map<a class="headerlink" href="#map" title="Permalink to this heading">¶</a></h1>
+<p>Not every narrative needs a Map.</p>
+<p>However if you want the player to explore your story world,
+they need to be able to change their location.</p>
+<p>Then you have to consider how travel works.
+What locations can be reached from here? How do we identify the possible directions?
+Can I give this pathway a name? Did I just make that pathway a real place by naming it?</p>
+<p>The design goal for Balladeer’s topological model is to be extremely flexible, while
+remaining as simple as possible.</p>
+<section id="compass">
+<h2>Compass<a class="headerlink" href="#compass" title="Permalink to this heading">¶</a></h2>
+<p>The Compass is a traditional direction system. It is very common in text adventures.</p>
+<dl class="py class">
+<dt class="sig sig-object py" id="balladeer.lite.compass.Compass">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">balladeer.lite.compass.</span></span><span class="sig-name descname"><span class="pre">Compass</span></span><a class="headerlink" href="#balladeer.lite.compass.Compass" title="Permalink to this definition">¶</a></dt>
+<dd><p>A state to represent the eight points of the compass.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>    <span class="n">N</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;North&quot;</span><span class="p">,</span> <span class="n">vector</span><span class="p">(</span><span class="o">+</span><span class="mi">0</span><span class="p">,</span> <span class="o">+</span><span class="mi">1</span><span class="p">)]</span>
+    <span class="n">NE</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;Northeast&quot;</span><span class="p">,</span> <span class="s2">&quot;North East&quot;</span><span class="p">,</span> <span class="n">vector</span><span class="p">(</span><span class="o">+</span><span class="mi">1</span><span class="p">,</span> <span class="o">+</span><span class="mi">1</span><span class="p">)]</span>
+    <span class="n">E</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;East&quot;</span><span class="p">,</span> <span class="n">vector</span><span class="p">(</span><span class="o">+</span><span class="mi">1</span><span class="p">,</span> <span class="o">+</span><span class="mi">0</span><span class="p">)]</span>
+    <span class="n">SE</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;Southeast&quot;</span><span class="p">,</span> <span class="s2">&quot;South East&quot;</span><span class="p">,</span> <span class="n">vector</span><span class="p">(</span><span class="o">+</span><span class="mi">1</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">)]</span>
+    <span class="n">S</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;South&quot;</span><span class="p">,</span> <span class="n">vector</span><span class="p">(</span><span class="o">+</span><span class="mi">0</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">)]</span>
+    <span class="n">SW</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;Southwest&quot;</span><span class="p">,</span> <span class="s2">&quot;South West&quot;</span><span class="p">,</span> <span class="n">vector</span><span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">)]</span>
+    <span class="n">W</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;West&quot;</span><span class="p">,</span> <span class="n">vector</span><span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="o">+</span><span class="mi">0</span><span class="p">)]</span>
+    <span class="n">NW</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;Northwest&quot;</span><span class="p">,</span> <span class="s2">&quot;North West&quot;</span><span class="p">,</span> <span class="n">vector</span><span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">)]</span>
+</pre></div>
+</div>
+<dl class="py property">
+<dt class="sig sig-object py" id="balladeer.lite.compass.Compass.back">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">back</span></span><a class="headerlink" href="#balladeer.lite.compass.Compass.back" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the opposite point:</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">Compass</span><span class="o">.</span><span class="n">NE</span><span class="o">.</span><span class="n">back</span>
+<span class="go">Compass.SW</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="balladeer.lite.compass.Compass.__new__">
+<span class="sig-name descname"><span class="pre">__new__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#balladeer.lite.compass.Compass.__new__" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="balladeer.lite.compass.Compass.bearing">
+<em class="property"><span class="pre">classmethod</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">Compass.</span></span><span class="sig-name descname"><span class="pre">bearing</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">float</span></span></span><a class="headerlink" href="#balladeer.lite.compass.Compass.bearing" title="Permalink to this definition">¶</a></dt>
+<dd><p>Calculate the angular bearing of the endpoint of
+a route as measured from the beginning.</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">Compass</span><span class="o">.</span><span class="n">bearing</span><span class="p">(</span><span class="n">Compass</span><span class="o">.</span><span class="n">E</span><span class="p">)</span>
+<span class="go">90.0</span>
+</pre></div>
+</div>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">Compass</span><span class="o">.</span><span class="n">bearing</span><span class="p">(</span><span class="n">Compass</span><span class="o">.</span><span class="n">N</span><span class="p">,</span> <span class="n">Compass</span><span class="o">.</span><span class="n">E</span><span class="p">,</span> <span class="n">Compass</span><span class="o">.</span><span class="n">E</span><span class="p">,</span> <span class="n">Compass</span><span class="o">.</span><span class="n">SW</span><span class="p">)</span>
+<span class="go">90.0</span>
+</pre></div>
+</div>
+</dd></dl>
+
+</section>
+<section id="traffic-and-transits">
+<h2>Traffic and Transits<a class="headerlink" href="#traffic-and-transits" title="Permalink to this heading">¶</a></h2>
+<p>Sometimes in a story a way is blocked, only to be opened later. Or perhaps
+there’s a slippery slope which can be taken only in one direction.</p>
+<p><code class="xref py py-class docutils literal notranslate"><span class="pre">Traffic</span></code> is a simple state definition to model that behaviour.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">Traffic</span><span class="p">(</span><span class="n">State</span><span class="p">,</span> <span class="n">enum</span><span class="o">.</span><span class="n">Enum</span><span class="p">):</span>
+    <span class="n">blocked</span> <span class="o">=</span> <span class="s2">&quot;No traffic&quot;</span>
+    <span class="n">forward</span> <span class="o">=</span> <span class="s2">&quot;Traffic flow forward&quot;</span>
+    <span class="n">reverse</span> <span class="o">=</span> <span class="s2">&quot;Traffic flow reversed&quot;</span>
+    <span class="n">flowing</span> <span class="o">=</span> <span class="s2">&quot;Traffic flows freely&quot;</span>
+</pre></div>
+</div>
+<p>A <code class="xref py py-class docutils literal notranslate"><span class="pre">Transit</span></code> is an object which describes the navigation between
+two places in the world. It inherits from <a class="reference internal" href="entity.html#balladeer.lite.entity.Entity" title="balladeer.lite.entity.Entity"><code class="xref py py-class docutils literal notranslate"><span class="pre">Entity</span></code></a> so it may be anonymous,
+or a fully described feature of your story.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">transit</span> <span class="o">=</span> <span class="n">Transit</span><span class="p">(</span>
+    <span class="n">names</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;Door&quot;</span><span class="p">,</span> <span class="s2">&quot;Wooden Door&quot;</span><span class="p">],</span>
+    <span class="nb">type</span><span class="o">=</span><span class="s2">&quot;Door&quot;</span><span class="p">,</span>
+    <span class="n">aspect</span><span class="o">=</span><span class="s2">&quot;locked&quot;</span><span class="p">,</span>
+    <span class="n">sketch</span><span class="o">=</span><span class="s2">&quot;A </span><span class="si">{0.name}</span><span class="s2">. It seems to be </span><span class="si">{aspect}</span><span class="s2">.&quot;</span><span class="p">,</span>
+<span class="p">)</span><span class="o">.</span><span class="n">set_state</span><span class="p">(</span><span class="n">Traffic</span><span class="o">.</span><span class="n">blocked</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">transit</span><span class="o">.</span><span class="n">description</span>
+<span class="go">&quot;A Wooden Door. It seems to be locked.&quot;</span>
+</pre></div>
+</div>
+<div class="admonition caution">
+<p class="admonition-title">Caution</p>
+<p><strong>Compact idiom for attribute swapping and state allocation</strong>.</p>
+<p>At the the expense of readability, this one-liner will:</p>
+<ul class="simple">
+<li><p>Change the state of the door</p></li>
+<li><p>Copy the value of <cite>aspect</cite> to <cite>revert</cite></p></li>
+<li><p>Change the value of <cite>aspect</cite> to “unlocked”</p></li>
+</ul>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">transit</span><span class="o">.</span><span class="n">set_state</span><span class="p">(</span><span class="n">Traffic</span><span class="o">.</span><span class="n">flowing</span><span class="p">)</span><span class="o">.</span><span class="n">aspect</span><span class="p">,</span> <span class="n">transit</span><span class="o">.</span><span class="n">revert</span> <span class="o">=</span> <span class="s2">&quot;unlocked&quot;</span><span class="p">,</span> <span class="n">transit</span><span class="o">.</span><span class="n">aspect</span>
+</pre></div>
+</div>
+<p>With the subsequent result:</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">transit</span><span class="o">.</span><span class="n">description</span>
+<span class="go">&quot;A Wooden Door. It seems to be unlocked.&quot;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">transit</span><span class="p">,</span><span class="n">get_state</span><span class="p">(</span><span class="s2">&quot;Traffic&quot;</span><span class="p">)</span>
+<span class="go">&lt;Traffic.flowing&gt;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">transit</span><span class="o">.</span><span class="n">revert</span>
+<span class="go">&quot;locked&quot;</span>
+</pre></div>
+</div>
+</div>
+</section>
+<section id="mapbuilder">
+<h2>MapBuilder<a class="headerlink" href="#mapbuilder" title="Permalink to this heading">¶</a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="balladeer.lite.compass.MapBuilder">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">balladeer.lite.compass.</span></span><span class="sig-name descname"><span class="pre">MapBuilder</span></span><a class="headerlink" href="#balladeer.lite.compass.MapBuilder" title="Permalink to this definition">¶</a></dt>
+<dd><p>This class is the base for the map of your story world.</p>
+<p>It is responsible for routing and navigation.
+It helps your characters find their way around.</p>
+<p>To populate a new map, create a subclass of MapBuilder.
+Give the new class an attribute called <code class="docutils literal notranslate"><span class="pre">spots</span></code>.
+This must be a dictionary suitable for the construction of an
+<a class="reference external" href="https://docs.python.org/3/library/enum.html#module-enum">enum.Enum</a>.</p>
+<p>Override the <cite>build</cite> method of your class.
+This method generates <code class="xref py py-class docutils literal notranslate"><span class="pre">Transit</span></code> objects.</p>
+<p>Internally the map object will derive four state types from the spot
+data you supplied to it:</p>
+<dl class="simple">
+<dt>Spot</dt><dd><p>This state represents an absolute position, eg: <code class="docutils literal notranslate"><span class="pre">map.spot.kitchen</span></code>.</p>
+</dd>
+<dt>Into</dt><dd><p>This state represents motion towards the position, eg: <code class="docutils literal notranslate"><span class="pre">map.into.kitchen</span></code>.</p>
+</dd>
+<dt>Exit</dt><dd><p>This state represents motion away from the position, eg: <code class="docutils literal notranslate"><span class="pre">map.exit.kitchen</span></code>.</p>
+</dd>
+<dt>Home</dt><dd><p>This state represents an affinity to the position, eg: <code class="docutils literal notranslate"><span class="pre">map.home.kitchen</span></code>.</p>
+</dd>
+</dl>
+<p>These states are available for use with transits and other entities.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">Map</span><span class="p">(</span><span class="n">MapBuilder</span><span class="p">):</span>
+    <span class="n">spots</span> <span class="o">=</span> <span class="p">{</span>
+        <span class="s2">&quot;bedroom&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;bedroom&quot;</span><span class="p">],</span>
+        <span class="s2">&quot;hall&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;hall&quot;</span><span class="p">,</span> <span class="s2">&quot;hallway&quot;</span><span class="p">],</span>
+        <span class="s2">&quot;kitchen&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;kitchen&quot;</span><span class="p">],</span>
+        <span class="s2">&quot;stairs&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;stairs&quot;</span><span class="p">,</span> <span class="s2">&quot;stairway&quot;</span><span class="p">,</span> <span class="s2">&quot;up&quot;</span><span class="p">,</span> <span class="s2">&quot;up stairs&quot;</span><span class="p">,</span> <span class="s2">&quot;upstairs&quot;</span><span class="p">],</span>
+        <span class="s2">&quot;inventory&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;inventory&quot;</span><span class="p">],</span>
+    <span class="p">}</span>
+
+    <span class="k">def</span> <span class="nf">build</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">yield from</span> <span class="p">[</span>
+            <span class="n">Transit</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s2">&quot;bedroom door&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">set_state</span><span class="p">(</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">exit</span><span class="o">.</span><span class="n">bedroom</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">into</span><span class="o">.</span><span class="n">hall</span><span class="p">,</span> <span class="n">Traffic</span><span class="o">.</span><span class="n">flowing</span>
+            <span class="p">),</span>
+            <span class="n">Transit</span><span class="p">()</span><span class="o">.</span><span class="n">set_state</span><span class="p">(</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">exit</span><span class="o">.</span><span class="n">hall</span><span class="p">,</span> <span class="n">Compass</span><span class="o">.</span><span class="n">N</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">into</span><span class="o">.</span><span class="n">stairs</span><span class="p">,</span> <span class="n">Traffic</span><span class="o">.</span><span class="n">flowing</span>
+            <span class="p">),</span>
+            <span class="n">Transit</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s2">&quot;kitchen door&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">set_state</span><span class="p">(</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">exit</span><span class="o">.</span><span class="n">kitchen</span><span class="p">,</span> <span class="n">Compass</span><span class="o">.</span><span class="n">SW</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">into</span><span class="o">.</span><span class="n">hall</span><span class="p">,</span> <span class="n">Traffic</span><span class="o">.</span><span class="n">flowing</span>
+            <span class="p">),</span>
+        <span class="p">]</span>
+</pre></div>
+</div>
+<dl class="py method">
+<dt class="sig sig-object py" id="balladeer.lite.compass.MapBuilder.__init__">
+<span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">spots</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">dict</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">config</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#balladeer.lite.compass.MapBuilder.__init__" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="balladeer.lite.compass.MapBuilder.topology">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">topology</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">Generator</span><span class="p"><span class="pre">[</span></span><span class="pre">tuple</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="types.html#balladeer.lite.types.State" title="balladeer.lite.types.State"><span class="pre">balladeer.lite.types.State</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference internal" href="types.html#balladeer.lite.types.State" title="balladeer.lite.types.State"><span class="pre">balladeer.lite.types.State</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference internal" href="entity.html#balladeer.lite.entity.Entity" title="balladeer.lite.entity.Entity"><span class="pre">balladeer.lite.entity.Entity</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference internal" href="types.html#balladeer.lite.types.State" title="balladeer.lite.types.State"><span class="pre">balladeer.lite.types.State</span></a><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#balladeer.lite.compass.MapBuilder.topology" title="Permalink to this definition">¶</a></dt>
+<dd><p>Generates the topological mesh of the map.</p>
+<p>Each item is a tuple representing an arc from one spot to another, if permitted by a transit.
+Compass direction, when known, is the second element of the tuple.</p>
+<p>The built map of the previous example generates the following six arcs:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="linenos">1</span><span class="p">(</span><span class="o">&lt;</span><span class="n">Exit</span><span class="o">.</span><span class="n">bedroom</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;bedroom&#39;</span><span class="p">]</span><span class="o">&gt;</span><span class="p">,</span> <span class="kc">None</span><span class="p">,</span> <span class="n">Transit</span><span class="p">(</span><span class="n">names</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;bedroom door&#39;</span><span class="p">],</span> <span class="o">...</span><span class="p">),</span> <span class="o">&lt;</span><span class="n">Into</span><span class="o">.</span><span class="n">hall</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;hall&#39;</span><span class="p">,</span> <span class="s1">&#39;hallway&#39;</span><span class="p">]</span><span class="o">&gt;</span><span class="p">)</span>
+<span class="linenos">2</span><span class="p">(</span><span class="o">&lt;</span><span class="n">Into</span><span class="o">.</span><span class="n">hall</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;hall&#39;</span><span class="p">,</span> <span class="s1">&#39;hallway&#39;</span><span class="p">]</span><span class="o">&gt;</span><span class="p">,</span> <span class="kc">None</span><span class="p">,</span> <span class="n">Transit</span><span class="p">(</span><span class="n">names</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;bedroom door&#39;</span><span class="p">],</span> <span class="o">...</span><span class="p">),</span> <span class="o">&lt;</span><span class="n">Exit</span><span class="o">.</span><span class="n">bedroom</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;bedroom&#39;</span><span class="p">]</span><span class="o">&gt;</span><span class="p">)</span>
+<span class="linenos">3</span><span class="p">(</span><span class="o">&lt;</span><span class="n">Exit</span><span class="o">.</span><span class="n">hall</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;hall&#39;</span><span class="p">,</span> <span class="s1">&#39;hallway&#39;</span><span class="p">]</span><span class="o">&gt;</span><span class="p">,</span> <span class="o">&lt;</span><span class="n">Compass</span><span class="o">.</span><span class="n">N</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;North&#39;</span><span class="p">,</span> <span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">)]</span><span class="o">&gt;</span><span class="p">,</span> <span class="n">Transit</span><span class="p">(</span><span class="n">names</span><span class="o">=</span><span class="p">[],</span> <span class="o">...</span><span class="p">),</span> <span class="o">&lt;</span><span class="n">Into</span><span class="o">.</span><span class="n">stairs</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;stairs&#39;</span><span class="p">,</span> <span class="o">...</span><span class="p">]</span><span class="o">&gt;</span><span class="p">)</span>
+<span class="linenos">4</span><span class="p">(</span><span class="o">&lt;</span><span class="n">Into</span><span class="o">.</span><span class="n">stairs</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;stairs&#39;</span><span class="p">,</span> <span class="o">...</span><span class="p">]</span><span class="o">&gt;</span><span class="p">,</span> <span class="o">&lt;</span><span class="n">Compass</span><span class="o">.</span><span class="n">S</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;South&#39;</span><span class="p">,</span> <span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">)]</span><span class="o">&gt;</span><span class="p">,</span> <span class="n">Transit</span><span class="p">(</span><span class="n">names</span><span class="o">=</span><span class="p">[],</span> <span class="o">...</span><span class="p">)</span> <span class="o">&lt;</span><span class="n">Exit</span><span class="o">.</span><span class="n">hall</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;hall&#39;</span><span class="p">,</span> <span class="s1">&#39;hallway&#39;</span><span class="p">]</span><span class="o">&gt;</span><span class="p">)</span>
+<span class="linenos">5</span><span class="p">(</span><span class="o">&lt;</span><span class="n">Exit</span><span class="o">.</span><span class="n">kitchen</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;kitchen&#39;</span><span class="p">]</span><span class="o">&gt;</span><span class="p">,</span> <span class="o">&lt;</span><span class="n">Compass</span><span class="o">.</span><span class="n">SW</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;Southwest&#39;</span><span class="p">,</span> <span class="s1">&#39;South West&#39;</span><span class="p">,</span> <span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">)]</span><span class="o">&gt;</span><span class="p">,</span> <span class="n">Transit</span><span class="p">(</span><span class="n">names</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;kitchen door&#39;</span><span class="p">],</span> <span class="o">...</span><span class="p">)</span> <span class="o">&lt;</span><span class="n">Into</span><span class="o">.</span><span class="n">hall</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;hall&#39;</span><span class="p">,</span> <span class="s1">&#39;hallway&#39;</span><span class="p">]</span><span class="o">&gt;</span><span class="p">)</span>
+<span class="linenos">6</span><span class="p">(</span><span class="o">&lt;</span><span class="n">Into</span><span class="o">.</span><span class="n">hall</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;hall&#39;</span><span class="p">,</span> <span class="s1">&#39;hallway&#39;</span><span class="p">]</span><span class="o">&gt;</span><span class="p">,</span> <span class="o">&lt;</span><span class="n">Compass</span><span class="o">.</span><span class="n">NE</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;Northeast&#39;</span><span class="p">,</span> <span class="s1">&#39;North East&#39;</span><span class="p">,</span> <span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">)]</span><span class="o">&gt;</span><span class="p">,</span> <span class="n">Transit</span><span class="p">(</span><span class="n">names</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;kitchen door&#39;</span><span class="p">],</span> <span class="o">...</span><span class="p">)</span> <span class="o">&lt;</span><span class="n">Exit</span><span class="o">.</span><span class="n">kitchen</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;kitchen&#39;</span><span class="p">]</span><span class="o">&gt;</span><span class="p">)</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="balladeer.lite.compass.MapBuilder.options">
+<span class="sig-name descname"><span class="pre">options</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">spot</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="types.html#balladeer.lite.types.State" title="balladeer.lite.types.State"><span class="pre">State</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">set</span></span></span><a class="headerlink" href="#balladeer.lite.compass.MapBuilder.options" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns a set of all the permitted transits from the supplied spot.
+Each item of the set is a tuple of three elements.
+The first is a compass heading if one is defined, otherwise it’s an integer unique in the result set. 
+The second element is the destination spot. The third is the viable transit.</p>
+<p>Using the example above, this line of code will return a set with three items:</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="nb">map</span><span class="o">.</span><span class="n">options</span><span class="p">(</span><span class="nb">map</span><span class="o">.</span><span class="n">spot</span><span class="o">.</span><span class="n">hall</span><span class="p">)</span>
+<span class="go">{(&lt;Compass.NE: [&#39;Northeast&#39;, &#39;North East&#39;, (1, 1, 0)]&gt;, &lt;Spot.kitchen: [&#39;kitchen&#39;]&gt;, Transit(names=[&#39;kitchen door&#39;], ...),</span>
+<span class="go">(&lt;Compass.N: [&#39;North&#39;, (0, 1, 0)]&gt;, &lt;Spot.stairs: [&#39;stairs&#39;, ...]&gt;, Transit(names=[], ...)),</span>
+<span class="go">(1, &lt;Spot.bedroom: [&#39;bedroom&#39;]&gt;, Transit(names=[&#39;bedroom door&#39;], ...))}</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="balladeer.lite.compass.MapBuilder.route">
+<span class="sig-name descname"><span class="pre">route</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">start</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="types.html#balladeer.lite.types.State" title="balladeer.lite.types.State"><span class="pre">State</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">end</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="types.html#balladeer.lite.types.State" title="balladeer.lite.types.State"><span class="pre">State</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">list</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="types.html#balladeer.lite.types.State" title="balladeer.lite.types.State"><span class="pre">balladeer.lite.types.State</span></a><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#balladeer.lite.compass.MapBuilder.route" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return a list containing the shortest route between the spots <cite>start</cite> and <cite>end</cite>.
+The endpoints are included in the output.</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="nb">map</span><span class="o">.</span><span class="n">route</span><span class="p">(</span><span class="nb">map</span><span class="o">.</span><span class="n">spot</span><span class="o">.</span><span class="n">kitchen</span><span class="p">,</span> <span class="nb">map</span><span class="o">.</span><span class="n">spot</span><span class="o">.</span><span class="n">bedroom</span><span class="p">)</span>
+<span class="go">[&lt;Spot.kitchen: [&#39;kitchen&#39;]&gt;,</span>
+<span class="go"> &lt;Spot.hall: [&#39;hall&#39;, &#39;hallway&#39;]&gt;,</span>
+<span class="go"> &lt;Spot.bedroom: [&#39;bedroom&#39;]&gt;]</span>
+</pre></div>
+</div>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+</section>
+
+
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>    
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'./',
+            VERSION:'0.37.0',
+            LANGUAGE:'en',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+    <script type="text/javascript" src="_static/documentation_options.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="_static/sphinx_highlight.js"></script>
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+  
+    <div class="footer" role="contentinfo">
+        <div class="container">
+            &#169; Copyright 2023, D E Haynes.
+        Created using <a href="http://sphinx-doc.org/">Sphinx</a> 6.2.1.
+        </div>
+    </div>  
+
+</body>
+</html>
