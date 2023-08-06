@@ -1,0 +1,16 @@
+setup.cfg
+setup.py
+versioneer.py
+ngitl_common_py/__init__.py
+ngitl_common_py/_version.py
+ngitl_common_py/autostart.py
+ngitl_common_py/config.py
+ngitl_common_py/file_viewer_starter.py
+ngitl_common_py/log.py
+ngitl_common_py.egg-info/PKG-INFO
+ngitl_common_py.egg-info/SOURCES.txt
+ngitl_common_py.egg-info/dependency_links.txt
+ngitl_common_py.egg-info/requires.txt
+ngitl_common_py.egg-info/top_level.txt
+tests/__init__.py
+tests/test_autostart.py

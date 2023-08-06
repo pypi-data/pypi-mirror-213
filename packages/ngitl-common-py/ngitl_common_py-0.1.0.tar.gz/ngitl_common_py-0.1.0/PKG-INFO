@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: ngitl_common_py
+Version: 0.1.0
+Summary: Helper classes and functions for common python problems
+Home-page: https://github.com/vw-wob-it-edu-ngitl/ngitl_common_py/
+Author: NG:ITL
+Author-email: torsten.wylegala@volkswagen.de
+License: GPLv3
