@@ -1,0 +1,78 @@
+{#
+  © 2020 Mikhail Gusarov <dottedmag@dottedmag.net>
+
+  This file is a part of twema and licensed under AGPLv3. See doc/COPYING at the
+  root of the repository for the details.
+#}
+{% macro render_tweet(tweet, thread) %}
+  <div class="tweet" id="{{ tweet.id }}">
+    {% if tweet.retweet %}
+      <div class="retweet">
+      {% if have_tweet(tweet.retweet.id, thread) %}
+        <a href="#{{ tweet.retweet.id }}">☝☝☝</a>
+      {% else %}
+        {{ render_tweet(tweet.retweet, thread) }}
+      {% endif %}
+      </div>
+    {% endif %}
+    {% if tweet.quote %}
+      <div class="quote">
+      {% if have_tweet(tweet.quote.id, thread) %}
+        <a href="#{{ tweet.quote.id }}">☝☝☝</a>
+      {% else %}
+        {{ render_tweet(tweet.quote, thread) }}
+      {% endif %}
+      </div>
+    {% endif %}
+    <div class="header">
+      {{ tweet.author.name }}
+      <a href="{{ tweet.author.url }}">{{ tweet.author.atname }}</a>
+      <a href="{{ tweet.url }}" class="tweet_date">{{ tweet.date }}</a>
+    </div>
+    <div class="tweet_content">
+      <div class="tweet_text">
+        {% if tweet.retweet %}
+          RT
+        {% else %}
+          {{ tweet.text.html() }}
+        {% endif %}
+      </div>
+      {% if tweet.media|length > 0 %}
+        <div class="media">
+          {% for media in tweet.media %}
+            {% if is_pic(media) %}
+              <img src="{{ media.url }}">
+            {% else %}
+              <a href="{{ media.url }}">video</a>
+            {% endif %}
+          {% endfor %}
+        </div>
+      {% endif %}
+    </div>
+  </div>
+{% endmacro %}
+<html>
+  <head>
+    <style>
+      * { font-family: sans-serif; }
+      .retweet { margin-left: 50px; margin-bottom: 20px; }
+      .quote { margin-left: 50px; margin-bottom: 20px; }
+      .header {
+        margin-bottom: 10px;
+      }
+      a {
+        color: #656565;
+      }
+      .tweet_date { font-size: 50%; }
+      .tweet_content { margin-left: 5px; }
+    </style>
+  </head>
+  <body>
+    <div class="thread">
+      {% for tweet in thread.tweets %}
+        {{ render_tweet(tweet, thread) }}
+        <hr>
+      {% endfor %}
+    </div>
+  </body>
+</html>

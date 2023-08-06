@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: twema
+Version: 0.5.2
+Summary: Twitter-to-email gateway
+Home-page: https://github.com/dottedmag/twema
+Author: Mikhail Gusarov
+Author-email: dottedmag@dottedmag.net
+License: AGPLv3
