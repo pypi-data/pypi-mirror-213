@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.cfg
+python/self_unzip_html/__init__.py
+python/self_unzip_html/crypto.py
+python/self_unzip_html/minified_js.py
+python/self_unzip_html/template.html
+python/self_unzip_html.egg-info/PKG-INFO
+python/self_unzip_html.egg-info/SOURCES.txt
+python/self_unzip_html.egg-info/dependency_links.txt
+python/self_unzip_html.egg-info/entry_points.txt
+python/self_unzip_html.egg-info/top_level.txt
