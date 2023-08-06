@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: VelesResearch
+Version: 0.0.3
+Summary: Surveys and experiments tool
+Author: Jakub Jędrusiak
+Author-email: <kuba23031999@gmail.com>
+Keywords: python,surveys,experiments,social sciences
+Requires: json
+Requires: numpy
+Requires: typeguard
+Requires: typing
+
+Free and open source surveys and experiments tool for social sciences
