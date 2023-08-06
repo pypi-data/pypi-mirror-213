@@ -1,0 +1,13 @@
+LICENSE
+README.md
+setup.py
+xarrayuvecs/__init__.py
+xarrayuvecs/lut2d.py
+xarrayuvecs/odfplot.py
+xarrayuvecs/uniform_dist.py
+xarrayuvecs/uvecs.py
+xarrayuvecs.egg-info/PKG-INFO
+xarrayuvecs.egg-info/SOURCES.txt
+xarrayuvecs.egg-info/dependency_links.txt
+xarrayuvecs.egg-info/requires.txt
+xarrayuvecs.egg-info/top_level.txt

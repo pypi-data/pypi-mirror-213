@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: xarrayuvecs
+Version: 0.1.14
+Summary: Tools to work on unit vector that are symmetric (i.e. x is equivalent to -x)
+Home-page: https://gricad-gitlab.univ-grenoble-alpes.fr/mecaiceige/tools/lib_python/xarray_uvecs
+Author: Thomas Chauve
+Author-email: thomas.chauve@univ-grenoble-alpes.fr
+License: GPL-3.0
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3 :: Only
+Requires-Python: >=3.9
+License-File: LICENSE
+
+Tools to work on unit vector that are symmetric (i.e. x is equivalent to -x)

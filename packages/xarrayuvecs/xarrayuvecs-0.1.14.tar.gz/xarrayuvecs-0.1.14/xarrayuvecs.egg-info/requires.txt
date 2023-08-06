@@ -1,0 +1,6 @@
+xarray
+numpy
+matplotlib
+scikit-learn
+scipy
+plotly
