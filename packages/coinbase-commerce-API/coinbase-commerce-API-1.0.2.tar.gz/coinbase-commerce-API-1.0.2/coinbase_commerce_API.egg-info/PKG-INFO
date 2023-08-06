@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: coinbase-commerce-API
+Version: 1.0.2
+Summary: Unofficial Coinbase Commerce API library. See github for explanations and examples: https://github.com/Rushifakami/API-Coinbase-Commerce-cbc_api
+Home-page: https://github.com/Rushifakami/API-Coinbase-Commerce-cbc_api
+Author: Rushifakami
+License: MIT
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
