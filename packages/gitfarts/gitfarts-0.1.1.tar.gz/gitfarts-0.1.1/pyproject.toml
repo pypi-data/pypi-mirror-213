@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "gitfarts"
+version = "0.1.1"
+description = ""
+authors = ["jhnnsrs <jhnnsrs@gmail.com>"]
+include = ["gitfarts"]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+
+[tool.poetry.scripts]
+gitfarts = 'gitfarts.main:main'
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
