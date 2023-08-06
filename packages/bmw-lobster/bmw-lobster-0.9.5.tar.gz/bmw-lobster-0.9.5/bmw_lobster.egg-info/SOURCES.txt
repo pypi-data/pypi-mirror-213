@@ -1,0 +1,7 @@
+README.md
+setup.py
+bmw_lobster.egg-info/PKG-INFO
+bmw_lobster.egg-info/SOURCES.txt
+bmw_lobster.egg-info/dependency_links.txt
+bmw_lobster.egg-info/requires.txt
+bmw_lobster.egg-info/top_level.txt
