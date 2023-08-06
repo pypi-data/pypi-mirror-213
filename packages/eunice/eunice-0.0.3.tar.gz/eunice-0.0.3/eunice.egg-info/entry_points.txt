@@ -1,0 +1,2 @@
+[console_scripts]
+eunice = eunice.cmdline:main
