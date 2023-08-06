@@ -1,0 +1,93 @@
+
+# --- Build system configuration
+
+[build-system]
+requires = [ "setuptools>=41", "setuptools-scm", ]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools-git-versioning]
+enabled = true
+
+[tool.setuptools]
+include-package-data = true
+packages = ["dascore"]
+
+[tool.setuptools_scm]  # this empty section enables the tool
+
+# --- Project Metadata
+
+[project]
+name = "dascore"
+dynamic = ["version"]  # version is fetched by setuptools-git-versioning
+
+authors = [
+  { name="Derrick Chambers", email="chambers.ja.derrick@gmail.com" },
+]
+
+description = "A python library distributed fiber optic sensing"
+readme = "readme.md"
+license = { file="docs/LICENSE" }
+requires-python = ">=3.9"
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "License :: OSI Approved :: GNU Lesser General Public License v3 or later (LGPLv3+)",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Topic :: Scientific/Engineering",
+]
+
+keywords = ["geophysics", "distributed-acoustic-sensing"]
+
+# --- Dependencies
+
+dependencies = [
+     "findiff",
+     "matplotlib",
+     "numpy",
+     "packaging",
+     "pandas",
+     "pooch>=1.2",
+     "pydantic>=1.9.0",
+     "rich",
+     "scipy>=1.10.0",
+     "tables",
+     "typing_extensions",
+     "xarray",
+]
+
+[project.optional-dependencies]
+docs = [
+    "jinja2",
+]
+test = [
+    "coverage",
+    "coveralls",
+    "pre-commit",
+    "pytest",
+    "pytest-codeblocks",
+    "pytest-cov",
+    "twine",
+]
+dev = ["dascore[test]", "dascore[docs]"]
+
+# --- URLs for project
+
+[project.urls]
+"Bug Tracker" = "https://github.com/DASDAE/dascore/issues"
+"Documentation" = "https://dascore.org"
+"Homepage" = "https://dascore.org"
+
+# --- Entry Points
+
+[project.entry-points."dascore.fiber_io"]
+DASDAE__V1 = "dascore.io.dasdae.core:DASDAEV1"
+PICKLE = "dascore.io.pickle.core:PickleIO"
+PRODML__V2_0 = "dascore.io.prodml.core:ProdMLV2_0"
+PRODML__V2_1 = "dascore.io.prodml.core:ProdMLV2_1"
+TDMS__V4713 = "dascore.io.tdms.core:TDMSFormatterV4713"
+TERRA15__V4 = "dascore.io.terra15.core:Terra15FormatterV4"
+TERRA15__V5 = "dascore.io.terra15.core:Terra15FormatterV5"
+TERRA15__V6 = "dascore.io.terra15.core:Terra15FormatterV6"
+QUANTX__V2 = "dascore.io.quantx.core:QuantXV2"
+WAV = "dascore.io.wav.core:WavIO"
