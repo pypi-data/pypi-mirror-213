@@ -1,0 +1,12 @@
+pyosudb/__init__.py,sha256=tg9NqrrPcsNMII4WiTE19D2NoBGBkHFUZp5Jl_Bf40g,224
+pyosudb/collectiondb.py,sha256=n32TGgrZECiJuMi2x81KWJ4HFyTKlc2x2sGot2Eup8g,1583
+pyosudb/datatypes.py,sha256=ZFPIkEQdUAVh2-EwZJsEkwCsWvqkdPq1b9fIAW_jLEQ,12127
+pyosudb/osudb.py,sha256=Qwj8F0IRggbhQApOd1KwWNsQC8fuV63yOznDBPEjTiY,9801
+pyosudb/presencedb.py,sha256=RNjBPvqs4K80iCNHN1yPsHosRNZLui0b6kgIpEZ7Rhg,846
+pyosudb/scoresdb.py,sha256=WYdGXaK_ViTkqqwFyP5fYOYzW5y2xuK2-ML5ZRNPeQg,1523
+pyosudb/utils.py,sha256=WwP1rKGjojMvD60Di74dgiP1whPVvrr6qmNYmKWl4FE,1761
+pyosudb-0.1.1.dist-info/LICENSE,sha256=DFfpj6rOh43YhBB-Edb6EgjgBCPXHaTP5MX3hXJdtk8,1068
+pyosudb-0.1.1.dist-info/METADATA,sha256=ed6EcHyf70SaVveMXGeEpn9LOQkhjYrz2vhPL-nRq1M,510
+pyosudb-0.1.1.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+pyosudb-0.1.1.dist-info/top_level.txt,sha256=U3u4kx_2dYTNy9mAZMhiN7TwLgA41lyrYz2GMUy8Is8,8
+pyosudb-0.1.1.dist-info/RECORD,,
