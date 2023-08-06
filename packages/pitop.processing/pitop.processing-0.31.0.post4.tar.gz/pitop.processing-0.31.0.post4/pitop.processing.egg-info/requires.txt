@@ -1,0 +1,10 @@
+pitop.common==0.31.0-4
+pitop.pma==0.31.0-4
+pitop.core==0.31.0-4
+imutils<1.0.0,>=0.5.4
+matplotlib<4.0,>=3.3.4
+numpy<2.0.0,>1.19.5
+onnxruntime<2.0,>=1.8.1
+opencv-python<4.6.0,>=4.5.1
+wget<4.0,>=3.2
+dlib<20.0.0,>=19.22.0
