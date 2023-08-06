@@ -1,0 +1,14 @@
+civicutils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+civicutils/filtering.py,sha256=Ajg_zZYDrpUcTgMjkrABrHZoZAOy1e3HZniFJcDRflo,40439
+civicutils/match.py,sha256=pdVkg8AshBBRQmj16IX5qbcVz7gQvS2mzkbeqADemv4,111701
+civicutils/query.py,sha256=YZcbZzIMDFXW1OWugXAQboSZUxOabThyGfW34pb2rrY,16931
+civicutils/read_and_write.py,sha256=prthKlKB3LM0reHhxkiT-l_5Egs6tHfImdw8IRLuhvA,33562
+civicutils/utils.py,sha256=GyLRaPyC2JzLhOPOTsGe-6jfsucKN5ZxcsFyb0728Lc,20645
+civicutils/data/data.yml,sha256=k0kTzvya7j9kuLxnm34kUwdMDyGPbpTwGZS8WyALOB4,1190
+civicutils/data/example_cnv.txt,sha256=IWZdfPsHYGcIcFeULhaoCs6ZWx1oYF4-Bw7suDQzXuY,105
+civicutils/data/example_expr.txt,sha256=UcOIkt3cBnk03iPMgH5evaZ_pI7APtRsTP0RP9eqaH4,122
+civicutils/data/example_snv.txt,sha256=RUNBu8JZuyWdyzgW28r_smDPdKp7iuXmGVvtvV1wI0s,241
+civicutils-1.0.1.dist-info/METADATA,sha256=vWEOfRPwCleOjqG5KGV__iHSnO72CViwpNiG9oTW80s,86899
+civicutils-1.0.1.dist-info/WHEEL,sha256=KGYbc1zXlYddvwxnNty23BeaKzh7YuoSIvIMO4jEhvw,87
+civicutils-1.0.1.dist-info/licenses/LICENSE.md,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+civicutils-1.0.1.dist-info/RECORD,,
