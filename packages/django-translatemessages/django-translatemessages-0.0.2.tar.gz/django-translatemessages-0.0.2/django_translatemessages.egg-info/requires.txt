@@ -1,0 +1,7 @@
+django
+polib
+deep-translator
+
+[docs]
+Sphinx
+sphinxcontrib-napoleon

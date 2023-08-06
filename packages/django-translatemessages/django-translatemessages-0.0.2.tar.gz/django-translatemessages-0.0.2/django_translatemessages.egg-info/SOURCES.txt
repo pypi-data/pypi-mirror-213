@@ -1,0 +1,16 @@
+CHANGELOG.rst
+LICENSE
+MANIFEST.in
+README.rst
+setup.cfg
+setup.py
+django_translatemessages/__init__.py
+django_translatemessages.egg-info/PKG-INFO
+django_translatemessages.egg-info/SOURCES.txt
+django_translatemessages.egg-info/dependency_links.txt
+django_translatemessages.egg-info/not-zip-safe
+django_translatemessages.egg-info/requires.txt
+django_translatemessages.egg-info/top_level.txt
+django_translatemessages/management/__init__.py
+django_translatemessages/management/commands/__init__.py
+django_translatemessages/management/commands/translatemessages.py
