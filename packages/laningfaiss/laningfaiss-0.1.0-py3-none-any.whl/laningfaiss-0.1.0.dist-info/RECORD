@@ -1,0 +1,9 @@
+laningfaiss/__init__.py,sha256=oXpAqwK2nJrUaiMTXkoEjBzvoQYHXehA5bV68YgppmM,30
+laningfaiss/requester.py,sha256=pzenO3835dLM1O-YgWLlXwGqiZAnxIRf_aTunJfscS4,10277
+test/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+test/test_requester.py,sha256=g_7bcdBfOEsKV9a4now8VzfJp4rMptkO3e0qNqqPfS4,5631
+laningfaiss-0.1.0.dist-info/METADATA,sha256=ngwCBlHRuz2rGsnj-7Cf23GFpfFqYdY3-uJssWQ7kMM,184
+laningfaiss-0.1.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+laningfaiss-0.1.0.dist-info/top_level.txt,sha256=SB9LsfJkXkZ6e2Ni6XFRWS5rJ72aIjLwN0mpMldtiOE,17
+laningfaiss-0.1.0.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+laningfaiss-0.1.0.dist-info/RECORD,,
