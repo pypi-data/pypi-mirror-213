@@ -1,0 +1,13 @@
+CHANGELOG.txt
+LICENSE.txt
+MANIFEST.in
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+multiverse/__init__.py
+unicorn_multiverse.egg-info/PKG-INFO
+unicorn_multiverse.egg-info/SOURCES.txt
+unicorn_multiverse.egg-info/dependency_links.txt
+unicorn_multiverse.egg-info/requires.txt
+unicorn_multiverse.egg-info/top_level.txt

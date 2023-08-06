@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: unicorn-multiverse
+Version: 0.0.3
+Summary: Multi USB serial display driver
+Home-page: https://www.github.com/gadgetoid/gu-multiverse
+Author: Philip Howard
+Author-email: phil@gadgetoid.com
+License: MIT
+Project-URL: GitHub, https://www.github.com/gadgetoid/gu-multiverse
+Keywords: Raspberry Pi Pico
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Operating System :: POSIX :: Linux
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Software Development
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: System :: Hardware
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
+# Multiverse
+
+Multiple Galactic Unicorn (and maybe other?) display driver.
+
