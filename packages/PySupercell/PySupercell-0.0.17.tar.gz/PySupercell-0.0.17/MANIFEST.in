@@ -1,0 +1,9 @@
+graft examples
+graft bin
+
+recursive-include examples README.md
+recursive-exclude examples    *png
+recursive-exclude examples    *dat 
+recursive-exclude examples *pickle 
+recursive-exclude examples POSCAR.*
+
