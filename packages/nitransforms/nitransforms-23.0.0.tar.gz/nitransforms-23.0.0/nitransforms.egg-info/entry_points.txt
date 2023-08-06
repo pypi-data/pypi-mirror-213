@@ -1,0 +1,3 @@
+[console_scripts]
+nb-transform = nitransforms.cli:main
+
