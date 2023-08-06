@@ -1,0 +1,7 @@
+pyramid
+zope.interface
+
+[testing]
+mypy
+pytest
+pyramid_debugtoolbar
