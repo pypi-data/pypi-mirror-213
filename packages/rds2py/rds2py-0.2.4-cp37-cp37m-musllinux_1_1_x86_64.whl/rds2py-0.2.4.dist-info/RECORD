@@ -1,0 +1,16 @@
+rds2py-0.2.4.dist-info/METADATA,sha256=3MAAg3AuiKYBIHX0C68E6LZdAMoYp8U_P_Aj0UsLaNg,3425
+rds2py-0.2.4.dist-info/LICENSE.txt,sha256=pkwgQ8WMTR1-Qa0qwIaBf5I1-8OGN1B20E_eeDg-bqc,1082
+rds2py-0.2.4.dist-info/top_level.txt,sha256=RiiSPx5bm4p1wSbN2gaWcl_7i07m7sxmUewtBHX91g8,7
+rds2py-0.2.4.dist-info/RECORD,,
+rds2py-0.2.4.dist-info/WHEEL,sha256=galfBCQ0GDMbCaHulmF4PsxHLO17SP3Nxg1_z6dzR_Y,112
+rds2py/core.cpython-37m-x86_64-linux-gnu.so,sha256=LQvqmjXy6MqNXoYUUtCXhwoymRG9OcBsn2gRrT-hObU,5229497
+rds2py/parser.py,sha256=B-AdY8es7uLwxtMRbAMSqZNQFyZwZLUqbl9hApZfjOo,1142
+rds2py/interface.py,sha256=mVY_eQdaijUtVV8yZLdeS1682rXo-zLxbFFEwQbZDd4,7681
+rds2py/pdf.py,sha256=pNhWEV8HIp4DswtRkClqCVakevxEew-msF--pPHfr_Q,1753
+rds2py/__init__.py,sha256=t_FdTFIsI1HXC0AIRGKZ-7J9d-z9bzwU4T8Yq5nnjGE,739
+rds2py/lib/parser.pyx,sha256=7gCImCTXIBDL7Lq2DXeK5Eob0zDAZ5aTokK8a-mbMNs,5750
+rds2py/lib/parser.pxd,sha256=8hjSE9L_gcihf-aezyoInIpVkIe4c1UDhIoXjUwkxlE,1323
+rds2py/lib/parser.cpp,sha256=3mXFEWM78coqdIQYrf465OjKX0n3wNQiIDJx_q4TuJ4,1002475
+rds2py/lib/rds_parser.cpp,sha256=McEpSCGRhHauAsWoB6oe_zLYzJdcgZEqvbTZZIdN-mQ,9984
+rds2py.libs/libgcc_s-a04fdf82.so.1,sha256=YxqJNaesQMhDswHEQpXsiLnVvMBBbYO6KYMDZFPWKSM,81257
+rds2py.libs/libstdc++-a9383cce.so.6.0.28,sha256=Wy9UCdwS1rwI9GU5e7qE61S0AkRqqwti1q_adWSs-Rk,2447393
