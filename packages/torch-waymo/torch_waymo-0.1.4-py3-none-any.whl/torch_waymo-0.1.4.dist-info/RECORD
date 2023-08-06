@@ -1,0 +1,16 @@
+torch_waymo/__init__.py,sha256=GqXpfNCZGSl9vt3DghkCGthfoFIOLW0YpXMbDbr92gE,102
+torch_waymo/convert_waymo.py,sha256=MQZJ4HrTGxjTbgl_6KVHoUo1QpLq-z_Gdvi30dyzUF0,3535
+torch_waymo/dataset/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+torch_waymo/dataset/simplified_frame.py,sha256=kLzLL5BoO79r6ZAPj23Dn1L92EDpv-w7-LD3iog7EkQ,355
+torch_waymo/dataset/waymo_dataset.py,sha256=mnwR0a9LgBE7LLCb1TAIVGg_t2XP45ERAprfG8-4xkE,1297
+torch_waymo/protocol/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+torch_waymo/protocol/dataset_proto.py,sha256=Cthya-MdkgCy4FYN2LosFRF-0dQXqtrBFmCsWFgjMks,4422
+torch_waymo/protocol/keypoint_proto.py,sha256=7Yd93VpIob0bNgEAlN0YIA4Mdpk6olmnDiGLkp-PTmc,1753
+torch_waymo/protocol/label_proto.py,sha256=xySVHOGLb6kFnERGEFgXNm0nDwRoV6h5sZUIxCQr75I,1647
+torch_waymo/protocol/utils.py,sha256=KdbfBgJYeW_VS4JVHT2pXX7WFMysx0hfCUJkhunqqXQ,281
+torch_waymo-0.1.4.dist-info/LICENSE,sha256=NpaqY5H5igOfilZroSGrZgElHaEuUHJ7uI0xR0MX0zc,1078
+torch_waymo-0.1.4.dist-info/METADATA,sha256=hCahfsZAbG7L5goPKM4mgpxR_gbHKvP6VtaLqFJy128,2254
+torch_waymo-0.1.4.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+torch_waymo-0.1.4.dist-info/entry_points.txt,sha256=Nu1QpQkzAn-04HFZMOTw3m9lc9zFZL5b03gPq82MX20,71
+torch_waymo-0.1.4.dist-info/top_level.txt,sha256=ov5XpAuY8bibK8RyYPV2b5GfuC-8yOgqLdTLPxFPqfs,12
+torch_waymo-0.1.4.dist-info/RECORD,,
