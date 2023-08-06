@@ -1,0 +1,8 @@
+numpy
+magicgui
+qtpy
+tifffile
+imaris_ims_file_reader
+czifile
+itk-registration
+itk-elastix

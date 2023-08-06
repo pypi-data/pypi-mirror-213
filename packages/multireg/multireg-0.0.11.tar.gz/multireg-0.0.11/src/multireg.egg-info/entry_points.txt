@@ -1,0 +1,2 @@
+[napari.manifest]
+multireg = multireg:napari.yaml
