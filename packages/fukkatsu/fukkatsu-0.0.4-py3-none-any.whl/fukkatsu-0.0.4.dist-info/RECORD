@@ -1,0 +1,13 @@
+fukkatsu/__init__.py,sha256=t3z6l2KVBWQjF4lN9QMgTFxw3c4o8b8sFqbC6mt-hOc,8008
+fukkatsu/memory/__init__.py,sha256=U0CklaU6ogQ6vB4xT-dRSIpISpfzoGWuWm4AutcZA8w,75
+fukkatsu/memory/manage.py,sha256=YT37H5ufS3a7_zyP6FTYp8tgq1omI-nWrLhtlQrVqEs,663
+fukkatsu/memory/short.py,sha256=eECe98Rvpcs4VDqlZ_joJutEq8wNbCrt8u3mwmCsxm4,23
+fukkatsu/utils/__init__.py,sha256=H-WIh1CRW7jtF_nSRrAEYL9HL_U901o9JztnU-RxI3w,110
+fukkatsu/utils/helper.py,sha256=IOsxGUjF7Es0-ubJRzuoN6_ubOoO4zlZh23wyt0HBkU,4082
+fukkatsu/utils/medic.py,sha256=aNrxF1hX-MeY2AupUy5e95DHCVGuZUYcUFEeprIDcBQ,2241
+fukkatsu/utils/prompt.py,sha256=9JXX_qa4mWOXtbmQWEHwsPzW2V8IjuRyCZ9INxuV5xU,1531
+fukkatsu-0.0.4.dist-info/LICENSE,sha256=hjbuWqSVMONZkg1iQoaD_ogjS3gEZMIIbZ5JcBbacrI,1089
+fukkatsu-0.0.4.dist-info/METADATA,sha256=w41T8pzKKYnbxX_roJGJkJ7Q5qE-9hySTY5i7iuVhpA,12378
+fukkatsu-0.0.4.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+fukkatsu-0.0.4.dist-info/top_level.txt,sha256=G_DFZU_OnGsLn16imIWfzFvtFeN9ZVZ5KXoBCt3m19o,9
+fukkatsu-0.0.4.dist-info/RECORD,,
