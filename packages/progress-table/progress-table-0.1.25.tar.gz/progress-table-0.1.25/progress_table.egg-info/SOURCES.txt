@@ -1,0 +1,15 @@
+LICENSE.txt
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+progress_table/__init__.py
+progress_table/devel.py
+progress_table/progress_table.py
+progress_table/symbols.py
+progress_table/test_docs_automated.py
+progress_table.egg-info/PKG-INFO
+progress_table.egg-info/SOURCES.txt
+progress_table.egg-info/dependency_links.txt
+progress_table.egg-info/requires.txt
+progress_table.egg-info/top_level.txt
