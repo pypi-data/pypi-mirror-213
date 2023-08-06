@@ -1,0 +1,12 @@
+aifunc/__init__.py,sha256=hzmpP4hg4ddmx2UdscRW32yYp_TCmhwOCmoJ-bLCbeQ,94
+aifunc/add_ai_function.py,sha256=qsAtP6XHdjM6yg4CPfy7-1Xg7-gAmJHEilsFnGqe99Q,725
+aifunc/evaluate_answer.py,sha256=G72bDCGq8t2mDU1A7a-IEyqxVPJ9gExHtxQNJW9ngHk,372
+aifunc/evaluate_answer.yaml,sha256=vNkgnOYnkJWQIltOwM63Zpt4N6CBIouAhL_dw8VuwBQ,3180
+aifunc/follow_up.py,sha256=EgCPjlgElSYLccAVqr2Jhamj6BMmH_4MRmZE22BS3Gc,228
+aifunc/follow_up.yaml,sha256=uPwacUKJw9XvjDldv_vfKSCZLq5SiNTkPMg-rn20naU,1812
+aifunc/generate_question.py,sha256=hoWzSjO-wRhQN_ZOWOFnYYS7HX5AiEt_p8WuBQ4l8tg,126
+aifunc/generate_question.yaml,sha256=9DAMFJZb48bxECRZXsGJ1vCyDUxK8p5D3XZtamt_vJE,403
+aifunc/utility.py,sha256=RKhMfUiC83T0MN6liUxFwhboGqFYzKbRvwpeelYKoVU,3099
+aifunc-0.3.4.dist-info/METADATA,sha256=VnDedLYm3bcc72JQ2ZLpBIblb0eVzYxuIKG5lAQ-yzg,403
+aifunc-0.3.4.dist-info/WHEEL,sha256=Zb28QaM1gQi8f4VCBhsUklF61CTlNYfs9YAZn-TOGFk,88
+aifunc-0.3.4.dist-info/RECORD,,
