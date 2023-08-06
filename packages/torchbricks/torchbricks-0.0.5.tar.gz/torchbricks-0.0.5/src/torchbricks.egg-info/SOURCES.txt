@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+src/torchbricks/VERSION
+src/torchbricks/__init__.py
+src/torchbricks/bricks.py
+src/torchbricks/custom_metrics.py
+src/torchbricks.egg-info/PKG-INFO
+src/torchbricks.egg-info/SOURCES.txt
+src/torchbricks.egg-info/dependency_links.txt
+src/torchbricks.egg-info/requires.txt
+src/torchbricks.egg-info/top_level.txt
+tests/test_bricks.py

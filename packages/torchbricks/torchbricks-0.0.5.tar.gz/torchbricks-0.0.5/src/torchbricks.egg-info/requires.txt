@@ -1,0 +1,2 @@
+torch>=1.7
+torchmetrics>=0.10.0
