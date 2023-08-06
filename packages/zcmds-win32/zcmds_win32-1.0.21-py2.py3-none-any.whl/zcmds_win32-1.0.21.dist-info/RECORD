@@ -1,0 +1,10 @@
+zcmds_win32/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+zcmds_win32/_exec.py,sha256=Gv9locUQbpAcHvuJylpQ8_HdFazVz6UPI89Y8NV3IX0,343
+zcmds_win32/settings.py,sha256=T_uPWY-mQCJkdb-NqULTFqxUMMkXenHuJOrpA1S_Lig,96
+zcmds_win32/unix_tool_path.py,sha256=hzCk6BtclAVXb5NH9jr8afKTC_LjpFV82PVgsW2XeZM,2114
+zcmds_win32/version.py,sha256=vUCzmIWTZfdseZFGr1PJ8gebQIo2QqHy65RkBK7uX0s,108
+zcmds_win32-1.0.21.dist-info/METADATA,sha256=be9rZ5541Q9c0RxB95Cdj1KfkXV8eqdhbTHumItj994,2361
+zcmds_win32-1.0.21.dist-info/WHEEL,sha256=bb2Ot9scclHKMOLDEHY6B2sicWOgugjFKaJsT7vwMQo,110
+zcmds_win32-1.0.21.dist-info/entry_points.txt,sha256=NjjGxzE75wPdiE5a8x9B6fgE-o9UAEhZKrLMAAp7i1g,822
+zcmds_win32-1.0.21.dist-info/top_level.txt,sha256=pENwawo4alZ_v-M0oGhFAUdlMCUvh9jCT21WP_PsR64,12
+zcmds_win32-1.0.21.dist-info/RECORD,,
