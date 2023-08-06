@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: az-st7735
+Version: 0.1.2
+Summary: Python library for the ST7735 controlled 1.8inch display from AZ-Delivery
+Home-page: https://github.com/mrbluesky125/az-st7735
+Author: Timo Zimmermann
+Author-email: github@timozimmermann.de
+Project-URL: Bug Tracker, https://github.com/mrbluesky125/az-st7735/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# az-st7735
+Python library for the ST7735 controlled 1.8inch display from AZ-Delivery
