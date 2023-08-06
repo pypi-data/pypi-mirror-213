@@ -1,0 +1,78 @@
+name: CD
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - master
+      - main
+  release:
+    types:
+    - published
+
+jobs:
+  dist:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+      with:
+        fetch-depth: 0
+
+    - name: Build wheel and SDist
+      run: pipx run build
+
+    - uses: actions/upload-artifact@v3
+      with:
+        path: dist/*
+
+    - name: Check metadata
+      run: pipx run twine check --strict dist/*
+
+  zipapp:
+    name: ZipApp
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+      with:
+        fetch-depth: 0
+
+    - uses: wntrblm/nox@2023.04.22
+
+    - name: Make ZipApp
+      run: nox -s zipapp
+
+    - uses: actions/upload-artifact@v3
+      with:
+        name: zipapp
+        path: particle.pyz
+
+
+  publish:
+    needs: [dist]
+    runs-on: ubuntu-latest
+    if: github.event_name == 'release' && github.event.action == 'published'
+
+    steps:
+    - uses: actions/download-artifact@v3
+      with:
+        name: artifact
+        path: dist
+
+    - uses: pypa/gh-action-pypi-publish@release/v1
+      with:
+        password: ${{ secrets.pypi_password }}
+
+    - uses: actions/download-artifact@v3
+      with:
+        name: zipapp
+        path: zipapp
+
+    - name: Upload ZipApp
+      uses: actions/upload-release-asset@v1
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      with:
+        upload_url: ${{ github.event.release.upload_url }}
+        asset_path: ./zipapp/particle.pyz
+        asset_name: particle.pyz
+        asset_content_type: application/zip
