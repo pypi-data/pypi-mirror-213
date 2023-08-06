@@ -1,0 +1,2 @@
+[console_scripts]
+squirrels = squirrels._command_line:main

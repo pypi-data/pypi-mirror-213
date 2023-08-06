@@ -1,0 +1,11 @@
+openpyxl
+inquirer
+pwinput
+cachetools
+fastapi
+uvicorn
+Jinja2
+GitPython
+sqlalchemy
+pandas
+pyyaml
