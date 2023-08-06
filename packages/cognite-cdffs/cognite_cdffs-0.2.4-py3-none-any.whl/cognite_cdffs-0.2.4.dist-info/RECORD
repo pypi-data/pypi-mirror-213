@@ -1,0 +1,7 @@
+cognite/cdffs/__init__.py,sha256=Wett-lNEhQsnmgXgxeLG5s3OI1kmiXFumM8hklnD2ng,205
+cognite/cdffs/credentials.py,sha256=k-NDd10cPMjFpT4o3vZWqrCoeWGICbz1lGiDexcmrQ0,3907
+cognite/cdffs/file_handler.py,sha256=MJzpA5D7Q2mqsWatb3k4eShRIjJ_Zv6mIPABiTBPG6g,3134
+cognite/cdffs/spec.py,sha256=m_kBtfUqwqHY-NPBiejVivXWiSXlsgn53rTs9pnmt5Q,28003
+cognite_cdffs-0.2.4.dist-info/WHEEL,sha256=vxFmldFsRN_Hx10GDvsdv1wroKq8r5Lzvjp6GZ4OO8c,88
+cognite_cdffs-0.2.4.dist-info/METADATA,sha256=ktHF0Y_uVxjrU4Wyel-Ko21JunRlHFfxHIQdgSqcyTw,3148
+cognite_cdffs-0.2.4.dist-info/RECORD,,
