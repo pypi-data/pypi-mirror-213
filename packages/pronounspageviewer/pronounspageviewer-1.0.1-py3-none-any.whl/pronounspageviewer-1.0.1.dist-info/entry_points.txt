@@ -1,0 +1,2 @@
+[console_scripts]
+pronounspageviewer = pronounspageviewer.__main__:main
