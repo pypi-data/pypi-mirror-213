@@ -1,0 +1,159 @@
+CHANGES
+=======
+
+* update ChangeLog
+* Warning about running the script for MacOS users added to the documentation
+* minor changes and corrections
+* Updated info on biases/leak
+* added how to list connected devices
+* Fix plot axes labels
+* Removed commented kwargs from methods
+* updated files
+* Add unit test for DynapcnnNetwork.is\_compatible\_with
+* Bugfix in DynapcnnNetwork.is\_compatible\_with where it would raise a ValueError instead of returning False
+* Added documentaion in FAQ
+* added is\_compatible\_with method; blackened
+* updated DynapcnnVisualizer connect method
+* moved configuration settings order
+* blacked and updaetd test
+* updated dynapcnn visualizer with latest samna api
+* wip, dynapcnn visualizer refractoring
+* wip updating dynapcnn visualizer
+* blackened; updated to use run\_vusualizer method
+* Added method for launching samna visualizer
+* Updated notebook to the new samna graph api
+* complete the neuron-leak example notebook
+* add leak-neuron link in the FAQs
+* merge develop to 76-add-leak-neruon-option
+* fixed links to static images in notebooks
+* fixed links
+* shuffled the order of documentation
+* setup file params use \_ instead of - now
+* Fixed link to samna
+* Make sure DVSLayer is added to DynapcnnNetwork if and only if necessary. Fix unit test about single neuron on hardware
+* Turn off DVS sensor when DynapcnnNetwork has no DVSLayer
+* Restructure unit tests
+* Fix: Allow input shape to DVS layer to have 2 channels
+* More flexible DVSLayer generation
+* Remove 'compatible\_layers' attribute from DynapcnnNetwork and use 'sequence' instead
+* documentation improvement
+* replace curl with wget
+* update ChangeLog
+* replace all math equation
+* Added board resetting before second test. Note that the device will be opened already before the second test starts, so it is not actually necessary
+* Implemented resetting the boards before running the test
+* add getting started with speck section
+* skip visualizer test
+* warn if layer with pooling is monitored
+* add speck image at the doc homepage
+* Add notes in docstrings and in the documentation about the fact that attribute modifications after the  call have no effects
+* specify inline math latex for Overview tutorial
+* make tutorial notebook that contains latex a markdown documentsince it doesn't contain any code
+* add skipif condition for test-case that need hardware connected to the CI machine
+* update changelog
+* add neuron leak tutorial notebook
+* fix bug for neuron address mapping and add unit test case
+* update ChangeLog
+* add neruon leak option and related unit test
+* remove system package install cmd
+* fix add-apt-repository can't be found error
+* add apt repository for graphviz localization
+* try another way install graphviz
+* fix CI pipeline failure
+* checked tests pass on mac
+* added test
+* added noconfirm
+* added update keyring to gitlab-ci
+* renamed test
+* Speck2fDevKit support added
+
+v1.0.10
+-------
+
+* update samna version requirements
+* update ChangeLog
+* add speck2f module devkit support and remove speck2f characterization board support
+* Implementation a test that will create a single neuron on a single core, that receives a single event and outputs a single event
+* edit visualizer.md
+* Added the visualizer documentation to the index.rst
+* Replacing the notebook which cannot spawn a samnagui window with a markdown file
+* Visualizer example updated with the window scale parameter
+* Window scale parameter is now passed to the constructor
+* load model onto CPU and change warning message for JIT compilation
+* exclude Samna visualiser generated file
+* Samna version requirement incremented to cover the latest changes
+* Notebook forgotten connect method added. Readout visualizer only supports .png images. Information regarding to this has been added to the documentation
+* Example notebook with explanations added
+* fix errors in using\_radout\_layer.ipynb
+* merge conflicts
+* update ChangeLog
+* modify config making tests can cover different types of devkits
+* add speck2f characterization board support
+* fix errors in tests after init DVSLayer in any case
+* make DVSLayer can be initnitialized in anycase
+* black formatted
+* renamed test
+
+v1.0.9
+------
+
+* update ChangeLog
+* update figure
+* add a time.sleep statement after dynapcnn network reset-states to wait the config take effect
+* modify speck2e test to deploy dummy network
+* added test for killbit
+* test updated to check for type
+* added checks if the network is empty
+* add spike count visualization notebook into tutorials.rst
+* fix typo in the notebook of visualize spike count
+* delete chip top level figure
+* change the speck top level figure path
+* change top level figure
+* add notebooks into docs/source/tutorials.rst
+* update the noteboob
+* Update requirements.txt
+* notebook and image for spike counts visualization
+* modify the parent folder name identical to the notebook
+* modify the image load path
+* make spike\_threshold and min\_v\_mem a parameter
+* fix test which seems to have relied on older version of PyTorch
+* Fix to the issue
+* Change last uint
+* Remove comment
+* Uint64 to int
+* Check the timestamp and delay factor for negative values
+* Casting to int after conversion
+* Do not sleep while resetting the states when the function is called. Stop the input graph, while the neuron values are written. Sleep for a bit and then start the graph again
+* Fix to the bug
+* update ChangeLog after add support of speck2e
+* add speck2e devkit and testboard support
+* remove redundant comment code
+* Device input graph stopped on destruction of the DynapcnnNetwork object
+* Writing all v mem to zeros changed. -> Now when you call this method it creates a temporary buffer and a temporary graph, starts the graph, writes the events, stops the graph then it is destroyed
+* Implement an input buffer for all devices: -> In the config\_builder there is now a function called get\_input\_buffer which gives a source node. -> For each chip this is implemented to get the appropriate source node. -> To method changed to construct the input buffer. -> Forward method changed to write the events to this source node
+
+v1.0.8
+------
+
+* Type definition updated to Tuple
+* compatibility with torch 1.13
+* Failing unit test
+* Requirements for samna version updated
+
+v1.0.7
+------
+
+* requirement bumped to 1.0.7
+* using torch.equal instead of np equal
+* tests fixed
+
+v1.0.5
+------
+
+* updates to latest sinabs requirements
+* add speck2e config builder
+
+v1.0.0
+------
+
+* re-naming from BufferSinkNode to BasicSinkNode
