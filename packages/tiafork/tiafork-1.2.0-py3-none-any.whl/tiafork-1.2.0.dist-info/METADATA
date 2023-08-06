@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: tiafork
+Version: 1.2.0
+Summary: Fork of tia: Toolkit for integration and analysis
+Home-page: https://github.com/nathanramoscfa/tiafork
+Download-URL: https://github.com/nathanramoscfa/tiafork
+Author: Nathan Ramos, CFA®
+Author-email: nathan.ramos.cfa@gmail.com
+License: BSD (3-clause)
+Keywords: bloomberg,backtesting,technical analysis,pdf
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Financial and Insurance Industry
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Office/Business :: Financial
+Classifier: Topic :: Office/Business :: Financial :: Investment
+Classifier: Topic :: Utilities
+License-File: LICENSE
+Requires-Dist: pandas
+Requires-Dist: numpy
+
+TIAFORK is a fork of TIA, a toolkit that provides bloomberg data access, easier pdf generation, backtesting 
+functionality, technical analysis functionality, and return analysis.
