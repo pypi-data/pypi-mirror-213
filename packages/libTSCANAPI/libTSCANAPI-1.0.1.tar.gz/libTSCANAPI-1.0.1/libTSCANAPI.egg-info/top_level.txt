@@ -1,0 +1,4 @@
+libTSCANAPI
+libTSCANAPI/linux
+libTSCANAPI/windows/x64
+libTSCANAPI/windows/x86
