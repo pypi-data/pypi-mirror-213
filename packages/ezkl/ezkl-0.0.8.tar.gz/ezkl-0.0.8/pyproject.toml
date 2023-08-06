@@ -1,0 +1,36 @@
+[tool.poetry]
+name = "ezkl"
+version = "0.0.8"
+description = "Easy zero-knowledge learning in Python"
+authors = [
+  "Jason Morton <jason@zkonduit.com>",
+  "Dante Camuto <jason@zkonduit.com>",
+]
+readme = "README.md"
+license = "Apache-2.0"
+homepage = "https://github.com/zkonduit/pyezkl"
+repository = "https://github.com/zkonduit/pyezkl"
+documentation = ""
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: Apache Software License",
+    "Operating System :: OS Independent",
+]
+
+[tool.poetry.dependencies]
+python = ">=3.7"
+numpy = "*"
+torch = "*"
+onnx = "*"
+ezkl_lib = ">=0.1.0"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.3.1"
+
+[build-system]
+requires = ["poetry-core>=1.4.2"]
+build-backend = "poetry.core.masonry.api"
+
+[project.urls]
+"Homepage" = "https://github.com/zkonduit/pyezkl"
+"Bug Tracker" = "https://github.com/zkonduit/pyezkl/issues"
