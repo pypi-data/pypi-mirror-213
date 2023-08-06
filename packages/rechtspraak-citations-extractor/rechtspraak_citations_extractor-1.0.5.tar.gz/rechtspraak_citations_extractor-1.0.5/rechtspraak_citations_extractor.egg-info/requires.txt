@@ -1,0 +1,6 @@
+requests>=2.26.0
+python_dotenv==0.15.0
+pandas>=1.2.5
+urllib3>=1.26.12
+lxml>=4.6.3
+tqdm
