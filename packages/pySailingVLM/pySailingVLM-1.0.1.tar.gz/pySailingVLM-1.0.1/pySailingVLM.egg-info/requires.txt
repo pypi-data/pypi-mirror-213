@@ -1,0 +1,13 @@
+codecov==2.1.13
+numba
+numpy
+matplotlib
+scipy
+pandas
+openpyxl
+xlsxwriter
+holoviews
+spatialpandas
+ipympl==0.9.3
+ipywidgets==8.0.4
+jupyterlab==3.6.3
