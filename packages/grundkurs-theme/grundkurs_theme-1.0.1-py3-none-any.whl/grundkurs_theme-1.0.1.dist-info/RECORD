@@ -1,0 +1,17 @@
+grundkurs_theme/__init__.py,sha256=wTKMSyGB1qApNMnaSd9GDGhtpfVitf6JTRY3mk1YRMk,157
+grundkurs_theme/_version.py,sha256=m7juaewkLVe-1Tr3vJin_WnNj-hrLM4BT2ccsYWhH34,171
+grundkurs_theme/handlers.py,sha256=ZzfXnwSY8PQrYeLfu-zc51UMg3BjLe7XkpHMjxdt7TE,1582
+grundkurs_theme-1.0.1.data/data/share/jupyter/labextensions/grundkurs_theme/package.json,sha256=li-svXmeEkle85RHCLL5pOj_Mx3KhqFYmKK1XO-HH1o,5565
+grundkurs_theme-1.0.1.data/data/share/jupyter/labextensions/grundkurs_theme/schemas/grundkurs_theme/package.json.orig,sha256=Zerugqhu0D9-ax8NjhI1aDj-3hc7YZcQGRPOvoHJh90,6283
+grundkurs_theme-1.0.1.data/data/share/jupyter/labextensions/grundkurs_theme/schemas/grundkurs_theme/plugin.json,sha256=02kf11wxQ_KzMPdBYE9fHTDihMPBTBHDZCqMZnrSIh0,292
+grundkurs_theme-1.0.1.data/data/share/jupyter/labextensions/grundkurs_theme/static/525.b3511822b6377fa70b30.js,sha256=s1EYIrY3f6cLMOmnK96dMWdCSzb5rteOnOzkaHBEf5g,3531
+grundkurs_theme-1.0.1.data/data/share/jupyter/labextensions/grundkurs_theme/static/remoteEntry.a136c23060f50b65fdb6.js,sha256=oTbCMGD1C2X9tnFeWh1H7okijkozla8mMHz_dnJxqn0,6572
+grundkurs_theme-1.0.1.data/data/share/jupyter/labextensions/grundkurs_theme/static/style.js,sha256=-CQt0ZTPaCTvrRiLcznxflAbfvIKlOVzjOos-muaXQ8,118
+grundkurs_theme-1.0.1.data/data/share/jupyter/labextensions/grundkurs_theme/static/third-party-licenses.json,sha256=MNToQfru1YnHAie-2Virp23yWsc5co3qG0IzrO6SEfw,20
+grundkurs_theme-1.0.1.data/data/share/jupyter/labextensions/grundkurs_theme/themes/grundkurs_theme/index.css,sha256=B0SZdJwwrYKKPBNRXJpqQEe671Lvu6Pgpvnx7VYhuB0,16411
+grundkurs_theme-1.0.1.data/data/share/jupyter/labextensions/grundkurs_theme/themes/grundkurs_theme/index.js,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+grundkurs_theme-1.0.1.data/data/share/jupyter/labextensions/grundkurs_theme/install.json,sha256=4CKTVZr2w9MbRY3IlDBfdK9KD3HdKC0_sDvqsHPgPkg,191
+grundkurs_theme-1.0.1.dist-info/METADATA,sha256=oC_0HJof8xi4gSyfhh3eOB4A4cx2nlQlbhYwuW9mHOc,5820
+grundkurs_theme-1.0.1.dist-info/WHEEL,sha256=9QBuHhg6FNW7lppboF2vKVbCGTVzsFykgRQjjlajrhA,87
+grundkurs_theme-1.0.1.dist-info/licenses/LICENSE,sha256=bqo2e9oVPpFyLoFukYHi8FT1UZRNkVU5X6SiF92Lq78,1520
+grundkurs_theme-1.0.1.dist-info/RECORD,,
