@@ -1,0 +1,3 @@
+[console_scripts]
+prepare_study=carwatch.scripts.prepare_study:run
+
