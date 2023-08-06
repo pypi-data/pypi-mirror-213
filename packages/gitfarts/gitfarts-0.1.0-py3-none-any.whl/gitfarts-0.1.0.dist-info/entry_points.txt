@@ -1,0 +1,3 @@
+[console_scripts]
+gitfars=gitfarts.main:main
+
