@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: liveports
+Version: 0.1.12
+Summary: Give address to your localmachine
+Home-page: UNKNOWN
+Author: Abhinav
+Author-email: abhinavabcd@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+Requires-Dist: brotlipy (>=0.7.0)
+
+# LivePorts
+## Get your localhost app online.
+
+### Features
+
+- Setup a persistent cloud tunnel.
+- Custom domain name support.
+- Log Viewer to debug your request/responses
+- Request for higher throughput.
+
+
