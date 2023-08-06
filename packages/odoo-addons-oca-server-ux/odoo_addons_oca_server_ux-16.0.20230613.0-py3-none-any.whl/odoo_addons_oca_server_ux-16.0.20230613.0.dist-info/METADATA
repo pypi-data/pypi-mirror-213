@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: odoo-addons-oca-server-ux
+Version: 16.0.20230613.0
+Summary: Meta package for oca-server-ux Odoo addons
+Home-page: UNKNOWN
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: Framework :: Odoo
+Classifier: Framework :: Odoo :: 16.0
+Requires-Dist: odoo-addon-base-custom-filter (<16.1dev,>=16.0dev)
+Requires-Dist: odoo-addon-base-optional-quick-create (<16.1dev,>=16.0dev)
+Requires-Dist: odoo-addon-base-revision (<16.1dev,>=16.0dev)
+Requires-Dist: odoo-addon-base-substate (<16.1dev,>=16.0dev)
+Requires-Dist: odoo-addon-base-technical-features (<16.1dev,>=16.0dev)
+Requires-Dist: odoo-addon-base-tier-validation (<16.1dev,>=16.0dev)
+Requires-Dist: odoo-addon-base-tier-validation-formula (<16.1dev,>=16.0dev)
+Requires-Dist: odoo-addon-date-range (<16.1dev,>=16.0dev)
+Requires-Dist: odoo-addon-date-range-account (<16.1dev,>=16.0dev)
+Requires-Dist: odoo-addon-multi-step-wizard (<16.1dev,>=16.0dev)
+Requires-Dist: odoo-addon-sequence-reset-period (<16.1dev,>=16.0dev)
+Requires-Dist: odoo-addon-server-action-mass-edit (<16.1dev,>=16.0dev)
+Requires-Dist: odoo-addon-user-all-groups (<16.1dev,>=16.0dev)
+
+UNKNOWN
+
