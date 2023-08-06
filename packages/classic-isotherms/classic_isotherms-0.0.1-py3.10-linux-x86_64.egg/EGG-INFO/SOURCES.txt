@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+classic_isotherms.egg-info/PKG-INFO
+classic_isotherms.egg-info/SOURCES.txt
+classic_isotherms.egg-info/dependency_links.txt
+classic_isotherms.egg-info/not-zip-safe
+classic_isotherms.egg-info/top_level.txt
