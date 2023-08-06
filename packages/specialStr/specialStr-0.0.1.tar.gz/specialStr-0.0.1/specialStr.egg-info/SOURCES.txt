@@ -1,0 +1,10 @@
+README.rst
+setup.py
+specialStr/__init__.py
+specialStr/checker.py
+specialStr/main.py
+specialStr.egg-info/PKG-INFO
+specialStr.egg-info/SOURCES.txt
+specialStr.egg-info/dependency_links.txt
+specialStr.egg-info/requires.txt
+specialStr.egg-info/top_level.txt

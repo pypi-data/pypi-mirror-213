@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: specialStr
+Version: 0.0.1
+Summary: Manage strings more easily
+Home-page: https://kuankuan2007.gitee.io/docs/do-folder/
+Author: kuankuan
+Author-email: 2163826131@qq.com
+License: Mulan PSL v2
+Keywords: string
+Platform: windows
+Platform: linux
+Platform: macos
+Classifier: Natural Language :: English
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: MacOS
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: License :: OSI Approved :: Mulan Permissive Software License v2 (MulanPSL-2.0)
+
+Richer strings
+==============
+
+Provide more strings for specific purposes
+
+-  url
+-  email
+-  path
