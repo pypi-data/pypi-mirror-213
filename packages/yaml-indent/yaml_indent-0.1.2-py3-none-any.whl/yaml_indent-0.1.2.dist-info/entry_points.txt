@@ -1,0 +1,3 @@
+[console_scripts]
+yaml-indent=yaml_indent.yaml_indent:main
+
