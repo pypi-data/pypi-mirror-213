@@ -1,0 +1,14 @@
+GTST/MMD.py,sha256=Ljc5Ae_kAr7A8Hu8shjYLNLbLUjuZCglkUIbr-vL1fA,23589
+GTST/MONK.py,sha256=YplEsx95LVIPHU6DOgf1b8xTfPOkVeBaDHOCflDps1U,4810
+GTST/__init__.py,sha256=Pp9ivnQ8JDqjyotmsVKuUuMuOri_7l_dkNvipXbWAOk,176
+GTST/glasso.py,sha256=j28Cs_W92BZawBzgK8uxSQ6N1pV81fqhPe0G0MT2UtY,3876
+GTST/kernels/DeepKernel.py,sha256=mR5WVa70aLgEcNSiPb3-aRUoaa4cGctLUpftASRKpZ0,9216
+GTST/kernels/GNTK.py,sha256=JggXFrgWeY7eqVRobuzwZJy-KbaAKi8Mv9VPkidPXQI,10692
+GTST/kernels/RandomWalk.py,sha256=NGJQS8JmejWaS82_f_3VhTo2EUA2LtX2DpRHmGUSsTE,22303
+GTST/kernels/WWL.py,sha256=6_o-IKubK2t0gKPcudzTx8eBpjcAmC9mjI6xjbaOe7A,9069
+GTST/kernels/__init__.py,sha256=gpERQIp_W8XK5d1TljUqTf6XA2tBGKIWjIGdiQPB668,156
+GTST-0.0.6.dist-info/LICENSE,sha256=zuFyMlY7Cs4NMkQYYwTKz8Bfv-t-WSvIUjfx9WVtVyM,1102
+GTST-0.0.6.dist-info/METADATA,sha256=yCD2Hj6s8X0I6fTI3YUyxMQ6XT9Tu8kJv0pq3POON_c,26986
+GTST-0.0.6.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+GTST-0.0.6.dist-info/top_level.txt,sha256=f6jQxy84CYw4L7dSQmtg4Dwe6QPNIQY65vhIhWKCPMI,18
+GTST-0.0.6.dist-info/RECORD,,
