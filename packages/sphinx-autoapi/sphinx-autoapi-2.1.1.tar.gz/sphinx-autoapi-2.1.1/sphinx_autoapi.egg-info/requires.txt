@@ -1,0 +1,16 @@
+anyascii
+astroid>=2.7
+Jinja2
+PyYAML
+sphinx>=5.2.0
+
+[docs]
+furo
+sphinx
+sphinx_design
+
+[dotnet]
+sphinxcontrib-dotnetdomain
+
+[go]
+sphinxcontrib-golangdomain
