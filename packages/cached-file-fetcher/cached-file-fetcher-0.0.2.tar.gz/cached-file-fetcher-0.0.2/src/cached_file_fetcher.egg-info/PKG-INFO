@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: cached-file-fetcher
+Version: 0.0.2
+Summary: Fetches files from s3, and caches them on local disk while maintaining a size-limited LRU cache.
+Author-email: TuneFlow <contact@info.tuneflow.com>
+Project-URL: Homepage, https://github.com/andantei/file-fetcher
+Project-URL: Bug Tracker, https://github.com/andantei/file-fetcher/issues
+Keywords: file,fetcher
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
