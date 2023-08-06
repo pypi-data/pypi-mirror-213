@@ -1,0 +1,61 @@
+Metadata-Version: 2.1
+Name: pySailingVLM
+Version: 1.0.0
+Summary: 'Vortex Lattice Method for yacht sailing'
+Home-page: https://zuza3012.github.io/vlmbook/intro.html
+Author: Grzegorz Gruszczynski, Zuzanna Wieczorek
+Keywords: Vortex Lattice Method,VLM,sailingVLM,yacht,sailing
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Topic :: Software Development
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Scientific/Engineering :: Visualization
+Classifier: Topic :: Scientific/Engineering :: Physics
+Classifier: Topic :: Scientific/Engineering :: Information Analysis
+Classifier: Topic :: Education
+Classifier: Framework :: Jupyter
+Classifier: Intended Audience :: Science/Research
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: POSIX :: Linux
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# pyLLTandVLM
+
+# before running test do:
+```
+export NUMBA_DISABLE_JIT=1
+```
+[![CircleCI](https://circleci.com/gh/ggruszczynski/sailingVLM/tree/main.svg?style=svg&circle-token=c62058c5c0f125149f3e70358b3280a403d2b2b2)](https://circleci.com/gh/ggruszczynski/sailingVLM/tree/main)
+python implementation of a 3D Vortex Lattice Method
+
+```
+            The geometry is described using the following CSYS.
+            lem - leading edge (luff) of the main sail
+            tem - trailing edge (leech) of the main sail
+
+                        Z ^ (mast)     
+                          |
+                         /|
+                        / |
+                       /  |              ^ Y     
+                   lem_NW +--+tem_NE    / 
+                     /    |   \        /
+                    /     |    \      /
+                   /      |     \    /
+                  /       |      \  /
+                 /        |       \/
+                /         |       /\
+               /          |      /  \
+              /           |     /    \
+             /            |    /      \
+            /      lem_SW |---/--------+tem_SE
+           /              |  /          
+  (bow) ------------------|-/-------------------------| (stern)
+         \                |/                          |
+    ------\---------------*---------------------------|-------------------------> X (water level)
+        
+```
