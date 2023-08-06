@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: PoolFlow
+Version: 0.0.3
+Summary: A simple process management library
+Home-page: https://victorgarric.github.io/PoolFlow/
+Author: Victor Garric
+Author-email: victor.garric@gmail.com
+License: MIT
+Description-Content-Type: text/markdown
+Requires-Dist: rich
+
+README
