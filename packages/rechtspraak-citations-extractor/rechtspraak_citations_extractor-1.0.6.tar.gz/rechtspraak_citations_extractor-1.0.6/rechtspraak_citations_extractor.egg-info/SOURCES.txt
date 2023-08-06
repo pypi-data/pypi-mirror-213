@@ -1,0 +1,10 @@
+README.md
+setup.py
+rechtspraak_citations_extractor/__init__.py
+rechtspraak_citations_extractor/citations_extractor.py
+rechtspraak_citations_extractor/testing.py
+rechtspraak_citations_extractor.egg-info/PKG-INFO
+rechtspraak_citations_extractor.egg-info/SOURCES.txt
+rechtspraak_citations_extractor.egg-info/dependency_links.txt
+rechtspraak_citations_extractor.egg-info/requires.txt
+rechtspraak_citations_extractor.egg-info/top_level.txt
