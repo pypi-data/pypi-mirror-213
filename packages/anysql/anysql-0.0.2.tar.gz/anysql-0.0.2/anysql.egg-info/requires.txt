@@ -1,0 +1,9 @@
+dataclasses
+contextvars
+typing_extensions
+
+[mysql]
+pymysql
+
+[postgresql]
+psycopg2-binary
