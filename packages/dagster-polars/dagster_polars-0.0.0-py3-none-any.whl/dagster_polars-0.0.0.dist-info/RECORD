@@ -1,0 +1,10 @@
+dagster_polars/__init__.py,sha256=cbHkecSFTDqcIgKopoe5i9rgXOsoDjNtveVwUgu1RdQ,314
+dagster_polars/_version.py,sha256=e8Oo5IRkIu7BKae9CNP5g4wHrBB2DoCTsAJAwIEBfkw,76
+dagster_polars/io_managers/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dagster_polars/io_managers/base.py,sha256=xyObB-E39W82COkk-w-PH6BbqH67CP2frQ_nEDTKgjk,6631
+dagster_polars/io_managers/parquet.py,sha256=4sFnVWoNvMzbIBJ6Q5DlIVEQ0ugGxUkWGmbhZbRW5kw,1263
+dagster_polars/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dagster_polars-0.0.0.dist-info/LICENSE,sha256=-gtoVIAZYUHYmNHISZg982FI4Oh19mV1nxgTVW8eCB8,11344
+dagster_polars-0.0.0.dist-info/METADATA,sha256=_ADgn7nWBHZVINGLuysptZOQgkYhT0RYPSTuSNSwzq0,3194
+dagster_polars-0.0.0.dist-info/WHEEL,sha256=7Z8_27uaHI_UZAc4Uox4PpBhQ9Y5_modZXWMxtUi4NU,88
+dagster_polars-0.0.0.dist-info/RECORD,,
