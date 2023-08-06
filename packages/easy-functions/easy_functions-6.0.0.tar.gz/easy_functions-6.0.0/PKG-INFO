@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: easy_functions
+Version: 6.0.0
+Summary: 一个简单小巧但实用的模块
+Home-page: https://github.com/MCTF-Alpha-27/easy_functions
+Author: Jerry0940
+Author-email: j13816180940@139.com
+License: MIT
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+﻿# 介绍
+从它的名字就可以看出，这是一个简单但很实用的模块
+<br/>你可以通过导入模块中的功能来简化你的代码，它们大多很简单，但很实用
+<br/>如果有问题或建议请在GitHub反馈
+
+
