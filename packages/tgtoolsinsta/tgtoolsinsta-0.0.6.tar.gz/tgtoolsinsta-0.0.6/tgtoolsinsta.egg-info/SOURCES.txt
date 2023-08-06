@@ -1,0 +1,8 @@
+LICENSE
+setup.py
+tgtoolsinsta/__init__.py
+tgtoolsinsta.egg-info/PKG-INFO
+tgtoolsinsta.egg-info/SOURCES.txt
+tgtoolsinsta.egg-info/dependency_links.txt
+tgtoolsinsta.egg-info/requires.txt
+tgtoolsinsta.egg-info/top_level.txt
