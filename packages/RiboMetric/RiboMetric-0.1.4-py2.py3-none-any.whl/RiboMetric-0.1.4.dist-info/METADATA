@@ -1,0 +1,82 @@
+Metadata-Version: 2.1
+Name: RiboMetric
+Version: 0.1.4
+Summary: A python command-line utility for the generation of comprehensive reports on the quality of ribosome profiling (Ribo-Seq) datasets
+Home-page: https://github.com/JackCurragh/RiboMetric
+Author: Jack Tierney
+Author-email: jackcurragh@gmail.com
+License: MIT license
+Keywords: RiboMetric
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Requires-Python: >=3.8
+License-File: LICENSE
+License-File: AUTHORS.rst
+Requires-Dist: arabic-reshaper (==3.0.0)
+Requires-Dist: asn1crypto (==1.5.1)
+Requires-Dist: bio (==1.5.9)
+Requires-Dist: biopython (==1.81)
+Requires-Dist: biothings-client (==0.3.0)
+Requires-Dist: certifi (==2022.12.7)
+Requires-Dist: cffi (==1.15.1)
+Requires-Dist: charset-normalizer (==3.1.0)
+Requires-Dist: click (==8.1.3)
+Requires-Dist: cryptography (==40.0.2)
+Requires-Dist: cssselect2 (==0.7.0)
+Requires-Dist: Cython (==0.29.34)
+Requires-Dist: gffpandas (==1.2.0)
+Requires-Dist: gprofiler-official (==1.0.0)
+Requires-Dist: html5lib (==1.1)
+Requires-Dist: idna (==3.4)
+Requires-Dist: Jinja2 (==3.1.2)
+Requires-Dist: kaleido (==0.2.1)
+Requires-Dist: lxml (==4.9.2)
+Requires-Dist: markdown-it-py (==2.2.0)
+Requires-Dist: MarkupSafe (==2.1.2)
+Requires-Dist: mdurl (==0.1.2)
+Requires-Dist: mygene (==3.2.2)
+Requires-Dist: numpy (==1.24.3)
+Requires-Dist: oscrypto (==1.3.0)
+Requires-Dist: oxbow (==0.1.0)
+Requires-Dist: packaging (==23.1)
+Requires-Dist: pandas (==2.0.1)
+Requires-Dist: Pillow (==9.5.0)
+Requires-Dist: platformdirs (==3.4.0)
+Requires-Dist: plotly (==5.14.1)
+Requires-Dist: pooch (==1.7.0)
+Requires-Dist: pyarrow (==12.0.0)
+Requires-Dist: pycparser (==2.21)
+Requires-Dist: Pygments (==2.15.1)
+Requires-Dist: pyHanko (==0.18.1)
+Requires-Dist: pyhanko-certvalidator (==0.22.0)
+Requires-Dist: pypdf (==3.9.0)
+Requires-Dist: pypng (==0.20220715.0)
+Requires-Dist: pysam (==0.21.0)
+Requires-Dist: pytest (==7.3.1)
+Requires-Dist: python-bidi (==0.4.2)
+Requires-Dist: python-dateutil (==2.8.2)
+Requires-Dist: pytz (==2023.3)
+Requires-Dist: PyYAML (==6.0)
+Requires-Dist: qrcode (==7.4.2)
+Requires-Dist: reportlab (==3.6.13)
+Requires-Dist: requests (==2.29.0)
+Requires-Dist: rich (==13.3.4)
+Requires-Dist: six (==1.16.0)
+Requires-Dist: svglib (==1.5.1)
+Requires-Dist: tenacity (==8.2.2)
+Requires-Dist: tinycss2 (==1.2.1)
+Requires-Dist: tqdm (==4.65.0)
+Requires-Dist: typing-extensions (==4.5.0)
+Requires-Dist: tzdata (==2023.3)
+Requires-Dist: tzlocal (==5.0.1)
+Requires-Dist: uritools (==4.0.1)
+Requires-Dist: urllib3 (==1.26.15)
+Requires-Dist: webencodings (==0.5.1)
+Requires-Dist: xhtml2pdf (==0.2.11)
+
