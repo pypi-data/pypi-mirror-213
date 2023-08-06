@@ -1,0 +1,102 @@
+Metadata-Version: 2.1
+Name: simpgit
+Version: 0.0.2
+Summary: A tool to simplfy git operations
+Maintainer-email: XetHub <contact@xethub.com>
+License: BSD-3-Clause
+Project-URL: Homepage, https://xethub.com/xdssio/gitlm
+Keywords: ai,llm,openai,developer-tools,git,nlp
+Classifier: Development Status :: 3 - Alpha
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Operating System :: MacOS
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: System :: Filesystems
+Classifier: Topic :: Software Development :: Version Control :: Git
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+
+# Simpgit
+
+A tool to simplify git usage with sprinkles of AI magic.
+
+Humans think in simpler terms than git operates in. This tool aims to bridge that gap by providing a simpler language to
+do common git tasks. Plus an LLM can write your commit messages for you.
+
+You can load recent information with `gs load`, save current changes with `gs save` and share them with `gs share`.    
+Behind the scenes it's exactly what you would expect from git, but with a simpler interface.
+
+## Install
+
+* Get an [openai api key](https://platform.openai.com/account/api-keys)
+
+```bash
+$ export OPENAI_API_KEY=...
+$ pip install simpgit
+```
+
+## Usage
+
+Within a repo, run:
+
+```bash 
+(.venv) $ sg --help
+```
+
+```bash
+Commands:
+  --help: show this help message and exit    
+    save <message>: add files and commit changes. Massage is genereated if not provided         
+    share <message>: Add, commit and push changes to git. Massage is genereated if not provided
+    load : pull changes from git    
+    commit <message>: commit changes. Massage is genereated if not provided
+
+Automations:
+  auto <save|share> <interval> --<detach>: run a service
+  list <save|share>: list running services
+  stop <save|share>: stop a service
+```
+
+## Basic Example
+```bash
+sg save
+
+> Entering new StuffDocumentsChain chain...
+
+
+> Entering new LLMChain chain...
+Prompt after formatting:
+Write a concise summary of the following:
+...
+> Finished chain.
+Automated commit - 4 files:
+ writing README.md new instructions.
+gitllm/__init__.py
+gitllm/cli.py
+gitllm/git.py
+pyproject.toml
+```
+
+## Automation Example
+```bash
+$ sg auto commit 5 --detach
+Running auto commit every 5.0 minutes in the background
+
+$ sg list commit
+Auto commit every 5.0 on pid 96641  in repo at /Users/yonatanalexander/development/xethub/gitllm
+
+$ sg stop commit
+Stopping auto-git commit - in <repo>
+Stopping processes for commit...
+Stopped auto 96641..
+```
