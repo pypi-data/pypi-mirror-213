@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools >= 58.0.4", "wheel >= 0.37.0"]
+build-backend = "setuptools.build_meta"
+
+[tool.poetry]
+name = "oblv-ctl"
+version = "0.4.0"
+description = "A client library for accessing Oblivious APIs"
+authors = ["Oblivious Support <support@oblivious.ai>"]
+license = "Apache-2.0"
+readme = "README.md"
+repository = "https://github.com/ObliviousAI/oblv-ctl"
+homepage = "https://github.com/ObliviousAI/oblv-ctl/tree/master/README.md"
+keywords = ["Oblivious", "python", "package"]
+
+
+[tool.poetry.dependencies]
+python = "^3.7"
+httpx = "0.15.0"
+python-dateutil = "2.8.2"
+typer = "0.7.0"
+rich = "~11.1"
+requests = "2.29.0"
+check-jsonschema = "0.22.0"
+
+[tool.poetry.scripts]
+oblv-ctl = "oblv_ctl.cli.main:app"
