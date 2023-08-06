@@ -1,0 +1,2 @@
+[console_scripts]
+zlogging-gen = zlogging._gen:main
