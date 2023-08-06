@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: gauge-llm
+Version: 0.0.12
+Summary: Qualitatively evaluate LLMs
+Author: Killian Lucas
+Requires-Python: >=3.10,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: openai (>=0.27.8,<0.28.0)
+Requires-Dist: replicate (==0.8.3)
+Requires-Dist: rich (>=13.4.2,<14.0.0)
+Description-Content-Type: text/markdown
+
+# gauge
+Evaluate LLMs with (bigger, smarter) LLMs
+
