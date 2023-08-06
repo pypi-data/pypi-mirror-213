@@ -1,0 +1,134 @@
+Metadata-Version: 2.1
+Name: mlsteam-model-sdk
+Version: 0.4.5
+Summary: MLSteam Model SDK
+License: MIT
+Project-URL: Homepage, https://mlsteam-model-sdk-doc.readthedocs.io/
+Keywords: sdk
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: bravado
+Requires-Dist: click
+Requires-Dist: pythemis
+Requires-Dist: texttable
+Requires-Dist: swagger-spec-validator (<3.0.0) ; python_version < "3.8"
+Provides-Extra: dev
+Requires-Dist: bump2version ; extra == 'dev'
+Requires-Dist: cython ; extra == 'dev'
+Requires-Dist: george-walrus ; extra == 'dev'
+Requires-Dist: myst-nb ; extra == 'dev'
+Requires-Dist: myst-parser ; extra == 'dev'
+Requires-Dist: pytest ; extra == 'dev'
+Requires-Dist: sphinx ; extra == 'dev'
+Requires-Dist: sphinx-rtd-theme ; extra == 'dev'
+Requires-Dist: twine ; extra == 'dev'
+
+# mlsteam-model-sdk
+SDK for accessing MLSteam models
+
+## Setup
+
+```bash
+pip3 install mlsteam-model-sdk
+```
+
+To process encrypted model versions, install the *Themis development package* according to the official [instrunctions](https://docs.cossacklabs.com/themis/languages/python/installation/). Debian/Ubuntu users have a handy installation method:
+
+```bash
+# for users that already have administrator privileges
+mlsteam-model-cli install-themisdev
+
+# for those that need privilege lifting
+sudo mlsteam-model-cli install-themisdev
+```
+
+## Usage
+
+### Initilize SDK
+
+SDK needs to be initialized if you have not done so (replace the fields started with *$*):
+
+```bash
+mlsteam-model-cli init \
+    --default_project_type=name \
+    --default_project_val=$PROJECT_OWNER/$PROJECT_NAME
+```
+
+> By default, the settings will be at `$HOME/.mlsteam-model-sdk/cfg.ini`.
+
+If the program is running out of an MLSteam system, you may also need to setup *api_token*
+with this command instead, or by editing the *api_token* field in `cfg.ini`:
+
+```bash
+mlsteam-model-cli init \
+    --api_token=$YOUR_API_TOKEN \
+    --default_project_type=name \
+    --default_project_val=$PROJECT_OWNER/$PROJECT_NAME
+```
+
+### Downloading a model version with SDK
+
+```python
+from mlsteam_model_sdk.sdk.model import Model
+
+sdk_model = Model()
+sdk_model.download_model_version(model_name='model_name',
+                                 version_name='version_name')
+```
+
+> You will need administrator privileges to handle encrypted model versions. For this case, either run the Python program with `sudo`, or enter your password in a `sudo` prompt during program execution.
+> Administrator privileges are not required when you only process non-encrypted model versions.
+
+> By default, the model version will be downloaded at `$HOME/.mlsteam-model-sdk/models/download/`.
+
+This loads a model version and makes prediction:
+
+```python
+mv = sdk_model.load_model_version(model_name='model_name',
+                                  version_name='version_name')
+outputs = mv.predict(inputs)
+```
+
+### Importing a model version with CLI
+
+> This example assumes the following files are locally available:
+>
+> 1. model version package (required)
+> 1. package encryption key (required only for encrypted packages)
+
+> You will need administrator privileges to import an encrypted model version, as mentioned in the previous example.
+
+To import a package:
+
+```bash
+# for non-encrypted packages
+mlsteam-model-cli mv import-local -f $PACKAGE_FILE_PATH
+
+# for encrypted packages
+mlsteam-model-cli mv import-local -f $PACKAGE_FILE_PATH -k $ENCKEY_FILE_PATH
+```
+
+> By default, the model and version names to register are read from the package manifest. You may customize these settings with the `--model_name` and `--version_name` options.
+
+> If the operation is successful, you will find the imported pakage in local model registry:
+
+> ```bash
+> mlsteam-model-cli mv list-local
+> ```
+
+> ```
+>    muuid     model_name       vuuid        version_name     puuid     packaged   encrypted      download_time
+>  ================================================================================================================
+>  __local__   ...          local-........   ...            __local__   1          ...            .....
+> ```
