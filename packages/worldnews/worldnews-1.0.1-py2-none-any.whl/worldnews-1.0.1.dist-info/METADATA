@@ -1,0 +1,15 @@
+Metadata-Version: 2.0
+Name: worldnews
+Version: 1.0.1
+Summary: News Extractor
+Home-page: UNKNOWN
+Author: Cod2h3lp
+Author-email: UNKNOWN
+License: MIT
+Platform: UNKNOWN
+Requires-Dist: bs4
+Requires-Dist: requests
+
+UNKNOWN
+
+
