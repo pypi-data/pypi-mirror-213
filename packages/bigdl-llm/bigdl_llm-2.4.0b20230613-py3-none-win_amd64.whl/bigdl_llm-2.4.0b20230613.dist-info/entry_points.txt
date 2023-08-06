@@ -1,0 +1,3 @@
+[console_scripts]
+convert_model = bigdl.llm.ggml.convert_model:main
+
