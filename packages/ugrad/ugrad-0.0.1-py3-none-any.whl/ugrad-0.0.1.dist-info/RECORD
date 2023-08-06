@@ -1,0 +1,17 @@
+ugrad/__init__.py,sha256=mFXucPxst5XAxyT_tgq6xkpe_P1yDms8wqUBmbjq4Ao,120
+ugrad/init.py,sha256=EesKA8O5x_f4XgAc032UtIMwjGSvtwN_iXUUgJALoIo,234
+ugrad/tensor.py,sha256=5yL4EUO-BSs55bSC03UIEXfyZ_8XC3UJZS4iQibSW98,19840
+ugrad/nn/__init__.py,sha256=Vee3q-HIZSR4xIe1WPjjy6tZk7-rgDn3e2QcbWnWhJk,59
+ugrad/nn/functional.py,sha256=S3Lx-lSytIX3CIWH65tftvTGTHgRLBwmpGdmegqLOlI,536
+ugrad/nn/module.py,sha256=LAnC7UcnF6kdeVvs7oUgwoeLXMcZH0xpO7WVu9yaSAM,4307
+ugrad/optim/__init__.py,sha256=kgmJox1msQam9QwTe4c_a5lCVjoGfpLJh-Ec0Ny1WZI,64
+ugrad/optim/lr_scheduler.py,sha256=PNtMaWxD362kzqFpGb_8pM47mc72W3o8cEOlRZUtTkw,1869
+ugrad/optim/optimizer.py,sha256=c_5lKqTtvvqDbmJTg3IjGib_ClVNCMDEcL8UXOacpKI,1382
+ugrad/test/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ugrad/test/test_model.py,sha256=bflJSRhq_1lUx8IfgnoBl4VpgjiNStWmaow0TGjtM4g,2294
+ugrad/test/test_ugrad.py,sha256=oGyMMUtbked2lflpGEBmBqTqzpjyDcAaoL8j7E_tNUY,15994
+ugrad-0.0.1.dist-info/LICENSE,sha256=8fj-Zsk0SWiswyGR66sXSMmZ1kxz0zbniRernmFs0-4,1065
+ugrad-0.0.1.dist-info/METADATA,sha256=FqHGiG1boZcTaQus8wQJsv0UY7J47aaf-E0K6APA6Ic,603
+ugrad-0.0.1.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+ugrad-0.0.1.dist-info/top_level.txt,sha256=3CtPMwHHFbFhjA02vys1s78sTDdd9GHMhNFrvwCS8jM,6
+ugrad-0.0.1.dist-info/RECORD,,
