@@ -1,0 +1,6 @@
+openshift
+xmltodict
+urllib3
+colorlog
+packaging
+python-benedict
