@@ -1,0 +1,8 @@
+pandas_money/__init__.py,sha256=WUSVCwl_gIC4KOkpE7XS6OO5Ii4BqGAVJEzQ8uvh3Cg,152
+pandas_money/money_dtype.py,sha256=H-wjinW9_AAkhBT2lNPwIBv5gaOYk0AkNuXqg17beJk,8531
+pandas_money/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pandas_money/tests/test_money_dtype.py,sha256=sQlpGbCKH8VqdnLbgKEp8IOXcqbOqRCEtxAKnlcYzfY,12730
+pandas_money-0.2.0.dist-info/LICENSE,sha256=F4bwcaUQZIokaV8pURfwK64Lvw-3xnMKr-nJOj5L9-4,1070
+pandas_money-0.2.0.dist-info/METADATA,sha256=0RGk_CLDS9tTs1RGOM0IYA-pYUbzKTUF7-9ioHzMNtY,1545
+pandas_money-0.2.0.dist-info/WHEEL,sha256=7Z8_27uaHI_UZAc4Uox4PpBhQ9Y5_modZXWMxtUi4NU,88
+pandas_money-0.2.0.dist-info/RECORD,,
