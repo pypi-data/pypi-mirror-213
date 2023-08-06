@@ -1,0 +1,23 @@
+mem log_mem {
+	desc = "Memory for logging";
+    mementries = 64;
+    memwidth = 8;
+};
+
+addrmap logger { 
+	external reg  {	
+		desc = "Control register";
+		field {
+			onread = ruser;
+			name = "Enable flag";
+			desc = "Enable the logging";
+			sw = rw; hw = r;} ENABLE;
+		field {sw = rw; hw = r;} TRIGGERED;
+	} Ctrl;
+	reg  {	
+		desc = "Trigger configuration for channel 0 and 1";
+		field {sw = rw; hw = r;} SW_TRIG;
+		field {sw = rw; hw = r;} LEVEL[8];
+	} Trig[2];
+  	external log_mem LogMem[2];
+};

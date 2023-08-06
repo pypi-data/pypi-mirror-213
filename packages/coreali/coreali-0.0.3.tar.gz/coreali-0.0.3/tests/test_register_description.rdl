@@ -1,0 +1,85 @@
+
+addrmap an_addrmap {
+	reg  {	
+		field {
+			name = "Field 0 downto 0";
+			desc = "A bitfield from 0 downto 0";
+			sw = rw; hw = w;
+		} FIELD0DOWNTO0[0:0];
+		field {sw = rw; hw = w;} FIELD13DOWNTO4[13:4];
+		} ARegWithFields;
+	reg  {	
+		field {sw = rw; hw = w;} VAL[32];
+		} ARepeatedReg[3];
+
+	reg {
+		field {sw = rw; hw = r;} VAL[32];
+	} AnotherRegAt20@0x20;
+
+	reg {
+		field {sw = rw; hw = r;} VAL[32];
+	} TenRegs[10];
+
+	regfile {
+		reg{
+			field {sw = rw; hw = r;} VAL[32];
+		} ARegInARegFile[4];
+	} ARegfile[2];
+
+	regfile {
+		reg{
+			field {sw = rw; hw = r;} VAL[32];
+		} AReg;
+		reg{
+			field {sw = rw; hw = r;} VAL[32];
+		} AnotherReg;
+	} AnotherRegfile[2];
+
+	reg {
+		field {sw = r; hw = r;} VAL[32];
+	} ReadOnlyReg;
+	
+	reg {
+		field {sw = w; hw = r;} VAL[32];
+	} WriteOnlyReg;
+};
+
+
+mem mem64x32 {
+	name = "64x32 Memory";
+	desc = "A memory with 64 words and each word having 32bits";
+	mementries = 64;
+	memwidth = 32;
+};
+
+addrmap a_block_with_memory {
+	reg {
+		field {sw = rw; hw = r;} VAL[32];
+	} AReg;
+	external mem64x32 AMemory;
+	reg {
+		field {sw = rw; hw = r;} VAL[16];
+	} HundredRegs[100];
+};
+
+addrmap an_addrmap_with_8bit_regs {
+	default regwidth=8;
+	reg {
+		field {sw = rw; hw = r;} VAL[8];
+	} AReg0;
+	reg {
+		field {sw = rw; hw = r;} FIELD3DOWNTO0[3:0];
+		field {sw = rw; hw = r;} FIELD7DOWNTO4[7:4];
+	} AReg1;
+};
+
+addrmap test_register_description { 
+    an_addrmap AnAddrmap @0x0;
+    an_addrmap AnotherAddrmap @0x100;
+	a_block_with_memory ABlockWithMemory;
+	external mem64x32 Mem64x32;
+	external mem64x32 TwoMemories[2];
+	TwoMemories->name = "2x 64x32 Memory";
+	TwoMemories->desc = "This are two memories";
+	an_addrmap_with_8bit_regs AnAddrmapWith8bitRegs;
+};
