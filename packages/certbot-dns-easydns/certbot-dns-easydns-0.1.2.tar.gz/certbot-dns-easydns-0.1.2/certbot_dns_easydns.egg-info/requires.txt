@@ -1,0 +1,11 @@
+acme>=0.29.0
+certbot>=0.34.0
+setuptools
+dns-lexicon
+
+[docs]
+sphinx
+sphinx-rtd-theme
+
+[test]
+pytest
