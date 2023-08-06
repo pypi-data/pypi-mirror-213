@@ -1,0 +1,10 @@
+MANIFEST.in
+README.rst
+setup.cfg
+setup.py
+ms_recognizers_text_suite.egg-info/PKG-INFO
+ms_recognizers_text_suite.egg-info/SOURCES.txt
+ms_recognizers_text_suite.egg-info/dependency_links.txt
+ms_recognizers_text_suite.egg-info/requires.txt
+ms_recognizers_text_suite.egg-info/top_level.txt
+recognizers_suite/__init__.py

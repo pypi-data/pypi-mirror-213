@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: ms_recognizers-text-suite
+Version: 1.0.0a1
+Summary: recognizers-text-suite README
+Home-page: https://github.com/Microsoft/Recognizers-Text
+Author: Microsoft
+License: MIT
+Keywords: nlp,nlp-entity-extraction,entity-extraction,parser-library
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Development Status :: 3 - Alpha
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+
+=============================================
+Microsoft.Recognizers.Text.Suite for Python
+=============================================
+
+Please check the `main README`_ for more details.
+
+.. _main README: https://github.com/Microsoft/Recognizers-Text/tree/master/Python
