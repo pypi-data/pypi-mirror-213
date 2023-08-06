@@ -1,0 +1,15 @@
+numpy
+pyparsing
+scipy
+typing_extensions
+more_itertools
+
+[dev]
+mypy
+pre-commit
+build
+ruff
+black
+pytest>=4.6
+pytest-cov
+automl_sphinx_theme>=0.1.11
