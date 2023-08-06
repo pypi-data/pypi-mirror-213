@@ -1,0 +1,38 @@
+Metadata-Version: 2.1
+Name: kenzy-image
+Version: 0.0.9
+Summary: Computer Vision module for Python 3.x+ to perform face/object/motion detection and recognition.
+Home-page: https://kenzy.ai
+Author: lnxusr1
+Author-email: dist@kenzy.ai
+License: MIT
+Download-URL: https://kenzy.ai/get/kenzy-image/latest
+Project-URL: Bug Tracker, https://kenzy.ai/issues/kenzy-image
+Project-URL: Changelog, https://kenzy.ai/get/kenzy-image/latest/changelog
+Keywords: OpenCV,Face Detection,Object Detection,Face Recognition,Motion Detection
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+License-File: LICENSE
+
+kenzy_image · |GitHub license| |Python Versions| |GitHub release (latest by date)|
+===============================================================================================
+
+This module is dedicated to simplifying the interactions required for face detection, face recognition, object detection, and motion detection.
+
+Visit our main site: https://kenzy.ai/
+
+--------------
+
+Help & Documentation
+
+Help and additional details are available at https://image-docs.kenzy.ai/
+
+.. |GitHub license| image:: https://img.shields.io/github/license/lnxusr1/image_analyzer
+   :target: https://github.com/lnxusr1/kenzy_image/blob/master/LICENSE
+.. |Python Versions| image:: https://img.shields.io/pypi/pyversions/yt2mp3.svg
+.. |GitHub release (latest by date)| image:: https://img.shields.io/github/v/release/lnxusr1/kenzy_image
+
+

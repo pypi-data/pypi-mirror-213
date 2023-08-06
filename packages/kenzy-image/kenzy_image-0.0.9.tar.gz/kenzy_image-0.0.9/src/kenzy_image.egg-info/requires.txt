@@ -1,0 +1,4 @@
+face_recognition
+numpy
+opencv-contrib-python
+yolov7detect
