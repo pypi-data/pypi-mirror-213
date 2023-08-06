@@ -1,0 +1,38 @@
+Metadata-Version: 2.1
+Name: pitop.processing
+Version: 0.31.0.post3
+Summary: pi-top Python SDK.
+Home-page: https://github.com/pi-top/pi-top-Python-SDK
+Author: pi-top
+Author-email: deb-maintainers@pi-top.com
+License: Apache Software License
+Keywords: pi-top,raspberrypi,battery
+Platform: ALL
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Education
+Classifier: Topic :: System :: Hardware
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Dist: pitop.common (==0.31.0-3)
+Requires-Dist: pitop.pma (==0.31.0-3)
+Requires-Dist: pitop.core (==0.31.0-3)
+Requires-Dist: imutils (<1.0.0,>=0.5.4)
+Requires-Dist: matplotlib (<4.0,>=3.3.4)
+Requires-Dist: numpy (<2.0.0,>1.19.5)
+Requires-Dist: onnxruntime (<2.0,>=1.8.1)
+Requires-Dist: opencv-python (<4.6.0,>=4.5.1)
+Requires-Dist: wget (<4.0,>=3.2)
+Requires-Dist: dlib (<20.0.0,>=19.22.0)
+
+===========================
+pi-top Python Processing
+===========================
+
+A set of processing utilities for use with pi-top camera and robotics.
+
+
