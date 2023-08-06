@@ -1,0 +1,52 @@
+# Sources:
+# https://packaging.python.org/en/latest/specifications/declaring-project-metadata/
+# https://github.com/pypa/sampleproject/blob/main/pyproject.toml
+
+[project]
+name = "atooms.active"
+description = "An atooms backend for simulating active matter"
+readme = "README.md"
+version = "1.0.2"
+authors = [
+    {name = "Iacopo Ricci", email = "dummy.iricci@dummy.com"}
+]
+requires-python = ">=3.10"
+license = {text = "GPLv3"}
+dependencies = [
+    "argh>=0.28.1",
+    "atooms>=3.15.0",
+    "f2py-jit>=0.9.1",
+    "numpy",
+    "scipy",
+]
+classifiers = [
+    "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
+    "Programming Language :: Python :: 3.10",
+    "Development Status :: 5 - Production/Stable",
+    "Intended Audience :: Science/Research",
+    "Topic :: Scientific/Engineering :: Physics"
+]
+
+[project.urls]
+repository = "https://framagit.org/atooms/active"
+changelog = "https://framagit.org/atooms/active/-/blob/master/CHANGELOG.md"
+# homepage = ""
+# documentation = ""
+
+# The following would provide a command line executable called `mypackage`
+# which executes the function `cli.main` from this package when invoked.
+[project.scripts]
+active = "atooms.active.cli:main"
+
+# Package building
+[build-system]
+requires = ["setuptools>=61.0.0", "wheel"]
+build-backend = "setuptools.build_meta"
+ 
+
+# This is configuration specific to the `setuptools` build backend.
+# If you are using a different build backend, you will need to change this.
+[tool.setuptools]
+# If there are data files included in your packages that need to be
+# installed, specify them here.
+package-data = {"atooms.active" = ["*.f90"]}
