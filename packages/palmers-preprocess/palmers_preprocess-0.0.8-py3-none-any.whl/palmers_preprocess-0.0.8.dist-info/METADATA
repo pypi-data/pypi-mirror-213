@@ -1,0 +1,34 @@
+Metadata-Version: 2.1
+Name: palmers_preprocess
+Version: 0.0.8
+Summary: A package to preprocess data for Palmer's project
+Project-URL: Homepage, https://github.com/pypa/sampleproject
+Project-URL: Bug Tracker, https://github.com/pypa/sampleproject/issues
+Author-email: Roy  <roy@sdatta.ai>, Assaf <assafm@sdatta.ai>, Guy <assafm@sdatta.ai>, Oran <assafm@sdatta.ai>, Yotam <assafm@sdatta.ai>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+
+# Palmers Preprocess Package
+
+This is a package for preprocessing data for machine learning. It is a work in progress and is not yet ready for use.
+
+# To Upload
+py -m build
+twine upload dist/*
+
+
+
+
+# ----- DELETE -------
+
+to start venv
+
+C:\Users\assafm\.virtualenvs\sdatta_packages\palmers_preprocess\Scripts\activate
+
+
+
+
