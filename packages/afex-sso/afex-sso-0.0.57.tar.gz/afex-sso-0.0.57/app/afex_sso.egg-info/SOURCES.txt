@@ -1,0 +1,15 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+app/AFEX_SSO/__init__.py
+app/AFEX_SSO/src/__init__.py
+app/AFEX_SSO/src/get_hash_key.py
+app/AFEX_SSO/src/sso.py
+app/AFEX_SSO/src/views.py
+app/afex_sso.egg-info/PKG-INFO
+app/afex_sso.egg-info/SOURCES.txt
+app/afex_sso.egg-info/dependency_links.txt
+app/afex_sso.egg-info/requires.txt
+app/afex_sso.egg-info/top_level.txt
