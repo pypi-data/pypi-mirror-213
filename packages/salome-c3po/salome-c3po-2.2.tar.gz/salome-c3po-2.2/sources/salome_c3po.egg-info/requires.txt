@@ -1,0 +1,5 @@
+
+[pytest]
+pytest
+pytest-cov
+pytest-html
