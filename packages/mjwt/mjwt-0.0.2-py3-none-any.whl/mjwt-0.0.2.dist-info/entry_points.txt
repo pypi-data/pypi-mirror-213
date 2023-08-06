@@ -1,0 +1,2 @@
+[nbdev]
+mjwt = mjwt._modidx:d
