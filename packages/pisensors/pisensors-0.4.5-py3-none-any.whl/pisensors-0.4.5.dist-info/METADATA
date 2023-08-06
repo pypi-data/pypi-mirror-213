@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: pisensors
+Version: 0.4.5
+Summary: Raspberry Pi Sensors script for Temperature & Humidity
+Home-page: https://github.com/Phornee/pisensors
+Author: Ismael Raya
+Author-email: phornee@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Topic :: Home Automation
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: config-yml (>=0.3.1)
+Requires-Dist: log-mgr (>=0.1.1)
+Requires-Dist: influxdb-wrapper (>=0.0.5)
+Requires-Dist: adafruit-circuitpython-dht (>=3.5.1)
+
+# pisensors
+Raspberry Pi Sensors script for Temperature & Humidity.
+Reads from a DHT22 temperature/humidity sensor, and insert info into a InfluxDB, so that it can be later used by Grafana or whatever
+
+It needs to be executed every x minutes (i.e. cron) 
+
