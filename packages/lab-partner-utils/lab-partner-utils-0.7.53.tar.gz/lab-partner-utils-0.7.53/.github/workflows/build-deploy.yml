@@ -1,0 +1,25 @@
+name: Build and Deploy
+on: [push, workflow_dispatch]
+jobs:
+  Build-and-Deploy:
+    runs-on: ubuntu-20.04
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+      - name: Set up Python 3.8
+        uses: actions/setup-python@v4
+        with:
+          python-version: 3.8
+      - name: Remove the stock setuptools
+        run: sudo apt purge python3-setuptools
+      - name: Install Python build
+        run: DEB_PYTHON_INSTALL_LAYOUT=deb_system pip install --upgrade pip build
+      - name: Build package
+        run: python -m build
+      - name: Publish package distributions to PyPI
+        if: github.event_name == 'push' && startsWith(github.ref, 'refs/tags')
+        uses: pypa/gh-action-pypi-publish@release/v1
+        with:
+          verbose: true
+          print-hash: true
+          password: ${{ secrets.PYPI_API_TOKEN }}
