@@ -1,0 +1,63 @@
+Metadata-Version: 2.1
+Name: ebooksp
+Version: 0.0.2
+Summary: A Conversion Tool for e-book
+Home-page: https://gitee.com/maxbanana
+Author: hongbo liu
+Author-email: 782027465@qq.com
+License: Apache
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# ebook
+
+## 介绍
+处理电子书的工具
+
+## 安装
+
+
+    pip install ebooksp
+
+## 功能
+- 支持电子书互相转格式
+- 支持将电子书转成文本
+
+## 支持的电子书格式
+
+- epub
+- mobi
+- azw3
+- azw
+
+## 使用
+### 转换格式
+
+
+
+     import ebooksp
+     ebooksp.convert_format('xxx.mobi', 'xxx.epub')
+
+
+
+### 转换格式(批量转换)
+
+
+
+     import ebooksp
+     ebooksp.convert_format_many(['xxx.mobi', 'yyy.epub'], ['xxx.epub', 'yyy.azw3'])
+
+
+### 电子书转成文本
+
+
+
+     import ebooksp
+     text = ebooksp.to_text('xxx.mobi')
+     print(text)
+
