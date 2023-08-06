@@ -1,0 +1,48 @@
+Metadata-Version: 2.1
+Name: ma_notification_center
+Version: 2.1.1
+Summary: MobileArts Notification Center Package
+Author: Fatima Medlij
+Author-email: medlijfatima@gmail.com
+License: MIT
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+ma_notification_center
+
+ma-notifications is a Python package that provides a notification center for sending various types of notifications.
+
+## Installation
+
+You can install ma-notification-center using pip:
+```python
+pip install ma_notification_center
+```
+
+## Usage
+Here's an example of how to use ma-notification-center:
+
+```python
+from ma_notification_center import notificationcenter
+notifications = notificationcenter.Notifications()
+
+# Send an email
+notifications.send_email(
+    to_emails=["recipient1@example.com"],
+    cc_emails=["recipient2@example.com"],
+    bcc_emails=[],
+    subject="Notification",
+    body_text="This is a notification email.",
+    body_html="<p>This is a notification email.</p>"
+)
+
+# Send a Telegram message
+notifications.send_telegram(["chat_id"], "Hello from NotificationCenter!")
+
+# Send a Telegram photo
+notifications.send_telegram_photo(["chat_id"], "https://example.com/photo.jpg", "Check out this photo!")
+
+# Send a Telegram document
+notifications.send_telegram_document(["chat_id"], "https://example.com/document.pdf", "Important Document")
+
+
