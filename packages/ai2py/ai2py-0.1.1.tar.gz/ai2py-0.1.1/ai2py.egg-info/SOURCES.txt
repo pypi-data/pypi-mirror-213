@@ -1,0 +1,9 @@
+README.md
+setup.py
+AI2PY/__init__.py
+AI2PY/main.py
+ai2py.egg-info/PKG-INFO
+ai2py.egg-info/SOURCES.txt
+ai2py.egg-info/dependency_links.txt
+ai2py.egg-info/requires.txt
+ai2py.egg-info/top_level.txt
