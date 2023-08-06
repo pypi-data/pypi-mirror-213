@@ -1,0 +1,15 @@
+Contains information about a single data series
+on a line or scatter graph. Anything that affects
+the entire chart should be specified upon creation
+of Lines objects. Properties such as line color,
+line style, line thickness, and errors in x or y
+should be specified here.If a line is given a label
+then this label will be used in the chart legend.
+
+Line.defaults shows a list of optional kwargs.
+
+For further documentation see the following:
+Lines, Data, and Figures classes
+https://github.com/HenryGinn/hgutilities
+https://github.com/HenryGinn/hgutilities/tree/main/hgutilities/plotting
+https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.plot.html

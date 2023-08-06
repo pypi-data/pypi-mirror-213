@@ -1,0 +1,8 @@
+Takes in a child object, a parent object, and a list of
+attribute names. If the child object does not have a non-None
+value for an attribute, the value will be inherited from the parent
+object.
+
+For further documentation see the following:
+https://github.com/HenryGinn/hgutilities
+https://github.com/HenryGinn/hgutilities/tree/main/hgutilities/defaults

@@ -1,0 +1,20 @@
+This function will take in a list of data objects
+and produce an animation. These Data objects are just
+like regular Data objects, but the dependent variable
+should instead be an iterable where each element gives
+the values for a single frame.
+
+This is an interface for the Animate class, and to
+see a list of optional key-word arguments you can
+look at Animate.defaults, Figures.defaults and
+Figure.defaults.
+
+This also returns the Figures object produced if
+the user wants to work with it directly, but this
+is not encouraged, and should only be necessary if
+a feature has not been implemented.
+
+For further documentation see the following:
+Animate, Figures, and Data classes
+https://github.com/HenryGinn/hgutilities
+https://github.com/HenryGinn/hgutilities/tree/main/hgutilities/plotting

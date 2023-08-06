@@ -1,0 +1,22 @@
+This is used to create line and scatter graphs and takes in a Line
+object or an iterable of line objects. The scope of this object is the
+entire plot, and data about individual lines should be specified by
+Line objects. Properties such as whether the plot has a legend, what
+the title and axis labels are, and the plot type are relevant at this
+level. If it does not make sense for two distinct data series to have
+different values for a property, then it should be a property of this
+object. For more detail, look at the default values for Lines and Line objects.
+
+The plot_type key-word controls which matplotlib plotting function is
+used to create the plot. The options are "plot", "semilogx", "semilogy",
+"loglog", "scatter", and "errorbar". If values for xerr and yerr are
+given for any line object, this will not be detected. The keyword
+plot_type="errorbar" needs to be passed in explicitily.
+
+lines.defaults shows a list of optional kwargs.
+
+For further documentation see the following:
+Line, Data, and Figures classes
+https://github.com/HenryGinn/hgutilities
+https://github.com/HenryGinn/hgutilities/tree/main/hgutilities/plotting
+https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.plot.html

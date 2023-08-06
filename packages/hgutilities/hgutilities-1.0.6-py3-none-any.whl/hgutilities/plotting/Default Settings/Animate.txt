@@ -1,0 +1,13 @@
+{
+  "loop": 0,
+  "animation_name": "My Animation",
+  "format": "gif",
+  "duration": 1,
+  "dark": null,
+  "maximise": true,
+  "figure_size": [
+    9.61,
+    5.095
+  ],
+  "dpi": 500
+}

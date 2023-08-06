@@ -1,0 +1,13 @@
+Contains information about a single data series on a bar chart.
+Anything that affects the entire chart should be specied upon creation
+of Bars objects. Almost all features of matplotlib bar charts are
+supported, and the key-word arguments are the same. Care must be
+taken to enter the key-word arguments in relevant object (Bars
+properties not entered into Bar properties and vice versa).
+
+Bar.defaults shows a list of optional kwargs.
+
+For further documentation see the following:
+https://github.com/HenryGinn/hgutilities
+https://github.com/HenryGinn/hgutilities/tree/main/hgutilities/plotting
+https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.bar.html

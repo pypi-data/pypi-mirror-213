@@ -1,0 +1,10 @@
+{
+  "between_group_spacing": 0.2,
+  "within_group_spacing": 0.1,
+  "bottom": 0,
+  "log": false,
+  "animated": null,
+  "bounds": null,
+  "x_label": null,
+  "y_label": null
+}

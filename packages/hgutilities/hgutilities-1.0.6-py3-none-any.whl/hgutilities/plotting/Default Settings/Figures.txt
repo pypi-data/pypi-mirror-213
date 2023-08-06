@@ -1,0 +1,17 @@
+{
+  "aspect_ratio": 1.7,
+  "title": null,
+  "subplots": null,
+  "universal_legend": false,
+  "output": "Show",
+  "path": null,
+  "dpi": "figure",
+  "format": "pdf",
+  "metadata": null,
+  "bbox_inches": null,
+  "pad_inches": 0.1,
+  "facecolor": "auto",
+  "edgecolor": "auto",
+  "backend": null,
+  "maximise": null
+}

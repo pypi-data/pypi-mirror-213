@@ -1,0 +1,19 @@
+A tool used for handling default values of class variables.
+
+The names and default values of the class variables are stored
+as json files in a folder called "Default Settings" that is
+placed in the directory as the corresponding script.
+
+Tools are also provided to load documentation from text files
+and inherit a list of attributes from one object to another.
+
+Functions defined here:
+    load
+    kwargs
+    docs
+    inherit
+
+For further documentation see the following:
+load, kwargs, docs, inherit
+https://github.com/HenryGinn/hgutilities
+https://github.com/HenryGinn/hgutilities/tree/main/hgutilities/defaults
