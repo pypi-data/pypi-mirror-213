@@ -1,0 +1,15 @@
+LICENSE
+README.md
+setup.py
+aws_multi_region_search.egg-info/PKG-INFO
+aws_multi_region_search.egg-info/SOURCES.txt
+aws_multi_region_search.egg-info/dependency_links.txt
+aws_multi_region_search.egg-info/entry_points.txt
+aws_multi_region_search.egg-info/top_level.txt
+aws_multi_region_search.egg-info/zip-safe
+awss/__init__.py
+awss/__main__.py
+awss/ec2.py
+awss/lib.py
+awss/rds.py
+awss/sts.py
