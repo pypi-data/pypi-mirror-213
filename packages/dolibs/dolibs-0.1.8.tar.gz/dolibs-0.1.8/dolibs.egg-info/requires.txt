@@ -1,0 +1,8 @@
+cdsapi
+scipy
+netcdf4
+rioxarray
+numpy
+xarray
+sqlalchemy
+psycopg2-binary

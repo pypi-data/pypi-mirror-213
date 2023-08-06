@@ -1,0 +1,10 @@
+README.md
+setup.py
+dolibs/__init__.py
+dolibs/dewpoint.py
+dolibs/skintemp.py
+dolibs.egg-info/PKG-INFO
+dolibs.egg-info/SOURCES.txt
+dolibs.egg-info/dependency_links.txt
+dolibs.egg-info/requires.txt
+dolibs.egg-info/top_level.txt
