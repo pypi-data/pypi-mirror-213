@@ -1,0 +1,20 @@
+name: spg_avnet_iotconnect
+
+frontend:
+  entrypoints:
+  - name: avnet_iotconnect
+    title: Avnet IoTConnect Custom PKI
+    description: ""
+    entry: TrustFlex/Avnet IoTConnect.ipynb
+    icon:
+      name: avnet_iotconnect_png
+      path: TrustFlex/assets/images/Avnet.png
+    applications:
+      - Accessory Authentication
+      - Disposable Authentication
+      - IoT
+    devices:
+      - ATECC608B-TFLXTLS
+    boards:
+      - DM320118
+

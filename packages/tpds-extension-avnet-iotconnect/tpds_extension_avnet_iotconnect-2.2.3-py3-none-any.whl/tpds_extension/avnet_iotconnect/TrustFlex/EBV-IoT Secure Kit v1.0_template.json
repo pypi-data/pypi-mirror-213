@@ -1,0 +1,120 @@
+{
+    "code": "EBVME54",
+    "name": "EBV-IoT Secure Kit v1.0",
+    "authType": 2,
+    "description": "Microchip SAME54 + ATECC608 TFLXTLS + EBVchips Heracles 324G + ST Mems (optional)",
+    "isIotEdgeEnable": false,
+    "attributes": [
+        {
+            "name": "acc",
+            "type": "OBJECT",
+            "description": "ST LSM6DSL Accelerometer Sensor",
+            "childs": [
+                {
+                    "name": "X",
+                    "type": "NUMBER",
+                    "description": "X axis",
+                    "unit": "g"
+                },
+                {
+                    "name": "Y",
+                    "type": "NUMBER",
+                    "description": "Y axis",
+                    "unit": "g"
+                },
+                {
+                    "name": "Z",
+                    "type": "NUMBER",
+                    "description": "Z axis",
+                    "unit": "g"
+                }
+            ]
+        },
+        {
+            "name": "gyro",
+            "type": "OBJECT",
+            "description": "ST LSM6DSL Gyroscope Sensor",
+            "childs": [
+                {
+                    "name": "X",
+                    "type": "NUMBER",
+                    "description": "X axis",
+                    "unit": "g"
+                },
+                {
+                    "name": "Y",
+                    "type": "NUMBER",
+                    "description": "Y axis",
+                    "unit": "g"
+                },
+                {
+                    "name": "Z",
+                    "type": "NUMBER",
+                    "description": "Z axis",
+                    "unit": "g"
+                }
+            ]
+        },
+        {
+            "name": "mag",
+            "type": "OBJECT",
+            "description": "ST LSM303AGR Magnetic Sensor",
+            "childs": [
+                {
+                    "name": "X",
+                    "type": "NUMBER",
+                    "description": "X axis",
+                    "unit": "g"
+                },
+                {
+                    "name": "Y",
+                    "type": "NUMBER",
+                    "description": "Y axis",
+                    "unit": "g"
+                },
+                {
+                    "name": "Z",
+                    "type": "NUMBER",
+                    "description": "Z axis",
+                    "unit": "g"
+                }
+            ]
+        },
+        {
+            "name": "press",
+            "type": "NUMBER",
+            "description": "ST LPS22HB Pressure Sensor",
+            "unit": "c"
+        },
+        {
+            "name": "hum",
+            "type": "NUMBER",
+            "description": "ST HTS221 Humidity Sensor",
+            "unit": "c"
+        },
+        {
+            "name": "temp",
+            "type": "NUMBER",
+            "description": "ST HTS221 Temperature Sensor",
+            "unit": "c"
+        }
+    ],
+    "settings": [
+        {
+            "name": "Firmware Version",
+            "type": "STRING",
+            "localName": "fw",
+            "isReadOnly": false
+        }
+    ],
+    "commands": [
+        {
+            "name": "Set board LED",
+            "command": "led",
+            "requiredParam": true,
+            "requiredAck": false,
+            "isOTACommand": false
+        }
+    ],
+    "dataFrequency": 60
+}
