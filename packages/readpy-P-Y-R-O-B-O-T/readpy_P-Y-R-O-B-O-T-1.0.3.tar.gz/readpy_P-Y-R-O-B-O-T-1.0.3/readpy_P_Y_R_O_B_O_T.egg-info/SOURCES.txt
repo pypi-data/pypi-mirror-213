@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+READPY/__init__.py
+READPY/CLIENT/__init__.py
+READPY/CLIENT/client.py
+READPY/SERVER/__init__.py
+READPY/SERVER/server.py
+readpy_P_Y_R_O_B_O_T.egg-info/PKG-INFO
+readpy_P_Y_R_O_B_O_T.egg-info/SOURCES.txt
+readpy_P_Y_R_O_B_O_T.egg-info/dependency_links.txt
+readpy_P_Y_R_O_B_O_T.egg-info/requires.txt
+readpy_P_Y_R_O_B_O_T.egg-info/top_level.txt
