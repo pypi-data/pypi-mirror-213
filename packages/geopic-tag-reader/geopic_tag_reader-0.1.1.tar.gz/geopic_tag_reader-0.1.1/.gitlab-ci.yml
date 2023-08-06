@@ -1,0 +1,38 @@
+variables:
+  PIP_CACHE_DIR: "$CI_PROJECT_DIR/.cache/pip"
+
+cache:
+  paths:
+    - .cache/pip
+
+before_script:
+  - python --version # For debugging
+  - apk add --update --no-cache libc-dev libffi-dev gcc
+
+test mypy:
+  image: python:3.9-alpine
+  script:
+    - pip install .[dev]
+    - mypy geopic_tag_reader/
+
+lint:
+  image: python:3.9-alpine
+  script:
+    - pip install .[dev]
+    - black --fast --check .
+
+tests:
+  image: python:3.9-alpine
+  script:
+    - pip install .[dev]
+    - pytest -s -vv
+
+deploy_pypi:
+  stage: deploy
+  image: python:3.9-alpine
+  script:
+    - apk add --update --no-cache git
+    - pip install .[build]
+    - flit publish # use [flit](https://flit.pypa.io/) and FLIT_USERNAME/FLIT_PASSWORD env var
+  only:
+    - tags

@@ -1,0 +1,42 @@
+[build-system]
+requires = ["flit_core ~= 3.8,<4"]
+build-backend = "flit_core.buildapi"
+
+[project]
+name = "geopic-tag-reader"
+authors = [
+    {name = "Adrien PAVIE", email = "panieravide@riseup.net"},
+]
+readme = "README.md"
+license = {file = "LICENSE"}
+classifiers = ["License :: OSI Approved :: MIT License"]
+dynamic = ["version", "description"]
+dependencies = [
+    "typer ~= 0.7.0",
+    "Pillow ~= 9.4.0",
+    "xmltodict ~= 0.13.0",
+]
+
+[project.urls]
+Home = "https://gitlab.com/geovisio/geo-picture-tag-reader"
+
+[project.scripts]
+geopic-tag-reader="geopic_tag_reader.main:app"
+
+[project.optional-dependencies]
+dev = [
+    "black ~= 22.8.0",
+    "mypy ~= 1.0.0",
+    "pytest ~= 7.2.0",
+    "pytest-datafiles ~= 2.0.1",
+    "typer-cli ~= 0.0.13",
+    "lazydocs ~= 0.4.8",
+    "types-xmltodict ~= 0.13.0",
+    "types-Pillow ~= 9.4.0",
+]
+build = ["flit ~= 3.8.0"]
+
+[tool.pytest.ini_options]
+addopts = [
+    "--import-mode=importlib",
+]
