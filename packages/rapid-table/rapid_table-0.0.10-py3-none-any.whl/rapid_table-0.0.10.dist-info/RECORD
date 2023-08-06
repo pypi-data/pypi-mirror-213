@@ -1,0 +1,15 @@
+rapid_table/__init__.py,sha256=qdYnOhgN-tNAExRe48Dzib6eorDhoWQTJ0FHAMws1kI,110
+rapid_table/rapid_table.py,sha256=-U88HJT20ClcKsX9-Yj3N2tAAyeRjxOkxihJ8MWqFus,2759
+rapid_table/utils.py,sha256=EERheshF9IFWMALJ1_GnANxWonGihmexZtiPHfUbm8s,2707
+rapid_table/models/en_ppstructure_mobile_v2_SLANet.onnx,sha256=LK4X0WoW-d9yKeIWZf4_vgbzyoWyAkdy7j4xQulVqmA,7704409
+rapid_table/table_matcher/__init__.py,sha256=MG5RnW1TllQdYPDoCEAWjhcAKEez44kaNHegLOW--Gk,106
+rapid_table/table_matcher/matcher.py,sha256=A8gVZ2XQJqWA87HK5b-_Ql8raY94rauS9g3QOjnha6w,6670
+rapid_table/table_matcher/utils.py,sha256=2TbkdclD0Y9lOVO_xuqlGcdR_kVwpuAYW4eu3UJwUvA,10019
+rapid_table/table_structure/__init__.py,sha256=N_1OGAgiMrF4LB5_sP_OSOrh6pnBGZrrnph8RfQ3VHA,653
+rapid_table/table_structure/table_structure.py,sha256=0QyKU9c6J-H5kCGET09NVjkHV-xa5pMC-JERvMnY-Ow,1945
+rapid_table/table_structure/utils.py,sha256=fDK5G9N6DfG-IGE_fZ4l85ypjXSR33cK4R5P5X5l1Ws,12009
+rapid_table-0.0.10.dist-info/METADATA,sha256=h1W24do6c6tSXeIgEjWpPWXtaQrX4gFdoySwEIRn-oM,4897
+rapid_table-0.0.10.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+rapid_table-0.0.10.dist-info/entry_points.txt,sha256=a4UsMSxd7Ex1mZvdIT5AmkuiUAvB__awLj-NeYU8bsQ,61
+rapid_table-0.0.10.dist-info/top_level.txt,sha256=DkBPZpaze8SaoAvCufxilNpITY4n-rHH1lgHr6KHPgA,12
+rapid_table-0.0.10.dist-info/RECORD,,
