@@ -1,0 +1,2 @@
+[glue.plugins]
+glue_small_multiples = glue_small_multiples:setup
