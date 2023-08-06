@@ -1,0 +1,14 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/datoso_seed_sfc_msu1/__init__.py
+src/datoso_seed_sfc_msu1/actions.py
+src/datoso_seed_sfc_msu1/dats.py
+src/datoso_seed_sfc_msu1/fetch.py
+src/datoso_seed_sfc_msu1/rules.py
+src/datoso_seed_sfc_msu1.egg-info/PKG-INFO
+src/datoso_seed_sfc_msu1.egg-info/SOURCES.txt
+src/datoso_seed_sfc_msu1.egg-info/dependency_links.txt
+src/datoso_seed_sfc_msu1.egg-info/requires.txt
+src/datoso_seed_sfc_msu1.egg-info/top_level.txt

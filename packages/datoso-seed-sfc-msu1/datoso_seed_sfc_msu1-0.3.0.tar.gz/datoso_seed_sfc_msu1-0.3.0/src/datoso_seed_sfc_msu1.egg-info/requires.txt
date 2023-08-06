@@ -1,0 +1,2 @@
+datoso>=0.3.1
+datoso-plugin-internetarchive>=0.3.0
