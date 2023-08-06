@@ -1,0 +1,12 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+src/xmlparse.cpp
+src/xmlpydict_parser.egg-info/PKG-INFO
+src/xmlpydict_parser.egg-info/SOURCES.txt
+src/xmlpydict_parser.egg-info/dependency_links.txt
+src/xmlpydict_parser.egg-info/requires.txt
+src/xmlpydict_parser.egg-info/top_level.txt
+tests/test_parse.py
