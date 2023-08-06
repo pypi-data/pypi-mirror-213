@@ -1,0 +1,2 @@
+aiohttp==3.*
+docutils~=0.16
