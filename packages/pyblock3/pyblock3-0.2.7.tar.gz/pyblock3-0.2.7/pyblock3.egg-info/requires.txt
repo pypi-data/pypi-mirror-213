@@ -1,0 +1,7 @@
+mkl==2021.4
+mkl-include
+numpy<1.23.0
+psutil
+pybind11<=2.10.1
+intel-openmp
+cmake
