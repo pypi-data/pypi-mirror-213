@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: hik_camera
+Version: 0.2.14
+Summary: Provides an easy-to-use API to control Hik industrial cameras. (supports Linux/Docker/Windows)
+Home-page: UNKNOWN
+Author: Lei Yang
+Author-email: 
+License: UNKNOWN
+Description: Provides an easy-to-use API to control Hik industrial cameras. (supports Linux/Docker/Windows)
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
