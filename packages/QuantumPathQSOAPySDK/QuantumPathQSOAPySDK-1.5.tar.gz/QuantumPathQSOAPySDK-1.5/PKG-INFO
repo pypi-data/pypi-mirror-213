@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: QuantumPathQSOAPySDK
+Version: 1.5
+Summary: QuantumPath qSOA Python SDK
+Home-page: https://core.quantumpath.app/
+Author: QuantumPath
+License: UNKNOWN
+Keywords: quantum,quantumpath,qSOA,sdk,quantum applications,quantum software
+Platform: UNKNOWN
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Software Development
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: License :: Freely Distributable
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Information Technology
+Description-Content-Type: text/markdown
+
+# QuantumPath qSOA SDK
+
+For more information please visit the [QuantumPath website](https://www.quantumpath.es/).
+
