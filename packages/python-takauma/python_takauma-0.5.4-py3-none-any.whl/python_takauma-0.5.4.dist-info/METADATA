@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: python-takauma
+Version: 0.5.4
+Summary: Python-moduulien tiedostoversiointi
+Home-page: https://github.com/an7oine/python-takauma.git
+Author: Antti Hautaniemi
+Author-email: antti.hautaniemi@pispalanit.fi
+Provides-Extra: kehitys
+Requires-Dist: git-versiointi (>=1.4.4) ; extra == 'kehitys'
+
