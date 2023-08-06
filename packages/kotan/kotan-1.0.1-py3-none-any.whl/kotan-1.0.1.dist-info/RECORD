@@ -1,0 +1,10 @@
+kotan/__init__.py,sha256=77YSVo0vg_OvvG-4N3c-CdW2fl13aMLtrQN4vugY6Mk,45
+kotan/const.py,sha256=OHerumVaMaA4nkSqZeRHN4KKgpyFRuaMEy8nTOM27Gg,749
+kotan/job.py,sha256=BBcD48pTvdixErbETf1mzY7WUV1gcQcorYd7Zeqbnpg,2727
+kotan/tasks/__init__.py,sha256=JA_OTwnVc1A5CbezYhtPm5lktvcYcvzUgYKhpv-QXAY,168
+kotan/tasks/data_augmentation.py,sha256=GoqaUm9R2HXH6UNdNgGpj9T3XW8hz3kayqDMA96rUaI,4300
+kotan/tasks/machine_translation.py,sha256=okp9GgM6vITVg9NGzy6dIcGMnITfyVOt2OewlOgQS8c,2063
+kotan/tasks/style_convert.py,sha256=2MhNZnFTsFX_LxG7_puwLQwpmUCOUnnR61Ip42euIVw,2208
+kotan-1.0.1.dist-info/METADATA,sha256=0rw-jsxquaqgjRhRc5L3l0Ar2p8Gf4dswZXiSNctj0U,555
+kotan-1.0.1.dist-info/WHEEL,sha256=7Z8_27uaHI_UZAc4Uox4PpBhQ9Y5_modZXWMxtUi4NU,88
+kotan-1.0.1.dist-info/RECORD,,
