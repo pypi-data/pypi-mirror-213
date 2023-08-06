@@ -1,0 +1,16 @@
+README.md
+setup.py
+cloudservices/__init__.py
+cloudservices.egg-info/PKG-INFO
+cloudservices.egg-info/SOURCES.txt
+cloudservices.egg-info/dependency_links.txt
+cloudservices.egg-info/requires.txt
+cloudservices.egg-info/top_level.txt
+cloudservices/config/__init__.py
+cloudservices/config/cloud_config.py
+cloudservices/queueservice/__init__.py
+cloudservices/queueservice/pubsub.py
+cloudservices/queueservice/queue.py
+cloudservices/queueservice/sqs.py
+cloudservices/storageservice/__init__.py
+cloudservices/storageservice/storage.py

@@ -1,0 +1,7 @@
+google-auth==2.17.3
+google-cloud-pubsub==2.13.0
+boto3==1.14.60
+botocore==1.17.60
+apache-libcloud==3.7.0
+PyPubSub==4.0.3
+pyparsing==3.0.9
