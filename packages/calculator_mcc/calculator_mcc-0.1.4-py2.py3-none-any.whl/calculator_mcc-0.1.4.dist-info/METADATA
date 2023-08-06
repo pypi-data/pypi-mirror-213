@@ -1,0 +1,98 @@
+Metadata-Version: 2.1
+Name: calculator_mcc
+Version: 0.1.4
+Summary: Calculator module
+Author-email: Mei-Chieh Chien <meichieh.chien@gmail.com>
+Description-Content-Type: text/markdown
+Classifier: License :: OSI Approved :: MIT License
+
+# Python Calculator Package
+
+This is a simple calculator package written in Python. 
+Package description page on  [PyPI](https://pypi.org/project/calculator_mcc/).
+
+### Package Features
+
+- `add(input)`: add input to current value
+- `substract(input)`: substract current value with the input
+- `multiply(input)`: multiply current value with the input
+- `divide(input)`: divide current value with the input
+- `root(input)`: get the nth(input) root of the current value
+- `reset()`: reset the calculator to zero
+
+## Getting Started
+To use this calculator, you need to have `python`, `numpy`, and the `calculator package` installed.
+
+
+### Package Installation
+Run in the command line:
+```sh
+$ pip install calculator_mcc
+```
+#### Import
+Import the package in the [Jupyter Notebook](https://jupyter.org/) or Python IDE of your choice:
+
+```sh
+from calculator_mcc import Calculator
+
+calc = Calculator() # instantiate a calculator project calc
+```
+
+#### Common Usage Examples
+```sh
+1 calc.add(10)
+2 calc.multiply(2)
+3 calc.divide(5)
+4 calc.root(2)
+5 print(calc)
+6 calc.reset()
+
+-- Terminal Output --
+1 $ 10
+2 $ 20
+3 $ 4
+4 $ 2
+5 $ 🧮 current_value: 0
+6 $ 0
+```
+
+#### Note
+##### Float number with 0 in the fractional part is converted to integer
+- For better readibility, if the fraction part of the resulting float number is 0, such as `10.0`, the fraction part would be removed, and the output would be `10`.
+
+##### Limitations:
+
+- Calculator has a maximum `3.4028235e+38` and minimun: `3.4028235e-38` range limitaion.
+```
+c = Calculator()
+c.add(3.4028235e+39)
+
+-- Terminal Output --
+$ 🤖: 🚫 overflow encountered in cast
+$ Traceback (most recent call last):
+  File .....
+```
+- Calculator does not support complex number operation.
+```
+c = Calculator(10)
+c.add(3.4028235e+39)
+
+-- Terminal Output --
+$ 🤖: 🚫 float() argument must be a string or a real number, not 'complex'
+Traceback (most recent call last):
+  File .....
+```
+
+### Unit test
+
+Run in the command line:
+
+```sh
+$ cd calculator_project_mcc
+$ pytest
+```
+
+#### License
+
+MIT
+
