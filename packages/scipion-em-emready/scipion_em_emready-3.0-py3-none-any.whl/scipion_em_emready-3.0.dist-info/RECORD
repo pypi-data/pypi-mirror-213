@@ -1,0 +1,14 @@
+emready/__init__.py,sha256=AT-79rCYNZU19sws2YUgeYd1Y1NesafqnLiffzdZ8tw,3683
+emready/bibtex.py,sha256=sBvtzpYB1eKI323_WENsC01QymZ0ipg-LVxFE3uZ9xE,1560
+emready/constants.py,sha256=CKObbjyS5jbeK21E4pnWDs4kla_3xtvK4DBc8koG3dg,1480
+emready/protocols.conf,sha256=rq4nVH52XJoO6PXNktKA7PBdk47VdfQ_Z11gpIcr-So,272
+emready/protocols/__init__.py,sha256=mnlY7QUl_tyR2jIyL3zULhGPfWP-zkKU0JV7nO9zFOY,1214
+emready/protocols/protocol_emready_sharpening.py,sha256=BzBXuKR9c8u-s4nJ0h-VxDTMd_mrQ0gC41YED_pJD-g,6470
+emready/tests/__init__.py,sha256=FyHa7WCi4Bk9tzcc7vackvhrX6yonj1a9c6abTvr-0o,1154
+emready/tests/test_protocol_sharpening.py,sha256=axXYZJJ9hlO0UFuE_Vy9kVTSMqnAriAHPEG-Q79tPX4,2661
+scipion_em_emready-3.0.dist-info/LICENSE,sha256=jOtLnuWt7d5Hsx6XXB2QxzrSe2sWWh3NgMfFRetluQM,35147
+scipion_em_emready-3.0.dist-info/METADATA,sha256=QkW00gth2nXuJFK32eiK0Y6lnqjdSzetL4azTUjdkJI,3880
+scipion_em_emready-3.0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+scipion_em_emready-3.0.dist-info/entry_points.txt,sha256=MXGFaU5E4t3gk-uZrLhislpRq1Kf-qEreRC9REeCDmA,39
+scipion_em_emready-3.0.dist-info/top_level.txt,sha256=mit_G3GCYQ2-u5ZnGH-WoqYeOX6Hcsa91fN5yZEfbTQ,8
+scipion_em_emready-3.0.dist-info/RECORD,,
