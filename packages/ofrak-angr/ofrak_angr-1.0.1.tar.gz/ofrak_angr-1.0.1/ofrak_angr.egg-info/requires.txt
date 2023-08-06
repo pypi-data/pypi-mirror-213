@@ -1,0 +1,12 @@
+ofrak
+angr==9.2.6
+
+[graphical]
+pygraphviz
+
+[test]
+fun-coverage==0.2.0
+pytest
+pytest-asyncio==0.19.0
+pytest-cov
+requests
