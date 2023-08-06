@@ -1,0 +1,3 @@
+[console_scripts]
+catmaid_publish = catmaid_publish.main:_main
+catmaid_publish_init = catmaid_publish.initialise:_main
