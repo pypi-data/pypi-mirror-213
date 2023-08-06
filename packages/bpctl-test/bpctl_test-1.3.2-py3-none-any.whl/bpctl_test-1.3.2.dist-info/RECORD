@@ -1,0 +1,15 @@
+bpctl_test-1.3.2.data/scripts/bpctl,sha256=8-r-xFTauK32G14Tbs4sCoObkjGvy2sPbp7j7oTqqzE,122
+lib/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+lib/bpctl/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+lib/bpctl/authenticate.py,sha256=2Y_8QQmD80vc_d8FHHZUOqiS9zlXg6M2OKbTXa4XwgQ,901
+lib/bpctl/base.py,sha256=0BjMH9m5BsyrcD_A6qvAXU297u66r1TnSCQgVviKXpE,2777
+lib/bpctl/bp_manifest.py,sha256=cPpVjuJbm0Fu_K1ksfrOTE378e-I11TOuq5GW75n8U0,6909
+lib/bpctl/bpctl.py,sha256=VduDGP9H8KzyvWBPkNazpEy3dkZVcS2Yx10RsvMSgzI,1695
+lib/bpctl/config.py,sha256=h8WJMuAYSNsr4OnFclquvHsB7EsbGxIVpU7kXWkqgIo,457
+lib/bpctl/load_data.py,sha256=zsJFeIJJukh8abGBWTJIkXVKhZ9QoY7AHSYWzXpql_0,3341
+lib/bpctl/read_bp_yaml.py,sha256=o4RKYJtFh_FrozneCNaCp9106m2TeIYZmDGshOiWRnE,51
+lib/bpctl/utils.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+bpctl_test-1.3.2.dist-info/METADATA,sha256=xsZMj2k8RYGKsXmu8K8-7-IWTwPpCtM_63VJ7G36TdU,370
+bpctl_test-1.3.2.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+bpctl_test-1.3.2.dist-info/top_level.txt,sha256=oyXcrLgLICoBS0ILk_wZBhkAAY-M4hbQoMsA1hDsf5c,4
+bpctl_test-1.3.2.dist-info/RECORD,,
