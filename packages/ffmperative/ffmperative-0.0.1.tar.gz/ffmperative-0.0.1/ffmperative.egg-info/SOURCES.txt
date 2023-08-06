@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+ffmperative/__init__.py
+ffmperative/cli.py
+ffmperative/tools.py
+ffmperative.egg-info/PKG-INFO
+ffmperative.egg-info/SOURCES.txt
+ffmperative.egg-info/dependency_links.txt
+ffmperative.egg-info/entry_points.txt
+ffmperative.egg-info/requires.txt
+ffmperative.egg-info/top_level.txt
