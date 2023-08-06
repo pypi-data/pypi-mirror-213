@@ -1,0 +1,7 @@
+__pycache__
+*.iso
+test.json
+*.msi
+/dist
+/testing
+config.json
