@@ -1,0 +1,58 @@
+[tool.poetry]
+name = "udn-songbook"
+version = "1.1.4"
+description = "songbook and songsheet management for songsheets in ukedown format"
+authors = ["Stuart Sears <stuart@sjsears.com>"]
+include = ["CHANGELOG.md"]
+license = "GPL-3.0-or-later"
+repository = "https://github.com/lanky/udn-songbook"
+
+[tool.poetry.scripts]
+udn_transpose = "udn_songbook.tools.transpose:main"
+udn_render = "udn_songbook.tools.makesheet:main"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+ukedown = "^2.0.0"
+beautifulsoup4 = "^4.10.0"
+PyYAML = ">= 6"
+WeasyPrint = ">= 54.2"
+Markdown = "^3.3.6"
+Jinja2 = "^3.1.1"
+lxml = "^4.8.0"
+pychord = "^1.0.0"
+dynaconf = "^3.1.12"
+more-itertools = "^9.1.0"
+
+[tool.poetry.dev-dependencies]
+pytest = "^6.2"
+pre-commit = "^2.17.0"
+black = "^22.3.0"
+flake8 = "^4.0.1"
+
+[tool.poetry.urls]
+"Bug Tracker" = "https://github.com/lanky/udn-songbook/issues"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.pyright]
+# configuration for the pyright syntax checker/linter
+# handles warnings about variables for which we do not yet
+# know the type
+reportOptionalSubscript = false
+reportOptionalIterable = false
+reportOptionalMemberAccess = false
+reportGeneralTypeIssues = false
+
+[tool.black]
+# project-specific black setup
+line-length = 88
+target-version = ['py38', 'py39', 'py310']
+include = '\.pyi?$'
+exclude = '/(\.git|_build|build|dist|\.tox|\.venv)/'
+
+[tool.isort]
+# import-sorting plugin
+profile = "black"

@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: udn-songbook
+Version: 1.1.4
+Summary: songbook and songsheet management for songsheets in ukedown format
+Home-page: https://github.com/lanky/udn-songbook
+License: GPL-3.0-or-later
+Author: Stuart Sears
+Author-email: stuart@sjsears.com
+Requires-Python: >=3.8,<4.0
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: Jinja2 (>=3.1.1,<4.0.0)
+Requires-Dist: Markdown (>=3.3.6,<4.0.0)
+Requires-Dist: PyYAML (>=6)
+Requires-Dist: WeasyPrint (>=54.2)
+Requires-Dist: beautifulsoup4 (>=4.10.0,<5.0.0)
+Requires-Dist: dynaconf (>=3.1.12,<4.0.0)
+Requires-Dist: lxml (>=4.8.0,<5.0.0)
+Requires-Dist: more-itertools (>=9.1.0,<10.0.0)
+Requires-Dist: pychord (>=1.0.0,<2.0.0)
+Requires-Dist: ukedown (>=2.0.0,<3.0.0)
+Project-URL: Bug Tracker, https://github.com/lanky/udn-songbook/issues
+Project-URL: Repository, https://github.com/lanky/udn-songbook
