@@ -1,0 +1,11 @@
+CHANGELOG.rst,sha256=heIb0L3DGbhvn2xZ-cixGdjQUMqk6KE0UsQ35qUF_hY,132
+LICENSE,sha256=ADUnmpS7JVzB-zhD6f97Zsb6nmW4QYd7L_TV1Vdb2yo,11356
+bquest/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+bquest/dataframe.py,sha256=8EnWuNYvoWpPpHW-lC3mUzVo2tD2lKdH7H_4Ga4px3w,2085
+bquest/runner.py,sha256=q-Y2kJpQQ52Ngm6RDc2imNwByA1Is53zXti8U2TOEvQ,9080
+bquest/tables.py,sha256=Mby2s6gfR5pQz3N37ZO2RZWud6w8nVxMh_L6VgimBWk,7272
+bquest/util.py,sha256=Q5CcoyjHIhAcatQYi8_NXcvS6GHAXOyWQgY90brzDDw,328
+bquest-0.1.0.dist-info/LICENSE,sha256=ADUnmpS7JVzB-zhD6f97Zsb6nmW4QYd7L_TV1Vdb2yo,11356
+bquest-0.1.0.dist-info/METADATA,sha256=P7Ff8NPTMPE66UZKZcNLRWJ447rRZ84BQe8DhPA37ZI,5394
+bquest-0.1.0.dist-info/WHEEL,sha256=Zb28QaM1gQi8f4VCBhsUklF61CTlNYfs9YAZn-TOGFk,88
+bquest-0.1.0.dist-info/RECORD,,
