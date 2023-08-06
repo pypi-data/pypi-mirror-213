@@ -1,0 +1,3 @@
+[console_scripts]
+pykg2tbl=pyrdfj2.__main__:main
+

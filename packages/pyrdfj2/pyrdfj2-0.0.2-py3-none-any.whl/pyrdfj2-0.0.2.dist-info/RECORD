@@ -1,0 +1,11 @@
+pyrdfj2/__init__.py,sha256=jlxFJl5QulsR39B-IBFI7z_S1ZDrF2xUo1e-x4XxZHY,233
+pyrdfj2/__version__.py,sha256=MSeNwD2riESz0KKYbE__5P8m1VrCcyCHXdMjsf2Kmj8,79
+pyrdfj2/exceptions.py,sha256=GEypkU8f0G1CR75F14MiPetat4Ifmk-n9mn5HrD3hUY,313
+pyrdfj2/j2_functions.py,sha256=SlaHNf5QnkShW8connT2wR4hgMM8sXLoX5soiPQGrlM,5633
+pyrdfj2/pyrdfj2.py,sha256=0HNjfZHh2n6yXGtF29O4PZTEnJLe3yCrKqUvSqywdYA,812
+pyrdfj2/rdf_syntax_builder.py,sha256=g5lkchaaqxD9hOVN7XQRq2-KLNCKUwOHP5JLpZpyRdU,2483
+pyrdfj2-0.0.2.dist-info/LICENSE,sha256=NAOUTSHWd4RVdCeOCY-jjoJfaBZm9oawavKf7B6H8Xc,1090
+pyrdfj2-0.0.2.dist-info/METADATA,sha256=NqX4U-cCQREPlTTkT3UFw_UIdQvuv6Iq_ox_uBEWTxI,2350
+pyrdfj2-0.0.2.dist-info/WHEEL,sha256=Zb28QaM1gQi8f4VCBhsUklF61CTlNYfs9YAZn-TOGFk,88
+pyrdfj2-0.0.2.dist-info/entry_points.txt,sha256=PCZWHFqvzt7UnluDreEvwmhfer-toglvhwt2MwWhZ4M,50
+pyrdfj2-0.0.2.dist-info/RECORD,,
