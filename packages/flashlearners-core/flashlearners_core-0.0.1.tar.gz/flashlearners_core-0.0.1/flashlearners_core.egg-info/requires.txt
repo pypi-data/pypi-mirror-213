@@ -1,0 +1,10 @@
+django
+python-dotenv
+django-elasticsearch-dsl
+django-environ
+onesignal-sdk
+daphne
+psycopg2-binary
+uvicorn
+django-storages
+boto3
