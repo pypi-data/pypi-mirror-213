@@ -1,0 +1,2 @@
+// replaces the sphinx inlined script for mathjax3_config
+{{ mathjax3_config_json }}

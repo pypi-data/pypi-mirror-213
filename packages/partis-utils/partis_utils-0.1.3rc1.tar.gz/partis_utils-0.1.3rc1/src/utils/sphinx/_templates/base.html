@@ -1,0 +1,22 @@
+{% extends "furo/base.html" %}
+
+{%- block site_meta -%}
+<!-- Add CSP meta tag -->
+<meta
+  http-equiv="Content-Security-Policy"
+  content="default-src 'self'; img-src 'self' data:; style-src 'self' 'unsafe-inline'" />
+
+{{ super() }}
+
+<!-- Add backup favicon -->
+{%- if not favicon_url and logo_url -%}
+<link rel="icon" href="{{ logo_url }}">
+{%- endif -%}
+
+{%- endblock site_meta -%}
+
+{% block body %}
+<!-- Remove inline script -->
+<script src="{{ pathto('_static/theme_patch.js', 1) }}"></script>
+<script src="{{ pathto('_static/mathjax_config.js', 1) }}"></script>
+{% endblock %}

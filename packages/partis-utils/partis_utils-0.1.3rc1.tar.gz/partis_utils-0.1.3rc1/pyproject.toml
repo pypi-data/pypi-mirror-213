@@ -1,0 +1,133 @@
+# -*- coding: UTF-8 -*-
+#++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++#
+#                                                                              #
+#                       OOOOOOOOO---------------OOOOOOOOO                      #
+#                       OOOOO-----------------------OOOOO                      #
+#                       OOO-------------------NNNN----OOO                      #
+#                       O--------------------NNNNNN-----O                      #
+#                       O----------NN--------NNN-NNN----O                      #
+#                       ---------NNNNNNN-----NNN--NNN----                      #
+#                       ---------NNNNNNNNN---NNN---NNNNNN                      #
+#                       NNNNNN---NNN---NNNNNNNNN---------                      #
+#                       ----NNN--NNN-----NNNNNN----------                      #
+#                       O----NNN-NNN--------NN----------O                      #
+#                       O-----NNNNNN--------------------O                      #
+#                       OOO----NNNN-------------------OOO                      #
+#                       OOOOO-----------------------OOOOO                      #
+#                       OOOOOOOOO---------------OOOOOOOOO                      #
+#                                                                              #
+#                                Nanohmics, Inc.                               #
+#                                                                              #
+#++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++#
+
+[build-system]
+requires = [
+  "partis-pyproj >= 0.1.3rc1" ]
+build-backend = "partis.pyproj.backend"
+
+#+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+[project]
+name = "partis-utils"
+version = "0.1.3rc1"
+description = "Collection of text and functional utilities"
+maintainers = [
+  { name = "Nanohmics Inc.", email = "software.support@nanohmics.com" } ]
+license = { file = "LICENSE.txt" }
+readme = { file = "README.rst" }
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "Intended Audience :: Developers",
+  "License :: OSI Approved :: BSD License",
+  "Programming Language :: Python",
+  "Programming Language :: Python :: 3",
+  "Topic :: Utilities",
+  "Operating System :: POSIX :: Linux",
+  "Operating System :: Microsoft :: Windows" ]
+
+requires-python = ">= 3.6.2"
+dependencies = [
+  # 'importlib.metadata' added in 3.8
+  "importlib_metadata; python_version < '3.8'",
+  # PEP 484 type-hints added in 3.8
+  "typed-ast ~= 1.5.4; python_version < '3.8'",
+  # 'inspect.get_annotations' added in 3.10
+  "get-annotations >= 0.1.2; python_version < '3.10'",
+  # backports of standard Python typing system features
+  "typing_extensions ~= 4.4.0",
+  # 'ast.unparse' added in 3.9
+  "astunparse >= 1.6.3; python_version < '3.9'",
+  "rich >= 12.5.1; python_version >= '3.6.3'",
+  "rich == 12.0.1; python_version < '3.6.3'",
+  "psutil >= 5.9.0" ]
+
+#+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+[project.optional-dependencies]
+
+doc = [
+  'partis-utils[sphinx] >= 0.1.3rc1' ]
+
+lint = [
+  # used for linting python
+  "pyflakes ~= 2.4.0",
+  # NOTE: use backport of ast parser to improve messages
+  "typed-ast ~= 1.5.4; python_version < '3.8'" ]
+
+asy = [
+  # NOTE: 0.19.0 is the last version to support python 3.6
+  "trio == 0.19.0; python_version < '3.7'",
+  "trio == 0.20.0; python_version >= '3.7'" ]
+
+theme = [
+  "pygments ~= 2.14.0", ]
+
+sphinx = [
+  "partis-pyproj ~= 0.1.0",
+  "pygments ~= 2.14.0",
+  "sphinx ~= 5.3.0",
+  "sphinx_autodoc_typehints ~= 1.21.4",
+  "sphinx-paramlinks ~= 0.5.4",
+  "sphinx-copybutton ~= 0.5.1",
+  "sphinx-design ~= 0.3.0",
+  "sphinx-subfigure ~= 0.2.4",
+  "sphinxcontrib-bibtex ~= 2.5.0",
+  "furo ~= 2022.12.7",
+  "sphinxcontrib-svg2pdfconverter[CairoSVG] ~= 1.2.2" ]
+
+#+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+# Build and distribution configuration
+#+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+[tool.pyproj.dist]
+
+ignore = [
+  '__pycache__',
+  '*.py[cod]',
+  '*.so',
+  '*.egg-info',
+  '.nox',
+  '.pytest_cache',
+  '.coverage',
+  'tmp',
+  'dist',
+  'build',
+  'doc/_build',
+  'doc/.nox' ]
+
+#+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+[tool.pyproj.dist.source]
+
+copy = [
+  'src',
+  'doc',
+  'test',
+  'pyproject.toml',
+  'LICENSE.txt',
+  'README.rst' ]
+
+# adds support for legacy 'setup.py'
+add_legacy_setup = true
+
+#+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+[tool.pyproj.dist.binary.purelib]
+
+copy = [
+  { src = 'src/utils', dst = 'partis/utils' } ]
