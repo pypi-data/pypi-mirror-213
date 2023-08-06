@@ -1,0 +1,2 @@
+[flake8.extension]
+TOR = torchfix.torchfix:TorchChecker
