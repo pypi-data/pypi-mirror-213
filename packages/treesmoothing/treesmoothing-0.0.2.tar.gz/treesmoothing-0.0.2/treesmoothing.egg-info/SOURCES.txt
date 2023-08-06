@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+treesmoothing/__init__.py
+treesmoothing/beta.py
+treesmoothing/core.py
+treesmoothing.egg-info/PKG-INFO
+treesmoothing.egg-info/SOURCES.txt
+treesmoothing.egg-info/dependency_links.txt
+treesmoothing.egg-info/requires.txt
+treesmoothing.egg-info/top_level.txt
