@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: omnata-plugin-devkit
+Version: 0.1.13
+Summary: 
+Author: James Weakley
+Author-email: james.weakley@omnata.com
+Requires-Python: >=3.10,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: jinja2 (>=3,<4)
+Requires-Dist: omnata-plugin-runtime (>=0.1.39,<0.2.0)
+Requires-Dist: omnata_cli (>=0.1.4,<0.2.0)
+Requires-Dist: pandas
+Requires-Dist: pydantic (>=1,<2)
+Requires-Dist: python-slugify (>=8,<9)
+Description-Content-Type: text/markdown
+
+# omnata-plugin-devkit
+Tools for client side development, testing and uploading of Omnata plugins
+
+

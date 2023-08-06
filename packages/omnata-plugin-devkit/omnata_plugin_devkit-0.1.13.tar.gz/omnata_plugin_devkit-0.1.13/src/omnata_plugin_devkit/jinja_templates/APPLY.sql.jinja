@@ -1,0 +1,42 @@
+create or replace procedure PLUGIN.APPLY(APPLY_REQUEST OBJECT)
+returns object
+language python
+RUNTIME_VERSION = '3.10'
+EXTERNAL_ACCESS_INTEGRATIONS = ()
+PACKAGES = ({{packages}})
+SECRETS = ()
+IMPORTS = ('/app.zip')
+HANDLER = 'run'
+execute as owner
+as
+$$
+from logging import getLogger
+import json
+logger = getLogger(__name__)
+def run(session,apply_request):
+   try:
+      logger.info('plugin entrypoint wrapper')
+      from omnata_plugin_runtime.plugin_entrypoints import PluginEntrypoint
+      logger.info('importing plugin {{plugin_class_name}} from module {{plugin_class_module}}')
+      entrypoint = PluginEntrypoint(session=session,
+         plugin_fqn='{{plugin_fqn}}',
+         module_name='{{plugin_class_module}}',
+         class_name='{{plugin_class_name}}'
+      )
+      result = entrypoint.apply(apply_request)
+      logger.info(f'result from plugin: {result}')
+      return {
+         "success": True,
+         "data": result
+      }
+   except Exception as exception:
+      logger.error(str(exception),exc_info=True,stack_info=True)
+      return {
+         "success": False,
+         "error": str(exception)
+      }
+$$
+;
+   
+grant usage on procedure PLUGIN.APPLY(OBJECT)
+to application role OMNATA_MANAGEMENT;
