@@ -1,0 +1,13 @@
+LICENSE
+README.md
+setup.py
+thefriendlystars/__init__.py
+thefriendlystars/gaia.py
+thefriendlystars/imports.py
+thefriendlystars/version.py
+thefriendlystars.egg-info/PKG-INFO
+thefriendlystars.egg-info/SOURCES.txt
+thefriendlystars.egg-info/dependency_links.txt
+thefriendlystars.egg-info/not-zip-safe
+thefriendlystars.egg-info/requires.txt
+thefriendlystars.egg-info/top_level.txt

@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: thefriendlystars
+Version: 0.1.0
+Summary:  Python toolkit for making finder charts with catalogs that cover a small patch of the sky.
+Home-page: https://github.com/zkbt/thefriendlystars/
+Author: Zach Berta-Thompson
+Author-email: zach.bertathompson@colorado.edu
+License: MIT
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Science/Research
+Classifier: Programming Language :: Python
+Classifier: Topic :: Scientific/Engineering :: Astronomy
+Requires-Python: >=3.7
+Provides-Extra: develop
+License-File: LICENSE
+
+Details at https://zkbt.github.io/thefriendlystars/
