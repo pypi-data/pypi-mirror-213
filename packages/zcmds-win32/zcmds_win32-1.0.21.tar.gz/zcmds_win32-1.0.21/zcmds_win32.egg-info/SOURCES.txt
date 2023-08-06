@@ -1,0 +1,14 @@
+README.md
+pyproject.toml
+setup.py
+zcmds_win32/__init__.py
+zcmds_win32/_exec.py
+zcmds_win32/settings.py
+zcmds_win32/unix_tool_path.py
+zcmds_win32/version.py
+zcmds_win32.egg-info/PKG-INFO
+zcmds_win32.egg-info/SOURCES.txt
+zcmds_win32.egg-info/dependency_links.txt
+zcmds_win32.egg-info/entry_points.txt
+zcmds_win32.egg-info/requires.txt
+zcmds_win32.egg-info/top_level.txt
