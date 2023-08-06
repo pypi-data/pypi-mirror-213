@@ -1,0 +1,3 @@
+import unittest
+
+from janis_assistant.management.configuration import JanisConfiguration
