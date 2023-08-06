@@ -1,0 +1,10 @@
+addereq/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+addereq/cleaning.cp38-win_amd64.pyd,sha256=29KbFgz1fEDO_SGgt0xLU8JUo7Pt4YhfZIHnSGu6U6I,47616
+addereq/fetching.cp38-win_amd64.pyd,sha256=-17xXn2SPiJgXxT5TAmjXRS0Dl-hhHztaobn29b4TiY,124928
+addereq/fetching_mysql.cp38-win_amd64.pyd,sha256=Z0YEM1k_Xdm7jcHHtLFr0y8kW64i3v8TgxSINIOmMn0,112640
+addereq/plotting.cp38-win_amd64.pyd,sha256=XdjBUJs8jWfQQE64uU2S8NlXyvin3ibWf34NS4MbSS8,154112
+addereq-1.0.4.dist-info/LICENSE,sha256=IwGE9guuL-ryRPEKi6wFPI_zOhg7zDZbTYuHbSt_SAk,35823
+addereq-1.0.4.dist-info/METADATA,sha256=0Z4Y42PBjc1YI45KPF3gdWXN5AacgLvcDFgku8aAM0g,3175
+addereq-1.0.4.dist-info/WHEEL,sha256=F2aDWtWrilNM3-px1vBtJOEd7aRVTetQfFuDYmYbAUQ,100
+addereq-1.0.4.dist-info/top_level.txt,sha256=kTOP05dPDJJ_BcjbvtEfnk5o3vVaHkqY_JPbOoDhkUc,8
+addereq-1.0.4.dist-info/RECORD,,
