@@ -1,0 +1,13 @@
+napari_nanopyx/__init__.py,sha256=fDl0NqDVmPQWn4mgnG8P-eb9G5NO7jU7njkYp5SyUhk,41
+napari_nanopyx/channel_registration.py,sha256=xmxPngZ5dQh87KhuATP_B4cJYQjANA750Vzv18q_q0M,3980
+napari_nanopyx/drift_alignment.py,sha256=2Q0cYk9wqfiLvLP2J8vhMB02aUjEC4sGg8OFgrZwaX8,4408
+napari_nanopyx/napari.yaml,sha256=jJz4Jn7uu4bxemt7vnvP-MUBuY208wEcWqIjYxRhTjs,2308
+napari_nanopyx/squirrel.py,sha256=MGHxaSg6rbAitDCQIv9EAtxSgKWlAMNZnbPi_o8Ap_g,3750
+napari_nanopyx/srrf.py,sha256=wjzqlkKL6WxJ6Mn8cHOYkFJi2zWg7PYvvK5NLwOs4dc,2421
+napari_nanopyx/_tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+napari_nanopyx-0.0.2.dist-info/LICENSE,sha256=3IXI3x1RN4jDR2PonpWF1guc33zagcTgpq_VnboE3UU,7653
+napari_nanopyx-0.0.2.dist-info/METADATA,sha256=4n18alGIIonXpWqjUg-y7GkzdaQdACaYVITa89AAIqc,3408
+napari_nanopyx-0.0.2.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+napari_nanopyx-0.0.2.dist-info/entry_points.txt,sha256=AHW0aS6-acLzAUO0Bdvd-8Tr3e84D0DskeZURV_b8OI,62
+napari_nanopyx-0.0.2.dist-info/top_level.txt,sha256=hN4aSuUUKmyS3Y0_0czrTXNFd5yFugaN4lLZgcPqpmo,15
+napari_nanopyx-0.0.2.dist-info/RECORD,,
