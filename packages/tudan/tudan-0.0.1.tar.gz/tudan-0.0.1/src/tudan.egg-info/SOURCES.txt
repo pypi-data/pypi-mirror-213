@@ -1,0 +1,10 @@
+README.md
+pyproject.toml
+setup.cfg
+src/tudan/__init__.py
+src/tudan.egg-info/PKG-INFO
+src/tudan.egg-info/SOURCES.txt
+src/tudan.egg-info/dependency_links.txt
+src/tudan.egg-info/entry_points.txt
+src/tudan.egg-info/requires.txt
+src/tudan.egg-info/top_level.txt

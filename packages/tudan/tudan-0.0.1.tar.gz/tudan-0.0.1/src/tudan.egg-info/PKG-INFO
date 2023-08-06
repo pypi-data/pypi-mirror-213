@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: tudan
+Version: 0.0.1
+Summary: Toolkit for infra management
+Home-page: https://github.com/WorkshopHQ/tudan
+Author: Tan Li
+Author-email: tan@tanli.dev
+Project-URL: Bug Tracker, https://github.com/WorkshopHQ/tudan/issues
+Project-URL: Changelog, https://github.com/WorkshopHQ/tudan/releases
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Provides-Extra: dev
