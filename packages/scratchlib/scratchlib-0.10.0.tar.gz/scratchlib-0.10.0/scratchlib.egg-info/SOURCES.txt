@@ -1,0 +1,9 @@
+README.md
+setup.cfg
+setup.py
+scratchlib/__init__.py
+scratchlib.egg-info/PKG-INFO
+scratchlib.egg-info/SOURCES.txt
+scratchlib.egg-info/dependency_links.txt
+scratchlib.egg-info/not-zip-safe
+scratchlib.egg-info/top_level.txt
