@@ -1,0 +1,3 @@
+[console_scripts]
+uwdtool=uwdtool.UWDTool:main
+
