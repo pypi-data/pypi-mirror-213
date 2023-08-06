@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: mippy
+Version: 2.17.1
+Summary: Modular Image Processing in Python
+Home-page: https://tree.taiga.io/project/robflintham-mippy/
+Author: Robert Flintham
+Author-email: rbf906@gmail.com
+License: BSD-3-Clause
+Classifier: Programming Language :: Python :: 3
+License-File: LICENSE
