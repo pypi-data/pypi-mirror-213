@@ -1,0 +1,2 @@
+[datasette]
+sqlite_http = datasette_sqlite_http
