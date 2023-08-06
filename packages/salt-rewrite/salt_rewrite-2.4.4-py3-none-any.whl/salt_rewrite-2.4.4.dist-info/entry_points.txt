@@ -1,0 +1,3 @@
+[console_scripts]
+salt-rewrite=saltrewrite.__main__:rewrite
+
