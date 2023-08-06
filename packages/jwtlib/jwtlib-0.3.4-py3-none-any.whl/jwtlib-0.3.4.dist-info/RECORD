@@ -1,0 +1,13 @@
+AUTHORS,sha256=EHk3oPwcolvfgC327YB6xnLrmY7aIz8f7hTRqEzlvj0,241
+LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+README.rst,sha256=KP-tm3JqKdVXldHoak-1N-qyGpmV-DbuKtInCIaPh_0,922
+jwtlib/__init__.py,sha256=gbhE-QU1L_Jz5324dIhC42xNWBir7krRc-4kppk3odk,209
+jwtlib/abstract.py,sha256=xytRbJqW2oBLUi0BFBxUZm8JdKu0_oaL8n6panGhEB0,344
+jwtlib/exc.py,sha256=eJ2FhfxyayMQjEy7r1_Y8hcihuiFNdeV6KtZ4sIwicY,857
+jwtlib/main.py,sha256=m0W7COkaqt3ctKKgiHsDyNJ-5hQTgwABuC4mb9ARGEg,7370
+jwtlib/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+jwtlib/types.py,sha256=urcy_l8cSfqHBlUmocKc_b90QGCBZDpbUhSccdPnktI,87
+jwtlib-0.3.4.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+jwtlib-0.3.4.dist-info/WHEEL,sha256=VN2eEg4PHbTOniXb-cCYQPc6zUTS4dAcATjlgU3q-Lo,83
+jwtlib-0.3.4.dist-info/METADATA,sha256=3mGIa7N3wz-S8CX_jNASIBywcYUuZvmGKb6cu-5qdwk,1754
+jwtlib-0.3.4.dist-info/RECORD,,
