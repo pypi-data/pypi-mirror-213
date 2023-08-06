@@ -1,0 +1,64 @@
+Metadata-Version: 2.1
+Name: pythonblip
+Version: 0.3.0
+Summary: Couchbase BLIP Protocol Library
+Home-page: https://github.com/mminichino/python-blip
+Author: Michael Minichino
+Author-email: info@unix.us.com
+License: Apache License 2.0
+Keywords: couchbase,blip,mobile,syncgateway
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Database
+Classifier: Topic :: System :: Networking
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+Python BLIP
+===========
+Pure Python implementation of the Couchbase BLIP sync protocol.
+
+Installing
+==========
+```
+$ pip install pythonblip
+```
+
+Usage
+=====
+```
+from pythonblip.headers import SessionAuth
+from pythonblip.replicator import Replicator, ReplicatorConfiguration, ReplicatorType
+from pythonblip.output import LocalDB, LocalFile, ScreenOutput
+
+host = "127.0.0.1"
+database = "mobile"
+connect_string = f"ws://{host}:4984"
+directory = os.environ['HOME']
+scope = "data"
+collections = ["employees", "payroll"]
+
+replicator = Replicator(ReplicatorConfiguration.create(
+    database,
+    connect_string,
+    ReplicatorType.PULL,
+    SessionAuth(options.session),
+    scope,
+    collections,
+    LocalFile(directory)
+))
+
+try:
+    replicator.start()
+    replicator.replicate()
+    replicator.stop()
+except Exception as err:
+    print(f"Error: {err}")
+```

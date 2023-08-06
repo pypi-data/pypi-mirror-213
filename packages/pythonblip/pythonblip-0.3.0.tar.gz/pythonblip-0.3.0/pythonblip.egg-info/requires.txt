@@ -1,0 +1,7 @@
+attrs
+dnspython
+docker
+pytest
+requests
+urllib3
+websockets
