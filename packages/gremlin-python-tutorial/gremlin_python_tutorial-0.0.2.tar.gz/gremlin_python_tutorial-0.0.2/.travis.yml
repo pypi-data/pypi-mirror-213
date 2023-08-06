@@ -1,0 +1,23 @@
+# see https://docs.travis-ci.com/user/languages/python/
+language: python
+# python versions to be tested
+python:
+#  - "2.7" # see https://github.com/WolfgangFahl/gremlin-python-tutorial/issues/7
+  - "3.7"
+before_install:
+ # We need GraphViz to draw  
+ - "sudo apt-get install graphviz"
+# make sure the installation and server is run before starting the tests
+before_script:
+  # install gremlin-server and python-gremlin
+  -  ./run -i
+  # start server
+  -  ./run -s&
+  # give server some time to start
+  - "sleep 10"
+# command to install dependencies
+install:
+  - pip install -r requirements.txt
+# command to run tests
+script:
+  - pytest
