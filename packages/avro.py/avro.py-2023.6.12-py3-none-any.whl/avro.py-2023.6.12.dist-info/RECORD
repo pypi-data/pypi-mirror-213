@@ -1,0 +1,13 @@
+avro/__init__.py,sha256=8GomrDUtXU68eWZlkIfHQemMRNxduQdhzYjj_ECzH6w,1316
+avro/config.py,sha256=V3avlE3ZLi4vKwqag_TYxmlyEDqzoOghM_yUqXNa3VM,1695
+avro/main.py,sha256=TJWAO3KaDY8HrfQ2gI66i8mX9BkKOAkLaDVN0D5QcbU,11695
+avro/resources/__init__.py,sha256=6TAe2EKdo7DE8auVFVJz3Mx6hXTYRFf-TpWYHLz9a2c,1171
+avro/resources/avrodict.py,sha256=moDoiHofWl15ITntZWPdQde8reTJLRm31QEopjQ0ecc,59054
+avro/utils/__init__.py,sha256=vK2x9n5JLsKGtNo3Wyy74PcVpBX1ec7DKS6qH8DGXjM,1118
+avro/utils/count.py,sha256=-u8Yo0yHbVi8z5_neWDAD6jGU5mleC5aS0pWulSZ0vg,1672
+avro/utils/validate.py,sha256=1V6AjFDul05LeQvyXlPHobCRpK1uAI6FI1C7I7NbA5E,2814
+avro.py-2023.6.12.dist-info/LICENSE,sha256=a4Tqf99OD0DZeRZ6cmg-N0Q8jWjtTLlq8OpNYyNZXSA,1072
+avro.py-2023.6.12.dist-info/METADATA,sha256=vzkkDH0XJwAhm-WDBTl2_czvX4_0rijh-E5FgHtiX8Q,5426
+avro.py-2023.6.12.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+avro.py-2023.6.12.dist-info/top_level.txt,sha256=CyHdRd4izFtyKbIls4xQnPhZVfnLFtNTN1mqhFFQ0mA,5
+avro.py-2023.6.12.dist-info/RECORD,,
