@@ -1,0 +1,17 @@
+setuptools
+PyYAML~=6.0
+Flask~=2.2
+jwcrypto~=1.3
+Flask-Babel~=3.1
+perun.connector~=3.7
+SQLAlchemy~=1.4.45
+pymongo~=4.3.3
+idpyoidc~=2.0.0
+
+[kerberos]
+
+[kerberos:platform_system != "Windows"]
+kerberos~=1.3.1
+
+[kerberos:platform_system == "Windows"]
+winkerberos~=0.9.1

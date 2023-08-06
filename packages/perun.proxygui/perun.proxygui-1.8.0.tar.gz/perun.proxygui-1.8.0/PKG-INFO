@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: perun.proxygui
+Version: 1.8.0
+Summary: Module with gui for perun proxy
+Home-page: https://gitlab.ics.muni.cz/perun-proxy-aai/python/perun-proxygui.git
+Requires-Python: >=3.9
+Provides-Extra: kerberos
+License-File: LICENSE
