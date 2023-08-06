@@ -1,0 +1,50 @@
+name: CD - Release Please
+
+concurrency:
+  cancel-in-progress: true
+  group: ${{ github.workflow }}-${{ github.ref_name }}
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  release-please:
+    name: Release Please
+    runs-on: ubuntu-latest
+    steps:
+      - uses: GoogleCloudPlatform/release-please-action@v3.7.9
+        id: release
+        with:
+          bump-minor-pre-major: true
+          bump-patch-for-minor-pre-major: true
+          release-type: python
+      - name: Checkout
+        if: ${{ steps.release.outputs.release_created }}
+        uses: actions/checkout@v3.5.2
+      - name: Set up Python
+        if: ${{ steps.release.outputs.release_created }}
+        uses: actions/setup-python@v4.6.1
+        with:
+          cache: pip
+          cache-dependency-path: pyproject.toml
+          check-latest: true
+          python-version: 3.11
+      - name: Cache python env
+        if: ${{ steps.release.outputs.release_created }}
+        uses: actions/cache@v3.3.1
+        with:
+          path: ${{ env.pythonLocation }}
+          key: ${{ runner.os }}-${{ env.pythonLocation }}-${{ hashFiles('pyproject.toml') }}
+      - name: Install deps
+        if: ${{ steps.release.outputs.release_created }}
+        env:
+          PIP_UPGRADE: True
+          PIP_UPGRADE_STRATEGY: eager
+        run: python -m pip install -e ".[dev]"
+      - name: Build and publish with Flit
+        if: ${{ steps.release.outputs.release_created }}
+        env:
+          FLIT_USERNAME: __token__
+          FLIT_PASSWORD: ${{ secrets.FLIT_TOKEN }}
+        run: python -m flit publish
