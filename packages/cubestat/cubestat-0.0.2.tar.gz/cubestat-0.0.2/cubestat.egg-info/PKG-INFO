@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: cubestat
+Version: 0.0.2
+Summary: Horizon chart in terminal for CPU/GPU/ANE monitoring for Apple M1/M2
+Home-page: https://github.com/okuvshynov/cubestat
+Author: Oleksandr Kuvshynov
+Author-email: okuvshynov@gmail.com
+License-File: LICENSE
+
+Horizon chart in terminal for CPU/GPU/ANE monitoring for Apple M1/M2
