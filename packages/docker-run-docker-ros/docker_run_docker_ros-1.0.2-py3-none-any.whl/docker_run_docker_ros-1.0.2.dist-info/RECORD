@@ -1,0 +1,6 @@
+docker_run/plugins/docker_ros.py,sha256=dh0Hz8i5EjXY33VfeZg2xE0gxV-FS6DlT53p2Gg2Zow,1762
+docker_run_docker_ros-1.0.2.dist-info/LICENSE,sha256=7vJKrMG_2c-JPme24P26ME_b0zY_gv8olsNrX9d5pnA,1123
+docker_run_docker_ros-1.0.2.dist-info/METADATA,sha256=i5juACltDYUMSYQ-5FXu9jQuRwhul5CnlxhqVVMYQMk,4023
+docker_run_docker_ros-1.0.2.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+docker_run_docker_ros-1.0.2.dist-info/top_level.txt,sha256=CWsR8qdedeqawS4mkhwtQxtV67aphq7MMp1-dmkZyg0,11
+docker_run_docker_ros-1.0.2.dist-info/RECORD,,
