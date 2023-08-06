@@ -1,0 +1,15 @@
+flexcode
+pandas
+pz-rail-base
+qp-prob[full]
+qp-flexzboost
+scikit-learn
+xgboost
+
+[dev]
+coverage
+matplotlib
+pylint
+pytest
+pytest-cov
+yamllint
