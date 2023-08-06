@@ -1,0 +1,4 @@
+[console_scripts]
+extract_sequences = extract_sequences.__main__:main
+fetch_sequences = fetch_sequences.__main__:main
+mlst = mlst.__main__:main
