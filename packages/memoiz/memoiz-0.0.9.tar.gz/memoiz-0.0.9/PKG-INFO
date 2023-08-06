@@ -1,0 +1,53 @@
+Metadata-Version: 2.1
+Name: memoiz
+Version: 0.0.9
+Summary: Memoiz is a memoization decorator that makes resonable assumptions about how and if to cache the return value of a function or method based on the arguments passed to it. The decorator can be used on both free and bound functions.
+Author-email: Adam Patterson <adam@faranalytics.net>
+Project-URL: Homepage, https://github.com/faranalytics/python_memoiz.git
+Project-URL: Bug Tracker, https://github.com/faranalytics/python_memoiz/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Memoiz
+
+Memoiz is a memoization decorator that makes resonable assumptions about how and if to cache the return value of a function or method based on the arguments passed to it.  The decorator can be used on both free and bound functions.
+
+## Usage
+
+```py
+from memoiz.cache import Cache
+
+cache = Cache()
+
+class Example:
+
+    def __init__(self):
+        self.n = 1
+
+    @cache
+    def test(self, a, b):
+        return (self.n, a, b)
+
+example = Example()
+
+example.test(1, 2)
+
+cache.invalidate(example.test, example, 1, 2)
+
+@cache
+def test(a):
+    return a
+
+test(1)
+
+cache.invalidate(test, 1)
+
+```
+## Install
+```bash
+pip install memoiz
+```
