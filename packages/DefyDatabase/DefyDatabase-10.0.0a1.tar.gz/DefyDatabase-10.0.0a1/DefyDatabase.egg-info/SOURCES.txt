@@ -1,0 +1,8 @@
+README.md
+setup.py
+DefyDatabase.egg-info/PKG-INFO
+DefyDatabase.egg-info/SOURCES.txt
+DefyDatabase.egg-info/dependency_links.txt
+DefyDatabase.egg-info/top_level.txt
+defy/__init__.py
+defy/reader.py
