@@ -1,0 +1,11 @@
+chainladder<=0.8.14
+pandas<2.0
+scikit-learn>=1.2
+
+[dev]
+ruff
+black
+mypy
+pytest
+tox
+twine
