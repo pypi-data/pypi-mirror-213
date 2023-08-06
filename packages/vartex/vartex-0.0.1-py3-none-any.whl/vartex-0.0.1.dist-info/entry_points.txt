@@ -1,0 +1,2 @@
+[console_scripts]
+vartex = vartex.cli:main

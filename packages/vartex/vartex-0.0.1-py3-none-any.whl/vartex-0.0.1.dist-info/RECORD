@@ -1,0 +1,11 @@
+vartex/__init__.py,sha256=gVFRNnGmIusOosE8iW0_au6EwC2GE6ZZLqIcXXqNPcc,27
+vartex/cli.py,sha256=w8_TMCAuYpxx4r-kr_ED86Ca_lw1MDPd83g0cFyrye4,870
+vartex/temp.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+vartex/variable_reader.py,sha256=Yow0T8m1E-rAJfPP4_wPZlsyTQalNDj4ckvaYjYNtYs,2335
+vartex/vartex.py,sha256=bvtnzVxVBe_yp-NuVNFd80I5II1JRBye0QgR9ka5qK4,4469
+vartex-0.0.1.dist-info/LICENSE,sha256=8RbTKDc1m287UNFhhYKTmd5DZrMprSGCbIxTOmZ24bk,1056
+vartex-0.0.1.dist-info/METADATA,sha256=9aHItv_Ug-Vbezmz-o9c0IOTIVNEZBUC17q69CfA1mk,1063
+vartex-0.0.1.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+vartex-0.0.1.dist-info/entry_points.txt,sha256=w_btjaRwdIe0LChVqj_4PwaIYO3eIIifcw6LnfzFZx0,43
+vartex-0.0.1.dist-info/top_level.txt,sha256=8Nqpp_UrySYEfI1LqpYXn2oIckPGaKjVuseODIHtinM,7
+vartex-0.0.1.dist-info/RECORD,,
