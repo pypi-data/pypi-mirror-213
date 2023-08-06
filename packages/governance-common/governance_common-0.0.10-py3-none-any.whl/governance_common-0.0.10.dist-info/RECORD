@@ -1,0 +1,10 @@
+governance_common/alembic.ini,sha256=hE8_avbXn_qvDD1QQgrhfQ2scR5E4iD9HFkiNMxu0Po,3409
+governance_common/chatbots.py,sha256=ylPl-0XCp-ms5ZyvIyPX8khewRVR70Eoxc_F04P-9_s,2603
+governance_common/migrations/README,sha256=MVlc9TYmr57RbhXET6QxgyCcwWP7w-vLkEsirENqiIQ,38
+governance_common/migrations/env.py,sha256=NwskOydj6snzyQ6NpZyJexZSMgaC2_ul80XGr6mY0xE,2445
+governance_common/migrations/script.py.mako,sha256=HNlf26BI1xvQKjiUojnj15BPrVUfVVr81IOgliJf83c,510
+governance_common/migrations/versions/436f2cd0a9d4_initial_database.py,sha256=CSbfLH-zXYIWCTx9JtNC1xfNn0Sa_qwgefKkdP-kmVQ,9303
+governance_common/models.py,sha256=AP1CUzHGlGSR64Ll4IxTDA6iSj-xi4_jb0L7_0uXtmU,11536
+governance_common-0.0.10.dist-info/METADATA,sha256=UNTUeqiXXKZKM5VJ84odZZZWC4sWuE05e937elHlOAM,658
+governance_common-0.0.10.dist-info/WHEEL,sha256=7Z8_27uaHI_UZAc4Uox4PpBhQ9Y5_modZXWMxtUi4NU,88
+governance_common-0.0.10.dist-info/RECORD,,
