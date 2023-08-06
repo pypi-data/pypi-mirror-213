@@ -1,0 +1,12 @@
+spacy<4.0,>=3.5
+jinja2
+
+[langchain]
+langchain==0.0.191
+
+[minichain]
+minichain<0.4,>=0.3
+
+[transformers]
+torch<2.0,>=1.13.1
+transformers<5.0,>=4.28.1
