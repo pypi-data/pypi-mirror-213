@@ -1,0 +1,6 @@
+nonebot2>=2.0.0
+nonebot_adapter_onebot>=2.2.3
+selenium>=4.10.0
+undetected_chromedriver>=3.5.0
+beautifulsoup4
+pillow
