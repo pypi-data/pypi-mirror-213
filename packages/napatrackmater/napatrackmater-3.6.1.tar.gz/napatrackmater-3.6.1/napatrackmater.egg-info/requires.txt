@@ -1,0 +1,6 @@
+lxml
+vollseg
+napari
+natsort
+seaborn
+kapoorlabs-lightning
