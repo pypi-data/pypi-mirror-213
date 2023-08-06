@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: visionapp
+Version: 0.0.1
+Summary: A Auto app for resnet training and yolo inference
+Home-page: https://github.com/visionarchi/YoloWebapp
+Author: rohin
+Author-email: rohinr7@outlook.com
+Project-URL: Bug Tracker, https://github.com/visionarchi/YoloWebapp/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# YoloWebapp
+<h3>clone the repo by typing the command in cmd prompt</h3>
+
+```commandline
+git clone https://github.com/visionarchi/YoloWebapp.git
+```
+
+<h3>install requirements (torch, torchvision, yolopackages)</h3>
+
+then change the directory in project root then type the command
+```commandline
+python webapp.py
+```
+you ll get a link just copy paste the link in the browser
+
+app is openend!

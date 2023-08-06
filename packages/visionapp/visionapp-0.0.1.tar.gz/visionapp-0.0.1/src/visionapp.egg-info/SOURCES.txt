@@ -1,0 +1,8 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/visionapp.egg-info/PKG-INFO
+src/visionapp.egg-info/SOURCES.txt
+src/visionapp.egg-info/dependency_links.txt
+src/visionapp.egg-info/top_level.txt
