@@ -1,0 +1,46 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "/home/runner/work/rds2py/rds2py/extern/rds2cpp/_deps/byteme-subbuild/CMakeFiles/byteme-populate"
+		},
+		{
+			"file" : "/home/runner/work/rds2py/rds2py/extern/rds2cpp/_deps/byteme-subbuild/CMakeFiles/byteme-populate.rule"
+		},
+		{
+			"file" : "/home/runner/work/rds2py/rds2py/extern/rds2cpp/_deps/byteme-subbuild/CMakeFiles/byteme-populate-complete.rule"
+		},
+		{
+			"file" : "/home/runner/work/rds2py/rds2py/extern/rds2cpp/_deps/byteme-subbuild/byteme-populate-prefix/src/byteme-populate-stamp/byteme-populate-build.rule"
+		},
+		{
+			"file" : "/home/runner/work/rds2py/rds2py/extern/rds2cpp/_deps/byteme-subbuild/byteme-populate-prefix/src/byteme-populate-stamp/byteme-populate-configure.rule"
+		},
+		{
+			"file" : "/home/runner/work/rds2py/rds2py/extern/rds2cpp/_deps/byteme-subbuild/byteme-populate-prefix/src/byteme-populate-stamp/byteme-populate-download.rule"
+		},
+		{
+			"file" : "/home/runner/work/rds2py/rds2py/extern/rds2cpp/_deps/byteme-subbuild/byteme-populate-prefix/src/byteme-populate-stamp/byteme-populate-install.rule"
+		},
+		{
+			"file" : "/home/runner/work/rds2py/rds2py/extern/rds2cpp/_deps/byteme-subbuild/byteme-populate-prefix/src/byteme-populate-stamp/byteme-populate-mkdir.rule"
+		},
+		{
+			"file" : "/home/runner/work/rds2py/rds2py/extern/rds2cpp/_deps/byteme-subbuild/byteme-populate-prefix/src/byteme-populate-stamp/byteme-populate-patch.rule"
+		},
+		{
+			"file" : "/home/runner/work/rds2py/rds2py/extern/rds2cpp/_deps/byteme-subbuild/byteme-populate-prefix/src/byteme-populate-stamp/byteme-populate-test.rule"
+		},
+		{
+			"file" : "/home/runner/work/rds2py/rds2py/extern/rds2cpp/_deps/byteme-subbuild/byteme-populate-prefix/src/byteme-populate-stamp/byteme-populate-update.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"byteme-populate"
+		],
+		"name" : "byteme-populate"
+	}
+}
