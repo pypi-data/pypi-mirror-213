@@ -1,0 +1,13 @@
+stringcalc/__init__.py,sha256=3bRPJ-CNzp0piR4WjGUtlt1CsN2mHIL7o7Vt88rDZS8,77
+stringcalc/cli.py,sha256=bzCATZo5ytdHo1Hs31WBK-fo24j_AdywmwuRf4WtMkw,12011
+stringcalc/frets.py,sha256=9zmKdCklpx8gb5I3thixKn29MjiTPBI_dyCH_0wR_2o,3576
+stringcalc/tension.py,sha256=7hC2IMS-uBPFAk07eiZuh9QSRJxBV4Hx0IOCfW6VFHw,11202
+stringcalc/data/__init__.py,sha256=trvP9fq47dvMJJQEE4tpZUqE00Y7Tq9uaPC8m-5G-p0,30
+stringcalc/data/aquila-nng.csv,sha256=nV-kXoRPEXr59NvzMyYob5dg5E3yEw3SW7x1obBeK80,1762
+stringcalc/data/daddario-tension.csv,sha256=gX2waKA9Vt9Bg-jkIC62fugTAZ38EHTegOEhi5fFcsk,124808
+stringcalc/data/worth.csv,sha256=S0HVB7sww4gTR4DunkHcqR1YHgVHG8b_u_63B6vkE7s,288
+stringcalc-0.1.0.dev8.dist-info/entry_points.txt,sha256=0DV5ry2A4YzcRzPmWKPXWSFG_dd2rE1Q17UORWHN9vI,49
+stringcalc-0.1.0.dev8.dist-info/LICENSE,sha256=QJZDkt5nq7Pto8WzgmPHKnpeTyEyyqscYUFlKoyXgZg,1090
+stringcalc-0.1.0.dev8.dist-info/WHEEL,sha256=rSgq_JpHF9fHR1lx53qwg_1-2LypZE_qmcuXbVUq948,81
+stringcalc-0.1.0.dev8.dist-info/METADATA,sha256=Qon2T6hGQcFhxkAne00rEmG4kMhY1XBmm-9N1IKS0h8,1435
+stringcalc-0.1.0.dev8.dist-info/RECORD,,
