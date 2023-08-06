@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: ipol
+Version: 7
+Summary: python interface to some IPOL journal algorithms
+Home-page: https://git.sr.ht/~coco/clipol
+Author: Enric Meinhardt-Llopis
+Author-email: enric.meinhardt@ens-paris-saclay.fr
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Operating System :: OS Independent
+Classifier: License :: OSI Approved :: GNU Affero General Public License v3
+Classifier: Topic :: Scientific/Engineering :: Image Processing
+Classifier: Topic :: Scientific/Engineering :: Mathematics
+
+UNKNOWN
+
