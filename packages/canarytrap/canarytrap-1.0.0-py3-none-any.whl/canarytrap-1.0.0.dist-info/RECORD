@@ -1,0 +1,9 @@
+canarytrap/__init__.py,sha256=GaFYRZfjIa0Ps8wrMO9bNy-cm4-WlzPqrfZomRVCmmw,52
+canarytrap/text.py,sha256=F1WxdBED0lZo6EOoOpWwSxvc8cgXgcO8ZLpAGXpQONU,2999
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_text.py,sha256=VkiU9nJ2QtY6TxFI-LxAU5NhcfJqeZZZNSaDTDLLcCg,1387
+canarytrap-1.0.0.dist-info/LICENSE,sha256=zuBF6LZm_J7ccGafr72AWaHLqhvRHFw6aRUq6DWbOSo,1089
+canarytrap-1.0.0.dist-info/METADATA,sha256=5zaXWGKhYqP-Ep4MExw8B04sQIB4dblBNc5CTxaU3ZA,2317
+canarytrap-1.0.0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+canarytrap-1.0.0.dist-info/top_level.txt,sha256=WhXTDO2m9tRjQ0DA3crXMLi7CAcBr2VwCHVv0-RBUxI,17
+canarytrap-1.0.0.dist-info/RECORD,,
