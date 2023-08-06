@@ -1,0 +1,16 @@
+AUTHORS
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+Flask_Limit.egg-info/PKG-INFO
+Flask_Limit.egg-info/SOURCES.txt
+Flask_Limit.egg-info/dependency_links.txt
+Flask_Limit.egg-info/not-zip-safe
+Flask_Limit.egg-info/requires.txt
+Flask_Limit.egg-info/top_level.txt
+docs/index.rst
+flask_limit/__init__.py
+flask_limit/rate_limit.py
+tests/__init__.py
+tests/test_rate_limit.py
