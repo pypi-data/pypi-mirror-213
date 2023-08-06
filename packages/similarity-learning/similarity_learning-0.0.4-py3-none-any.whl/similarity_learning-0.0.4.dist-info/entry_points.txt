@@ -1,0 +1,6 @@
+[console_scripts]
+
+
+[nbdev]
+similarity_learning = similarity_learning._modidx:d
+
