@@ -1,0 +1,2 @@
+[console_scripts]
+main = composabl_grpc.main:main
