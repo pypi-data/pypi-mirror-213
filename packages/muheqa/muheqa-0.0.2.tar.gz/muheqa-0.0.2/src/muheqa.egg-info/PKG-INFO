@@ -1,0 +1,41 @@
+Metadata-Version: 2.1
+Name: muheqa
+Version: 0.0.2
+Summary: Multiple and Heterogeneous Question-Answering
+Author-email: Carlos Badenes-Olmedo <carlos.badenes@upm.es>
+Project-URL: Homepage, https://github.com/librairy/muheqa-core
+Project-URL: Bug Tracker, https://github.com/librairy/muheqa-core/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Internet :: WWW/HTTP :: Indexing/Search
+Classifier: Natural Language :: English
+Classifier: Topic :: Software Development :: Libraries
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+Multiple and Heterogeneous Question-Answering (MuHeQA) system
+
+## Quick Start!
+
+Install the `muheqa` package:
+````python
+pip install muheqa
+````
+
+Create a new connection to Wikidata, or DBpedia, or D4C (Drugs4Covid). *The first time it may take a few minutes to download the required models*:
+````python
+import muheqa.connector as mhqa
+
+wikidata = mhqa.connect(wikidata=True)
+````
+
+And finally, make a question in natural language!:
+````python
+response = wikidata.query("Who is the father of Barack Obama")
+print("Response:",response)
+````
+
+
+
