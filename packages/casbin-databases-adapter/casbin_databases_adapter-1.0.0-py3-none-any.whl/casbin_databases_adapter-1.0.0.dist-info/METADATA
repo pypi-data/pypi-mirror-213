@@ -1,0 +1,49 @@
+Metadata-Version: 2.1
+Name: casbin-databases-adapter
+Version: 1.0.0
+Summary: This is an Adapter for PyCasbin that implemented using Databases connection to achieve async process
+Home-page: https://github.com/pycasbin/casbin-databases-adapter
+Author: Isa Setiawan Abdurrazaq
+Author-email: isasetiawan@protonmail.com
+License: Apache 2.0
+Keywords: casbin,asynccasbin,async,databases,casbin-adapter,rbac,access control,abac,acl,permission
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.3
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: asynccasbin (>=1.1.7)
+Requires-Dist: databases (>=0.7.0)
+Requires-Dist: SQLAlchemy (>=1.2.18)
+
+# Databases Casbin Adapter
+====
+
+[![GitHub Actions](https://github.com/pycasbin/casbin-databases-adapter/workflows/build/badge.svg?branch=master)](https://github.com/pycasbin/casbin-databases-adapter/actions)
+[![Coverage Status](https://coveralls.io/repos/github/pycasbin/casbin-databases-adapter/badge.svg?branch=master)](https://coveralls.io/github/pycasbin/casbin-databases-adapter?branch=master)
+[![Version](https://img.shields.io/pypi/v/casbin_databases_adapter.svg)](https://pypi.org/project/casbin_databases_adapter/)
+[![PyPI - Wheel](https://img.shields.io/pypi/wheel/casbin_databases_adapter.svg)](https://pypi.org/project/casbin_databases_adapter/)
+[![Pyversions](https://img.shields.io/pypi/pyversions/casbin_databases_adapter.svg)](https://pypi.org/project/casbin_databases_adapter/)
+[![Download](https://img.shields.io/pypi/dm/casbin_databases_adapter.svg)](https://pypi.org/project/casbin_databases_adapter/)
+[![License](https://img.shields.io/pypi/l/casbin_databases_adapter.svg)](https://pypi.org/project/casbin_databases_adapter/)
+
+This is an Adapter for [PyCasbin](https://github.com/casbin/pycasbin) that implemented using [Databases](https://www.encode.io/databases) connection to achieve async process
+
+## Installation
+
+```
+pip install casbin_databases_adapter
+```
+
+### Getting Help
+
+- [PyCasbin](https://github.com/casbin/pycasbin)
+
+### License
+
+This project is licensed under the [Apache 2.0 license](LICENSE).
