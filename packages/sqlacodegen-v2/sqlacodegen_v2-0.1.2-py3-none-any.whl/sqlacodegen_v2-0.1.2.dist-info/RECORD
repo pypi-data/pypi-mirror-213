@@ -1,0 +1,14 @@
+sqlacodegen_v2/__init__.py,sha256=wGjTzEcgn77iAxp2UJ_P6TkfwEE-FLa6fH1TDbgADPQ,64
+sqlacodegen_v2/__main__.py,sha256=wT62aXCuN7iwRPQoswnmeGiBS5Cou0CIBvMxbOTfvFs,33
+sqlacodegen_v2/cli.py,sha256=Jv5Gmb-wH9hDNKLric8hDxmqo9nLBMuE--FCW5JADaE,2631
+sqlacodegen_v2/external.py,sha256=kom4Uo_sLjk3eNSQuvjT5bjGl_wDvkjubD6MmTo86vs,1470
+sqlacodegen_v2/generators.py,sha256=qwOiXiZn47gSAOqL-XSwSw6aqUav-2ygFUBHOFp9VAk,65014
+sqlacodegen_v2/models.py,sha256=Klw5cu37-1wcdNEno5uKn0MDJql1EYDVS5CClcny8ZU,2408
+sqlacodegen_v2/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sqlacodegen_v2/utils.py,sha256=RJ4HRmv_rNgmhmAB8x1_xSVPZDBXD3uBYRwLqNFHkTM,7092
+sqlacodegen_v2-0.1.2.dist-info/LICENSE,sha256=lZQxrypdqiCTZY5498Zi6wGhaQQnPqkr6yopAx7S9kg,1149
+sqlacodegen_v2-0.1.2.dist-info/METADATA,sha256=iSuuUbv9wu91pw0Z3ruc9gjzVMBDAfJwpBpO6a0w5us,8857
+sqlacodegen_v2-0.1.2.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+sqlacodegen_v2-0.1.2.dist-info/entry_points.txt,sha256=ybVySPOWne4IOZJ0j_ckwjmVFZmweMGANObii9fQ2fE,397
+sqlacodegen_v2-0.1.2.dist-info/top_level.txt,sha256=SKuuLswPUcUXNbk4UE5W7v0I-5bOGdH83r0ooMlBD8A,15
+sqlacodegen_v2-0.1.2.dist-info/RECORD,,
