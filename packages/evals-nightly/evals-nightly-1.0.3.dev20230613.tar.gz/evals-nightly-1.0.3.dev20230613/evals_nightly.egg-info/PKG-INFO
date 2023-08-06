@@ -1,0 +1,6 @@
+Metadata-Version: 2.1
+Name: evals-nightly
+Version: 1.0.3.dev20230613
+Requires-Python: >=3.9
+Provides-Extra: formatters
+License-File: LICENSE
