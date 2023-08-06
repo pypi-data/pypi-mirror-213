@@ -1,0 +1,6 @@
+platformdirs>=3.2.0
+wizlib>=0.2.2
+reportlab>=4.0.4
+
+[:platform_system == "Windows"]
+windows-curses
