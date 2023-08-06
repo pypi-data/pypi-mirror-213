@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: visualize-algos
+Version: 0.0.1
+Summary: Visualize path finding algorithms simultaneously for the same condition in UI.
+Author: Dhvanik Viradiya
+Author-email: viradiyadhvanik@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+There are only limited algorithms implemented. In follow up versions more algorithms will be added and will be used to visualize the algorithms easily.
