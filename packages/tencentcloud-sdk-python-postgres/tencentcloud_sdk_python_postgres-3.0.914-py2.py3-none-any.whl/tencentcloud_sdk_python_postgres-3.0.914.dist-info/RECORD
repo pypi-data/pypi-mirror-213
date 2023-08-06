@@ -1,0 +1,10 @@
+tencentcloud/__init__.py,sha256=G8lCrpFQ7e3ne0jKbsP_ssCvCzBaEU-dEOlIF_EZbJU,630
+tencentcloud/postgres/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tencentcloud/postgres/v20170312/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tencentcloud/postgres/v20170312/errorcodes.py,sha256=zS8fmcIwo_6uiF67B4JOBVmSA9KoZ7CS7d-vIoNvQHs,20657
+tencentcloud/postgres/v20170312/models.py,sha256=A5tYTGXcEuXq7UJWgbaAeRQrQvNISsycIAr9jXtMY68,277922
+tencentcloud/postgres/v20170312/postgres_client.py,sha256=BDRYR8ZPOkA5koacfzW4qcUmI5DEZ0-kB--YwRiUxmg,85728
+tencentcloud_sdk_python_postgres-3.0.914.dist-info/METADATA,sha256=jDPJqLGhuTOoPqwns489JvepxDDffnjgpK56bIYNiY8,1457
+tencentcloud_sdk_python_postgres-3.0.914.dist-info/WHEEL,sha256=z9j0xAa_JmUKMpmz72K0ZGALSM_n-wQVmGbleXx2VHg,110
+tencentcloud_sdk_python_postgres-3.0.914.dist-info/top_level.txt,sha256=g-8OyzoqI6O6LiS85zkeNzhB-osEnRIPZMdyRd_0eL0,13
+tencentcloud_sdk_python_postgres-3.0.914.dist-info/RECORD,,
