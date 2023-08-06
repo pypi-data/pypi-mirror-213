@@ -1,0 +1,13 @@
+i3a/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+i3a/_version.py,sha256=osWWPW5B0OBJa-TnbWVgSt-uW6gB83-hmspkikOQEwE,160
+i3a/master_stack.py,sha256=Z2ayQ7DRxprF_HNAKOptLxlav28702RqEIMA7BpB_BY,8511
+i3a/move_to_empty.py,sha256=eJELEctQwyy9hy4vkeAH5sTIVBaCAiZWOrC8CFX7XDw,943
+i3a/resize_compass.py,sha256=WZK_zEyTBe87HUYSBrFDhfUXjpCn19InMz4HpB_xRzQ,2508
+i3a/swallow.py,sha256=TUs1pN6HwDce7tUxNFfPNIyqq6CQWFXMdHXuht2RNKM,7036
+i3a/swap.py,sha256=GV_8gsC0V9g3qvjmcGE-WNGro0aCuLvSBVIcsDVEx78,668
+i3a-2.1.1.dist-info/LICENSE,sha256=jHWpIx24kGhl4pcG7WOq0Y_ZGMksFdvvuxPCX-QoULQ,32473
+i3a-2.1.1.dist-info/METADATA,sha256=t9TskLuYrwe_FzwTubi1Vb-eiOvV4wiqRMlCdSxz1gI,3724
+i3a-2.1.1.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+i3a-2.1.1.dist-info/entry_points.txt,sha256=4N2WoReJipulV2QelHOEwo1LfRTfMqZ2x7CGFEAjiAY,203
+i3a-2.1.1.dist-info/top_level.txt,sha256=Favp-e7BiObgX8SZQVDcWsuHBWYY_V_TvyciTcIdb0w,4
+i3a-2.1.1.dist-info/RECORD,,
