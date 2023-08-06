@@ -1,0 +1,12 @@
+LICENSE.txt
+Readme.md
+pyproject.toml
+src/example_package_priya2/__init__.py
+src/example_package_priya2/dataset.py
+src/example_package_priya2/scores.py
+src/example_package_priya2/train.py
+src/example_package_priya2.egg-info/PKG-INFO
+src/example_package_priya2.egg-info/SOURCES.txt
+src/example_package_priya2.egg-info/dependency_links.txt
+src/example_package_priya2.egg-info/top_level.txt
+tests/test1.py
