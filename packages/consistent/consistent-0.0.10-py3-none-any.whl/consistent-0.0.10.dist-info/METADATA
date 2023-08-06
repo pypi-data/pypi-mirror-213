@@ -1,0 +1,137 @@
+Metadata-Version: 2.1
+Name: consistent
+Version: 0.0.10
+Summary: Make sure AI model outputs are consistent
+License: MIT License
+        
+        Copyright (c) 2023 drorIvry
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+        
+Project-URL: Homepage, https://github.com/drorivry/consistent
+Keywords: OpenAI,LLM,GPT,Cohere
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: chromadb
+Requires-Dist: openai
+Requires-Dist: js2py
+Requires-Dist: jsonschema
+Requires-Dist: langchain
+Requires-Dist: tomli ; python_version < "3.11"
+Provides-Extra: dev
+Requires-Dist: black ; extra == 'dev'
+Requires-Dist: bumpver ; extra == 'dev'
+Requires-Dist: isort ; extra == 'dev'
+Requires-Dist: pip-tools ; extra == 'dev'
+Requires-Dist: pytest ; extra == 'dev'
+Requires-Dist: pre-commit ; extra == 'dev'
+Requires-Dist: pyflakes ; extra == 'dev'
+
+<img align="center" src="./logo.png">
+
+[![tests](https://github.com/drorIvry/consisTent/actions/workflows/pre-commit.yml/badge.svg)](https://github.com/drorIvry/consisTent/actions/workflows/pre-commit.yml)
+
+[![release](https://github.com/drorIvry/consisTent/actions/workflows/python-publish.yml/badge.svg)](https://github.com/drorIvry/consisTent/actions/workflows/python-publish.yml)
+
+consisTent is a full blows testing framework for prompts. The goal of consisTent is to create reproducible tests for LLM based applications regardless of the FM used.
+
+
+## Installation
+
+```sh
+pip install consistent
+```
+
+## Concepts
+
+consisTent comes with 2 types of validators (testers)
+
+### syntactic validators
+
+This type of validators is used to do static assertions of the LLM output. for example validating if the output is in a certain JSON format and assert the schema.
+You can also use syntactic validators to assert something is a valid piece of code (JS or Python are supported at the moment)
+
+
+**Syntactic validators are used to assert the FORM of the response**
+
+### example
+
+```python
+consisTent.JsValidator().validate('console.log("Im a JS program!")')
+
+consisTent.PyValidator().validate('print("Im a python program!")')
+
+consisTent.JsonValidator().validate('{"question": "is this a valid JSON?"}')
+```
+
+### syntactic validators
+
+This type of validators is used to assert the quality of the response with more "soft" parameters for example, check if something is factually correct, check for hallucinations, check for labels like "funny"/"interesting" etc... another type of semantic validator is the semantic consistency validator where you provide a seed of validated input and a threshold, and the test will assert the semantic distance of the new output from the seed cluster.
+
+**Semantic validators are used to assert the CONTENT of the response**
+
+### example
+
+```python
+import consisTent
+
+seed = [
+    "the cat sat on the mat",
+    "the feline layed on the carpet",
+]
+
+
+consisTent.ConsistencyValidator(
+    seed_size=2,
+    consistency_threshold=0.5,
+).validate(
+    seed=seed,
+    model_output="the dog sat on the mat",
+)
+```
+
+### Label Test
+
+```python
+OPENAI_KEY = "XXXXXXXXXXXXXXX"
+
+consisTent.LabelsValidator(openai_key=OPENAI_KEY).validate(
+    labels=[
+        "funny",
+        "short",
+        "about rabbits",
+    ],
+    model_output="What do you call a rabbit that tells jokes? A funny bunny!",
+)
+```
+
+### facts validation
+
+```python
+OPENAI_KEY = "XXXXXXXXXXXXXXX"
+
+consisTent.FactsValidator(openai_key=OPENAI_KEY).validate(
+    facts=["this car weighs 1000KG"],
+    model_output="I can lift this car",
+)
+```
