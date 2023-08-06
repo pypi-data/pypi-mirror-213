@@ -1,0 +1,14 @@
+findJobs/FindJobs.py,sha256=EbiPAtLG3jwHqTHrGacqHKu_WIZjAe8t2oOPGtSepCU,20368
+findJobs/__init__.py,sha256=8xYGV46MBk4PUK1b5aLuAEw2OOKY2PpfR0-zvCUxaSo,1288
+findJobs/app.py,sha256=eHgqJty8Z9XE3j7j0HDxr8cyuYLjBxhhXQqgtYkWNR4,5368
+findJobs/url.py,sha256=gaZkseMVd6L-WLcSPB9E8U0Fpn0MmQZBwxyJxVTtAWs,5064
+findJobs/static/drake.png,sha256=Uv_X2oR-vnD9rr1i1I2-z4M0bYxaKsGgbx-SpJcGjhA,1245103
+findJobs/static/styles.css,sha256=Q4NkudpBRp3F3KrLVyMHBWk3VakOmiJKe56wo66hNJg,382
+findJobs/static/temp/salary_boxplot.png,sha256=iMG1xkvlg4VxaYnSSQeulBWPze_ZZXMKzNT6fK8FnEE,32029
+findJobs/static/temp/salary_density.png,sha256=3B_brB4LRSoRcYoYUGAZdSI7EUW_QKmrhuDJ6ELHcZ4,35422
+findJobs/templates/index.html,sha256=BXWAkRR0bw1JonSOXtFvBO4YQr5RjuxexiJWH0gJt-w,29098
+FindJobsTW-1.0.7.dist-info/LICENSE,sha256=bDvf4iH1K9IvsKhSFGiWfmxx39Iy60Iid61W5v_REiQ,1086
+FindJobsTW-1.0.7.dist-info/METADATA,sha256=NAyLgone8A_S6S6s0oRQ2qvwfX92IsNqJnVRHizdPSg,1013
+FindJobsTW-1.0.7.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+FindJobsTW-1.0.7.dist-info/top_level.txt,sha256=s4IuhKd823co8Jb_YhHXNI-ctPfVGLLOJ_LYC3Mldyw,9
+FindJobsTW-1.0.7.dist-info/RECORD,,
