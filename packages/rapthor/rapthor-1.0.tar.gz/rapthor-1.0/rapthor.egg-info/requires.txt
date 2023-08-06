@@ -1,0 +1,13 @@
+numpy
+scipy
+astropy
+jinja2
+shapely
+toil[cwl]!=5.6,!=5.8
+reproject
+python-dateutil
+Rtree
+lsmtool
+losoto
+bdsf
+python-casacore
