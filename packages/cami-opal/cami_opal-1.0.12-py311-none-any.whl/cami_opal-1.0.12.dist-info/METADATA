@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: cami-opal
+Version: 1.0.12
+Summary: OPAL: Open-community Profiling Assessment tooL
+Home-page: http://cami-challenge.org
+Author: CAMI
+Author-email: support@cami-challenge.org
+License: Apache-2.0 License
+Classifier: Natural Language :: English
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Topic :: Scientific/Engineering :: Bio-Informatics
+Classifier: Intended Audience :: Science/Research
+Classifier: Operating System :: POSIX
+License-File: LICENSE
+Requires-Dist: numpy (==1.24.2)
+Requires-Dist: matplotlib (==3.7.1)
+Requires-Dist: pandas (==1.5.3)
+Requires-Dist: jinja2 (==3.1.2)
+Requires-Dist: bokeh (==3.1.0)
+Requires-Dist: seaborn (==0.12.2)
+Requires-Dist: docker (==6.1.2)
+Requires-Dist: scipy (==1.10.1)
+
