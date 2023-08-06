@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: superinvoke
+Version: 1.0.2
+Summary: An Invoke wrapper with extra handy features.
+Home-page: https://github.com/neoxelox/superinvoke
+License: MIT
+Keywords: plugin,wrapper,invoke,pyinvoke,superinvoke
+Author: Alex
+Author-email: alex@neoxelox.com
+Maintainer: Alex
+Maintainer-email: alex@neoxelox.com
+Requires-Python: >=3.7,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: download (==0.3.5)
+Requires-Dist: neoxelox-invoke (==2.0.0)
+Requires-Dist: rich (==12.5.1)
+Project-URL: Documentation, https://github.com/neoxelox/superinvoke
+Project-URL: Repository, https://github.com/neoxelox/superinvoke
+Description-Content-Type: text/markdown
+
+# superinvoke
+
+An Invoke wrapper with extra handy features.
+
+TODO: EXPLAIN
+
