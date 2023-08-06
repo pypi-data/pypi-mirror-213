@@ -1,0 +1,112 @@
+[build-system]
+requires = [
+    "setuptools >= 64",
+    "setuptools_scm >= 6.4"
+]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "asphalt-exceptions"
+description = "Exception reporter component for the Asphalt framework"
+readme = "README.rst"
+authors = [{name = "Alex Grönholm", email = "alex.gronholm@nextday.fi"}]
+license = {text = "Apache License 2.0"}
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: Apache Software License",
+    "Topic :: Software Development :: Libraries :: Application Frameworks",
+    "Typing :: Typed",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3 :: Only",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+]
+requires-python = ">=3.7"
+dependencies = [
+    "asphalt ~= 4.6",
+]
+dynamic = ["version"]
+
+[project.urls]
+Homepage = "https://github.com/asphalt-framework/asphalt-exceptions"
+
+[project.optional-dependencies]
+test = [
+    "asphalt-exceptions[sentry,raygun]",
+    "pytest",
+    "pytest-asyncio",
+    "pytest-cov",
+]
+doc = [
+    "asphalt-exceptions[sentry,raygun]",
+    "Sphinx >= 1.5",
+    "sphinx_rtd_theme",
+    "sphinx-autodoc-typehints >= 1.2.0",
+    "sphinxcontrib-asyncio >= 0.2.0",
+]
+sentry = ["sentry-sdk >= 1.5"]
+raygun = ["raygun4py >= 4.3"]
+
+[project.entry-points."asphalt.components"]
+exceptions = "asphalt.exceptions.component:ExceptionReporterComponent"
+
+[project.entry-points."asphalt.exceptions.reporters"]
+sentry = "asphalt.exceptions.reporters.sentry:SentryExceptionReporter"
+raygun = "asphalt.exceptions.reporters.raygun:RaygunExceptionReporter"
+
+[tool.setuptools_scm]
+version_scheme = "post-release"
+local_scheme = "dirty-tag"
+
+[tool.ruff]
+line-length = 99
+select = [
+    "E", "F", "W",  # default flake-8
+    "I",            # isort
+    "PGH",          # pygrep-hooks
+    "UP",           # pyupgrade
+]
+target-version = "py37"
+
+[tool.ruff.isort]
+known-first-party = ["asphalt.exceptions"]
+
+[tool.pytest.ini_options]
+addopts = "-rsx --tb=short"
+asyncio_mode = "strict"
+testpaths = ["tests"]
+
+[tool.mypy]
+python_version = "3.7"
+ignore_missing_imports = true
+
+[tool.coverage.run]
+source = ["asphalt.exceptions"]
+relative_files = true
+branch = true
+
+[tool.coverage.report]
+show_missing = true
+
+[tool.tox]
+legacy_tox_ini = """
+[tox]
+envlist = py37, py38, py39, py310, py311, py312, pypy3
+skip_missing_interpreters = true
+minversion = 4.4.3
+
+[testenv]
+extras = test
+commands = python -m pytest {posargs}
+package = editable
+
+[testenv:docs]
+extras = doc
+commands = sphinx-build docs build/sphinx
+package = editable
+"""
