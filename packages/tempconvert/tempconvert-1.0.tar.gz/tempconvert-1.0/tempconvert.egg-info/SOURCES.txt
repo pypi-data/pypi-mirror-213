@@ -1,0 +1,8 @@
+README.txt
+setup.cfg
+setup.py
+tempconvert/__init__.py
+tempconvert.egg-info/PKG-INFO
+tempconvert.egg-info/SOURCES.txt
+tempconvert.egg-info/dependency_links.txt
+tempconvert.egg-info/top_level.txt
