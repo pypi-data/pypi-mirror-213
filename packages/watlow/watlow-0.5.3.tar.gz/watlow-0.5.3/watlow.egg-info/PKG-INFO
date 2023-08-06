@@ -1,0 +1,123 @@
+Metadata-Version: 2.1
+Name: watlow
+Version: 0.5.3
+Summary: Python driver for Watlow EZ-Zone temperature controllers.
+Home-page: https://github.com/numat/watlow/
+Author: Patrick Fuller
+Author-email: pat@numat-tech.com
+Maintainer: Alex Ruddick
+Maintainer-email: alex@numat-tech.com
+License: GPLv2
+Classifier: License :: OSI Approved :: GNU General Public License v2 (GPLv2)
+Classifier: Development Status :: 4 - Beta
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Topic :: Scientific/Engineering :: Human Machine Interfaces
+Classifier: Topic :: Scientific/Engineering :: Electronic Design Automation (EDA)
+Description-Content-Type: text/markdown
+Provides-Extra: test
+License-File: LICENSE
+
+# watlow
+Python driver and command-line tool for [Watlow EZ-Zone temperature controllers](https://www.watlow.com/en/products/controllers/temperature-and-process-controllers/ez-zone-pm-controller).
+
+<p align="center">
+  <img src="https://www.watlow.com/-/media/images/products/new--controllers/integrated-multi-function/tp_pm_480.ashx" />
+</p>
+
+Installation
+============
+
+```
+pip install watlow
+```
+
+Usage
+=====
+
+### Command Line
+
+```
+$ watlow /dev/ttyUSB0
+```
+
+This returns a simple data structure.
+
+```
+{
+  "actual": 21.66,
+  "setpoint": 20.0,
+  "output": 52.1
+}
+```
+
+You can additionally use the `--set-setpoint` option to set a temperature setpoint.
+
+If interacting with a Watlow RUI Gateway, the zone to get or set should be passed as a flag
+```
+$ watlow -z 1 192.168.1.101
+```
+
+See `watlow --help` for more.
+
+### Python
+
+#### Single Controller
+
+For a single temperature controller, the python interface is basic synchronous serial communication.
+
+```python
+import watlow
+
+tc = watlow.TemperatureController('/dev/ttyUSB0')
+
+tc.set(30)
+print(tc.get())
+```
+
+The driver is designed to be fault tolerant over long polling, and should
+appropriately reconnect if its `IOError`s are managed. Here's an implementation
+with standard long-poll exception handling. This should run until interrupted and
+then exit cleanly.
+
+```python
+from time import sleep
+import watlow
+
+tc = watlow.TemperatureController('/dev/ttyUSB0')
+try:
+    while True:
+        try:
+            print(tc.get())
+        except IOError:
+            print('disconnected')
+        sleep(1)
+except KeyboardInterrupt:
+    pass
+finally:
+    tc.close()
+```
+
+#### Gateway
+
+The Gateway driver uses Python ≥3.7's async/await syntax to asynchronously communicate with
+the gateway over ModBus-TCP.
+
+```python
+import asyncio
+import watlow
+
+async def run():
+    async with watlow.Gateway('192.168.1.101') as gateway:
+        print(await gateway.get(1))
+
+asyncio.run(run())
+```
+
+Additionally, there is a mock for the Gateway driver available at `watlow.mock.Gateway` for testing.
