@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: cliopts
+Version: 1.0.0
+Summary: The cliopts package is a Python library for parsing command line arguments. It provides a simpler and more intuitive API with less code and easy cli argument parsing.
+Home-page: https://github.com/Sanmeet007/cliopts.git
+Author: Sanmeet Singh
+Author-email: ssanmeet123@gmail.com
+License: GPL-3.0 license
+Keywords: python,command line,command line arguments,cli,cli args,cli opts,command line options,cliargs,argparser
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+The cliopts Library is a Python library designed to simplify the process of parsing command line arguments. It provides a straightforward and intuitive API, reducing the amount of code required for cli argument parsing.
