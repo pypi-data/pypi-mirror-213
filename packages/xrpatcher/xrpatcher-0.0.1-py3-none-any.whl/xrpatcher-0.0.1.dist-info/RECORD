@@ -1,0 +1,11 @@
+xrpatcher/__init__.py,sha256=SOpXKaLhVX4INeFk_QZVtVv4iGfmN-yufZIpSg0r5zU,71
+xrpatcher/_src/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+xrpatcher/_src/base.py,sha256=Y6dRUE-PJrwPvR4-do4mNLeUmEXOJ39b5VJbFFwCCqg,9953
+xrpatcher/_src/exceptions.py,sha256=7wA7zCkkqTrrWxiJKx_Wz1CmTo45gXWkDy5QjPCRpgc,105
+xrpatcher/_src/test_base.py,sha256=UjdsnU8T2NodCXgXPsL3wbUhQFwYEM_pejUIuU2witQ,22078
+xrpatcher/_src/test_utils.py,sha256=WFHvFbH7FANbH8dtGRMofHhy-N8N_odL1bDk8jib9_Y,3662
+xrpatcher/_src/utils.py,sha256=LD1tdRg0S6zgc6sysWi2EHFZRLQowwxr279CA_k95_o,4620
+xrpatcher-0.0.1.dist-info/LICENSE,sha256=BRRLFnhD8-O0VD_SBz-o85m3Y90P5tYIwmdsx8CtDl8,1092
+xrpatcher-0.0.1.dist-info/METADATA,sha256=LYjUJUNBz8BP7DX-qJiow6rS6m42KbysITLQl1qoX5Y,4608
+xrpatcher-0.0.1.dist-info/WHEEL,sha256=Zb28QaM1gQi8f4VCBhsUklF61CTlNYfs9YAZn-TOGFk,88
+xrpatcher-0.0.1.dist-info/RECORD,,
