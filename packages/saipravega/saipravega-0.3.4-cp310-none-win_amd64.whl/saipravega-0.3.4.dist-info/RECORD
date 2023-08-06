@@ -1,0 +1,5 @@
+saipravega-0.3.4.dist-info/METADATA,sha256=h5uRHazrCGLd2W5jYc_F-nczagdavUn7MzO3qauGPD4,2863
+saipravega-0.3.4.dist-info/WHEEL,sha256=-PuAQKhWk4Rq8-gidZtX5jsMnCkejTgnWqEYioAwMzo,97
+pravega_client/__init__.py,sha256=Pq-fktxcIFdbHbKj3cNCZZB5uHJMN_9lPOxyUnASZRk,139
+pravega_client/pravega_client.cp310-win_amd64.pyd,sha256=mTBWyGYFRV2hMiAQgejTyOJqpPMCa0rTN39gO8mgPj0,17159680
+saipravega-0.3.4.dist-info/RECORD,,
