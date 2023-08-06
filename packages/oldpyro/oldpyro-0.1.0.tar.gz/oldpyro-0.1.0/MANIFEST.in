@@ -1,0 +1,11 @@
+## Include
+include README.md COPYING COPYING.lesser NOTICE requirements.txt
+recursive-include compiler *.py *.tl *.tsv *.txt
+recursive-include tests *.py
+
+## Exclude
+prune oldpyro/errors/exceptions
+prune oldpyro/raw/functions
+prune oldpyro/raw/types
+prune oldpyro/raw/base
+exclude oldpyro/raw/all.py

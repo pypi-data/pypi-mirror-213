@@ -1,0 +1,70 @@
+Metadata-Version: 2.1
+Name: oldpyro
+Version: 0.1.0
+Summary: Fork of Pyrogram v1
+Home-page: UNKNOWN
+Author: Dan
+Author-email: dan@pyrogram.org
+License: LGPLv3+
+Description: # oldpyro
+        
+        This is a fork of **Pyrogram v1** (Last: [v1.4.16](https://pypi.org/project/pyrogram/1.4.16)) which installs the library with name `oldpyro` so that you can use both major versions at the same time.
+        
+        - Install this only if you need both version. If you only need major version 1, use `pip install pyrogram==1.*`.
+        - Please install this before the latest `pyrogram` version so that dependencies, if conflicting, can be overwritten.
+        
+        This isn't exactly the right way, but it is the only way. Also, dependencies may (and `will` in the future) create a problem!
+        
+        ## Installation
+        
+        ### PyPI
+        
+        ```shell
+        pip install oldpyro
+        ```
+        
+        ### Usage
+        
+        Just change `pyrogram` to `oldpyro` in your imports. For example:
+        
+        ```shell
+        from oldpyro import Client
+        ```
+        
+        If you are using both clients in same file:
+        
+        ```shell
+        from oldpyro import Client as Client1
+        ```
+        
+        ## Credits
+        
+        Original Author - [Dan](https://github.com/delivrance)
+        
+        Original Repository - [pyrogram](https://github.com/pyrogram/pyrogram)
+        
+Keywords: telegram chat messenger mtproto api client library python
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Classifier: License :: OSI Approved :: GNU Lesser General Public License v3 or later (LGPLv3+)
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: Implementation
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Classifier: Topic :: Internet
+Classifier: Topic :: Communications
+Classifier: Topic :: Communications :: Chat
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Software Development :: Libraries :: Application Frameworks
+Requires-Python: ~=3.6
+Description-Content-Type: text/markdown
