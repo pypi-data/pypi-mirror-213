@@ -1,0 +1,17 @@
+LICENSE
+MANIFEST.in
+README.md
+requirements.txt
+setup.cfg
+setup.py
+datashader_cli/__init__.py
+datashader_cli/cli.py
+datashader_cli/common.py
+datashader_cli/datashader_cli.py
+datashader_cli.egg-info/PKG-INFO
+datashader_cli.egg-info/SOURCES.txt
+datashader_cli.egg-info/dependency_links.txt
+datashader_cli.egg-info/entry_points.txt
+datashader_cli.egg-info/not-zip-safe
+datashader_cli.egg-info/requires.txt
+datashader_cli.egg-info/top_level.txt
