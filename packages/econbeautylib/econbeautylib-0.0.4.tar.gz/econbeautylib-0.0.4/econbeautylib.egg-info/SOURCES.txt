@@ -1,0 +1,14 @@
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+econbeautylib/__init__.py
+econbeautylib/econstats.py
+econbeautylib/tasks.docx
+econbeautylib/tasks_base.txt
+econbeautylib/upload_task_to_base.py
+econbeautylib.egg-info/PKG-INFO
+econbeautylib.egg-info/SOURCES.txt
+econbeautylib.egg-info/dependency_links.txt
+econbeautylib.egg-info/not-zip-safe
+econbeautylib.egg-info/top_level.txt
