@@ -1,0 +1,15 @@
+z3c.saconfig-1.0-py3.11-nspkg.pth,sha256=Ou9y0X2aSJC-56yWL7VjITZxnfX6slYJCSxhMSKad6I,524
+z3c/saconfig/README.rst,sha256=iD2SjztxEDBX90kO6Wp3S4-lNv05jM1hFYFLJ6LdCTU,12609
+z3c/saconfig/__init__.py,sha256=rdUWFspAq3AtykPaiMK4vnkQd76RRpcbhCwe0s_TtkA,394
+z3c/saconfig/interfaces.py,sha256=K-VNdeVl4TThHOyT_25KDpY9ZVEgm-iKFc0FWe11OdA,2572
+z3c/saconfig/meta.zcml,sha256=yiopamEch9fd2gSQQyUSp00N2QQSwsprNf8sN0jW4Dg,549
+z3c/saconfig/scopedsession.py,sha256=dnMhtNm-rJEmzdDUDSvdeakonlxvM8ekiNbbgQmuE0w,1094
+z3c/saconfig/tests.py,sha256=9vxokxvWN9l9xs4WEy6Kskdj_YVkFNOr-waMQsYjCtI,3303
+z3c/saconfig/utility.py,sha256=eGTUTQGkaT3ls8OmlBl23hcjuy5Y3J9hz7MJ-5a_zBw,5721
+z3c/saconfig/zcml.py,sha256=wo1ISEUkgUlhpEjbqPdOOO-d5UiCp-kLi-pTiQelv38,5541
+z3c.saconfig-1.0.dist-info/LICENSE.rst,sha256=PmcdsR32h1FswdtbPWXkqjg-rKPCDOo_r1Og9zNdCjw,2070
+z3c.saconfig-1.0.dist-info/METADATA,sha256=ZxbLCthhPffYKIPZjUlT-JBF7Re4lJizwOOdYVWE02c,16260
+z3c.saconfig-1.0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+z3c.saconfig-1.0.dist-info/namespace_packages.txt,sha256=4IdyINjld7m2QfMrXUzjX5iV4pLTBx0DBASmKaA1wJc,4
+z3c.saconfig-1.0.dist-info/top_level.txt,sha256=4IdyINjld7m2QfMrXUzjX5iV4pLTBx0DBASmKaA1wJc,4
+z3c.saconfig-1.0.dist-info/RECORD,,
