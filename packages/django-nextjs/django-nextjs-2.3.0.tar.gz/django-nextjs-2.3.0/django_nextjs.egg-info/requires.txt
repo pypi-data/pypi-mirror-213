@@ -1,0 +1,13 @@
+Django>=3.2
+aiohttp
+channels
+websockets
+
+[dev]
+pre-commit
+pytest>=7
+pytest-cov
+pytest-django
+pytest-asyncio
+black
+isort
