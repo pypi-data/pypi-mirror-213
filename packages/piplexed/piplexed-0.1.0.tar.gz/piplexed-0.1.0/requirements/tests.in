@@ -1,0 +1,4 @@
+-c pyproject.txt
+pytest
+pytest-pretty
+coverage[toml]

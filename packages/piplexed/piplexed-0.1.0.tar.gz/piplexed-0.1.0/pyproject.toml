@@ -1,0 +1,120 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "piplexed"
+description = 'Find outdated python packages installed with pipx'
+readme = "README.md"
+requires-python = ">=3.7"
+license = "MIT"
+keywords = []
+authors = [
+  { name = "Andrew White", email = "white-aj@outlook.com" },
+]
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "Programming Language :: Python",
+  "Programming Language :: Python :: 3.8",
+  "Programming Language :: Python :: 3.9",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: Implementation :: CPython",
+]
+dependencies = [
+  "pypi_simple>=1.1.0",
+  "packaging",
+  "typer",
+  "rich",
+  "requests-cache",
+  "platformdirs>=3.5"
+]
+dynamic = ["version"]
+
+[project.scripts]
+piplexed = "piplexed.cli:app"
+
+[project.urls]
+Documentation = "https://aj-white.github.io/piplexed/"
+Issues = "https://github.com/unknown/piplexed/issues"
+Source = "https://github.com/unknown/piplexed"
+
+[tool.hatch.version]
+path = "src/piplexed/version.py"
+
+[tool.black]
+target-version = ["py311"]
+line-length = 120
+
+[tool.ruff]
+target-version = "py311"
+line-length = 120
+select = [
+  "A",
+  "ARG",
+  "B",
+  "C4",
+  "COM",
+  "DTZ",
+  "E",
+  "EM",
+  "F",
+  "FBT",
+  "I",
+  "ICN",
+  "ISC",
+  "N",
+  "RUF",
+  "S",
+  "TD",
+  "TID",
+  "UP",
+  "W",
+  "YTT",
+]
+ignore = [
+  # Allow non-abstract empty methods in abstract base classes
+  "B027",
+  # Allow boolean positional values in function calls, like `dict.get(... True)`
+  "FBT003",
+  # Ignore checks for possible passwords and asserts
+  "S101", "S105", "S106", "S107",
+  # Ignore complexity
+  "C901", "PLR0911", "PLR0912", "PLR0913", "PLR0915",
+]
+unfixable = [
+  # Don't touch unused imports
+  "F401",
+]
+
+[tool.ruff.isort]
+force-single-line = true
+known-first-party = ["piplexed"]
+
+[tool.ruff.flake8-bugbear]
+extend-immutable-calls = ["typer.Option"]
+
+[tool.ruff.per-file-ignores]
+"src/piplexed/cli.py" = ["FBT001", "A001"]  # typer uses booleans in CLI args
+
+[tool.coverage.run]
+branch = true
+source = ["piplexed"]
+
+[tool.coverage.paths]
+source = ["src", ".nox/tests-*/**/site-packages"]
+
+[tool.coverage.report]
+show_missing = true
+
+[tool.mypy]
+strict = true
+show_error_codes = true
+
+[[tool.mypy.overrides]]
+module = "tests.*"
+ignore_errors = true
+
+[[tool.mypy.overrides]]
+module = "noxfile"
+disallow_untyped_decorators = false
