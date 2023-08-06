@@ -1,0 +1,43 @@
+Metadata-Version: 2.1
+Name: flexout
+Version: 0.2.4
+Summary: Write text or tabular data to a flexible, easily configurable output: CSV or Excel file, or tabulated stdout/stderr.
+Author-email: Ipamo <dev@ipamo.net>
+Project-URL: Homepage, https://gitlab.com/ipamo/flexout
+Project-URL: Bug Tracker, https://gitlab.com/ipamo/flexout/issues
+Keywords: csv,excel,tabulate,smb,samba,share
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Topic :: Software Development :: Libraries
+Requires-Python: >=3.7.3
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+Requires-Dist: typing-extensions ; python_version < "3.8"
+Provides-Extra: all
+Requires-Dist: tabulate ; extra == 'all'
+Requires-Dist: openpyxl ; extra == 'all'
+Requires-Dist: defusedxml ; extra == 'all'
+Requires-Dist: smbprotocol ; extra == 'all'
+Provides-Extra: excel
+Requires-Dist: openpyxl ; extra == 'excel'
+Requires-Dist: defusedxml ; extra == 'excel'
+Provides-Extra: smb
+Requires-Dist: smbprotocol ; extra == 'smb'
+Provides-Extra: tabulate
+Requires-Dist: tabulate ; extra == 'tabulate'
+
+Flexout
+=======
+
+A Python library to write text or tabular data to a flexible, easily configurable output: CSV or Excel file, or tabulated stdout/stderr.
+
+The output file may be on the local file system or on a Windows/Samba share (including when the library is used on Linux).
+
+**Moved to [zut](https://gitlab.com/ipamo/zut)**
