@@ -1,0 +1,28 @@
+#!/usr/bin/env python3
+
+import sys
+
+import bottle
+
+from ssapi.env import get_env_database
+from ssapi.defaults import DEFAULT_SSAPI_WEB_LISTEN_PORT
+
+
+def print_db_path() -> None:
+    print(f"Using database at: {get_env_database().name}", file=sys.stderr)
+
+
+def main():
+    import ssapi.web  # Required to activate the routes
+
+    print_db_path()
+
+    bottle.run(
+        host="localhost",
+        port=DEFAULT_SSAPI_WEB_LISTEN_PORT,
+        debug=True
+    )
+
+
+if __name__ == "__main__":
+    main()
