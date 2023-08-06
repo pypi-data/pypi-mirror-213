@@ -1,0 +1,16 @@
+configration/__init__.py,sha256=Z0yYyUmOkhvSb4JQXexkVsCOM992lvjOBoXU3XBUgIg,175
+configration/_version.py,sha256=fcRMgwI40iVFwre_3iKQA-N6sHUo3pAErXcKJS63DRg,22
+configration/src/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+configration/src/config.py,sha256=c2i9YofSPNiA58wS2m4tf77vVpPZMm0Wphwjt8JtXpE,2228
+configration/src/constants.py,sha256=u3FGgbdJ_fiRE_Vb9t_aWtqSHYDdRpptqzipw7qN2Rw,350
+configration/src/json_config.py,sha256=pynN2vr2gFCRgT09pxRRjO3PvaY-EuOLaMCNs9YNpyM,1509
+configration/src/toml_config.py,sha256=vH_CblkfjFzDvS35AdJ_MGTj4pXzRcTt5opTaN9HFwc,2779
+configration/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+configration/tests/test_config.py,sha256=DpqmSO0VLSiUakT8Ek1RcZbLsyyHcZHd2b7AUWrc2wM,2848
+configration/tests/test_json.py,sha256=GTjT3ZyeSdHgQUmVArwYrk_gja9kEiElXwbq4oLot60,1670
+configration/tests/test_toml.py,sha256=ltEM5GFwt6FKlkruxVNwgungcG8BFQkWUguiV8yV7Vg,1670
+configration-2.0.3.dist-info/LICENSE.txt,sha256=4h0e1iLfuruOGdqDfs8-aua1e_Ma97UnS8ZfwAau8aE,33889
+configration-2.0.3.dist-info/METADATA,sha256=DwfmZdiMOOJyM8UBfJ9rQmFOx2BhD8CUTxOiao6ziu4,1019
+configration-2.0.3.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+configration-2.0.3.dist-info/top_level.txt,sha256=M9jipHyd_JJybXi0htpdet4t6gwXRRuaR6AgskCmZzY,13
+configration-2.0.3.dist-info/RECORD,,
