@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "aflabs-test-app"
+version = "0.1.0"
+description = "no description"
+authors = ["Ziga Avbreht <ziga.avbreht@gmail.com>"]
+readme = "README.md"
+packages = [{include = "books"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+Django = "^4.2.2"
+books = "^0.1.2"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
