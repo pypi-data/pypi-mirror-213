@@ -1,0 +1,17 @@
+# !/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""
+页面代码
+
+Authors: [email_prefix]
+Date: [date]
+"""
+from dash import Dash, html
+
+
+class Web:
+    application: Dash = Dash(
+        __name__, title=__name__, requests_pathname_prefix="/%s/" % __file__.split("/")[-1].split(".")[0]
+    )
+    # 内容可替换
+    application.layout = html.Div("Test Demo")

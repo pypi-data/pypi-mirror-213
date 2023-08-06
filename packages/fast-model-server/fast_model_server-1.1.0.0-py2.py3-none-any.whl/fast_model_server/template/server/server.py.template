@@ -1,0 +1,13 @@
+# !/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""
+服务入口
+
+Authors: [email_prefix]
+Date: [date]
+"""
+import os
+from fast_model_server.application import Application
+
+
+app = Application(os.path.dirname(os.path.abspath(__file__))).app

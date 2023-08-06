@@ -1,0 +1,48 @@
+# !/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""
+服务处理代码
+
+Authors: [email_prefix]
+Date: [date]
+"""
+import os
+import time
+from fastapi.logger import logger
+
+from fast_model_server.router_service import RouterService
+
+from routers.[router_name].common import [camel_router_name]RouterConfig, RouterConfig
+
+
+class Service(RouterService):
+    def __init__(self, server_config: str):
+        """
+        service初始化
+        :return:
+        """
+        super().__init__(server_config_file=server_config)
+        logger.info("Start [camel_router_name] server at %s", self.env)
+        # 加载配置文件
+        config: [camel_router_name]RouterConfig = [camel_router_name]RouterConfig.parse_file(server_config)
+        self.router_config: RouterConfig = config.[router_name].copy()
+        
+        # 内容可替换
+        time.sleep(2)
+
+    def __del__(self):
+        """
+        service删除
+        :return:
+        """
+        # 内容可替换
+        logger.info("Stop [camel_router_name] server at %s", self.env)
+        time.sleep(2)
+
+    def run(self):
+        """
+        计算逻辑代码入口
+        :return:
+        """
+        # 内容可替换
+        return "[router_name]"
