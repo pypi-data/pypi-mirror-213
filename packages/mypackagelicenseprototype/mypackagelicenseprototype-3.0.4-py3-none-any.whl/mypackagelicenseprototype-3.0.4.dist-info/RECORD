@@ -1,0 +1,8 @@
+parent/PackageContent.py,sha256=ZZtCGX91q67uOfdjCGBEMY1-xvnMYeqELvWy66BcBPE,5525
+parent/__init__.py,sha256=mERdD_YKnxKw8QteEcTs6rXT2xRWyrDXRxL9nDNX3ZE,1374
+parent/pyarmor_runtime_000000/__init__.py,sha256=W_U40-DwAedSB3QKwE-3fum-uC-cAtwDWg5jHw_gRkE,101
+parent/pyarmor_runtime_000000/pyarmor_runtime.so,sha256=BMXVDEa5ximrcDdAguJadFnuvmZhxZl8aq7D9Mxcl7A,771784
+mypackagelicenseprototype-3.0.4.dist-info/METADATA,sha256=QbbXmL6nkIaHvB0900PsVOQV_vjmsuBZGolq-Eeszo8,112
+mypackagelicenseprototype-3.0.4.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+mypackagelicenseprototype-3.0.4.dist-info/top_level.txt,sha256=tPoeaFWZPj-ZvQeGrOjywqPqpZuLErDQBKS1aWQFTZo,7
+mypackagelicenseprototype-3.0.4.dist-info/RECORD,,
