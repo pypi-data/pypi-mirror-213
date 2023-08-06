@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+autodistill_sam_clip/__init__.py
+autodistill_sam_clip/helpers.py
+autodistill_sam_clip/sam_clip.py
+autodistill_sam_clip.egg-info/PKG-INFO
+autodistill_sam_clip.egg-info/SOURCES.txt
+autodistill_sam_clip.egg-info/dependency_links.txt
+autodistill_sam_clip.egg-info/requires.txt
+autodistill_sam_clip.egg-info/top_level.txt

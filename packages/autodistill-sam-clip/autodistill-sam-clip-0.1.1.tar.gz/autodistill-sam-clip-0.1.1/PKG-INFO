@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: autodistill-sam-clip
+Version: 0.1.1
+Summary: SAM-CLIP model for use with Autodistill
+Home-page: https://github.com/autodistill/autodistill-sam-clip
+Author: Roboflow
+Author-email: support@roboflow.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Provides-Extra: dev
+License-File: LICENSE
