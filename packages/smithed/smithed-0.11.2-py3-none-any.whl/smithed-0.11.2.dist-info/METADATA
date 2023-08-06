@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: smithed
+Version: 0.11.2
+Summary: Smithed's Python client with CLI, weld and more
+License: MIT
+Author: Smithed Team
+Author-email: team@smithed.dev
+Requires-Python: >=3.10,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: beet (>=0.88.0,<0.89.0)
+Requires-Dist: bolt (>=0.36.0,<0.37.0)
+Requires-Dist: bolt-expressions (>=0.12.2,<0.13.0)
+Requires-Dist: click (>=8.1.3,<9.0.0)
+Requires-Dist: jsonpath-ng (>=1.5.3,<2.0.0)
+Requires-Dist: mecha (>=0.73.0,<0.74.0)
+Description-Content-Type: text/markdown
+
+# smithed-python
+> The python package for Smithed. Including weld, cli, and libraries (via [`smithed-libraries`](https://github.com/Smithed-MC/Libraries)).
+> **HEAVY WIP**
+

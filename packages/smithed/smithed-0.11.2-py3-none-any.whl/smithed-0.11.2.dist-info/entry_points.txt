@@ -1,0 +1,6 @@
+[beet]
+commands=weld.commands
+
+[console_scripts]
+weld=weld.commands:weld
+
