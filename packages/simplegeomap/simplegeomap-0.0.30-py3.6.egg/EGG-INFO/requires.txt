@@ -1,0 +1,6 @@
+pandas
+pygeodesy
+matplotlib
+numpy
+pyshp
+zarr
