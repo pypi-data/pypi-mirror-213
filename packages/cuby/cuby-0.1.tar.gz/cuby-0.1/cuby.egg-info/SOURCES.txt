@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+cuby.egg-info/PKG-INFO
+cuby.egg-info/SOURCES.txt
+cuby.egg-info/dependency_links.txt
+cuby.egg-info/entry_points.txt
+cuby.egg-info/requires.txt
+cuby.egg-info/top_level.txt
+tests/test_everything.py
