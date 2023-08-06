@@ -1,0 +1,13 @@
+loguru
+pydantic
+cachetools>=3.1.0
+leadguru-common>=0.283.0
+leadguru-data>=0.290.0
+wheel
+setuptools
+twine
+build
+kubernetes
+pyyaml
+pymongo
+pytz
