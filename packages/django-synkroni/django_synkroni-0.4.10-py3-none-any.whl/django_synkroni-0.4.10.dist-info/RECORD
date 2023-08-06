@@ -1,0 +1,16 @@
+synkroni/__init__.py,sha256=Pn1mkyYF7ke4obI6Pyl12DscqY_StU0JQ17usR9jSJE,107
+synkroni/json.py,sha256=spmNkPc2zfobLb6gxdKIoQL4oaSWeo4xHXzehPT_O_A,683
+synkroni/komennot.py,sha256=H6DWStU98-p8Kvm8Dt3fYggO03lywaN5XQyigaWTyog,261
+synkroni/mallit.py,sha256=jPX5A0c2FUyD_gW6UDFGvqCamGf3kbyv6OKaTjX6YqE,159
+synkroni/models.py,sha256=cyfK7VVDxxJ7581rV66SRW65O_cG6jsLbo1tqf1XsT4,22
+synkroni/synkroni.py,sha256=ekOyPA2tiJ0Suq54bzwbjscfwMm6_rroiKih_e6bHHk,2688
+synkroni/toiminnot.py,sha256=Az8f6pRmsWEd7TMD-m6IKyoO7GAdHi3dyozx3x7xJW8,2080
+synkroni/websocket.py,sha256=Af7HctAxnezh8HTqbaBnnDUS6PdvC5v4oYkPLEQ-lw0,5565
+synkroni/static/synkroni/js/synkroni.js,sha256=mi_YfMl6xPko2GuBo9G6Shuwe2xKjxkHDpyNdCp_lA0,9447
+synkroni/templates/synkroni/synkroni.html,sha256=FokKWbOhqafB2KHT1qEIw9Ju4VArdaH7DZigNbTlmnE,859
+django_synkroni-0.4.10.dist-info/METADATA,sha256=GydX4MUgmj6rNc1g-qRCSIZfsZMXeZwqamEQ9TmRR4k,314
+django_synkroni-0.4.10.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+django_synkroni-0.4.10.dist-info/entry_points.txt,sha256=yWtCTe7LC_3ROVmrJb3Z5q04VwEzSgL4QdPFbPT5lwo,47
+django_synkroni-0.4.10.dist-info/historia.json,sha256=sYj_hgXs5AaoL_ySKqq6S7PeOvrV5FLykHuxWMBIHrY,6947
+django_synkroni-0.4.10.dist-info/top_level.txt,sha256=R5P-vTDwgsDFDGKnJge6tu8YJKMoyEWG8oh3LX7KEdo,9
+django_synkroni-0.4.10.dist-info/RECORD,,
