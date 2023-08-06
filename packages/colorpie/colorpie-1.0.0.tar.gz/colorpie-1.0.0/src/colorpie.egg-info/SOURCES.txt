@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.cfg
+src/colorpie/__init__.py
+src/colorpie/constants.py
+src/colorpie/handlers.py
+src/colorpie/mapping.py
+src/colorpie.egg-info/PKG-INFO
+src/colorpie.egg-info/SOURCES.txt
+src/colorpie.egg-info/dependency_links.txt
+src/colorpie.egg-info/not-zip-safe
+src/colorpie.egg-info/top_level.txt

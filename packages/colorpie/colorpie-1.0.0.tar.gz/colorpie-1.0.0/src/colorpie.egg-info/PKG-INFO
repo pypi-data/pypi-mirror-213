@@ -1,0 +1,45 @@
+Metadata-Version: 2.1
+Name: colorpie
+Version: 1.0.0
+Summary: Terminal color style handler.
+Home-page: https://github.com/ClaudiuDrug/colorpie
+Author: Claudiu DRUG
+Author-email: claudiu.drug@outlook.com
+License: MIT License
+Project-URL: Bug Tracker, https://github.com/ClaudiuDrug/colorpie/issues
+Classifier: Programming Language :: Python :: 3.7
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Utilities
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# colorpie
+Terminal color style handler.
+
+### Installation:
+
+```commandline
+python -m pip install [--upgrade] colorpie
+```
+
+### Available tools:
+
+```python
+
+from colorpie import Style4Bit, COLORS, HIGHLIGHTS, ATTRIBUTES as ATTRS
+
+style = Style4Bit(
+    color=COLORS.RED,
+    highlight=HIGHLIGHTS.BLACK,
+    attributes=[ATTRS.BOLD, ATTRS.SLOW_BLINK]
+)
+
+if __name__ == '__main__':
+    print(style.format('Hello, World!'))
+```
