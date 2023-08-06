@@ -1,0 +1,3 @@
+uuid,url,pathname
+323e4d13-fbff-477e-b4b0-56378580f551,https://demo.lizard.net/api/v4/tasks/323e4d13-fbff-477e-b4b0-56378580f551/,threedi_scenario_downloader/tests/testdata/max_wd_batch_1.tif
+ce713e9e-1030-47bc-924b-231d2d3eef64,https://demo.lizard.net/api/v4/tasks/ce713e9e-1030-47bc-924b-231d2d3eef64/,threedi_scenario_downloader/tests/testdata/max_wd_batch_2.tif
