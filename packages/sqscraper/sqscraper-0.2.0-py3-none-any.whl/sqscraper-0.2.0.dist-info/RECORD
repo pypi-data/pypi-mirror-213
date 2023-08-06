@@ -1,0 +1,10 @@
+sqscraper/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sqscraper/__main__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sqscraper/cnbc/__init__.py,sha256=cx3NB_dts68RCaSSnP6XJOLgpFVnnlwh_07rs8H5rXQ,49
+sqscraper/cnbc/quote_strip.py,sha256=vvE47qdswAVsWdmH5bGYJ7NMSy3PQov4NQLPgTweHII,7647
+sqscraper/cnbc/stock_quote.py,sha256=6aJ3Mjp6ZtNkqwwHejPwe2LPkXNLjx6suf-vVRxGNOs,835
+sqscraper-0.2.0.dist-info/LICENSE,sha256=xJqnN9DYrbuKHH3MilZ275gAgpqDizdcyg0uJHtyn5w,1087
+sqscraper-0.2.0.dist-info/METADATA,sha256=A2qNJVoBz7I9m4U1vrKjuSdbrDT6sYZswyDvLQOHOqk,2756
+sqscraper-0.2.0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+sqscraper-0.2.0.dist-info/top_level.txt,sha256=TamDzMSzx0Yaq7DvgsGIQuG3489GUCdpY6wWsy7D6SI,10
+sqscraper-0.2.0.dist-info/RECORD,,
