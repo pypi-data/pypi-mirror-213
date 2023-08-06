@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: mdata
+Version: 0.1.1
+Summary: 
+License: MIT
+Keywords: data format,machine data
+Author: Leah Tacke genannt Unterberg
+Author-email: leah.tgu@pads.rwth-aachen.de
+Requires-Python: >=3.9,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: bottleneck
+Requires-Dist: jupyter (>=1.0,<2.0)
+Requires-Dist: matplotlib (>=3.7.1,<4.0.0)
+Requires-Dist: numba
+Requires-Dist: numexpr
+Requires-Dist: pandas (>=1.5,<2.0)
+Requires-Dist: plotly (>=5.15,<6.0)
+Requires-Dist: seaborn
+Requires-Dist: tables (>=3.8.0,<4.0.0)
+Requires-Dist: tsdownsample (>=0.1.2,<0.2.0)
+Description-Content-Type: text/markdown
+
+This is the official machine data format package.
+
+It supports csv importing, exporting and format compliance checking.
+Machine data is parsed into a python object that provides typed views on the contained measurement and event timeseries.
+
+For a brief overview, see [machine_data_format.pdf](files/info/machine_data_format.pdf).
