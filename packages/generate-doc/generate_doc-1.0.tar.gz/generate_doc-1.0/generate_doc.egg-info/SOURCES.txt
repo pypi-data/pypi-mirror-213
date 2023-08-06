@@ -1,0 +1,9 @@
+setup.py
+generate_doc/__init__.py
+generate_doc/generate_doc.py
+generate_doc.egg-info/PKG-INFO
+generate_doc.egg-info/SOURCES.txt
+generate_doc.egg-info/dependency_links.txt
+generate_doc.egg-info/entry_points.txt
+generate_doc.egg-info/requires.txt
+generate_doc.egg-info/top_level.txt
