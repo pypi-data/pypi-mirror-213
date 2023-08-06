@@ -1,0 +1,6 @@
+progressbar
+autopep8
+flake8
+tqdm
+loguru
+easydict
