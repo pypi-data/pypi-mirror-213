@@ -1,0 +1,47 @@
+[tool.poetry]
+name = "pactsdk"
+version = "0.7.0"
+description = "Python SDK for Pact smart contracts"
+authors = ["Mateusz Tomczyk <mateusz.tomczyk@ulam.io>"]
+homepage = "https://github.com/pactfi/pact-py-sdk"
+repository = "https://github.com/pactfi/pact-py-sdk"
+readme = "README.md"
+license = "MIT"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+py-algorand-sdk = "^2.0.0"
+requests = "^2.27.1"
+cffi = "^1.15.1"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.0.0"
+black = "^22.1.0"
+mypy = "^1.1.1"
+flake8 = "^4.0.1"
+isort = "^5.10.1"
+types-requests = "^2.27.8"
+responses = "^0.18.0"
+freezegun = "^1.2.1"
+Sphinx = "^4.5.0"
+sphinx-rtd-theme = "^1.0.0"
+sphinx_mdinclude = "^0.5.1"
+sphinx-autodoc-typehints = "^1.18.1"
+tealish = "^0.0.2"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.black]
+exclude = ".venv"
+target_version = ["py39"]
+
+[tool.isort]
+multi_line_output = 3
+include_trailing_comma = true
+force_grid_wrap = 0
+use_parentheses = true
+ensure_newline_before_comments = true
+line_length = 88
+skip = [".venv"]
