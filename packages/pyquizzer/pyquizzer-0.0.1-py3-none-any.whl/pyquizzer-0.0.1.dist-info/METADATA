@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: pyquizzer
+Version: 0.0.1
+Summary: placeholder
+Home-page: https://github.com/BjornFJohansson/pyquizzer
+Author: BjornFJohansson
+Author-email: bjornjobb@gmail.com
+Requires-Python: >=3.11,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Project-URL: Repository, https://github.com/BjornFJohansson/pyquizzer
+Description-Content-Type: text/markdown
+
+placeholder
