@@ -1,0 +1,10 @@
+pz-rail-pipelines[full]
+
+[dev]
+jupyter
+seaborn
+coverage
+pylint
+pytest
+pytest-cov
+yamllint
