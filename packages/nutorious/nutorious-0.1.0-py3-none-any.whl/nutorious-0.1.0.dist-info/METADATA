@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: nutorious
+Version: 0.1.0
+Summary: 
+Author: Dzmitry Paulenka
+Author-email: paulenka.dk@gmail.com
+Requires-Python: >=3.11,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: attrs (>=23.1.0,<24.0.0)
+Requires-Dist: cattrs (>=22.2.0,<23.0.0)
+Requires-Dist: click (>=8.1.3,<9.0.0)
+Requires-Dist: pydash (>=7.0.4,<8.0.0)
+Requires-Dist: pyyaml (>=6.0,<7.0)
+Requires-Dist: rich (>=13.3.5,<14.0.0)
