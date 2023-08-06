@@ -1,0 +1,14 @@
+AccessControl
+Acquisition
+plone.protect
+setuptools
+zope.component
+zope.globalrequest
+zope.interface
+zope.publisher
+
+[test]
+five.localsitemanager
+manuel
+plone.testing[zope]
+zope.configuration
