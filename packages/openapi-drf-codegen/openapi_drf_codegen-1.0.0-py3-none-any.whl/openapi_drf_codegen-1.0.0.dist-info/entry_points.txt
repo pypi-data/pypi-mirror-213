@@ -1,0 +1,3 @@
+[console_scripts]
+openapi-drf-codegen=openapi_drf_codegen.main:main
+

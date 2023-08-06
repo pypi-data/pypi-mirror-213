@@ -1,0 +1,10 @@
+openapi_drf_codegen/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+openapi_drf_codegen/codegen.py,sha256=tvynE_sZ4lvUfG4xNTamPH8rVs5l28rD8IoGiXXGG40,16108
+openapi_drf_codegen/main.py,sha256=WPsSnDIZPCfqUK6isJPZgVVAGDLRfe8QALdXqvY7eg0,579
+openapi_drf_codegen/utils/text_templates.py,sha256=GSe-6vNiBJ17YGcp73Xu4IzFEaDSeVpux-mxeZ9635w,1502
+openapi_drf_codegen/utils/types.py,sha256=LQAlgwwTCAbDqb23IezYtL2mJg8iZg0dJj9HdDhke7k,1489
+openapi_drf_codegen-1.0.0.dist-info/LICENSE,sha256=lCJ4YKYjh405u9SsYeWBx6mlizqVsOELarGn33kc_Kc,1070
+openapi_drf_codegen-1.0.0.dist-info/METADATA,sha256=mkmrPfPI8yFAfNwuTB_6iy1-3WC0_ZNe6XehMv59iqc,1548
+openapi_drf_codegen-1.0.0.dist-info/WHEEL,sha256=Zb28QaM1gQi8f4VCBhsUklF61CTlNYfs9YAZn-TOGFk,88
+openapi_drf_codegen-1.0.0.dist-info/entry_points.txt,sha256=Vq64LWo1_QUVkOY7VoLMtrfPzDo-pGRo9GpJMidnLmA,69
+openapi_drf_codegen-1.0.0.dist-info/RECORD,,
