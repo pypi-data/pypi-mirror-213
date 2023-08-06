@@ -1,0 +1,22 @@
+import os
+
+MISERIE = "Miserie"
+KLEINE_MISERIE = f"Kleine {MISERIE}"
+GROTE_MISERIE = f"Grote {MISERIE}"
+GROTE_MISERIE_OP_TAFEL = f"{GROTE_MISERIE} op tafel"
+SOLO_SLIM = "Solo Slim"
+KLEINE_SOLO_SLIM = f"Kleine {SOLO_SLIM}"
+GROTE_SOLO_SLIM = f"Grote {SOLO_SLIM}"
+VRAGEN_EN_MEEGAAN = "Vragen en Meegaan"
+SOLO = "Solo"
+TROEL = "Troel"
+PICCOLO = "Piccolo"
+ABONDANCE = "Abondance"
+SAVE_FOLDER = "./results/"
+CONFIG_FOLDER = os.path.join(os.path.dirname(__file__), "config")
+SOLO_POINT_SYSTEM_FILE_NAME = "solo_point_system.json"
+ABONDANCE_POINT_SYSTEM_FILE_NAME = "abondance_point_system.json"
+MISERIE_POINT_SYSTEM_FILE_NAME = "miserie_point_system.json"
+TROEL_POINT_SYSTEM_FILE_NAME = "troel_point_system.json"
+VRAGEN_EN_MEEGAAN_POINT_SYSTEM_FILE_NAME = "vragen_en_meegaan_point_system.json"
+GAME_TYPES_FILE_NAME = "game_types.json"

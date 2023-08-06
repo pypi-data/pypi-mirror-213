@@ -1,0 +1,3 @@
+include LICENSE
+recursive-include whist_score/config *.json
+
