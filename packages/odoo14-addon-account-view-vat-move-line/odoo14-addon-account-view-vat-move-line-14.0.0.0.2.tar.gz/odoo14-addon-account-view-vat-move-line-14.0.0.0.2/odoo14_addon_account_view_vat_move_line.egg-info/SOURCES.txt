@@ -1,0 +1,12 @@
+setup.py
+odoo/addons/account-view-vat-move-line/__init__.py
+odoo/addons/account-view-vat-move-line/__manifest__.py
+odoo/addons/account-view-vat-move-line/models/__init__.py
+odoo/addons/account-view-vat-move-line/models/account_move_line.py
+odoo/addons/account-view-vat-move-line/views/account_move_line_views.xml
+odoo14_addon_account_view_vat_move_line.egg-info/PKG-INFO
+odoo14_addon_account_view_vat_move_line.egg-info/SOURCES.txt
+odoo14_addon_account_view_vat_move_line.egg-info/dependency_links.txt
+odoo14_addon_account_view_vat_move_line.egg-info/not-zip-safe
+odoo14_addon_account_view_vat_move_line.egg-info/requires.txt
+odoo14_addon_account_view_vat_move_line.egg-info/top_level.txt
