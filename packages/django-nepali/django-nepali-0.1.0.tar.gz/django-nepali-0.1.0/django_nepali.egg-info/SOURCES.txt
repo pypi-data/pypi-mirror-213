@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+django_nepali/__init__.py
+django_nepali.egg-info/PKG-INFO
+django_nepali.egg-info/SOURCES.txt
+django_nepali.egg-info/dependency_links.txt
+django_nepali.egg-info/requires.txt
+django_nepali.egg-info/top_level.txt
+django_nepali/templatetags/__init__.py
+django_nepali/templatetags/nepalidatetime.py
+django_nepali/templatetags/nepalinumber.py
