@@ -1,0 +1,14 @@
+uedition/__about__.py,sha256=81rkEiy4uHccHCiIfkc6zUUQSY45GhdOlsFd-Bag__o,157
+uedition/__init__.py,sha256=IfQLccTve4Bc-f7TpeuOwXWE03DFAJoWpveFacMiBSA,285
+uedition/__main__.py,sha256=FpsS6LdCNPdC5twonoqvfrqWDyCNreKQz7t9ZeSHcLI,182
+uedition/settings.py,sha256=apaCOY9gwQYcUHE1oR2n5xyEIjhJrIy1ijPsu1-5RCA,1944
+uedition/cli/__init__.py,sha256=MIB9vMc_tcaqyMDHpwrvZELWW4mOIpIm6f_7-ZnurtU,1308
+uedition/cli/check.py,sha256=pp2NinbUyzFWrRTrXA8uXQLmyhkGbNM80KwZ19Lgvok,6970
+uedition/ext/__init__.py,sha256=ILWfmUQhnWjMMLRIYwf32atKkmZ7UAe9qEcPzNO2cwk,206
+uedition/ext/config.py,sha256=nSZmfIn-YLocYvSQEiIKk3RtzIpeqbtxmywASGMMCN4,5452
+uedition/ext/tei.py,sha256=qyhSJfSlzTU3EYF9GXsvNcKJ4lbUov6Pod0O-eJUFw0,9716
+uedition-0.1.0.dist-info/METADATA,sha256=e1yKpKZqjF9Q_WtrFF31cNRqSNr02am9peymDT1ZTYI,1912
+uedition-0.1.0.dist-info/WHEEL,sha256=9QBuHhg6FNW7lppboF2vKVbCGTVzsFykgRQjjlajrhA,87
+uedition-0.1.0.dist-info/entry_points.txt,sha256=Mor9i2VYxcNQcLbMmWGpFYSwsMs3MyewnLmFI3IG0Ls,46
+uedition-0.1.0.dist-info/licenses/LICENSE.txt,sha256=MhLJl8GE8mnuO5i_pvKaobpIGnhiAEdkY-a6LKiuwCE,1101
+uedition-0.1.0.dist-info/RECORD,,
