@@ -1,0 +1,43 @@
+&CONTROL
+calculation =  'vc-relax'
+restart_mode =  'from_scratch'
+outdir = './tmp/'
+pseudo_dir =  '/home/zsh/pseudo/pbe'
+prefix = 'pw'
+tprnfor=.true.
+tstress=.true.
+etot_conv_thr=1.d-12
+forc_conv_thr=1.d-8
+/
+&SYSTEM
+ibrav=4
+celldm(1) =      11.295996769902
+celldm(3) =       3.345833330372
+nat =   8
+ntyp =  2
+ecutwfc =  100
+ecutrho =  500
+occupations = 'smearing'
+smearing ='gaussian'
+degauss = 0.001
+/
+&ELECTRONS
+conv_thr=1.d-8
+/
+&IONS
+/
+&CELL
+cell_dofree='2Dxy'
+press_conv_thr=1.d-1
+/
+ATOMIC_POSITIONS crystal
+Cl    0.00000000000000     0.36843220828573     0.43360736635857
+Cl    0.00000000000000     0.63156779171427     0.56639263364143
+Cl    0.63156779171427     0.63156779171427     0.43360736635857
+Cl    0.36843220828573     0.36843220828573     0.56639263364143
+Cl    0.36843220828573     0.00000000000000     0.43360736635857
+Cl    0.63156779171427     0.00000000000000     0.56639263364143
+Ni    0.33333333333333     0.66666666666667     0.50000000000000
+Ni    0.66666666666667     0.33333333333333     0.50000000000000
+K_POINTS automatic
+ 10  10   3  0 0 0
