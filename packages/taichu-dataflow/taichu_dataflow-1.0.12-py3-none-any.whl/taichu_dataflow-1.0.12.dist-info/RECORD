@@ -1,0 +1,11 @@
+taichu_dataflow/__init__.py,sha256=yFzoG7EvVaJnO0NpXIFpoNEg6_aj8UjsKR3rzbzvYQU,533
+taichu_dataflow/export_back.py,sha256=Z2Oy-GL-awON5zQfVDq1aY8PihVIIaeHxJ33gLGYAKk,2345
+taichu_dataflow/filebeat.sh,sha256=bJGqYzCLYZJHtgG7-dHQyyh9kCjkwF9eVT8-sVGX7Jk,1151
+taichu_dataflow/storage/__init__.py,sha256=j05l2kwQnkCSdNDBrULN8dhfs1CQjyFfWrN8jvg-7LM,1280
+taichu_dataflow/storage/alluxio.py,sha256=OG4E3p1MUTKZl0mVYdEH8e9tmhiITJ4cA_9Z90zP-mc,1616
+taichu_dataflow/storage/env.py,sha256=n2_ycoT9p09KgFlAEGmDwbSMSlA2pLR6yPBvjToKheY,1116
+taichu_dataflow/storage/obs.py,sha256=UL_8PF8gBvZSQvAg71StRheJPwIFoi7d2-LWFExZKLg,1034
+taichu_dataflow-1.0.12.dist-info/METADATA,sha256=_7d1UUTYlwoj8UbtnYkdRlmaoUv3AHxLIKs_vil-MYM,322
+taichu_dataflow-1.0.12.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+taichu_dataflow-1.0.12.dist-info/top_level.txt,sha256=bwf2iA7aY3RwAfwRfF3E_dBasieOrlts2vgr3VhIJyw,16
+taichu_dataflow-1.0.12.dist-info/RECORD,,
