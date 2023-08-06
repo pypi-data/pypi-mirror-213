@@ -1,0 +1,39 @@
+Metadata-Version: 2.1
+Name: lnbits-extension
+Version: 0.0.1
+Summary: LNbits, free and open-source Lightning wallet and accounts system.
+Author: Alan Bits
+Author-email: alan@lnbits.com
+Requires-Python: >=3.9,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: Cerberus (==1.3.4)
+Requires-Dist: async-timeout (==4.0.2)
+Requires-Dist: bech32 (==1.2.0)
+Requires-Dist: bitstring (==3.1.9)
+Requires-Dist: cashu (==0.9.0)
+Requires-Dist: click (==8.0.4)
+Requires-Dist: docker (>=6.1.3,<7.0.0)
+Requires-Dist: ecdsa (==0.18.0)
+Requires-Dist: embit (==0.4.9)
+Requires-Dist: fastapi (>=0,<1)
+Requires-Dist: grpcio (==1.51.1)
+Requires-Dist: httpx (==0.23.0)
+Requires-Dist: jinja2 (==3.0.1)
+Requires-Dist: lnurl (==0.3.6)
+Requires-Dist: loguru (==0.6.0)
+Requires-Dist: protobuf (==4.21.12)
+Requires-Dist: psycopg2-binary (==2.9.1)
+Requires-Dist: pydantic (==1.10.4)
+Requires-Dist: pyln-client (==0.11.1)
+Requires-Dist: pyqrcode (==1.2.1)
+Requires-Dist: shortuuid (==1.0.11)
+Requires-Dist: sqlalchemy (==1.3.24)
+Requires-Dist: sqlalchemy-aio (==0.17.0)
+Requires-Dist: sse-starlette (==0.6.2)
+Requires-Dist: typing-extensions (==4.4.0)
+Requires-Dist: uvicorn (==0.18.3)
+Requires-Dist: uvloop (==0.16.0)
+Requires-Dist: websockets (==10.0)
