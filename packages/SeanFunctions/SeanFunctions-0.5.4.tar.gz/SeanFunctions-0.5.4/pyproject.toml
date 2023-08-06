@@ -1,0 +1,66 @@
+[project]
+name = "SeanFunctions"
+version = "v0.5.4"
+# dynamic = ["version"]
+authors = [
+  { name="Sean Fayfar", email="sfayfar@gmail.com" },
+]
+description = "Collection of useful python functions"
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "numpy",
+    "scipy",
+    "lmfit",
+    "uncertainties",
+    "mendeleev"
+]
+
+[project.urls]
+Homepage = "https://github.com/sfayfar/SeanFunctions"
+"Bug Tracker" = "https://github.com/sfayfar/SeanFunctions/issues"
+
+
+[options]
+packages = "find:"
+python_requires = ">=3.7"
+setup_requires = "setuptools_scm"
+package_dir = "src"
+include_package_data = "True"
+
+
+[tool.setuptools.package-data]
+"SeanFunctions.Data" = ["*.csv"]
+
+[build-system]
+requires = [
+    "setuptools>=61.0",
+    "wheel",
+    "setuptools_scm[toml]>=6.2",
+]
+build-backend = "setuptools.build_meta"
+
+
+[tool.bumpver.file_patterns]
+"pyproject.toml" = [
+    'version = "{version}"',
+]
+"src/SeanFunctions/__init__.py" = ['__version__ = "{version}"']
+"README.md" = ['{version}']
+
+
+[tool.bumpver]
+current_version = "v0.5.4"
+version_pattern = "vMAJOR.MINOR.PATCH[-TAGNUM]"
+commit_message = "bump version to {new_version}"
+commit = true
+tag = true
+push = true
+
+
+
