@@ -1,0 +1,10 @@
+dockery-0.2.3.dist-info/METADATA,sha256=uVqXos7xD-bMhnTGLJvTloxnzF-FwKk5vZ8NYD8D9dY,998
+dockery-0.2.3.dist-info/WHEEL,sha256=2pzpU5yX8ZDRkL1JJPwjqHXoJgM2dqtofaxvD6IHFj4,90
+dockery-0.2.3.dist-info/entry_points.txt,sha256=j98F4ADSIzjKD-5Fo4oglA1mt6nF_G3-W9KLFIj9edk,50
+dockery-0.2.3.dist-info/licenses/LICENSE,sha256=MfkNyZDZquTulwPaIAtAcAUoWbJnB3BUTrqGyRHImE8,1082
+dockery/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dockery/dockery.py,sha256=bdFCD8YrpZ0D38EwKE6MxXe6_FI4uRfck2V04_N0a7s,2489
+dockery/gui.py,sha256=7cQ7APNfbzSJW78chu8ayavb8yNB7YjPPyY1WDiBzJY,5022
+dockery/style.css,sha256=bN_H8rhCDsYsSJZPyZegg65H_zklhRTGUvbLsQm576o,322
+dockery/utils.py,sha256=UaCFfnRTa4GHaNgXgYkv5hvGKrhqmlm1nkWRQX78XkU,881
+dockery-0.2.3.dist-info/RECORD,,
