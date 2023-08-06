@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+maryChain.egg-info/PKG-INFO
+maryChain.egg-info/SOURCES.txt
+maryChain.egg-info/dependency_links.txt
+maryChain.egg-info/requires.txt
+maryChain.egg-info/top_level.txt
