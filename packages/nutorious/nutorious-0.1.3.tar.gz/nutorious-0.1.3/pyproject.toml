@@ -1,0 +1,35 @@
+[tool.poetry]
+name = "nutorious"
+version = "0.1.3"
+description = ""
+authors = ["Dzmitry Paulenka <paulenka.dk@gmail.com>"]
+readme = "README.md"
+# TODO: what does this next line actually do ?
+# packages = [{include = "nutorious"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+rich = "^13.4.1"
+pyyaml = "^6.0"
+attrs = "^23.1.0"
+click = "^8.1.3"
+cattrs = "^23.1.2"
+pydash = "^7.0.4"
+
+[tool.poetry.group.test.dependencies]
+pytest = "^7.3.1"
+pytest-mock = "^3.10.0"
+pytest-watch = "^4.2.0"
+
+[tool.poetry.scripts]
+nutorious = "nutorious:main"
+
+[tool.poe.tasks]
+nutorios = 'python3 -m nutorious report'
+watch = 'python3 -m nutorious report --w'
+today = 'python3 -m nutorious report'
+todayw = 'python3 -m nutorious report --w'
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
