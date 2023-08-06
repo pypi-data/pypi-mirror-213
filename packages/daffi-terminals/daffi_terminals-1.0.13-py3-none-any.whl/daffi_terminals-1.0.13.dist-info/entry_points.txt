@@ -1,0 +1,2 @@
+[console_scripts]
+dterm = daffi_terminals.main:main

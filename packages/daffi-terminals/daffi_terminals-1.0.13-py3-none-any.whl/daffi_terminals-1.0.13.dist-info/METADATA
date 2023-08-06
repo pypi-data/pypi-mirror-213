@@ -1,0 +1,72 @@
+Metadata-Version: 2.1
+Name: daffi-terminals
+Version: 1.0.13
+Summary: Remote terminal control
+Project-URL: Source, https://github.com/600apples/dafi-terminals
+Author-email: Volodymyr Boiko <600apples@gmail.com>
+License-Expression: MIT
+License-File: LICENSE.txt
+Keywords: async,debug,debugging,distributed,embedded,iot,python,remote,remote control,rpc,ssh,stream,webssh
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: System Administrators
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Topic :: Internet
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Software Development :: Object Brokering
+Classifier: Topic :: Software Development :: Testing
+Classifier: Topic :: System :: Clustering
+Classifier: Topic :: System :: Monitoring
+Classifier: Topic :: System :: Networking
+Classifier: Topic :: System :: Systems Administration
+Requires-Python: >=3.8
+Requires-Dist: daffi>=2.2.1
+Requires-Dist: fastapi>=0.95.0
+Requires-Dist: uvicorn[standard]>=0.21.1
+Description-Content-Type: text/markdown
+
+## Daffi Terminals
+
+Simple web based application designed to facilitate the connection to remote terminals.
+
+## Preview
+![sc.png](https://raw.githubusercontent.com/600apples/dafi-terminals/main/docs/sc.png)
+
+### How it works
+
+![how-it-works](https://raw.githubusercontent.com/600apples/dafi-terminals/main/docs/intro.png)
+
+
+### Get started
+
+1. Install this app, run command `pip install daffi-terminals`
+2. Start a router, run command `dterm start-router --rpc-host=0.0.0.0 --rpc-port=9999 --web-host=0.0.0.0 --web-port=8888`
+3. Connect worker to router, run command `dterm start-worker --rpc-host=0.0.0.0 --rpc-port=9999` (you can connect as many workers as you want)
+3. Navigate [http://localhost:8888](http://localhost:8888/) in your browser
+
+#### `start-router` arguments
+
+| Argument | Description | Required  |
+|----------|-------------|-----------|
+| `--rpc-host` | host for communication between router and workers | Yes |
+| `--rpc-port` | port for communication between router and workers | Yes |
+| `--web-host` | host for serving web server | Yes |
+| `--web-port` |  port for serving web server | Yes |
+| `--ssl-cert` | ssl certificate for connection encryption between router and workers | No |
+| `--ssl-key` | ssl key for connection encryption between router and workers | No |
+
+
+#### `start-worker` arguments
+
+| Argument | Description | Required  |
+|----------|-------------|-----------|
+| `--rpc-host` | router rpc host | Yes |
+| `--rpc-port` | router rpc port | Yes |
+| `--name` | worker name. This name must be unique across all workers. If not provided then random name will be assigned | No |
+| `--ssl-cert` | ssl certificate for connection encryption between router and workers | No |
+| `--ssl-key` | ssl key for connection encryption between router and workers | No |
