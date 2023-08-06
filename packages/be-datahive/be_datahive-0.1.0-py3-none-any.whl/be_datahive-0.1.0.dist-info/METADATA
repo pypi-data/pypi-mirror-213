@@ -1,0 +1,72 @@
+Metadata-Version: 2.1
+Name: be-datahive
+Version: 0.1.0
+Summary: A Python wrapper for the BEDATAHIVE API
+Home-page: https://github.com/Lucas749/be_datahive
+Author: Lucas Schneider
+Author-email: lucas.schneider@cs.ox.ac.uk
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Description-Content-Type: text/markdown
+Requires-Dist: requests
+Requires-Dist: pandas
+Requires-Dist: numpy
+Requires-Dist: io
+
+# be-datahive
+
+[![image](https://img.shields.io/pypi/v/be_datahive.svg)](https://pypi.python.org/pypi/be_datahive)
+
+Python library for the [BE-dataHIVE
+API](https://be-datahive.com/documentation.html).
+
+# Installation
+
+`be_datahive` is available on
+[PYPI](https://pypi.python.org/pypi/be_datahive/). Install with `pip`:
+
+``` bash
+pip install be_datahive
+```
+
+# Documentation
+
+Create an `api` object for interacting with the API:
+
+``` python
+from be_datahive import be_datahive
+api = be_datahive()
+```
+
+Obtain efficiency & bystander data:
+
+``` python
+efficiency_data = api.get_efficiency()
+bystander_data = api.get_bystander()
+```
+
+Convert efficiency & bystander data into machine-ready arrays:
+
+``` python
+ef_features, ef_target = api.get_efficiency_ml_arrays(efficiency_data, encoding='one-hot')
+by_features, by_target = api.get_bystander_ml_arrays(bystander_data, encoding='one-hot')
+```
+
+# Citation
+When using the [BE-dataHIVE
+API](https://be-datahive.com/documentation.html), please cite our paper as outlined below. 
+
+```bibtex
+@article{Schneider.2023,
+    title = "BE-dataHIVE: a Base Editing Database",
+    author = "Lucas Schneider, Peter Minary",
+    year = "2023",
+}
+```
+
