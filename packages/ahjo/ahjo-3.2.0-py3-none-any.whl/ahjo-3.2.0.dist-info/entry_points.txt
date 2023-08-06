@@ -1,0 +1,5 @@
+[console_scripts]
+ahjo = ahjo.scripts.master:main
+ahjo-init-project = ahjo.scripts.init_project:main
+ahjo-multi-project-build = ahjo.scripts.multi_project_build:main
+ahjo-upgrade = ahjo.scripts.upgrade_project:main
