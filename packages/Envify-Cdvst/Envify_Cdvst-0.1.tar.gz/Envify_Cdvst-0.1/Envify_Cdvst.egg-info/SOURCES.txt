@@ -1,0 +1,7 @@
+LICENSE.txt
+setup.py
+Envify_Cdvst/__init__.py
+Envify_Cdvst.egg-info/PKG-INFO
+Envify_Cdvst.egg-info/SOURCES.txt
+Envify_Cdvst.egg-info/dependency_links.txt
+Envify_Cdvst.egg-info/top_level.txt
