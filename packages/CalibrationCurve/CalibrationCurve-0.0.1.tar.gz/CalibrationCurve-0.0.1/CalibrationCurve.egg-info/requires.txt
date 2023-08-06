@@ -1,0 +1,9 @@
+fastcore
+pandas
+statsmodels
+matplotlib.pyplot
+numpy
+seaborn
+scipy
+
+[dev]

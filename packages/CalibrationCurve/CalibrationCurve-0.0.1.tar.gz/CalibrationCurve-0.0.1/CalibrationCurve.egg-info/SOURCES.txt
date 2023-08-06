@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+README.md
+settings.ini
+setup.py
+CalibrationCurve/__init__.py
+CalibrationCurve/_modidx.py
+CalibrationCurve/core.py
+CalibrationCurve.egg-info/PKG-INFO
+CalibrationCurve.egg-info/SOURCES.txt
+CalibrationCurve.egg-info/dependency_links.txt
+CalibrationCurve.egg-info/entry_points.txt
+CalibrationCurve.egg-info/not-zip-safe
+CalibrationCurve.egg-info/requires.txt
+CalibrationCurve.egg-info/top_level.txt
