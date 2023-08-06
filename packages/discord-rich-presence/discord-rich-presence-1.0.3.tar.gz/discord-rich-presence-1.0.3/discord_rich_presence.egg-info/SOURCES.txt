@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+discord_rich_presence.egg-info/PKG-INFO
+discord_rich_presence.egg-info/SOURCES.txt
+discord_rich_presence.egg-info/dependency_links.txt
+discord_rich_presence.egg-info/top_level.txt
+discordrp/__init__.py
+discordrp/presence.py
+discordrp/py.typed
