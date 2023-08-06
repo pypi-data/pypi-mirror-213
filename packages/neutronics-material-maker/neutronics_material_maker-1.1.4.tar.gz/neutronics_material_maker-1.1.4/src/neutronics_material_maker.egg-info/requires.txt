@@ -1,0 +1,12 @@
+asteval>=0.9.20
+
+[density]
+coolprop
+
+[docs]
+sphinx
+sphinx_autodoc_typehints
+
+[tests]
+pytest
+pytest-cov
