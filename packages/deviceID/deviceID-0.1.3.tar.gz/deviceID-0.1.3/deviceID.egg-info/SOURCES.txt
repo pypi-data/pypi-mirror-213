@@ -1,0 +1,9 @@
+README.md
+setup.py
+deviceID/__init__.py
+deviceID/deviceID.py
+deviceID.egg-info/PKG-INFO
+deviceID.egg-info/SOURCES.txt
+deviceID.egg-info/dependency_links.txt
+deviceID.egg-info/top_level.txt
+tests/test_deviceID.py
