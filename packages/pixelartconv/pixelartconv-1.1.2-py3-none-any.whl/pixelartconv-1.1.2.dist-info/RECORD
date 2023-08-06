@@ -1,0 +1,9 @@
+pixelartconv/__init__.py,sha256=dv7iuojs9DHakviD2XxGsQ7a0_IrfSL9qF4bw4CE4MM,73
+pixelartconv/__main__.py,sha256=5coeURrVH2SvPT-0axAim3Ttfhtb2Tgo3xyw8Nl21aI,1020
+pixelartconv/file_management.py,sha256=S6-ZE3frfIdUu8agejw2YXrh0ORv4XsNqES4w3lsAMw,5214
+pixelartconv/logic.py,sha256=oDYUdkJuqnvaKWQOJ9_rvYHIoyj4useJCaDlPWPBl6A,3909
+pixelartconv/script.py,sha256=pzQU-r5E8affGf9_zXv6z4lGZBY-GaD7otlKh7BdfPw,1752
+pixelartconv-1.1.2.dist-info/METADATA,sha256=NXbbCaSnv_8s_xDoWFOGOfwiIA5J4zMBpdDZuZ79lHo,3968
+pixelartconv-1.1.2.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+pixelartconv-1.1.2.dist-info/top_level.txt,sha256=EZAazD-wtvWEQ5qU0AWLUxeuqCmvfxJeBra83p-PX-g,13
+pixelartconv-1.1.2.dist-info/RECORD,,
