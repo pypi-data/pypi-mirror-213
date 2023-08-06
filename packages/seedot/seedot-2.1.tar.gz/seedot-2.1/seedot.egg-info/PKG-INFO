@@ -1,0 +1,112 @@
+Metadata-Version: 2.1
+Name: seedot
+Version: 2.1
+Summary: SEEDOT: Tool for Enhancing Sentiment Lexicon with Machine Learning
+Home-page: https://github.com/SEEDOT1/SEEDOT
+Author: ['Seedot']
+Author-email: seedotvsvader@gmail.com
+License: MIT License: http://opensource.org/licenses/MIT
+Keywords: seedot,vader,sentiment,analysis,opinion,mining,nlp,text,data,text analysis,opinion analysis,sentiment analysis,text mining,twitter sentiment,opinion mining,social media,twitter,social,media
+Platform: any
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: Topic :: Scientific/Engineering :: Information Analysis
+Classifier: Topic :: Text Processing :: Linguistic
+Classifier: Topic :: Text Processing :: General
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
+<!-- <h1 align="center">
+<img src="https://gitlab.com/anna.giabelli/TaxoSS/-/blob/master/img/logo.svg" alt="TaxoSS" width="400">
+</h1> -->
+<h1 align="center">SEEDOT</h1>
+
+<p align="center">
+  <a href="#description">Description</a> •
+  <a href="#installation">Installation</a> •
+  <a href="#usage">Usage</a>
+</p>
+
+---
+
+## Description
+
+The **seedot** project aims to overcome the limitations of lexicon-based sentiment analysis tools, such as VADER, which are too general and not suitable for specific contexts. It addresses issues like word ambiguity, where a term may have different meanings based on the domain.
+For example, "bull" can refer to an animal or indicate positive growth in the financial domain. 
+The project consists of two main parts that lay the foundation for a comprehensive system capable of recognizing and analyzing specific discussion topics.
+
+The SEEDOT package provides specialized dictionaries for sentiment analysis in the following domains:
+- Food: food review on amazon
+- Electronics: review of electronic products on amazon
+- Hotel: review of amusement parks on tripadvisor
+- Finance: reviews and tweets of financial topics
+
+The key takeaway is that using specialized dictionaries trained on specific lexicons consistently improves the performance of VADER for sentiment analysis. Later on more domain will be added.
+
+We encourage you to explore the insights and input provided by this project, which involves developing a system capable of identifying the topic of discussion in text and performing accurate analysis using specialized dictionaries. Furthermore, if you have specialized dictionaries that you would like to contribute, we welcome your collaboration to expand the range of options provided by **seedot**.
+
+## Requirements
+
+- Python 3.6 or later
+
+## Installation
+
+**seedot** can be installed through `pip` (the Python package manager) in the following way:
+
+```bash
+pip install seedot
+```
+
+## Usage
+
+### Call domain specific dictonaries
+
+The **seedot** package is designed to offer the same functionalities as the VADER package while also enabling the ability to invoke specific dictionaries for sentiment analysis in different domains.
+
+The callable domain are presented in the following example:
+
+```python
+from seedot import seedot_food, seedot_electronic, seedot_hotel, seedot_finance
+```
+
+### Sentiment functions
+
+The **seedot** package is a powerful tool for performing sentiment analysis in specific domains. It offers two main functions that allow you to leverage domain-specific dictionaries for accurate sentiment analysis:
+
+- SentiText (`ST`): By calling the SentiText() function, you can identify sentiment-relevant string-level properties of input text. This function provides insights into the sentiment-related aspects of the text.
+- SentimentIntensityAnalyzer (`SIA`): The SentimentIntensityAnalyzer() function assigns a sentiment intensity score to sentences. This score quantifies the sentiment expressed in a sentence, indicating the level of positivity or negativity.
+
+To make the most of domain-specific sentiment analysis, the **seedot** package provides multiple domain-specific dictionaries. You can easily access these dictionaries using the following syntax:
+
+```python
+from seedot.seedot_food import food_ST, food_SIA
+from seedot.seedot_electronic import electronic_ST, electronic_SIA
+from seedot.seedot_hotel import hotel_ST, hotel_SIA
+from seedot.seedot_finance import finance_ST, finance_SIA
+```
+
+Each domain-specific dictionary includes subfunctions that have been kept the same as those found in VADER, ensuring compatibility and familiarity. For detailed information and exploration of all the possibilities, we recommend referring to the official VADER repository on GitHub: <https://github.com/cjhutto/vaderSentiment>
+
+With the **seedot** package, you can effortlessly perform sentiment analysis in various domains, unlocking valuable insights from text data.
+
+### Example
+
+Each domain-specific dictionary within the **seedot** package shares the same subfunctions, allowing for consistent usage across domains. To showcase the functionality, let's take a look at an example using the finance domain dictionary:
+
+```python
+from seedot.seedot_finance import finance_SIA
+sentence = "Seedot stock will explode!!!"
+analyzer = seedot_finance.finance_SIA()
+vs = analyzer.polarity_scores(sentence) 
+print("{:<13} {}".format(sentence, str(vs))
+
+Seedot stock will explode!!! {'neg': 0.0, 'neu': 0.155, 'pos': 0.845, 'compound': 0.9165}
+```
+
+In this example, we import the finance sentiment analysis functions from the **seedot** package. We create an instance of the finance_SIA analyzer and use it to obtain the sentiment intensity scores for the given sentence. The output provides a dictionary with the sentiment scores, including the negative (neg), neutral (neu), positive (pos), and compound scores.
+
+By using the **seedot** package, you can easily perform sentiment analysis in specific domains and gain valuable insights from textual data.
