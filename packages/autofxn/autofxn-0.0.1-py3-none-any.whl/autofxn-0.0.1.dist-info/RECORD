@@ -1,0 +1,10 @@
+autofxn/__init__.py,sha256=amuUS1ibMooq5ZgDl38lQcWpFRiQIAaG4Mz1CFD38Ps,136
+autofxn/cli.py,sha256=4F6aGla7BQJ9cSG3U7AT5rnxUfFCS9SWAO3fd1K1W3Y,2433
+autofxn/create.py,sha256=5ZMHCOM9UXqQ1laLekDj66gTMCqETyfM8C6eP1dG2EM,3745
+autofxn/version.py,sha256=njaF_n0Yt6laidPz9bDQd6ZSCe5yp6mDjzg6xwPCSC0,98
+autofxn-0.0.1.dist-info/LICENSE,sha256=QwcOLU5TJoTeUhuIXzhdCEEDDvorGiC6-3YTOl4TecE,11356
+autofxn-0.0.1.dist-info/METADATA,sha256=F0irhugM5Ah3dGnQ-TJK9p4BWalCG1hPgIHvXacPRh0,829
+autofxn-0.0.1.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+autofxn-0.0.1.dist-info/entry_points.txt,sha256=8bWye3dZ33DYB0D7XWfW2nvPvHLlJa6P470umO7O9wk,45
+autofxn-0.0.1.dist-info/top_level.txt,sha256=jRdWj3PvHJOqCGoL4zJikUc4byYTRTKTQnJ41TE0sJQ,8
+autofxn-0.0.1.dist-info/RECORD,,
