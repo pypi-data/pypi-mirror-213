@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: gen-aws-federated-signin-url
+Version: 0.1.1
+Summary: Generate AWS Federated Signin URL
+Classifier: Programming Language :: Python :: 3.10
+Requires-Python: >=3.10.0
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
+# gen_aws_federated_signin_url
+
+Generate AWS Federated Signin URL
+
+## Install
+
+```
+pip install gen_aws_federated_signin_url
+```
+
+## Usage
+
+```python
+from gen_aws_federated_signin_url import GenAwsFederatedSigninUrl
+
+url = GenAwsFederatedSigninUrl.client()
+signin_url = url.genrate(
+    role_arn='arn:aws:iam::123456789012:role/role-name',
+)
+print(signin_url)
+```
