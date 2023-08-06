@@ -1,0 +1,8 @@
+setup.cfg
+setup.py
+django-dellavrite/__init__.py
+django_dellavrite.egg-info/PKG-INFO
+django_dellavrite.egg-info/SOURCES.txt
+django_dellavrite.egg-info/dependency_links.txt
+django_dellavrite.egg-info/not-zip-safe
+django_dellavrite.egg-info/top_level.txt
