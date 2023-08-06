@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: pitop.core
+Version: 0.31.0.post3
+Summary: pi-top Python SDK.
+Home-page: https://github.com/pi-top/pi-top-Python-SDK
+Author: pi-top
+Author-email: deb-maintainers@pi-top.com
+License: Apache Software License
+Keywords: pi-top,raspberrypi,battery
+Platform: ALL
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Education
+Classifier: Topic :: System :: Hardware
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Dist: pitop.common (==0.31.0-3)
+Requires-Dist: Pillow (<9.0,>=8.1.2)
+Requires-Dist: numpy (<2.0.0,>1.19.5)
+Requires-Dist: opencv-python (<4.6.0,>=4.5.1)
+
+===========================
+pi-top Python Core
+===========================
+
+A set of core utilties used by the pi-top Python SDK.
+
+
