@@ -1,0 +1,7 @@
+[console_scripts]
+ppafm-generate-elff = ppafm.cli.generateElFF:main
+ppafm-generate-elff-point-charges = ppafm.cli.generateElFF_point_charges:main
+ppafm-generate-ljff = ppafm.cli.generateLJFF:main
+ppafm-gui = ppafm.cli.gui.ppafm_gui:main
+ppafm-plot-results = ppafm.cli.plot_results:main
+ppafm-relaxed-scan = ppafm.cli.relaxed_scan:main
