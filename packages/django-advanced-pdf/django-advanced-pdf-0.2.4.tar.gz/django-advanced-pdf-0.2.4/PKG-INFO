@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: django-advanced-pdf
+Version: 0.2.4
+Summary: Django app that helps one create pdf
+Home-page: https://github.com/django-advance-utils/django-advanced-pdf
+Author: Thomas Turner
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+[![PyPI version](https://badge.fury.io/py/django-advanced-pdf.svg)](https://badge.fury.io/py/django-advanced-pdf)
+
+
+# django-advanced-pdf
+django-advanced-pdf
+
+
