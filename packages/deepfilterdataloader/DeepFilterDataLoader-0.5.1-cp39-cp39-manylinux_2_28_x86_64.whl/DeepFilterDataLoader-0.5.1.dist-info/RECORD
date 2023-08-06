@@ -1,0 +1,12 @@
+DeepFilterDataLoader-0.5.1.dist-info/METADATA,sha256=jRnlvSASkZsAjWSTsAWj6HIZpm6Z4vbNTqUoOPR07JE,259
+DeepFilterDataLoader-0.5.1.dist-info/WHEEL,sha256=ZwP0B9gwKUSrMNgGDitCcBT4XfJB9xywsa2bvs_A9zU,106
+DeepFilterDataLoader-0.5.1.dist-info/license_files/LICENSE,sha256=9-9nO_BG2CPc13W90HaEMr2IVfgdDl4SkKCkjELi3KM,495
+DeepFilterDataLoader-0.5.1.dist-info/license_files/LICENSE-APACHE,sha256=Hq7oCMX7a06JW6MEJShaXNxd0lu6LNIw8mTCIAwzGuw,10837
+DeepFilterDataLoader-0.5.1.dist-info/license_files/LICENSE-MIT,sha256=JOa7Cckor42OViaAgvh0EyR842s53V0zrdL5iTloBl4,1083
+libdfdata.libs/libaec-91f0ca0f.so.0,sha256=f1e1CLRejgdQzwXnGbsZdUclWjYG_na-NA8QDUZeu44,37697
+libdfdata.libs/libhdf5-b5e70f84.so.103,sha256=YO_29kJC0yMRhXXLXaC6_DXzvbK0hfs0Lv8Ub1r0PkE,4007241
+libdfdata.libs/libsz-0deeef7d.so.2,sha256=euoOhsZnpr1sFCtbyARHNBvxZZF3eoBWFRUPt5xI0g8,16809
+libdfdata/__init__.py,sha256=4VzQuBoknrlMS7uA12DJzfNBiO23pxN7yD-Qh7A30h4,254
+libdfdata/torch_dataloader.py,sha256=7sNxhi8YcbPDNELnPmBEArEe0W92S3u5ELTqPG7rK6w,13385
+libdfdata/libdfdata.cpython-39-x86_64-linux-gnu.so,sha256=xlSdVdsiJR_iMPmQaVW6Hg6ck2jJQlxOAz_lLCjRel0,2475097
+DeepFilterDataLoader-0.5.1.dist-info/RECORD,,
