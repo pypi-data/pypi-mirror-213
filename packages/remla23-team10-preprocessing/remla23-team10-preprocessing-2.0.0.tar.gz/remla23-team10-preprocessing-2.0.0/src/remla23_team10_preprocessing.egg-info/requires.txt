@@ -1,0 +1,8 @@
+numpy>=1.24.0
+nltk>=3.8.1
+scikit-learn>=1.2.2
+
+[dev]
+pylint==2.12.2
+dslinter==2.0.9
+mllint==0.12.2

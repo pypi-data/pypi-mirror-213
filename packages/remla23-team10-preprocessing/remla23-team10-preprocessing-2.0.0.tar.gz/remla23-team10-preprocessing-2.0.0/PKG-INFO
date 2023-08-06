@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: remla23-team10-preprocessing
+Version: 2.0.0
+Summary: Preprocessing for the REMLA project
+Author-email: REMLA23 Team 10 <author@example.com>
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+Provides-Extra: dev
+License-File: LICENSE
+
+# lib2
+Python library that contains common preprocessing code for `model-training` and `model-service` repositories. When a new tag is created, the version is automatically uploaded to the PyPi package registry.
