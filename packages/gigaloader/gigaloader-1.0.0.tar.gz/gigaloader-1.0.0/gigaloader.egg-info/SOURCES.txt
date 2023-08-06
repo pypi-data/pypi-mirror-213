@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+gigaloader/__init__.py
+gigaloader/gigaloader.py
+gigaloader.egg-info/PKG-INFO
+gigaloader.egg-info/SOURCES.txt
+gigaloader.egg-info/dependency_links.txt
+gigaloader.egg-info/requires.txt
+gigaloader.egg-info/top_level.txt
