@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+ma_notification_center.egg-info/PKG-INFO
+ma_notification_center.egg-info/SOURCES.txt
+ma_notification_center.egg-info/dependency_links.txt
+ma_notification_center.egg-info/requires.txt
+ma_notification_center.egg-info/top_level.txt
