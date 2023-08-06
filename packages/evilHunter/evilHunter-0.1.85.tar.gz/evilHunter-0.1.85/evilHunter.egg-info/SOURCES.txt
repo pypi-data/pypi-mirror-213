@@ -1,0 +1,9 @@
+README.md
+evilCracker.py
+evilHunter.py
+setup.py
+evilHunter.egg-info/PKG-INFO
+evilHunter.egg-info/SOURCES.txt
+evilHunter.egg-info/dependency_links.txt
+evilHunter.egg-info/requires.txt
+evilHunter.egg-info/top_level.txt

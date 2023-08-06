@@ -1,0 +1,5 @@
+colorama
+concurrent
+random
+re
+tqdm
