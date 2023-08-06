@@ -1,0 +1,7 @@
+__package_name__: "hyfi_template"
+name: "HyFI Template"
+authors: "Young Joon Lee <entelecheia@hotmail.com>"
+description: "A GitHub Template Repository for HyFI-based Projects"
+homepage: "https://hyfi-template.entelecheia.ai"
+license: "MIT"
+version: "0.3.4"
