@@ -1,0 +1,9 @@
+README.md
+setup.py
+pyintelxio/__init__.py
+pyintelxio/intelx.py
+pyintelxio.egg-info/PKG-INFO
+pyintelxio.egg-info/SOURCES.txt
+pyintelxio.egg-info/dependency_links.txt
+pyintelxio.egg-info/requires.txt
+pyintelxio.egg-info/top_level.txt
