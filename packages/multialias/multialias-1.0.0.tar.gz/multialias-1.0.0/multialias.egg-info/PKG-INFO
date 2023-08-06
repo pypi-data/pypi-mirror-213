@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: multialias
+Version: 1.0.0
+Summary: A command line tool to bulk rename files
+Author: itsknk
+Description-Content-Type: text/markdown
+
+## BulkRename
+A command line tool to bulk rename files.
+
+### Installation
+pip install bulkrename
+
+### Usage
+```
+bulkrename "DIRECTORY PATH")
+```
+

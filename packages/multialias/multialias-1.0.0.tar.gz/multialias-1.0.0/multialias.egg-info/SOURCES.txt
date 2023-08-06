@@ -1,0 +1,9 @@
+README.md
+setup.py
+multialias/__init__.py
+multialias/batchrename.py
+multialias.egg-info/PKG-INFO
+multialias.egg-info/SOURCES.txt
+multialias.egg-info/dependency_links.txt
+multialias.egg-info/requires.txt
+multialias.egg-info/top_level.txt
