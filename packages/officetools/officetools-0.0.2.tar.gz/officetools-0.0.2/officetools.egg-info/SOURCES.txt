@@ -1,0 +1,13 @@
+LICENSE
+README.md
+setup.py
+officetools/__init__.py
+officetools/_version.py
+officetools/kpi.py
+officetools.egg-info/PKG-INFO
+officetools.egg-info/SOURCES.txt
+officetools.egg-info/dependency_links.txt
+officetools.egg-info/requires.txt
+officetools.egg-info/top_level.txt
+tests/test_copy_excel_cell.py
+tests/test_process_csv.py
