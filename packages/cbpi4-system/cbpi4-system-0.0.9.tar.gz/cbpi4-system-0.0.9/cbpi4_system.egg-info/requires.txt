@@ -1,0 +1,3 @@
+psutil>=5.9.0
+gpiozero
+cbpi4>=4.1.10.rc2
