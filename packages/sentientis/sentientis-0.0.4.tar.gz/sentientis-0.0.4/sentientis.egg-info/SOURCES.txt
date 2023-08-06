@@ -1,0 +1,7 @@
+LICENSE
+README.md
+setup.py
+sentientis.egg-info/PKG-INFO
+sentientis.egg-info/SOURCES.txt
+sentientis.egg-info/dependency_links.txt
+sentientis.egg-info/top_level.txt
