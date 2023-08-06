@@ -1,0 +1,10 @@
+numpy>=1.23.1
+lxml~=4.9.1
+scikit-learn~=1.1.2
+sklearn
+pandas~=1.4.2
+blis~=0.7.8
+medcat~=1.7.0
+ctakes-parser==0.1.0
+zensols.install~=0.2.1
+zensols.nlp~=1.7.0
