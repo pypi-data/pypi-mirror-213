@@ -1,0 +1,8 @@
+README.md
+setup.py
+libprotein/__init__.py
+libprotein/_libprotein.so
+libprotein.egg-info/PKG-INFO
+libprotein.egg-info/SOURCES.txt
+libprotein.egg-info/dependency_links.txt
+libprotein.egg-info/top_level.txt
