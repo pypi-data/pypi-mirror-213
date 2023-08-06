@@ -1,0 +1,25 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "dueros_smarthome"
+version = "0.0.9"
+authors = [
+  { name="Shaoyu Zhang", email="zsy056@gmail.com" },
+]
+description = "Duer OS SmartHome APIs"
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "httpx"
+]
+
+[project.urls]
+"Homepage" = "https://github.com/zsy056/dueros-smarthome"
+"Bug Tracker" = "https://github.com/zsy056/dueros-smarthome/issues"
