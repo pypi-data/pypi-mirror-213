@@ -1,0 +1,11 @@
+libtado/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+libtado/__main__.py,sha256=WZo0VJe807yEH9PQNC3GH-0y6agr00Q5A1Q_cuORX0w,18009
+libtado/api.py,sha256=swAQwg-bQEYWlf7ztSNMsroVXsecv29M-LhRbBTHxAA,48165
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/conftest.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+libtado-3.6.0a0.dist-info/LICENSE,sha256=WJ7YI-moTFb-uVrFjnzzhGJrnL9P2iqQe8NuED3hutI,35141
+libtado-3.6.0a0.dist-info/METADATA,sha256=RZZ5Vpv8ZImrNVIZteMvwzROhxPvSc7qKx8W6dMXAFE,529
+libtado-3.6.0a0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+libtado-3.6.0a0.dist-info/entry_points.txt,sha256=N7hEqFnKxt1Hi_jDuANYJHdcYoPDJMYBuHJOiNK5_hY,48
+libtado-3.6.0a0.dist-info/top_level.txt,sha256=aAOAYbLkXshcW4tp_T2Q8P_uoRipT5uIMd47OUYS33s,14
+libtado-3.6.0a0.dist-info/RECORD,,
