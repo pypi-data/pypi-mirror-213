@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "my_minipack_sojung"
+version = "1.0.0"
+description = "Howto create a package in python."
+authors = [
+	{ name="sojung", email="sojung@student.42.fr" },
+]
+license = { file="LICENSE" }
+classifiers = [
+	"Development Status :: 3 - Alpha",
+	"Intended Audience :: Developers",
+	"Intended Audience :: Education",
+	"License :: OSI Approved :: MIT License",
+	"Programming Language :: Python :: 3",
+	"Programming Language :: Python :: 3 :: Only",
+]
+keywords = [
+	"Education",
+	"Package",
+	"HowTo"
+]
+readme = "README.md"
