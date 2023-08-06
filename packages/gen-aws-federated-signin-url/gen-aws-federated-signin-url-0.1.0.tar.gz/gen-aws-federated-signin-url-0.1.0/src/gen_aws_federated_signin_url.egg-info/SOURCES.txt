@@ -1,0 +1,15 @@
+.gitignore
+.tool-versions
+LICENSE.txt
+Makefile
+README.md
+pyproject.toml
+.github/workflows/publish.yaml
+src/gen_aws_federated_signin_url/__init__.py
+src/gen_aws_federated_signin_url/_version.py
+src/gen_aws_federated_signin_url/gen_aws_federated_signin_url.py
+src/gen_aws_federated_signin_url.egg-info/PKG-INFO
+src/gen_aws_federated_signin_url.egg-info/SOURCES.txt
+src/gen_aws_federated_signin_url.egg-info/dependency_links.txt
+src/gen_aws_federated_signin_url.egg-info/requires.txt
+src/gen_aws_federated_signin_url.egg-info/top_level.txt
