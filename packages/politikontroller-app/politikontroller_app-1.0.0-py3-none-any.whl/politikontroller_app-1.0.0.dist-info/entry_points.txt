@@ -1,0 +1,3 @@
+[console_scripts]
+run=politikontroller_app.main:main
+
