@@ -1,0 +1,49 @@
+Metadata-Version: 2.1
+Name: liveramp-automation-framework
+Version: 0.0.7
+Summary: This is the base liveramp_automation_framework
+Home-page: https://github.com/LiveRamp/qe_api_framework
+Author: Jasmine Qian
+Author-email: jasmine.qian@liveramp.com
+Description-Content-Type: text/markdown
+Requires-Dist: pytest
+Requires-Dist: pytest-bdd
+Requires-Dist: pytest-playwright
+Requires-Dist: allure-pytest-bdd
+Requires-Dist: allure-python-commons
+Requires-Dist: google
+Requires-Dist: google-api-core
+Requires-Dist: google-auth
+Requires-Dist: google-cloud-bigquery
+Requires-Dist: google-cloud-core
+Requires-Dist: google-cloud-storage
+Requires-Dist: google-crc32c
+Requires-Dist: google-resumable-media
+Requires-Dist: googleapis-common-protos
+Requires-Dist: PyYAML
+Requires-Dist: pytest-json-report
+Requires-Dist: pytest-json
+Requires-Dist: pytest-xdist
+Requires-Dist: requests
+Requires-Dist: selenium (==4.8.3)
+Requires-Dist: pytest-bdd (==6.1.1)
+Requires-Dist: PyYAML (==6.0)
+Requires-Dist: webdriver-manager (==3.8.6)
+Requires-Dist: retrying (==1.3.4)
+
+### 1. Descprition of the repository
+        This repository is to build a base autoamtion framework. 
+        We would like to integrate the common helpers and libraries here and then build a lib.
+        Later the only thing is to add the cases according to the features. 
+        Since most of the common helpers and libraries have been integrated to the lib, you only need to import that lib and methods.
+
+### 2. How to use?
+        python setup.py sdist bdist_wheel
+   
+
+### 3. Things need to follow:  
+         
+
+
+
+
