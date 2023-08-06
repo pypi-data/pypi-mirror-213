@@ -1,0 +1,11 @@
+README.md
+setup.py
+easy_config/__init__.py
+easy_config/addict.py
+easy_config/config.py
+easy_config/file_loader.py
+easy_config_py.egg-info/PKG-INFO
+easy_config_py.egg-info/SOURCES.txt
+easy_config_py.egg-info/dependency_links.txt
+easy_config_py.egg-info/requires.txt
+easy_config_py.egg-info/top_level.txt
