@@ -1,0 +1,2 @@
+ovos-plugin-manager~=0.0.21
+ovos-bus-client~=0.0.3
