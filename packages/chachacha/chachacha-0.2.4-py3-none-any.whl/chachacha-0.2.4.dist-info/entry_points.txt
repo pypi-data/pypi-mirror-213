@@ -1,0 +1,3 @@
+[console_scripts]
+chachacha=chachacha.main:main
+
