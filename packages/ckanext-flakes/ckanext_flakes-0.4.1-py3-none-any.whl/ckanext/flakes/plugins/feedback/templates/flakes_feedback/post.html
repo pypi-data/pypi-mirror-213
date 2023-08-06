@@ -1,0 +1,35 @@
+{% extends "package/read_base.html" %}
+
+{% import 'macros/form.html' as form %}
+
+{% block primary_content_inner %}
+    <form class="form-horizontal" method="POST">
+        {% block errors %}{{ form.errors(error_summary) }}{% endblock %}
+        {{ h.csrf_input() if "csrf_input" in h }}
+        {% block fields %}
+            {% block fields_feedback %}
+                {{ form.markdown('feedback', label=_('Feedback'), value=data.feedback, error=errors.feedback) }}
+            {% endblock %}
+        {% endblock %}
+
+        <div class="form-actions">
+            {% block delete_button %}
+                {% if feedback_id and h.check_access('flakes_feedback_feedback_delete', {'id': feedback_id})  %}
+                    <a class="btn btn-danger pull-left" href="{% url_for 'flakes_feedback.delete', id=pkg_dict.id, feedback_id=feedback_id %}" data-module="confirm-action" data-module-content="{{ _('Are you sure you want to delete this feedback?') }}">
+                        {{ _('Delete') }}
+                    </a>
+                {% endif %}
+            {% endblock %}
+
+
+            {% block save_button %}
+                <button class="btn btn-primary" type="submit">
+                    {{ _("Save") }}
+                </button>
+            {% endblock %}
+        </div>
+
+
+
+    </form>
+{% endblock %}

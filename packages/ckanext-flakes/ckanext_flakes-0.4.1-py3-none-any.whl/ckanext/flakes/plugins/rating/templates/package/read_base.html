@@ -1,0 +1,15 @@
+{% ckan_extends %}
+
+{% block secondary_content %}
+    {{ super() }}
+
+    {% if h.flakes_rating_show_package_widget() %}
+        {% block flakes_rating %}
+            <section class="module module-narrow rating">
+                <h2 class="module-heading"><i class="fa fa-star-o"></i> {{ _('Rating') }}</h2>
+                {% snippet "flakes_rating/snippets/rate_widget.html", type="package", id=pkg.id, fa_star="fa-star-half-alt" %}
+            </section>
+        {% endblock %}
+    {% endif %}
+
+{% endblock secondary_content %}

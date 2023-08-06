@@ -1,0 +1,53 @@
+{#
+type
+id
+fa_star - FontAwesome class of the star icon
+#}
+{% asset "flakes_rating/rate" %}
+
+{% set rating = h.flakes_rating_get_rating(type, id) %}
+{% set fa_star = fa_star|default("fa-star-o") %}
+{% set fa_filled_star = fa_filled_star|default("fa-star") %}
+
+
+<style>
+ .flakes-rating--rate-widget .star-holder {
+     display: flex;
+     justify-content: space-around;
+ }
+ .flakes-rating--rate-widget .star-holder .star {
+     text-align: center;
+     display: block;
+     width: 100%;
+     color: gold;
+     cursor: pointer;
+ }
+ .flakes-rating--rate-widget .star-holder .star.star-empty {
+     color: black;
+ }
+ .flakes-rating--rate-widget .star-holder .star.active {
+     color: gold;
+ }
+
+
+</style>
+<p class="m-left m-top">
+    {{ _("Current rating(based on {count} votes):").format(count=rating.count) }}
+    <strong class="text-center">{{ "{average:.2f}".format(average=rating.average) }}</strong>
+</p>
+
+<div class="flakes-rating--rate-widget m-bottom"
+     {% if h.check_access("flakes_rating_rate", {"target_type": type, "target_id": id}) %} data-module="flakes-rating-rate"{% endif %}
+     data-module-type="{{ type }}"
+     data-module-id="{{ id }}"
+     data-module-current="{{ rating.own }}"
+     data-module-star-class="{{ fa_star }}"
+     data-module-star-filled-class="{{ fa_filled_star }}"
+>
+    <div class="star-holder">
+        {% for i in range(5) %}
+            <i class="fa star-empty star {{ fa_star }}"></i>
+        {% endfor %}
+    </div>
+
+</div>

@@ -1,0 +1,10 @@
+{% ckan_extends %}
+
+
+{% block content_primary_nav %}
+    {{ super() }}
+    {% if h.flakes_feedback_enable_views() %}
+        {{ h.build_nav_icon('flakes_feedback.index', _('Feedback'), id=pkg.name, icon='comment') }}
+    {% endif %}
+
+{% endblock content_primary_nav %}

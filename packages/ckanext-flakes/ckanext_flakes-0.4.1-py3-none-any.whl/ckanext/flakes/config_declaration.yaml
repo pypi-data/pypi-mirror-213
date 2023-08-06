@@ -1,0 +1,17 @@
+version: 1
+groups:
+  - annotation: ckanext-flakes
+    options:
+      - key: ckanext.flakes.creation.allowed
+        type: bool
+        default: true
+        example: "false"
+        description: |
+          Any user can create a new flake.
+
+      - key: ckanext.flakes.validation.allowed
+        type: bool
+        default: false
+        example: "true"
+        description: |
+          Any user can validate flake or plain data.

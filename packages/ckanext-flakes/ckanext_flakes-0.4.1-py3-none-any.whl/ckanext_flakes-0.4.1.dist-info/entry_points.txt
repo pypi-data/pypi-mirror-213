@@ -1,0 +1,11 @@
+[babel.extractors]
+ckan = ckan.lib.extract:extract_ckan
+
+[ckan.plugins]
+flakes = ckanext.flakes.plugin:FlakesPlugin
+flakes_feedback = ckanext.flakes.plugins.feedback:FlakesFeedbackPlugin
+flakes_rating = ckanext.flakes.plugins.rating:FlakesRatingPlugin
+flakes_scheming = ckanext.flakes.plugins.scheming:FlakesSchemingPlugin
+
+[ckan.test_plugins]
+flakes_test = ckanext.flakes.tests.plugin:FlakesTestPlugin

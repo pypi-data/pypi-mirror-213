@@ -1,0 +1,9 @@
+scheming_version: 2
+organization_type: flake-organization
+
+fields:
+
+- field_name: flake_title
+  validators: not_empty
+
+- field_name: flake_name
