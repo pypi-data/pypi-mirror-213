@@ -1,0 +1,77 @@
+total_segments: 9
+
+segments:
+  0:
+    type: info
+    intro: | 
+      (h g o u n . t)
+    content: |
+     In this lesson you learn six new letters (H, G, O, U, N, T) and the period. (.).
+     Be sure that the F-finger does not linger on the G-key  or the J-finger on the
+     H-key.  Also be sure to use your fingers as follows:
+     
+      'f' for 't' and 'g', 'j' for 'h', 'u' and 'n', finally use 'l' for 'o' and '.'
+     
+     Note that you always follow a period with two spaces.
+  1: 
+    type: drill
+    intro: |
+      (1) Rhythm Drill
+    content: |
+      a;sldkfjgh a;sldkfjgh a;sldkfjgh a;sldkfjgh a;sldkfjgh
+      asdefghk lokijujhjn asdefghk lokijujhjn asdefghk
+      l.  a.  l.  s.  l.  d.  l.  e.  l.  n.  l.  t.  l.  o.
+  2:
+    type: drill
+    intro: | 
+      (2) Balanced Keyboard Drill
+    content: |
+      as os es us is an on en un in at ot et ut it ad od ed ud id
+      sa so se su si na no ne nu ni ta to te tu ti ha ho he hu hi
+      da do de du di au st oi sh oi ts ht oe nk ou nd ue ns ui th
+  3: 
+    type: drill
+    intro: | 
+      (3) Continuous Copy
+    content: |
+      Ed had a shed.  His shed had dishes.  He had shade.
+      Ed had his ease.  Sis liked a safe shed.  Sis had shade.
+      His shed is ashes.  Ed hides his head.  He heeds Sis.
+  4: 
+    type: drill
+    intro: | 
+      (4)
+    content: |
+      Odd ideas die like odd seeds.  Odd seeds die as do odd deeds.
+      Dad has odd ideas.  Dad sees a soda as a sad dose.  A soda
+      aids Sis.  So I see a soda is added.  Sis does like a soda.
+  5: 
+    type: drill
+    intro: | 
+      (5)
+    content: |
+      Sid used us.  Sid sued us.  Ada used us as aid.  I did aid.
+      I added ease.  I issued added deeds.  Ada said adieu.  Ada
+      used dead deeds as issues.  Sid said I used deeds due Ada.
+  6: 
+    type: drill
+    intro: | 
+      (6)
+    content: |
+      Ed is staid.  Ed uses tested data as assets.  Sis is a
+      tease.  Sis sets a tea date.  As Ed tastes tea I state tea
+      data.  Sis teases Ed at tea.  As Ed eats I state diet data.
+  7: 
+    type: drill
+    intro: | 
+      (7)
+    content: |
+      Sis said Dean is dense as sand.  Dean needs an idea and Sis
+      needs a sedan.  Dad sends a sedan.  Dean is indeed sad as
+      he sees Sis and Ed inside.  At nine he sees Sis and Ed dine.
+  8: 
+    type: drill
+    intro: | 
+      (8) Rhythmic Review
+    content: |
+      He sees that in a test he has to state and use a sane idea.
