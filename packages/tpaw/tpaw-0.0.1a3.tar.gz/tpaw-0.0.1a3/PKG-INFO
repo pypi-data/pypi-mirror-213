@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: tpaw
+Version: 0.0.1a3
+Summary: Tildes Python API Wrapper.
+Author-email: Bryce Boe <bbzbryce@gmail.com>
+Classifier: License :: OSI Approved :: BSD License
+Requires-Dist: lxml >=4.9.2
+Requires-Dist: requests >=2.28
+Requires-Dist: black >=23.3.0 ; extra == "develop"
+Requires-Dist: flake8 >=6.0.0 ; extra == "develop"
+Requires-Dist: pytest >=7.3.2 ; extra == "test"
+Project-URL: Home, https://github.com/bboe/tpaw
+Provides-Extra: develop
+Provides-Extra: test
