@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: doyoung-ops
+Version: 0.0.0.1
+Summary: hello world package.
+Home-page: UNKNOWN
+Author: 
+Author-email: 
+License: Uram
+Platform: UNKNOWN
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: boto3
+Requires-Dist: pymongo
+
+## 우람이형이 찾은 트둥이(하트)
+
+
