@@ -1,0 +1,12 @@
+pyoppleio/Message.py,sha256=-PJwyNYqi24fkYkSvhH1zv_-NImRgNKCfdnFveXVKD4,3117
+pyoppleio/OppleDevice.py,sha256=eyY_VNQg5cskeyWd7poLv0izDAcg3lMre39Iy90ALoc,3147
+pyoppleio/OppleLightDevice.py,sha256=flTy00sfR210Zpi01U621hCc5KJfuipRMksiONoaCkg,2230
+pyoppleio/__init__.py,sha256=B-jtuCnfDWmkqH6_E-Z_bqkvV97g4o2ujhM9MSUeO_o,57
+pyoppleio/__main__.py,sha256=K_MYo6FVAsJSB-AVPvAfp77ouobE_LtMCmBLytxoX9s,2837
+pyoppleio/const.py,sha256=8olqdwPAlwRqMaT7CufP1JqbvRn1-jGsq4iY4yfnOKs,1617
+pyoppleio_legacy-1.0.8.dist-info/LICENSE,sha256=WYmcYJG1QFgu1hfo7qrEkZ3Jhcz8NUWe6XUraZvlIFs,10172
+pyoppleio_legacy-1.0.8.dist-info/METADATA,sha256=Gl6AcPM91HBIj3J7jINbDFlisG1avY22MUcLSk_rcGc,1417
+pyoppleio_legacy-1.0.8.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+pyoppleio_legacy-1.0.8.dist-info/entry_points.txt,sha256=i0O0Z1j0j8hDkcB4rma-sLr7I9OvY5pwpio7tslD7HQ,52
+pyoppleio_legacy-1.0.8.dist-info/top_level.txt,sha256=sdonF3AcZa6JOpx3jj1ewIesphkvXhP-XqxvJ62E2J4,10
+pyoppleio_legacy-1.0.8.dist-info/RECORD,,
