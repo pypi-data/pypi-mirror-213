@@ -1,0 +1,23 @@
+scratchpad/__init__.py,sha256=RFz_z2KQaS7QvRrUZdbPSojFWeFCnlY5czYfdpXOOO8,902
+scratchpad/composite_logger 2.py,sha256=cNybbEDRB78LLlGP5DOphDP29TwxqJ4hgy07JJq7W3Y,1414
+scratchpad/composite_logger.py,sha256=uCx7Ds7jipPVGcKNJpMMqTHomjGezgzzqbkclOX357o,1433
+scratchpad/console_logger.py,sha256=-xebKabAAMczJK1Xp3pugNJLNSq2vvaB0s8ZWD6guzo,650
+scratchpad/file_logger.py,sha256=UKB1D8_inUWt0ug5Z7bfMxSsMjjXmvmjFGN5lUBoOd0,635
+scratchpad/fluent_logger 2.py,sha256=4MUZ15hMN092QeG6c7hsjq_0WeZ4qSmgI-5QAe5Yj-o,1202
+scratchpad/fluent_logger.py,sha256=7da6VzNXtawuBoajYOYJFtOw5_kxWcXyfvMEsma5jsc,1453
+scratchpad/jandi_logger.py,sha256=09AKpkEaYBLRt6mbzCCn1OzuwVOYEIIYKN_-y4v0YJw,1209
+scratchpad/line_logger.py,sha256=xBbEfsFBE0wdri3LoP9rFhAfRMwhZKmffyyLK9y-8wg,835
+scratchpad/logger.py,sha256=1284dJY6V86YhPkUJY3SesDwpTfQt7PVBMmQ4LXXwjw,887
+scratchpad/logger_impl.py,sha256=zHZjYgEbhA2Xo048TRi5DiDGUu_QrF5FlzhG1I3EUZQ,1491
+scratchpad/logger_interface.py,sha256=cjkNftXBz5S8anZvXjqXHgZnfF0mB2CxiLXbEI46G7s,634
+scratchpad/memory_logger.py,sha256=CsaP6nW4p1bv78z7JbFhs98JzrFW6SQGWkV25gJgyqA,260
+scratchpad/null_logger.py,sha256=8D2RyCulnPjlVGokJxu4F-NMUwt9JUt7OGU9jlO1Rq8,130
+scratchpad/retry.py,sha256=lUKmoewg1kO-BOprSEqG8eTxtOZr-FQiyi01eduFZoo,23
+scratchpad/scribe_logger.py,sha256=cJ9Noi6nJPL33p8vxBSu5KftKwflkp5p58ZSrkEJ3RQ,1703
+scratchpad/slack_logger.py,sha256=B85aWqvGQvlmm7ylubd55C203zmkuKtEKpjxxmkmquM,786
+scratchpad/telegram_logger.py,sha256=DKM5AG1qftxtJZrgVnwk7g5-WoEFcggpQjV6huJ7iGA,941
+scratchpad_py-0.0.6.dist-info/LICENSE,sha256=7EI8xVBu6h_7_JlVw-yPhhOZlpY9hP8wal7kHtqKT_E,1074
+scratchpad_py-0.0.6.dist-info/METADATA,sha256=vngS34rHm3J1JAu5hoOSrLAG__er0WkP-HMhhEyIGaU,3649
+scratchpad_py-0.0.6.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+scratchpad_py-0.0.6.dist-info/top_level.txt,sha256=7tDs1GaTFNNnrYzmXTZmIkS9scDIUHfRTqTRLJPPWSg,11
+scratchpad_py-0.0.6.dist-info/RECORD,,
