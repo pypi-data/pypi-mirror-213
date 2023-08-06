@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: taranis_ng_shared
+Version: 0.1.8
+Summary: Taranis-NG Shared Classes
+Home-page: https://github.com/SK-CERT/Taranis-NG
+Author: SK-CERT, AIT
+License: EUPL
+Platform: any
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Topic :: Security
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+
+# Taranis-NG shared Code
+
+Taranis NG is an OSINT gathering and analysis tool for CSIRT teams and
+organisations. It allows osint gathering, analysis and reporting; team-to-team
+collaboration; and contains a user portal for simple self asset management.
+
+This repository contains shared code between Taranis-NG core and it's workers.
+
