@@ -1,0 +1,17 @@
+quik_ai/__init__.py,sha256=y0ctefpi6p0LdxZq27KQOFSeUHNickeOCDD4w5q6664,429
+quik_ai/backend.py,sha256=kI45Ceo1Jfmyrvu_06LRo2lxCOMDldrHved8d-Oonfo,2158
+quik_ai/engine.py,sha256=D4xO_4HBn3NjXGCDxwWANFxmF0K2ejUCO3O3q8T-wbk,11609
+quik_ai/heads.py,sha256=ZbvMtzg8jckZeYO3eiOycoKMGTaq0tOZTdv-f2_qtZ4,4917
+quik_ai/layers.py,sha256=KxeoFHcYtNR8gI0Cpkfwiv0FN3Ia0bLnY_v9TDzMvek,18541
+quik_ai/losses.py,sha256=M-WJLlwLfJF_Hz4j49uUYIjuaFzMFpPgu8RSPgQluu0,940
+quik_ai/metrics.py,sha256=2jl4uy50Va8Plm0xOnZuaR2yxitTZkjaKqxTy6kKbMg,1291
+quik_ai/models.py,sha256=Qtl6Dlfm51HGrIXDTQzRVXdUSFAIW7t9gFnpbD8d5QA,29827
+quik_ai/optimizers.py,sha256=MZwnje58uOKedLTYYMQJIZnH4JTHzc1SQmkErwGy7LI,1633
+quik_ai/predictors.py,sha256=Q00IuJi_zo3MHyz0ySN9wqdJiwfuUm-va4FNSKcpU9I,8285
+quik_ai/tuners.py,sha256=ESXUib544Vay3rVJclYmXPNRNfsi4gINSzwcmr5B5dQ,9621
+quik_ai/tuning.py,sha256=Prbsj1QH3uI5mkmmzFZwQroCMz9pwiLzkHgt9xczrPM,3330
+quik_ai-1.0.0.dist-info/LICENSE,sha256=0ai3cNTVEGSEBPci4SV4h377GrPVFwABRBrwyidtgz0,11554
+quik_ai-1.0.0.dist-info/METADATA,sha256=0ur6MVqDtkThybsHHwndlwmh6IXkkT_mxPUtvjmiEHU,2485
+quik_ai-1.0.0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+quik_ai-1.0.0.dist-info/top_level.txt,sha256=BvIc2sW_z8YQxjmo7xonz8bpofg54Fejk8tYoZbKfAM,8
+quik_ai-1.0.0.dist-info/RECORD,,
