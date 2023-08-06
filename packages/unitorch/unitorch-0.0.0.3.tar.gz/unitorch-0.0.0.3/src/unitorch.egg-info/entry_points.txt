@@ -1,0 +1,6 @@
+[console_scripts]
+unitorch-eval = unitorch.cli.console.eval:cli_main
+unitorch-infer = unitorch.cli.console.infer:cli_main
+unitorch-script = unitorch.cli.console.script:cli_main
+unitorch-service = unitorch.cli.console.service:cli_main
+unitorch-train = unitorch.cli.console.train:cli_main
