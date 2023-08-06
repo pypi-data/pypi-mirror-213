@@ -1,0 +1,27 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+[project]
+name = "laserdato"
+version = "0.0.12"
+authors = [
+  { name="Lingua Custodia", email="" },
+]
+description = "A small example package"
+readme = "README.md"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+requires-python = ">=3.7"
+dependencies = [
+  "torch~=2.0.1",
+  "sentencepiece",
+  "numpy",
+  "requests",
+  "ftfy",
+  "mosestokenizer",
+  "fairseq",
+]
+[project.urls]
