@@ -1,0 +1,3 @@
+[console_scripts]
+smash = smash.cli:main
+smash-xbar = smash.xbar:xbar
