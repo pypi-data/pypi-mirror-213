@@ -1,0 +1,2 @@
+[napari.manifest]
+napari-apple = napari_apple:napari.yaml
