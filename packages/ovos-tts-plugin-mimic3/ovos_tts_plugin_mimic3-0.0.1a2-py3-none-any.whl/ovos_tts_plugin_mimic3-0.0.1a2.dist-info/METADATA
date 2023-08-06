@@ -1,0 +1,46 @@
+Metadata-Version: 2.1
+Name: ovos-tts-plugin-mimic3
+Version: 0.0.1a2
+Summary: Text to speech plugin for OpenVoiceOS using Mimic3
+Home-page: https://github.com/OpenVoiceOS/ovos-tts-plugin-mimic3
+Author: Michael Hansen
+License: AGPL
+Keywords: mycroft plugin tts mimic mimic3
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Text Processing :: Linguistic
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: mycroft-mimic3-tts (<1.0)
+Provides-Extra: all
+Requires-Dist: mycroft-mimic3-tts[de] ; extra == 'all'
+Requires-Dist: mycroft-mimic3-tts[es] ; extra == 'all'
+Requires-Dist: mycroft-mimic3-tts[fa] ; extra == 'all'
+Requires-Dist: mycroft-mimic3-tts[fr] ; extra == 'all'
+Requires-Dist: mycroft-mimic3-tts[it] ; extra == 'all'
+Requires-Dist: mycroft-mimic3-tts[nl] ; extra == 'all'
+Requires-Dist: mycroft-mimic3-tts[ru] ; extra == 'all'
+Requires-Dist: mycroft-mimic3-tts[sw] ; extra == 'all'
+Provides-Extra: de
+Requires-Dist: mycroft-mimic3-tts[de] ; extra == 'de'
+Provides-Extra: es
+Requires-Dist: mycroft-mimic3-tts[es] ; extra == 'es'
+Provides-Extra: fa
+Requires-Dist: mycroft-mimic3-tts[fa] ; extra == 'fa'
+Provides-Extra: fr
+Requires-Dist: mycroft-mimic3-tts[fr] ; extra == 'fr'
+Provides-Extra: it
+Requires-Dist: mycroft-mimic3-tts[it] ; extra == 'it'
+Provides-Extra: nl
+Requires-Dist: mycroft-mimic3-tts[nl] ; extra == 'nl'
+Provides-Extra: ru
+Requires-Dist: mycroft-mimic3-tts[ru] ; extra == 'ru'
+Provides-Extra: sw
+Requires-Dist: mycroft-mimic3-tts[sw] ; extra == 'sw'
+
+UNKNOWN
+
+

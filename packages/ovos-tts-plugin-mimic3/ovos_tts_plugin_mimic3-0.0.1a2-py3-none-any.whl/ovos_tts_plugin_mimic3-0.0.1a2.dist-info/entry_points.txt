@@ -1,0 +1,6 @@
+[mycroft.plugin.tts]
+ovos-tts-plugin-mimic3 = ovos_tts_plugin_mimic3:Mimic3TTSPlugin
+
+[mycroft.plugin.tts.config]
+ovos-tts-plugin-mimic3.config = ovos_tts_plugin_mimic3:Mimic3TTSPluginConfig
+
