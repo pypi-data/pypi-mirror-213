@@ -1,0 +1,10 @@
+lifeguard_telegram/__init__.py,sha256=y01q0XEVNtvjaxYonE3ea1j0S2WradWXBAg7PqSJIGc,860
+lifeguard_telegram/bot.py,sha256=B1HhegelWu03dHtkH0qVQckdxDk3Jd2d8sh1VIkKG-Q,2002
+lifeguard_telegram/notifications.py,sha256=hFD9696hW3GCSHj42LsU9paWbI8jIPs5Nr3qp6-p07o,2189
+lifeguard_telegram/settings.py,sha256=kviiirSmSznN19wOyjIn3tjHrge8rKQ2D1L6L1Jxkc4,1150
+lifeguard_telegram/bot_handlers/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+lifeguard_telegram/bot_handlers/builtin_bot_handler.py,sha256=p8MV2y6LVLQMwLvPt8NhQFb1Ld-2eOHUfKdM9knDaUc,587
+lifeguard_telegram-1.1.2.dist-info/METADATA,sha256=yTB8NDoPJGbWDxqh0YIUdD8cuMRDZGcFSzvOvej0tbc,1045
+lifeguard_telegram-1.1.2.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+lifeguard_telegram-1.1.2.dist-info/top_level.txt,sha256=Q1yrvlDgfnjcwypixf2d_uDtc4x3PJXMJUUF49rZ_Z4,19
+lifeguard_telegram-1.1.2.dist-info/RECORD,,
