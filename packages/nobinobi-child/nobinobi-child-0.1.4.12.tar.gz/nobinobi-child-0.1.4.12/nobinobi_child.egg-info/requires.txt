@@ -1,0 +1,8 @@
+nobinobi-staff>=0.1.6.8
+django-phonenumber-field==7.1.0
+phonenumbers==8.13.14
+django-select2==8.1.2
+django-bootstrap-modal-forms==3.0.3
+django-widget-tweaks==1.4.12
+django-simple-menu==2.1.1
+django_weasyprint==2.2.0
