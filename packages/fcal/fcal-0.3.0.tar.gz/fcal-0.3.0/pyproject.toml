@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "fcal"
+version = "0.3.0"
+description = "display days before/after today"
+authors = ["suman chapai <sumanchapai@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+fcal = 'fcal.main:run'
+
