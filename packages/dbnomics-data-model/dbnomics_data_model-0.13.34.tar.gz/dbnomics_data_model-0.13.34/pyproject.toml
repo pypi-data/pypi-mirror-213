@@ -1,0 +1,62 @@
+[tool.poetry]
+name = "dbnomics-data-model"
+version = "0.13.34"
+description = "Provide classes for DBnomics entities and a storage abstraction"
+authors = ["DBnomics Team <contact@nomics.world>"]
+license = "AGPL-3.0-or-later"
+readme = "README.md"
+repository = "https://git.nomics.world/dbnomics/dbnomics-data-model"
+packages = [{ include = "dbnomics_data_model" }]
+
+[tool.poetry.dependencies]
+python = ">=3.7,<4.0"
+daiquiri = "^3.0.1"
+dirsync = "^2.2.5"
+jsonschema = "^4.4.0"
+orjson = "^3.6.7"
+pydantic = "^1.9.0"
+pysimdjson = "^4.0.3"
+python-dateutil = "^2.8.2"
+toolz = "^0.11.2"
+typer = { version = "^0.7.0", extras = ["all"] }
+pyyaml = "^6.0"
+
+[tool.poetry.group.dev.dependencies]
+black = "*"
+flake8 = "*"
+flake8-blind-except = "*"
+flake8-breakpoint = "*"
+flake8-bugbear = "*"
+flake8-builtins = "*"
+flake8-comprehensions = "*"
+flake8-eradicate = "*"
+flake8-fixme = "*"
+flake8-implicit-str-concat = "*"
+flake8-isort = "*"
+flake8-logging-format = "*"
+flake8-mutable = "*"
+flake8-print = "*"
+flake8-quotes = "*"
+isort = "*"
+mypy = "*"
+pytest = "^7.1.1"
+types-orjson = "^3.6.2"
+types-python-dateutil = "^2.8.10"
+types-pyyaml = "^6.0.12.10"
+
+[tool.poetry.scripts]
+dbnomics-update-storage = "dbnomics_data_model.scripts.update_storage:app"
+dbnomics-validate-storage = "dbnomics_data_model.scripts.validate_storage:app"
+
+[tool.black]
+line-length = 120
+
+# From https://black.readthedocs.io/en/stable/guides/using_black_with_other_tools.html#isort
+[tool.isort]
+line_length = 120
+profile = "black"
+src_paths = ["dbnomics_data_model", "tests"]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"

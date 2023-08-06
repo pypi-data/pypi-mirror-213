@@ -1,0 +1,83 @@
+Metadata-Version: 2.1
+Name: dbnomics-data-model
+Version: 0.13.34
+Summary: Provide classes for DBnomics entities and a storage abstraction
+Home-page: https://git.nomics.world/dbnomics/dbnomics-data-model
+License: AGPL-3.0-or-later
+Author: DBnomics Team
+Author-email: contact@nomics.world
+Requires-Python: >=3.7,<4.0
+Classifier: License :: OSI Approved :: GNU Affero General Public License v3 or later (AGPLv3+)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: daiquiri (>=3.0.1,<4.0.0)
+Requires-Dist: dirsync (>=2.2.5,<3.0.0)
+Requires-Dist: jsonschema (>=4.4.0,<5.0.0)
+Requires-Dist: orjson (>=3.6.7,<4.0.0)
+Requires-Dist: pydantic (>=1.9.0,<2.0.0)
+Requires-Dist: pysimdjson (>=4.0.3,<5.0.0)
+Requires-Dist: python-dateutil (>=2.8.2,<3.0.0)
+Requires-Dist: pyyaml (>=6.0,<7.0)
+Requires-Dist: toolz (>=0.11.2,<0.12.0)
+Requires-Dist: typer[all] (>=0.7.0,<0.8.0)
+Project-URL: Repository, https://git.nomics.world/dbnomics/dbnomics-data-model
+Description-Content-Type: text/markdown
+
+# DBnomics Data Model
+
+In DBnomics, once data has been downloaded from providers, it is converted in a common format: the DBnomics data model.
+
+This Python package provides:
+
+- model classes defining DBnomics entities (provider, dataset, series, etc.) with their business logic and validation rules
+- a data storage abstraction to load and save those entities
+- adapters implementing the data storage abstraction (e.g. `dbnomics_data_model.storage.adapters.filesystem`)
+
+This package is used in particular by the convert script of fetchers in order to save data.
+
+## Documentation
+
+Please read <https://db.nomics.world/docs/data-model/>
+
+## Validate data
+
+To validate a directory containing data written by (or compatible with) the "filesystem" adapter:
+
+```sh
+dbnomics-validate-storage <storage_dir>
+```
+
+This script outputs the data validation errors it finds.
+
+## Run tests
+
+To run unit tests:
+
+```sh
+pytest
+```
+
+Code quality:
+
+```sh
+flake8 .
+```
+
+See also: <https://git.nomics.world/dbnomics-fetchers/documentation/wikis/code-style>
+
+## Publish a new version
+
+For package maintainers:
+
+```bash
+git tag x.y.z
+git push
+git push --tags
+```
+
+GitLab CI will publish the package to <https://pypi.org/project/dbnomics-data-model/> (see [`.gitlab-ci.yml`](./.gitlab-ci.yml)).
+
