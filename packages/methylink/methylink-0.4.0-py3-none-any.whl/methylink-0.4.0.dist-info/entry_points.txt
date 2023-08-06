@@ -1,0 +1,2 @@
+[console_scripts]
+methylink = methylink.main:base
