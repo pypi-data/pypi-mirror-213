@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: f1-report
+Version: 1.0.0
+Summary: A Python package for generating F1 race reports
+Home-page: https://git.foxminded.ua/foxstudent102513/task-6-report-of-monaco-2018-racing
+Author: Uladzimir Radchanka
+Author-email: URadchanka@gmail.com
+License: MIT
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+Requires-Dist: wheel
+Requires-Dist: twine
+
+A Python package for generating Formula 1 race reports based on race data and abbreviations.
