@@ -1,0 +1,2 @@
+[console_scripts]
+systrack = systrack.__main__:main
