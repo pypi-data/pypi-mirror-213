@@ -1,0 +1,10 @@
+LICENSE.txt
+README.md
+setup.py
+smartWebScraper/__init__.py
+smartWebScraper/smartWebScraper.py
+smartWebScraper.egg-info/PKG-INFO
+smartWebScraper.egg-info/SOURCES.txt
+smartWebScraper.egg-info/dependency_links.txt
+smartWebScraper.egg-info/requires.txt
+smartWebScraper.egg-info/top_level.txt
