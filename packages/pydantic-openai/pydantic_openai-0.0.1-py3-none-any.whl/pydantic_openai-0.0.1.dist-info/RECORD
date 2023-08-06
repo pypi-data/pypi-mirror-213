@@ -1,0 +1,10 @@
+pydantic_openai/__init__.py,sha256=NTVC7BGLN8Q3ZqbErnIrgrO23aV8Sg6wQjGzSErZ0G8,119
+pydantic_openai/chat.py,sha256=FdSEKgrneKRKJybPAa2erDHbyRj_llLqtJEj4oQJtjQ,1187
+pydantic_openai/common.py,sha256=kTZbjFsSEXWs_yAQtExbOljKMLhWBlKJCjZA5AwKr-Y,127
+pydantic_openai/completion.py,sha256=Q-_hjckdY5LQt5vK3ok1EzbaLOpGed-OOiNnIWxf8fM,2402
+pydantic_openai/embeddings.py,sha256=n51E-c-jWH5lwaXYfbGgFaWBqRx2aGmMUwA0FOe8WNs,1508
+pydantic_openai/moderation.py,sha256=DLvR48Z1yUs0Hfj-oBSGhPramc35PQMxd4Tlhnn9Jvc,1803
+pydantic_openai-0.0.1.dist-info/METADATA,sha256=k_9VwXLDmVNuUCsrv3ofsNJttsFrVJX56izPfjr1bcQ,885
+pydantic_openai-0.0.1.dist-info/WHEEL,sha256=KGYbc1zXlYddvwxnNty23BeaKzh7YuoSIvIMO4jEhvw,87
+pydantic_openai-0.0.1.dist-info/licenses/LICENSE,sha256=R-WyIt14CKCS1VBTxa7eCjRlD2CFRParZ8RxOoo5Q1E,1066
+pydantic_openai-0.0.1.dist-info/RECORD,,

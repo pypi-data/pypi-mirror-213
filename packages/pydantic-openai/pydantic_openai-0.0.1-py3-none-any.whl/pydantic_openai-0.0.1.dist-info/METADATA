@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: pydantic_openai
+Version: 0.0.1
+Summary: Pydantic models for OpenAI's API
+Project-URL: Homepage, https://github.com/stillmatic/pydantic-openai
+Project-URL: Bug Tracker, https://github.com/stillmatic/pydantic-openai/issues
+Author-email: Chris Hua <hua.christopher@gmail.com>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.7
+Requires-Dist: pydantic
+Description-Content-Type: text/markdown
+
+# pydantic-openai
+
+Pydantic models for OpenAI's API. These make it easier to construct requests and parse responses, as well as set up API-compatible servers.
+
+Making requests is explicitly out of scope.
+
+This is mostly translated from [sashabaranov/go-openai](https://github.com/sashabaranov/go-openai/tree/master), by ChatGPT.
