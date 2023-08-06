@@ -1,0 +1,46 @@
+version: '3.8'
+
+services:
+  pipeline:
+    build: pipeline
+    env_file: .env
+    volumes:
+      - type: bind
+        source: ./data
+        target: /data
+      - type: bind
+        source: ./src
+        target: /src
+      - type: bind
+        source: ${HOME}/.aws
+        target: /root/.aws
+        read_only: true
+    command: python prismic.py
+
+  api:
+    build:
+      context: .
+      dockerfile: api/Dockerfile
+    ports:
+      - 5000:5000
+    env_file: .env
+    volumes:
+      - type: bind
+        source: ./data
+        target: /data
+      - type: bind
+        source: ${HOME}/.aws
+        target: /root/.aws
+        read_only: true
+    networks:
+      - default
+
+  webapp:
+    build: webapp
+    depends_on: 
+      - api
+    ports:
+      - 3000:3000
+    env_file: .env
+    networks:
+      - default

@@ -1,0 +1,23 @@
+{
+    "query": {
+        "multi_match": {
+            "query": "{{query}}",
+            "fields": [
+                "id",
+                "title.*^100",
+                "contributors.*^10",
+                "contributors.keyword^100",
+                "standfirst.*^10",
+                "body.*",
+                "caption.*",
+                "partOf.id",
+                "partOf.title.*^80",
+                "partOf.contributors*^8",
+                "partOf.contributors.keyword^80"
+            ],
+            "operator": "or",
+            "type": "cross_fields",
+            "minimum_should_match": "-25%"
+        }
+    }
+}

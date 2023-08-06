@@ -1,0 +1,32 @@
+{
+    "mappings": {
+        "properties": {
+            "id": {
+                "type": "keyword",
+                "index": true
+            },
+            "type": {
+                "type": "keyword",
+                "index": true
+            },
+            "format": {
+                "type": "keyword",
+                "index": true
+            },
+            "text": {
+                "type": "text",
+                "index": false
+            },
+            "title": {
+                "type": "text",
+                "index": false
+            },
+            "embedding": {
+                "type": "dense_vector",
+                "dims": 768,
+                "index": true,
+                "similarity": "cosine"
+            }
+        }
+    }
+}

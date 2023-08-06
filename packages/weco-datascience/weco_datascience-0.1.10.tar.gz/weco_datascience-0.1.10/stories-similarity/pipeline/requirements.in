@@ -1,0 +1,6 @@
+elasticsearch
+httpx
+loguru
+tqdm
+sentence_transformers
+numpy

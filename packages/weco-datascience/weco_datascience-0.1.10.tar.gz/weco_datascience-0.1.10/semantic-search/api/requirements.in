@@ -1,0 +1,8 @@
+boto3==1.24.92
+elasticsearch==8.5.1
+fastapi[all]
+loguru==0.6.0
+pydantic
+sentence_transformers
+uvicorn
+openai
