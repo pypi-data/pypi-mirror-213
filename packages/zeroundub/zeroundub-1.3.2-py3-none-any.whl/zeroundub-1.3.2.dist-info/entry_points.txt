@@ -1,0 +1,3 @@
+[console_scripts]
+zeroundub = zeroundub.cli.cmdline.undub:main
+zeroundub-gui = zeroundub.gui.tkgui:main
