@@ -1,0 +1,10 @@
+aws_ddk_core/__init__.py,sha256=APEWdlb1DBqvhRCj3U-yLgjiJxserr4p5kSLv5HPTPs,542656
+aws_ddk_core/py.typed,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+aws_ddk_core/_jsii/__init__.py,sha256=3_4VBmCNlFkP0dDZON-5ExbqnkKQxw2t2ZZr2Mtlcmg,573
+aws_ddk_core/_jsii/aws-ddk-core@1.0.1.jsii.tgz,sha256=UXGTLfcILTQQwITAF1uz0KvPGHhmMm-C2SXg8i14Ak8,5017715
+aws_ddk_core-1.0.1.dist-info/LICENSE,sha256=z8d0m5b2O9McPEK1xHG_dWgUBT6EfBDz6wA0F7xSPTA,11358
+aws_ddk_core-1.0.1.dist-info/METADATA,sha256=1Bx7IyVYY2fxyHZHpFjMTT5D1tSqeaKOHUUqAYg26Cc,6839
+aws_ddk_core-1.0.1.dist-info/NOTICE,sha256=1CkO1kwu3Q_OHYTj-d-yiBJA_lNN73a4zSntavaD4oc,67
+aws_ddk_core-1.0.1.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+aws_ddk_core-1.0.1.dist-info/top_level.txt,sha256=B6eqRB0soKGJcwRraTup4JRfzx1V3ySFFtSg7DsMs7s,13
+aws_ddk_core-1.0.1.dist-info/RECORD,,
