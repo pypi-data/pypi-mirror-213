@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: genWizard
+Version: 0.0.1
+Summary: genWizard allows for versatile usage of openAI generation and prompting management.
+Home-page: https://github.com/ykim336/genWizard
+Author: Isaac Moon
+Author-email: ykim336@ucr.com
+License: MIT
+Keywords: machine learning
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+License-File: LICENSE.txt
+
+# genMake
+ a powerful openAI template that enables anyone to manage this amazing tool
+
+
+
+GENMAKE CHANGELOG
+===================
+
+0.0.1
+-------------------
+First Release
+- Includes the basic functions: Database Manager, Expander, and Generator. 
