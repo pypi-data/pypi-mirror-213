@@ -1,0 +1,48 @@
+Metadata-Version: 2.1
+Name: django-translatemessages
+Version: 0.0.1
+Summary: Translate Django .po files
+Home-page: https://github.com/elapouya/django-translatemessages
+Author: Eric Lapouyade
+Author-email: elapouya@gmail.com
+License: MIT
+Keywords: table,datatable,listing,data grid
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: Development Status :: 3 - Alpha
+Classifier: Framework :: Django
+Classifier: Framework :: Django :: 2.0
+Classifier: Framework :: Django :: 3.0
+Classifier: Framework :: Django :: 4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+License-File: LICENSE
+Requires-Dist: django
+Requires-Dist: polib
+Requires-Dist: deep-translator
+Provides-Extra: docs
+Requires-Dist: Sphinx ; extra == 'docs'
+Requires-Dist: sphinxcontrib-napoleon ; extra == 'docs'
+
+
+========================
+django-translatemessages
+========================
+
+Django app for translating Django .po files
+
+
+
+News
+----
+
+0.0.1 (2023-06-11)
+------------------
+- Skeleton commit
+
