@@ -1,0 +1,7 @@
+tqdm
+warnings
+argparse
+
+[dev]
+black
+pytest
