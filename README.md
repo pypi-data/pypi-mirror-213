@@ -3,36 +3,10 @@
 This repo contains 40000 packages uploaded to PyPI between 
 2023-06-08 19:32 and 2023-06-14 15:23.
 
-The repo is 39% (15996/40000) complete.
+The repo is 44% (17995/40000) complete.
 
-## Packages:
+Package contents can be found [in the code branch](https://github.com/pypi-data/pypi-mirror-213/tree/code/packages).
 
-| Name  | Count |
-| ----- | ----- |
-| nacos-sdk-rust-binding-py | 219 |
-| pydantic-core | 162 |
-| restbl | 151 |
-| ddtrace | 138 |
-| netbox-cisco-maintenance | 126 |
-| rabbitizer | 112 |
-| pabo | 110 |
-| flashlight-text | 110 |
-| rithm | 108 |
-| xw-utils | 106 |
-| pyzstd | 105 |
-| bitarray | 102 |
-| zeroconf | 98 |
-| yplib | 90 |
-| lollms | 88 |
-| geopyv | 82 |
-| puan-pv-rs | 80 |
-| py-Ayiin | 78 |
-| ijson | 78 |
-| chiapos | 75 |
-| blspy | 75 |
-| biscuit-python | 73 |
-| semsimian | 70 |
-| pyxirr | 66 |
-| pypylon | 65 |
+A browsable package list for all repositories [all packages here](https://pypi-data.github.io/website/repositories/pypi-mirror-213).
 
 
