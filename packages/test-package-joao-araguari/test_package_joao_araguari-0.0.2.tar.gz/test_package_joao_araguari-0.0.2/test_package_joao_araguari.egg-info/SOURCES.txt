@@ -1,0 +1,8 @@
+setup.cfg
+setup.py
+parallel_code/__init__.py
+parallel_code/parallel_integrate.py
+test_package_joao_araguari.egg-info/PKG-INFO
+test_package_joao_araguari.egg-info/SOURCES.txt
+test_package_joao_araguari.egg-info/dependency_links.txt
+test_package_joao_araguari.egg-info/top_level.txt
