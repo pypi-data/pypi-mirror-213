@@ -1,0 +1,8 @@
+bsb~=4.0.0a54
+shortuuid
+
+[dev]
+sphinx
+sphinxemoji
+furo
+sphinx_design
