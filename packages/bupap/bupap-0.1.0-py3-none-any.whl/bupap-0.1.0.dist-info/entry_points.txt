@@ -1,0 +1,5 @@
+[console_scripts]
+bupap=bupap.entrypoint.main:run_poetry
+bupap-alembic=bupap.entrypoint.bupap_alembic:main
+bupap-settings=bupap.entrypoint.bupap_settings:main
+
