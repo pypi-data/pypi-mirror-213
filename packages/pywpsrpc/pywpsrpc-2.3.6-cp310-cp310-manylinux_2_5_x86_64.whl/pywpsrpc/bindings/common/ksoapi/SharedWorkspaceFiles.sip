@@ -1,0 +1,87 @@
+/**
+ * Copyright (c) 2020-2021 Weitian Leung
+ *
+ * This file is part of pywpsrpc.
+ *
+ * This file is distributed under the MIT License.
+ * See the LICENSE file for details.
+ *
+*/
+
+namespace ksoapi
+{
+    struct SharedWorkspaceFiles : public ksoapi::_IMsoDispObj /Abstract/
+    {
+    public:
+        virtual HRESULT get_Item(
+            int Index,
+            SharedWorkspaceFile **ppidisp /Out/) = 0;
+
+        SharedWorkspaceFile* __getitem__(int index) const;
+        %MethodCode
+            ksoapi::SharedWorkspaceFile *prop = nullptr;
+            if (sipCpp->get_Item(a0, &prop) != S_OK)
+                sipIsErr = 1;
+            else
+                sipRes = prop;
+        %End
+
+        virtual HRESULT get_Count(
+            int *pcItems /Out/) = 0;
+
+        Py_ssize_t __len__() const;
+        %MethodCode
+            int count = 0;
+            if (sipCpp->get_Count(&count) != S_OK)
+                count = 0;
+            sipRes = count;
+        %End
+
+        virtual HRESULT Add(
+            BSTR FileName,
+            VARIANT ParentFolder = argMissing2(),
+            VARIANT OverwriteIfFileAlreadyExists = argMissing2(),
+            VARIANT KeepInSync = argMissing2(),
+            SharedWorkspaceFile **ppFile /Out/ = 0) = 0;
+
+        virtual HRESULT get_ItemCountExceeded(
+            VARIANT_BOOL *pf /Out/) = 0;
+
+        int getCount();
+        %MethodCode
+            int prop = 0;
+            HRESULT hr = sipCpp->get_Count(&prop);
+            if (hr != S_OK)
+            {
+                PyErr_Format(PyExc_AttributeError,
+                    "Call 'get_Count()' failed with 0x%x", hr);
+                return nullptr;
+            }
+            else
+            {
+                sipRes = prop;
+            }
+        %End
+
+        %Property(name=Count, get=getCount)
+
+        VARIANT_BOOL getItemCountExceeded();
+        %MethodCode
+            VARIANT_BOOL *prop = new VARIANT_BOOL;
+            HRESULT hr = sipCpp->get_ItemCountExceeded(prop);
+            if (hr != S_OK)
+            {
+                delete prop;
+                PyErr_Format(PyExc_AttributeError,
+                    "Call 'get_ItemCountExceeded()' failed with 0x%x", hr);
+                return nullptr;
+            }
+            else
+            {
+                sipRes = prop;
+            }
+        %End
+
+        %Property(name=ItemCountExceeded, get=getItemCountExceeded)
+    };
+};
