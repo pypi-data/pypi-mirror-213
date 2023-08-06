@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: vietanhdev
+Version: 0.0.1
+Summary: Personal Utilities for Software Development - vietanhdev
+Home-page: http://github.com/vietanhdev/vietanhdev-python
+Author: Viet Anh Nguyen
+Author-email: vietanh.dev@gmail.com
+License: MIT
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Hi! My name is Viet Anh. I'm a software developer from Vietnam.
+
+This is my personal utility library for software development. It contains
+a lot of useful stuff that I use in my projects. It is not intended to be
+a general purpose library, but it may be useful for you too.
