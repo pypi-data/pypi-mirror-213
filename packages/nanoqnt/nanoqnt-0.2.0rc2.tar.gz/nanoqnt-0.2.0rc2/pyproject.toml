@@ -1,0 +1,25 @@
+[tool.poetry]
+name = "nanoqnt"
+version = "0.2.0-rc2"
+description = ""
+authors = ["Aquiles Carattino <carattino@dispertech.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+pyqtgraph = "^0.13.3"
+numpy = "^1.24.3"
+scipy = "^1.10.1"
+scikit-image = "^0.20.0"
+PIMS = "^0.6.1"
+trackpy = "^0.6.1"
+h5py = "^3.8.0"
+matplotlib = "^3.7.1"
+pyqt5 = "^5.15.9"
+
+[tool.poetry.group.dev.dependencies]
+pyinstaller = "^5.10.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

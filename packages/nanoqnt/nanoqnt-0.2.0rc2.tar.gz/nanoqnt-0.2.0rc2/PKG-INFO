@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: nanoqnt
+Version: 0.2.0rc2
+Summary: 
+Author: Aquiles Carattino
+Author-email: carattino@dispertech.com
+Requires-Python: >=3.8,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: PIMS (>=0.6.1,<0.7.0)
+Requires-Dist: h5py (>=3.8.0,<4.0.0)
+Requires-Dist: matplotlib (>=3.7.1,<4.0.0)
+Requires-Dist: numpy (>=1.24.3,<2.0.0)
+Requires-Dist: pyqt5 (>=5.15.9,<6.0.0)
+Requires-Dist: pyqtgraph (>=0.13.3,<0.14.0)
+Requires-Dist: scikit-image (>=0.20.0,<0.21.0)
+Requires-Dist: scipy (>=1.10.1,<2.0.0)
+Requires-Dist: trackpy (>=0.6.1,<0.7.0)
+Description-Content-Type: text/markdown
+
+# NanoQNTPy
+This README is work in progress
