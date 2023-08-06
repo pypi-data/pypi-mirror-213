@@ -1,0 +1,291 @@
+.Draftail-Editor__wrapper {
+  padding-left: 40px;
+  padding-right: 40px;
+  box-sizing: border-box;
+}
+.Draftail-Editor__wrapper .public-DraftEditor-content.public-DraftEditor-content {
+  appearance: none;
+  background-color: #FFF;
+  border: 1px solid #ccc;
+  border-radius: 0.3125rem;
+}
+.Draftail-Editor__wrapper .w-sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+.Draftail-Editor__wrapper .Draftail-Editor--focus .public-DraftEditor-content.public-DraftEditor-content {
+  border: 0;
+}
+.Draftail-Editor__wrapper .Draftail-FloatingToolbar,
+.Draftail-Editor__wrapper .Draftail-InlineToolbar {
+  background: #03686A !important;
+}
+.Draftail-Editor__wrapper .Draftail-FloatingToolbar .Draftail-ToolbarButton__label, .Draftail-Editor__wrapper .Draftail-FloatingToolbar .icon, .Draftail-Editor__wrapper .Draftail-FloatingToolbar .Draftail-Icon,
+.Draftail-Editor__wrapper .Draftail-InlineToolbar .Draftail-ToolbarButton__label,
+.Draftail-Editor__wrapper .Draftail-InlineToolbar .icon,
+.Draftail-Editor__wrapper .Draftail-InlineToolbar .Draftail-Icon {
+  fill: #fff;
+  color: #fff;
+}
+.Draftail-Editor__wrapper .Draftail-Tooltip {
+  background: #fff !important;
+  border-radius: 8px !important;
+}
+
+.Draftail-Editor--focus .Draftail-BlockToolbar__trigger, .Draftail-Editor:focus-within .Draftail-BlockToolbar__trigger {
+  visibility: visible;
+  cursor: pointer;
+}
+.Draftail-Editor--focus .Draftail-BlockToolbar__trigger:hover, .Draftail-Editor--focus .Draftail-BlockToolbar__trigger:active, .Draftail-Editor--focus .Draftail-BlockToolbar__trigger:focus, .Draftail-Editor:focus-within .Draftail-BlockToolbar__trigger:hover, .Draftail-Editor:focus-within .Draftail-BlockToolbar__trigger:active, .Draftail-Editor:focus-within .Draftail-BlockToolbar__trigger:focus {
+  border: 1px solid #03686A;
+}
+.Draftail-Editor--focus .Draftail-BlockToolbar__trigger:hover svg, .Draftail-Editor--focus .Draftail-BlockToolbar__trigger:active svg, .Draftail-Editor--focus .Draftail-BlockToolbar__trigger:focus svg, .Draftail-Editor:focus-within .Draftail-BlockToolbar__trigger:hover svg, .Draftail-Editor:focus-within .Draftail-BlockToolbar__trigger:active svg, .Draftail-Editor:focus-within .Draftail-BlockToolbar__trigger:focus svg {
+  fill: #03686A;
+}
+
+.Non-Admin-Draftail__modal-wrapper {
+  display: none;
+}
+.Non-Admin-Draftail__modal-wrapper .Non-Admin-Draftail__modal {
+  display: none;
+}
+.Non-Admin-Draftail__modal-wrapper .Non-Admin-Draftail__modal button {
+  cursor: pointer;
+}
+
+.Non-Admin-Draftail__modal-wrapper.open {
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.75);
+  z-index: 100;
+}
+.Non-Admin-Draftail__modal-wrapper.open .Non-Admin-Draftail__modal {
+  display: block;
+  position: absolute;
+  border-radius: 0.5rem;
+  left: 50%;
+  top: 50%;
+  width: 100%;
+  max-width: 500px;
+  transform: translate(-50%, -50%);
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  z-index: 101;
+  background-color: #fff;
+  animation: modal-in 0.2s cubic-bezier(0.075, 0.82, 0.165, 1) 0s backwards;
+  color: #03686A;
+}
+
+.Non-Admin-Draftail__modal-close {
+  position: absolute;
+  cursor: pointer;
+  top: 1rem;
+  right: 1rem;
+  display: flex;
+  align-content: baseline;
+  justify-content: center;
+}
+.Non-Admin-Draftail__modal-close svg {
+  width: 1em;
+  height: 1em;
+  margin-right: 0.25rem;
+}
+
+.Non-Admin-Draftail__content {
+  padding: 1rem;
+}
+.Non-Admin-Draftail__content form * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.Non-Admin-Draftail__content form > * + * {
+  margin-top: 1rem;
+}
+.Non-Admin-Draftail__content form .errorlist {
+  color: red;
+}
+.Non-Admin-Draftail__content form ul {
+  list-style: none;
+}
+.Non-Admin-Draftail__content form ul li {
+  list-style: none;
+}
+.Non-Admin-Draftail__content form .helptext {
+  display: block;
+  font-size: 80%;
+}
+.Non-Admin-Draftail__content form label {
+  display: block;
+  font-weight: bold;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  margin-bottom: 4px;
+}
+.Non-Admin-Draftail__content form ul label {
+  text-transform: none;
+  margin-bottom: 0;
+}
+.Non-Admin-Draftail__content form input:not([type=radio]):not([type=checkbox]) {
+  width: 100%;
+  padding: 0.5rem;
+  border-radius: 3px;
+  border: 1px solid #ccc;
+}
+.Non-Admin-Draftail__content form button {
+  width: 100%;
+  padding: 0.75rem;
+  font-size: 1rem;
+  color: #fff;
+  background: #03686A;
+  border-radius: 3px;
+  text-transform: uppercase;
+  border: 0;
+}
+.Non-Admin-Draftail__content form button:disabled {
+  opacity: 0.75;
+}
+.Non-Admin-Draftail__content .Non-Admin-Draftail__header {
+  background-color: #efefef;
+  color: #333;
+  padding: 0.75rem 1rem;
+  margin: -1rem -1rem 1rem -1rem;
+}
+.Non-Admin-Draftail__content #id_image-chooser-insertion-format {
+  margin-top: 0;
+}
+
+.Non-Admin-Draftail__image-preview img {
+  display: block;
+  margin: 0 auto;
+}
+
+.Draftail-Editor__wrapper .tippy-content .w-combobox {
+  padding: 0.625rem;
+  background-color: #FFF;
+  color: #333;
+  border-radius: 5px;
+  box-shadow: 0 0 5px #333;
+}
+.Draftail-Editor__wrapper .Tooltip {
+  position: absolute;
+  padding: 0.625rem;
+  background-color: #FFF;
+  color: #333;
+  z-index: 1;
+  border-radius: 5px;
+  box-shadow: 0 0 5px #333;
+}
+.Draftail-Editor__wrapper .Tooltip::before {
+  content: "";
+  position: absolute;
+  border: 15px solid transparent;
+  display: none !important;
+}
+.Draftail-Editor__wrapper .Tooltip--top {
+  margin-top: 25px;
+  transform: translateX(calc(var(--w-direction-factor) * -50%));
+}
+.Draftail-Editor__wrapper .Tooltip--top::before {
+  bottom: 100%;
+  inset-inline-start: 50%;
+  transform: translateX(calc(var(--w-direction-factor) * -50%));
+  border-bottom-color: #FFF;
+}
+.Draftail-Editor__wrapper .Tooltip--left {
+  margin-inline-start: 25px;
+  transform: translateY(-50%);
+}
+.Draftail-Editor__wrapper .Tooltip--left::before {
+  display: none;
+}
+.Draftail-Editor__wrapper .Tooltip--top-left {
+  margin-top: 25px;
+}
+.Draftail-Editor__wrapper .Tooltip--top-left::before {
+  bottom: 100%;
+  inset-inline-start: 25px;
+  border-bottom-color: #FFF;
+}
+.Draftail-Editor__wrapper .Tooltip__link {
+  font-size: 0.875rem;
+  margin-inline-end: 4;
+  display: inline-block;
+}
+.Draftail-Editor__wrapper .Tooltip__link, .Draftail-Editor__wrapper .Tooltip__link:hover {
+  color: #111;
+}
+.Draftail-Editor__wrapper .Tooltip__button {
+  background: #03686A;
+  border: 1px solid #03686A;
+  border-radius: 8px;
+  color: #FFF;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+.Draftail-Editor__wrapper .Tooltip__button.no.button-secondary {
+  background: #FFF;
+  color: #F04444;
+  border-color: #F04444;
+  margin-left: 10px;
+}
+.Draftail-Editor__wrapper .Tooltip__button.no.button-secondary:hover {
+  color: #F04444;
+}
+
+.Draftail-Tooltip .w-combobox {
+  padding: 10px;
+}
+.Draftail-Tooltip .w-combobox__field input {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 0.5rem;
+  border-width: 1px;
+}
+.Draftail-Tooltip .w-combobox__field input:focus {
+  outline-color: #03686A;
+}
+.Draftail-Tooltip .w-combobox__field input[disabled] {
+  display: none;
+}
+.Draftail-Tooltip .w-combobox__status,
+.Draftail-Tooltip .w-combobox__menu {
+  margin-top: 0.75rem;
+}
+.Draftail-Tooltip .w-combobox__optgroup {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 1rem;
+}
+.Draftail-Tooltip .w-combobox__option {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  padding: 0.25rem;
+}
+.Draftail-Tooltip .w-combobox__option:focus, .Draftail-Tooltip .w-combobox__option[aria-selected=true], .Draftail-Tooltip .w-combobox__option:hover {
+  outline: #03686A solid 2px;
+  border-radius: 4px;
+}
+.Draftail-Tooltip .w-combobox__option-text {
+  margin-left: 0.5rem;
+}
+.Draftail-Tooltip .w-combobox__option-icon,
+.Draftail-Tooltip .w-combobox__option-icon svg {
+  width: 16px;
+  height: 16px;
+  color: #aaa;
+  fill: #aaa;
+}
