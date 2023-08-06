@@ -1,0 +1,12 @@
+
+[glue]
+glue-core
+
+[qt]
+PyQt5>=5.9
+
+[test]
+pytest
+pytest-qt
+pytest-faulthandler
+mock
