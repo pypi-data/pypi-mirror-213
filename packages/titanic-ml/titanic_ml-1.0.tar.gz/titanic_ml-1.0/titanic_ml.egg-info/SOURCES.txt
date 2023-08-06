@@ -1,0 +1,10 @@
+setup.py
+titanic_ml/__init__.py
+titanic_ml/prueba.py
+titanic_ml/test.py
+titanic_ml/titanic_classifier.py
+titanic_ml.egg-info/PKG-INFO
+titanic_ml.egg-info/SOURCES.txt
+titanic_ml.egg-info/dependency_links.txt
+titanic_ml.egg-info/requires.txt
+titanic_ml.egg-info/top_level.txt

@@ -1,0 +1,6 @@
+Metadata-Version: 2.1
+Name: titanic-ml
+Version: 1.0
+Summary: Un clasificador de RandomForest para el dataset Titanic
+Author: Álvaro
+Author-email: alvaro.maestre@edu.uah.es
