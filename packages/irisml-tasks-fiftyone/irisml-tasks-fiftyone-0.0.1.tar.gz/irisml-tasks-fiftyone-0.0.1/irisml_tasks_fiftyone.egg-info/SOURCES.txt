@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+irisml/tasks/launch_fiftyone.py
+irisml_tasks_fiftyone.egg-info/PKG-INFO
+irisml_tasks_fiftyone.egg-info/SOURCES.txt
+irisml_tasks_fiftyone.egg-info/dependency_links.txt
+irisml_tasks_fiftyone.egg-info/requires.txt
+irisml_tasks_fiftyone.egg-info/top_level.txt
+test/test_launch_fiftyone.py

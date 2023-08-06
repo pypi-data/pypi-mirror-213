@@ -1,0 +1,29 @@
+# irisml-tasks-fiftyone
+
+IrisML tasks for fiftyone-related integration. Using these tasks, you can view datasets and prediction results on the fiftyone interface.
+
+For the detail of fiftyone, please visit [their repository](https://github.com/voxel51/fiftyone).
+
+For the detail of IrisML, please visit [IrisML repository](https://github.com/microsoft/irisml).
+
+## Installation
+```bash
+pip install irisml-tasks-fiftyone
+```
+
+## Tasks
+
+### launch_fiftyone
+
+```python
+class Inputs:
+    dataset: torch.utils.data.Dataset
+    predictions: Optional[List]
+    class_names: Optional[List[str]]
+
+class Config:
+    task_type: Literal['multiclass_classification', 'multilabel_classification', 'object_detection']
+    duration: int
+```
+
+This task launches a fiftyone app, then sleeps for config.duration seconds. Currently Image Classification and Object Detection tasks are supported.
