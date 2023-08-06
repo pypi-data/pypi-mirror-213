@@ -1,0 +1,5 @@
+[console_scripts]
+mjwt_magic = mjwt.utils:printfun
+
+[nbdev]
+mjwt = mjwt._modidx:d
