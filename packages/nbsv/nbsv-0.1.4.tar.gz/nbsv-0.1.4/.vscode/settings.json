@@ -1,0 +1,6 @@
+{
+    "cSpell.words": [
+        "nbsv"
+    ],
+    "python.formatting.provider": "black"
+}
