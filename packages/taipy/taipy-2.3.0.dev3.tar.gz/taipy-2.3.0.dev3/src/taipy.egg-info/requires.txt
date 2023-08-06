@@ -1,0 +1,23 @@
+cookiecutter<2.2,>=2.1.1
+taipy-gui==2.3.0.dev6
+taipy-rest==2.3.0.dev2
+
+[arrow]
+pyarrow<11.0,>=10.0.1
+
+[image]
+
+[image:platform_system != "Windows"]
+python-magic<0.5,>=0.4.24
+
+[image:platform_system == "Windows"]
+python-magic-bin<0.5,>=0.4.14
+
+[mssql]
+pyodbc>=4
+
+[ngrok]
+pyngrok<6.0,>=5.1
+
+[rdp]
+rdp>=0.8
