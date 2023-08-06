@@ -1,0 +1,27 @@
+glyphsLib>=6.2.1
+ufo2ft[compreffor]>=2.32.0
+fontMath>=0.9.3
+ufoLib2>=0.14.0
+attrs>=19
+
+[:implementation_name != "cpython"]
+fonttools[ufo,unicode]>=4.40.0
+
+[:implementation_name == "cpython"]
+fonttools[lxml,ufo,unicode]>=4.40.0
+
+[all]
+skia-pathops>=0.3.0
+MutatorMath>=2.1.2
+ttfautohint-py>=0.5.0
+
+[autohint]
+ttfautohint-py>=0.5.0
+
+[lxml]
+
+[mutatormath]
+MutatorMath>=2.1.2
+
+[pathops]
+skia-pathops>=0.3.0
