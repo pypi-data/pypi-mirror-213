@@ -1,0 +1,6 @@
+[console_scripts]
+ciff_dump=ciff_toolkit.cli:dump
+ciff_merge=ciff_toolkit.cli:merge
+ciff_swap=ciff_toolkit.cli:swap
+ciff_zero_index=ciff_toolkit.cli:zero_index
+
