@@ -1,0 +1,19 @@
+{%  load i18n %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p>{%  translate "Hello" %}, {{ user.get_full_name }}</p>
+<p>{% blocktranslate %}Thank you for use the <strong>CADEFIHUILA's</strong> transactional portal.{% endblocktranslate %}</p>
+<p>{% blocktranslate %}Through this email inform you that your Coffee Offer No. {% endblocktranslate %}<strong>OA-{{ offer.contract }}</strong> {% blocktranslate %}has changed from status <strong>{{ from_status }}</strong> to <strong>{{ new_status }}</strong> status.{% endblocktranslate %}</p>
+<p></p>
+<p>
+    <label style="font-size: 8px;">
+        {% blocktranslate %}This email waw generated automatically at {{ email_datetime }} with id {{ email_id }}. Pleas do not answer it.{% endblocktranslate %}
+    </label>
+</p>
+</body>
+</html>

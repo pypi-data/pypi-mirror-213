@@ -1,0 +1,57 @@
+{% extends "coffee_offers/coffee_offers_base.html" %}
+
+{% block header_offers %}
+{% endblock %}
+
+{% block detail_offers %}
+    <div class="container" style="width: 90%; margin: 0 auto">
+        <p><strong>PAGARÉ No. PG-{{ offer.warehouse.location_id }}-{{ offer.contract }}</strong></p>
+        <br>
+        <p style="text-align:justify; margin-bottom:11px">Yo {{ user.get_full_name }} Identificado(s) como aparece al
+            pie de mi (nuestras) firma(s), actuando en nombre propio, declaro(amos) que solidaria e incondicionalmente
+            pagare(mos) a la orden de la {{ company.name }}, identificada con NIT. {{ company.tax_id }}, el (AAAA-MM-DD)
+            _______________.
+        </p>
+        <br>
+        <p style="text-align:justify">Esta suma corresponde a las obligaciones y a las sumas que a continuación se
+            relacionan:
+        </p>
+        <p style="text-align:justify;">
+            Número de obligación ______________________________________________________
+        </p>
+        <p>
+            Lugar donde se efectuará el pago _____________________________________________
+        </p>
+        <p>
+            Fecha vencimiento _________________________________________________________
+        </p>
+        <p>
+            Capital $ _________________________________________________________________
+        </p>
+        <p>
+            Intereses de plazo $ ________________________________________________________
+        </p>
+        <p>
+            Intereses de mora $ ________________________________________________________
+        </p>
+        <p>
+            Total $ ___________________________________________________________________
+        </p>
+
+        <br>
+
+        <p style="text-align:justify;">A partir del vencimiento, pagare(mos) sobre el capital intereses moratorios a la
+            tasa máxima vigente permitida, sin perjuicio que se paguen igualmente sobre todos los conceptos indicados en
+            el cuadro anterior, en los términos del artículo 886 del código de comercio, para lo cual la firma de este
+            documento se entenderá como acuerdo posterior al vencimiento. Todos los gastos, honorarios e impuestos
+            ocasionados con la suscripción, cobro extrajudicial o judicial de este título- valor, correrán por cuenta
+            exclusiva de su(s) otorgante(s).
+        </p>
+        <br>
+        <p style="text-align:justify;">
+            En constancia se firma en la ciudad de _______________ el día (AAAA-MM-DD) ______________.
+        </p>
+    </div>
+    <br><br>
+{% endblock %}
+

@@ -1,0 +1,144 @@
+{% extends "coffee_offers/coffee_offers_base.html" %}
+
+{% block header_offers %}
+{% endblock %}
+
+{% block detail_offers %}
+    <div style="width: 90%; margin: 0 auto">
+        <p class="text-center"><strong>CONTRATO DE ENTREGA DE CAFÉ SUJETO A PLAZO No.
+            CT-{{ offer.warehouse.location_id }}-{{ offer.contract }}</strong>
+        </p>
+
+        <p>
+            Entre los suscritos a saber, <strong>{{ company.legal_representative|upper }}</strong>, mayor de edad,
+            domiciliado y residente en el Municipio de Neiva (Huila), identificado con la cédula de ciudadanía No.
+            7.692.949 expedida en Neiva (Huila), actuando en nombre y representación legal de la {{ company.name }} -
+            CADEFIHUILA., persona jurídica de derecho privado, sin ánimo de lucro, domiciliada en {{ comapny.city }}
+            (Huila), portadora del Número de Identificación Tributario {{ company.tax_id }}, con correo electrónico de
+            notificaciones info@cadefihuila.com, en adelante <strong>(EL ACREEDOR Y/O LA COOPERATIVA)</strong>, por una
+            parte, y por otra parte, <strong>{{ user.get_full_name|upper }}</strong>, mayor de edad, domiciliado en el
+            Municipio de {{ user.profile.location }}, identificado con la cédula de ciudadanía
+            No. {{ user.profile.document_id }} y quien en adelante se denominará el <strong>(EL DEUDOR Y/O
+            CAFICULTOR)</strong> con correo electrónico de notificaciones {{ user.email }} y número
+            WhatsApp {{ user.profile.mobile }}, hemos convenido celebrar un <strong>CONTRATO DE ENTREGA DE CAFÉ SUJETO A
+            PLAZO</strong> que se regirá en especial por las cláusulas adelante descritas y por la legislación
+            aplicable.
+        </p>
+
+        <p class="text-center"><strong>CLÁUSULAS</strong></p>
+
+        <p>
+            <strong>PRIMERA. Naturaleza.</strong> El presente es un contrato comercial que se regirá por la Ley civil y
+            comercial colombiana y lo dispuesto en las cláusulas siguientes.
+        </p>
+
+        <p>
+            <strong>SEGUNDA. Objeto.</strong> En virtud del presente contrato EL CAFICULTOR se compromete a entregar a
+            favor de LA COOPERATIVA {{ offer.product.name }} colombiano de calidad exportable con factor {{ factor }},
+            en las cantidades señaladas a continuación: {{ offer.kg_offered|floatformat:"2g" }} kilos, con un plazo de
+            entrega determinado.
+        </p>
+        <p>
+            <strong>TERCERA. Precio.</strong> El valor negociado es de (${{ offer.price|floatformat:"2g" }}) por kilo de
+            café, precio base para factor 94.00 y en consecuencia el valor total del presente contrato es por la suma de
+            (${{ total_offer|floatformat:"2g" }}) {{ total_offer_words }}.
+        </p>
+        <p>
+            <strong>PARÁGRAFO 1:</strong> El precio se discrimina con el fin de establecer el valor en dinero del
+            contrato, sin que este valor sea previamente requerido para que EL CAFICULTOR dé cumplimiento del objeto del
+            contrato de entrega de café sujeto a un plazo a favor de la COOPERATIVA.
+        </p>
+        <p>
+            <strong>PARÁGRAFO 2:</strong> LA COOPERATIVA pagará el precio descrito en la presente cláusula a EL
+            CAFICULTOR, únicamente cuando se verifique la entrega total del café objeto del contrato, dentro del el
+            plazo establecido por parte de EL CAFICULTOR.
+        </p>
+        <p>
+            <strong>CUARTA. Entrega.</strong> El café objeto de la negociación deberá ser entregado a LA COOPERATIVA, y
+            solamente se reciben entregas parciales entre el día {{ offer.created_at|date }} hasta el
+            día {{ offer.delivery_date|date }}; en consecuencia, EL CAFICULTOR tendrá como fecha límite para el
+            cumplimiento de esta obligación el día {{ offer.delivery_date|date }}. La entrega deberá ser efectuada en
+            punto de compra denominado {{ offer.warehouse.location_name }}, ubicada en la ciudad
+            de {{ offer.warehouse.city_name }}, en donde se exigirá que el café entregado sea de la calidad y cantidad
+            especificada en la oferta comercial No. OA-{{ offer.warehouse.location_id }}-{{ offer.contract }}. La cual
+            forma parte integral del presente contrato.
+        </p>
+        <p>
+            <strong>QUINTA. Cláusula Penal.</strong> El incumplimiento por parte del DEUDOR de la obligación de entregar
+            la cantidad de café antes mencionada, le ocasionará una multa del 20% del valor del negocio más los gastos
+            en que incurra EL COMPRADOR por dicho incumplimiento, más las pérdidas generadas en la posición de
+            cobertura, que se ocasionen por: <b>a)</b> El no cumplimiento del tiempo pactado; <b>b)</b> La calidad
+            entregada no corresponde a la negociada; <b>c)</b> El no cumplimiento de la entrega del producto por
+            diferencia de precios; casos en que los ítems a, b y c le ocasionarían a la Cooperativa costos adicionales
+            para cumplir con lo pactado en el contrato.
+        </p>
+        <p>
+            <strong>SEXTA. MÉRITO EJECUTIVO:</strong> El presente contrato presenta mérito ejecutivo en contra de EL
+            CAFICULTOR por cada incumplimiento de una o cualquiera de sus obligaciones sin necesidad de requerimiento o
+            constituciones en mora a las cuales las partes renuncian en forma expresa, de conformidad con lo contemplado
+            en el artículo 432 del Código General del proceso “Obligación de dar”.
+        </p>
+        <p>
+            <strong>SÉPTIMA. Perfeccionamiento.</strong> El presente contrato se perfeccionará mediante la firma de
+            ambas partes.
+        </p>
+        <p>
+            <strong>OCTAVA. Vigencia del Contrato.</strong> Este contrato tendrá vigencia desde su perfeccionamiento
+            hasta el {{ offer.delivery_date|date }}.
+        </p>
+        <p>
+            <strong>NOVENA. Autorización para consulta y reporte a centrales de riesgo.</strong> El CAFICULTOR autoriza
+            de manera libre, voluntaria, expresa, informada e irrevocable a la {{ company.name }}. - CADEFIHUILA, para
+            que reporte a TRANSUNION, CIFIN, o a cualquier otro operador y/o fuente de información, legalmente
+            establecido, toda la información referente al comportamiento que se relacione con el nacimiento, ejecución,
+            desarrollo, modificación, liquidación y/o extinción de las obligaciones que se deriven del presente Contrato
+            y que podrá reflejarse en las bases de datos de TRANSUNION, CIFIN o de cualquier otro operador y/o fuente de
+            información, legalmente establecido. La permanencia de la información estará sujeta a los principios,
+            términos y condiciones consagrados en la Ley 1266 de 2008, y demás normas que la modifiquen, aclaren o
+            reglamenten. Así mismo, autorizo expresa e irrevocablemente, a la {{ company.name }}. - CADEFIHUILA, para
+            que consulte toda la información financiera, crediticia, comercial, de servicios y la proveniente de otros
+            países, atinente a sus relaciones comerciales que tenga con el sistema financiero, comercial y de servicios,
+            o de cualquier sector, tanto en Colombia como en el exterior, con sujeción a los principios, términos y
+            condiciones consagrados en la Ley 1266 de 2008 y demás normas que la modifiquen, aclaren o reglamenten.
+        </p>
+        <p>
+            <strong>DÉCIMA. Cesión.</strong> EL CAFICULTOR no podrá ceder ni subcontratar el presente contrato, sin la
+            autorización previa y escrita de LA COOPERATIVA.
+        </p>
+        <br>
+
+        <p>Firmado electrónicamente el {{ offer.created_at }}.</p>
+    </div>
+    <br>
+{% endblock %}
+
+{% block footer_offers %}
+    <div style="width: 90%; margin: 0 auto">
+        <table>
+            <tr>
+                <td style="border: none">
+                    <p>LA COOPERATIVA,</p>
+                    <br>
+                    <br>
+                    <p>
+                        _____________________________________ <br>
+                        <strong>{{ company.legal_representative }}</strong><br>
+                        Gerente <br>
+                        Cadefihuia Ltda.
+                    </p>
+                </td>
+                <td style="border: none">
+                    <p>El CAFICULTOR,</p>
+                    <br>
+                    <br>
+                    <p>
+                        ____________________________________ <br>
+                        <strong>{{ user.get_full_name }}</strong><br>
+                        C.C. <strong>{{ user.profile.document_id }}</strong><br>
+                        WhatsApp. <strong>{{ user.profile.mobile }}</strong>
+                    </p>
+                </td>
+            </tr>
+        </table>
+    </div>
+{% endblock %}
