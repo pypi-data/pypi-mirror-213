@@ -1,0 +1,8 @@
+rabbitmq_integration/__init__.py,sha256=jSBgU-nRFDufrOVIsGIxEzkSjCD_5BQL2n2fjVjB9uI,162
+rabbitmq_integration/rabbitmq_api.py,sha256=4106mQH2F72Z7932romj-mH5Kuf9I83aAPU95cLGAuk,451
+rabbitmq_integration/rabbitmq_commands.py,sha256=LpO6jbnKCoKH9HmltNCG1hUOOf9EbknW7_NCgeFw-_k,795
+rabbitmq_integration/rabbitmq_conn.py,sha256=GSNelNH01S-hwKBjXQGP73-acLIPCYxBS54c_oR0Ggg,788
+django_rabbitmq_utils-0.0.1.dist-info/METADATA,sha256=sgCBx4wcygPrm8kjQqU-ELTzrmw7bCcmZglr1yPW2c0,2551
+django_rabbitmq_utils-0.0.1.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+django_rabbitmq_utils-0.0.1.dist-info/top_level.txt,sha256=ahCysXyLGko9faSeCrdTDkOADIP0K8-ez0-5anfaHvM,21
+django_rabbitmq_utils-0.0.1.dist-info/RECORD,,
