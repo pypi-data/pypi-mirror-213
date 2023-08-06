@@ -1,0 +1,1 @@
+This is a verys simple calculator which we have named as `basiCAL` that takes 2 numbers which user can Add, Subtract, Multiply or divide.
