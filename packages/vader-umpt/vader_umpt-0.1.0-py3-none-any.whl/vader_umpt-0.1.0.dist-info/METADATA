@@ -1,0 +1,81 @@
+Metadata-Version: 2.1
+Name: vader-umpt
+Version: 0.1.0
+Summary: 
+Author: Alexandre Flores
+Author-email: pg50165@alunos.uminho.pt
+Requires-Python: >=3.10,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: pandas (>=2.0.2,<3.0.0)
+Requires-Dist: spacy (>=3.5.3,<4.0.0)
+Requires-Dist: streamlit (>=1.23.1,<2.0.0)
+Requires-Dist: typing-extensions (>=4.6.3,<5.0.0)
+Description-Content-Type: text/markdown
+
+# VADER-UMPT
+Vader-UMPT é uma ferramenta para análise de sentimento em português do Brasil. Utiliza o [LeIA](https://github.com/rafjaa/LeIA) que, por sua vez, se baseia na ferramenta [VADER](https://github.com/brunneis/vader-multi).
+
+## Desenvolvimento
+**TODO**
+
+## Instalação
+**TODO**
+
+## Utilização
+
+Abaixo são apresentadas todas as possíveis utilizações deste programa, obtidas através de `VADER-UMPT --help`.
+
+```
+usage: VADER-UMPT [-h] [--export-dicts] [-l LEXICON] [--emoji-lexicon EMOJI_LEXICON] [-e] [-w]
+
+options:
+  -h, --help            show this help message and exit
+  --export-dicts        Exporta os dicionários
+  -l LEXICON, --lexicon LEXICON
+                        Ficheiro com o dicionário a ser utilizado
+  --emoji-lexicon EMOJI_LEXICON
+                        Ficheiro com o dicionário de emojis a ser utilizado
+  -e, --explain         Imprimir explicação detalhada sobre como a pontuação foi calculada
+  -w, --web             Executar um playground web para testar o analisador
+```
+### Playground Web
+```sh
+vader-umpt -w
+```
+Este comando irá executar o *playground web*, isto é, uma interface a partir do qual poderá fornecer texto e obter uma análise de sentimento detalhada. Este comando devolve um IP que pode ser utilizado para aceder à página através do *browser*.
+Seguem-se alguns exemplos de utilização da *interface*, sendo apenas mostrada a parte inicial da página:
+
+![Exemplo Playground](pics/muito_feio.png)
+![Exemplo Playground](pics/gostei_muito.png)
+
+### Explicação de Resultados
+Uma outra utilização do programa passa por ler do *standard input* e devolver uma explicação detalhada da análise de sentimento.
+```sh
+./vader-umpt -e
+Esta visita foi extremamente desagradável
+{"neg": 0.438, "neu": 0.562, "pos": 0.0, "compound": -0.5984, "explanation": [["Lemmatize text", "este visita ser extremamente desagradável ."], ["Remove accents", "este visita ser extremamente desagradavel ."], ["Emojis to text", "este visita ser extremamente desagradavel ."], ["Sentiments", [["este", 0]]], ["Sentiments", [["este", 0], ["visita", 0]]], ["Sentiments", [["este", 0], ["visita", 0], ["ser", 0]]], ["Sentiments", [["este", 0], ["visita", 0], ["ser", 0], ["extremamente", 0], ["desagradavel", -2.8930000000000002]]], ["Sentiments", [["este", 0], ["visita", 0], ["ser", 0], ["extremamente", 0], ["desagradavel", -2.8930000000000002], [".", 0]]], ["Sentiments", [["este", 0], ["visita", 0], ["ser", 0], ["extremamente", 0], ["desagradavel", -2.8930000000000002], [".", 0]]], ["Sentiments after but check", [["este", 0], ["visita", 0], ["ser", 0], ["extremamente", 0], ["desagradavel", -2.8930000000000002], [".", 0]]], ["Sum", -2.8930000000000002], ["Punctuation amplifier", "Exclamation: 0.0, Question: 0, Total: 0.0"], ["Normalized sum", -0.5984449372171403]]}
+A comida estava horrível
+{"neg": 0.552, "neu": 0.448, "pos": 0.0, "compound": -0.5719, "explanation": [["Lemmatize text", "o comida estar horrível"], ["Remove accents", "o comida estar horrivel"], ["Emojis to text", "o comida estar horrivel"], ["Sentiments", [["o", 0]]], ["Sentiments", [["o", 0], ["comida", 0]]], ["Sentiments", [["o", 0], ["comida", 0], ["estar", 0]]], ["Sentiments", [["o", 0], ["comida", 0], ["estar", 0], ["horrivel", -2.7]]], ["Sentiments", [["o", 0], ["comida", 0], ["estar", 0], ["horrivel", -2.7]]], ["Sentiments after but check", [["o", 0], ["comida", 0], ["estar", 0], ["horrivel", -2.7]]], ["Sum", -2.7], ["Punctuation amplifier", "Exclamation: 0.0, Question: 0, Total: 0.0"], ["Normalized sum", -0.5718850320700721]]}
+```
+
+### Exportação de Dicionários
+É possível imprimir os dicionários em formato *JSON* no *standard output* e, consequentemente, redirecioná-los para um ficheiro.
+```sh
+vader-umpt --export-dicts > dicionario.json
+```
+
+### Especificação de Dicionários
+Especificação de dicionário a ser utilizado
+```sh
+vader-umpt --lexicon lexicon.json
+```
+Especificação de dicionário de *emojis* a ser utilizado
+```sh
+vader-umpt --emoji-lexicon emojis.json
+```
+
+## Autores
+Trabalho realizado por Alexandre Flores, Matilde Bravo e Pedro Alves.
+
