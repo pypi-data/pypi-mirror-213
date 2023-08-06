@@ -1,0 +1,12 @@
+LICENSE.txt
+README.md
+setup.cfg
+setup.py
+djangolazy/__init__.py
+djangolazy/__main__.py
+djangolazy/setupscript.py
+djangolazy.egg-info/PKG-INFO
+djangolazy.egg-info/SOURCES.txt
+djangolazy.egg-info/dependency_links.txt
+djangolazy.egg-info/requires.txt
+djangolazy.egg-info/top_level.txt
