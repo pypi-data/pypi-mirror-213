@@ -1,0 +1,11 @@
+cmem_plugin_kafka/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+cmem_plugin_kafka/constants.py,sha256=BGJAgMCEviiur-emQtmEaaeu1yDzbbIDYO10whLtRto,4432
+cmem_plugin_kafka/kafka_handlers.py,sha256=mMpUqlv4DiOcNhCD3dZvFTJCVmHg84yeeXBKAwFycKk,14682
+cmem_plugin_kafka/utils.py,sha256=ktD78X5Gkx33s4KgCGbQtvX-27Ai7F8Z8QhbJbpPdJo,11743
+cmem_plugin_kafka/workflow/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+cmem_plugin_kafka/workflow/consumer.py,sha256=__IBvdtIvlt_Paeco93fYojkaPcGDVH07OTO9AAeDSI,11640
+cmem_plugin_kafka/workflow/producer.py,sha256=rhiludilifzNkzDRlclI-Rjj7QiDCIA3Dt5UrOGZy0k,9739
+cmem_plugin_kafka-1.3.0.dist-info/LICENSE,sha256=5t6lcWcFU3TBO5wwq9PYNbgzfVfFUuL-80v5BTGuuMQ,11334
+cmem_plugin_kafka-1.3.0.dist-info/METADATA,sha256=g0GUtWThxt5852xXYSd8pzGjygLKu-m3xrVf8mQUxxQ,4789
+cmem_plugin_kafka-1.3.0.dist-info/WHEEL,sha256=Zb28QaM1gQi8f4VCBhsUklF61CTlNYfs9YAZn-TOGFk,88
+cmem_plugin_kafka-1.3.0.dist-info/RECORD,,
