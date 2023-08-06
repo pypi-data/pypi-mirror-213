@@ -1,0 +1,9 @@
+borg_space/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+borg_space/config.py,sha256=R6U6ZMKDcDnGEQd1uPEyhwchLkzmydRnqJyecuRWn5Y,9536
+borg_space/main.py,sha256=Pj1-VgFaqcs-eT1WALKay7PDDKhdFPPnrFXetSMhn40,10791
+borg_space/trees.py,sha256=mV_zxDZKlBgX6923MZ5hiQQU2sCDjw84La7qCDMoY0s,3089
+borg_space-2.2.dist-info/entry_points.txt,sha256=IicwhNnvI9X30KXme_tGdThmyngfdq0GLYDAxCSApkw,51
+borg_space-2.2.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+borg_space-2.2.dist-info/WHEEL,sha256=EZbGkh7Ie4PoZfRQ8I0ZuP9VklN_TvcZ6DSE5Uar4z4,81
+borg_space-2.2.dist-info/METADATA,sha256=RxLpcSf_DbPxBcM79tpyzvly9ZqUgN-Hni0OLoBr6IM,13015
+borg_space-2.2.dist-info/RECORD,,
