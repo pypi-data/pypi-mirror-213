@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/w3multicall.egg-info/PKG-INFO
+src/w3multicall.egg-info/SOURCES.txt
+src/w3multicall.egg-info/dependency_links.txt
+src/w3multicall.egg-info/requires.txt
+src/w3multicall.egg-info/top_level.txt
+src/web3multicall/__init__.py
+src/web3multicall/multicall.py
+src/web3multicall/threading/__init__.py
+src/web3multicall/threading/w3multicall_executor.py
