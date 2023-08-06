@@ -1,0 +1,82 @@
+Metadata-Version: 2.1
+Name: queuelink
+Version: 1.0.0
+Summary: Connect and link one or more Queues together or to files
+Author-email: Andy Robb <andy@andyrobb.com>
+License: MIT License
+        
+        Copyright (c) 2023 Andy Robb
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+Project-URL: homepage, https://github.com/arobb/python-queuelink
+Project-URL: repository, https://github.com/arobb/python-queuelink
+Keywords: utility
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Utilities
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Description-Content-Type: text/x-rst
+Provides-Extra: dev
+Provides-Extra: test
+Provides-Extra: docs
+License-File: LICENSE.txt
+
+---------
+QueueLink
+---------
+The QueueLink library simplifies several queue patterns including linking queues together with one-to-many or many-to-one relationships, and supports reading and writing to text-based files.
+
+Interaction Pattern
+===================
+A QueueLink is a one-way process that connects queues together. When two or more queues are linked, a sub-process is started to read from the "source" queue and write into the "destination" queue.
+
+Circular references are not allowed, making QueueLink a 'directed acyclic graph', or DAG.
+
+Users create each queue, which must be instances of ``multiprocessing.Manager.JoinableQueue``. Those queues can then be added to a QueueLink instance as either the source or destination.
+
+::
+
+    from multiprocessing import Manager
+    from queuelink import QueueLink
+
+    # Create the multiprocessing.Manager
+    manager = Manager()
+
+    # Source and destination queues
+    source_q = manager.JoinableQueue()
+    dest_q = manager.JoinableQueue()
+
+    # Create the QueueLink
+    queue_link = QueueLink(name="my link")
+
+    # Connect queues to the QueueLink
+    source_id = queue_link.register_queue(queue_proxy=source_q,
+                                          direction="source")
+    dest_id = queue_link.register_queue(queue_proxy=dest_q,
+                                        direction="destination")
+
+    # Text to send
+    text_in = "a😂" * 10
+
+    # Add text to the source queue
+    source_q.put(text_in)
+
+    # Retrieve the text from the destination queue!
+    text_out = dest_q.get()
+    print(text_out)
