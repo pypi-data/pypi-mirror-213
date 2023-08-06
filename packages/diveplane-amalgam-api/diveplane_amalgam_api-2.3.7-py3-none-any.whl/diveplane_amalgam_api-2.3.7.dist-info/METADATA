@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: diveplane-amalgam-api
+Version: 2.3.7
+Summary: A direct interface with Amalgam compiled dll or so.
+Home-page: UNKNOWN
+Author: Diveplane Corp
+Author-email: support@diveplane.com
+License: UNKNOWN
+Platform: UNKNOWN
+License-File: LICENSE.txt
+Requires-Dist: numpy (>=1)
+Requires-Dist: semantic-version (>=2.8.5)
+Provides-Extra: dev
+Requires-Dist: pip-tools ; extra == 'dev'
+Requires-Dist: pytest ; extra == 'dev'
+Requires-Dist: pytest-cov ; extra == 'dev'
+Requires-Dist: pytest-mock ; extra == 'dev'
+Requires-Dist: flake8 ; extra == 'dev'
+
+UNKNOWN
+
