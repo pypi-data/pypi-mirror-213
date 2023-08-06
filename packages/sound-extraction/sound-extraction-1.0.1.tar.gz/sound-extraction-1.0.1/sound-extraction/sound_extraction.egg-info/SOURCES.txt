@@ -1,0 +1,9 @@
+LICENSE.txt
+README.md
+setup.py
+sound-extraction/sound_extraction.egg-info/PKG-INFO
+sound-extraction/sound_extraction.egg-info/SOURCES.txt
+sound-extraction/sound_extraction.egg-info/dependency_links.txt
+sound-extraction/sound_extraction.egg-info/entry_points.txt
+sound-extraction/sound_extraction.egg-info/requires.txt
+sound-extraction/sound_extraction.egg-info/top_level.txt

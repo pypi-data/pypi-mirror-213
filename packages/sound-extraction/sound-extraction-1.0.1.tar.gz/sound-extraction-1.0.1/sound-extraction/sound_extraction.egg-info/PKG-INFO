@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: sound-extraction
+Version: 1.0.1
+Summary: Slice and segment your audio files easily with open source Python program. Our tool enables you to perform analytical workflows by creating segments based on recording start time and desired duration. Share and manipulate the recordings at ease.Slice and segment your audio files easily with open source Python program. Our tool enables you to perform analytical workflows by creating segments based on recording start time and desired duration. Share and manipulate the recordings at ease.
+Home-page: https://github.com/prayagnshah/Sound-Extraction
+Author: Prayag Shah
+Author-email: prayagshah07@gmail.com
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+License-File: LICENSE.txt
