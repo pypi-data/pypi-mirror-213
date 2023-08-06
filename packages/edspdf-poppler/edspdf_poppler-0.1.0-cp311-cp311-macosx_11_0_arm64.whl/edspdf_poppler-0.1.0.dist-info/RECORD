@@ -1,0 +1,9 @@
+edspdf_poppler-0.1.0.dist-info/RECORD,,
+edspdf_poppler-0.1.0.dist-info/LICENSE,sha256=gXf5dRMhNSbfLPYYTY_5hsZ1r7UU1OaKQEAQUhuIBkM,18092
+edspdf_poppler-0.1.0.dist-info/WHEEL,sha256=GYWT1Q_60SI2bAUaGrkLwkEA5yYDmphib6XcY6K30ZQ,110
+edspdf_poppler-0.1.0.dist-info/entry_points.txt,sha256=_UmLFJozgaLAAhBUYi3Es59OzRYQ86ofdlwdHJWSGtU,71
+edspdf_poppler-0.1.0.dist-info/top_level.txt,sha256=rXlVrTaUkos7bsoM1Pd4ucZ8uB5w8hMJtl9vCIXd0WI,15
+edspdf_poppler-0.1.0.dist-info/METADATA,sha256=E0Ctot4BdnIfWhrK_QZhqWmtSxMqjT4Ro67TKVv-ouk,23015
+edspdf_poppler/__init__.py,sha256=JR7VLYgvW-7B5Waf6LNOBBwr35ooTC0Rp7qyf0M_Qzw,5667
+edspdf_poppler/bindings.cpp,sha256=VFdsWRhU39UknV-G3mCcXvIpdIIUaA_dqxo2v72CRK4,467219
+edspdf_poppler/bindings.cpython-311-darwin.so,sha256=FUNexF5nt7ir6rYgmNRILPVkai7wto72d5c1QXOQjCY,137115
