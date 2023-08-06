@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: biochatter
+Version: 0.0.0
+Summary: Backend library for conversational AI in biomedicine
+License: MIT
+Author: Sebastian Lobentanzer
+Author-email: sebastian.lobentanzer@gmail.com
+Requires-Python: >=3.10,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Description-Content-Type: text/markdown
+
+# biochatter
+This repository will become a backend library for the connection of biomedical applications to conversational AI. Check back soon.
+
