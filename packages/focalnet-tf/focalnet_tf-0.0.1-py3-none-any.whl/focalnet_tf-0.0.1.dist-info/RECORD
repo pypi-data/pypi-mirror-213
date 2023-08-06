@@ -1,0 +1,13 @@
+focalnet/__init__.py,sha256=dmzwjLd9Mwm8SNlaRhfN8IWWCTSGCd5IiD7HGSzEM_k,195
+focalnet/download_weights.py,sha256=1ffOfKzI2ZK6fMdZGcjRcNHhVoGoIdQ3vahZW9_WG6Q,1667
+focalnet/drop.py,sha256=8ObP3JOWsfOHPNdNkzvDGzOfywbZMVAR-BL4jDMtOYg,1680
+focalnet/focalnet.py,sha256=I3WVNKgRxb9CKSZ9DZwQpxu1E2ZYfcMyijyhUjH2n48,23057
+focalnet/focalnet_utils.py,sha256=WLpj3MjZF3Fw9jgXdsFB-A-ZzylwdDC8oM78PwM5I-U,5288
+focalnet/imagenet-1k.json,sha256=oeepZqH2AdOeS0PhGbPn3Uoq0-oIz2mEfLrwIQE3Z7w,35363
+focalnet/imagenet-21k.json,sha256=-9R-GvA75WTbLzJ91u8EDTEz-XYsYjeq7aR1vgFsZHw,872487
+focalnet/imagenet-22k-reorder.json,sha256=HPMRahKA5wEbprK80PnqqWmIu3_xwZ1MMW-UhrB4U0w,773963
+focalnet_tf-0.0.1.dist-info/LICENSE,sha256=--YRNwbnbSxMnyYyJJrJFV_NCMqjDCSIuE0d1gz33yo,1086
+focalnet_tf-0.0.1.dist-info/METADATA,sha256=5xkonQuS072_pKlbQXd63VAxujIdF__TuHfOPh3axrQ,4390
+focalnet_tf-0.0.1.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+focalnet_tf-0.0.1.dist-info/top_level.txt,sha256=fjTCMi3K4h_l4_4B1hMevpbqbTOcuKpoDkjGx0BChQw,9
+focalnet_tf-0.0.1.dist-info/RECORD,,
