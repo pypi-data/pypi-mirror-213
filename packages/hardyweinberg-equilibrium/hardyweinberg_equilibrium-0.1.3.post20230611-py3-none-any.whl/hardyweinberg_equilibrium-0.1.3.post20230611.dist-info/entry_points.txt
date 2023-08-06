@@ -1,0 +1,2 @@
+[console_scripts]
+hwe = hardyweinberg_equilibrium.main:app
