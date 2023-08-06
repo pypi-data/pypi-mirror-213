@@ -1,0 +1,152 @@
+repos:
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v4.1.0
+    hooks:
+      - id: end-of-file-fixer
+
+  - repo: local
+    hooks:
+{%- if cookiecutter.use_blue == "yes" %}
+    - entry: blue
+      id: blue
+      name: blue
+      exclude: |
+        (?x)(
+          docs
+        )
+      files: ""
+      language: system
+      pass_filenames: true
+      stages:
+        - commit
+      types:
+        - python
+        - file
+        - python
+{% endif -%}
+{%- if cookiecutter.use_black == "yes" %}
+    - entry: black
+      id: black
+      name: black
+      exclude: |
+        (?x)(
+          docs
+        )
+      files: ""
+      language: system
+      pass_filenames: true
+      stages:
+        - commit
+      types:
+        - python
+        - file
+        - python
+{% endif %}
+{%- if cookiecutter.use_flake8 == "yes" %}
+    - entry: flake8
+      exclude: ^$
+      files: ""
+      id: flake8
+      language: python
+      name: flake8
+      pass_filenames: true
+      stages:
+        - commit
+      types:
+        - python
+{% endif %}
+{%- if cookiecutter.use_isort == "yes" %}
+    - entry: isort
+      exclude: "^.*/js/.*$"
+      files: ""
+      id: isort
+      language: python
+      name: isort
+      pass_filenames: true
+      stages:
+        - commit
+      types:
+        - python
+{% endif %}
+{%- if cookiecutter.use_mypy == "yes" %}
+    - entry: mypy
+      exclude: ^$
+      # note: it would be good to extend this to other apps as well
+      files: "{{ cookiecutter.package_slug }}/"
+      id: mypy
+      language: python
+      name: mypy
+      pass_filenames: true
+      stages:
+        - commit
+      types:
+        - python
+{% endif %}
+{%- if cookiecutter.use_shellcheck == "yes" %}
+    - entry: shellcheck
+      id: shellcheck
+      language: system
+      name: shellcheck
+      files: .sh$
+      types:
+          - shell
+      types_or:
+          - file
+          - sh
+          - ash
+          - bash
+          - bats
+          - dash
+          - ksh
+{% endif %}
+{%- if cookiecutter.use_bandit == "yes" %}
+    - entry: bandit
+      id: bandit
+      language: python
+      name: bandit
+      args: ['-iii', '-ll', .bandit]
+      pass_filenames: true
+      stages:
+        - commit
+      types:
+        - python
+{% endif %}
+{%- if cookiecutter.use_pydocstyle == "yes" %}
+    - entry: pydocstyle
+      exclude: ^$
+      files: "{{ cookiecutter.package_slug }}/"
+      id: pydocstyle
+      language: python
+      name: pydocstyle
+      pass_filenames: true
+      stages:
+        - commit
+      types:
+        - python
+{% endif %}
+{%- if cookiecutter.use_vulture == "yes" %}
+    - entry: vulture
+      files: "{{ cookiecutter.package_slug }}/"
+      id: vulture
+      language: python
+      name: vulture
+      description: Find unused Python code.
+      pass_filenames: true
+      stages:
+        - commit
+      types:
+        - python
+{% endif %}
+{%- if cookiecutter.use_mccabe == "yes" %}
+    - id: mccabe
+      name: mccabe
+      entry: flake8 --max-complexity 10
+      language: python
+      files: "{{ cookiecutter.package_slug }}/"
+      pass_filenames: true
+      stages:
+        - commit
+      types:
+        - python
+{% endif %}
+{#- keep this at the end of the file -#}

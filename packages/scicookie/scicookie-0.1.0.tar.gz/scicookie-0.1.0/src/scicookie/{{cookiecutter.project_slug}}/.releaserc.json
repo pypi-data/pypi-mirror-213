@@ -1,0 +1,88 @@
+{%- if cookiecutter.use_blue %}
+  {%- set QUOTE = "'" -%}
+{%- elif cookiecutter.use_black %}
+  {%- set QUOTE = '\\"' -%}
+{%- else %}
+  {%- set QUOTE = "'" -%}
+{%- endif %}
+{%- if cookiecutter.project_layout == "src" %}
+  {%- set PROJECT_PATH = "{{ cookiecutter.package_slug }}/src" -%}
+{%- else %}
+  {%- set PROJECT_PATH = "{{ cookiecutter.package_slug }}" -%}
+{%- endif %}
+
+{
+  "branches": ["main"],
+  "tagFormat": "${version}",
+  "plugins": [
+    "@semantic-release/commit-analyzer",
+    [
+      "@google/semantic-release-replace-plugin",
+      {
+        "replacements": [
+          {
+            "files": ["{{ PROJECT_PATH }}/__init__.py"],
+            "from": "return {{ QUOTE }}.*{{ QUOTE }}  # semantic-release",
+            "to": "return {{ QUOTE }}${nextRelease.version}{{ QUOTE }}  # semantic-release",
+            "results": [
+              {
+                "file": "{{ PROJECT_PATH }}/__init__.py",
+                "hasChanged": true,
+                "numMatches": 1,
+                "numReplacements": 1
+              }
+            ],
+            "countMatches": true
+          },
+          {
+            "files": ["pyproject.toml"],
+            "from": "version = \".*\"  # semantic-release",
+            "to": "version = \"${nextRelease.version}\"  # semantic-release",
+            "results": [
+              {
+                "file": "pyproject.toml",
+                "hasChanged": true,
+                "numMatches": 1,
+                "numReplacements": 1
+              }
+            ],
+            "countMatches": true
+          }
+        ]
+      }
+    ],
+    "@semantic-release/release-notes-generator",
+    [
+      "@semantic-release/changelog",
+      {
+        "changelogTitle": "# Release Notes\n---",
+        "changelogFile": "docs/changelog.md"
+      }
+    ],
+    [
+      "@semantic-release/exec",
+      {
+        "prepareCmd": "poetry build",
+        "publishCmd": "poetry publish"
+
+      }
+    ],
+    [
+      "@semantic-release/github",
+      {
+        "assets": ["dist/*.whl", "dist/*.tar.gz"]
+      }
+    ],
+    [
+      "@semantic-release/git",
+      {
+        "assets": [
+          "pyproject.toml",
+          "docs/changelog.md",
+          "{{ PROJECT_PATH }}/__init__.py"
+        ],
+        "message": "chore(release): ${nextRelease.version}"
+      }
+    ]
+  ]
+}
