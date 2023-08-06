@@ -1,0 +1,8 @@
+pdocr_rpc/__init__.py,sha256=kp86eAUVDnVRaH6d11yjbGYcOkeyA8cr2SUhYaRl8Nw,6441
+pdocr_rpc/__version__.py,sha256=WIUV9RxJZgvYdpb6V0mkPnZ52NlbZAlda5ELGcrRTDQ,51
+pdocr_rpc/conf.py,sha256=yWxDceMcmz_c1DQVA8xVgQHrP89DI3gZxm8eOEqdM4I,942
+pdocr_rpc/server.py,sha256=MCDlKzR1cavp-EIL9tAuvmHfV7svUmIiG3idPQSxGII,1517
+pdocr_rpc-2023.6.14.dist-info/METADATA,sha256=9Bcz0xov-0EB8X86o2gCjoUcz_HD5I1WMBYH42p12fU,3865
+pdocr_rpc-2023.6.14.dist-info/WHEEL,sha256=KGYbc1zXlYddvwxnNty23BeaKzh7YuoSIvIMO4jEhvw,87
+pdocr_rpc-2023.6.14.dist-info/licenses/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+pdocr_rpc-2023.6.14.dist-info/RECORD,,
