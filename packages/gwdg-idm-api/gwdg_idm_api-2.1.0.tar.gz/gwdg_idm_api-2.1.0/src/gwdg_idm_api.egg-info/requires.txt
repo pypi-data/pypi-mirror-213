@@ -1,0 +1,7 @@
+pydantic
+requests
+
+[dev]
+build
+pre-commit
+twine
