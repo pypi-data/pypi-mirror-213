@@ -1,0 +1,23 @@
+{
+  "tests/test_codecs.py::test_invalid_checksum[Encoding.BECH32-an84characterslonghumanreadablepartthatcontainsthenumber1andtheexcludedcharactersbio1569pvx]": true,
+  "tests/test_codecs.py::test_invalid_checksum[Encoding.BECH32-pzry9x0s0muk]": true,
+  "tests/test_codecs.py::test_invalid_checksum[Encoding.BECH32-1pzry9x0s0muk]": true,
+  "tests/test_codecs.py::test_invalid_checksum[Encoding.BECH32-li1dgmt3]": true,
+  "tests/test_codecs.py::test_invalid_checksum[Encoding.BECH32-10a06t8]": true,
+  "tests/test_codecs.py::test_invalid_checksum[Encoding.BECH32-1qzzfhee]": true,
+  "tests/test_codecs.py::test_invalid_checksum[Encoding.BECH32M-an84characterslonghumanreadablepartthatcontainsthetheexcludedcharactersbioandnumber11d6pts4]": true,
+  "tests/test_codecs.py::test_invalid_checksum[Encoding.BECH32M-qyrz8wqd2c9m]": true,
+  "tests/test_codecs.py::test_invalid_checksum[Encoding.BECH32M-1qyrz8wqd2c9m]": true,
+  "tests/test_codecs.py::test_invalid_checksum[Encoding.BECH32M-in1muywd]": true,
+  "tests/test_codecs.py::test_invalid_checksum[Encoding.BECH32M-16plkw9]": true,
+  "tests/test_codecs.py::test_invalid_checksum[Encoding.BECH32M-1p2gdwpf]": true,
+  "tests/test_codecs.py::test_invalid_checksum[ 1nwldj5-HRP character out of range]": true,
+  "tests/test_codecs.py::test_invalid_checksum[\\x7f1axkwrx-HRP character out of range]": true,
+  "tests/test_codecs.py::test_invalid_checksum[\\x801eym55h-HRP character out of range]": true,
+  "tests/test_codecs.py::test_invalid_checksum[x1b4n0q5v-Invalid data character]": true,
+  "tests/test_codecs.py::test_invalid_checksum[de1lg7wt\\xff-Invalid character in checksum]": true,
+  "tests/test_codecs.py::test_invalid_checksum[A1G7SGD8-checksum calculated with uppercase form of HRP]": true,
+  "tests/test_codecs.py::test_invalid_checksum[an84characterslonghumanreadablepartthatcontainsthenumber1andtheexcludedcharactersbio1569pvx-overall max length exceeded]": true,
+  "tests/test_codecs.py::test_invalid_checksum[10a06t8-empty HRP]": true,
+  "tests/test_codecs.py::test_invalid_checksum[1qzzfhee-empty HRP]": true
+}
