@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<!-- This file is part of Tryton.  The COPYRIGHT file at the top level of
+this repository contains the full copyright notices and license terms. -->
+<data>
+
+    <xpath expr="/form/notebook/page[@name='tax_lines']" position="after">
+
+        <page name="analytic_lines" col="1" string="Analytic Lines">
+            <field name="analytic_lines"
+                view_ids="account_primanota.analyticline_view_list,analytic_account.line_view_form"/>
+        </page>
+
+    </xpath>
+</data>

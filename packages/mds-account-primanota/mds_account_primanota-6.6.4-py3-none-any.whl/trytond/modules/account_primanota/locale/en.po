@@ -1,0 +1,244 @@
+#
+msgid ""
+msgstr "Content-Type: text/plain; charset=utf-8\n"
+
+msgctxt "model:account_primanota.primanota,name:"
+msgid "Primanota"
+msgstr "Primanota"
+
+msgctxt "model:ir.action,name:act_primanota_view"
+msgid "Primanota"
+msgstr "Primanota"
+
+msgctxt "view:account_primanota.primanota:"
+msgid "General"
+msgstr "General"
+
+msgctxt "view:account_primanota.primanota:"
+msgid "Number and Date"
+msgstr "Number and Date"
+
+msgctxt "view:account_primanota.primanota:"
+msgid "Account and Amount"
+msgstr "Account and Amount"
+
+msgctxt "view:account_primanota.primanota:"
+msgid "Origin of Move and Line"
+msgstr "Origin of Move and Line"
+
+msgctxt "view:account_primanota.primanota:"
+msgid "Credit"
+msgstr "Credit"
+
+msgctxt "view:account_primanota.primanota:"
+msgid "Debit"
+msgstr "Debit"
+
+msgctxt "view:account_primanota.primanota:"
+msgid "State and Reconciliation"
+msgstr "State and Reconciliation"
+
+msgctxt "view:account_primanota.primanota:"
+msgid "Reconciliations Delegated"
+msgstr "Reconciliations Delegated"
+
+msgctxt "view:account_primanota.primanota:"
+msgid "Tax Lines"
+msgstr "Tax Lines"
+
+msgctxt "view:account_primanota.primanota:"
+msgid "Analytic Lines"
+msgstr "Analytic Lines"
+
+msgctxt "field:account_primanota.primanota,movenumber:"
+msgid "Number"
+msgstr "Number"
+
+msgctxt "help:account_primanota.primanota,movenumber:"
+msgid "Number of Move"
+msgstr "Number of Move"
+
+msgctxt "field:account_primanota.primanota,post_number:"
+msgid "Post Number"
+msgstr "Post Number"
+
+msgctxt "help:account_primanota.primanota,post_number:"
+msgid "Also known as Folio Number."
+msgstr "Also known as Folio Number."
+
+msgctxt "field:account_primanota.primanota,period:"
+msgid "Period"
+msgstr "Period"
+
+msgctxt "field:account_primanota.primanota,journal:"
+msgid "Journal"
+msgstr "Journal"
+
+msgctxt "field:account_primanota.primanota,date:"
+msgid "Effective Date"
+msgstr "Effective Date"
+
+msgctxt "field:account_primanota.primanota,post_date:"
+msgid "Post Date"
+msgstr "Post Date"
+
+msgctxt "field:account_primanota.primanota,description:"
+msgid "Description"
+msgstr "Description"
+
+msgctxt "field:account_primanota.primanota,line_description:"
+msgid "Line Description"
+msgstr "Line Description"
+
+msgctxt "field:account_primanota.primanota,party:"
+msgid "Party"
+msgstr "Party"
+
+msgctxt "field:account_primanota.primanota,origin:"
+msgid "Origin"
+msgstr "Origin"
+
+msgctxt "help:account_primanota.primanota,origin:"
+msgid "Origin of the Move"
+msgstr "Origin of the Move"
+
+msgctxt "field:account_primanota.primanota,line_origin:"
+msgid "Line Origin"
+msgstr "Line Origin"
+
+msgctxt "help:account_primanota.primanota,line_origin:"
+msgid "Origin of the Moveline"
+msgstr "Origin of the Moveline"
+
+msgctxt "field:account_primanota.primanota,state:"
+msgid "State"
+msgstr "State"
+
+msgctxt "selection:account_primanota.primanota,state:"
+msgid "Draft"
+msgstr "Draft"
+
+msgctxt "selection:account_primanota.primanota,state:"
+msgid "Posted"
+msgstr "Posted"
+
+msgctxt "field:account_primanota.primanota,debit:"
+msgid "Debit"
+msgstr "Debit"
+
+msgctxt "field:account_primanota.primanota,credit:"
+msgid "Credit"
+msgstr "Credit"
+
+msgctxt "field:account_primanota.primanota,account:"
+msgid "Account"
+msgstr "Account"
+
+msgctxt "field:account_primanota.primanota,account_code:"
+msgid "Account Code"
+msgstr "Account Code"
+
+msgctxt "field:account_primanota.primanota,currency:"
+msgid "Currency"
+msgstr "Currency"
+
+msgctxt "field:account_primanota.primanota,currency_digits:"
+msgid "Currency Digits"
+msgstr "Currency Digits"
+
+msgctxt "field:account_primanota.primanota,reconciliation:"
+msgid "Reconciliation"
+msgstr "Reconciliation"
+
+msgctxt "field:account_primanota.primanota,reconciliations_delegated:"
+msgid "Reconciliations Delegated"
+msgstr "Reconciliations Delegated"
+
+msgctxt "field:account_primanota.primanota,tax_lines:"
+msgid "Tax Lines"
+msgstr "Tax Lines"
+
+msgctxt "field:account_primanota.primanota,amount_second_currency:"
+msgid "Amount Second Currency"
+msgstr "Amount Second Currency"
+
+msgctxt "help:account_primanota.primanota,amount_second_currency:"
+msgid "The amount expressed in a second currency."
+msgstr "The amount expressed in a second currency."
+
+msgctxt "field:account_primanota.primanota,second_currency:"
+msgid "Second Currency"
+msgstr "Second Currency"
+
+msgctxt "help:account_primanota.primanota,second_currency:"
+msgid "The second currency."
+msgstr "The second currency."
+
+msgctxt "field:account_primanota.primanota,second_currency_digits:"
+msgid "Second Currency Digits"
+msgstr "Second Currency Digits"
+
+msgctxt "field:account_primanota.primanota,rate_second_currency:"
+msgid "Rate"
+msgstr "Rate"
+
+msgctxt "help:account_primanota.primanota,rate_second_currency:"
+msgid "The exchange rate of the second currency."
+msgstr "The exchange rate of the second currency."
+
+msgctxt "field:account_primanota.primanota,analytic_lines:"
+msgid "Analytic Lines"
+msgstr "Analytic Lines"
+
+msgctxt "field:account_primanota.primanota,has_analytic_lines:"
+msgid "Analytic Lines"
+msgstr "Analytic Lines"
+
+msgctxt "help:account_primanota.primanota,has_analytic_lines:"
+msgid "Account move line has analytic lines."
+msgstr "Account move line has analytic lines."
+
+msgctxt "model:account_primanota.primanota.context,name:"
+msgid "Primanota Context"
+msgstr "Primanota Context"
+
+msgctxt "field:account_primanota.primanota.context,company:"
+msgid "Company"
+msgstr "Company"
+
+msgctxt "field:account_primanota.primanota.context,fiscalyear:"
+msgid "Fiscal Year"
+msgstr "Fiscal Year"
+
+msgctxt "field:account_primanota.primanota.context,end_period:"
+msgid "End Period"
+msgstr "End Period"
+
+msgctxt "field:account_primanota.primanota.context,start_period:"
+msgid "Start Period"
+msgstr "Start Period"
+
+msgctxt "field:account_primanota.primanota.context,from_date:"
+msgid "From Date"
+msgstr "From Date"
+
+msgctxt "field:account_primanota.primanota.context,to_date:"
+msgid "To Date"
+msgstr "To Date"
+
+msgctxt "field:account_primanota.primanota.context,journal:"
+msgid "Journal"
+msgstr "Journal"
+
+msgctxt "field:account_primanota.primanota.context,posted:"
+msgid "Posted Move"
+msgstr "Posted Move"
+
+msgctxt "view:account.tax.line:"
+msgid "Amount"
+msgstr "Amount"
+
+msgctxt "view:analytic_account.line:"
+msgid "Debit"
+msgstr "Debit"
+
