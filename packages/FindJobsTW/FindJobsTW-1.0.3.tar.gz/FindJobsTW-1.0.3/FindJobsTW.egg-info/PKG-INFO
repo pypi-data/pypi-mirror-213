@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: FindJobsTW
+Version: 1.0.3
+Summary: A Python package to find jobs on 104.com.tw based on specific keywords.
+Home-page: https://github.com/DannyFin/FindJobsTW
+Author: Danny Fin
+Author-email: dannyfinselect@outlook.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# FindJobsTW
+A Python package to find jobs on 104.com.tw based on specific keywords.
+Co Author:
+
+祝您找到好工作!

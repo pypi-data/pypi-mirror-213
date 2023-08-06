@@ -1,0 +1,2 @@
+include findJobs/templates/*.html
+recursive-include findJobs/static *.*
