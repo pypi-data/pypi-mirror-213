@@ -1,0 +1,22 @@
+[build-system]
+requires = ["flit_core >=3.2,<4"]
+build-backend = "flit_core.buildapi"
+
+[project]
+name = "envname"
+version = "1.0.2"
+description = "为运行环境设置名称"
+dependencies = []
+keywords = []
+
+readme = "README.md"
+authors = [{name = "许灿标", email = "lcctoor@outlook.com"}]
+license = {file = "LICENSE"}
+classifiers = ["License :: OSI Approved :: Apache Software License"]
+requires-python = ">=3.7"
+
+[project.scripts]
+envname = "envname:_parsecmd"
+
+[project.urls]
+HomePage = "https://github.com/lcctoor/lccpy/tree/main/packages/envname#readme"

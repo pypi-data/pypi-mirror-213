@@ -1,0 +1,79 @@
+# 项目描述
+
+为运行环境设置名称。
+
+有时候，对于某些功能，我们也许希望在不同的环境上采用不同的方案。以访问数据库为例：当程序在外网运行时，须通过数据库公网ip访问；而当程序在内网运行时，为了提高性能，我们可以通过数据库内网ip访问。
+
+# 安装
+
+```
+pip install envname
+```
+
+# Bug提交、功能提议
+
+您可以通过 [Github-Issues](https://github.com/lcctoor/lccpy/issues)、[微信](https://raw.githubusercontent.com/lcctoor/me/main/author/WeChatQR-max.jpg)、[技术交流群](https://raw.githubusercontent.com/lcctoor/me/main/lccpy/WechatReadersGroupQR-original.jpg) 与我联系。
+
+# 关于作者
+
+作者：许灿标
+
+邮箱：lcctoor@outlook.com
+
+[主页](https://github.com/lcctoor/me#readme) | [微信](https://raw.githubusercontent.com/lcctoor/me/main/author/WeChatQR-max.jpg) | [微信公众号](https://raw.githubusercontent.com/lcctoor/me/main/author/WechatSubscribeQRAndSearch-max.png) | [Python技术交流群](https://raw.githubusercontent.com/lcctoor/me/main/lccpy/WechatReadersGroupQR-original.jpg)
+
+开源项目：[让Python更简单一点](https://github.com/lcctoor/lccpy#readme)
+
+# 教程
+
+#### 创建环境名称
+
+（cmd）：
+
+```
+envname set new_name
+```
+
+注：
+
+1、名称不能包含空格和引号。
+
+2、名称可以包含中文。
+
+3、名称不限长度。
+
+#### 查看环境名称
+
+（cmd）：
+
+```
+envname read
+```
+
+#### 导入环境名称
+
+```python
+from envname import envname
+```
+
+#### 示例
+
+```python
+import pymysql
+from envname import envname
+
+if envname == 'aliyun_HongKong_No1':
+    host = '192.168.0.127'
+else:
+    host = '112.47.203.101'
+
+conn = pymysql.connect(host=host, port=3306, user='root', password='123456789')
+```
+
+# 支持作者1元
+
+envname 是一个免费的开源项目，由个人维护。
+
+每个小的贡献，都是构成车轮的一份子，可以帮助保持车轮完美旋转。
+
+<img src="https://raw.githubusercontent.com/lcctoor/me/main/donation/donationQR-1rmb-max.jpg" width="200px">
