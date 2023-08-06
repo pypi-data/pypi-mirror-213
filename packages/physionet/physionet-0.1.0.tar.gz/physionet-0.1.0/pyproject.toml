@@ -1,0 +1,35 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "physionet"
+version = "0.1.0"
+authors = [
+  { name="Tom Pollard", email="tpollard@mit.edu" },
+]
+license = {file = "LICENSE"}
+description = "A collection of tools for working with the PhysioNet repository."
+readme = "README.md"
+requires-python = ">=3.9"
+keywords=["physionet", "mimic", "medical", "dataset"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "numpy",
+    "pandas",
+    "openpyxl",
+]
+
+[tool.black]
+line-length = 119
+
+[tool.pyright]
+reportMissingImports = true
+
+[project.urls]
+homepage = "https://github.com/MIT-LCP/physionet"
+repository = "https://github.com/MIT-LCP/physionet"
