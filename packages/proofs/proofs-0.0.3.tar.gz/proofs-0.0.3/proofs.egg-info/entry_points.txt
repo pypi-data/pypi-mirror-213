@@ -1,0 +1,6 @@
+[console_scripts]
+
+
+[nbdev]
+proofs = proofs._modidx:d
+

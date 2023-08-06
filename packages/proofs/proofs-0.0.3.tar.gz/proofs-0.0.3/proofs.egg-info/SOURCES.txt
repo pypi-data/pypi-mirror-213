@@ -1,0 +1,17 @@
+LICENSE
+MANIFEST.in
+README.md
+settings.ini
+setup.py
+proofs/__init__.py
+proofs/_modidx.py
+proofs/assistant.py
+proofs/core.py
+proofs/polynomials.py
+proofs.egg-info/PKG-INFO
+proofs.egg-info/SOURCES.txt
+proofs.egg-info/dependency_links.txt
+proofs.egg-info/entry_points.txt
+proofs.egg-info/not-zip-safe
+proofs.egg-info/requires.txt
+proofs.egg-info/top_level.txt
