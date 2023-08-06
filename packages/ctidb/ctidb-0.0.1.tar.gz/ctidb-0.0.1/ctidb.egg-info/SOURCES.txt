@@ -1,0 +1,7 @@
+setup.py
+ctidb.egg-info/PKG-INFO
+ctidb.egg-info/SOURCES.txt
+ctidb.egg-info/dependency_links.txt
+ctidb.egg-info/not-zip-safe
+ctidb.egg-info/requires.txt
+ctidb.egg-info/top_level.txt
