@@ -1,0 +1,47 @@
+[tool.poetry]
+name = "iggcli"
+version = "0.1.1"
+description = "Download your games from Igg Games more easily."
+authors = ["Alekyo4 <alexsandergomes4742@gmail.com>"]
+license = "BeerWare"
+readme = "README.md"
+
+classifiers = [
+    "Natural Language :: Portuguese (Brazilian)",
+    "Environment :: Console",
+    "Intended Audience :: Customer Service",
+    "Programming Language :: Python :: 3",
+    "Topic :: Games/Entertainment"
+]
+
+[tool.poetry.urls]
+documentation = "https://github.com/alekyo4/iggcli"
+code = "https://github.com/alekyo4/iggcli"
+bug = "https://github.com/alekyo4/iggcli/issues"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+python-slugify = "^8.0.1"
+requests = "^2.28.2"
+beautifulsoup4 = "^4.12.0"
+typer = "^0.7.0"
+rich = "^13.3.2"
+
+[tool.poetry.scripts]
+iggcli = "iggcli.main:main"
+
+[tool.taskipy.tasks]
+format = "black . && isort ."
+
+[tool.isort]
+profile = "black"
+line_length = 79
+
+[tool.poetry.group.dev.dependencies]
+black = "^23.1.0"
+taskipy = "^1.10.3"
+isort = "^5.12.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
