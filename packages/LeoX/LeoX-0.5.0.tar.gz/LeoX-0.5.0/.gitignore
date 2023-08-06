@@ -1,0 +1,9 @@
+*.log 
+*.com 
+*.lx
+*.txt
+teste*
+*cache*
+Geometries
+build
+*egg*
