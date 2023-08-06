@@ -1,0 +1,9 @@
+myo/__init__.py,sha256=WgPRFePmAgqeYRd0puFpJbJ5-eeuaCmuxIAHIGNXb88,455
+myo/commands.py,sha256=t_hK_vvrjyiVvt5sZh5o7K5TBZDdxooOggzlMiOwutc,3226
+myo/device.py,sha256=NQ9q2xMiBK4NXFFZi8UNv-OEmabFUBFkTnDnbAhQJjQ,6625
+myo/handle.py,sha256=OzfhmzLEz3g2E_z-BcS8rn4ez8I-RRJ3HcJnKMOz9uo,6131
+myo/types.py,sha256=lioC8eN43SHYBg20anJwC7cqDAXpgnrlCNG0bXCQw5E,5891
+dl_myo-0.1.5.dist-info/METADATA,sha256=IMM0vFgqHU4lYMsE8ybAdzbc5QKDblXWvQOu7lWrnjY,3391
+dl_myo-0.1.5.dist-info/WHEEL,sha256=9QBuHhg6FNW7lppboF2vKVbCGTVzsFykgRQjjlajrhA,87
+dl_myo-0.1.5.dist-info/licenses/LICENSE,sha256=yo5U16yu-ZhUj5G27IsJ0h_dAMFEgVPSYQ53THtFjxI,35131
+dl_myo-0.1.5.dist-info/RECORD,,
