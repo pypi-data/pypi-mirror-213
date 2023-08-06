@@ -1,0 +1,13 @@
+README.md
+setup.py
+src/docketanalyzer/__init__.py
+src/docketanalyzer/registry.py
+src/docketanalyzer/utils.py
+src/docketanalyzer.egg-info/PKG-INFO
+src/docketanalyzer.egg-info/SOURCES.txt
+src/docketanalyzer.egg-info/dependency_links.txt
+src/docketanalyzer.egg-info/entry_points.txt
+src/docketanalyzer.egg-info/requires.txt
+src/docketanalyzer.egg-info/top_level.txt
+src/docketanalyzer/commands/__init__.py
+src/docketanalyzer/commands/test.py
