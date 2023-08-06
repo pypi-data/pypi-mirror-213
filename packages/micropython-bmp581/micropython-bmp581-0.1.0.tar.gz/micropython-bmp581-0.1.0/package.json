@@ -1,0 +1,8 @@
+{
+  "urls": [
+    ["micropython_bmp581/__init__.py", "github:jposada202020/MicroPython_BMP581/micropython_bmp581/__init__.py"],
+    ["micropython_bmp581/i2c_helpers.py", "github:jposada202020/MicroPython_BMP581/micropython_bmp581/i2c_helpers.py"],
+    ["micropython_bmp581/bmp581.py", "github:jposada202020/MicroPython_BMP581/micropython_bmp581/bmp581.py"]
+  ],
+  "version": "0.1"
+}

@@ -1,0 +1,11 @@
+{
+  "urls": [
+    ["micropython_bmp581/examples/bmp581_pressure_oversample_rate.py", "github:jposada202020/MicroPython_BMP581/examples/bmp581_pressure_oversample_rate.py"],
+    ["micropython_bmp581/examples/bmp581_simpletest.py", "github:jposada202020/MicroPython_BMP581/examples/bmp581_simpletest.py"],
+    ["micropython_bmp581/examples/bmp581_temperature.py", "github:jposada202020/MicroPython_BMP581/examples/bmp581_temperature.py"],
+    ["micropython_bmp581/examples/bmp581_temperature_oversample_rate.py", "github:jposada202020/MicroPython_BMP581/examples/bmp581_temperature_oversample_rate.py"],
+    ["micropython_bmp581/examples/bmp581_output_data_rate.py", "github:jposada202020/MicroPython_BMP581/examples/bmp581_output_data_rate.py"],
+    ["micropython_bmp581/examples/bmp581_power_mode.py", "github:jposada202020/MicroPython_BMP581/examples/bmp581_power_mode.py"]
+  ],
+  "version": "0.1"
+}
