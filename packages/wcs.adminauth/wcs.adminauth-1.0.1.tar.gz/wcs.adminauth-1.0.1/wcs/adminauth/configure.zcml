@@ -1,0 +1,16 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:browser="http://namespaces.zope.org/browser"
+    xmlns:five="http://namespaces.zope.org/five"
+    i18n_domain="wcs.adminauth">
+
+  <five:registerPackage package="." initialize=".initialize" />
+
+  <browser:page
+      name="adminauth"
+      for="*"
+      class=".auth.AuthenticationView"
+      permission="zope2.Public"
+      />
+
+</configure>

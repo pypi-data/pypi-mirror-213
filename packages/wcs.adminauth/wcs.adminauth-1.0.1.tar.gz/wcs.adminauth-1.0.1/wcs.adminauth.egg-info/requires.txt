@@ -1,0 +1,10 @@
+setuptools
+requests
+python-cas==1.6.0
+lxml
+six
+
+[tests]
+Plone
+plone.app.testing
+responses

@@ -1,0 +1,12 @@
+<cas:serviceResponse xmlns:cas="http://www.yale.edu/tp/cas">
+  <cas:authenticationSuccess>
+    <cas:user>hugo</cas:user>
+    <cas:attributes>
+      <cas:authenticationDate>2022-05-01T20:00:00Z</cas:authenticationDate>
+      <cas:longTermAuthenticationRequestTokenUsed>false</cas:longTermAuthenticationRequestTokenUsed>
+      <cas:isFromNewLogin>true</cas:isFromNewLogin>
+      <cas:email>hugo.sanchez@webcloud7.ch</cas:email>
+      <cas:fullname>Hugo Sanchez</cas:fullname>
+    </cas:attributes>
+  </cas:authenticationSuccess>
+</cas:serviceResponse>
