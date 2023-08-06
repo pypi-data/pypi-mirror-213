@@ -1,0 +1,49 @@
+Metadata-Version: 2.1
+Name: towalink-tlm
+Version: 0.2.0
+Summary: command line tool for configuring and managing a Towalink installation
+Home-page: https://www.towalink.net
+Author: The Towalink Project
+Author-email: pypi.tlm@towalink.net
+Project-URL: Project homepage, https://www.towalink.net
+Project-URL: Repository, https://www.github.com/towalink/tlm
+Project-URL: Documentation, https://towalink.readthedocs.io
+Keywords: Towalink VPN SD-WAN WireGuard
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU Affero General Public License v3 or later (AGPLv3+)
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: System Administrators
+Classifier: Intended Audience :: Information Technology
+Classifier: Intended Audience :: Telecommunications Industry
+Classifier: Topic :: System :: Networking
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: python-configuration
+Requires-Dist: jinja2
+Requires-Dist: pyyaml
+Requires-Dist: toml
+Requires-Dist: tomlkit
+Requires-Dist: ansible
+Requires-Dist: wgconfig (>=0.1.4)
+
+# tlm - Towalink Manager
+
+Tool for configuring and managing a Towalink installation.
+
+---
+
+## Documentation
+
+The documentation of the Towalink project can be found at https://towalink.readthedocs.io
+
+---
+
+## License
+
+[![License](http://img.shields.io/:license-agpl3-blue.svg?style=flat-square)](https://opensource.org/licenses/AGPL-3.0)
+
+- **[AGPL3 license](https://opensource.org/licenses/AGPL-3.0)**
+- Copyright 2020-2023 © <a href="https://www.towalink.net" target="_blank">Dirk Henrici</a>.

@@ -1,0 +1,5 @@
+---
+# Trailing slash is required
+#nodeconfig_path: "/opt/towalink/nodeconfig/"
+nodeconfig_path: "../../../../node_nodeconfig/"
+pip_test:

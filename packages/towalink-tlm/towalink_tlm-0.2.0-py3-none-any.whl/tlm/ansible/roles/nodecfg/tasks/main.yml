@@ -1,0 +1,38 @@
+---
+
+- name: nodecfg - Install required packages 
+  apk:
+    name:
+      - rsync # needed for Ansible synchronize
+      - py3-virtualenv
+    state: present
+#  become: yes
+  tags: installation
+
+- name: nodecfg - Install required python modules 
+  pip:
+    name:
+      - pyyaml # not needed on nodes
+#      - toml # not needed on nodes
+#      - tomlkit # not needed on nodes
+    state: present
+    virtualenv: /opt/towalink/venv
+#  become: yes
+  tags: installation
+
+- name: nodecfg - Copy Python code
+#  copy:
+  synchronize:
+    src: /home/Versionsverwaltung/towalink/nodecfg/src/
+    dest: /opt/towalink/nodecfg
+
+- name: Ensure exists
+  file:
+    path: /opt/towalink/scripts
+    state: directory
+
+- name: nodecfg - Copy rsync wrapper script
+  copy:
+    src: files/opt_towalink_scripts/rsync-nodecfg.sh
+    dest: /opt/towalink/scripts/rsync-nodecfg.sh
+    mode: 0755
