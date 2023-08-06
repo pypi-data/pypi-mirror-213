@@ -1,0 +1,41 @@
+Metadata-Version: 2.1
+Name: marlben
+Version: 1.0.0
+Summary: Marlben is a multi-agent reinforcement learning benchmark based on the NeuralMMO game engine.
+Author-email: JBR AI labs <ego.vladi@gmail.com>
+License: MIT License
+Project-URL: Homepage, https://github.com/jbr-ai-labs/marlben
+Project-URL: Repository, https://github.com/jbr-ai-labs/marlben
+Project-URL: Documentation, https://github.com/jbr-ai-labs/marlben/wiki
+Project-URL: Bug Report, https://github.com/jbr-ai-labs/marlben/issues
+Keywords: Multi-Agent Reinforcement Learning,game,RL,AI,Public Good
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+Provides-Extra: rllib
+Provides-Extra: all
+Provides-Extra: testing
+License-File: LICENSE
+
+![logo](https://github.com/jbr-ai-labs/marlben/assets/22059171/cab386fb-3b49-4f02-b59a-49dd2de3cc9c)
+
+![marlben-tests](../../actions/workflows/python-package-conda.yml/badge.svg)
+
+Marlben is a multi-agent reinforcement learning benchmark based on the [NeuralMMO](https://github.com/NeuralMMO/environment) game engine
+
+## Installation
+https://github.com/jbr-ai-labs/marlben/wiki/Quick-Start#installation
+
+## Usage
+
+https://github.com/jbr-ai-labs/marlben/wiki/Quick-Start#launching-an-environment
+
+## Wiki
+https://github.com/jbr-ai-labs/marlben/wiki
