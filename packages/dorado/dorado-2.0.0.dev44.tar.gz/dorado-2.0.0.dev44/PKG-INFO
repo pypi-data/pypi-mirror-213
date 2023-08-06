@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: dorado
+Version: 2.0.0.dev44
+Summary: Digitized Observatory Resources for Automated Data Operations
+Home-page: https://github.com/zarbanoo/dorado
+Author: Mucephie
+Author-email: mucephie@my.yorku.ca
+License: BSD 3-Clause
+Requires-Python: >=3.8
+Description-Content-Type: text/x-rst
+Provides-Extra: all
+Provides-Extra: docs
+Provides-Extra: test
