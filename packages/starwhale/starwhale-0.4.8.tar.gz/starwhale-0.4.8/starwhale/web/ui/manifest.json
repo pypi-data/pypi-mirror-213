@@ -1,0 +1,1045 @@
+{
+  "src/assets/fonts/RobotoMono-Regular.ttf": {
+    "file": "assets/RobotoMono-Regular.5c4ca672.ttf",
+    "src": "src/assets/fonts/RobotoMono-Regular.ttf"
+  },
+  "src/assets/left.svg": {
+    "file": "assets/left.8c88a49a.svg",
+    "src": "src/assets/left.svg"
+  },
+  "src/assets/left-shadow.png": {
+    "file": "assets/left-shadow.e0fdfe32.png",
+    "src": "src/assets/left-shadow.png"
+  },
+  "src/assets/right.svg": {
+    "file": "assets/right.aefe3c24.svg",
+    "src": "src/assets/right.svg"
+  },
+  "src/assets/right-shadow.png": {
+    "file": "assets/right-shadow.58dd9abc.png",
+    "src": "src/assets/right-shadow.png"
+  },
+  "src/assets/bg-1920x1080.jpg": {
+    "file": "assets/bg-1920x1080.8b0d8feb.jpg",
+    "src": "src/assets/bg-1920x1080.jpg"
+  },
+  "src/assets/bg-2560x1440.jpg": {
+    "file": "assets/bg-2560x1440.c97cffa5.jpg",
+    "src": "src/assets/bg-2560x1440.jpg"
+  },
+  "src/assets/bg-3840x2160.jpg": {
+    "file": "assets/bg-3840x2160.f974f4b1.jpg",
+    "src": "src/assets/bg-3840x2160.jpg"
+  },
+  "packages/starwhale-ui/src/IconFont/svg/project.svg": {
+    "file": "assets/project.863f66b0.svg",
+    "src": "packages/starwhale-ui/src/IconFont/svg/project.svg"
+  },
+  "packages/starwhale-ui/src/IconFont/svg/setting.svg": {
+    "file": "assets/setting.6d098443.svg",
+    "src": "packages/starwhale-ui/src/IconFont/svg/setting.svg"
+  },
+  "packages/starwhale-ui/src/IconFont/svg/account2.svg": {
+    "file": "assets/account2.668f906e.svg",
+    "src": "packages/starwhale-ui/src/IconFont/svg/account2.svg"
+  },
+  "packages/starwhale-ui/src/IconFont/svg/empty.svg": {
+    "file": "assets/empty.f3091520.svg",
+    "src": "packages/starwhale-ui/src/IconFont/svg/empty.svg"
+  },
+  "packages/starwhale-ui/src/IconFont/svg/empty-chart.svg": {
+    "file": "assets/empty-chart.1e62901a.svg",
+    "src": "packages/starwhale-ui/src/IconFont/svg/empty-chart.svg"
+  },
+  "packages/starwhale-ui/src/IconFont/svg/search-empty.svg": {
+    "file": "assets/search-empty.13cbde15.svg",
+    "src": "packages/starwhale-ui/src/IconFont/svg/search-empty.svg"
+  },
+  "packages/starwhale-ui/src/IconFont/svg/google.svg": {
+    "file": "assets/google.9d1a8b2b.svg",
+    "src": "packages/starwhale-ui/src/IconFont/svg/google.svg"
+  },
+  "packages/starwhale-ui/src/IconFont/svg/invalid-file.svg": {
+    "file": "assets/invalid-file.82d62dec.svg",
+    "src": "packages/starwhale-ui/src/IconFont/svg/invalid-file.svg"
+  },
+  "packages/starwhale-ui/src/IconFont/svg/wechat.svg": {
+    "file": "assets/wechat.cffee157.svg",
+    "src": "packages/starwhale-ui/src/IconFont/svg/wechat.svg"
+  },
+  "packages/starwhale-ui/src/IconFont/fonts/iconfont.woff2": {
+    "file": "assets/iconfont.b539d382.woff2",
+    "src": "packages/starwhale-ui/src/IconFont/fonts/iconfont.woff2"
+  },
+  "packages/starwhale-ui/src/IconFont/fonts/iconfont.woff": {
+    "file": "assets/iconfont.1d0536e3.woff",
+    "src": "packages/starwhale-ui/src/IconFont/fonts/iconfont.woff"
+  },
+  "packages/starwhale-ui/src/IconFont/fonts/iconfont.ttf": {
+    "file": "assets/iconfont.3f2845db.ttf",
+    "src": "packages/starwhale-ui/src/IconFont/fonts/iconfont.ttf"
+  },
+  "src/assets/logo_small_en_white.svg": {
+    "file": "assets/logo_small_en_white.782559aa.svg",
+    "src": "src/assets/logo_small_en_white.svg"
+  },
+  "src/assets/logo_normal_en_white.svg": {
+    "file": "assets/logo_normal_en_white.ec11283c.svg",
+    "src": "src/assets/logo_normal_en_white.svg"
+  },
+  "src/assets/logo_normal_en_gray.svg": {
+    "file": "assets/logo_normal_en_gray.163de1a0.svg",
+    "src": "src/assets/logo_normal_en_gray.svg"
+  },
+  "src/assets/logo_normal_en_blue.png": {
+    "file": "assets/logo_normal_en_blue.18b013e7.png",
+    "src": "src/assets/logo_normal_en_blue.png"
+  },
+  "node_modules/@patternfly/react-core/dist/styles/assets/fonts/RedHatDisplay/RedHatDisplay-Regular.woff2": {
+    "file": "assets/RedHatDisplay-Regular.e6fb83d9.woff2",
+    "src": "node_modules/@patternfly/react-core/dist/styles/assets/fonts/RedHatDisplay/RedHatDisplay-Regular.woff2"
+  },
+  "node_modules/@patternfly/react-core/dist/styles/assets/fonts/RedHatDisplay/RedHatDisplay-Medium.woff2": {
+    "file": "assets/RedHatDisplay-Medium.6d3ccc0f.woff2",
+    "src": "node_modules/@patternfly/react-core/dist/styles/assets/fonts/RedHatDisplay/RedHatDisplay-Medium.woff2"
+  },
+  "node_modules/@patternfly/react-core/dist/styles/assets/fonts/RedHatDisplay/RedHatDisplay-Bold.woff2": {
+    "file": "assets/RedHatDisplay-Bold.ca18645c.woff2",
+    "src": "node_modules/@patternfly/react-core/dist/styles/assets/fonts/RedHatDisplay/RedHatDisplay-Bold.woff2"
+  },
+  "node_modules/@patternfly/react-core/dist/styles/assets/fonts/RedHatText/RedHatText-Regular.woff2": {
+    "file": "assets/RedHatText-Regular.542423d0.woff2",
+    "src": "node_modules/@patternfly/react-core/dist/styles/assets/fonts/RedHatText/RedHatText-Regular.woff2"
+  },
+  "node_modules/@patternfly/react-core/dist/styles/assets/fonts/RedHatText/RedHatText-Medium.woff2": {
+    "file": "assets/RedHatText-Medium.eb14b046.woff2",
+    "src": "node_modules/@patternfly/react-core/dist/styles/assets/fonts/RedHatText/RedHatText-Medium.woff2"
+  },
+  "node_modules/@patternfly/react-core/dist/styles/assets/fonts/RedHatFont-updated/RedHatDisplay/RedHatDisplay-updated-Regular.woff2": {
+    "file": "assets/RedHatDisplay-updated-Regular.d0b90ff3.woff2",
+    "src": "node_modules/@patternfly/react-core/dist/styles/assets/fonts/RedHatFont-updated/RedHatDisplay/RedHatDisplay-updated-Regular.woff2"
+  },
+  "node_modules/@patternfly/react-core/dist/styles/assets/fonts/RedHatFont-updated/RedHatDisplay/RedHatDisplay-updated-Medium.woff2": {
+    "file": "assets/RedHatDisplay-updated-Medium.da0621a9.woff2",
+    "src": "node_modules/@patternfly/react-core/dist/styles/assets/fonts/RedHatFont-updated/RedHatDisplay/RedHatDisplay-updated-Medium.woff2"
+  },
+  "node_modules/@patternfly/react-core/dist/styles/assets/fonts/RedHatFont-updated/RedHatDisplay/RedHatDisplay-updated-Bold.woff2": {
+    "file": "assets/RedHatDisplay-updated-Bold.66d1fc26.woff2",
+    "src": "node_modules/@patternfly/react-core/dist/styles/assets/fonts/RedHatFont-updated/RedHatDisplay/RedHatDisplay-updated-Bold.woff2"
+  },
+  "node_modules/@patternfly/react-core/dist/styles/assets/fonts/RedHatFont-updated/RedHatText/RedHatText-updated-Regular.woff2": {
+    "file": "assets/RedHatText-updated-Regular.2e08dbe8.woff2",
+    "src": "node_modules/@patternfly/react-core/dist/styles/assets/fonts/RedHatFont-updated/RedHatText/RedHatText-updated-Regular.woff2"
+  },
+  "node_modules/@patternfly/react-core/dist/styles/assets/fonts/RedHatFont-updated/RedHatText/RedHatText-updated-Medium.woff2": {
+    "file": "assets/RedHatText-updated-Medium.721ddd64.woff2",
+    "src": "node_modules/@patternfly/react-core/dist/styles/assets/fonts/RedHatFont-updated/RedHatText/RedHatText-updated-Medium.woff2"
+  },
+  "node_modules/@patternfly/react-core/dist/styles/assets/fonts/RedHatFont-updated/modified/RedHatDisplayVF-updated-ItalicModified.woff2": {
+    "file": "assets/RedHatDisplayVF-updated-ItalicModified.8483eece.woff2",
+    "src": "node_modules/@patternfly/react-core/dist/styles/assets/fonts/RedHatFont-updated/modified/RedHatDisplayVF-updated-ItalicModified.woff2"
+  },
+  "node_modules/@patternfly/react-core/dist/styles/assets/fonts/RedHatFont-updated/RedHatMono/RedHatMono-updated-Regular.woff2": {
+    "file": "assets/RedHatMono-updated-Regular.1686cd5c.woff2",
+    "src": "node_modules/@patternfly/react-core/dist/styles/assets/fonts/RedHatFont-updated/RedHatMono/RedHatMono-updated-Regular.woff2"
+  },
+  "node_modules/@patternfly/react-core/dist/styles/assets/fonts/RedHatFont-updated/modified/RedHatDisplayVFModified-updated.woff2": {
+    "file": "assets/RedHatDisplayVFModified-updated.3a6592a3.woff2",
+    "src": "node_modules/@patternfly/react-core/dist/styles/assets/fonts/RedHatFont-updated/modified/RedHatDisplayVFModified-updated.woff2"
+  },
+  "node_modules/@patternfly/react-core/dist/styles/assets/fonts/RedHatFont-updated/modified/RedHatTextVFModified-updated.woff2": {
+    "file": "assets/RedHatTextVFModified-updated.942d38f7.woff2",
+    "src": "node_modules/@patternfly/react-core/dist/styles/assets/fonts/RedHatFont-updated/modified/RedHatTextVFModified-updated.woff2"
+  },
+  "node_modules/@patternfly/react-core/dist/styles/assets/fonts/RedHatFont-updated/modified/RedHatTextVF-updated-ItalicModified.woff2": {
+    "file": "assets/RedHatTextVF-updated-ItalicModified.9e1c1004.woff2",
+    "src": "node_modules/@patternfly/react-core/dist/styles/assets/fonts/RedHatFont-updated/modified/RedHatTextVF-updated-ItalicModified.woff2"
+  },
+  "node_modules/@patternfly/react-core/dist/styles/assets/fonts/RedHatFont-updated/RedHatMono/RedHatMonoVF-updated.woff2": {
+    "file": "assets/RedHatMonoVF-updated.4cca9c27.woff2",
+    "src": "node_modules/@patternfly/react-core/dist/styles/assets/fonts/RedHatFont-updated/RedHatMono/RedHatMonoVF-updated.woff2"
+  },
+  "node_modules/@patternfly/react-core/dist/styles/assets/fonts/RedHatFont-updated/RedHatMono/RedHatMonoVF-updated-Italic.woff2": {
+    "file": "assets/RedHatMonoVF-updated-Italic.ca135ebd.woff2",
+    "src": "node_modules/@patternfly/react-core/dist/styles/assets/fonts/RedHatFont-updated/RedHatMono/RedHatMonoVF-updated-Italic.woff2"
+  },
+  "node_modules/@patternfly/react-core/dist/styles/assets/fonts/overpass-webfont/overpass-thin.woff2": {
+    "file": "assets/overpass-thin.e85966f1.woff2",
+    "src": "node_modules/@patternfly/react-core/dist/styles/assets/fonts/overpass-webfont/overpass-thin.woff2"
+  },
+  "node_modules/@patternfly/react-core/dist/styles/assets/fonts/overpass-webfont/overpass-thin-italic.woff2": {
+    "file": "assets/overpass-thin-italic.44db8e3d.woff2",
+    "src": "node_modules/@patternfly/react-core/dist/styles/assets/fonts/overpass-webfont/overpass-thin-italic.woff2"
+  },
+  "node_modules/@patternfly/react-core/dist/styles/assets/fonts/overpass-webfont/overpass-extralight.woff2": {
+    "file": "assets/overpass-extralight.f053be7c.woff2",
+    "src": "node_modules/@patternfly/react-core/dist/styles/assets/fonts/overpass-webfont/overpass-extralight.woff2"
+  },
+  "node_modules/@patternfly/react-core/dist/styles/assets/fonts/overpass-webfont/overpass-extralight-italic.woff2": {
+    "file": "assets/overpass-extralight-italic.d23afde2.woff2",
+    "src": "node_modules/@patternfly/react-core/dist/styles/assets/fonts/overpass-webfont/overpass-extralight-italic.woff2"
+  },
+  "node_modules/@patternfly/react-core/dist/styles/assets/fonts/overpass-webfont/overpass-light.woff2": {
+    "file": "assets/overpass-light.9db6ab0a.woff2",
+    "src": "node_modules/@patternfly/react-core/dist/styles/assets/fonts/overpass-webfont/overpass-light.woff2"
+  },
+  "node_modules/@patternfly/react-core/dist/styles/assets/fonts/overpass-webfont/overpass-light-italic.woff2": {
+    "file": "assets/overpass-light-italic.ec333948.woff2",
+    "src": "node_modules/@patternfly/react-core/dist/styles/assets/fonts/overpass-webfont/overpass-light-italic.woff2"
+  },
+  "node_modules/@patternfly/react-core/dist/styles/assets/fonts/overpass-webfont/overpass-regular.woff2": {
+    "file": "assets/overpass-regular.8e2261df.woff2",
+    "src": "node_modules/@patternfly/react-core/dist/styles/assets/fonts/overpass-webfont/overpass-regular.woff2"
+  },
+  "node_modules/@patternfly/react-core/dist/styles/assets/fonts/overpass-webfont/overpass-italic.woff2": {
+    "file": "assets/overpass-italic.34df3d81.woff2",
+    "src": "node_modules/@patternfly/react-core/dist/styles/assets/fonts/overpass-webfont/overpass-italic.woff2"
+  },
+  "node_modules/@patternfly/react-core/dist/styles/assets/fonts/overpass-webfont/overpass-semibold.woff2": {
+    "file": "assets/overpass-semibold.3d06895e.woff2",
+    "src": "node_modules/@patternfly/react-core/dist/styles/assets/fonts/overpass-webfont/overpass-semibold.woff2"
+  },
+  "node_modules/@patternfly/react-core/dist/styles/assets/fonts/overpass-webfont/overpass-bold.woff2": {
+    "file": "assets/overpass-bold.5c4ed5bb.woff2",
+    "src": "node_modules/@patternfly/react-core/dist/styles/assets/fonts/overpass-webfont/overpass-bold.woff2"
+  },
+  "node_modules/@patternfly/react-core/dist/styles/assets/fonts/overpass-webfont/overpass-semibold-italic.woff2": {
+    "file": "assets/overpass-semibold-italic.ae706d8c.woff2",
+    "src": "node_modules/@patternfly/react-core/dist/styles/assets/fonts/overpass-webfont/overpass-semibold-italic.woff2"
+  },
+  "node_modules/@patternfly/react-core/dist/styles/assets/fonts/overpass-webfont/overpass-bold-italic.woff2": {
+    "file": "assets/overpass-bold-italic.16cda7ef.woff2",
+    "src": "node_modules/@patternfly/react-core/dist/styles/assets/fonts/overpass-webfont/overpass-bold-italic.woff2"
+  },
+  "node_modules/@patternfly/react-core/dist/styles/assets/fonts/overpass-webfont/overpass-extrabold.woff2": {
+    "file": "assets/overpass-extrabold.648ba0e7.woff2",
+    "src": "node_modules/@patternfly/react-core/dist/styles/assets/fonts/overpass-webfont/overpass-extrabold.woff2"
+  },
+  "node_modules/@patternfly/react-core/dist/styles/assets/fonts/overpass-webfont/overpass-extrabold-italic.woff2": {
+    "file": "assets/overpass-extrabold-italic.a258578a.woff2",
+    "src": "node_modules/@patternfly/react-core/dist/styles/assets/fonts/overpass-webfont/overpass-extrabold-italic.woff2"
+  },
+  "node_modules/@patternfly/react-core/dist/styles/assets/fonts/overpass-webfont/overpass-heavy.woff2": {
+    "file": "assets/overpass-heavy.5e0869ee.woff2",
+    "src": "node_modules/@patternfly/react-core/dist/styles/assets/fonts/overpass-webfont/overpass-heavy.woff2"
+  },
+  "node_modules/@patternfly/react-core/dist/styles/assets/fonts/overpass-webfont/overpass-heavy-italic.woff2": {
+    "file": "assets/overpass-heavy-italic.8f5fbf20.woff2",
+    "src": "node_modules/@patternfly/react-core/dist/styles/assets/fonts/overpass-webfont/overpass-heavy-italic.woff2"
+  },
+  "node_modules/@patternfly/react-core/dist/styles/assets/fonts/overpass-mono-webfont/overpass-mono-light.woff2": {
+    "file": "assets/overpass-mono-light.5bae063c.woff2",
+    "src": "node_modules/@patternfly/react-core/dist/styles/assets/fonts/overpass-mono-webfont/overpass-mono-light.woff2"
+  },
+  "node_modules/@patternfly/react-core/dist/styles/assets/fonts/overpass-mono-webfont/overpass-mono-semibold.woff2": {
+    "file": "assets/overpass-mono-semibold.b39c5174.woff2",
+    "src": "node_modules/@patternfly/react-core/dist/styles/assets/fonts/overpass-mono-webfont/overpass-mono-semibold.woff2"
+  },
+  "node_modules/@patternfly/react-core/dist/styles/assets/fonts/overpass-mono-webfont/overpass-mono-regular.woff2": {
+    "file": "assets/overpass-mono-regular.a13dec50.woff2",
+    "src": "node_modules/@patternfly/react-core/dist/styles/assets/fonts/overpass-mono-webfont/overpass-mono-regular.woff2"
+  },
+  "node_modules/@patternfly/react-core/dist/styles/assets/fonts/overpass-mono-webfont/overpass-mono-bold.woff2": {
+    "file": "assets/overpass-mono-bold.2bf715ff.woff2",
+    "src": "node_modules/@patternfly/react-core/dist/styles/assets/fonts/overpass-mono-webfont/overpass-mono-bold.woff2"
+  },
+  "node_modules/@patternfly/react-core/dist/styles/assets/pficon/pficon.woff2": {
+    "file": "assets/pficon.86c74539.woff2",
+    "src": "node_modules/@patternfly/react-core/dist/styles/assets/pficon/pficon.woff2"
+  },
+  "node_modules/@patternfly/react-core/dist/styles/assets/fonts/RedHatDisplay/RedHatDisplay-Regular.woff": {
+    "file": "assets/RedHatDisplay-Regular.1b99a560.woff",
+    "src": "node_modules/@patternfly/react-core/dist/styles/assets/fonts/RedHatDisplay/RedHatDisplay-Regular.woff"
+  },
+  "node_modules/@patternfly/react-core/dist/styles/assets/fonts/RedHatDisplay/RedHatDisplay-Medium.woff": {
+    "file": "assets/RedHatDisplay-Medium.6ccf2158.woff",
+    "src": "node_modules/@patternfly/react-core/dist/styles/assets/fonts/RedHatDisplay/RedHatDisplay-Medium.woff"
+  },
+  "node_modules/@patternfly/react-core/dist/styles/assets/fonts/RedHatDisplay/RedHatDisplay-Bold.woff": {
+    "file": "assets/RedHatDisplay-Bold.44214a55.woff",
+    "src": "node_modules/@patternfly/react-core/dist/styles/assets/fonts/RedHatDisplay/RedHatDisplay-Bold.woff"
+  },
+  "node_modules/@patternfly/react-core/dist/styles/assets/fonts/RedHatText/RedHatText-Regular.woff": {
+    "file": "assets/RedHatText-Regular.df36d7d0.woff",
+    "src": "node_modules/@patternfly/react-core/dist/styles/assets/fonts/RedHatText/RedHatText-Regular.woff"
+  },
+  "node_modules/@patternfly/react-core/dist/styles/assets/fonts/RedHatText/RedHatText-Medium.woff": {
+    "file": "assets/RedHatText-Medium.702e86ff.woff",
+    "src": "node_modules/@patternfly/react-core/dist/styles/assets/fonts/RedHatText/RedHatText-Medium.woff"
+  },
+  "node_modules/@patternfly/react-core/dist/styles/assets/fonts/overpass-webfont/overpass-thin.woff": {
+    "file": "assets/overpass-thin.6feca5dc.woff",
+    "src": "node_modules/@patternfly/react-core/dist/styles/assets/fonts/overpass-webfont/overpass-thin.woff"
+  },
+  "node_modules/@patternfly/react-core/dist/styles/assets/fonts/overpass-webfont/overpass-thin-italic.woff": {
+    "file": "assets/overpass-thin-italic.2dffa092.woff",
+    "src": "node_modules/@patternfly/react-core/dist/styles/assets/fonts/overpass-webfont/overpass-thin-italic.woff"
+  },
+  "node_modules/@patternfly/react-core/dist/styles/assets/fonts/overpass-webfont/overpass-extralight.woff": {
+    "file": "assets/overpass-extralight.64fbbd3d.woff",
+    "src": "node_modules/@patternfly/react-core/dist/styles/assets/fonts/overpass-webfont/overpass-extralight.woff"
+  },
+  "node_modules/@patternfly/react-core/dist/styles/assets/fonts/overpass-webfont/overpass-extralight-italic.woff": {
+    "file": "assets/overpass-extralight-italic.6cbe5597.woff",
+    "src": "node_modules/@patternfly/react-core/dist/styles/assets/fonts/overpass-webfont/overpass-extralight-italic.woff"
+  },
+  "node_modules/@patternfly/react-core/dist/styles/assets/fonts/overpass-webfont/overpass-light.woff": {
+    "file": "assets/overpass-light.3f8151f4.woff",
+    "src": "node_modules/@patternfly/react-core/dist/styles/assets/fonts/overpass-webfont/overpass-light.woff"
+  },
+  "node_modules/@patternfly/react-core/dist/styles/assets/fonts/overpass-webfont/overpass-regular.woff": {
+    "file": "assets/overpass-regular.16b63547.woff",
+    "src": "node_modules/@patternfly/react-core/dist/styles/assets/fonts/overpass-webfont/overpass-regular.woff"
+  },
+  "node_modules/@patternfly/react-core/dist/styles/assets/fonts/overpass-webfont/overpass-light-italic.woff": {
+    "file": "assets/overpass-light-italic.a1454ca5.woff",
+    "src": "node_modules/@patternfly/react-core/dist/styles/assets/fonts/overpass-webfont/overpass-light-italic.woff"
+  },
+  "node_modules/@patternfly/react-core/dist/styles/assets/fonts/overpass-webfont/overpass-italic.woff": {
+    "file": "assets/overpass-italic.b81a6146.woff",
+    "src": "node_modules/@patternfly/react-core/dist/styles/assets/fonts/overpass-webfont/overpass-italic.woff"
+  },
+  "node_modules/@patternfly/react-core/dist/styles/assets/fonts/overpass-webfont/overpass-semibold.woff": {
+    "file": "assets/overpass-semibold.ec5809e8.woff",
+    "src": "node_modules/@patternfly/react-core/dist/styles/assets/fonts/overpass-webfont/overpass-semibold.woff"
+  },
+  "node_modules/@patternfly/react-core/dist/styles/assets/fonts/overpass-webfont/overpass-bold.woff": {
+    "file": "assets/overpass-bold.452a631f.woff",
+    "src": "node_modules/@patternfly/react-core/dist/styles/assets/fonts/overpass-webfont/overpass-bold.woff"
+  },
+  "node_modules/@patternfly/react-core/dist/styles/assets/fonts/overpass-webfont/overpass-semibold-italic.woff": {
+    "file": "assets/overpass-semibold-italic.1935eb14.woff",
+    "src": "node_modules/@patternfly/react-core/dist/styles/assets/fonts/overpass-webfont/overpass-semibold-italic.woff"
+  },
+  "node_modules/@patternfly/react-core/dist/styles/assets/fonts/overpass-webfont/overpass-extrabold.woff": {
+    "file": "assets/overpass-extrabold.613313c8.woff",
+    "src": "node_modules/@patternfly/react-core/dist/styles/assets/fonts/overpass-webfont/overpass-extrabold.woff"
+  },
+  "node_modules/@patternfly/react-core/dist/styles/assets/fonts/overpass-webfont/overpass-bold-italic.woff": {
+    "file": "assets/overpass-bold-italic.4926428e.woff",
+    "src": "node_modules/@patternfly/react-core/dist/styles/assets/fonts/overpass-webfont/overpass-bold-italic.woff"
+  },
+  "node_modules/@patternfly/react-core/dist/styles/assets/fonts/overpass-webfont/overpass-extrabold-italic.woff": {
+    "file": "assets/overpass-extrabold-italic.33533562.woff",
+    "src": "node_modules/@patternfly/react-core/dist/styles/assets/fonts/overpass-webfont/overpass-extrabold-italic.woff"
+  },
+  "node_modules/@patternfly/react-core/dist/styles/assets/fonts/overpass-webfont/overpass-heavy.woff": {
+    "file": "assets/overpass-heavy.c7e67c68.woff",
+    "src": "node_modules/@patternfly/react-core/dist/styles/assets/fonts/overpass-webfont/overpass-heavy.woff"
+  },
+  "node_modules/@patternfly/react-core/dist/styles/assets/fonts/overpass-webfont/overpass-heavy-italic.woff": {
+    "file": "assets/overpass-heavy-italic.c702fef1.woff",
+    "src": "node_modules/@patternfly/react-core/dist/styles/assets/fonts/overpass-webfont/overpass-heavy-italic.woff"
+  },
+  "node_modules/@patternfly/react-core/dist/styles/assets/fonts/overpass-mono-webfont/overpass-mono-light.woff": {
+    "file": "assets/overpass-mono-light.7fbe3706.woff",
+    "src": "node_modules/@patternfly/react-core/dist/styles/assets/fonts/overpass-mono-webfont/overpass-mono-light.woff"
+  },
+  "node_modules/@patternfly/react-core/dist/styles/assets/fonts/overpass-mono-webfont/overpass-mono-semibold.woff": {
+    "file": "assets/overpass-mono-semibold.085fb4a8.woff",
+    "src": "node_modules/@patternfly/react-core/dist/styles/assets/fonts/overpass-mono-webfont/overpass-mono-semibold.woff"
+  },
+  "node_modules/@patternfly/react-core/dist/styles/assets/fonts/overpass-mono-webfont/overpass-mono-regular.woff": {
+    "file": "assets/overpass-mono-regular.95881615.woff",
+    "src": "node_modules/@patternfly/react-core/dist/styles/assets/fonts/overpass-mono-webfont/overpass-mono-regular.woff"
+  },
+  "node_modules/@patternfly/react-core/dist/styles/assets/pficon/pficon.woff": {
+    "file": "assets/pficon.0a333dac.woff",
+    "src": "node_modules/@patternfly/react-core/dist/styles/assets/pficon/pficon.woff"
+  },
+  "node_modules/@patternfly/react-core/dist/styles/assets/fonts/overpass-mono-webfont/overpass-mono-bold.woff": {
+    "file": "assets/overpass-mono-bold.9b29c79a.woff",
+    "src": "node_modules/@patternfly/react-core/dist/styles/assets/fonts/overpass-mono-webfont/overpass-mono-bold.woff"
+  },
+  "node_modules/@patternfly/react-styles/css/assets/images/status-icon-sprite.svg": {
+    "file": "assets/status-icon-sprite.bc89cb14.svg",
+    "src": "node_modules/@patternfly/react-styles/css/assets/images/status-icon-sprite.svg"
+  },
+  "node_modules/@patternfly/react-styles/css/assets/images/pfbg_576@2x.jpg": {
+    "file": "assets/pfbg_576@2x.4942ea78.jpg",
+    "src": "node_modules/@patternfly/react-styles/css/assets/images/pfbg_576@2x.jpg"
+  },
+  "node_modules/@patternfly/react-styles/css/assets/images/pfbg_768.jpg": {
+    "file": "assets/pfbg_768.8bc3cc8a.jpg",
+    "src": "node_modules/@patternfly/react-styles/css/assets/images/pfbg_768.jpg"
+  },
+  "node_modules/@patternfly/react-styles/css/assets/images/pfbg_576.jpg": {
+    "file": "assets/pfbg_576.1d76d6cc.jpg",
+    "src": "node_modules/@patternfly/react-styles/css/assets/images/pfbg_576.jpg"
+  },
+  "node_modules/@patternfly/react-styles/css/assets/images/pfbg_768@2x.jpg": {
+    "file": "assets/pfbg_768@2x.037bce76.jpg",
+    "src": "node_modules/@patternfly/react-styles/css/assets/images/pfbg_768@2x.jpg"
+  },
+  "node_modules/@patternfly/react-styles/css/assets/images/pfbg_2000.jpg": {
+    "file": "assets/pfbg_2000.1f17de55.jpg",
+    "src": "node_modules/@patternfly/react-styles/css/assets/images/pfbg_2000.jpg"
+  },
+  "node_modules/@patternfly/react-styles/css/assets/images/pfbg_992@2x.jpg": {
+    "file": "assets/pfbg_992@2x.9dfd9687.jpg",
+    "src": "node_modules/@patternfly/react-styles/css/assets/images/pfbg_992@2x.jpg"
+  },
+  "index.html": {
+    "file": "assets/index.7fb41700.js",
+    "src": "index.html",
+    "isEntry": true,
+    "dynamicImports": [
+      "node_modules/web-vitals/dist/web-vitals.js",
+      "packages/starwhale-ui/src/Plotly/index.ts",
+      "src/components/LogViewer/LogViewer.tsx",
+      "src/assets/GradioWidget/es/index.js",
+      "src/assets/GradioWidget/es/index2.js",
+      "src/assets/GradioWidget/es/index3.js",
+      "src/assets/GradioWidget/es/index4.js",
+      "src/assets/GradioWidget/es/index5.js",
+      "src/assets/GradioWidget/es/index6.js",
+      "src/assets/GradioWidget/es/index7.js",
+      "src/assets/GradioWidget/es/index8.js",
+      "src/assets/GradioWidget/es/index9.js",
+      "src/assets/GradioWidget/es/index10.js",
+      "src/assets/GradioWidget/es/index11.js",
+      "src/assets/GradioWidget/es/index12.js",
+      "src/assets/GradioWidget/es/index13.js",
+      "src/assets/GradioWidget/es/index14.js",
+      "src/assets/GradioWidget/es/index15.js",
+      "src/assets/GradioWidget/es/index16.js",
+      "src/assets/GradioWidget/es/index17.js",
+      "src/assets/GradioWidget/es/index18.js",
+      "src/assets/GradioWidget/es/index19.js",
+      "src/assets/GradioWidget/es/index20.js",
+      "src/assets/GradioWidget/es/index21.js",
+      "src/assets/GradioWidget/es/index22.js",
+      "src/assets/GradioWidget/es/index23.js",
+      "src/assets/GradioWidget/es/index24.js",
+      "src/assets/GradioWidget/es/index25.js",
+      "src/assets/GradioWidget/es/index26.js",
+      "src/assets/GradioWidget/es/index27.js",
+      "src/assets/GradioWidget/es/index28.js",
+      "src/assets/GradioWidget/es/index29.js",
+      "src/assets/GradioWidget/es/index30.js",
+      "src/assets/GradioWidget/es/index31.js",
+      "src/assets/GradioWidget/es/index32.js",
+      "src/assets/GradioWidget/es/index33.js",
+      "src/assets/GradioWidget/es/index34.js",
+      "src/assets/GradioWidget/es/index35.js",
+      "src/assets/GradioWidget/es/index36.js",
+      "src/assets/GradioWidget/es/index37.js",
+      "src/assets/GradioWidget/es/index38.js",
+      "src/assets/GradioWidget/es/index39.js"
+    ],
+    "css": [
+      "assets/index.f9ed5a5b.css"
+    ],
+    "assets": [
+      "assets/project.863f66b0.svg",
+      "assets/setting.6d098443.svg",
+      "assets/account2.668f906e.svg",
+      "assets/empty.f3091520.svg",
+      "assets/empty-chart.1e62901a.svg",
+      "assets/search-empty.13cbde15.svg",
+      "assets/google.9d1a8b2b.svg",
+      "assets/wechat.cffee157.svg",
+      "assets/invalid-file.82d62dec.svg",
+      "assets/logo_small_en_white.782559aa.svg",
+      "assets/logo_normal_en_white.ec11283c.svg",
+      "assets/logo_normal_en_gray.163de1a0.svg",
+      "assets/logo_normal_en_blue.18b013e7.png",
+      "assets/RobotoMono-Regular.5c4ca672.ttf",
+      "assets/left.8c88a49a.svg",
+      "assets/left-shadow.e0fdfe32.png",
+      "assets/right.aefe3c24.svg",
+      "assets/right-shadow.58dd9abc.png",
+      "assets/bg-1920x1080.8b0d8feb.jpg",
+      "assets/bg-2560x1440.c97cffa5.jpg",
+      "assets/bg-3840x2160.f974f4b1.jpg",
+      "assets/iconfont.b539d382.woff2",
+      "assets/iconfont.1d0536e3.woff",
+      "assets/iconfont.3f2845db.ttf"
+    ]
+  },
+  "node_modules/web-vitals/dist/web-vitals.js": {
+    "file": "assets/web-vitals.d62816c8.js",
+    "src": "node_modules/web-vitals/dist/web-vitals.js",
+    "isDynamicEntry": true
+  },
+  "src/components/LogViewer/LogViewer.tsx": {
+    "file": "assets/LogViewer.00c4d1fd.js",
+    "src": "src/components/LogViewer/LogViewer.tsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "index.html"
+    ],
+    "css": [
+      "assets/LogViewer.68982bf4.css"
+    ],
+    "assets": [
+      "assets/RedHatDisplay-Regular.e6fb83d9.woff2",
+      "assets/RedHatDisplay-Regular.1b99a560.woff",
+      "assets/RedHatDisplay-Medium.6d3ccc0f.woff2",
+      "assets/RedHatDisplay-Medium.6ccf2158.woff",
+      "assets/RedHatDisplay-Bold.ca18645c.woff2",
+      "assets/RedHatDisplay-Bold.44214a55.woff",
+      "assets/RedHatText-Regular.542423d0.woff2",
+      "assets/RedHatText-Regular.df36d7d0.woff",
+      "assets/RedHatText-Medium.eb14b046.woff2",
+      "assets/RedHatText-Medium.702e86ff.woff",
+      "assets/RedHatDisplay-updated-Regular.d0b90ff3.woff2",
+      "assets/RedHatDisplay-updated-Medium.da0621a9.woff2",
+      "assets/RedHatDisplay-updated-Bold.66d1fc26.woff2",
+      "assets/RedHatText-updated-Regular.2e08dbe8.woff2",
+      "assets/RedHatText-updated-Medium.721ddd64.woff2",
+      "assets/RedHatMono-updated-Regular.1686cd5c.woff2",
+      "assets/RedHatDisplayVFModified-updated.3a6592a3.woff2",
+      "assets/RedHatDisplayVF-updated-ItalicModified.8483eece.woff2",
+      "assets/RedHatTextVFModified-updated.942d38f7.woff2",
+      "assets/RedHatTextVF-updated-ItalicModified.9e1c1004.woff2",
+      "assets/RedHatMonoVF-updated.4cca9c27.woff2",
+      "assets/RedHatMonoVF-updated-Italic.ca135ebd.woff2",
+      "assets/overpass-thin.e85966f1.woff2",
+      "assets/overpass-thin.6feca5dc.woff",
+      "assets/overpass-thin-italic.44db8e3d.woff2",
+      "assets/overpass-thin-italic.2dffa092.woff",
+      "assets/overpass-extralight.f053be7c.woff2",
+      "assets/overpass-extralight.64fbbd3d.woff",
+      "assets/overpass-extralight-italic.d23afde2.woff2",
+      "assets/overpass-extralight-italic.6cbe5597.woff",
+      "assets/overpass-light.9db6ab0a.woff2",
+      "assets/overpass-light.3f8151f4.woff",
+      "assets/overpass-light-italic.ec333948.woff2",
+      "assets/overpass-light-italic.a1454ca5.woff",
+      "assets/overpass-regular.8e2261df.woff2",
+      "assets/overpass-regular.16b63547.woff",
+      "assets/overpass-italic.34df3d81.woff2",
+      "assets/overpass-italic.b81a6146.woff",
+      "assets/overpass-semibold.3d06895e.woff2",
+      "assets/overpass-semibold.ec5809e8.woff",
+      "assets/overpass-semibold-italic.ae706d8c.woff2",
+      "assets/overpass-semibold-italic.1935eb14.woff",
+      "assets/overpass-bold.5c4ed5bb.woff2",
+      "assets/overpass-bold.452a631f.woff",
+      "assets/overpass-bold-italic.16cda7ef.woff2",
+      "assets/overpass-bold-italic.4926428e.woff",
+      "assets/overpass-extrabold.648ba0e7.woff2",
+      "assets/overpass-extrabold.613313c8.woff",
+      "assets/overpass-extrabold-italic.a258578a.woff2",
+      "assets/overpass-extrabold-italic.33533562.woff",
+      "assets/overpass-heavy.5e0869ee.woff2",
+      "assets/overpass-heavy.c7e67c68.woff",
+      "assets/overpass-heavy-italic.8f5fbf20.woff2",
+      "assets/overpass-heavy-italic.c702fef1.woff",
+      "assets/overpass-mono-light.5bae063c.woff2",
+      "assets/overpass-mono-light.7fbe3706.woff",
+      "assets/overpass-mono-regular.a13dec50.woff2",
+      "assets/overpass-mono-regular.95881615.woff",
+      "assets/overpass-mono-semibold.b39c5174.woff2",
+      "assets/overpass-mono-semibold.085fb4a8.woff",
+      "assets/overpass-mono-bold.2bf715ff.woff2",
+      "assets/overpass-mono-bold.9b29c79a.woff",
+      "assets/pficon.86c74539.woff2",
+      "assets/pficon.0a333dac.woff",
+      "assets/status-icon-sprite.bc89cb14.svg"
+    ]
+  },
+  "packages/starwhale-ui/src/Plotly/index.ts": {
+    "file": "assets/index.bf5eaa28.js",
+    "src": "packages/starwhale-ui/src/Plotly/index.ts",
+    "isDynamicEntry": true,
+    "imports": [
+      "index.html"
+    ]
+  },
+  "src/assets/GradioWidget/es/index.js": {
+    "file": "assets/index.c6bc9f84.js",
+    "src": "src/assets/GradioWidget/es/index.js",
+    "isDynamicEntry": true,
+    "imports": [
+      "index.html",
+      "_Column.7c69f8b8.js"
+    ]
+  },
+  "_Column.7c69f8b8.js": {
+    "file": "assets/Column.7c69f8b8.js",
+    "imports": [
+      "index.html"
+    ]
+  },
+  "src/assets/GradioWidget/es/index2.js": {
+    "file": "assets/index2.c2bc785d.js",
+    "src": "src/assets/GradioWidget/es/index2.js",
+    "isDynamicEntry": true,
+    "imports": [
+      "index.html",
+      "_Upload.09e9b61c.js",
+      "_ModifyUpload.343bb8d5.js",
+      "_BlockLabel.aefda8cb.js",
+      "_utils.eaa949ca.js"
+    ],
+    "dynamicImports": [
+      "src/assets/GradioWidget/es/module.js",
+      "src/assets/GradioWidget/es/module3.js"
+    ]
+  },
+  "_Upload.09e9b61c.js": {
+    "file": "assets/Upload.09e9b61c.js",
+    "imports": [
+      "index.html"
+    ]
+  },
+  "_ModifyUpload.343bb8d5.js": {
+    "file": "assets/ModifyUpload.343bb8d5.js",
+    "imports": [
+      "index.html"
+    ]
+  },
+  "_BlockLabel.aefda8cb.js": {
+    "file": "assets/BlockLabel.aefda8cb.js",
+    "imports": [
+      "index.html"
+    ]
+  },
+  "_utils.eaa949ca.js": {
+    "file": "assets/utils.eaa949ca.js"
+  },
+  "src/assets/GradioWidget/es/index3.js": {
+    "file": "assets/index3.0d241473.js",
+    "src": "src/assets/GradioWidget/es/index3.js",
+    "isDynamicEntry": true,
+    "imports": [
+      "index.html"
+    ]
+  },
+  "src/assets/GradioWidget/es/index4.js": {
+    "file": "assets/index4.9c11f8ba.js",
+    "src": "src/assets/GradioWidget/es/index4.js",
+    "isDynamicEntry": true,
+    "imports": [
+      "index.html"
+    ]
+  },
+  "src/assets/GradioWidget/es/index5.js": {
+    "file": "assets/index5.b6c30e7b.js",
+    "src": "src/assets/GradioWidget/es/index5.js",
+    "isDynamicEntry": true,
+    "imports": [
+      "index.html",
+      "_CarouselItem.svelte_svelte_type_style_lang.9910f4fb.js"
+    ]
+  },
+  "_CarouselItem.svelte_svelte_type_style_lang.9910f4fb.js": {
+    "file": "assets/CarouselItem.svelte_svelte_type_style_lang.9910f4fb.js",
+    "imports": [
+      "index.html"
+    ]
+  },
+  "src/assets/GradioWidget/es/index6.js": {
+    "file": "assets/index6.d036140d.js",
+    "src": "src/assets/GradioWidget/es/index6.js",
+    "isDynamicEntry": true,
+    "imports": [
+      "index.html",
+      "_CarouselItem.svelte_svelte_type_style_lang.9910f4fb.js"
+    ]
+  },
+  "src/assets/GradioWidget/es/index7.js": {
+    "file": "assets/index7.6718cd03.js",
+    "src": "src/assets/GradioWidget/es/index7.js",
+    "isDynamicEntry": true,
+    "imports": [
+      "index.html",
+      "_BlockLabel.aefda8cb.js"
+    ]
+  },
+  "src/assets/GradioWidget/es/index8.js": {
+    "file": "assets/index8.8333b430.js",
+    "src": "src/assets/GradioWidget/es/index8.js",
+    "isDynamicEntry": true,
+    "imports": [
+      "index.html"
+    ]
+  },
+  "src/assets/GradioWidget/es/index9.js": {
+    "file": "assets/index9.d5b8557f.js",
+    "src": "src/assets/GradioWidget/es/index9.js",
+    "isDynamicEntry": true,
+    "imports": [
+      "index.html"
+    ]
+  },
+  "src/assets/GradioWidget/es/index10.js": {
+    "file": "assets/index10.24cf7e49.js",
+    "src": "src/assets/GradioWidget/es/index10.js",
+    "isDynamicEntry": true,
+    "imports": [
+      "index.html"
+    ]
+  },
+  "src/assets/GradioWidget/es/index11.js": {
+    "file": "assets/index11.e3223dcd.js",
+    "src": "src/assets/GradioWidget/es/index11.js",
+    "isDynamicEntry": true,
+    "imports": [
+      "_Column.7c69f8b8.js",
+      "index.html"
+    ]
+  },
+  "src/assets/GradioWidget/es/index12.js": {
+    "file": "assets/index12.c3cae723.js",
+    "src": "src/assets/GradioWidget/es/index12.js",
+    "isDynamicEntry": true,
+    "imports": [
+      "index.html",
+      "_Upload.09e9b61c.js",
+      "_dsv.396f62d0.js"
+    ]
+  },
+  "_dsv.396f62d0.js": {
+    "file": "assets/dsv.396f62d0.js"
+  },
+  "src/assets/GradioWidget/es/index13.js": {
+    "file": "assets/index13.b05853fc.js",
+    "src": "src/assets/GradioWidget/es/index13.js",
+    "isDynamicEntry": true,
+    "imports": [
+      "index.html",
+      "_Image.ca898ead.js",
+      "_csv.61a85bcd.js",
+      "_dsv.396f62d0.js",
+      "_Model3D.4d2c1760.js"
+    ]
+  },
+  "_Image.ca898ead.js": {
+    "file": "assets/Image.ca898ead.js",
+    "imports": [
+      "index.html"
+    ]
+  },
+  "_csv.61a85bcd.js": {
+    "file": "assets/csv.61a85bcd.js",
+    "imports": [
+      "_dsv.396f62d0.js"
+    ]
+  },
+  "_Model3D.4d2c1760.js": {
+    "file": "assets/Model3D.4d2c1760.js",
+    "imports": [
+      "index.html"
+    ]
+  },
+  "src/assets/GradioWidget/es/index14.js": {
+    "file": "assets/index14.baf12cc9.js",
+    "src": "src/assets/GradioWidget/es/index14.js",
+    "isDynamicEntry": true,
+    "imports": [
+      "index.html"
+    ]
+  },
+  "src/assets/GradioWidget/es/index15.js": {
+    "file": "assets/index15.7050575d.js",
+    "src": "src/assets/GradioWidget/es/index15.js",
+    "isDynamicEntry": true,
+    "imports": [
+      "index.html",
+      "_BlockLabel.aefda8cb.js",
+      "_File.cac14683.js",
+      "_Upload.09e9b61c.js",
+      "_ModifyUpload.343bb8d5.js",
+      "_utils.eaa949ca.js"
+    ]
+  },
+  "_File.cac14683.js": {
+    "file": "assets/File.cac14683.js",
+    "imports": [
+      "index.html"
+    ]
+  },
+  "src/assets/GradioWidget/es/index16.js": {
+    "file": "assets/index16.277ca3e8.js",
+    "src": "src/assets/GradioWidget/es/index16.js",
+    "isDynamicEntry": true,
+    "imports": [
+      "index.html"
+    ]
+  },
+  "src/assets/GradioWidget/es/index17.js": {
+    "file": "assets/index17.d6b5a40d.js",
+    "src": "src/assets/GradioWidget/es/index17.js",
+    "isDynamicEntry": true,
+    "imports": [
+      "index.html",
+      "_BlockLabel.aefda8cb.js",
+      "_ModifyUpload.343bb8d5.js",
+      "_utils.eaa949ca.js",
+      "_Image2.95a55236.js"
+    ]
+  },
+  "_Image2.95a55236.js": {
+    "file": "assets/Image2.95a55236.js",
+    "imports": [
+      "index.html"
+    ]
+  },
+  "src/assets/GradioWidget/es/index18.js": {
+    "file": "assets/index18.4f38a657.js",
+    "src": "src/assets/GradioWidget/es/index18.js",
+    "isDynamicEntry": true,
+    "imports": [
+      "index.html"
+    ]
+  },
+  "src/assets/GradioWidget/es/index19.js": {
+    "file": "assets/index19.fa131107.js",
+    "src": "src/assets/GradioWidget/es/index19.js",
+    "isDynamicEntry": true,
+    "imports": [
+      "index.html",
+      "_color.0774ea95.js",
+      "_BlockLabel.aefda8cb.js"
+    ]
+  },
+  "_color.0774ea95.js": {
+    "file": "assets/color.0774ea95.js",
+    "imports": [
+      "index.html"
+    ]
+  },
+  "src/assets/GradioWidget/es/index20.js": {
+    "file": "assets/index20.a8ba3f2c.js",
+    "src": "src/assets/GradioWidget/es/index20.js",
+    "isDynamicEntry": true,
+    "imports": [
+      "index.html"
+    ]
+  },
+  "src/assets/GradioWidget/es/index21.js": {
+    "file": "assets/index21.1d116b31.js",
+    "src": "src/assets/GradioWidget/es/index21.js",
+    "isDynamicEntry": true,
+    "imports": [
+      "index.html",
+      "_BlockLabel.aefda8cb.js",
+      "_Image2.95a55236.js",
+      "_Webcam.f425e4a7.js",
+      "_ModifyUpload.343bb8d5.js",
+      "_Upload.09e9b61c.js",
+      "_Image.ca898ead.js"
+    ]
+  },
+  "_Webcam.f425e4a7.js": {
+    "file": "assets/Webcam.f425e4a7.js",
+    "imports": [
+      "index.html"
+    ]
+  },
+  "src/assets/GradioWidget/es/index22.js": {
+    "file": "assets/index22.09c2f614.js",
+    "src": "src/assets/GradioWidget/es/index22.js",
+    "isDynamicEntry": true,
+    "imports": [
+      "index.html"
+    ]
+  },
+  "src/assets/GradioWidget/es/index23.js": {
+    "file": "assets/index23.10aaa8f7.js",
+    "src": "src/assets/GradioWidget/es/index23.js",
+    "isDynamicEntry": true,
+    "imports": [
+      "index.html",
+      "_BlockLabel.aefda8cb.js"
+    ]
+  },
+  "src/assets/GradioWidget/es/index24.js": {
+    "file": "assets/index24.64188f0e.js",
+    "src": "src/assets/GradioWidget/es/index24.js",
+    "isDynamicEntry": true,
+    "imports": [
+      "index.html",
+      "_BlockLabel.aefda8cb.js"
+    ]
+  },
+  "src/assets/GradioWidget/es/index25.js": {
+    "file": "assets/index25.ca09af1a.js",
+    "src": "src/assets/GradioWidget/es/index25.js",
+    "isDynamicEntry": true,
+    "imports": [
+      "index.html"
+    ]
+  },
+  "src/assets/GradioWidget/es/index26.js": {
+    "file": "assets/index26.cbc57c30.js",
+    "src": "src/assets/GradioWidget/es/index26.js",
+    "isDynamicEntry": true,
+    "imports": [
+      "index.html",
+      "_utils.eaa949ca.js",
+      "_BlockLabel.aefda8cb.js",
+      "_File.cac14683.js",
+      "__commonjsHelpers.38432da5.js",
+      "_Upload.09e9b61c.js",
+      "_ModifyUpload.343bb8d5.js",
+      "_Model3D.4d2c1760.js"
+    ]
+  },
+  "__commonjsHelpers.38432da5.js": {
+    "file": "assets/_commonjsHelpers.38432da5.js"
+  },
+  "src/assets/GradioWidget/es/index27.js": {
+    "file": "assets/index27.62958579.js",
+    "src": "src/assets/GradioWidget/es/index27.js",
+    "isDynamicEntry": true,
+    "imports": [
+      "index.html"
+    ]
+  },
+  "src/assets/GradioWidget/es/index28.js": {
+    "file": "assets/index28.3ea7764c.js",
+    "src": "src/assets/GradioWidget/es/index28.js",
+    "isDynamicEntry": true,
+    "imports": [
+      "index.html",
+      "__commonjsHelpers.38432da5.js",
+      "_color.0774ea95.js",
+      "_linear.80285bdf.js",
+      "_dsv.396f62d0.js",
+      "_BlockLabel.aefda8cb.js"
+    ]
+  },
+  "_linear.80285bdf.js": {
+    "file": "assets/linear.80285bdf.js"
+  },
+  "src/assets/GradioWidget/es/index29.js": {
+    "file": "assets/index29.65f4809d.js",
+    "src": "src/assets/GradioWidget/es/index29.js",
+    "isDynamicEntry": true,
+    "imports": [
+      "index.html"
+    ]
+  },
+  "src/assets/GradioWidget/es/index30.js": {
+    "file": "assets/index30.a87cc16d.js",
+    "src": "src/assets/GradioWidget/es/index30.js",
+    "isDynamicEntry": true,
+    "imports": [
+      "index.html"
+    ]
+  },
+  "src/assets/GradioWidget/es/index31.js": {
+    "file": "assets/index31.fd459a0e.js",
+    "src": "src/assets/GradioWidget/es/index31.js",
+    "isDynamicEntry": true,
+    "imports": [
+      "index.html"
+    ]
+  },
+  "src/assets/GradioWidget/es/index32.js": {
+    "file": "assets/index32.c30309ea.js",
+    "src": "src/assets/GradioWidget/es/index32.js",
+    "isDynamicEntry": true,
+    "imports": [
+      "index.html"
+    ]
+  },
+  "src/assets/GradioWidget/es/index33.js": {
+    "file": "assets/index33.672b0284.js",
+    "src": "src/assets/GradioWidget/es/index33.js",
+    "isDynamicEntry": true,
+    "imports": [
+      "index.html"
+    ]
+  },
+  "src/assets/GradioWidget/es/index34.js": {
+    "file": "assets/index34.575f29cb.js",
+    "src": "src/assets/GradioWidget/es/index34.js",
+    "isDynamicEntry": true,
+    "imports": [
+      "index.html",
+      "_Tabs.3f56e708.js"
+    ]
+  },
+  "_Tabs.3f56e708.js": {
+    "file": "assets/Tabs.3f56e708.js",
+    "imports": [
+      "index.html"
+    ]
+  },
+  "src/assets/GradioWidget/es/index35.js": {
+    "file": "assets/index35.77037336.js",
+    "src": "src/assets/GradioWidget/es/index35.js",
+    "isDynamicEntry": true,
+    "imports": [
+      "index.html",
+      "_Tabs.3f56e708.js",
+      "_Column.7c69f8b8.js"
+    ]
+  },
+  "src/assets/GradioWidget/es/index36.js": {
+    "file": "assets/index36.08c1b2ac.js",
+    "src": "src/assets/GradioWidget/es/index36.js",
+    "isDynamicEntry": true,
+    "imports": [
+      "index.html"
+    ]
+  },
+  "src/assets/GradioWidget/es/index37.js": {
+    "file": "assets/index37.91144ed3.js",
+    "src": "src/assets/GradioWidget/es/index37.js",
+    "isDynamicEntry": true,
+    "imports": [
+      "index.html",
+      "_Upload.09e9b61c.js",
+      "_ModifyUpload.343bb8d5.js",
+      "_BlockLabel.aefda8cb.js",
+      "_color.0774ea95.js",
+      "_linear.80285bdf.js",
+      "_csv.61a85bcd.js",
+      "_dsv.396f62d0.js"
+    ]
+  },
+  "src/assets/GradioWidget/es/index38.js": {
+    "file": "assets/index38.16225439.js",
+    "src": "src/assets/GradioWidget/es/index38.js",
+    "isDynamicEntry": true,
+    "imports": [
+      "index.html"
+    ]
+  },
+  "src/assets/GradioWidget/es/index39.js": {
+    "file": "assets/index39.a5ce8ad9.js",
+    "src": "src/assets/GradioWidget/es/index39.js",
+    "isDynamicEntry": true,
+    "imports": [
+      "index.html",
+      "_utils.eaa949ca.js",
+      "_Upload.09e9b61c.js",
+      "_ModifyUpload.343bb8d5.js",
+      "_BlockLabel.aefda8cb.js",
+      "_Webcam.f425e4a7.js"
+    ]
+  },
+  "src/assets/GradioWidget/es/module.js": {
+    "file": "assets/module.554fb39c.js",
+    "src": "src/assets/GradioWidget/es/module.js",
+    "isDynamicEntry": true,
+    "imports": [
+      "_module2.c313c5e8.js"
+    ]
+  },
+  "_module2.c313c5e8.js": {
+    "file": "assets/module2.c313c5e8.js"
+  },
+  "src/assets/GradioWidget/es/module3.js": {
+    "file": "assets/module3.9dea3bf0.js",
+    "src": "src/assets/GradioWidget/es/module3.js",
+    "isDynamicEntry": true,
+    "imports": [
+      "_module2.c313c5e8.js"
+    ]
+  },
+  "src/components/LogViewer/LogViewer.css": {
+    "file": "assets/LogViewer.68982bf4.css",
+    "src": "src/components/LogViewer/LogViewer.css"
+  },
+  "index.css": {
+    "file": "assets/index.f9ed5a5b.css",
+    "src": "index.css"
+  }
+}
