@@ -1,0 +1,100 @@
+Metadata-Version: 2.1
+Name: ctidb
+Version: 0.0.4
+Summary: criminalip.ctidb reader
+Home-page: https://github.com/aispera/ctidb
+Author: aispera
+Author-email: infra@aispera.com
+License: Apache License, Version 2.0
+Keywords: aispera,ctidb,criminalip
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Python: >=3.6
+
+========================
+CTI DB Python Module
+========================
+
+Description
+-----------
+
+This is a Python module for reading CTI DB files.
+
+CTI DB is a binary file format that stores data indexed by IP address
+subnets (IPv4 only).
+
+Installation
+------------
+
+To install ctidb, type:
+
+.. code-block:: bash
+
+    $ pip install ctidb
+
+If you are not able to use pip, you may also use easy_install from the
+source directory:
+
+.. code-block:: bash
+
+    $ easy_install .
+
+Usage
+-----
+
+To use this module, you must first download or create a CTI DB file.
+
+After you have obtained a database and imported the module, call
+``CCtiReader`` with a path,
+to the database as the first argument. Optionally, you may pass a mode as the
+second argument. The modes are exported from ``ctidb``. Valid modes are:
+
+* ``MODE_MEMORY`` - load database into memory. Pure Python.
+* ``MODE_AUTO`` - Default.
+
+**NOTE**:
+To look up an IP address, use the ``get`` method on this object. The method will return the
+corresponding values for the IP address from the database (e.g., a dictionary
+for GeoIP2/GeoLite2 databases). If the database does not contain a record for
+that IP address, the method will return ``None``.
+
+Example
+-------
+
+.. code-block:: pycon
+
+    >>> import ctidb
+    >>>
+    >>> with ctidb.CCtiReader('criminalip.ctidb') as reader:
+    >>>
+    >>>     reader.get('223.26.31.75')
+    {'country': ... }
+
+Exceptions
+----------
+
+The module will return an ``InvalidDatabaseError`` if the database is corrupt
+or otherwise invalid. A ``ValueError`` will be thrown if you look up an
+invalid IP address or an IPv6 address in an IPv4 database.
+
+Requirements
+------------
+
+This code requires Python 3.6+. Older versions are not supported.
+
+Versioning
+----------
+
+
+
+Support
+-------
+
+
