@@ -1,0 +1,33 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "xdas"
+version = "0.1b"
+authors = [
+    {name = "Alister Trabattoni", email = "alister.trabattoni@gmail.com"},
+]
+dependencies = [
+    "dask",
+    "h5py",
+    "netcdf4",
+    "numpy",
+    "scipy",
+    "tqdm",
+    "xarray",
+]
+
+[project.optional-dependencies]
+docs = [
+    "ipykernel",
+    "matplotlib",
+    "myst-nb",
+    "sphinx-book-theme",
+    "sphinx-design",
+    "sphinx",
+]
+tests = [
+    "pytest",
+    "pytest-cov",
+]
