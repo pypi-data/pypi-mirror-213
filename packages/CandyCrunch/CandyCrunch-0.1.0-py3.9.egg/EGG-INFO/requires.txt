@@ -1,0 +1,15 @@
+glycowork==0.7
+regex
+networkx
+scipy
+torch
+numpy_indexed
+seaborn
+pandas
+statsmodels
+pymzml
+statsmodels
+pyteomics
+
+[draw]
+glycowork[draw]==0.7
