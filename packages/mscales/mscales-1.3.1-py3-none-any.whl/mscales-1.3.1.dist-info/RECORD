@@ -1,0 +1,17 @@
+mscales/__init__.py,sha256=dsNjp5tWBBY2qJCrFq8vBqss31D7bEINVjjgR-XKnuE,230
+mscales/_version.py,sha256=TcUrzeW97lm7ZSJYdq3LqrujTcS8h6lCAgsagjuA804,497
+mscales/concepts.py,sha256=RUw2ed80BT149mGyc8Irm1RqevLddCHIHvsItlIxwq4,529
+mscales/pcsets.py,sha256=P2Q0o0cnLlhwNucxNx5n6DPcFozRKEPOtFrMgriUpPk,6596
+mscales/plots.py,sha256=Ag8RHSrc7tvfOzSfO-aKpUaokiTV_icdPVUbqzadSNU,1109
+mscales/scales.py,sha256=5j8H9IvEKBSB0VxAaDx46L3EW962ErzoIxrpJo2Ev5I,1553
+mscales/sound.py,sha256=2fWK-daRGXccRI9Nj3dWt3fzaMHEmtWiOK3Jrq6_nuQ,1610
+mscales/utils.py,sha256=ghpbqg1tLjkbEh9op3N8fgcWwuh3uozJYxH6AD2SQKg,3056
+mscales/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mscales/tests/conftest.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mscales/tests/test_examples.py,sha256=58IcUL3i6g_10O7Xbzl5qe9pAczxDNqFWOpCI-ACU6k,160
+mscales-1.3.1.dist-info/AUTHORS.rst,sha256=uI-17icff9WQwA3Wwv2M7dAkp3OeSydGyTx7qch0jfc,170
+mscales-1.3.1.dist-info/LICENSE,sha256=1l1BuVyGaA4PKMVxM0aCL2g6XJ_EIRR39odMd8NPnvA,1522
+mscales-1.3.1.dist-info/METADATA,sha256=cafHRjfjWwrZHOk67W-MdWB3DJ3bvVGgj4T5-RXZ9MM,1265
+mscales-1.3.1.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+mscales-1.3.1.dist-info/top_level.txt,sha256=ev8NcZBnZ9YuMPgqSP9CjuEakO0BEJTmbHW8_TPSHlo,8
+mscales-1.3.1.dist-info/RECORD,,
