@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+bisnet/__init__.py
+bisnet/model.py
+bisnet/resnet.py
+bisnet.egg-info/PKG-INFO
+bisnet.egg-info/SOURCES.txt
+bisnet.egg-info/dependency_links.txt
+bisnet.egg-info/requires.txt
+bisnet.egg-info/top_level.txt
