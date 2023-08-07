@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: eversa
+Version: 0.4.0
+Summary: Everscale/Venom rapid application development and testing tools.
+Home-page: https://github.com/SolderingArmor/eversa
+Author: Anton Platonov
+Author-email: anton@platonov.us
+License: MIT
+Keywords: ever everscale venom python package blockchain
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+Everscale/Venom rapid application development and testing tools.
+

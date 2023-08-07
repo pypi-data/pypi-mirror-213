@@ -1,0 +1,3 @@
+[console_scripts]
+eversa = eversa.esa_cli:main
+
